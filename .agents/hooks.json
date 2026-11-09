@@ -1,0 +1,19 @@
+{
+  "github-cloud-sync": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "./scripts/session-start.sh",
+        "timeout": 20
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "./scripts/auto-sync.sh",
+        "timeout": 30
+      }
+    ]
+  }
+}

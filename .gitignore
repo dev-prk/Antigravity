@@ -1,0 +1,27 @@
+# macOS & OS artifacts
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python & Test caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.venv/
+venv/
+env/
+
+# Node / JS dependencies
+node_modules/
+
+# Secrets & Environment variables
+.env
+.env.*
+!.env.example
+
+# Hook execution & sync logs
+.agents/sync.log
+*.log

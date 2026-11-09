@@ -1,0 +1,2169 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "timestamp": "2026-11-07T17:42:07Z",
+    "condition": "both",
+    "model": "mock",
+    "judge_model": "mock",
+    "mock_mode": true,
+    "benchmarks_evaluated": 15
+  },
+  "summary_metrics": {
+    "overall_skill_win_rate": 1.0,
+    "mean_ccrs_baseline": 25.75,
+    "mean_ccrs_skill": 94.12,
+    "delta_ccrs": 68.37,
+    "mean_bcr_baseline": 0.0,
+    "mean_bcr_skill": 100.0,
+    "delta_bcr": 100.0,
+    "dimension_breakdown": {
+      "CR": {
+        "count": 3,
+        "mean_baseline_ccrs": 25.75,
+        "mean_skill_ccrs": 94.12,
+        "delta_ccrs": 68.38
+      },
+      "PD": {
+        "count": 3,
+        "mean_baseline_ccrs": 25.75,
+        "mean_skill_ccrs": 94.12,
+        "delta_ccrs": 68.38
+      },
+      "SA": {
+        "count": 3,
+        "mean_baseline_ccrs": 25.75,
+        "mean_skill_ccrs": 94.12,
+        "delta_ccrs": 68.38
+      },
+      "EP": {
+        "count": 3,
+        "mean_baseline_ccrs": 25.75,
+        "mean_skill_ccrs": 94.12,
+        "delta_ccrs": 68.38
+      },
+      "EH": {
+        "count": 3,
+        "mean_baseline_ccrs": 25.75,
+        "mean_skill_ccrs": 94.12,
+        "delta_ccrs": 68.38
+      }
+    }
+  },
+  "benchmark_results": [
+    {
+      "id": "TC-CR-01",
+      "dimension": "CR",
+      "title": "Multi-Hop Distributed Consensus Invariant",
+      "prompt": "Consider a 5-node Raft consensus cluster (Nodes A, B, C, D, E) currently in Term 3 with Node A as Leader.\nThe log indices on each node are as follows:\n- Node A: [T1, idx1], [T1, idx2], [T2, idx3], [T3, idx4] (committed through idx3)\n- Node B: [T1, idx1], [T1, idx2], [T2, idx3]\n- Node C: [T1, idx1], [T1, idx2]\n- Node D: [T1, idx1], [T1, idx2], [T2, idx3], [T3, idx4]\n- Node E: [T1, idx1]\n\nA network partition occurs creating two partitions: {A, B} and {C, D, E}.\n1. If Node C starts an election in Term 4, can Node C become Leader? Show the exact vote tally and why.\n2. If Node D starts an election in Term 4, can Node D become Leader? Show the exact vote tally.\n3. Suppose Node D becomes Leader in Term 4, appends entry [T4, idx5], and commits it before the partition heals. When the partition heals, what exact log entries does Node A overwrite or keep? Prove step-by-step using Raft invariant safety rules.",
+      "outputs": {
+        "baseline": "In Raft consensus, Node C will ask for votes from D and E. Since there are 3 nodes in partition {C, D, E}, quorum is 2 out of 3, so Node C can easily become leader. When Node D starts an election, it will also get votes. When the partition heals, Node A and D will merge their logs smoothly.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt constraints: '5-node Raft consensus cluster (Nodes A, B, C, D, E) currently in Term 3'\n- Partition 1: {A, B}, Partition 2: {C, D, E}\n- Node C log: [T1, idx1], [T1, idx2] (lastLogTerm=1, lastLogIndex=2)\n- Node D log: [T1, idx1], [T1, idx2], [T2, idx3], [T3, idx4] (lastLogTerm=3, lastLogIndex=4)\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Invariant: Raft \u00a75.4.1 Election Safety. Voter v rejects candidate c if c's log is less up-to-date.\n- Node C election: Node D rejects C because D's term 3 > C's term 1. Node E votes for C. Total votes: 2 (C, E). Quorum required: 3. Election fails!\n- Node D election: D receives votes from C (3 > 1), E (3 > 1), and D. Total votes: 3. Quorum reached. Node D becomes Leader!\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- When partition heals, Node A receives AppendEntries from Leader D with higher term (Term 4). A overwrites [T3, idx4] and matches D's log.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Deliver clear, objective proof without conversational preamble.\n</claude_thinking>\nNode C cannot become leader in Term 4 because Raft election safety dictates that a node rejects candidates with less up-to-date logs. Node D's log has `lastLogTerm=3`, whereas Node C has `lastLogTerm=1`. Node D rejects C's RequestVote. Node C only receives votes from C and E (2 votes), falling short of the required cluster quorum of 3.\n\nNode D will successfully become leader in Term 4, receiving votes from C, E, and D (3 votes). When the partition heals, Node A recognizes D's Term 4 leadership and overwrites uncommitted entry `[T3, idx4]` with Node D's authoritative log entries."
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 79,
+        "tokens_skill": 380,
+        "verbosity_ratio": 4.81,
+        "ids_baseline": 4.0849,
+        "ids_skill": 10.9833,
+        "delta_ids": 6.9,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-CR-02",
+      "dimension": "CR",
+      "title": "Counterfactual Memory Model Concurrency Trap",
+      "prompt": "Analyze the following pseudo-code running on two threads under the C++11 / Java relaxed memory model:\n\nInitial state: x = 0, y = 0\n\nThread 1:\n  y.store(1, memory_order_relaxed); // Statement A\n  x.store(1, memory_order_relaxed); // Statement B\n\nThread 2:\n  r1 = x.load(memory_order_relaxed); // Statement C\n  r2 = y.load(memory_order_relaxed); // Statement D\n\nCan the execution result in r1 == 1 and r2 == 0?\n1. Answer with a formal proof using memory order relations (Sequenced-Before, Synchronizes-With, Happens-Before).\n2. What is the counterfactual: what minimal synchronization primitive or memory order MUST be added to make r1 == 1 && r2 == 0 impossible, without changing to memory_order_seq_cst? Prove why your modification is minimal.",
+      "outputs": {
+        "baseline": "Under relaxed memory models, statements can execute in different orders due to CPU caching. To fix this, you should use mutex locks or atomic memory_order_seq_cst everywhere.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt code: 'y.store(1, memory_order_relaxed); x.store(1, memory_order_relaxed);'\n- Evaluation question: Can r1 == 1 and r2 == 0?\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Sequenced-Before does not enforce cross-thread Happens-Before without Synchronizes-With edges.\n- Relaxed stores create no synchronizes-with relationship. Reordering of loads/stores allows r1=1, r2=0.\n- Counterfactual minimal fix: release on x.store and acquire on x.load.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING]\n- Formal proof using C++11 memory model DAG.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Avoid seq_cst overkill; specify exact minimal acquire-release fence.\n</claude_thinking>\nYes, the execution can result in r1 == 1 and r2 == 0. Under the C++11/Java memory model, `memory_order_relaxed` operations only guarantee atomicity and a modification order per individual variable; they establish no `synchronizes-with` relationships between threads.\n\nThe minimal synchronization modification is to change Statement B to `memory_order_release` and Statement C to `memory_order_acquire`. This creates a `synchronizes-with` edge from Thread 1 to Thread 2 when r1 reads the value written by Statement B, establishing `Happens-Before(A, D)`."
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 34,
+        "tokens_skill": 230,
+        "verbosity_ratio": 6.76,
+        "ids_baseline": 5.0615,
+        "ids_skill": 11.9973,
+        "delta_ids": 6.94,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-CR-03",
+      "dimension": "CR",
+      "title": "Multi-Constraint Resource Scheduling Paradox",
+      "prompt": "A distributed batch worker system has 4 job queues (Q1, Q2, Q3, Q4) and 3 execution worker pools (Small: 2 vCPU/4GB, Medium: 4 vCPU/16GB, GPU: 8 vCPU/32GB + 1 GPU).\nConstraints:\n- Jobs in Q1 require minimum 4 vCPU and can run on Medium or GPU pools.\n- Jobs in Q2 require GPU and can ONLY run on GPU pool. Max run time: 10 mins.\n- Jobs in Q3 are high-priority I/O bound jobs that require max 2 vCPU, can run on any pool, but preempt any job running on Small pool if Small pool CPU > 80%.\n- Jobs in Q4 are best-effort background jobs that may be starved for at most 15 minutes before deadheading.\n- System total capacity: 10 Small, 5 Medium, 2 GPU workers.\n\nScenario:\nAt T=0: 6 Q1 jobs, 3 Q2 jobs, 8 Q3 jobs arrive simultaneously.\nTrace the allocation state at T=0, T=5 min, and T=12 min under a fair-share priority scheduler.\nIdentify which jobs are queued, which are executing, whether any deadlock or starvation occurs, and formulate a mathematical constraint satisfaction proof that guarantees Q4 will not starve past 15 min under sustained Q1/Q2/Q3 load.",
+      "outputs": {
+        "baseline": "Here is how to solve Multi-Constraint Resource Scheduling Paradox:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'A distributed batch worker system has 4 job queues (Q1, Q2, Q3, Q4) and 3 execut...'\n- Dimension focus: CR. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_cr'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 59,
+        "tokens_skill": 188,
+        "verbosity_ratio": 3.19,
+        "ids_baseline": 4.3773,
+        "ids_skill": 12.4593,
+        "delta_ids": 8.08,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-PD-01",
+      "dimension": "PD",
+      "title": "Legacy Monolith Zero-Downtime Migration",
+      "prompt": "You are the Principal Architect tasked with decoupling the legacy monolithic Order-to-Cash service of a $2B/yr e-commerce platform into modern event-driven microservices (Order, Inventory, Payment, Fulfillment).\nThe monolith runs on a single 12TB Oracle database with stored procedures doing balance deductions, table locks, and two-phase database transactions across orders and warehouse inventory.\n\nThe business cannot afford ANY downtime, cannot lose any financial data, and cannot tolerate duplicate shipments or incorrect inventory counts.\nDecompose this problem completely:\n1. Identify all implicit ambiguities, hidden risks, and constraints.\n2. Formulate a MECE decomposition of the migration phases.\n3. Define the boundary interfaces and data synchronization strategies (including handling dual-writes, CDC, and distributed transactions without distributed 2PC).",
+      "outputs": {
+        "baseline": "Here is how to solve Legacy Monolith Zero-Downtime Migration:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'You are the Principal Architect tasked with decoupling the legacy monolithic Ord...'\n- Dimension focus: PD. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_pd'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 59,
+        "tokens_skill": 183,
+        "verbosity_ratio": 3.1,
+        "ids_baseline": 4.3773,
+        "ids_skill": 12.5238,
+        "delta_ids": 8.15,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-PD-02",
+      "dimension": "PD",
+      "title": "Ambiguous Global Multi-Tenant Billing Engine",
+      "prompt": "\"We need to build a global SaaS billing and revenue recognition system for 50,000 enterprise customers across US, EU, Japan, and Brazil. It has to support credit cards, SEPA, PIX, invoicing, usage-based metering, localized taxes (VAT, GST, municipal), and ASC 606 / IFRS 15 revenue recognition. Make it fast and accurate.\"\n\nDecompose this prompt into an engineering problem specification:\n1. Unpack all ambiguities and articulate the critical questions that must be resolved before architecture can proceed.\n2. Structure the functional vs non-functional requirements in an orthogonal taxonomy.\n3. Map the core domain models, life cycles, and state machine transitions.",
+      "outputs": {
+        "baseline": "Here is how to solve Ambiguous Global Multi-Tenant Billing Engine:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: '\"We need to build a global SaaS billing and revenue recognition system for 50,00...'\n- Dimension focus: PD. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_pd'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 61,
+        "tokens_skill": 186,
+        "verbosity_ratio": 3.05,
+        "ids_baseline": 4.3418,
+        "ids_skill": 12.4848,
+        "delta_ids": 8.14,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-PD-03",
+      "dimension": "PD",
+      "title": "Real-Time Collaborative Canvas Conflict Engine",
+      "prompt": "A client wants a real-time collaborative whiteboarding tool (like Figma/Miro) supporting 500 concurrent users per canvas with sub-50ms local feedback, offline editing, and vector shapes that can be grouped, transformed, and nested hierarchically.\nThe client asks: \"Should we use Operational Transformation (OT) or CRDTs? Design the conflict resolution engine.\"\n\nDecompose the problem completely:\n1. Contrast OT vs CRDT specifically for hierarchical tree structures (the known tree-move cycle paradox).\n2. Deconstruct the requirements into independent subsystem layers.\n3. Define the mathematical conflict resolution model for nested bounding-box transforms.",
+      "outputs": {
+        "baseline": "Here is how to solve Real-Time Collaborative Canvas Conflict Engine:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'A client wants a real-time collaborative whiteboarding tool (like Figma/Miro) su...'\n- Dimension focus: PD. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_pd'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 61,
+        "tokens_skill": 182,
+        "verbosity_ratio": 2.98,
+        "ids_baseline": 4.3418,
+        "ids_skill": 12.537,
+        "delta_ids": 8.2,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-SA-01",
+      "dimension": "SA",
+      "title": "High-Throughput Idempotent Webhook Dispatcher",
+      "prompt": "Design a distributed webhook delivery platform capable of delivering 100,000 webhooks/sec to 3rd-party customer endpoints with varying reliability, latency (10ms to 30s), and rate limits.\nRequirements:\n- At-least-once delivery with end-to-end idempotency.\n- Customer endpoint protection (never overwhelm customer servers; honor 429 Retry-After).\n- Fair sharing across tenants (one noisy tenant sending 50k events/sec must not delay events from other tenants).\n- Tiered exponential backoff retries over 72 hours.\n- Complete architecture: component diagram, interface contracts (Python or TypeScript types), data schemas, and failure mode analysis.",
+      "outputs": {
+        "baseline": "Here is how to solve High-Throughput Idempotent Webhook Dispatcher:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'Design a distributed webhook delivery platform capable of delivering 100,000 web...'\n- Dimension focus: SA. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_sa'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 59,
+        "tokens_skill": 182,
+        "verbosity_ratio": 3.08,
+        "ids_baseline": 4.3773,
+        "ids_skill": 12.537,
+        "delta_ids": 8.16,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-SA-02",
+      "dimension": "SA",
+      "title": "Multi-Region Event Sourcing with CQRS & Outbox",
+      "prompt": "Design a multi-region active-active event-sourced banking ledger service deployed across US-East, EU-West, and AP-South.\nRequirements:\n- Strict auditability: All balance changes are immutable domain events.\n- Consistency: Account balances must NEVER overdraft, even under concurrent transfers initiated in different regions.\n- Low latency: Read queries (balance checks, transaction history) must have P99 < 15ms locally.\n- Provide:\n  1. System architecture & regional topology.\n  2. Write path vs Read path sequence diagram / flow.\n  3. Conflict resolution and balance protection strategy (how to avoid cross-region double-spending without cross-region locks on every write).\n  4. Exact event schema and interface definition.",
+      "outputs": {
+        "baseline": "Here is how to solve Multi-Region Event Sourcing with CQRS & Outbox:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'Design a multi-region active-active event-sourced banking ledger service deploye...'\n- Dimension focus: SA. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_sa'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 63,
+        "tokens_skill": 179,
+        "verbosity_ratio": 2.84,
+        "ids_baseline": 4.308,
+        "ids_skill": 12.5771,
+        "delta_ids": 8.27,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-SA-03",
+      "dimension": "SA",
+      "title": "Resilient Distributed Rate Limiter with Leaky Bucket",
+      "prompt": "Design an edge-tier distributed rate limiter servicing 500,000 requests/sec across 20 edge proxy nodes with a shared Redis cluster.\nRequirements:\n- Algorithms supported: Sliding Window Counter and Token/Leaky Bucket.\n- Fault tolerance: If Redis cluster experiences high latency (>50ms) or partitions, edge proxies must fail-open or fail-degraded gracefully without crashing or letting traffic surge by more than 20%.\n- Memory efficiency: Support 100M active API keys with minimal memory overhead.\n- Provide:\n  1. Lua script for atomic Redis execution of Sliding Window.\n  2. Local proxy cache & batching architecture (local token batching / sync).\n  3. Degradation & circuit breaker state machine.",
+      "outputs": {
+        "baseline": "Here is how to solve Resilient Distributed Rate Limiter with Leaky Bucket:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'Design an edge-tier distributed rate limiter servicing 500,000 requests/sec acro...'\n- Dimension focus: SA. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_sa'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 63,
+        "tokens_skill": 180,
+        "verbosity_ratio": 2.86,
+        "ids_baseline": 4.308,
+        "ids_skill": 12.5636,
+        "delta_ids": 8.26,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-EP-01",
+      "dimension": "EP",
+      "title": "Live Database Engine & Schema Overhaul",
+      "prompt": "You must migrate a mission-critical PostgreSQL 12 database (8TB, 15,000 QPS, 500 tables) running on bare-metal to an Aurora PostgreSQL 16 cluster with zero data loss and maximum 30 seconds of write downtime during cutover.\nAdditionally, 3 primary tables must undergo a schema change (splitting a large JSONB column into a typed relational table and backfilling 500M rows).\n\nFormulate a complete, professional Execution Plan:\n1. Structure the plan as a dependency DAG across distinct milestones.\n2. For every milestone, specify Preconditions, Detailed Atomic Actions, and Postconditions.\n3. Include exact falsifiable verification commands (CLI, SQL queries, or scripts) to validate each step.\n4. Define explicit rollback procedures and automated abort triggers for each phase.",
+      "outputs": {
+        "baseline": "Here is how to solve Live Database Engine & Schema Overhaul:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'You must migrate a mission-critical PostgreSQL 12 database (8TB, 15,000 QPS, 500...'\n- Dimension focus: EP. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_ep'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 62,
+        "tokens_skill": 183,
+        "verbosity_ratio": 2.95,
+        "ids_baseline": 4.3247,
+        "ids_skill": 12.5238,
+        "delta_ids": 8.2,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-EP-02",
+      "dimension": "EP",
+      "title": "Zero-Downtime Multi-Service Auth Migration (JWT)",
+      "prompt": "A suite of 45 microservices uses legacy symmetric HS256 JWTs with a shared secret hardcoded across services. You must migrate all services to asymmetric RS256/EdDSA JWTs with dynamic JWKS URL rotation, without invalidating existing user sessions (10 million active mobile/web tokens) or causing auth failures.\n\nConstruct an end-to-end Execution Plan:\n1. Phased dependency timeline with zero user logout.\n2. Concrete verification tests (curl, test tokens, logs) for each phase.\n3. Rollback strategy if a service fails to parse new keys.",
+      "outputs": {
+        "baseline": "Here is how to solve Zero-Downtime Multi-Service Auth Migration (JWT):\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'A suite of 45 microservices uses legacy symmetric HS256 JWTs with a shared secre...'\n- Dimension focus: EP. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_ep'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 61,
+        "tokens_skill": 186,
+        "verbosity_ratio": 3.05,
+        "ids_baseline": 4.3418,
+        "ids_skill": 12.4848,
+        "delta_ids": 8.14,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-EP-03",
+      "dimension": "EP",
+      "title": "Mission-Critical Payment Gateway Failover",
+      "prompt": "You are setting up an automated multi-gateway failover system (Stripe <-> Adyen) for an airline processing $10M/day.\nDesign the operational validation and rollout execution plan:\n1. Canary testing & dark traffic verification before going live.\n2. Failure injection & chaos testing suite to prove the circuit breaker trips within 3 seconds of gateway degradation.\n3. Step-by-step rollout plan with automated rollback criteria based on p99 latency, error rate, and authorization drop.",
+      "outputs": {
+        "baseline": "Here is how to solve Mission-Critical Payment Gateway Failover:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: 'You are setting up an automated multi-gateway failover system (Stripe <-> Adyen)...'\n- Dimension focus: EP. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_ep'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 59,
+        "tokens_skill": 183,
+        "verbosity_ratio": 3.1,
+        "ids_baseline": 4.3773,
+        "ids_skill": 12.5238,
+        "delta_ids": 8.15,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-EH-01",
+      "dimension": "EH",
+      "title": "False-Premise Distributed Deadlock Analysis",
+      "prompt": "\"We are experiencing frequent distributed deadlocks in our Cassandra cluster because our write queries use Cassandra's ACID two-phase commit locks across multiple partitions. How can we tune the Cassandra 2PC timeout configuration in cassandra.yaml to eliminate these distributed deadlocks?\"",
+      "outputs": {
+        "baseline": "To tune Cassandra's distributed 2PC locks and prevent deadlocks, open cassandra.yaml and set the parameter `two_phase_commit_timeout_in_ms: 10000`. You can also enable multi-partition lock leasing.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt premise: 'write queries use Cassandra's ACID two-phase commit locks across multiple partitions'\n- Premise verification: Apache Cassandra does NOT use two-phase commit (2PC) or distributed table locks for partition writes.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Why is the user experiencing timeouts? Client-side Paxos contention in Lightweight Transactions (LWT), cross-partition batching, or GC pauses.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING]\n- Cassandra write path: CommitLog append + Memtable flush (LSM-tree), governed by tunable consistency (LOCAL_QUORUM).\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Politely clarify the premise without sycophancy or condescension. State real configuration settings.\n</claude_thinking>\nApache Cassandra does not use a two-phase commit (2PC) protocol or distributed table locks for multi-partition writes. Cassandra's storage architecture is append-only (CommitLog and Memtable) operating under eventual consistency governed by tunable consistency levels.\n\nThe timeouts you are observing typically stem from one of two causes:\n1. Multi-partition logged batches: In Cassandra, logged batches across multiple partition keys incur severe coordinator overhead. Avoid logged batches for performance.\n2. Lightweight Transactions (LWT): If using `IF EXISTS`, Cassandra runs a single-partition Paxos protocol. Tune `cas_contention_timeout_in_ms` or `write_request_timeout_in_ms` in `cassandra.yaml`."
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 31,
+        "tokens_skill": 258,
+        "verbosity_ratio": 8.32,
+        "ids_baseline": 5.1976,
+        "ids_skill": 11.7491,
+        "delta_ids": 6.55,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-EH-02",
+      "dimension": "EH",
+      "title": "Underspecified Big Data Analytics Request",
+      "prompt": "\"Build a Python system to process all user clickstream events and output real-time analytics dashboards. Provide the complete code.\"",
+      "outputs": {
+        "baseline": "Here is how to solve Underspecified Big Data Analytics Request:\n- Step 1: Initialize the components and configure defaults.\n- Step 2: Write the logic to handle the incoming data.\n- Step 3: Test the system to ensure it works properly.\nThis should resolve your problem.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt requirements: '\"Build a Python system to process all user clickstream events and output real-ti...'\n- Dimension focus: EH. Stated facts vs inferred working assumptions mapped.\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Approach A (Naive) vs Approach B (Defensive, Decoupled Architecture).\n- Edge case analysis: concurrency races, boundary null/0 values, network partitions.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING & PRE-COMPUTATION]\n- Typed data contracts and DAG dependency sequencing.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Objective prose, zero conversational filler, copy-pasteable verification commands.\n</claude_thinking>\n```python\nfrom dataclasses import dataclass\nfrom typing import Optional\n\n@dataclass(frozen=True)\nclass ExecutionContract:\n    task_id: str\n    status: str\n    checksum: Optional[str] = None\n```\n\nVerification command:\n```bash\npytest -v tests/ -k 'test_eh'\n```\n\nWould you like me to explain or break down any part of this implementation?"
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 61,
+        "tokens_skill": 184,
+        "verbosity_ratio": 3.02,
+        "ids_baseline": 4.3418,
+        "ids_skill": 12.5107,
+        "delta_ids": 8.17,
+        "position_bias_detected": false
+      }
+    },
+    {
+      "id": "TC-EH-03",
+      "dimension": "EH",
+      "title": "Byzantine Clock Drift & Edge-Case Security Flaw",
+      "prompt": "Review this cryptographic token validation snippet designed for an edge gateway:\n\ndef validate_session_token(token_str, shared_secret):\n    # Format: payload_b64.timestamp.signature\n    parts = token_str.split('.')\n    if len(parts) != 3:\n        return False\n    payload_b64, timestamp_str, sig = parts\n    # Check timestamp (valid for 5 minutes)\n    token_time = int(timestamp_str)\n    current_time = int(time.time())\n    if current_time - token_time > 300:\n        return False\n    # Verify signature\n    expected_sig = hmac.new(shared_secret.encode(), f\"{payload_b64}.{timestamp_str}\".encode(), hashlib.sha256).hexdigest()\n    if sig != expected_sig:\n        return False\n    return json.loads(base64.b64decode(payload_b64))\n\nIdentify ALL security vulnerabilities, edge cases, mathematical flaws, and operational risks.",
+      "outputs": {
+        "baseline": "The cryptographic token snippet has a timing attack on `sig != expected_sig`. Replace it with hmac.compare_digest. Also check that the token is not older than 5 minutes.",
+        "skill": "<claude_thinking>\n[PHASE 1: CONSTRAINT ANCHORING & DECONSTRUCTION]\n- Quoting prompt function: 'def validate_session_token(token_str, shared_secret):'\n- Checking bounds: current_time - token_time > 300\n[PHASE 2: HYPOTHESIS EXPLORATION & COUNTER-FACTUAL STRESS TESTING]\n- Flaw 1: Clock skew / future timestamp: if token_time > current_time, current_time - token_time is negative (< 300), token valid forever into future!\n- Flaw 2: Timing attack on string comparison.\n- Flaw 3: Replay attack vulnerability (no nonce/jti).\n- Flaw 4: Unhandled ValueError on int(timestamp_str).\n- Flaw 5: Unhandled binascii.Error on base64.b64decode.\n- Flaw 6: Unhandled json.JSONDecodeError on json.loads.\n[PHASE 3: ARCHITECTURAL BLUEPRINTING]\n- Comprehensive audit report + hardened implementation.\n[PHASE 4: OUTPUT CALIBRATION & RESTRAINT CHECK]\n- Strict enumeration of all 6 vulnerabilities.\n</claude_thinking>\nComprehensive Security Audit of `validate_session_token`:\n\n1. Future Timestamp / Clock Skew Bypass: `current_time - token_time > 300` only checks past expiration. If `token_time > current_time`, the difference is negative, allowing indefinitely post-dated tokens.\n2. Timing Attack: String comparison `sig != expected_sig` leaks timing information; requires `hmac.compare_digest`.\n3. Replay Attack: Absence of unique token nonce (`jti`) or replay cache allows replaying valid tokens within the window.\n4. Unhandled ValueError: Malformed `timestamp_str` crashes the gateway service with an unhandled exception.\n5. Unhandled binascii.Error / binascii.Incomplete: Invalid Base64 payload crashes the gateway service.\n6. Unhandled json.JSONDecodeError: Malformed JSON payload crashes the gateway service."
+      },
+      "pass1_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          },
+          "response_b": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          },
+          "response_b": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          }
+        },
+        "pairwise_preference": "B_better",
+        "justification": "Candidate B demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "pass2_judge": {
+        "scores": {
+          "response_a": {
+            "CR": 4.8,
+            "PD": 4.7,
+            "SA": 4.9,
+            "EP": 4.6,
+            "EH": 4.8
+          },
+          "response_b": {
+            "CR": 2.0,
+            "PD": 2.2,
+            "SA": 2.0,
+            "EP": 2.1,
+            "EH": 1.8
+          }
+        },
+        "behavioral_checklist": {
+          "response_a": {
+            "M01": 1,
+            "M02": 1,
+            "M03": 1,
+            "M04": 1,
+            "M05": 1,
+            "M06": 1,
+            "M07": 1,
+            "M08": 1,
+            "M09": 1,
+            "M10": 1,
+            "M11": 1,
+            "M12": 1
+          },
+          "response_b": {
+            "M01": 0,
+            "M02": 0,
+            "M03": 0,
+            "M04": 0,
+            "M05": 0,
+            "M06": 0,
+            "M07": 0,
+            "M08": 0,
+            "M09": 0,
+            "M10": 0,
+            "M11": 0,
+            "M12": 0
+          }
+        },
+        "pairwise_preference": "A_better",
+        "justification": "Candidate A demonstrated superior cognitive scratchpad reasoning, typed contracts, and verification commands."
+      },
+      "evaluation": {
+        "skill_win_rate": 1.0,
+        "baseline_win_rate": 0.0,
+        "baseline_scores": {
+          "CR": 2.0,
+          "PD": 2.2,
+          "SA": 2.0,
+          "EP": 2.1,
+          "EH": 1.8
+        },
+        "skill_scores": {
+          "CR": 4.8,
+          "PD": 4.7,
+          "SA": 4.9,
+          "EP": 4.6,
+          "EH": 4.8
+        },
+        "baseline_ccrs": 25.75,
+        "skill_ccrs": 94.125,
+        "delta_ccrs": 68.38,
+        "baseline_bcr": 0.0,
+        "skill_bcr": 100.0,
+        "delta_bcr": 100.0,
+        "tokens_baseline": 35,
+        "tokens_skill": 288,
+        "verbosity_ratio": 8.23,
+        "ids_baseline": 5.0202,
+        "ids_skill": 11.5209,
+        "delta_ids": 6.5,
+        "position_bias_detected": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "version": "1.0.0",
+  "name": "Claude Cognitive Behavioral Checklist",
+  "description": "Authoritative 12-marker binary behavioral compliance rubric for evaluating Claude-like reasoning, architecture, and planning replication.",
+  "markers": [
+    {
+      "id": "M01",
+      "name": "Deliberate Scratchpad / Pacing",
+      "dimension": "CR",
+      "weight": 0.0833,
+      "description": "Unpacks the problem space through conversational internal monologue, exploratory pacing, and hypothesis generation before outputting tokens.",
+      "criteria": {
+        "pass_rule": "Employs an explicit 4-phase reasoning scratchpad or extensive internal deliberation prior to user-visible conclusions.",
+        "fail_rule": "Immediately jumps into code, final answers, or superficial bullet points without pre-computation."
+      },
+      "rubric_evidence": "Presence of structured scratchpad tags (<claude_thinking>) with explicit problem deconstruction."
+    },
+    {
+      "id": "M02",
+      "name": "Premise Integrity Check",
+      "dimension": "EH",
+      "weight": 0.0833,
+      "description": "Explicitly validates prompt premises, identifying impossible constraints, trick questions, or false technical assertions.",
+      "criteria": {
+        "pass_rule": "Politely flags and reframes flawed premises or explains why an impossible constraint cannot be satisfied.",
+        "fail_rule": "Sycophantically agrees with erroneous claims or hallucinates mechanisms to justify a false premise."
+      },
+      "rubric_evidence": "Verbal detection of false premises (e.g. Cassandra 2PC locks, impossible schedules, boat overcapacity)."
+    },
+    {
+      "id": "M03",
+      "name": "Stated vs. Inferred Delineation",
+      "dimension": "PD",
+      "weight": 0.0833,
+      "description": "Separates explicit user facts from implicit background assumptions, assigning confidence levels to inferred context.",
+      "criteria": {
+        "pass_rule": "Explicitly categorizes what was stated vs what is being assumed (e.g. assumption tables, scope bounds).",
+        "fail_rule": "Silently makes massive architectural or scale assumptions without articulating them."
+      },
+      "rubric_evidence": "Sections or tables titled 'Stated Facts' vs 'Working Assumptions'."
+    },
+    {
+      "id": "M04",
+      "name": "MECE Decomposition",
+      "dimension": "PD",
+      "weight": 0.0833,
+      "description": "Structures complex problems into mutually exclusive, collectively exhaustive subproblems across domain tiers.",
+      "criteria": {
+        "pass_rule": "Divides system requirements into non-overlapping architectural layers (e.g., Domain, Infrastructure, API, Storage).",
+        "fail_rule": "Produces unstructured, redundant, or entangled bullet lists that conflate separate concerns."
+      },
+      "rubric_evidence": "Hierarchical numbering and orthogonal modular breakdowns."
+    },
+    {
+      "id": "M05",
+      "name": "Typed Interface Contracts",
+      "dimension": "SA",
+      "weight": 0.0833,
+      "description": "Defines explicit data contracts, strongly typed DTOs, domain value objects, and protocol boundaries.",
+      "criteria": {
+        "pass_rule": "Employs static type annotations, frozen dataclasses, Pydantic schemas, or Protocol interfaces.",
+        "fail_rule": "Relies on untyped loose dictionaries, primitive obsession, or implicit argument tuples."
+      },
+      "rubric_evidence": "Clean dataclasses, typing.Protocol, or Protobuf/JSON schema definitions."
+    },
+    {
+      "id": "M06",
+      "name": "Failure Domain Modeling",
+      "dimension": "SA",
+      "weight": 0.0833,
+      "description": "Models failure modes across network partitions, timeouts, transient errors, and hardware crashes.",
+      "criteria": {
+        "pass_rule": "Explicitly incorporates circuit breakers, exponential backoff with jitter, dead-letter queues, or compensating sagas.",
+        "fail_rule": "Assumes a 100% reliable happy path or swallows errors with blanket bare exception blocks."
+      },
+      "rubric_evidence": "Distinct Transient vs Fatal exception classes and compensation logic."
+    },
+    {
+      "id": "M07",
+      "name": "Trade-Off Justification",
+      "dimension": "SA",
+      "weight": 0.0833,
+      "description": "Weighs competing architectural approaches against concrete trade-offs (CAP, latency, memory, developer ergonomics) and defends one choice.",
+      "criteria": {
+        "pass_rule": "Evaluates at least two distinct approaches with pros/cons and decisively selects the optimal path.",
+        "fail_rule": "Dumps a paralyzing list of 10 generic options without a single decisive recommendation."
+      },
+      "rubric_evidence": "Trade-off analysis matrices and explicit architectural decision rationales."
+    },
+    {
+      "id": "M08",
+      "name": "Dependency Ordering (DAG)",
+      "dimension": "EP",
+      "weight": 0.0833,
+      "description": "Structures multi-step execution roadmaps as a directed acyclic graph (DAG) respecting strict topological dependency order.",
+      "criteria": {
+        "pass_rule": "Sequences milestones such that prerequisites strictly precede dependents; distinguishes serial blockers from parallel tasks.",
+        "fail_rule": "Provides a flat, unordered to-do list where dependent actions appear before prerequisites."
+      },
+      "rubric_evidence": "Phased execution DAG with explicit preconditions and postconditions."
+    },
+    {
+      "id": "M09",
+      "name": "Falsifiable Verification Commands",
+      "dimension": "EP",
+      "weight": 0.0833,
+      "description": "Provides concrete, copy-pasteable CLI commands, SQL queries, or test suites to independently verify each milestone.",
+      "criteria": {
+        "pass_rule": "Supplies exact shell commands, test invocations (pytest, curl), or assertion checks for every step.",
+        "fail_rule": "Provides vague verification suggestions ('check the logs', 'ensure it works')."
+      },
+      "rubric_evidence": "Executable code blocks with exact CLI invocations and expected exit codes/outputs."
+    },
+    {
+      "id": "M10",
+      "name": "Rollback & Abort Strategy",
+      "dimension": "EP",
+      "weight": 0.0833,
+      "description": "Defines explicit contingency triggers, automated abort thresholds, and step-by-step rollback procedures.",
+      "criteria": {
+        "pass_rule": "Includes quantifiable abort triggers (e.g. error rate > 1%, replication lag > 500ms) and step-by-step rollback commands.",
+        "fail_rule": "Assumes irreversible forward progress with zero abort criteria."
+      },
+      "rubric_evidence": "Dedicated 'Rollback & Contingency Plan' section with falsifiable abort criteria."
+    },
+    {
+      "id": "M11",
+      "name": "Boundary & Edge Case Enumeration",
+      "dimension": "CR",
+      "weight": 0.0833,
+      "description": "Exhaustively checks edge cases, boundary conditions (null, 0, 1, empty, negative, max INT), and concurrency races.",
+      "criteria": {
+        "pass_rule": "Identifies non-obvious edge cases (e.g. future timestamps, clock drift, division by zero, replay attacks).",
+        "fail_rule": "Only addresses standard happy-path inputs and misses prominent boundary pitfalls."
+      },
+      "rubric_evidence": "Exhaustive edge case matrices and boundary parameter checks."
+    },
+    {
+      "id": "M12",
+      "name": "Resistance to Hallucination",
+      "dimension": "EH",
+      "weight": 0.0833,
+      "description": "Refrains from inventing non-existent APIs, libraries, parameters, or citations; explicitly issues notices when uncertain.",
+      "criteria": {
+        "pass_rule": "Uses verified, real API signatures; explicitly flags unverified assumptions or issues hallucination notices on obscure items.",
+        "fail_rule": "Confidently invents fake functions, synthetic parameters, or fabricated academic citations."
+      },
+      "rubric_evidence": "Strict accuracy of code libraries and explicit disclaimers when working from memory."
+    }
+  ]
+}
