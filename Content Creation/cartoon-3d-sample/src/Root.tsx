@@ -3,10 +3,20 @@ import { Composition } from "remotion";
 import { BridgeShort, BridgeSample, BRIDGE_FRAMES, SAMPLE_FRAMES } from "./videos/bridge/Bridge";
 import { SleepyBallShort, SLEEPY_BALL_FRAMES } from "./videos/sleepy-ball/SleepyBall";
 import { BennySleepyBall3D, BENNY_V1_FRAMES } from "./videos/benny-v1/BennySleepyBall3D";
+import { CloudElephantFunFact3D, FUN_FACT_FRAMES } from "./videos/fun-fact/CloudElephantFunFact3D";
 
 export const Root: React.FC = () => {
   return (
     <>
+      <Composition
+        id="CloudElephantFunFact3D"
+        component={CloudElephantFunFact3D}
+        durationInFrames={FUN_FACT_FRAMES}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ preset: "final" as const }}
+      />
       <Composition
         id="BennySleepyBall3D"
         component={BennySleepyBall3D}
