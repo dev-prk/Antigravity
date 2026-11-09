@@ -135,12 +135,12 @@ export const Bunny3D: React.FC<Bunny3DProps> = ({
     rightArmRot = [-0.95 + Math.sin(phase * 6) * 0.18, -0.25, -0.25];
     earBounce = Math.sin(phase * 4) * 0.1;
   } else if (pose === "shrug") {
-    // Cute confused/gentle shrug: palms out, shoulders up, head tilted
+    // Cute confused/gentle shrug: both arms extended wide outward to the sides, head tilted
     const w = 0.5 + 0.5 * Math.sin(phase * 2.2);
     headRoll = 0.22;
-    headPitch = 0.06;
-    leftArmRot = [-0.35, 0.2, 0.95 + w * 0.12];
-    rightArmRot = [-0.35, -0.2, -0.95 - w * 0.12];
+    headPitch = 0.04;
+    leftArmRot = [-0.25, 0, 1.25 + w * 0.12];
+    rightArmRot = [-0.25, 0, -1.25 - w * 0.12];
   } else if (pose === "kick") {
     // Wind-up (0..0.4) -> Kick impact (0.4..0.7) -> Follow-through (0.7..1.0)
     const p = clamp01(kickProgress);
@@ -612,18 +612,18 @@ export const RedBall3D: React.FC<RedBall3DProps> = ({
             const s = (0.55 + u * 0.65) * (1 - Math.pow(u, 3));
             return (
               <group key={idx} position={[x, y, 0]} scale={s} rotation={[0, 0, -0.15 + idx * 0.08]}>
-                {/* Top bar of Z */}
-                <mesh position={[0, 0.08, 0]}>
+                {/* Top horizontal bar of Z */}
+                <mesh position={[0, 0.08, 0]} rotation={[0, 0, Math.PI / 2]}>
                   <capsuleGeometry args={[0.022, 0.12, 8, 12]} />
                   <meshStandardMaterial color="#FFF6B3" emissive="#FFD166" emissiveIntensity={0.35} />
                 </mesh>
                 {/* Diagonal bar of Z */}
-                <mesh position={[0, 0, 0]} rotation={[0, 0, -0.78]}>
-                  <capsuleGeometry args={[0.022, 0.16, 8, 12]} />
+                <mesh position={[0, 0, 0]} rotation={[0, 0, -0.72]}>
+                  <capsuleGeometry args={[0.022, 0.15, 8, 12]} />
                   <meshStandardMaterial color="#FFF6B3" emissive="#FFD166" emissiveIntensity={0.35} />
                 </mesh>
-                {/* Bottom bar of Z */}
-                <mesh position={[0, -0.08, 0]}>
+                {/* Bottom horizontal bar of Z */}
+                <mesh position={[0, -0.08, 0]} rotation={[0, 0, Math.PI / 2]}>
                   <capsuleGeometry args={[0.022, 0.12, 8, 12]} />
                   <meshStandardMaterial color="#FFF6B3" emissive="#FFD166" emissiveIntensity={0.35} />
                 </mesh>

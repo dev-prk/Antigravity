@@ -95,17 +95,15 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
       ballSquash = Math.sin(((t - 14.05) / 0.27) * Math.PI) * 0.85;
     }
     if (t < 28.0) {
-      // Steady rolling across the sunny meadow from x=0 to x=11.4
+      // Steady rolling across the sunny meadow from x=0 to x=10.6
       const u = clamp01((t - 14.08) / (28.0 - 14.08));
-      // Fast initial kick impulse easing into steady constant velocity
-      const dist = Math.pow(u, 0.92) * 11.4;
+      const dist = Math.pow(u, 0.92) * 10.6;
       ballX = dist;
     } else {
-      // Shot 8 (28.0s - 29.7s): Decelerates up the soft slope of the Big Fluffy Hill and stops!
+      // Shot 8 (28.0s - 29.7s): Decelerates and stops cleanly against the base of the Big Fluffy Hill!
       const uStop = smoothstep(28.0, 29.65, t);
-      ballX = lerp(11.4, 12.82, uStop);
-      // Slight gentle climb up the base of the fluffy hill mound
-      ballY = smoothstep(12.0, 12.82, ballX) * 0.26;
+      ballX = lerp(10.6, 11.65, uStop);
+      ballY = smoothstep(11.1, 11.65, ballX) * 0.08;
       if (t >= 29.4 && t <= 29.8) {
         ballSquash = Math.sin(((t - 29.4) / 0.4) * Math.PI) * 0.45;
       }
@@ -186,8 +184,8 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
     bennyRotY = 0.85;
   } else if (t < 28.2) {
     // Shots 5b, 6, 7: Benny hops joyfully alongside the rolling ball!
-    bennyX = ballX - 1.55;
-    bennyZ = 0.15;
+    bennyX = ballX - 2.15;
+    bennyZ = 0.12;
     bennyRotY = 0.65;
     if (t >= 23.45 && t <= 24.35) {
       bennyPose = "clap";
@@ -202,13 +200,13 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
   } else if (t < 32.0) {
     // Shot 8: Ball slows & stops at the Big Fluffy Hill; Benny hops up and admires it
     const arriveU = smoothstep(28.2, 29.8, t);
-    bennyX = lerp(9.85, 10.95, arriveU);
+    bennyX = lerp(8.45, 8.95, arriveU);
     bennyPose = t < 29.6 ? "hop" : "idle";
     bennyPhase = t < 29.6 ? t * 1.5 : t;
-    bennyRotY = 0.45;
+    bennyRotY = 0.35;
   } else if (t < 37.0) {
     // Shot 9: Chorus repeat ("Still stays still, clap clap! Rolling keeps rolling, whoosh!")
-    bennyX = 10.95;
+    bennyX = 8.95;
     bennyRotY = 0.12;
     if (t >= 33.5 && t <= 34.4) {
       bennyPose = "clap";
@@ -219,8 +217,8 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
     }
   } else {
     // Shot 10 (37.0s - 40.0s): "Bye-bye, friends! Hop, hop, hooray!"
-    bennyX = 10.95;
-    bennyRotY = 0.05;
+    bennyX = 8.95;
+    bennyRotY = 0.08;
     bennyPose = t >= 38.15 && t <= 38.85 ? "cheer" : "wave";
   }
 
@@ -229,77 +227,77 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
   // -------------------------------------------------------------------------
   const showBabies = t >= 18.05;
   const babyConfigs = [
-    { scarf: BENNY_PALETTE.scarfPink, popStart: 18.08, baseOffset: -1.1, z: -0.95 },
-    { scarf: BENNY_PALETTE.scarfMint, popStart: 18.26, baseOffset: -0.15, z: -1.12 },
-    { scarf: BENNY_PALETTE.scarfLilac, popStart: 18.44, baseOffset: 0.8, z: -0.95 },
+    { scarf: BENNY_PALETTE.scarfPink, popStart: 18.08, baseOffset: -0.75, z: -0.72 },
+    { scarf: BENNY_PALETTE.scarfMint, popStart: 18.26, baseOffset: 0.0, z: -0.88 },
+    { scarf: BENNY_PALETTE.scarfLilac, popStart: 18.44, baseOffset: 0.75, z: -0.72 },
   ];
 
   // -------------------------------------------------------------------------
-  // 5. 10-SHOT CAMERA CHOREOGRAPHY (Exact framing from benny_production_pack.md)
+  // 5. 10-SHOT CAMERA CHOREOGRAPHY (Full ear headroom + clear staging in every shot)
   // -------------------------------------------------------------------------
-  let camPos: [number, number, number] = [-0.6, 1.4, 4.2];
-  let camLook: [number, number, number] = [-0.6, 0.9, 0.0];
-  let camFov = 38;
+  let camPos: [number, number, number] = [-0.6, 1.55, 5.2];
+  let camLook: [number, number, number] = [-0.6, 1.12, 0.0];
+  let camFov = 40;
 
   if (t < 3.0) {
-    // Shot 1 (0:00-0:03): Close-up whip-pan with zooming ball, locking on Benny & Ball
+    // Shot 1 (0:00-0:03): Whip-pan with zooming ball, locking on Benny & Ball with full ear headroom
     const panU = smoothstep(0.05, 0.85, t);
-    camPos = [lerp(-2.4, -0.68, panU), 1.32, 3.65];
-    camLook = [lerp(-2.8, -0.68, panU), 0.88, 0.0];
-    camFov = 36;
+    camPos = [lerp(-2.4, -0.68, panU), 1.52, 5.15];
+    camLook = [lerp(-2.8, -0.68, panU), 1.12, 0.0];
+    camFov = 39;
   } else if (t < 7.0) {
     // Shot 2 (0:03-0:07): Wide meadow shot, slow push-in as butterfly lands on sleepy ball
     const u = (t - 3.0) / 4.0;
-    camPos = [-0.55, lerp(1.75, 1.55, u), lerp(5.4, 4.5, u)];
-    camLook = [-0.55, 0.92, 0.0];
+    camPos = [-0.55, lerp(1.78, 1.62, u), lerp(5.85, 5.25, u)];
+    camLook = [-0.55, 1.12, 0.0];
     camFov = 40;
   } else if (t < 10.0) {
-    // Shot 3 (0:07-0:10): Locked Close-Up on sleeping ball & shrugging Benny during 2s pause
-    camPos = [-0.45, 1.18, 3.25];
-    camLook = [-0.48, 0.78, 0.0];
-    camFov = 35;
+    // Shot 3 (0:07-0:10): Locked shot on sleeping ball & shrugging Benny during 2s pause
+    camPos = [-0.52, 1.48, 4.95];
+    camLook = [-0.52, 1.08, 0.0];
+    camFov = 38;
   } else if (t < 14.0) {
     // Shot 4 (0:10-0:14): Medium eye-level shot for "Let's push!" interactive pause
     const u = smoothstep(10.0, 13.8, t);
-    camPos = [-0.62, 1.35, lerp(3.95, 3.65, u)];
-    camLook = [-0.62, 0.9, 0.0];
-    camFov = 38;
+    camPos = [-0.62, 1.52, lerp(5.35, 5.05, u)];
+    camLook = [-0.62, 1.1, 0.0];
+    camFov = 39;
   } else if (t < 18.0) {
-    // Shot 5 (0:14-0:18): Low-angle side tracking shot as Benny kicks & ball rolls!
-    camPos = [ballX - 0.65, 1.15, 4.25];
-    camLook = [ballX - 0.35, 0.82, 0.0];
-    camFov = 40;
+    // Shot 5 (0:14-0:18): Side tracking shot as Benny kicks & ball rolls!
+    camPos = [ballX - 0.85, 1.48, 5.35];
+    camLook = [ballX - 0.55, 1.08, 0.0];
+    camFov = 41;
   } else if (t < 22.0) {
     // Shot 6 (0:18-0:22): Medium-wide surprise shot as 3 Baby Bunnies pop out of the grass!
     const u = smoothstep(18.0, 19.2, t);
-    const focusX = lerp(ballX - 0.3, 6.4, 0.55);
-    camPos = [focusX, 1.48 + Math.sin(u * Math.PI) * 0.12, 4.95];
-    camLook = [focusX, 0.92, -0.35];
-    camFov = 41;
+    const focusX = lerp(ballX - 0.4, 5.8, 0.55);
+    camPos = [focusX, 1.58 + Math.sin(u * Math.PI) * 0.1, 5.65];
+    camLook = [focusX, 1.1, -0.3];
+    camFov = 42;
   } else if (t < 28.0) {
     // Shot 7 (0:22-0:28): Tracking parade shot with gentle musical sway
     const swayY = Math.sin(t * 3.1) * 0.06;
-    camPos = [ballX - 0.85, 1.52 + swayY, 5.15];
-    camLook = [ballX - 0.65, 0.92, -0.25];
-    camFov = 41;
+    camPos = [ballX - 1.05, 1.58 + swayY, 5.75];
+    camLook = [ballX - 0.85, 1.1, -0.25];
+    camFov = 42;
   } else if (t < 32.0) {
     // Shot 8 (0:28-0:32): Locked side-wide shot as the Red Ball slows and stops at the Big Fluffy Hill
-    camPos = [11.65, 1.62, 5.55];
-    camLook = [11.85, 0.95, 0.0];
+    camPos = [10.65, 1.65, 6.05];
+    camLook = [10.85, 1.1, -0.1];
     camFov = 42;
   } else if (t < 37.0) {
     // Shot 9 (0:32-0:37): Medium group shot with slight celebratory orbit for Chorus 2
     const u = (t - 32.0) / 5.0;
-    const orbitX = Math.sin((u - 0.5) * 0.55) * 0.85;
-    camPos = [11.35 + orbitX, 1.48, 4.65];
-    camLook = [11.35, 0.95, -0.25];
-    camFov = 39;
+    const orbitX = Math.sin((u - 0.5) * 0.55) * 0.65;
+    camPos = [10.35 + orbitX, 1.58, 5.55];
+    camLook = [10.35, 1.1, -0.2];
+    camFov = 41;
   } else {
-    // Shot 10 (0:37-0:40): Warm close-up / group farewell with slow peaceful pull-out
+    // Shot 10 (0:37-0:40): Warm group farewell with slow peaceful pull-out
     const u = smoothstep(37.0, 40.0, t);
-    camPos = [11.25, lerp(1.38, 1.48, u), lerp(4.05, 4.75, u)];
-    camLook = [11.25, 0.95, -0.2];
-    camFov = 38;
+    camPos = [10.35, lerp(1.55, 1.65, u), lerp(5.35, 5.95, u)];
+    camLook = [10.35, 1.1, -0.2];
+    camFov = 40;
   }
 
   // Periodic natural eye blink
@@ -321,7 +319,7 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
         <CameraRig pos={camPos} lookAt={camLook} fov={camFov} />
 
         {/* 3D Painted Storybook Meadow, Fluffy Hill & Three-Point Lighting */}
-        <MeadowWorld3D cloudDrift={t * 0.25} hillX={14.2} preset={preset} />
+        <MeadowWorld3D cloudDrift={t * 0.25} hillX={14.6} preset={preset} />
 
         {/* Benny the Bunny (True 3D Volumetric Rig) */}
         <Bunny3D
@@ -351,8 +349,8 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
             let bPhase = t + idx * 0.35;
 
             if (t >= 22.0 && t < 28.2) {
-              // Hop alongside Benny & the Red Ball in Shot 7
-              bx = ballX - 0.8 + b.baseOffset * 0.85;
+              // Hop alongside Benny & the Red Ball in Shot 7 (neatly between Benny and the Ball)
+              bx = ballX - 1.05 + b.baseOffset * 0.8;
               bRotY = 0.55;
               if (t >= 23.45 && t <= 24.35) {
                 bPose = "clap";
@@ -366,17 +364,17 @@ export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset 
               }
             } else if (t >= 28.2 && t < 32.0) {
               const u = smoothstep(28.2, 29.8, t);
-              bx = lerp(10.4 + b.baseOffset * 0.85, 11.55 + b.baseOffset * 0.78, u);
+              bx = lerp(9.55 + b.baseOffset * 0.8, 10.35 + b.baseOffset * 0.78, u);
               bPose = t < 29.6 ? "hop" : "idle";
               bRotY = 0.25;
             } else if (t >= 32.0 && t < 37.0) {
-              bx = 11.55 + b.baseOffset * 0.78;
+              bx = 10.35 + b.baseOffset * 0.78;
               bRotY = 0.05;
               if (t >= 33.5 && t <= 34.4) bPose = "clap";
               else if (t >= 35.4 && t <= 36.4) bPose = "whoosh";
               else bPose = "cheer";
             } else if (t >= 37.0) {
-              bx = 11.55 + b.baseOffset * 0.78;
+              bx = 10.35 + b.baseOffset * 0.78;
               bRotY = 0.0;
               bPose = t >= 38.15 && t <= 38.85 ? "cheer" : "wave";
             }
