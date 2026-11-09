@@ -7,7 +7,7 @@ This private repository backs up and continuously syncs all of Devesh's Antigrav
 You do **not** need to configure or explain anything manually. Just open Antigravity and paste this repository's URL into the chat (or clone it and open it):
 
 ```text
-https://github.com/<your-username>/<your-repo>.git
+https://github.com/dev-prk/Antigravity.git
 ```
 
 The agent will read [`GEMINI.md`](./GEMINI.md) and automatically run [`.agents/scripts/bootstrap.sh`](./.agents/scripts/bootstrap.sh) to restore:
@@ -18,5 +18,5 @@ The agent will read [`GEMINI.md`](./GEMINI.md) and automatically run [`.agents/s
 
 ### Or Run One Command in Terminal:
 ```sh
-git clone <REPO_URL> ~/Documents/Antigravity && ~/Documents/Antigravity/.agents/scripts/bootstrap.sh
+git clone git@github.com:dev-prk/Antigravity.git ~/Documents/Antigravity && ~/Documents/Antigravity/.agents/scripts/bootstrap.sh
 ```
