@@ -249,7 +249,8 @@ const HeroCloud3D: React.FC<{
             emissive="#E8F7FF"
             emissiveIntensity={0.22}
             transparent={showDropletsInside}
-            opacity={cloudOpacity}
+            opacity={showDropletsInside ? 0.26 : 1.0}
+            depthWrite={!showDropletsInside}
           />
         </mesh>
       ))}
@@ -287,7 +288,7 @@ const HeroCloud3D: React.FC<{
 
       {/* Billions of Tiny Glowing 3D Water Droplets Inside the Cloud (Shots 4 & 5) */}
       {showDropletsInside && (
-        <group>
+        <group position={[0, 0.05, 0.45]}>
           {droplets.map((d, i) => {
             const bobY = Math.sin(phase * d.speed + i) * 0.14;
             return (
@@ -296,7 +297,7 @@ const HeroCloud3D: React.FC<{
                 <meshPhysicalMaterial
                   color="#38BDF8"
                   emissive="#0EA5E9"
-                  emissiveIntensity={0.45}
+                  emissiveIntensity={0.55}
                   roughness={0.1}
                   clearcoat={1.0}
                 />
@@ -421,9 +422,9 @@ export const CloudElephantFunFact3D: React.FC<{ preset?: RenderPreset }> = ({ pr
     cloudPos = [0.0, 3.1 + Math.sin(t * 3.0) * 0.1, -0.2];
     cloudScale = 1.1;
   } else if (t < 27.5) {
-    // Shots 4 & 5: Center stage for microscopic droplets & rising warm air updrafts
-    cloudPos = [0.0, 2.65 + Math.sin(t * 2.2) * 0.1, 0.0];
-    cloudScale = 1.18;
+    // Shots 4 & 5: Center stage for microscopic droplets & rising warm air updrafts (clear above ears)
+    cloudPos = [0.25, 3.12 + Math.sin(t * 2.2) * 0.08, 0.0];
+    cloudScale = 1.12;
   } else {
     // Shots 6 & 7: Rains gently and frames the glowing rainbow finale
     cloudPos = [-2.2, 3.25 + Math.sin(t * 2.0) * 0.1, -1.2];
