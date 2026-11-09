@@ -1,0 +1,69 @@
+{
+  "fps": 30,
+  "totalSec": 40,
+  "totalFrames": 1200,
+  "hopInStart": 0,
+  "hopInEnd": 1.6,
+  "pause1Start": 4.873,
+  "pause1End": 6.873,
+  "pause2Start": 12.269,
+  "pause2End": 15.269,
+  "kickWindupSec": 19.775,
+  "kickImpactSec": 20.275,
+  "rollStartSec": 20.275,
+  "hillSlowStartSec": 30.911,
+  "ballStopSec": 33.011,
+  "waveStartSec": 34.011,
+  "timeline": [
+    {
+      "id": "line1",
+      "text": "Hello, little friends! This is Benny the Bunny. And this is his red ball.",
+      "startSec": 0.5,
+      "endSec": 4.873,
+      "pauseEndSec": 6.873,
+      "startFrame": 15,
+      "endFrame": 146,
+      "pauseEndFrame": 206
+    },
+    {
+      "id": "line2",
+      "text": "The ball is sleeping. Look! It isn't moving at all. Benny waits... and waits...",
+      "startSec": 6.873,
+      "endSec": 12.269,
+      "pauseEndSec": 15.269,
+      "startFrame": 206,
+      "endFrame": 368,
+      "pauseEndFrame": 458
+    },
+    {
+      "id": "line3",
+      "text": "The ball doesn't move by itself. It stays sleepy, until... somebody pushes it!",
+      "startSec": 15.269,
+      "endSec": 20.125,
+      "pauseEndSec": 21.425,
+      "startFrame": 458,
+      "endFrame": 604,
+      "pauseEndFrame": 643
+    },
+    {
+      "id": "line4",
+      "text": "Whoosh! Now the ball is rolling. And do you know what? Once it rolls, it wants to keep rolling and rolling... until something stops it, like Benny's paws, or a big, fluffy hill.",
+      "startSec": 21.425,
+      "endSec": 32.411,
+      "pauseEndSec": 34.011,
+      "startFrame": 643,
+      "endFrame": 972,
+      "pauseEndFrame": 1020
+    },
+    {
+      "id": "line5",
+      "text": "Things that are still stay still. Things that move keep moving. Bye-bye, friends!",
+      "startSec": 34.011,
+      "endSec": 38.785,
+      "pauseEndSec": 39.985,
+      "startFrame": 1020,
+      "endFrame": 1164,
+      "pauseEndFrame": 1200
+    }
+  ]
+}
