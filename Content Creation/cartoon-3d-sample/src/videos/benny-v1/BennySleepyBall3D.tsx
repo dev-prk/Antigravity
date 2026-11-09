@@ -1,7 +1,8 @@
 import React from "react";
+import * as THREE from "three";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
-import { PerspectiveCamera } from "@react-three/drei";
+import { useThree } from "@react-three/fiber";
 import {
   BENNY_PALETTE,
   Bunny3D,
@@ -41,15 +42,14 @@ const CameraRig: React.FC<{
   lookAt: [number, number, number];
   fov?: number;
 }> = ({ pos, lookAt, fov = 40 }) => {
-  const camRef = React.useRef<any>(null);
-  React.useLayoutEffect(() => {
-    if (camRef.current) {
-      camRef.current.position.set(pos[0], pos[1], pos[2]);
-      camRef.current.lookAt(lookAt[0], lookAt[1], lookAt[2]);
-      camRef.current.updateProjectionMatrix();
-    }
-  }, [pos, lookAt, fov]);
-  return <PerspectiveCamera ref={camRef} makeDefault fov={fov} near={0.1} far={120} position={pos} />;
+  const camera = useThree((s) => s.camera as THREE.PerspectiveCamera);
+  camera.position.set(pos[0], pos[1], pos[2]);
+  camera.lookAt(lookAt[0], lookAt[1], lookAt[2]);
+  if (camera.fov !== fov) {
+    camera.fov = fov;
+    camera.updateProjectionMatrix();
+  }
+  return null;
 };
 
 export const BennySleepyBall3D: React.FC<{ preset?: RenderPreset }> = ({ preset = "final" }) => {
