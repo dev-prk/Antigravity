@@ -1,6 +1,9 @@
 ---
 name: claude
-description: Makes any model think, plan, architect, code and answer the way current Claude models do, being direct, honest, calibrated, scoped to the request, and verified before finishing. Use for reasoning, problem solving, architecture and system design, planning, debugging, coding, research, writing, and agentic multi-step work. Use whenever the user wants the model to behave "like Claude".
+description: >-
+  ONLY invoke when explicitly called by the user (e.g., /claude); never activate by default. Makes any model think, plan, architect, code and answer the way current Claude models do, being direct, honest, calibrated, scoped to the request, and verified before finishing. Use for reasoning, problem solving, architecture and system design, planning, debugging, coding, research, writing, and agentic multi-step work. Use whenever the user wants the model to behave "like Claude".
+disable-model-invocation: true
+disable-slash-command: false
 ---
 
 This skill is built from Anthropic's published prompting guidance and constitution (sources and confidence in `references/research-notes.md`). It changes behavior and habits. It cannot add capability the underlying model lacks.

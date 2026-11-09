@@ -33,7 +33,11 @@ If the user gives you (the Antigravity agent) a link to this GitHub repository o
    All projects live as subdirectories inside `~/Documents/Antigravity/` (e.g., `Random Ask/`, `Automation/`, or any new project folder). Never store project code solely in `/tmp`, `~/Desktop`, or untracked directories.
 2. **Where to Store Skills & Rules:**
    All reusable skills MUST be stored in `~/Documents/Antigravity/.agents/skills/<skill-name>/SKILL.md` (which is symlinked to `~/.gemini/config/skills/`). Creating or updating a skill here makes it immediately available across all workspaces and pushes it to GitHub automatically.
-3. **Automated GitHub Sync (`hooks.json`):**
+3. **Explicit-Only Skill Invocation Rule (Mandatory for All Custom Skills):**
+   - **Never Invoke by Default**: Custom skills in `~/.gemini/config/skills/` (`~/Documents/Antigravity/.agents/skills/`) MUST NEVER be activated automatically or by default based on general topic matching.
+   - **Explicit Call Required**: Only activate or read a custom skill when the user explicitly invokes it by slash command (e.g., `/claude`, `/fable-mindset`, `/orchestration`, `/loop-engineering`, `/chain-of-mindset`, `/universal-fable-5`, `/ponytail`, `/karpathy-guidelines`, `/founder-skill`, `/founder-board`, etc.) or explicitly names the skill in their prompt.
+   - **Frontmatter Enforcement**: Every existing and newly created `SKILL.md` MUST include `disable-model-invocation: true` and `disable-slash-command: false` in its YAML frontmatter, and its `description` must state `ONLY invoke when explicitly called by the user (e.g., /<skill-name>); never activate by default.`
+4. **Automated GitHub Sync (`hooks.json`):**
    - **On `SessionStart`**: `.agents/scripts/session-start.sh` automatically runs `bootstrap.sh` and `git pull --rebase --autostash origin main` so the workspace always starts with the latest online commits.
    - **On `Stop` (End of Every Turn)**: `.agents/scripts/auto-sync.sh` automatically stages all changes (`git add -A`), creates a timestamped commit, and pushes to `origin main`.
    - **Manual Verification**: Whenever you finish creating a major feature, skill, or project, verify that `.agents/scripts/auto-sync.sh` has cleanly committed and pushed all changes (`git status` should be clean).
