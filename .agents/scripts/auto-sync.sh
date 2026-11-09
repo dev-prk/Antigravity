@@ -39,11 +39,9 @@ LOG_FILE="$REPO_ROOT/.agents/sync.log"
     echo "[$(date -u +"%Y-%m-%dT%H:%M:%SZ")] Committed changes: $CHANGED_FILES"
   fi
 
-  # Push to GitHub if remote 'origin' exists
+  # Push to GitHub non-blocking in the background if remote 'origin' exists
   if git remote get-url origin >/dev/null 2>&1; then
-    git pull --rebase --autostash origin main || true
-    git push -u origin main || true
-    echo "[$(date -u +"%Y-%m-%dT%H:%M:%SZ")] Pushed to origin/main."
+    nohup sh -c 'git pull --rebase --autostash origin main && git push -u origin main && echo "[$(date -u +"%Y-%m-%dT%H:%M:%SZ")] Pushed to origin/main."' >>"$LOG_FILE" 2>&1 &
   fi
 } >>"$LOG_FILE" 2>&1 || true
 
