@@ -1,0 +1,29 @@
+{
+  "name": "cartoon-3d-sample",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "remotion": "remotion",
+    "render:sample": "remotion render src/index.ts BridgeSample out/bridge-sample-silent.mp4 --codec h264 --crf 18",
+    "render:full": "remotion render src/index.ts BridgeShort out/bridge-full-silent.mp4 --codec h264 --crf 18"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/postprocessing": "^2.16.3",
+    "@remotion/bundler": "4.0.242",
+    "@remotion/cli": "4.0.242",
+    "@remotion/renderer": "4.0.242",
+    "@remotion/three": "4.0.242",
+    "ffmpeg-static": "^5.2.0",
+    "postprocessing": "^6.36.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.242",
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/three": "^0.169.0",
+    "typescript": "^5.6.3"
+  }
+}
