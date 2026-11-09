@@ -53,8 +53,8 @@ const hillY = (x: number, z = 0): number => {
 
 // Ball X trajectory over time t (seconds)
 const ballXAt = (t: number): number => {
-  const x0 = -0.15;
-  const xStop = 7.45; // halfway up the big fluffy hill!
+  const x0 = 0.22;
+  const xStop = 7.25; // halfway up the big fluffy hill!
   if (t <= EV.kickImpactSec) return x0;
   if (t >= EV.ballStopSec) return xStop;
   const u = (t - EV.kickImpactSec) / (EV.ballStopSec - EV.kickImpactSec);
@@ -65,10 +65,10 @@ const ballXAt = (t: number): number => {
 
 // Benny X trajectory over time t (seconds)
 const bennyXAt = (t: number): { x: number; hopY: number; phase: number; moving: boolean } => {
-  const standX = -1.15;
+  const standX = -0.68;
   if (t < EV.hopInEnd) {
     const u = clamp01(t / EV.hopInEnd);
-    const x = -3.8 + (standX - -3.8) * smooth(u);
+    const x = -3.2 + (standX - -3.2) * smooth(u);
     const ph = (u * 4) % 1;
     const hopY = Math.sin(ph * Math.PI) * 0.42;
     return { x, hopY, phase: ph, moving: true };
@@ -79,21 +79,21 @@ const bennyXAt = (t: number): { x: number; hopY: number; phase: number; moving: 
   if (t < EV.kickImpactSec + 0.35) {
     // Windup step back then kick lunge forward
     const u = clamp01((t - EV.kickWindupSec) / (EV.kickImpactSec - EV.kickWindupSec));
-    const lunge = u < 0.6 ? -0.22 * smooth(u / 0.6) : -0.22 + 0.52 * smooth((u - 0.6) / 0.4);
+    const lunge = u < 0.6 ? -0.22 * smooth(u / 0.6) : -0.22 + 0.48 * smooth((u - 0.6) / 0.4);
     const hopY = u < 0.6 ? 0.12 * Math.sin((u / 0.6) * Math.PI) : 0;
     return { x: standX + lunge, hopY, phase: u, moving: true };
   }
   // Follow the rolling ball across the meadow and up the hill, stopping right behind it
   const followStart = EV.kickImpactSec + 0.55;
   const followEnd = EV.ballStopSec + 0.15;
-  const endX = 6.35;
+  const endX = 6.32;
   if (t < followStart) {
-    return { x: standX + 0.3, hopY: 0, phase: 0, moving: false };
+    return { x: standX + 0.26, hopY: 0, phase: 0, moving: false };
   }
   if (t < followEnd) {
     const u = (t - followStart) / (followEnd - followStart);
     const eased = smooth(u);
-    const x = standX + 0.3 + (endX - (standX + 0.3)) * eased;
+    const x = standX + 0.26 + (endX - (standX + 0.26)) * eased;
     const hops = 14;
     const ph = (u * hops) % 1;
     const hopY = Math.sin(ph * Math.PI) * 0.34 * (1 - 0.35 * u);
@@ -461,16 +461,16 @@ class SleepyBallWorld {
     groundMesh.receiveShadow = true;
     R.add(groundMesh);
 
-    // Extra fluffy hill puffs on the right so the hill reads unmistakably as a "big, fluffy hill"
+    // Extra fluffy hill mounds placed BEHIND the rolling lane (z = -3.8..-5.5) so they never block the camera!
     const hillLeafMat = twoTone(new THREE.MeshLambertMaterial({ color: "#68b84e" }));
     for (const [hx, hz, rx, ry, rz] of [
-      [10.2, -0.8, 3.6, 1.6, 3.2],
-      [11.8, 0.9, 3.1, 1.45, 2.8],
-      [8.8, 1.2, 2.4, 1.1, 2.2],
+      [9.5, -4.2, 3.6, 1.55, 2.4],
+      [12.2, -3.6, 3.2, 1.45, 2.2],
+      [7.2, -4.5, 2.6, 1.15, 2.0],
     ] as const) {
       const puff = new THREE.Mesh(new THREE.SphereGeometry(1, 20, 16), hillLeafMat);
       puff.scale.set(rx, ry, rz);
-      puff.position.set(hx, hillY(hx, hz) + ry * 0.35, hz);
+      puff.position.set(hx, hillY(hx, hz) + ry * 0.3, hz);
       puff.castShadow = true;
       puff.receiveShadow = true;
       R.add(puff);
@@ -679,33 +679,33 @@ class SleepyBallWorld {
     const sScale = Math.max(0.5, 1 - bennyState.hopY * 0.7);
     this.bennyShadow.scale.set(1.1 * sScale, 1, 0.8 * sScale);
 
-    // 2. Determine Shot & Camera Choreography (6 shots across 1200 frames)
-    let camPos = new THREE.Vector3(0, 1.8, 5.2);
-    let camLook = new THREE.Vector3(-0.5, 0.95, 0);
-    let fov = 38;
+    // 2. Determine Shot & Camera Choreography (6 shots across 1200 frames, keeping both Benny & Ball 100% in 9:16 frame)
+    let camPos = new THREE.Vector3(-0.2, 1.65, 5.8);
+    let camLook = new THREE.Vector3(-0.22, 1.05, 0);
+    let fov = 40;
     let roll = 0;
     let cInf = 8;
 
     if (t < EV.pause1End) {
       // Shot 1 (0..6.873s): Sunny meadow establishing + creeping push-in on Benny & sleepy red ball
       const u = t / EV.pause1End;
-      const push = 1 - 0.14 * u;
-      camPos.set(-0.65, 1.55, 5.4 * push);
-      camLook.set(-0.6, 0.92, 0);
+      const push = 1 - 0.1 * u;
+      camPos.set(-0.22, 1.65, 6.2 * push);
+      camLook.set(-0.22, 1.05, 0);
       cInf = 7;
     } else if (t < EV.pause2End) {
-      // Shot 2 (6.873..15.269s): Close-up with creamy DOF on the sleeping ball & waiting Benny ("Benny waits... and waits...")
+      // Shot 2 (6.873..15.269s): Medium close-up with creamy DOF on BOTH waiting Benny & sleeping ball
       const u = (t - EV.pause1End) / (EV.pause2End - EV.pause1End);
-      const push = 1 - 0.12 * u;
-      camPos.set(-0.45, 1.18, 3.45 * push);
-      camLook.set(-0.52, 0.78, 0);
-      cInf = 14;
+      const push = 1 - 0.1 * u;
+      camPos.set(-0.2, 1.42, 4.95 * push);
+      camLook.set(-0.2, 0.98, 0);
+      cInf = 12;
     } else if (t < EV.rollStartSec + 1.15) {
-      // Shot 3 (15.269..21.425s): Medium action framing for the kick + 6-frame impact shake!
+      // Shot 3 (15.269..21.425s): Action framing for the kick + 6-frame impact shake!
       const u = clamp01((t - EV.pause2End) / 5.0);
-      camPos.set(-0.5 + 0.25 * u, 1.38, 4.35 - 0.25 * u);
-      camLook.set(-0.45 + 0.35 * u, 0.85, 0);
-      cInf = 11;
+      camPos.set(-0.2 + 0.25 * u, 1.52, 5.35 - 0.2 * u);
+      camLook.set(-0.18 + 0.3 * u, 1.0, 0);
+      cInf = 10;
       // 6-frame flip-sign impact kick at kickImpactSec
       const kf = f - Math.round(EV.kickImpactSec * FPS);
       if (kf >= 0 && kf < 7) {
@@ -716,24 +716,27 @@ class SleepyBallWorld {
       }
     } else if (t < 29.0) {
       // Shot 4 (21.425..29.0s): Smooth tracking glide following the rolling ball & hopping Benny across the meadow
-      camPos.set(bx - 0.65, by + 1.45, 4.6);
-      camLook.set(bx - 0.25, by + 0.85, 0);
-      roll = -0.025;
-      cInf = 10;
+      const midX = (bx + bennyState.x) * 0.5;
+      const midY = hillY(midX, 0);
+      camPos.set(midX, midY + 1.6, 5.4);
+      camLook.set(midX + 0.15, midY + 0.95, 0);
+      roll = -0.022;
+      cInf = 9;
     } else if (t < EV.waveStartSec) {
       // Shot 5 (29.0..34.011s): Wide hill view as the ball climbs the big fluffy hill, slows down, and stops at Benny's paws
       const u = glide((t - 29.0) / 1.8);
-      camPos.set(4.8 + 1.8 * u, 2.35 + 0.45 * u, 5.8 - 0.9 * u);
-      camLook.set(6.7, hillY(6.7, 0) + 0.82, 0);
-      cInf = 9;
-    } else {
-      // Shot 6 (34.011..40.0s): Golden-hour close medium finale on the hill as Benny waves goodbye!
-      const u = (t - EV.waveStartSec) / (40.0 - EV.waveStartSec);
-      const push = 1 - 0.1 * u;
       const topY = hillY(6.8, 0);
-      camPos.set(6.85, topY + 1.25, 3.65 * push);
-      camLook.set(6.85, topY + 0.88, 0);
-      cInf = 13;
+      camPos.set(5.8 + 0.95 * u, topY + 1.65, 6.2 - 0.5 * u);
+      camLook.set(6.75, topY + 1.05, 0);
+      cInf = 8;
+    } else {
+      // Shot 6 (34.011..40.0s): Golden-hour medium finale on the hill as Benny waves goodbye next to his ball!
+      const u = (t - EV.waveStartSec) / (40.0 - EV.waveStartSec);
+      const push = 1 - 0.09 * u;
+      const topY = hillY(6.8, 0);
+      camPos.set(6.78, topY + 1.52, 5.15 * push);
+      camLook.set(6.78, topY + 1.05, 0);
+      cInf = 11;
     }
 
     cam.position.copy(camPos);
@@ -867,9 +870,9 @@ class SleepyBallWorld {
     this.fxTex.needsUpdate = true;
     this.fxMesh.visible = fxMode !== "none";
     if (fxMode === "zzz") {
-      this.fxMesh.position.set(bx + 0.35, by + 1.15, 0.15);
+      this.fxMesh.position.set(bx + 0.08, by + 1.05, 0.15);
     } else if (fxMode === "question") {
-      this.fxMesh.position.set(bennyState.x + 0.55, bennyGroundY + 2.35, 0.15);
+      this.fxMesh.position.set(bennyState.x + 0.38, bennyGroundY + 2.35, 0.15);
     } else if (fxMode === "kick") {
       this.fxMesh.position.set(bx - 0.25, by + 0.52, 0.25);
     } else if (fxMode === "whoosh") {
