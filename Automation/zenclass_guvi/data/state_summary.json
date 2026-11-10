@@ -1,66 +1,54 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:20:52.165428+00:00",
+  "last_updated": "2026-11-10T22:31:19.312237+00:00",
   "summary": {
     "total_discovered": 1,
-    "total_completed": 0,
+    "total_completed": 1,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 1,
-    "success_rate_percent": 0.0,
-    "total_time_spent_seconds": 5.02,
+    "total_failed": 0,
+    "success_rate_percent": 100.0,
+    "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
         "total_discovered": 1,
-        "total_completed": 0,
+        "total_completed": 1,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 1,
-        "success_rate_percent": 0.0,
-        "time_spent_seconds": 5.02
+        "total_failed": 0,
+        "success_rate_percent": 100.0,
+        "time_spent_seconds": 0.0
       }
     },
     "by_category": {
-      "CodeKata": {
+      "General": {
         "total": 1,
-        "completed": 0,
-        "success_rate_percent": 0.0
+        "completed": 1,
+        "success_rate_percent": 100.0
       }
     },
-    "human_intervention_issues": [
-      {
-        "task_id": "guvi-sample-prob",
-        "platform": "guvi",
-        "category": "CodeKata",
-        "title": "Sample Prob",
-        "status": "FAILED",
-        "attempts": 1,
-        "failure_reason": "Submission did not yield positive 'Solved!' verification feedback",
-        "next_action": "EXTRACTING_AND_SOLVING",
-        "url": "https://www.guvi.in/code-kata/sample-prob/"
-      }
-    ]
+    "human_intervention_issues": []
   },
   "tasks": [
     {
-      "task_id": "guvi-sample-prob",
+      "task_id": "cli-t1",
       "platform": "guvi",
-      "task_category": "CodeKata",
-      "title": "Sample Prob",
-      "url": "https://www.guvi.in/code-kata/sample-prob/",
-      "status": "FAILED",
-      "attempt_count": 1,
-      "result": "SUBMISSION_FAILED",
-      "failure_reason": "Submission did not yield positive 'Solved!' verification feedback",
-      "next_action": "EXTRACTING_AND_SOLVING",
-      "time_spent_seconds": 5.01983118057251,
+      "task_category": "General",
+      "title": "Problem 1",
+      "url": "",
+      "status": "completed",
+      "attempt_count": 0,
+      "result": "Solved!",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
       "metadata": {},
-      "created_at": "2026-11-10T22:20:47.144870+00:00",
-      "updated_at": "2026-11-10T22:20:52.164942+00:00",
-      "timestamp": "2026-11-10T22:20:52.164942+00:00",
-      "attempts": 1,
-      "category": "CodeKata"
+      "created_at": "2026-11-10T22:31:19.311912+00:00",
+      "updated_at": "2026-11-10T22:31:19.311912+00:00",
+      "timestamp": "2026-11-10T22:31:19.311912+00:00",
+      "attempts": 0,
+      "category": "General"
     }
   ]
 }
