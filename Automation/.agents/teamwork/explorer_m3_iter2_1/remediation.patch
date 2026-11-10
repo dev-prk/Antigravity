@@ -1,0 +1,161 @@
+--- a/zenclass_guvi/solver/ace_adapter.py
++++ b/zenclass_guvi/solver/ace_adapter.py
+@@ -262,12 +262,12 @@
+ 
+ 
+ # Module-level functions matching dispatch and PROJECT.md requirements
+-def inject_code(page: Any, code: str) -> bool:
++def inject_code(page: Any, code: str, verify: bool = True) -> bool:
+     """
+     Inject source code into Ace Editor on Guvi CodeKata workspace.
+-    Fulfills dispatch mission signature: inject_code(page: Any, code: str) -> bool
+-    """
+-    return _default_adapter.inject_code(page, code)
++    Fulfills dispatch mission signature: inject_code(page: Any, code: str, verify: bool = True) -> bool
++    """
++    return _default_adapter.inject_code(page, code, verify=verify)
+ 
+ 
+ def get_editor_code(page: Any) -> str:
+--- a/zenclass_guvi/drivers/guvi_driver.py
++++ b/zenclass_guvi/drivers/guvi_driver.py
+@@ -323,38 +323,6 @@
+         # Allow server evaluation
+         time.sleep(1.5)
+ 
+-        # Handle mock/test environments where static HTML lacks client-side JS bundle
+-        if hasattr(self.page, "evaluate"):
+-            try:
+-                # Check if page is static fixture and call backend endpoint if necessary
+-                eval_script = """(args) => {
+-                    if (window._guvi_auth_dispatched) return;
+-                    window._guvi_auth_dispatched = true;
+-                    fetch('/usercheck.php', {
+-                        method: 'POST',
+-                        headers: {'Content-Type': 'application/json'},
+-                        body: JSON.stringify({
+-                            emails: args.email,
+-                            password: args.password,
+-                            loggedInType: 'loggedInUser'
+-                        })
+-                    }).then(r => r.json().then(data => {
+-                        if (data.status === 'success' && data.authToken) {
+-                            document.cookie = 'authToken=' + data.authToken + '; path=/';
+-                            window.location.href = '/code-kata/';
+-                        } else if (data.status === 'fail') {
+-                            const errs = document.querySelectorAll('.invalid-feedback');
+-                            errs.forEach(e => { e.style.display = 'block'; });
+-                        } else if (data.access === 'activate') {
+-                            const modal = document.querySelector('#myModal');
+-                            if (modal) modal.style.display = 'block';
+-                        }
+-                    })).catch(err => {});
+-                }"""
+-                self.page.evaluate(eval_script, {"email": user_email, "password": user_password})
+-                time.sleep(1.0)
+-            except Exception:
+-                pass
+ 
+         # Intercept immediate post-submit guardrails
+         self.check_guardrails(task_id="guvi-auth", context_desc="Guvi Credential Post-Submission")
+@@ -730,25 +698,6 @@
+         else:
+             logger.warning("Run Code button not found; skipping Run step.")
+ 
+-        # Handle mock/test environments lacking frontend script
+-        if hasattr(self.page, "evaluate"):
+-            try:
+-                self.page.evaluate("""() => {
+-                    fetch('/code-kata/question/run', {
+-                        method: 'POST',
+-                        headers: {'Content-Type': 'application/json'},
+-                        body: JSON.stringify({question_id: 1, code: '...', language: 'PYTHON 3'})
+-                    }).then(r => r.json()).then(data => {
+-                        const pane = document.querySelector('.test-results-pane');
+-                        if (pane) pane.style.display = 'block';
+-                        const pill = document.querySelector('.test-pill-status');
+-                        if (pill && data.testCases && data.testCases[0]) {
+-                            pill.textContent = data.testCases[0].status;
+-                        }
+-                    }).catch(e => {});
+-                }""")
+-            except Exception:
+-                pass
+ 
+         # Await progress modal completion
+         try:
+@@ -789,25 +738,6 @@
+         else:
+             logger.warning("Submit Code button not found.")
+ 
+-        # Handle mock/test environments lacking frontend script
+-        if hasattr(self.page, "evaluate"):
+-            try:
+-                self.page.evaluate("""() => {
+-                    fetch('/code-kata/question/submit', {
+-                        method: 'POST',
+-                        headers: {'Content-Type': 'application/json'},
+-                        body: JSON.stringify({question_id: 1, code: '...', language: 'PYTHON 3'})
+-                    }).then(r => r.json()).then(data => {
+-                        if (data.status === 'success') {
+-                            const qs = document.querySelector('.question-status');
+-                            if (qs) qs.textContent = 'Solved!';
+-                            const modal = document.querySelector('#success_modal');
+-                            if (modal) modal.style.display = 'block';
+-                        }
+-                    }).catch(e => {});
+-                }""")
+-            except Exception:
+-                pass
+ 
+         time.sleep(1.5)
+ 
+--- a/zenclass_guvi/tests/test_m3_guvi.py
++++ b/zenclass_guvi/tests/test_m3_guvi.py
+@@ -586,11 +586,11 @@
+     def tearDown(self):
+         self.state_manager.close()
+ 
+-    @patch("drivers.guvi_driver.extract_problem_spec")
+-    @patch("drivers.guvi_driver.generate_solution")
+-    @patch("drivers.guvi_driver.test_solution")
+-    @patch("drivers.guvi_driver.wait_for_editor")
+-    @patch("drivers.guvi_driver.inject_code")
++    @patch("drivers.guvi_driver.extract_problem_spec", autospec=True)
++    @patch("drivers.guvi_driver.generate_solution", autospec=True)
++    @patch("drivers.guvi_driver.test_solution", autospec=True)
++    @patch("drivers.guvi_driver.wait_for_editor", autospec=True)
++    @patch("drivers.guvi_driver.inject_code", autospec=True)
+     def test_solve_problem_successful_pipeline(
+         self,
+         mock_inject,
+@@ -668,10 +668,10 @@
+         self.assertEqual(task.attempt_count, 1)
+         self.assertEqual(task.metadata["points_earned"], 30)
+ 
+-    @patch("drivers.guvi_driver.extract_problem_spec")
+-    @patch("drivers.guvi_driver.generate_solution")
+-    @patch("drivers.guvi_driver.test_solution")
+-    @patch("drivers.guvi_driver.inject_code")
++    @patch("drivers.guvi_driver.extract_problem_spec", autospec=True)
++    @patch("drivers.guvi_driver.generate_solution", autospec=True)
++    @patch("drivers.guvi_driver.test_solution", autospec=True)
++    @patch("drivers.guvi_driver.inject_code", autospec=True)
+     def test_solve_problem_local_sandbox_failure_halts_submission(
+         self,
+         mock_inject,
+@@ -723,10 +723,10 @@
+         self.assertIn("Output mismatch", task.failure_reason)
+         self.assertEqual(task.next_action, "REVISE_SOLVER_TEMPLATE")
+ 
+-    @patch("drivers.guvi_driver.extract_problem_spec")
+-    @patch("drivers.guvi_driver.generate_solution")
+-    @patch("drivers.guvi_driver.test_solution")
+-    @patch("drivers.guvi_driver.wait_for_editor")
++    @patch("drivers.guvi_driver.extract_problem_spec", autospec=True)
++    @patch("drivers.guvi_driver.generate_solution", autospec=True)
++    @patch("drivers.guvi_driver.test_solution", autospec=True)
++    @patch("drivers.guvi_driver.wait_for_editor", autospec=True)
+     def test_solve_problem_ace_editor_failure(
+         self,
+         mock_wait_editor,
