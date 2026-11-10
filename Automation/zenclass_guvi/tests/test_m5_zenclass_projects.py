@@ -638,7 +638,10 @@ class TestZenClassProjectsDriver(unittest.TestCase):
                 return mock_confirm_btn
             if "sucess-popup-text" in sel:
                 return mock_popup_txt
+            if "validation-error" in sel:
+                return None
             return mock_card_btn
+
 
         self.mock_page.query_selector.side_effect = qs_side
         self.mock_page.query_selector_all.return_value = [mock_wrap_gh]
