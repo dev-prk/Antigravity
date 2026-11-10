@@ -28,6 +28,18 @@ from solver.ace_adapter import (
     get_editor_code,
     wait_for_editor,
 )
+from solver.project_synthesizer import (
+    ProjectSynthesizer,
+    ProjectSpec as ProjectSynthesisSpec,
+    ProjectType,
+    SynthesisResult,
+)
+from solver.project_validator import (
+    ProjectValidator,
+    ProjectValidationResult,
+    ValidationReport,
+    HTMLTagValidator,
+)
 
 __all__ = [
     # Extractor
@@ -52,4 +64,14 @@ __all__ = [
     "inject_code_into_ace",
     "get_editor_code",
     "wait_for_editor",
+    # Project Synthesizer & Validator
+    "ProjectSynthesizer",
+    "ProjectSynthesisSpec",
+    "ProjectType",
+    "SynthesisResult",
+    "ProjectValidator",
+    "ProjectValidationResult",
+    "ValidationReport",
+    "HTMLTagValidator",
 ]
+
