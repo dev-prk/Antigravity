@@ -1,15 +1,14 @@
 # Progress — reviewer_m1_2
 
-Last visited: 2026-11-10T15:28:30Z
+Last visited: 2026-11-10T22:58:00Z
 
 ## Status
-- [x] Initialized DISPATCH.md and BRIEFING.md
-- [x] Read authoritative inputs (ORIGINAL_REQUEST.md, PROJECT.md, worker_m1_1/handoff.md)
-- [x] Run test suite `python3 -m pytest tests/test_m1_core.py -v` (22/22 PASSED)
-- [x] Run full E2E test suite `python3 tests/e2e/test_runner.py` (78/78 PASSED)
-- [x] Inspect source code against integrity rules (PASSED: zero integrity violations, no facades, genuine logic)
-- [x] Adversarially examine SQLite resilience, browser lifecycle / crash handling, HITL guardrails, signal handling
-- [x] Reproduce edge-case failure modes via targeted scripts (status on abort, localStorage restoration, DB lock/corrupt)
-- [x] Formulate findings, logic chain, and verdict (APPROVE with 3 Major and 3 Minor findings)
-- [x] Write handoff.md and update BRIEFING.md
-- [x] Send completion message to parent agent
+- [x] Initialized DISPATCH.md and updated BRIEFING.md
+- [ ] Run test suite (`pytest tests/`)
+- [ ] Integrity check across changed files
+- [ ] Detailed review of `core/state_manager.py` (race conditions, SQL injection, malformed JSON, case sensitivity)
+- [ ] Adversarial testing of `solver/extractor.py` (CSS stripping, nested CSS, KaTeX math symbols, JSON with unquoted keys, sample cases)
+- [ ] Detailed review of `config.py` and `main.py` (argparse ergonomics, subparser inheritance, CLI flag precedence)
+- [ ] Assess test depth & coverage in `tests/test_m1_filtering.py`
+- [ ] Formulate findings, logic chain, and verdict in `handoff.md`
+- [ ] Send completion message to parent
