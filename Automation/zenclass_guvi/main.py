@@ -289,41 +289,13 @@ class AutomationRunner:
             if self.args.command == "run-all":
                 logger.info("Executing run-all automation pipeline across Guvi and ZenClass...")
                 from drivers.guvi_driver import GuviDriver
-                from drivers.zenclass_tasks_driver import ZenClassTasksDriver
-
-                order = getattr(self.args, "order", "codekata-first")
-                if order == "zenclass-first":
-                    tasks_driver = ZenClassTasksDriver(
-                        browser_manager=self.browser_manager,
-                        state_manager=self.state_manager,
-                        hitl_handler=self.hitl_handler,
-                        reporter=self.reporter,
-                    )
-                    tasks_driver.run_task_pipeline(limit=self.args.limit)
-
-                    guvi_driver = GuviDriver(
-                        browser_manager=self.browser_manager,
-                        state_manager=self.state_manager,
-                        hitl_handler=self.hitl_handler,
-                        reporter=self.reporter,
-                    )
-                    guvi_driver.run_pipeline(limit=self.args.limit)
-                else:
-                    guvi_driver = GuviDriver(
-                        browser_manager=self.browser_manager,
-                        state_manager=self.state_manager,
-                        hitl_handler=self.hitl_handler,
-                        reporter=self.reporter,
-                    )
-                    guvi_driver.run_pipeline(limit=self.args.limit)
-
-                    tasks_driver = ZenClassTasksDriver(
-                        browser_manager=self.browser_manager,
-                        state_manager=self.state_manager,
-                        hitl_handler=self.hitl_handler,
-                        reporter=self.reporter,
-                    )
-                    tasks_driver.run_task_pipeline(limit=self.args.limit)
+                guvi_driver = GuviDriver(
+                    browser_manager=self.browser_manager,
+                    state_manager=self.state_manager,
+                    hitl_handler=self.hitl_handler,
+                    reporter=self.reporter,
+                )
+                guvi_driver.run_pipeline(limit=self.args.limit)
             elif self.args.command == "run-codekata":
                 logger.info(f"Executing CodeKata automation (category={self.args.category}, limit={self.args.limit})...")
                 from drivers.guvi_driver import GuviDriver

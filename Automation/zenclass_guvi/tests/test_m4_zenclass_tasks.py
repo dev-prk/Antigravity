@@ -291,9 +291,16 @@ class TestZenClassAuthentication(unittest.TestCase):
 
         self.mock_page.query_selector.side_effect = mock_qs
 
+        def mock_find_func(selectors, timeout=3000.0):
+            cands = [selectors] if isinstance(selectors, str) else selectors
+            for s in cands:
+                if "mail" in s or "password" in s or "sign-in" in s or "Sign in" in s:
+                    return s
+            return None
+
         with patch.object(self.driver, "find_first_selector", autospec=True) as mock_find, \
              patch.object(self.driver, "save_screenshot", autospec=True):
-            mock_find.return_value = "input#test"
+            mock_find.side_effect = mock_find_func
             with self.assertRaises(ZenClassAuthenticationError) as ctx:
                 self.driver.login(email="bad@zenclass.in", password="WrongPassword", timeout=2000.0)
             self.assertIn("rejected credentials", str(ctx.exception))
@@ -313,9 +320,16 @@ class TestZenClassAuthentication(unittest.TestCase):
 
         self.mock_page.query_selector.side_effect = mock_qs
 
+        def mock_find_func2(selectors, timeout=3000.0):
+            cands = [selectors] if isinstance(selectors, str) else selectors
+            for s in cands:
+                if "mail" in s or "password" in s or "sign-in" in s or "Sign in" in s:
+                    return s
+            return None
+
         with patch.object(self.driver, "find_first_selector", autospec=True) as mock_find, \
              patch.object(self.driver, "save_screenshot", autospec=True):
-            mock_find.return_value = "input#test"
+            mock_find.side_effect = mock_find_func2
             with self.assertRaises(GuardrailBlockedError) as ctx:
                 self.driver.login(email="disabled@zenclass.in", password="Password@123", timeout=2000.0)
             self.assertIn("Account restricted", str(ctx.exception))
@@ -765,7 +779,15 @@ class TestZenClassDynamicSubmission(unittest.TestCase):
         mock_text.inner_text.return_value = "Platform Error: Submission deadline has passed."
 
         self.mock_page.wait_for_selector.return_value = mock_popup
-        self.mock_page.query_selector.side_effect = lambda sel: mock_text if "text" in sel or "modal" in sel else None
+
+        def mock_popup_qs(sel):
+            if "validation-error" in sel:
+                return None
+            if "text" in sel or "modal" in sel or "sucess" in sel:
+                return mock_text
+            return None
+
+        self.mock_page.query_selector.side_effect = mock_popup_qs
 
         res = self.driver.verify_submission_confirmation(
             task_id="task-105",
