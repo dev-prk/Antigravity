@@ -1,38 +1,30 @@
-Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, and ZenClass projects using a visible foreground browser session and the user's provided credentials, maintaining persistent task execution state and progress reports.
+Filter and solve all Medium and Hard difficulty practice questions on Guvi CodeKata in headless background mode, submitting verified solutions and recording persistent state.
 
 Working directory: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
-Integrity mode: development
+Integrity mode: [OPEN: Which integrity restrictions apply?]
 
 ## Reference Material
-- Guvi CodeKata: https://www.guvi.in/code-kata/
-- ZenClass Tasks: https://v2.zenclass.in/tasks
-- ZenClass Projects: https://v2.zenclass.in/projects
+- Target platform: Guvi CodeKata (`https://www.guvi.in/code-kata/`)
 - Credentials: devsh.pareek@gmail.com / Dev@99#$%esh
+- Existing codebase: `drivers/guvi_driver.py`, `solver/code_generator.py`, `solver/extractor.py`, `core/browser.py`, `config.py`, `data/automation_state.db`
 
 ## Requirements
 
-### R1. Foreground Platform Authentication and Interaction
-- Authenticate to Guvi and ZenClass using the provided credentials via a visible foreground browser window (headed mode) so execution can be monitored in real time.
-- Never fabricate completion or attempt to bypass authentication, CAPTCHA, access controls, or assessment restrictions; immediately halt and prompt the user when human intervention (such as CAPTCHA or OTP verification) is required.
+### R1. Headless Background Execution
+Run the browser automation entirely in background headless mode (`headless=True`) using the existing browser context manager and credentials, ensuring no visible browser windows or disruptions to ongoing user desktop work.
 
-### R2. Autonomous Problem and Task Completion
-- Discover and complete all pending and uncompleted items across Guvi CodeKata, ZenClass tasks, and ZenClass projects.
-- Solve programming problems and technical tasks directly, validating answers against platform test cases and submission feedback before finalizing submission.
-- For ZenClass projects requiring external repository creation or deployed application URLs, prepare all solution code locally and pause to prompt the user for repository hosting or deployment links.
+### R2. Medium and Hard Problem Solving
+Discover and filter all Medium and Hard difficulty practice questions on Guvi CodeKata, extract statements and test cases, generate solutions [OPEN: Target programming language], verify them against platform test cases, and submit verified solutions.
 
-### R3. Persistent State Management and Progress Reporting
-- Maintain a persistent state tracking file across executions recording platform, task identifier, task category, status, attempt count, result, timestamp, failure reason, and next action.
-- Produce a summary report providing total discovered, total completed, total pending, total blocked, success rate, time spent, and errors requiring human intervention.
+### R3. Persistent State Tracking
+Record problem statuses, execution attempts, test results, and timestamps in SQLite `data/automation_state.db` [OPEN: Failure handling policy].
 
 ## Acceptance Criteria
 
-### Platform Automation & Execution
-- [ ] Browser session runs visibly in the foreground throughout execution.
-- [ ] All discoverable pending items across Guvi CodeKata, ZenClass tasks, and ZenClass projects are either completed and submitted or marked blocked with a recorded reason.
-- [ ] Encountering CAPTCHA, OTP, or identity-sensitive assessment restrictions halts execution and prompts for human participation without fabricating results or attempting unauthorized bypass.
-- [ ] For projects requiring external repository hosting or live deployment URLs, solution code is prepared locally and execution pauses with an explicit prompt for human input.
+### Execution Mode
+- [ ] Browser automation executes in headless background mode without opening foreground browser windows or interrupting user activities.
 
-### State & Verification
-- [ ] Successful completion of each task is verified through positive submission feedback from the platform UI.
-- [ ] A persistent state tracking file records each item's platform, identifier, category, status, attempt count, result, timestamp, failure reason, and next action.
-- [ ] A summary report is generated detailing total discovered, total completed, total pending, total blocked, overall success rate, time spent, and issues requiring human intervention.
+### Problem Solving & Platform Verification
+- [ ] Guvi CodeKata catalog is filtered to locate all Medium and Hard difficulty practice questions.
+- [ ] Generated solutions pass platform test cases and are successfully submitted for each processed question.
+- [ ] Each question's progress, outcome, and execution metrics are recorded in `data/automation_state.db`.
