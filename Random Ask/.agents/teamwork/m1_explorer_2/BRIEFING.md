@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T18:16:00Z
+# BRIEFING — 2026-11-10T18:32:00Z
 
 ## Mission
 Design the complete automated test suite (`tests/test_layer_a.py`) to verify Milestone 1 (Layer A: Agent OS Foundation).
@@ -18,17 +18,32 @@ Design the complete automated test suite (`tests/test_layer_a.py`) to verify Mil
 
 ## Current Parent
 - Conversation ID: 39b23d44-0f11-43fa-90e1-e4883d67348f
-- Updated: not yet
+- Updated: 2026-11-10T18:32:00Z
 
 ## Investigation State
-- **Explored paths**: None yet
-- **Key findings**: Just initialized
-- **Unexplored areas**: PROJECT.md, ORIGINAL_REQUEST.md, survey reports, Python test structure
+- **Explored paths**:
+  - `~/Documents/Antigravity/Random Ask/.agents/teamwork/ORIGINAL_REQUEST.md`
+  - `~/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/PROJECT.md`
+  - `~/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/handoff.md`
+  - `~/Documents/Antigravity/Random Ask/.agents/teamwork/survey_spec_miner_1/handoff.md`
+  - `~/Documents/Antigravity/Random Ask/.agents/teamwork/m1_explorer_1/handoff.md`
+  - `~/Documents/Antigravity/.agents/skills/` (`claude`, `orchestration`, `loop-engineering`, `chain-of-mindset`)
+- **Key findings**:
+  - `AGENTS.md` strictly < 100 lines (36-line design verified).
+  - Relative symlink path: `../../../.agents/skills/<name>` from `AI-OS/.agents/skills/`.
+  - 5 governance profiles in `config/policies.json`.
+  - Immutable kernel guardrails: non-bypassable secret redaction and prohibition of unapproved external destructive commands.
+  - Python 3.9.6 stdlib only; AST checks for no Python 3.10+ syntax.
+- **Unexplored areas**: None for M1 test suite design. Design is complete.
 
 ## Key Decisions Made
-- Initialized investigation session for Layer A test suite design.
+- Decomposed `tests/test_layer_a.py` into 7 test classes and 27 test methods covering all dispatch requirements.
+- Standardized mock secrets suite (AWS, GitHub classic/fine-grained, Bearer, OpenAI, Anthropic, PEM Private Keys, URI passwords).
+- Standardized destructive command & traversal denylist suite (`rm -rf /`, `/tmp`, path traversals, fork bombs).
+- Designed AST inspection test to enforce pure Python 3.9 stdlib without third-party dependencies.
 
 ## Artifact Index
 - DISPATCH.md — Initial dispatch message
 - BRIEFING.md — Situational awareness
 - progress.md — Liveness heartbeat
+- handoff.md — Complete 5-component test suite design handoff report

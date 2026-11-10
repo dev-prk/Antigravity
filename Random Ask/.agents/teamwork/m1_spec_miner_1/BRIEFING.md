@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T18:16:00Z
+# BRIEFING — 2026-11-10T18:23:00Z
 
 ## Mission
 Specify the exact design, data structures, interfaces, immutable guardrails, and validation requirements for Milestone 1 (Policy Engine & Kernel Guardrails) of AI-OS.
@@ -21,7 +21,7 @@ Specify the exact design, data structures, interfaces, immutable guardrails, and
 
 ## Current Parent
 - Conversation ID: 39b23d44-0f11-43fa-90e1-e4883d67348f
-- Updated: 2026-11-10T18:16:00Z
+- Updated: 2026-11-10T18:23:00Z
 
 ## Task Summary
 - **What to build**: Specification report for Milestone 1 Policy Engine and Guardrails.
@@ -30,7 +30,12 @@ Specify the exact design, data structures, interfaces, immutable guardrails, and
 - **Code layout**: `aios/policy.py`, `config/policies.json`, `tests/test_policy.py`.
 
 ## Key Decisions Made
-- Focusing on precise JSON schema, strict typing (dataclasses / pydantic / TypedDict), regex patterns for secret redaction, path canonicalization (resolve symlinks, verify prefix), and execution sandbox parameters.
+- Standardized `config/policies.json` schema with 5 profiles and 8-action matrix.
+- Designed `PolicyEngine` in `aios/policy.py` with pure standard library (`dataclasses`, `pathlib`, `re`, `subprocess`, `shlex`).
+- Defined 9 secret redaction regex patterns replacing credentials with `[REDACTED_SECRET]`.
+- Solved macOS case-folding discrepancy in path containment by tokenizing path parts.
+- Implemented chained shell delimiter tokenization for command execution safety checks.
+- Completed comprehensive handoff report at `/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/m1_spec_miner_1/handoff.md`.
 
 ## Artifact Index
 - `/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/m1_spec_miner_1/DISPATCH.md` — Initial dispatch message
