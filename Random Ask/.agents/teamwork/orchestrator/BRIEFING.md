@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T18:15:00Z
+# BRIEFING — 2026-11-10T18:26:00Z
 
 ## Mission
 Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol) and Phase 3b (SQLite state, task ledger, HANDOFF.md, and token budget management) of the model-agnostic AI-OS for production workspace use, strictly managing token consumption to avoid exhausting limits mid-project.
@@ -15,8 +15,11 @@ Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol)
 - **Scope document**: /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/PROJECT.md
 1. **Decompose**: Survey (3 parallel explorers/spec miners) -> PROJECT.md & Feature Inventory -> Milestones & Interface Contracts + Dual Track E2E Test Suite.
 2. **Dispatch & Execute**:
-   - Direct iteration loop per milestone: Explorer -> Worker -> Reviewer (x2) -> Challenger (x2) -> Auditor (x1) -> Gate.
-   - Dual-track E2E Testing Track runs in parallel.
+   - Milestone 1: Layer A Scaffolding & Policy Engine [in-progress: Explorers launched]
+   - Milestone 2: SQLite State Database Engine [pending]
+   - Milestone 3: Task Ledger & Token Budget Management [pending]
+   - Milestone 4: Automated HANDOFF.md Generator & Resumer [pending]
+   - Milestone 5: Final Milestone 100% E2E Pass + Kill/Resume + Tier 5 Hardening [pending]
 3. **On failure**:
    - Retry: nudge stuck agent or re-send task
    - Replace: spawn fresh agent with partial progress
@@ -26,16 +29,14 @@ Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol)
    - Escalate: report to parent (sub-orchestrators only, top-level redesigns)
 4. **Succession**: Self-succeed at 16 spawns if context grows, within total 128 spawn cap.
 - **Work items**:
-  0. Survey phase: Full scope mapping [in-progress]
-  1. Decomposition & PROJECT.md initialization [pending]
-  2. E2E Testing Track [pending]
-  3. Milestone 1: Phase 3a Layer A Scaffolding & Policy [pending]
-  4. Milestone 2: Phase 3b SQLite State & Task Ledger Runtime [pending]
-  5. Milestone 3: Phase 3b Token Budget Management & Checkpointing [pending]
-  6. Milestone 4: Phase 3b HANDOFF.md Generator & Resumer [pending]
-  7. Milestone 5: Final Milestone 100% E2E Pass + Kill/Resume + Tier 5 Hardening [pending]
-- **Current phase**: 0 (Survey)
-- **Current focus**: Survey explorers running in parallel.
+  0. Survey phase: Full scope mapping [completed]
+  1. Milestone 1: Layer A Scaffolding & Policy [in-progress]
+  2. Milestone 2: Phase 3b SQLite State & Task Ledger Runtime [pending]
+  3. Milestone 3: Phase 3b Token Budget Management & Checkpointing [pending]
+  4. Milestone 4: Phase 3b HANDOFF.md Generator & Resumer [pending]
+  5. Milestone 5: Final Milestone 100% E2E Pass + Kill/Resume + Tier 5 Hardening [pending]
+- **Current phase**: Milestone 1 (Layer A Scaffolding & Policy Engine)
+- **Current focus**: Milestone 1 Explorers formulating implementation instructions for Worker.
 
 ## 🔒 Key Constraints
 - DISPATCH-ONLY orchestrator: MUST NOT write code nor solve problems directly.
@@ -53,22 +54,24 @@ Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol)
 - Updated: 2026-11-10T18:06:18Z
 
 ## Key Decisions Made
-- Project classified as Greenfield / Multi-module System Build (Project Pattern).
-- Target workspace: `/Users/devesh/Documents/Antigravity/AI-OS/`.
-- Survey phase initialized with 3 parallel agents: 2 Explorers and 1 Spec Miner.
+- Architecture documented in `PROJECT.md` with 20 inventoried features assigned across 5 milestones.
+- Milestone 1 dispatched with 3 parallel explorers/spec miners.
 - Subagent model tier defaulted to `flash` to preserve token quota and prevent mid-project limits exhaustion.
 
 ## Team Roster
 | Agent | Type | Work Item | Status | Conv ID |
 |-------|------|-----------|--------|---------|
-| survey_explorer_1 | teamwork_explorer | Blueprint & Workspace Survey | in-progress | 97180e5e-b65b-4ea8-bf3e-e025d8a6da29 |
-| survey_spec_miner_1 | teamwork_spec_miner | Requirements & Specifications Mining | in-progress | 079fdfc5-982e-47f5-88a0-5b342a6e1e03 |
-| survey_explorer_2 | teamwork_explorer | Existing Skills, Runner & Kill/Resume Test Strategy | in-progress | 7534bb6d-59f1-4617-b725-74932c50be95 |
+| survey_explorer_1 | teamwork_explorer | Blueprint & Workspace Survey | completed | 97180e5e-b65b-4ea8-bf3e-e025d8a6da29 |
+| survey_spec_miner_1 | teamwork_spec_miner | Requirements & Specifications Mining | completed | 079fdfc5-982e-47f5-88a0-5b342a6e1e03 |
+| survey_explorer_2 | teamwork_explorer | Existing Skills, Runner & Kill/Resume Test Strategy | completed | 7534bb6d-59f1-4617-b725-74932c50be95 |
+| m1_explorer_1 | teamwork_explorer | M1 Layer A Scaffolding & Rules Explorer | in-progress | 61b544b0-6b5a-4aad-973d-654990edebd6 |
+| m1_spec_miner_1 | teamwork_spec_miner | M1 Policy Engine & Guardrails Spec Miner | in-progress | 30783b9e-ed23-4cb7-8738-c4cd89e7f8eb |
+| m1_explorer_2 | teamwork_explorer | M1 Verification Suite Design Explorer | in-progress | d73216c3-ee75-4f43-96d8-8a884b959f31 |
 
 ## Succession Status
 - Succession required: no
-- Spawn count: 3 / 16
-- Pending subagents: 97180e5e-b65b-4ea8-bf3e-e025d8a6da29, 079fdfc5-982e-47f5-88a0-5b342a6e1e03, 7534bb6d-59f1-4617-b725-74932c50be95
+- Spawn count: 6 / 16
+- Pending subagents: 61b544b0-6b5a-4aad-973d-654990edebd6, 30783b9e-ed23-4cb7-8738-c4cd89e7f8eb, d73216c3-ee75-4f43-96d8-8a884b959f31
 - Predecessor: none
 - Successor: not yet spawned
 
@@ -83,5 +86,8 @@ Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol)
 - /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/DISPATCH.md — Parent dispatch history
 - /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/BRIEFING.md — Persistent working memory
 - /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/progress.md — Progress and liveness tracker
-- /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/PROJECT.md — Global architecture & feature inventory (planned)
-- /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/GATE_STATUS.md — Gate status tracker (planned)
+- /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/PROJECT.md — Global architecture & feature inventory
+- /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/orchestrator/GATE_STATUS.md — Gate status tracker
+- /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/handoff.md — Survey report 1
+- /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_spec_miner_1/handoff.md — Survey report 2
+- /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_2/handoff.md — Survey report 3
