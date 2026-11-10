@@ -163,7 +163,26 @@ def create_cli_parser() -> argparse.ArgumentParser:
         help="Execute single ZenClass task by ID",
     )
 
+    # Command: run-zenclass-projects
+    p_zenclass_projects = subparsers.add_parser(
+        "run-zenclass-projects",
+        help="Run ZenClass projects automation (synthesis, build validation, HITL pause, submission)",
+    )
+    p_zenclass_projects.add_argument(
+        "--project-id",
+        type=str,
+        default=None,
+        help="Target single ZenClass project by ID",
+    )
+    p_zenclass_projects.add_argument(
+        "--skip-synthesis",
+        action="store_true",
+        default=False,
+        help="Skip local code synthesis if project directory already exists",
+    )
+
     # Command: resume
+
     p_resume = subparsers.add_parser(
         "resume",
         help="Resume execution from SQLite state for pending, failed, or blocked tasks",
