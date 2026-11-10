@@ -145,11 +145,13 @@ class ReferenceStateManager:
 
     def __init__(self, db_path: str = ":memory:"):
         self.db_path = db_path
+        self._lock = threading.Lock()
+        self._conn = sqlite3.connect(self.db_path, check_same_thread=False)
         self._init_db()
 
     def _init_db(self):
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute("""
+        with self._lock:
+            self._conn.execute("""
                 CREATE TABLE IF NOT EXISTS tasks (
                     task_id TEXT PRIMARY KEY,
                     platform TEXT NOT NULL,
@@ -166,7 +168,7 @@ class ReferenceStateManager:
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
-            conn.commit()
+            self._conn.commit()
 
     def record_task(
         self,
@@ -183,8 +185,8 @@ class ReferenceStateManager:
         metadata: Optional[Dict[str, Any]] = None,
     ) -> None:
         metadata_str = json.dumps(metadata or {})
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute("""
+        with self._lock:
+            self._conn.execute("""
                 INSERT INTO tasks (
                     task_id, platform, title, category, url, status, attempts,
                     result, failure_reason, next_action, metadata_json, updated_at
@@ -203,11 +205,11 @@ class ReferenceStateManager:
                     updated_at=CURRENT_TIMESTAMP
             """, (task_id, platform, title, category, url, status, attempts,
                   result, failure_reason, next_action, metadata_str))
-            conn.commit()
+            self._conn.commit()
 
     def get_task(self, task_id: str) -> Optional[TaskRecord]:
-        with sqlite3.connect(self.db_path) as conn:
-            cursor = conn.execute("""
+        with self._lock:
+            cursor = self._conn.execute("""
                 SELECT task_id, platform, title, category, url, status, attempts,
                        result, failure_reason, next_action, metadata_json
                 FROM tasks WHERE task_id = ?
@@ -223,16 +225,16 @@ class ReferenceStateManager:
             )
 
     def get_pending_tasks(self, platform: Optional[str] = None) -> List[TaskRecord]:
-        with sqlite3.connect(self.db_path) as conn:
+        with self._lock:
             if platform:
-                cursor = conn.execute("""
+                cursor = self._conn.execute("""
                     SELECT task_id, platform, title, category, url, status, attempts,
                            result, failure_reason, next_action, metadata_json
                     FROM tasks WHERE status IN ('pending', 'in_progress', 'redo') AND platform = ?
                     ORDER BY created_at ASC
                 """, (platform,))
             else:
-                cursor = conn.execute("""
+                cursor = self._conn.execute("""
                     SELECT task_id, platform, title, category, url, status, attempts,
                            result, failure_reason, next_action, metadata_json
                     FROM tasks WHERE status IN ('pending', 'in_progress', 'redo')
@@ -249,8 +251,8 @@ class ReferenceStateManager:
             ]
 
     def get_summary_stats(self) -> Dict[str, Any]:
-        with sqlite3.connect(self.db_path) as conn:
-            cursor = conn.execute("""
+        with self._lock:
+            cursor = self._conn.execute("""
                 SELECT
                     COUNT(*) as total,
                     SUM(CASE WHEN status = 'completed' THEN 1 ELSE 0 END) as completed,
@@ -276,8 +278,8 @@ class ReferenceStateManager:
         target_path = export_path or "data/state_summary.json"
         os.makedirs(os.path.dirname(os.path.abspath(target_path)), exist_ok=True)
         stats = self.get_summary_stats()
-        with sqlite3.connect(self.db_path) as conn:
-            cursor = conn.execute("SELECT * FROM tasks")
+        with self._lock:
+            cursor = self._conn.execute("SELECT * FROM tasks")
             col_names = [d[0] for d in cursor.description]
             tasks = [dict(zip(col_names, row)) for row in cursor.fetchall()]
         data = {
