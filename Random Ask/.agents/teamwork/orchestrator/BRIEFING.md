@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T18:10:00Z
+# BRIEFING — 2026-11-10T18:15:00Z
 
 ## Mission
 Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol) and Phase 3b (SQLite state, task ledger, HANDOFF.md, and token budget management) of the model-agnostic AI-OS for production workspace use, strictly managing token consumption to avoid exhausting limits mid-project.
@@ -35,7 +35,7 @@ Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol)
   6. Milestone 4: Phase 3b HANDOFF.md Generator & Resumer [pending]
   7. Milestone 5: Final Milestone 100% E2E Pass + Kill/Resume + Tier 5 Hardening [pending]
 - **Current phase**: 0 (Survey)
-- **Current focus**: Launching parallel survey explorers to analyze blueprint, existing skills, benchmark runner, and target workspace.
+- **Current focus**: Survey explorers running in parallel.
 
 ## 🔒 Key Constraints
 - DISPATCH-ONLY orchestrator: MUST NOT write code nor solve problems directly.
@@ -61,16 +61,19 @@ Build Phase 3a (Layer A: Antigravity-native rules, skills, and handoff protocol)
 ## Team Roster
 | Agent | Type | Work Item | Status | Conv ID |
 |-------|------|-----------|--------|---------|
+| survey_explorer_1 | teamwork_explorer | Blueprint & Workspace Survey | in-progress | 97180e5e-b65b-4ea8-bf3e-e025d8a6da29 |
+| survey_spec_miner_1 | teamwork_spec_miner | Requirements & Specifications Mining | in-progress | 079fdfc5-982e-47f5-88a0-5b342a6e1e03 |
+| survey_explorer_2 | teamwork_explorer | Existing Skills, Runner & Kill/Resume Test Strategy | in-progress | 7534bb6d-59f1-4617-b725-74932c50be95 |
 
 ## Succession Status
 - Succession required: no
-- Spawn count: 0 / 16
-- Pending subagents: none
+- Spawn count: 3 / 16
+- Pending subagents: 97180e5e-b65b-4ea8-bf3e-e025d8a6da29, 079fdfc5-982e-47f5-88a0-5b342a6e1e03, 7534bb6d-59f1-4617-b725-74932c50be95
 - Predecessor: none
 - Successor: not yet spawned
 
 ## Active Timers
-- Heartbeat cron: not started
+- Heartbeat cron: 39b23d44-0f11-43fa-90e1-e4883d67348f/task-24
 - Safety timer: none
 - On succession: kill all timers before spawning successor
 - On context truncation: handle timers as step 4 of the State Recovery section of your prompt says
