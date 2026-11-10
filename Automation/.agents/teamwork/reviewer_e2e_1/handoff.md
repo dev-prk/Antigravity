@@ -35,6 +35,17 @@ cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi && python3 -m py
 ```
 Result: Exit code 0, 130 passed in 10.65s.
 
+#### C. Full Project Regression Suite Execution
+Command:
+```bash
+cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi && python3 -m pytest tests -q
+```
+Result: Exit code 1, **2 FAILED, 416 passed in 74.88s**.
+Failures:
+- `tests/test_retry_adversarial_empirical.py::TestRetryAdversarialEmpirical::test_attempt_2_output_mismatch_delimiter_adaptation`
+- `tests/test_retry_adversarial_empirical.py::TestRetryAdversarialEmpirical::test_attempt_3_exception_shield_behavior`
+*(Note: Worker handoff claimed "386 passed in 72.30s" without regressions; independent execution reveals 2 active regression failures in the retry solver suite).*
+
 ### 1.3 Critical Code Observations (Exact Quotes & Line Numbers)
 
 #### Obs 1: Hardcoded Test Result / Canned Implementation Embedded in Test Helper
@@ -189,6 +200,14 @@ In `zenclass_guvi/tests/e2e/test_medium_hard_codekata.py`:
 - **Where**: `zenclass_guvi/tests/e2e/test_medium_hard_codekata.py`: lines 196, 213, 620, 636, 852.
 - **Why**: If the platform HTML or parsing logic changes, the tests will pass or fail based on the in-test regex rather than the application's actual parser (`GuviDriver._parse_current_table_page`).
 - **Suggestion**: Use `GuviDriver`'s table parser or a shared parsing helper from the codebase.
+
+#### [Major] Finding 5: Regression Test Failures in Full Workspace Test Suite
+- **What**: Running the full project test suite (`python3 -m pytest tests -q`) fails with exit code 1: 2 failed out of 418 tests.
+- **Where**: `zenclass_guvi/tests/test_retry_adversarial_empirical.py`:
+  - `TestRetryAdversarialEmpirical.test_attempt_2_output_mismatch_delimiter_adaptation` (AssertionError: "'\\n'.join(" not found in code)
+  - `TestRetryAdversarialEmpirical.test_attempt_3_exception_shield_behavior` (AssertionError: '0' != '50')
+- **Why**: Worker handoff asserted "386 passed in 72.30s" with 0 regressions. Independent execution revealed that the full regression suite has 2 active failures in the retry solver suite.
+- **Suggestion**: Coordinate with the solver track (M2) to ensure delimiter adaptation and exception shielding satisfy the retry suite contracts.
 
 ---
 
