@@ -1,59 +1,48 @@
-# BRIEFING — 2026-11-10T11:55:00Z
+# BRIEFING — 2026-11-10T15:42:00Z
 
 ## Mission
-Extract candidate profile snapshots across 8 portals using Brave browser into `/Users/devesh/resume/profile_backup.md`.
+Implement Milestone 2 Solver (`solver/` package and `tests/test_m2_solver.py`) with 100% genuine logic and backward/forward interface compatibility.
 
 ## 🔒 My Identity
 - Archetype: worker
 - Roles: implementer, qa, specialist
 - Working directory: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m2_1
-- Original parent: db58fa7b-d6eb-41a4-a41e-34fc08b3e1d0
-- Milestone: M2
+- Original parent: cbd0649b-f648-4724-a244-a22a5102ccc4
+- Milestone: M2 - Autonomous CodeKata Solver
 
 ## 🔒 Key Constraints
-- Control Brave browser sequentially to extract profile content across 8 job portals
-- Absolutely NO direct messages, InMails, or connection requests on LinkedIn
-- Escalation halts: Immediately stop and report if encounter CAPTCHA, OTP, login prompts, passwords, payment requests, or unfamiliar site features
-- Do not invent or inflate skills, titles, dates, metrics, employers, or degrees
-- Deliver raw snapshot to /Users/devesh/resume/profile_backup.md
-- URGENT USER DIRECTIVE: Reuse the SAME existing Brave browser window/session across all portals. Do NOT launch new browser windows repeatedly. Open/switch tabs within the existing active session if needed.
-
+- Genuine implementation only: DO NOT hardcode test results, no dummy facades, no shortcuts.
+- Scope: Own exclusive write access to `solver/__init__.py`, `solver/extractor.py`, `solver/code_generator.py`, `solver/test_runner.py`, `solver/ace_adapter.py`, `tests/test_m2_solver.py`.
+- Interface compatibility: Support both M1/E2E runner interface contracts and new M2 specifications.
+- Verification: Must pass `pytest tests/test_m2_solver.py -v`, `pytest tests/test_m1_core.py -v`, and `python3 tests/e2e/test_runner.py --all`.
 
 ## Current Parent
-- Conversation ID: db58fa7b-d6eb-41a4-a41e-34fc08b3e1d0
-- Updated: 2026-11-10T11:55:00Z
+- Conversation ID: cbd0649b-f648-4724-a244-a22a5102ccc4
+- Updated: 2026-11-10T15:42:00Z
 
 ## Task Summary
-- **What to build**: Extract profile snapshots across 8 portals (Talent500, Instahyre, Naukri, Indeed, Foundit, Glassdoor, LinkedIn, Turing) using Brave into `/Users/devesh/resume/profile_backup.md`
-- **Success criteria**: All 8 portals inspected/extracted, formatted clearly in profile_backup.md, handoff report generated
-- **Interface contracts**: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md
-- **Code layout**: /Users/devesh/resume/profile_backup.md
+- **What to build**: Full M2 solver package (`extractor`, `code_generator`, `test_runner`, `ace_adapter`) and unit test suite `test_m2_solver.py`.
+- **Success criteria**: All tests pass in M2 suite, M1 core suite, and E2E harness.
+- **Interface contracts**: PROJECT.md and explorer blueprints.
+- **Code layout**: `zenclass_guvi/solver/` and `zenclass_guvi/tests/`.
 
 ## Key Decisions Made
-- Controlled Brave using AppleScript tab navigation in window 1 (existing user session), strictly avoiding new window proliferation.
-- Executed sequential profile extraction across all 8 target portals with zero login bypasses, zero CAPTCHAs, and zero LinkedIn interactions.
-- Extracted comprehensive chronological career records, verified achievements, contact details, preferences, and cross-portal discrepancies.
-- Compiled complete raw snapshot to `/Users/devesh/resume/profile_backup.md`.
+- [TBD - will document following analysis]
 
 ## Artifact Index
-- /Users/devesh/resume/profile_backup.md — Consolidated profile snapshots across 8 portals
-- /Users/devesh/Documents/Antigravity/Automation/scripts/brave_extractor.py — Brave single-tab extraction utility
-- /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m2_1/handoff.md — Final handoff report
+- `.agents/teamwork/worker_m2_1/DISPATCH.md` — Assigned task details
+- `.agents/teamwork/worker_m2_1/BRIEFING.md` — Agent state and memory
+- `.agents/teamwork/worker_m2_1/progress.md` — Liveness and progress tracking
 
 ## Change Tracker
-- **Files modified**:
-  - `/Users/devesh/resume/profile_backup.md`: Created master profile backup snapshots across all 8 job portals
-  - `/Users/devesh/Documents/Antigravity/Automation/scripts/brave_extractor.py`: Built tab-based browser extraction driver
-  - `.agents/teamwork/worker_m2_1/progress.md`: Maintained real-time heartbeat and status
-  - `.agents/teamwork/worker_m2_1/DISPATCH.md`: Recorded all dispatch messages and directives
-- **Build status**: Extraction verified complete
+- **Files modified**: None yet
+- **Build status**: Untested
 - **Pending issues**: None
 
 ## Quality Status
-- **Build/test result**: All 8 portals successfully extracted and verified
-- **Lint status**: 0 violations
-- **Tests added/modified**: Extraction verification script passed
-
+- **Build/test result**: Not run yet
+- **Lint status**: Pending
+- **Tests added/modified**: Pending
 
 ## Loaded Skills
-- None
+- None requested for dump.
