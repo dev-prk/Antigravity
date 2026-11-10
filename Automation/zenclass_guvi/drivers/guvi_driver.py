@@ -323,38 +323,6 @@ class GuviDriver(BaseDriver):
         # Allow server evaluation
         time.sleep(1.5)
 
-        # Handle mock/test environments where static HTML lacks client-side JS bundle
-        if hasattr(self.page, "evaluate"):
-            try:
-                # Check if page is static fixture and call backend endpoint if necessary
-                eval_script = """(args) => {
-                    if (window._guvi_auth_dispatched) return;
-                    window._guvi_auth_dispatched = true;
-                    fetch('/usercheck.php', {
-                        method: 'POST',
-                        headers: {'Content-Type': 'application/json'},
-                        body: JSON.stringify({
-                            emails: args.email,
-                            password: args.password,
-                            loggedInType: 'loggedInUser'
-                        })
-                    }).then(r => r.json().then(data => {
-                        if (data.status === 'success' && data.authToken) {
-                            document.cookie = 'authToken=' + data.authToken + '; path=/';
-                            window.location.href = '/code-kata/';
-                        } else if (data.status === 'fail') {
-                            const errs = document.querySelectorAll('.invalid-feedback');
-                            errs.forEach(e => { e.style.display = 'block'; });
-                        } else if (data.access === 'activate') {
-                            const modal = document.querySelector('#myModal');
-                            if (modal) modal.style.display = 'block';
-                        }
-                    })).catch(err => {});
-                }"""
-                self.page.evaluate(eval_script, {"email": user_email, "password": user_password})
-                time.sleep(1.0)
-            except Exception:
-                pass
 
         # Intercept immediate post-submit guardrails
         self.check_guardrails(task_id="guvi-auth", context_desc="Guvi Credential Post-Submission")
@@ -730,25 +698,6 @@ class GuviDriver(BaseDriver):
         else:
             logger.warning("Run Code button not found; skipping Run step.")
 
-        # Handle mock/test environments lacking frontend script
-        if hasattr(self.page, "evaluate"):
-            try:
-                self.page.evaluate("""() => {
-                    fetch('/code-kata/question/run', {
-                        method: 'POST',
-                        headers: {'Content-Type': 'application/json'},
-                        body: JSON.stringify({question_id: 1, code: '...', language: 'PYTHON 3'})
-                    }).then(r => r.json()).then(data => {
-                        const pane = document.querySelector('.test-results-pane');
-                        if (pane) pane.style.display = 'block';
-                        const pill = document.querySelector('.test-pill-status');
-                        if (pill && data.testCases && data.testCases[0]) {
-                            pill.textContent = data.testCases[0].status;
-                        }
-                    }).catch(e => {});
-                }""")
-            except Exception:
-                pass
 
         # Await progress modal completion
         try:
@@ -789,25 +738,6 @@ class GuviDriver(BaseDriver):
         else:
             logger.warning("Submit Code button not found.")
 
-        # Handle mock/test environments lacking frontend script
-        if hasattr(self.page, "evaluate"):
-            try:
-                self.page.evaluate("""() => {
-                    fetch('/code-kata/question/submit', {
-                        method: 'POST',
-                        headers: {'Content-Type': 'application/json'},
-                        body: JSON.stringify({question_id: 1, code: '...', language: 'PYTHON 3'})
-                    }).then(r => r.json()).then(data => {
-                        if (data.status === 'success') {
-                            const qs = document.querySelector('.question-status');
-                            if (qs) qs.textContent = 'Solved!';
-                            const modal = document.querySelector('#success_modal');
-                            if (modal) modal.style.display = 'block';
-                        }
-                    }).catch(e => {});
-                }""")
-            except Exception:
-                pass
 
         time.sleep(1.5)
 

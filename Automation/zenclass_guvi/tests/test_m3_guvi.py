@@ -586,11 +586,11 @@ class TestGuviWorkspacePipeline(unittest.TestCase):
     def tearDown(self):
         self.state_manager.close()
 
-    @patch("drivers.guvi_driver.extract_problem_spec")
-    @patch("drivers.guvi_driver.generate_solution")
-    @patch("drivers.guvi_driver.test_solution")
-    @patch("drivers.guvi_driver.wait_for_editor")
-    @patch("drivers.guvi_driver.inject_code")
+    @patch("drivers.guvi_driver.extract_problem_spec", autospec=True)
+    @patch("drivers.guvi_driver.generate_solution", autospec=True)
+    @patch("drivers.guvi_driver.test_solution", autospec=True)
+    @patch("drivers.guvi_driver.wait_for_editor", autospec=True)
+    @patch("drivers.guvi_driver.inject_code", autospec=True)
     def test_solve_problem_successful_pipeline(
         self,
         mock_inject,
@@ -668,10 +668,10 @@ class TestGuviWorkspacePipeline(unittest.TestCase):
         self.assertEqual(task.attempt_count, 1)
         self.assertEqual(task.metadata["points_earned"], 30)
 
-    @patch("drivers.guvi_driver.extract_problem_spec")
-    @patch("drivers.guvi_driver.generate_solution")
-    @patch("drivers.guvi_driver.test_solution")
-    @patch("drivers.guvi_driver.inject_code")
+    @patch("drivers.guvi_driver.extract_problem_spec", autospec=True)
+    @patch("drivers.guvi_driver.generate_solution", autospec=True)
+    @patch("drivers.guvi_driver.test_solution", autospec=True)
+    @patch("drivers.guvi_driver.inject_code", autospec=True)
     def test_solve_problem_local_sandbox_failure_halts_submission(
         self,
         mock_inject,
@@ -723,10 +723,10 @@ class TestGuviWorkspacePipeline(unittest.TestCase):
         self.assertIn("Output mismatch", task.failure_reason)
         self.assertEqual(task.next_action, "REVISE_SOLVER_TEMPLATE")
 
-    @patch("drivers.guvi_driver.extract_problem_spec")
-    @patch("drivers.guvi_driver.generate_solution")
-    @patch("drivers.guvi_driver.test_solution")
-    @patch("drivers.guvi_driver.wait_for_editor")
+    @patch("drivers.guvi_driver.extract_problem_spec", autospec=True)
+    @patch("drivers.guvi_driver.generate_solution", autospec=True)
+    @patch("drivers.guvi_driver.test_solution", autospec=True)
+    @patch("drivers.guvi_driver.wait_for_editor", autospec=True)
     def test_solve_problem_ace_editor_failure(
         self,
         mock_wait_editor,

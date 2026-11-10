@@ -262,12 +262,12 @@ _default_adapter = AceEditorAdapter()
 
 
 # Module-level functions matching dispatch and PROJECT.md requirements
-def inject_code(page: Any, code: str) -> bool:
+def inject_code(page: Any, code: str, verify: bool = True) -> bool:
     """
     Inject source code into Ace Editor on Guvi CodeKata workspace.
-    Fulfills dispatch mission signature: inject_code(page: Any, code: str) -> bool
+    Fulfills dispatch mission signature: inject_code(page: Any, code: str, verify: bool = True) -> bool
     """
-    return _default_adapter.inject_code(page, code)
+    return _default_adapter.inject_code(page, code, verify=verify)
 
 
 def get_editor_code(page: Any) -> str:
