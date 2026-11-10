@@ -1,48 +1,31 @@
-# DISPATCH — Reviewer M4
+## 2026-11-10T17:51:11Z
+You are an independent reviewer agent for Milestone 4 (ZenClass Tasks Driver).
 
-## Task Objective
-Perform independent review and quality verification of Stage 1 (Know Me) deliverables:
-1. `/Users/devesh/resume/profile_backup.md`
-2. `/Users/devesh/resume/master_profile.md`
-3. `/Users/devesh/resume/targets.md`
+## Identity & Context
+- Identity: M4 Reviewer 1 Interface & Quality
+- Parent Orchestrator ID: cbd0649b-f648-4724-a244-a22a5102ccc4
+- Working directory: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m4_1
+- Workspace directory: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+- Read references before starting:
+  - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md
+  - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md
+  - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m4_1/handoff.md
 
-## Input References
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md`
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_1/analysis.md`
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m2_1/handoff.md`
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_1/handoff.md`
+## Scope & Mandate
+Review the implementation of Milestone 4:
+1. `zenclass_guvi/drivers/zenclass_tasks_driver.py`
+2. `zenclass_guvi/drivers/__init__.py`
+3. `zenclass_guvi/main.py`
+4. `zenclass_guvi/tests/test_m4_zenclass_tasks.py`
 
-## Verification Checks
-1. Check acceptance criteria from `ORIGINAL_REQUEST.md`:
-   - `profile_backup.md` contains extracted snapshots for all 8 portals.
-   - `master_profile.md` consolidates resume documents from `/Users/devesh/Documents/Resume` and portal snapshots, with chronological dates and >= 2 achievements per employer, with discrepancies flagged.
-   - `targets.md` captures target roles, locations, compensation ranges, notice period, and exclusions.
-   - 2-3 proposed target roles and seniority levels formulated.
-2. Safety and Compliance:
-   - Verify that no messages/connections were sent on LinkedIn.
-   - Verify that no credentials/passwords or CAPTCHAs were bypassed.
-   - Verify that all claims trace to verified sources without fabrication.
-3. Provide your verdict: `APPROVE` or `REQUEST_CHANGES` in your handoff report.
-Write your report to `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m4_1/handoff.md`.
-
-
-## 2026-11-10T12:28:51Z
-You are Reviewer (reviewer_m4_1).
-Your working directory is: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m4_1/`.
-You MUST read:
-1. `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md`
-2. `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
-3. `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m4_1/DISPATCH.md`
-4. `/Users/devesh/resume/profile_backup.md`
-5. `/Users/devesh/resume/master_profile.md`
-6. `/Users/devesh/resume/targets.md`
-
-Perform thorough review against all acceptance criteria in ORIGINAL_REQUEST.md:
-- profile_backup.md exists and covers all 8 portals.
-- master_profile.md consolidates resume materials and portal snapshots with chronological dates, >=2 verifiable achievements per employer, and flagged discrepancies.
-- targets.md captures target roles, locations, compensation, notice period, and exclusions.
-- 2-3 target roles and seniority levels formulated.
-- Guardrails verified (no LinkedIn messages, no automated login attempts).
-Deliver your verdict: APPROVE or REQUEST_CHANGES in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m4_1/handoff.md`.
-Notify me via send_message when complete.
+Verify:
+- Requirements R1, R2, R3 adherence.
+- Dynamic 13-field modal mapping (Module 41486) and URL validation regex.
+- Verification that NO mock evaluate shims or fake DOM mutations exist in production code (`zenclass_tasks_driver.py`).
+- Verification that unit tests use `autospec=True`.
+- Execute test commands:
+  - `python3 -m unittest -v tests/test_m4_zenclass_tasks.py`
+  - `python3 -m unittest tests/test_m1_core.py tests/test_m2_solver.py tests/test_m3_guvi.py`
+  - `python3 tests/e2e/test_runner.py --all`
+- Deliver structured handoff report in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m4_1/handoff.md` with explicit verdict: `APPROVE` or `REQUEST_CHANGES`.
+- Use send_message to report verdict and summary back to parent orchestrator.
