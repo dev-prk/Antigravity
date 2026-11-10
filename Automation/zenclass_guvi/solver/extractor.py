@@ -140,6 +140,64 @@ class ProblemExtractor:
       3. Regular Expression Pattern Matching on Sanitized Text
     """
 
+    # Canonical list of CSS properties used to detect unquoted CSS declaration blocks
+    _CSS_PROP_PATTERN = (
+        r"(?:display|position|flex|margin|padding|color|background|font|font-size|"
+        r"font-family|line-height|border|width|height|z-index|overflow|opacity|"
+        r"visibility|align-items|justify-content|box-sizing|cursor|outline|"
+        r"pointer-events|transition|transform|animation|white-space|text-align|"
+        r"vertical-align|user-select)"
+    )
+
+    # Matches CSS at-rules (@media, @import, @keyframes)
+    _CSS_AT_RULE_RE = re.compile(
+        r"(?:@media[^{]*\{[^{}]*\{[^{}]*\}\s*\}|@[a-z\-]+[^;{]*;?)",
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    # Matches CSS rule sets with selectors: e.g. input { display: inline-flex; }
+    _CSS_RULE_RE = re.compile(
+        rf"(?:^|\n)\s*(?:[.#]?[a-zA-Z0-9_\-:\s,>+~\[\]\=\"\']+?)\s*"
+        rf"\{{[^{{}}]*?(?:(?<![\"\'\w-]){_CSS_PROP_PATTERN}\s*:\s*[^;{{}}]+(?:;|\b|\}}))[^{{}}]*?\}}",
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    # Matches standalone CSS declaration blocks: e.g. {display:inline-flex;font-size:inherit;}
+    # Safeguard: requires unquoted CSS properties, preserving legitimate JSON ('{"display": "inline-flex"}'),
+    # Python dicts, sets ({1, 2, 3}), and code blocks ({ int x = 0; }).
+    _CSS_DECL_BLOCK_RE = re.compile(
+        rf"\{{[^{{}}]*?(?:(?<![\"\'\w-]){_CSS_PROP_PATTERN}\s*:\s*[^;{{}}]+(?:;|\b|\}}))[^{{}}]*?\}}",
+        re.IGNORECASE | re.DOTALL,
+    )
+
+    @classmethod
+    def _sanitize_css(cls, text: str) -> str:
+        """Removes CSS at-rules, rule sets, and unquoted CSS declaration blocks."""
+        if not text:
+            return ""
+        # Strip CSS comments
+        text = re.sub(r"(?s)/\*.*?\*/", " ", text)
+        # Strip at-rules
+        text = cls._CSS_AT_RULE_RE.sub(" ", text)
+        # Strip selector rule blocks
+        text = cls._CSS_RULE_RE.sub(" ", text)
+        # Strip standalone declaration blocks
+        text = cls._CSS_DECL_BLOCK_RE.sub(" ", text)
+        return text
+
+    @classmethod
+    def _is_pure_css(cls, text: str) -> bool:
+        """Detects if a string is pure CSS declaration block or stylesheet rule."""
+        if not text:
+            return False
+        t = text.strip()
+        if t.startswith("{") and re.search(cls._CSS_PROP_PATTERN, t, re.IGNORECASE):
+            if not re.search(r'^\s*\{\s*"', t):
+                return True
+        if cls._CSS_RULE_RE.search(t):
+            return True
+        return False
+
     @classmethod
     def extract(cls, source: Any) -> ProblemSpecification:
         """
@@ -207,9 +265,12 @@ class ProblemExtractor:
         """Sanitizes HTML content into clean readable text."""
         if not raw_html:
             return ""
-        # Strip script, style, noscript, svg blocks and HTML comments completely
-        text = re.sub(r"(?is)<(script|style|noscript|svg)\b[^>]*>.*?</\1>", " ", raw_html)
+        # Strip script, style, noscript, svg, template blocks even with malformed or spaced closing tags or unclosed tags
+        text = re.sub(r"(?is)<(script|style|noscript|svg|template)\b[^>]*>.*?(?:</\s*\1\s*>|$)", " ", raw_html)
+        # Strip HTML comments
         text = re.sub(r"(?s)<!--.*?-->", "", text)
+        # Strip CSS comments (/* ... */) that may have leaked
+        text = re.sub(r"(?s)/\*.*?\*/", " ", text)
         # Replace line-breaking HTML elements with newlines
         text = re.sub(r"(?i)<br\s*/?>", "\n", text)
         text = re.sub(r"(?i)</?(p|div|h[1-6]|tr|li|pre|blockquote)[^>]*>", "\n", text)
@@ -217,6 +278,8 @@ class ProblemExtractor:
         text = re.sub(r"<[^>]+>", " ", text)
         # Decode HTML entities (&quot;, &lt;, &gt;, &amp;, &#39;, &nbsp;, etc.)
         text = html.unescape(text)
+        # Sanitize any residual CSS
+        text = cls._sanitize_css(text)
 
         if preserve_newlines:
             lines = [line.strip() for line in text.splitlines()]
@@ -382,33 +445,56 @@ class ProblemExtractor:
           - Numbered or unnumbered text blocks ("Sample Input 1:", "Sample Output 1:")
           - Fallback single sample extraction
         """
-        cases: List[SampleCase] = []
+        def _filter_and_renumber(cases_to_clean: List[SampleCase]) -> List[SampleCase]:
+            out: List[SampleCase] = []
+            for case in cases_to_clean:
+                clean_in = cls._sanitize_css(case.input_text).strip()
+                clean_out = cls._sanitize_css(case.expected_output).strip()
+                clean_in = re.sub(r"<[^>]+>", "", clean_in).strip()
+                clean_out = re.sub(r"<[^>]+>", "", clean_out).strip()
+
+                if not clean_in and not clean_out:
+                    continue
+                if cls._is_pure_css(case.input_text) or cls._is_pure_css(case.expected_output):
+                    continue
+
+                out.append(SampleCase(
+                    input_text=clean_in,
+                    expected_output=clean_out,
+                    case_number=len(out) + 1,
+                    explanation=case.explanation,
+                ))
+            return out
 
         # Strategy 1: DOM Class Selectors (.sample-input and .sample-output)
         inputs_m = re.findall(r'class=["\'][^"\']*sample-input[^"\']*["\'][^>]*>(.*?)</div>', html_text, re.IGNORECASE | re.DOTALL)
         outputs_m = re.findall(r'class=["\'][^"\']*sample-output[^"\']*["\'][^>]*>(.*?)</div>', html_text, re.IGNORECASE | re.DOTALL)
 
+        raw_cases: List[SampleCase] = []
         if inputs_m and outputs_m:
             for idx, (in_raw, out_raw) in enumerate(zip(inputs_m, outputs_m), start=1):
                 clean_in = cls._clean_text(in_raw, preserve_newlines=True)
                 clean_out = cls._clean_text(out_raw, preserve_newlines=True)
-                cases.append(SampleCase(
+                raw_cases.append(SampleCase(
                     input_text=clean_in,
                     expected_output=clean_out,
                     case_number=idx,
                 ))
-            return cases
+            valid = _filter_and_renumber(raw_cases)
+            if valid:
+                return valid
 
-        # If only inputs exist without outputs
         if inputs_m and not outputs_m:
             for idx, in_raw in enumerate(inputs_m, start=1):
                 clean_in = cls._clean_text(in_raw, preserve_newlines=True)
-                cases.append(SampleCase(
+                raw_cases.append(SampleCase(
                     input_text=clean_in,
                     expected_output="",
                     case_number=idx,
                 ))
-            return cases
+            valid = _filter_and_renumber(raw_cases)
+            if valid:
+                return valid
 
         # Strategy 2: Labeled Text Pattern Matching across sanitized text
         text = cls._clean_text(html_text, preserve_newlines=True)
@@ -421,30 +507,30 @@ class ProblemExtractor:
         )[0]
 
         sample_pattern = re.compile(
-            r"(?:^|\n)\s*(?:(?:Sample\s+Input)|(?:Input(?!\s*(?:Description|Specification|Format|Size))))\s*(?:Case\s*)?(?P<num>\d+)?\s*[:\-]?\s*\n?"
+            r"(?:^|\n)\s*(?P<in_label>(?:Sample\s+Input\s*(?:Case\s*\d+)?\s*[:\-]?)|(?:Input\s*(?:Case\s*\d+)?\s*[:\-])|(?:Input\s*(?:Case\s*\d+)?(?=\n)(?!\s*\{)))\s*\n?"
             r"(?P<input>.*?)\s*"
-            r"(?:^|\n)\s*(?:(?:Sample\s+Output)|(?:Output(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P=num)?\s*[:\-]?\s*\n?"
+            r"(?:^|\n)\s*(?P<out_label>(?:Sample\s+Output\s*(?:Case\s*\d+)?\s*[:\-]?)|(?:Output\s*(?:Case\s*\d+)?\s*[:\-])|(?:Output\s*(?:Case\s*\d+)?(?=\n)(?!\s*\{)))\s*\n?"
             r"(?P<output>.*?)\s*"
             r"(?:(?:\n\s*|\A)(?:Sample\s+)?Explanation\s*(?:Case\s*)?(?:\d+)?\s*[:\-]?\s*(?P<explanation>.*?))?"
-            r"(?=(?:\n\s*(?:Sample\s+)?Input(?!\s*(?:Description|Specification|Format|Size))\s*(?:Case\s*)?\d*\s*[:\-])|(?:\n\s*Constraints)|(?:\n\s*Accepted\b)|(?:\n\s*Topics\b)|(?:\n\s*Code\s+Editor)|$)",
-            re.DOTALL | re.IGNORECASE
+            r"(?=(?:\n\s*(?:Sample\s+)?Input\b)|(?:\n\s*Constraints)|(?:\n\s*Accepted\b)|(?:\n\s*Topics\b)|(?:\n\s*Code\s+Editor)|$)",
+            re.DOTALL | re.IGNORECASE,
         )
 
         matches = list(sample_pattern.finditer(text_for_samples))
+        raw_cases = []
         if matches:
             for idx, m in enumerate(matches, start=1):
                 inp = m.group("input").strip()
                 out = m.group("output").strip()
                 exp = m.group("explanation").strip() if m.group("explanation") else None
-                cases.append(SampleCase(
+                raw_cases.append(SampleCase(
                     input_text=inp,
                     expected_output=out,
                     case_number=idx,
                     explanation=exp,
                 ))
-            return cases
 
-        return cases
+        return _filter_and_renumber(raw_cases)
 
 
 # Module-level convenience function fulfilling PROJECT.md contract

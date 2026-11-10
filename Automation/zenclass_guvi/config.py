@@ -48,9 +48,14 @@ ZENCLASS_DASHBOARD_URL = "https://v2.zenclass.in/dashboard"
 
 # Browser Execution Settings (Requirement R1: visible foreground browser)
 HEADLESS = os.getenv("AUTOMATION_HEADLESS", "false").lower() == "true"  # strictly False by default
+CODEKATA_HEADLESS = os.getenv("AUTOMATION_CODEKATA_HEADLESS", "true").lower() in ("true", "1", "yes")
 SLOW_MO = float(os.getenv("AUTOMATION_SLOW_MO", "50.0"))  # 50ms realistic human cadence
 NAVIGATION_TIMEOUT = float(os.getenv("AUTOMATION_NAV_TIMEOUT", "30000.0"))  # 30 seconds
 DEFAULT_TIMEOUT = float(os.getenv("AUTOMATION_TIMEOUT", "10000.0"))  # 10 seconds
+
+# CodeKata Difficulty Settings
+DEFAULT_CODEKATA_DIFFICULTIES = ["Medium", "Hard"]
+VALID_CODEKATA_DIFFICULTIES = ["Easy", "Medium", "Hard"]
 
 BROWSER_ARGS = [
     "--start-maximized",
@@ -106,6 +111,9 @@ class Config:
     ZENCLASS_DASHBOARD_URL = ZENCLASS_DASHBOARD_URL
 
     HEADLESS = HEADLESS
+    CODEKATA_HEADLESS = CODEKATA_HEADLESS
+    DEFAULT_CODEKATA_DIFFICULTIES = DEFAULT_CODEKATA_DIFFICULTIES
+    VALID_CODEKATA_DIFFICULTIES = VALID_CODEKATA_DIFFICULTIES
     SLOW_MO = SLOW_MO
     NAVIGATION_TIMEOUT = NAVIGATION_TIMEOUT
     DEFAULT_TIMEOUT = DEFAULT_TIMEOUT

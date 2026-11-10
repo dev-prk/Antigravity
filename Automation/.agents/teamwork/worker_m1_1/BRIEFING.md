@@ -1,7 +1,7 @@
-# BRIEFING — 2026-11-10T15:18:00Z
+# BRIEFING — 2026-11-10T22:40:00Z
 
 ## Mission
-Implement Milestone 1 (Core Foundation & Infrastructure) of the ZenClass and Guvi CodeKata Automation Suite: requirements, configuration, BrowserManager, StateManager, HitlHandler, SummaryReporter, CLI entrypoint, and comprehensive test suite.
+Worker for Milestone 1: Filtering & Extractor Foundation. Implement StateManager difficulty filtering, Extractor CSS sanitization, Config & CLI headless/difficulty options, and comprehensive test suite with 100% backward compatibility.
 
 ## 🔒 My Identity
 - Archetype: implementer, qa, specialist
@@ -9,6 +9,9 @@ Implement Milestone 1 (Core Foundation & Infrastructure) of the ZenClass and Guv
 - Working directory: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m1_1
 - Original parent: cbd0649b-f648-4724-a244-a22a5102ccc4
 - Milestone: Milestone 1 - Core Foundation & Infrastructure
+- New Assignment: Milestone 1 - Filtering & Extractor Foundation (Parent: 78e8d42e-b180-4514-9c4c-a12e10bd774c)
+- Working directory: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+- State folder: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m1_1
 
 ## 🔒 Key Constraints
 - Headed browser by default (headless=False)
@@ -16,31 +19,27 @@ Implement Milestone 1 (Core Foundation & Infrastructure) of the ZenClass and Guv
 - All 9 required R3 fields: platform, task_id, task_category, status, attempt_count, result, timestamp, failure_reason, next_action
 - Strict contract compliance with PROJECT.md and explorer handoffs
 - Integrity mandate: genuine implementations only, no hardcoded test mocks/facades
+- Exclusive write ownership: core/state_manager.py, solver/extractor.py, main.py, config.py, tests/test_m1_filtering.py
+- DO NOT edit any other files!
+- Backward compatibility: preserve all 268 existing test passes.
 
 ## Current Parent
-- Conversation ID: cbd0649b-f648-4724-a244-a22a5102ccc4
-- Updated: 2026-11-10T15:18:00Z
+- Conversation ID: 78e8d42e-b180-4514-9c4c-a12e10bd774c
+- Updated: 2026-11-10T22:40:00Z
 
 ## Task Summary
-- **What to build**: Core infrastructure in `zenclass_guvi/`:
-  - `requirements.txt`: `playwright>=1.40.0`, `pytest>=7.0.0`
-  - `config.py`: Centralized URLs, credentials, paths, timeouts, browser args, and Config wrapper
-  - `core/__init__.py`: Package export for BrowserManager, StateManager, HitlHandler, and SummaryReporter
-  - `core/browser.py`: Persistent headed Chromium manager with anti-detection flags, dual-layer cookie persistence, tab reuse, and auxiliary tab cleanup
-  - `core/state_manager.py`: Thread-safe SQLite persistence in WAL mode with all 9 R3 fields, batch insertion, and atomic JSON export via POSIX os.replace
-  - `core/hitl_handler.py`: Human-in-the-Loop gatekeeper detecting Cloudflare Turnstile, reCAPTCHA, OTP, ZenClass MFA (`.login-mfa-active`), and Guvi `#myModal`, with audible alert, ANSI box, and URL-validated project link prompts
-  - `core/reporter.py`: Executive Markdown report (`reports/SUMMARY_REPORT.md`), JSON summary (`reports/summary.json`), and CLI terminal box
-  - `main.py`: Unified CLI entrypoint with subparsers (`run-all`, `run-codekata`, `run-zenclass`, `resume`, `report`), signal handling (SIGINT/SIGTERM), and lifecycle orchestration
-  - `tests/test_m1_core.py`: Comprehensive test suite with 22 tests covering all components
-- **Success criteria**: 100% test pass on `tests/test_m1_core.py` (22/22) and E2E test runner (78/78).
-- **Interface contracts**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
-- **Code layout**: `zenclass_guvi/` root, `core/`, `tests/`
+- **What to build**:
+  1. `core/state_manager.py`: `list_pending` and `get_pending_tasks` difficulty filtering (case-insensitive, crash-proof SQL with `json_valid`).
+  2. `solver/extractor.py`: CSS sanitization in `_clean_text`, new `_sanitize_css`, tighter `sample_pattern` in Strategy 2, post-extraction testcase validation & renumbering.
+  3. `config.py`: Add `CODEKATA_HEADLESS`, `DEFAULT_CODEKATA_DIFFICULTIES`, `VALID_CODEKATA_DIFFICULTIES`.
+  4. `main.py`: `parse_difficulties` helper, `--headless`/`--no-headless`/`--headed` CLI arguments, `run-codekata` `--difficulty` option, pass `difficulties` only when provided to preserve test mock assertions.
+  5. `tests/test_m1_filtering.py`: Comprehensive test suite verifying all new behaviors.
+- **Success criteria**: All 268 existing tests pass + all new tests pass (0 failures).
+- **Interface contracts**: PROJECT.md & SCOPE.md
+- **Code layout**: `zenclass_guvi/`
 
 ## Key Decisions Made
-- Dual-layer cookie persistence: combining persistent context profile directory with explicit `storage_state.json` serialize/deserialize to preserve non-expiring session cookies across process lifetimes.
-- Thread safety in StateManager: internal `threading.RLock()` protecting all database reads and writes to eliminate SQLite segmentation faults on macOS Apple Silicon.
-- Dual interface compatibility: implementing both instance methods and class/static methods (`Reporter.generate_report`, `HitlHandler.check_guardrails_in_html`) to support both standalone OOP usage and progressive test harness contracts.
-- Backward-compatible attribute aliasing on `TaskRecord`: `@property attempts` and `@property category` mapping to `attempt_count` and `task_category` respectively, with `to_dict()` outputting `timestamp` alias for strict R3 compliance.
+- [TBD]
 
 ## Artifact Index
 - DISPATCH.md — Assignment instructions
@@ -49,23 +48,14 @@ Implement Milestone 1 (Core Foundation & Infrastructure) of the ZenClass and Guv
 - handoff.md — Final self-contained handoff report
 
 ## Change Tracker
-- **Files modified**:
-  - `zenclass_guvi/requirements.txt`: Python package dependencies
-  - `zenclass_guvi/config.py`: Centralized configuration, URLs, credentials, paths, timeouts
-  - `zenclass_guvi/core/__init__.py`: Core package exports
-  - `zenclass_guvi/core/browser.py`: Headed browser lifecycle manager
-  - `zenclass_guvi/core/state_manager.py`: Thread-safe SQLite state coordinator with atomic JSON export
-  - `zenclass_guvi/core/hitl_handler.py`: Human-in-the-loop pause manager and guardrail detector
-  - `zenclass_guvi/core/reporter.py`: Executive Markdown and JSON reporting engine
-  - `zenclass_guvi/main.py`: Unified CLI entrypoint with 5 subparsers and signal handling
-  - `zenclass_guvi/tests/test_m1_core.py`: 22 unit & integration tests covering all M1 components
-- **Build status**: 100% PASS (22/22 unit/integration tests in `test_m1_core.py`, 78/78 in `test_runner.py`)
+- **Files modified**: [TBD]
+- **Build status**: [TBD]
 - **Pending issues**: None
 
 ## Quality Status
-- **Build/test result**: PASS (100% pass across all tests)
-- **Lint status**: Clean (all python files compile with 0 syntax errors)
-- **Tests added/modified**: `zenclass_guvi/tests/test_m1_core.py` (22 tests)
+- **Build/test result**: [TBD]
+- **Lint status**: [TBD]
+- **Tests added/modified**: `tests/test_m1_filtering.py`
 
 ## Loaded Skills
 - None explicitly loaded

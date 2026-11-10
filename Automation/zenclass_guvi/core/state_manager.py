@@ -167,6 +167,7 @@ class StateManager:
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_platform_status ON tasks(platform, status);")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_status ON tasks(status);")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_updated_at ON tasks(updated_at);")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_difficulty ON tasks(LOWER(json_extract(metadata, '$.difficulty')));")
 
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS task_attempts (
@@ -471,7 +472,8 @@ class StateManager:
     def list_pending(
         self,
         platform: Optional[str] = None,
-        limit: Optional[int] = None
+        limit: Optional[int] = None,
+        difficulties: Optional[List[str]] = None
     ) -> List[TaskRecord]:
         """Returns all pending/discovered/redo tasks ready for execution."""
         with self._lock:
@@ -483,6 +485,21 @@ class StateManager:
                 query += " AND LOWER(platform) = ?"
                 params.append(platform.lower())
 
+            if difficulties:
+                cleaned_diffs = [
+                    d.strip().lower()
+                    for d in difficulties
+                    if isinstance(d, str) and d.strip()
+                ]
+                if cleaned_diffs:
+                    placeholders = ", ".join(["?"] * len(cleaned_diffs))
+                    query += f""" AND CASE 
+                        WHEN metadata IS NOT NULL AND json_valid(metadata) = 1 
+                        THEN LOWER(json_extract(metadata, '$.difficulty')) 
+                        ELSE NULL 
+                    END IN ({placeholders})"""
+                    params.extend(cleaned_diffs)
+
             query += " ORDER BY created_at ASC"
             if limit is not None:
                 query += " LIMIT ?"
@@ -491,9 +508,13 @@ class StateManager:
             cursor.execute(query, params)
             return [self._row_to_task(row) for row in cursor.fetchall()]
 
-    def get_pending_tasks(self, platform: Optional[str] = None) -> List[TaskRecord]:
+    def get_pending_tasks(
+        self,
+        platform: Optional[str] = None,
+        difficulties: Optional[List[str]] = None
+    ) -> List[TaskRecord]:
         """Alias satisfying PROJECT.md interface contract."""
-        return self.list_pending(platform=platform)
+        return self.list_pending(platform=platform, difficulties=difficulties)
 
     def list_tasks(
         self,
