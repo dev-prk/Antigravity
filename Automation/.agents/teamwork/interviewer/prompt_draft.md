@@ -1,7 +1,7 @@
-Automate completion of Guvi CodeKata problems, ZenClass tasks, and ZenClass projects in foreground mode using the provided user credentials, maintaining persistent task state and progress reporting.
+Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, and ZenClass projects using a visible foreground browser session and the user's provided credentials, maintaining persistent task execution state and progress reports.
 
-Working directory: [OPEN: Where should the project code, automation scripts, and task state records live?]
-Integrity mode: [OPEN: Integrity restrictions from Step 3]
+Working directory: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+Integrity mode: development
 
 ## Reference Material
 - Guvi CodeKata: https://www.guvi.in/code-kata/
@@ -11,25 +11,28 @@ Integrity mode: [OPEN: Integrity restrictions from Step 3]
 
 ## Requirements
 
-### R1. Authentication and Foreground Platform Interaction
-- Authenticate to Guvi and ZenClass using the provided credentials in a visible foreground browser session.
-- [OPEN: Which browser environment should be used for execution?]
-- Never fabricate completion or bypass authentication, CAPTCHA, access controls, or assessment restrictions; request human participation when encountering CAPTCHAs or OTPs.
+### R1. Foreground Platform Authentication and Interaction
+- Authenticate to Guvi and ZenClass using the provided credentials via a visible foreground browser window (headed mode) so execution can be monitored in real time.
+- Never fabricate completion or attempt to bypass authentication, CAPTCHA, access controls, or assessment restrictions; immediately halt and prompt the user when human intervention (such as CAPTCHA or OTP verification) is required.
 
-### R2. Autonomous Task Execution across Platforms
-- [OPEN: What scope should the team tackle for CodeKata, ZenClass tasks, and ZenClass projects?]
-- Solve programming practice problems and complete technical tasks, validating answers against platform requirements.
-- [OPEN: How should projects requiring external repository creation or hosting be handled?]
+### R2. Autonomous Problem and Task Completion
+- Discover and complete all pending and uncompleted items across Guvi CodeKata, ZenClass tasks, and ZenClass projects.
+- Solve programming problems and technical tasks directly, validating answers against platform test cases and submission feedback before finalizing submission.
+- For ZenClass projects requiring external repository creation or deployed application URLs, prepare all solution code locally and pause to prompt the user for repository hosting or deployment links.
 
-### R3. State Management and Progress Reporting
-- [OPEN: How should the team verify and report successful completions?]
-- Maintain persistent execution state across interruptions (platform, task identifier, category, status, attempt count, result, timestamp, failure reason, next action).
-- Report metrics including total discovered, total completed, total pending, total blocked, success rate, time spent, and errors requiring human intervention.
+### R3. Persistent State Management and Progress Reporting
+- Maintain a persistent state tracking file across executions recording platform, task identifier, task category, status, attempt count, result, timestamp, failure reason, and next action.
+- Produce a summary report providing total discovered, total completed, total pending, total blocked, success rate, time spent, and errors requiring human intervention.
 
 ## Acceptance Criteria
 
-### Execution & Verification
-- [ ] Foreground browser operates visibly to allow user observation and intervention.
-- [ ] [OPEN: Acceptance criterion for task/project execution scope]
-- [ ] Authentication, CAPTCHA, or restriction blocks trigger an immediate prompt for human participation rather than attempting unauthorized bypass.
-- [ ] Persistent state records and summary report are generated with required tracking metrics.
+### Platform Automation & Execution
+- [ ] Browser session runs visibly in the foreground throughout execution.
+- [ ] All discoverable pending items across Guvi CodeKata, ZenClass tasks, and ZenClass projects are either completed and submitted or marked blocked with a recorded reason.
+- [ ] Encountering CAPTCHA, OTP, or identity-sensitive assessment restrictions halts execution and prompts for human participation without fabricating results or attempting unauthorized bypass.
+- [ ] For projects requiring external repository hosting or live deployment URLs, solution code is prepared locally and execution pauses with an explicit prompt for human input.
+
+### State & Verification
+- [ ] Successful completion of each task is verified through positive submission feedback from the platform UI.
+- [ ] A persistent state tracking file records each item's platform, identifier, category, status, attempt count, result, timestamp, failure reason, and next action.
+- [ ] A summary report is generated detailing total discovered, total completed, total pending, total blocked, overall success rate, time spent, and issues requiring human intervention.
