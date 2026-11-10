@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T15:37:00Z
+# BRIEFING — 2026-11-10T15:43:00Z
 
 ## Mission
 Investigate and design production-ready blueprints for `solver/extractor.py` and `solver/ace_adapter.py` for Guvi CodeKata automation.
@@ -25,24 +25,25 @@ Investigate and design production-ready blueprints for `solver/extractor.py` and
   - `zenclass_guvi/tests/e2e/tier1_features/test_f05_extractor.py`
   - `zenclass_guvi/tests/e2e/tier1_features/test_f08_ace_adapter.py`
   - `zenclass_guvi/tests/e2e/harness/dom_fixtures.py`, `reference_oracle.py`, `contract_loader.py`
+  - `zenclass_guvi/tests/e2e/tier2_boundaries/test_b01_empty_zero_inputs.py`
+  - `zenclass_guvi/tests/e2e/tier3_pairwise/test_p02_discovery_to_solver_sandbox.py`
 - **Key findings**:
-  - Extractor must support both live Playwright `Page` and raw HTML string `str`.
-  - Must produce `ProblemSpecification` with `title`, `description`, `input_spec`, `output_spec`, `sample_cases: List[SampleCase]`, `constraints`, `category`, `raw_text`, plus property aliases `input_desc`, `output_desc`, `sample_input`, `sample_output` for 100% backward compatibility with E2E test harness.
-  - Robust multi-strategy extraction: DOM class selectors -> Labeled heading blocks -> Regex pattern matching.
-  - Ace Adapter must use 4-step CDP keyboard injection (`click #editor textarea.ace_text-input`, `Meta+A`, `Backspace`, `insert_text(code)`) with JS API fallback (`ace.edit("editor").setValue(code, 1)` / `document.getElementById("editor").env.editor`).
-  - Read code via JS `getValue()` or `.ace_line` concatenation.
-  - Wait for editor readiness via `window.ace` or DOM readiness `#editor.ace_editor`.
-- **Unexplored areas**: None. Implementation blueprint is completely designed.
+  - `extractor.py` blueprint created with `SampleCase` and `ProblemSpecification` supporting multiple sample cases, constraints, categories, and property getters maintaining 100% contract compatibility.
+  - Multi-stage parsing combining CSS class selectors, labeled heading blocks, and negative lookahead regex to avoid false positives on `Input Description:`.
+  - `ace_adapter.py` blueprint created implementing 4-step CDP keyboard injection (`click`, `Meta+A`/`Control+A`, `Backspace`, `insert_text(code)`), JS direct API fallback, buffer verification, and readiness polling.
+  - Verified blueprints against 12 self-tests and 8 existing E2E test cases across Tiers 1, 2, and 3 with 100% pass rate.
+- **Unexplored areas**: None.
 
 ## Key Decisions Made
-- Use standard library (`re`, `html`, `dataclasses`, `typing`, `logging`) without third-party dependencies (like `bs4`) since `requirements.txt` does not contain `beautifulsoup4`.
-- Create `proposed_extractor.py` and `proposed_ace_adapter.py` in working directory for easy reference by implementers.
+- Implemented `proposed_extractor.py` and `proposed_ace_adapter.py` strictly using Python standard library without third-party parser dependencies (`bs4`).
+- Provided `ProblemSpec` alias and backward-compatible property getters (`input_desc`, `output_desc`, `sample_input`, `sample_output`).
+- Added platform-adaptive modifier key (`Meta` on darwin vs `Control` on others) for Ace Editor Select All.
 
 ## Artifact Index
 - DISPATCH.md — incoming dispatch instructions
 - BRIEFING.md — persistent memory
 - progress.md — liveness heartbeat
-- proposed_extractor.py — reference blueprint implementation for solver/extractor.py
-- proposed_ace_adapter.py — reference blueprint implementation for solver/ace_adapter.py
-- test_blueprints.py — verification test script validating blueprints against test fixtures
-- handoff.md — final handoff report
+- proposed_extractor.py — production-ready reference blueprint for `solver/extractor.py`
+- proposed_ace_adapter.py — production-ready reference blueprint for `solver/ace_adapter.py`
+- test_blueprints.py — 12-test self-verification suite (100% passing)
+- handoff.md — 5-component handoff report

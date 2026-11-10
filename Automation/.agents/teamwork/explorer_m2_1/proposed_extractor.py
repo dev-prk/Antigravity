@@ -362,12 +362,12 @@ class ProblemExtractor:
         text = cls._clean_text(html_text, preserve_newlines=True)
 
         sample_pattern = re.compile(
-            r"(?:Sample\s+)?Input\s*(?:Case\s*)?(?P<num>\d+)?\s*[:\-]?\s*"
+            r"(?:(?:Sample\s+Input)|(?:Input(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P<num>\d+)?\s*[:\-]?\s*"
             r"(?P<input>.*?)\s*"
-            r"(?:Sample\s+)?Output\s*(?:Case\s*)?(?P=num)?\s*[:\-]?\s*"
-            r"(?P<output>.*?)"
+            r"(?:(?:Sample\s+Output)|(?:Output(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P=num)?\s*[:\-]?\s*"
+            r"(?P<output>.*?)\s*"
             r"(?:(?:\n\s*|\A)(?:Sample\s+)?Explanation\s*(?:Case\s*)?(?:\d+)?\s*[:\-]?\s*(?P<explanation>.*?))?"
-            r"(?=(?:(?:Sample\s+)?Input\s*(?:Case\s*)?\d*\s*[:\-])|(?:Constraints)|$)",
+            r"(?=(?:(?:Sample\s+)?Input(?!\s*(?:Description|Specification|Format))\s*(?:Case\s*)?\d*\s*[:\-])|(?:Constraints)|$)",
             re.DOTALL | re.IGNORECASE
         )
 
