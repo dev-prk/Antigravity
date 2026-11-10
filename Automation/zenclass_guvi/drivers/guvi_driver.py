@@ -610,11 +610,22 @@ class GuviDriver(BaseDriver):
 
         # Record IN_PROGRESS in StateManager
         if self.state_manager:
-            self.state_manager.update_task_status(
-                task_id=task_id,
-                status=TaskStatus.IN_PROGRESS.value,
-                next_action="EXTRACTING_AND_SOLVING",
-            )
+            if not self.state_manager.get_task(task_id):
+                self.state_manager.record_task(
+                    task_id=task_id,
+                    platform="guvi",
+                    title=slug.replace("-", " ").title(),
+                    category="CodeKata",
+                    url=workspace_url,
+                    status=TaskStatus.IN_PROGRESS.value,
+                    next_action="EXTRACTING_AND_SOLVING",
+                )
+            else:
+                self.state_manager.update_task_status(
+                    task_id=task_id,
+                    status=TaskStatus.IN_PROGRESS.value,
+                    next_action="EXTRACTING_AND_SOLVING",
+                )
 
         # 1. Navigate to problem workspace
         self.navigate(workspace_url)
@@ -642,7 +653,12 @@ class GuviDriver(BaseDriver):
 
         if not val_result.all_passed:
             duration = time.time() - start_time
-            err_msg = val_result.error_message or "Local sandbox test case verification failed"
+            first_fail = next((r for r in val_result.results if not r.passed), None) if val_result.results else None
+            err_msg = (
+                getattr(val_result, "error_message", None)
+                or (first_fail.error_message if first_fail else None)
+                or "Local sandbox test case verification failed"
+            )
             logger.error(f"Local sandbox pre-check FAILED for '{slug}': {err_msg}")
 
             if self.state_manager:

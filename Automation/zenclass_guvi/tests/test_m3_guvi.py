@@ -701,8 +701,7 @@ class TestGuviWorkspacePipeline(unittest.TestCase):
                 actual_output="0",
                 error_message="Output mismatch: expected '42', got '0'",
                 duration=0.01,
-            )],
-            error_message="Output mismatch: expected '42', got '0'"
+            )]
         )
 
         result = self.driver.solve_problem("complex-task")
