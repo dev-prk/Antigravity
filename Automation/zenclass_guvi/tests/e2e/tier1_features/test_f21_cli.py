@@ -30,9 +30,14 @@ class TestFeature21CLIInterface(unittest.TestCase):
     def test_cli_rejects_unknown_command(self):
         """Verifies CLI rejects unsupported commands."""
         import sys
-        # argparse prints error and exits on invalid commands
-        with self.assertRaises(SystemExit):
-            self.parser.parse_args(["unsupported-command"])
+        import io
+        old_stderr = sys.stderr
+        sys.stderr = io.StringIO()
+        try:
+            with self.assertRaises(SystemExit):
+                self.parser.parse_args(["unsupported-command"])
+        finally:
+            sys.stderr = old_stderr
 
 
 if __name__ == "__main__":

@@ -15,7 +15,7 @@ class TestFeature12ZenClassAuth(unittest.TestCase):
 
     def test_login_dom_selectors(self):
         """Authoritative source: spec_miner_survey_3 §1.1 - Material UI inputs and trailing space in placeholder."""
-        self.assertIn('.email-input', ZENCLASS_LOGIN_HTML)
+        self.assertIn('class="email-input"', ZENCLASS_LOGIN_HTML)
         self.assertIn('placeholder="Enter your mail"', ZENCLASS_LOGIN_HTML)
         self.assertIn('placeholder="Enter your password "', ZENCLASS_LOGIN_HTML)
         self.assertIn('class="primary-btn sign-in-pad"', ZENCLASS_LOGIN_HTML)

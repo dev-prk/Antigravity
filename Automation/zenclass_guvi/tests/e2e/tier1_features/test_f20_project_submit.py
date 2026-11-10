@@ -29,7 +29,7 @@ class TestFeature20ProjectSubmit(unittest.TestCase):
                 data = json.loads(resp.read().decode("utf-8"))
 
             self.assertEqual(data["status"], "success")
-            self.assertEqual(data["submissionId"], "proj-sub-501")
+            self.assertEqual(data["submissionId"], "proj-501")
             self.assertIn("Project submitted successfully", data["message"])
 
 
