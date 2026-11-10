@@ -1,153 +1,526 @@
-# Handoff Report — Explorer M1 (Researcher)
+# Handoff Report: Headed Browser Manager & Configuration Architecture
 
 **Agent ID**: `explorer_m1_1`  
 **Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_1/`  
-**Recipient**: `db58fa7b-d6eb-41a4-a41e-34fc08b3e1d0` (Orchestrator)  
-**Milestone**: M1: Resume Materials Ingestion  
-**Handoff Type**: Hard (Task Complete)
+**Recipient**: `cbd0649b-f648-4724-a244-a22a5102ccc4` (Parent Orchestrator / Sub-Orchestrator M1)  
+**Milestone**: Milestone 1 (Core Foundation & Infrastructure)  
+**Handoff Type**: Hard (Task Complete)  
 
 ---
 
 ## 1. Observation
 
-A total of 25 files were identified and ingested in `/Users/devesh/Documents/Resume`:
-- 19 `.docx` documents: converted and read using `textutil -convert txt -stdout`.
-- 5 `.pdf` documents: inspected using direct document viewing (`view_file`).
-- 1 `.rtf` document (`Journy.rtf`): parsed via `textutil`, revealing a 51,834-character, 636-line unfiltered first-person narrative.
+Direct system inspections, framework probes, and runtime tests were conducted on macOS Darwin 25.6.0 Apple Silicon (`arm64`) to evaluate Playwright browser lifecycle, window management, persistence, and anti-detection capabilities.
 
-Key direct quotes and verbatim observations:
+### 1.1 Requirements & Specifications Baseline
+- **Original Request File**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md`
+  - Requirement R1 (lines 18-20): "Authenticate to Guvi and ZenClass using the provided credentials via a visible foreground browser window (headed mode) so execution can be monitored in real time."
+  - Reference Credentials (line 14): `devsh.pareek@gmail.com` / `Dev@99#$%esh`
+  - Target Platforms (lines 11-13): Guvi CodeKata (`https://www.guvi.in/code-kata/`), ZenClass Tasks (`https://v2.zenclass.in/tasks`), ZenClass Projects (`https://v2.zenclass.in/projects`).
+- **Project Plan**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
+  - Browser Interface Contract (lines 53-56):
+    - `get_browser_context() -> BrowserContext`
+    - `get_page(url: str = None) -> Page`
+    - `close_context() -> None`
+  - Architecture layout specifies `zenclass_guvi/config.py` and `zenclass_guvi/core/browser.py` with persistent storage in `zenclass_guvi/.browser_profile/` and `zenclass_guvi/data/`.
 
-1. **Current Role (Softility)**:
-   - `Devesh_Pareek_DB2_LUW_DBA_Resume.docx` (lines 35-37):
-     > "Sr. Software Engineer (DevOps / PostgreSQL DBA) — Softility Sep 2025 – Present"  
-     > "Administer production PostgreSQL databases, owning data quality assurance through patching, failover management, and space optimization to ensure high system reliability."
-   - `Devesh_Pareek_MBA_Resume_Leadership.pdf` (Page 1, Experience):
-     > "Softility Hyderabad, India | Senior Software Engineer, PostgreSQL Reliability and AI Operations Sep 2025 - Present"  
-     > "Leadership and strategy: Partner with leadership on process optimisation, delivery, team building, stakeholder communication and shift-delegation planning for a 15-person team; interim lead for 3 engineers"  
-     > "Operational ownership: Own reliability of a live client PostgreSQL environment (Patroni failover and switchover, patching, backups, access control); reached independent production ownership within weeks with no prior PostgreSQL experience by transferring Db2 high-availability principles"  
-     > "AI product build: Built an LLM-based diagnostic tool (agent-skill orchestration, lower environment) that reads PostgreSQL configs, logs and parameters and recommends fixes, removing the need for an external monitoring tool"
-   - `Journy.rtf` (line 636):
-     > "When I started working for softitliy I was asked to work on automation and workflow optimzation but later on I find myself supporting Postgres DBA operations again... until one day I find myself in a position where I am leading the Postgres team. We are 3 people in Postgres team and both the people are super senior to me. One with the experience of 7+ years and other with 13+ years of experience. I just have a mere experience of 4.5 years and I was learning the Postgres DBA team."
+### 1.2 Playwright Runtime & Headed Browser Probes
+Empirical tests executed using official Playwright Chromium build (`Chrome for Testing 148.0.7778.96` located at `~/Library/Caches/ms-playwright/chromium-1223`):
 
-2. **Career Transition & Independent AI Building**:
-   - `Devesh_Pareek_MBA_Resume_Leadership.pdf` (Page 1):
-     > "Independent AI and Data Automation Builder (after Johns Hopkins admission) Jan 2025 - Aug 2025 | Built Python and LLM workflow automations during the visa delay; this portfolio led directly to the Softility offer"
-   - `Journy.rtf` (line 634):
-     > "I left Deloitte and HYD in dec 2024 for good and applied to get into JHU. I got MSE in Data science from JHU and I was happy that I’ll be going to states but I didn’t get any visa slots and hence couldn’t go to USA. I dropped that plan and applied to a company and got selected in September of 2025 but during this duration of Jan 2025 till September 2025 I made few automations using AI and to optimise the process that got me hired."
-   - `Devesh_Pareek_Resume_Deloitte(1).docx` (Projects section):
-     > "Autonomous MVP Builder — Multi-Agent System: Built as a personal experiment to reduce the manual back-and-forth of building software with AI tools. The setup uses three separate agent roles — a Supervisor, a Developer, and a Tester — each running as its own chat instance. The agents don't share memory or talk directly. Instead, the Developer writes code and logs its work to a develop.log file; the Tester reads the code, runs checks, and writes findings to a tester.log file. The Supervisor reads both logs, compares the results against the requirements I set at the start, and decides whether to send the agents through another round or stop."
+1. **Headed Window Launch & Screen Maximization on macOS**:
+   - Command:
+     ```python
+     context = p.chromium.launch_persistent_context(
+         user_data_dir=tmp_dir,
+         headless=False,
+         no_viewport=True,
+         args=['--start-maximized', '--disable-blink-features=AutomationControlled'],
+         ignore_default_args=['--enable-automation']
+     )
+     ```
+   - Observed Result:
+     - Window launched visibly in the foreground on macOS Aqua desktop.
+     - Inner dimensions evaluated via `page.evaluate(...)`:
+       `{'screenW': 1512, 'screenH': 859, 'innerW': 1512, 'innerH': 772}`
+     - With `no_viewport=True`, viewport size is `None` (unconstrained), automatically matching the full desktop width (1512 scaled points) instead of being restricted to Playwright's default 1280x720 window.
 
-3. **Deloitte USI Experience (DBA & Data Engineer Phase)**:
-   - `Devesh_Pareek_Resume_CERN_v2.pdf` (Page 1, Deloitte section):
-     > "Managed 180+ mission-critical DB2 LUW instances totaling 20+ TB of data; executed HADR failovers and PITR/rollforward recovery to maintain business continuity."  
-     > "Performed query performance tuning using db2expln and cardinality analysis; reclaimed 40–60 GB of storage per optimization cycle through automated reorg/runstats scripts."  
-     > "Resolved a critical /home directory saturation issue by implementing a log archiving process, preventing full-disk failures and maintaining operational stability."  
-     > "Delivered 1,500+ DDL/DML scripts with rollback procedures into CI/CD pipelines; coordinated with SRE teams on pre/post checks for production Linux patching, including DB failover/takeover events."
-   - `Devesh_Pareek_Resume_Postgres_DBA.docx` (Deloitte section):
-     > "Supported 100+ Db2 LUW instances (20TB+) across 4 client accounts, including a global e-commerce platform through Black Friday, July 4th and year-end peaks; maintained 99.99% uptime."  
-     > "Built 15+ HADR clusters (3- and 4-node); delivered zero-downtime Linux patching using scripted failover and takeover."  
-     > "Trained 3 new team members and led knowledge transfer (SOPs, documentation) to the client's incoming vendor."
+2. **Anti-Detection & Bot Defense Verification**:
+   - Evaluation in headed session with anti-detection flags:
+     ```javascript
+     ({
+         webdriver: navigator.webdriver,
+         pluginsLen: navigator.plugins.length,
+         languages: navigator.languages,
+         hasChrome: !!window.chrome,
+         permissions: typeof navigator.permissions
+     })
+     ```
+   - Observed Output:
+     `{'webdriver': False, 'pluginsLen': 5, 'languages': ['en-GB', 'en-US', 'en'], 'hasChrome': True, 'permissions': 'object'}`
+   - The flag `--disable-blink-features=AutomationControlled` successfully forces `navigator.webdriver = False`.
+   - The parameter `ignore_default_args=['--enable-automation']` eliminates the default Chromium infobar banner ("Chrome is being controlled by automated test software"), avoiding automated bot heuristics without monkeypatching runtime objects.
 
-4. **Deloitte USI Experience (Automation & PMO Coordinator Phase)**:
-   - `Devesh_Pareek_Resume_CERN_v2.pdf` (Page 1, Automation & PMO):
-     > "Built Python (Selenium, win32com) automation scraping 26 NewRelic dashboards and parsing Outlook reports, removing manual reporting steps."  
-     > "Deployed Bash/Cronjob automation for daily backups, health checks and resource-utilization reporting, saving approximately 50 hours/month in manual effort."  
-     > "Led 1,500+ major incident calls (each >$1M business impact) across 38 critical incidents, driving real-time resolution and stakeholder coordination."  
-     > "Improved monitoring efficiency across 26+ server dashboards by 50% through automation, enabling proactive issue triaging."
-   - `Devesh_Pareek_Resume.md.docx` (Deloitte section):
-     > "Identified a path to cut Ball Corp's projected 5-year cloud spend by 67%, directly contributing to a 5-year contract renewal"  
-     > "Built an automation suite independently, drove adoption across a 17-person team, and saved ~3,900 hours over 8 months"
-   - `Devesh_Pareek_MBA_Resume_Leadership.pdf` (Page 1):
-     > "Turnaround: Used the freed capacity to take on PMO work; consolidated 17 Excel trackers (pandas), analysed them in Tableau and cleared ~1,500 aged tickets in a $1M+/month client-impact tier, cutting a 5,000-ticket backlog to ~400"  
-     > "Commercial impact: Given one noisy year of data, secured 3 years, built a Tableau capacity forecast and isolated the cost-driving servers: ~60% lower projected client cost and a 5-year contract renewal"  
-     > "Leadership: Led a 16-member team for 6 months as interim lead; personally delivered the vendor knowledge transfer when colleagues hesitated and earned recognition"
+3. **Page Lifecycle & Initial Tab Allocation**:
+   - Tested page count immediately after `launch_persistent_context`:
+     `len(context.pages) == 1`
+   - Calling `context.new_page()` immediately after launch creates a second blank tab, leaving an orphaned `about:blank` tab in position 0.
+   - Reusing `context.pages[0]` if available avoids tab proliferation.
 
-5. **Education & Academics**:
-   - `Devesh_Pareek_MBA_Resume_Leadership.pdf` (Education section):
-     > "Johns Hopkins University, Whiting School of Engineering Admitted 2025 intake | Master of Science in Engineering, Data Science - deferred; US student-visa slots unavailable in India"  
-     > "SRM Institute of Science and Technology, Chennai, India 2017 - 2021 | B.Tech, Computer Science and Engineering - CGPA 7.90/10, First Class with Distinction (semester GPA rose from 7.20 to 9.00)"  
-     > "Honors: Smart India Hackathon 2019 national grand finalist (MHRD); on-campus IET hackathon winner; Certificate of Merit, Techknow-2018 (project judged best working model); college physics contest winner"
-   - `Devesh_Pareek_Resume_CERN_v2.pdf` (Education):
-     > "B.Tech, Computer Science — SRM Institute of Science & Technology 2017 – 2021 | Aggregate 85.6% · Rank 732/4,700"  
-     > "Achievements: Grand Finalist, Smart India Hackathon 2019 | Winner, Valeo + IEEE Hackathon 2020"
-   - `Devesh_Resume.docx`:
-     > "Senior Secondary (Class 12), PCM — 75.2% | Secondary (Class 10) — 83.6%, Mathematics State Topper"
+4. **Dual-Layer Session Persistence (Profile Directory vs Session Cookies)**:
+   - Observation: Chromium persistent profiles store `localStorage` and persistent cookies (cookies with an explicit future `expires` timestamp) in the SQLite database inside `user_data_dir`.
+   - However, pure session cookies (cookies where `expires = -1` or undefined) are purged upon browser process termination by Chromium's standard cookie store.
+   - In contrast, Playwright's `context.storage_state(path=state_file)` explicitly serializes ALL active cookies (including session cookies) into JSON.
+   - Verification test output:
+     - Direct profile restart alone: `Persistent context direct cookies: [('persistent_cookie', 'pers_456')]` (session cookie was lost).
+     - Storage state export: `Saved in storage_state json: ['session_cookie', 'persistent_cookie']` (100% of cookies preserved).
+   - Re-injecting storage state cookies via `context.add_cookies(state['cookies'])` on subsequent runs guarantees zero session loss even if the platform issued session-only cookies.
 
-6. **Leadership, Event Operations & Creative Roles**:
-   - `Devesh_Pareek_MBA_Resume_Leadership.pdf` & `Journy.rtf` (line 631):
-     > "Small World (experiential events and workshops startup) Hyderabad, India | Volunteer, then Host, then City Lead Apr 2024 - Dec 2024"  
-     > "Promoted to City Lead within 5 months; ran weekend workshops and community events end to end: finances, planning, bookings, PR, logistics, team delegation, payouts and HR"  
-     > "Stage: Invited to anchor a national-level summit in Hyderabad alongside national and international film personalities. Deloitte Acting Club: lead in Romeo and Juliet; rewrote the production as an original skit within 2 days of a late change and earned standing ovations on both nights"
+5. **Realistic Interaction Cadence**:
+   - `slow_mo=50.0` introduced an artificial 50ms pause before every Playwright action (clicks, key presses, navigations), preventing race conditions with SPA hydration (React in ZenClass, Qwik in CodeKata) and emulating human cadence.
 
 ---
 
 ## 2. Logic Chain
 
-1. **Step 1: Timeline Reconciliation (Deloitte $\to$ Career Break $\to$ Softility)**:
-   - *Observation*: Multiple external resumes (CERN, Rakuten, Deloitte AI) list Softility start date as `Jan 2025 – Present`. Conversely, `MBA_Resume_Leadership.pdf`, `Resume_Postgres_DBA.docx`, and narrative `Journy.rtf` (lines 634-636) state that Devesh left Deloitte in Dec 2024, received admission to Johns Hopkins University MSE in Data Science, experienced a delay due to US student visa slot unavailability in India from Jan to Aug 2025, and joined Softility in Sep 2025.
-   - *Deduction*: The true employment timeline is:
-     - Deloitte USI: July 2021 – December 2024.
-     - Independent AI & Data Automation Builder: January 2025 – August 2025.
-     - Softility: September 2025 – Present.
-     - The `Jan 2025` start date on certain external resumes was an intentional resume-crafting choice to maintain continuous employment optics for overseas and ATS screening.
+From the empirical observations above, the architectural requirements translate directly into technical decisions:
 
-2. **Step 2: Metric Verification (Db2 Scale)**:
-   - *Observation*: Resumes alternate between "180+ mission-critical Db2 LUW instances (20+ TB)" and "100+ Db2 LUW instances (20TB+) at 99.99% uptime across 4 client accounts".
-   - *Deduction*: As confirmed in `Journy.rtf` and `Devesh_Pareek_Resume_Postgres_DBA.docx`, Devesh managed 4 concurrent accounts. The global e-commerce retail account alone accounted for 100+ instances; the aggregate across all 4 accounts on 30+ servers was 180+ database instances. Both figures are true within their respective scopes.
+1. **Compliance with R1 (Visible Foreground Window)**:
+   - *Observation 1.1 & 1.2.1*: R1 mandates visible headed execution. On macOS Aqua, `headless=False` with `no_viewport=True` and `--start-maximized` displays a full-width foreground Chromium window.
+   - *Deduction*: `config.HEADLESS` must default to `False`. `BrowserManager` must pass `headless=False`, `no_viewport=True`, and `args=["--start-maximized"]`. To ensure the window is active and in the foreground, `page.bring_to_front()` must be invoked upon page retrieval.
 
-3. **Step 3: Commercial Impact Verification (Ball Corp Storage Savings)**:
-   - *Observation*: `Devesh_Resume.docx` states "30% storage cost reduction", whereas `MBA_Resume_Leadership.pdf` and `Resume.md.docx` state "~60% lower projected client cost" and "67% projected 5-year cloud spend cut".
-   - *Deduction*: In `Journy.rtf` (line 631), Devesh details analyzing 3 years of metrics across 16 servers using Tableau, isolating a specific runaway server cluster that reduced that cluster's projected costs by ~60%, which brought down total enterprise client storage expenditure by 30%. This directly secured a 5-year contract renewal.
+2. **Session Resilience via Dual-Layer Persistence**:
+   - *Observation 1.2.4*: Persistent context alone preserves `localStorage` and expiring cookies, but purges non-expiring session cookies upon process close. Guvi and ZenClass use a mixture of cookies (`authToken`, `isZenUser`) and localStorage tokens.
+   - *Deduction*: `BrowserManager` must use `launch_persistent_context(user_data_dir=config.BROWSER_PROFILE_DIR)` for primary persistence, and supplement it with explicit `context.storage_state(path=config.STORAGE_STATE_PATH)` on clean close or crash exit (`atexit`). On startup, if `config.STORAGE_STATE_PATH` exists, any serialized cookies must be re-added via `context.add_cookies()`.
 
-4. **Step 4: Academic Standing Reconciliation**:
-   - *Observation*: Academic records list "85.6% aggregate", "CGPA 7.90/10 (rising from 7.20 to 9.00)", and "Rank 732/4,700".
-   - *Deduction*: Under the grading system of SRM Institute of Science and Technology, percentage aggregate (85.6%), 10-point CGPA (7.90 First Class with Distinction), and batch rank (732/4,700) are co-existing metrics representing the same underlying transcript.
+3. **Tab Cleanliness and Lifecycle Safety**:
+   - *Observation 1.2.3*: Playwright persistent contexts launch with exactly one active page (`len(context.pages) == 1`).
+   - *Deduction*: `BrowserManager.get_page()` must reuse `context.pages[0]` if an unclosed page already exists, rather than creating a new page on every request. Furthermore, `BrowserManager` must provide a `close_auxiliary_tabs(keep_page)` utility to prevent background tab leakage when links open target `_blank` windows.
 
-5. **Step 5: Verifiable Achievement Standard**:
-   - *Observation*: The dispatch requires at least 2 verifiable achievements per employer with numbers/metrics.
-   - *Deduction*:
-     - Softility: >= 4 verified achievements (sole ownership of live client DB replacing 10-year veteran; Patroni HA failover/takeover; operational redesign of 15-person cross-functional team; interim lead of 3 engineers; built custom LLM-based diagnostic tool).
-     - Deloitte USI: >= 6 verified achievements (180+ Db2 instances / 20+ TB data at 99.99% uptime; 1,500+ DDL/DML CI/CD releases with 0 bad outages; 40-60 GB reclaimed/cycle; 1,500+ major incident calls commanded; 1,500 aged tickets cleared reducing 5,000 backlog to ~400; 30%-60% cost reduction enabling 5-year contract renewal; 50 hours/month automated across 26 dashboards).
+4. **Stealth and Anti-Detection Optimization**:
+   - *Observation 1.2.2*: Setting `--disable-blink-features=AutomationControlled` and filtering `--enable-automation` flips `navigator.webdriver` to `False` and removes browser automation banners without requiring external patches or fragile third-party binaries.
+   - *Deduction*: These arguments must be permanently baked into `config.BROWSER_ARGS` and `config.IGNORE_DEFAULT_ARGS`.
+
+5. **Interface Contract Compliance**:
+   - *Observation 1.1*: `PROJECT.md` requires module-level helper functions `get_browser_context()`, `get_page(url)`, and `close_context()`.
+   - *Deduction*: `core/browser.py` must define a singleton `BrowserManager` instance exposed via both OOP class usage (`with BrowserManager() as bm: ...`) and the required functional entry points.
 
 ---
 
 ## 3. Caveats
 
-- **External Tailoring vs. Background Verification (BGV)**: For official background checks (BGV), official documentation (relieving letters, payslips) will record Deloitte end date as December 2024 and Softility start date as September 2025. Applications should use the true dates to ensure 100% compliance with background verification standards.
-- **Client Anonymization**: The global e-commerce platform and US Federal Government agency are referenced by description rather than corporate entity names in public resumes due to non-disclosure agreements (NDAs). Ball Corp is explicitly referenced in `Devesh_Pareek_Resume.md.docx`.
-- **Target Portal Profiles**: This investigation investigated exclusively the local file repository `/Users/devesh/Documents/Resume`. Profile extraction from the 8 live portals (LinkedIn, Naukri, Foundit, Glassdoor, Indeed, Talent500, Instahyre, Turing) is assigned to the Browser Operator under Milestone M2.
+1. **Single Concurrent Process Per Profile Directory**:
+   Chromium places an exclusive filesystem lock (`SingletonLock`) on `user_data_dir`. Two simultaneous Python processes cannot open `.browser_profile/` at the same instant. If an automated process crashes and leaves an orphaned Chromium process running, the lock may block a subsequent launch. `BrowserManager` should log a clear diagnostic instructing the user to terminate any running Chromium processes if `launch_persistent_context` fails.
+2. **Display Requirement on macOS**:
+   Headed mode (`headless=False`) requires an active macOS graphical Aqua desktop. It cannot run over headless SSH unless forwarded through an X11/VNC display server. Since the user environment is macOS desktop (`arm64`), this condition is satisfied.
+3. **Interactive Human-in-the-Loop Triggers**:
+   While anti-detection flags prevent automated heuristic flags, Cloudflare Turnstile or platform OTP challenges may still trigger on IP rotation or excessive login attempts. Per Requirement R1, the automation must never fabricate bypasses; `core/hitl_handler.py` must pause and alert the human operator.
 
 ---
 
-## 4. Conclusion
+## 4. Conclusion & Implementation Blueprints
 
-The comprehensive career profile of Devesh Pareek has been extracted and verified across all 25 resume documents with zero hallucinations. All dates, employer titles, metrics, educational standings, certifications, hackathon awards, creative achievements, and cross-file discrepancies are documented in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_1/analysis.md`.
+The implementation for Milestone 1 infrastructure must provide two primary modules:
+1. `zenclass_guvi/config.py` — Centralized configuration, URLs, credentials, paths, and timeouts.
+2. `zenclass_guvi/core/browser.py` — Production-grade headed browser lifecycle manager.
 
-Candidate Seniority & Positioning:
-- **Seniority**: Senior Database Engineer / Lead Infrastructure & Reliability Specialist (5+ years cumulative enterprise experience).
-- **Core Specialization**: High Availability & Relational Database Administration (PostgreSQL with Patroni, Db2 LUW with HADR, MySQL on AWS/GCP), High-SLA Incident Command, Storage Optimization, and Production Automation (Python, Shell, CI/CD, Agentic AI Systems).
-- **Deliverables Completed**:
-  - `analysis.md`: Complete data extraction, document catalog, and discrepancy matrix.
-  - `handoff.md`: 5-component self-contained handoff.
-  - `progress.md` & `BRIEFING.md`: Updated to Completed state.
+### 4.1 Recommended Blueprint: `config.py`
+
+```python
+"""
+Configuration module for Guvi CodeKata and ZenClass Automation Suite.
+Defines URLs, credentials, timeouts, paths, and browser flags.
+"""
+
+import os
+from pathlib import Path
+
+# Base Paths
+BASE_DIR = Path(__file__).resolve().parent
+BROWSER_PROFILE_DIR = BASE_DIR / ".browser_profile"
+DATA_DIR = BASE_DIR / "data"
+REPORTS_DIR = BASE_DIR / "reports"
+PROJECTS_DIR = BASE_DIR / "projects"
+SCREENSHOTS_DIR = BASE_DIR / "screenshots"
+
+# Ensure runtime directories exist
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
+SCREENSHOTS_DIR.mkdir(parents=True, exist_ok=True)
+
+# State & Storage Paths
+DB_PATH = DATA_DIR / "automation_state.db"
+STATE_SUMMARY_JSON = DATA_DIR / "state_summary.json"
+STORAGE_STATE_PATH = DATA_DIR / "storage_state.json"
+SUMMARY_REPORT_MD = REPORTS_DIR / "SUMMARY_REPORT.md"
+SUMMARY_REPORT_JSON = REPORTS_DIR / "summary.json"
+
+# Credentials (from ORIGINAL_REQUEST.md, overridable via environment variables)
+USER_EMAIL = os.getenv("AUTOMATION_USER_EMAIL", "devsh.pareek@gmail.com")
+USER_PASSWORD = os.getenv("AUTOMATION_USER_PASSWORD", "Dev@99#$%esh")
+
+# Platform URLs
+GUVI_BASE_URL = "https://www.guvi.in"
+GUVI_LOGIN_URL = "https://www.guvi.in/sign-in/"
+GUVI_CODEKATA_URL = "https://www.guvi.in/code-kata/"
+ZENCLASS_BASE_URL = "https://v2.zenclass.in"
+ZENCLASS_LOGIN_URL = "https://v2.zenclass.in/login"
+ZENCLASS_TASKS_URL = "https://v2.zenclass.in/tasks"
+ZENCLASS_PROJECTS_URL = "https://v2.zenclass.in/projects"
+ZENCLASS_DASHBOARD_URL = "https://v2.zenclass.in/dashboard"
+
+# Browser Execution Settings (Requirement R1: visible foreground browser)
+HEADLESS = os.getenv("AUTOMATION_HEADLESS", "false").lower() == "true"  # strictly False by default
+SLOW_MO = float(os.getenv("AUTOMATION_SLOW_MO", "50.0"))  # 50ms realistic human cadence
+NAVIGATION_TIMEOUT = float(os.getenv("AUTOMATION_NAV_TIMEOUT", "30000.0"))  # 30 seconds
+DEFAULT_TIMEOUT = float(os.getenv("AUTOMATION_TIMEOUT", "10000.0"))  # 10 seconds
+
+BROWSER_ARGS = [
+    "--start-maximized",
+    "--disable-blink-features=AutomationControlled",
+    "--no-default-browser-check",
+    "--no-first-run",
+]
+
+IGNORE_DEFAULT_ARGS = [
+    "--enable-automation",
+]
+
+# Solver & Submission Settings
+DEFAULT_LANGUAGE = "PYTHON 3"
+MAX_SUBMISSION_ATTEMPTS = 3
+LOCAL_TEST_TIMEOUT_SECONDS = 5.0
+
+# Human-in-the-Loop (HITL) Settings
+HITL_ALERT_BEEP = True
+HITL_POLL_INTERVAL_SECONDS = 2.0
+HITL_MAX_WAIT_SECONDS = 600.0  # 10 minutes maximum before timing out
+
+# Logging Settings
+LOG_LEVEL = os.getenv("AUTOMATION_LOG_LEVEL", "INFO")
+LOG_FORMAT = "[%(asctime)s] [%(levelname)s] [%(name)s]: %(message)s"
+```
+
+### 4.2 Recommended Blueprint: `core/browser.py`
+
+```python
+"""
+core/browser.py - Headed Foreground Browser Lifecycle Manager
+Manages visible Chromium persistent contexts, anti-detection flags, tab lifecycle,
+screenshot diagnostics, and dual-layer session persistence for Guvi & ZenClass.
+"""
+
+import atexit
+import json
+import logging
+from pathlib import Path
+from typing import Optional, List
+
+from playwright.sync_api import (
+    sync_playwright,
+    BrowserContext,
+    Page,
+    Playwright,
+    Error as PlaywrightError
+)
+
+import config
+
+logger = logging.getLogger("core.browser")
+
+
+class BrowserManager:
+    """
+    Manages a persistent headed Chromium browser session adhering to Requirement R1.
+    Provides session persistence, anti-detection, tab cleanup, and graceful teardown.
+    """
+
+    def __init__(
+        self,
+        profile_dir: Optional[Path] = None,
+        storage_state_path: Optional[Path] = None,
+        headless: Optional[bool] = None,
+        slow_mo: Optional[float] = None,
+        navigation_timeout: Optional[float] = None,
+        default_timeout: Optional[float] = None,
+    ):
+        self.profile_dir = profile_dir or config.BROWSER_PROFILE_DIR
+        self.storage_state_path = storage_state_path or config.STORAGE_STATE_PATH
+        self.headless = config.HEADLESS if headless is None else headless
+        self.slow_mo = config.SLOW_MO if slow_mo is None else slow_mo
+        self.navigation_timeout = config.NAVIGATION_TIMEOUT if navigation_timeout is None else navigation_timeout
+        self.default_timeout = config.DEFAULT_TIMEOUT if default_timeout is None else default_timeout
+
+        self._playwright: Optional[Playwright] = None
+        self._context: Optional[BrowserContext] = None
+        self._active_page: Optional[Page] = None
+        self._registered_atexit = False
+
+    def start(self) -> BrowserContext:
+        """
+        Launches the persistent Chromium context in headed mode with anti-detection flags.
+        Restores cookies from storage_state if available.
+        """
+        if self._context is not None:
+            return self._context
+
+        self.profile_dir.mkdir(parents=True, exist_ok=True)
+        if self.storage_state_path:
+            self.storage_state_path.parent.mkdir(parents=True, exist_ok=True)
+
+        logger.info(
+            f"Launching headed persistent Chromium context at {self.profile_dir} "
+            f"(headless={self.headless}, slow_mo={self.slow_mo}ms)"
+        )
+
+        self._playwright = sync_playwright().start()
+
+        try:
+            self._context = self._playwright.chromium.launch_persistent_context(
+                user_data_dir=str(self.profile_dir),
+                headless=self.headless,
+                no_viewport=True,
+                args=config.BROWSER_ARGS,
+                ignore_default_args=config.IGNORE_DEFAULT_ARGS,
+                slow_mo=self.slow_mo,
+            )
+
+            self._context.set_default_navigation_timeout(self.navigation_timeout)
+            self._context.set_default_timeout(self.default_timeout)
+
+            # Restore secondary layer cookies from storage state if present
+            self._restore_storage_state()
+
+            # Register cleanup hook once
+            if not self._registered_atexit:
+                atexit.register(self.close)
+                self._registered_atexit = True
+
+            logger.info("Headed browser context successfully initialized.")
+            return self._context
+
+        except PlaywrightError as e:
+            logger.error(f"Failed to launch browser persistent context: {e}")
+            if "SingletonLock" in str(e) or "Process is already running" in str(e):
+                logger.error(
+                    "Profile directory appears locked by another Chromium instance. "
+                    "Ensure existing browser processes are closed."
+                )
+            self.close()
+            raise
+
+    def _restore_storage_state(self) -> None:
+        """Injects serialized cookies from storage_state.json if available."""
+        if self._context and self.storage_state_path and self.storage_state_path.exists():
+            try:
+                with open(self.storage_state_path, "r", encoding="utf-8") as f:
+                    state_data = json.load(f)
+                cookies = state_data.get("cookies", [])
+                if cookies:
+                    self._context.add_cookies(cookies)
+                    logger.info(f"Injected {len(cookies)} cookies from {self.storage_state_path}")
+            except Exception as e:
+                logger.warning(f"Failed to restore cookies from storage state: {e}")
+
+    def get_context(self) -> BrowserContext:
+        """Returns the active persistent BrowserContext, starting it if necessary."""
+        if self._context is None:
+            self.start()
+        return self._context
+
+    def get_page(self, url: Optional[str] = None, force_reload: bool = False) -> Page:
+        """
+        Retrieves the active page (reusing initial tab if available), brings it to front,
+        and navigates to the specified URL if requested.
+        """
+        ctx = self.get_context()
+
+        # Locate existing open page or create a new one
+        open_pages = [p for p in ctx.pages if not p.is_closed()]
+        if open_pages:
+            self._active_page = open_pages[0]
+        else:
+            self._active_page = ctx.new_page()
+
+        try:
+            self._active_page.bring_to_front()
+        except Exception:
+            pass
+
+        if url:
+            current_url = self._active_page.url
+            if force_reload or current_url != url:
+                logger.info(f"Navigating to {url}")
+                self._active_page.goto(
+                    url,
+                    wait_until="domcontentloaded",
+                    timeout=self.navigation_timeout
+                )
+            else:
+                logger.debug(f"Page already at {url}, skipping navigation.")
+
+        return self._active_page
+
+    def close_auxiliary_tabs(self, keep_page: Optional[Page] = None) -> int:
+        """
+        Closes extraneous popup or secondary tabs to prevent tab proliferation.
+        Keeps the specified page (or current active page).
+        """
+        if not self._context:
+            return 0
+        target = keep_page or self._active_page
+        closed_count = 0
+        for page in list(self._context.pages):
+            if page != target and not page.is_closed():
+                try:
+                    page.close()
+                    closed_count += 1
+                except Exception as e:
+                    logger.debug(f"Error closing auxiliary tab: {e}")
+        return closed_count
+
+    def save_storage_state(self) -> None:
+        """Serializes all active cookies and storage origins to JSON."""
+        if self._context and self.storage_state_path:
+            try:
+                self.storage_state_path.parent.mkdir(parents=True, exist_ok=True)
+                self._context.storage_state(path=str(self.storage_state_path))
+                logger.info(f"Exported browser storage state to {self.storage_state_path}")
+            except Exception as e:
+                logger.warning(f"Could not export storage state: {e}")
+
+    def save_screenshot(self, name: str = "error", page: Optional[Page] = None) -> Optional[Path]:
+        """Captures a diagnostic PNG screenshot of the current page view."""
+        target = page or self._active_page
+        if not target or target.is_closed():
+            return None
+        import time
+        filename = f"{int(time.time())}_{name}.png"
+        filepath = config.SCREENSHOTS_DIR / filename
+        try:
+            target.screenshot(path=str(filepath), full_page=False)
+            logger.info(f"Saved diagnostic screenshot to {filepath}")
+            return filepath
+        except Exception as e:
+            logger.error(f"Failed to capture screenshot: {e}")
+            return None
+
+    def close(self) -> None:
+        """Gracefully dumps storage state, closes context, and stops Playwright."""
+        if self._context:
+            logger.info("Saving storage state and closing browser context...")
+            try:
+                self.save_storage_state()
+            except Exception as e:
+                logger.warning(f"Error saving storage state on exit: {e}")
+            try:
+                self._context.close()
+            except Exception as e:
+                logger.warning(f"Error closing browser context: {e}")
+            self._context = None
+            self._active_page = None
+
+        if self._playwright:
+            try:
+                self._playwright.stop()
+            except Exception as e:
+                logger.warning(f"Error stopping Playwright runtime: {e}")
+            self._playwright = None
+
+    def __enter__(self):
+        self.start()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()
+
+
+# Module-level singleton pattern satisfying PROJECT.md interface contract
+_global_browser_manager: Optional[BrowserManager] = None
+
+
+def get_browser_manager() -> BrowserManager:
+    """Returns or instantiates the global BrowserManager singleton."""
+    global _global_browser_manager
+    if _global_browser_manager is None:
+        _global_browser_manager = BrowserManager()
+    return _global_browser_manager
+
+
+def get_browser_context() -> BrowserContext:
+    """Interface Contract: Returns active persistent headed context."""
+    return get_browser_manager().get_context()
+
+
+def get_page(url: Optional[str] = None) -> Page:
+    """Interface Contract: Returns active page or navigates to specified URL."""
+    return get_browser_manager().get_page(url=url)
+
+
+def close_context() -> None:
+    """Interface Contract: Gracefully saves cookies and closes browser."""
+    global _global_browser_manager
+    if _global_browser_manager is not None:
+        _global_browser_manager.close()
+        _global_browser_manager = None
+```
 
 ---
 
 ## 5. Verification Method
 
-To independently verify all observations and deductions:
+To verify the implementation independently, follow these test procedures:
 
-1. **Verify File Inventory (25 files)**:
-   ```bash
-   find /Users/devesh/Documents/Resume -maxdepth 1 -type f ! -name ".*" | wc -l
-   # Expected output: 25
+### 5.1 Unit & Integration Test (`tests/test_browser.py`)
+Run the following test using `pytest`:
+```bash
+cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+pytest tests/test_browser.py -v
+```
+
+Expected Test Assertions:
+1. **Headed Flag Verification**:
+   ```python
+   def test_browser_headed_configuration():
+       import config
+       from core.browser import BrowserManager
+       bm = BrowserManager()
+       assert bm.headless is False, "BrowserManager MUST default to headless=False (Requirement R1)"
    ```
-2. **Verify Text Extraction from DOCX & RTF**:
-   ```bash
-   textutil -convert txt -stdout /Users/devesh/Documents/Resume/Devesh_Pareek_DB2_LUW_DBA_Resume.docx | grep -E "180\+|20\+ TB|Sep 2025"
-   textutil -convert txt -stdout /Users/devesh/Documents/Resume/Journy.rtf | grep -E "softitliy|Deloitte|JHU"
+2. **Context Persistence & Viewport Verification**:
+   ```python
+   def test_browser_persistent_launch_and_page(tmp_path):
+       from core.browser import BrowserManager
+       profile = tmp_path / ".test_profile"
+       state = tmp_path / "state.json"
+       bm = BrowserManager(profile_dir=profile, storage_state_path=state, headless=False)
+       with bm:
+           page = bm.get_page("data:text/html,<h1>Headed Test</h1>")
+           assert page.inner_text("h1") == "Headed Test"
+           webdriver_val = page.evaluate("navigator.webdriver")
+           assert webdriver_val is False, "navigator.webdriver must be False"
+           assert len(bm.get_context().pages) == 1, "Must reuse initial page tab without leakage"
+       assert state.exists(), "storage_state.json must be exported upon context close"
    ```
-3. **Verify Analysis Artifact**:
-   Inspect `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_1/analysis.md` to confirm every claim traces back to verbatim document citations.
-4. **Invalidation Conditions**:
-   - Any assertion that Devesh worked at Softility prior to September 2025 as a full-time salaried employee is invalidated by the first-person admission in `Journy.rtf` (line 634) and `MBA_Resume_Leadership.pdf`.
+3. **Auxiliary Tab Management**:
+   ```python
+   def test_auxiliary_tab_cleanup(tmp_path):
+       from core.browser import BrowserManager
+       bm = BrowserManager(profile_dir=tmp_path / "p", storage_state_path=tmp_path / "s.json", headless=False)
+       with bm:
+           page1 = bm.get_page("data:text/html,<h1>Main</h1>")
+           ctx = bm.get_context()
+           page2 = ctx.new_page()
+           assert len(ctx.pages) == 2
+           closed = bm.close_auxiliary_tabs(keep_page=page1)
+           assert closed == 1
+           assert len(ctx.pages) == 1
+           assert ctx.pages[0] == page1
+   ```
+
+### 5.2 Invalidation Conditions
+The design is invalidated if:
+1. `headless` is set to `True` during default production runs (violates R1).
+2. Browser context fails to persist user authentication cookies across separate invocations.
+3. Multiple blank tabs accumulate (`about:blank`) during sequential `get_page()` calls.
+4. `SingletonLock` crash error is unhandled when an external Chromium process is active.
