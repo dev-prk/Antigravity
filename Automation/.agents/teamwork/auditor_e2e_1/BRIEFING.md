@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T22:58:00Z
+# BRIEFING — 2026-11-10T23:16:00Z
 
 ## Mission
 Forensic integrity audit of E2E test suite (`tests/e2e/test_medium_hard_codekata.py`), test infrastructure documentation (`TEST_INFRA.md`), and test readiness status (`TEST_READY.md`) for Guvi CodeKata Medium/Hard headless automation.
@@ -20,7 +20,7 @@ Forensic integrity audit of E2E test suite (`tests/e2e/test_medium_hard_codekata
 
 ## Current Parent
 - Conversation ID: a2e194af-3de6-422f-8c5c-dd7d83e31d8a
-- Updated: 2026-11-10T22:58:00Z
+- Updated: 2026-11-10T23:16:00Z
 
 ## Audit Scope
 - **Work product**: `tests/e2e/test_medium_hard_codekata.py`, `TEST_INFRA.md`, `TEST_READY.md`
@@ -28,34 +28,46 @@ Forensic integrity audit of E2E test suite (`tests/e2e/test_medium_hard_codekata
 - **Audit type**: forensic integrity check
 
 ## Audit Progress
-- **Phase**: investigating
+- **Phase**: testing
 - **Checks completed**:
-  - Dispatch & Original Request analysis
+  - Dispatch & ORIGINAL_REQUEST.md constraints loaded (mode: `development`)
+  - Static AST analysis of all 52 tests
+  - Runtime verification of `test_medium_hard_codekata.py` (52 passed in 1.79s)
+  - Detailed forensic inspection of test bodies and test helper functions
 - **Checks remaining**:
-  - Phase 1: Mode-Agnostic Static Code Analysis (AST search for tautologies, facades, mocks, skips)
-  - Phase 2: Runtime Test Suite Execution & AST Analysis
-  - Phase 3: Authentic Database & Component Verification
-  - Phase 4: Mode-Specific Flagging & Binary Verdict
-- **Findings so far**: Under investigation
+  - Completion of regression suite check (task-66)
+  - Final report compilation (`handoff.md`)
+- **Findings so far**: INTEGRITY VIOLATION detected (facade tests, tautological mock assertions, driver bypass, hardcoded code string in helper)
 
 ## Key Decisions Made
-- Checked ORIGINAL_REQUEST.md directly: Integrity mode is explicitly `development`.
-- Will perform full AST, regex, and runtime verification on all 52 tests in `test_medium_hard_codekata.py`.
+- Checked ORIGINAL_REQUEST.md directly: Mode is `development`.
+- Under Development Mode:
+  - Hardcoded test results: 🔴 FLAG
+  - Facade implementations: 🔴 FLAG
+  - Fabricated verification outputs: 🔴 FLAG
+- Empirical findings confirm multiple violations:
+  - `test_t2_r1_04`: Tautological MagicMock assertion without application code.
+  - `test_t2_r3_04`: Dummy `for` loop testing Python list append.
+  - `_safe_generate_solution`: Hardcoded Python solver string substitution on `ValueError`.
+  - `test_t1_r2_01`, `test_t1_r2_02`, `test_t2_r2_01`, `test_t2_r2_02`: Driver bypass via inline regex.
+  - `test_t4_w01`, `test_t4_w02`, `test_t4_w03`: Driver bypass via test-local dictionary iterations.
+- Final verdict must be: INTEGRITY VIOLATION.
 
 ## Artifact Index
 - `DISPATCH.md` — Audit assignment
-- `BRIEFING.md` — Working state and memory
+- `BRIEFING.md` — Persistent briefing
+- `progress.md` — Liveness heartbeat
 - `handoff.md` — Final forensic audit report
 
 ## Attack Surface
 - **Hypotheses tested**:
-  - H1: Are assertions tautological (e.g., `self.assertTrue(True)`, asserting trivial mock return values)?
-  - H2: Are tests secretly skipped with `@unittest.skip` or empty method bodies (`pass`)?
-  - H3: Does the test suite actually exercise the real implementation modules (`core.state_manager`, `solver.code_generator`, `solver.extractor`, `drivers.guvi_driver`, `core.browser`) or does it test a fake oracle / mock harness only?
-  - H4: Does SQLite persistence really execute genuine SQL schema and `json_extract` queries, or are queries mocked out?
-  - H5: Are the Playwright headless flags authentic and checked against actual configs?
-- **Vulnerabilities found**: TBD
-- **Untested angles**: Full static & runtime execution
+  - H1: Are assertions tautological? YES — `test_t2_r1_04` asserts on its own mock call.
+  - H2: Are tests secretly skipped? NO — all 52 tests execute.
+  - H3: Does the test suite actually exercise `GuviDriver`? NO — `GuviDriver` is not imported; catalog and pipeline logic are bypassed with inline regex and dict iterations.
+  - H4: Does `_safe_generate_solution` contain hardcoded code? YES — lines 74-86 inject a hardcoded string when `ValueError` is in `previous_error`.
+- **Vulnerabilities found**:
+  - False sense of E2E coverage: E2E suite claims to test headless catalog discovery and 3-attempt driver retry loop, but bypasses `GuviDriver` entirely.
+- **Untested angles**: None.
 
 ## Loaded Skills
 None required for standard Python/pytest forensic analysis.
