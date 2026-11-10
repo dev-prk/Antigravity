@@ -356,22 +356,18 @@ class TestGuviAuthentication(unittest.TestCase):
     def test_login_activation_modal_triggers_guardrail(self):
         """Detection of #myModal triggers HITL handler."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
+        self.mock_page.wait_for_selector.return_value = MagicMock()
+        self.mock_page.is_checked.return_value = True
 
-        def fake_wait(sel, **kw):
-            if "#myModal" in sel:
-                return MagicMock()
-            if "email" in sel or "password" in sel or "login" in sel:
-                return MagicMock()
-            raise Exception("Not found")
+        def fake_is_visible(sel, **kw):
+            if "#myModal" in sel or "sendmail" in sel:
+                return True
+            if ".user-avatar" in sel or "table" in sel:
+                return True
+            return False
 
-        self.mock_page.wait_for_selector.side_effect = fake_wait
-        self.mock_page.click.side_effect = lambda sel, **kw: None
-
-        # After click, simulate URL navigation away
-        with patch.object(self.driver, "is_visible", side_effect=lambda sel, **kw: True if "#myModal" in sel else False):
+        with patch.object(self.driver, "is_visible", side_effect=fake_is_visible):
             self.mock_hitl.check_and_handle_guardrails.return_value = True
-            # Let it succeed after guardrail
-            self.mock_page.url = "https://www.guvi.in/code-kata/"
             res = self.driver.login(email="devsh.pareek@gmail.com", password="password")
             self.assertTrue(res)
             self.mock_hitl.check_and_handle_guardrails.assert_called()
@@ -623,7 +619,14 @@ class TestGuviWorkspacePipeline(unittest.TestCase):
             all_passed=True,
             passed_count=1,
             total_count=1,
-            results=[TestCaseResult(case_number=1, passed=True, actual_output="odd\n", expected_output="odd\n")]
+            results=[TestCaseResult(
+                passed=True,
+                input_data="9 2\n",
+                expected_output="odd\n",
+                actual_output="odd\n",
+                error_message="",
+                duration=0.01,
+            )]
         )
 
         # Ace Editor ready & injected
@@ -682,14 +685,23 @@ class TestGuviWorkspacePipeline(unittest.TestCase):
             sample_cases=[SampleCase(input_text="100\n", expected_output="42\n")]
         )
         mock_extract_spec.return_value = spec
-        mock_gen_sol.return_value = GeneratedSolution(code="print(0)", category="Math", confidence=0.5)
+        mock_gen_sol.return_value = GeneratedSolution(
+            code="print(0)", category="Math", confidence=0.5, explanation="Stub"
+        )
 
         # Sandbox fails!
         mock_test_sol.return_value = ValidationResult(
             all_passed=False,
             passed_count=0,
             total_count=1,
-            results=[TestCaseResult(case_number=1, passed=False, actual_output="0", expected_output="42")],
+            results=[TestCaseResult(
+                passed=False,
+                input_data="100\n",
+                expected_output="42\n",
+                actual_output="0",
+                error_message="Output mismatch: expected '42', got '0'",
+                duration=0.01,
+            )],
             error_message="Output mismatch: expected '42', got '0'"
         )
 
@@ -724,8 +736,10 @@ class TestGuviWorkspacePipeline(unittest.TestCase):
     ):
         """Ace Editor readiness failure records error and halts execution."""
         mock_extract_spec.return_value = ProblemSpecification(title="P", description="D")
-        mock_gen_sol.return_value = GeneratedSolution(code="pass")
-        mock_test_sol.return_value = ValidationResult(all_passed=True, passed_count=1, total_count=1)
+        mock_gen_sol.return_value = GeneratedSolution(
+            code="pass", category="General", confidence=1.0, explanation="No-op"
+        )
+        mock_test_sol.return_value = ValidationResult(all_passed=True, passed_count=1, total_count=1, results=[])
 
         # Ace Editor fails to reach ready state
         mock_wait_editor.return_value = False
@@ -828,7 +842,7 @@ class TestGuviPackageExportsAndCLI(unittest.TestCase):
     def test_main_cli_wires_run_codekata(self, mock_run_pipeline):
         """Verifies 'run-codekata' command properly invokes GuviDriver.run_pipeline()."""
         parser = create_cli_parser()
-        args = parser.parse_args(["run-codekata", "--category", "Basics", "--limit", "3"])
+        args = parser.parse_args(["--limit", "3", "run-codekata", "--category", "Basics"])
 
         runner = AutomationRunner(args)
         runner.initialize_services = MagicMock()
@@ -845,7 +859,7 @@ class TestGuviPackageExportsAndCLI(unittest.TestCase):
     def test_main_cli_wires_run_all(self, mock_run_pipeline):
         """Verifies 'run-all' command properly invokes GuviDriver.run_pipeline()."""
         parser = create_cli_parser()
-        args = parser.parse_args(["run-all", "--limit", "5"])
+        args = parser.parse_args(["--limit", "5", "run-all"])
 
         runner = AutomationRunner(args)
         runner.initialize_services = MagicMock()
