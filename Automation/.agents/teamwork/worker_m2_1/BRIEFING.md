@@ -16,6 +16,8 @@ Extract candidate profile snapshots across 8 portals using Brave browser into `/
 - Escalation halts: Immediately stop and report if encounter CAPTCHA, OTP, login prompts, passwords, payment requests, or unfamiliar site features
 - Do not invent or inflate skills, titles, dates, metrics, employers, or degrees
 - Deliver raw snapshot to /Users/devesh/resume/profile_backup.md
+- URGENT USER DIRECTIVE: Reuse the SAME existing Brave browser window/session across all portals. Do NOT launch new browser windows repeatedly. Open/switch tabs within the existing active session if needed.
+
 
 ## Current Parent
 - Conversation ID: db58fa7b-d6eb-41a4-a41e-34fc08b3e1d0
