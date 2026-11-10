@@ -1,19 +1,18 @@
-## 2026-11-10T14:57:07Z
-You are an Explorer for Milestone 1 (Core Foundation & Infrastructure) of the ZenClass and Guvi CodeKata automation project.
+## 2026-11-10T22:27:33Z
+You are Explorer 3 for Milestone 1: Filtering & Extractor Foundation.
+Working directory: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+State folder: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_3
+Project scope document: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/orchestrator_2/PROJECT.md
+Scope document: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/sub_orch_m1/SCOPE.md
+Original request: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md
 
-Working directory: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_3
-Original request file: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md
-Project plan: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md
-Project workspace: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+Investigate:
+1. `config.py` and how headless execution settings are currently configured. Identify what defaults and constants need to be set so that background headless mode is the default, while remaining configurable.
+2. `main.py` and its CLI commands (especially `run-codekata` and any other relevant commands). Check how CLI options are defined (click, argparse, etc.).
+3. How `--difficulty` should be accepted (e.g. `--difficulty Medium,Hard` or multiple `--difficulty Medium --difficulty Hard` or both) and passed down to drivers.
+4. How `--headless` / `--no-headless` flags are defined and defaulted in CLI commands.
+5. Identify required changes and tests needed for `main.py` and `config.py`.
 
-Read /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md and /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md first.
-
-Your specific focus for Milestone 1:
-- Design the Human-in-the-Loop (HITL) Handler (`core/hitl_handler.py`) and Unified CLI Interface (`main.py`):
-  - Strict compliance with Requirement R1 & R2: Never fabricate completion or bypass authentication/CAPTCHA/OTP; immediately halt and prompt user when human intervention is required. For ZenClass projects requiring repo or deployment links, pause and prompt cleanly.
-  - Design DOM guardrail detection: Cloudflare Turnstile, reCAPTCHA, OTP forms, ZenClass MFA (`.login-mfa-active`), and Guvi activation modal (`#myModal`).
-  - Design the interactive pause mechanism: audible bell (`\a`), prominent terminal box rendering, and prompt for human action or URL input.
-  - Design the CLI entrypoint `main.py` with commands: `run-all`, `run-codekata`, `run-zenclass`, `resume`, `report`, and clean argument parsing.
-- Provide concrete implementation recommendations, exact method signatures, error handling patterns, and code structure.
-- Write your handoff report to /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_3/handoff.md.
-- Send a message to parent when done.
+Do NOT modify any code. Write your complete analysis and recommendations to:
+`/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_3/handoff.md`
+Then notify me with `send_message`.
