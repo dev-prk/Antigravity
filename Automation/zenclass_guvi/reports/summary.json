@@ -1,18 +1,46 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-10T16:40:35.641855+00:00",
+  "generated_at": "2026-11-10T18:41:44.672428+00:00",
   "summary_metrics": {
-    "total_discovered": 0,
+    "total_discovered": 15,
     "total_completed": 0,
-    "total_pending": 0,
-    "total_in_progress": 0,
+    "total_pending": 13,
+    "total_in_progress": 1,
     "total_blocked": 0,
-    "total_failed": 0,
+    "total_failed": 1,
     "success_rate_percent": 0.0,
-    "total_time_spent_seconds": 0.0,
-    "formatted_time_spent": "00m 00s"
+    "total_time_spent_seconds": 30.75,
+    "formatted_time_spent": "00m 31s"
   },
-  "by_platform": {},
-  "by_category": {},
-  "human_intervention_issues": []
+  "by_platform": {
+    "guvi": {
+      "total_discovered": 15,
+      "total_completed": 0,
+      "total_pending": 13,
+      "total_blocked": 0,
+      "total_failed": 1,
+      "success_rate_percent": 0.0,
+      "time_spent_seconds": 30.75
+    }
+  },
+  "by_category": {
+    "CodeKata": {
+      "total": 15,
+      "completed": 0,
+      "success_rate_percent": 0.0
+    }
+  },
+  "human_intervention_issues": [
+    {
+      "task_id": "guvi-97",
+      "platform": "guvi",
+      "category": "CodeKata",
+      "title": "73.97%",
+      "status": "FAILED",
+      "attempts": 1,
+      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+      "next_action": "REVISE_SOLVER_TEMPLATE",
+      "url": "https://www.guvi.in/code-kata/97/"
+    }
+  ]
 }

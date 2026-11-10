@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T18:40:37.723601+00:00",
+  "last_updated": "2026-11-10T18:41:56.786991+00:00",
   "summary": {
     "total_discovered": 15,
     "total_completed": 0,
-    "total_pending": 14,
+    "total_pending": 13,
     "total_in_progress": 1,
     "total_blocked": 0,
-    "total_failed": 0,
+    "total_failed": 1,
     "success_rate_percent": 0.0,
-    "total_time_spent_seconds": 0.0,
+    "total_time_spent_seconds": 30.75,
     "by_platform": {
       "guvi": {
         "total_discovered": 15,
         "total_completed": 0,
-        "total_pending": 14,
+        "total_pending": 13,
         "total_blocked": 0,
-        "total_failed": 0,
+        "total_failed": 1,
         "success_rate_percent": 0.0,
-        "time_spent_seconds": 0.0
+        "time_spent_seconds": 30.75
       }
     },
     "by_category": {
@@ -28,7 +28,19 @@
         "success_rate_percent": 0.0
       }
     },
-    "human_intervention_issues": []
+    "human_intervention_issues": [
+      {
+        "task_id": "guvi-97",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "73.97%",
+        "status": "FAILED",
+        "attempts": 1,
+        "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+        "next_action": "REVISE_SOLVER_TEMPLATE",
+        "url": "https://www.guvi.in/code-kata/97/"
+      }
+    ]
   },
   "tasks": [
     {
@@ -37,12 +49,12 @@
       "task_category": "CodeKata",
       "title": "73.97%",
       "url": "https://www.guvi.in/code-kata/97/",
-      "status": "IN_PROGRESS",
-      "attempt_count": 0,
-      "result": "UNATTEMPTED",
-      "failure_reason": null,
-      "next_action": "EXTRACTING_AND_SOLVING",
-      "time_spent_seconds": 0.0,
+      "status": "FAILED",
+      "attempt_count": 1,
+      "result": "TEST_FAILED",
+      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+      "next_action": "REVISE_SOLVER_TEMPLATE",
+      "time_spent_seconds": 30.754451990127563,
       "metadata": {
         "slug": "97",
         "difficulty": "30",
@@ -51,9 +63,9 @@
         "page_number": 1
       },
       "created_at": "2026-11-10T18:40:37.719248+00:00",
-      "updated_at": "2026-11-10T18:40:37.722879+00:00",
-      "timestamp": "2026-11-10T18:40:37.722879+00:00",
-      "attempts": 0,
+      "updated_at": "2026-11-10T18:41:08.477523+00:00",
+      "timestamp": "2026-11-10T18:41:08.477523+00:00",
+      "attempts": 1,
       "category": "CodeKata"
     },
     {
@@ -62,11 +74,11 @@
       "task_category": "CodeKata",
       "title": "77.37%",
       "url": "https://www.guvi.in/code-kata/37/",
-      "status": "DISCOVERED",
+      "status": "IN_PROGRESS",
       "attempt_count": 0,
       "result": "UNATTEMPTED",
       "failure_reason": null,
-      "next_action": "SOLVE_AND_SUBMIT",
+      "next_action": "EXTRACTING_AND_SOLVING",
       "time_spent_seconds": 0.0,
       "metadata": {
         "slug": "37",
@@ -76,8 +88,8 @@
         "page_number": 1
       },
       "created_at": "2026-11-10T18:40:37.719248+00:00",
-      "updated_at": "2026-11-10T18:40:37.719248+00:00",
-      "timestamp": "2026-11-10T18:40:37.719248+00:00",
+      "updated_at": "2026-11-10T18:41:56.786429+00:00",
+      "timestamp": "2026-11-10T18:41:56.786429+00:00",
       "attempts": 0,
       "category": "CodeKata"
     },
