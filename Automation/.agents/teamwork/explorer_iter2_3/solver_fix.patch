@@ -1,0 +1,42 @@
+--- zenclass_guvi/solver/code_generator.py
++++ zenclass_guvi/solver/code_generator.py
+@@ -1358,7 +1358,7 @@
+                     code = code.replace(".lower()", ".upper()").replace("'yes'", "'YES'").replace("'no'", "'NO'")
+ 
+                 # Check delimiter: space vs newline
+-                if "\n" in exp_val and " " in err:
++                if ("\n" in exp_val or "\\n" in exp_val) and " " in err:
+                     code = code.replace("' '.join(", "'\\n'.join(")
+                 elif " " in exp_val and ("\\n" in err or "\n" in err):
+                     code = code.replace("'\\n'.join(", "' '.join(")
+--- zenclass_guvi/tests/test_retry_adversarial_empirical.py
++++ zenclass_guvi/tests/test_retry_adversarial_empirical.py
+@@ -270,18 +270,17 @@
+         self.assertFalse(res.all_passed)
+         self.assertNotEqual(res.results[0].actual_output, "60")
+ 
+-    def test_adversarial_vulnerability_escaped_newline_delimiter_failure(self):
++    def test_attempt_2_output_mismatch_delimiter_adaptation_escaped(self):
+         """
+-        VULNERABILITY REPRODUCTION 4:
+-        In solver/code_generator.py line 1361:
+-        `if "\\n" in exp_val and " " in err:`
+-        It only checks literal ASCII 10 `\\n`, failing to detect escaped `'\\\\n'`
+-        as serialized in JSON or logs, causing delimiter adaptation to be skipped
+-        or inverted.
++        Verifies Delimiter adaptation correctly detects escaped '\\n' in previous_error
++        (e.g., when serialized in JSON, logs, or error strings), replacing space join with newline join.
+         """
+         spec = ProblemSpecification(
+             title="Merge Intervals",
+             description="merge intervals",
+             sample_cases=[SampleCase("4\n1 3 2 6 8 10 15 18", "1 6\n8 10\n15 18")],
+         )
+         err_escaped = "Output mismatch: got '1 6 8 10 15 18', expected '1 6\\n8 10\\n15 18'"
+         sol = generate_solution(spec, previous_error=err_escaped, attempt=2)
+-        # Delimiter adaptation fails to replace space join with newline join
+-        self.assertNotIn("'\\n'.join(", sol.code)
+-        self.assertIn("' '.join(", sol.code)
++        self.assertEqual(sol.strategy, "targeted_refinement")
++        self.assertIn("'\\n'.join(", sol.code)
++        self.assertNotIn("' '.join(", sol.code)
