@@ -97,8 +97,8 @@ LABEL_TO_FIELD_KEY.update({
 # Platform URL validation regex (Module 41486 / Module 36976)
 ZENCLASS_URL_REGEX = re.compile(r"^(ftp|http|https)://[^ \"]+$")
 
-# Platform confirmation regex: resilience against 'Suceessfully' (double 'e', single 's')
-ZENCLASS_CONFIRMATION_REGEX = re.compile(r"Task Submitted Suce+ss+fully", re.IGNORECASE)
+# Platform confirmation regex: resilience against 'Suceessfully' (single 'c', double 'e') and 'Successfully' (double 'c', single 'e')
+ZENCLASS_CONFIRMATION_REGEX = re.compile(r"Task Submitted Suc+e+ss+fully", re.IGNORECASE)
 
 
 @dataclass
@@ -630,7 +630,7 @@ class ZenClassTasksDriver(BaseDriver):
             self.page.wait_for_selector(
                 f"{self.SEL_BOARD_CONTAINER}, {self.SEL_COLUMN_ACTIVE}, {self.SEL_COLUMN_PENDING}, {self.SEL_COLUMN_COMPLETED}",
                 state="visible",
-                timeout=config.ELEMENT_TIMEOUT,
+                timeout=config.DEFAULT_TIMEOUT,
             )
         except Exception as e:
             logger.warning(f"Could not locate Kanban board container: {e}")
@@ -865,7 +865,7 @@ class ZenClassTasksDriver(BaseDriver):
             self.safe_click(card_sel, timeout=5000.0)
 
         # 2. Wait for detail modal
-        self.page.wait_for_selector(self.SEL_MODAL_DETAIL, state="visible", timeout=config.ELEMENT_TIMEOUT)
+        self.page.wait_for_selector(self.SEL_MODAL_DETAIL, state="visible", timeout=config.DEFAULT_TIMEOUT)
 
         # 3. Extract title
         title = ""
