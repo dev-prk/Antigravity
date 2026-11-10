@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:44:55.181689+00:00",
+  "last_updated": "2026-11-10T22:47:22.070254+00:00",
   "summary": {
     "total_discovered": 2,
     "total_completed": 2,
@@ -32,44 +32,40 @@
   },
   "tasks": [
     {
-      "task_id": "guvi-palindrome-check",
+      "task_id": "p-1",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Palindrome Check",
+      "title": "Problem 1",
       "url": "",
       "status": "completed",
       "attempt_count": 1,
-      "result": "SOLVED",
-      "failure_reason": null,
-      "next_action": "",
+      "result": "Solved!",
+      "failure_reason": "",
+      "next_action": "none",
       "time_spent_seconds": 0.0,
-      "metadata": {
-        "difficulty": "Medium"
-      },
-      "created_at": "2026-11-10T22:44:55.180401+00:00",
-      "updated_at": "2026-11-10T22:44:55.180401+00:00",
-      "timestamp": "2026-11-10T22:44:55.180401+00:00",
+      "metadata": {},
+      "created_at": "2026-11-10T22:47:22.067313+00:00",
+      "updated_at": "2026-11-10T22:47:22.067313+00:00",
+      "timestamp": "2026-11-10T22:47:22.067313+00:00",
       "attempts": 1,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-odd-or-even-sum",
+      "task_id": "p-2",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Odd Or Even Sum",
+      "title": "Problem 2",
       "url": "",
       "status": "completed",
       "attempt_count": 1,
-      "result": "SOLVED",
-      "failure_reason": null,
-      "next_action": "",
+      "result": "Solved!",
+      "failure_reason": "",
+      "next_action": "none",
       "time_spent_seconds": 0.0,
-      "metadata": {
-        "difficulty": "Medium"
-      },
-      "created_at": "2026-11-10T22:44:55.181473+00:00",
-      "updated_at": "2026-11-10T22:44:55.181473+00:00",
-      "timestamp": "2026-11-10T22:44:55.181473+00:00",
+      "metadata": {},
+      "created_at": "2026-11-10T22:47:22.068622+00:00",
+      "updated_at": "2026-11-10T22:47:22.069977+00:00",
+      "timestamp": "2026-11-10T22:47:22.069977+00:00",
       "attempts": 1,
       "category": "CodeKata"
     }
