@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T23:06:05.396571+00:00",
+  "last_updated": "2026-11-10T23:06:05.690879+00:00",
   "summary": {
-    "total_discovered": 2,
+    "total_discovered": 1,
     "total_completed": 0,
-    "total_pending": 2,
+    "total_pending": 1,
     "total_in_progress": 0,
     "total_blocked": 0,
     "total_failed": 0,
@@ -12,9 +12,9 @@
     "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
-        "total_discovered": 2,
+        "total_discovered": 1,
         "total_completed": 0,
-        "total_pending": 2,
+        "total_pending": 1,
         "total_blocked": 0,
         "total_failed": 0,
         "success_rate_percent": 0.0,
@@ -23,7 +23,7 @@
     },
     "by_category": {
       "CodeKata": {
-        "total": 2,
+        "total": 1,
         "completed": 0,
         "success_rate_percent": 0.0
       }
@@ -32,10 +32,10 @@
   },
   "tasks": [
     {
-      "task_id": "t-med-lower",
+      "task_id": "t-med",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Med Lower",
+      "title": "Med",
       "url": "",
       "status": "pending",
       "attempt_count": 0,
@@ -44,32 +44,11 @@
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "medium"
+        "difficulty": "Medium"
       },
-      "created_at": "2026-11-10T23:06:05.395517+00:00",
-      "updated_at": "2026-11-10T23:06:05.395517+00:00",
-      "timestamp": "2026-11-10T23:06:05.395517+00:00",
-      "attempts": 0,
-      "category": "CodeKata"
-    },
-    {
-      "task_id": "t-hard-upper",
-      "platform": "guvi",
-      "task_category": "CodeKata",
-      "title": "Hard Upper",
-      "url": "",
-      "status": "pending",
-      "attempt_count": 0,
-      "result": "",
-      "failure_reason": null,
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {
-        "difficulty": "HARD"
-      },
-      "created_at": "2026-11-10T23:06:05.396415+00:00",
-      "updated_at": "2026-11-10T23:06:05.396415+00:00",
-      "timestamp": "2026-11-10T23:06:05.396415+00:00",
+      "created_at": "2026-11-10T23:06:05.690540+00:00",
+      "updated_at": "2026-11-10T23:06:05.690540+00:00",
+      "timestamp": "2026-11-10T23:06:05.690540+00:00",
       "attempts": 0,
       "category": "CodeKata"
     }
