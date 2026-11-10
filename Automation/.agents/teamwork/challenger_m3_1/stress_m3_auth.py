@@ -47,6 +47,29 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(na
 logger = logging.getLogger("stress_m3_auth")
 
 
+def setup_mock_environment():
+    """Returns a cleanly configured set of mocks for driver testing."""
+    mock_bm = MagicMock(spec=BrowserManager)
+    mock_sm = MagicMock(spec=StateManager)
+    mock_hitl = MagicMock(spec=HitlHandler)
+    mock_hitl.check_and_handle_guardrails.return_value = False
+    mock_rep = MagicMock(spec=SummaryReporter)
+
+    mock_page = MagicMock()
+    mock_page.is_closed.return_value = False
+    mock_page.query_selector.return_value = None
+    mock_page.query_selector_all.return_value = []
+    mock_page.title.return_value = "Guvi | Sign-In"
+    mock_page.url = "https://www.guvi.in/sign-in/"
+    mock_bm.get_page.return_value = mock_page
+
+    mock_ctx = MagicMock()
+    mock_ctx.cookies.return_value = []
+    mock_bm.get_context.return_value = mock_ctx
+
+    return mock_bm, mock_sm, mock_hitl, mock_rep, mock_page, mock_ctx
+
+
 # =============================================================================
 # Suite 1: Malformed and Boundary Credentials
 # =============================================================================
@@ -55,13 +78,8 @@ class TestMalformedAndBoundaryCredentials(unittest.TestCase):
     """Stress tests boundary, malformed, empty, and non-string credentials."""
 
     def setUp(self):
-        self.mock_bm = MagicMock(spec=BrowserManager)
-        self.mock_sm = MagicMock(spec=StateManager)
-        self.mock_hitl = MagicMock(spec=HitlHandler)
-        self.mock_rep = MagicMock(spec=SummaryReporter)
-        self.mock_page = MagicMock()
-        self.mock_page.is_closed.return_value = False
-        self.mock_bm.get_page.return_value = self.mock_page
+        (self.mock_bm, self.mock_sm, self.mock_hitl,
+         self.mock_rep, self.mock_page, self.mock_ctx) = setup_mock_environment()
 
         self.driver = GuviDriver(
             browser_manager=self.mock_bm,
@@ -89,10 +107,17 @@ class TestMalformedAndBoundaryCredentials(unittest.TestCase):
                 self.driver.login(email=None, password=None)
             self.assertIn("must not be empty", str(ctx.exception))
 
-    def test_04_unusual_unicode_and_special_characters(self):
+    @patch("time.sleep", return_value=None)
+    def test_04_unusual_unicode_and_special_characters(self, _mock_sleep):
         """Ensures driver handles SQL injection strings, emojis, and symbols safely without unhandled error."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         def fake_click(sel, **kw):
@@ -106,14 +131,20 @@ class TestMalformedAndBoundaryCredentials(unittest.TestCase):
 
         res = self.driver.login(email=adversarial_email, password=adversarial_pwd, timeout=2000)
         self.assertTrue(res)
-        # Verify page.fill or page.type was invoked with adversarial strings
         self.mock_page.type.assert_any_call("input#email", adversarial_email, delay=20)
         self.mock_page.type.assert_any_call("input#password", adversarial_pwd, delay=20)
 
-    def test_05_non_string_credentials_coercion(self):
+    @patch("time.sleep", return_value=None)
+    def test_05_non_string_credentials_coercion(self, _mock_sleep):
         """Passes non-string types (integer, boolean) to verify str().strip() safety."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         def fake_click(sel, **kw):
@@ -122,7 +153,6 @@ class TestMalformedAndBoundaryCredentials(unittest.TestCase):
 
         self.mock_page.click.side_effect = fake_click
 
-        # Should convert to strings and type them without TypeError
         res = self.driver.login(email=1234567, password=9876543, timeout=2000)
         self.assertTrue(res)
 
@@ -135,23 +165,23 @@ class TestPlatformCredentialRejection(unittest.TestCase):
     """Stress tests UI error feedback (.invalid-feedback, alert-danger, etc.)."""
 
     def setUp(self):
-        self.mock_bm = MagicMock(spec=BrowserManager)
-        self.mock_hitl = MagicMock(spec=HitlHandler)
-        self.mock_page = MagicMock()
-        self.mock_page.is_closed.return_value = False
-        self.mock_bm.get_page.return_value = self.mock_page
+        (self.mock_bm, self.mock_sm, self.mock_hitl,
+         self.mock_rep, self.mock_page, self.mock_ctx) = setup_mock_environment()
 
         self.driver = GuviDriver(
             browser_manager=self.mock_bm,
+            state_manager=self.mock_sm,
             hitl_handler=self.mock_hitl,
+            reporter=self.mock_rep,
         )
 
-    def test_06_invalid_feedback_standard_selector(self):
+    @patch("time.sleep", return_value=None)
+    def test_06_invalid_feedback_standard_selector(self, _mock_sleep):
         """Catches standard .invalid-feedback rejection and takes screenshot."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
 
         def fake_wait(sel, **kw):
-            if any(k in sel for k in ["email", "password", "login"]):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
                 return MagicMock()
             raise Exception("Not found")
 
@@ -173,7 +203,8 @@ class TestPlatformCredentialRejection(unittest.TestCase):
         self.assertIn("Incorrect Email or Password", str(ctx.exception))
         self.mock_bm.save_screenshot.assert_called_with(name="guvi_auth_invalid_credentials", page=self.mock_page)
 
-    def test_07_all_error_feedback_selectors(self):
+    @patch("time.sleep", return_value=None)
+    def test_07_all_error_feedback_selectors(self, _mock_sleep):
         """Verifies each fallback selector in ERROR_FEEDBACK_SELECTORS triggers rejection."""
         selectors_to_test = [
             ".invalid-feedback",
@@ -184,7 +215,7 @@ class TestPlatformCredentialRejection(unittest.TestCase):
         ]
 
         def fake_wait(sel, **kw):
-            if any(k in sel for k in ["email", "password", "login"]):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
                 return MagicMock()
             raise Exception("Not found")
 
@@ -209,12 +240,13 @@ class TestPlatformCredentialRejection(unittest.TestCase):
                     self.driver.login(email="user@test.com", password="bad_password")
                 self.assertIn(f"Failed via {target_sel}", str(ctx.exception))
 
-    def test_08_hidden_invalid_feedback_does_not_falsely_abort(self):
+    @patch("time.sleep", return_value=None)
+    def test_08_hidden_invalid_feedback_does_not_falsely_abort(self, _mock_sleep):
         """Hidden .invalid-feedback (display:none, is_visible=False) must NOT abort valid login."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
 
         def fake_wait(sel, **kw):
-            if any(k in sel for k in ["email", "password", "login"]):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
                 return MagicMock()
             raise Exception("Not found")
 
@@ -241,12 +273,13 @@ class TestPlatformCredentialRejection(unittest.TestCase):
         res = self.driver.login(email="user@test.com", password="valid_password", timeout=2000)
         self.assertTrue(res)
 
-    def test_09_empty_text_invalid_feedback_ignored(self):
+    @patch("time.sleep", return_value=None)
+    def test_09_empty_text_invalid_feedback_ignored(self, _mock_sleep):
         """Visible .invalid-feedback with whitespace-only text does not cause false rejection."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
 
         def fake_wait(sel, **kw):
-            if any(k in sel for k in ["email", "password", "login"]):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
                 return MagicMock()
             raise Exception("Not found")
 
@@ -273,12 +306,13 @@ class TestPlatformCredentialRejection(unittest.TestCase):
         res = self.driver.login(email="user@test.com", password="valid_password", timeout=2000)
         self.assertTrue(res)
 
-    def test_10_multiple_errors_selects_first(self):
+    @patch("time.sleep", return_value=None)
+    def test_10_multiple_errors_selects_first(self, _mock_sleep):
         """When both email and password errors are visible, first matching is raised cleanly."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
 
         def fake_wait(sel, **kw):
-            if any(k in sel for k in ["email", "password", "login"]):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
                 return MagicMock()
             raise Exception("Not found")
 
@@ -306,7 +340,6 @@ class TestPlatformCredentialRejection(unittest.TestCase):
         self.assertIn("Email is invalid", str(ctx.exception))
 
 
-
 # =============================================================================
 # Suite 3: Account Activation Modal Interception (#myModal, #sendmail)
 # =============================================================================
@@ -315,21 +348,27 @@ class TestAccountActivationModal(unittest.TestCase):
     """Stress tests account activation modal detection and HITL routing."""
 
     def setUp(self):
-        self.mock_bm = MagicMock(spec=BrowserManager)
-        self.mock_hitl = MagicMock(spec=HitlHandler)
-        self.mock_page = MagicMock()
-        self.mock_page.is_closed.return_value = False
-        self.mock_bm.get_page.return_value = self.mock_page
+        (self.mock_bm, self.mock_sm, self.mock_hitl,
+         self.mock_rep, self.mock_page, self.mock_ctx) = setup_mock_environment()
 
         self.driver = GuviDriver(
             browser_manager=self.mock_bm,
+            state_manager=self.mock_sm,
             hitl_handler=self.mock_hitl,
+            reporter=self.mock_rep,
         )
 
-    def test_11_mymodal_visible_triggers_hitl_activation(self):
+    @patch("time.sleep", return_value=None)
+    def test_11_mymodal_visible_triggers_hitl_activation(self, _mock_sleep):
         """Appearance of #myModal triggers HITL handler with task_id='guvi-activation'."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         def fake_click(sel, **kw):
@@ -353,10 +392,17 @@ class TestAccountActivationModal(unittest.TestCase):
                 context_desc="Guvi Account Activation",
             )
 
-    def test_12_sendmail_standalone_triggers_hitl_activation(self):
+    @patch("time.sleep", return_value=None)
+    def test_12_sendmail_standalone_triggers_hitl_activation(self, _mock_sleep):
         """Even if #myModal wrapper ID is altered, #sendmail triggers HITL guardrail."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         def fake_click(sel, **kw):
@@ -380,10 +426,17 @@ class TestAccountActivationModal(unittest.TestCase):
                 context_desc="Guvi Account Activation",
             )
 
-    def test_13_hitl_guardrail_blocking_propagates(self):
+    @patch("time.sleep", return_value=None)
+    def test_13_hitl_guardrail_blocking_propagates(self, _mock_sleep):
         """If HITL raises GuardrailBlockedError on activation modal, driver does not swallow it."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         def fake_is_visible(sel, **kw):
@@ -406,14 +459,15 @@ class TestIdempotentSessionProbing(unittest.TestCase):
     """Stress tests cookie-based fast path, URL probe fallback, and idempotency."""
 
     def setUp(self):
-        self.mock_bm = MagicMock(spec=BrowserManager)
-        self.mock_ctx = MagicMock()
-        self.mock_page = MagicMock()
-        self.mock_page.is_closed.return_value = False
-        self.mock_bm.get_context.return_value = self.mock_ctx
-        self.mock_bm.get_page.return_value = self.mock_page
+        (self.mock_bm, self.mock_sm, self.mock_hitl,
+         self.mock_rep, self.mock_page, self.mock_ctx) = setup_mock_environment()
 
-        self.driver = GuviDriver(browser_manager=self.mock_bm)
+        self.driver = GuviDriver(
+            browser_manager=self.mock_bm,
+            state_manager=self.mock_sm,
+            hitl_handler=self.mock_hitl,
+            reporter=self.mock_rep,
+        )
 
     def test_14_cookie_fast_path_avoids_navigation(self):
         """Valid 'authToken' starting with 'auth:' immediately succeeds without goto()."""
@@ -424,7 +478,8 @@ class TestIdempotentSessionProbing(unittest.TestCase):
         self.assertTrue(self.driver.is_authenticated())
         self.mock_page.goto.assert_not_called()
 
-    def test_15_cookie_expired_or_corrupt_falls_back(self):
+    @patch("time.sleep", return_value=None)
+    def test_15_cookie_expired_or_corrupt_falls_back(self, _mock_sleep):
         """Cookie 'authToken' lacking 'auth:' prefix does NOT pass fast-path and triggers fallback probe."""
         self.mock_ctx.cookies.return_value = [
             {"name": "authToken", "value": "expired_or_invalid_format", "domain": ".guvi.in"},
@@ -439,7 +494,8 @@ class TestIdempotentSessionProbing(unittest.TestCase):
             timeout=config.NAVIGATION_TIMEOUT
         )
 
-    def test_16_cookie_empty_value_falls_back(self):
+    @patch("time.sleep", return_value=None)
+    def test_16_cookie_empty_value_falls_back(self, _mock_sleep):
         """Cookie 'authToken' with empty string value falls back to active probe."""
         self.mock_ctx.cookies.return_value = [
             {"name": "authToken", "value": "", "domain": ".guvi.in"},
@@ -449,7 +505,8 @@ class TestIdempotentSessionProbing(unittest.TestCase):
 
         self.assertFalse(self.driver.is_authenticated())
 
-    def test_17_probe_lands_on_codekata_indicators(self):
+    @patch("time.sleep", return_value=None)
+    def test_17_probe_lands_on_codekata_indicators(self, _mock_sleep):
         """When cookies are empty, probe navigation to CodeKata with visible post-login indicators succeeds."""
         self.mock_ctx.cookies.return_value = []
         self.mock_page.url = ""  # blank initially
@@ -467,7 +524,8 @@ class TestIdempotentSessionProbing(unittest.TestCase):
         with patch.object(self.driver, "is_visible", side_effect=fake_is_visible):
             self.assertTrue(self.driver.is_authenticated())
 
-    def test_18_probe_localstorage_fallback(self):
+    @patch("time.sleep", return_value=None)
+    def test_18_probe_localstorage_fallback(self, _mock_sleep):
         """When DOM indicators not yet hydrated, localStorage 'authToken' starting with 'auth:' verifies session."""
         self.mock_ctx.cookies.return_value = []
         self.mock_page.url = ""
@@ -561,7 +619,6 @@ class TestBrokenStorageStateAndCookiePersistence(unittest.TestCase):
         mock_bm.save_storage_state.side_effect = PermissionError("Read-only filesystem")
 
         driver = GuviDriver(browser_manager=mock_bm)
-        # Should not raise exception
         driver.persist_session()
         mock_bm.save_storage_state.assert_called_once()
 
@@ -574,21 +631,27 @@ class TestInterstitialsTimeoutsAndErrorRecovery(unittest.TestCase):
     """Stress tests Cloudflare Turnstile, reCAPTCHA, login timeouts, and DOM alterations."""
 
     def setUp(self):
-        self.mock_bm = MagicMock(spec=BrowserManager)
-        self.mock_hitl = MagicMock(spec=HitlHandler)
-        self.mock_page = MagicMock()
-        self.mock_page.is_closed.return_value = False
-        self.mock_bm.get_page.return_value = self.mock_page
+        (self.mock_bm, self.mock_sm, self.mock_hitl,
+         self.mock_rep, self.mock_page, self.mock_ctx) = setup_mock_environment()
 
         self.driver = GuviDriver(
             browser_manager=self.mock_bm,
+            state_manager=self.mock_sm,
             hitl_handler=self.mock_hitl,
+            reporter=self.mock_rep,
         )
 
-    def test_26_pre_login_guardrail_check(self):
+    @patch("time.sleep", return_value=None)
+    def test_26_pre_login_guardrail_check(self, _mock_sleep):
         """Guardrails are actively checked immediately upon sign-in page load."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         def fake_click(sel, **kw):
@@ -600,17 +663,23 @@ class TestInterstitialsTimeoutsAndErrorRecovery(unittest.TestCase):
         res = self.driver.login(email="devsh.pareek@gmail.com", password="password")
         self.assertTrue(res)
 
-        # Assert check_and_handle_guardrails was called for page load
         self.mock_hitl.check_and_handle_guardrails.assert_any_call(
             self.mock_page,
             task_id="guvi-auth",
             context_desc="Guvi Sign-In Page Load",
         )
 
-    def test_27_post_submit_guardrail_check(self):
+    @patch("time.sleep", return_value=None)
+    def test_27_post_submit_guardrail_check(self, _mock_sleep):
         """Guardrails are actively checked immediately after credential submission."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         def fake_click(sel, **kw):
@@ -631,20 +700,24 @@ class TestInterstitialsTimeoutsAndErrorRecovery(unittest.TestCase):
     def test_28_login_timeout_raises_authentication_error(self):
         """When page remains stuck on /sign-in/ beyond timeout, raises GuviAuthenticationError and saves screenshot."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        self.mock_page.wait_for_selector.return_value = MagicMock()
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
         self.mock_page.is_checked.return_value = True
 
         with patch.object(self.driver, "is_visible", return_value=False):
             with self.assertRaises(GuviAuthenticationError) as ctx:
-                # 300ms timeout for rapid test execution
-                self.driver.login(email="devsh.pareek@gmail.com", password="password", timeout=300)
+                self.driver.login(email="devsh.pareek@gmail.com", password="password", timeout=100)
             self.assertIn("Timed out waiting for Guvi login completion", str(ctx.exception))
             self.mock_bm.save_screenshot.assert_called_with(name="guvi_auth_timeout", page=self.mock_page)
 
     def test_29_missing_login_form_fields_raises_element_not_found(self):
         """When email or password field is missing from DOM, raises ElementNotFoundError."""
         self.mock_page.url = "https://www.guvi.in/sign-in/"
-        # wait_for_selector fails for all selectors
         self.mock_page.wait_for_selector.side_effect = Exception("Not found")
 
         with self.assertRaises(ElementNotFoundError) as ctx:
@@ -673,10 +746,112 @@ class TestInterstitialsTimeoutsAndErrorRecovery(unittest.TestCase):
         self.mock_page.url = "about:blank"
         self.mock_page.goto.side_effect = Exception("net::ERR_INTERNET_DISCONNECTED")
 
-        # Calling navigate should log warning and return page without raising unhandled exception
         page = self.driver.navigate("https://www.guvi.in/sign-in/")
         self.assertEqual(page, self.mock_page)
         self.mock_page.bring_to_front.assert_called()
+
+
+# =============================================================================
+# Suite 7: Full Lifecycle State Machine & Resilient Recovery
+# =============================================================================
+
+class TestFullLifecycleStateMachine(unittest.TestCase):
+    """Stress tests realistic end-to-end state transitions:
+       Cold Start (Unauthenticated) -> Login -> Session Persisted ->
+       Warm Start (Idempotent Reuse) -> Session Invalidation -> Auto-Recovery Login.
+    """
+
+    def setUp(self):
+        (self.mock_bm, self.mock_sm, self.mock_hitl,
+         self.mock_rep, self.mock_page, self.mock_ctx) = setup_mock_environment()
+
+        self.driver = GuviDriver(
+            browser_manager=self.mock_bm,
+            state_manager=self.mock_sm,
+            hitl_handler=self.mock_hitl,
+            reporter=self.mock_rep,
+        )
+
+    @patch("time.sleep", return_value=None)
+    def test_32_full_lifecycle_cold_warm_recovery(self, _mock_sleep):
+        """Validates cold start login, warm start reuse, session invalidation, and auto-recovery."""
+        # --- PHASE 1: Cold Start (No cookies, invalid session) ---
+        self.mock_ctx.cookies.return_value = []
+        self.mock_page.url = "https://www.guvi.in/sign-in/"
+
+        def fake_wait(sel, **kw):
+            if any(k in sel for k in ["email", "password", "logged-in", "login"]):
+                return MagicMock()
+            raise Exception("Not found")
+
+        self.mock_page.wait_for_selector.side_effect = fake_wait
+        self.mock_page.is_checked.return_value = True
+
+        # When submit clicked, navigate to catalog and simulate cookie setting
+        def fake_click(sel, **kw):
+            if "login" in sel:
+                self.mock_page.url = "https://www.guvi.in/code-kata/"
+                self.mock_ctx.cookies.return_value = [
+                    {"name": "authToken", "value": "auth:lifecycle_token_xyz", "domain": ".guvi.in"}
+                ]
+
+        self.mock_page.click.side_effect = fake_click
+
+        # Cold login
+        cold_res = self.driver.ensure_authenticated()
+        self.assertTrue(cold_res)
+        self.mock_bm.save_storage_state.assert_called()
+
+        # --- PHASE 2: Warm Start (Session active via cookie) ---
+        with patch.object(self.driver, "login") as mock_login_phase2:
+            warm_res = self.driver.ensure_authenticated()
+            self.assertTrue(warm_res)
+            # Login must NOT be called on warm start
+            mock_login_phase2.assert_not_called()
+
+        # --- PHASE 3: Session Invalidation (Token expired on server, probe redirects to /sign-in/) ---
+        # Cookie removed or invalidated
+        self.mock_ctx.cookies.return_value = [{"name": "authToken", "value": "expired_token"}]
+        self.mock_page.url = "https://www.guvi.in/sign-in/"
+        self.mock_page.wait_for_selector.side_effect = Exception("Not visible")
+
+        # Active probe sees redirect to /sign-in/, is_authenticated() must return False
+        self.assertFalse(self.driver.is_authenticated())
+
+        # --- PHASE 4: Auto-Recovery (ensure_authenticated automatically performs fresh login) ---
+        with patch.object(self.driver, "login", return_value=True) as mock_login_phase4:
+            recovery_res = self.driver.ensure_authenticated()
+            self.assertTrue(recovery_res)
+            mock_login_phase4.assert_called_once()
+
+    def test_33_turnstile_interstitial_recovery(self):
+        """When Cloudflare Turnstile appears, HitlHandler halts for human resolution and allows pipeline to resume."""
+        self.mock_page.url = "https://www.guvi.in/sign-in/"
+
+        # Simulate Turnstile detected, user resolves it in browser
+        self.mock_hitl.check_and_handle_guardrails.return_value = True
+
+        checked = self.driver.check_guardrails(task_id="turnstile-test", context_desc="Turnstile Test")
+        self.assertTrue(checked)
+        self.mock_hitl.check_and_handle_guardrails.assert_called_once_with(
+            self.mock_page,
+            task_id="turnstile-test",
+            context_desc="Turnstile Test"
+        )
+
+    def test_34_recaptcha_interstitial_recovery(self):
+        """When reCAPTCHA appears, HitlHandler is invoked and records guardrail event."""
+        self.mock_page.url = "https://www.guvi.in/sign-in/"
+        self.mock_hitl.check_and_handle_guardrails.return_value = True
+
+        checked = self.driver.check_guardrails(task_id="recaptcha-test", context_desc="reCAPTCHA Test")
+        self.assertTrue(checked)
+        self.mock_hitl.check_and_handle_guardrails.assert_called_once_with(
+            self.mock_page,
+            task_id="recaptcha-test",
+            context_desc="reCAPTCHA Test"
+        )
+
 
 
 # =============================================================================
@@ -694,6 +869,7 @@ def run_stress_suite() -> unittest.TestResult:
     suite.addTests(loader.loadTestsFromTestCase(TestIdempotentSessionProbing))
     suite.addTests(loader.loadTestsFromTestCase(TestBrokenStorageStateAndCookiePersistence))
     suite.addTests(loader.loadTestsFromTestCase(TestInterstitialsTimeoutsAndErrorRecovery))
+    suite.addTests(loader.loadTestsFromTestCase(TestFullLifecycleStateMachine))
 
     runner = unittest.TextTestRunner(verbosity=2)
     return runner.run(suite)
