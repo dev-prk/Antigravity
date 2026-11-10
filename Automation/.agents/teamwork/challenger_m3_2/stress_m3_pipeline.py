@@ -438,7 +438,7 @@ class StressM3Pipeline(unittest.TestCase):
         self.assertEqual(count, BATCH_SIZE)
 
         # Retrieve and verify all 250 tasks from SQLite using list_tasks API
-        all_records = self.state_manager.list_tasks(platform="guvi", limit=BATCH_SIZE + 100)
+        all_records = self.state_manager.list_tasks(platform="guvi")
         self.assertEqual(len(all_records), BATCH_SIZE)
 
         for rec in all_records:
@@ -485,7 +485,7 @@ class StressM3Pipeline(unittest.TestCase):
         self.state_manager.batch_record_tasks(updated_tasks)
 
         # Verify no duplicate records created (count remains 250)
-        reloaded = self.state_manager.list_tasks(platform="guvi", limit=BATCH_SIZE + 100)
+        reloaded = self.state_manager.list_tasks(platform="guvi")
         self.assertEqual(len(reloaded), BATCH_SIZE)
 
         # Check updated task properties
