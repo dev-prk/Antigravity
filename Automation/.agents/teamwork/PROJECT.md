@@ -42,8 +42,8 @@
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
 | 1 | M1: Core Foundation & Infrastructure | Headed browser manager, SQLite persistent state manager, HITL handler, reporter, CLI scaffolding | none | DONE |
-| 2 | M2: Problem Solver Engine & Sandbox | Problem extractor, Python 3 algorithmic synthesizer, sandboxed test runner, Ace editor adapter | M1 | IN_PROGRESS |
-| 3 | M3: Guvi CodeKata Driver & Automation | Authentication, 143-page table discovery, `#completed-icon_svg__a` filtering, Run/Submit lifecycle | M1, M2 | PLANNED |
+| 2 | M2: Problem Solver Engine & Sandbox | Problem extractor, Python 3 algorithmic synthesizer, sandboxed test runner, Ace editor adapter | M1 | DONE |
+| 3 | M3: Guvi CodeKata Driver & Automation | Authentication, 143-page table discovery, `#completed-icon_svg__a` filtering, Run/Submit lifecycle | M1, M2 | IN_PROGRESS |
 | 4 | M4: ZenClass Tasks Driver | Authentication, Kanban discovery, task detail extraction, dynamic 13-field submission, UI confirmation | M1 | PLANNED |
 | 5 | M5: ZenClass Projects Driver & R2 HITL | Project discovery, local solution synthesis in `projects/<slug>/`, local build test, human pause protocol, submission | M1, M4 | PLANNED |
 | 6 | M6: Dual Track Final Milestone | Pass 100% of E2E test suite, live platform verification, final persistent state and summary report | M1, M2, M3, M4, M5, E2E_READY | PLANNED |
