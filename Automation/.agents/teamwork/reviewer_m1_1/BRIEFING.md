@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T22:52:30Z
+# BRIEFING — 2026-11-10T23:05:00Z
 
 ## Mission
 Objective review and adversarial challenge of Milestone 1 (Filtering & Extractor Foundation) implementation.
@@ -28,17 +28,33 @@ Objective review and adversarial challenge of Milestone 1 (Filtering & Extractor
 - **Review criteria**: Correctness, completeness, security/safety (SQL/regex), backward compatibility, style, test quality
 
 ## Review Checklist
-- **Items reviewed**: none yet
-- **Verdict**: pending
-- **Unverified claims**: all worker claims pending verification
+- **Items reviewed**:
+  - `core/state_manager.py` (difficulty filtering, SQL query parameterization, json_valid resilience, backward compatibility)
+  - `solver/extractor.py` (CSS sanitization regexes, unclosed/spaced style tags, CSS comments, preservation of JSON/sets/code)
+  - `config.py` (HEADLESS=False, CODEKATA_HEADLESS=True, DEFAULT_CODEKATA_DIFFICULTIES)
+  - `main.py` (AutomationArgumentParser context-aware defaults, parse_difficulties, shared_browser options, runner pipeline kwargs propagation)
+  - `tests/test_m1_filtering.py` (28 unit and integration tests)
+- **Verdict**: APPROVE
+- **Unverified claims**: None. All claims independently verified.
 
 ## Attack Surface
-- **Hypotheses tested**: none yet
-- **Vulnerabilities found**: none yet
-- **Untested angles**: SQL injection/json_valid in SQLite, malformed JSON data, CSS regex edge cases (nested/unclosed/attribute selectors/pseudo-elements/greedy matches destroying valid user code/JSON), CLI headless flag conflicts and precedence, difficulty filtering case sensitivity/null values.
+- **Hypotheses tested**:
+  - H1: SQL injection via malicious difficulty string in `list_pending`. Result: Refuted. All difficulties parameterized using `?`.
+  - H2: Non-JSON or malformed metadata crashes SQLite during difficulty filtering. Result: Refuted. `json_valid(metadata) = 1` guard prevents `OperationalError`.
+  - H3: Extractor regexes strip valid JSON objects or Python sets that contain CSS-like words like `display`. Result: Refuted. Lookbehinds and `_is_pure_css` preserve valid JSON, sets, and C code blocks.
+  - H4: CLI flags `--no-headless` / `--headed` fail to override `run-codekata` default headless behavior. Result: Refuted. Overrides verified both before and after subcommand.
+  - H5: Regression in baseline test suites. Result: Refuted. All 386 tests pass cleanly.
+- **Vulnerabilities found**:
+  - V1 (Minor): Strategy 2 fallback in `ProblemExtractor` with `Sample Input 1:` without `Case` captures `1:` into `input_text`. Primary Strategy 1 (DOM selectors) unaffected.
+  - V2 (Minor): `_clean_text` called 8 times without memoization in `ProblemExtractor.extract`, causing quadratic regex substitution on extreme (>100KB) HTML payloads.
+- **Untested angles**:
+  - Live Guvi browser interaction (owned by M3).
 
 ## Key Decisions Made
-- Initialized state files and briefing.
+- Confirmed zero integrity violations (no hardcoded outputs, facades, or test bypassing).
+- Executed full test suite independently: 28/28 M1 tests passed (0.30s), 386/386 full workspace tests passed (73.10s).
+- Conducted empirical adversarial stress testing covering SQL injection, primitive metadata, deceptive CSS selectors, and CLI precedence.
+- Issued verdict: **APPROVE**.
 
 ## Artifact Index
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m1_1/handoff.md — Final review and challenge report

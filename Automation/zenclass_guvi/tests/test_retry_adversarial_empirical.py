@@ -5,7 +5,7 @@ Empirical Adversarial Test Suite for Feature 6: Solver Retry Feedback Refinement
 Authored by Challenger 2 (Milestone 2: Intelligent Solver & Error Adaptation).
 
 Tests:
-1. Baseline Attempt 1 (direct_optimal) across all algorithmic templates.
+1. Baseline Attempt 1 (direct_optimal) across algorithmic templates.
 2. Attempt 2 targeted refinement across 6 error injection categories:
    - IndexError / list index out of range
    - ValueError / CSS style leak
@@ -13,10 +13,11 @@ Tests:
    - RecursionError / maximum recursion depth exceeded
    - Output mismatch (casing: YES vs yes)
    - Output mismatch (delimiter: newline vs space)
-3. Failure mode: IndentationError in Attempt 2 for nested templates (LCS, Edit Distance) under ValueError.
-4. Failure mode: UnboundLocalError in Attempt 2 for nested templates (LCS, Edit Distance) under IndexError.
-5. Failure mode: CSS style leaks containing numeric dimensions (e.g. width:100px) corrupting tokens.
-6. Attempt 3 defensive fallback anchoring and exception shield under arbitrary malformed inputs.
+3. Failure mode 1: IndentationError in Attempt 2 for nested templates (LCS, Edit Distance) under ValueError.
+4. Failure mode 2: UnboundLocalError in Attempt 2 for nested templates (LCS, Edit Distance) under IndexError.
+5. Failure mode 3: CSS style leaks containing numeric dimensions (e.g. width:100px) corrupting tokens.
+6. Failure mode 4: Delimiter refinement failure when previous_error has escaped newline '\\n'.
+7. Attempt 3 defensive fallback anchoring and exception shield under arbitrary malformed inputs.
 """
 
 import ast
@@ -137,26 +138,26 @@ class TestRetryAdversarialEmpirical(unittest.TestCase):
         self.assertTrue(res.all_passed)
         self.assertEqual(res.results[0].actual_output, "YES")
 
-    def test_attempt_2_output_mismatch_delimiter_adaptation(self):
-        """Verifies Output mismatch delimiter refinement (newline <-> space)."""
+    def test_attempt_2_output_mismatch_delimiter_adaptation_runner(self):
+        """Verifies Output mismatch delimiter refinement when error contains runner newline."""
         # Direction 1: newline to space
         spec_space = ProblemSpecification(
             title="Three Sum",
             description="Find triplets",
             sample_cases=[SampleCase("-1 0 1 2 -1 -4", "-1 -1 2 -1 0 1")],
         )
-        err_space = "Output mismatch: got '-1 -1 2\\n-1 0 1', expected '-1 -1 2 -1 0 1'"
+        err_space = "Output mismatch: got '-1 -1 2\n-1 0 1', expected '-1 -1 2 -1 0 1'"
         sol_space = generate_solution(spec_space, previous_error=err_space, attempt=2)
         self.assertEqual(sol_space.strategy, "targeted_refinement")
         self.assertIn("' '.join(", sol_space.code)
 
-        # Direction 2: space to newline
+        # Direction 2: space to newline (with ASCII 10 newline from runner)
         spec_newline = ProblemSpecification(
             title="Merge Intervals",
             description="merge intervals",
             sample_cases=[SampleCase("4\n1 3 2 6 8 10 15 18", "1 6\n8 10\n15 18")],
         )
-        err_newline = "Output mismatch: got '1 6 8 10 15 18', expected '1 6\\n8 10\\n15 18'"
+        err_newline = "Output mismatch: got '1 6 8 10 15 18', expected '1 6\n8 10\n15 18'"
         sol_newline = generate_solution(spec_newline, previous_error=err_newline, attempt=2)
         self.assertEqual(sol_newline.strategy, "targeted_refinement")
         self.assertIn("'\\n'.join(", sol_newline.code)
@@ -200,7 +201,7 @@ class TestRetryAdversarialEmpirical(unittest.TestCase):
 
     def test_adversarial_vulnerability_lcs_edit_distance_indentation_error(self):
         """
-        VULNERABILITY REPRODUCTION:
+        VULNERABILITY REPRODUCTION 1:
         In TEMPLATE_DP_LCS and TEMPLATE_DP_EDIT_DISTANCE, `tokens = sys.stdin.read().split()`
         is indented at 8 spaces inside an else: block.
         Attempt 2 ValueError refinement replaces `tokens = sys.stdin.read().split()\\n`
@@ -220,14 +221,14 @@ class TestRetryAdversarialEmpirical(unittest.TestCase):
             with self.assertRaises(IndentationError, msg=f"Expected IndentationError for {title}"):
                 ast.parse(sol.code)
 
-            # Running via test_solution also fails execution
+            # Running via test_solution also fails execution with IndentationError
             res = test_solution(sol.code, spec.sample_cases)
             self.assertFalse(res.all_passed)
             self.assertIn("IndentationError", res.stderr)
 
     def test_adversarial_vulnerability_lcs_edit_distance_unbound_local_error(self):
         """
-        VULNERABILITY REPRODUCTION:
+        VULNERABILITY REPRODUCTION 2:
         In TEMPLATE_DP_LCS and TEMPLATE_DP_EDIT_DISTANCE, Attempt 2 IndexError refinement
         replaces `tokens = sys.stdin.read().split()\\n` with 4-space indented `safe_bounds_snippet`.
         This de-indents `if not tokens: return`, breaking the else: block and hoisting
@@ -249,7 +250,7 @@ class TestRetryAdversarialEmpirical(unittest.TestCase):
 
     def test_adversarial_vulnerability_css_with_digits_token_corruption(self):
         """
-        VULNERABILITY REPRODUCTION:
+        VULNERABILITY REPRODUCTION 3:
         If CSS style leaks contain numeric attributes (e.g. width:100px; font-size:14px),
         the Attempt 2 regex `re.findall(r'-?\\d+', ' '.join(tokens))` extracts the numbers
         100 and 14 as problem inputs, corrupting the array calculation.
@@ -268,6 +269,26 @@ class TestRetryAdversarialEmpirical(unittest.TestCase):
         # It calculates 100 + 14 + 3 + 10 + 20 + 30 = 177 instead of 60
         self.assertFalse(res.all_passed)
         self.assertNotEqual(res.results[0].actual_output, "60")
+
+    def test_adversarial_vulnerability_escaped_newline_delimiter_failure(self):
+        """
+        VULNERABILITY REPRODUCTION 4:
+        In solver/code_generator.py line 1361:
+        `if "\\n" in exp_val and " " in err:`
+        It only checks literal ASCII 10 `\\n`, failing to detect escaped `'\\\\n'`
+        as serialized in JSON or logs, causing delimiter adaptation to be skipped
+        or inverted.
+        """
+        spec = ProblemSpecification(
+            title="Merge Intervals",
+            description="merge intervals",
+            sample_cases=[SampleCase("4\n1 3 2 6 8 10 15 18", "1 6\n8 10\n15 18")],
+        )
+        err_escaped = "Output mismatch: got '1 6 8 10 15 18', expected '1 6\\n8 10\\n15 18'"
+        sol = generate_solution(spec, previous_error=err_escaped, attempt=2)
+        # Delimiter adaptation fails to replace space join with newline join
+        self.assertNotIn("'\\n'.join(", sol.code)
+        self.assertIn("' '.join(", sol.code)
 
     # -----------------------------------------------------------------
     # Attempt 3: Defensive Fallback & Exception Shield
@@ -331,7 +352,7 @@ class TestRetryAdversarialEmpirical(unittest.TestCase):
             SampleCase("", "50"),
             SampleCase("non numeric garbage input text", "50"),
             SampleCase("!@#$%^&*()_+~`", "50"),
-            SampleCase("9999999999999999999999999999999999999999999", "50"),
+            SampleCase("1.5 2.5 3.5 4.5", "50"),
         ]
 
         res = test_solution(sol.code, malformed_inputs)

@@ -1,76 +1,178 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:58:35.863033+00:00",
+  "last_updated": "2026-11-10T22:59:32.075114+00:00",
   "summary": {
-    "total_discovered": 2,
-    "total_completed": 2,
-    "total_pending": 0,
+    "total_discovered": 6,
+    "total_completed": 1,
+    "total_pending": 5,
     "total_in_progress": 0,
     "total_blocked": 0,
     "total_failed": 0,
-    "success_rate_percent": 100.0,
+    "success_rate_percent": 16.67,
     "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
-        "total_discovered": 2,
-        "total_completed": 2,
-        "total_pending": 0,
+        "total_discovered": 5,
+        "total_completed": 1,
+        "total_pending": 4,
         "total_blocked": 0,
         "total_failed": 0,
-        "success_rate_percent": 100.0,
+        "success_rate_percent": 20.0,
+        "time_spent_seconds": 0.0
+      },
+      "zenclass": {
+        "total_discovered": 1,
+        "total_completed": 0,
+        "total_pending": 1,
+        "total_blocked": 0,
+        "total_failed": 0,
+        "success_rate_percent": 0.0,
         "time_spent_seconds": 0.0
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 2,
-        "completed": 2,
-        "success_rate_percent": 100.0
+        "total": 5,
+        "completed": 1,
+        "success_rate_percent": 20.0
+      },
+      "Tasks": {
+        "total": 1,
+        "completed": 0,
+        "success_rate_percent": 0.0
       }
     },
     "human_intervention_issues": []
   },
   "tasks": [
     {
-      "task_id": "guvi-palindrome-check",
+      "task_id": "guvi-easy-1",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Palindrome Check",
+      "title": "Problem Easy 1",
       "url": "",
-      "status": "completed",
-      "attempt_count": 1,
-      "result": "SOLVED",
+      "status": "pending",
+      "attempt_count": 0,
+      "result": "",
       "failure_reason": null,
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Medium"
+        "difficulty": "Easy",
+        "slug": "easy-1"
       },
-      "created_at": "2026-11-10T22:58:35.861832+00:00",
-      "updated_at": "2026-11-10T22:58:35.861832+00:00",
-      "timestamp": "2026-11-10T22:58:35.861832+00:00",
-      "attempts": 1,
+      "created_at": "2026-11-10T22:59:32.070213+00:00",
+      "updated_at": "2026-11-10T22:59:32.070213+00:00",
+      "timestamp": "2026-11-10T22:59:32.070213+00:00",
+      "attempts": 0,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-odd-or-even-sum",
+      "task_id": "guvi-med-1",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Odd Or Even Sum",
+      "title": "Problem Medium 1",
       "url": "",
-      "status": "completed",
-      "attempt_count": 1,
-      "result": "SOLVED",
+      "status": "discovered",
+      "attempt_count": 0,
+      "result": "",
       "failure_reason": null,
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "slug": "med-1"
       },
-      "created_at": "2026-11-10T22:58:35.862833+00:00",
-      "updated_at": "2026-11-10T22:58:35.862833+00:00",
-      "timestamp": "2026-11-10T22:58:35.862833+00:00",
-      "attempts": 1,
+      "created_at": "2026-11-10T22:59:32.071198+00:00",
+      "updated_at": "2026-11-10T22:59:32.071198+00:00",
+      "timestamp": "2026-11-10T22:59:32.071198+00:00",
+      "attempts": 0,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-hard-1",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Problem Hard 1",
+      "url": "",
+      "status": "redo",
+      "attempt_count": 0,
+      "result": "",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "HARD",
+        "slug": "hard-1"
+      },
+      "created_at": "2026-11-10T22:59:32.072686+00:00",
+      "updated_at": "2026-11-10T22:59:32.072686+00:00",
+      "timestamp": "2026-11-10T22:59:32.072686+00:00",
+      "attempts": 0,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-med-completed",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Problem Medium Completed",
+      "url": "",
+      "status": "completed",
+      "attempt_count": 0,
+      "result": "",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "slug": "med-comp"
+      },
+      "created_at": "2026-11-10T22:59:32.073536+00:00",
+      "updated_at": "2026-11-10T22:59:32.073536+00:00",
+      "timestamp": "2026-11-10T22:59:32.073536+00:00",
+      "attempts": 0,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "zen-task-1",
+      "platform": "zenclass",
+      "task_category": "Tasks",
+      "title": "ZenClass Task 1",
+      "url": "",
+      "status": "pending",
+      "attempt_count": 0,
+      "result": "",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "tags": [
+          "javascript"
+        ]
+      },
+      "created_at": "2026-11-10T22:59:32.074197+00:00",
+      "updated_at": "2026-11-10T22:59:32.074197+00:00",
+      "timestamp": "2026-11-10T22:59:32.074197+00:00",
+      "attempts": 0,
+      "category": "Tasks"
+    },
+    {
+      "task_id": "empty-meta-1",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Empty Meta Task",
+      "url": "",
+      "status": "pending",
+      "attempt_count": 0,
+      "result": "",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {},
+      "created_at": "2026-11-10T22:59:32.074933+00:00",
+      "updated_at": "2026-11-10T22:59:32.074933+00:00",
+      "timestamp": "2026-11-10T22:59:32.074933+00:00",
+      "attempts": 0,
       "category": "CodeKata"
     }
   ]

@@ -535,6 +535,19 @@ def test_cli_parser(results: TestResults):
         except Exception as e:
             results.record_fail(f"CLI Difficulty: {' '.join(args)}", f"Exception: {e}")
 
+    # 3.4 CLI Integration with GuviDriver signature check
+    from drivers.guvi_driver import GuviDriver
+    import inspect
+    sig = inspect.signature(GuviDriver.run_pipeline)
+    if "difficulties" in sig.parameters or any(p.kind == inspect.Parameter.VAR_KEYWORD for p in sig.parameters.values()):
+        results.record_pass("CLI GuviDriver Signature Compatibility", "GuviDriver.run_pipeline accepts difficulties parameter")
+    else:
+        results.record_fail(
+            "CLI GuviDriver Signature Compatibility",
+            f"CRITICAL DEFECT: main.py passes difficulties to GuviDriver.run_pipeline, but GuviDriver parameters are {list(sig.parameters.keys())}. "
+            "Executing 'run-codekata --difficulty Medium' crashes with TypeError: run_pipeline() got an unexpected keyword argument 'difficulties'"
+        )
+
 
 def test_extractor_css_sanitization(results: TestResults):
     print("\n--- TEST SUITE 4: Extractor CSS Sanitization Adversarial Stress ---")
