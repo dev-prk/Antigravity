@@ -1,50 +1,66 @@
-## 2026-11-10T12:21:59Z
-# DISPATCH — Worker M3 (Consolidator / Resume Writer)
+# Dispatch Assignment: Milestone 3 Worker (`worker_m3_1`)
 
-## Task Objective
-Synthesize and consolidate the findings from Milestone M1 (existing resume analysis) and Milestone M2 (8 job portal snapshots) into:
-1. `/Users/devesh/resume/master_profile.md`
-2. `/Users/devesh/resume/targets.md`
+**Timestamp**: 2026-11-10T16:15:00Z  
+**Role**: Implementation Worker (`teamwork_worker`)  
+**Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_1`  
+**Parent Orchestrator**: `cbd0649b-f648-4724-a244-a22a5102ccc4`  
+**Target Milestone**: Milestone 3 — Guvi CodeKata Driver & Automation Pipeline  
 
-## Mandatory Integrity Warning
-DO NOT CHEAT. All implementations must be genuine. DO NOT hardcode test results, create dummy/facade implementations, or circumvent the intended task. A teamwork_auditor will independently verify your work. Integrity violations WILL be detected and your work WILL be rejected.
+---
 
-## Input Artifacts
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md`
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_1/analysis.md` (Detailed resume ingestion report)
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_1/handoff.md`
-- `/Users/devesh/resume/profile_backup.md` (Snapshots of all 8 job portals)
-- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m2_1/handoff.md`
+## 1. Objective
 
-## Deliverable Specifications
+Implement the complete, production-grade Guvi CodeKata Driver and automation pipeline in `zenclass_guvi/drivers/`:
+1. `zenclass_guvi/drivers/base_driver.py`: Foundational base driver providing navigation, safe click/fill/visibility checks, modal dismissals, diagnostic screenshots, session persistence, and HITL guardrail hooks adhering strictly to Requirement R1.
+2. `zenclass_guvi/drivers/guvi_driver.py`: Full autonomous platform driver for Guvi CodeKata:
+   - Authentication lifecycle: Cascade selector resolution, natural typing cadence, session persistence (`authToken` and `data/storage_state.json`), pre-login session probe, guardrail handling (`#myModal`, Cloudflare Turnstile, reCAPTCHA, OTP).
+   - Catalog Discovery & Pending Filtering: 143-page table discovery, `#completed-icon_svg__a` solved vs pending classification, metadata extraction, atomic SQLite `batch_record_tasks`.
+   - Problem Solving Pipeline (`solve_problem`): Workspace navigation, guardrail check, problem specification extraction (`solver.extractor`), code synthesis (`solver.code_generator`), local subprocess sandbox pre-check (`solver.test_runner`), Ace Editor code injection (`solver.ace_adapter`), Run Code execution & test pill verification, Submit Code execution & `Solved!` positive verification, StateManager 9 R3 fields update.
+   - Pipeline Orchestrator (`run_pipeline`): End-to-end execution loop integrating auth, catalog discovery, pending batch loop, and executive report generation (`core.reporter`).
+3. `zenclass_guvi/drivers/__init__.py`: Clean export of `BaseDriver` and `GuviDriver`.
+4. `zenclass_guvi/main.py`: Wire `GuviDriver.run_pipeline()` into CLI subcommands `run-codekata` and `run-all`.
+5. `zenclass_guvi/tests/test_m3_guvi.py`: Comprehensive test suite verifying all driver behaviors across authentication, catalog parsing, completed SVG detection, solve pipeline, and pipeline orchestration.
 
-### 1. `/Users/devesh/resume/master_profile.md`
-- Complete personal identity and contact baseline.
-- Executive profile summary.
-- Chronological Work Experience (Softility, Independent AI Builder, Deloitte USI, Small World).
-  - Every employer entry must include clear dates and AT LEAST 2 verifiable quantitative achievements with exact metrics (e.g. 180+ Db2 instances, 20+ TB, 99.99% uptime, 40-60GB storage reclaimed, 1,500+ incident calls, 60% client cost reduction, Patroni HA failover, etc.).
-- Complete Education history (SRM Institute of Science and Technology B.Tech CSE, Johns Hopkins University MSE Data Science deferred admission, CBSE schooling).
-- Technical Skills Matrix categorized by domain (Databases & DBA, High Availability/DR, Automation & Scripting, Cloud & Infrastructure, Data Engineering, Tools).
-- Certifications, Hackathon Awards & National Grand Finalist recognitions.
-- Comprehensive Discrepancy & Conflict Matrix explicitly flagging all variations found across resume versions and portal profiles:
-  - Softility start date (Sep 2025 actual vs Jan 2025 external ATS resume)
-  - Career break / independent AI builder timing (Jan 2025 – Aug 2025)
-  - Notice period differences across portals (Naukri: 3 months vs Foundit: 45 days vs Instahyre/Indeed: immediate)
-  - Deloitte title and start date variations
-  - Storage cost reduction metrics (30% total storage vs 60% server-specific vs 67% 5-year cloud projection)
+---
 
-### 2. `/Users/devesh/resume/targets.md`
-- Target criteria captured from portal profiles and resume preferences:
-  - Target Roles: Database Administrator / Lead Database Engineer / Database Reliability Engineer (DBRE) / Data Platform Engineer / Engineering Manager.
-  - Location & Remote Preferences: Hyderabad, Bangalore, Pune, NCR; Open to Remote; Open to Relocation (UK, EU, US, UAE).
-  - Current CTC: 15 LPA (verified across portals).
-  - Expected / Minimum CTC range.
-  - Notice Period analysis and recommended positioning (3 months official vs negotiated/immediate).
-  - Exclusions & Roles to Avoid (e.g. legacy L1 non-technical support, sales/marketing).
-  - Clear list of decision questions/options formulated for user confirmation at Gate 1.
+## 2. Mandatory Anti-Cheating Warning
 
-## Strict Constraints
-- Files only — absolutely NO browser control.
-- Truthfulness: Never invent or inflate skills, titles, dates, metrics, employers, or degrees. All career details must directly trace back to verified evidence.
-- Write your completion handoff report to `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_1/handoff.md`.
+> DO NOT CHEAT. All implementations must be genuine. DO NOT hardcode test results, create dummy/facade implementations, or circumvent the intended task. A teamwork_auditor will independently verify your work. Integrity violations WILL be detected and your work WILL be rejected.
+
+---
+
+## 3. Authoritative Reference Inputs
+
+You MUST read these reference files before beginning work:
+- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md` (Authoritative user request)
+- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md` (Architecture & Milestone 3 specifications)
+- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m3_1/handoff.md` (Authentication & session blueprints)
+- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m3_2/handoff.md` (Catalog crawler, solve pipeline, orchestrator blueprints)
+
+---
+
+## 4. Exclusive Write Ownership
+
+You own and may modify ONLY these files:
+- `zenclass_guvi/drivers/base_driver.py` (New file)
+- `zenclass_guvi/drivers/guvi_driver.py` (New file)
+- `zenclass_guvi/drivers/__init__.py` (New or update)
+- `zenclass_guvi/main.py` (Wire GuviDriver into CLI)
+- `zenclass_guvi/tests/test_m3_guvi.py` (New test file)
+
+DO NOT modify files outside your write ownership without explicit approval.
+
+---
+
+## 5. Verification Requirements
+
+You MUST execute the following verification commands and record exact terminal outputs in your `handoff.md`:
+1. `pytest tests/test_m3_guvi.py -v` (or `python3 -m unittest tests/test_m3_guvi.py`)
+2. `pytest tests/test_m1_core.py tests/test_m2_solver.py -v` (verify zero regressions on M1 & M2)
+3. `python3 tests/e2e/test_runner.py --all` (verify all 78 E2E tests pass with 100% success rate)
+
+---
+
+## 6. Output Deliverable
+
+Write your final handoff report to `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_1/handoff.md` following the Handoff Protocol (Observation, Logic Chain, Caveats, Conclusion, Verification Method). Notify the orchestrator via `send_message`.

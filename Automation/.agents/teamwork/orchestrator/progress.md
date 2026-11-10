@@ -28,9 +28,9 @@ Last visited: 2026-11-10T16:06:30Z
     - [x] challenger_m2_2: APPROVE (18/18 stress tests passed: malformed DOM, 4-step CDP sequence)
     - [x] auditor_m2_1: CLEAN (18/18 audit checks passed, 100% authentic, zero facades)
 - [ ] Phase 4: Milestone 3: Guvi CodeKata Driver & Automation (IN_PROGRESS)
-  - [ ] explorer_m3_1: Guvi authentication flow, session persistence, and anti-detection
-  - [ ] explorer_m3_2: 143-page table discovery, `#completed-icon_svg__a` filtering, and problem pipeline
-  - [ ] worker_m3_1: Implementation (`drivers/guvi_driver.py`, `tests/test_m3_guvi.py`)
+  - [x] explorer_m3_1: Guvi authentication flow, session persistence, and anti-detection (COMPLETED)
+  - [x] explorer_m3_2: 143-page table discovery, `#completed-icon_svg__a` filtering, and problem pipeline (COMPLETED)
+  - [ ] worker_m3_1: Implementation (`drivers/base_driver.py`, `drivers/guvi_driver.py`, `main.py`, `tests/test_m3_guvi.py`) (DISPATCHING)
   - [ ] Gate Verification: Reviewers, Challengers, Auditor
 - [ ] Phase 5: Milestone 4: ZenClass Tasks Driver
 - [ ] Phase 6: Milestone 5: ZenClass Projects Driver & HITL
