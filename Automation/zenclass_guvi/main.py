@@ -336,16 +336,8 @@ class AutomationRunner:
                     reporter=self.reporter,
                 )
                 guvi_driver.run_pipeline(limit=self.args.limit)
-                from drivers.zenclass_tasks_driver import ZenClassTasksDriver
-                tasks_driver = ZenClassTasksDriver(
-                    browser_manager=self.browser_manager,
-                    state_manager=self.state_manager,
-                    hitl_handler=self.hitl_handler,
-                    reporter=self.reporter,
-                )
-                tasks_driver.run_task_pipeline(limit=self.args.limit)
-                self.run_zenclass_projects(limit=self.args.limit)
             elif self.args.command == "run-codekata":
+
                 logger.info(f"Executing CodeKata automation (category={self.args.category}, limit={self.args.limit})...")
                 from drivers.guvi_driver import GuviDriver
                 driver = GuviDriver(

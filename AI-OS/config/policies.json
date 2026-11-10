@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "active_profile": "WORKSPACE_AUTONOMOUS",
+  "workspace_root": "~/Documents/Antigravity/AI-OS",
+  "sandbox_dir": "/tmp/aios_sandbox",
+  "redaction_enabled": true,
+  "profiles": {
+    "READ_ONLY": {
+      "description": "Read-only inspection, evaluation, and test verification. All mutations and command executions are denied.",
+      "permissions": {
+        "read": "ALLOW",
+        "write": "DENY",
+        "delete": "DENY",
+        "execute": "DENY",
+        "install": "DENY",
+        "network": "DENY",
+        "external": "DENY",
+        "production": "DENY"
+      }
+    },
+    "SANDBOX_AUTONOMOUS": {
+      "description": "Autonomous execution restricted strictly to the temporary sandbox directory (/tmp/aios_sandbox). External and workspace mutations blocked.",
+      "permissions": {
+        "read": "ALLOW",
+        "write": "ALLOW",
+        "delete": "ALLOW",
+        "execute": "ALLOW",
+        "install": "ASK",
+        "network": "ASK",
+        "external": "DENY",
+        "production": "DENY"
+      }
+    },
+    "WORKSPACE_AUTONOMOUS": {
+      "description": "Default autonomous mode within the AI-OS workspace root. External mutations are strictly intercepted and blocked.",
+      "permissions": {
+        "read": "ALLOW",
+        "write": "ALLOW",
+        "delete": "ALLOW",
+        "execute": "ALLOW",
+        "install": "ASK",
+        "network": "ASK",
+        "external": "ASK",
+        "production": "DENY"
+      }
+    },
+    "APPROVAL_REQUIRED": {
+      "description": "Human-in-the-loop supervised mode: every mutation, tool execution, installation, and external network call requires explicit operator confirmation.",
+      "permissions": {
+        "read": "ALLOW",
+        "write": "ASK",
+        "delete": "ASK",
+        "execute": "ASK",
+        "install": "ASK",
+        "network": "ASK",
+        "external": "ASK",
+        "production": "DENY"
+      }
+    },
+    "RESTRICTED": {
+      "description": "Emergency lockdown mode. All actions are denied except essential diagnostic read operations on logs.",
+      "permissions": {
+        "read": "ALLOW",
+        "write": "DENY",
+        "delete": "DENY",
+        "execute": "DENY",
+        "install": "DENY",
+        "network": "DENY",
+        "external": "DENY",
+        "production": "DENY"
+      }
+    }
+  },
+  "allowed_commands": [
+    "python3",
+    "pytest",
+    "git",
+    "ls",
+    "grep",
+    "cat",
+    "find",
+    "head",
+    "tail",
+    "wc",
+    "echo",
+    "pwd",
+    "mkdir",
+    "cp",
+    "mv",
+    "touch",
+    "diff"
+  ],
+  "denied_commands": [
+    "sudo",
+    "su",
+    "mkfs",
+    "dd",
+    "shutdown",
+    "reboot",
+    "poweroff",
+    "init",
+    ":(){ :|:& };:"
+  ],
+  "network_allowlist": [
+    "localhost",
+    "127.0.0.1",
+    "github.com",
+    "pypi.org"
+  ]
+}
