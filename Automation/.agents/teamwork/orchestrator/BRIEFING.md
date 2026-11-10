@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T15:28:00Z
+# BRIEFING — 2026-11-10T15:31:00Z
 
 ## Mission
 Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, and ZenClass projects using a visible foreground browser session and provided credentials, maintaining persistent task execution state and progress reports.
@@ -27,14 +27,14 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
   1. Survey & Requirement Mining [done]
   2. PROJECT.md & Decomposition [done]
   3. E2E Testing Track [done: 78 tests across 4 tiers passing]
-  4. Milestone 1 (Core Foundation) [in-progress: 3/5 gate verdicts APPROVE]
-  5. Milestone 2 (Solver Engine) [pending]
+  4. Milestone 1 (Core Foundation) [done: gate PASSED]
+  5. Milestone 2 (Solver Engine) [in-progress: explorers researching]
   6. Milestone 3 (Guvi CodeKata) [pending]
   7. Milestone 4 (ZenClass Tasks) [pending]
   8. Milestone 5 (ZenClass Projects) [pending]
   9. Final Verification & Reporting [pending]
-- **Current phase**: 2 (Milestone 1 Gate Verification)
-- **Current focus**: Milestone 1 Gate verification (Awaiting challenger_m1_2 and auditor_m1_1)
+- **Current phase**: 3 (Milestone 2: Problem Solver Engine & Sandbox)
+- **Current focus**: Milestone 2 Explorers actively designing solver/ modules
 
 ## 🔒 Key Constraints
 - Authenticate to Guvi and ZenClass using provided credentials via visible foreground browser window (headed mode).
@@ -51,9 +51,11 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
 - Updated: 2026-11-10T14:32:00Z
 
 ## Key Decisions Made
-- Milestone 1 implementation delivered by worker_m1_1 (22/22 unit tests, 78/78 E2E tests).
-- E2E test suite published with TEST_READY.md (100% pass rate).
-- Milestone 1 gate reviews underway: reviewer_m1_1 (APPROVE), reviewer_m1_2 (APPROVE), challenger_m1_1 (APPROVE).
+- Milestone 1 certified complete with 100% PASS on Gate (Reviewer 1 APPROVE, Reviewer 2 APPROVE, Challenger 1 APPROVE, Challenger 2 APPROVE, Forensic Auditor CLEAN).
+- Milestone 2 Explorers dispatched in parallel:
+  - `explorer_m2_1`: Problem extraction & Ace Editor CDP text injection.
+  - `explorer_m2_2`: Algorithmic Python 3 solver & sandboxed test runner.
+- Succession threshold: 16 spawns (currently at 15 / 16).
 
 ## Team Roster
 | Agent | Type | Work Item | Status | Conv ID |
@@ -69,19 +71,21 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
 | reviewer_m1_1 | teamwork_reviewer | M1 Interface & Test Verification | completed (APPROVE) | 0a5de1ff-c31e-4d07-bd79-3935d3fff4f8 |
 | reviewer_m1_2 | teamwork_reviewer | M1 Robustness & Error Handling Review | completed (APPROVE) | d5902dfc-08c0-464d-b234-717c526fcc48 |
 | challenger_m1_1 | teamwork_challenger | State & Concurrency Stress Testing | completed (APPROVE) | 8b0a52fb-8c89-4b54-bb9c-830c64978ce1 |
-| challenger_m1_2 | teamwork_challenger | Browser & HITL Empirical Verification | in-progress | 54eb805d-2646-4be8-a965-09da9c6b5315 |
-| auditor_m1_1 | teamwork_auditor | Forensic Integrity Audit (Anti-Cheating) | in-progress | eff0c06f-709d-4373-99e8-6be905606f83 |
+| challenger_m1_2 | teamwork_challenger | Browser & HITL Empirical Verification | completed (APPROVE) | 54eb805d-2646-4be8-a965-09da9c6b5315 |
+| auditor_m1_1 | teamwork_auditor | Forensic Integrity Audit (Anti-Cheating) | completed (CLEAN) | eff0c06f-709d-4373-99e8-6be905606f83 |
+| explorer_m2_1 | teamwork_explorer | M2 Extractor & Ace Adapter Design | in-progress | 40b8cd9d-3fa8-4289-9fd2-05a5fead24f8 |
+| explorer_m2_2 | teamwork_explorer | M2 Code Generator & Test Runner Design | in-progress | 711cd915-8e1a-433c-ba91-239ee79414bc |
 
 ## Succession Status
 - Succession required: no
-- Spawn count: 13 / 16
-- Pending subagents: 54eb805d-2646-4be8-a965-09da9c6b5315, eff0c06f-709d-4373-99e8-6be905606f83
+- Spawn count: 15 / 16
+- Pending subagents: 40b8cd9d-3fa8-4289-9fd2-05a5fead24f8, 711cd915-8e1a-433c-ba91-239ee79414bc
 - Predecessor: none
 - Successor: not yet spawned
 
 ## Active Timers
 - Heartbeat cron: task-163 (*/10 * * * *)
-- Safety timer: task-389 (active)
+- Safety timer: task-441 (600s)
 
 ## Artifact Index
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md — Authoritative User Request
@@ -89,8 +93,5 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/TEST_READY.md — E2E Test Suite Ready Signal
 - /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/TEST_INFRA.md — E2E Test Architecture
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m1_1/handoff.md — M1 Implementation Handoff
-- /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m1_1/handoff.md — Reviewer 1 Handoff (APPROVE)
-- /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m1_2/handoff.md — Reviewer 2 Handoff (APPROVE)
-- /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1/handoff.md — Challenger 1 Handoff (APPROVE)
-- /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/orchestrator/GATE_STATUS.md — M1 Gate Status
+- /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/orchestrator/GATE_STATUS.md — M1 Gate Status (PASS)
 - /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/ — Project workspace
