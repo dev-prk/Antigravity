@@ -1,166 +1,395 @@
-# Handoff Report: Persistent State Manager & Reporting Engine Architecture Design
+# Handoff Report: Problem Statement Extraction, CSS Leakage Root Cause & Sanitization Architecture
 
-**Agent ID**: `explorer_m1_2`  
-**Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2/`  
-**Target Recipient**: Parent Orchestrator (`cbd0649b-f648-4724-a244-a22a5102ccc4`)  
-**Milestone**: Milestone 1 (Core Foundation & Infrastructure)  
-**Modules in Scope**: `core/state_manager.py`, `core/reporter.py`, `data/automation_state.db`, `data/state_summary.json`, `reports/SUMMARY_REPORT.md`, `reports/summary.json`  
-**Handoff Type**: Hard (Task Complete)
+- **Agent**: Explorer 2 (Milestone 1: Filtering & Extractor Foundation)
+- **Role**: Investigator & Synthesizer
+- **Target Project**: `zenclass_guvi` (`/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi`)
+- **Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi`
+- **State Folder**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2`
+- **Handoff Type**: Hard (Self-Contained Investigation Complete)
 
 ---
 
 ## 1. Observation
 
-Direct inspection of user requirements, project architecture, platform surveys, and runtime forensics revealed the following exact observations:
-
-### 1.1 Verbatim Requirements from `ORIGINAL_REQUEST.md`
-- **Lines 27-29 (Requirement R3)**:
-  > "Maintain a persistent state tracking file across executions recording platform, task identifier, task category, status, attempt count, result, timestamp, failure reason, and next action."  
-  > "Produce a summary report providing total discovered, total completed, total pending, total blocked, success rate, time spent, and errors requiring human intervention."
-- **Lines 41-42 (Acceptance Criteria)**:
-  > "- [ ] A persistent state tracking file records each item's platform, identifier, category, status, attempt count, result, timestamp, failure reason, and next action."  
-  > "- [ ] A summary report is generated detailing total discovered, total completed, total pending, total blocked, overall success rate, time spent, and issues requiring human intervention."
-
-### 1.2 Verbatim Interface Contracts from `PROJECT.md`
-- **Lines 18-21 (Feature Inventory)**:
-  > "| 2 | Persistent State Manager | SQLite tracking database & atomic JSON state export across executions | M1 | ORIGINAL_REQUEST §R3 |"  
-  > "| 4 | Reporting Engine | Markdown & JSON summary report generation with counts, success rate, time spent | M1 | ORIGINAL_REQUEST §R3 |"
-- **Lines 58-63 (Interface Contracts)**:
-  > "### `core/state_manager.py` ↔ Drivers & Reporter"  
-  > "- `record_task(task_id: str, platform: str, title: str, category: str, url: str, status: str, attempts: int, result: str, failure_reason: str, next_action: str, metadata: dict = None) -> None`"  
-  > "- `get_task(task_id: str) -> Optional[TaskRecord]`"  
-  > "- `get_pending_tasks(platform: Optional[str] = None) -> List[TaskRecord]`"  
-  > "- `get_summary_stats() -> dict`"  
-  > "- `export_state_json() -> str`: Saves and returns path to `data/state_summary.json`."
-
-### 1.3 Platform Scale and Data Entities
-- **Guvi CodeKata Catalog Scale** (`spec_miner_survey_2/handoff.md`, line 92):
-  > "Total pagination pages: 143 pages (yielding ~2,145 total discoverable problems)."
-- **ZenClass Tasks Dynamic Schema** (`spec_miner_survey_3/handoff.md`, lines 80-93):
-  Tasks present dynamic fields including `frontEnd_Deployed_Url`, `backEnd_Deployed_Url`, `frontEnd_SourceCode`, `backEnd_SourceCode`, `github_Url`.
-- **ZenClass Projects Pause Protocol** (`spec_miner_survey_3/handoff.md`, lines 150-165):
-  ZenClass projects require local synthesis in `zenclass_guvi/projects/<slug>/` and pause with status `BLOCKED` awaiting human input of repository and deployment URLs.
-
-### 1.4 Concurrency & Crash Forensics on macOS Apple Silicon
-During live execution of multi-threaded stress tests on Python 3.9.6:
-- **Observation 1**: Executing concurrent write queries across threads on a bare `sqlite3.Connection` handle without application-level mutual exclusion resulted in an unhandled native segmentation fault:
+### Observation 1.1: Live Production Failure Records in SQLite Database
+Inspecting the persistent SQLite database at `zenclass_guvi/data/automation_state.db` revealed real-world task failures caused by CSS pollution:
+- **Command**:
+  ```bash
+  sqlite3 data/automation_state.db "SELECT task_id, failure_reason FROM task_attempts WHERE status='FAILED';"
   ```
-  Command exited with code 139 (SIGSEGV).
+- **Verbatim Output**:
   ```
-- **Observation 2**: Wrapping connection operations in an internal `threading.RLock()` eliminated all data races and segmentation faults completely, allowing 100 concurrent updates across 5 threads in **0.017 seconds** with 0 errors.
-- **Observation 3**: Batch-inserting 2,145 tasks using `executemany` inside an explicit SQLite transaction (`BEGIN TRANSACTION` ... `COMMIT`) completed in **0.084 seconds** (throughput: **25,508 tasks/sec**).
-- **Observation 4**: Writing JSON to a temporary file (`.tmp.<pid>.<uuid>`) and swapping via `os.replace` + `os.fsync` executed atomically in < 2ms without leaving partial or corrupted files.
+  guvi-97|Traceback (most recent call last):
+    File "<string>", line 28, in <module>
+    File "<string>", line 20, in solve
+  ValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'
+  guvi-37|Traceback (most recent call last):
+    File "<string>", line 28, in <module>
+    File "<string>", line 20, in solve
+  ValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'
+  guvi-48|Traceback (most recent call last):
+    File "<string>", line 28, in <module>
+    File "<string>", line 20, in solve
+  ValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'
+  guvi-15|Traceback (most recent call last):
+    File "<string>", line 28, in <module>
+    File "<string>", line 20, in solve
+  ValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'
+  guvi-prime-number-check|Traceback (most recent call last):
+    File "<string>", line 28, in <module>
+    File "<string>", line 24, in solve
+  ValueError: invalid literal for int() with base 10: '/'
+  ```
+- **Inspecting Task Attempt Code Snapshot for `guvi-97`**:
+  ```python
+  def solve():
+      tokens = sys.stdin.read().split()
+      if len(tokens) >= 2:
+          l, r = int(tokens[0]), int(tokens[1])
+          count = sum(1 for x in range(l, r + 1) if is_prime(x))
+          print(count)
+      elif len(tokens) == 1:
+          n = int(tokens[0])
+          print('yes' if is_prime(n) else 'no')
+  ```
+- **Root Symptom**: `sys.stdin.read().split()[0]` was passed `{display:inline-flex;font-size:inherit;line-height:inherit;flex:1` because `spec.sample_cases[0].input_text` contained this CSS string instead of the actual test input.
+
+---
+
+### Observation 1.2: Current Extraction Architecture in `solver/extractor.py`
+Examining `solver/extractor.py` (lines 143–204, 206–236, 377–447):
+1. **Source Resolution (`extractor.py:151-166`)**:
+   ```python
+   if isinstance(source, str):
+       html_text = source
+   elif hasattr(source, "content") and callable(getattr(source, "content")):
+       page = source
+       try:
+           html_text = source.content()
+       except Exception as e:
+           logger.warning("Failed to obtain HTML via page.content(): %s", e)
+           html_text = ""
+   else:
+       html_text = str(source)
+   ```
+   When extracting from a live Playwright `Page`, `source.content()` dumps the full serialized DOM of the workspace, including inline stylesheets injected by Ace Editor, Qwik SSR scoped styling, and modals.
+
+2. **Text Cleaning Defect in `_clean_text` (`extractor.py:211-220`)**:
+   ```python
+   # Strip script, style, noscript, svg blocks and HTML comments completely
+   text = re.sub(r"(?is)<(script|style|noscript|svg)\b[^>]*>.*?</\1>", " ", raw_html)
+   text = re.sub(r"(?s)<!--.*?-->", "", text)
+   # Replace line-breaking HTML elements with newlines
+   text = re.sub(r"(?i)<br\s*/?>", "\n", text)
+   text = re.sub(r"(?i)</?(p|div|h[1-6]|tr|li|pre|blockquote)[^>]*>", "\n", text)
+   # Strip all other HTML tags
+   text = re.sub(r"<[^>]+>", " ", text)
+   # Decode HTML entities (&quot;, &lt;, &gt;, &amp;, &#39;, &nbsp;, etc.)
+   text = html.unescape(text)
+   ```
+   - **Defect A (Closing Tag Variation)**: `</\1>` strictly requires `</style>` with zero spaces. Valid HTML closing tags with whitespace (`</style >`, `</ style>`, `</style\n>`) fail to match and remain completely unstripped.
+   - **Defect B (Unclosed `<style>`)**: Unclosed or dynamically injected style tags fail to match `.*?</\1>` and leak into text.
+   - **Defect C (Omitted `<template>`)**: `<template>` tags containing scoped styles or markup are not stripped.
+   - **Defect D (Missing CSS Comment Stripping)**: `/* ... */` CSS comments are never stripped (only HTML comments `<!-- ... -->` are stripped). This caused the `ValueError: invalid literal for int() with base 10: '/'` error in `guvi-prime-number-check`.
+
+3. **Pattern Matching False-Positive Defect in Strategy 2 (`extractor.py:423-431`)**:
+   ```python
+   sample_pattern = re.compile(
+       r"(?:^|\n)\s*(?:(?:Sample\s+Input)|(?:Input(?!\s*(?:Description|Specification|Format|Size))))\s*(?:Case\s*)?(?P<num>\d+)?\s*[:\-]?\s*\n?"
+       r"(?P<input>.*?)\s*"
+       r"(?:^|\n)\s*(?:(?:Sample\s+Output)|(?:Output(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P=num)?\s*[:\-]?\s*\n?"
+       r"(?P<output>.*?)\s*"
+       r"(?:(?:\n\s*|\A)(?:Sample\s+)?Explanation\s*(?:Case\s*)?(?:\d+)?\s*[:\-]?\s*(?P<explanation>.*?))?"
+       r"(?=(?:\n\s*(?:Sample\s+)?Input(?!\s*(?:Description|Specification|Format|Size))\s*(?:Case\s*)?\d*\s*[:\-])|(?:\n\s*Constraints)|(?:\n\s*Accepted\b)|(?:\n\s*Topics\b)|(?:\n\s*Code\s+Editor)|$)",
+       re.DOTALL | re.IGNORECASE
+   )
+   ```
+   - In CSS stylesheets, `input` and `output` are standard HTML element selectors.
+   - For example:
+     ```css
+     input {display:inline-flex;font-size:inherit;line-height:inherit;flex:1;}
+     output {display:block;}
+     ```
+   - Because `[:\-]` and `\n` are optional (`[:\-]?\s*\n?`), `input` matches `(?:Input(?!\s*(?:Description...)))`.
+   - `(?P<input>.*?)` matches `{display:inline-flex;font-size:inherit;line-height:inherit;flex:1;}`.
+   - `output` matches `(?:Output(?!\s*(?:Description...)))`.
+   - `(?P<output>.*?)` matches `{display:block;}`.
+   - This constructs a completely fabricated `SampleCase(input_text='{display:inline-flex...}', expected_output='{display:block;}', case_number=1)`!
+
+4. **Zero Post-Extraction Validation (`extractor.py:392-447`)**:
+   Neither Strategy 1 nor Strategy 2 validates or sanitizes extracted `SampleCase.input_text` or `SampleCase.expected_output`. Bogus CSS cases are returned as `spec.sample_cases[0]`.
+
+---
+
+### Observation 1.3: Empirical Reproduction of the Defect
+Running an empirical reproduction script:
+```python
+html_with_css_and_real = """
+<div>
+  <p>Problem Statement: Given N, check prime.</p>
+  input {display:inline-flex;font-size:inherit;line-height:inherit;flex:1;}
+  output {display:block;}
+  <p>Sample Input: 5</p>
+  <p>Sample Output: yes</p>
+</div>
+"""
+spec = ProblemExtractor.extract(html_with_css_and_real)
+```
+- **Output**:
+  ```
+  Found cases count: 2
+  Case 1: input='{display:inline-flex;font-size:inherit;line-height:inherit;flex:1;}', output='{display:block;}'
+  Case 2: input='5', output='yes'
+  ```
+- **Result**:
+  `spec.sample_input` (which aliases `sample_cases[0].input_text`) returned `'{display:inline-flex;font-size:inherit;line-height:inherit;flex:1;}'`.
+  When `solver/test_runner.py:test_solution()` executed the candidate code against `spec.sample_cases[0]`, the subprocess failed immediately with:
+  `ValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'`
+
+---
+
+### Observation 1.4: Existing Extractor Test Coverage
+- **File**: `tests/test_m2_solver.py` (lines 141–221):
+  Contains `TestProblemExtractor` with 6 test cases:
+  1. `test_extract_from_full_workspace_html`: Tests static fixture `GUVI_WORKSPACE_HTML`.
+  2. `test_extract_sparse_html_fallback`: Tests sparse HTML snippet.
+  3. `test_extract_empty_and_none`: Tests `""`, `None`, and whitespace.
+  4. `test_extract_labeled_text_headings`: Tests standard labeled headings.
+  5. `test_extract_multiline_sample_io`: Tests multiline inputs.
+  6. `test_extract_from_playwright_page_mock`: Tests mock Playwright page content.
+- **File**: `tests/e2e/tier1_features/test_f05_extractor.py` (lines 11–40):
+  Contains `TestFeature05ProblemExtractor` with 2 tests verifying fields and missing sections.
+- **Current Test Suite Baseline**:
+  - Command: `/Users/devesh/Library/Python/3.9/bin/pytest /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests -q`
+  - Result: `268 passed in 69.39s (0:01:09)`
+- **Test Gap**: Currently **ZERO** tests in the test suite verify CSS sanitization, unclosed/spaced style tags, CSS comments, or preservation of legitimate JSON, dicts, and set inputs.
 
 ---
 
 ## 2. Logic Chain
 
-1. **Step 1: Guaranteeing Requirement R3 Compliance**:
-   - *From Observation 1.1*, Requirement R3 strictly requires tracking 9 specific fields: `platform`, `task_id`, `category`, `status`, `attempt_count`, `result`, `timestamp`, `failure_reason`, and `next_action`.
-   - *Deduction*: The database schema and Python data model must make these 9 fields first-class non-nullable columns (with failure_reason nullable when none). Aliasing `updated_at` as `timestamp` in `.to_dict()` guarantees 100% compliance with both the spec and standard JSON serialization.
+1. **Step 1: Identifying the Crash Vector**:
+   - Observations 1.1 and 1.3 show that tasks `guvi-97`, `guvi-37`, `guvi-48`, `guvi-15` crashed with `ValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'`.
+   - The string passed to `sys.stdin` originated from `spec.sample_cases[0].input_text`.
+   - Therefore, the problem extractor is generating test cases containing CSS declaration blocks.
 
-2. **Step 2: Dual Storage Strategy (SQLite + Atomic JSON)**:
-   - *From Observation 1.2 & 1.4*, SQLite in WAL mode (`PRAGMA journal_mode = WAL;`) provides ACID transaction safety, durability against sudden process kills, and non-blocking reads.
-   - However, external tools, web dashboards, and users require access to current state without acquiring database locks or installing SQLite CLI tools.
-   - *Deduction*: StateManager must automatically export an atomic JSON representation (`data/state_summary.json`) using a temporary file and POSIX `os.replace`. Because `os.replace` is an atomic inode operation on macOS/Linux, external readers can never encounter a corrupted or partially written JSON file.
+2. **Step 2: Tracing Why CSS Escaped HTML Cleaning**:
+   - Observation 1.2 demonstrates that `_clean_text` uses `re.sub(r"(?is)<(script|style|noscript|svg)\b[^>]*>.*?</\1>", " ", raw_html)`.
+   - This regex fails when `<style>` tags have attributes or closing tags containing whitespace (`</style >`, `</ style>`), when tags are unclosed, when CSS comments `/* ... */` are present, or when CSS rules are rendered into text nodes by modern UI frameworks (Qwik/Tailwind/Ace Editor).
 
-3. **Step 3: Thread-Safety & Segfault Mitigation**:
-   - *From Observation 1.4*, concurrent execution across threads on a shared SQLite handle without locks causes Python's underlying SQLite C extension to segfault (Exit 139) on Apple Silicon.
-   - *Deduction*: `StateManager` must maintain an internal reentrant lock (`self._lock = threading.RLock()`) guarding every database read and write. This enables safe multi-threaded task discovery, driver execution, and status polling without requiring complex connection pooling.
+3. **Step 3: Tracing Why CSS Was Interpreted as a Test Case**:
+   - Observation 1.2 and 1.3 show that Strategy 2's regex (`sample_pattern`) matches `input` and `output` element selectors case-insensitively without requiring a colon or newline.
+   - When `input {display:...}` and `output {...}` appear in text, `sample_pattern` captures `{display:...}` as `sample_input`.
+   - The fake CSS case is placed at index 0 of `sample_cases`, displacing legitimate test cases and causing immediate failure in the local sandbox test runner.
 
-4. **Step 4: High-Volume Catalog Performance**:
-   - *From Observation 1.3 & 1.4*, Guvi CodeKata contains 2,145 problems across 143 pages. Performing 2,145 individual disk transactions would take 10–20 seconds and cause excessive disk wear.
-   - *Deduction*: StateManager must provide `batch_record_tasks(tasks: List[Dict])`. Wrapping all inserts in a single transaction reduces disk sync overhead to a single fsync, completing the entire catalog ingestion in 0.084 seconds.
+4. **Step 4: Designing Safe Sanitization Without Corrupting Legitimate Inputs**:
+   - A naive regex that strips all `{...}` would destroy legitimate competitive programming inputs/outputs (e.g. JSON `{"display": "inline-flex"}`, Python dicts `{'key': 'value'}`, sets `{1, 2, 3}`, or C code blocks `{ int x = 0; }`).
+   - Legitimate JSON features quoted keys: `(?<!["'\w-])"property":`.
+   - Legitimate Python dicts feature quoted keys: `(?<!["'\w-])'property':`.
+   - Legitimate sets and C code blocks do not contain unquoted CSS property names (`display:`, `font-size:`, `line-height:`, `flex:`, `margin:`, `padding:`, `border:`, etc.) followed by CSS values.
+   - By requiring unquoted CSS property names preceded by non-word and non-quote boundaries (`(?<!["'\w-])(?:display|position|flex|margin|padding|color|background|font|font-size|line-height|border|width|height|z-index|overflow|opacity|visibility|align-items|justify-content|box-sizing)\s*:`), we can precisely eliminate CSS declaration blocks and rules while leaving JSON, sets, and code completely intact.
 
-5. **Step 5: Executive Markdown & JSON Reporting Structure**:
-   - *From Observation 1.1 & 1.2*, the report must present 7 core metrics: total discovered, total completed, total pending, total blocked, success rate, time spent, and human intervention issues.
-   - *Deduction*: `SummaryReporter` compiles:
-     - `reports/SUMMARY_REPORT.md`: An executive Markdown report featuring status badges, executive KPI tables, a platform breakdown matrix, a dedicated "🚨 Human Intervention Required" section, category distributions, and recent execution history.
-     - `reports/summary.json`: A machine-readable JSON representation suitable for CI/CD and programmatic verification.
-     - Terminal Summary: An ASCII box summary displayed directly in the CLI console upon run termination.
+5. **Step 5: Enforcing Defense-in-Depth**:
+   - Fixing `_clean_text` prevents `<style>` leaks.
+   - Adding `_sanitize_css()` removes residual CSS declaration blocks, CSS rules, at-rules (`@media`), and CSS comments (`/* ... */`) from text.
+   - Tightening `sample_pattern` prevents bare `input` and `output` CSS selectors from triggering test case extraction.
+   - Adding post-extraction validation discards purely bogus CSS cases and renumbers valid cases.
 
 ---
 
 ## 3. Caveats
 
-1. **Local Filesystem Atomicity**: The atomic JSON export relies on `os.replace` operating within the same filesystem. Because the temporary file is created in the exact same directory (`target_path.parent`), cross-device rename errors (`EXDEV`) are completely prevented.
-2. **Database Auto-Recovery**: If a power loss occurs mid-transaction, SQLite's WAL journal automatically rolls back incomplete transactions upon reopening. In the improbable event of hard disk corruption, `StateManager` can safely regenerate its schema, while existing state can be restored from the latest valid `data/state_summary.json`.
-3. **Execution Time Tracking**: Task execution duration relies on monotonic Python timing (`time.time()` or `time.monotonic()`) tracked per task and accumulated into `time_spent_seconds`. Drivers must pass elapsed time when updating task status.
+1. **Read-Only Investigation**: As Explorer 2, no code or test files in `zenclass_guvi/` were modified. Complete proposed implementations and tests are documented herein for the implementer (Worker M1).
+2. **Platform CSS Diversity**: Guvi CodeKata dynamically updates frontend bundles (Qwik SSR, Ace Editor, KaTeX). The proposed sanitization addresses all standard CSS properties and rules, but should be verified against new live CodeKata pages as they are encountered.
+3. **No LLM Fallback in Extractor**: The extractor relies entirely on deterministic DOM parsing, semantic headings, and regex sanitization. It does not invoke external LLM APIs for parsing.
 
 ---
 
-## 4. Conclusion
+## 4. Conclusion & Concrete Recommendations
 
-The Persistent State Manager (`core/state_manager.py`) and Reporting Engine (`core/reporter.py`) architecture is fully designed, validated, and ready for worker implementation in Milestone 1:
+### 4.1 Recommended Code Changes for `solver/extractor.py`
 
-1. **Complete Reference Implementations Delivered**:
-   - State Manager: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2/proposed_state_manager.py`
-   - Reporting Engine: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2/proposed_reporter.py`
-   - Architectural Analysis: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2/analysis.md`
-2. **Implementation Target Paths in Workspace (`zenclass_guvi/`)**:
-   - `zenclass_guvi/core/state_manager.py`
-   - `zenclass_guvi/core/reporter.py`
-   - State DB: `zenclass_guvi/data/automation_state.db`
-   - State JSON: `zenclass_guvi/data/state_summary.json`
-   - Summary MD: `zenclass_guvi/reports/SUMMARY_REPORT.md`
-   - Summary JSON: `zenclass_guvi/reports/summary.json`
-3. **Key Architectural Features**:
-   - Zero external third-party dependencies (pure Python 3.9+ standard library: `sqlite3`, `json`, `dataclasses`, `enum`, `pathlib`, `typing`, `os`, `uuid`, `threading`).
-   - 100% strict adherence to Requirement R3 (all 9 tracking fields + 7 reporting metrics).
-   - Thread-safe concurrency via internal `threading.RLock()`.
-   - Crash-resilient atomic JSON export via POSIX `os.replace`.
-   - Sub-100ms catalog discovery ingestion for 2,145 CodeKata challenges.
+#### Change 1: Robust HTML Tag & Comment Sanitization in `_clean_text`
+Replace lines 211–212 in `solver/extractor.py`:
+```python
+# Before:
+text = re.sub(r"(?is)<(script|style|noscript|svg)\b[^>]*>.*?</\1>", " ", raw_html)
+text = re.sub(r"(?s)<!--.*?-->", "", text)
+
+# After:
+# Strip script, style, noscript, svg, template blocks even with malformed or spaced closing tags or unclosed tags
+text = re.sub(r"(?is)<(script|style|noscript|svg|template)\b[^>]*>.*?(?:</\s*\1\s*>|$)", " ", raw_html)
+# Strip HTML comments
+text = re.sub(r"(?s)<!--.*?-->", "", text)
+# Strip CSS comments (/* ... */) that may have leaked
+text = re.sub(r"(?s)/\*.*?\*/", " ", text)
+```
+
+#### Change 2: CSS Sanitization Function `_sanitize_css`
+Add a dedicated CSS cleaning method in `ProblemExtractor`:
+```python
+# Canonical list of CSS properties used to detect unquoted CSS declaration blocks
+_CSS_PROP_PATTERN = (
+    r"(?:display|position|flex|margin|padding|color|background|font|font-size|"
+    r"font-family|line-height|border|width|height|z-index|overflow|opacity|"
+    r"visibility|align-items|justify-content|box-sizing|cursor|outline|"
+    r"pointer-events|transition|transform|animation|white-space|text-align|"
+    r"vertical-align|user-select)"
+)
+
+# Matches CSS at-rules (@media, @import, @keyframes)
+_CSS_AT_RULE_RE = re.compile(
+    r"(?:@media[^{]*\{[^{}]*\{[^{}]*\}\s*\}|@[a-z\-]+[^;{]*;?)",
+    re.IGNORECASE | re.DOTALL
+)
+
+# Matches CSS rule sets with selectors: e.g. input { display: inline-flex; }
+_CSS_RULE_RE = re.compile(
+    rf"(?:^|\n)\s*(?:[.#]?[a-zA-Z0-9_\-:\s,>+~\[\]\=\"\']+?)\s*"
+    rf"\{{[^{{}}]*?(?:(?<![\"\'\w-]){_CSS_PROP_PATTERN}\s*:\s*[^;{{}}]+(?:;|\b|\}}))[^{{}}]*?\}}",
+    re.IGNORECASE | re.DOTALL
+)
+
+# Matches standalone CSS declaration blocks: e.g. {display:inline-flex;font-size:inherit;}
+# Safeguard: requires unquoted CSS properties, preserving legitimate JSON ('{"display": "inline-flex"}'),
+# Python dicts, sets ({1, 2, 3}), and code blocks ({ int x = 0; }).
+_CSS_DECL_BLOCK_RE = re.compile(
+    rf"\{{[^{{}}]*?(?:(?<![\"\'\w-]){_CSS_PROP_PATTERN}\s*:\s*[^;{{}}]+(?:;|\b|\}}))[^{{}}]*?\}}",
+    re.IGNORECASE | re.DOTALL
+)
+
+@classmethod
+def _sanitize_css(cls, text: str) -> str:
+    """Removes CSS at-rules, rule sets, and unquoted CSS declaration blocks."""
+    if not text:
+        return ""
+    # Strip CSS comments
+    text = re.sub(r"(?s)/\*.*?\*/", " ", text)
+    # Strip at-rules
+    text = cls._CSS_AT_RULE_RE.sub(" ", text)
+    # Strip selector rule blocks
+    text = cls._CSS_RULE_RE.sub(" ", text)
+    # Strip standalone declaration blocks
+    text = cls._CSS_DECL_BLOCK_RE.sub(" ", text)
+    return text
+```
+
+Call `_sanitize_css` inside `_clean_text`, and when extracting `description`, `input_spec`, `output_spec`, and `constraints`.
+
+#### Change 3: Tighter `sample_pattern` Matching in Strategy 2
+Update lines 423–431 in `solver/extractor.py`:
+```python
+sample_pattern = re.compile(
+    r"(?:^|\n)\s*(?P<in_label>(?:Sample\s+Input\s*(?:Case\s*\d+)?\s*[:\-]?)|(?:Input\s*(?:Case\s*\d+)?\s*[:\-])|(?:Input\s*(?:Case\s*\d+)?(?=\n)(?!\s*\{)))\s*\n?"
+    r"(?P<input>.*?)\s*"
+    r"(?:^|\n)\s*(?P<out_label>(?:Sample\s+Output\s*(?:Case\s*\d+)?\s*[:\-]?)|(?:Output\s*(?:Case\s*\d+)?\s*[:\-])|(?:Output\s*(?:Case\s*\d+)?(?=\n)(?!\s*\{)))\s*\n?"
+    r"(?P<output>.*?)\s*"
+    r"(?:(?:\n\s*|\A)(?:Sample\s+)?Explanation\s*(?:Case\s*)?(?:\d+)?\s*[:\-]?\s*(?P<explanation>.*?))?"
+    r"(?=(?:\n\s*(?:Sample\s+)?Input\b)|(?:\n\s*Constraints)|(?:\n\s*Accepted\b)|(?:\n\s*Topics\b)|(?:\n\s*Code\s+Editor)|$)",
+    re.DOTALL | re.IGNORECASE
+)
+```
+*Rationale*: If the label is just `Input` or `Output` (without `Sample`), it **must** be followed by a colon/dash `[:\-]` or a newline, and **must not** be followed by `{`. This completely prevents CSS selectors (`input { ... }`) from triggering.
+
+#### Change 4: Post-Extraction Case Sanitization and Filtering
+In `_extract_sample_cases`, after collecting cases from Strategy 1 or Strategy 2, sanitize and validate each case:
+```python
+valid_cases: List[SampleCase] = []
+for case in raw_cases:
+    # 1. Clean CSS noise from input and output
+    clean_in = cls._sanitize_css(case.input_text).strip()
+    clean_out = cls._sanitize_css(case.expected_output).strip()
+    # Strip any leftover HTML tags
+    clean_in = re.sub(r"<[^>]+>", "", clean_in).strip()
+    clean_out = re.sub(r"<[^>]+>", "", clean_out).strip()
+
+    # 2. Skip bogus cases that only contained CSS
+    if not clean_in and not clean_out:
+        continue
+    if cls._is_pure_css(case.input_text):
+        continue
+
+    valid_cases.append(SampleCase(
+        input_text=clean_in,
+        expected_output=clean_out,
+        case_number=len(valid_cases) + 1,
+        explanation=case.explanation,
+    ))
+return valid_cases
+```
+
+Helper `_is_pure_css(text: str) -> bool`:
+```python
+@classmethod
+def _is_pure_css(cls, text: str) -> bool:
+    """Detects if a string is pure CSS declaration block or stylesheet rule."""
+    if not text:
+        return False
+    t = text.strip()
+    # If text starts with '{' and contains display/flex/font-size and ends with '}'
+    if t.startswith("{") and re.search(cls._CSS_PROP_PATTERN, t, re.IGNORECASE):
+        # Ensure it's not valid JSON
+        if not re.search(r'^\s*\{\s*"', t):
+            return True
+    return False
+```
+
+---
+
+### 4.2 Recommended Test Suite Additions
+Add the following dedicated unit tests (in `tests/test_m1_filtering.py` or `tests/test_extractor.py`):
+
+1. **`test_extract_sanitizes_unclosed_and_spaced_style_tags`**:
+   - Inputs HTML with `<style type="text/css"> ... </style >`, `<style> ... </ style>`, and unclosed `<style>`.
+   - Asserts zero style rules leak into `raw_text` or `description`.
+2. **`test_extract_sanitizes_css_declaration_block_in_sample_input`**:
+   - Inputs HTML where sample input has `{display:inline-flex;font-size:inherit;line-height:inherit;flex:1}\n9 2`.
+   - Asserts `spec.sample_input == "9 2"`.
+3. **`test_extract_ignores_css_input_output_selectors`**:
+   - Inputs HTML containing `input {display:inline-flex;} output {display:block;}` followed by `Sample Input: 5\nSample Output: yes`.
+   - Asserts `len(spec.sample_cases) == 1`, `spec.sample_input == "5"`, `spec.sample_output == "yes"`.
+4. **`test_extract_preserves_legitimate_json_and_sets`**:
+   - Inputs problem where Sample Input is JSON `{"display": "inline-flex", "count": 2}` and Sample Output is `{1, 2, 3}`.
+   - Asserts `spec.sample_input == '{"display": "inline-flex", "count": 2}'` and `spec.sample_output == '{1, 2, 3}'`.
+5. **`test_extract_sanitizes_css_comments`**:
+   - Inputs problem containing `/* css comment */` before input.
+   - Asserts no stray `/` or `*` appears in `sample_input`.
+6. **`test_extract_multi_case_with_bogus_css_first`**:
+   - Verifies that when a bogus CSS case precedes legitimate cases, the bogus case is discarded and the remaining cases are renumbered starting at 1.
 
 ---
 
 ## 5. Verification Method
 
-To independently verify the architecture and reference implementations:
+To independently verify all findings and test proposals:
 
-1. **Run the Full 11-Step Verification Test Suite**:
+1. **Inspect Live Database Failure Records**:
    ```bash
-   python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2/test_state_and_reporter.py
+   sqlite3 /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/data/automation_state.db \
+     "SELECT task_id, failure_reason FROM task_attempts WHERE status='FAILED' AND failure_reason LIKE '%display:inline-flex%';"
    ```
-   *Expected Result*: Exits with code 0 and prints:
-   ```
-   ✅ ALL STATE MANAGER AND REPORTER TESTS PASSED COMPLETELY WITH 100% SUCCESS!
-   ```
-
-2. **Verify All 9 Mandated R3 Fields in SQLite and JSON**:
+2. **Verify Regex Flaw with Python One-Liner**:
    ```bash
    python3 -c "
-   import json, sys
-   from pathlib import Path
-   sys.path.insert(0, '/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2')
-   from proposed_state_manager import StateManager
-   sm = StateManager(db_path='/tmp/v_test.db', json_export_path='/tmp/v_test.json')
-   t = sm.record_task('id1', 'guvi_codekata', 'Title', 'Easy', status='COMPLETED', attempts=1, result='SOLVED', failure_reason=None, next_action='NONE')
-   d = t.to_dict()
-   required = ['platform', 'task_id', 'task_category', 'status', 'attempt_count', 'result', 'timestamp', 'failure_reason', 'next_action']
-   assert all(k in d for k in required), f'Missing required R3 fields: {[k for k in required if k not in d]}'
-   print('All 9 R3 fields verified in Python and JSON dictionary.')
-   sm.close()
+   import re
+   raw = '<style>input {display:inline-flex;}</style >'
+   print('Current regex fails to strip:', repr(re.sub(r'(?is)<(script|style|noscript|svg)\b[^>]*>.*?</\1>', ' ', raw)))
    "
    ```
-
-3. **Verify Reporting Engine Output Files**:
+3. **Verify Empirical Bug Reproduction**:
    ```bash
    python3 -c "
    import sys
-   from pathlib import Path
-   sys.path.insert(0, '/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_2')
-   from proposed_state_manager import StateManager
-   from proposed_reporter import SummaryReporter
-   sm = StateManager(db_path='/tmp/v_test.db', json_export_path='/tmp/v_test.json')
-   rep = SummaryReporter(sm, report_dir='/tmp/v_reports')
-   md, js = rep.generate_all_reports()
-   assert Path(md).exists() and Path(js).exists()
-   print('Verified Markdown and JSON reports generated cleanly.')
-   sm.close()
+   sys.path.insert(0, '/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi')
+   from solver.extractor import ProblemExtractor
+   html = 'input {display:inline-flex;flex:1}\noutput {color:red}\nSample Input: 5\nSample Output: yes'
+   spec = ProblemExtractor.extract(html)
+   print('Bogus Case 1:', spec.sample_cases[0].input_text)
    "
    ```
-
-4. **Invalidation Conditions**:
-   - Any design omitting any of the 9 required fields (`platform`, `task identifier`, `task category`, `status`, `attempt count`, `result`, `timestamp`, `failure reason`, `next action`) is invalid under Requirement R3.
-   - Any SQLite implementation omitting thread synchronization causing segfaults or database locks is invalid.
-   - Any direct file writing to `data/state_summary.json` without atomic renaming is invalid due to data corruption vulnerability during unexpected process halts.
+4. **Verify Baseline Test Suite Passes (268 tests)**:
+   ```bash
+   /Users/devesh/Library/Python/3.9/bin/pytest /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests -q
+   ```
+5. **Invalidation Condition**:
+   If a valid competitive programming test case input consisting of unquoted CSS properties (e.g. raw text `display:flex;`) is required by CodeKata, the regex would sanitize it. However, competitive programming problems on CodeKata test algorithms (math, strings, arrays, trees, dynamic programming), not raw unquoted CSS syntax. Legitimate JSON inputs with quoted strings (`"display"`) are fully preserved.
