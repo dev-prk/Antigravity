@@ -19,15 +19,14 @@ def eval_js_on_url(url: str, js_code: str, wait_secs: float = 6.0) -> str:
     b64 = base64.b64encode(wrapped_js.encode("utf-8")).decode("ascii")
     js_init = f"window.eval(decodeURIComponent(escape(atob('{b64}'))))"
 
+    # Reuse existing Brave session: create tab in window 1, navigate, extract, close tab
     applescript_code = f'''
 tell application "Brave Browser"
-    set w to make new window
-    tell active tab of w
-        set URL to "{url}"
-    end tell
+    set w to window 1
+    set t to make new tab at end of tabs of w with properties {{URL:"{url}"}}
     delay {wait_secs}
-    set res to execute active tab of w javascript "{js_init}"
-    close w
+    set res to execute t javascript "{js_init}"
+    close t
     return res
 end tell
 '''
@@ -35,6 +34,7 @@ end tell
     if res.returncode != 0:
         raise RuntimeError(f"AppleScript error: {res.stderr}")
     return res.stdout.strip()
+
 
 
 
