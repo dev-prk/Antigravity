@@ -36,6 +36,8 @@ class TestCaseResult:
     stderr: str = ""
     exit_code: int = 0
 
+    __test__ = False
+
 
 @dataclass
 class ValidationResult:
@@ -257,6 +259,10 @@ def test_solution(code: str, sample_cases: List[Any], timeout: float = 2.0) -> V
         total_count=len(results),
         results=results
     )
+
+
+# Tell pytest not to collect test_solution as a test function
+test_solution.__test__ = False
 
 
 def validate_solution(
