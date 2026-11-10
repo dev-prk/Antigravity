@@ -1,0 +1,17 @@
+{
+ "title": "38. Character Count in String",
+ "slug": "character-count-in-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n38. Character Count in String\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a string 'S' and a character 'K', find how many times 'K' got repeated in 'S'.If 'K' is not found in 'S' print -1",
+ "input_spec": "The input consists of a string 'S' and a character 'K'. The size of string 'S' is at most 100000.",
+ "output_spec": "The output is the count of character 'K' in string 'S'. If 'K' is not found, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "codekata a",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

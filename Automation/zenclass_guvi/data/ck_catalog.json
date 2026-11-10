@@ -1,0 +1,7952 @@
+[
+ {
+  "title": "18. GCD of Two Numbers",
+  "slug": "gcd-of-two-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "33. Second Smallest Element",
+  "slug": "second-smallest-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "34. Kth Smallest Element",
+  "slug": "kth-smallest-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "36. Case-Sensitive String Equality",
+  "slug": "case-sensitive-string-equality",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "37. First Occurrence of Character",
+  "slug": "first-occurrence-of-character",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "38. Character Count in String",
+  "slug": "character-count-in-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "40. Print till next zero",
+  "slug": "print-till-next-zero",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "41. Common Characters in Strings",
+  "slug": "common-characters-in-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "42. Pair Sum Check",
+  "slug": "pair-sum-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "43. Minimum Odd Quotient Factor",
+  "slug": "minimum-odd-quotient-factor",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "45. Sorted Elements Less Than K",
+  "slug": "sorted-elements-less-than-k",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "46. Descending Elements Below N",
+  "slug": "descending-elements-below-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "47. Numbers Repeated K Times",
+  "slug": "numbers-repeated-k-times",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "48. Factorial of a Number-2",
+  "slug": "factorial-of-a-number-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "49. Longest Repeating Sequence",
+  "slug": "longest-repeating-sequence",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "50. Delete Last K Array Elements",
+  "slug": "delete-last-k-array-elements",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "51. Remove Characters from String",
+  "slug": "remove-characters-from-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "52. Max of Consecutive Pairs",
+  "slug": "max-of-consecutive-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "53. Rotated Array Rotation Count",
+  "slug": "rotated-array-rotation-count",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "54. Find Position of Number in Array",
+  "slug": "find-position-of-number-in-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "55. Counting Distinct Pairs",
+  "slug": "counting-distinct-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "56. Find Different Number in Series",
+  "slug": "find-different-number-in-series",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "57. Max Length Increasing Subarray",
+  "slug": "max-length-increasing-subarray",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "58. Merge and Sort Two Arrays",
+  "slug": "merge-and-sort-two-arrays",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "59. Max Difference in Array",
+  "slug": "max-difference-in-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "60. Minimum Difference in Array",
+  "slug": "minimum-difference-in-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "61. Max Element using Bitwise AND",
+  "slug": "max-element-using-bitwise-and",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "62. Reverse a String-2",
+  "slug": "reverse-a-string-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "63. Unique Characters in a String",
+  "slug": "unique-characters-in-a-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "64. Reverse Words Except Ends",
+  "slug": "reverse-words-except-ends",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "65. Roman Numeral to Integer Conversion",
+  "slug": "roman-numeral-to-integer-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "66. Isomorphic Strings",
+  "slug": "isomorphic-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "67. Swap Odd Even String Characters",
+  "slug": "swap-odd-even-string-characters",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "68. CamelCase Conversion",
+  "slug": "camelcase-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "70. One Character Difference",
+  "slug": "one-character-difference",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "71. Holiday Check",
+  "slug": "holiday-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "72. Cyclic Right Shift Array",
+  "slug": "cyclic-right-shift-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "73. Sum of Squares of Digits",
+  "slug": "sum-of-squares-of-digits",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "74. Reverse String After Removing Vowels",
+  "slug": "reverse-string-after-removing-vowels",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "75. Max Repeated Character Count",
+  "slug": "max-repeated-character-count",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "76. Find the Unique Number-2",
+  "slug": "find-the-unique-number-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "77. Smallest LCM of two numbers",
+  "slug": "smallest-lcm-of-two-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "78. Anagram Count for kabali",
+  "slug": "anagram-count-for-kabali",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "79. Sorted Prime Factors",
+  "slug": "sorted-prime-factors",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "80. Encode String by Adding 3",
+  "slug": "encode-string-by-adding-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "81. Collinearity of Three Points",
+  "slug": "collinearity-of-three-points",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "82. Greatest Common Divisor-2",
+  "slug": "greatest-common-divisor-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "83. Max after each insertion",
+  "slug": "max-after-each-insertion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "84. String Numeric Validation",
+  "slug": "string-numeric-validation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "85. Sort Strings by Length and Lexicographically",
+  "slug": "sort-strings-by-length-and-lexicographically",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "86. Remove Extra Spaces",
+  "slug": "remove-extra-spaces",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "87. String Case Conversion",
+  "slug": "string-case-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "88. Space Removal from String",
+  "slug": "space-removal-from-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "89. Counting Perfect Squares in a Range",
+  "slug": "counting-perfect-squares-in-a-range",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "90. String Difference Check",
+  "slug": "string-difference-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "91. Parentheses Balancing",
+  "slug": "parentheses-balancing",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "92. Sorted Array Search",
+  "slug": "sorted-array-search",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "93. Counting Islands in a Matrix-2",
+  "slug": "counting-islands-in-a-matrix-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "94. Count Occurrences of K in N",
+  "slug": "count-occurrences-of-k-in-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "95. Print 1st and 3rd Character",
+  "slug": "print-1st-and-3rd-character",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "96. Least Repeated Characters",
+  "slug": "least-repeated-characters",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "97. Minimum Snow Drifts",
+  "slug": "minimum-snow-drifts",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "98. Even Factors of a Number",
+  "slug": "even-factors-of-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "99. Prime Pairs for a Number",
+  "slug": "prime-pairs-for-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "100. Power of Two Check-2",
+  "slug": "power-of-two-check-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "101. Power of a Number",
+  "slug": "power-of-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "102. Check Sorted Array",
+  "slug": "check-sorted-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "103. Substring Check-2",
+  "slug": "substring-check-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "104. Rectangle with Integer Sides",
+  "slug": "rectangle-with-integer-sides",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "105. String Rotation",
+  "slug": "string-rotation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "106. Sine of an Angle",
+  "slug": "sine-of-an-angle",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "107. Triangle Interior Angles Check",
+  "slug": "triangle-interior-angles-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "108. Odd Factors of a Number",
+  "slug": "odd-factors-of-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "109. Integer or Long",
+  "slug": "integer-or-long",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "110. Divisibility Check of a Number",
+  "slug": "divisibility-check-of-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "111. Bitwise AND of Array Elements",
+  "slug": "bitwise-and-of-array-elements",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "112. Bitwise OR of Array Elements",
+  "slug": "bitwise-or-of-array-elements",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "113. Max Bitwise OR of Segments",
+  "slug": "max-bitwise-or-of-segments",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "114. Bitwise NOT of a Number",
+  "slug": "bitwise-not-of-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "115. Bitwise XOR of Array Elements",
+  "slug": "bitwise-xor-of-array-elements",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "116. Bitwise Left Shift",
+  "slug": "bitwise-left-shift",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "117. Bitwise Right Shift",
+  "slug": "bitwise-right-shift",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "118. Permutation Calculation",
+  "slug": "permutation-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "119. Combination Calculation",
+  "slug": "combination-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "120. Decimal to Binary Conversion",
+  "slug": "decimal-to-binary-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "121. Binary to Decimal Conversion",
+  "slug": "binary-to-decimal-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "122. Swap Adjacent Elements",
+  "slug": "swap-adjacent-elements",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "123. Repeating Digits Check",
+  "slug": "repeating-digits-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "124. Kth Digit from Position",
+  "slug": "kth-digit-from-position",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "125. Sum of First and Last Digits",
+  "slug": "sum-of-first-and-last-digits",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "126. Sum of Odd Numbers in a Range",
+  "slug": "sum-of-odd-numbers-in-a-range",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "127. Check Digits 0 to K in N",
+  "slug": "check-digits-0-to-k-in-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "128. Binary to Octal Conversion",
+  "slug": "binary-to-octal-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "129. Binary to Hexadecimal Conversion",
+  "slug": "binary-to-hexadecimal-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "130. Max Sum of Adjacent Pairs",
+  "slug": "max-sum-of-adjacent-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "131. Max Sum of Consecutive Pairs",
+  "slug": "max-sum-of-consecutive-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "132. Minimize Max Pair Sum",
+  "slug": "minimize-max-pair-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "133. Sum of Consecutive Pairs",
+  "slug": "sum-of-consecutive-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "134. Sort and Print Original Indices",
+  "slug": "sort-and-print-original-indices",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "135. Remove Duplicates from Array",
+  "slug": "remove-duplicates-from-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "136. Word Position in String",
+  "slug": "word-position-in-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "137. Prefix Sum Array",
+  "slug": "prefix-sum-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "138. Suffix Sum of an Array",
+  "slug": "suffix-sum-of-an-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "139. Prefix and Suffix Sum",
+  "slug": "prefix-and-suffix-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "140. Common Numbers in Sorted Order",
+  "slug": "common-numbers-in-sorted-order",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "141. Counting Subarrays",
+  "slug": "counting-subarrays",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "142. Date Format Validation",
+  "slug": "date-format-validation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "143. Equalize String Lengths",
+  "slug": "equalize-string-lengths",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "144. Character Frequency Sort",
+  "slug": "character-frequency-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "145. Reverse String with Separator",
+  "slug": "reverse-string-with-separator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "146. Longest Word in a Sentence",
+  "slug": "longest-word-in-a-sentence",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "147. Hexadecimal to Decimal Conversion",
+  "slug": "hexadecimal-to-decimal-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "148. Lexicographically Smallest String",
+  "slug": "lexicographically-smallest-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "149. Date to Month Name Conversion",
+  "slug": "date-to-month-name-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "150. Prime Factorization",
+  "slug": "prime-factorization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "151. Smallest Divisible Number",
+  "slug": "smallest-divisible-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "152. Greatest Common Divisor",
+  "slug": "greatest-common-divisor",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "153. Print Numbers with Frequency < K",
+  "slug": "print-numbers-with-frequency-k",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "154. String Deletion",
+  "slug": "string-deletion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "155. Even or Odd Product",
+  "slug": "even-or-odd-product",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "156. Minimum Subarray Sum-2",
+  "slug": "minimum-subarray-sum-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "157. Conditional Prefix Sum Array",
+  "slug": "conditional-prefix-sum-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "158. Odd Digit Sum Check",
+  "slug": "odd-digit-sum-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "159. Max Length Alternating Digits Substring",
+  "slug": "max-length-alternating-digits-substring",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "160. Reachable Point",
+  "slug": "reachable-point",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "161. Find Smallest in Range",
+  "slug": "find-smallest-in-range",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "162. Sort Half Ascending, Half Descending",
+  "slug": "sort-half-ascending-half-descending",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "163. Count Number Occurrences",
+  "slug": "count-number-occurrences",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "164. First 1's Position from Right",
+  "slug": "first-1-s-position-from-right",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "165. Power of Two Check",
+  "slug": "power-of-two-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "166. Count Set Bits in Binary",
+  "slug": "count-set-bits-in-binary",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "167. String Character Check",
+  "slug": "string-character-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "168. Consecutive String Check",
+  "slug": "consecutive-string-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "169. Consecutive String Check-2",
+  "slug": "consecutive-string-check-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "170. Sort Array by Weights",
+  "slug": "sort-array-by-weights",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "172. Permutation Check of 1 to N",
+  "slug": "permutation-check-of-1-to-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "173. Factorial Ratio",
+  "slug": "factorial-ratio",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "174. Is graph a tree?",
+  "slug": "is-graph-a-tree",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "175. Cycle Detection in Directed Graph",
+  "slug": "cycle-detection-in-directed-graph",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "176. Shortest Path in Graph",
+  "slug": "shortest-path-in-graph",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "177. Max Length Alternating Vowel-Consonant Substring",
+  "slug": "max-length-alternating-vowel-consonant-substring",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "178. Extract kth character",
+  "slug": "extract-kth-character",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "179. Uppercase Every Kth Character",
+  "slug": "uppercase-every-kth-character",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "180. Hybrid Sort of an Array",
+  "slug": "hybrid-sort-of-an-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "181. Max Edges in Bipartite Tree",
+  "slug": "max-edges-in-bipartite-tree",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "182. First 1's Position in Binary Product",
+  "slug": "first-1-s-position-in-binary-product",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "183. Vowel Check in Strings",
+  "slug": "vowel-check-in-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "184. Find K in an Array",
+  "slug": "find-k-in-an-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "185. Find K or Nearest Smaller",
+  "slug": "find-k-or-nearest-smaller",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "186. GCD of Factorials",
+  "slug": "gcd-of-factorials",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "187. Run-Length Encoding",
+  "slug": "run-length-encoding",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "188. Swap Words Around 'and'",
+  "slug": "swap-words-around-and",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "189. Largest Number From Digits",
+  "slug": "largest-number-from-digits",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "190. Complementary Strings",
+  "slug": "complementary-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "191. Same Base Alphabets",
+  "slug": "same-base-alphabets",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "192. Counting Anagram Groups",
+  "slug": "counting-anagram-groups",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "193. Capitalize Repeated Letters",
+  "slug": "capitalize-repeated-letters",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "194. Bitwise XOR and Count Set Bits",
+  "slug": "bitwise-xor-and-count-set-bits",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "195. String Contains Substrings",
+  "slug": "string-contains-substrings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "196. Co-prime String Lengths",
+  "slug": "co-prime-string-lengths",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "197. Triangle Inequality Theorem",
+  "slug": "triangle-inequality-theorem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "198. Scalene Triangle Check",
+  "slug": "scalene-triangle-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "199. Right-Angled Triangle Check",
+  "slug": "right-angled-triangle-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "200. Mirror Image Arrays",
+  "slug": "mirror-image-arrays",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "201. Alternating Array Check",
+  "slug": "alternating-array-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "203. Rock Paper Scissors Winner",
+  "slug": "rock-paper-scissors-winner",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "204. Least Frequent Number",
+  "slug": "least-frequent-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "205. Counting Card Shuffles",
+  "slug": "counting-card-shuffles",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "206. Index Difference of Min and Max",
+  "slug": "index-difference-of-min-and-max",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "207. Almost Palindrome-2",
+  "slug": "almost-palindrome-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "208. Unique Characters in String",
+  "slug": "unique-characters-in-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "209. Print first N Catalan numbers",
+  "slug": "print-first-n-catalan-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "210. Vowel then Consonant",
+  "slug": "vowel-then-consonant",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "211. Sort Strings by Vowel Count",
+  "slug": "sort-strings-by-vowel-count",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "213. Reverse String Case",
+  "slug": "reverse-string-case",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "214. Hexadecimal String Validation",
+  "slug": "hexadecimal-string-validation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "215. Binary Length of Decimal Number",
+  "slug": "binary-length-of-decimal-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "216. Reverse Words Except First and Last",
+  "slug": "reverse-words-except-first-and-last",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "219. Diagonal Product Sum",
+  "slug": "diagonal-product-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "220. Diagonal Sum Product",
+  "slug": "diagonal-sum-product",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "221. Caesar Cipher Encryption",
+  "slug": "caesar-cipher-encryption",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "222. Modular Exponentiation",
+  "slug": "modular-exponentiation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "223. Reverse a List of Numbers",
+  "slug": "reverse-a-list-of-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "224. Longest Non-Palindrome Substring",
+  "slug": "longest-non-palindrome-substring",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "225. Sort Characters by Frequency",
+  "slug": "sort-characters-by-frequency",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "226. Max Subarray Sum",
+  "slug": "max-subarray-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "230. Largest Alternating 'ab' Subarray",
+  "slug": "largest-alternating-ab-subarray",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "231. Next Greater Number With Same Digits",
+  "slug": "next-greater-number-with-same-digits",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "237. Sum of Digits Palindrome Check",
+  "slug": "sum-of-digits-palindrome-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "238. Largest Number From N Numbers",
+  "slug": "largest-number-from-n-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "239. Find Repeated Numbers",
+  "slug": "find-repeated-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "240. Numbers Equal to Index",
+  "slug": "numbers-equal-to-index",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "243. Even Odd Position Numbers",
+  "slug": "even-odd-position-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "247. Reverse Each Word",
+  "slug": "reverse-each-word",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "248. Subset Check of Arrays",
+  "slug": "subset-check-of-arrays",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "249. Kth Largest Element",
+  "slug": "kth-largest-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "253. Nearest Neighbors in Array",
+  "slug": "nearest-neighbors-in-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "256. Common Elements in N Arrays",
+  "slug": "common-elements-in-n-arrays",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "257. Prime Count in Binary Range",
+  "slug": "prime-count-in-binary-range",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "259. Product Array Except Self",
+  "slug": "product-array-except-self",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "262. Find Sum Pair",
+  "slug": "find-sum-pair",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "265. String Expansion-2",
+  "slug": "string-expansion-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "267. Counting Lucky Numbers in an Array",
+  "slug": "counting-lucky-numbers-in-an-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "269. Remove Extra Spaces in String",
+  "slug": "remove-extra-spaces-in-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "270. Substring Check-3",
+  "slug": "substring-check-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "271. Combination Count",
+  "slug": "combination-count",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "273. String Multiplication",
+  "slug": "string-multiplication",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "275. Print Substrings of Length K",
+  "slug": "print-substrings-of-length-k",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "276. Smallest Number after each Input",
+  "slug": "smallest-number-after-each-input",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "277. Array Rotation",
+  "slug": "array-rotation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "279. Find the Single Number",
+  "slug": "find-the-single-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "281. Sum of elements of two lists",
+  "slug": "sum-of-elements-of-two-lists",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "287. Remove Element from Array",
+  "slug": "remove-element-from-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "288. Prefix Count in Strings",
+  "slug": "prefix-count-in-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "290. Find Min and Max Indices",
+  "slug": "find-min-and-max-indices",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "293. Reverse Odd Positioned Words",
+  "slug": "reverse-odd-positioned-words",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "297. Reverse Words in String",
+  "slug": "reverse-words-in-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "298. Print Primes Less Than N",
+  "slug": "print-primes-less-than-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "299. Smallest Number with Digit Sum N",
+  "slug": "smallest-number-with-digit-sum-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "305. Sum of Digit Powers",
+  "slug": "sum-of-digit-powers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "307. Count of Numbers with Prime Digit Sum",
+  "slug": "count-of-numbers-with-prime-digit-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "309. Password Generation from Strings",
+  "slug": "password-generation-from-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "310. Sum of Digit Powers-2",
+  "slug": "sum-of-digit-powers-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "311. Counting Pairs with Increasing Order",
+  "slug": "counting-pairs-with-increasing-order",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "312. Counting Triplet Pairs",
+  "slug": "counting-triplet-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "314. Prefix-Suffix Sum Check",
+  "slug": "prefix-suffix-sum-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "315. Substring Check-4",
+  "slug": "substring-check-4",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "316. Remove Duplicate Characters",
+  "slug": "remove-duplicate-characters",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "317. Camel Case Check",
+  "slug": "camel-case-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "318. Maximum Repeating Number",
+  "slug": "maximum-repeating-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "321. ASCII Sum of String",
+  "slug": "ascii-sum-of-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "322. Reverse Word Order",
+  "slug": "reverse-word-order",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "323. Right-Angled Triangle of 1s",
+  "slug": "right-angled-triangle-of-1s",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "324. Longest Common Substring",
+  "slug": "longest-common-substring",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "343. Merge K Sorted Arrays",
+  "slug": "merge-k-sorted-arrays",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "369. Dish Preparation from Ingredients",
+  "slug": "dish-preparation-from-ingredients",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "371. Maximum Replacer in a Range",
+  "slug": "maximum-replacer-in-a-range",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "372. Hill Jumping",
+  "slug": "hill-jumping",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "375. Min Cost to Make Subarray 0 or 1",
+  "slug": "min-cost-to-make-subarray-0-or-1",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "381. Building Height Queries",
+  "slug": "building-height-queries",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "384. Find Fish Pair with Product X",
+  "slug": "find-fish-pair-with-product-x",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "385. Duplicate Array Check",
+  "slug": "duplicate-array-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "388. Subset-Superset Array Check",
+  "slug": "subset-superset-array-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "390. Vasanth's Attendance Check",
+  "slug": "vasanth-s-attendance-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "391. Kth Smallest Element-2",
+  "slug": "kth-smallest-element-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "393. Find Maximum Sensex Period",
+  "slug": "find-maximum-sensex-period",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "394. Counting Number Pairs",
+  "slug": "counting-number-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "399. Student Fee Calculation",
+  "slug": "student-fee-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "400. Counting Beautiful Indices",
+  "slug": "counting-beautiful-indices",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "402. Swimming Pool Water Levels",
+  "slug": "swimming-pool-water-levels",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "410. Planet Gravity and Potential Energy",
+  "slug": "planet-gravity-and-potential-energy",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "419. Palindrome Permutation with One Change",
+  "slug": "palindrome-permutation-with-one-change",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "421. Minimize Perfume Cost",
+  "slug": "minimize-perfume-cost",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "422. Maximize Single Element",
+  "slug": "maximize-single-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "428. Heap Sort Strings",
+  "slug": "heap-sort-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "435. Maximize Rope Length After Cuts",
+  "slug": "maximize-rope-length-after-cuts",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "442. Dynamic English Dictionary",
+  "slug": "dynamic-english-dictionary",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "445. Single Digit Sum",
+  "slug": "single-digit-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "446. Longest Common Prefix Query",
+  "slug": "longest-common-prefix-query",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "448. Preserved Groceries",
+  "slug": "preserved-groceries",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "449. Common Prefix Finder",
+  "slug": "common-prefix-finder",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "450. Gobble Function Evaluation",
+  "slug": "gobble-function-evaluation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "453. Prefix Count in Integer List",
+  "slug": "prefix-count-in-integer-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "455. Correcting Geometric Progression",
+  "slug": "correcting-geometric-progression",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "456. Tower of Hanoi Moves",
+  "slug": "tower-of-hanoi-moves",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "457. Max Sum with Constraints",
+  "slug": "max-sum-with-constraints",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "458. Longest Increasing Subsequence",
+  "slug": "longest-increasing-subsequence",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "462. Minimum Subarray Sum-3",
+  "slug": "minimum-subarray-sum-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "463. Divisibility by 4",
+  "slug": "divisibility-by-4",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "464. Divisibility by 11",
+  "slug": "divisibility-by-11",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "467. Max Stock Profit-2",
+  "slug": "max-stock-profit-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "470. Josephus Game",
+  "slug": "josephus-game",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "472. Missing Package Finder",
+  "slug": "missing-package-finder",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "476. Clock Hand Angle",
+  "slug": "clock-hand-angle",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "478. Interns' Sales Equalization",
+  "slug": "interns-sales-equalization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "480. Quadruplet Sum to One",
+  "slug": "quadruplet-sum-to-one",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "495. Relative Array Sorting",
+  "slug": "relative-array-sorting",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "497. Sorted Array Union",
+  "slug": "sorted-array-union",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "500. Elevator Sort",
+  "slug": "elevator-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "510. Student Ranking by Marks",
+  "slug": "student-ranking-by-marks",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "513. Decode the Password",
+  "slug": "decode-the-password",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "524. Rotate Square Matrix 90 Degrees",
+  "slug": "rotate-square-matrix-90-degrees",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "525. Rampal Number Checker",
+  "slug": "rampal-number-checker",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "531. Board Game Navigation",
+  "slug": "board-game-navigation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "535. Spiral Matrix Traversal",
+  "slug": "spiral-matrix-traversal",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "543. Smallest Number from Factorial Digit Sum",
+  "slug": "smallest-number-from-factorial-digit-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "544. AJS Number Check",
+  "slug": "ajs-number-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "545. Is it a ZX Number?",
+  "slug": "is-it-a-zx-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "559. Matrix Pattern Generation",
+  "slug": "matrix-pattern-generation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "564. Square Outline in Matrix",
+  "slug": "square-outline-in-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "565. Shortest Path in a Matrix",
+  "slug": "shortest-path-in-a-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "566. Tic-Tac-Toe Winner Determination",
+  "slug": "tic-tac-toe-winner-determination",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "569. Triangle Outline in Matrix",
+  "slug": "triangle-outline-in-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "574. Find the Missing Number",
+  "slug": "find-the-missing-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "576. John's Toy Shopping",
+  "slug": "john-s-toy-shopping",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "587. Left Rotate Array",
+  "slug": "left-rotate-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "598. Middle Element Removal",
+  "slug": "middle-element-removal",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "599. Find Ground of a Number",
+  "slug": "find-ground-of-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "604. Nth Hyp Number",
+  "slug": "nth-hyp-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "605. Max Sum Increasing Subarray",
+  "slug": "max-sum-increasing-subarray",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "607. Print the nth term of series",
+  "slug": "print-the-nth-term-of-series",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "609. GCD of N Numbers",
+  "slug": "gcd-of-n-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "610. LCM of n numbers",
+  "slug": "lcm-of-n-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "615. Optimal Bank Loan Selection",
+  "slug": "optimal-bank-loan-selection",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "620. XOR Sum of Pairs",
+  "slug": "xor-sum-of-pairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "626. Decrypting String Pattern",
+  "slug": "decrypting-string-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "628. Anagram Check",
+  "slug": "anagram-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "633. Max Length of Alternating String",
+  "slug": "max-length-of-alternating-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "637. Remove Adjacent Duplicates",
+  "slug": "remove-adjacent-duplicates",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "651. String Reduction",
+  "slug": "string-reduction",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "654. String Expansion",
+  "slug": "string-expansion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "655. Substring Check",
+  "slug": "substring-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "658. Sort Vowels in String",
+  "slug": "sort-vowels-in-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "659. Longest Palindromic Substring",
+  "slug": "longest-palindromic-substring",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "660. Binary Sequence up to N",
+  "slug": "binary-sequence-up-to-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "668. Sum of Two Minimum Numbers",
+  "slug": "sum-of-two-minimum-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "673. String Space Combinations",
+  "slug": "string-space-combinations",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "674. Reverse String Words",
+  "slug": "reverse-string-words",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "681. Visible Pillars",
+  "slug": "visible-pillars",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "682. Max Ones in a Row",
+  "slug": "max-ones-in-a-row",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "683. Longest Consecutive Subsequence-2",
+  "slug": "longest-consecutive-subsequence-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "685. Longest Common Subsequence of 3 Strings",
+  "slug": "longest-common-subsequence-of-3-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "686. Big Integer Factorial",
+  "slug": "big-integer-factorial",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "691. Book Placement in Shelf",
+  "slug": "book-placement-in-shelf",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "692. String Composition Check",
+  "slug": "string-composition-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "693. Min Swaps to Sort Heights",
+  "slug": "min-swaps-to-sort-heights",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "695. String Weight Calculator",
+  "slug": "string-weight-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "697. Topological Sort of Words",
+  "slug": "topological-sort-of-words",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "713. Nth term in mixed geometric series",
+  "slug": "nth-term-in-mixed-geometric-series",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "718. Reverse Each Word-2",
+  "slug": "reverse-each-word-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "722. Count Digit Occurrences",
+  "slug": "count-digit-occurrences",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "723. Prime Factorization Program",
+  "slug": "prime-factorization-program",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "724. Remove Vowels from String",
+  "slug": "remove-vowels-from-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "725. Reverse a String-3",
+  "slug": "reverse-a-string-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "726. Remove Duplicates from Array-2",
+  "slug": "remove-duplicates-from-array-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "727. Max 1s in Binary",
+  "slug": "max-1s-in-binary",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "729. Speed Dating Token Exchanges",
+  "slug": "speed-dating-token-exchanges",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "732. Binary Age Sum Deviation",
+  "slug": "binary-age-sum-deviation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "745. Print Pattern of Numbers",
+  "slug": "print-pattern-of-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "746. Snake Spiral Pattern",
+  "slug": "snake-spiral-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "747. Number Pattern-2",
+  "slug": "number-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "752. Alphabetic Pattern-3",
+  "slug": "alphabetic-pattern-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "761. Anagram Check-2",
+  "slug": "anagram-check-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "782. Diagonal Matrix Product",
+  "slug": "diagonal-matrix-product",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "783. AB Pattern",
+  "slug": "ab-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "784. Number Diagonal Pattern",
+  "slug": "number-diagonal-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "790. Remove Punctuations From String",
+  "slug": "remove-punctuations-from-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "793. List Average Calculator",
+  "slug": "list-average-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "796. Count Set Bits-2",
+  "slug": "count-set-bits-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "804. Sort Strings by Length",
+  "slug": "sort-strings-by-length",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "805. Swap List Ends",
+  "slug": "swap-list-ends",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "808. Uppercase and Lowercase Count",
+  "slug": "uppercase-and-lowercase-count",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "809. Compare Strings Without Built-in Functions",
+  "slug": "compare-strings-without-built-in-functions",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "811. Vowel Counter in String",
+  "slug": "vowel-counter-in-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "812. Adam Number Checker",
+  "slug": "adam-number-checker",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "813. Amicable Number Check",
+  "slug": "amicable-number-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "814. Betrothed Numbers Check",
+  "slug": "betrothed-numbers-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "815. Smith Number Check",
+  "slug": "smith-number-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "816. Deficient Number Check",
+  "slug": "deficient-number-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "817. Abundant Number Check",
+  "slug": "abundant-number-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "818. Perfect Number Check",
+  "slug": "perfect-number-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "819. String Middle Replacement",
+  "slug": "string-middle-replacement",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "820. Perfect Square Check",
+  "slug": "perfect-square-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "822. LCM of Two Numbers",
+  "slug": "lcm-of-two-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "823. Eiffel Tower Pattern",
+  "slug": "eiffel-tower-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "824. Largest Even and Odd Number",
+  "slug": "largest-even-and-odd-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "825. Collatz Conjecture Test",
+  "slug": "collatz-conjecture-test",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "828. Reverse a Linked List",
+  "slug": "reverse-a-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "829. Linked List Rotation",
+  "slug": "linked-list-rotation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "830. Sort 0s, 1s, and 2s in Linked List",
+  "slug": "sort-0s-1s-and-2s-in-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "832. Linked List Palindrome Check",
+  "slug": "linked-list-palindrome-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "833. Delete Nth Node from End of List",
+  "slug": "delete-nth-node-from-end-of-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "834. Merge Two Sorted Linked Lists",
+  "slug": "merge-two-sorted-linked-lists",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "835. Flatten Sorted Linked Lists",
+  "slug": "flatten-sorted-linked-lists",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "836. Remove Duplicates from Linked List",
+  "slug": "remove-duplicates-from-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "837. Add One to Linked List",
+  "slug": "add-one-to-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "839. Delete Middle Node of Linked List",
+  "slug": "delete-middle-node-of-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "840. Delete Last Occurrence of Key",
+  "slug": "delete-last-occurrence-of-key",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "841. Reverse Alternate K Nodes",
+  "slug": "reverse-alternate-k-nodes",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "842. Postfix to Infix Conversion",
+  "slug": "postfix-to-infix-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "843. Parentheses Matching",
+  "slug": "parentheses-matching",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "845. Min Parentheses Removal",
+  "slug": "min-parentheses-removal",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "846. Infix to Prefix Conversion",
+  "slug": "infix-to-prefix-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "847. Prefix to Postfix Conversion",
+  "slug": "prefix-to-postfix-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "848. Postfix to Prefix Conversion-2",
+  "slug": "postfix-to-prefix-conversion-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "850. Max LR Product in Array",
+  "slug": "max-lr-product-in-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "851. Next Greater Element using Stack",
+  "slug": "next-greater-element-using-stack",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "852. Infix to Postfix Conversion",
+  "slug": "infix-to-postfix-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "853. Simplify Absolute Path",
+  "slug": "simplify-absolute-path",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "855. Selection Sort Implementation",
+  "slug": "selection-sort-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "856. Insertion Sort Visualization",
+  "slug": "insertion-sort-visualization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "857. Bubble Sort Implementation",
+  "slug": "bubble-sort-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "858. Merge Sort Implementation",
+  "slug": "merge-sort-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "859. QuickSort Algorithm Implementation",
+  "slug": "quicksort-algorithm-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "860. Heap Sort Implementation",
+  "slug": "heap-sort-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "861. Counting Sort Implementation",
+  "slug": "counting-sort-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "862. Bucket Sort Implementation",
+  "slug": "bucket-sort-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "863. Radix Sort Implementation",
+  "slug": "radix-sort-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "868. Star Pyramid Pattern-2",
+  "slug": "star-pyramid-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "869. Inverted Full Pyramid Pattern",
+  "slug": "inverted-full-pyramid-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "870. Hollow Pyramid Pattern",
+  "slug": "hollow-pyramid-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "871. Solid Half Diamond Pattern",
+  "slug": "solid-half-diamond-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "872. Half Diamond Star Number Pattern",
+  "slug": "half-diamond-star-number-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "874. Number Pyramid Pattern",
+  "slug": "number-pyramid-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "877. Number Hollow Inverted Half Pyramid",
+  "slug": "number-hollow-inverted-half-pyramid",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "879. b and * pattern",
+  "slug": "b-and-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "880. Inverted Star Pattern",
+  "slug": "inverted-star-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "881. Character Pattern Generation",
+  "slug": "character-pattern-generation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "882. Alphabet Pattern",
+  "slug": "alphabet-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "883. Character Pattern",
+  "slug": "character-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "884. Star and b Pattern",
+  "slug": "star-and-b-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "886. IPL Dance Program Seating",
+  "slug": "ipl-dance-program-seating",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "888. Number Pyramid Pattern-2",
+  "slug": "number-pyramid-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "890. Number Half Pyramid Pattern-2",
+  "slug": "number-half-pyramid-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "891. Number Half Pyramid Pattern-3",
+  "slug": "number-half-pyramid-pattern-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "892. Number Half Pyramid Pattern-4",
+  "slug": "number-half-pyramid-pattern-4",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "895. Number Half Pyramid Pattern-7",
+  "slug": "number-half-pyramid-pattern-7",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "896. Number Half Pyramid Pattern-8",
+  "slug": "number-half-pyramid-pattern-8",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "897. Number Square Pattern",
+  "slug": "number-square-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "898. Rhombus Star Pattern",
+  "slug": "rhombus-star-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "899. Hollow Rhombus Pattern-2",
+  "slug": "hollow-rhombus-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "900. Hollow Diamond Pattern",
+  "slug": "hollow-diamond-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "901. Butterfly Pattern with Stars",
+  "slug": "butterfly-pattern-with-stars",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "902. Left Arrow Star Pattern",
+  "slug": "left-arrow-star-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "903. Right Arrow Pattern",
+  "slug": "right-arrow-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "906. Number Pyramid Pattern-3",
+  "slug": "number-pyramid-pattern-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "907. Alphabet Pyramid Pattern",
+  "slug": "alphabet-pyramid-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "908. Alphabet Pyramid Pattern-2",
+  "slug": "alphabet-pyramid-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "909. Number Pyramid Pattern-4",
+  "slug": "number-pyramid-pattern-4",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "910. Alphabet Pyramid Pattern-3",
+  "slug": "alphabet-pyramid-pattern-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "911. Alphabet Pyramid Pattern-4",
+  "slug": "alphabet-pyramid-pattern-4",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "912. Alphabet Pyramid Pattern-5",
+  "slug": "alphabet-pyramid-pattern-5",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "913. Alphabet Half Pyramid Pattern",
+  "slug": "alphabet-half-pyramid-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "914. Alphabet Half Pyramid Pattern-2",
+  "slug": "alphabet-half-pyramid-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "915. Alphabet Half Pyramid Pattern-3",
+  "slug": "alphabet-half-pyramid-pattern-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "916. Alphabet Pyramid Pattern-6",
+  "slug": "alphabet-pyramid-pattern-6",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "917. Number Half Pyramid Pattern-9",
+  "slug": "number-half-pyramid-pattern-9",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "918. Number Square Pattern-2",
+  "slug": "number-square-pattern-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "919. Matrix Number Pattern",
+  "slug": "matrix-number-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "920. Half Pyramid of Multiples",
+  "slug": "half-pyramid-of-multiples",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "921. Number and Alphabet Pyramid",
+  "slug": "number-and-alphabet-pyramid",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "923. Half Pyramid Number Pattern-3",
+  "slug": "half-pyramid-number-pattern-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "924. X Number Pattern",
+  "slug": "x-number-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "928. Input-Output Formatting",
+  "slug": "input-output-formatting",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "929. Input-Output Formatting-2",
+  "slug": "input-output-formatting-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "930. Read and Print Integers",
+  "slug": "read-and-print-integers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "942. Sum of Integer Digits",
+  "slug": "sum-of-integer-digits",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "943. Even and Odd Digits",
+  "slug": "even-and-odd-digits",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "944. Reverse a String-4",
+  "slug": "reverse-a-string-4",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "946. HCF of two integers",
+  "slug": "hcf-of-two-integers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "948. Add Integers without Carry",
+  "slug": "add-integers-without-carry",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "949. Is it a Binary Tree?-2",
+  "slug": "is-it-a-binary-tree-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "959. Bank Transfer Encryption-2",
+  "slug": "bank-transfer-encryption-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "960. Credit Score Calculation System-2",
+  "slug": "credit-score-calculation-system-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "961. Bank Notification System",
+  "slug": "bank-notification-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "962. Account Service Tax Calculation",
+  "slug": "account-service-tax-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "963. Employee Salary Management",
+  "slug": "employee-salary-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "967. Triangle Area Calculation-2",
+  "slug": "triangle-area-calculation-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "968. Rectangle Area and Perimeter",
+  "slug": "rectangle-area-and-perimeter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "980. Next Prime Number",
+  "slug": "next-prime-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "986. Find Repeating Numbers",
+  "slug": "find-repeating-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "989. Remove Repeating Numbers",
+  "slug": "remove-repeating-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "990. Second Largest Number-3",
+  "slug": "second-largest-number-3",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "991. Second Smallest Element-2",
+  "slug": "second-smallest-element-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "992. Second Largest Index",
+  "slug": "second-largest-index",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "993. Index of 2nd Smallest Number",
+  "slug": "index-of-2nd-smallest-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "997. Remove Element from Array-2",
+  "slug": "remove-element-from-array-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "998. Array Addition",
+  "slug": "array-addition",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1000. String Length Without Spaces-2",
+  "slug": "string-length-without-spaces-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1004. Special Character Count",
+  "slug": "special-character-count",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1005. Remove Vowels from String-2",
+  "slug": "remove-vowels-from-string-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1009. Reverse Words in a String",
+  "slug": "reverse-words-in-a-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1010. Camel Case Conversion",
+  "slug": "camel-case-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1011. Common Characters in Strings-2",
+  "slug": "common-characters-in-strings-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1012. String Uppercase Vowels",
+  "slug": "string-uppercase-vowels",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1014. Perfect Matrix Check",
+  "slug": "perfect-matrix-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1018. Sum of Even Numbers in Matrix",
+  "slug": "sum-of-even-numbers-in-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1025. School Employee Payslip Generator",
+  "slug": "school-employee-payslip-generator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1026. BMI Calculator and Diet Plan",
+  "slug": "bmi-calculator-and-diet-plan",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1027. Multi-Base Number Converter",
+  "slug": "multi-base-number-converter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1028. Word Processor Operations",
+  "slug": "word-processor-operations",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1029. Telephone Directory Management",
+  "slug": "telephone-directory-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1030. Array-Based Stack Implementation",
+  "slug": "array-based-stack-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1031. Stack using Linked List",
+  "slug": "stack-using-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1032. Array-Based Queue Implementation",
+  "slug": "array-based-queue-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1033. Queue using Linked List",
+  "slug": "queue-using-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1034. Banking Token System",
+  "slug": "banking-token-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1062. Min Moves for Divisibility",
+  "slug": "min-moves-for-divisibility",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1068. Min Fuel Cost Adjustment",
+  "slug": "min-fuel-cost-adjustment",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1069. Base Conversion for Data Compression",
+  "slug": "base-conversion-for-data-compression",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1070. Max Stones of Equal Weight",
+  "slug": "max-stones-of-equal-weight",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1072. Stock Profit Algorithm",
+  "slug": "stock-profit-algorithm",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1073. Bears Weight Increase",
+  "slug": "bears-weight-increase",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1077. Bookstore Management with Inheritance",
+  "slug": "bookstore-management-with-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1078. Single Inheritance in School Modeling",
+  "slug": "single-inheritance-in-school-modeling",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1079. Tamil Nadu Admin Division Model",
+  "slug": "tamil-nadu-admin-division-model",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1080. E-commerce Platform with Multiple Inheritance",
+  "slug": "e-commerce-platform-with-multiple-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1081. Electronic Device Hierarchy",
+  "slug": "electronic-device-hierarchy",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1082. E-commerce Product Inheritance",
+  "slug": "e-commerce-product-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1083. Python MRO for Multiple Inheritance",
+  "slug": "python-mro-for-multiple-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1084. Python MRO and Diamond Problem",
+  "slug": "python-mro-and-diamond-problem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1085. Polymorphism with Student Fees",
+  "slug": "polymorphism-with-student-fees",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1086. Polymorphism in Subject Evaluation",
+  "slug": "polymorphism-in-subject-evaluation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1087. Staff Salary Calculation",
+  "slug": "staff-salary-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1088. Python Player Class with Goals Property",
+  "slug": "python-player-class-with-goals-property",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1089. Book Store Management System",
+  "slug": "book-store-management-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1090. Product Details API",
+  "slug": "product-details-api",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1091. Python Calculator with Error Handling",
+  "slug": "python-calculator-with-error-handling",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1092. Stock Management System",
+  "slug": "stock-management-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1093. Higher-Order Function Calculator",
+  "slug": "higher-order-function-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1094. Python Proxy Function for Error Handling",
+  "slug": "python-proxy-function-for-error-handling",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1095. Iterating Student Data",
+  "slug": "iterating-student-data",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1096. E-commerce Budget Product Generator",
+  "slug": "e-commerce-budget-product-generator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1097. Timing Task Decorator",
+  "slug": "timing-task-decorator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1098. Marriage Function Task Timer",
+  "slug": "marriage-function-task-timer",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1099. Python Calculator with Static Methods",
+  "slug": "python-calculator-with-static-methods",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1100. Student Grading with Map Function",
+  "slug": "student-grading-with-map-function",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1101. Filtering Passing Student Scores",
+  "slug": "filtering-passing-student-scores",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1102. Student Score Association with Zip",
+  "slug": "student-score-association-with-zip",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1103. Calculating Total Score with Reduce",
+  "slug": "calculating-total-score-with-reduce",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1104. Movie Data Extraction with Regex",
+  "slug": "movie-data-extraction-with-regex",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1105. Filtering Products by Price",
+  "slug": "filtering-products-by-price",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1106. Filter Products by Category",
+  "slug": "filter-products-by-category",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1107. Unique Brands in E-commerce",
+  "slug": "unique-brands-in-e-commerce",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1108. Product Stock using Dictionary Comprehension",
+  "slug": "product-stock-using-dictionary-comprehension",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1109. E-commerce Category Price Summation",
+  "slug": "e-commerce-category-price-summation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1110. Transaction Square Root",
+  "slug": "transaction-square-root",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1111. Monthly Interest Calculation",
+  "slug": "monthly-interest-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1112. Square Root of Transaction Amounts",
+  "slug": "square-root-of-transaction-amounts",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1131. Lambda Expression for Even-Odd Calculation",
+  "slug": "lambda-expression-for-even-odd-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1132. Longest String Finder",
+  "slug": "longest-string-finder",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1133. Java List Average with var",
+  "slug": "java-list-average-with-var",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1134. Stream API: Prime Filtering and Sorting",
+  "slug": "stream-api-prime-filtering-and-sorting",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1135. Java Stream API Word Filter",
+  "slug": "java-stream-api-word-filter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1136. Palindrome Check with Lambda",
+  "slug": "palindrome-check-with-lambda",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1137. Second Largest Integer with var",
+  "slug": "second-largest-integer-with-var",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1138. Stream API: Square and Filter",
+  "slug": "stream-api-square-and-filter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1148. Integer Wrapper Class Usage",
+  "slug": "integer-wrapper-class-usage",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1149. String Integer Arithmetic",
+  "slug": "string-integer-arithmetic",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1150. Java Data Type Conversion",
+  "slug": "java-data-type-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1151. Unique Sum of Integers",
+  "slug": "unique-sum-of-integers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1152. Even Integer Product",
+  "slug": "even-integer-product",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1153. Hexadecimal Summation",
+  "slug": "hexadecimal-summation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1154. Integer Frequency Counter",
+  "slug": "integer-frequency-counter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1155. Average 1s in Binary",
+  "slug": "average-1s-in-binary",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1156. Integer Range and Sign Analysis",
+  "slug": "integer-range-and-sign-analysis",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1157. Generic Pair Operations",
+  "slug": "generic-pair-operations",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1158. Generic Stack Implementation",
+  "slug": "generic-stack-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1159. Generic Sort using Comparators",
+  "slug": "generic-sort-using-comparators",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1160. Generic Queue Implementation",
+  "slug": "generic-queue-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1161. Generic Pair Equality Check",
+  "slug": "generic-pair-equality-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1162. Vote Validation System",
+  "slug": "vote-validation-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1163. Nested Loop Pyramid Pattern",
+  "slug": "nested-loop-pyramid-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1164. Polymorphic Zoo Simulation",
+  "slug": "polymorphic-zoo-simulation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1165. OOP Library Management",
+  "slug": "oop-library-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1166. Dynamic Vehicle Registration",
+  "slug": "dynamic-vehicle-registration",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1167. Unique User Activity Log",
+  "slug": "unique-user-activity-log",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1170. Shopping List without Duplicates",
+  "slug": "shopping-list-without-duplicates",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1171. Word Frequency Counter-2",
+  "slug": "word-frequency-counter-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1172. Even Number Filter with Lambda",
+  "slug": "even-number-filter-with-lambda",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1173. List Combination with Lambdas",
+  "slug": "list-combination-with-lambdas",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1174. OOP Student Grading System",
+  "slug": "oop-student-grading-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1175. Smart Appliance Management",
+  "slug": "smart-appliance-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1217. Financial Transaction Management",
+  "slug": "financial-transaction-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1219. C Student Record Management",
+  "slug": "c-student-record-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1220. Smart Home Permission Control",
+  "slug": "smart-home-permission-control",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1222. Doubly Linked List Operations",
+  "slug": "doubly-linked-list-operations",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1226. Array Manipulation with Pointers",
+  "slug": "array-manipulation-with-pointers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1228. Even-Indexed Sum in Dynamic Array",
+  "slug": "even-indexed-sum-in-dynamic-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1229. Dynamic Array Copy and Memory Management",
+  "slug": "dynamic-array-copy-and-memory-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1422. Java Dynamic Library System",
+  "slug": "java-dynamic-library-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1445. Quickselect: K-th Smallest with Duplicates",
+  "slug": "quickselect-k-th-smallest-with-duplicates",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1446. Minimum Swaps to Sort Array-2",
+  "slug": "minimum-swaps-to-sort-array-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1447. Merge Two Sorted Linked Lists-2",
+  "slug": "merge-two-sorted-linked-lists-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1448. Sort List Elements by Frequency",
+  "slug": "sort-list-elements-by-frequency",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1449. Maximum Circular Subarray Sum",
+  "slug": "maximum-circular-subarray-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1450. Tower of Hanoi Solver",
+  "slug": "tower-of-hanoi-solver",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1451. Recursive Fibonacci with Memoization",
+  "slug": "recursive-fibonacci-with-memoization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1454. N-Queens Problem Solutions",
+  "slug": "n-queens-problem-solutions",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1457. Unique Combinations with Target Sum",
+  "slug": "unique-combinations-with-target-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1459. Generating Valid Parentheses",
+  "slug": "generating-valid-parentheses",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1482. Dynamic Mem: Kth Smallest Unique Element",
+  "slug": "dynamic-mem-kth-smallest-unique-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1483. Dynamic Memory Graph Connected Components",
+  "slug": "dynamic-memory-graph-connected-components",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1485. Minimum File Merge Cost",
+  "slug": "minimum-file-merge-cost",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1488. Circular Queue Array Implementation",
+  "slug": "circular-queue-array-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1489. Reverse First K Elements of a Queue",
+  "slug": "reverse-first-k-elements-of-a-queue",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1492. Implement Deque Using Array",
+  "slug": "implement-deque-using-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1498. AVL Tree Insertion with Balancing",
+  "slug": "avl-tree-insertion-with-balancing",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1499. Fibonacci Stairs Problem",
+  "slug": "fibonacci-stairs-problem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1500. Fibonacci Number Dynamic Programming",
+  "slug": "fibonacci-number-dynamic-programming",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1501. Min Cost Climbing Stairs",
+  "slug": "min-cost-climbing-stairs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1502. Unique Paths in Grid",
+  "slug": "unique-paths-in-grid",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1503. Minimum Coin Change",
+  "slug": "minimum-coin-change",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1504. Longest Increasing Subsequence Length",
+  "slug": "longest-increasing-subsequence-length",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1505. 0/1 Knapsack Problem",
+  "slug": "0-1-knapsack-problem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1506. Maximum Subarray Sum-2",
+  "slug": "maximum-subarray-sum-2",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1507. Greedy Coin Change Problem",
+  "slug": "greedy-coin-change-problem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1508. Activity Selection Problem",
+  "slug": "activity-selection-problem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1509. Tree Diameter",
+  "slug": "tree-diameter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1510. Minimum Vertex Cover on Trees",
+  "slug": "minimum-vertex-cover-on-trees",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1511. Maximum Path Sum in a Tree",
+  "slug": "maximum-path-sum-in-a-tree",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1512. Count Subsets with Given Sum (Bitmask DP)",
+  "slug": "count-subsets-with-given-sum-bitmask-dp",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1513. Travelling Salesman Problem DP Bitmasking",
+  "slug": "travelling-salesman-problem-dp-bitmasking",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1514. Min Cost K-Segment Array Partition",
+  "slug": "min-cost-k-segment-array-partition",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1591. Maximum Difference in Array",
+  "slug": "maximum-difference-in-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1593. Warehouse Inventory",
+  "slug": "warehouse-inventory",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1594. C, Data Types and Variables",
+  "slug": "c-data-types-and-variables",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1596. City Grid Traffic Optimization",
+  "slug": "city-grid-traffic-optimization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1598. Warehouse Management System Optimization",
+  "slug": "warehouse-management-system-optimization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1600. e-commerce platform",
+  "slug": "e-commerce-platform",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1601. Fibonacci Numbers",
+  "slug": "fibonacci-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1602. Masked Phone Numbers",
+  "slug": "masked-phone-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1608. Manage data using arrays and pointers",
+  "slug": "manage-data-using-arrays-and-pointers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1609. C Control Structures",
+  "slug": "c-control-structures",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1610. C Arrays",
+  "slug": "c-arrays",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1613. C Selection Sort",
+  "slug": "c-selection-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1614. C Insertion Sort",
+  "slug": "c-insertion-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1615. C Bitwise Operators",
+  "slug": "c-bitwise-operators",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1616. C, Selection Sort, Sorting, Algorithms",
+  "slug": "c-selection-sort-sorting-algorithms",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1618. Insertion Sort, Arrays, Sorting",
+  "slug": "insertion-sort-arrays-sorting",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1620. C Quick Sort",
+  "slug": "c-quick-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1622. Type Qualifiers: const",
+  "slug": "type-qualifiers-const",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1626. C, Merge Sort, Sorting, Strings",
+  "slug": "c-merge-sort-sorting-strings",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1627. C, Merge Sort, Fractions",
+  "slug": "c-merge-sort-fractions",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1631. Macros File Inclusion Conditional Compilation Other Directives: #define, #undef, #ifdef, #ifndef, #if, #else, #elif, #endif",
+  "slug": "macros-file-inclusion-conditional-compilation-other-directives-define-undef-ifdef-ifndef-if-else-elif-endif",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1632. Reverse a Linked List",
+  "slug": "reverse-a-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1634. Complex Playlist Manager Using Doubly Linked List",
+  "slug": "complex-playlist-manager-using-doubly-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1635. File System Simulation Using Advanced Data Structures",
+  "slug": "file-system-simulation-using-advanced-data-structures",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1638. Doubly Linked List, Traversal, Linked List",
+  "slug": "doubly-linked-list-traversal-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1639. Polymorphism, Method Overloading",
+  "slug": "polymorphism-method-overloading",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1640. Bank Account with Overloaded Methods",
+  "slug": "bank-account-with-overloaded-methods",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1642. Polymorphism, Method Overloading - Volume Finder",
+  "slug": "polymorphism-method-overloading-volume-finder",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1643. Banking System with Static Interest Rate",
+  "slug": "banking-system-with-static-interest-rate",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1644. Passing this as Argument with Garage System",
+  "slug": "passing-this-as-argument-with-garage-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1645. Java,Constructors",
+  "slug": "java-constructors",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1646. Uses constructors to initialize a Person object with a name and age",
+  "slug": "uses-constructors-to-initialize-a-person-object-with-a-name-and-age",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1647. Inventory Management with Constructor Chaining",
+  "slug": "inventory-management-with-constructor-chaining",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1650. Multi-level Discount with Final Variables",
+  "slug": "multi-level-discount-with-final-variables",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1651. Triangle Perimeter Calculator with Abstract Class",
+  "slug": "triangle-perimeter-calculator-with-abstract-class",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1652. Abstract Class, Method Overriding",
+  "slug": "abstract-class-method-overriding",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1654. Ticket Booking System",
+  "slug": "ticket-booking-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1657. Student Result Evaluation",
+  "slug": "student-result-evaluation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1658. Library Management System",
+  "slug": "library-management-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1662. ATM Transaction with Exception Hierarchy",
+  "slug": "atm-transaction-with-exception-hierarchy",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1663. Java,Intersection of Two Sets",
+  "slug": "java-intersection-of-two-sets",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1666. Removing Duplicates from a List",
+  "slug": "removing-duplicates-from-a-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1667. Java, Generics, Collections, Comparable, Max Element",
+  "slug": "java-generics-collections-comparable-max-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1668. Java, Collections, Sorting",
+  "slug": "java-collections-sorting",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1670. Java, Generics, Collections, HashMap, Frequency Counter",
+  "slug": "java-generics-collections-hashmap-frequency-counter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1671. Java, Generics, Wrapper Classes, Type-Safe Operations",
+  "slug": "java-generics-wrapper-classes-type-safe-operations",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1672. Java, Generics, Wrapper Classes, Collections - Median Finder",
+  "slug": "java-generics-wrapper-classes-collections-median-finder",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1673. Java, Generics, Wrapper Classes - Sum of Squares",
+  "slug": "java-generics-wrapper-classes-sum-of-squares",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1674. Max-Min Difference Calculator",
+  "slug": "max-min-difference-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1677. Modular inverse with power",
+  "slug": "modular-inverse-with-power",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1678. Multiple queries",
+  "slug": "multiple-queries",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1679. Iterative Fibonacci",
+  "slug": "iterative-fibonacci",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1680. Recursive with memoization",
+  "slug": "recursive-with-memoization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1681. Fast doubling",
+  "slug": "fast-doubling",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1682. Fibonacci modulo",
+  "slug": "fibonacci-modulo",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1683. Cycle decomposition",
+  "slug": "cycle-decomposition",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1685. Binary lifting on permutation",
+  "slug": "binary-lifting-on-permutation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1686. Order of permutation",
+  "slug": "order-of-permutation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1687. GCD (Euclidean)",
+  "slug": "gcd-euclidean",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1689. Batch GCD queries",
+  "slug": "batch-gcd-queries",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1690. Extended Euclidean",
+  "slug": "extended-euclidean",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1693. Generate all solutions",
+  "slug": "generate-all-solutions",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1694. Minimize x+y",
+  "slug": "minimize-x-y",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1697. Matrix exponentiation",
+  "slug": "matrix-exponentiation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1698. Pisano period",
+  "slug": "pisano-period",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1701. Miller-Rabin primality",
+  "slug": "miller-rabin-primality",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1702. Pollard Rho factorization",
+  "slug": "pollard-rho-factorization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1705. Euler's totient (phi)",
+  "slug": "euler-s-totient-phi",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1706. Mobius function (sieve)",
+  "slug": "mobius-function-sieve",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1709. Chinese Remainder Theorem",
+  "slug": "chinese-remainder-theorem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1711. Balanced ternary",
+  "slug": "balanced-ternary",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1713. Enumerate balanced ternary",
+  "slug": "enumerate-balanced-ternary",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1716. Subset sums via bitmask",
+  "slug": "subset-sums-via-bitmask",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1717. Shift operators",
+  "slug": "shift-operators",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1719. Big integer multiplication (schoolbook)",
+  "slug": "big-integer-multiplication-schoolbook",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1720. Big integer division by small int",
+  "slug": "big-integer-division-by-small-int",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1722. Mixed Data Type Calculations",
+  "slug": "mixed-data-type-calculations",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1728. Print Multiplication Table",
+  "slug": "print-multiplication-table",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1732. Local Fruit Market",
+  "slug": "local-fruit-market",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1735. Second Largest Element",
+  "slug": "second-largest-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1739. Multiply Two 3x3 Matrices",
+  "slug": "multiply-two-3x3-matrices",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1743. Fibonacci Using Recursion",
+  "slug": "fibonacci-using-recursion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1745. Swap Two Numbers",
+  "slug": "swap-two-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1746. Function void swap_and_diff",
+  "slug": "function-void-swap-and-diff",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1747. Hospital Room Allocation System (Pointer Management)",
+  "slug": "hospital-room-allocation-system-pointer-management",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1748. Employee Performance Tracker (Pointer Initialization)",
+  "slug": "employee-performance-tracker-pointer-initialization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1749. Inventory Allocation Using Pointer Arithmetic",
+  "slug": "inventory-allocation-using-pointer-arithmetic",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1750. Transpose of a Matrix",
+  "slug": "transpose-of-a-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1752. Count Vowels",
+  "slug": "count-vowels",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1755. Manage a Library of Books using Structures",
+  "slug": "manage-a-library-of-books-using-structures",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1756. Managing Employee Records Using Structures",
+  "slug": "managing-employee-records-using-structures",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1757. Manage Students Records",
+  "slug": "manage-students-records",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1759. Handling Complex Data in Structures with Pointers",
+  "slug": "handling-complex-data-in-structures-with-pointers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1761. Thread Synchronization using Synchronized Methods",
+  "slug": "thread-synchronization-using-synchronized-methods",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1762. Multi-Threaded Counter",
+  "slug": "multi-threaded-counter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1763. Multi-Threaded Prime Finder",
+  "slug": "multi-threaded-prime-finder",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1764. Parallel Array Sum",
+  "slug": "parallel-array-sum",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1765. Ticket Booking System",
+  "slug": "ticket-booking-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1766. Producer-Consumer with Shared Buffer",
+  "slug": "producer-consumer-with-shared-buffer",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1767. Shared Counter with Multiple Threads",
+  "slug": "shared-counter-with-multiple-threads",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1768. Shared Matrix Updater",
+  "slug": "shared-matrix-updater",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1769. Customer Contact Manager",
+  "slug": "customer-contact-manager",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1770. Escaping the Maze",
+  "slug": "escaping-the-maze",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1771. Merge Cost Calculation",
+  "slug": "merge-cost-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1772. Balanced Parentheses Checker",
+  "slug": "balanced-parentheses-checker",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1773. Evaluate Postfix Expression",
+  "slug": "evaluate-postfix-expression",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1774. Implement Circular Queue",
+  "slug": "implement-circular-queue",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1775. Reverse First k Elements of Queue",
+  "slug": "reverse-first-k-elements-of-queue",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1776. Network Coverage Using Binary Trees",
+  "slug": "network-coverage-using-binary-trees",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1777. Robotic Vacuum Cleaner Path Planning",
+  "slug": "robotic-vacuum-cleaner-path-planning",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1778. Post-order Traversal of Binary Tree",
+  "slug": "post-order-traversal-of-binary-tree",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1779. Construct Binary Tree from Post-order and In-order Traversal",
+  "slug": "construct-binary-tree-from-post-order-and-in-order-traversal",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1780. Memory Efficient Graph Operations using Dynamic Memory Allocation",
+  "slug": "memory-efficient-graph-operations-using-dynamic-memory-allocation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1781. File System Simulation Using Advanced Data Structures",
+  "slug": "file-system-simulation-using-advanced-data-structures",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1782. BFS Traversal of Graph",
+  "slug": "bfs-traversal-of-graph",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1783. Shortest Path in Unweighted Graph (BFS)",
+  "slug": "shortest-path-in-unweighted-graph-bfs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1784. Detect Cycle in Undirected Graph Using DFS",
+  "slug": "detect-cycle-in-undirected-graph-using-dfs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1785. Topological Sort Using DFS",
+  "slug": "topological-sort-using-dfs",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1788. Abstraction & Encapsulation",
+  "slug": "abstraction-encapsulation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1789. Online Payment Processing System",
+  "slug": "online-payment-processing-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1790. Library Fine Management System",
+  "slug": "library-fine-management-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1791. Electricity Bill Calculator with Default Arguments",
+  "slug": "electricity-bill-calculator-with-default-arguments",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1792. Box Volume Comparator",
+  "slug": "box-volume-comparator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1793. Smart Sensor Monitoring System",
+  "slug": "smart-sensor-monitoring-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1794. Employee Salary Management System",
+  "slug": "employee-salary-management-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1795. Product Inventory Management Using Object Pointers",
+  "slug": "product-inventory-management-using-object-pointers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1796. Score Management using Object Pointers",
+  "slug": "score-management-using-object-pointers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1797. Player Power Management System",
+  "slug": "player-power-management-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1798. Bank Account Interest Calculator",
+  "slug": "bank-account-interest-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1799. University Student Grade Calculator using Nested Class",
+  "slug": "university-student-grade-calculator-using-nested-class",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1800. Employee Salary Auto-Initializer",
+  "slug": "employee-salary-auto-initializer",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1801. Dynamic Memory Allocation",
+  "slug": "dynamic-memory-allocation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1802. Product Calculator",
+  "slug": "product-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1803. Deep Copy Array Modification",
+  "slug": "deep-copy-array-modification",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1804. Scoped Resource Release Tracker",
+  "slug": "scoped-resource-release-tracker",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1805. Complex Number Arithmetic",
+  "slug": "complex-number-arithmetic",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1806. 2x2 Matrix Addition using Operator Overloading",
+  "slug": "2x2-matrix-addition-using-operator-overloading",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1807. Distance Comparison",
+  "slug": "distance-comparison",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1808. Dynamic String Assignment Operator Overloading",
+  "slug": "dynamic-string-assignment-operator-overloading",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1809. Rupees to Dollars Conversion",
+  "slug": "rupees-to-dollars-conversion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1810. Secure Wallet Initialization using Explicit Constructor",
+  "slug": "secure-wallet-initialization-using-explicit-constructor",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1811. Slicing in Banking Interest Calculation",
+  "slug": "slicing-in-banking-interest-calculation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1812. Hierarchical Banking System using Inheritance",
+  "slug": "hierarchical-banking-system-using-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1813. Access Control Analyzer using Public and Private",
+  "slug": "access-control-analyzer-using-public-and-private",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1814. Employee Bonus Calculator Using Private Inheritance",
+  "slug": "employee-bonus-calculator-using-private-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1815. Role-Based Access System using Protected Inheritance",
+  "slug": "role-based-access-system-using-protected-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1816. Access Specifier Conflict Resolution with Friend Class",
+  "slug": "access-specifier-conflict-resolution-with-friend-class",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1817. Vehicle Taxation System using Multilevel Inheritance",
+  "slug": "vehicle-taxation-system-using-multilevel-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1818. Shape Area Calculator using Abstract Class",
+  "slug": "shape-area-calculator-using-abstract-class",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1819. Corporate Role Conflict System using Virtual Base Class",
+  "slug": "corporate-role-conflict-system-using-virtual-base-class",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1820. Online Shopping Cart using Composite",
+  "slug": "online-shopping-cart-using-composite",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1821. Game Character System using Virtual Functions",
+  "slug": "game-character-system-using-virtual-functions",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1822. Abstract Shape Framework with Partial Implementation",
+  "slug": "abstract-shape-framework-with-partial-implementation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1823. Payment Processing System using RTTI",
+  "slug": "payment-processing-system-using-rtti",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1824. Student Score Analyzer (Modern C++)",
+  "slug": "student-score-analyzer-modern-c",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1825. Generic Calculator using Function & Class Templates",
+  "slug": "generic-calculator-using-function-class-templates",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1826. Bank Account Withdrawal System (Exception Handling)",
+  "slug": "bank-account-withdrawal-system-exception-handling",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1827. Safe Division System Using noexcept and terminate()",
+  "slug": "safe-division-system-using-noexcept-and-terminate",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1828. Template-Based Shape Processor with Downcasting & Cross Casting",
+  "slug": "template-based-shape-processor-with-downcasting-cross-casting",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1829. Student Report Generator Using Streams & Formatted I/O",
+  "slug": "student-report-generator-using-streams-formatted-i-o",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1830. Employee Record System using Random Access & Object Serialization",
+  "slug": "employee-record-system-using-random-access-object-serialization",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1831. University Result System using Namespaces",
+  "slug": "university-result-system-using-namespaces",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1832. Student Score Analyzer using STL",
+  "slug": "student-score-analyzer-using-stl",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1833. Product Inventory Manager using STL",
+  "slug": "product-inventory-manager-using-stl",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1834. Simple Calculator using Multiple Namespaces",
+  "slug": "simple-calculator-using-multiple-namespaces",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1835. Student Record Update System (Binary File + Random Access)",
+  "slug": "student-record-update-system-binary-file-random-access",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1836. Find the Maximum Element",
+  "slug": "find-the-maximum-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1859. Race Time Sorting",
+  "slug": "race-time-sorting",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1860. Inventory Reordering System",
+  "slug": "inventory-reordering-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1861. online-multiplayer-matchmaking-engine",
+  "slug": "online-multiplayer-matchmaking-engine",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1880. Count Frequency of Each Character in a String",
+  "slug": "count-frequency-of-each-character-in-a-string",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1888. Coin Change (Minimum Coins)",
+  "slug": "coin-change-minimum-coins",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1890. Matrix Chain Multiplication (MCM)",
+  "slug": "matrix-chain-multiplication-mcm",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1895. Maximum Sum of Non-Adjacent Nodes in a Tree",
+  "slug": "maximum-sum-of-non-adjacent-nodes-in-a-tree",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1900. Cloud Resource Allocation Manager",
+  "slug": "cloud-resource-allocation-manager",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1906. Smart Network Cycle Detector",
+  "slug": "smart-network-cycle-detector",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1907. Detect Cycle in an Undirected Graph",
+  "slug": "detect-cycle-in-an-undirected-graph",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1932. Pair Sum Frequency Counter",
+  "slug": "pair-sum-frequency-counter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1940. Electricity Bill Calculator",
+  "slug": "electricity-bill-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1941. Number Classification and Analysis",
+  "slug": "number-classification-and-analysis",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1942. String Analysis Tool",
+  "slug": "string-analysis-tool",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1943. Command Line Style Argument Processor",
+  "slug": "command-line-style-argument-processor",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1945. Bank Account Management Using Constructors",
+  "slug": "bank-account-management-using-constructors",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1946. Employee Salary Calculator Using Methods",
+  "slug": "employee-salary-calculator-using-methods",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1949. Wrapper Class Conversion Utility",
+  "slug": "wrapper-class-conversion-utility",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1950. Vehicle Management Using Inheritance",
+  "slug": "vehicle-management-using-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1951. Salary Calculation Using Method Overriding",
+  "slug": "salary-calculation-using-method-overriding",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1954. Safe Division Using Exception Handling",
+  "slug": "safe-division-using-exception-handling",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1972. Merge Sort",
+  "slug": "merge-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1975. Reverse a Linked List",
+  "slug": "reverse-a-linked-list",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1976. Browser Back Button Using Stack",
+  "slug": "browser-back-button-using-stack",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1977. Undo Operation in a Text Editor",
+  "slug": "undo-operation-in-a-text-editor",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1978. Ticket Counter Queue",
+  "slug": "ticket-counter-queue",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1979. Printer Job Queue",
+  "slug": "printer-job-queue",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1980. Employee Hierarchy Tree",
+  "slug": "employee-hierarchy-tree",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1983. Product Catalog BST Insertion",
+  "slug": "product-catalog-bst-insertion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1984. Warehouse Package Sorting Using Heap Sort",
+  "slug": "warehouse-package-sorting-using-heap-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1985. Social Network Graph Representation",
+  "slug": "social-network-graph-representation",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1988. Number Format Validator",
+  "slug": "number-format-validator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1989. Null Reference Checker",
+  "slug": "null-reference-checker",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1994. Postfix Expression Evaluator",
+  "slug": "postfix-expression-evaluator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "1997. Stack Operations Simulator",
+  "slug": "stack-operations-simulator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2000. Generate Binary Numbers from 1 to N",
+  "slug": "generate-binary-numbers-from-1-to-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2001. Circular Tour (Petrol Pump Problem)",
+  "slug": "circular-tour-petrol-pump-problem",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2005. Employee Inheritance",
+  "slug": "employee-inheritance",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2006. Bank Account System",
+  "slug": "bank-account-system",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2011. Payment System Using Interface",
+  "slug": "payment-system-using-interface",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2012. Employee Salary Using Abstract Class",
+  "slug": "employee-salary-using-abstract-class",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2020. Check Palindrome Using StringBuffer",
+  "slug": "check-palindrome-using-stringbuffer",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2021. Concatenate Two Strings Using StringBuffer",
+  "slug": "concatenate-two-strings-using-stringbuffer",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2026. Find Minimum Element in BST",
+  "slug": "find-minimum-element-in-bst",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2027. Find Maximum Element in BST",
+  "slug": "find-maximum-element-in-bst",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2032. Insertion Sort",
+  "slug": "insertion-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2033. Sort Strings Alphabetically",
+  "slug": "sort-strings-alphabetically",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2038. Traverse ArrayList Using Iterator",
+  "slug": "traverse-arraylist-using-iterator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2039. Remove an Element from ArrayList",
+  "slug": "remove-an-element-from-arraylist",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2040. Remove an Element from ArrayList",
+  "slug": "remove-an-element-from-arraylist",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2045. Thread Square Calculator",
+  "slug": "thread-square-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2047. Word Reverser Using PrintWriter",
+  "slug": "word-reverser-using-printwriter",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2051. Binary Search - Find an Element",
+  "slug": "binary-search-find-an-element",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2052. Binary Search - First Element Greater Than or Equal to Target",
+  "slug": "binary-search-first-element-greater-than-or-equal-to-target",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2057. Update Employee Salary",
+  "slug": "update-employee-salary",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2058. Display Students Above Given Marks",
+  "slug": "display-students-above-given-marks",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2064. Separate Chaining",
+  "slug": "separate-chaining",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2065. Double Hashing",
+  "slug": "double-hashing",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2074. Dijkstra's Shortest Path",
+  "slug": "dijkstra-s-shortest-path",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2075. Shortest Distance Between Two Vertices",
+  "slug": "shortest-distance-between-two-vertices",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2083. Evaluating an Expression Using Operator Precedence",
+  "slug": "evaluating-an-expression-using-operator-precedence",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2084. Comparing Integer and Float Division",
+  "slug": "comparing-integer-and-float-division",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2085. Exploring Pre and Post Increment Operators",
+  "slug": "exploring-pre-and-post-increment-operators",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2086. Evaluating Relational and Logical Operators",
+  "slug": "evaluating-relational-and-logical-operators",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2087. Using Enumeration Constants for Days of the Week",
+  "slug": "using-enumeration-constants-for-days-of-the-week",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2088. Swapping Two Numbers Without Using a Third Variable",
+  "slug": "swapping-two-numbers-without-using-a-third-variable",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2089. Counting Total Amount from Currency Notes",
+  "slug": "counting-total-amount-from-currency-notes",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2090. Computing the Factorial of a Fixed Number",
+  "slug": "computing-the-factorial-of-a-fixed-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2091. Sum of Digits of a 3-Digit Integer",
+  "slug": "sum-of-digits-of-a-3-digit-integer",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2092. Converting a Decimal Number to Octal",
+  "slug": "converting-a-decimal-number-to-octal",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2107. Kruskal's Algorithm \u2013 MST Cost",
+  "slug": "kruskal-s-algorithm-mst-cost",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2108. Topological Sort",
+  "slug": "topological-sort",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2116. Finding the Largest of Three Numbers",
+  "slug": "finding-the-largest-of-three-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2117. Grading a Student's Marks",
+  "slug": "grading-a-student-s-marks",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2118. Simple Calculator Using Switch Statement",
+  "slug": "simple-calculator-using-switch-statement",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2119. Sum of Even Numbers from 1 to N",
+  "slug": "sum-of-even-numbers-from-1-to-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2120. Printing the Multiplication Table of a Number",
+  "slug": "printing-the-multiplication-table-of-a-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2131. Sum of All Elements in a 2D Matrix",
+  "slug": "sum-of-all-elements-in-a-2d-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2132. Transpose of a Matrix",
+  "slug": "transpose-of-a-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2133. Reversing a String Using a Character Array",
+  "slug": "reversing-a-string-using-a-character-array",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2134. Checking Whether a String Is a Palindrome",
+  "slug": "checking-whether-a-string-is-a-palindrome",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2135. Counting the Number of Words in a Sentence",
+  "slug": "counting-the-number-of-words-in-a-sentence",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2141. Call by Value in C",
+  "slug": "call-by-value-in-c",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2142. Call by Address in C",
+  "slug": "call-by-address-in-c",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2143. sum of the first N natural numbers",
+  "slug": "sum-of-the-first-n-natural-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2144. Reverse a Number Using Recursion",
+  "slug": "reverse-a-number-using-recursion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2150. Checking Divisibility by 3 and 5 Using a Function",
+  "slug": "checking-divisibility-by-3-and-5-using-a-function",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2151. Checking Whether Three Sides Form a Valid Triangle",
+  "slug": "checking-whether-three-sides-form-a-valid-triangle",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2152. Counting the Digits of a Number Using a Function",
+  "slug": "counting-the-digits-of-a-number-using-a-function",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2153. Printing a Countdown Using Recursion",
+  "slug": "printing-a-countdown-using-recursion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2154. Multiplying Two Numbers Using Recursion",
+  "slug": "multiplying-two-numbers-using-recursion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2162. Sum and Reverse of a Three-Digit Number",
+  "slug": "sum-and-reverse-of-a-three-digit-number",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2163. Average Marks and Pass Status",
+  "slug": "average-marks-and-pass-status",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2164. Leap Year Checker",
+  "slug": "leap-year-checker",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2168. Daily Wage Slip of a Worker",
+  "slug": "daily-wage-slip-of-a-worker",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2169. Packet Quality Check",
+  "slug": "packet-quality-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2170. Machine Running Time",
+  "slug": "machine-running-time",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2173. Prime Number Check",
+  "slug": "prime-number-check",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2174. Number Triangle Pattern",
+  "slug": "number-triangle-pattern",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2175. Menu-Driven Calculator",
+  "slug": "menu-driven-calculator",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2176. Reverse an Array Using Pointers",
+  "slug": "reverse-an-array-using-pointers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2177. Find the Maximum Element Using Pointers",
+  "slug": "find-the-maximum-element-using-pointers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2191. Row and Column Sums of a Matrix",
+  "slug": "row-and-column-sums-of-a-matrix",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2192. Cheapest Product",
+  "slug": "cheapest-product",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2193. Set Operations on Two Groups of Numbers",
+  "slug": "set-operations-on-two-groups-of-numbers",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2199. Calculating the Sum of the Series 1 + 1/2 + 1/3 + ... + 1/N",
+  "slug": "calculating-the-sum-of-the-series-1-1-2-1-3-1-n",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2200. Counting Letters, Digits, and Spaces in a Sentence",
+  "slug": "counting-letters-digits-and-spaces-in-a-sentence",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2201. Finding the Average of an Array and Counting Elements Above It",
+  "slug": "finding-the-average-of-an-array-and-counting-elements-above-it",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2202. Checking Whether a Number Is a Palindrome Using a Function",
+  "slug": "checking-whether-a-number-is-a-palindrome-using-a-function",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "2203. Finding the Factorial of a Number Using Recursion",
+  "slug": "finding-the-factorial-of-a-number-using-recursion",
+  "difficulty": "Medium",
+  "completed": false
+ },
+ {
+  "title": "227. Max Meetings in One Room",
+  "slug": "max-meetings-in-one-room",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "228. Max Product Subarray",
+  "slug": "max-product-subarray",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "229. Selection Algorithm on Array",
+  "slug": "selection-algorithm-on-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "232. Almost Double String",
+  "slug": "almost-double-string",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "233. Mirror Image of Binary Tree",
+  "slug": "mirror-image-of-binary-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "234. Almost Palindrome",
+  "slug": "almost-palindrome",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "235. Counting Valid Bracket Expressions",
+  "slug": "counting-valid-bracket-expressions",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "236. Binary Tree Symmetry Check",
+  "slug": "binary-tree-symmetry-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "241. Alphabet to Number Mapping",
+  "slug": "alphabet-to-number-mapping",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "242. Find the Unique Number",
+  "slug": "find-the-unique-number",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "244. Find First Repeated Number",
+  "slug": "find-first-repeated-number",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "245. Triplet Sum in Array",
+  "slug": "triplet-sum-in-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "246. Find Closest to Zero Sum Pair",
+  "slug": "find-closest-to-zero-sum-pair",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "250. Palindrome Check using Stack",
+  "slug": "palindrome-check-using-stack",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "251. String Permutations",
+  "slug": "string-permutations",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "252. Find Star and Super Star Elements",
+  "slug": "find-star-and-super-star-elements",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "254. Counting Islands in a Matrix",
+  "slug": "counting-islands-in-a-matrix",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "255. Alternate Level Order Tree Traversal",
+  "slug": "alternate-level-order-tree-traversal",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "258. Zero Matrix Modification",
+  "slug": "zero-matrix-modification",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "260. LCA in BST from ordered input",
+  "slug": "lca-in-bst-from-ordered-input",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "261. Max Gift Value Path",
+  "slug": "max-gift-value-path",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "263. Count Grandchildren in Binary Tree",
+  "slug": "count-grandchildren-in-binary-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "264. 2D Array String Search",
+  "slug": "2d-array-string-search",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "266. 3-4 Number System",
+  "slug": "3-4-number-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "268. Minimize Team Weight Difference",
+  "slug": "minimize-team-weight-difference",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "272. Integer Division without Operators",
+  "slug": "integer-division-without-operators",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "274. Counting Stair Climbing Ways",
+  "slug": "counting-stair-climbing-ways",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "278. Minimum Absolute Sum Pair",
+  "slug": "minimum-absolute-sum-pair",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "280. Pair Difference Count",
+  "slug": "pair-difference-count",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "282. Rotated Sorted Array Count",
+  "slug": "rotated-sorted-array-count",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "283. Minimum Distance Between Elements",
+  "slug": "minimum-distance-between-elements",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "284. Max Stock Profit",
+  "slug": "max-stock-profit",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "285. Replace with Greatest on Right",
+  "slug": "replace-with-greatest-on-right",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "286. Optimal Currency Denomination",
+  "slug": "optimal-currency-denomination",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "289. Student with Max Total Marks",
+  "slug": "student-with-max-total-marks",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "291. Email Validation",
+  "slug": "email-validation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "292. LRU Cache Implementation",
+  "slug": "lru-cache-implementation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "294. Longest Common Subarray",
+  "slug": "longest-common-subarray",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "295. Counting Jumping Numbers",
+  "slug": "counting-jumping-numbers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "296. Lexicographically Greater String",
+  "slug": "lexicographically-greater-string",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "300. Is it a Binary Tree?",
+  "slug": "is-it-a-binary-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "301. Count Numbers with Digit N",
+  "slug": "count-numbers-with-digit-n",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "302. Three Prime Sum Representation",
+  "slug": "three-prime-sum-representation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "306. Decrypting Experiment Results",
+  "slug": "decrypting-experiment-results",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "308. Goldbach's Conjecture for N",
+  "slug": "goldbach-s-conjecture-for-n",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "313. Longest Palindromic Substring-2",
+  "slug": "longest-palindromic-substring-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "319. Sum of Primes Ending in 3",
+  "slug": "sum-of-primes-ending-in-3",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "320. Alternating Sort of Array",
+  "slug": "alternating-sort-of-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "325. Range Sum Query",
+  "slug": "range-sum-query",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "326. Range Minimum Query using Segment Tree",
+  "slug": "range-minimum-query-using-segment-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "327. Longest Common Prefix",
+  "slug": "longest-common-prefix",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "328. Smallest Number After K Deletions",
+  "slug": "smallest-number-after-k-deletions",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "329. Minimum Edit Distance",
+  "slug": "minimum-edit-distance",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "330. Edit Distance with Positional Cost",
+  "slug": "edit-distance-with-positional-cost",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "331. Partitioning Numbers",
+  "slug": "partitioning-numbers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "332. Count of Increasing Triplets",
+  "slug": "count-of-increasing-triplets",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "333. Minimum Byess in Tournament",
+  "slug": "minimum-byess-in-tournament",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "334. Range GCD Queries",
+  "slug": "range-gcd-queries",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "335. Minimum Moves for Counter Rearrangement",
+  "slug": "minimum-moves-for-counter-rearrangement",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "336. Staircase Number Sum",
+  "slug": "staircase-number-sum",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "337. Pairing Kindergarteners for Walks",
+  "slug": "pairing-kindergarteners-for-walks",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "338. Range XOR Queries",
+  "slug": "range-xor-queries",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "339. Sort by Binary Ones and Value",
+  "slug": "sort-by-binary-ones-and-value",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "340. Candy Distribution",
+  "slug": "candy-distribution",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "341. Pair Sum Check-2",
+  "slug": "pair-sum-check-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "342. Max Size Square Submatrix",
+  "slug": "max-size-square-submatrix",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "344. Min Coins for Sum",
+  "slug": "min-coins-for-sum",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "345. Minimum Cost Cherry Pattern",
+  "slug": "minimum-cost-cherry-pattern",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "346. Minimum k for Dominant Character",
+  "slug": "minimum-k-for-dominant-character",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "347. Counting Weaknesses in Roman Army",
+  "slug": "counting-weaknesses-in-roman-army",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "348. Counting Local Extrema",
+  "slug": "counting-local-extrema",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "349. ACM Team Formation",
+  "slug": "acm-team-formation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "350. Max Edges in Bipartite Tree-2",
+  "slug": "max-edges-in-bipartite-tree-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "351. Dhoni Anagram Check",
+  "slug": "dhoni-anagram-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "352. Arrange Cards with 0s and 1s",
+  "slug": "arrange-cards-with-0s-and-1s",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "353. Max of Mins after k-partitions",
+  "slug": "max-of-mins-after-k-partitions",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "354. Shortest Path in a Graph",
+  "slug": "shortest-path-in-a-graph",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "355. Square Formation Check",
+  "slug": "square-formation-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "356. Kohli's Reading Schedule",
+  "slug": "kohli-s-reading-schedule",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "357. Substring Matching Algorithm",
+  "slug": "substring-matching-algorithm",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "358. Minimum Bombs to Destroy Tanks",
+  "slug": "minimum-bombs-to-destroy-tanks",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "359. Balancing Pan Scales",
+  "slug": "balancing-pan-scales",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "360. Strange Counter Cycle",
+  "slug": "strange-counter-cycle",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "361. Longest Palindrome Removal",
+  "slug": "longest-palindrome-removal",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "362. Longest Substring Without Repeating Characters",
+  "slug": "longest-substring-without-repeating-characters",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "363. Cyclic Shift Queries on Array",
+  "slug": "cyclic-shift-queries-on-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "364. Minimum Refuels for Bus Journeys",
+  "slug": "minimum-refuels-for-bus-journeys",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "365. Minimum Cost Police Checkposts",
+  "slug": "minimum-cost-police-checkposts",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "366. Apartment Availability",
+  "slug": "apartment-availability",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "367. Min Time for Office",
+  "slug": "min-time-for-office",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "368. Fair Restaurant Bill Split",
+  "slug": "fair-restaurant-bill-split",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "374. Thanos vs. Strange: Max Clone Destruction",
+  "slug": "thanos-vs-strange-max-clone-destruction",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "376. Boxer's Diet Check",
+  "slug": "boxer-s-diet-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "377. Group Identical Recipes",
+  "slug": "group-identical-recipes",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "378. Recipe Grouping",
+  "slug": "recipe-grouping",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "383. Palindrome Ranges",
+  "slug": "palindrome-ranges",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "387. Palindrome Permutation",
+  "slug": "palindrome-permutation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "396. Batmobile Power Simulation",
+  "slug": "batmobile-power-simulation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "397. Building Demolition Queries",
+  "slug": "building-demolition-queries",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "398. Alien Invasion: Beam Combat",
+  "slug": "alien-invasion-beam-combat",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "401. Range Sum and Update",
+  "slug": "range-sum-and-update",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "404. Plates Removal and Counting",
+  "slug": "plates-removal-and-counting",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "405. Train Route Planner",
+  "slug": "train-route-planner",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "406. Range Updates and Queries",
+  "slug": "range-updates-and-queries",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "407. Minimum X for Distinct Modulo",
+  "slug": "minimum-x-for-distinct-modulo",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "408. Bracelet Restoration",
+  "slug": "bracelet-restoration",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "411. House Robberies and Baits",
+  "slug": "house-robberies-and-baits",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "412. Range Flip and Sum Queries",
+  "slug": "range-flip-and-sum-queries",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "413. Gold Statues",
+  "slug": "gold-statues",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "415. Office Staff Management",
+  "slug": "office-staff-management",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "416. Minimize Coins for Uniform Array",
+  "slug": "minimize-coins-for-uniform-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "417. Xor Queries on Subarrays",
+  "slug": "xor-queries-on-subarrays",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "418. Range GCD Queries-2",
+  "slug": "range-gcd-queries-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "420. Minimum Operations for Palindromic Array",
+  "slug": "minimum-operations-for-palindromic-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "423. Alien Election Simulation",
+  "slug": "alien-election-simulation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "424. Longest Common Prefix-2",
+  "slug": "longest-common-prefix-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "425. Longest Common Presuf",
+  "slug": "longest-common-presuf",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "426. Knight's Movement on a Chessboard",
+  "slug": "knight-s-movement-on-a-chessboard",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "427. Pawn Movement on a Chessboard",
+  "slug": "pawn-movement-on-a-chessboard",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "429. Heap Type Checker",
+  "slug": "heap-type-checker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "430. Max Nodes in Binary Heap of Height H",
+  "slug": "max-nodes-in-binary-heap-of-height-h",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "431. Prefix-Free String Checker",
+  "slug": "prefix-free-string-checker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "432. String Querying",
+  "slug": "string-querying",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "433. Maximal Palindrome from Lists",
+  "slug": "maximal-palindrome-from-lists",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "434. Minimal Remaining String",
+  "slug": "minimal-remaining-string",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "436. Max XOR Queries",
+  "slug": "max-xor-queries",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "437. Phonebook Prefix Consistency",
+  "slug": "phonebook-prefix-consistency",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "438. Password Prefix Security Check",
+  "slug": "password-prefix-security-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "439. Autocomplete",
+  "slug": "autocomplete",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "440. Lexicographically Smallest String-2",
+  "slug": "lexicographically-smallest-string-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "441. Prime Count in Range",
+  "slug": "prime-count-in-range",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "443. 3-Length Subsets",
+  "slug": "3-length-subsets",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "444. String Partitioning",
+  "slug": "string-partitioning",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "447. 13-D Dice Outcomes",
+  "slug": "13-d-dice-outcomes",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "451. Password Suggestion System",
+  "slug": "password-suggestion-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "452. Word List Sentence Checker",
+  "slug": "word-list-sentence-checker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "454. Palindromic Number from Concatenation",
+  "slug": "palindromic-number-from-concatenation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "459. Maze Path Count",
+  "slug": "maze-path-count",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "460. Maximal Palindrome Length",
+  "slug": "maximal-palindrome-length",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "461. Building Color Combinations",
+  "slug": "building-color-combinations",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "465. Nth Term of a Sequence",
+  "slug": "nth-term-of-a-sequence",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "466. Minimum Jumps to Array End",
+  "slug": "minimum-jumps-to-array-end",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "468. Knapsack Problem",
+  "slug": "knapsack-problem",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "471. Minimize Max Pages per Student",
+  "slug": "minimize-max-pages-per-student",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "473. Course with Max Students",
+  "slug": "course-with-max-students",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "477. Counting Filled Buckets",
+  "slug": "counting-filled-buckets",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "481. Josephus Problem",
+  "slug": "josephus-problem",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "484. Pythagorean Triplet Check",
+  "slug": "pythagorean-triplet-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "485. Smallest Missing Non-Sum Number",
+  "slug": "smallest-missing-non-sum-number",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "487. Triplet Product IDs",
+  "slug": "triplet-product-ids",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "488. Sunset View from Buildings",
+  "slug": "sunset-view-from-buildings",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "489. Subset Check of Employee IDs",
+  "slug": "subset-check-of-employee-ids",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "491. Find Leaders in an Array",
+  "slug": "find-leaders-in-an-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "496. Track Allocation for Athletic Championship",
+  "slug": "track-allocation-for-athletic-championship",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "498. Sort String while preserving case",
+  "slug": "sort-string-while-preserving-case",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "499. Bubble Sort and Marks Deduction",
+  "slug": "bubble-sort-and-marks-deduction",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "501. Sort Even Indexed Elements",
+  "slug": "sort-even-indexed-elements",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "502. Sort Even and Odd Indices",
+  "slug": "sort-even-and-odd-indices",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "503. Sort Subarray in Descending Order",
+  "slug": "sort-subarray-in-descending-order",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "504. Sort by Frequency then Value-2",
+  "slug": "sort-by-frequency-then-value-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "509. Minimum Swaps to Sort Array",
+  "slug": "minimum-swaps-to-sort-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "511. Sort by Set Bits",
+  "slug": "sort-by-set-bits",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "514. Weapon Power Sort",
+  "slug": "weapon-power-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "519. JARVIS Terrace Navigation",
+  "slug": "jarvis-terrace-navigation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "527. Matrix Inverse for Car Unlock",
+  "slug": "matrix-inverse-for-car-unlock",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "529. Minimum Steps in a Weighted Maze",
+  "slug": "minimum-steps-in-a-weighted-maze",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "530. Robot Path Finding",
+  "slug": "robot-path-finding",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "532. MineSweeper Score Calculation",
+  "slug": "minesweeper-score-calculation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "536. Matrix Password Cracker",
+  "slug": "matrix-password-cracker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "557. Matrix Neighbour Sum Replacement",
+  "slug": "matrix-neighbour-sum-replacement",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "558. Water Tank Level Stabilization",
+  "slug": "water-tank-level-stabilization",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "561. Solve 4x4 Sudoku",
+  "slug": "solve-4x4-sudoku",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "563. Dinosaur Maze Escape Paths",
+  "slug": "dinosaur-maze-escape-paths",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "573. Longest Consecutive Subsequence",
+  "slug": "longest-consecutive-subsequence",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "579. Subarray Count with Max > k",
+  "slug": "subarray-count-with-max-k",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "580. Largest Number From Array",
+  "slug": "largest-number-from-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "581. Maximize Ones by Swapping",
+  "slug": "maximize-ones-by-swapping",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "583. Max Length Subarray with Sum Zero",
+  "slug": "max-length-subarray-with-sum-zero",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "584. Nth DFG Number",
+  "slug": "nth-dfg-number",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "585. Cricket Partnership Runs",
+  "slug": "cricket-partnership-runs",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "588. Array Right Rotation",
+  "slug": "array-right-rotation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "590. Sum of Number Permutations",
+  "slug": "sum-of-number-permutations",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "592. Min Strike Rate Difference",
+  "slug": "min-strike-rate-difference",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "594. Smallest Palindromic Number",
+  "slug": "smallest-palindromic-number",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "595. Median Equalization",
+  "slug": "median-equalization",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "612. Bride Selection",
+  "slug": "bride-selection",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "613. Skateboard Pathfinding",
+  "slug": "skateboard-pathfinding",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "616. Park Safety Index",
+  "slug": "park-safety-index",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "629. Bracket Balance Check",
+  "slug": "bracket-balance-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "630. Postfix Expression Evaluation-2",
+  "slug": "postfix-expression-evaluation-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "631. Lexicographically Greater String-2",
+  "slug": "lexicographically-greater-string-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "632. Max Length of Balanced Parentheses",
+  "slug": "max-length-of-balanced-parentheses",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "638. Maximal Rectangle Area",
+  "slug": "maximal-rectangle-area",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "639. Leaf Nodes in Preorder Traversal",
+  "slug": "leaf-nodes-in-preorder-traversal",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "640. Preorder to Postorder BST",
+  "slug": "preorder-to-postorder-bst",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "641. Rot Card Game Arrangement",
+  "slug": "rot-card-game-arrangement",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "642. Sorted Pen Arrangement",
+  "slug": "sorted-pen-arrangement",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "643. Level Order Traversal of Binary Tree",
+  "slug": "level-order-traversal-of-binary-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "645. Postfix Expression Evaluation",
+  "slug": "postfix-expression-evaluation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "646. Path Finding in a Grid",
+  "slug": "path-finding-in-a-grid",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "647. Max Consecutive Increases",
+  "slug": "max-consecutive-increases",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "657. Minimum Insertions for Palindrome",
+  "slug": "minimum-insertions-for-palindrome",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "661. String Rotation Anagram Check",
+  "slug": "string-rotation-anagram-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "666. Zig-Zag Tree Traversal",
+  "slug": "zig-zag-tree-traversal",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "667. Preorder to Postorder BST-2",
+  "slug": "preorder-to-postorder-bst-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "671. Rotated String Anagram Check",
+  "slug": "rotated-string-anagram-check",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "678. Password Decryption",
+  "slug": "password-decryption",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "679. Prefix Expression Evaluation",
+  "slug": "prefix-expression-evaluation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "684. Counting Sort String",
+  "slug": "counting-sort-string",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "689. Longest Substring with K Unique Characters",
+  "slug": "longest-substring-with-k-unique-characters",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "690. Lowest Number After Removal",
+  "slug": "lowest-number-after-removal",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "694. String Rearrangement",
+  "slug": "string-rearrangement",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "706. Numbers with Consecutive Digit Difference 1",
+  "slug": "numbers-with-consecutive-digit-difference-1",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "734. Print First N Numbers of Series",
+  "slug": "print-first-n-numbers-of-series",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "735. Ideal Couples Count",
+  "slug": "ideal-couples-count",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "785. Most Frequent Integer",
+  "slug": "most-frequent-integer",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "826. Remove Duplicate Characters-2",
+  "slug": "remove-duplicate-characters-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "827. Min Distance in a Tree",
+  "slug": "min-distance-in-a-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "831. Delete Node in Linked List",
+  "slug": "delete-node-in-linked-list",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "838. Zero-Sum Sublist Deletion",
+  "slug": "zero-sum-sublist-deletion",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "849. Nearest Element with Higher Frequency",
+  "slug": "nearest-element-with-higher-frequency",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "854. Trapping Rain Water using Stack",
+  "slug": "trapping-rain-water-using-stack",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "931. String Character Separation",
+  "slug": "string-character-separation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "932. Formatted Float Output",
+  "slug": "formatted-float-output",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "933. String Character Separation-2",
+  "slug": "string-character-separation-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "934. String Character Separation-3",
+  "slug": "string-character-separation-3",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "945. LCM without GCD",
+  "slug": "lcm-without-gcd",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "950. BST Leaf Sum",
+  "slug": "bst-leaf-sum",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "951. Binary Tree to Sum Tree",
+  "slug": "binary-tree-to-sum-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "952. Knapsack Problem-2",
+  "slug": "knapsack-problem-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "953. Poker Hand Ranking",
+  "slug": "poker-hand-ranking",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "954. Jolly Jumper Sequence Checker",
+  "slug": "jolly-jumper-sequence-checker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "955. Erdos Numbers Calculation",
+  "slug": "erdos-numbers-calculation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "956. Cryptanalysis via Dictionary",
+  "slug": "cryptanalysis-via-dictionary",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "958. Reachability in a Social Network",
+  "slug": "reachability-in-a-social-network",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1015. Column Sum of a Matrix",
+  "slug": "column-sum-of-a-matrix",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1016. Row Sum of a Matrix",
+  "slug": "row-sum-of-a-matrix",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1017. Column Sum Divisibility by 3",
+  "slug": "column-sum-divisibility-by-3",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1035. Food Delivery Path Optimization",
+  "slug": "food-delivery-path-optimization",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1036. Library Rack Allocation System",
+  "slug": "library-rack-allocation-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1071. Sum and Subtraction of Series",
+  "slug": "sum-and-subtraction-of-series",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1074. Maximizing Average Superhero Power",
+  "slug": "maximizing-average-superhero-power",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1075. Unique Integer Factor Combinations",
+  "slug": "unique-integer-factor-combinations",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1076. Cryptanalysis of Integer Encryption",
+  "slug": "cryptanalysis-of-integer-encryption",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1113. Python Shape Area and Perimeter",
+  "slug": "python-shape-area-and-perimeter",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1114. Library Resource Borrowing System",
+  "slug": "library-resource-borrowing-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1115. Python Pet Simulation with Polymorphism",
+  "slug": "python-pet-simulation-with-polymorphism",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1216. Bank System with Variable Scope",
+  "slug": "bank-system-with-variable-scope",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1218. Array and Pointer Operations",
+  "slug": "array-and-pointer-operations",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1221. Multi-Product Cost & Profit Calculator",
+  "slug": "multi-product-cost-profit-calculator",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1223. Efficient Array Rotation",
+  "slug": "efficient-array-rotation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1224. Character Frequency Counter",
+  "slug": "character-frequency-counter",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1225. 2D Array 90-Degree Rotation",
+  "slug": "2d-array-90-degree-rotation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1227. String Manipulation with Pointers",
+  "slug": "string-manipulation-with-pointers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1230. Dynamic Array Manipulation with Pointers",
+  "slug": "dynamic-array-manipulation-with-pointers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1231. Dynamic 2D Array Transpose",
+  "slug": "dynamic-2d-array-transpose",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1232. L-values, Arrays, and Pointers",
+  "slug": "l-values-arrays-and-pointers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1233. Dynamic Matrix Multiplication",
+  "slug": "dynamic-matrix-multiplication",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1234. Dynamic Circular Buffer",
+  "slug": "dynamic-circular-buffer",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1235. Sparse Matrix Operations",
+  "slug": "sparse-matrix-operations",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1443. Sorting Algorithm Time Complexity Analysis",
+  "slug": "sorting-algorithm-time-complexity-analysis",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1484. Final Keyword: Immutable 2D Point",
+  "slug": "final-keyword-immutable-2d-point",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1496. General N-ary Tree Implementation",
+  "slug": "general-n-ary-tree-implementation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1497. Binary Tree Traversals",
+  "slug": "binary-tree-traversals",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1515. Maximum Independent Set in a Tree",
+  "slug": "maximum-independent-set-in-a-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1516. Minimum Cost Assignment with Bitmask DP",
+  "slug": "minimum-cost-assignment-with-bitmask-dp",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1517. Tree Path Sum Queries",
+  "slug": "tree-path-sum-queries",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1518. Java New Keyword: Dynamic Array Creation",
+  "slug": "java-new-keyword-dynamic-array-creation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1519. Pointer-driven Array Algorithms",
+  "slug": "pointer-driven-array-algorithms",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1520. Job Scheduling System with Dynamic Array Optimization",
+  "slug": "job-scheduling-system-with-dynamic-array-optimization",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1521. Log Level Counter",
+  "slug": "log-level-counter",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1522. Radix Sort Implementation-2",
+  "slug": "radix-sort-implementation-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1523. Implement Bucket Sort in Java",
+  "slug": "implement-bucket-sort-in-java",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1524. Level Order Traversal of Binary Tree-2",
+  "slug": "level-order-traversal-of-binary-tree-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1525. Check Balanced Binary Tree",
+  "slug": "check-balanced-binary-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1526. Insert Node into Binary Search Tree",
+  "slug": "insert-node-into-binary-search-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1527. Search in Binary Search Tree",
+  "slug": "search-in-binary-search-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1528. Delete Node in a Binary Search Tree",
+  "slug": "delete-node-in-a-binary-search-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1529. Find Minimum in BST",
+  "slug": "find-minimum-in-bst",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1530. Validate Binary Search Tree",
+  "slug": "validate-binary-search-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1531. Inorder Successor in Binary Search Tree",
+  "slug": "inorder-successor-in-binary-search-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1532. AVL Tree: Delete Node and Rebalance",
+  "slug": "avl-tree-delete-node-and-rebalance",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1533. AVL Tree Rotations Demonstration",
+  "slug": "avl-tree-rotations-demonstration",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1534. Red-Black Tree Node Insertion",
+  "slug": "red-black-tree-node-insertion",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1535. Delete Node from a Red-Black Tree",
+  "slug": "delete-node-from-a-red-black-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1536. Red-Black Tree Key Search",
+  "slug": "red-black-tree-key-search",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1537. Trie Implementation",
+  "slug": "trie-implementation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1538. BST Minimum Difference",
+  "slug": "bst-minimum-difference",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1539. B-Tree Insertion and Traversal",
+  "slug": "b-tree-insertion-and-traversal",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1540. B-Tree Deletion with Balance Maintenance",
+  "slug": "b-tree-deletion-with-balance-maintenance",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1541. Single Source Shortest Path (SSSP)",
+  "slug": "single-source-shortest-path-sssp",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1542. Detect Negative Weight Cycle",
+  "slug": "detect-negative-weight-cycle",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1543. Topological Sort: Course Schedule",
+  "slug": "topological-sort-course-schedule",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1544. Network Delay Time",
+  "slug": "network-delay-time",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1545. Bellman-Ford SSSP with Negative Edges & Cycles",
+  "slug": "bellman-ford-sssp-with-negative-edges-cycles",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1546. All Topological Sorts of a DAG",
+  "slug": "all-topological-sorts-of-a-dag",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1547. Minimum Cost Path in a Grid",
+  "slug": "minimum-cost-path-in-a-grid",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1548. SPFA Shortest Path",
+  "slug": "spfa-shortest-path",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1549. Topological Sort for Task Ordering",
+  "slug": "topological-sort-for-task-ordering",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1550. Critical Path via Topological Sort",
+  "slug": "critical-path-via-topological-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1551. Longest Proper Prefix Suffix",
+  "slug": "longest-proper-prefix-suffix",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1552. Rabin-Karp Plagiarism Detection",
+  "slug": "rabin-karp-plagiarism-detection",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1553. Distinct Substrings using Z Algorithm",
+  "slug": "distinct-substrings-using-z-algorithm",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1554. KMP Pattern Matching",
+  "slug": "kmp-pattern-matching",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1555. Repeating Substring Detection (KMP)",
+  "slug": "repeating-substring-detection-kmp",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1556. Minimum Prepended Chars for Palindrome",
+  "slug": "minimum-prepended-chars-for-palindrome",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1557. Rabin-Karp Multiple Pattern Search",
+  "slug": "rabin-karp-multiple-pattern-search",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1558. DNA Pattern Matching with Rabin-Karp",
+  "slug": "dna-pattern-matching-with-rabin-karp",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1559. Pattern Occurrences using Z Algorithm",
+  "slug": "pattern-occurrences-using-z-algorithm",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1560. Wildcard Pattern Matching with Z Algorithm",
+  "slug": "wildcard-pattern-matching-with-z-algorithm",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1561. Segment Tree: Range Sum Query with Updates",
+  "slug": "segment-tree-range-sum-query-with-updates",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1562. Segment Tree Range XOR & Point Updates",
+  "slug": "segment-tree-range-xor-point-updates",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1563. Range GCD Query using Segment Tree",
+  "slug": "range-gcd-query-using-segment-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1564. Segment Tree: Range Count > X with Updates",
+  "slug": "segment-tree-range-count-x-with-updates",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1565. Prefix Sum with Fenwick Tree",
+  "slug": "prefix-sum-with-fenwick-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1566. Range Sum Query with Updates (Fenwick Tree)",
+  "slug": "range-sum-query-with-updates-fenwick-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1567. Counting Inversions with Fenwick Tree",
+  "slug": "counting-inversions-with-fenwick-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1568. Range Minimum Query with Lazy Updates",
+  "slug": "range-minimum-query-with-lazy-updates",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1569. Segment Tree: Range Sum of Powers (Lazy Prop)",
+  "slug": "segment-tree-range-sum-of-powers-lazy-prop",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1570. Range Sum of Even Numbers (Lazy Segment Tree)",
+  "slug": "range-sum-of-even-numbers-lazy-segment-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1571. Kruskal's MST Calculation",
+  "slug": "kruskal-s-mst-calculation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1572. Minimum Cost to Connect Cities",
+  "slug": "minimum-cost-to-connect-cities",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1573. Kruskal's MST with Disjoint Set",
+  "slug": "kruskal-s-mst-with-disjoint-set",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1574. Reverse Delete Algorithm for MST",
+  "slug": "reverse-delete-algorithm-for-mst",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1575. Prim's Algorithm for Dense Graph MST",
+  "slug": "prim-s-algorithm-for-dense-graph-mst",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1576. Minimum Cost to Connect Cities-2",
+  "slug": "minimum-cost-to-connect-cities-2",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1577. Minimum Spanning Tree in a Grid",
+  "slug": "minimum-spanning-tree-in-a-grid",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1578. Max Bipartite Matching w/ Network Flow",
+  "slug": "max-bipartite-matching-w-network-flow",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1579. Edmonds-Karp Algorithm for Maximum Flow",
+  "slug": "edmonds-karp-algorithm-for-maximum-flow",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1580. Critical Network Connections",
+  "slug": "critical-network-connections",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1581. Sorted Array to Height-Balanced BST",
+  "slug": "sorted-array-to-height-balanced-bst",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1582. Print Root-to-Leaf Paths in General Tree",
+  "slug": "print-root-to-leaf-paths-in-general-tree",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1583. Shortest Unique Prefixes",
+  "slug": "shortest-unique-prefixes",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1584. Red-Black Tree Zigzag Order",
+  "slug": "red-black-tree-zigzag-order",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1585. Counting Sort for Limited Range Array",
+  "slug": "counting-sort-for-limited-range-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1586. Quick Sort Strings Lexicographically",
+  "slug": "quick-sort-strings-lexicographically",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1587. Recursive Bubble Sort",
+  "slug": "recursive-bubble-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1588. Bucket Sort for Linked Lists",
+  "slug": "bucket-sort-for-linked-lists",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1589. Radix Sort with Negative Numbers",
+  "slug": "radix-sort-with-negative-numbers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1590. Minimize Number by Removing K Digits",
+  "slug": "minimize-number-by-removing-k-digits",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1592. Warehouse Inventory Optimization",
+  "slug": "warehouse-inventory-optimization",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1595. Survivor Grid",
+  "slug": "survivor-grid",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1597. Manages and Analyzes a dynamically sized array",
+  "slug": "manages-and-analyzes-a-dynamically-sized-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1606. Type Qualifiers: restrict",
+  "slug": "type-qualifiers-restrict",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1607. Derived data types (array, pointer)",
+  "slug": "derived-data-types-array-pointer",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1617. C, Selection Sort, Strings, Sorting",
+  "slug": "c-selection-sort-strings-sorting",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1619. Sort Words Alphabetically Using Insertion Sort",
+  "slug": "sort-words-alphabetically-using-insertion-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1621. C Merge Sort",
+  "slug": "c-merge-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1623. Multifunction Aggregator",
+  "slug": "multifunction-aggregator",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1624. Quick Sort, Sorting, Arrays",
+  "slug": "quick-sort-sorting-arrays",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1625. Quick Sort, Sorting, Employee Records",
+  "slug": "quick-sort-sorting-employee-records",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1628. Pointers and Functions",
+  "slug": "pointers-and-functions",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1629. Linked Lists",
+  "slug": "linked-lists",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1633. Linked List, Cycle Detection",
+  "slug": "linked-list-cycle-detection",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1641. Employee Salary Calculator (Method Overloading)",
+  "slug": "employee-salary-calculator-method-overloading",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1649. Inheritance, Super, Constructors",
+  "slug": "inheritance-super-constructors",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1653. Insurance Premium Calculator",
+  "slug": "insurance-premium-calculator",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1655. Interface, Multiple Inheritance, File Detection",
+  "slug": "interface-multiple-inheritance-file-detection",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1659. Multimedia Center with Interfaces (Auto-detection)",
+  "slug": "multimedia-center-with-interfaces-auto-detection",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1664. Java, Summing Values in a Map",
+  "slug": "java-summing-values-in-a-map",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1669. Stack Implementation",
+  "slug": "stack-implementation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1744. E-commerce platform",
+  "slug": "e-commerce-platform",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1758. Complex Number Operations Using Structures",
+  "slug": "complex-number-operations-using-structures",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1760. Bank Account Management System",
+  "slug": "bank-account-management-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1840. Maximum Difference in an Array",
+  "slug": "maximum-difference-in-an-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1847. City Grid Traffic Optimization Problem",
+  "slug": "city-grid-traffic-optimization-problem",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1849. Warehouse Inventory Management",
+  "slug": "warehouse-inventory-management",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1856. Job Scheduling to Maximize Profit",
+  "slug": "job-scheduling-to-maximize-profit",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1863. Search an Element in a Singly Linked List",
+  "slug": "search-an-element-in-a-singly-linked-list",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1870. Smart Media Queue Manager Using Doubly Linked List",
+  "slug": "smart-media-queue-manager-using-doubly-linked-list",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1901. Smart Parking Lot Allocation System",
+  "slug": "smart-parking-lot-allocation-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1917. Social Media Viral Spread Analyzer",
+  "slug": "social-media-viral-spread-analyzer",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1923. AI Stock Market Pattern Analyzer",
+  "slug": "ai-stock-market-pattern-analyzer",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1986. Safe Division Checker",
+  "slug": "safe-division-checker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1991. Multiple Exception Handler",
+  "slug": "multiple-exception-handler",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1992. Balanced Parenthesis Checker",
+  "slug": "balanced-parenthesis-checker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "1993. Balanced Symbols Checker",
+  "slug": "balanced-symbols-checker",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2002. Count Vowels in a String",
+  "slug": "count-vowels-in-a-string",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2007. Vehicle Management System",
+  "slug": "vehicle-management-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2008. University Management System",
+  "slug": "university-management-system",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2013. Notification System Using Abstract Class and Interface",
+  "slug": "notification-system-using-abstract-class-and-interface",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2014. Vehicle Polymorphism Using Interface",
+  "slug": "vehicle-polymorphism-using-interface",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2016. Rotten Oranges",
+  "slug": "rotten-oranges",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2017. Shortest Path in a Binary Maze",
+  "slug": "shortest-path-in-a-binary-maze",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2022. Replace a Word in a Sentence",
+  "slug": "replace-a-word-in-a-sentence",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2023. Remove Duplicate Characters from a String",
+  "slug": "remove-duplicate-characters-from-a-string",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2028. Count Total Nodes in BST",
+  "slug": "count-total-nodes-in-bst",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2029. Find Height of BST",
+  "slug": "find-height-of-bst",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2034. Merge Sort",
+  "slug": "merge-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2035. Quick Sort",
+  "slug": "quick-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2041. Count Frequency of an Element",
+  "slug": "count-frequency-of-an-element",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2042. Remove Even Numbers Using Iterator",
+  "slug": "remove-even-numbers-using-iterator",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2044. Runnable Message Printer",
+  "slug": "runnable-message-printer",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2048. File Write Read and Character Count",
+  "slug": "file-write-read-and-character-count",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2053. Binary Search Tree - Find Minimum and Maximum",
+  "slug": "binary-search-tree-find-minimum-and-maximum",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2054. Binary Search Tree - Find Height",
+  "slug": "binary-search-tree-find-height",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2059. Bank Account Transaction",
+  "slug": "bank-account-transaction",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2060. Department-wise Salary Report",
+  "slug": "department-wise-salary-report",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2066. Sort Characters by Frequency",
+  "slug": "sort-characters-by-frequency",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2076. Shortest Path with Negative Edges",
+  "slug": "shortest-path-with-negative-edges",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2077. Cheapest Route with at Most K Stops",
+  "slug": "cheapest-route-with-at-most-k-stops",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2093. Difference Between the Square of the Sum and the Sum of the Squares",
+  "slug": "difference-between-the-square-of-the-sum-and-the-sum-of-the-squares",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2094. Reversing a 5-Digit Integer and Summing It With the Original",
+  "slug": "reversing-a-5-digit-integer-and-summing-it-with-the-original",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2095. Generating the First Eight Fibonacci Numbers and Their Sum",
+  "slug": "generating-the-first-eight-fibonacci-numbers-and-their-sum",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2096. Converting Total Seconds into Hours, Minutes and Seconds",
+  "slug": "converting-total-seconds-into-hours-minutes-and-seconds",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2097. Swapping the First and Last Digits of a 4-Digit Number",
+  "slug": "swapping-the-first-and-last-digits-of-a-4-digit-number",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2098. Using a Global Variable Alongside Local Input",
+  "slug": "using-a-global-variable-alongside-local-input",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2099. Variable Scope Within a Nested Block",
+  "slug": "variable-scope-within-a-nested-block",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2100. Computing a Weighted Average with Explicit Type Casting",
+  "slug": "computing-a-weighted-average-with-explicit-type-casting",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2101. Understanding Macro Expansion Pitfalls with Precedence",
+  "slug": "understanding-macro-expansion-pitfalls-with-precedence",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2102. Converting a Lowercase Letter to Uppercase Using ASCII Arithmetic",
+  "slug": "converting-a-lowercase-letter-to-uppercase-using-ascii-arithmetic",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2109. Dijkstra Algorithm \u2013 Shortest Path and Route",
+  "slug": "dijkstra-algorithm-shortest-path-and-route",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2110. Kruskals-Algorithm-MST-Edges-and-Cost",
+  "slug": "kruskals-algorithm-mst-edges-and-cost",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2121. Finding the Largest of N Numbers Entered by the User",
+  "slug": "finding-the-largest-of-n-numbers-entered-by-the-user",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2122. Counting Positive, Negative, and Zero Values Among N Numbers",
+  "slug": "counting-positive-negative-and-zero-values-among-n-numbers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2123. Printing a Right-Angled Triangle Pattern of Stars",
+  "slug": "printing-a-right-angled-triangle-pattern-of-stars",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2124. Checking Whether a Number Is Prime",
+  "slug": "checking-whether-a-number-is-prime",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2125. Finding the GCD of Two Numbers",
+  "slug": "finding-the-gcd-of-two-numbers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2136. Addition of Two Matrices",
+  "slug": "addition-of-two-matrices",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2137. Sorting an Array in Ascending Order Using Bubble Sort",
+  "slug": "sorting-an-array-in-ascending-order-using-bubble-sort",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2138. Searching for an Element in an Array Using Linear Search",
+  "slug": "searching-for-an-element-in-an-array-using-linear-search",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2139. Concatenating Two Strings Without Using strcat()",
+  "slug": "concatenating-two-strings-without-using-strcat",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2140. Counting the Frequency of a Character in a String",
+  "slug": "counting-the-frequency-of-a-character-in-a-string",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2155. Calculating an Electricity Bill Using a Function",
+  "slug": "calculating-an-electricity-bill-using-a-function",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2156. Finding the Power of a Number Using Recursion",
+  "slug": "finding-the-power-of-a-number-using-recursion",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2157. Checking Whether a Number Is a Perfect Number Using a Function",
+  "slug": "checking-whether-a-number-is-a-perfect-number-using-a-function",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2158. Calculating nCr Using a Factorial Function",
+  "slug": "calculating-ncr-using-a-factorial-function",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2159. Finding the Number of Days in a Month Using Functions",
+  "slug": "finding-the-number-of-days-in-a-month-using-functions",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2178. Rotate an Array Using Pointers",
+  "slug": "rotate-an-array-using-pointers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2179. Remove Duplicate Elements Using Dynamic Memory Allocation",
+  "slug": "remove-duplicate-elements-using-dynamic-memory-allocation",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2180. Find the Second Largest Distinct Element Using Pointers",
+  "slug": "find-the-second-largest-distinct-element-using-pointers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2181. Reverse Words in a String Using Pointers",
+  "slug": "reverse-words-in-a-string-using-pointers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2182. Dynamic Matrix Transpose Using Double Pointers",
+  "slug": "dynamic-matrix-transpose-using-double-pointers",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2183. Dynamic Array Expansion Using realloc()",
+  "slug": "dynamic-array-expansion-using-realloc",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2184. Find the Frequency of Elements Using calloc()",
+  "slug": "find-the-frequency-of-elements-using-calloc",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2185. Employee Salary Management Using Structures and DMA",
+  "slug": "employee-salary-management-using-structures-and-dma",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2186. Student Record Management Using realloc()",
+  "slug": "student-record-management-using-realloc",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2187. Dynamic Matrix Allocation and Row-Wise Sum Using calloc()",
+  "slug": "dynamic-matrix-allocation-and-row-wise-sum-using-calloc",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2188. Student Record Management Using a Linked List",
+  "slug": "student-record-management-using-a-linked-list",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2204. Converting a Decimal Number to Binary Using an Array",
+  "slug": "converting-a-decimal-number-to-binary-using-an-array",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2205. Finding the Nth Fibonacci Term Using Recursion",
+  "slug": "finding-the-nth-fibonacci-term-using-recursion",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2206. Finding Row Sums and Column Sums of a Matrix",
+  "slug": "finding-row-sums-and-column-sums-of-a-matrix",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2207. Checking Whether Two Words Are Anagrams",
+  "slug": "checking-whether-two-words-are-anagrams",
+  "difficulty": "Hard",
+  "completed": false
+ },
+ {
+  "title": "2208. Printing All Prime Numbers up to N Using a Function",
+  "slug": "printing-all-prime-numbers-up-to-n-using-a-function",
+  "difficulty": "Hard",
+  "completed": false
+ }
+]

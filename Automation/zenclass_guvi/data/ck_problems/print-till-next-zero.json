@@ -1,0 +1,17 @@
+{
+ "title": "40. Print till next zero",
+ "slug": "print-till-next-zero",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n40. Print till next zero\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N followed by N elements, if the number '0' occurs, print the proceeding numbers until the next '0' is encountered. If there are no balancing 0's, print -1.",
+ "input_spec": "The input consists of an integer N, followed by N elements. N is constrained such that 1 < N <= 100000.",
+ "output_spec": "Print the numbers between the first two occurrences of '0'. If there are no two '0's, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n1 1 1 0 1 0 1 1 0 1",
+   "output": "1 1 1"
+  }
+ ],
+ "raw": ""
+}
