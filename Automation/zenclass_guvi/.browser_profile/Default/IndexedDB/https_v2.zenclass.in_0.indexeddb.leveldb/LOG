@@ -11,3 +11,4 @@
 2026/11/10-23:54:32.918 10f55a compacted to: files[ 0 1 1 0 0 0 0 ]
 2026/11/10-23:54:32.919 10f55a Delete type=2 #10
 2026/11/10-23:54:32.919 10f55a Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 97 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/11/10-23:54:49.725 10f55c Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
