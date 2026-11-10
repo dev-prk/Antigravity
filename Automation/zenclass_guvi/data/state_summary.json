@@ -1,58 +1,66 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:55:27.341280+00:00",
+  "last_updated": "2026-11-10T22:56:07.836517+00:00",
   "summary": {
     "total_discovered": 1,
-    "total_completed": 1,
+    "total_completed": 0,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 0,
-    "success_rate_percent": 100.0,
-    "total_time_spent_seconds": 0.51,
+    "total_failed": 1,
+    "success_rate_percent": 0.0,
+    "total_time_spent_seconds": 0.0,
     "by_platform": {
-      "zenclass_projects": {
+      "guvi": {
         "total_discovered": 1,
-        "total_completed": 1,
+        "total_completed": 0,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 0,
-        "success_rate_percent": 100.0,
-        "time_spent_seconds": 0.51
+        "total_failed": 1,
+        "success_rate_percent": 0.0,
+        "time_spent_seconds": 0.0
       }
     },
     "by_category": {
-      "Project": {
+      "CodeKata": {
         "total": 1,
-        "completed": 1,
-        "success_rate_percent": 100.0
+        "completed": 0,
+        "success_rate_percent": 0.0
       }
     },
-    "human_intervention_issues": []
+    "human_intervention_issues": [
+      {
+        "task_id": "guvi-threaded-writes",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Threaded Writes",
+        "status": "failed",
+        "attempts": 10,
+        "failure_reason": "Worker error 10",
+        "next_action": "Requires review",
+        "url": ""
+      }
+    ]
   },
   "tasks": [
     {
-      "task_id": "proj-sub-1",
-      "platform": "zenclass_projects",
-      "task_category": "Project",
-      "title": "Task Manager",
+      "task_id": "guvi-threaded-writes",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Threaded Writes",
       "url": "",
-      "status": "COMPLETED",
-      "attempt_count": 1,
-      "result": "SUBMITTED",
-      "failure_reason": null,
-      "next_action": "NONE",
-      "time_spent_seconds": 0.511,
-      "metadata": {
-        "submitted_urls": {
-          "github_Url": "https://github.com/devsh/taskmgr"
-        }
-      },
-      "created_at": "2026-11-10T22:55:26.827458+00:00",
-      "updated_at": "2026-11-10T22:55:27.340963+00:00",
-      "timestamp": "2026-11-10T22:55:27.340963+00:00",
-      "attempts": 1,
-      "category": "Project"
+      "status": "failed",
+      "attempt_count": 10,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker error 10",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {},
+      "created_at": "2026-11-10T22:56:07.831523+00:00",
+      "updated_at": "2026-11-10T22:56:07.836264+00:00",
+      "timestamp": "2026-11-10T22:56:07.836264+00:00",
+      "attempts": 10,
+      "category": "CodeKata"
     }
   ]
 }

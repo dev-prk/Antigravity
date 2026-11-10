@@ -368,7 +368,7 @@ def test_concurrency(results: TestResults):
         # Seed 200 tasks
         for i in range(200):
             diff = ["Easy", "Medium", "Hard"][i % 3]
-            sm.register_task(
+            sm.record_task(
                 task_id=f"concurrent-{i:03d}",
                 platform="guvi_codekata",
                 category="Basics",
