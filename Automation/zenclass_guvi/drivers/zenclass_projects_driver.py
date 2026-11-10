@@ -1080,9 +1080,8 @@ class ZenClassProjectsDriver(BaseDriver):
                 queue = [DiscoveredProject(project_id=project_id, title=project_id, column="active")]
         else:
             for p in discovered:
-                if p.action_type in ("SUBMIT", "RESUBMIT") or p.column in ("active", "pending"):
-                    if p.action_type != "ATTEND":
-                        queue.append(p)
+                if p.action_type in ("SUBMIT", "RESUBMIT", "ATTEND") or p.column in ("active", "pending"):
+                    queue.append(p)
 
         if limit is not None and limit > 0:
             queue = queue[:limit]
@@ -1098,6 +1097,19 @@ class ZenClassProjectsDriver(BaseDriver):
 
             if project.action_type == "ATTEND":
                 logger.warning(
+                    f"Project '{project.project_id}' is an external interactive assessment. Marking BLOCKED."
+                )
+                if self.state_manager:
+                    self.state_manager.update_task_status(
+                        task_id=project.project_id,
+                        status=TaskStatus.BLOCKED.value,
+                        result=TaskResult.AWAITING_INPUT.value,
+                        failure_reason="External assessment requires interactive test session",
+                        next_action="AWAIT_EXTERNAL_ATTENDANCE",
+                    )
+                blocked_count += 1
+                continue
+
                     f"Project '{project.project_id}' is an external interactive assessment. Marking BLOCKED."
                 )
                 blocked_count += 1
