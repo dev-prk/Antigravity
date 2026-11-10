@@ -224,7 +224,6 @@ class TestCatalogCrawlingStress(unittest.TestCase):
         next_btn = MagicMock()
         next_btn.get_attribute.side_effect = lambda attr: "disabled" if attr == "disabled" else None
         
-        # Only return next_btn for pagination selector; popup selectors return None
         def query_sel(sel):
             if "next" in sel:
                 return next_btn
@@ -599,10 +598,19 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
             confidence=0.9,
             explanation="Synthesized solution",
         )
+        tc_fail = TestCaseResult(
+            passed=False,
+            input_data="1 2",
+            expected_output="3",
+            actual_output="0",
+            error_message="Mismatch",
+            duration=0.01,
+        )
         mock_fail_val = ValidationResult(
             all_passed=False,
-            results=[TestCaseResult(input_data="1 2", expected_output="3", actual_output="0", passed=False, error_message="Mismatch")],
-            error_message="Mismatch"
+            passed_count=0,
+            total_count=1,
+            results=[tc_fail],
         )
 
         with patch("drivers.guvi_driver.extract_problem_spec", return_value=mock_spec), \
@@ -652,7 +660,7 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
             confidence=1.0,
             explanation="Synthesized solution",
         )
-        mock_val = ValidationResult(all_passed=True, results=[])
+        mock_val = ValidationResult(all_passed=True, passed_count=0, total_count=0, results=[])
 
         with patch("drivers.guvi_driver.extract_problem_spec", return_value=mock_spec), \
              patch("drivers.guvi_driver.generate_solution", return_value=mock_sol), \
@@ -692,7 +700,7 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
             confidence=1.0,
             explanation="Synthesized solution",
         )
-        mock_val = ValidationResult(all_passed=True, results=[])
+        mock_val = ValidationResult(all_passed=True, passed_count=0, total_count=0, results=[])
 
         # Test results pane indicates 'Wrong'
         results_pane = MagicMock()
@@ -749,7 +757,7 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
             confidence=1.0,
             explanation="Synthesized solution",
         )
-        mock_val = ValidationResult(all_passed=True, results=[])
+        mock_val = ValidationResult(all_passed=True, passed_count=0, total_count=0, results=[])
 
         driver.find_first_selector = MagicMock(side_effect=lambda sels, timeout=None: sels[0])
         mock_page.query_selector.return_value = None
