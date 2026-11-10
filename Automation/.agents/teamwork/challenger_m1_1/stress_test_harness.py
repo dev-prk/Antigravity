@@ -552,7 +552,7 @@ def test_extractor_css_sanitization(results: TestResults):
     </div>
     """
     spec = ProblemExtractor.extract(html_with_spaced_style)
-    if len(spec.sample_cases) == 1 and spec.sample_cases[0].input.strip() == "5 10 15" and spec.sample_cases[0].output.strip() == "30":
+    if len(spec.sample_cases) == 1 and spec.sample_cases[0].input.strip() == "5 10 15" and spec.sample_cases[0].expected_output.strip() == "30":
         results.record_pass("Extractor: Spaced closing style tag", "Sample case cleanly extracted")
     else:
         results.record_fail("Extractor: Spaced closing style tag", f"Extracted {len(spec.sample_cases)} cases: {spec.sample_cases}")
@@ -573,7 +573,7 @@ def test_extractor_css_sanitization(results: TestResults):
     </div>
     """
     spec2 = ProblemExtractor.extract(html_with_css_selector)
-    if len(spec2.sample_cases) == 1 and spec2.sample_cases[0].input.strip() == "5" and spec2.sample_cases[0].output.strip() == "120":
+    if len(spec2.sample_cases) == 1 and spec2.sample_cases[0].input.strip() == "5" and spec2.sample_cases[0].expected_output.strip() == "120":
         results.record_pass("Extractor: CSS 'input {' selector rejected", "Sample cases free of CSS selector leaks")
     else:
         results.record_fail("Extractor: CSS 'input {' selector rejected", f"Extracted {len(spec2.sample_cases)} cases: {spec2.sample_cases}")
