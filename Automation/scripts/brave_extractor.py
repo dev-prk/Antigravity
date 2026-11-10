@@ -5,17 +5,19 @@ import os
 import base64
 
 def eval_js_on_url(url: str, js_code: str, wait_secs: float = 6.0) -> str:
-    # Wrap js_code in an IIFE that returns a string
     wrapped_js = f"""
     (() => {{
         try {{
             const val = (function() {{ {js_code} }})();
-            return val !== undefined ? String(val) : "";
+            if (val === undefined || val === null) return "";
+            if (typeof val === 'object') return JSON.stringify(val);
+            return String(val);
         }} catch(e) {{
             return "ERROR: " + e.toString();
         }}
     }})();
     """
+
     b64 = base64.b64encode(wrapped_js.encode("utf-8")).decode("ascii")
     js_init = f"window.eval(decodeURIComponent(escape(atob('{b64}'))))"
 
