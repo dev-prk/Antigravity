@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T22:58:00Z
+# BRIEFING — 2026-11-10T23:08:00Z
 
 ## Mission
 Conduct an independent, adversarial code review of Milestone 1: Filtering & Extractor Foundation.
@@ -21,36 +21,41 @@ Conduct an independent, adversarial code review of Milestone 1: Filtering & Extr
 
 ## Current Parent
 - Conversation ID: 78e8d42e-b180-4514-9c4c-a12e10bd774c
-- Updated: 2026-11-10T22:58:00Z
+- Updated: 2026-11-10T23:08:00Z
 
 ## Review Scope
-- **Files to review**:
-  - `zenclass_guvi/core/state_manager.py` (race conditions, SQL injection risks, handling of NULL/empty/malformed JSON in metadata, case sensitivity, interface contracts)
-  - `zenclass_guvi/solver/extractor.py` (CSS stripping over-stripping valid problem descriptions or sample cases; complex cases like nested CSS, KaTeX math symbols, JSON with unquoted vs quoted keys)
-  - `zenclass_guvi/config.py` & `zenclass_guvi/main.py` (argparse ergonomics, subparser inheritance, precedence of CLI flags over env vars and config defaults)
-  - `zenclass_guvi/tests/test_m1_filtering.py` (test depth and coverage)
+- **Files reviewed**:
+  - `zenclass_guvi/core/state_manager.py` (lines 471–517)
+  - `zenclass_guvi/solver/extractor.py` (lines 143–203, 265–305, 446–540)
+  - `zenclass_guvi/config.py` (lines 49–59, 113–120)
+  - `zenclass_guvi/main.py` (lines 39–74, 84–136, 201–230, 442–448, 482–487)
+  - `zenclass_guvi/tests/test_m1_filtering.py` (lines 1–480)
 - **Interface contracts**: `PROJECT.md` §Interface Contracts, `SCOPE.md`
 - **Authoritative requirements**: `ORIGINAL_REQUEST.md` (Follow-up requirements R1-R4)
 - **Worker report**: `worker_m1_1/handoff.md`
 
 ## Review Checklist
-- **Items reviewed**: Pending deep review
-- **Verdict**: PENDING
-- **Unverified claims**: 
-  - Worker claims 28/28 passed in `test_m1_filtering.py` and 386 passed in total workspace
-  - Worker claims safe handling of malformed JSON with `json_valid(metadata) = 1`
-  - Worker claims CSS stripping does not affect JSON/sets/code blocks
-  - Worker claims CLI flag inheritance and context-aware headless defaults
+- **Items reviewed**: all 5 files and test suites
+- **Verdict**: APPROVE
+- **Unverified claims**: all verified (28/28 passed in `test_m1_filtering.py`, 386/386 passed in full workspace)
 
 ## Attack Surface
-- **Hypotheses to test**:
-  - StateManager: SQL injection via difficulties array? What if difficulty has special chars, SQL wildcards, null bytes? What if metadata is null, empty string, invalid JSON, or array/number instead of object? Does `json_extract(metadata, '$.difficulty')` handle int or array? Concurrency/race conditions with multiple connections?
-  - Extractor: Does CSS stripping strip KaTeX / LaTeX math (e.g. `\frac{a}{b}`, `{matrix}`, `x^{2}`)? Does CSS stripping strip nested CSS `{ a { b: c } }`? What if CSS has no spaces, or multiline, or unclosed `{`? Does it strip JSON with unquoted keys like `{display: inline-flex}` vs `{display: 1}` vs `{"display": "inline-flex"}`? Does it overstrip problem description when problem description has `{...}`? What about sample inputs that contain braces (e.g. Python dict, C struct, JSON, regex `{1,3}`)?
-  - Config & Main: Precedence of CLI flags over env vars and config defaults? What if `--headless` and `--no-headless` are both passed? What if `--difficulty` is passed with unexpected values, empty strings, commas? What about environment variables `AUTOMATION_HEADLESS` vs `AUTOMATION_CODEKATA_HEADLESS`? Subparser inheritance of `--limit`, `--timeout`, etc.?
-  - Integrity: Are there any dummy checks or hardcoded returns in `test_m1_filtering.py`, `state_manager.py`, `extractor.py`, `main.py`?
+- **Hypotheses tested**:
+  - StateManager: SQL injection via difficulties array? (Resilient, bound via `?` placeholders)
+  - StateManager: Handling of malformed/null/array JSON? (Resilient, guarded with `json_valid(metadata) = 1`)
+  - StateManager: Untrimmed difficulty whitespace in database? (Finding 2: fails to match without `TRIM()`)
+  - StateManager: Bare string input in `difficulties="Medium"`? (Finding 3: splits into chars)
+  - Extractor: Python single-quoted dicts with CSS property words? (Finding 1: dropped by `_is_pure_css` line 197)
+  - Extractor: Double-quoted JSON and code snippets? (Preserved correctly)
+  - Extractor: KaTeX math symbols? (Handled safely; tag stripping leaves text intact)
+  - Extractor: Nested CSS and @media queries? (Handled cleanly)
+  - CLI: Precedence of CLI flags over env vars and config defaults? (CLI flags strictly win)
+  - CLI: Subparser inheritance of root flags? (Finding 4: `--slow-mo` rejected after subcommand)
+  - Integrity: Dummy code or hardcoded test returns? (None found, genuine logic)
 
 ## Key Decisions Made
-- [Pending adversarial analysis]
+- Confirmed zero integrity violations found in worker implementation.
+- Issued **APPROVE** verdict with 1 Major and 3 Minor findings documented in `handoff.md` for downstream milestones.
 
 ## Artifact Index
 - `.agents/teamwork/reviewer_m1_2/DISPATCH.md` — Inbound instructions

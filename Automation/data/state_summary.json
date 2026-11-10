@@ -1,76 +1,139 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:56:25.746704+00:00",
+  "last_updated": "2026-11-10T22:57:43.916504+00:00",
   "summary": {
-    "total_discovered": 2,
-    "total_completed": 2,
+    "total_discovered": 5,
+    "total_completed": 3,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 0,
-    "success_rate_percent": 100.0,
+    "total_failed": 2,
+    "success_rate_percent": 60.0,
     "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
-        "total_discovered": 2,
-        "total_completed": 2,
+        "total_discovered": 5,
+        "total_completed": 3,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 0,
-        "success_rate_percent": 100.0,
+        "total_failed": 2,
+        "success_rate_percent": 60.0,
         "time_spent_seconds": 0.0
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 2,
-        "completed": 2,
-        "success_rate_percent": 100.0
+        "total": 5,
+        "completed": 3,
+        "success_rate_percent": 60.0
       }
     },
     "human_intervention_issues": []
   },
   "tasks": [
     {
-      "task_id": "guvi-palindrome-check",
+      "task_id": "guvi-med-0",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Palindrome Check",
+      "title": "Med 0",
       "url": "",
       "status": "completed",
       "attempt_count": 1,
-      "result": "SOLVED",
+      "result": "",
       "failure_reason": null,
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
         "difficulty": "Medium"
       },
-      "created_at": "2026-11-10T22:56:25.745531+00:00",
-      "updated_at": "2026-11-10T22:56:25.745531+00:00",
-      "timestamp": "2026-11-10T22:56:25.745531+00:00",
+      "created_at": "2026-11-10T22:57:43.912706+00:00",
+      "updated_at": "2026-11-10T22:57:43.912706+00:00",
+      "timestamp": "2026-11-10T22:57:43.912706+00:00",
       "attempts": 1,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-odd-or-even-sum",
+      "task_id": "guvi-med-1",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Odd Or Even Sum",
+      "title": "Med 1",
       "url": "",
       "status": "completed",
       "attempt_count": 1,
-      "result": "SOLVED",
+      "result": "",
       "failure_reason": null,
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
         "difficulty": "Medium"
       },
-      "created_at": "2026-11-10T22:56:25.746481+00:00",
-      "updated_at": "2026-11-10T22:56:25.746481+00:00",
-      "timestamp": "2026-11-10T22:56:25.746481+00:00",
+      "created_at": "2026-11-10T22:57:43.913980+00:00",
+      "updated_at": "2026-11-10T22:57:43.913980+00:00",
+      "timestamp": "2026-11-10T22:57:43.913980+00:00",
       "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-med-2",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Med 2",
+      "url": "",
+      "status": "completed",
+      "attempt_count": 1,
+      "result": "",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium"
+      },
+      "created_at": "2026-11-10T22:57:43.915113+00:00",
+      "updated_at": "2026-11-10T22:57:43.915113+00:00",
+      "timestamp": "2026-11-10T22:57:43.915113+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-hard-0",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Hard 0",
+      "url": "",
+      "status": "failed",
+      "attempt_count": 3,
+      "result": "",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard"
+      },
+      "created_at": "2026-11-10T22:57:43.915741+00:00",
+      "updated_at": "2026-11-10T22:57:43.915741+00:00",
+      "timestamp": "2026-11-10T22:57:43.915741+00:00",
+      "attempts": 3,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-hard-1",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Hard 1",
+      "url": "",
+      "status": "failed",
+      "attempt_count": 3,
+      "result": "",
+      "failure_reason": null,
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard"
+      },
+      "created_at": "2026-11-10T22:57:43.916339+00:00",
+      "updated_at": "2026-11-10T22:57:43.916339+00:00",
+      "timestamp": "2026-11-10T22:57:43.916339+00:00",
+      "attempts": 3,
       "category": "CodeKata"
     }
   ]
