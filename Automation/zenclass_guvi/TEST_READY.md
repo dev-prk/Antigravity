@@ -1,70 +1,83 @@
-# TEST READY — ZenClass & Guvi Automation E2E Suite
+# TEST READY — ZenClass & Guvi CodeKata E2E Test Suite
 
 **Status**: READY (100% Pass)  
 **Suite Type**: 4-Tier Opaque-Box End-to-End Suite  
-**Total Tests**: 78  
-**Passing**: 78 (100.0%)  
+**New E2E Tests (Medium/Hard Headless)**: 52  
+**Total E2E Tests**: 130  
+**Passing**: 130 / 130 (100.0%)  
 **Failing**: 0  
 **Errors**: 0  
-**Timestamp**: 2026-11-10T15:12:00Z  
+**Timestamp**: 2026-11-10T22:52:00Z  
 
 ---
 
 ## 1. Test Runner Command
 
 ```bash
-# Standalone CLI runner (Runs all 4 tiers)
-python3 /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests/e2e/test_runner.py --all
+# Execute the Headless Medium/Hard CodeKata E2E Test Suite (52 tests)
+python3 -m pytest /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests/e2e/test_medium_hard_codekata.py -v
 
-# Or via standard pytest
-python3 -m pytest /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests/e2e
+# Expected Exit Code: 0 (100% Pass)
+
+# Execute the entire E2E test suite (130 tests across all modules)
+python3 -m pytest /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests/e2e -v
+
+# Standalone CLI test runner
+python3 /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests/e2e/test_runner.py --all
 ```
 
 ---
 
-## 2. 4-Tier Test Breakdown Table
+## 2. 4-Tier Test Breakdown Table (Medium/Hard CodeKata Suite)
 
-| Tier | Category | Scope & Description | Test Modules | Tests Run | Passed | Failed | Duration | Result |
-|---|---|---|---|---|---|---|---|---|
-| **Tier 1** | Feature Coverage | Isolated verification of each feature in PROJECT.md Feature Inventory | 22 files (`test_f01` to `test_f22`) | 54 | 54 | 0 | 4.64s | ✅ PASS |
-| **Tier 2** | Boundary & Corner Cases | Empty/zero inputs, malformed URLs, escaping/SQL injection, timeouts, rapid retries | 5 files (`test_b01` to `test_b05`) | 14 | 14 | 0 | 1.00s | ✅ PASS |
-| **Tier 3** | Cross-Feature Interactions | Pairwise interactions: Auth $\to$ Discovery, Discovery $\to$ Sandbox, Sandbox $\to$ Submit, HITL $\to$ State | 5 files (`test_p01` to `test_p05`) | 6 | 6 | 0 | 1.57s | ✅ PASS |
-| **Tier 4** | Real-World Workload Scenarios | Multi-problem CodeKata solving, ZenClass task dynamic submission, 5-stage project HITL lifecycle, unified CLI | 4 files (`test_w01` to `test_w04`) | 4 | 4 | 0 | 1.59s | ✅ PASS |
-| **TOTAL** | **Full E2E Suite** | **Complete coverage across all 4 tiers** | **36 test files** | **78** | **78** | **0** | **8.80s** | ✅ **PASS** |
+Target file: `zenclass_guvi/tests/e2e/test_medium_hard_codekata.py`
 
----
-
-## 3. Feature Inventory Coverage Checklist
-
-- [x] **F01: Headed Browser Lifecycle** — Verified foreground headed configuration (`headless=False`), persistent profile (`.browser_profile/`), and cookie/storage persistence.
-- [x] **F02: Persistent State Manager** — Verified SQLite schema, `record_task`, `get_task`, `get_pending_tasks`, summary statistics calculation, and atomic JSON export.
-- [x] **F03: Human-in-the-Loop Handler** — Verified detection of Cloudflare Turnstile, OTP, MFA (`.login-mfa-active`), modal alerts (`#myModal`), and interactive project URL collection.
-- [x] **F04: Reporting Engine** — Verified Markdown executive summary generation (`reports/SUMMARY_REPORT.md`) and JSON metrics export (`reports/summary.json`).
-- [x] **F05: Problem Statement Extractor** — Verified DOM extraction of title, description, constraints, input/output descriptions, and sample I/O pairs.
-- [x] **F06: Autonomous Python 3 Solver** — Verified algorithmic code synthesis for standard patterns, valid AST parsing, and stdio handling.
-- [x] **F07: Subprocess Test Sandbox** — Verified sandboxed subprocess execution, timeout killing, return code evaluation, and stdout/stderr verification.
-- [x] **F08: Ace Editor Keyboard Adapter** — Verified Ace editor class hierarchies (`#editor.ace_editor`, `textarea.ace_text-input`) and keyboard text insertion sequence.
-- [x] **F09: Guvi Authentication** — Verified credential submission on `/sign-in/`, `usercheck.php` API authentication, session cookie issuance, and rejection of invalid credentials.
-- [x] **F10: CodeKata Table Discovery** — Verified parsing 15-row table across 143 pages, completed problem filtering via `#completed-icon_svg__a`, and metadata extraction.
-- [x] **F11: CodeKata Execution & Submit** — Verified Run Code API, test pills evaluation, Submit Code API, and positive confirmation (`Solved!`, geekoins).
-- [x] **F12: ZenClass Authentication** — Verified SPA login at `/login`, Material UI input targeting, localStorage token storage, and MFA guardrail handling.
-- [x] **F13: ZenClass Tasks Discovery** — Verified Kanban inspection across Active, Pending, and Completed columns, task details, and redo flag identification.
-- [x] **F14: Dynamic Task Submission** — Verified dynamic 13-field modal mapping (Module 41486) and strict URL validation regex `/^(ftp|http|https):\/\/[^ "]+$/`.
-- [x] **F15: Task Submission Verification** — Verified positive UI confirmation popup with verbatim platform text `"Task Submitted Suceessfully"`.
-- [x] **F16: ZenClass Projects Discovery** — Verified project cards and columns (Active, Pending, Completed).
-- [x] **F17: Local Project Code Synthesis** — Verified autonomous synthesis of complete project source code (frontend, backend, configuration, and README) in `projects/<slug>/`.
-- [x] **F18: Local Project Build Verification** — Verified local build/syntax/dependency validation for generated project assets.
-- [x] **F19: Project Human Pause Protocol** — Verified audible alert, execution pause, and interactive CLI prompts for GitHub and deployment URLs.
-- [x] **F20: Project Submission & Verification** — Verified project submission payload and positive platform submission confirmation.
-- [x] **F21: Unified CLI Interface** — Verified argument parsing and dispatch for commands `run-all`, `run-codekata`, `run-zenclass`, `resume`, and `report`.
-- [x] **F22: Final E2E Suite Verification** — Verified complete 22-feature mapping and 4-tier test execution integrity.
+| Tier | Category | Scope & Requirements Covered | Tests Run | Passed | Failed | Duration | Result |
+|---|---|---|---|---|---|---|---|
+| **Tier 1** | Feature Coverage | Isolated verification of R1 (Headless Launch & Stealth), R2 (Medium/Hard Filter & Solver), R3 (3-Attempt Retries & Adaptation), R4 (SQLite Schema & Metrics) | 22 | 22 | 0 | 0.82s | ✅ PASS |
+| **Tier 2** | Boundary & Corner Cases | Missing display env, Chromium lock recovery, rapid launches, empty sample cases, special chars/unicode, sandbox timeouts, network retries, 150KB payloads, concurrent writes | 20 | 20 | 0 | 0.45s | ✅ PASS |
+| **Tier 3** | Cross-Feature Interactions | Pairwise: R1+R2 (Headless Discovery), R2+R3 (Hard Problem Error Feedback), R3+R4 (3-Attempt Failure History), R1+R4 (Headless Execution Lifecycle), R2+R4 (Bulk Difficulty Queries) | 5 | 5 | 0 | 0.28s | ✅ PASS |
+| **Tier 4** | Real-World Workload Scenarios | Scenario 1 (Strict Difficulty Partitioning), Scenario 2 (Cascading Multi-Attempt Recoveries), Scenario 3 (Unsolvable Hard Graceful Pipeline), Scenario 4 (Resume Interrupted Session), Scenario 5 (End-to-End Simulation with Reports) | 5 | 5 | 0 | 0.22s | ✅ PASS |
+| **TOTAL** | **Full Medium/Hard E2E Suite** | **Complete 4-tier verification for Guvi CodeKata Medium/Hard headless automation** | **52** | **52** | **0** | **1.77s** | ✅ **PASS** |
 
 ---
 
-## 4. Test Harness & Progressive Testability Architecture
+## 3. Combined E2E Suite Breakdown (Full Regression)
 
-The test harness incorporates:
-- **`contract_loader.py`**: Bridges tests directly to live modules under `zenclass_guvi/` when built, with specification-grade reference oracles for incremental progress.
-- **`mock_server.py`**: Background threaded HTTP server providing authentic Guvi and ZenClass endpoints without external network requests or production account corruption.
-- **`dom_fixtures.py`**: Concrete HTML snapshots reverse-engineered from live Qwik SSR and React DOM trees.
-- **`reference_oracle.py`**: Ground-truth algorithmic solutions with mathematical verification and deterministic test matrices.
+| Test Module / Group | Scope | Tests Run | Passed | Failed | Result |
+|---|---|---|---|---|---|
+| `tests/e2e/test_medium_hard_codekata.py` | Headless Medium/Hard CodeKata 4-Tier Suite (R1-R4) | 52 | 52 | 0 | ✅ PASS |
+| `tests/e2e/tier1_features/` | Foundational Features F01 - F22 | 54 | 54 | 0 | ✅ PASS |
+| `tests/e2e/tier2_boundaries/` | Boundaries & Corner Cases (F01 - F22) | 14 | 14 | 0 | ✅ PASS |
+| `tests/e2e/tier3_pairwise/` | Pairwise Cross-Feature Interactions | 6 | 6 | 0 | ✅ PASS |
+| `tests/e2e/tier4_workloads/` | Real-World Workflow Scenarios | 4 | 4 | 0 | ✅ PASS |
+| **TOTAL COMBINED E2E** | **All E2E Test Modules in `zenclass_guvi/tests/e2e/`** | **130** | **130** | **0** | ✅ **PASS** |
+
+---
+
+## 4. Requirement Verification Checklist (Medium/Hard Automation)
+
+- [x] **§R1: Headless Background Execution**
+  - `BrowserManager(headless=True)` launches persistent Chromium context headlessly.
+  - CLI parser parses `--headless` flag.
+  - Chromium launch arguments include `--disable-blink-features=AutomationControlled`, `--no-default-browser-check`, `--no-first-run`.
+  - Headless context restores session cookies without auth UI.
+  - Headless execution functions cleanly in CI environments with unset `DISPLAY` and `WAYLAND_DISPLAY`.
+  - Graceful teardown ensures zero orphan browser processes.
+- [x] **§R2: Difficulty Filtering & Problem Solving**
+  - CodeKata catalog rows are filtered for `Medium` and `Hard` difficulty tags.
+  - `StateManager.list_pending(difficulties=["Medium", "Hard"])` filters tasks using SQLite JSON extraction with case insensitivity (`medium`, `HARD`).
+  - Problem statement extractor sanitizes inline CSS stylesheet artifacts (`{display:inline-flex...}`).
+  - Autonomous code generator synthesizes valid Python 3 AST syntax for Medium (`palindrome-check`) and Hard (`prime-numbers-count`) problems.
+- [x] **§R3: 3-Attempt Retries & Error Feedback**
+  - Immediate pass on Attempt 1 records 1 attempt and status `COMPLETED`.
+  - Failure on Attempt 1 captures error feedback and adapts candidate solution for Attempt 2 recovery.
+  - Multi-stage failure on Attempts 1 & 2 recovers on Attempt 3.
+  - Consecutive failure across all 3 attempts records status `FAILED` without halting overall pipeline.
+  - `generate_solution` adapts candidate code to `previous_error` feedback.
+- [x] **§R4: Persistent State Management**
+  - `tasks` table stores difficulty, points, and slug in JSON `metadata`.
+  - `task_attempts` logs every individual attempt with attempt number, status, failure reason, and timestamps.
+  - Granular test case validation results stored in `task_attempts.details` JSON.
+  - Execution runs tracked via `start_execution_run` and `end_execution_run` in `execution_runs` table.
+  - `get_summary_stats` aggregates total completed, failed, and pending tasks by difficulty.
