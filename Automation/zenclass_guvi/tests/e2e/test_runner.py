@@ -63,8 +63,8 @@ def load_suite_for_tier(tier: int) -> unittest.TestSuite:
     if not dir_name:
         raise ValueError(f"Unknown tier: {tier}")
     suite_dir = os.path.join(TESTS_DIR, dir_name)
-    loader = unittest.defaultTestLoader
-    return loader.discover(suite_dir, pattern="test_*.py")
+    loader = unittest.TestLoader()
+    return loader.discover(start_dir=suite_dir, pattern="test_*.py", top_level_dir=PROJECT_ROOT)
 
 
 def load_suite_for_feature(feature_key: str) -> unittest.TestSuite:
