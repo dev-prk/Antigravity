@@ -104,6 +104,12 @@ def create_cli_parser() -> argparse.ArgumentParser:
         default=argparse.SUPPRESS,
         help="Alias for --no-headless: run browser in visible foreground headed mode",
     )
+    shared_browser.add_argument(
+        "--limit",
+        type=int,
+        default=argparse.SUPPRESS,
+        help="Maximum number of problems/tasks to attempt in this run",
+    )
 
     # Global options
     parser.add_argument(

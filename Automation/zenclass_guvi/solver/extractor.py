@@ -156,8 +156,10 @@ class ProblemExtractor:
     )
 
     # Matches CSS rule sets with selectors: e.g. input { display: inline-flex; }
+    # Excludes labels like 'Sample Input:', 'Sample Output:', 'Problem Statement:'
     _CSS_RULE_RE = re.compile(
-        rf"(?:^|\n)\s*(?:[.#]?[a-zA-Z0-9_\-:\s,>+~\[\]\=\"\']+?)\s*"
+        rf"(?:^|\n)\s*(?![^\{{\n]*(?:Sample|Case|Input\s*[:\-]|Output\s*[:\-]|Description|Problem))"
+        rf"(?:[.#]?[a-zA-Z0-9_\-,>+~\[\]\=\"\'\s]+?(?:::[a-z\-]+|:[a-z\-]+(?:\([^\)]*\))?)?)\s*"
         rf"\{{[^{{}}]*?(?:(?<![\"\'\w-]){_CSS_PROP_PATTERN}\s*:\s*[^;{{}}]+(?:;|\b|\}}))[^{{}}]*?\}}",
         re.IGNORECASE | re.DOTALL,
     )
@@ -266,7 +268,11 @@ class ProblemExtractor:
         if not raw_html:
             return ""
         # Strip script, style, noscript, svg, template blocks even with malformed or spaced closing tags or unclosed tags
-        text = re.sub(r"(?is)<(script|style|noscript|svg|template)\b[^>]*>.*?(?:</\s*\1\s*>|$)", " ", raw_html)
+        text = re.sub(
+            r"(?is)<(script|style|noscript|svg|template)\b[^>]*>.*?(?:</\s*\1\s*>|(?=<(?:p|div|h[1-6]|span|body|html|br|pre|table|ul|li)\b)|$)",
+            " ",
+            raw_html,
+        )
         # Strip HTML comments
         text = re.sub(r"(?s)<!--.*?-->", "", text)
         # Strip CSS comments (/* ... */) that may have leaked
