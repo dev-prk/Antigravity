@@ -1,2 +1,3 @@
-2026/11/10-23:16:42.866 100a36 Creating DB /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Sync Data/LevelDB since it was missing.
-2026/11/10-23:16:42.874 100a36 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/11/10-23:54:31.744 10f55c Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/11/10-23:54:31.745 10f55c Recovering log #3
+2026/11/10-23:54:31.746 10f55c Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Sync Data/LevelDB/000003.log 
