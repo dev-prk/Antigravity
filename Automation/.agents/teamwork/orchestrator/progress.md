@@ -1,13 +1,15 @@
-# Orchestrator Progress
+# Orchestrator Progress — ZenClass & Guvi Automation
 
 ## Current Status
-Last visited: 2026-11-10T12:37:30Z
-- [x] M1: Survey & Ingest existing resume documents from /Users/devesh/Documents/Resume (DONE: fc28e610-771a-402c-aa12-120486b83d85)
-- [x] M2: Browser Operator portal extraction (8 portals) to ~/resume/profile_backup.md (DONE: f7dbf6bf-0212-4f02-b611-9ba471568204)
-- [x] M3: Master Profile & Targets Consolidation (~/resume/master_profile.md, ~/resume/targets.md) (DONE: f9a979bc-ee47-49c2-b4ee-47eba0480f80)
-- [x] M4: Gate 1 Review, Forensic Integrity Audit & Presentation to User (DONE: Reviewer APPROVE, Auditor CLEAN. Halted at Gate 1 awaiting user confirmation)
+Last visited: 2026-11-10T14:34:00Z
+- [ ] Phase 0: Survey & Specification Mining (3 parallel agents)
+  - [ ] explorer_survey_1: Environment, browser capabilities, automation architecture (Conv: 9e0ade5e-483f-4fb4-97b0-673b887a3a74)
+  - [ ] spec_miner_survey_2: Guvi CodeKata platform specifications (Conv: 99abd2f1-b076-4d40-a31a-ed93240235cf)
+  - [ ] spec_miner_survey_3: ZenClass Tasks and Projects specifications (Conv: c0a321f5-8cc4-42dd-bba6-b2812effcea6)
+- [ ] Phase 1: PROJECT.md & Milestones Decomposition + E2E Test Infra
+- [ ] Phase 2: Implementation Milestones Execution
+- [ ] Phase 3: Final E2E Verification & Reporting
 
 ## Iteration Status
 Current iteration: 1 / 32
-Milestone 1 Gate Result: PASS
-Halted at Gate 1 for user confirmation.
+Status: Monitoring Phase 0 survey subagents

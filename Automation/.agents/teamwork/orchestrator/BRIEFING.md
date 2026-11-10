@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T14:32:00Z
+# BRIEFING — 2026-11-10T14:34:00Z
 
 ## Mission
 Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, and ZenClass projects using a visible foreground browser session and provided credentials, maintaining persistent task execution state and progress reports.
@@ -29,7 +29,7 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
   3. Milestone Execution & E2E Testing Track [pending]
   4. Final Milestone & Reporting [pending]
 - **Current phase**: 0 (Survey)
-- **Current focus**: Launching Survey Explorers / Spec Miners
+- **Current focus**: Monitoring Survey Explorers / Spec Miners
 
 ## 🔒 Key Constraints
 - Authenticate to Guvi and ZenClass using provided credentials via visible foreground browser window (headed mode).
@@ -51,17 +51,20 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
 ## Team Roster
 | Agent | Type | Work Item | Status | Conv ID |
 |-------|------|-----------|--------|---------|
+| explorer_survey_1 | teamwork_explorer | System tooling & automation architecture | in-progress | 9e0ade5e-483f-4fb4-97b0-673b887a3a74 |
+| spec_miner_survey_2 | teamwork_spec_miner | Guvi CodeKata platform spec mining | in-progress | 99abd2f1-b076-4d40-a31a-ed93240235cf |
+| spec_miner_survey_3 | teamwork_spec_miner | ZenClass tasks/projects spec mining | in-progress | c0a321f5-8cc4-42dd-bba6-b2812effcea6 |
 
 ## Succession Status
 - Succession required: no
-- Spawn count: 0 / 16
-- Pending subagents: none
+- Spawn count: 3 / 16
+- Pending subagents: 9e0ade5e-483f-4fb4-97b0-673b887a3a74, 99abd2f1-b076-4d40-a31a-ed93240235cf, c0a321f5-8cc4-42dd-bba6-b2812effcea6
 - Predecessor: none
 - Successor: not yet spawned
 
 ## Active Timers
-- Heartbeat cron: not started
-- Safety timer: none
+- Heartbeat cron: task-30 (*/10 * * * *)
+- Safety timer: task-32 (600s)
 
 ## Artifact Index
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md — Authoritative User Request
