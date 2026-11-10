@@ -804,13 +804,20 @@ class ZenClassTasksDriver(BaseDriver):
         Classifies task into (status, result, next_action, failure_reason)
         matching StateManager enums and Requirement R1/R2/R3 rules.
         """
-        # 1. External assessment / Quiz ("Attend")
-        if task.action_type == "ATTEND":
+        # 1. External assessment / Quiz ("Attend" or un-submittable pending quiz card like CCT_Regular)
+        if task.action_type == "ATTEND" or (
+            task.column == "pending" and task.action_type == "NONE" and task.score == "--/10"
+        ):
+            reason = (
+                "External assessment requires interactive test session"
+                if task.action_type == "ATTEND"
+                else "Assessment window closed; superseded by completed RE CCT"
+            )
             return (
                 TaskStatus.BLOCKED.value,
                 TaskResult.AWAITING_INPUT.value,
                 "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
-                "External assessment requires interactive test session",
+                reason,
             )
 
         # 2. Completed / Evaluated items
@@ -1194,7 +1201,10 @@ class ZenClassTasksDriver(BaseDriver):
                 queue = [DiscoveredTask(task_id=task_id, title=task_id, column="active")]
         else:
             for t in discovered:
-                if t.action_type in ("SUBMIT", "RESUBMIT") or t.column in ("active", "pending"):
+                is_closed_quiz = t.column == "pending" and t.action_type == "NONE" and t.score == "--/10"
+                if t.action_type in ("SUBMIT", "RESUBMIT") or (
+                    t.column in ("active", "pending") and not is_closed_quiz
+                ):
                     if t.action_type != "ATTEND":
                         queue.append(t)
 

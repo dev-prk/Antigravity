@@ -1,33 +1,42 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-10T18:43:59.906438+00:00",
+  "generated_at": "2026-11-10T19:29:23.811674+00:00",
   "summary_metrics": {
-    "total_discovered": 31,
-    "total_completed": 10,
-    "total_pending": 11,
+    "total_discovered": 38,
+    "total_completed": 25,
+    "total_pending": 0,
     "total_in_progress": 0,
-    "total_blocked": 5,
-    "total_failed": 5,
-    "success_rate_percent": 32.26,
-    "total_time_spent_seconds": 124.31,
-    "formatted_time_spent": "02m 04s"
+    "total_blocked": 13,
+    "total_failed": 0,
+    "success_rate_percent": 65.79,
+    "total_time_spent_seconds": 868.1,
+    "formatted_time_spent": "14m 28s"
   },
   "by_platform": {
     "guvi": {
       "total_discovered": 15,
-      "total_completed": 0,
-      "total_pending": 11,
+      "total_completed": 15,
+      "total_pending": 0,
       "total_blocked": 0,
-      "total_failed": 4,
+      "total_failed": 0,
+      "success_rate_percent": 100.0,
+      "time_spent_seconds": 868.1
+    },
+    "zenclass_projects": {
+      "total_discovered": 7,
+      "total_completed": 0,
+      "total_pending": 0,
+      "total_blocked": 7,
+      "total_failed": 0,
       "success_rate_percent": 0.0,
-      "time_spent_seconds": 124.31
+      "time_spent_seconds": 0.0
     },
     "zenclass_tasks": {
       "total_discovered": 16,
       "total_completed": 10,
       "total_pending": 0,
-      "total_blocked": 5,
-      "total_failed": 1,
+      "total_blocked": 6,
+      "total_failed": 0,
       "success_rate_percent": 62.5,
       "time_spent_seconds": 0.0
     }
@@ -35,6 +44,11 @@
   "by_category": {
     "CodeKata": {
       "total": 15,
+      "completed": 15,
+      "success_rate_percent": 100.0
+    },
+    "Project": {
+      "total": 7,
       "completed": 0,
       "success_rate_percent": 0.0
     },
@@ -46,15 +60,81 @@
   },
   "human_intervention_issues": [
     {
-      "task_id": "zenclass-task-int-aiml-c-we-e-b2-cct-regular",
-      "platform": "zenclass_tasks",
-      "category": "Task",
-      "title": "INT-AIML-C-WE-E-B2_CCT_Regular",
-      "status": "FAILED",
+      "task_id": "proj-intel-aiml-ncaafb-api-data-analysis",
+      "platform": "zenclass_projects",
+      "category": "Project",
+      "title": "INTEL_AIML_NCAAFB API: Data Analysis",
+      "status": "BLOCKED",
       "attempts": 0,
-      "failure_reason": "Submission modal did not appear for task 'zenclass-task-int-aiml-c-we-e-b2-cct-regular': Page.wait_for_selector: Timeout 7000ms exceeded.\nCall log:\n  - waiting for locator(\".submit-form-container-web\") to be visible\n",
-      "next_action": "INVESTIGATE_FAILURE",
-      "url": "https://v2.zenclass.in/tasks"
+      "failure_reason": "Awaiting user repository hosting and deployment URLs",
+      "next_action": "PROVIDE_PROJECT_URLS",
+      "url": "https://v2.zenclass.in/projects"
+    },
+    {
+      "task_id": "proj-intl-aiml-traffic-violations-insight-system",
+      "platform": "zenclass_projects",
+      "category": "Project",
+      "title": "INTL_AIML_Traffic Violations Insight System",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "Awaiting user repository hosting and deployment URLs",
+      "next_action": "PROVIDE_PROJECT_URLS",
+      "url": "https://v2.zenclass.in/projects"
+    },
+    {
+      "task_id": "proj-intel-aiml-rapido-intelligent-mobility-insights",
+      "platform": "zenclass_projects",
+      "category": "Project",
+      "title": "INTEL-AIML_Rapido: Intelligent Mobility Insights",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "Awaiting user repository hosting and deployment URLs",
+      "next_action": "PROVIDE_PROJECT_URLS",
+      "url": "https://v2.zenclass.in/projects"
+    },
+    {
+      "task_id": "proj-intel-aiml-visual-product-similarity-image-based-recommend",
+      "platform": "zenclass_projects",
+      "category": "Project",
+      "title": "INTEL_AIML_Visual Product Similarity & Image-Based Recommend",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "Awaiting user repository hosting and deployment URLs",
+      "next_action": "PROVIDE_PROJECT_URLS",
+      "url": "https://v2.zenclass.in/projects"
+    },
+    {
+      "task_id": "proj-intl-aiml-ai-powered-banking-support-fraud-intelligence",
+      "platform": "zenclass_projects",
+      "category": "Project",
+      "title": "INTL_AIML_AI-Powered Banking Support & Fraud Intelligence",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "Awaiting user repository hosting and deployment URLs",
+      "next_action": "PROVIDE_PROJECT_URLS",
+      "url": "https://v2.zenclass.in/projects"
+    },
+    {
+      "task_id": "proj-intel-aiml-multi-agent-support-ticket-automation-system",
+      "platform": "zenclass_projects",
+      "category": "Project",
+      "title": "INTEL_AIML_Multi-Agent Support Ticket Automation System",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "Awaiting user repository hosting and deployment URLs",
+      "next_action": "PROVIDE_PROJECT_URLS",
+      "url": "https://v2.zenclass.in/projects"
+    },
+    {
+      "task_id": "proj-int-aiml-c-we-e-b2-b3-b4-final-project",
+      "platform": "zenclass_projects",
+      "category": "Project",
+      "title": "INT-AIML-C-WE-E-B2, B3 &B4_Final_Project",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "Awaiting user repository hosting and deployment URLs",
+      "next_action": "PROVIDE_PROJECT_URLS",
+      "url": "https://v2.zenclass.in/projects"
     },
     {
       "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod12-agai",
@@ -75,6 +155,17 @@
       "status": "BLOCKED",
       "attempts": 0,
       "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "url": "https://v2.zenclass.in/tasks"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-cct-regular",
+      "platform": "zenclass_tasks",
+      "category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_CCT_Regular",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "Assessment window closed; superseded by completed RE CCT",
       "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
       "url": "https://v2.zenclass.in/tasks"
     },
@@ -110,50 +201,6 @@
       "failure_reason": "External assessment requires interactive test session",
       "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
       "url": "https://v2.zenclass.in/tasks"
-    },
-    {
-      "task_id": "guvi-15",
-      "platform": "guvi",
-      "category": "CodeKata",
-      "title": "63.15%",
-      "status": "FAILED",
-      "attempts": 1,
-      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
-      "next_action": "REVISE_SOLVER_TEMPLATE",
-      "url": "https://www.guvi.in/code-kata/15/"
-    },
-    {
-      "task_id": "guvi-48",
-      "platform": "guvi",
-      "category": "CodeKata",
-      "title": "90.48%",
-      "status": "FAILED",
-      "attempts": 1,
-      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
-      "next_action": "REVISE_SOLVER_TEMPLATE",
-      "url": "https://www.guvi.in/code-kata/48/"
-    },
-    {
-      "task_id": "guvi-37",
-      "platform": "guvi",
-      "category": "CodeKata",
-      "title": "77.37%",
-      "status": "FAILED",
-      "attempts": 1,
-      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
-      "next_action": "REVISE_SOLVER_TEMPLATE",
-      "url": "https://www.guvi.in/code-kata/37/"
-    },
-    {
-      "task_id": "guvi-97",
-      "platform": "guvi",
-      "category": "CodeKata",
-      "title": "73.97%",
-      "status": "FAILED",
-      "attempts": 1,
-      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
-      "next_action": "REVISE_SOLVER_TEMPLATE",
-      "url": "https://www.guvi.in/code-kata/97/"
     }
   ]
 }

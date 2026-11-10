@@ -1,14 +1,14 @@
-2026/11/11-00:23:56.382 1191f2 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_v2.zenclass.in_0.indexeddb.leveldb/MANIFEST-000001
-2026/11/11-00:23:56.382 1191f2 Recovering log #17
-2026/11/11-00:23:56.382 1191f2 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_v2.zenclass.in_0.indexeddb.leveldb/000017.log 
-2026/11/11-00:23:56.382 1191f2 Delete type=2 #15
-2026/11/11-00:23:56.419 1191f2 Level-0 table #22: started
-2026/11/11-00:23:56.421 1191f2 Level-0 table #22: 881 bytes OK
-2026/11/11-00:23:56.422 1191f2 Delete type=0 #17
-2026/11/11-00:23:56.422 1191f2 Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0a\x00\x00\x05' @ 211 : 1
-2026/11/11-00:23:56.422 1191f2 Compacting 1@0 + 1@1 files
-2026/11/11-00:23:56.424 1191f2 Generated table #23@0: 46 keys, 1277 bytes
-2026/11/11-00:23:56.424 1191f2 Compacted 1@0 + 1@1 files => 1277 bytes
-2026/11/11-00:23:56.424 1191f2 compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/11/11-00:23:56.425 1191f2 Delete type=2 #22
-2026/11/11-00:23:56.425 1191f2 Manual compaction at level-0 from '\x00\x0a\x00\x00\x05' @ 211 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/11/11-00:56:02.384 1221dc Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_v2.zenclass.in_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/11-00:56:02.385 1221dc Recovering log #25
+2026/11/11-00:56:02.385 1221dc Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_v2.zenclass.in_0.indexeddb.leveldb/000025.log 
+2026/11/11-00:56:02.385 1221dc Delete type=2 #23
+2026/11/11-00:56:02.403 1221dc Level-0 table #30: started
+2026/11/11-00:56:02.404 1221dc Level-0 table #30: 654 bytes OK
+2026/11/11-00:56:02.406 1221dc Delete type=0 #25
+2026/11/11-00:56:02.406 1221dc Manual compaction at level-0 from '\x00\x0c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0c\x00\x00\x05' @ 249 : 1
+2026/11/11-00:56:02.406 1221dc Compacting 1@0 + 1@1 files
+2026/11/11-00:56:02.407 1221dc Generated table #31@0: 46 keys, 1276 bytes
+2026/11/11-00:56:02.407 1221dc Compacted 1@0 + 1@1 files => 1276 bytes
+2026/11/11-00:56:02.408 1221dc compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/11-00:56:02.408 1221dc Delete type=2 #30
+2026/11/11-00:56:02.409 1221dc Manual compaction at level-0 from '\x00\x0c\x00\x00\x05' @ 249 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at (end)

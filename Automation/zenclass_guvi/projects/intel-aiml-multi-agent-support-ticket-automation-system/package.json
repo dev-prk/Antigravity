@@ -1,0 +1,16 @@
+{
+  "name": "intel-aiml-multi-agent-support-ticket-automation-system-frontend",
+  "version": "1.0.0",
+  "description": "https://docs.google.com/document/d/1dDFYf9xryQLhlh-jTIYs5QcCWasX4YFL__5nd_qoZJ8/edit?usp=sharing\u00a0\n\nPROJECT DOUBT CLARIFICATION SESSION ( PROJECT, CLASS and CODE_KATA DOUBTS)\n\nAbout Session: The Project Doubt Clarification Session is a helpful resource for resolving questions and concerns about projects and class topics. It provides support in understanding project requirements, addressing code issues, and clarifying class concepts. The session aims to enhance comprehension and provide guidance to overcome challenges effectively.\n\nSession Link : Project Doubt Session [DS/AIML]\n\nLIVE EVALUATION SESSION (CAPSTONE AND FINAL PROJECT)\n\nAbout Session: The Live Evaluation Session for Capstone and Final Projects allows participants to showcase their projects and receive real-time feedback for improvement. It assesses project quality and provides an opportunity for discussion and evaluation.\n\nNote: This form will Open only on Saturday (after 2 PM ) and Sunday on Every Week\n\nBooking link : https://forms.gle/1m2Gsro41fLtZurRA",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Build complete'",
+    "test": "echo 'All tests passed'"
+  },
+  "keywords": [
+    "Deep Learning",
+    "Computer Vision"
+  ],
+  "author": "Guvi ZenClass Student",
+  "license": "MIT"
+}

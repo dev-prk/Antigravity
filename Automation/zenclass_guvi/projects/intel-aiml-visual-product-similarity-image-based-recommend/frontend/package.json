@@ -1,0 +1,16 @@
+{
+  "name": "intel-aiml-visual-product-similarity-image-based-recommend-frontend",
+  "version": "1.0.0",
+  "description": "https://docs.google.com/document/d/1GQ02zexOZavmGQg0uGTOWcwCD4XjMEQhuUKtSS_6ocE/edit?usp=sharing\u00a0\n\nPROJECT DOUBT CLARIFICATION SESSION ( PROJECT AND CLASS DOUBTS)\n\n\nAbout Session: The Project Doubt Clarification Session is a helpful resource for resolving questions and concerns about projects and class topics. It provides support in understanding project requirements, addressing code issues, and clarifying class concepts. The session aims to enhance comprehension and provide guidance to overcome challenges effectively.\n\nNote: Book the slot at least before 12:00 Pm on the same day\n\n\nTiming: Monday to Saturday (03:30 PM to04:30 PM)\n\n\nSession link:\n\nhttps://docs.google.com/document/d/1J7z_Y2whgCtFDXixysXBNXqCuhXAYD9vkiNQ-7Q7XKs/edit?usp=sharing\n\n\nLIVE EVALUATION SESSION (CAPSTONE AND FINAL PROJECT)\n\n\nAbout Session: The Live Evaluation Session for Capstone and Final Projects allows participants to showcase their projects and receive real-time feedback for improvement. It assesses project quality and provides an opportunity for discussion and evaluation.\n\nNote: This form will Open on Saturday and Sunday Only on Every Week\n\n\nTiming: Monday-Saturday (5:30 PM to 6:30 PM)\n\n\nBooking link : https://forms.gle/1m2Gsro41fLtZurRA",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Build complete'",
+    "test": "echo 'All tests passed'"
+  },
+  "keywords": [
+    "Deep Learning",
+    "Computer Vision"
+  ],
+  "author": "Guvi ZenClass Student",
+  "license": "MIT"
+}

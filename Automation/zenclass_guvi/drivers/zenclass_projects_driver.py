@@ -413,9 +413,18 @@ class ZenClassProjectsDriver(BaseDriver):
     # =========================================================================
 
     def navigate_to_projects(self) -> None:
-        """Navigates to the ZenClass Projects Kanban board."""
+        """Navigates to the ZenClass Projects Kanban board and awaits card hydration."""
         logger.info(f"Navigating to ZenClass Projects board: {self.projects_url}")
         self.navigate(self.projects_url, wait_until="domcontentloaded", timeout=30000.0)
+        try:
+            self.page.wait_for_selector(
+                "#individual-card, .itempending-Project, .itemactive-Project, .itemcompleted-Project",
+                state="visible",
+                timeout=10000.0,
+            )
+            time.sleep(0.5)
+        except Exception as e:
+            logger.debug(f"Wait for project cards hydration note: {e}")
 
     def discover_projects(self) -> List[DiscoveredProject]:
         """
@@ -608,7 +617,23 @@ class ZenClassProjectsDriver(BaseDriver):
             return details
 
         try:
-            view_btn.click()
+            try:
+                view_btn.click()
+            except Exception:
+                # Re-query live card by project title if previous modal re-rendered the board
+                live_cards = self.page.query_selector_all(
+                    "#individual-card, .itempending-Project, .itemactive-Project"
+                )
+                re_found_btn = None
+                for lc in live_cards:
+                    t_node = lc.query_selector(self.SEL_CARD_TITLE)
+                    if t_node and t_node.inner_text().strip() == project.title:
+                        re_found_btn = lc.query_selector(self.SEL_BTN_VIEW)
+                        break
+                if re_found_btn:
+                    re_found_btn.click()
+                else:
+                    return details
             time.sleep(0.5)
 
             # Wait for modal
@@ -636,9 +661,11 @@ class ZenClassProjectsDriver(BaseDriver):
 
                 # Close modal cleanly
                 close_btn = modal.query_selector(self.SEL_DETAIL_CLOSE_BTN)
+                if not close_btn:
+                    close_btn = self.page.query_selector(self.SEL_DETAIL_CLOSE_BTN)
                 if close_btn:
                     close_btn.click()
-                time.sleep(0.2)
+                time.sleep(0.5)
 
         except Exception as e:
             logger.warning(f"Error extracting detail modal for '{project.project_id}': {e}")
