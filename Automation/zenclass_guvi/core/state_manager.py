@@ -167,7 +167,6 @@ class StateManager:
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_platform_status ON tasks(platform, status);")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_status ON tasks(status);")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_updated_at ON tasks(updated_at);")
-        cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_difficulty ON tasks(LOWER(json_extract(metadata, '$.difficulty')));")
 
         cursor.execute("""
         CREATE TABLE IF NOT EXISTS task_attempts (
