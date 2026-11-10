@@ -79,3 +79,11 @@ When finished, notify me with send_message.
 **Content**: URGENT USER DIRECTIVE: "use the same browser session instead of launching new window again and again. use tab if you have to"
 You MUST reuse the SAME existing Brave browser window/session across all portals. Do NOT launch new browser windows repeatedly. Open/switch tabs within the existing active session if needed.
 **Action**: Enforce this directive immediately and confirm status.
+
+## 2026-11-10T12:19:04Z
+**Context**: Milestone M2 — Portal Extraction Liveness Check
+**Content**: Heartbeat check: It has been ~12 minutes since your last progress update (12:06:00Z).
+1. Which portal are you currently extracting?
+2. Have you encountered any CAPTCHA, OTP, login prompts, or blockers requiring escalation?
+3. Please update `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m2_1/progress.md` with your current status immediately.
+**Action**: Reply with immediate status report and update progress.md.
