@@ -1,24 +1,33 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T18:43:01.485684+00:00",
+  "last_updated": "2026-11-10T18:44:00.395117+00:00",
   "summary": {
-    "total_discovered": 15,
-    "total_completed": 0,
+    "total_discovered": 31,
+    "total_completed": 10,
     "total_pending": 11,
-    "total_in_progress": 1,
-    "total_blocked": 0,
-    "total_failed": 3,
-    "success_rate_percent": 0.0,
-    "total_time_spent_seconds": 93.44,
+    "total_in_progress": 0,
+    "total_blocked": 5,
+    "total_failed": 5,
+    "success_rate_percent": 32.26,
+    "total_time_spent_seconds": 124.31,
     "by_platform": {
       "guvi": {
         "total_discovered": 15,
         "total_completed": 0,
         "total_pending": 11,
         "total_blocked": 0,
-        "total_failed": 3,
+        "total_failed": 4,
         "success_rate_percent": 0.0,
-        "time_spent_seconds": 93.44
+        "time_spent_seconds": 124.31
+      },
+      "zenclass_tasks": {
+        "total_discovered": 16,
+        "total_completed": 10,
+        "total_pending": 0,
+        "total_blocked": 5,
+        "total_failed": 1,
+        "success_rate_percent": 62.5,
+        "time_spent_seconds": 0.0
       }
     },
     "by_category": {
@@ -26,9 +35,91 @@
         "total": 15,
         "completed": 0,
         "success_rate_percent": 0.0
+      },
+      "Task": {
+        "total": 16,
+        "completed": 10,
+        "success_rate_percent": 62.5
       }
     },
     "human_intervention_issues": [
+      {
+        "task_id": "zenclass-task-int-aiml-c-we-e-b2-cct-regular",
+        "platform": "zenclass_tasks",
+        "category": "Task",
+        "title": "INT-AIML-C-WE-E-B2_CCT_Regular",
+        "status": "FAILED",
+        "attempts": 0,
+        "failure_reason": "Submission modal did not appear for task 'zenclass-task-int-aiml-c-we-e-b2-cct-regular': Page.wait_for_selector: Timeout 7000ms exceeded.\nCall log:\n  - waiting for locator(\".submit-form-container-web\") to be visible\n",
+        "next_action": "INVESTIGATE_FAILURE",
+        "url": "https://v2.zenclass.in/tasks"
+      },
+      {
+        "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod12-agai",
+        "platform": "zenclass_tasks",
+        "category": "Task",
+        "title": "INT-AIML-C-WE-E-B2_Mod12_AGAI",
+        "status": "BLOCKED",
+        "attempts": 0,
+        "failure_reason": "External assessment requires interactive test session",
+        "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+        "url": "https://v2.zenclass.in/tasks"
+      },
+      {
+        "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod11-rag",
+        "platform": "zenclass_tasks",
+        "category": "Task",
+        "title": "INT-AIML-C-WE-E-B2_Mod11_RAG",
+        "status": "BLOCKED",
+        "attempts": 0,
+        "failure_reason": "External assessment requires interactive test session",
+        "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+        "url": "https://v2.zenclass.in/tasks"
+      },
+      {
+        "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod15-mlop",
+        "platform": "zenclass_tasks",
+        "category": "Task",
+        "title": "INT-AIML-C-WE-E-B2_Mod15_MLop",
+        "status": "BLOCKED",
+        "attempts": 0,
+        "failure_reason": "External assessment requires interactive test session",
+        "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+        "url": "https://v2.zenclass.in/tasks"
+      },
+      {
+        "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod14-rl",
+        "platform": "zenclass_tasks",
+        "category": "Task",
+        "title": "INT-AIML-C-WE-E-B2_Mod14_RL",
+        "status": "BLOCKED",
+        "attempts": 0,
+        "failure_reason": "External assessment requires interactive test session",
+        "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+        "url": "https://v2.zenclass.in/tasks"
+      },
+      {
+        "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod13-fitu",
+        "platform": "zenclass_tasks",
+        "category": "Task",
+        "title": "INT-AIML-C-WE-E-B2_Mod13_FITu",
+        "status": "BLOCKED",
+        "attempts": 0,
+        "failure_reason": "External assessment requires interactive test session",
+        "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+        "url": "https://v2.zenclass.in/tasks"
+      },
+      {
+        "task_id": "guvi-15",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "63.15%",
+        "status": "FAILED",
+        "attempts": 1,
+        "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+        "next_action": "REVISE_SOLVER_TEMPLATE",
+        "url": "https://www.guvi.in/code-kata/15/"
+      },
       {
         "task_id": "guvi-48",
         "platform": "guvi",
@@ -146,12 +237,12 @@
       "task_category": "CodeKata",
       "title": "63.15%",
       "url": "https://www.guvi.in/code-kata/15/",
-      "status": "IN_PROGRESS",
-      "attempt_count": 0,
-      "result": "UNATTEMPTED",
-      "failure_reason": null,
-      "next_action": "EXTRACTING_AND_SOLVING",
-      "time_spent_seconds": 0.0,
+      "status": "FAILED",
+      "attempt_count": 1,
+      "result": "TEST_FAILED",
+      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+      "next_action": "REVISE_SOLVER_TEMPLATE",
+      "time_spent_seconds": 30.86958885192871,
       "metadata": {
         "slug": "15",
         "difficulty": "20",
@@ -160,9 +251,9 @@
         "page_number": 1
       },
       "created_at": "2026-11-10T18:40:37.719248+00:00",
-      "updated_at": "2026-11-10T18:43:01.484811+00:00",
-      "timestamp": "2026-11-10T18:43:01.484811+00:00",
-      "attempts": 0,
+      "updated_at": "2026-11-10T18:43:32.354462+00:00",
+      "timestamp": "2026-11-10T18:43:32.354462+00:00",
+      "attempts": 1,
       "category": "CodeKata"
     },
     {
@@ -439,6 +530,480 @@
       "timestamp": "2026-11-10T18:40:37.719248+00:00",
       "attempts": 0,
       "category": "CodeKata"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod13-fitu",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod13_FITu",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "BLOCKED",
+      "attempt_count": 0,
+      "result": "AWAITING_INPUT",
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "pending",
+        "course": "",
+        "tags": [
+          "LLM"
+        ],
+        "score": null,
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "ATTEND"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod14-rl",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod14_RL",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "BLOCKED",
+      "attempt_count": 0,
+      "result": "AWAITING_INPUT",
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "pending",
+        "course": "",
+        "tags": [
+          "LLM"
+        ],
+        "score": null,
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "ATTEND"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod15-mlop",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod15_MLop",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "BLOCKED",
+      "attempt_count": 0,
+      "result": "AWAITING_INPUT",
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "pending",
+        "course": "",
+        "tags": [
+          "Machine Learning"
+        ],
+        "score": null,
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "ATTEND"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-cct-regular",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_CCT_Regular",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "FAILED",
+      "attempt_count": 0,
+      "result": "SUBMISSION_FAILED",
+      "failure_reason": "Submission modal did not appear for task 'zenclass-task-int-aiml-c-we-e-b2-cct-regular': Page.wait_for_selector: Timeout 7000ms exceeded.\nCall log:\n  - waiting for locator(\".submit-form-container-web\") to be visible\n",
+      "next_action": "INVESTIGATE_FAILURE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "pending",
+        "course": "",
+        "tags": [
+          "Python",
+          "NLP",
+          "SQL",
+          "+2",
+          "Machine Learning",
+          "Deep Learning"
+        ],
+        "score": "--/10",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:59.603031+00:00",
+      "timestamp": "2026-11-10T18:43:59.603031+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod11-rag",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod11_RAG",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "BLOCKED",
+      "attempt_count": 0,
+      "result": "AWAITING_INPUT",
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "pending",
+        "course": "",
+        "tags": [
+          "Natural Language Processing"
+        ],
+        "score": null,
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "ATTEND"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod12-agai",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod12_AGAI",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "BLOCKED",
+      "attempt_count": 0,
+      "result": "AWAITING_INPUT",
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "pending",
+        "course": "",
+        "tags": [
+          "Generative AI"
+        ],
+        "score": null,
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "ATTEND"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-python",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Python",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "Python"
+        ],
+        "score": "67/95",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-eda",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_EDA",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "EDA"
+        ],
+        "score": "15/20",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-sql",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_SQL",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "SQL"
+        ],
+        "score": "16/20",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod6-mlusvl",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod6_MLUSVL",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "Machine Learning"
+        ],
+        "score": "17/20",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-intaiml-c-we-e-b2visualizatio",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INTAIML-C-WE-E-B2Visualizatio",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "Data Visualization"
+        ],
+        "score": "16/20",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-pandas",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Pandas",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "Pandas"
+        ],
+        "score": "26/30",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod9-nlp",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod9_NLP",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "NLP"
+        ],
+        "score": "19/20",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod8-dl",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod8_DL",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "Deep Learning"
+        ],
+        "score": "19/20",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod7-mlsvl",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod7_MLSVL",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "Machine Learning"
+        ],
+        "score": "18/20",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-re-cct",
+      "platform": "zenclass_tasks",
+      "task_category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_ RE CCT",
+      "url": "https://v2.zenclass.in/tasks",
+      "status": "COMPLETED",
+      "attempt_count": 0,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "column": "completed",
+        "course": "",
+        "tags": [
+          "Deep Learning",
+          "python",
+          "NLP",
+          "+2",
+          "SQL",
+          "Machine Learning"
+        ],
+        "score": "96/100",
+        "deadline": null,
+        "is_redo": false,
+        "action_type": "NONE"
+      },
+      "created_at": "2026-11-10T18:43:36.159928+00:00",
+      "updated_at": "2026-11-10T18:43:36.159928+00:00",
+      "timestamp": "2026-11-10T18:43:36.159928+00:00",
+      "attempts": 0,
+      "category": "Task"
     }
   ]
 }

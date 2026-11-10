@@ -1,26 +1,35 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-10T18:41:44.672428+00:00",
+  "generated_at": "2026-11-10T18:43:59.906438+00:00",
   "summary_metrics": {
-    "total_discovered": 15,
-    "total_completed": 0,
-    "total_pending": 13,
-    "total_in_progress": 1,
-    "total_blocked": 0,
-    "total_failed": 1,
-    "success_rate_percent": 0.0,
-    "total_time_spent_seconds": 30.75,
-    "formatted_time_spent": "00m 31s"
+    "total_discovered": 31,
+    "total_completed": 10,
+    "total_pending": 11,
+    "total_in_progress": 0,
+    "total_blocked": 5,
+    "total_failed": 5,
+    "success_rate_percent": 32.26,
+    "total_time_spent_seconds": 124.31,
+    "formatted_time_spent": "02m 04s"
   },
   "by_platform": {
     "guvi": {
       "total_discovered": 15,
       "total_completed": 0,
-      "total_pending": 13,
+      "total_pending": 11,
       "total_blocked": 0,
-      "total_failed": 1,
+      "total_failed": 4,
       "success_rate_percent": 0.0,
-      "time_spent_seconds": 30.75
+      "time_spent_seconds": 124.31
+    },
+    "zenclass_tasks": {
+      "total_discovered": 16,
+      "total_completed": 10,
+      "total_pending": 0,
+      "total_blocked": 5,
+      "total_failed": 1,
+      "success_rate_percent": 62.5,
+      "time_spent_seconds": 0.0
     }
   },
   "by_category": {
@@ -28,9 +37,113 @@
       "total": 15,
       "completed": 0,
       "success_rate_percent": 0.0
+    },
+    "Task": {
+      "total": 16,
+      "completed": 10,
+      "success_rate_percent": 62.5
     }
   },
   "human_intervention_issues": [
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-cct-regular",
+      "platform": "zenclass_tasks",
+      "category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_CCT_Regular",
+      "status": "FAILED",
+      "attempts": 0,
+      "failure_reason": "Submission modal did not appear for task 'zenclass-task-int-aiml-c-we-e-b2-cct-regular': Page.wait_for_selector: Timeout 7000ms exceeded.\nCall log:\n  - waiting for locator(\".submit-form-container-web\") to be visible\n",
+      "next_action": "INVESTIGATE_FAILURE",
+      "url": "https://v2.zenclass.in/tasks"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod12-agai",
+      "platform": "zenclass_tasks",
+      "category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod12_AGAI",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "url": "https://v2.zenclass.in/tasks"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod11-rag",
+      "platform": "zenclass_tasks",
+      "category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod11_RAG",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "url": "https://v2.zenclass.in/tasks"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod15-mlop",
+      "platform": "zenclass_tasks",
+      "category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod15_MLop",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "url": "https://v2.zenclass.in/tasks"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod14-rl",
+      "platform": "zenclass_tasks",
+      "category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod14_RL",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "url": "https://v2.zenclass.in/tasks"
+    },
+    {
+      "task_id": "zenclass-task-int-aiml-c-we-e-b2-mod13-fitu",
+      "platform": "zenclass_tasks",
+      "category": "Task",
+      "title": "INT-AIML-C-WE-E-B2_Mod13_FITu",
+      "status": "BLOCKED",
+      "attempts": 0,
+      "failure_reason": "External assessment requires interactive test session",
+      "next_action": "REQUIRES_HUMAN_INTERACTIVE_ASSESSMENT",
+      "url": "https://v2.zenclass.in/tasks"
+    },
+    {
+      "task_id": "guvi-15",
+      "platform": "guvi",
+      "category": "CodeKata",
+      "title": "63.15%",
+      "status": "FAILED",
+      "attempts": 1,
+      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+      "next_action": "REVISE_SOLVER_TEMPLATE",
+      "url": "https://www.guvi.in/code-kata/15/"
+    },
+    {
+      "task_id": "guvi-48",
+      "platform": "guvi",
+      "category": "CodeKata",
+      "title": "90.48%",
+      "status": "FAILED",
+      "attempts": 1,
+      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+      "next_action": "REVISE_SOLVER_TEMPLATE",
+      "url": "https://www.guvi.in/code-kata/48/"
+    },
+    {
+      "task_id": "guvi-37",
+      "platform": "guvi",
+      "category": "CodeKata",
+      "title": "77.37%",
+      "status": "FAILED",
+      "attempts": 1,
+      "failure_reason": "Traceback (most recent call last):\n  File \"<string>\", line 28, in <module>\n  File \"<string>\", line 20, in solve\nValueError: invalid literal for int() with base 10: '{display:inline-flex;font-size:inherit;line-height:inherit;flex:1'",
+      "next_action": "REVISE_SOLVER_TEMPLATE",
+      "url": "https://www.guvi.in/code-kata/37/"
+    },
     {
       "task_id": "guvi-97",
       "platform": "guvi",
