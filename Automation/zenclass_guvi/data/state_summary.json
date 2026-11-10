@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T17:16:05.714918+00:00",
+  "last_updated": "2026-11-10T17:17:49.134349+00:00",
   "summary": {
     "total_discovered": 1,
     "total_completed": 0,
-    "total_pending": 1,
-    "total_in_progress": 0,
+    "total_pending": 0,
+    "total_in_progress": 1,
     "total_blocked": 0,
     "total_failed": 0,
     "success_rate_percent": 0.0,
@@ -14,7 +14,7 @@
       "guvi": {
         "total_discovered": 1,
         "total_completed": 0,
-        "total_pending": 1,
+        "total_pending": 0,
         "total_blocked": 0,
         "total_failed": 0,
         "success_rate_percent": 0.0,
@@ -32,27 +32,21 @@
   },
   "tasks": [
     {
-      "task_id": "guvi-slug-1",
+      "task_id": "guvi-sample-prob",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "P1",
-      "url": "https://www.guvi.in/code-kata/slug-1/",
-      "status": "DISCOVERED",
+      "title": "Sample Prob",
+      "url": "https://www.guvi.in/code-kata/sample-prob/",
+      "status": "IN_PROGRESS",
       "attempt_count": 0,
-      "result": "UNATTEMPTED",
+      "result": "",
       "failure_reason": null,
-      "next_action": "SOLVE_AND_SUBMIT",
+      "next_action": "EXTRACTING_AND_SOLVING",
       "time_spent_seconds": 0.0,
-      "metadata": {
-        "slug": "slug-1",
-        "difficulty": "Easy",
-        "points": "30",
-        "success_rate": "85%",
-        "page_number": 1
-      },
-      "created_at": "2026-11-10T17:16:05.714736+00:00",
-      "updated_at": "2026-11-10T17:16:05.714736+00:00",
-      "timestamp": "2026-11-10T17:16:05.714736+00:00",
+      "metadata": {},
+      "created_at": "2026-11-10T17:17:49.133938+00:00",
+      "updated_at": "2026-11-10T17:17:49.133938+00:00",
+      "timestamp": "2026-11-10T17:17:49.133938+00:00",
       "attempts": 0,
       "category": "CodeKata"
     }
