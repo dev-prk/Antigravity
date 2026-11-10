@@ -135,11 +135,12 @@ class ProjectSynthesizer:
         Main synthesis entry point. Scaffolds target directory and generates all files.
         """
         proj_dir = Path(target_dir).resolve() if target_dir else (self.base_dir / spec.slug)
-        proj_dir.mkdir(parents=True, exist_ok=True)
         files_created: List[str] = []
 
         try:
+            proj_dir.mkdir(parents=True, exist_ok=True)
             p_type = spec.project_type
+
             if p_type == ProjectType.FULLSTACK_NODE:
                 files_created = self._synthesize_fullstack_node(spec, proj_dir)
             elif p_type == ProjectType.FULLSTACK_PYTHON:
