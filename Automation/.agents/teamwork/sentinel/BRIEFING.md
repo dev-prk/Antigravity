@@ -16,10 +16,11 @@ Manage and monitor execution of the job portal profile extraction, consolidation
 - LinkedIn safety: Absolutely NO direct messages, InMails, or connection requests.
 - Escalation halts: Immediately stop and prompt user upon encountering CAPTCHA, OTP, login prompts, passwords, payment requests, or unfamiliar site features.
 - Concurrency & roles: Maximum 3 agents active concurrently. Browser interactions sequential by Browser Operator only.
+- Browser Directive: Use the SAME browser session/window instead of launching new windows repeatedly; use tabs if needed.
 - Working directory: ~/resume
 
 ## User Context
-- **Last user request**: Approved task prompt received. Stage 1 (Know Me) execution to Gate 1.
+- **Last user request**: Urgent directive: reuse same browser session/window, use tabs, avoid repeatedly launching new windows.
 - **Pending clarifications**: none
 - **Delivered results**: none
 
