@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T22:27:00Z
+# BRIEFING — 2026-11-10T22:28:30Z
 
 ## Mission
 Orchestrate the E2E Testing Track for Headless Medium/Hard CodeKata: create comprehensive 4-tier opaque-box test suite (`tests/e2e/test_medium_hard_codekata.py`), `TEST_INFRA.md`, and `TEST_READY.md`.
@@ -43,19 +43,22 @@ Orchestrate the E2E Testing Track for Headless Medium/Hard CodeKata: create comp
 ## Team Roster
 | Agent | Type | Work Item | Status | Conv ID |
 |-------|------|-----------|--------|---------|
+| explorer_1 | teamwork_explorer | Existing test architecture & runner survey | in-progress | 4b86f0f7-4dea-4155-bfaf-5333749a5072 |
+| explorer_2 | teamwork_explorer | Core pipeline & driver architecture survey | in-progress | 04a805a8-9bef-4a61-9ea5-7c6ea5d1e811 |
+| spec_miner_3 | teamwork_spec_miner | 4-Tier test matrix & spec mining | in-progress | 998ceb89-4978-48ff-bd06-c45208f0826c |
 
 ## Succession Status
 - Succession required: no
-- Spawn count: 0 / 16
-- Pending subagents: none
+- Spawn count: 3 / 16
+- Pending subagents: 4b86f0f7-4dea-4155-bfaf-5333749a5072, 04a805a8-9bef-4a61-9ea5-7c6ea5d1e811, 998ceb89-4978-48ff-bd06-c45208f0826c
 - Predecessor: none
 - Successor spawned: not yet spawned
 - Successor generation: none
 - Successor state folder: none
 
 ## Active Timers
-- Heartbeat cron: not started
-- Safety timer: none
+- Heartbeat cron: a2e194af-3de6-422f-8c5c-dd7d83e31d8a/task-16
+- Safety timer: a2e194af-3de6-422f-8c5c-dd7d83e31d8a/task-28
 
 ## Artifact Index
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/sub_orch_e2e/SCOPE.md — E2E scope definition
