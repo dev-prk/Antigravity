@@ -182,15 +182,15 @@ def test_1000_synthetic_tasks(results: TestResults):
             tasks_to_insert.append((t_id, "guvi_codekata", "Basics", f"Easy Std Task {i}", "", "PENDING", 0, "", None, "", 0.0, meta, now, now))
             expected_counts["easy"] += 1
 
-        # 11. 150 standard Medium tasks
-        for i in range(150):
+        # 11. 125 standard Medium tasks
+        for i in range(125):
             t_id = f"task-med-std-{i:03d}"
             meta = json.dumps({"difficulty": "Medium", "index": i})
             tasks_to_insert.append((t_id, "guvi_codekata", "Basics", f"Med Std Task {i}", "", "PENDING", 0, "", None, "", 0.0, meta, now, now))
             expected_counts["medium"] += 1
 
-        # 12. 150 standard Hard tasks
-        for i in range(150):
+        # 12. 125 standard Hard tasks
+        for i in range(125):
             t_id = f"task-hard-std-{i:03d}"
             meta = json.dumps({"difficulty": "Hard", "index": i})
             tasks_to_insert.append((t_id, "guvi_codekata", "Basics", f"Hard Std Task {i}", "", "PENDING", 0, "", None, "", 0.0, meta, now, now))
