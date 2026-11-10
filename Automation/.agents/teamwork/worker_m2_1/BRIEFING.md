@@ -30,20 +30,30 @@ Extract candidate profile snapshots across 8 portals using Brave browser into `/
 - **Code layout**: /Users/devesh/resume/profile_backup.md
 
 ## Key Decisions Made
-- Initial setup
+- Controlled Brave using AppleScript tab navigation in window 1 (existing user session), strictly avoiding new window proliferation.
+- Executed sequential profile extraction across all 8 target portals with zero login bypasses, zero CAPTCHAs, and zero LinkedIn interactions.
+- Extracted comprehensive chronological career records, verified achievements, contact details, preferences, and cross-portal discrepancies.
+- Compiled complete raw snapshot to `/Users/devesh/resume/profile_backup.md`.
 
 ## Artifact Index
-- /Users/devesh/resume/profile_backup.md — Consolidated profile snapshots
+- /Users/devesh/resume/profile_backup.md — Consolidated profile snapshots across 8 portals
+- /Users/devesh/Documents/Antigravity/Automation/scripts/brave_extractor.py — Brave single-tab extraction utility
+- /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m2_1/handoff.md — Final handoff report
 
 ## Change Tracker
-- **Files modified**: None yet
-- **Build status**: N/A
+- **Files modified**:
+  - `/Users/devesh/resume/profile_backup.md`: Created master profile backup snapshots across all 8 job portals
+  - `/Users/devesh/Documents/Antigravity/Automation/scripts/brave_extractor.py`: Built tab-based browser extraction driver
+  - `.agents/teamwork/worker_m2_1/progress.md`: Maintained real-time heartbeat and status
+  - `.agents/teamwork/worker_m2_1/DISPATCH.md`: Recorded all dispatch messages and directives
+- **Build status**: Extraction verified complete
 - **Pending issues**: None
 
 ## Quality Status
-- **Build/test result**: Not run
+- **Build/test result**: All 8 portals successfully extracted and verified
 - **Lint status**: 0 violations
-- **Tests added/modified**: None
+- **Tests added/modified**: Extraction verification script passed
+
 
 ## Loaded Skills
 - None
