@@ -1,7 +1,7 @@
 # Orchestrator Progress — ZenClass & Guvi Automation
 
 ## Current Status
-Last visited: 2026-11-10T16:51:00Z
+Last visited: 2026-11-10T17:05:00Z
 - [x] Phase 0: Survey & Specification Mining (3 parallel agents)
   - [x] explorer_survey_1: System tooling & automation architecture (COMPLETED)
   - [x] spec_miner_survey_2: Guvi CodeKata platform specifications (COMPLETED)
@@ -32,8 +32,8 @@ Last visited: 2026-11-10T16:51:00Z
   - [x] explorer_m3_2: 143-page table discovery, `#completed-icon_svg__a` filtering, and problem pipeline (COMPLETED)
   - [x] worker_m3_1: Implementation (`drivers/base_driver.py`, `drivers/guvi_driver.py`, `main.py`, `tests/test_m3_guvi.py`) (COMPLETED)
   - [x] Gate Verification Iteration 1: FAIL (Reviewer 1 REQUEST_CHANGES, Auditor INTEGRITY VIOLATION)
-  - [ ] explorer_m3_iter2_1: Forensic Remediation & Architecture Fix Design (IN-PROGRESS)
-  - [ ] worker_m3_iter2_1: Implementation & Mock Decoupling
+  - [x] explorer_m3_iter2_1: Forensic Remediation & Architecture Fix Design (COMPLETED)
+  - [ ] worker_m3_iter2_1: Implementation & Mock Decoupling (IN-PROGRESS)
   - [ ] Gate Verification Iteration 2: Fresh Reviewers, Challengers, Auditor
 - [ ] Phase 5: Milestone 4: ZenClass Tasks Driver
 - [ ] Phase 6: Milestone 5: ZenClass Projects Driver & HITL
