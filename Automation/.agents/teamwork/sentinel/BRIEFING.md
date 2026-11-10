@@ -28,8 +28,8 @@ Manage and monitor execution of the job portal profile extraction, consolidation
 - **Phase**: in progress
 - **Route**: General (`teamwork_orchestrator`)
 - **Active Orchestrator**: db58fa7b-d6eb-41a4-a41e-34fc08b3e1d0
-- **Completed**: M1 (Resume Materials Ingestion - 25 files analyzed)
-- **Active Workers**: Browser Operator (extracting 8 portals in existing browser window via tabs; Instahyre complete, Naukri underway)
+- **Completed**: M1 (Resume Ingestion), M2 (8-Portal Extraction into ~/resume/profile_backup.md)
+- **Active Workers**: Worker M3 (`worker_m3_1` - consolidating master_profile.md & targets.md)
 
 ## Victory Audit Status
 - **Triggered**: no
