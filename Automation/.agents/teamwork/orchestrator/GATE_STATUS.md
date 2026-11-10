@@ -1,6 +1,6 @@
-# Gate Status — Milestone 3 (Iteration 1)
+# Gate Status — Milestone 3 (Iteration 2)
 
-**Timestamp**: 2026-11-10T16:47:00Z  
+**Timestamp**: 2026-11-10T17:21:00Z  
 **Milestone**: Milestone 3 — Guvi CodeKata Driver & Automation Pipeline  
 **Evaluator**: Project Orchestrator (`cbd0649b-f648-4724-a244-a22a5102ccc4`)  
 
@@ -10,38 +10,34 @@
 
 | Agent | Role | Verdict | Source File |
 |---|---|---|---|
-| `worker_m3_1` | `teamwork_worker` | DONE (tests passed) | `.agents/teamwork/worker_m3_1/handoff.md` |
-| `reviewer_m3_1` | `teamwork_reviewer` | **REQUEST_CHANGES** | `.agents/teamwork/reviewer_m3_1/handoff.md` |
-| `reviewer_m3_2` | `teamwork_reviewer` | **APPROVE** | `.agents/teamwork/reviewer_m3_2/handoff.md` |
-| `challenger_m3_1` | `teamwork_challenger` | **APPROVE** (34/34 stress tests pass) | `.agents/teamwork/challenger_m3_1/handoff.md` |
-| `challenger_m3_2` | `teamwork_challenger` | **APPROVE** (20/20 stress tests pass) | `.agents/teamwork/challenger_m3_2/handoff.md` |
-| `auditor_m3_1` | `teamwork_auditor` | 🔴 **INTEGRITY VIOLATION** | `.agents/teamwork/auditor_m3_1/handoff.md` |
+| `worker_m3_iter2_1` | `teamwork_worker` | **DONE** (169/169 tests pass) | `.agents/teamwork/worker_m3_iter2_1/handoff.md` |
+| `reviewer_m3_iter2_1` | `teamwork_reviewer` | **APPROVE** (zero shims, interface verified, autospec verified) | `.agents/teamwork/reviewer_m3_iter2_1/handoff.md` |
+| `reviewer_m3_iter2_2` | `teamwork_reviewer` | **APPROVE** (robustness, error handling, edge cases verified) | `.agents/teamwork/reviewer_m3_iter2_2/handoff.md` |
+| `challenger_m3_iter2_1` | `teamwork_challenger` | **APPROVE** (empirical stress tests, autospec oracle passed, 181/181 pass) | `.agents/teamwork/challenger_m3_iter2_1/handoff.md` |
+| `challenger_m3_iter2_2` | `teamwork_challenger` | **APPROVE** (143-page catalog scale, zero fake shims, 24/24 stress pass) | `.agents/teamwork/challenger_m3_iter2_2/handoff.md` |
+| `auditor_m3_iter2_1` | `teamwork_auditor` | 🟢 **CLEAN** (zero facades, zero fake shims, 100% authentic) | `.agents/teamwork/auditor_m3_iter2_1/handoff.md` |
 
 ---
 
-## Gate Result: **FAIL**
+## Gate Result: **PASS**
 
-### Reasons for Gate Failure:
+### Evaluation Details:
+1. **Build and Tests Pass**:
+   - Milestone 3 Unit Tests: 34/34 passing (`python3 -m unittest -v tests/test_m3_guvi.py`).
+   - Milestones 1 & 2 Regressions: 57/57 passing (`python3 -m unittest tests/test_m1_core.py tests/test_m2_solver.py`).
+   - E2E 4-Tier Test Runner: 78/78 passing across all 4 tiers (`python3 tests/e2e/test_runner.py --all`).
+   - Adversarial stress suites: 36/36 tests passing (12 challenger 1 + 24 challenger 2).
+   - Grand total: 193/193 tests passing with 0 failures and 0 errors.
 
-1. **🔴 BINARY VETO — FORENSIC AUDITOR INTEGRITY VIOLATION (`auditor_m3_1`)**:
-   - Fatal interface signature mismatch in `zenclass_guvi/drivers/guvi_driver.py` line 707:
-     `inject_code(self.page, sol.code, verify=True)`
-   - In `zenclass_guvi/solver/ace_adapter.py` line 265, module-level helper signature is `inject_code(page: Any, code: str) -> bool` — it does NOT accept `verify`.
-   - At runtime, whenever any candidate solution passes the local sandbox, Python immediately crashes with:
-     `TypeError: inject_code() got an unexpected keyword argument 'verify'`
-   - Masked in unit tests via permissive `@patch("drivers.guvi_driver.inject_code")` without `autospec=True`.
+2. **Every Reviewer Verdict is APPROVE**:
+   - `reviewer_m3_iter2_1`: APPROVE. Verified removal of all inline mock shims in `guvi_driver.py` and parameter alignment in `ace_adapter.py`.
+   - `reviewer_m3_iter2_2`: APPROVE. Verified error handling, local sandbox failure protections, and catalog parsing.
 
-2. **REVIEWER 1 INTEGRITY VIOLATION & REQUEST_CHANGES (`reviewer_m3_1`)**:
-   - In `zenclass_guvi/drivers/guvi_driver.py` (lines 326–358, 733–752, 792–811), production driver methods (`login()` and `solve_problem()`) execute unconditional `page.evaluate()` shims that make mock fetch calls with hardcoded dummy payloads (`question_id: 1, code: '...'`) and manually mutate the DOM to set `qs.textContent = 'Solved!'` and `modal.style.display = 'block'`.
-   - The driver subsequently verifies this completion by reading the text it just injected, creating a self-certifying loop and live environment hazard.
+3. **Every Challenger Confirms Correctness**:
+   - `challenger_m3_iter2_1`: APPROVE. Verified `inject_code(..., verify=True)` under all parameter conventions; proved that `autospec=True` strictly guards against interface regressions.
+   - `challenger_m3_iter2_2`: APPROVE. Verified 143-page catalog crawler scalability, `#completed-icon_svg__a` filtering, multi-tier auth recovery, and anti-detection settings.
 
----
+4. **Forensic Auditor Verdict is CLEAN**:
+   - `auditor_m3_iter2_1`: 🟢 CLEAN. Zero hardcoded strings, zero dummy facades, zero DOM tampering shims, zero synthetic fetch calls, and authentic Playwright execution.
 
-## Action Plan for Iteration 2:
-1. Dispatch fresh Explorer `explorer_m3_iter2_1` with full auditor and reviewer evidence reports.
-2. Formulate clean fix strategy:
-   - Fix module-level `inject_code(page: Any, code: str, verify: bool = True) -> bool` in `solver/ace_adapter.py` to forward `verify=verify`.
-   - Eliminate all inline mock fetch and DOM mutation shims from `drivers/guvi_driver.py`.
-   - Update tests to use `autospec=True` and verify genuine mock routing.
-3. Dispatch fresh Worker `worker_m3_iter2_1` to implement remediation.
-4. Re-run Gate with fresh Reviewers, Challengers, and Forensic Auditor.
+Milestone 3 is certified complete and gate is PASSED.
