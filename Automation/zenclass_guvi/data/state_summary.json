@@ -1,29 +1,20 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T23:03:18.373604+00:00",
+  "last_updated": "2026-11-10T23:06:05.396571+00:00",
   "summary": {
-    "total_discovered": 6,
-    "total_completed": 1,
-    "total_pending": 5,
+    "total_discovered": 2,
+    "total_completed": 0,
+    "total_pending": 2,
     "total_in_progress": 0,
     "total_blocked": 0,
     "total_failed": 0,
-    "success_rate_percent": 16.67,
+    "success_rate_percent": 0.0,
     "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
-        "total_discovered": 5,
-        "total_completed": 1,
-        "total_pending": 4,
-        "total_blocked": 0,
-        "total_failed": 0,
-        "success_rate_percent": 20.0,
-        "time_spent_seconds": 0.0
-      },
-      "zenclass": {
-        "total_discovered": 1,
+        "total_discovered": 2,
         "total_completed": 0,
-        "total_pending": 1,
+        "total_pending": 2,
         "total_blocked": 0,
         "total_failed": 0,
         "success_rate_percent": 0.0,
@@ -32,12 +23,7 @@
     },
     "by_category": {
       "CodeKata": {
-        "total": 5,
-        "completed": 1,
-        "success_rate_percent": 20.0
-      },
-      "Tasks": {
-        "total": 1,
+        "total": 2,
         "completed": 0,
         "success_rate_percent": 0.0
       }
@@ -46,10 +32,10 @@
   },
   "tasks": [
     {
-      "task_id": "guvi-easy-1",
+      "task_id": "t-med-lower",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Problem Easy 1",
+      "title": "Med Lower",
       "url": "",
       "status": "pending",
       "attempt_count": 0,
@@ -58,86 +44,19 @@
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Easy",
-        "slug": "easy-1"
+        "difficulty": "medium"
       },
-      "created_at": "2026-11-10T23:03:18.369045+00:00",
-      "updated_at": "2026-11-10T23:03:18.369045+00:00",
-      "timestamp": "2026-11-10T23:03:18.369045+00:00",
+      "created_at": "2026-11-10T23:06:05.395517+00:00",
+      "updated_at": "2026-11-10T23:06:05.395517+00:00",
+      "timestamp": "2026-11-10T23:06:05.395517+00:00",
       "attempts": 0,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-med-1",
+      "task_id": "t-hard-upper",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Problem Medium 1",
-      "url": "",
-      "status": "discovered",
-      "attempt_count": 0,
-      "result": "",
-      "failure_reason": null,
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {
-        "difficulty": "Medium",
-        "slug": "med-1"
-      },
-      "created_at": "2026-11-10T23:03:18.370289+00:00",
-      "updated_at": "2026-11-10T23:03:18.370289+00:00",
-      "timestamp": "2026-11-10T23:03:18.370289+00:00",
-      "attempts": 0,
-      "category": "CodeKata"
-    },
-    {
-      "task_id": "guvi-hard-1",
-      "platform": "guvi",
-      "task_category": "CodeKata",
-      "title": "Problem Hard 1",
-      "url": "",
-      "status": "redo",
-      "attempt_count": 0,
-      "result": "",
-      "failure_reason": null,
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {
-        "difficulty": "HARD",
-        "slug": "hard-1"
-      },
-      "created_at": "2026-11-10T23:03:18.371175+00:00",
-      "updated_at": "2026-11-10T23:03:18.371175+00:00",
-      "timestamp": "2026-11-10T23:03:18.371175+00:00",
-      "attempts": 0,
-      "category": "CodeKata"
-    },
-    {
-      "task_id": "guvi-med-completed",
-      "platform": "guvi",
-      "task_category": "CodeKata",
-      "title": "Problem Medium Completed",
-      "url": "",
-      "status": "completed",
-      "attempt_count": 0,
-      "result": "",
-      "failure_reason": null,
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {
-        "difficulty": "Medium",
-        "slug": "med-comp"
-      },
-      "created_at": "2026-11-10T23:03:18.371978+00:00",
-      "updated_at": "2026-11-10T23:03:18.371978+00:00",
-      "timestamp": "2026-11-10T23:03:18.371978+00:00",
-      "attempts": 0,
-      "category": "CodeKata"
-    },
-    {
-      "task_id": "zen-task-1",
-      "platform": "zenclass",
-      "task_category": "Tasks",
-      "title": "ZenClass Task 1",
+      "title": "Hard Upper",
       "url": "",
       "status": "pending",
       "attempt_count": 0,
@@ -146,32 +65,11 @@
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "tags": [
-          "javascript"
-        ]
+        "difficulty": "HARD"
       },
-      "created_at": "2026-11-10T23:03:18.372682+00:00",
-      "updated_at": "2026-11-10T23:03:18.372682+00:00",
-      "timestamp": "2026-11-10T23:03:18.372682+00:00",
-      "attempts": 0,
-      "category": "Tasks"
-    },
-    {
-      "task_id": "empty-meta-1",
-      "platform": "guvi",
-      "task_category": "CodeKata",
-      "title": "Empty Meta Task",
-      "url": "",
-      "status": "pending",
-      "attempt_count": 0,
-      "result": "",
-      "failure_reason": null,
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {},
-      "created_at": "2026-11-10T23:03:18.373441+00:00",
-      "updated_at": "2026-11-10T23:03:18.373441+00:00",
-      "timestamp": "2026-11-10T23:03:18.373441+00:00",
+      "created_at": "2026-11-10T23:06:05.396415+00:00",
+      "updated_at": "2026-11-10T23:06:05.396415+00:00",
+      "timestamp": "2026-11-10T23:06:05.396415+00:00",
       "attempts": 0,
       "category": "CodeKata"
     }

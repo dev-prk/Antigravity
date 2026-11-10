@@ -1,13 +1,13 @@
 # Progress — E2E Testing Track
 
-Last visited: 2026-11-10T23:06:00Z
+Last visited: 2026-11-10T23:05:50Z
 
 ## Current Status
 - [x] Initialized BRIEFING.md, SCOPE.md, and DISPATCH.md
 - [x] Iteration 1: Gate FAIL (Forensic Audit Integrity Violation)
   - Auditor reported hardcoded override in `_safe_generate_solution`, facade tests (`test_t2_r1_04`, `test_t2_r3_04`), `GuviDriver` omission, and 2 regression failures.
 - [ ] Iteration 2:
-  - [ ] Step 2B.a: Dispatch 3 Explorers with full auditor evidence (In progress: `a3b6fc3b`, `1019563b`, `69bf3512`)
+  - [ ] Step 2B.a: Dispatch 3 Explorers with full auditor evidence (Active: `a3b6fc3b`, `1019563b`, `69bf3512`)
   - [ ] Step 2B.b: Dispatch Worker to implement remediation
   - [ ] Step 2B.c: Dispatch 2 Reviewers
   - [ ] Step 2B.d: Dispatch 2 Challengers
