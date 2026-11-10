@@ -1,139 +1,2555 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:57:43.916504+00:00",
+  "last_updated": "2026-11-10T22:58:28.970922+00:00",
   "summary": {
-    "total_discovered": 5,
-    "total_completed": 3,
+    "total_discovered": 50,
+    "total_completed": 30,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 2,
+    "total_failed": 20,
     "success_rate_percent": 60.0,
     "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
-        "total_discovered": 5,
-        "total_completed": 3,
+        "total_discovered": 50,
+        "total_completed": 30,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 2,
+        "total_failed": 20,
         "success_rate_percent": 60.0,
         "time_spent_seconds": 0.0
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 5,
-        "completed": 3,
+        "total": 50,
+        "completed": 30,
         "success_rate_percent": 60.0
       }
     },
-    "human_intervention_issues": []
+    "human_intervention_issues": [
+      {
+        "task_id": "task-048",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 48",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 9 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-033",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 33",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 18 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-013",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 13",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 0 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-023",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 23",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 14 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-043",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 43",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 12 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-008",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 8",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 3 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-003",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 3",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 16 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-038",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 38",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 5 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-028",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 28",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 1 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-018",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 18",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 17 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-031",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 31",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 18 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-011",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 11",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 0 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-021",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 21",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 14 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-046",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 46",
+        "status": "FAILED",
+        "attempts": 5,
+        "failure_reason": "Worker 9 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-001",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 1",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 6 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-036",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 36",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 5 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-041",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 41",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 12 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-006",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 6",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 3 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-026",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 26",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 11 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      },
+      {
+        "task_id": "task-016",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Task 16",
+        "status": "FAILED",
+        "attempts": 6,
+        "failure_reason": "Worker 7 simulated error",
+        "next_action": "Requires review",
+        "url": ""
+      }
+    ]
   },
   "tasks": [
     {
-      "task_id": "guvi-med-0",
+      "task_id": "task-000",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Med 0",
+      "title": "Task 0",
       "url": "",
-      "status": "completed",
-      "attempt_count": 1,
-      "result": "",
-      "failure_reason": null,
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "index": 0,
+        "worker": 6,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
       },
-      "created_at": "2026-11-10T22:57:43.912706+00:00",
-      "updated_at": "2026-11-10T22:57:43.912706+00:00",
-      "timestamp": "2026-11-10T22:57:43.912706+00:00",
-      "attempts": 1,
+      "created_at": "2026-11-10T22:58:21.556023+00:00",
+      "updated_at": "2026-11-10T22:58:27.022823+00:00",
+      "timestamp": "2026-11-10T22:58:27.022823+00:00",
+      "attempts": 6,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-med-1",
+      "task_id": "task-001",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Med 1",
+      "title": "Task 1",
       "url": "",
-      "status": "completed",
-      "attempt_count": 1,
-      "result": "",
-      "failure_reason": null,
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 6 simulated error",
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Medium"
+        "difficulty": "Hard",
+        "index": 1,
+        "worker": 16,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
       },
-      "created_at": "2026-11-10T22:57:43.913980+00:00",
-      "updated_at": "2026-11-10T22:57:43.913980+00:00",
-      "timestamp": "2026-11-10T22:57:43.913980+00:00",
-      "attempts": 1,
+      "created_at": "2026-11-10T22:58:21.557309+00:00",
+      "updated_at": "2026-11-10T22:58:27.452722+00:00",
+      "timestamp": "2026-11-10T22:58:27.452722+00:00",
+      "attempts": 6,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-med-2",
+      "task_id": "task-002",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Med 2",
+      "title": "Task 2",
       "url": "",
-      "status": "completed",
-      "attempt_count": 1,
-      "result": "",
-      "failure_reason": null,
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Medium"
+        "difficulty": "Medium",
+        "index": 2,
+        "worker": 6,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
       },
-      "created_at": "2026-11-10T22:57:43.915113+00:00",
-      "updated_at": "2026-11-10T22:57:43.915113+00:00",
-      "timestamp": "2026-11-10T22:57:43.915113+00:00",
-      "attempts": 1,
+      "created_at": "2026-11-10T22:58:21.557912+00:00",
+      "updated_at": "2026-11-10T22:58:27.887129+00:00",
+      "timestamp": "2026-11-10T22:58:27.887129+00:00",
+      "attempts": 6,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-hard-0",
+      "task_id": "task-003",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Hard 0",
+      "title": "Task 3",
       "url": "",
-      "status": "failed",
-      "attempt_count": 3,
-      "result": "",
-      "failure_reason": null,
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 16 simulated error",
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Hard"
+        "difficulty": "Hard",
+        "index": 3,
+        "worker": 16,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
       },
-      "created_at": "2026-11-10T22:57:43.915741+00:00",
-      "updated_at": "2026-11-10T22:57:43.915741+00:00",
-      "timestamp": "2026-11-10T22:57:43.915741+00:00",
-      "attempts": 3,
+      "created_at": "2026-11-10T22:58:21.558511+00:00",
+      "updated_at": "2026-11-10T22:58:28.315438+00:00",
+      "timestamp": "2026-11-10T22:58:28.315438+00:00",
+      "attempts": 6,
       "category": "CodeKata"
     },
     {
-      "task_id": "guvi-hard-1",
+      "task_id": "task-004",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Hard 1",
+      "title": "Task 4",
       "url": "",
-      "status": "failed",
-      "attempt_count": 3,
-      "result": "",
-      "failure_reason": null,
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
       "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {
-        "difficulty": "Hard"
+        "difficulty": "Medium",
+        "index": 4,
+        "worker": 16,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
       },
-      "created_at": "2026-11-10T22:57:43.916339+00:00",
-      "updated_at": "2026-11-10T22:57:43.916339+00:00",
-      "timestamp": "2026-11-10T22:57:43.916339+00:00",
-      "attempts": 3,
+      "created_at": "2026-11-10T22:58:21.559752+00:00",
+      "updated_at": "2026-11-10T22:58:28.734288+00:00",
+      "timestamp": "2026-11-10T22:58:28.734288+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-005",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 5",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 5,
+        "worker": 3,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.560433+00:00",
+      "updated_at": "2026-11-10T22:58:26.953817+00:00",
+      "timestamp": "2026-11-10T22:58:26.953817+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-006",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 6",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 3 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 6,
+        "worker": 3,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.561146+00:00",
+      "updated_at": "2026-11-10T22:58:27.361624+00:00",
+      "timestamp": "2026-11-10T22:58:27.361624+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-007",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 7",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 7,
+        "worker": 3,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.562114+00:00",
+      "updated_at": "2026-11-10T22:58:27.885768+00:00",
+      "timestamp": "2026-11-10T22:58:27.885768+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-008",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 8",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 3 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 8,
+        "worker": 3,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.563426+00:00",
+      "updated_at": "2026-11-10T22:58:28.357896+00:00",
+      "timestamp": "2026-11-10T22:58:28.357896+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-009",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 9",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 9,
+        "worker": 3,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.564397+00:00",
+      "updated_at": "2026-11-10T22:58:28.868386+00:00",
+      "timestamp": "2026-11-10T22:58:28.868386+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-010",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 10",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 10,
+        "worker": 0,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.565261+00:00",
+      "updated_at": "2026-11-10T22:58:27.280335+00:00",
+      "timestamp": "2026-11-10T22:58:27.280335+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-011",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 11",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 0 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 11,
+        "worker": 0,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.566098+00:00",
+      "updated_at": "2026-11-10T22:58:27.739636+00:00",
+      "timestamp": "2026-11-10T22:58:27.739636+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-012",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 12",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 12,
+        "worker": 0,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.566985+00:00",
+      "updated_at": "2026-11-10T22:58:28.161806+00:00",
+      "timestamp": "2026-11-10T22:58:28.161806+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-013",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 13",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 0 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 13,
+        "worker": 0,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.567917+00:00",
+      "updated_at": "2026-11-10T22:58:28.638178+00:00",
+      "timestamp": "2026-11-10T22:58:28.638178+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-014",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 14",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 14,
+        "worker": 0,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.569033+00:00",
+      "updated_at": "2026-11-10T22:58:28.938400+00:00",
+      "timestamp": "2026-11-10T22:58:28.938400+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-015",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 15",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 15,
+        "worker": 7,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.570231+00:00",
+      "updated_at": "2026-11-10T22:58:26.502322+00:00",
+      "timestamp": "2026-11-10T22:58:26.502322+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-016",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 16",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 7 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 16,
+        "worker": 7,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.571295+00:00",
+      "updated_at": "2026-11-10T22:58:26.896051+00:00",
+      "timestamp": "2026-11-10T22:58:26.896051+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-017",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 17",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 17,
+        "worker": 7,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.572749+00:00",
+      "updated_at": "2026-11-10T22:58:27.521250+00:00",
+      "timestamp": "2026-11-10T22:58:27.521250+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-018",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 18",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 17 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 18,
+        "worker": 7,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.574299+00:00",
+      "updated_at": "2026-11-10T22:58:27.894537+00:00",
+      "timestamp": "2026-11-10T22:58:27.894537+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-019",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 19",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 19,
+        "worker": 7,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.575524+00:00",
+      "updated_at": "2026-11-10T22:58:28.427319+00:00",
+      "timestamp": "2026-11-10T22:58:28.427319+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-020",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 20",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 20,
+        "worker": 14,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.576738+00:00",
+      "updated_at": "2026-11-10T22:58:27.254283+00:00",
+      "timestamp": "2026-11-10T22:58:27.254283+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-021",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 21",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 14 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 21,
+        "worker": 14,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.577998+00:00",
+      "updated_at": "2026-11-10T22:58:27.698765+00:00",
+      "timestamp": "2026-11-10T22:58:27.698765+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-022",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 22",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 5,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 22,
+        "worker": 14,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.579402+00:00",
+      "updated_at": "2026-11-10T22:58:27.879119+00:00",
+      "timestamp": "2026-11-10T22:58:27.879119+00:00",
+      "attempts": 5,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-023",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 23",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 14 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 23,
+        "worker": 14,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.581282+00:00",
+      "updated_at": "2026-11-10T22:58:28.378754+00:00",
+      "timestamp": "2026-11-10T22:58:28.378754+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-024",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 24",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 24,
+        "worker": 14,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.582829+00:00",
+      "updated_at": "2026-11-10T22:58:28.867134+00:00",
+      "timestamp": "2026-11-10T22:58:28.867134+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-025",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 25",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 25,
+        "worker": 1,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.584294+00:00",
+      "updated_at": "2026-11-10T22:58:26.501107+00:00",
+      "timestamp": "2026-11-10T22:58:26.501107+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-026",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 26",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 11 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 26,
+        "worker": 1,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.585747+00:00",
+      "updated_at": "2026-11-10T22:58:27.071154+00:00",
+      "timestamp": "2026-11-10T22:58:27.071154+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-027",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 27",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 27,
+        "worker": 11,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.587352+00:00",
+      "updated_at": "2026-11-10T22:58:27.520211+00:00",
+      "timestamp": "2026-11-10T22:58:27.520211+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-028",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 28",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 1 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 28,
+        "worker": 1,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.589292+00:00",
+      "updated_at": "2026-11-10T22:58:28.021643+00:00",
+      "timestamp": "2026-11-10T22:58:28.021643+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-029",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 29",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 29,
+        "worker": 1,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.591183+00:00",
+      "updated_at": "2026-11-10T22:58:28.393937+00:00",
+      "timestamp": "2026-11-10T22:58:28.393937+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-030",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 30",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 30,
+        "worker": 8,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.592794+00:00",
+      "updated_at": "2026-11-10T22:58:27.273399+00:00",
+      "timestamp": "2026-11-10T22:58:27.273399+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-031",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 31",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 18 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 31,
+        "worker": 8,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.594428+00:00",
+      "updated_at": "2026-11-10T22:58:27.761354+00:00",
+      "timestamp": "2026-11-10T22:58:27.761354+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-032",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 32",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 32,
+        "worker": 8,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.596178+00:00",
+      "updated_at": "2026-11-10T22:58:28.249598+00:00",
+      "timestamp": "2026-11-10T22:58:28.249598+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-033",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 33",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 18 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 33,
+        "worker": 18,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.598424+00:00",
+      "updated_at": "2026-11-10T22:58:28.748912+00:00",
+      "timestamp": "2026-11-10T22:58:28.748912+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-034",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 34",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 34,
+        "worker": 18,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.600365+00:00",
+      "updated_at": "2026-11-10T22:58:28.934930+00:00",
+      "timestamp": "2026-11-10T22:58:28.934930+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-035",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 35",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 35,
+        "worker": 15,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.602130+00:00",
+      "updated_at": "2026-11-10T22:58:26.991214+00:00",
+      "timestamp": "2026-11-10T22:58:26.991214+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-036",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 36",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 5 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 36,
+        "worker": 5,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.604056+00:00",
+      "updated_at": "2026-11-10T22:58:27.452470+00:00",
+      "timestamp": "2026-11-10T22:58:27.452470+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-037",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 37",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 37,
+        "worker": 5,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.606502+00:00",
+      "updated_at": "2026-11-10T22:58:27.820334+00:00",
+      "timestamp": "2026-11-10T22:58:27.820334+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-038",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 38",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 5 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 38,
+        "worker": 5,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.608608+00:00",
+      "updated_at": "2026-11-10T22:58:28.265790+00:00",
+      "timestamp": "2026-11-10T22:58:28.265790+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-039",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 39",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 39,
+        "worker": 5,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.610654+00:00",
+      "updated_at": "2026-11-10T22:58:28.743103+00:00",
+      "timestamp": "2026-11-10T22:58:28.743103+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-040",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 40",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 40,
+        "worker": 12,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.612787+00:00",
+      "updated_at": "2026-11-10T22:58:26.935313+00:00",
+      "timestamp": "2026-11-10T22:58:26.935313+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-041",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 41",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 12 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 41,
+        "worker": 12,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.615672+00:00",
+      "updated_at": "2026-11-10T22:58:27.442625+00:00",
+      "timestamp": "2026-11-10T22:58:27.442625+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-042",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 42",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 42,
+        "worker": 12,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.618041+00:00",
+      "updated_at": "2026-11-10T22:58:27.884330+00:00",
+      "timestamp": "2026-11-10T22:58:27.884330+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-043",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 43",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 12 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 43,
+        "worker": 12,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.620298+00:00",
+      "updated_at": "2026-11-10T22:58:28.358065+00:00",
+      "timestamp": "2026-11-10T22:58:28.358065+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-044",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 44",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 44,
+        "worker": 12,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.623009+00:00",
+      "updated_at": "2026-11-10T22:58:28.748199+00:00",
+      "timestamp": "2026-11-10T22:58:28.748199+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-045",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 45",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 5,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 45,
+        "worker": 19,
+        "step": 10,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.625525+00:00",
+      "updated_at": "2026-11-10T22:58:27.144574+00:00",
+      "timestamp": "2026-11-10T22:58:27.144574+00:00",
+      "attempts": 5,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-046",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 46",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 5,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 9 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 46,
+        "worker": 9,
+        "step": 11,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.628014+00:00",
+      "updated_at": "2026-11-10T22:58:27.654800+00:00",
+      "timestamp": "2026-11-10T22:58:27.654800+00:00",
+      "attempts": 5,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-047",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 47",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 47,
+        "worker": 9,
+        "step": 12,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.630685+00:00",
+      "updated_at": "2026-11-10T22:58:28.314090+00:00",
+      "timestamp": "2026-11-10T22:58:28.314090+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-048",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 48",
+      "url": "",
+      "status": "FAILED",
+      "attempt_count": 6,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker 9 simulated error",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Medium",
+        "index": 48,
+        "worker": 9,
+        "step": 13,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.633347+00:00",
+      "updated_at": "2026-11-10T22:58:28.830258+00:00",
+      "timestamp": "2026-11-10T22:58:28.830258+00:00",
+      "attempts": 6,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "task-049",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Task 49",
+      "url": "",
+      "status": "COMPLETED",
+      "attempt_count": 6,
+      "result": "SOLVED",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {
+        "difficulty": "Hard",
+        "index": 49,
+        "worker": 9,
+        "step": 14,
+        "test_cases": [
+          {
+            "case": 0,
+            "passed": true
+          },
+          {
+            "case": 1,
+            "passed": true
+          },
+          {
+            "case": 2,
+            "passed": true
+          },
+          {
+            "case": 3,
+            "passed": true
+          },
+          {
+            "case": 4,
+            "passed": true
+          }
+        ]
+      },
+      "created_at": "2026-11-10T22:58:21.635873+00:00",
+      "updated_at": "2026-11-10T22:58:28.966996+00:00",
+      "timestamp": "2026-11-10T22:58:28.966996+00:00",
+      "attempts": 6,
       "category": "CodeKata"
     }
   ]
