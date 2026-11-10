@@ -1,0 +1,17 @@
+{
+ "title": "42. Pair Sum Check",
+ "slug": "pair-sum-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n42. Pair Sum Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers N,X and an array of N elements, check if there exists any 2 numbers in the array with sum equal to X.If found print 'yes' otherwise print 'no'",
+ "input_spec": "The input consists of two numbers N and X, and an array of N elements. N and X are up to 100000.",
+ "output_spec": "Print 'yes' if two numbers with sum equal to X are found in the array, otherwise print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n2 2 0 0",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

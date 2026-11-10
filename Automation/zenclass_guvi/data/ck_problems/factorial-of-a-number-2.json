@@ -1,0 +1,17 @@
+{
+ "title": "48. Factorial of a Number-2",
+ "slug": "factorial-of-a-number-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n48. Factorial of a Number-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N, find the factorial of N.",
+ "input_spec": "The input consists of a single integer N, constrained by 1 <= N <= 25.",
+ "output_spec": "The output is the calculated factorial of N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "120"
+  }
+ ],
+ "raw": ""
+}

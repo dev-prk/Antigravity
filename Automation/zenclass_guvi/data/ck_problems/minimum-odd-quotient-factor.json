@@ -1,0 +1,17 @@
+{
+ "title": "43. Minimum Odd Quotient Factor",
+ "slug": "minimum-odd-quotient-factor",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n43. Minimum Odd Quotient Factor\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven number N, find the minimum factor which yeilds odd number as the quotient.",
+ "input_spec": "The input consists of a single integer N, where N <= 100000.",
+ "output_spec": "The output is the minimum factor of N that yields an odd number as the quotient.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "9",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "46. Descending Elements Below N",
+ "slug": "descending-elements-below-n",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n46. Descending Elements Below N\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N elements, print all elements lesser than N in descending order. If no element found print -1.",
+ "input_spec": "The input consists of a number N, and an array of N elements. N is between 1 and 10000 (inclusive).",
+ "output_spec": "Print all elements from the array that are lesser than N, in descending order. If no such elements are found, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n2 14 15 14 3",
+   "output": "3 2"
+  }
+ ],
+ "raw": ""
+}

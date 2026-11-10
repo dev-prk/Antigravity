@@ -1,0 +1,17 @@
+{
+ "title": "47. Numbers Repeated K Times",
+ "slug": "numbers-repeated-k-times",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n47. Numbers Repeated K Times\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers N,K and an array of N elements, print the number(s) that has been repeated K times.Print them in ascending order if there are more than one number to be printed.If no element satisfies the pattern then print -1",
+ "input_spec": "The input consists of two integers N and K, followed by an array of N elements. N and K are up to 100000.",
+ "output_spec": "Print the numbers that have been repeated K times in ascending order. If no such element exists, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2\n1 2 4 1 2",
+   "output": "1 2"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "50. Delete Last K Array Elements",
+ "slug": "delete-last-k-array-elements",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n50. Delete Last K Array Elements\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers N,K print the array after deleting the last K elements.",
+ "input_spec": "N,K <= 100000",
+ "output_spec": "The array after deleting the last K elements.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 4\n1 2 3 4 5",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}
