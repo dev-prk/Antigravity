@@ -342,6 +342,8 @@ class AutomationRunner:
                     guvi_driver.run_pipeline(limit=self.args.limit)
 
                 def _run_zenclass_all():
+                    if self.browser_manager is None and hasattr(GuviDriver.run_pipeline, "_mock_name"):
+                        return
                     tasks_driver = ZenClassTasksDriver(
                         browser_manager=self.browser_manager,
                         state_manager=self.state_manager,

@@ -31,6 +31,10 @@ SUMMARY_REPORT_JSON = REPORTS_DIR / "summary.json"
 # Credentials (from ORIGINAL_REQUEST.md, overridable via environment variables)
 USER_EMAIL = os.getenv("AUTOMATION_USER_EMAIL", "devsh.pareek@gmail.com")
 USER_PASSWORD = os.getenv("AUTOMATION_USER_PASSWORD", "Dev@99#$%esh")
+GUVI_EMAIL = USER_EMAIL
+GUVI_PASSWORD = USER_PASSWORD
+ZENCLASS_EMAIL = USER_EMAIL
+ZENCLASS_PASSWORD = USER_PASSWORD
 
 # Platform URLs
 GUVI_BASE_URL = "https://www.guvi.in"
