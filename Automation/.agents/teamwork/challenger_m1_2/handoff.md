@@ -1,216 +1,226 @@
-# Handoff Report: Empirical Adversarial Challenge for Milestone 1
+# Adversarial Challenge & Stress-Test Report: Milestone 1 Extractor
 
-**Agent ID**: `challenger_m1_2`  
-**Role**: Empirical Adversarial Challenger (critic, specialist)  
-**Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2`  
-**Recipient**: `cbd0649b-f648-4724-a244-a22a5102ccc4` (Parent Orchestrator)  
-**Milestone**: Milestone 1 (Core Foundation & Infrastructure)  
-**Verdict**: **APPROVE**  
-**Handoff Type**: Hard (Challenge Complete)  
+- **Agent**: Challenger 2 (`challenger_m1_2`)
+- **Roles**: critic, specialist
+- **Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi`
+- **State Folder**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2`
+- **Target Target**: `zenclass_guvi/solver/extractor.py`
+- **Verdict**: **`REQUEST_CHANGES`**
+- **Date**: 2026-11-10T23:02:00Z
 
 ---
 
 ## 1. Observation
 
-Direct empirical code execution and adversarial stress harnesses were authored and executed against the Milestone 1 codebase in `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/`:
-- `config.py`
-- `core/browser.py` (`BrowserManager`)
-- `core/hitl_handler.py` (`HitlHandler`)
-- `core/state_manager.py` (`StateManager`)
+A dedicated empirical stress-test harness containing 14 adversarial test scenarios (`stress_test_harness.py`) was executed against `zenclass_guvi/solver/extractor.py`.
 
-### 1.1 Empirical Verification Test Suite (`test_empirical_m1.py`)
-Authored dedicated 14-test verification harness in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/test_empirical_m1.py`.
-Execution command:
-`python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/test_empirical_m1.py`
-
-Verbatim Output:
+### 1.1 Verbatim Command & Test Execution Output
+Command executed:
+```sh
+python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/stress_test_harness.py
 ```
-test_chromium_launch_args_anti_detection (__main__.TestBrowserManagerEmpirical)
-Verify Chromium launch arguments contain anti-detection flags. ... ok
-test_live_browser_anti_detection_navigator_webdriver (__main__.TestBrowserManagerEmpirical)
-Launch headed Chromium and verify navigator.webdriver is undefined or false. ... ok
-test_live_browser_tab_reuse (__main__.TestBrowserManagerEmpirical)
-Verify get_page() reuses initial blank page and does not spawn redundant blank tabs. ... ok
-test_r1_headed_default_compliance (__main__.TestBrowserManagerEmpirical)
-Verify BrowserManager defaults strictly to headed foreground execution (R1). ... ok
-test_session_serialization_storage_state (__main__.TestBrowserManagerEmpirical)
-Verify close() and save_storage_state() produce a valid JSON file containing cookies and origins. ... ok
-test_api_check_guardrails_presence_check (__main__.TestHitlHandlerEmpirical)
-Check whether check_guardrails or detect_guardrail is present on HitlHandler. ... 
-[API Audit] HitlHandler API inspection:
-  - hasattr(hitl, 'check_guardrails'): False
-  - hasattr(hitl, 'detect_guardrail'): True
-  - hasattr(hitl, 'check_and_handle_guardrails'): True
-  - hasattr(hitl, 'check_guardrails_in_html'): True
-ok
-test_cloudflare_turnstile_detection (__main__.TestHitlHandlerEmpirical)
-Test detection of Cloudflare Turnstile variations. ... ok
-test_false_positive_resistance (__main__.TestHitlHandlerEmpirical)
-Verify clean pages without security challenges return None. ... ok
-test_guvi_activation_modal_detection (__main__.TestHitlHandlerEmpirical)
-Test detection of Guvi Account Activation modal. ... ok
-test_otp_input_detection (__main__.TestHitlHandlerEmpirical)
-Test detection of OTP input variations. ... [OTP Check] input[type='tel'][maxlength='6'] detected: False
-ok
-test_recaptcha_detection (__main__.TestHitlHandlerEmpirical)
-Test detection of Google reCAPTCHA variations. ... ok
-test_zenclass_mfa_detection (__main__.TestHitlHandlerEmpirical)
-Test detection of ZenClass MFA step-up authentication. ... ok
-test_invalid_and_malicious_urls (__main__.TestUrlValidationEmpirical)
-Verify rejection of invalid, malicious, or malformed URLs. ... ok
-test_valid_urls (__main__.TestUrlValidationEmpirical)
-Verify acceptance of legitimate repository and deployment URLs. ... ok
-
-----------------------------------------------------------------------
-Ran 14 tests in 4.423s
-
-OK
+Verbatim failure summary:
+```
+FAILED (failures=15)
+Ran 14 tests in 0.126s
 ```
 
-### 1.2 Adversarial Stress Test Suite (`test_adversarial_stress.py`)
-Authored 5-test stress harness in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/test_adversarial_stress.py`.
-Execution command:
-`python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/test_adversarial_stress.py`
+### 1.2 Specific Empirical Defects Observed
 
-Verbatim Output:
-```
-test_browser_manager_idempotency_and_recovery (__main__.TestAdversarialStress)
-Verify BrowserManager handles double close, recovery after close, and screenshot edge cases. ... ok
-test_hitl_cloudflare_title_and_account_restriction (__main__.TestAdversarialStress)
-Verify detection of Cloudflare interstitial page by title and Account restriction banner. ... ok
-test_hitl_state_manager_blocking_integration (__main__.TestAdversarialStress)
-Verify check_and_handle_guardrails updates StateManager to BLOCKED when guardrail is found. ... Guardrail detected: ZenClass MFA / Two-Factor Authentication Challenge (type=zenclass_mfa)
-...
-Non-interactive mode active: cannot pause for human. Marking task blocked.
-ok
-test_request_project_links_fallback_pathways (__main__.TestAdversarialStress)
-Verify request_project_links under user_inputs, links_file, and non-interactive failure. ... ok
-test_url_validation_adversarial_fuzzing (__main__.TestAdversarialStress)
-Intensive fuzzing of URL validation against malicious and non-standard schemes. ... ok
+#### Defect 1: Deletion of Valid Python Dictionaries & Sets with Single Quotes (`_is_pure_css`)
+- **Location**: `zenclass_guvi/solver/extractor.py:196-198`
+  ```python
+  if t.startswith("{") and re.search(cls._CSS_PROP_PATTERN, t, re.IGNORECASE):
+      if not re.search(r'^\s*\{\s*"', t):
+          return True
+  ```
+- **Observed Behavior**:
+  Line 197 checks only for double quote `"` (`r'^\s*\{\s*"'`). Valid Python dictionaries that use single quotes `'` (e.g. `{'display': 'inline', 'val': 100}` or `{'width': 10, 'height': 20}`) fail this regex test, evaluating `not re.search(...)` to `True`. Consequently, `_is_pure_css()` classifies legitimate Python dictionaries and sets as pure CSS.
+  When passed to `_filter_and_renumber` (line 464):
+  ```python
+  if cls._is_pure_css(case.input_text) or cls._is_pure_css(case.expected_output):
+      continue
+  ```
+  The entire sample test case is dropped from `spec.sample_cases`.
+- **Verbatim Failure Output**:
+  ```
+  FAIL: test_valid_python_dictionary_with_single_quotes (__main__.TestLegitimateBracesPreservation)
+  AssertionError: 0 != 1 : Legitimate Python dict with single quotes was discarded by _is_pure_css
 
-----------------------------------------------------------------------
-Ran 5 tests in 4.432s
+  FAIL: test_valid_python_dict_outputs_with_common_properties (__main__.TestLegitimateBracesPreservation) (dict_str="{'width': 10, 'height': 20}")
+  AssertionError: 0 != 1 : Sample case with dict output {'width': 10, 'height': 20} was discarded by _is_pure_css
 
-OK
-```
+  FAIL: test_valid_python_set_of_css_keywords (__main__.TestLegitimateBracesPreservation)
+  AssertionError: 0 != 1 : Python set with single quotes {'display', 'flex', 'inline'} was discarded by _is_pure_css
+  ```
+  Impacted keys tested: `width`, `height`, `font`, `border`, `flex`, `margin`, `padding`, `display`, `position`, `color`.
 
-### 1.3 Key Architectural & Code Observations
-1. **Requirement R1 Headed Default**:
-   - `config.py` line 46: `HEADLESS = os.getenv("AUTOMATION_HEADLESS", "false").lower() == "true"`, evaluating to `False`.
-   - `core/browser.py` line 55: `self.headless = config.HEADLESS if headless is None else headless`. Instantiating `BrowserManager()` without arguments guarantees `self.headless == False`.
-2. **Anti-Detection & navigator.webdriver**:
-   - `config.py` line 53: `--disable-blink-features=AutomationControlled` is passed in `BROWSER_ARGS`.
-   - `config.py` line 59: `--enable-automation` is passed in `IGNORE_DEFAULT_ARGS`.
-   - In live Chromium on macOS Aqua (`test_live_browser_anti_detection_navigator_webdriver`), `page.evaluate("navigator.webdriver")` evaluated to `False` / undefined, and `navigator.userAgent` contained no `HeadlessChrome` string.
-3. **Tab Lifecycle & Tab Reuse**:
-   - `core/browser.py` lines 152–157: `open_pages = [p for p in ctx.pages if not p.is_closed()]`. Reuses `open_pages[0]` if open; does not call `ctx.new_page()` unnecessarily.
-   - Verified that repeated calls to `get_page()` and `get_page(url)` reuse the active tab without inflating the tab count.
-4. **Session Persistence**:
-   - `core/browser.py` lines 196–204: `save_storage_state()` calls `self._context.storage_state(path=str(self.storage_state_path))`.
-   - On context exit or `atexit`, the JSON file is written containing keys `cookies` and `origins`. Verified with custom cookie serialization.
-5. **Guardrail Interception & False-Positive Resistance**:
-   - Cloudflare Turnstile (`iframe[src*="challenges.cloudflare.com"]`, `div.cf-turnstile`, `#challenge-stage`, and `<title>Just a moment...</title>`) correctly classified as `CLOUDFLARE_TURNSTILE`.
-   - Google reCAPTCHA (`iframe[src*="google.com/recaptcha"]`, `div.g-recaptcha`) correctly classified as `RECAPTCHA`.
-   - ZenClass MFA (`.login-content-wrapper.login-mfa-active`, `div.login-mfa-wrapper`) correctly classified as `ZENCLASS_MFA`.
-   - Guvi Activation Modal (`#myModal`, `#sendmail`) correctly classified as `GUVI_ACTIVATION_MODAL`.
-   - Account Restriction (`Account disabled. Contact Coordinator.`) correctly classified as `ACCOUNT_RESTRICTION`.
-   - Clean forms, normal ZenClass login page, CodeKata editor, and hidden Bootstrap modal (`style="display: none;"`) returned `None` (0 false positives).
-6. **URL Validation (`HitlHandler.validate_url`)**:
-   - Legitimate GitHub repos, Vercel/Netlify apps, and FTP links return `True`.
-   - Malicious vectors (`javascript:alert(1)`, `javascript://alert(1)`, `data:text/html`, `file:///etc/passwd`, empty string, spaces, `not-a-url`, `http://`, `https://`) return `False`.
+#### Defect 2: Input & Output Corruption via Redundant Angle-Bracket Stripping
+- **Location**: `zenclass_guvi/solver/extractor.py:459-460`
+  ```python
+  clean_in = re.sub(r"<[^>]+>", "", clean_in).strip()
+  clean_out = re.sub(r"<[^>]+>", "", clean_out).strip()
+  ```
+- **Observed Behavior**:
+  In `_clean_text`, HTML tags are stripped (`text = re.sub(r"<[^>]+>", " ", text)` line 284) *before* decoding entities (`text = html.unescape(text)` line 286). This correctly converts `&lt;int&gt;` or `&lt;stdio.h&gt;` into `<int>` and `<stdio.h>`.
+  However, in `_filter_and_renumber` (lines 459-460), `re.sub(r"<[^>]+>", "", clean_in)` runs *again* on the unescaped text.
+  This strips legitimate code, C/C++ generics, headers, and comparison operators:
+  - `"vector<int> nums"` is corrupted into `"vector nums"`
+  - `"#include <stdio.h>"` is corrupted into `"#include"`
+  - `"5 < 10 and 20 > 15"` is corrupted into `"5  15"`
+- **Verbatim Failure Output**:
+  ```
+  FAIL: test_cpp_code_snippets_and_generics_preservation (__main__.TestLegitimateBracesPreservation) (case_name='comparison')
+  AssertionError: '5  15' != '5 < 10 and 20 > 15'
+
+  FAIL: test_cpp_code_snippets_and_generics_preservation (__main__.TestLegitimateBracesPreservation) (case_name='generics')
+  AssertionError: 'vector nums' != 'vector<int> nums'
+
+  FAIL: test_cpp_code_snippets_and_generics_preservation (__main__.TestLegitimateBracesPreservation) (case_name='c_header')
+  AssertionError: '#include' != '#include <stdio.h>'
+  ```
+
+#### Defect 3: CSS Leaks Retained as Empty Test Cases
+- **Location**: `zenclass_guvi/solver/extractor.py:457-465, 482-488`
+- **Observed Behavior**:
+  In Strategy 1, `clean_in = cls._clean_text(in_raw, preserve_newlines=True)` runs *before* adding to `raw_cases`. When `in_raw` is a pure CSS declaration leak (e.g. `{display:inline-flex;font-size:inherit;line-height:inherit;flex:1}`), `_clean_text` wipes it out to `""`.
+  Then `raw_cases` contains `SampleCase(input_text="", expected_output="42")`.
+  In `_filter_and_renumber`:
+  ```python
+  if not clean_in and not clean_out:
+      continue
+  if cls._is_pure_css(case.input_text) or cls._is_pure_css(case.expected_output):
+      continue
+  ```
+  Because `case.input_text` is already `""`, `_is_pure_css("")` returns `False`.
+  Because `clean_out` is `"42"`, `not clean_in and not clean_out` evaluates to `False`.
+  As a result, the test case is **not dropped**, but retained as `SampleCase(input_text='', expected_output='42')`.
+- **Verbatim Failure Output**:
+  ```
+  FAIL: test_real_world_css_leak_dropping (__main__.TestRealWorldCSSLeaks)
+  AssertionError: 2 != 1 : CSS leak was retained with empty input: [SampleCase(input_text='', expected_output='42', case_number=1, explanation=None), SampleCase(input_text='1 5 3', expected_output='5', case_number=2, explanation=None)]
+  ```
+
+#### Defect 4: Compound CSS Selectors & @keyframes Leak into Description / Text
+- **Location**: `zenclass_guvi/solver/extractor.py:153-165`
+- **Observed Behavior**:
+  1. `_CSS_AT_RULE_RE` only matches `@media` nested blocks and single `@rule ...;` rules. For `@keyframes spin { 0% { ... } 100% { ... } }`, it leaves `{ 0% 100% }` behind in problem descriptions.
+  2. In `_CSS_RULE_RE`:
+     `rf"(?:[.#]?[a-zA-Z0-9_\-,>+~\[\]\=\"\'\s]+?(?:::[a-z\-]+|:[a-z\-]+(?:\([^\)]*\))?)?)\s*"`
+     `[.#]?` only matches at the start of selector tokens. The character class `[a-zA-Z0-9_\-,>+~\[\]\=\"\'\s]` omits `.` and `#`.
+     Consequently, selectors like `div.card`, `span.badge`, and `div#container` fail to match `_CSS_RULE_RE`. Only their declaration blocks `{ ... }` are stripped, leaking selector names (`div.card`, `span.badge`, `div#container`) into descriptions and raw text.
+  3. `_CSS_RULE_RE` lookahead `(?![^\{\n]*(?:Sample|Case|Input\s*[:\-]|Output\s*[:\-]|Description|Problem))` matches `output:` in `output::after`, preventing pseudo-elements like `output::after` from being stripped as CSS.
+- **Verbatim Failure Output**:
+  ```
+  FAIL: test_class_selector_leakage (__main__.TestComplexInlineCSS)
+  AssertionError: 'div.card' unexpectedly found in 'div.card span.badge Sort cards by suit.'
+
+  FAIL: test_keyframes_leakage (__main__.TestComplexInlineCSS)
+  AssertionError: '{ 0% 100% }' unexpectedly found in '{ 0% 100% } Rotate the array k times.'
+
+  FAIL: test_pseudo_element_leakage (__main__.TestComplexInlineCSS)
+  AssertionError: 'output::after' != ''
+  ```
+
+#### Defect 5: Unclosed `<style>` Swallowing Semantic HTML5 Containers
+- **Location**: `zenclass_guvi/solver/extractor.py:272`
+- **Observed Behavior**:
+  The unclosed style lookahead tag list is `(?:p|div|h[1-6]|span|body|html|br|pre|table|ul|li)`. It lacks semantic HTML5 tags: `section`, `article`, `main`, `aside`, `header`, `footer`.
+  When an unclosed `<style>` tag is followed by `<section>Problem Statement: ...</section>`, the regex swallows the section block entirely up to the first recognized block tag (such as `<p>Sample Input: ...</p>`), causing `spec.description` to be empty (`""`).
+- **Verbatim Failure Output**:
+  ```
+  FAIL: test_unclosed_style_swallows_semantic_tags (__main__.TestPathologicalMalformedTags)
+  AssertionError: '' != 'Calculate factorial of n.'
+  + Calculate factorial of n. : Unclosed <style> swallowed <section> Problem Statement
+  ```
 
 ---
 
 ## 2. Logic Chain
 
-1. **R1 Compliance**:
-   - Observation 1.3.1 & 1.3.2 confirm that Chromium defaults strictly to headed foreground execution and disables automation flags.
-   - Observation 1.1 test `test_live_browser_anti_detection_navigator_webdriver` verified that `navigator.webdriver` is falsy in a live Playwright session.
-   - Conclusion: Platform bot detection will not flag automation via standard `navigator.webdriver` or headless headers.
-
-2. **Tab Reuse and Resource Stability**:
-   - Observation 1.3.3 confirms `open_pages[0]` reuse.
-   - Observation 1.1 test `test_live_browser_tab_reuse` verified that navigation commands operate on the single active foreground tab, preventing memory leaks and runaway popup tab creation.
-   - Conclusion: Browser context remains stable over multi-hour runs.
-
-3. **Session Serialization**:
-   - Observation 1.3.4 & Observation 1.1 test `test_session_serialization_storage_state` confirmed dual-layer persistence (Chromium user data dir + explicit `storage_state.json` cookie dump).
-   - Conclusion: Browser sessions survive process restarts and crashes without requiring credential re-authentication on every run.
-
-4. **Human-in-the-Loop Interception Accuracy**:
-   - Observation 1.3.5 & Observation 1.1 tests confirmed accurate classification across all 5 challenge categories and 0 false positives on clean pages.
-   - Observation 1.2 test `test_hitl_state_manager_blocking_integration` confirmed that detecting a guardrail in non-interactive mode immediately records `BLOCKED` status and failure description in SQLite `StateManager`.
-   - Conclusion: Requirement R1 & R2 pause protocol operates robustly without fabricating bypasses or hallucinating completions.
-
-5. **Security & Input Sanitation**:
-   - Observation 1.3.6 & Observation 1.2 test `test_url_validation_adversarial_fuzzing` confirmed that invalid URLs, XSS payloads (`javascript:`), and malformed strings are rejected by `HitlHandler.validate_url`.
-   - Conclusion: Submissions to ZenClass project forms will not submit broken links or trigger injection attacks.
+1. **Premise**: In competitive programming (including CodeKata), problems frequently involve dictionaries, sets, code snippets, generics, and comparison operators.
+2. **Defect 1 Impact**:
+   - `_is_pure_css` in `solver/extractor.py:197` checks `if not re.search(r'^\s*\{\s*"', t): return True`.
+   - Python string representations of dictionaries (e.g., `{'display': 'inline', 'val': 100}` or `{'width': 10, 'height': 20}`) use single quotes `'`.
+   - Because of this missing single quote check, `_is_pure_css` flags valid dictionaries as CSS declaration blocks.
+   - `_filter_and_renumber` discards the entire test case.
+   - When a problem tests dictionary output (such as counting frequencies, geometry with `width`/`height`, or graph positions), the code generator and test runner will find 0 sample cases or misaligned sample cases.
+3. **Defect 2 Impact**:
+   - Lines 459-460 run `re.sub(r"<[^>]+>", "", clean_in)` on strings that have already been unescaped from HTML entities.
+   - Any `<` and `>` pair in the input (such as `5 < 10 and 20 > 15`, `vector<int>`, or `#include <stdio.h>`) is stripped as if it were an HTML tag.
+   - This corrupts the problem's sample input text before passing it to the solver.
+4. **Defect 3 Impact**:
+   - Live production tasks like `guvi-97` failed with `ValueError: invalid literal for int() with base 10: '{display:inline-flex...}'`.
+   - The worker's current fix wipes out the input to `""` via `_clean_text`, but `_filter_and_renumber` does not drop the test case if `expected_output` is non-empty.
+   - This leaves behind an invalid `SampleCase(input_text='', expected_output='42')`.
+5. **Conclusion**:
+   The current implementation of `solver/extractor.py` introduces false test case deletions, corrupted code inputs, and CSS selector leakage. Milestone 1 cannot be approved in this state.
 
 ---
 
-## 3. Caveats & Findings
+## 3. Caveats
 
-1. **Ergonomic Method Naming (`check_guardrails` vs `detect_guardrail`)**:
-   - `HitlHandler` implements `detect_guardrail(page: Any) -> Optional[GuardrailEvent]` and `check_and_handle_guardrails(page: Any) -> bool`.
-   - It does not currently define an alias `check_guardrails = detect_guardrail`. Any caller attempting `hitl.check_guardrails(page)` would encounter an `AttributeError`.
-   - *Recommendation*: In Milestone 2 or driver integrations, add `check_guardrails = detect_guardrail` to `HitlHandler` as a convenience alias.
-2. **Generic OTP Tel Selector**:
-   - `GUARDRAIL_RULES` matches `#otp`, `input[name*='otp']`, `placeholder*='OTP'`, and `autocomplete='one-time-code'`.
-   - A bare `<input type="tel" maxlength="6">` without `otp` in its name, id, or placeholder is not matched by the current rule selector.
-   - *Recommendation*: Add `input[type='tel'][maxlength='6']` to `GUARDRAIL_RULES` selector list for defensive coverage.
-3. **Embedded Whitespace in URL Validation**:
-   - `URL_REGEX` strictly implements ZenClass's client-side regex (`/^(ftp|http|https):\/\/[^ "]+$/`). While `url.strip()` trims leading/trailing whitespace, embedded tabs (`\t`) match `[^ "]+`.
-   - While compliant with ZenClass's client-side behavior, replacing `[^ "]+` with `[^\s\"]+` in a future patch provides greater strictness against malformed whitespace.
-4. **Single Process File Lock**:
-   - Persistent profile in `BROWSER_PROFILE_DIR` acquires a Chromium lock. Simultaneous test executions using the default profile directory must not run concurrently. Tests appropriately use `tempfile.mkdtemp()`.
+- **Existing Tests Passing**: All 28 tests in `tests/test_m1_filtering.py` pass because they only tested double-quoted JSON strings (`{"name": "test", "display": "flex", "count": 42}`) and numbers. They did not test single-quoted Python dictionaries, C++ generics, or compound CSS class selectors.
+- **Review-Only Constraint**: In strict adherence to agent role constraints, challenger has NOT modified `zenclass_guvi/solver/extractor.py`. Remediation instructions are provided below for the worker.
 
 ---
 
-## 4. Conclusion
+## 4. Conclusion & Required Remediations
 
-**Verdict: APPROVE**
+### Final Verdict: **`REQUEST_CHANGES`**
 
-Milestone 1 satisfies all core architectural specifications and functional requirements outlined in `ORIGINAL_REQUEST.md` and `PROJECT.md`:
-- `config.py`: Headed execution default strictly adhered to (`HEADLESS = False`); platform URLs, paths, and anti-detection flags configured accurately.
-- `core/browser.py`: Chromium persistent context starts in foreground; `navigator.webdriver` is falsy; initial tab is reused; session state persists to JSON; tab management is clean.
-- `core/hitl_handler.py`: Intercepts Turnstile, reCAPTCHA, OTP, ZenClass MFA, Guvi modal; zero false positives on clean pages; URL validation strictly blocks invalid/malicious protocols; integrated with StateManager.
-- 100% test pass rate achieved across all suites:
-  - 22/22 unit tests (`test_m1_core.py`)
-  - 78/78 E2E tests (`tests/e2e/test_runner.py`)
-  - 14/14 empirical challenger tests (`test_empirical_m1.py`)
-  - 5/5 adversarial stress tests (`test_adversarial_stress.py`)
+The worker must address the following remediations in `zenclass_guvi/solver/extractor.py`:
 
-Milestone 1 is verified and approved for Milestone 2 progression.
+### Concrete Remediation Plan for Worker:
+
+1. **Fix `_is_pure_css` (lines 196-198)**:
+   - Allow single quotes (`'`) as well as double quotes (`"`) after `{`:
+     ```python
+     if t.startswith("{") and re.search(cls._CSS_PROP_PATTERN, t, re.IGNORECASE):
+         if not re.search(r"""^\s*\{\s*["']""", t):
+             return True
+     ```
+   - Furthermore, check if the content has CSS declaration syntax (i.e. unquoted property followed by colon without quotes around values or ending with semicolon, vs Python dict/set syntax). If a string parses as valid JSON or valid Python literal via `ast.literal_eval`, it is NOT pure CSS!
+
+2. **Remove Redundant HTML Stripping in `_filter_and_renumber` (lines 459-460)**:
+   - Remove lines 459-460:
+     ```python
+     # REMOVE THESE LINES:
+     # clean_in = re.sub(r"<[^>]+>", "", clean_in).strip()
+     # clean_out = re.sub(r"<[^>]+>", "", clean_out).strip()
+     ```
+   - HTML stripping is already performed correctly by `_clean_text` before entity unescaping. Applying it after entity unescaping destroys legitimate angle brackets in code and comparison expressions.
+
+3. **Check `_is_pure_css` on Raw Input Before Sanitization & Drop Empty-Input Cases (lines 456-473, 480-491)**:
+   - Track whether raw input or output was pure CSS before `_clean_text` wiped it out.
+   - If a test case's input was pure CSS, drop the entire case rather than retaining `SampleCase(input_text="", expected_output=...)`.
+
+4. **Improve Selector & Keyframe Regexes in `_sanitize_css`**:
+   - In `_CSS_RULE_RE`, include `.` and `#` inside the selector character class: `[.#a-zA-Z0-9_\-,>+~\[\]\=\"\'\s]`.
+   - In `_CSS_AT_RULE_RE`, support `@keyframes` with nested brace blocks:
+     `r"(?:@(?:media|keyframes|-webkit-keyframes)[^{]*\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\s*\}|@[a-z\-]+[^;{]*;?)"`
+   - In lookahead for `_CSS_RULE_RE`, ensure pseudo-elements like `output::` are not confused with `Output:`. Require whitespace or non-colon character after label matching: e.g. `(?![^\{\n]*(?:Sample|Case|Input\s*[:\-](?!\:)|Output\s*[:\-](?!\:)|Description|Problem))`.
+
+5. **Expand Block Tag Lookahead in `_clean_text` (line 272)**:
+   - Add semantic HTML5 container elements:
+     `(?=<(?:p|div|h[1-6]|span|body|html|br|pre|table|ul|li|section|article|main|aside|header|footer)\b)`
 
 ---
 
 ## 5. Verification Method
 
-To independently execute and verify the empirical challenge harnesses:
+### 5.1 Project Test Command & Reproduction
+Run the adversarial test harness directly:
+```sh
+cd /Users/devesh/Documents/Antigravity/Automation
+python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/stress_test_harness.py
+```
+**Expected outcome for approval**: All 14 tests must pass with 0 failures.
 
-1. **Run Empirical Challenge Test Suite (14 tests)**:
-   ```bash
-   python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/test_empirical_m1.py
-   ```
-   *Expected Result*: 14 passed in ~4.4s (`OK`).
+### 5.2 Files to Inspect
+- `zenclass_guvi/solver/extractor.py` (lines 153-174, 190-202, 270-275, 454-474, 480-492)
+- `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/stress_test_harness.py`
 
-2. **Run Adversarial Stress Test Suite (5 tests)**:
-   ```bash
-   python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/test_adversarial_stress.py
-   ```
-   *Expected Result*: 5 passed in ~4.4s (`OK`).
-
-3. **Run Existing Project Core & E2E Suites**:
-   ```bash
-   cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
-   python3 -m pytest tests/test_m1_core.py -v
-   python3 tests/e2e/test_runner.py
-   ```
-   *Expected Result*: 22 passed in `test_m1_core.py`, 78 passed in `test_runner.py`.
-
-4. **Invalidation Conditions**:
-   - `config.HEADLESS` evaluating to `True`.
-   - `navigator.webdriver` evaluating to `True` during live browser inspection.
-   - Redundant tabs spawned when invoking `get_page()`.
-   - Failure to detect Cloudflare Turnstile, reCAPTCHA, or ZenClass MFA on active DOM.
-   - Acceptance of `javascript:alert(1)` or empty URL by `validate_url`.
+### 5.3 Invalidation Conditions
+- Any change that passes `stress_test_harness.py` but breaks existing baseline tests in `tests/test_m1_filtering.py` or `tests/test_extractor.py` will invalidate the remediation.
+- The worker must run both `stress_test_harness.py` AND `pytest tests/` to confirm complete resolution.
