@@ -18,7 +18,7 @@
 ## Milestones
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| 1 | M1: Resume Materials Ingestion | Read `/Users/devesh/Documents/Resume` and extract career records | none | IN_PROGRESS (conv: fc28e610-771a-402c-aa12-120486b83d85) |
+| 1 | M1: Resume Materials Ingestion | Read `/Users/devesh/Documents/Resume` and extract career records | none | DONE (conv: fc28e610-771a-402c-aa12-120486b83d85) |
 | 2 | M2: Portal Profiles Extraction | Brave extraction across 8 portals into `~/resume/profile_backup.md` | none | IN_PROGRESS (conv: f7dbf6bf-0212-4f02-b611-9ba471568204) |
 | 3 | M3: Consolidation | Create `~/resume/master_profile.md` and `~/resume/targets.md` | M1, M2 | PLANNED |
 | 4 | M4: Gate 1 Verification & Pause | Review, Audit, Propose 2-3 target roles & seniority, halt at Gate 1 | M3 | PLANNED |
