@@ -68,3 +68,14 @@ STRICT CONSTRAINTS & GUARDRAILS:
 - LinkedIn safety: Absolutely NO direct messages, InMails, or connection requests.
 - Escalation halts: Immediately stop and report if you encounter CAPTCHA, OTP, login prompts (do not attempt to log in), passwords, payment requests, or unfamiliar site features.
 When finished, notify me with send_message.
+
+## 2026-11-10T12:05:39Z
+**Context**: Milestone M2 — Portal Profiles Extraction
+**Content**: Checking in on progress. `progress.md` has not been updated since 11:55:30Z. Have you inspected Brave and begun extracting candidate profiles across the 8 portals? Please report current status and update `progress.md`.
+**Action**: Provide immediate status report on current portal extraction.
+
+## 2026-11-10T12:05:59Z
+**Context**: Browser Session Control & Extraction
+**Content**: URGENT USER DIRECTIVE: "use the same browser session instead of launching new window again and again. use tab if you have to"
+You MUST reuse the SAME existing Brave browser window/session across all portals. Do NOT launch new browser windows repeatedly. Open/switch tabs within the existing active session if needed.
+**Action**: Enforce this directive immediately and confirm status.

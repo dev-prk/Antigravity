@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T12:03:00Z
+# BRIEFING — 2026-11-10T12:06:00Z
 
 ## Mission
 Execute Stage 1 (Know Me) for Devesh Pareek: extract 8 job portal profiles via Browser Operator, ingest existing resume materials via Researcher, consolidate into master_profile.md and targets.md, and pause at Gate 1 with proposed target roles and seniority.
@@ -31,23 +31,25 @@ Execute Stage 1 (Know Me) for Devesh Pareek: extract 8 job portal profiles via B
   3. Consolidate into master_profile.md and targets.md [pending]
   4. Formulate 2-3 target roles & seniority, review & audit, pause at Gate 1 [pending]
 - **Current phase**: 1
-- **Current focus**: Awaiting completion of M2 (Browser Operator 8-portal extraction)
+- **Current focus**: Monitoring M2 (Browser Operator 8-portal extraction)
 
 ## 🔒 Key Constraints
 - Truthfulness: Never invent or inflate skills, titles, dates, metrics, employers, or degrees. Rely strictly on verified data in master_profile.md.
 - LinkedIn safety: Absolutely NO direct messages, InMails, or connection requests.
 - Escalation halts: Immediately stop upon CAPTCHA, OTP, login prompts, passwords, payments, or unfamiliar site features.
+- Browser session reuse: MUST reuse the SAME existing Brave browser session/window and open/reuse tabs within it rather than spawning new browser windows or sessions repeatedly.
 - Concurrency: Maximum 3 agents active concurrently. Parallel execution permitted only for research/file drafting; browser interactions sequential and executed exclusively by Browser Operator.
 - Halt at Gate 1: Present proposed target roles and seniority to user, wait for explicit user approval before proceeding.
 - Never reuse a subagent after it has delivered its handoff — always spawn fresh.
 
 ## Current Parent
 - Conversation ID: 2e0a4fd7-2f09-4ef4-a33a-948c2d775959
-- Updated: 2026-11-10T11:51:47Z
+- Updated: 2026-11-10T12:05:35Z
 
 ## Key Decisions Made
 - Partition Stage 1 into parallel exploration: Researcher explores /Users/devesh/Documents/Resume, Browser Operator accesses Brave to extract the 8 portals into profile_backup.md.
 - M1 completed successfully: 25 documents analyzed, verified achievements extracted, discrepancy matrix built.
+- Forwarded user directive to Browser Operator to strictly reuse the single existing browser session/window and tabs.
 
 ## Team Roster
 | Agent | Type | Work Item | Status | Conv ID |
@@ -64,7 +66,7 @@ Execute Stage 1 (Know Me) for Devesh Pareek: extract 8 job portal profiles via B
 
 ## Active Timers
 - Heartbeat cron: db58fa7b-d6eb-41a4-a41e-34fc08b3e1d0/task-22
-- Safety timer: db58fa7b-d6eb-41a4-a41e-34fc08b3e1d0/task-34
+- Safety timer: scheduled for response check
 
 ## Artifact Index
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md — Original request
