@@ -28,10 +28,13 @@ Mine, analyze, and formalize precise specifications, invariants, schemas, and ac
 - **Code layout**: Runtime in aios/ (under target AI-OS repo/workspace)
 
 ## Key Decisions Made
-- Initializing specification mining workflow.
+- Fully analyzed and synthesized all specifications for Layer A (AGENTS.md under 100 lines, 3 governance rules, 5 policy profiles with immutable kernel invariants, symlink-based zero-duplicate skill reuse).
+- Formalized complete Phase 3b specifications: exact SQLite DDL for all 8 tables with native append-only triggers and FTS5 synchronization, 8-state transition matrix, 80% proactive checkpoint trigger, 95% clean stop ceiling, and deterministic <=1.5k token HANDOFF.md generator and resumer.
+- Verified Python 3.9.6 stdlib compliance and SQLite 3.51.0 FTS5 support.
+- Generated comprehensive 42KB specification handoff report in handoff.md.
 
 ## Artifact Index
 - DISPATCH.md — Dispatch assignment and instructions
 - BRIEFING.md — Persistent situational awareness
 - progress.md — Liveness heartbeat and milestone tracker
-- handoff.md — Comprehensive specification mining report
+- handoff.md — Comprehensive specification mining report (42KB, 5 components, Features Discovered, Edge Cases)
