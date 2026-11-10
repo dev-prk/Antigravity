@@ -80,3 +80,43 @@ Execute and record exact results in your `handoff.md`:
 Write your final handoff report to:
 `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_iter2_1/handoff.md`
 Message the parent orchestrator (`cbd0649b-f648-4724-a244-a22a5102ccc4`) upon completion.
+
+
+## 2026-11-10T16:59:28Z
+You are `worker_m3_iter2_1`, the implementation worker for Milestone 3 Iteration 2 Remediation.
+Your working directory is:
+/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_iter2_1
+
+Your detailed assignment is in:
+/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_iter2_1/DISPATCH.md
+
+MANDATORY INTEGRITY WARNING — DO NOT CHEAT:
+All implementations must be genuine. DO NOT hardcode test results, create dummy/facade implementations, or circumvent the intended task. A teamwork_auditor will independently verify your work. Integrity violations WILL be detected and your work WILL be rejected.
+
+Exclusive write ownership:
+- /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/solver/ace_adapter.py
+- /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/drivers/guvi_driver.py
+- /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/tests/test_m3_guvi.py
+
+Read:
+1. /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md
+2. /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md
+3. /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/orchestrator/GATE_STATUS.md
+4. /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m3_iter2_1/handoff.md
+5. /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m3_iter2_1/remediation.patch
+
+Tasks:
+1. Update `solver/ace_adapter.py` line 265 to accept and forward `verify: bool = True`.
+2. Remove all 3 inline mock evaluate shims from `drivers/guvi_driver.py` (lines 326–358, 733–752, 792–811).
+3. Update `tests/test_m3_guvi.py` to use `autospec=True` on patched solver methods.
+(Or apply the pre-verified patch `.agents/teamwork/explorer_m3_iter2_1/remediation.patch`).
+
+Verification:
+Run:
+- `cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi && python3 -m unittest -v tests/test_m3_guvi.py` (34/34 passing)
+- `cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi && python3 -m unittest tests/test_m1_core.py tests/test_m2_solver.py` (57/57 passing)
+- `cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi && python3 tests/e2e/test_runner.py --all` (78/78 passing)
+- Verify zero mock shims in `drivers/guvi_driver.py`.
+
+Document full verification results in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m3_iter2_1/handoff.md`.
+Message orchestrator `cbd0649b-f648-4724-a244-a22a5102ccc4` when finished.
