@@ -1,47 +1,35 @@
-The user requests a team of 4 roles (/teamwork delegates): 1. RESEARCHER (reads profiles, researches market and ATS; files only, no browser), 2. RESUME WRITER (builds one resume per job; files only, no browser), 3. RESUME QA (checks every resume; never the same agent as Writer), 4. BROWSER OPERATOR (the only agent allowed to control Brave; edits profiles, finds jobs, applies). Get Devesh Pareek the best possible interviews by running Stage 1 (Know Me): extract current profiles across 8 job portals, ingest existing resume materials, consolidate into a single master profile, capture target criteria, and pause at Gate 1 with proposed target roles and seniority.
+Automate completion of Guvi CodeKata problems, ZenClass tasks, and ZenClass projects in foreground mode using the provided user credentials, maintaining persistent task state and progress reporting.
 
-Working directory: ~/resume
-Integrity mode: development
+Working directory: [OPEN: Where should the project code, automation scripts, and task state records live?]
+Integrity mode: [OPEN: Integrity restrictions from Step 3]
 
-## Verification Resources
-- Existing resume materials directory: `/Users/devesh/Documents/Resume`
-- Target portals (logged in on Brave):
-  - Talent500: https://talent500.com/jobs/
-  - Instahyre: https://www.instahyre.com/candidate/opportunities/?matching=true
-  - Naukri: https://www.naukri.com/mnjuser/homepage
-  - Indeed India: https://in.indeed.com/
-  - Foundit: https://www.foundit.in/seeker/profile
-  - Glassdoor India: https://www.glassdoor.co.in/Community/index.htm
-  - LinkedIn: https://www.linkedin.com/feed/
-  - Turing: https://work.turing.com/jobs
+## Reference Material
+- Guvi CodeKata: https://www.guvi.in/code-kata/
+- ZenClass Tasks: https://v2.zenclass.in/tasks
+- ZenClass Projects: https://v2.zenclass.in/projects
+- Credentials: devsh.pareek@gmail.com / Dev@99#$%esh
 
 ## Requirements
 
-### R1. Profile Extraction and Baseline Consolidation (Stage 1)
-- The Browser Operator extracts current profile content across the 8 specified portals using Brave. The Researcher reads existing resume documents in `/Users/devesh/Documents/Resume`.
-- Save raw snapshots of each of the 8 profiles in `profile_backup.md`.
-- Consolidate all background details into `master_profile.md`. Every employer entry must include dates and at least 2 verifiable achievements. Flag any conflicting information across sources.
-- Query the user for target criteria (target roles, location/remote preference, minimum salary, notice period, current/expected CTC, roles to avoid) and record responses in `targets.md`.
+### R1. Authentication and Foreground Platform Interaction
+- Authenticate to Guvi and ZenClass using the provided credentials in a visible foreground browser session.
+- [OPEN: Which browser environment should be used for execution?]
+- Never fabricate completion or bypass authentication, CAPTCHA, access controls, or assessment restrictions; request human participation when encountering CAPTCHAs or OTPs.
 
-### R2. Gate 1 Review and Hold
-- Formulate 2-3 proposed target roles and corresponding seniority levels based on `master_profile.md`.
-- Halt execution at Gate 1 and present the proposed target roles and seniority to the user, waiting for explicit user approval before proceeding to any subsequent stage.
+### R2. Autonomous Task Execution across Platforms
+- [OPEN: What scope should the team tackle for CodeKata, ZenClass tasks, and ZenClass projects?]
+- Solve programming practice problems and complete technical tasks, validating answers against platform requirements.
+- [OPEN: How should projects requiring external repository creation or hosting be handled?]
 
-### R3. Operational Constraints and Guardrails
-- Truthfulness: Never invent or inflate skills, titles, dates, metrics, employers, or degrees. Rely strictly on verified data in `master_profile.md`. If required details are missing, skip or prompt the user.
-- LinkedIn safety: Absolutely NO direct messages, InMails, or connection requests.
-- Escalation halts: Immediately stop and prompt the user upon encountering CAPTCHA, OTP, login prompts (do not attempt to log in), passwords, payment requests, or unfamiliar site features.
-- Concurrency & roles: Maximum 3 agents active concurrently. Parallel execution is permitted only for research and file drafting; all browser interactions must be sequential and executed exclusively by the Browser Operator.
+### R3. State Management and Progress Reporting
+- [OPEN: How should the team verify and report successful completions?]
+- Maintain persistent execution state across interruptions (platform, task identifier, category, status, attempt count, result, timestamp, failure reason, next action).
+- Report metrics including total discovered, total completed, total pending, total blocked, success rate, time spent, and errors requiring human intervention.
 
 ## Acceptance Criteria
 
-### Deliverables
-- [ ] `profile_backup.md` is created in `~/resume/` containing extracted snapshots for all 8 portals.
-- [ ] `master_profile.md` is created in `~/resume/` consolidating resume documents from `/Users/devesh/Documents/Resume` and portal snapshots, with chronological dates and >= 2 achievements per employer, with any discrepancies flagged.
-- [ ] `targets.md` is created in `~/resume/` capturing target roles, locations, compensation ranges, notice period, and exclusions.
-- [ ] Gate 1 summary proposing 2-3 target roles and seniority is displayed to the user and execution halts awaiting user confirmation.
-
-### Safety and Compliance
-- [ ] No messages, InMails, or connection requests sent on LinkedIn.
-- [ ] No automated login attempts or credential submissions occurred when encountering authentication, CAPTCHA, or OTP challenges.
-- [ ] All career details in `master_profile.md` directly trace to provided resume documents or portal profiles with no invented metrics or titles.
+### Execution & Verification
+- [ ] Foreground browser operates visibly to allow user observation and intervention.
+- [ ] [OPEN: Acceptance criterion for task/project execution scope]
+- [ ] Authentication, CAPTCHA, or restriction blocks trigger an immediate prompt for human participation rather than attempting unauthorized bypass.
+- [ ] Persistent state records and summary report are generated with required tracking metrics.
