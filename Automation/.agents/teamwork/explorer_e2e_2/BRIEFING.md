@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T22:30:00Z
+# BRIEFING — 2026-11-10T22:33:30Z
 
 ## Mission
 Investigate Guvi CodeKata core modules (browser, state manager, extractor, code generator, driver, main) to map headless execution, difficulty filtering, 3-attempt retry loop, test case output structure, and SQLite persistence, providing concrete guidance for the E2E test suite.
@@ -24,24 +24,28 @@ Investigate Guvi CodeKata core modules (browser, state manager, extractor, code 
 
 ## Investigation State
 - **Explored paths**:
-  - `ORIGINAL_REQUEST.md`
-  - `sub_orch_e2e/SCOPE.md`
-  - `orchestrator_2/PROJECT.md`
-- **Key findings**:
-  - Requirements emphasize headless background mode, Medium/Hard difficulty filtering, 3-attempt retry loop with error feedback refinement, and SQLite execution tracking.
-  - Test methodology requires 4 tiers of pytest tests targeting `tests/e2e/test_medium_hard_codekata.py`.
-- **Unexplored areas**:
-  - `zenclass_guvi/core/browser.py`
+  - `ORIGINAL_REQUEST.md`, `sub_orch_e2e/SCOPE.md`, `orchestrator_2/PROJECT.md`
+  - `zenclass_guvi/core/browser.py`, `zenclass_guvi/config.py`
   - `zenclass_guvi/core/state_manager.py`
   - `zenclass_guvi/solver/extractor.py`
   - `zenclass_guvi/solver/code_generator.py`
-  - `zenclass_guvi/drivers/guvi_driver.py`
+  - `zenclass_guvi/solver/test_runner.py`
+  - `zenclass_guvi/solver/ace_adapter.py`
+  - `zenclass_guvi/drivers/guvi_driver.py`, `zenclass_guvi/drivers/base_driver.py`
   - `zenclass_guvi/main.py`
-  - `zenclass_guvi/config.py`
-  - Existing test fixtures and mocks in `zenclass_guvi/tests/`
+  - `zenclass_guvi/tests/` (all 268 existing tests verified passing)
+- **Key findings**:
+  - Headless execution is wired via `config.HEADLESS`, `BrowserManager(headless=...)`, and CLI flag `--headless`.
+  - Difficulty is extracted from DOM column 4 into `task.metadata["difficulty"]`, but `list_pending`, `discover_catalog`, and `run_pipeline` require parameter support for `difficulties`.
+  - 3-attempt retry loop is currently missing in `GuviDriver.solve_problem()` (currently single attempt); needs structured loop with `previous_error` propagation to `generate_solution(spec, previous_error=..., attempt=...)`.
+  - SQLite persistence uses `tasks` (9 R3 fields + metadata JSON), `task_attempts` (attempt number, timestamp, result, code snapshot, details JSON), and `execution_runs`.
+  - Complete 4-tier test architecture designed for `tests/e2e/test_medium_hard_codekata.py` (20 Tier 1, 20 Tier 2, 4 Tier 3, 5 Tier 4).
+- **Unexplored areas**:
+  - None. All 6 requested source files, test infrastructure, and execution contracts investigated.
 
 ## Key Decisions Made
-- Systematically inspect each core module, document exact lines, signatures, and contracts, then analyze how E2E tests should exercise them.
+- Detailed all 5 architectural focus areas (headless, difficulty filtering, 3-attempt retry loop, test case output structure, SQLite persistence) with exact line citations.
+- Structured concrete 49-test suite specification covering all 4 tiers required by `SCOPE.md`.
 
 ## Artifact Index
 - `.agents/teamwork/explorer_e2e_2/DISPATCH.md` — Parent task directive
