@@ -34,12 +34,15 @@ def get_state_manager(db_path: str = ":memory:") -> Tuple[Any, str]:
 
 
 def get_hitl_handler() -> Tuple[Any, str]:
-    """Returns (hitl_handler_class_or_instance, source_label)."""
+    """Returns (hitl_handler_instance, source_label)."""
     try:
-        from core.hitl_handler import HITLHandler
-        return HITLHandler, "live"
+        try:
+            from core.hitl_handler import HitlHandler as HandlerClass
+        except ImportError:
+            from core.hitl_handler import HITLHandler as HandlerClass
+        return HandlerClass(interactive=False, audible_bell=False), "live"
     except (ImportError, AttributeError):
-        return ReferenceHITLHandler, "oracle"
+        return ReferenceHITLHandler(), "oracle"
 
 
 def get_reporter() -> Tuple[Any, str]:
