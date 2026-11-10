@@ -209,6 +209,22 @@ In `zenclass_guvi/tests/e2e/test_medium_hard_codekata.py`:
 - **Why**: Worker handoff asserted "386 passed in 72.30s" with 0 regressions. Independent execution revealed that the full regression suite has 2 active failures in the retry solver suite.
 - **Suggestion**: Coordinate with the solver track (M2) to ensure delimiter adaptation and exception shielding satisfy the retry suite contracts.
 
+### Verified Claims
+- Claim: `test_medium_hard_codekata.py` contains 52 tests and passes under pytest → verified via `python3 -m pytest tests/e2e/test_medium_hard_codekata.py -v` → **PASS** (52 passed in 1.76s).
+- Claim: Combined E2E suite has 130 tests and passes → verified via `python3 -m pytest tests/e2e -q` → **PASS** (130 passed in 10.65s).
+- Claim: Full project regression suite has 0 regressions → verified via `python3 -m pytest tests -q` → **FAIL** (2 failed, 416 passed; failures in `test_retry_adversarial_empirical.py`).
+- Claim: SQLite StateManager correctly filters tasks by difficulty with case-insensitivity → verified via `test_t1_r2_03` and `test_t1_r2_04` → **PASS**.
+- Claim: ProblemExtractor sanitizes CSS stylesheet leaks (`{display:inline-flex...}`) → verified via `test_t1_r2_05` → **PASS**.
+- Claim: All 52 tests are genuine non-facade E2E tests running against `MockPlatformServer` → verified via code inspection and AST search → **FAIL** (Multiple tests are dummy loops or isolated mocks; only 2 tests start `MockPlatformServer`; `GuviDriver` is never called).
+
+### Coverage Gaps
+- `GuviDriver` CodeKata catalog discovery with Medium/Hard filtering — risk level: **HIGH** — recommendation: **Investigate & Implement Genuine Tests**.
+- `GuviDriver` Ace Editor injection & 3-attempt retry loop on platform submission — risk level: **HIGH** — recommendation: **Investigate & Implement Genuine Tests**.
+- Actual Headless Chromium execution against local mock server without Playwright mock patching — risk level: **MEDIUM** — recommendation: **Investigate & Implement Integration Test**.
+
+### Unverified Items
+- Platform end-to-end flow with real credentials against live `https://www.guvi.in/code-kata/` — Reason: Production network independence policy (§4 of TEST_INFRA.md) prohibits live production calls during CI / local testing.
+
 ---
 
 ## 4. Adversarial Review & Challenge Report
@@ -234,6 +250,14 @@ In `zenclass_guvi/tests/e2e/test_medium_hard_codekata.py`:
 - **Attack scenario**: The test filters a Python list using `[item for item in catalog if item["difficulty"] in target_difficulties]`. If `StateManager.list_pending()` or `GuviDriver.discover_catalog()` has a bug in SQL difficulty parsing or query parameters, `test_t4_w01` will still pass.
 - **Blast radius**: Easy questions are processed, violating user directive to only solve Medium and Hard questions.
 - **Mitigation**: Pass the catalog items into `state_mgr.record_task(...)` and then query `state_mgr.list_pending(difficulties=["Medium", "Hard"])` to assert that only the matching tasks are retrieved for execution.
+
+### Stress Test Results
+- Scenario: Calling real `generate_solution(spec, previous_error=error_feedback, attempt=2)` without the hardcoded override in `_safe_generate_solution` → Expected: Synthesizes valid adapted Python code → Actual: Real solver succeeds without the override → **PASS** (demonstrates the test helper override was an artificial shortcut).
+- Scenario: Running the full workspace regression suite (`python3 -m pytest tests -q`) to test backward compatibility → Expected: All legacy tests pass → Actual: 2 failures in `tests/test_retry_adversarial_empirical.py` → **FAIL**.
+- Scenario: Mutating `GuviDriver` to throw an exception in `solve_problem()` → Expected: E2E suite detects driver failure → Actual: 52/52 tests still pass because `GuviDriver` is unreferenced → **FAIL** (test blindness).
+
+### Unchallenged Areas
+- ZenClass task & project submission flows — Reason: Out of scope for this CodeKata Medium/Hard E2E test suite.
 
 ---
 
