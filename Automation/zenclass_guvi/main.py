@@ -280,6 +280,27 @@ class AutomationRunner:
         except Exception as e:
             logger.error(f"Error during cleanup: {e}")
 
+    def run_zenclass_projects(
+        self,
+        limit: Optional[int] = None,
+        project_id: Optional[str] = None,
+        skip_synthesis: bool = False,
+    ) -> Any:
+        """Runs ZenClass projects automation pipeline (synthesis, build validation, HITL pause, submission)."""
+        from drivers.zenclass_projects_driver import ZenClassProjectsDriver
+        projects_driver = ZenClassProjectsDriver(
+            browser_manager=self.browser_manager,
+            state_manager=self.state_manager,
+            hitl_handler=self.hitl_handler,
+            reporter=self.reporter,
+            links_file=getattr(self.args, "links_file", None),
+        )
+        return projects_driver.run_projects_pipeline(
+            limit=limit,
+            project_id=project_id,
+            skip_synthesis=skip_synthesis,
+        )
+
     def execute(self) -> int:
         """Dispatches command to relevant drivers and produces summary report."""
         if not self.args.command:
@@ -315,6 +336,15 @@ class AutomationRunner:
                     reporter=self.reporter,
                 )
                 guvi_driver.run_pipeline(limit=self.args.limit)
+                from drivers.zenclass_tasks_driver import ZenClassTasksDriver
+                tasks_driver = ZenClassTasksDriver(
+                    browser_manager=self.browser_manager,
+                    state_manager=self.state_manager,
+                    hitl_handler=self.hitl_handler,
+                    reporter=self.reporter,
+                )
+                tasks_driver.run_task_pipeline(limit=self.args.limit)
+                self.run_zenclass_projects(limit=self.args.limit)
             elif self.args.command == "run-codekata":
                 logger.info(f"Executing CodeKata automation (category={self.args.category}, limit={self.args.limit})...")
                 from drivers.guvi_driver import GuviDriver
@@ -342,6 +372,16 @@ class AutomationRunner:
                     limit=self.args.limit,
                     task_id=self.args.task_id,
                 )
+            elif self.args.command == "run-zenclass-projects":
+                logger.info(
+                    f"Executing ZenClass projects automation (limit={self.args.limit}, "
+                    f"project_id={getattr(self.args, 'project_id', None)})..."
+                )
+                self.run_zenclass_projects(
+                    limit=self.args.limit,
+                    project_id=getattr(self.args, "project_id", None),
+                    skip_synthesis=getattr(self.args, "skip_synthesis", False),
+                )
             elif self.args.command == "run-zenclass":
                 logger.info(f"Executing ZenClass automation (type={self.args.type}, limit={self.args.limit})...")
                 if getattr(self.args, "type", "all") in ("tasks", "all"):
@@ -356,8 +396,14 @@ class AutomationRunner:
                         limit=self.args.limit,
                         task_id=self.args.task_id,
                     )
+                if getattr(self.args, "type", "all") in ("projects", "all"):
+                    self.run_zenclass_projects(
+                        limit=self.args.limit,
+                        project_id=self.args.task_id,
+                    )
             elif self.args.command == "resume":
                 logger.info(f"Resuming automation from state database (platform={self.args.platform})...")
+
 
             # Generate final reports upon execution completion
             if self.reporter:
