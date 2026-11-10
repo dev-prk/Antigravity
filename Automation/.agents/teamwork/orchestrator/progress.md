@@ -24,8 +24,8 @@ Last visited: 2026-11-10T15:32:30Z
     - [x] auditor_m1_1: CLEAN (34/34 probe checks passed, zero cheater patterns, 100% authentic)
     - [x] Gate Result: PASS
 - [ ] Phase 3: Milestone 2: Problem Solver Engine & Sandbox (IN_PROGRESS)
-  - [ ] explorer_m2_1: DOM problem extraction & Ace Editor CDP keyboard injection
-  - [ ] explorer_m2_2: Algorithmic Python 3 code generator & sandboxed test runner
+  - [ ] explorer_m2_1: DOM problem extraction & Ace Editor CDP keyboard injection (IN_PROGRESS)
+  - [x] explorer_m2_2: Algorithmic Python 3 code generator & sandboxed test runner (COMPLETED)
   - [ ] worker_m2_1: Implementation (`solver/extractor.py`, `solver/code_generator.py`, `solver/test_runner.py`, `solver/ace_adapter.py`)
   - [ ] Milestone 2 Gate: Reviewers, Challengers, Auditor
 - [ ] Phase 4: Milestone 3: Guvi CodeKata Driver
