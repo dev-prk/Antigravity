@@ -137,6 +137,236 @@ CANONICAL_SOLVERS: Dict[str, Dict[str, str]] = {
             "if __name__ == '__main__':\n"
             "    solve()\n"
         )
+    },
+    "prime-number-check": {
+        "category": "Mathematics & Number Theory",
+        "explanation": "Checks whether a single integer N is prime and prints 'yes' or 'no'.",
+        "code": (
+            "import sys\n\n"
+            "def is_prime(n):\n"
+            "    if n < 2:\n"
+            "        return False\n"
+            "    if n in (2, 3):\n"
+            "        return True\n"
+            "    if n % 2 == 0 or n % 3 == 0:\n"
+            "        return False\n"
+            "    i = 5\n"
+            "    while i * i <= n:\n"
+            "        if n % i == 0 or n % (i + 2) == 0:\n"
+            "            return False\n"
+            "        i += 6\n"
+            "    return True\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        n = int(tokens[0])\n"
+            "        print('yes' if is_prime(n) else 'no')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "check-divisibility-by-7": {
+        "category": "Mathematics",
+        "explanation": "Prints 'yes' if N is a multiple of 7 else 'no'.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        n = int(tokens[0])\n"
+            "        print('yes' if n % 7 == 0 else 'no')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "next-greater-power-of-2": {
+        "category": "Mathematics",
+        "explanation": "Finds the next immediate greater power of 2 for N.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        n = int(tokens[0])\n"
+            "        p = 1\n"
+            "        while p <= n:\n"
+            "            p *= 2\n"
+            "        print(p)\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "vowel-check-in-string": {
+        "category": "Strings",
+        "explanation": "Prints 'yes' if string contains a vowel else 'no'.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    s = sys.stdin.read().strip()\n"
+            "    if not s:\n"
+            "        return\n"
+            "    vowels = set('aeiouAEIOU')\n"
+            "    print('yes' if any(c in vowels for c in s) else 'no')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "number-range-check": {
+        "category": "Mathematics",
+        "explanation": "Prints 'yes' if N is strictly between L and R else 'no'.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if len(tokens) >= 3:\n"
+            "        n, l, r = int(tokens[0]), int(tokens[1]), int(tokens[2])\n"
+            "        lo, hi = min(l, r), max(l, r)\n"
+            "        print('yes' if lo < n < hi else 'no')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "round-to-nearest-greater-integer": {
+        "category": "Mathematics",
+        "explanation": "Rounds floating point number to nearest greater integer (ceil).",
+        "code": (
+            "import sys, math\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        val = float(tokens[0])\n"
+            "        res = math.ceil(val)\n"
+            "        if res == val:\n"
+            "            res += 1\n"
+            "        print(int(res))\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "string-middle-element-modification": {
+        "category": "Strings",
+        "explanation": "Replaces middle character(s) of string S with '*'.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    s = sys.stdin.read().strip()\n"
+            "    if not s:\n"
+            "        return\n"
+            "    n = len(s)\n"
+            "    mid = n // 2\n"
+            "    if n % 2 == 1:\n"
+            "        print(s[:mid] + '*' + s[mid+1:])\n"
+            "    else:\n"
+            "        print(s[:mid-1] + '**' + s[mid+1:])\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "check-if-number-is-composite": {
+        "category": "Mathematics",
+        "explanation": "Prints 'yes' if N is a composite number else 'no'.",
+        "code": (
+            "import sys\n\n"
+            "def is_composite(n):\n"
+            "    if n <= 3:\n"
+            "        return False\n"
+            "    if n % 2 == 0 or n % 3 == 0:\n"
+            "        return True\n"
+            "    i = 5\n"
+            "    while i * i <= n:\n"
+            "        if n % i == 0 or n % (i + 2) == 0:\n"
+            "            return True\n"
+            "        i += 6\n"
+            "    return False\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        n = int(tokens[0])\n"
+            "        print('yes' if is_composite(n) else 'no')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "print-factors-of-a-number": {
+        "category": "Mathematics",
+        "explanation": "Prints all positive factors of N separated by spaces.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        n = int(tokens[0])\n"
+            "        factors = [str(i) for i in range(1, n + 1) if n % i == 0]\n"
+            "        print(' '.join(factors))\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "check-divisibility-by-13": {
+        "category": "Mathematics",
+        "explanation": "Prints 'yes' if N is a multiple of 13 else 'no'.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        n = int(tokens[0])\n"
+            "        print('yes' if n % 13 == 0 else 'no')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "perfect-square-product": {
+        "category": "Mathematics",
+        "explanation": "Prints 'yes' if N * M is a perfect square else 'no'.",
+        "code": (
+            "import sys, math\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if len(tokens) >= 2:\n"
+            "        n, m = int(tokens[0]), int(tokens[1])\n"
+            "        prod = n * m\n"
+            "        if prod < 0:\n"
+            "            print('no')\n"
+            "            return\n"
+            "        root = math.isqrt(prod)\n"
+            "        print('yes' if root * root == prod else 'no')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "odd-digits-in-a-number": {
+        "category": "Mathematics",
+        "explanation": "Prints odd digits of N space-separated, or -1 if none.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    tokens = sys.stdin.read().split()\n"
+            "    if tokens:\n"
+            "        s = tokens[0].lstrip('-+')\n"
+            "        odds = [ch for ch in s if ch in '13579']\n"
+            "        print(' '.join(odds) if odds else '-1')\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
+    },
+    "ninja-clan-difference": {
+        "category": "Mathematics",
+        "explanation": "Prints absolute difference between pairs of numbers on each line.",
+        "code": (
+            "import sys\n\n"
+            "def solve():\n"
+            "    lines = sys.stdin.read().strip().splitlines()\n"
+            "    out = []\n"
+            "    for line in lines:\n"
+            "        parts = line.split()\n"
+            "        if len(parts) >= 2:\n"
+            "            out.append(str(abs(int(parts[1]) - int(parts[0]))))\n"
+            "    if out:\n"
+            "        print('\\n'.join(out))\n\n"
+            "if __name__ == '__main__':\n"
+            "    solve()\n"
+        )
     }
 }
 

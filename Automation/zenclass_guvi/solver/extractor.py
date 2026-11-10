@@ -421,12 +421,12 @@ class ProblemExtractor:
         )[0]
 
         sample_pattern = re.compile(
-            r"(?:(?:Sample\s+Input)|(?:Input(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P<num>\d+)?\s*[:\-]?\s*"
+            r"(?:^|\n)\s*(?:(?:Sample\s+Input)|(?:Input(?!\s*(?:Description|Specification|Format|Size))))\s*(?:Case\s*)?(?P<num>\d+)?\s*[:\-]?\s*\n?"
             r"(?P<input>.*?)\s*"
-            r"(?:(?:Sample\s+Output)|(?:Output(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P=num)?\s*[:\-]?\s*"
+            r"(?:^|\n)\s*(?:(?:Sample\s+Output)|(?:Output(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P=num)?\s*[:\-]?\s*\n?"
             r"(?P<output>.*?)\s*"
             r"(?:(?:\n\s*|\A)(?:Sample\s+)?Explanation\s*(?:Case\s*)?(?:\d+)?\s*[:\-]?\s*(?P<explanation>.*?))?"
-            r"(?=(?:(?:Sample\s+)?Input(?!\s*(?:Description|Specification|Format))\s*(?:Case\s*)?\d*\s*[:\-])|(?:Constraints)|(?:Accepted\b)|(?:Topics\b)|(?:Code\s+Editor)|$)",
+            r"(?=(?:\n\s*(?:Sample\s+)?Input(?!\s*(?:Description|Specification|Format|Size))\s*(?:Case\s*)?\d*\s*[:\-])|(?:\n\s*Constraints)|(?:\n\s*Accepted\b)|(?:\n\s*Topics\b)|(?:\n\s*Code\s+Editor)|$)",
             re.DOTALL | re.IGNORECASE
         )
 

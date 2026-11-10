@@ -106,9 +106,7 @@ class GuviDriver(BaseDriver):
     ]
 
     POPUP_DISMISS_SELECTORS = [
-        "button:has-text('✕')",
-        "button:has-text('close')",
-        "button:has-text('Close')",
+        "button:has-text('Continue Here Anyway')",
         "#welcome button.close",
         ".modal button.close",
         "#finish button",
@@ -628,6 +626,8 @@ class GuviDriver(BaseDriver):
 
         # 1. Navigate to problem workspace
         self.navigate(workspace_url)
+        if "guvi.in" in workspace_url:
+            time.sleep(2.0)
         self.dismiss_popups()
 
         # 2. Guardrail Check (R1)
@@ -762,15 +762,20 @@ class GuviDriver(BaseDriver):
         # 9. Submit Code Execution & Platform Verification
         logger.info("Submitting solution to platform...")
         submit_btn_sel = self.find_first_selector(
-            ["button.submit-code", "button:has-text('Submit')"], timeout=3000.0
+            ["button.submit-code", "button:has-text('Submit'):not(.submit-button)", "button:has-text('Submit')"], timeout=3000.0
         )
         if submit_btn_sel:
             self.page.click(submit_btn_sel)
         else:
             logger.warning("Submit Code button not found.")
 
-
         time.sleep(1.5)
+
+        # Wait for progress modal ("Testing") if present
+        try:
+            self.page.wait_for_selector(self.SEL_PROGRESS_MODAL, state="hidden", timeout=20000)
+        except Exception:
+            pass
 
         # 10. Verify positive submission feedback
         duration = time.time() - start_time
@@ -798,18 +803,23 @@ class GuviDriver(BaseDriver):
             except Exception:
                 pass
 
-        # Fallback polling for asynchronous verification
+        # Fallback polling for asynchronous verification across all dialogs/modals
         if not verified_solved and hasattr(self.page, "wait_for_function"):
             try:
                 self.page.wait_for_function(
                     """() => {
                         const qs = document.querySelector('.question-status');
-                        const modal = document.querySelector('#success_modal, .modal');
                         const isSolved = qs && qs.textContent.toLowerCase().includes('solved');
-                        const modalVisible = modal && modal.style.display !== 'none' && modal.textContent.includes('Geekoins');
+                        const modals = Array.from(document.querySelectorAll('#success_modal, .modal, dialog, [role="dialog"]'));
+                        const modalVisible = modals.some(m => {
+                            const txt = m.textContent || '';
+                            if (!txt.includes('Geekoins') && !txt.includes('Congratulations')) return false;
+                            const st = window.getComputedStyle(m);
+                            return m.open || (st.display !== 'none' && st.visibility !== 'hidden' && m.offsetParent !== null);
+                        });
                         return Boolean(isSolved || modalVisible);
                     }""",
-                    timeout=8000
+                    timeout=10000
                 )
                 verified_solved = True
             except Exception:
