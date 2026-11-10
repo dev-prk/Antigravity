@@ -5,6 +5,7 @@ Commands:
   run-all         Execute Guvi CodeKata, ZenClass tasks, and ZenClass projects
   run-codekata    Execute Guvi CodeKata automation only
   run-zenclass    Execute ZenClass automation (tasks, projects, or both)
+  run-zenclass-tasks Execute ZenClass tasks automation only
   resume          Resume execution from saved SQLite state (pending/blocked items)
   report          Generate Markdown & JSON summary reports without launching browser
 """
@@ -150,6 +151,18 @@ def create_cli_parser() -> argparse.ArgumentParser:
         help="Execute single ZenClass task or project by ID",
     )
 
+    # Command: run-zenclass-tasks
+    p_zenclass_tasks = subparsers.add_parser(
+        "run-zenclass-tasks",
+        help="Run ZenClass tasks automation (discovery, dynamic modal submission, verification)",
+    )
+    p_zenclass_tasks.add_argument(
+        "--task-id",
+        type=str,
+        default=None,
+        help="Execute single ZenClass task by ID",
+    )
+
     # Command: resume
     p_resume = subparsers.add_parser(
         "resume",
@@ -276,13 +289,41 @@ class AutomationRunner:
             if self.args.command == "run-all":
                 logger.info("Executing run-all automation pipeline across Guvi and ZenClass...")
                 from drivers.guvi_driver import GuviDriver
-                guvi_driver = GuviDriver(
-                    browser_manager=self.browser_manager,
-                    state_manager=self.state_manager,
-                    hitl_handler=self.hitl_handler,
-                    reporter=self.reporter,
-                )
-                guvi_driver.run_pipeline(limit=self.args.limit)
+                from drivers.zenclass_tasks_driver import ZenClassTasksDriver
+
+                order = getattr(self.args, "order", "codekata-first")
+                if order == "zenclass-first":
+                    tasks_driver = ZenClassTasksDriver(
+                        browser_manager=self.browser_manager,
+                        state_manager=self.state_manager,
+                        hitl_handler=self.hitl_handler,
+                        reporter=self.reporter,
+                    )
+                    tasks_driver.run_task_pipeline(limit=self.args.limit)
+
+                    guvi_driver = GuviDriver(
+                        browser_manager=self.browser_manager,
+                        state_manager=self.state_manager,
+                        hitl_handler=self.hitl_handler,
+                        reporter=self.reporter,
+                    )
+                    guvi_driver.run_pipeline(limit=self.args.limit)
+                else:
+                    guvi_driver = GuviDriver(
+                        browser_manager=self.browser_manager,
+                        state_manager=self.state_manager,
+                        hitl_handler=self.hitl_handler,
+                        reporter=self.reporter,
+                    )
+                    guvi_driver.run_pipeline(limit=self.args.limit)
+
+                    tasks_driver = ZenClassTasksDriver(
+                        browser_manager=self.browser_manager,
+                        state_manager=self.state_manager,
+                        hitl_handler=self.hitl_handler,
+                        reporter=self.reporter,
+                    )
+                    tasks_driver.run_task_pipeline(limit=self.args.limit)
             elif self.args.command == "run-codekata":
                 logger.info(f"Executing CodeKata automation (category={self.args.category}, limit={self.args.limit})...")
                 from drivers.guvi_driver import GuviDriver
@@ -297,8 +338,33 @@ class AutomationRunner:
                     category=self.args.category,
                     task_id=self.args.task_id,
                 )
+            elif self.args.command == "run-zenclass-tasks":
+                logger.info(f"Executing ZenClass tasks automation (limit={self.args.limit}, task_id={self.args.task_id})...")
+                from drivers.zenclass_tasks_driver import ZenClassTasksDriver
+                tasks_driver = ZenClassTasksDriver(
+                    browser_manager=self.browser_manager,
+                    state_manager=self.state_manager,
+                    hitl_handler=self.hitl_handler,
+                    reporter=self.reporter,
+                )
+                tasks_driver.run_task_pipeline(
+                    limit=self.args.limit,
+                    task_id=self.args.task_id,
+                )
             elif self.args.command == "run-zenclass":
                 logger.info(f"Executing ZenClass automation (type={self.args.type}, limit={self.args.limit})...")
+                if getattr(self.args, "type", "all") in ("tasks", "all"):
+                    from drivers.zenclass_tasks_driver import ZenClassTasksDriver
+                    tasks_driver = ZenClassTasksDriver(
+                        browser_manager=self.browser_manager,
+                        state_manager=self.state_manager,
+                        hitl_handler=self.hitl_handler,
+                        reporter=self.reporter,
+                    )
+                    tasks_driver.run_task_pipeline(
+                        limit=self.args.limit,
+                        task_id=self.args.task_id,
+                    )
             elif self.args.command == "resume":
                 logger.info(f"Resuming automation from state database (platform={self.args.platform})...")
 
