@@ -1,99 +1,58 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:36:49.697841+00:00",
+  "last_updated": "2026-11-10T22:37:48.812601+00:00",
   "summary": {
-    "total_discovered": 2,
+    "total_discovered": 1,
     "total_completed": 1,
     "total_pending": 0,
     "total_in_progress": 0,
-    "total_blocked": 1,
+    "total_blocked": 0,
     "total_failed": 0,
-    "success_rate_percent": 50.0,
-    "total_time_spent_seconds": 0.0,
+    "success_rate_percent": 100.0,
+    "total_time_spent_seconds": 0.51,
     "by_platform": {
-      "guvi_codekata": {
+      "zenclass_projects": {
         "total_discovered": 1,
         "total_completed": 1,
         "total_pending": 0,
         "total_blocked": 0,
         "total_failed": 0,
         "success_rate_percent": 100.0,
-        "time_spent_seconds": 0.0
-      },
-      "zenclass_tasks": {
-        "total_discovered": 1,
-        "total_completed": 0,
-        "total_pending": 0,
-        "total_blocked": 1,
-        "total_failed": 0,
-        "success_rate_percent": 0.0,
-        "time_spent_seconds": 0.0
+        "time_spent_seconds": 0.51
       }
     },
     "by_category": {
-      "Easy": {
+      "Project": {
         "total": 1,
         "completed": 1,
         "success_rate_percent": 100.0
-      },
-      "JS": {
-        "total": 1,
-        "completed": 0,
-        "success_rate_percent": 0.0
       }
     },
-    "human_intervention_issues": [
-      {
-        "task_id": "t2",
-        "platform": "zenclass_tasks",
-        "category": "JS",
-        "title": "JS Promises",
-        "status": "blocked",
-        "attempts": 1,
-        "failure_reason": "MFA required",
-        "next_action": "Requires review",
-        "url": ""
-      }
-    ]
+    "human_intervention_issues": []
   },
   "tasks": [
     {
-      "task_id": "t1",
-      "platform": "guvi_codekata",
-      "task_category": "Easy",
-      "title": "Odd Even",
+      "task_id": "proj-sub-1",
+      "platform": "zenclass_projects",
+      "task_category": "Project",
+      "title": "Task Manager",
       "url": "",
-      "status": "completed",
+      "status": "COMPLETED",
       "attempt_count": 1,
-      "result": "Solved!",
-      "failure_reason": "",
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {},
-      "created_at": "2026-11-10T22:36:49.696628+00:00",
-      "updated_at": "2026-11-10T22:36:49.696628+00:00",
-      "timestamp": "2026-11-10T22:36:49.696628+00:00",
+      "result": "SUBMITTED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.506,
+      "metadata": {
+        "submitted_urls": {
+          "github_Url": "https://github.com/devsh/taskmgr"
+        }
+      },
+      "created_at": "2026-11-10T22:37:48.302991+00:00",
+      "updated_at": "2026-11-10T22:37:48.812187+00:00",
+      "timestamp": "2026-11-10T22:37:48.812187+00:00",
       "attempts": 1,
-      "category": "Easy"
-    },
-    {
-      "task_id": "t2",
-      "platform": "zenclass_tasks",
-      "task_category": "JS",
-      "title": "JS Promises",
-      "url": "",
-      "status": "blocked",
-      "attempt_count": 1,
-      "result": "MFA",
-      "failure_reason": "MFA required",
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {},
-      "created_at": "2026-11-10T22:36:49.697593+00:00",
-      "updated_at": "2026-11-10T22:36:49.697593+00:00",
-      "timestamp": "2026-11-10T22:36:49.697593+00:00",
-      "attempts": 1,
-      "category": "JS"
+      "category": "Project"
     }
   ]
 }
