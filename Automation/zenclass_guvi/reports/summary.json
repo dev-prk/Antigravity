@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-10T15:17:01.637577+00:00",
+  "summary_metrics": {
+    "total_discovered": 0,
+    "total_completed": 0,
+    "total_pending": 0,
+    "total_in_progress": 0,
+    "total_blocked": 0,
+    "total_failed": 0,
+    "success_rate_percent": 0.0,
+    "total_time_spent_seconds": 0.0,
+    "formatted_time_spent": "00m 00s"
+  },
+  "by_platform": {},
+  "by_category": {},
+  "human_intervention_issues": []
+}
