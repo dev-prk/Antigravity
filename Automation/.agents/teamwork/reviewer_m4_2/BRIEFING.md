@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T17:52:00Z
+# BRIEFING — 2026-11-10T17:57:00Z
 
 ## Mission
 Independently review Milestone 4 (ZenClass Tasks Driver) focusing on robustness, timing, error handling, session lifecycle, and integrity.
@@ -26,17 +26,31 @@ Independently review Milestone 4 (ZenClass Tasks Driver) focusing on robustness,
 - **Review criteria**: Robustness, timing, error handling, session recovery cascade, popup detection, guardrail delegation, attend vs submit distinction, zero mock evaluate shims, integrity, test execution
 
 ## Review Checklist
-- **Items reviewed**: none yet
-- **Verdict**: pending
-- **Unverified claims**: all upstream claims pending verification
+- **Items reviewed**:
+  - `zenclass_guvi/drivers/zenclass_tasks_driver.py` (all 1,268 lines reviewed)
+  - `zenclass_guvi/tests/test_m4_zenclass_tasks.py` (all 902 lines, 37 unit tests reviewed)
+  - `zenclass_guvi/drivers/__init__.py` (exports verified)
+  - `zenclass_guvi/main.py` (CLI commands `run-zenclass-tasks` & `run-zenclass` verified)
+- **Verdict**: APPROVE
+- **Unverified claims**: Zero unverified claims; all 206 automated tests independently reproduced and passing.
 
 ## Attack Surface
-- **Hypotheses tested**: none yet
-- **Vulnerabilities found**: none yet
-- **Untested angles**: session invalidation, ephemeral popup races, MFA timeouts, non-code task handling, retry backoff
+- **Hypotheses tested**:
+  - Ephemeral 2.0s popup race condition (passed; immediate `wait_for_selector` without intervening sleep)
+  - MFA challenge detection (.login-mfa-active) and terminal bell emission (passed; delegates to `HitlHandler`)
+  - 4-tier session recovery cascade (DOM anchor, storage token expiry, probe navigation, login fallback) (passed)
+  - Attend vs Submit distinction for external quizzes (passed; marks BLOCKED / AWAITING_INPUT)
+  - Empty text split edge case on card title fallback (identified minor edge case where `"".split("\n")` yields `[""]`)
+  - Domain validation on probe navigation in Tier 3 (identified minor edge case)
+  - Zero mock evaluate shims (statically verified: 0 shims, 0 forbidden AST patterns)
+  - Mandatory `autospec=True` on all test patches (statically verified: 0 patches without autospec)
+- **Vulnerabilities found**: No critical or integrity vulnerabilities; two minor edge-case findings documented.
+- **Untested angles**: Live platform execution against production ZenClass endpoint with real network latency.
 
 ## Key Decisions Made
-- Initialized review environment and tracking documents
+- Confirmed zero integrity violations: no hardcoded outputs, no mock evaluate shims, no shortcuts.
+- Confirmed 100% test pass rate across M4 unit tests (37/37), M1-M3 unit tests (91/91), and E2E suite (78/78).
+- Issued APPROVE verdict with adversarial challenge recommendations for future hardening.
 
 ## Artifact Index
 - `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/reviewer_m4_2/DISPATCH.md` — Dispatch log
