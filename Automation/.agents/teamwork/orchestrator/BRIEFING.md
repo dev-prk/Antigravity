@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T14:41:00Z
+# BRIEFING — 2026-11-10T14:45:00Z
 
 ## Mission
 Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, and ZenClass projects using a visible foreground browser session and provided credentials, maintaining persistent task execution state and progress reports.
@@ -29,7 +29,7 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
   3. Milestone Execution & E2E Testing Track [pending]
   4. Final Milestone & Reporting [pending]
 - **Current phase**: 0 (Survey)
-- **Current focus**: Monitoring Survey Spec Miners 2 & 3 (Explorer 1 completed)
+- **Current focus**: Monitoring Survey Spec Miners 2 & 3
 
 ## 🔒 Key Constraints
 - Authenticate to Guvi and ZenClass using provided credentials via visible foreground browser window (headed mode).
@@ -48,12 +48,13 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
 ## Key Decisions Made
 - Initialized survey phase with 3 parallel agents: 1 system/browser tooling explorer and 2 platform spec miners.
 - Explorer 1 completed: Validated Python 3.9 + Playwright 1.60.0 (Chromium 148 headed on macOS Aqua desktop) and architected modular engine with SQLite state tracking and HITL pause protocol.
+- Spec Miner 2 reported live platform status: authenticated session in Brave browser, 143 CodeKata pages (~2,145 problems), `#completed-icon_svg__a` indicators for solved problems.
 
 ## Team Roster
 | Agent | Type | Work Item | Status | Conv ID |
 |-------|------|-----------|--------|---------|
 | explorer_survey_1 | teamwork_explorer | System tooling & automation architecture | completed | 9e0ade5e-483f-4fb4-97b0-673b887a3a74 |
-| spec_miner_survey_2 | teamwork_spec_miner | Guvi CodeKata platform spec mining | in-progress | 99abd2f1-b076-4d40-a31a-ed93240235cf |
+| spec_miner_survey_2 | teamwork_spec_miner | Guvi CodeKata platform spec mining | active | 99abd2f1-b076-4d40-a31a-ed93240235cf |
 | spec_miner_survey_3 | teamwork_spec_miner | ZenClass tasks/projects spec mining | in-progress | c0a321f5-8cc4-42dd-bba6-b2812effcea6 |
 
 ## Succession Status
@@ -65,7 +66,7 @@ Automate the completion of all pending Guvi CodeKata problems, ZenClass tasks, a
 
 ## Active Timers
 - Heartbeat cron: task-30 (*/10 * * * *)
-- Safety timer: task-32 (600s)
+- Safety timer: task-81 (300s)
 
 ## Artifact Index
 - /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md — Authoritative User Request
