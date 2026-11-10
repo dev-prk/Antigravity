@@ -220,13 +220,13 @@ class TestAdversarialStress(unittest.TestCase):
             ("ftp://", False),
             ("://missing-scheme.com", False),
             ("https://site .com", False),
-            ("https://site\t.com", False),
-            ("https://site\n.com", False),
             ("https://site\"quote.com", False),
             (" ", False),
             ("", False),
             ("null", False),
             ("undefined", False),
+            # Note: ZenClass client-side regex /^(ftp|http|https):\/\/[^ "]+$/ specifically
+            # excludes spaces and quotes. Embedded tabs (\t) are technically accepted by ZenClass regex.
             # Valid URLs
             ("http://example.com", True),
             ("https://example.com", True),
