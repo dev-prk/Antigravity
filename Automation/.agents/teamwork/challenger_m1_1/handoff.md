@@ -1,136 +1,215 @@
-# Handoff Report: Milestone 1 Adversarial Challenge & Stress Verification
+# Challenger 1 Empirical Assessment Report: Milestone 1 (Filtering & Extractor Foundation)
 
-**Agent ID**: `challenger_m1_1`  
-**Role**: Empirical Challenger (critic, specialist)  
-**Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1/`  
-**Recipient**: `cbd0649b-f648-4724-a244-a22a5102ccc4` (Parent Orchestrator)  
-**Milestone**: Milestone 1 (Core Foundation & Infrastructure)  
-**Verdict**: **APPROVE**  
-**Handoff Type**: Hard (Task Complete)  
+- **Agent**: Challenger 1 (`challenger_m1_1`)
+- **Roles**: critic, specialist
+- **Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi`
+- **State Folder**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1`
+- **Handoff Type**: Hard (Adversarial challenge complete)
+- **Verdict**: **`REQUEST_CHANGES`**
+- **Date**: 2026-11-10T23:10:00Z
 
 ---
 
 ## 1. Observation
 
-Direct empirical stress testing and code inspection were performed against the Milestone 1 implementation in `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/`.
+Adversarial empirical testing via the standalone stress harness (`.agents/teamwork/challenger_m1_1/stress_test_harness.py`) executed 57 total test scenarios: **52 PASSED**, **5 FAILED**.
 
-### 1.1 Baseline Unit & E2E Test Execution
-1. **M1 Unit Test Suite (`tests/test_m1_core.py`)**:
-   - Command: `cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi && python3 -m pytest tests/test_m1_core.py -v`
-   - Result: 22 passed in 1.44s. Zero failures.
-2. **Full E2E Test Suite (`tests/e2e/test_runner.py`)**:
-   - Command: `cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi && python3 tests/e2e/test_runner.py`
-   - Result: 78 passed across all 4 tiers (Tier 1: 54, Tier 2: 14, Tier 3: 6, Tier 4: 4) in 8.85s. Zero failures.
-
-### 1.2 Empirical Stress Test Execution (`stress_harness.py`)
-An independent adversarial harness was written and executed at:  
-`/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1/stress_harness.py`
-
-Command:
-```bash
-cd /Users/devesh/Documents/Antigravity/Automation && python3 .agents/teamwork/challenger_m1_1/stress_harness.py
+### 1.1 Defect A: `core/state_manager.py:440` Crashes on Malformed/Scalar Metadata in Fallback Queries
+**Verbatim Crash Output**:
+```
+  [FAIL] Whitespace Difficulties Query: Crashed on whitespace difficulties: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+  [FAIL] Non-string Types in Difficulties: Crashed on non-string types: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+  [FAIL] list_pending(difficulties=None) with corrupt DB: VULNERABILITY: json.decoder.JSONDecodeError in _row_to_task: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
 ```
 
-Results across 11 adversarial stress vectors:
+**Location**: `zenclass_guvi/core/state_manager.py:440`
+```python
+    def _row_to_task(self, row: sqlite3.Row) -> TaskRecord:
+        meta = json.loads(row["metadata"] or "{}") if "metadata" in row.keys() else {}
+```
+**Trigger**:
+When `list_pending(difficulties=None)`, `list_pending(difficulties=["   "])`, or `list_pending(difficulties=[None, 123])` is called, `cleaned_diffs` evaluates to empty list. Consequently, no `json_valid(metadata) = 1` WHERE filter is added to the SQL query:
+```sql
+SELECT * FROM tasks WHERE LOWER(status) IN ('pending', 'discovered', 'redo', 'in_progress') ORDER BY created_at ASC
+```
+If the database contains any row where `metadata` is not valid JSON (e.g. `'{corrupt json'`, an unclosed string, or a numeric literal like `'12345'`), `_row_to_task()` directly invokes `json.loads(row["metadata"])` without a `try ... except (json.JSONDecodeError, TypeError, ValueError)` fallback. This crashes with `json.decoder.JSONDecodeError` or `TypeError: the JSON object must be str, bytes or bytearray, not int`.
 
-| # | Test Vector | Scenario | Metrics Observed | Exit Code / Result |
-|---|---|---|---|---|
-| **1A** | 10 Concurrent Threads | 50 tasks/thread (500 total) with `auto_export_json=True` on single `StateManager` | 500 tasks committed, throughput: 89.61 tasks/s, duration: 5.58s | **PASS** (0 segfaults, 0 locked errors) |
-| **1B** | 50 Concurrent Threads | 20 tasks/thread (1,000 total) with `auto_export_json=False` on single `StateManager` | 1,000 tasks committed, throughput: 8,309.08 tasks/s, duration: 0.12s | **PASS** (0 segfaults, 0 locked errors) |
-| **1C** | Mixed High Concurrency | 15 writers, 10 updaters, 10 continuous readers running simultaneously on 200 seeded items | 650 total discovered, 50 completed, duration: 0.30s | **PASS** (100% data integrity verified) |
-| **2A** | Atomic JSON Export Collision | 4 continuous writer threads updating state vs 8 reader threads in tight `json.loads` loops for 3.0s | 7,678 atomic reads at 2,524.9 reads/s; 0 JSONDecodeErrors, 0 empty reads | **PASS** (POSIX `os.replace` verified atomic) |
-| **3A** | WAL Crash Recovery | 300 tasks inserted, connection forcibly closed without checkpointing, reopened in fresh instance | 300/300 tasks recovered; `PRAGMA integrity_check` returned `ok`; duration: 0.027s | **PASS** (100% recovery) |
-| **3B** | Multi-Process Concurrency | 6 independent Python subprocesses writing to the same SQLite WAL file simultaneously | 300 tasks written (50 per process); all 6 subprocesses exited cleanly (returncode 0) | **PASS** (PRAGMA busy_timeout=5000 handled contention) |
-| **4A** | CLI Empty Invocations | `python3 main.py` with zero arguments | Returncode 1, output: `No command specified. Use --help for usage instructions.`, 0 tracebacks | **PASS** |
-| **4B** | CLI Invalid Command | `python3 main.py nonexistent-command-xyz` | Returncode 2, argparse error message, 0 tracebacks | **PASS** |
-| **4C** | CLI Report Subcommand | `python3 main.py --db-path ... --reports-dir ... report` | Returncode 0; generated `SUMMARY_REPORT.md` (2,408 bytes) and `summary.json` (1,538 bytes) | **PASS** |
-| **5A** | SQL Injection & Payloads | Quotes, `'; DROP TABLE tasks; --`, 10k chars, Unicode emoji, Asian/Arabic characters, XSS | 7/7 edge cases preserved verbatim; table NOT dropped; 100% string fidelity | **PASS** |
-| **5B** | Batch Boundaries | Empty batch `[]`, duplicate IDs within batch, and 3,000 tasks in a single transaction | 3,000 tasks upserted in 0.0165s (rate: 181,437 tasks/s) | **PASS** |
+### 1.2 Defect B: `main.py:488` Runtime Crash with CLI `--difficulty` (`TypeError: unexpected keyword argument 'difficulties'`)
+**Verbatim Crash Output**:
+```
+04:28:50 [ERROR] zenclass_guvi: Unhandled error during execution: run_pipeline() got an unexpected keyword argument 'difficulties'
+Traceback (most recent call last):
+  File "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/main.py", line 488, in execute
+    driver.run_pipeline(**pipeline_kwargs)
+TypeError: run_pipeline() got an unexpected keyword argument 'difficulties'
+```
+
+**Location**: `zenclass_guvi/main.py:482-488`
+```python
+raw_diff = getattr(self.args, "difficulty", None)
+if raw_diff is not None:
+    parsed_diffs = parse_difficulties(raw_diff)
+    if parsed_diffs:
+        pipeline_kwargs["difficulties"] = parsed_diffs
+
+driver.run_pipeline(**pipeline_kwargs)
+```
+**Root Cause**:
+In `zenclass_guvi/drivers/guvi_driver.py:867-873`, `GuviDriver.run_pipeline` signature is:
+```python
+    def run_pipeline(
+        self,
+        limit: Optional[int] = None,
+        category: Optional[str] = None,
+        task_id: Optional[str] = None,
+        max_pages: int = 143,
+    ) -> Dict[str, Any]:
+```
+`GuviDriver.run_pipeline` does not accept a `difficulties` parameter, nor does it accept `**kwargs`. When a user runs `zenclass_guvi run-codekata --difficulty Medium`, `main.py` passes `difficulties=['Medium']`, crashing immediately with `TypeError`.
+The unit test `tests/test_m1_filtering.py:435` (`test_06_main_runner_wires_difficulty_when_specified`) masked this defect by using `@patch("drivers.guvi_driver.GuviDriver.run_pipeline")` with an unconstrained `MagicMock`, rather than `autospec=True`.
+
+### 1.3 Defect C: `solver/extractor.py:195-201` False Positive in `_is_pure_css` Discards Valid Code Blocks & Dictionaries
+**Verbatim Test Output**:
+```
+  [FAIL] Extractor: Code block preservation: Corrupted code block: []
+```
+
+**Location**: `zenclass_guvi/solver/extractor.py:195-201`
+```python
+    @classmethod
+    def _is_pure_css(cls, text: str) -> bool:
+        """Detects if a string is pure CSS declaration block or stylesheet rule."""
+        if not text:
+            return False
+        t = text.strip()
+        if t.startswith("{") and re.search(cls._CSS_PROP_PATTERN, t, re.IGNORECASE):
+            if not re.search(r'^\s*\{\s*"', t):
+                return True
+        if cls._CSS_RULE_RE.search(t):
+            return True
+        return False
+```
+**Root Cause**:
+`_is_pure_css` flags any string as pure CSS if it starts with `{`, contains any word in `_CSS_PROP_PATTERN` (e.g. `display`, `width`, `height`, `flex`, `color`, `position`, `margin`, `padding`, `top`, `bottom`, `left`, `right`, `font`, `border`), and does NOT start with `{"` (a double-quoted JSON object).
+Consequently:
+- C/C++/Java/Rust/JS code blocks: `{ int display = 10; int flex = 20; return display + flex; }` -> classified as pure CSS!
+- Code blocks with width/height: `{ int width = 10; return width; }` -> classified as pure CSS!
+- JavaScript objects or single-quoted Python dicts: `{ width: 10, height: 20 }` or `{'display': 100}` -> classified as pure CSS!
+In `_extract_sample_cases`, line 464 discards any case where `cls._is_pure_css(...)` returns `True`, causing legitimate algorithmic problems with code blocks or dictionary test inputs to lose their sample test cases (`sample_cases == []`).
 
 ---
 
 ## 2. Logic Chain
 
-1. **Multi-Threaded SQLite Concurrency & Anti-Corruption**:
-   - *Hypothesis*: High concurrent thread contention on SQLite might trigger `sqlite3.OperationalError: database is locked` or SIGSEGV (Exit 139) on macOS Apple Silicon.
-   - *Evidence (Obs 1.2, Tests 1A, 1B, 1C, 3B)*: `StateManager` in `core/state_manager.py` lines 128–147 implements a dual-guard architecture: an internal `threading.RLock()` guarding all query executions and `PRAGMA journal_mode = WAL;` with `PRAGMA busy_timeout = 5000;`.
-   - *Conclusion*: Zero crashes or locked exceptions occurred across 10 threads, 50 threads, mixed workloads, or 6 independent OS processes. Row counts and summary statistics matched expected values 100%.
+1. **State Manager Resilience Requirement**:
+   - The system must be resilient to corrupt data and backward-compatible with queries lacking difficulty filters.
+   - When difficulty filtering is active, `json_valid(metadata) = 1` safely skips non-JSON rows.
+   - However, when difficulty filtering is bypassed (`difficulties=None`, `difficulties=[]`, or `difficulties=[" "]`), rows with corrupt metadata are returned from SQLite.
+   - `_row_to_task` naively calls `json.loads(row["metadata"] or "{}")` without exception handling.
+   - Therefore, a single corrupted task row crashes the entire pending task retrieval process.
 
-2. **Atomic JSON Export Integrity**:
-   - *Hypothesis*: High-frequency writes to `data/state_summary.json` could cause concurrent readers to encounter truncated files or `json.JSONDecodeError`.
-   - *Evidence (Obs 1.2, Test 2A)*: `StateManager.export_state_json()` in `core/state_manager.py` lines 677–703 writes to a temporary file (`.tmp.<pid>.<uuid>`) in the same directory, flushes and calls `os.fsync()`, and replaces the target via `os.replace()`. In Test 2A, 8 reader threads executed 7,678 continuous reads while 4 writer threads continuously updated and exported state over 3.0 seconds. Zero `JSONDecodeError` and zero empty reads occurred.
-   - *Conclusion*: State file export is strictly atomic and crash-resilient under high contention.
+2. **CLI & Platform Integration Contract**:
+   - `PROJECT.md` interface contract defines `GuviDriver.run_pipeline(..., difficulties=["Medium", "Hard"])`.
+   - Feature 7 (difficulty filtering in `GuviDriver`) is scheduled for Milestone 3, but Milestone 1 modified `main.py` to forward `difficulties` unconditionally.
+   - Because `GuviDriver.run_pipeline` was not updated to accept `difficulties` (or `**kwargs`), calling `main.py` with `--difficulty` results in a runtime crash (`TypeError`).
 
-3. **Crash Recovery & Reconnection**:
-   - *Hypothesis*: Process termination before committing or checkpointing could result in database corruption or data loss.
-   - *Evidence (Obs 1.2, Test 3A)*: After writing 300 records, the connection was forcibly terminated without checkpointing. A fresh `StateManager` instance reopened the database file. SQLite's WAL journal automatically recovered all 300 committed tasks, and `PRAGMA integrity_check` confirmed zero structural corruption (`ok`).
-   - *Conclusion*: Database persistence satisfies Requirement R3 across process restarts and crashes.
-
-4. **CLI Validation & Exit Codes**:
-   - *Hypothesis*: Invalid CLI arguments or missing subcommands might crash with unhandled Python tracebacks.
-   - *Evidence (Obs 1.2, Tests 4A, 4B, 4C)*: In `main.py`, invoking with no arguments returns exit code 1 with clean help guidance. Invalid subcommands exit with code 2 via standard argparse error handling without tracebacks. The `report` subcommand executes cleanly with exit code 0 and produces well-structured executive Markdown and JSON artifacts.
-   - *Conclusion*: CLI interface is robust and user-friendly.
-
-5. **Requirement R1 & R2 Compliance**:
-   - *Evidence*: `config.HEADLESS` is set strictly to `False`. `BrowserManager.start()` explicitly enforces headed mode, window maximization, and anti-detection flags (`--disable-blink-features=AutomationControlled`). `HitlHandler` inspects DOM for 6 categories of challenges (Cloudflare, reCAPTCHA, OTP, MFA, modal) and halts execution with terminal alerts rather than attempting bypass.
-   - *Conclusion*: R1 and R2 constraints are strictly satisfied.
+3. **Extractor Sanitization Safety**:
+   - The goal of CSS sanitization is to remove stylesheet pollution (e.g., `{display:inline-flex...}`).
+   - However, `_is_pure_css` uses an overly broad heuristic: any `{...}` containing words like `width`, `height`, `display`, or `flex` without double quotes is treated as CSS.
+   - In programming problems, `width`, `height`, `display`, `flex`, and `color` are common variable and field names.
+   - Therefore, valid problem inputs and code blocks are silently dropped.
 
 ---
 
 ## 3. Caveats
 
-1. **Per-Task `auto_export_json` Overhead**:
-   - Calling `record_task` with `auto_export_json=True` invokes `os.fsync()` on every single mutation. Throughput with `auto_export_json=True` is ~90 tasks/s vs ~8,300 tasks/s with `auto_export_json=False`.
-   - *Recommendation for future milestones*: For bulk discovery operations (such as scraping 2,145 CodeKata items in M3), drivers should use `batch_record_tasks()` or defer export until the page discovery batch finishes.
-2. **Persistent Profile Concurrency**:
-   - Chromium locks `.browser_profile/` via `SingletonLock`. Only one live browser process can run against the profile directory at a time. This is expected Chromium behavior, and `BrowserManager.start()` handles it by catching and logging the lock condition.
-3. **Display Server Dependency**:
-   - Visible foreground execution (`headless=False`) requires an active graphical window server (macOS Aqua). In headless CI environments without a display, the `--headless` flag must be supplied.
+- **Concurrency Under Load**: Concurrency testing across 8 reader threads and 4 writer threads with 200 tasks passed cleanly (completed in 0.11s with 0 deadlocks or SQLite busy errors). Thread safety via WAL mode and `RLock` is robust.
+- **SQL Injection Safety**: SQL injection attempts in difficulty strings (`'; DROP TABLE tasks; --'`, `' OR 1=1 --'`, UNION SELECTs) were properly parameterized; no injection succeeded, and tables remained 100% intact.
+- **CLI Flag Ordering & Defaults**: Flag combinations (`--headless`, `--no-headless`, `--headed`, `--limit` before and after subcommands, conflicting flags, context-aware headless defaults) function properly within `AutomationArgumentParser`.
 
 ---
 
 ## 4. Conclusion
 
-**Verdict: APPROVE**
+**Verdict: `REQUEST_CHANGES`**
 
-Milestone 1 (Core Foundation & Infrastructure) meets and exceeds all architectural and adversarial requirements:
-- Multi-threaded and multi-process SQLite concurrency is robust with zero SIGSEGV or lock timeouts.
-- Atomic state export prevents all partial reads under heavy reader/writer collision.
-- Crash recovery and WAL persistence are 100% reliable.
-- CLI handling exits cleanly with standardized exit codes and no tracebacks.
-- Requirements R1, R2, and R3 are fully respected.
-
-The implementation is verified and approved for Milestone 2.
+Milestone 1 cannot be approved in its current state due to three actionable defects:
+1. **StateManager Crash Vulnerability**: Add a `try ... except Exception: meta = {}` safeguard in `core/state_manager.py:440` (`_row_to_task`) to guarantee that corrupt or non-dict metadata never crashes task deserialization.
+2. **CLI TypeError Crash**: Update `GuviDriver.run_pipeline` in `drivers/guvi_driver.py:867` to accept `difficulties: Optional[List[str]] = None` (or `**kwargs`), OR update `main.py:485` to check `inspect.signature` before passing `difficulties`. Also update `tests/test_m1_filtering.py:435` to use `autospec=True` so mock testing does not mask signature mismatches.
+3. **Extractor False Positives**: Refine `_is_pure_css` in `solver/extractor.py:195-201` so it does not match code blocks or dictionaries. CSS declaration blocks should require CSS property-value syntax (`prop\s*:\s*value`) rather than matching isolated variable names inside curly braces.
 
 ---
 
 ## 5. Verification Method
 
-To independently reproduce all empirical verification results:
+### 5.1 Standalone Stress Test Harness
+Run the empirical test harness in the state folder:
+```sh
+cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+python3 /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1/stress_test_harness.py
+```
+**Expected Current Result**:
+`Summary: 52 PASSED, 5 FAILED` (reproducing all 3 defects verbatim).
 
-1. **Run Adversarial Stress Test Suite (11 Test Vectors)**:
-   ```bash
-   cd /Users/devesh/Documents/Antigravity/Automation
-   python3 .agents/teamwork/challenger_m1_1/stress_harness.py
+### 5.2 Direct Reproduction Commands
+
+1. **Reproduce Defect A (StateManager Crash on Corrupt Metadata)**:
+   ```sh
+   PYTHONPATH=zenclass_guvi python3 -c "
+   import sqlite3, tempfile
+   from pathlib import Path
+   from core.state_manager import StateManager
+
+   with tempfile.TemporaryDirectory() as tmp:
+       db = Path(tmp) / 'corrupt.db'
+       sm = StateManager(db_path=str(db))
+       conn = sqlite3.connect(str(db))
+       conn.execute(\"\"\"
+           INSERT INTO tasks (task_id, platform, task_category, title, status, metadata, created_at, updated_at)
+           VALUES ('corrupt-1', 'guvi', 'Basics', 'Test', 'pending', '{corrupt json', '2026-01-01', '2026-01-01')
+       \"\"\")
+       conn.commit()
+       conn.close()
+       # This crashes with JSONDecodeError:
+       tasks = sm.list_pending(difficulties=None)
+   "
    ```
-   *Expected Result*: `STRESS TEST SUMMARY: ALL PASSED (11 / 11)` in ~9.5s.
 
-2. **Run M1 Unit & Integration Suite**:
-   ```bash
-   cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
-   python3 -m pytest tests/test_m1_core.py -v
+2. **Reproduce Defect B (CLI TypeError on `--difficulty`)**:
+   ```sh
+   PYTHONPATH=zenclass_guvi python3 -c "
+   from main import AutomationRunner, create_cli_parser
+   from unittest.mock import MagicMock
+
+   parser = create_cli_parser()
+   args = parser.parse_args(['run-codekata', '--difficulty', 'Medium'])
+   runner = AutomationRunner(args)
+   runner.browser_manager = MagicMock()
+   runner.state_manager = MagicMock()
+   runner.hitl_handler = MagicMock()
+   runner.reporter = MagicMock()
+   runner.execute()
+   "
    ```
-   *Expected Result*: `22 passed in ~1.4s`.
 
-3. **Run E2E 4-Tier Test Runner**:
-   ```bash
-   cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
-   python3 tests/e2e/test_runner.py
+3. **Reproduce Defect C (Extractor False Positive Discarding Code Block)**:
+   ```sh
+   PYTHONPATH=zenclass_guvi python3 -c "
+   from solver.extractor import ProblemExtractor
+   html = '''
+   <div>
+       <h1>Block Output</h1>
+       <p>Sample Input: { int display = 10; int flex = 20; return display + flex; }</p>
+       <p>Sample Output: 30</p>
+   </div>
+   '''
+   spec = ProblemExtractor.extract(html)
+   print('Extracted sample cases count:', len(spec.sample_cases))
+   assert len(spec.sample_cases) == 1, f'Defect confirmed: sample_cases dropped ({len(spec.sample_cases)})'
+   "
    ```
-   *Expected Result*: `78 passed, 0 failed, 0 errors, Overall Result: PASSED` in ~8.8s.
 
-4. **Test Invalidation Conditions**:
-   - Any SIGSEGV (Exit 139) during concurrent `record_task` calls.
-   - Any `sqlite3.OperationalError: database is locked` unhandled during multi-threaded access.
-   - Any `json.JSONDecodeError` during concurrent read/write operations on state export.
-   - Any unhandled traceback when invoking CLI with invalid inputs.
+### 5.3 Invalidation Conditions
+- Defect A is resolved when `_row_to_task` safely falls back to `{}` for any unparseable JSON or non-dict metadata.
+- Defect B is resolved when `main.py run-codekata --difficulty Medium` invokes `run_pipeline` without `TypeError`.
+- Defect C is resolved when `_is_pure_css` returns `False` for valid C/Java/Rust code blocks and JavaScript/Python dictionaries.
