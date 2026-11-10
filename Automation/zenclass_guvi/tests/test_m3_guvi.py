@@ -241,6 +241,7 @@ class TestGuviAuthentication(unittest.TestCase):
         self.mock_rep = MagicMock(spec=SummaryReporter)
         self.mock_page = MagicMock()
         self.mock_page.is_closed.return_value = False
+        self.mock_page.query_selector.return_value = None
         self.mock_bm.get_page.return_value = self.mock_page
 
         self.mock_ctx = MagicMock()
@@ -263,11 +264,12 @@ class TestGuviAuthentication(unittest.TestCase):
     def test_is_authenticated_probe_navigation_success(self):
         """Probes CodeKata URL when no cookies exist; returns True when indicators match."""
         self.mock_ctx.cookies.return_value = []
-        self.mock_page.url = "https://www.guvi.in/code-kata/"
+        self.mock_page.url = ""  # Initial blank state triggers probe
         self.mock_page.wait_for_selector.return_value = MagicMock()
 
-        self.assertTrue(self.driver.is_authenticated())
-        self.mock_page.goto.assert_called()
+        with patch.object(self.driver, "is_visible", return_value=True):
+            self.assertTrue(self.driver.is_authenticated())
+            self.mock_page.goto.assert_called()
 
     def test_is_authenticated_probe_redirect_to_signin_returns_false(self):
         """Returns False when probing CodeKata URL redirects to /sign-in/."""

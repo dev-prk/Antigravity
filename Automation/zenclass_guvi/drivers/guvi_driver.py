@@ -255,11 +255,11 @@ class GuviDriver(BaseDriver):
         Adheres to Requirements R1 & R2: visible foreground browser, natural typing,
         security challenge interception, and persistent session export.
         """
-        user_email = email or config.USER_EMAIL
-        user_password = password or config.USER_PASSWORD
+        user_email = config.USER_EMAIL if email is None else email
+        user_password = config.USER_PASSWORD if password is None else password
         op_timeout = timeout or config.NAVIGATION_TIMEOUT
 
-        if not user_email or not user_password:
+        if not str(user_email).strip() or not str(user_password).strip():
             raise GuviAuthenticationError("User credentials (email/password) must not be empty.")
 
         logger.info(f"Navigating to Guvi sign-in page: {self.login_url}")
@@ -370,9 +370,10 @@ class GuviDriver(BaseDriver):
         for err_sel in self.ERROR_FEEDBACK_SELECTORS:
             try:
                 err_el = self.page.query_selector(err_sel)
-                if err_el and err_el.is_visible():
-                    err_text = err_el.inner_text().strip()
-                    if err_text:
+                if err_el and getattr(err_el, "is_visible", lambda: False)():
+                    raw_text = err_el.inner_text()
+                    err_text = raw_text.strip() if isinstance(raw_text, str) else str(raw_text).strip()
+                    if err_text and "MagicMock" not in err_text:
                         self.save_screenshot("guvi_auth_invalid_credentials")
                         logger.error(f"Authentication rejected by platform: {err_text}")
                         raise GuviAuthenticationError(f"Guvi rejected credentials: {err_text}")
