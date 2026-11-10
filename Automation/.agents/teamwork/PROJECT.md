@@ -4,7 +4,7 @@
 - Source Inputs: Existing resume directory (`/Users/devesh/Documents/Resume`) + 8 Job Portals via Brave
 - Intermediate Snapshots: `~/resume/profile_backup.md`
 - Core Deliverables: `~/resume/master_profile.md`, `~/resume/targets.md`
-- Gate Deliverable: Gate 1 Summary & Proposed Target Roles / Seniority
+- Gate Deliverable: Gate 1 Summary & Proposed Target Roles / Seniority (HALTED FOR USER APPROVAL)
 
 ## Feature Inventory
 | # | Feature | Description | Milestone | Source |
@@ -21,7 +21,7 @@
 | 1 | M1: Resume Materials Ingestion | Read `/Users/devesh/Documents/Resume` and extract career records | none | DONE (conv: fc28e610-771a-402c-aa12-120486b83d85) |
 | 2 | M2: Portal Profiles Extraction | Brave extraction across 8 portals into `~/resume/profile_backup.md` | none | DONE (conv: f7dbf6bf-0212-4f02-b611-9ba471568204) |
 | 3 | M3: Consolidation | Create `~/resume/master_profile.md` and `~/resume/targets.md` | M1, M2 | DONE (conv: f9a979bc-ee47-49c2-b4ee-47eba0480f80) |
-| 4 | M4: Gate 1 Verification & Pause | Review, Audit, Propose 2-3 target roles & seniority, halt at Gate 1 | M3 | IN_PROGRESS (reviewer: bcf713d7, auditor: 7ba9b670) |
+| 4 | M4: Gate 1 Verification & Pause | Review, Audit, Propose 2-3 target roles & seniority, halt at Gate 1 | M3 | DONE (Gate Result: PASS, Halted at Gate 1) |
 
 ## Code Layout / Artifacts
 - `/Users/devesh/resume/profile_backup.md` — Portal profile snapshots (DONE)
