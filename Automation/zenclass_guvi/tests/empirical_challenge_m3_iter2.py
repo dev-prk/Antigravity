@@ -172,7 +172,7 @@ class TestCatalogCrawlingStress(unittest.TestCase):
         self.assertEqual(pending_slugs[-1], f"problem-{TOTAL_PAGES * PROBLEMS_PER_PAGE - 1}")
 
         # Check SQLite persistence: all 1,430 problems recorded
-        all_tasks = self.state_mgr.list_all_tasks(platform="guvi")
+        all_tasks = self.state_mgr.list_tasks(platform="guvi")
         self.assertEqual(len(all_tasks), TOTAL_PAGES * PROBLEMS_PER_PAGE)
 
         pending_tasks = self.state_mgr.list_pending(platform="guvi")
@@ -223,7 +223,13 @@ class TestCatalogCrawlingStress(unittest.TestCase):
 
         next_btn = MagicMock()
         next_btn.get_attribute.side_effect = lambda attr: "disabled" if attr == "disabled" else None
-        self.mock_page.query_selector.return_value = next_btn
+        
+        # Only return next_btn for pagination selector; popup selectors return None
+        def query_sel(sel):
+            if "next" in sel:
+                return next_btn
+            return None
+        self.mock_page.query_selector.side_effect = query_sel
 
         with patch("time.sleep", return_value=None):
             pending = self.driver.discover_catalog(max_pages=50)
@@ -533,14 +539,37 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         self.assertNotIn("qs.textContent = 'Solved!'", code, "DOM mutation shim found in guvi_driver.py")
         self.assertNotIn("modal.style.display = 'block'", code, "Modal display mutation found in guvi_driver.py")
 
-        # Check all page.evaluate occurrences
-        eval_matches = re.findall(r'page\.evaluate\((.*?)\)', code, re.DOTALL)
-        self.assertEqual(len(eval_matches), 2, f"Expected exactly 2 legitimate evaluates, found {len(eval_matches)}")
+        # Find all evaluate calls via AST inspection
+        evaluate_calls = []
+        for node in ast.walk(tree):
+            if (
+                isinstance(node, ast.Call)
+                and isinstance(node.func, ast.Attribute)
+                and node.func.attr == "evaluate"
+            ):
+                evaluate_calls.append(node)
 
-        # Legitimate 1: localStorage.getItem('authToken')
-        self.assertIn("localStorage.getItem('authToken')", eval_matches[0])
-        # Legitimate 2: (el) => el.value
-        self.assertIn("el.value", eval_matches[1])
+        self.assertEqual(
+            len(evaluate_calls),
+            2,
+            f"Expected exactly 2 legitimate evaluate calls in guvi_driver.py, found {len(evaluate_calls)}"
+        )
+
+        # Inspect argument strings of the two evaluate calls
+        arg_strings = []
+        for call_node in evaluate_calls:
+            for arg in call_node.args:
+                if isinstance(arg, ast.Constant) and isinstance(arg.value, str):
+                    arg_strings.append(arg.value)
+
+        self.assertTrue(
+            any("localStorage.getItem('authToken')" in s for s in arg_strings),
+            "Expected localStorage authToken evaluate call"
+        )
+        self.assertTrue(
+            any("el.value" in s for s in arg_strings),
+            "Expected dropdown el.value evaluate call"
+        )
 
     def test_19_zero_shims_during_sandbox_failure(self):
         """Under local sandbox failure, driver strictly halts without executing any evaluate shims."""
@@ -564,7 +593,12 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
             description="Add two numbers",
             sample_cases=[("1 2", "3")],
         )
-        mock_sol = GeneratedSolution(code="def solve(): print(0)", category="math", confidence=0.9)
+        mock_sol = GeneratedSolution(
+            code="def solve(): print(0)",
+            category="math",
+            confidence=0.9,
+            explanation="Synthesized solution",
+        )
         mock_fail_val = ValidationResult(
             all_passed=False,
             results=[TestCaseResult(input_data="1 2", expected_output="3", actual_output="0", passed=False, error_message="Mismatch")],
@@ -612,7 +646,12 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         driver._current_page = mock_page
 
         mock_spec = ProblemSpecification(title="Sample", description="", sample_cases=[])
-        mock_sol = GeneratedSolution(code="print('ok')", category="general", confidence=1.0)
+        mock_sol = GeneratedSolution(
+            code="print('ok')",
+            category="general",
+            confidence=1.0,
+            explanation="Synthesized solution",
+        )
         mock_val = ValidationResult(all_passed=True, results=[])
 
         with patch("drivers.guvi_driver.extract_problem_spec", return_value=mock_spec), \
@@ -647,7 +686,12 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         driver._current_page = mock_page
 
         mock_spec = ProblemSpecification(title="Sample", description="", sample_cases=[])
-        mock_sol = GeneratedSolution(code="print('ok')", category="general", confidence=1.0)
+        mock_sol = GeneratedSolution(
+            code="print('ok')",
+            category="general",
+            confidence=1.0,
+            explanation="Synthesized solution",
+        )
         mock_val = ValidationResult(all_passed=True, results=[])
 
         # Test results pane indicates 'Wrong'
@@ -699,7 +743,12 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         driver._current_page = mock_page
 
         mock_spec = ProblemSpecification(title="Sample", description="", sample_cases=[])
-        mock_sol = GeneratedSolution(code="print('ok')", category="general", confidence=1.0)
+        mock_sol = GeneratedSolution(
+            code="print('ok')",
+            category="general",
+            confidence=1.0,
+            explanation="Synthesized solution",
+        )
         mock_val = ValidationResult(all_passed=True, results=[])
 
         driver.find_first_selector = MagicMock(side_effect=lambda sels, timeout=None: sels[0])
