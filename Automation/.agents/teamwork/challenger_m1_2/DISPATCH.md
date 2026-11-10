@@ -1,43 +1,26 @@
-## 2026-11-10T15:21:34Z
-You are challenger_m1_2, a code-executing adversarial challenger.
+## 2026-11-10T22:52:14Z
+You are Challenger 2 for Milestone 1: Filtering & Extractor Foundation.
+Working directory: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+State folder: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2
+Original request: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md
+Project scope document: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/orchestrator_2/PROJECT.md
+Scope document: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/sub_orch_m1/SCOPE.md
+Worker handoff report: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m1_1/handoff.md
 
-## Working Directory
-Your working directory is: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2`
-Write all your test harnesses, stress scripts, and your final handoff report (`handoff.md`) inside this directory.
-
-## Authoritative Inputs
-1. You MUST read the authoritative user request at:
-   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md`
-2. Read the master project blueprint and interface contracts at:
-   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
-3. Read the worker's handoff report at:
-   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m1_1/handoff.md`
-
-## Target Implementation Under Challenge
-Inspect the production codebase in `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/`:
-- `config.py`
-- `core/browser.py` (BrowserManager)
-- `core/hitl_handler.py` (HitlHandler)
-
-## Your Adversarial Mission
-Write empirical test harnesses and execute them to verify:
-1. **BrowserManager Configuration & Anti-Detection**:
-   - Verify `BrowserManager(headless=False)` default complies strictly with Requirement R1.
-   - Verify that Chromium launch arguments include `--disable-blink-features=AutomationControlled` and check that `navigator.webdriver` is undefined or spoofed.
-   - Test tab reuse: verify that calling `get_page()` reuses the initial blank page rather than spawning redundant blank tabs.
-   - Test session serialization: verify that calling `close()` or `context.storage_state()` produces a valid JSON file containing cookies and origins.
-2. **HitlHandler Guardrail Detection Robustness**:
-   - Create mock DOM trees / HTML pages containing Cloudflare Turnstile (`iframe[src*="challenges.cloudflare.com"]`, `.cf-turnstile`), reCAPTCHA (`iframe[src*="google.com/recaptcha"]`), OTP input fields (`input[type="tel"][maxlength="6"]`, `#otp`), ZenClass MFA (`.login-mfa-active`), and Guvi modal (`#myModal.show`).
-   - Run `HitlHandler.check_guardrails(page)` against these DOM variations to verify accurate detection and classification.
-   - Test false-positive resistance: feed standard pages without security challenges and verify that `check_guardrails(page)` returns `None`.
-3. **URL Validation for Project Submissions**:
-   - Test `HitlHandler`'s URL validation logic with valid GitHub URLs, valid Vercel/Netlify URLs, and malicious/malformed inputs (`javascript:alert(1)`, `http://`, `not-a-url`, empty string). Verify correct rejection of invalid URLs.
-
-Produce your final challenge report in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/handoff.md` with:
-- Observation (empirical test results, detection accuracy)
-- Logic Chain
-- Caveats
-- Conclusion with explicit verdict: **APPROVE** or **REQUEST_CHANGES**
-- Verification Method (commands to run your tests)
-
-Send a completion message back to parent with your verdict and handoff path.
+Task: Empirically challenge and stress-test `solver/extractor.py`:
+1. Write a standalone test script/harness in your state folder with pathological HTML / DOM inputs:
+   - Malformed/unclosed `<style>` and `<template>` tags
+   - Complex inline CSS with `@media`, keyframes, pseudo-elements (`:before`, `:after`)
+   - CSS selectors matching `input`, `output`, `textarea`, `form`, `button`, `body`, `html`
+   - Real-world CSS leaks like `{display:inline-flex;font-size:inherit;line-height:inherit;flex:1}`
+   - Legitimate competitive programming inputs and outputs containing braces:
+     - Valid JSON strings: `{"name": "test", "display": "flex", "count": 42}`
+     - Valid Python dictionaries: `{'display': 'inline', 'val': 100}`
+     - Valid Python sets: `{1, 2, 3, 4}`
+     - Valid C/C++ or Python source code snippets inside sample input or output
+     - Multiline inputs with whitespace and newlines
+   - Verify that `extract()` produces valid `ProblemSpecification` with clean `sample_cases` free of CSS noise, while 100% preserving valid inputs.
+2. Record all results, test matrix, and empirical evidence in:
+   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_2/handoff.md`
+   Clearly state your verdict: `APPROVE` (if no defects/leaks/corruption found) or `REQUEST_CHANGES` (if defects found).
+Notify me via `send_message`.

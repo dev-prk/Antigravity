@@ -1,43 +1,20 @@
-## 2026-11-10T15:21:23Z
-You are challenger_m1_1, a code-executing adversarial challenger.
+## 2026-11-10T22:52:07Z
+You are Challenger 1 for Milestone 1: Filtering & Extractor Foundation.
+Working directory: /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+State folder: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1
+Original request: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md
+Project scope document: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/orchestrator_2/PROJECT.md
+Scope document: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/sub_orch_m1/SCOPE.md
+Worker handoff report: /Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m1_1/handoff.md
 
-## Working Directory
-Your working directory is: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1`
-Write all your test harnesses, stress scripts, and your final handoff report (`handoff.md`) inside this directory.
-
-## Authoritative Inputs
-1. You MUST read the authoritative user request at:
-   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md`
-2. Read the master project blueprint and interface contracts at:
-   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
-3. Read the worker's handoff report at:
-   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/worker_m1_1/handoff.md`
-
-## Target Implementation Under Challenge
-Inspect the production codebase in `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/`:
-- `core/state_manager.py` (StateManager)
-- `core/reporter.py` (SummaryReporter)
-- `main.py` (CLI entrypoint)
-
-## Your Adversarial Mission
-Write empirical test harnesses and execute them to aggressively stress-test:
-1. **Multi-Threaded Concurrency on SQLite**:
-   - Spawn 10 to 50 concurrent threads executing rapid `record_task` calls on a single `StateManager` instance.
-   - Verify zero SIGSEGV (Exit 139), zero `sqlite3.OperationalError: database is locked`, and 100% data integrity when reading back all records.
-2. **Atomic JSON Export Integrity**:
-   - Verify that `export_json` uses POSIX atomic rename (`os.replace`) to prevent corrupt partial reads even when multiple threads trigger export simultaneously.
-   - Read the JSON file repeatedly while concurrent writes are occurring to verify zero JSONDecodeErrors.
-3. **Database Recovery & Reconnection**:
-   - Simulate sudden process termination (close database handle) and re-open; verify WAL checkpointing and persistence of all records.
-4. **CLI Validation & Exit Codes**:
-   - Execute `main.py` with invalid commands, missing arguments, and verify clean error exits (no unhandled tracebacks).
-   - Execute `python3 main.py report` and verify generated report structure.
-
-Produce your final challenge report in `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1/handoff.md` with:
-- Observation (empirical test results, latency, concurrency metrics)
-- Logic Chain (stress scenarios tested)
-- Caveats
-- Conclusion with explicit verdict: **APPROVE** or **REQUEST_CHANGES**
-- Verification Method (commands to reproduce stress tests)
-
-Send a completion message back to parent with your verdict and handoff path.
+Task: Empirically stress-test the Milestone 1 changes:
+1. Write a standalone test script/harness in your state folder to challenge:
+   - `core/state_manager.py`: Generate 1,000 synthetic tasks with various metadata values (NULL, "", "{corrupt}", JSON with missing difficulty, integers as difficulty, mixed-case ["medium", "HARD"], unicode characters, SQL injection attempts in difficulty strings like "'; DROP TABLE tasks; --").
+   - Test concurrent calls to `list_pending(difficulties=...)` across multiple threads.
+   - Verify `get_pending_tasks(platform=..., difficulties=...)` interface contract and limits.
+2. Stress test `main.py` CLI parser:
+   - Challenge argument combinations: `--headless`, `--no-headless`, `--headed`, `--difficulty "Medium, Hard"`, repeated `--difficulty`, invalid difficulties, subcommands before and after flags.
+3. Record all results and empirical evidence in:
+   `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/challenger_m1_1/handoff.md`
+   Clearly state your verdict: `APPROVE` (if no correctness/crash defects found) or `REQUEST_CHANGES` (if defects found).
+Notify me via `send_message`.
