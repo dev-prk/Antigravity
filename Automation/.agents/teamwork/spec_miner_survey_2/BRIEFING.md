@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T14:35:00Z
+# BRIEFING — 2026-11-10T14:55:00Z
 
 ## Mission
 Discover and document complete specifications, DOM selectors, API interactions, and operational workflows for Guvi CodeKata (https://www.guvi.in/code-kata/) automation.
@@ -19,7 +19,7 @@ Discover and document complete specifications, DOM selectors, API interactions, 
 
 ## Current Parent
 - Conversation ID: cbd0649b-f648-4724-a244-a22a5102ccc4
-- Updated: not yet
+- Updated: 2026-11-10T14:55:00Z
 
 ## Task Summary
 - **What to build**: Specification discovery report and DOM/API automation analysis for Guvi CodeKata.
@@ -28,10 +28,13 @@ Discover and document complete specifications, DOM selectors, API interactions, 
 - **Code layout**: Read-only discovery. Findings in handoff.md and analysis.md.
 
 ## Key Decisions Made
-- Will check existing files in zenclass_guvi and any sibling directories to understand prior findings, then use browser automation / network inspection scripts to probe Guvi CodeKata live.
+- Confirmed live authenticated session in Brave browser for devsh.pareek@gmail.com (authToken, 2195 points, rank 82233).
+- Clarified editor architecture: Guvi CodeKata uses **Ace Editor** (`#editor.ace_editor` with child `textarea.ace_text-input`), not Monaco. Code injection works reliably via Playwright native keyboard typing (`page.keyboard.insert_text(code)`).
+- Identified direct API endpoint for execution: `POST https://api.guvi.in/code-kata/question/run`.
+- Identified table pagination: 143 pages, 15 problems per page, SVG status clip-path `#completed-icon_svg__a` for solved status.
 
 ## Artifact Index
-- DISPATCH.md — Initial dispatch assignment
+- DISPATCH.md — Initial dispatch assignment & orchestrator synchronization messages
 - BRIEFING.md — Situational awareness
 - progress.md — Liveness heartbeat & progress log
-- handoff.md — 5-component handoff report
+- handoff.md — 5-component handoff report with Features Discovered and Edge Cases tables
