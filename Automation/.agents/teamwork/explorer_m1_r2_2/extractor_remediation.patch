@@ -1,0 +1,135 @@
+--- a/solver/extractor.py
++++ b/solver/extractor.py
+@@ -10,6 +10,8 @@
+ import logging
+ import re
+ import html
++import ast
++import json
+ from typing import Any, Dict, List, Optional, Tuple, Union
+ from dataclasses import dataclass
+ 
+@@ -151,16 +153,30 @@
+     # Matches CSS at-rules (@media, @import, @keyframes)
+     _CSS_AT_RULE_RE = re.compile(
+-        r"(?:@media[^{]*\{[^{}]*\{[^{}]*\}\s*\}|@[a-z\-]+[^;{]*;?)",
++        r"(?:@(?:media|keyframes|-webkit-keyframes)[^{]*\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\s*\}|@[a-z\-]+[^;{]*;?)",
+         re.IGNORECASE | re.DOTALL,
+     )
+ 
+     # Matches CSS rule sets with selectors: e.g. input { display: inline-flex; }
+     # Excludes labels like 'Sample Input:', 'Sample Output:', 'Problem Statement:'
+     _CSS_RULE_RE = re.compile(
+-        rf"(?:^|\n)\s*(?![^\{{\n]*(?:Sample|Case|Input\s*[:\-]|Output\s*[:\-]|Description|Problem))"
+-        rf"(?:[.#]?[a-zA-Z0-9_\-,>+~\[\]\=\"\'\s]+?(?:::[a-z\-]+|:[a-z\-]+(?:\([^\)]*\))?)?)\s*"
++        rf"(?:^|\n)\s*(?![^\{{\n]*(?:Sample|Case|Input\s*[:\-](?!\:)|Output\s*[:\-](?!\:)|Description|Problem))"
++        rf"(?:[.#]?[.#a-zA-Z0-9_\-,>+~\[\]\=\"\'\s]+?(?:::[a-z\-]+|:[a-z\-]+(?:\([^\)]*\))?)?)\s*"
+         rf"\{{[^{{}}]*?(?:(?<![\"\'\w-]){_CSS_PROP_PATTERN}\s*:\s*[^;{{}}]+(?:;|\b|\}}))[^{{}}]*?\}}",
+         re.IGNORECASE | re.DOTALL,
+     )
+ 
++    # Matches a single CSS property declaration (unquoted CSS property followed by colon and value)
++    _CSS_PROP_DECL_RE = re.compile(
++        rf"(?<![\"\'\w-]){_CSS_PROP_PATTERN}\s*:\s*[^;{{}}]+(?:;|\s*|\}}|$)",
++        re.IGNORECASE,
++    )
++
++    # Programming language statement indicators (keywords, assignment, control flow)
++    _CODE_INDICATORS_RE = re.compile(
++        r"\b(?:int|float|double|char|long|short|void|bool|boolean|auto|let|const|var|"
++        r"def|return|if|else|for|while|do|switch|case|break|continue|struct|class|"
++        r"public|private|protected|namespace|fn|fun|function|import|package|include|"
++        r"printf|scanf|cout|cin|print)\b|"
++        r"[=+\-*/%&|!<>]=|&&|\|\||->|==|!=|\b[a-zA-Z_]\w*\s*=[^=]",
++        re.IGNORECASE,
++    )
++
+@@ -190,12 +206,44 @@
+     @classmethod
+     def _is_pure_css(cls, text: str) -> bool:
+         """Detects if a string is pure CSS declaration block or stylesheet rule."""
+         if not text:
+             return False
+         t = text.strip()
+-        if t.startswith("{") and re.search(cls._CSS_PROP_PATTERN, t, re.IGNORECASE):
+-            if not re.search(r'^\s*\{\s*"', t):
+-                return True
++        if not t:
++            return False
++
++        # 1. Distinguish valid Python literals (single- or double-quoted dicts, sets, lists, tuples)
++        try:
++            val = ast.literal_eval(t)
++            if isinstance(val, (dict, set, list, tuple, int, float, bool)):
++                return False
++        except (ValueError, SyntaxError, MemoryError):
++            pass
++
++        # 2. Distinguish valid JSON
++        try:
++            jval = json.loads(t)
++            if isinstance(jval, (dict, list, int, float, bool)):
++                return False
++        except (json.JSONDecodeError, ValueError, TypeError):
++            pass
++
++        # 3. Distinguish programming code statements (keywords, assignments, returns)
++        if cls._CODE_INDICATORS_RE.search(t):
++            return False
++
++        # 4. Check CSS at-rules (@media, @keyframes)
++        if t.startswith("@") and cls._CSS_AT_RULE_RE.search(t):
++            return True
++
++        # 5. Check CSS declaration block: starts with { and ends with }
++        if t.startswith("{") and t.endswith("}"):
++            inner = t[1:-1].strip()
++            if not inner:
++                return False
++            if cls._CSS_PROP_DECL_RE.search(inner):
++                return True
++
++        # 6. Check bare CSS declarations (e.g. 'display:inline-flex;font-size:inherit;')
++        if cls._CSS_PROP_DECL_RE.search(t) and not re.search(r"[\"\'=]", t):
++            decls = [d.strip() for d in t.split(";") if d.strip()]
++            if decls and all(cls._CSS_PROP_DECL_RE.search(d) for d in decls):
++                return True
++
++        # 7. Check full CSS rule set with selector
+         if cls._CSS_RULE_RE.search(t):
+             return True
+         return False
+@@ -271,7 +319,7 @@
+         # Strip script, style, noscript, svg, template blocks even with malformed or spaced closing tags or unclosed tags
+         text = re.sub(
+-            r"(?is)<(script|style|noscript|svg|template)\b[^>]*>.*?(?:</\s*\1\s*>|(?=<(?:p|div|h[1-6]|span|body|html|br|pre|table|ul|li)\b)|$)",
++            r"(?is)<(script|style|noscript|svg|template)\b[^>]*>.*?(?:</\s*\1\s*>|(?=<(?:p|div|h[1-6]|span|body|html|br|pre|table|ul|li|section|article|main|aside|header|footer)\b)|$)",
+             " ",
+             raw_html,
+         )
+@@ -457,8 +505,6 @@
+                 clean_in = cls._sanitize_css(case.input_text).strip()
+                 clean_out = cls._sanitize_css(case.expected_output).strip()
+-                clean_in = re.sub(r"<[^>]+>", "", clean_in).strip()
+-                clean_out = re.sub(r"<[^>]+>", "", clean_out).strip()
+ 
+                 if not clean_in and not clean_out:
+                     continue
+@@ -479,7 +525,9 @@
+         raw_cases: List[SampleCase] = []
+         if inputs_m and outputs_m:
+             for idx, (in_raw, out_raw) in enumerate(zip(inputs_m, outputs_m), start=1):
++                if cls._is_pure_css(in_raw) or cls._is_pure_css(out_raw):
++                    continue
+                 clean_in = cls._clean_text(in_raw, preserve_newlines=True)
+                 clean_out = cls._clean_text(out_raw, preserve_newlines=True)
+                 raw_cases.append(SampleCase(
+@@ -493,7 +541,9 @@
+ 
+         if inputs_m and not outputs_m:
+             for idx, in_raw in enumerate(inputs_m, start=1):
++                if cls._is_pure_css(in_raw):
++                    continue
+                 clean_in = cls._clean_text(in_raw, preserve_newlines=True)
+                 raw_cases.append(SampleCase(
+                     input_text=clean_in,
