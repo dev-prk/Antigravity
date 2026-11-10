@@ -1,526 +1,465 @@
-# Handoff Report: Headed Browser Manager & Configuration Architecture
+# Handoff Report: StateManager Difficulty Filtering & Test Strategy
 
-**Agent ID**: `explorer_m1_1`  
-**Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/explorer_m1_1/`  
-**Recipient**: `cbd0649b-f648-4724-a244-a22a5102ccc4` (Parent Orchestrator / Sub-Orchestrator M1)  
-**Milestone**: Milestone 1 (Core Foundation & Infrastructure)  
-**Handoff Type**: Hard (Task Complete)  
+**Milestone**: Milestone 1: Filtering & Extractor Foundation  
+**Agent**: Explorer 1 (`explorer_m1_1`)  
+**Target File**: `zenclass_guvi/core/state_manager.py`  
+**Test Suite**: `zenclass_guvi/tests/test_m1_filtering.py`  
+**Working Directory**: `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi`  
+**Date**: 2026-11-10T22:35:00Z  
 
 ---
 
 ## 1. Observation
 
-Direct system inspections, framework probes, and runtime tests were conducted on macOS Darwin 25.6.0 Apple Silicon (`arm64`) to evaluate Playwright browser lifecycle, window management, persistence, and anti-detection capabilities.
+### 1.1 `core/state_manager.py` Schema & Task Data Structures
 
-### 1.1 Requirements & Specifications Baseline
-- **Original Request File**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/ORIGINAL_REQUEST.md`
-  - Requirement R1 (lines 18-20): "Authenticate to Guvi and ZenClass using the provided credentials via a visible foreground browser window (headed mode) so execution can be monitored in real time."
-  - Reference Credentials (line 14): `devsh.pareek@gmail.com` / `Dev@99#$%esh`
-  - Target Platforms (lines 11-13): Guvi CodeKata (`https://www.guvi.in/code-kata/`), ZenClass Tasks (`https://v2.zenclass.in/tasks`), ZenClass Projects (`https://v2.zenclass.in/projects`).
-- **Project Plan**: `/Users/devesh/Documents/Antigravity/Automation/.agents/teamwork/PROJECT.md`
-  - Browser Interface Contract (lines 53-56):
-    - `get_browser_context() -> BrowserContext`
-    - `get_page(url: str = None) -> Page`
-    - `close_context() -> None`
-  - Architecture layout specifies `zenclass_guvi/config.py` and `zenclass_guvi/core/browser.py` with persistent storage in `zenclass_guvi/.browser_profile/` and `zenclass_guvi/data/`.
+Direct inspection of `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/core/state_manager.py` reveals:
 
-### 1.2 Playwright Runtime & Headed Browser Probes
-Empirical tests executed using official Playwright Chromium build (`Chrome for Testing 148.0.7778.96` located at `~/Library/Caches/ms-playwright/chromium-1223`):
+1. **Table Definition** (`core/state_manager.py:149-165`):
+   ```sql
+   CREATE TABLE IF NOT EXISTS tasks (
+       task_id TEXT PRIMARY KEY,
+       platform TEXT NOT NULL,
+       task_category TEXT NOT NULL,
+       title TEXT NOT NULL,
+       url TEXT NOT NULL DEFAULT '',
+       status TEXT NOT NULL,
+       attempt_count INTEGER NOT NULL DEFAULT 0,
+       result TEXT NOT NULL DEFAULT '',
+       failure_reason TEXT,
+       next_action TEXT NOT NULL DEFAULT '',
+       time_spent_seconds REAL NOT NULL DEFAULT 0.0,
+       metadata JSON,
+       created_at TEXT NOT NULL,
+       updated_at TEXT NOT NULL
+   );
+   ```
 
-1. **Headed Window Launch & Screen Maximization on macOS**:
-   - Command:
-     ```python
-     context = p.chromium.launch_persistent_context(
-         user_data_dir=tmp_dir,
-         headless=False,
-         no_viewport=True,
-         args=['--start-maximized', '--disable-blink-features=AutomationControlled'],
-         ignore_default_args=['--enable-automation']
-     )
-     ```
-   - Observed Result:
-     - Window launched visibly in the foreground on macOS Aqua desktop.
-     - Inner dimensions evaluated via `page.evaluate(...)`:
-       `{'screenW': 1512, 'screenH': 859, 'innerW': 1512, 'innerH': 772}`
-     - With `no_viewport=True`, viewport size is `None` (unconstrained), automatically matching the full desktop width (1512 scaled points) instead of being restricted to Playwright's default 1280x720 window.
+2. **Existing Indexes** (`core/state_manager.py:167-169`):
+   ```sql
+   CREATE INDEX IF NOT EXISTS idx_tasks_platform_status ON tasks(platform, status);
+   CREATE INDEX IF NOT EXISTS idx_tasks_status ON tasks(status);
+   CREATE INDEX IF NOT EXISTS idx_tasks_updated_at ON tasks(updated_at);
+   ```
 
-2. **Anti-Detection & Bot Defense Verification**:
-   - Evaluation in headed session with anti-detection flags:
-     ```javascript
-     ({
-         webdriver: navigator.webdriver,
-         pluginsLen: navigator.plugins.length,
-         languages: navigator.languages,
-         hasChrome: !!window.chrome,
-         permissions: typeof navigator.permissions
-     })
-     ```
-   - Observed Output:
-     `{'webdriver': False, 'pluginsLen': 5, 'languages': ['en-GB', 'en-US', 'en'], 'hasChrome': True, 'permissions': 'object'}`
-   - The flag `--disable-blink-features=AutomationControlled` successfully forces `navigator.webdriver = False`.
-   - The parameter `ignore_default_args=['--enable-automation']` eliminates the default Chromium infobar banner ("Chrome is being controlled by automated test software"), avoiding automated bot heuristics without monkeypatching runtime objects.
+3. **`TaskRecord` Dataclass** (`core/state_manager.py:51-90`):
+   Contains `metadata: Dict[str, Any] = field(default_factory=dict)` alongside property aliases `attempts` and `category`. Serialization helper `to_dict()` outputs all 9 mandatory Requirement R3 fields (`platform`, `task_id`, `category`, `status`, `attempts`, `result`, `timestamp`, `failure_reason`, `next_action`).
 
-3. **Page Lifecycle & Initial Tab Allocation**:
-   - Tested page count immediately after `launch_persistent_context`:
-     `len(context.pages) == 1`
-   - Calling `context.new_page()` immediately after launch creates a second blank tab, leaving an orphaned `about:blank` tab in position 0.
-   - Reusing `context.pages[0]` if available avoids tab proliferation.
+4. **Current `list_pending` Implementation** (`core/state_manager.py:471-493`):
+   ```python
+   def list_pending(
+       self,
+       platform: Optional[str] = None,
+       limit: Optional[int] = None
+   ) -> List[TaskRecord]:
+       """Returns all pending/discovered/redo tasks ready for execution."""
+       with self._lock:
+           cursor = self.conn.cursor()
+           query = "SELECT * FROM tasks WHERE LOWER(status) IN ('pending', 'discovered', 'redo', 'in_progress')"
+           params: List[Any] = []
 
-4. **Dual-Layer Session Persistence (Profile Directory vs Session Cookies)**:
-   - Observation: Chromium persistent profiles store `localStorage` and persistent cookies (cookies with an explicit future `expires` timestamp) in the SQLite database inside `user_data_dir`.
-   - However, pure session cookies (cookies where `expires = -1` or undefined) are purged upon browser process termination by Chromium's standard cookie store.
-   - In contrast, Playwright's `context.storage_state(path=state_file)` explicitly serializes ALL active cookies (including session cookies) into JSON.
-   - Verification test output:
-     - Direct profile restart alone: `Persistent context direct cookies: [('persistent_cookie', 'pers_456')]` (session cookie was lost).
-     - Storage state export: `Saved in storage_state json: ['session_cookie', 'persistent_cookie']` (100% of cookies preserved).
-   - Re-injecting storage state cookies via `context.add_cookies(state['cookies'])` on subsequent runs guarantees zero session loss even if the platform issued session-only cookies.
+           if platform:
+               query += " AND LOWER(platform) = ?"
+               params.append(platform.lower())
 
-5. **Realistic Interaction Cadence**:
-   - `slow_mo=50.0` introduced an artificial 50ms pause before every Playwright action (clicks, key presses, navigations), preventing race conditions with SPA hydration (React in ZenClass, Qwik in CodeKata) and emulating human cadence.
+           query += " ORDER BY created_at ASC"
+           if limit is not None:
+               query += " LIMIT ?"
+               params.append(limit)
+
+           cursor.execute(query, params)
+           return [self._row_to_task(row) for row in cursor.fetchall()]
+   ```
+
+5. **Current `get_pending_tasks` Alias** (`core/state_manager.py:494-496`):
+   ```python
+   def get_pending_tasks(self, platform: Optional[str] = None) -> List[TaskRecord]:
+       """Alias satisfying PROJECT.md interface contract."""
+       return self.list_pending(platform=platform)
+   ```
+
+### 1.2 Metadata Column Structure in Live Codebase
+
+Inspection across drivers and live database reveals the exact JSON layout of `metadata`:
+
+1. **Guvi CodeKata Tasks** (`zenclass_guvi/drivers/guvi_driver.py:509-515`):
+   ```python
+   "metadata": {
+       "slug": slug,
+       "difficulty": difficulty,      # Extracted from <td class="difficulty">, e.g. "Easy", "Medium", "Hard"
+       "points": points,              # Extracted from <td class="points">, e.g. "30"
+       "success_rate": success_rate,  # e.g. "78%"
+       "page_number": page_num,       # e.g. 1
+   }
+   ```
+   In `guvi_driver.py:482`, difficulty is extracted via:
+   `difficulty = col3.inner_text().strip() if col3 else "Easy"`
+
+2. **Downstream Callers Relying on `list_pending`** (`zenclass_guvi/drivers/guvi_driver.py:896-907`):
+   ```python
+   existing_pending = (
+       self.state_manager.list_pending(platform="guvi", limit=limit)
+       if self.state_manager
+       else []
+   )
+   if existing_pending:
+       logger.info(f"Retrieved {len(existing_pending)} pending Guvi task(s) from SQLite StateManager.")
+       for t in existing_pending:
+           slug = t.metadata.get("slug") if t.metadata else None
+           if not slug:
+               slug = t.task_id.replace("guvi-", "").strip("/")
+           pending_slugs.append(slug)
+   ```
+   **Critical**: Downstream expects `t.metadata.get("slug")` and `t.task_id`. Therefore, `list_pending` must continue returning `List[TaskRecord]` instances.
+
+3. **Live Database Inspection** (`data/automation_state.db`):
+   - Total rows in `tasks`: 38
+   - Guvi CodeKata: 15 tasks (`status='COMPLETED'`, `difficulty='Easy'`)
+   - ZenClass Tasks & Projects: 23 tasks (`status='COMPLETED'` or `'BLOCKED'`, `difficulty=None`)
+   - Confirming that ZenClass tasks do not store a `difficulty` field.
+
+### 1.3 SQLite Engine Capabilities & Edge Case Verification
+
+Direct execution on the host macOS machine:
+- Host Python: `/usr/bin/python3` (Python 3.9.6)
+- Host Pytest: `/Users/devesh/Library/Python/3.9/bin/pytest` (pytest 8.4.2)
+- SQLite Engine: version 3.51.0 with native JSON support enabled (`json_extract` and `json_valid`).
+- **Empirical Edge Case**: If `metadata` contains an empty string `""` or invalid JSON, calling `json_extract(metadata, '$.difficulty')` raises `sqlite3.OperationalError: malformed JSON`.
+- **Empirical Safe Construct**:
+  ```sql
+  CASE 
+      WHEN metadata IS NOT NULL AND json_valid(metadata) = 1 
+      THEN LOWER(json_extract(metadata, '$.difficulty')) 
+      ELSE NULL 
+  END IN (?, ...)
+  ```
+  Testing this against rows with `""`, `NULL`, `"{invalid}"`, and `{"difficulty": "Medium"}` returns matching rows cleanly without raising any exceptions.
+
+### 1.4 Test Baseline
+
+Executing the full existing test suite:
+- Command: `/Users/devesh/Library/Python/3.9/bin/pytest tests/`
+- Result: `268 passed in 69.39s` (0 failures, 0 regressions).
+- Findings on existing test coverage:
+  - `tests/test_m1_core.py` (22 tests): Verifies StateManager WAL mode, 9 fields, update status, batch insert, summary stats, atomic JSON export, thread safety. None of these tests exercise `list_pending` or difficulty filtering.
+  - `tests/e2e/tier1_features/test_f02_state_manager.py` (4 tests): Tests `get_pending_tasks("zenclass")` filtering out completed tasks, but does not test `difficulties`.
+  - `tests/test_m1_filtering.py`: Does not currently exist.
 
 ---
 
 ## 2. Logic Chain
 
-From the empirical observations above, the architectural requirements translate directly into technical decisions:
+1. **Problem Requirement**:
+   The system must solve Medium and Hard difficulty practice questions on Guvi CodeKata without processing Easy or completed items, filtering at the database query level.
 
-1. **Compliance with R1 (Visible Foreground Window)**:
-   - *Observation 1.1 & 1.2.1*: R1 mandates visible headed execution. On macOS Aqua, `headless=False` with `no_viewport=True` and `--start-maximized` displays a full-width foreground Chromium window.
-   - *Deduction*: `config.HEADLESS` must default to `False`. `BrowserManager` must pass `headless=False`, `no_viewport=True`, and `args=["--start-maximized"]`. To ensure the window is active and in the foreground, `page.bring_to_front()` must be invoked upon page retrieval.
+2. **Persistence Schema**:
+   `StateManager` persists task records in SQLite `tasks` table with a `metadata JSON` column. For Guvi CodeKata tasks, `metadata` stores `{"difficulty": "Easy"|"Medium"|"Hard", ...}`.
 
-2. **Session Resilience via Dual-Layer Persistence**:
-   - *Observation 1.2.4*: Persistent context alone preserves `localStorage` and expiring cookies, but purges non-expiring session cookies upon process close. Guvi and ZenClass use a mixture of cookies (`authToken`, `isZenUser`) and localStorage tokens.
-   - *Deduction*: `BrowserManager` must use `launch_persistent_context(user_data_dir=config.BROWSER_PROFILE_DIR)` for primary persistence, and supplement it with explicit `context.storage_state(path=config.STORAGE_STATE_PATH)` on clean close or crash exit (`atexit`). On startup, if `config.STORAGE_STATE_PATH` exists, any serialized cookies must be re-added via `context.add_cookies()`.
+3. **Query Optimization**:
+   Filtering tasks via SQL `json_extract` rather than in Python memory avoids fetching thousands of catalog tasks into memory during large-scale runs (e.g. 2,145 CodeKata tasks across 143 pages).
 
-3. **Tab Cleanliness and Lifecycle Safety**:
-   - *Observation 1.2.3*: Playwright persistent contexts launch with exactly one active page (`len(context.pages) == 1`).
-   - *Deduction*: `BrowserManager.get_page()` must reuse `context.pages[0]` if an unclosed page already exists, rather than creating a new page on every request. Furthermore, `BrowserManager` must provide a `close_auxiliary_tabs(keep_page)` utility to prevent background tab leakage when links open target `_blank` windows.
+4. **Case-Insensitive Normalization**:
+   The user or CLI may supply difficulties with mixed casing (e.g. `["Medium", "Hard"]`, `["medium", "hard"]`, or CLI `--difficulty Medium,Hard`). Normalizing the database field with `LOWER(...)` and normalizing input parameters with `.strip().lower()` ensures exact case-insensitive matching regardless of capitalization.
 
-4. **Stealth and Anti-Detection Optimization**:
-   - *Observation 1.2.2*: Setting `--disable-blink-features=AutomationControlled` and filtering `--enable-automation` flips `navigator.webdriver` to `False` and removes browser automation banners without requiring external patches or fragile third-party binaries.
-   - *Deduction*: These arguments must be permanently baked into `config.BROWSER_ARGS` and `config.IGNORE_DEFAULT_ARGS`.
+5. **Crash-Proof JSON Handling**:
+   Because SQLite's `json_extract` raises an `OperationalError` on malformed JSON or empty string values, wrapping the extraction in a conditional `CASE WHEN metadata IS NOT NULL AND json_valid(metadata) = 1 THEN ... ELSE NULL END` guarantees zero query failures even if malformed or non-JSON records exist in the table.
 
-5. **Interface Contract Compliance**:
-   - *Observation 1.1*: `PROJECT.md` requires module-level helper functions `get_browser_context()`, `get_page(url)`, and `close_context()`.
-   - *Deduction*: `core/browser.py` must define a singleton `BrowserManager` instance exposed via both OOP class usage (`with BrowserManager() as bm: ...`) and the required functional entry points.
+6. **Preserving Backward Compatibility**:
+   When `difficulties` is `None` or an empty list `[]` (or contains only empty strings), the query must omit the difficulty filter entirely, ensuring that:
+   - Existing ZenClass tasks (which have no `difficulty` key) are still returned by `list_pending("zenclass")`.
+   - Existing tests and caller functions without `difficulties` continue to pass without behavioral regression.
+
+7. **Contract & Interface Alignment**:
+   `get_pending_tasks` is an alias for `list_pending` across tests and contract harnesses. Adding `difficulties: Optional[List[str]] = None` to `get_pending_tasks` maintains complete API parity.
 
 ---
 
 ## 3. Caveats
 
-1. **Single Concurrent Process Per Profile Directory**:
-   Chromium places an exclusive filesystem lock (`SingletonLock`) on `user_data_dir`. Two simultaneous Python processes cannot open `.browser_profile/` at the same instant. If an automated process crashes and leaves an orphaned Chromium process running, the lock may block a subsequent launch. `BrowserManager` should log a clear diagnostic instructing the user to terminate any running Chromium processes if `launch_persistent_context` fails.
-2. **Display Requirement on macOS**:
-   Headed mode (`headless=False`) requires an active macOS graphical Aqua desktop. It cannot run over headless SSH unless forwarded through an X11/VNC display server. Since the user environment is macOS desktop (`arm64`), this condition is satisfied.
-3. **Interactive Human-in-the-Loop Triggers**:
-   While anti-detection flags prevent automated heuristic flags, Cloudflare Turnstile or platform OTP challenges may still trigger on IP rotation or excessive login attempts. Per Requirement R1, the automation must never fabricate bypasses; `core/hitl_handler.py` must pause and alert the human operator.
+1. **Tasks with Missing or Non-string Difficulty**:
+   If a task's `metadata` lacks a `difficulty` key (or `metadata` is `None`), `json_extract(metadata, '$.difficulty')` returns `NULL`. SQL `NULL IN (...)` evaluates to UNKNOWN (filtered out by `WHERE`). This is correct: when filtering by `["Medium", "Hard"]`, tasks without an explicit matching difficulty must not be selected.
+2. **Whitespace and Empty Strings**:
+   If a caller passes `difficulties=["   ", ""]`, this should be sanitized to an empty list and treated as no filter (preserving backward compatibility).
+3. **Read-Only Explorer Discipline**:
+   In strict compliance with the Explorer role, no production files were modified. All proposals below are concrete code designs for the Implementer.
 
 ---
 
-## 4. Conclusion & Implementation Blueprints
+## 4. Conclusion & Concrete Recommendations
 
-The implementation for Milestone 1 infrastructure must provide two primary modules:
-1. `zenclass_guvi/config.py` — Centralized configuration, URLs, credentials, paths, and timeouts.
-2. `zenclass_guvi/core/browser.py` — Production-grade headed browser lifecycle manager.
+### 4.1 Proposed Implementation for `zenclass_guvi/core/state_manager.py`
 
-### 4.1 Recommended Blueprint: `config.py`
+#### Updated Method Signatures & Implementation
+
+In `zenclass_guvi/core/state_manager.py`:
+
+```python
+    def list_pending(
+        self,
+        platform: Optional[str] = None,
+        limit: Optional[int] = None,
+        difficulties: Optional[List[str]] = None
+    ) -> List[TaskRecord]:
+        """
+        Returns all pending/discovered/redo/in_progress tasks ready for execution.
+        
+        Args:
+            platform: Optional platform filter (e.g. 'guvi', 'zenclass').
+            limit: Optional maximum number of tasks to return.
+            difficulties: Optional list of difficulty strings (e.g. ['Medium', 'Hard']).
+                          Case-insensitive. When None or empty, no difficulty filter is applied.
+        """
+        with self._lock:
+            cursor = self.conn.cursor()
+            query = "SELECT * FROM tasks WHERE LOWER(status) IN ('pending', 'discovered', 'redo', 'in_progress')"
+            params: List[Any] = []
+
+            if platform:
+                query += " AND LOWER(platform) = ?"
+                params.append(platform.lower())
+
+            if difficulties:
+                cleaned_diffs = [
+                    d.strip().lower()
+                    for d in difficulties
+                    if isinstance(d, str) and d.strip()
+                ]
+                if cleaned_diffs:
+                    placeholders = ", ".join(["?"] * len(cleaned_diffs))
+                    query += f""" AND CASE 
+                        WHEN metadata IS NOT NULL AND json_valid(metadata) = 1 
+                        THEN LOWER(json_extract(metadata, '$.difficulty')) 
+                        ELSE NULL 
+                    END IN ({placeholders})"""
+                    params.extend(cleaned_diffs)
+
+            query += " ORDER BY created_at ASC"
+            if limit is not None:
+                query += " LIMIT ?"
+                params.append(limit)
+
+            cursor.execute(query, params)
+            return [self._row_to_task(row) for row in cursor.fetchall()]
+
+    def get_pending_tasks(
+        self,
+        platform: Optional[str] = None,
+        difficulties: Optional[List[str]] = None
+    ) -> List[TaskRecord]:
+        """Alias satisfying PROJECT.md interface contract with optional difficulty filtering."""
+        return self.list_pending(platform=platform, difficulties=difficulties)
+```
+
+#### Optional Query Optimization Index (for `_init_db`)
+In `StateManager._init_db()` (`core/state_manager.py:167-170`), the implementer can optionally add an expression index:
+```sql
+cursor.execute("CREATE INDEX IF NOT EXISTS idx_tasks_difficulty ON tasks(LOWER(json_extract(metadata, '$.difficulty')));")
+```
+
+---
+
+### 4.2 Comprehensive Test Specification for `tests/test_m1_filtering.py`
+
+Create a dedicated test file `zenclass_guvi/tests/test_m1_filtering.py` with 12 distinct unit test cases covering all requirements and boundaries:
 
 ```python
 """
-Configuration module for Guvi CodeKata and ZenClass Automation Suite.
-Defines URLs, credentials, timeouts, paths, and browser flags.
+tests/test_m1_filtering.py - Unit and Integration Tests for Milestone 1 Filtering
+Verifies StateManager.list_pending difficulty filtering, case insensitivity,
+backward compatibility, and edge cases.
 """
 
 import os
-from pathlib import Path
-
-# Base Paths
-BASE_DIR = Path(__file__).resolve().parent
-BROWSER_PROFILE_DIR = BASE_DIR / ".browser_profile"
-DATA_DIR = BASE_DIR / "data"
-REPORTS_DIR = BASE_DIR / "reports"
-PROJECTS_DIR = BASE_DIR / "projects"
-SCREENSHOTS_DIR = BASE_DIR / "screenshots"
-
-# Ensure runtime directories exist
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-REPORTS_DIR.mkdir(parents=True, exist_ok=True)
-PROJECTS_DIR.mkdir(parents=True, exist_ok=True)
-SCREENSHOTS_DIR.mkdir(parents=True, exist_ok=True)
-
-# State & Storage Paths
-DB_PATH = DATA_DIR / "automation_state.db"
-STATE_SUMMARY_JSON = DATA_DIR / "state_summary.json"
-STORAGE_STATE_PATH = DATA_DIR / "storage_state.json"
-SUMMARY_REPORT_MD = REPORTS_DIR / "SUMMARY_REPORT.md"
-SUMMARY_REPORT_JSON = REPORTS_DIR / "summary.json"
-
-# Credentials (from ORIGINAL_REQUEST.md, overridable via environment variables)
-USER_EMAIL = os.getenv("AUTOMATION_USER_EMAIL", "devsh.pareek@gmail.com")
-USER_PASSWORD = os.getenv("AUTOMATION_USER_PASSWORD", "Dev@99#$%esh")
-
-# Platform URLs
-GUVI_BASE_URL = "https://www.guvi.in"
-GUVI_LOGIN_URL = "https://www.guvi.in/sign-in/"
-GUVI_CODEKATA_URL = "https://www.guvi.in/code-kata/"
-ZENCLASS_BASE_URL = "https://v2.zenclass.in"
-ZENCLASS_LOGIN_URL = "https://v2.zenclass.in/login"
-ZENCLASS_TASKS_URL = "https://v2.zenclass.in/tasks"
-ZENCLASS_PROJECTS_URL = "https://v2.zenclass.in/projects"
-ZENCLASS_DASHBOARD_URL = "https://v2.zenclass.in/dashboard"
-
-# Browser Execution Settings (Requirement R1: visible foreground browser)
-HEADLESS = os.getenv("AUTOMATION_HEADLESS", "false").lower() == "true"  # strictly False by default
-SLOW_MO = float(os.getenv("AUTOMATION_SLOW_MO", "50.0"))  # 50ms realistic human cadence
-NAVIGATION_TIMEOUT = float(os.getenv("AUTOMATION_NAV_TIMEOUT", "30000.0"))  # 30 seconds
-DEFAULT_TIMEOUT = float(os.getenv("AUTOMATION_TIMEOUT", "10000.0"))  # 10 seconds
-
-BROWSER_ARGS = [
-    "--start-maximized",
-    "--disable-blink-features=AutomationControlled",
-    "--no-default-browser-check",
-    "--no-first-run",
-]
-
-IGNORE_DEFAULT_ARGS = [
-    "--enable-automation",
-]
-
-# Solver & Submission Settings
-DEFAULT_LANGUAGE = "PYTHON 3"
-MAX_SUBMISSION_ATTEMPTS = 3
-LOCAL_TEST_TIMEOUT_SECONDS = 5.0
-
-# Human-in-the-Loop (HITL) Settings
-HITL_ALERT_BEEP = True
-HITL_POLL_INTERVAL_SECONDS = 2.0
-HITL_MAX_WAIT_SECONDS = 600.0  # 10 minutes maximum before timing out
-
-# Logging Settings
-LOG_LEVEL = os.getenv("AUTOMATION_LOG_LEVEL", "INFO")
-LOG_FORMAT = "[%(asctime)s] [%(levelname)s] [%(name)s]: %(message)s"
-```
-
-### 4.2 Recommended Blueprint: `core/browser.py`
-
-```python
-"""
-core/browser.py - Headed Foreground Browser Lifecycle Manager
-Manages visible Chromium persistent contexts, anti-detection flags, tab lifecycle,
-screenshot diagnostics, and dual-layer session persistence for Guvi & ZenClass.
-"""
-
-import atexit
 import json
-import logging
-from pathlib import Path
-from typing import Optional, List
-
-from playwright.sync_api import (
-    sync_playwright,
-    BrowserContext,
-    Page,
-    Playwright,
-    Error as PlaywrightError
-)
-
-import config
-
-logger = logging.getLogger("core.browser")
+import shutil
+import tempfile
+import unittest
+from core.state_manager import StateManager, TaskStatus, TaskResult
 
 
-class BrowserManager:
-    """
-    Manages a persistent headed Chromium browser session adhering to Requirement R1.
-    Provides session persistence, anti-detection, tab cleanup, and graceful teardown.
-    """
+class TestStateManagerDifficultyFiltering(unittest.TestCase):
+    """Verifies difficulty filtering in StateManager.list_pending() and get_pending_tasks()."""
 
-    def __init__(
-        self,
-        profile_dir: Optional[Path] = None,
-        storage_state_path: Optional[Path] = None,
-        headless: Optional[bool] = None,
-        slow_mo: Optional[float] = None,
-        navigation_timeout: Optional[float] = None,
-        default_timeout: Optional[float] = None,
-    ):
-        self.profile_dir = profile_dir or config.BROWSER_PROFILE_DIR
-        self.storage_state_path = storage_state_path or config.STORAGE_STATE_PATH
-        self.headless = config.HEADLESS if headless is None else headless
-        self.slow_mo = config.SLOW_MO if slow_mo is None else slow_mo
-        self.navigation_timeout = config.NAVIGATION_TIMEOUT if navigation_timeout is None else navigation_timeout
-        self.default_timeout = config.DEFAULT_TIMEOUT if default_timeout is None else default_timeout
+    def setUp(self):
+        self.temp_dir = tempfile.mkdtemp(prefix="test_m1_filter_")
+        self.db_path = os.path.join(self.temp_dir, "test_state.db")
+        self.sm = StateManager(db_path=self.db_path)
 
-        self._playwright: Optional[Playwright] = None
-        self._context: Optional[BrowserContext] = None
-        self._active_page: Optional[Page] = None
-        self._registered_atexit = False
-
-    def start(self) -> BrowserContext:
-        """
-        Launches the persistent Chromium context in headed mode with anti-detection flags.
-        Restores cookies from storage_state if available.
-        """
-        if self._context is not None:
-            return self._context
-
-        self.profile_dir.mkdir(parents=True, exist_ok=True)
-        if self.storage_state_path:
-            self.storage_state_path.parent.mkdir(parents=True, exist_ok=True)
-
-        logger.info(
-            f"Launching headed persistent Chromium context at {self.profile_dir} "
-            f"(headless={self.headless}, slow_mo={self.slow_mo}ms)"
+        # Seed test tasks
+        # 1. Easy Guvi task (pending)
+        self.sm.record_task(
+            task_id="guvi-easy-1",
+            platform="guvi",
+            title="Problem Easy 1",
+            category="CodeKata",
+            status="pending",
+            metadata={"difficulty": "Easy", "slug": "easy-1"}
+        )
+        # 2. Medium Guvi task (discovered)
+        self.sm.record_task(
+            task_id="guvi-med-1",
+            platform="guvi",
+            title="Problem Medium 1",
+            category="CodeKata",
+            status="discovered",
+            metadata={"difficulty": "Medium", "slug": "med-1"}
+        )
+        # 3. Hard Guvi task (redo, uppercase difficulty)
+        self.sm.record_task(
+            task_id="guvi-hard-1",
+            platform="guvi",
+            title="Problem Hard 1",
+            category="CodeKata",
+            status="redo",
+            metadata={"difficulty": "HARD", "slug": "hard-1"}
+        )
+        # 4. Completed Medium Guvi task (must be filtered out by status)
+        self.sm.record_task(
+            task_id="guvi-med-completed",
+            platform="guvi",
+            title="Problem Medium Completed",
+            category="CodeKata",
+            status="completed",
+            metadata={"difficulty": "Medium", "slug": "med-comp"}
+        )
+        # 5. ZenClass task with no difficulty (pending)
+        self.sm.record_task(
+            task_id="zen-task-1",
+            platform="zenclass",
+            title="ZenClass Task 1",
+            category="Tasks",
+            status="pending",
+            metadata={"tags": ["javascript"]}
+        )
+        # 6. Task with empty metadata dict (pending)
+        self.sm.record_task(
+            task_id="empty-meta-1",
+            platform="guvi",
+            title="Empty Meta Task",
+            category="CodeKata",
+            status="pending",
+            metadata={}
         )
 
-        self._playwright = sync_playwright().start()
+    def tearDown(self):
+        self.sm.close()
+        shutil.rmtree(self.temp_dir, ignore_errors=True)
 
-        try:
-            self._context = self._playwright.chromium.launch_persistent_context(
-                user_data_dir=str(self.profile_dir),
-                headless=self.headless,
-                no_viewport=True,
-                args=config.BROWSER_ARGS,
-                ignore_default_args=config.IGNORE_DEFAULT_ARGS,
-                slow_mo=self.slow_mo,
-            )
+    def test_01_backward_compatibility_none_difficulties(self):
+        """When difficulties is None, all pending tasks across all difficulties and platforms are returned."""
+        tasks = self.sm.list_pending()
+        task_ids = [t.task_id for t in tasks]
+        self.assertEqual(len(tasks), 5)  # guvi-easy-1, guvi-med-1, guvi-hard-1, zen-task-1, empty-meta-1
+        self.assertNotIn("guvi-med-completed", task_ids)
 
-            self._context.set_default_navigation_timeout(self.navigation_timeout)
-            self._context.set_default_timeout(self.default_timeout)
+    def test_02_backward_compatibility_empty_list_difficulties(self):
+        """When difficulties is [], no difficulty filtering is applied (preserves backward compatibility)."""
+        tasks = self.sm.list_pending(difficulties=[])
+        self.assertEqual(len(tasks), 5)
 
-            # Restore secondary layer cookies from storage state if present
-            self._restore_storage_state()
+    def test_03_single_difficulty_filtering(self):
+        """Filter by ['Medium'] returns only the pending Medium task."""
+        tasks = self.sm.list_pending(difficulties=["Medium"])
+        self.assertEqual(len(tasks), 1)
+        self.assertEqual(tasks[0].task_id, "guvi-med-1")
+        self.assertEqual(tasks[0].metadata.get("difficulty"), "Medium")
 
-            # Register cleanup hook once
-            if not self._registered_atexit:
-                atexit.register(self.close)
-                self._registered_atexit = True
+    def test_04_multiple_difficulties_filtering(self):
+        """Filter by ['Medium', 'Hard'] returns both Medium and Hard pending tasks."""
+        tasks = self.sm.list_pending(difficulties=["Medium", "Hard"])
+        task_ids = [t.task_id for t in tasks]
+        self.assertEqual(len(tasks), 2)
+        self.assertIn("guvi-med-1", task_ids)
+        self.assertIn("guvi-hard-1", task_ids)
+        self.assertNotIn("guvi-easy-1", task_ids)
+        self.assertNotIn("zen-task-1", task_ids)
 
-            logger.info("Headed browser context successfully initialized.")
-            return self._context
+    def test_05_case_insensitivity_filtering(self):
+        """Parameters ['medium', 'hard'] match 'Medium' and 'HARD' in database."""
+        tasks = self.sm.list_pending(difficulties=["medium", "hard"])
+        task_ids = [t.task_id for t in tasks]
+        self.assertEqual(len(tasks), 2)
+        self.assertIn("guvi-med-1", task_ids)
+        self.assertIn("guvi-hard-1", task_ids)
 
-        except PlaywrightError as e:
-            logger.error(f"Failed to launch browser persistent context: {e}")
-            if "SingletonLock" in str(e) or "Process is already running" in str(e):
-                logger.error(
-                    "Profile directory appears locked by another Chromium instance. "
-                    "Ensure existing browser processes are closed."
-                )
-            self.close()
-            raise
+    def test_06_whitespace_handling_in_difficulties(self):
+        """Surrounding whitespace in difficulties strings is stripped cleanly."""
+        tasks = self.sm.list_pending(difficulties=["  Medium  ", "Hard\n"])
+        task_ids = [t.task_id for t in tasks]
+        self.assertEqual(len(tasks), 2)
+        self.assertIn("guvi-med-1", task_ids)
+        self.assertIn("guvi-hard-1", task_ids)
 
-    def _restore_storage_state(self) -> None:
-        """Injects serialized cookies from storage_state.json if available."""
-        if self._context and self.storage_state_path and self.storage_state_path.exists():
-            try:
-                with open(self.storage_state_path, "r", encoding="utf-8") as f:
-                    state_data = json.load(f)
-                cookies = state_data.get("cookies", [])
-                if cookies:
-                    self._context.add_cookies(cookies)
-                    logger.info(f"Injected {len(cookies)} cookies from {self.storage_state_path}")
-            except Exception as e:
-                logger.warning(f"Failed to restore cookies from storage state: {e}")
+    def test_07_whitespace_only_difficulties_treated_as_empty(self):
+        """A list containing only whitespace/empty strings falls back to returning all pending tasks."""
+        tasks = self.sm.list_pending(difficulties=["", "   "])
+        self.assertEqual(len(tasks), 5)
 
-    def get_context(self) -> BrowserContext:
-        """Returns the active persistent BrowserContext, starting it if necessary."""
-        if self._context is None:
-            self.start()
-        return self._context
+    def test_08_unknown_difficulty_returns_empty_list(self):
+        """Querying an unknown difficulty (e.g. ['Expert']) returns an empty list without error."""
+        tasks = self.sm.list_pending(difficulties=["Expert"])
+        self.assertEqual(tasks, [])
 
-    def get_page(self, url: Optional[str] = None, force_reload: bool = False) -> Page:
-        """
-        Retrieves the active page (reusing initial tab if available), brings it to front,
-        and navigates to the specified URL if requested.
-        """
-        ctx = self.get_context()
+    def test_09_tasks_without_difficulty_excluded_when_difficulties_specified(self):
+        """Tasks lacking 'difficulty' key in metadata (e.g. ZenClass tasks) are excluded."""
+        tasks = self.sm.list_pending(difficulties=["Easy"])
+        task_ids = [t.task_id for t in tasks]
+        self.assertEqual(len(tasks), 1)
+        self.assertEqual(tasks[0].task_id, "guvi-easy-1")
+        self.assertNotIn("zen-task-1", task_ids)
+        self.assertNotIn("empty-meta-1", task_ids)
 
-        # Locate existing open page or create a new one
-        open_pages = [p for p in ctx.pages if not p.is_closed()]
-        if open_pages:
-            self._active_page = open_pages[0]
-        else:
-            self._active_page = ctx.new_page()
+    def test_10_combined_platform_limit_and_difficulties(self):
+        """Combined filtering with platform='guvi', difficulties=['Medium', 'Hard'], limit=1."""
+        tasks = self.sm.list_pending(platform="guvi", difficulties=["Medium", "Hard"], limit=1)
+        self.assertEqual(len(tasks), 1)
+        self.assertEqual(tasks[0].task_id, "guvi-med-1")
 
-        try:
-            self._active_page.bring_to_front()
-        except Exception:
-            pass
+    def test_11_get_pending_tasks_alias_parity(self):
+        """get_pending_tasks alias supports difficulties argument identically."""
+        tasks = self.sm.get_pending_tasks(platform="guvi", difficulties=["Medium"])
+        self.assertEqual(len(tasks), 1)
+        self.assertEqual(tasks[0].task_id, "guvi-med-1")
 
-        if url:
-            current_url = self._active_page.url
-            if force_reload or current_url != url:
-                logger.info(f"Navigating to {url}")
-                self._active_page.goto(
-                    url,
-                    wait_until="domcontentloaded",
-                    timeout=self.navigation_timeout
-                )
-            else:
-                logger.debug(f"Page already at {url}, skipping navigation.")
-
-        return self._active_page
-
-    def close_auxiliary_tabs(self, keep_page: Optional[Page] = None) -> int:
-        """
-        Closes extraneous popup or secondary tabs to prevent tab proliferation.
-        Keeps the specified page (or current active page).
-        """
-        if not self._context:
-            return 0
-        target = keep_page or self._active_page
-        closed_count = 0
-        for page in list(self._context.pages):
-            if page != target and not page.is_closed():
-                try:
-                    page.close()
-                    closed_count += 1
-                except Exception as e:
-                    logger.debug(f"Error closing auxiliary tab: {e}")
-        return closed_count
-
-    def save_storage_state(self) -> None:
-        """Serializes all active cookies and storage origins to JSON."""
-        if self._context and self.storage_state_path:
-            try:
-                self.storage_state_path.parent.mkdir(parents=True, exist_ok=True)
-                self._context.storage_state(path=str(self.storage_state_path))
-                logger.info(f"Exported browser storage state to {self.storage_state_path}")
-            except Exception as e:
-                logger.warning(f"Could not export storage state: {e}")
-
-    def save_screenshot(self, name: str = "error", page: Optional[Page] = None) -> Optional[Path]:
-        """Captures a diagnostic PNG screenshot of the current page view."""
-        target = page or self._active_page
-        if not target or target.is_closed():
-            return None
-        import time
-        filename = f"{int(time.time())}_{name}.png"
-        filepath = config.SCREENSHOTS_DIR / filename
-        try:
-            target.screenshot(path=str(filepath), full_page=False)
-            logger.info(f"Saved diagnostic screenshot to {filepath}")
-            return filepath
-        except Exception as e:
-            logger.error(f"Failed to capture screenshot: {e}")
-            return None
-
-    def close(self) -> None:
-        """Gracefully dumps storage state, closes context, and stops Playwright."""
-        if self._context:
-            logger.info("Saving storage state and closing browser context...")
-            try:
-                self.save_storage_state()
-            except Exception as e:
-                logger.warning(f"Error saving storage state on exit: {e}")
-            try:
-                self._context.close()
-            except Exception as e:
-                logger.warning(f"Error closing browser context: {e}")
-            self._context = None
-            self._active_page = None
-
-        if self._playwright:
-            try:
-                self._playwright.stop()
-            except Exception as e:
-                logger.warning(f"Error stopping Playwright runtime: {e}")
-            self._playwright = None
-
-    def __enter__(self):
-        self.start()
-        return self
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        self.close()
-
-
-# Module-level singleton pattern satisfying PROJECT.md interface contract
-_global_browser_manager: Optional[BrowserManager] = None
-
-
-def get_browser_manager() -> BrowserManager:
-    """Returns or instantiates the global BrowserManager singleton."""
-    global _global_browser_manager
-    if _global_browser_manager is None:
-        _global_browser_manager = BrowserManager()
-    return _global_browser_manager
-
-
-def get_browser_context() -> BrowserContext:
-    """Interface Contract: Returns active persistent headed context."""
-    return get_browser_manager().get_context()
-
-
-def get_page(url: Optional[str] = None) -> Page:
-    """Interface Contract: Returns active page or navigates to specified URL."""
-    return get_browser_manager().get_page(url=url)
-
-
-def close_context() -> None:
-    """Interface Contract: Gracefully saves cookies and closes browser."""
-    global _global_browser_manager
-    if _global_browser_manager is not None:
-        _global_browser_manager.close()
-        _global_browser_manager = None
+    def test_12_malformed_metadata_resilience(self):
+        """Malformed or non-JSON metadata strings do not crash SQLite query."""
+        cursor = self.sm.conn.cursor()
+        cursor.execute(
+            "INSERT INTO tasks (task_id, platform, task_category, title, status, metadata, created_at, updated_at) "
+            "VALUES ('bad-json-task', 'guvi', 'CodeKata', 'Bad Task', 'pending', '{corrupt json', '2026-01-01', '2026-01-01');"
+        )
+        # Should not raise sqlite3.OperationalError: malformed JSON
+        tasks = self.sm.list_pending(difficulties=["Medium"])
+        self.assertEqual(len(tasks), 1)
+        self.assertEqual(tasks[0].task_id, "guvi-med-1")
 ```
 
 ---
 
 ## 5. Verification Method
 
-To verify the implementation independently, follow these test procedures:
+### 5.1 Test Execution Commands
+The implementer and test runner can verify the implementation and ensure 0 regressions using:
 
-### 5.1 Unit & Integration Test (`tests/test_browser.py`)
-Run the following test using `pytest`:
-```bash
-cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
-pytest tests/test_browser.py -v
-```
+1. **Verify M1 Filtering Test Suite**:
+   ```sh
+   cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+   /Users/devesh/Library/Python/3.9/bin/pytest tests/test_m1_filtering.py -v
+   ```
+   **Expected**: 12/12 passing tests.
 
-Expected Test Assertions:
-1. **Headed Flag Verification**:
-   ```python
-   def test_browser_headed_configuration():
-       import config
-       from core.browser import BrowserManager
-       bm = BrowserManager()
-       assert bm.headless is False, "BrowserManager MUST default to headless=False (Requirement R1)"
+2. **Verify Full Baseline Regression Suite**:
+   ```sh
+   cd /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi
+   /Users/devesh/Library/Python/3.9/bin/pytest tests/
    ```
-2. **Context Persistence & Viewport Verification**:
-   ```python
-   def test_browser_persistent_launch_and_page(tmp_path):
-       from core.browser import BrowserManager
-       profile = tmp_path / ".test_profile"
-       state = tmp_path / "state.json"
-       bm = BrowserManager(profile_dir=profile, storage_state_path=state, headless=False)
-       with bm:
-           page = bm.get_page("data:text/html,<h1>Headed Test</h1>")
-           assert page.inner_text("h1") == "Headed Test"
-           webdriver_val = page.evaluate("navigator.webdriver")
-           assert webdriver_val is False, "navigator.webdriver must be False"
-           assert len(bm.get_context().pages) == 1, "Must reuse initial page tab without leakage"
-       assert state.exists(), "storage_state.json must be exported upon context close"
-   ```
-3. **Auxiliary Tab Management**:
-   ```python
-   def test_auxiliary_tab_cleanup(tmp_path):
-       from core.browser import BrowserManager
-       bm = BrowserManager(profile_dir=tmp_path / "p", storage_state_path=tmp_path / "s.json", headless=False)
-       with bm:
-           page1 = bm.get_page("data:text/html,<h1>Main</h1>")
-           ctx = bm.get_context()
-           page2 = ctx.new_page()
-           assert len(ctx.pages) == 2
-           closed = bm.close_auxiliary_tabs(keep_page=page1)
-           assert closed == 1
-           assert len(ctx.pages) == 1
-           assert ctx.pages[0] == page1
-   ```
+   **Expected**: 280/280 passing tests (268 baseline + 12 new M1 tests).
 
-### 5.2 Invalidation Conditions
-The design is invalidated if:
-1. `headless` is set to `True` during default production runs (violates R1).
-2. Browser context fails to persist user authentication cookies across separate invocations.
-3. Multiple blank tabs accumulate (`about:blank`) during sequential `get_page()` calls.
-4. `SingletonLock` crash error is unhandled when an external Chromium process is active.
+### 5.2 Files to Inspect
+- `zenclass_guvi/core/state_manager.py` (lines 471-496)
+- `zenclass_guvi/tests/test_m1_filtering.py`
+
+### 5.3 Invalidation Conditions
+- Any change to `list_pending` that returns raw dictionaries instead of `TaskRecord` instances will break `drivers/guvi_driver.py:904` (`t.metadata.get("slug")`).
+- Directly querying `json_extract(metadata, '$.difficulty')` without `json_valid(metadata)` check will fail if any row contains un-serialized strings or empty string metadata.
+- Omitting `cleaned_diffs` fallback when `difficulties` is `[]` or `[""]` will break backward compatibility for callers expecting all pending tasks.
