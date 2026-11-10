@@ -1,10 +1,13 @@
 # Orchestrator Progress Tracker: AI-OS Phase 3a & 3b
 
 ## Current Status
-Last visited: 2026-11-10T18:10:00Z
+Last visited: 2026-11-10T18:15:00Z
 - [x] Received mission dispatch from parent (Conv ID: 76099637-a920-4311-aa93-a97721320a82)
 - [x] Initialized DISPATCH.md and updated BRIEFING.md
 - [ ] Survey Phase: Launch 3 parallel survey subagents (2 Explorers, 1 Spec Miner)
+  - [x] `survey_explorer_1`: COMPLETED (handoff.md delivered, target workspace analyzed, Python 3.9 + SQLite FTS5 verified)
+  - [ ] `survey_spec_miner_1`: In progress (synthesizing specs and writing handoff.md)
+  - [ ] `survey_explorer_2`: In progress (synthesizing skill reuse & kill/resume harness, writing handoff.md)
 - [ ] Aggregate Survey reports into PROJECT.md and Feature Inventory
 - [ ] Launch E2E Testing Track
 - [ ] Milestone 1: Phase 3a Layer A Scaffolding & Governance Policy
