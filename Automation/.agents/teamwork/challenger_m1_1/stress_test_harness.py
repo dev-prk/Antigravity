@@ -538,24 +538,21 @@ def test_cli_parser(results: TestResults):
 
 def test_extractor_css_sanitization(results: TestResults):
     print("\n--- TEST SUITE 4: Extractor CSS Sanitization Adversarial Stress ---")
-    extractor = ProblemExtractor()
 
     # Case 1: Spaced style tags and inline styles
     html_with_spaced_style = """
     <div>
+        <h1>Sum of Array</h1>
         <p>Problem Description: Given an array of integers, find the sum.</p>
         <style >
             .test { display: inline-flex; font-size: 14px; }
         </ style>
-        <h3>Sample Input:</h3>
-        <pre>5
-1 2 3 4 5</pre>
-        <h3>Sample Output:</h3>
-        <pre>15</pre>
+        <p>Sample Input: 5 10 15</p>
+        <p>Sample Output: 30</p>
     </div>
     """
-    spec = extractor.extract_from_html(html_with_spaced_style)
-    if len(spec.sample_cases) == 1 and spec.sample_cases[0].input.strip() == "5\n1 2 3 4 5" and spec.sample_cases[0].output.strip() == "15":
+    spec = ProblemExtractor.extract(html_with_spaced_style)
+    if len(spec.sample_cases) == 1 and spec.sample_cases[0].input.strip() == "5 10 15" and spec.sample_cases[0].output.strip() == "30":
         results.record_pass("Extractor: Spaced closing style tag", "Sample case cleanly extracted")
     else:
         results.record_fail("Extractor: Spaced closing style tag", f"Extracted {len(spec.sample_cases)} cases: {spec.sample_cases}")
@@ -563,6 +560,7 @@ def test_extractor_css_sanitization(results: TestResults):
     # Case 2: Pure CSS block should NOT be extracted as sample input
     html_with_css_selector = """
     <div>
+        <h1>Factorial</h1>
         <p>Calculate factorial.</p>
         input {
             display: inline-flex;
@@ -570,13 +568,11 @@ def test_extractor_css_sanitization(results: TestResults):
             line-height: inherit;
             flex: 1;
         }
-        <h3>Sample Input</h3>
-        5
-        <h3>Sample Output</h3>
-        120
+        <p>Sample Input: 5</p>
+        <p>Sample Output: 120</p>
     </div>
     """
-    spec2 = extractor.extract_from_html(html_with_css_selector)
+    spec2 = ProblemExtractor.extract(html_with_css_selector)
     if len(spec2.sample_cases) == 1 and spec2.sample_cases[0].input.strip() == "5" and spec2.sample_cases[0].output.strip() == "120":
         results.record_pass("Extractor: CSS 'input {' selector rejected", "Sample cases free of CSS selector leaks")
     else:
@@ -585,14 +581,13 @@ def test_extractor_css_sanitization(results: TestResults):
     # Case 3: Legitimate Python/JSON code containing CSS property names MUST BE PRESERVED
     html_with_json_code = """
     <div>
+        <h1>JSON Parser</h1>
         <p>You are designing a web component parser. Parse the given JSON config.</p>
-        <h3>Sample Input:</h3>
-        <pre>{"display": "inline-flex", "flex": 1, "font-size": 16}</pre>
-        <h3>Sample Output:</h3>
-        <pre>VALID</pre>
+        <p>Sample Input: {"display": "inline-flex", "flex": 1, "font-size": 16}</p>
+        <p>Sample Output: VALID</p>
     </div>
     """
-    spec3 = extractor.extract_from_html(html_with_json_code)
+    spec3 = ProblemExtractor.extract(html_with_json_code)
     if len(spec3.sample_cases) == 1 and '"display": "inline-flex"' in spec3.sample_cases[0].input:
         results.record_pass("Extractor: Legitimate JSON preservation", "JSON with CSS properties preserved intact")
     else:
@@ -601,14 +596,13 @@ def test_extractor_css_sanitization(results: TestResults):
     # Case 4: C++ / Java code block with braces
     html_with_cpp_code = """
     <div>
+        <h1>Block Output</h1>
         <p>Print the output of the block.</p>
-        <h3>Sample Input:</h3>
-        <pre>{ int display = 10; int flex = 20; return display + flex; }</pre>
-        <h3>Sample Output:</h3>
-        <pre>30</pre>
+        <p>Sample Input: { int display = 10; int flex = 20; return display + flex; }</p>
+        <p>Sample Output: 30</p>
     </div>
     """
-    spec4 = extractor.extract_from_html(html_with_cpp_code)
+    spec4 = ProblemExtractor.extract(html_with_cpp_code)
     if len(spec4.sample_cases) == 1 and 'int display = 10' in spec4.sample_cases[0].input:
         results.record_pass("Extractor: Code block preservation", "Code block with 'display' and 'flex' preserved")
     else:
