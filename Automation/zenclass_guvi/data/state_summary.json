@@ -1,73 +1,137 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T23:00:34.434588+00:00",
+  "last_updated": "2026-11-10T23:00:40.673788+00:00",
   "summary": {
-    "total_discovered": 2,
+    "total_discovered": 4,
     "total_completed": 2,
-    "total_pending": 0,
+    "total_pending": 1,
     "total_in_progress": 0,
-    "total_blocked": 0,
+    "total_blocked": 1,
     "total_failed": 0,
-    "success_rate_percent": 100.0,
+    "success_rate_percent": 50.0,
     "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
-        "total_discovered": 2,
+        "total_discovered": 3,
         "total_completed": 2,
-        "total_pending": 0,
+        "total_pending": 1,
         "total_blocked": 0,
         "total_failed": 0,
-        "success_rate_percent": 100.0,
+        "success_rate_percent": 66.67,
+        "time_spent_seconds": 0.0
+      },
+      "zenclass": {
+        "total_discovered": 1,
+        "total_completed": 0,
+        "total_pending": 0,
+        "total_blocked": 1,
+        "total_failed": 0,
+        "success_rate_percent": 0.0,
         "time_spent_seconds": 0.0
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 2,
+        "total": 3,
         "completed": 2,
-        "success_rate_percent": 100.0
+        "success_rate_percent": 66.67
+      },
+      "Tasks": {
+        "total": 1,
+        "completed": 0,
+        "success_rate_percent": 0.0
       }
     },
-    "human_intervention_issues": []
+    "human_intervention_issues": [
+      {
+        "task_id": "t4",
+        "platform": "zenclass",
+        "category": "Tasks",
+        "title": "Task 1",
+        "status": "blocked",
+        "attempts": 2,
+        "failure_reason": "MFA required",
+        "next_action": "prompt_user",
+        "url": ""
+      }
+    ]
   },
   "tasks": [
     {
-      "task_id": "p-1",
+      "task_id": "t1",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Problem 1",
+      "title": "Prob 1",
       "url": "",
       "status": "completed",
       "attempt_count": 1,
-      "result": "Solved!",
+      "result": "OK",
       "failure_reason": "",
-      "next_action": "none",
+      "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {},
-      "created_at": "2026-11-10T23:00:34.432319+00:00",
-      "updated_at": "2026-11-10T23:00:34.432319+00:00",
-      "timestamp": "2026-11-10T23:00:34.432319+00:00",
+      "created_at": "2026-11-10T23:00:40.668648+00:00",
+      "updated_at": "2026-11-10T23:00:40.668648+00:00",
+      "timestamp": "2026-11-10T23:00:40.668648+00:00",
       "attempts": 1,
       "category": "CodeKata"
     },
     {
-      "task_id": "p-2",
+      "task_id": "t2",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Problem 2",
+      "title": "Prob 2",
       "url": "",
       "status": "completed",
       "attempt_count": 1,
-      "result": "Solved!",
+      "result": "OK",
       "failure_reason": "",
-      "next_action": "none",
+      "next_action": "",
       "time_spent_seconds": 0.0,
       "metadata": {},
-      "created_at": "2026-11-10T23:00:34.433326+00:00",
-      "updated_at": "2026-11-10T23:00:34.434362+00:00",
-      "timestamp": "2026-11-10T23:00:34.434362+00:00",
+      "created_at": "2026-11-10T23:00:40.669775+00:00",
+      "updated_at": "2026-11-10T23:00:40.669775+00:00",
+      "timestamp": "2026-11-10T23:00:40.669775+00:00",
       "attempts": 1,
       "category": "CodeKata"
+    },
+    {
+      "task_id": "t3",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "Prob 3",
+      "url": "",
+      "status": "pending",
+      "attempt_count": 0,
+      "result": "",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {},
+      "created_at": "2026-11-10T23:00:40.670527+00:00",
+      "updated_at": "2026-11-10T23:00:40.670527+00:00",
+      "timestamp": "2026-11-10T23:00:40.670527+00:00",
+      "attempts": 0,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "t4",
+      "platform": "zenclass",
+      "task_category": "Tasks",
+      "title": "Task 1",
+      "url": "",
+      "status": "blocked",
+      "attempt_count": 2,
+      "result": "Fail",
+      "failure_reason": "MFA required",
+      "next_action": "prompt_user",
+      "time_spent_seconds": 0.0,
+      "metadata": {},
+      "created_at": "2026-11-10T23:00:40.673478+00:00",
+      "updated_at": "2026-11-10T23:00:40.673478+00:00",
+      "timestamp": "2026-11-10T23:00:40.673478+00:00",
+      "attempts": 2,
+      "category": "Tasks"
     }
   ]
 }
