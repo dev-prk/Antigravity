@@ -1,49 +1,25 @@
-# Task Assignment: Survey Explorer 1 (Cognitive Pattern Modeling)
+## 2026-11-10T18:08:10Z
+From: 39b23d44-0f11-43fa-90e1-e4883d67348f (parent)
 
-## Working Directory
-`/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/`
+You are survey_explorer_1, an exploration agent.
+Your working directory is: /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/
 
-## Context & Inputs
-- Original User Request: `/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/ORIGINAL_REQUEST.md`
-- Project Root: `/Users/devesh/Documents/Antigravity/Random Ask`
+MANDATORY FIRST STEP: Read the authoritative user request at:
+/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/ORIGINAL_REQUEST.md
 
-## Objective
-Conduct exhaustive research into the cognitive behaviors, reasoning styles, problem-solving methodologies, planning structures, and solution architecture patterns characteristic of the latest Claude models (e.g., Claude 3.5 Sonnet, Claude 3.7 Sonnet with hybrid/extended thinking, Claude 3 Opus).
+MISSION:
+Conduct an architectural and workspace survey for AI-OS Phase 3a and Phase 3b:
+1. Examine the AI-OS blueprint file at:
+   /Users/devesh/.gemini/antigravity/brain/51dfcb5c-2be9-41af-bdd8-523dde84779d/ai_os_blueprint.md
+   Extract the complete architectural vision, specifically focusing on Layer A (Antigravity-native rules, skills, governance) and Phase 3b (SQLite state, task ledger, HANDOFF.md, token budget management).
+2. Inspect the target workspace:
+   /Users/devesh/Documents/Antigravity/AI-OS/
+   Check what files, directories, or existing code currently exist (or if it's completely empty / uninitialized).
+3. Identify existing patterns, conventions, file tree structures, and integration points.
+4. Keep your progress.md updated with "Last visited: [timestamp]" on every step.
 
-## Detailed Areas of Investigation
-1. **Extended Thinking & Cognitive Scratchpad**:
-   - Internal monologue / thinking structure: step-by-step unpacking, exploring alternatives, dynamic course correction.
-   - Depth and pacing: avoiding immediate premature conclusions, deliberate pacing, hypothesis formulation.
-2. **Epistemic Humility & Calibration**:
-   - Explicit recognition of ambiguity and uncertainty.
-   - Distinguishing known facts from assumptions.
-   - Proactive verification and self-skepticism ("Let me double-check this assumption").
-3. **Thorough Plan Formulation Prior to Execution**:
-   - Comprehensive upfront analysis, requirement decomposition, dependency mapping.
-   - Risk assessment, edge-case anticipation, verification criteria definition before action.
-4. **Solution Architecture & Engineering Patterns**:
-   - Modularity, single responsibility, clear interface boundaries.
-   - Progressive elaboration (from conceptual architecture to interface contracts to concrete implementation).
-   - Defensiveness, error boundaries, failure mode handling.
-5. **Elicitation Mechanics for Any Model**:
-   - How to structure instructions, mental models, cognitive scaffolds, and prompt patterns so that *any* capable LLM (GPT-4o, Gemini 2.0/Pro, open weights like Llama/Qwen) reliably adopts these Claude-like cognitive habits.
-
-## Expected Outputs
-- Detailed findings written to `/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/survey_report.md`.
-- Summary and self-contained handoff in `/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/handoff.md`.
-- Update `progress.md` with liveness timestamps.
-
-
-## 2026-11-06T21:02:45Z
-[Message] timestamp=2026-11-06T21:02:45Z sender=cb7d9db9-6105-4e8f-9a3c-1ba50aaa0049 priority=MESSAGE_PRIORITY_HIGH content=You are survey_explorer_1 (role: Cognitive Modeling Explorer).
-Your working directory is /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/
-
-You MUST read:
-1. ORIGINAL_REQUEST.md: /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/ORIGINAL_REQUEST.md
-2. DISPATCH.md: /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/DISPATCH.md
-
-Conduct deep research into the cognitive behaviors, reasoning styles, problem-solving methodologies, planning structures, and solution architecture patterns characteristic of the latest Claude models (Sonnet 3.5/3.7, Opus).
-Write your comprehensive survey findings to /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/survey_report.md
-Write your handoff report to /Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/handoff.md
-Maintain progress.md with regular "Last visited" timestamps.
-When complete, notify the orchestrator via send_message.
+OUTPUT REQUIREMENT:
+Write a comprehensive handoff report to:
+/Users/devesh/Documents/Antigravity/Random Ask/.agents/teamwork/survey_explorer_1/handoff.md
+Follow the standard Handoff format: Observation, Logic Chain, Caveats, Conclusion, Verification Method.
+When done, send a message to the orchestrator reporting completion and summarizing your findings.
