@@ -1,4 +1,4 @@
-# BRIEFING — 2026-11-10T18:10:00Z
+# BRIEFING — 2026-11-10T18:18:00Z
 
 ## Mission
 Oversee the execution of AI-OS Phases 3a and 3b via Project Orchestrator, monitoring progress and running victory audit upon completion.
@@ -22,10 +22,10 @@ Oversee the execution of AI-OS Phases 3a and 3b via Project Orchestrator, monito
 ## User Context
 - **Last user request**: Approved task prompt for Phase 3a & Phase 3b of AI-OS
 - **Pending clarifications**: none
-- **Delivered results**: Dispatched to teamwork_orchestrator; Progress Update #1 delivered to caller
+- **Delivered results**: Progress Update #1 and #2 delivered to caller
 
 ## Project Status
-- **Phase**: in progress (Survey Phase active with 3 subagents)
+- **Phase**: in progress (Milestone 1 - Layer A Scaffolding & Policy Engine active)
 - **Route**: General (`teamwork_orchestrator`)
 
 ## Victory Audit Status
@@ -36,3 +36,4 @@ Oversee the execution of AI-OS Phases 3a and 3b via Project Orchestrator, monito
 ## Artifact Index
 - `.agents/teamwork/ORIGINAL_REQUEST.md` — Authoritative record of approved task prompt
 - `.agents/teamwork/orchestrator/` — Orchestrator working directory
+- `.agents/teamwork/orchestrator/PROJECT.md` — Global architecture & feature inventory
