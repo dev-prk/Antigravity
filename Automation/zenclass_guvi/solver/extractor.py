@@ -207,8 +207,11 @@ class ProblemExtractor:
         """Sanitizes HTML content into clean readable text."""
         if not raw_html:
             return ""
+        # Strip script, style, noscript, svg blocks and HTML comments completely
+        text = re.sub(r"(?is)<(script|style|noscript|svg)\b[^>]*>.*?</\1>", " ", raw_html)
+        text = re.sub(r"(?s)<!--.*?-->", "", text)
         # Replace line-breaking HTML elements with newlines
-        text = re.sub(r"(?i)<br\s*/?>", "\n", raw_html)
+        text = re.sub(r"(?i)<br\s*/?>", "\n", text)
         text = re.sub(r"(?i)</?(p|div|h[1-6]|tr|li|pre|blockquote)[^>]*>", "\n", text)
         # Strip all other HTML tags
         text = re.sub(r"<[^>]+>", " ", text)
@@ -248,6 +251,12 @@ class ProblemExtractor:
             if clean:
                 return clean
 
+        # Check numbered title in sanitized text before Problem Statement (Qwik SSR layout)
+        clean_full = cls._clean_text(html_text, preserve_newlines=True)
+        m_num = re.search(r'(?:^|\n)(\d+\.\s*[^\n]+?)(?=\n+(?:\d+\n+)?(?:Easy|Medium|Hard|Topics|Problem\s*Statement))', clean_full, re.IGNORECASE)
+        if m_num:
+            return m_num.group(1).strip()
+
         # Check <title> tag (e.g., "Odd or Even Sum - CodeKata - GUVI")
         m = re.search(r'<title>(.*?)</title>', html_text, re.IGNORECASE | re.DOTALL)
         if m:
@@ -255,7 +264,7 @@ class ProblemExtractor:
             # Strip suffixes like "- CodeKata - GUVI" or "- GUVI"
             title_tag = re.sub(r"(?i)\s*-\s*CodeKata\s*-\s*GUVI.*$", "", title_tag)
             title_tag = re.sub(r"(?i)\s*-\s*GUVI.*$", "", title_tag)
-            if title_tag and title_tag.lower() != "sign in":
+            if title_tag and title_tag.lower() not in ("sign in", "hcl guvi | learn to code in your native language") and "learn to code" not in title_tag.lower():
                 return title_tag.strip()
 
         return "Unknown"
@@ -403,6 +412,13 @@ class ProblemExtractor:
 
         # Strategy 2: Labeled Text Pattern Matching across sanitized text
         text = cls._clean_text(html_text, preserve_newlines=True)
+        # Truncate any trailing Code Editor / Console / Footer blocks before matching Sample Input/Output
+        text_for_samples = re.split(
+            r"\n\s*(?:Accepted\b|Acceptance\s+Rate\b|Code\s+Editor\b|Are\s+you\s+sure\s+you\s+want\s+to\s+reset)",
+            text,
+            maxsplit=1,
+            flags=re.IGNORECASE,
+        )[0]
 
         sample_pattern = re.compile(
             r"(?:(?:Sample\s+Input)|(?:Input(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P<num>\d+)?\s*[:\-]?\s*"
@@ -410,11 +426,11 @@ class ProblemExtractor:
             r"(?:(?:Sample\s+Output)|(?:Output(?!\s*(?:Description|Specification|Format))))\s*(?:Case\s*)?(?P=num)?\s*[:\-]?\s*"
             r"(?P<output>.*?)\s*"
             r"(?:(?:\n\s*|\A)(?:Sample\s+)?Explanation\s*(?:Case\s*)?(?:\d+)?\s*[:\-]?\s*(?P<explanation>.*?))?"
-            r"(?=(?:(?:Sample\s+)?Input(?!\s*(?:Description|Specification|Format))\s*(?:Case\s*)?\d*\s*[:\-])|(?:Constraints)|$)",
+            r"(?=(?:(?:Sample\s+)?Input(?!\s*(?:Description|Specification|Format))\s*(?:Case\s*)?\d*\s*[:\-])|(?:Constraints)|(?:Accepted\b)|(?:Topics\b)|(?:Code\s+Editor)|$)",
             re.DOTALL | re.IGNORECASE
         )
 
-        matches = list(sample_pattern.finditer(text))
+        matches = list(sample_pattern.finditer(text_for_samples))
         if matches:
             for idx, m in enumerate(matches, start=1):
                 inp = m.group("input").strip()

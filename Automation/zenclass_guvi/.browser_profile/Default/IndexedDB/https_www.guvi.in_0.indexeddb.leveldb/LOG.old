@@ -1,2 +1,3 @@
-2026/11/11-00:10:09.473 1139c3 Creating DB /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb since it was missing.
-2026/11/11-00:10:09.479 1139c3 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/11-00:21:50.666 1189f7 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/11-00:21:50.666 1189f7 Recovering log #3
+2026/11/11-00:21:50.666 1189f7 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/000003.log 

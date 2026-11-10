@@ -177,7 +177,12 @@ class GuviDriver(BaseDriver):
             if hasattr(ctx, "cookies"):
                 cookies = ctx.cookies()
                 auth_cookie = next(
-                    (c for c in cookies if c.get("name") == "authToken" and str(c.get("value", "")).startswith("auth:")),
+                    (
+                        c for c in cookies
+                        if c.get("name") == "authToken"
+                        and str(c.get("value", "")).startswith("auth:")
+                        and (not c.get("domain") or "guvi" in str(c.get("domain", "")).lower())
+                    ),
                     None
                 )
                 if auth_cookie:
@@ -189,8 +194,10 @@ class GuviDriver(BaseDriver):
         # 2. Check current page state if already open
         try:
             current_url = getattr(self.page, "url", "")
-            if current_url and "/sign-in" not in current_url:
-                for indicator in self.POST_LOGIN_INDICATORS:
+            if current_url and "/sign-in" not in current_url and "guvi" in current_url:
+                if self.is_visible("a.login-btn, button.login-btn, a[href*='/sign-in']", timeout=0.3):
+                    return False
+                for indicator in self.POST_LOGIN_INDICATORS[:6]:
                     if self.is_visible(indicator, timeout=0.5):
                         logger.info(f"Authenticated session verified via DOM indicator: {indicator}")
                         return True
@@ -209,6 +216,11 @@ class GuviDriver(BaseDriver):
             probe_url = getattr(self.page, "url", "")
             if "/sign-in" in probe_url:
                 logger.info("Session invalid: Redirected to /sign-in/")
+                return False
+
+            # If live Guvi page shows Login button, user is not authenticated
+            if "guvi.in" in probe_url and self.is_visible("a.login-btn, button.login-btn, a[href*='/sign-in']", timeout=0.5):
+                logger.info("Session invalid: Login button is visible on Guvi page.")
                 return False
 
             for indicator in self.POST_LOGIN_INDICATORS:
@@ -417,17 +429,27 @@ class GuviDriver(BaseDriver):
 
         for idx, row in enumerate(rows, 1):
             try:
+                if row.query_selector("th"):
+                    continue
                 # Column 1 (index 0): Status SVG
-                col0 = row.query_selector("td:nth-child(1)")
+                col0 = row.query_selector("td[q\\:key='status'], td:nth-child(1)")
                 is_completed = False
                 if col0:
                     svg_html = col0.inner_html() or ""
                     if "#completed-icon_svg__a" in svg_html or "#0DBA4B" in svg_html:
                         is_completed = True
 
-                # Column 2 (index 1): Title & Slug
-                col1 = row.query_selector("td:nth-child(2), td.problem-title")
+                # Title & Slug (supports both 5-column logged-in/mock and 4-column Qwik SSR layouts)
+                col1 = (
+                    row.query_selector("td[q\\:key='question'], td.question-cell, td.problem-title")
+                    or row.query_selector("td:nth-child(2), td.problem-title")
+                )
                 title_raw = col1.inner_text().strip() if col1 else f"Problem {idx}"
+                # If col1 accidentally matched an acceptance percentage (e.g., '73.97%') in a 4-col table, use col0
+                if re.match(r"^\d+(?:\.\d+)?%$", title_raw) and col0:
+                    col0_text = col0.inner_text().strip()
+                    if col0_text and not re.match(r"^\d+(?:\.\d+)?%$", col0_text):
+                        title_raw = col0_text
 
                 # Extract or derive slug
                 data_slug = row.get_attribute("data-slug")
@@ -447,16 +469,25 @@ class GuviDriver(BaseDriver):
                     cleaned_title = re.sub(r"^\d+\.\s*", "", title_raw)
                     slug = re.sub(r"[^a-z0-9]+", "-", cleaned_title.lower()).strip("-")
 
-                # Column 3 (index 2): Success Rate
-                col2 = row.query_selector("td:nth-child(3), td.success-rate")
+                # Success Rate
+                col2 = (
+                    row.query_selector("td[q\\:key='acceptance'], td.success-rate")
+                    or row.query_selector("td:nth-child(3), td.success-rate")
+                )
                 success_rate = col2.inner_text().strip() if col2 else ""
 
-                # Column 4 (index 3): Difficulty
-                col3 = row.query_selector("td:nth-child(4), td.difficulty")
+                # Difficulty
+                col3 = (
+                    row.query_selector("td[q\\:key='difficulty'], td.difficulty")
+                    or row.query_selector("td:nth-child(4), td.difficulty")
+                )
                 difficulty = col3.inner_text().strip() if col3 else "Easy"
 
-                # Column 5 (index 4): Points
-                col4 = row.query_selector("td:nth-child(5), td.points")
+                # Points
+                col4 = (
+                    row.query_selector("td[q\\:key='geekoins'], td.points")
+                    or row.query_selector("td:nth-child(5), td.points")
+                )
                 points = col4.inner_text().strip() if col4 else "30"
 
                 task_id = f"guvi-{slug}"
