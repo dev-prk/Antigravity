@@ -490,6 +490,13 @@ class TestZenClassProjectsDriver(unittest.TestCase):
 
     def test_stage2_synthesize_project(self):
         """Verifies local code preparation in projects/<slug>/ and StateManager update."""
+        self.state_mgr.record_task(
+            task_id="proj-synth-1",
+            platform="zenclass_projects",
+            task_category="Project",
+            title="Chat Platform",
+            status="pending",
+        )
         project = DiscoveredProject(
             project_id="proj-synth-1",
             title="Chat Platform",
@@ -499,6 +506,7 @@ class TestZenClassProjectsDriver(unittest.TestCase):
         res = self.driver.synthesize_project(project)
         self.assertTrue(res.success)
         self.assertTrue((res.project_dir / "README.md").exists())
+
 
         task = self.state_mgr.get_task("proj-synth-1")
         self.assertEqual(task.status, TaskStatus.IN_PROGRESS.value)

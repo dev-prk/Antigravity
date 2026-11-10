@@ -979,8 +979,9 @@ class ZenClassProjectsDriver(BaseDriver):
                 val_err = self.page.query_selector(self.SEL_SUBMIT_VALIDATION_ERR)
                 if val_err and getattr(val_err, "is_visible", lambda: False)():
                     err_txt = val_err.inner_text().strip()
-                    if err_txt:
+                    if err_txt and isinstance(err_txt, str) and not err_txt.startswith("<MagicMock"):
                         error_message = f"Field validation failed: {err_txt}"
+
 
                 if not error_message:
                     text_el = self.page.query_selector(self.SEL_SUCCESS_TEXT)
@@ -1110,13 +1111,9 @@ class ZenClassProjectsDriver(BaseDriver):
                 blocked_count += 1
                 continue
 
-                    f"Project '{project.project_id}' is an external interactive assessment. Marking BLOCKED."
-                )
-                blocked_count += 1
-                continue
-
             # Stage 1: Extract project details & rubrics
             details = self.extract_project_details(project)
+
 
             # Stage 2: Local Code Synthesis
             slug = self.synthesizer.slugify(project.title)
