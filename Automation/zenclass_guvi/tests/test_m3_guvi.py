@@ -358,6 +358,7 @@ class TestGuviAuthentication(unittest.TestCase):
         self.mock_page.url = "https://www.guvi.in/sign-in/"
         self.mock_page.wait_for_selector.return_value = MagicMock()
         self.mock_page.is_checked.return_value = True
+        self.mock_page.click.side_effect = lambda sel, **kw: setattr(self.mock_page, "url", "https://www.guvi.in/code-kata/")
 
         def fake_is_visible(sel, **kw):
             if "#myModal" in sel or "sendmail" in sel:
