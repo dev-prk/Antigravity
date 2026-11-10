@@ -1,28 +1,42 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T17:10:30.686753+00:00",
+  "last_updated": "2026-11-10T17:25:58.766646+00:00",
   "summary": {
-    "total_discovered": 1,
-    "total_completed": 0,
+    "total_discovered": 2,
+    "total_completed": 1,
     "total_pending": 0,
     "total_in_progress": 0,
-    "total_blocked": 0,
-    "total_failed": 1,
-    "success_rate_percent": 0.0,
-    "total_time_spent_seconds": 3.03,
+    "total_blocked": 1,
+    "total_failed": 0,
+    "success_rate_percent": 50.0,
+    "total_time_spent_seconds": 0.0,
     "by_platform": {
-      "guvi": {
+      "guvi_codekata": {
+        "total_discovered": 1,
+        "total_completed": 1,
+        "total_pending": 0,
+        "total_blocked": 0,
+        "total_failed": 0,
+        "success_rate_percent": 100.0,
+        "time_spent_seconds": 0.0
+      },
+      "zenclass_tasks": {
         "total_discovered": 1,
         "total_completed": 0,
         "total_pending": 0,
-        "total_blocked": 0,
-        "total_failed": 1,
+        "total_blocked": 1,
+        "total_failed": 0,
         "success_rate_percent": 0.0,
-        "time_spent_seconds": 3.03
+        "time_spent_seconds": 0.0
       }
     },
     "by_category": {
-      "CodeKata": {
+      "Easy": {
+        "total": 1,
+        "completed": 1,
+        "success_rate_percent": 100.0
+      },
+      "JS": {
         "total": 1,
         "completed": 0,
         "success_rate_percent": 0.0
@@ -30,37 +44,56 @@
     },
     "human_intervention_issues": [
       {
-        "task_id": "guvi-submit-unverified",
-        "platform": "guvi",
-        "category": "CodeKata",
-        "title": "Submit Unverified",
-        "status": "FAILED",
+        "task_id": "t2",
+        "platform": "zenclass_tasks",
+        "category": "JS",
+        "title": "JS Promises",
+        "status": "blocked",
         "attempts": 1,
-        "failure_reason": "Submission did not yield positive 'Solved!' verification feedback",
-        "next_action": "EXTRACTING_AND_SOLVING",
-        "url": "https://www.guvi.in/code-kata/submit-unverified/"
+        "failure_reason": "MFA required",
+        "next_action": "Requires review",
+        "url": ""
       }
     ]
   },
   "tasks": [
     {
-      "task_id": "guvi-submit-unverified",
-      "platform": "guvi",
-      "task_category": "CodeKata",
-      "title": "Submit Unverified",
-      "url": "https://www.guvi.in/code-kata/submit-unverified/",
-      "status": "FAILED",
+      "task_id": "t1",
+      "platform": "guvi_codekata",
+      "task_category": "Easy",
+      "title": "Odd Even",
+      "url": "",
+      "status": "completed",
       "attempt_count": 1,
-      "result": "SUBMISSION_FAILED",
-      "failure_reason": "Submission did not yield positive 'Solved!' verification feedback",
-      "next_action": "EXTRACTING_AND_SOLVING",
-      "time_spent_seconds": 3.0327308177948,
+      "result": "Solved!",
+      "failure_reason": "",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
       "metadata": {},
-      "created_at": "2026-11-10T17:10:27.653352+00:00",
-      "updated_at": "2026-11-10T17:10:30.686379+00:00",
-      "timestamp": "2026-11-10T17:10:30.686379+00:00",
+      "created_at": "2026-11-10T17:25:58.765456+00:00",
+      "updated_at": "2026-11-10T17:25:58.765456+00:00",
+      "timestamp": "2026-11-10T17:25:58.765456+00:00",
       "attempts": 1,
-      "category": "CodeKata"
+      "category": "Easy"
+    },
+    {
+      "task_id": "t2",
+      "platform": "zenclass_tasks",
+      "task_category": "JS",
+      "title": "JS Promises",
+      "url": "",
+      "status": "blocked",
+      "attempt_count": 1,
+      "result": "MFA",
+      "failure_reason": "MFA required",
+      "next_action": "",
+      "time_spent_seconds": 0.0,
+      "metadata": {},
+      "created_at": "2026-11-10T17:25:58.766404+00:00",
+      "updated_at": "2026-11-10T17:25:58.766404+00:00",
+      "timestamp": "2026-11-10T17:25:58.766404+00:00",
+      "attempts": 1,
+      "category": "JS"
     }
   ]
 }
