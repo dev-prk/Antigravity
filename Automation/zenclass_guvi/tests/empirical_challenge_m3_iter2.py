@@ -45,11 +45,16 @@ class TestCatalogCrawlingStress(unittest.TestCase):
         self.db_path = Path(self.temp_dir.name) / "test_state.db"
         self.state_mgr = StateManager(db_path=self.db_path)
         self.mock_browser = MagicMock(spec=BrowserManager)
+        self.mock_hitl = MagicMock(spec=HitlHandler)
+        self.mock_hitl.check_and_handle_guardrails.return_value = False
         self.mock_page = MagicMock()
+        self.mock_page.is_closed.return_value = False
+        self.mock_page.query_selector.return_value = None
         self.mock_browser.get_page.return_value = self.mock_page
         self.driver = GuviDriver(
             browser_manager=self.mock_browser,
             state_manager=self.state_mgr,
+            hitl_handler=self.mock_hitl,
         )
         self.driver._current_page = self.mock_page
 
@@ -351,9 +356,16 @@ class TestAuthRecoveryAndAntiDetection(unittest.TestCase):
     def setUp(self):
         self.temp_dir = tempfile.TemporaryDirectory()
         self.mock_browser = MagicMock(spec=BrowserManager)
+        self.mock_hitl = MagicMock(spec=HitlHandler)
+        self.mock_hitl.check_and_handle_guardrails.return_value = False
         self.mock_page = MagicMock()
+        self.mock_page.is_closed.return_value = False
+        self.mock_page.query_selector.return_value = None
         self.mock_browser.get_page.return_value = self.mock_page
-        self.driver = GuviDriver(browser_manager=self.mock_browser)
+        self.driver = GuviDriver(
+            browser_manager=self.mock_browser,
+            hitl_handler=self.mock_hitl,
+        )
         self.driver._current_page = self.mock_page
 
     def tearDown(self):
@@ -536,9 +548,15 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         db_path = Path(temp_dir.name) / "test_state.db"
         state_mgr = StateManager(db_path=db_path)
         mock_browser = MagicMock(spec=BrowserManager)
+        mock_hitl = MagicMock(spec=HitlHandler)
+        mock_hitl.check_and_handle_guardrails.return_value = False
         mock_page = MagicMock()
         mock_browser.get_page.return_value = mock_page
-        driver = GuviDriver(browser_manager=mock_browser, state_manager=state_mgr)
+        driver = GuviDriver(
+            browser_manager=mock_browser,
+            state_manager=state_mgr,
+            hitl_handler=mock_hitl,
+        )
         driver._current_page = mock_page
 
         mock_spec = ProblemSpecification(
@@ -582,9 +600,15 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         db_path = Path(temp_dir.name) / "test_state.db"
         state_mgr = StateManager(db_path=db_path)
         mock_browser = MagicMock(spec=BrowserManager)
+        mock_hitl = MagicMock(spec=HitlHandler)
+        mock_hitl.check_and_handle_guardrails.return_value = False
         mock_page = MagicMock()
         mock_browser.get_page.return_value = mock_page
-        driver = GuviDriver(browser_manager=mock_browser, state_manager=state_mgr)
+        driver = GuviDriver(
+            browser_manager=mock_browser,
+            state_manager=state_mgr,
+            hitl_handler=mock_hitl,
+        )
         driver._current_page = mock_page
 
         mock_spec = ProblemSpecification(title="Sample", description="", sample_cases=[])
@@ -611,9 +635,15 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         db_path = Path(temp_dir.name) / "test_state.db"
         state_mgr = StateManager(db_path=db_path)
         mock_browser = MagicMock(spec=BrowserManager)
+        mock_hitl = MagicMock(spec=HitlHandler)
+        mock_hitl.check_and_handle_guardrails.return_value = False
         mock_page = MagicMock()
         mock_browser.get_page.return_value = mock_page
-        driver = GuviDriver(browser_manager=mock_browser, state_manager=state_mgr)
+        driver = GuviDriver(
+            browser_manager=mock_browser,
+            state_manager=state_mgr,
+            hitl_handler=mock_hitl,
+        )
         driver._current_page = mock_page
 
         mock_spec = ProblemSpecification(title="Sample", description="", sample_cases=[])
@@ -657,9 +687,15 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
         db_path = Path(temp_dir.name) / "test_state.db"
         state_mgr = StateManager(db_path=db_path)
         mock_browser = MagicMock(spec=BrowserManager)
+        mock_hitl = MagicMock(spec=HitlHandler)
+        mock_hitl.check_and_handle_guardrails.return_value = False
         mock_page = MagicMock()
         mock_browser.get_page.return_value = mock_page
-        driver = GuviDriver(browser_manager=mock_browser, state_manager=state_mgr)
+        driver = GuviDriver(
+            browser_manager=mock_browser,
+            state_manager=state_mgr,
+            hitl_handler=mock_hitl,
+        )
         driver._current_page = mock_page
 
         mock_spec = ProblemSpecification(title="Sample", description="", sample_cases=[])
