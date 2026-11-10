@@ -275,9 +275,28 @@ class AutomationRunner:
 
             if self.args.command == "run-all":
                 logger.info("Executing run-all automation pipeline across Guvi and ZenClass...")
-                # Note: Drivers will be plugged in as part of M3, M4, M5 milestones
+                from drivers.guvi_driver import GuviDriver
+                guvi_driver = GuviDriver(
+                    browser_manager=self.browser_manager,
+                    state_manager=self.state_manager,
+                    hitl_handler=self.hitl_handler,
+                    reporter=self.reporter,
+                )
+                guvi_driver.run_pipeline(limit=self.args.limit)
             elif self.args.command == "run-codekata":
                 logger.info(f"Executing CodeKata automation (category={self.args.category}, limit={self.args.limit})...")
+                from drivers.guvi_driver import GuviDriver
+                driver = GuviDriver(
+                    browser_manager=self.browser_manager,
+                    state_manager=self.state_manager,
+                    hitl_handler=self.hitl_handler,
+                    reporter=self.reporter,
+                )
+                driver.run_pipeline(
+                    limit=self.args.limit,
+                    category=self.args.category,
+                    task_id=self.args.task_id,
+                )
             elif self.args.command == "run-zenclass":
                 logger.info(f"Executing ZenClass automation (type={self.args.type}, limit={self.args.limit})...")
             elif self.args.command == "resume":
