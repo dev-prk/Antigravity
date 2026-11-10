@@ -1,0 +1,10 @@
+2026/11/10-23:16:44.229 100a33 Creating DB /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_v2.zenclass.in_0.indexeddb.leveldb since it was missing.
+2026/11/10-23:16:44.233 100a33 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_v2.zenclass.in_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/10-23:16:44.245 100a36 Level-0 table #5: started
+2026/11/10-23:16:44.247 100a36 Level-0 table #5: 666 bytes OK
+2026/11/10-23:16:44.249 100a36 Delete type=0 #3
+2026/11/10-23:16:44.250 100a36 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2026/11/10-23:16:52.283 100a34 Level-0 table #7: started
+2026/11/10-23:16:52.284 100a34 Level-0 table #7: 1654 bytes OK
+2026/11/10-23:16:52.287 100a34 Delete type=0 #4
+2026/11/10-23:16:52.289 100a34 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
