@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:52:17.725473+00:00",
+  "last_updated": "2026-11-10T22:52:18.012462+00:00",
   "summary": {
     "total_discovered": 1,
     "total_completed": 0,
-    "total_pending": 1,
+    "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 0,
+    "total_failed": 1,
     "success_rate_percent": 0.0,
     "total_time_spent_seconds": 0.0,
     "by_platform": {
       "guvi": {
         "total_discovered": 1,
         "total_completed": 0,
-        "total_pending": 1,
+        "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 0,
+        "total_failed": 1,
         "success_rate_percent": 0.0,
         "time_spent_seconds": 0.0
       }
@@ -28,28 +28,38 @@
         "success_rate_percent": 0.0
       }
     },
-    "human_intervention_issues": []
+    "human_intervention_issues": [
+      {
+        "task_id": "guvi-threaded-writes",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "Threaded Writes",
+        "status": "failed",
+        "attempts": 10,
+        "failure_reason": "Worker error 10",
+        "next_action": "Requires review",
+        "url": ""
+      }
+    ]
   },
   "tasks": [
     {
-      "task_id": "t-med",
+      "task_id": "guvi-threaded-writes",
       "platform": "guvi",
       "task_category": "CodeKata",
-      "title": "Med",
+      "title": "Threaded Writes",
       "url": "",
-      "status": "pending",
-      "attempt_count": 0,
-      "result": "",
-      "failure_reason": null,
+      "status": "failed",
+      "attempt_count": 10,
+      "result": "TEST_FAILED",
+      "failure_reason": "Worker error 10",
       "next_action": "",
       "time_spent_seconds": 0.0,
-      "metadata": {
-        "difficulty": "Medium"
-      },
-      "created_at": "2026-11-10T22:52:17.725138+00:00",
-      "updated_at": "2026-11-10T22:52:17.725138+00:00",
-      "timestamp": "2026-11-10T22:52:17.725138+00:00",
-      "attempts": 0,
+      "metadata": {},
+      "created_at": "2026-11-10T22:52:18.001328+00:00",
+      "updated_at": "2026-11-10T22:52:18.010888+00:00",
+      "timestamp": "2026-11-10T22:52:18.010888+00:00",
+      "attempts": 10,
       "category": "CodeKata"
     }
   ]
