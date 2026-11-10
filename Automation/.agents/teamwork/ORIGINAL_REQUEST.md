@@ -49,3 +49,11 @@ Integrity mode: development
 - [ ] No messages, InMails, or connection requests sent on LinkedIn.
 - [ ] No automated login attempts or credential submissions occurred when encountering authentication, CAPTCHA, or OTP challenges.
 - [ ] All career details in `master_profile.md` directly trace to provided resume documents or portal profiles with no invented metrics or titles.
+
+## Follow-up — 2026-11-10T12:05:22Z
+
+URGENT USER DIRECTIVE FOR BROWSER OPERATOR:
+"use the same browser session instead of launching new window again and again. use tab if you have to"
+
+Please immediately instruct the Browser Operator (`worker_m2_1` or any browser subagent) to reuse the SAME existing browser session/window and open/reuse tabs within it rather than spawning new browser windows or sessions repeatedly.
+
