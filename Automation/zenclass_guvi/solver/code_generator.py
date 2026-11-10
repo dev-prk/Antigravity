@@ -1243,10 +1243,10 @@ def _synthesize_base(spec: ProblemSpecification) -> Tuple[str, str, float, str]:
         return TEMPLATE_KADANE_MAX_SUBARRAY, "Dynamic Programming", 0.85, "Kadane max subarray solver"
 
     # --- Graphs & Trees Domains ---
-    elif "shortest path" in full_text or ("bfs" in full_text and "graph" in full_text):
-        return TEMPLATE_GRAPH_BFS_SHORTEST_PATH, "Graphs", 0.90, "BFS shortest path unweighted graph solver"
     elif "dijkstra" in full_text or "weighted shortest path" in full_text:
         return TEMPLATE_GRAPH_DIJKSTRA, "Graphs", 0.90, "Dijkstra min-heap weighted graph solver"
+    elif "shortest path" in full_text or ("bfs" in full_text and "graph" in full_text):
+        return TEMPLATE_GRAPH_BFS_SHORTEST_PATH, "Graphs", 0.90, "BFS shortest path unweighted graph solver"
     elif "topological" in full_text or "kahn" in full_text or "course schedule" in full_text:
         return TEMPLATE_GRAPH_TOPOLOGICAL_SORT, "Graphs", 0.90, "Kahn topological sort DAG solver"
     elif "island" in full_text or "flood fill" in full_text or "connected components" in full_text:
@@ -1373,32 +1373,32 @@ def _refine_solution(
 
         # 2. ValueError refinement (non-numeric tokens, extra words, CSS style leaks)
         elif "valueerror" in err_lower or "invalid literal" in err_lower:
-            regex_block = (
-                "import sys, re\n\n"
-                "def solve():\n"
-                "    raw_input = sys.stdin.read()\n"
-                "    tokens = re.findall(r'-?\\d+', raw_input)\n"
+            regex_snippet = (
+                "tokens = sys.stdin.read().split()\n"
+                "    import re\n"
+                "    tokens = re.findall(r'-?\\d+', ' '.join(tokens))\n"
             )
-            if "import sys\n\ndef solve():\n    tokens = sys.stdin.read().split()\n" in code:
-                code = code.replace("import sys\n\ndef solve():\n    tokens = sys.stdin.read().split()\n", regex_block)
-            elif "tokens = sys.stdin.read().split()\n" in code:
-                code = code.replace(
-                    "tokens = sys.stdin.read().split()\n",
-                    "import re\n    raw_input = sys.stdin.read()\n    tokens = re.findall(r'-?\\d+', raw_input)\n"
-                )
+            if "tokens = sys.stdin.read().split()\n" in code:
+                code = code.replace("tokens = sys.stdin.read().split()\n", regex_snippet)
 
         # 3. IndexError / unpacking refinement (sparse inputs, unexpected bounds)
         elif "indexerror" in err_lower or "unpack" in err_lower or "list index out of range" in err_lower:
             safe_bounds_snippet = (
-                "    tokens = sys.stdin.read().split()\n"
+                "tokens = sys.stdin.read().split()\n"
                 "    if not tokens:\n"
                 "        return\n"
-                "    # Safe bounds-checked getter function\n"
                 "    def safe_token(lst, idx, default='0'):\n"
                 "        return lst[idx] if idx < len(lst) else default\n"
             )
             if "tokens = sys.stdin.read().split()\n" in code:
                 code = code.replace("tokens = sys.stdin.read().split()\n", safe_bounds_snippet)
+            elif "def solve():\n" in code:
+                code = code.replace(
+                    "def solve():\n",
+                    "def solve():\n"
+                    "    def safe_token(lst, idx, default='0'):\n"
+                    "        return lst[idx] if idx < len(lst) else default\n"
+                )
             # Inject top-level IndexError guard in solve invocation
             code = code.replace(
                 "if __name__ == '__main__':\n    solve()",

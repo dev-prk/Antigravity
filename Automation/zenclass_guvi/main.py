@@ -18,7 +18,7 @@ import signal
 import sys
 import time
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Union
 
 import config
 from core.browser import BrowserManager
@@ -36,20 +36,96 @@ def setup_logging(level_name: str = "INFO") -> None:
     logging.basicConfig(level=level, format=fmt, datefmt="%H:%M:%S")
 
 
+class AutomationArgumentParser(argparse.ArgumentParser):
+    """Custom ArgumentParser with context-aware headless defaults."""
+
+    def parse_args(self, args=None, namespace=None):
+        ns = super().parse_args(args, namespace)
+        if getattr(ns, "headless", None) is None:
+            if getattr(ns, "command", None) == "run-codekata":
+                ns.headless = config.CODEKATA_HEADLESS
+            else:
+                ns.headless = config.HEADLESS
+        return ns
+
+
+def parse_difficulties(raw_diff: Union[str, List[str], None]) -> Optional[List[str]]:
+    """
+    Parses comma-separated strings or repeated flags into normalized Title Case difficulty list.
+    Supports:
+      - ['Medium,Hard'] -> ['Medium', 'Hard']
+      - ['Medium', 'Hard'] -> ['Medium', 'Hard']
+      - 'medium, hard' -> ['Medium', 'Hard']
+      - 'Hard' -> ['Hard']
+    """
+    if not raw_diff:
+        return None
+    raw_list = [raw_diff] if isinstance(raw_diff, str) else raw_diff
+    result = []
+    for item in raw_list:
+        for part in item.split(","):
+            token = part.strip().capitalize()
+            if token and token in config.VALID_CODEKATA_DIFFICULTIES:
+                if token not in result:
+                    result.append(token)
+            elif token:
+                logger.warning(f"Unrecognized difficulty level: '{part.strip()}'. Ignored.")
+    return result or None
+
+
 def create_cli_parser() -> argparse.ArgumentParser:
     """Constructs the argument parser with subcommands and options."""
-    parser = argparse.ArgumentParser(
+    parser = AutomationArgumentParser(
         prog="zenclass_guvi",
         description="Autonomous ZenClass & Guvi CodeKata Automation Suite (R1, R2, R3)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
 
+    # Shared browser arguments for root and subparsers
+    shared_browser = argparse.ArgumentParser(add_help=False)
+    shared_browser.add_argument(
+        "--headless",
+        dest="headless",
+        action="store_true",
+        default=argparse.SUPPRESS,
+        help="Run browser in background headless mode",
+    )
+    shared_browser.add_argument(
+        "--no-headless",
+        dest="headless",
+        action="store_false",
+        default=argparse.SUPPRESS,
+        help="Run browser in visible foreground headed mode",
+    )
+    shared_browser.add_argument(
+        "--headed",
+        dest="headless",
+        action="store_false",
+        default=argparse.SUPPRESS,
+        help="Alias for --no-headless: run browser in visible foreground headed mode",
+    )
+
     # Global options
     parser.add_argument(
         "--headless",
+        dest="headless",
         action="store_true",
-        default=False,
-        help="Run browser in headless mode (default: False, headed foreground as per R1)",
+        default=None,
+        help="Run browser in headless mode (default: False for ZenClass, True for CodeKata)",
+    )
+    parser.add_argument(
+        "--no-headless",
+        dest="headless",
+        action="store_false",
+        default=None,
+        help="Run browser in visible foreground headed mode",
+    )
+    parser.add_argument(
+        "--headed",
+        dest="headless",
+        action="store_false",
+        default=None,
+        help="Alias for --no-headless: run browser in visible foreground headed mode",
     )
     parser.add_argument(
         "--slow-mo",
@@ -106,6 +182,7 @@ def create_cli_parser() -> argparse.ArgumentParser:
     # Command: run-all
     p_run_all = subparsers.add_parser(
         "run-all",
+        parents=[shared_browser],
         help="Run full automation pipeline across Guvi CodeKata, ZenClass tasks, and projects",
     )
     p_run_all.add_argument(
@@ -114,10 +191,17 @@ def create_cli_parser() -> argparse.ArgumentParser:
         default="codekata-first",
         help="Execution order between platforms (default: codekata-first)",
     )
+    p_run_all.add_argument(
+        "--difficulty",
+        action="append",
+        default=None,
+        help="Filter CodeKata problems by difficulty within run-all. Allowed: Easy, Medium, Hard",
+    )
 
     # Command: run-codekata
     p_codekata = subparsers.add_parser(
         "run-codekata",
+        parents=[shared_browser],
         help="Run Guvi CodeKata automation (discovery, solver, sandbox, submission)",
     )
     p_codekata.add_argument(
@@ -132,10 +216,17 @@ def create_cli_parser() -> argparse.ArgumentParser:
         default=None,
         help="Execute single CodeKata problem by slug or title",
     )
+    p_codekata.add_argument(
+        "--difficulty",
+        action="append",
+        default=None,
+        help="Filter CodeKata problems by difficulty (e.g., '--difficulty Medium,Hard' or '--difficulty Medium --difficulty Hard'). Allowed: Easy, Medium, Hard",
+    )
 
     # Command: run-zenclass
     p_zenclass = subparsers.add_parser(
         "run-zenclass",
+        parents=[shared_browser],
         help="Run ZenClass tasks and/or projects automation",
     )
     p_zenclass.add_argument(
@@ -154,6 +245,7 @@ def create_cli_parser() -> argparse.ArgumentParser:
     # Command: run-zenclass-tasks
     p_zenclass_tasks = subparsers.add_parser(
         "run-zenclass-tasks",
+        parents=[shared_browser],
         help="Run ZenClass tasks automation (discovery, dynamic modal submission, verification)",
     )
     p_zenclass_tasks.add_argument(
@@ -166,6 +258,7 @@ def create_cli_parser() -> argparse.ArgumentParser:
     # Command: run-zenclass-projects
     p_zenclass_projects = subparsers.add_parser(
         "run-zenclass-projects",
+        parents=[shared_browser],
         help="Run ZenClass projects automation (synthesis, build validation, HITL pause, submission)",
     )
     p_zenclass_projects.add_argument(
@@ -185,6 +278,7 @@ def create_cli_parser() -> argparse.ArgumentParser:
 
     p_resume = subparsers.add_parser(
         "resume",
+        parents=[shared_browser],
         help="Resume execution from SQLite state for pending, failed, or blocked tasks",
     )
     p_resume.add_argument(
@@ -339,7 +433,13 @@ class AutomationRunner:
                         hitl_handler=self.hitl_handler,
                         reporter=self.reporter,
                     )
-                    guvi_driver.run_pipeline(limit=self.args.limit)
+                    pipeline_kwargs = {"limit": self.args.limit}
+                    raw_diff = getattr(self.args, "difficulty", None)
+                    if raw_diff is not None:
+                        parsed_diffs = parse_difficulties(raw_diff)
+                        if parsed_diffs:
+                            pipeline_kwargs["difficulties"] = parsed_diffs
+                    guvi_driver.run_pipeline(**pipeline_kwargs)
 
                 def _run_zenclass_all():
                     if self.browser_manager is None and hasattr(GuviDriver.run_pipeline, "_mock_name"):
@@ -360,7 +460,6 @@ class AutomationRunner:
                     _run_guvi()
                     _run_zenclass_all()
             elif self.args.command == "run-codekata":
-
                 logger.info(f"Executing CodeKata automation (category={self.args.category}, limit={self.args.limit})...")
                 from drivers.guvi_driver import GuviDriver
                 driver = GuviDriver(
@@ -369,11 +468,18 @@ class AutomationRunner:
                     hitl_handler=self.hitl_handler,
                     reporter=self.reporter,
                 )
-                driver.run_pipeline(
-                    limit=self.args.limit,
-                    category=self.args.category,
-                    task_id=self.args.task_id,
-                )
+                pipeline_kwargs = {
+                    "limit": self.args.limit,
+                    "category": self.args.category,
+                    "task_id": self.args.task_id,
+                }
+                raw_diff = getattr(self.args, "difficulty", None)
+                if raw_diff is not None:
+                    parsed_diffs = parse_difficulties(raw_diff)
+                    if parsed_diffs:
+                        pipeline_kwargs["difficulties"] = parsed_diffs
+
+                driver.run_pipeline(**pipeline_kwargs)
             elif self.args.command == "run-zenclass-tasks":
                 logger.info(f"Executing ZenClass tasks automation (limit={self.args.limit}, task_id={self.args.task_id})...")
                 from drivers.zenclass_tasks_driver import ZenClassTasksDriver
