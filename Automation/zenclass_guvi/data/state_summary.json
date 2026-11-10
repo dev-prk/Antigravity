@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-10T22:31:19.312237+00:00",
+  "last_updated": "2026-11-10T22:32:18.256187+00:00",
   "summary": {
     "total_discovered": 1,
     "total_completed": 1,
@@ -9,20 +9,20 @@
     "total_blocked": 0,
     "total_failed": 0,
     "success_rate_percent": 100.0,
-    "total_time_spent_seconds": 0.0,
+    "total_time_spent_seconds": 0.51,
     "by_platform": {
-      "guvi": {
+      "zenclass_projects": {
         "total_discovered": 1,
         "total_completed": 1,
         "total_pending": 0,
         "total_blocked": 0,
         "total_failed": 0,
         "success_rate_percent": 100.0,
-        "time_spent_seconds": 0.0
+        "time_spent_seconds": 0.51
       }
     },
     "by_category": {
-      "General": {
+      "Project": {
         "total": 1,
         "completed": 1,
         "success_rate_percent": 100.0
@@ -32,23 +32,27 @@
   },
   "tasks": [
     {
-      "task_id": "cli-t1",
-      "platform": "guvi",
-      "task_category": "General",
-      "title": "Problem 1",
+      "task_id": "proj-sub-1",
+      "platform": "zenclass_projects",
+      "task_category": "Project",
+      "title": "Task Manager",
       "url": "",
-      "status": "completed",
-      "attempt_count": 0,
-      "result": "Solved!",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "SUBMITTED",
       "failure_reason": null,
-      "next_action": "",
-      "time_spent_seconds": 0.0,
-      "metadata": {},
-      "created_at": "2026-11-10T22:31:19.311912+00:00",
-      "updated_at": "2026-11-10T22:31:19.311912+00:00",
-      "timestamp": "2026-11-10T22:31:19.311912+00:00",
-      "attempts": 0,
-      "category": "General"
+      "next_action": "NONE",
+      "time_spent_seconds": 0.508,
+      "metadata": {
+        "submitted_urls": {
+          "github_Url": "https://github.com/devsh/taskmgr"
+        }
+      },
+      "created_at": "2026-11-10T22:32:17.744325+00:00",
+      "updated_at": "2026-11-10T22:32:18.255823+00:00",
+      "timestamp": "2026-11-10T22:32:18.255823+00:00",
+      "attempts": 1,
+      "category": "Project"
     }
   ]
 }
