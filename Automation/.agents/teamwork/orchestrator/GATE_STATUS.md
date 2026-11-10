@@ -1,14 +1,13 @@
-# Gate Status: Milestone 1 (Core Foundation & Infrastructure)
+# Gate Status: Milestone 2 (Problem Solver Engine & Sandbox)
 
 ## Iteration 1 — Gate Review
 | Agent | Role | Verdict | Source | Notes |
 |-------|------|---------|--------|-------|
-| worker_m1_1 | teamwork_worker | DONE | handoff.md | 22/22 unit tests pass, 78/78 E2E tests pass |
-| reviewer_m1_1 | teamwork_reviewer | APPROVE | handoff.md | Low risk, full interface conformance, 100% tests pass |
-| reviewer_m1_2 | teamwork_reviewer | APPROVE | handoff.md | Zero integrity violations, edge cases documented for M2-M5 |
-| challenger_m1_1 | teamwork_challenger | APPROVE | handoff.md | 11/11 stress tests passed (50 threads, WAL, atomic JSON, CLI) |
-| challenger_m1_2 | teamwork_challenger | APPROVE | handoff.md | 19/19 empirical tests passed (headed mode, tab reuse, guardrails) |
-| auditor_m1_1 | teamwork_auditor | CLEAN | handoff.md | 34/34 probe checks passed, zero cheater patterns, 100% authentic |
+| worker_m2_1 | teamwork_worker | DONE | handoff.md | 35/35 unit tests pass, 22/22 M1 pass, 78/78 E2E pass |
+| reviewer_m2_1 | teamwork_reviewer | PENDING | - | Interface conformance, AST validation, test execution |
+| reviewer_m2_2 | teamwork_reviewer | PENDING | - | Robustness, Ace injection edge cases, timeout handling |
+| challenger_m2_1 | teamwork_challenger | PENDING | - | Stress-testing code generator & sandboxed test runner |
+| challenger_m2_2 | teamwork_challenger | PENDING | - | Empirical verification of Ace adapter & output normalizer |
+| auditor_m2_1 | teamwork_auditor | PENDING | - | Forensic integrity verification (anti-cheating) |
 
-Gate Result: **PASS**
-Milestone 1 is certified COMPLETE and ACCEPTED.
+Gate Result: **IN_PROGRESS**
