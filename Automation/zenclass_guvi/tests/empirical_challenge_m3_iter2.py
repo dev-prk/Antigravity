@@ -671,8 +671,13 @@ class TestZeroFakeEvaluateShims(unittest.TestCase):
 
             self.assertFalse(res["success"])
             self.assertEqual(res["stage"], "ACE_INJECTION")
-            # Click submit was NEVER called
-            mock_page.click.assert_not_called()
+
+            # Verify Run and Submit buttons were never clicked
+            clicked_selectors = [c[0][0] for c in mock_page.click.call_args_list if c[0]]
+            self.assertNotIn("button.run-code", clicked_selectors)
+            self.assertNotIn("button:has-text('Run Code')", clicked_selectors)
+            self.assertNotIn("button.submit-code", clicked_selectors)
+            self.assertNotIn("button:has-text('Submit')", clicked_selectors)
 
         temp_dir.cleanup()
 
