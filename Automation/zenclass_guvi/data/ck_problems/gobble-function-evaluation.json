@@ -1,0 +1,17 @@
+{
+ "title": "450. Gobble Function Evaluation",
+ "slug": "gobble-function-evaluation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n450. Gobble Function Evaluation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nG(x) = G(x-1) + 9, G(0) = 1. Given x, find G(x). x >= 1",
+ "input_spec": "Read a single integer x.",
+ "output_spec": "Print a single line, the value of G(x)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2",
+   "output": "19"
+  }
+ ],
+ "raw": ""
+}

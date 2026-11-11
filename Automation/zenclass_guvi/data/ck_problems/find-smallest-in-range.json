@@ -1,0 +1,17 @@
+{
+ "title": "161. Find Smallest in Range",
+ "slug": "find-smallest-in-range",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n161. Find Smallest in Range\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number n and 2 numbers l and r followed by n numbers, find the smallest number in the range [l,r].",
+ "input_spec": "The input consists of an integer n, two integers l and r, followed by n integers.",
+ "output_spec": "The output is the smallest number found within the specified range [l,r].",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2 4\n1 2 3 4 5",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

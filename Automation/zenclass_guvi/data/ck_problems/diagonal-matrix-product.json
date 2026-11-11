@@ -1,0 +1,17 @@
+{
+ "title": "782. Diagonal Matrix Product",
+ "slug": "diagonal-matrix-product",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n782. Diagonal Matrix Product\n\n40\n\nMedium  Topics\n\nProblem Statement:\nInput consists of positive numbers of mxn matrix where the value of m rows and n column is to be obtained during runtime. Size of row<10 and column<10",
+ "input_spec": "consists of positive numbers of mxn matrix where the value of m rows and n column is to be obtained during runtime. Size of row<10 and column<10\n\nInput Description:\nFirst input is row size, second input is column size and the third input is the elements of the matrix",
+ "output_spec": "product of the elements of along the diagonal of the input matrix",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "945"
+  }
+ ],
+ "raw": ""
+}

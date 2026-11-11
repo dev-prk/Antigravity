@@ -1,0 +1,17 @@
+{
+ "title": "86. Remove Extra Spaces",
+ "slug": "remove-extra-spaces",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n86. Remove Extra Spaces\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a sentence S take out the extra spaces.If no extra space is present print the same as output.",
+ "input_spec": "Input Size : |s| <= 100000(complexity O(n))",
+ "output_spec": ".\n\nInput Description:\nInput Size : |s| <= 100000(complexity O(n))",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "codekata challenge",
+   "output": "codekata challenge"
+  }
+ ],
+ "raw": ""
+}

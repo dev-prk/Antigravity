@@ -1,0 +1,17 @@
+{
+ "title": "2013. Notification System Using Abstract Class and Interface",
+ "slug": "notification-system-using-abstract-class-and-interface",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2013. Notification System Using Abstract Class and Interface\n\n90\n\nHard\n\nProblem Statement\n\nCreate an interface Notification with a method send(String message).\n\nCreate an abstract class BaseNotification that implements the Notification interface and contains a common method displayMessage().\n\nCreate three classes:\n\nEmailNotification\nSMSNotification\nPushNotification\n\nEach class should override the send() method and display the notification type along with the message.",
+ "input_spec": "The first line contains the notification type: email, sms, or push.\n\nThe second line contains the message.",
+ "output_spec": "Print the notification type followed by the message.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "email\nHello Student",
+   "output": "Email: Hello Student"
+  }
+ ],
+ "raw": ""
+}

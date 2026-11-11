@@ -1,0 +1,17 @@
+{
+ "title": "1535. Delete Node from a Red-Black Tree",
+ "slug": "delete-node-from-a-red-black-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1535. Delete Node from a Red-Black Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven a Red-Black Tree and a key, write a function to delete the node with the given key from the tree. After deletion, ensure that the Red-Black Tree properties are maintained. If the key is not present in the tree, the tree should remain unchanged.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the Red-Black Tree.\n- The second line contains N space-separated integers, representing the keys of the nodes in level order traversal.\n- The third line contains N space-separated characters, each being 'R' or 'B', representing the color (Red or Black) of each node in the same order as the keys.\n- The fourth line contains an integer K, the key to be deleted.",
+ "output_spec": "- Print the level order traversal of the tree after deletion.\n- Print the color of each node in the same order as the traversal, separated by spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n10 5 20 3 7 15 25\nB R R B B B B\n7",
+   "output": "10 5 20 3 15 25\nB R R B B B"
+  }
+ ],
+ "raw": ""
+}

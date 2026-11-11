@@ -1,0 +1,17 @@
+{
+ "title": "838. Zero-Sum Sublist Deletion",
+ "slug": "zero-sum-sublist-deletion",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n838. Zero-Sum Sublist Deletion\n\n70\n\nHard  Topics\n\nProblem Statement:\nDelete the elements in a linked list whose sum is equal to zero and print the resulting linked list.",
+ "input_spec": "First line represents the size of the linked list.Next line represents the sequence of numbers as the node value of the linked list(separated by space).",
+ "output_spec": "Print the resultant linked list values(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n6 -6 8 4 -12 9 8 -8",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

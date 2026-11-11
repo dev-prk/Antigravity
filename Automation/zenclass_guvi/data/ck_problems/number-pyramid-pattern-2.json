@@ -1,0 +1,17 @@
+{
+ "title": "888. Number Pyramid Pattern-2",
+ "slug": "number-pyramid-pattern-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n888. Number Pyramid Pattern-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGenerate a number pyramid pattern.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the number half pyramid pattern with the size R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "1234567\n12345\n123\n1"
+  }
+ ],
+ "raw": ""
+}

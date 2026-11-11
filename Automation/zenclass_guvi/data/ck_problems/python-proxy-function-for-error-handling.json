@@ -1,0 +1,17 @@
+{
+ "title": "1094. Python Proxy Function for Error Handling",
+ "slug": "python-proxy-function-for-error-handling",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1094. Python Proxy Function for Error Handling\n\n50\n\nMedium\n\nProblem Statement:\nYou are developing a student management system for a B.Tech program. The system has a function  get_student_grade(student_id: str) -> str  that takes a student ID as input and returns the grade of that student.\n\nThe program has the following students enrolled:\n1. Student ID: \"BT202101\", Grade: \"A\"\n2. Student ID: \"BT202102\", Grade: \"B\"\n\nHowever, not all students are enrolled in the program at all times. If a student is not enrolled, the function should raise a  StudentNotFoundError  with a message \"Student not found\".\n\nWrite a Python function  proxy_get_student_grade(student_id: str) -> str  that acts as a proxy to the  get_student_grade(student_id: str) -> str  function. The proxy function should handle any  StudentNotFoundError  that might be raised and return a default grade 'N/A' if the student is not found.",
+ "input_spec": "and returns the grade of that student.\n\nThe program has the following students enrolled:\n1. Student ID: \"BT202101\", Grade: \"A\"\n2. Student ID: \"BT202102\", Grade: \"B\"\n\nHowever, not all students are enrolled in the program at all times. If a student is not enrolled, the function should raise a  StudentNotFoundError  with a message \"Student not found\".\n\nWrite a Python function  proxy_get_student_grade(student_id: str) -> str  that acts as a proxy to the  get_student_grade(student_id: str) -> str  function. The proxy function should handle any  StudentNotFoundError  that might be raised and return a default grade 'N/A' if the student is not found.",
+ "output_spec": "A",
+ "constraints": "- Student ID is a string.\n- You can't install any external libraries.",
+ "samples": [
+  {
+   "input": "BT202101",
+   "output": "A"
+  }
+ ],
+ "raw": ""
+}

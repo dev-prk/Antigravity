@@ -1,0 +1,17 @@
+{
+ "title": "1555. Repeating Substring Detection (KMP)",
+ "slug": "repeating-substring-detection-kmp",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1555. Repeating Substring Detection (KMP)\n\n80\n\nHard\n\nProblem Statement:\nGiven a non-empty string s, determine if it can be constructed by repeating a substring of itself multiple times. You are required to use the Knuth-Morris-Pratt (KMP) preprocessing algorithm to solve this problem efficiently.",
+ "input_spec": "- A single line containing the string s.",
+ "output_spec": "- Print \"YES\" if the string can be constructed by repeating a substring, otherwise print \"NO\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ababab",
+   "output": "NO"
+  }
+ ],
+ "raw": ""
+}

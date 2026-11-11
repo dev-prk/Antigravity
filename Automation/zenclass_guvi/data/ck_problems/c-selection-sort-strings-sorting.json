@@ -1,0 +1,17 @@
+{
+ "title": "1617. C, Selection Sort, Strings, Sorting",
+ "slug": "c-selection-sort-strings-sorting",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1617. C, Selection Sort, Strings, Sorting\n\n70\n\nHard\n\nProblem Statement:  Sort Words by Length Using Selection Sort\n\nWrite a program to sort a list of words based on their length using Selection Sort.\nIf two words have the same length, maintain lexicographic order.\n\nDescription\n\nInput contains n words.\n\nSort by word length in ascending order.\n\nIf lengths match, compare alphabetically.\n\nInput Format\n\nFirst line: Integer n\n\nNext n lines: One word per line\n\nOutput Format\n\nSorted list of words.",
+ "input_spec": "contains n words.\n\nSort by word length in ascending order.\n\nIf lengths match, compare alphabetically.\n\nInput Format\n\nFirst line: Integer n\n\nNext n lines: One word per line",
+ "output_spec": "Sorted list of words.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\napple\nis\nbanana\ncat\ndog",
+   "output": "is\ncat\ndog\napple\nbanana"
+  }
+ ],
+ "raw": ""
+}

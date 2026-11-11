@@ -1,0 +1,17 @@
+{
+ "title": "1563. Range GCD Query using Segment Tree",
+ "slug": "range-gcd-query-using-segment-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1563. Range GCD Query using Segment Tree\n\n80\n\nHard\n\nProblem Statement:\nYou are given an array of N integers. You need to efficiently support the following two types of operations:\n1. Update the value at a specific index in the array.\n2. Query the greatest common divisor (GCD) of elements in a given range [L, R] (inclusive).\n\nImplement a data structure that can handle these operations efficiently.",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N space-separated integers, representing the initial array.\n- The next Q lines each describe a query:\n- For an update: \"1 idx val\" (set arr[idx] = val, 0-based indexing)\n- For a query: \"2 L R\" (find GCD of arr[L] to arr[R], inclusive, 0-based indexing)",
+ "output_spec": "- For each query of type 2, output a single integer: the GCD of the specified range.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5\n2 6 9 5 3\n2 1 3\n1 2 15\n2 0 2\n1 4 10\n2 3 4",
+   "output": "1\n1\n5"
+  }
+ ],
+ "raw": ""
+}

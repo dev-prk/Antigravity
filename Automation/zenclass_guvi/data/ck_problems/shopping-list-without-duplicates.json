@@ -1,0 +1,17 @@
+{
+ "title": "1170. Shopping List without Duplicates",
+ "slug": "shopping-list-without-duplicates",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1170. Shopping List without Duplicates\n\n50\n\nMedium\n\nProblem Statement:\nYou are developing a shopping application where users can maintain their shopping lists. The application needs to handle scenarios where users can add, remove, and view items in their shopping list. The unique feature of the application is that it must manage items efficiently while ensuring that no duplicates are allowed and each item is stored in a way that preserves its insertion order.",
+ "input_spec": "First line: Integer N (Number of operations to perform)\nNext N lines: Each line will contain an operation in the format \"ADD <item>\" or \"REMOVE <item>\". The item is a string with spaces.",
+ "output_spec": "After processing all operations, print the final shopping list with items in their insertion order, separated by commas.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nADD Apples\nADD Bananas\nADD Apples\nREMOVE Bananas\nADD Grapes",
+   "output": "Apples, Grapes"
+  }
+ ],
+ "raw": ""
+}

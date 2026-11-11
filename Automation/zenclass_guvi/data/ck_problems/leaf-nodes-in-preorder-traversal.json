@@ -1,0 +1,17 @@
+{
+ "title": "639. Leaf Nodes in Preorder Traversal",
+ "slug": "leaf-nodes-in-preorder-traversal",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n639. Leaf Nodes in Preorder Traversal\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given an array representing preorder traversal of binary tree, Your task is to print all the leaf nodes. Take the first node as the root node",
+ "input_spec": "You are given a number n representing size of array\nNext line contains n space separated numbers",
+ "output_spec": "Print the leaf nodes",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n3 2 4",
+   "output": "2 4"
+  }
+ ],
+ "raw": ""
+}

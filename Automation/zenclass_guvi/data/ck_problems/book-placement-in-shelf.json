@@ -1,0 +1,17 @@
+{
+ "title": "691. Book Placement in Shelf",
+ "slug": "book-placement-in-shelf",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n691. Book Placement in Shelf\n\n50\n\nMedium  Topics\n\nProblem Statement:\nAn organization named \u201cGupil\u201d has a well-maintained library in its own building. Librarian orders and gets books for the library very frequently. Each book which is newly arrived has its own unique serial number. The books initially are placed in descending order. The librarian want to place a new book without disturbing the descending order of books in terms of unique id. Now you must help librarian to find the right spot for placing the book.",
+ "input_spec": "The first line of program contains integer \u2018n denoting no. of books already placed in the shelf. Next line contains n serial number of already placed books. Next line contains integer m denoting no of new books to be placed on the shelf. Next line contains m serial numbers of new book.",
+ "output_spec": "print the position at which it must be placed",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n95 68 62 58 55 41 30\n2\n45 61",
+   "output": "6 4"
+  }
+ ],
+ "raw": ""
+}

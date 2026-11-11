@@ -1,0 +1,17 @@
+{
+ "title": "393. Find Maximum Sensex Period",
+ "slug": "find-maximum-sensex-period",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n393. Find Maximum Sensex Period\n\n50\n\nMedium  Topics\n\nProblem Statement:\nSensex has never been steady and stock values have been rising and falling in the past. Ram is a stock broker and on analysing the trend of change in sensex points, he decides that there was a period when the points was at its all time high and investing during that period would have earned him a huge profit in trade. Ram immediately regrets not having done any trade in that particular period. Find out which period in time was Ram referring to.",
+ "input_spec": "The size of array N, the number of periods Ram has assessed. The values of the array are the values of the sensex points.",
+ "output_spec": "Period in which the points was at its max value. The array index is the period value.",
+ "constraints": "3 <= N <= 106",
+ "samples": [
+  {
+   "input": "9\n1 15 25 45 42 21 17 12 11",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

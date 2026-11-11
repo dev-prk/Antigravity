@@ -1,0 +1,17 @@
+{
+ "title": "2119. Sum of Even Numbers from 1 to N",
+ "slug": "sum-of-even-numbers-from-1-to-n",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1295. Sum of Even Numbers from 1 to N\n\n10\n\nEasy\n\nProblem Statement:\nWrite a Java program to find the sum of all even numbers from 1 to N.",
+ "input_spec": "The program should accept a single integer N as input.",
+ "output_spec": "The program should print the sum of all even numbers from 1 to N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10",
+   "output": "30"
+  }
+ ],
+ "raw": ""
+}

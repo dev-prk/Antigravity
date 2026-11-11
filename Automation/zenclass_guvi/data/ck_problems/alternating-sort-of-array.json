@@ -1,0 +1,17 @@
+{
+ "title": "320. Alternating Sort of Array",
+ "slug": "alternating-sort-of-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n320. Alternating Sort of Array\n\n70\n\nHard  Topics\n\nProblem Statement:\nAlternate sorting:Given a number N followed by array of N elements,sort the array in such a way that the first number is the first maximum and second number is the 1st minimum 3rd number isthe 2nd maximum and so on.",
+ "input_spec": "The input consists of a number N followed by an array of N elements. N is less than or equal to 100000.",
+ "output_spec": "The output is the array sorted in an alternating pattern where the first number is the first maximum, the second number is the first minimum, the third number is the second maximum, and so on.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n7 623 19 10 11 9 3 15",
+   "output": "623 3 19 7 15 9 11 10"
+  }
+ ],
+ "raw": ""
+}

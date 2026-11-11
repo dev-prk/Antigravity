@@ -1,0 +1,17 @@
+{
+ "title": "1805. Complex Number Arithmetic",
+ "slug": "complex-number-arithmetic",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1805. Complex Number Arithmetic\n\n50\n\nMedium\n\nComplex Number Arithmetic\n\nProblem Statement:\nWrite a program to overload +, -, and * operators for complex numbers.\n\nDescription:\nCreate class Complex:\n1. Overload + for addition\n2. Overload - for subtraction\n3. Overload * for multiplication\n4. Output in format: a + bi\n\nFormula:\n(a+bi)*(c+di) = (ac \u2212 bd) + (ad + bc)i\n\nInput Format:\nFour integers\na b c d\n\nOutput Format:\nAddition: x + yi\nSubtraction: x + yi\nMultiplication: x + yi",
+ "input_spec": "Four integers\na b c d",
+ "output_spec": "in format: a + bi\n\nFormula:\n(a+bi)*(c+di) = (ac \u2212 bd) + (ad + bc)i\n\nInput Format:\nFour integers\na b c d\n\nOutput Format:\nAddition: x + yi\nSubtraction: x + yi\nMultiplication: x + yi",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 4 5",
+   "output": "Addition: 6 + 8i\nSubtraction: -2 + -2i\nMultiplication: -7 + 22i"
+  }
+ ],
+ "raw": ""
+}

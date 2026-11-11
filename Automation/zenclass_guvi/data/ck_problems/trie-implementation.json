@@ -1,0 +1,17 @@
+{
+ "title": "1537. Trie Implementation",
+ "slug": "trie-implementation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1537. Trie Implementation\n\n80\n\nHard\n\nProblem Statement:\nImplement Trie (Prefix Tree)\nA trie (pronounced as \"try\") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. You are to design and implement a Trie with the following methods:\n- insert(word): Inserts a word into the trie.\n- search(word): Returns true if the word is in the trie (i.e., was inserted before), and false otherwise.\n- startsWith(prefix): Returns true if there is any word in the trie that starts with the given prefix, and false otherwise.",
+ "input_spec": "The first line contains an integer n, the number of operations.\nEach of the next n lines contains an operation in one of the following formats:\n- \"insert word\"\n- \"search word\"\n- \"startsWith prefix\"",
+ "output_spec": "For each \"search\" and \"startsWith\" operation, output \"true\" or \"false\" (without quotes) on a new line.",
+ "constraints": "- 1 <= n <= 10^4\n- 1 <= length of word/prefix <= 100\n- All words/prefixes consist of lowercase English letters only.",
+ "samples": [
+  {
+   "input": "7\ninsert apple\nsearch apple\nsearch app\nstartsWith app\ninsert app\nsearch app\nsearch applepie",
+   "output": "true\nfalse\ntrue\ntrue\nfalse"
+  }
+ ],
+ "raw": ""
+}

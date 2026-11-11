@@ -1,0 +1,17 @@
+{
+ "title": "1639. Polymorphism, Method Overloading",
+ "slug": "polymorphism-method-overloading",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1639. Polymorphism, Method Overloading\n\n50\n\nMedium\n\nProblem Statement:\nWrite a program to implement method overloading in which a class provides multiple calculate methods that handle addition of two integers, two floating-point numbers, and concatenation of two strings.\n\nDescription:\nThe program should demonstrate polymorphism by defining three overloaded methods named calculate. The main method should take user input, determine the type of data entered, and call the appropriate method dynamically.\n\nInput Format:\nFirst line: Data type (int, float, or string)\nNext two lines: Values of that type\n\nOutput Format:\n\nResult after applying the overloaded calculate method",
+ "input_spec": ", determine the type of data entered, and call the appropriate method dynamically.\n\nInput Format:\nFirst line: Data type (int, float, or string)\nNext two lines: Values of that type",
+ "output_spec": "Result after applying the overloaded calculate method",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "int\n10\n20",
+   "output": "30"
+  }
+ ],
+ "raw": ""
+}

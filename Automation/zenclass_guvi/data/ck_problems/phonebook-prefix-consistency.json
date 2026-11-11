@@ -1,0 +1,17 @@
+{
+ "title": "437. Phonebook Prefix Consistency",
+ "slug": "phonebook-prefix-consistency",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n437. Phonebook Prefix Consistency\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given a list of N phone numbers\n\nYou must make sure that the phonebook is consistent.\n\nThe phonebook is said to be consistent when no number in the phonebook is a prefix of any other number\n\nThis is necessary since if any number is a prefix of any other number it will be redirected to that\n\nnumber while dialing\n\nFor example:\n\nA: 1234\n\nB: 12\n\nSuppose we want to dial A we start dialing 1->2 and at this point we will be directed to be since the number 12 corresponds to B.\n\nIn this case the phonebook is said to be inconsistent",
+ "input_spec": "The first line contains a single integer N denoting the number of phone numbers in the phonebook\nThe next N line contains a single phone number per line .\nEach phone number contains 20 digits at most",
+ "output_spec": "The output must consist of a single line containing\n\u201cConsistent\u201d (without quotes) if the phonebook was consistent or\n\u201cInconsistent\u201d (without quotes) if the phonebook was inconsistent",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n1234\n12",
+   "output": "Inconsistent"
+  }
+ ],
+ "raw": ""
+}

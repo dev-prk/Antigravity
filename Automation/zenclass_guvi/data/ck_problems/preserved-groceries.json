@@ -1,0 +1,17 @@
+{
+ "title": "448. Preserved Groceries",
+ "slug": "preserved-groceries",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n448. Preserved Groceries\n\n60\n\nMedium  Topics\n\nProblem Statement:\nKumar is back and this time he wants to make a list of all the groceries he needs to buy .He writes the list as a text file in his computer and saves it and goes to sleep.However there is a problem here. Due to random electrical fluctuations the computer's memory gets shuffled and all the words in Kumar's grocery list get reversed . When he wakes up the next day he notices that some items in the changed list were also present in the unchanged list\n\nFor example let's assume kumar stores the list as:\n\nabcd\n\nefgh\n\nhgfe\n\nOvernight the list becomes:\n\ndcba\n\nhgfe\n\nefgh\n\nIn this case the grocery items hgfe and efgh were both present in the second list\n\nGiven a list of N groceries you must report to kumar how many groceries were preserved after the list undergoes modification due to the electrical fluctuation",
+ "input_spec": "The first line contains a single integer N denoting the number of items in his grocery list\nThe next N lines contain a single string per line denoting an item in the list",
+ "output_spec": "The output must consist of a single integer denoting how many items in the original list were preserved",
+ "constraints": "1<=N<=100000\n\nLength of each string is atmost 20",
+ "samples": [
+  {
+   "input": "3\nabcd\nefgh\nhgfe",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

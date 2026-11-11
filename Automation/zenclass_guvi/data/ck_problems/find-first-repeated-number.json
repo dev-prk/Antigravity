@@ -1,0 +1,17 @@
+{
+ "title": "244. Find First Repeated Number",
+ "slug": "find-first-repeated-number",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n244. Find First Repeated Number\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a number N followed by N numbers. Out of these N numbers some of them are repeated. Write a program to find the first number which is repeated. If no numbers are repeated print 'unique'.",
+ "input_spec": "The input consists of an integer N, followed by N numbers. The constraint for N is 1 <= N <= 100000.",
+ "output_spec": "The output should be the first number that is repeated. If no numbers are repeated, print 'unique'.",
+ "constraints": "for N is 1 <= N <= 100000.",
+ "samples": [
+  {
+   "input": "7\n1 2 3 2 3 4 3",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

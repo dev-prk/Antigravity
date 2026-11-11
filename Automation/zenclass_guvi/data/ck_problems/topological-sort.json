@@ -1,0 +1,17 @@
+{
+ "title": "2108. Topological Sort",
+ "slug": "topological-sort",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2108. Topological Sort\n\n50\n\nMedium\n\nProblem Statement\nGiven a Directed Acyclic Graph (DAG), print the topological ordering of all vertices.\nInput Format\n- First line contains n and m.\n- Next m lines contain directed edges u v.\nOutput Format\nPrint the topological order as space-separated integers.",
+ "input_spec": "First line contains n and m.\n- Next m lines contain directed edges u v.",
+ "output_spec": "Print the topological order as space-separated integers.",
+ "constraints": "1 \u2264 n \u2264 1000\n- 0 \u2264 m \u2264 5000",
+ "samples": [
+  {
+   "input": "5 4\n0 1\n1 2\n2 3\n3 4",
+   "output": "0 1 2 3 4"
+  }
+ ],
+ "raw": ""
+}

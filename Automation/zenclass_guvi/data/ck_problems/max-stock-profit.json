@@ -1,0 +1,17 @@
+{
+ "title": "284. Max Stock Profit",
+ "slug": "max-stock-profit",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n284. Max Stock Profit\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nYou have been given stock prices for next N days. Find out: max profit in buying and selling 1 share Condition: Share must be sold any day after buying date. Given a number N followed by N integers print the maximum profit.",
+ "input_spec": "The input consists of an integer N, followed by N integers representing the stock prices. N is at most 100000.",
+ "output_spec": "The output is the maximum profit that can be made.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n5 1 4 6 7 8 4 3 7 9",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

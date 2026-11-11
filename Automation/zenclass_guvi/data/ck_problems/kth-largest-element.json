@@ -1,0 +1,17 @@
+{
+ "title": "249. Kth Largest Element",
+ "slug": "kth-largest-element",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n249. Kth Largest Element\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven two numbers N,K(N>=K) and an array of N elements, write a program to find the Kth largest element.",
+ "input_spec": "The input consists of two integers N and K, followed by N elements of an array.",
+ "output_spec": "The output is the Kth largest element from the given array.",
+ "constraints": "1 <= K <= N <= 100000.",
+ "samples": [
+  {
+   "input": "6 2\n1 2 3 4 5 6",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1668. Java, Collections, Sorting",
+ "slug": "java-collections-sorting",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1668. Java, Collections, Sorting\n\n50\n\nMedium\n\nSort Utility\n\nProblem Statement:\nWrite a program with a generic method sortList(List<T>) that sorts any list of objects (integers, doubles, strings) using Collections.\n\nDescription:\n\nImplement a static generic method with bounded type <T extends Comparable<T>>.\n\nSort and print the elements in ascending order.\n\nInput Format:\n\nFirst line: number of elements n\n\nNext n elements\n\nOutput Format:\n\nSorted list",
+ "input_spec": "First line: number of elements n\n\nNext n elements",
+ "output_spec": "Sorted list",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nbanana apple mango cherry grape",
+   "output": "apple banana cherry grape mango"
+  }
+ ],
+ "raw": ""
+}

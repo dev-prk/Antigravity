@@ -1,0 +1,17 @@
+{
+ "title": "305. Sum of Digit Powers",
+ "slug": "sum-of-digit-powers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n305. Sum of Digit Powers\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number 'N' print the sum of each digit to the power of number of digits in given input. N <=100000000000",
+ "input_spec": ". N <=100000000000\n\nInput Description:\nThe input consists of a single number 'N'.",
+ "output_spec": "The output is the sum of each digit to the power of the number of digits in the input.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1234",
+   "output": "354"
+  }
+ ],
+ "raw": ""
+}

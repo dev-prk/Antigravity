@@ -1,0 +1,17 @@
+{
+ "title": "645. Postfix Expression Evaluation",
+ "slug": "postfix-expression-evaluation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n645. Postfix Expression Evaluation\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given a string representing the postfix expression.Evaluate the expression. And print the answer and print -1 if expression is wrong",
+ "input_spec": "You are given with a string containing operator and digits 0-9.",
+ "output_spec": "Print the answer print -1 if expression given is wrong",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "23+*",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

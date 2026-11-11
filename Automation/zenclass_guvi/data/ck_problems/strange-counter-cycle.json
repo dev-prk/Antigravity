@@ -1,0 +1,17 @@
+{
+ "title": "360. Strange Counter Cycle",
+ "slug": "strange-counter-cycle",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n360. Strange Counter Cycle\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nBob has a strange counter. At the first second, t = 1, it displays the number 3. At each subsequent second, the number displayed by the counter decrements by 1. The counter counts down in cycles. In the second after the counter counts down to 1, the number becomes 2x the initial number for that countdown cycle and then continues counting down from the new initial number in a new cycle. The diagram shows the counter values for each time t in the first three cycles.Find the value corresponding to the given time t.",
+ "input_spec": "The input consists of a single integer, t, representing the time (t<=100000).",
+ "output_spec": "The output is the value displayed by the strange counter at the given time t.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "6"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1029. Telephone Directory Management",
+ "slug": "telephone-directory-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1029. Telephone Directory Management\n\n50\n\nMedium\n\nProblem Statement:\nInsert, update, delete and append telephone details of an individual or a company into a telephone directory using structures and pointers.",
+ "input_spec": "The first line of the input is the integer number indicating the number of items in the telephone directory.\n\nIt is followed by the input of N items in the telephone directory in the below format:\n\n< name > < telephone number >\n\nThe next line of the input O denotes the operation that needs to be performed in the given telephone directory. Below are the different kinds operations that are available:\n\n1 - Insert and Display\n\n2 - Update and Display\n\n3 - Delete and Display\n\nThe last line of the input varies as per the above-chosen operation as below:\n\nInsert and Display:\n\nThe value of the new record that needs to be inserted in the below format\n\n< name > < telephone number >\n\nUpdate and Display:\n\nThe value of the current telephone number and the new record that needs to be updated in the below format\n\n< current telephone number > < new name > < new telephone number >\n\nDelete and Display:\n\nThe value of the current telephone number that needs to be deleted in the below format\n\n< current telephone number >",
+ "output_spec": "Print the updated telephone directory after performing the selected operation O.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nJohn 9876543210\nPrem 9123456789\nKumar 6894563339\n1\nSrinivasan 7772345167",
+   "output": "John 9876543210\nPrem 9123456789\nKumar 6894563339\nSrinivasan 7772345167"
+  }
+ ],
+ "raw": ""
+}

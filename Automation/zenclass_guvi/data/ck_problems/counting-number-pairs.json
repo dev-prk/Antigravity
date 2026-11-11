@@ -1,0 +1,17 @@
+{
+ "title": "394. Counting Number Pairs",
+ "slug": "counting-number-pairs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n394. Counting Number Pairs\n\n50\n\nMedium  Topics\n\nProblem Statement:\nKarthick loves to analyse patterns in numbers. He is given a list of positive integers a1,a2...aN. He wants to count the number of pairs (ai,aj) such that: ai < aj. He solved it and wants to cross-check his answer with yours. Compute the same and display the number of pairs possible so that Karthick can verify his answer.",
+ "input_spec": "First line contains a positive integer N denoting the size of array.The second line contains N space-separated positive integers denoting the elements of array.",
+ "output_spec": "A single line containing number of pairs possible.",
+ "constraints": "1<=N<=10^3\n1<=a[i]<=10^3",
+ "samples": [
+  {
+   "input": "2\n2 1",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

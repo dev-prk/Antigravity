@@ -1,0 +1,17 @@
+{
+ "title": "1524. Level Order Traversal of Binary Tree-2",
+ "slug": "level-order-traversal-of-binary-tree-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1524. Level Order Traversal of Binary Tree-2\n\n70\n\nHard\n\nProblem Statement:\nGiven a binary tree, print its nodes in level order traversal. In level order traversal, nodes are visited level by level from left to right. Your task is to print all nodes of the tree in this order.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the binary tree.\n- The second line contains N space-separated values representing the nodes of the tree in level order. If a node is null, it is represented by the value -1.",
+ "output_spec": "- Print the nodes of the binary tree in level order traversal, separated by spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n1 2 3 4 5 -1 6",
+   "output": "1 2 3 4 5 6"
+  }
+ ],
+ "raw": ""
+}

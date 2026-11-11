@@ -1,0 +1,17 @@
+{
+ "title": "344. Min Coins for Sum",
+ "slug": "min-coins-for-sum",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n344. Min Coins for Sum\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a list of N coins, their values (V1, V2, \u2026 , VN), and the total sum S. Find the minimum number of coins the sum of which is S (we can use as many coins of one type as we want), if it is not possible to select coins in such a way that they sum up to S then print '-1'.",
+ "input_spec": "The input consists of N, S, and then N coin values. N is up to 10000.",
+ "output_spec": "The minimum number of coins required to form the sum S. If it's not possible, print '-1'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 11\n1 3 5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

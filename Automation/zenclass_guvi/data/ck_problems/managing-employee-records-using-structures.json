@@ -1,0 +1,17 @@
+{
+ "title": "1756. Managing Employee Records Using Structures",
+ "slug": "managing-employee-records-using-structures",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1756. Managing Employee Records Using Structures\n\n50\n\nMedium\n\nManaging Employee Records Using Structures\n\nProblem Statement:\nYou are tasked with developing a simple employee management system for a small company. Each employee has the following information:\n\nName (a string)\nAge (an integer)\nSalary (a floating-point number)\nYou need to define a structure called Employee that contains these three members. Your task is to read and store information for n employees, then print the employee details in a formatted way. You will also be required to find and display the details of the employee with the highest salary.\n\nInput:\nThe first line contains an integer n (1 \u2264 n \u2264 100), representing the number of employees.\nThe next n lines each contain the employee details: a string name, an integer age, and a floating-point salary.\n\nOutput:\nPrint the details of all employees in the format: Name: , Age: , Salary: .\nPrint the details of the employee with the highest salary in the format: Highest Salary -> Name: , Age: , Salary: .",
+ "input_spec": "The first line contains an integer n (1 \u2264 n \u2264 100), representing the number of employees.\nThe next n lines each contain the employee details: a string name, an integer age, and a floating-point salary.",
+ "output_spec": "Print the details of all employees in the format: Name: , Age: , Salary: .\nPrint the details of the employee with the highest salary in the format: Highest Salary -> Name: , Age: , Salary: .",
+ "constraints": "The employee name will not exceed 100 characters.\nThe age of an employee will be between 18 and 65.\nThe salary will be a floating-point number in the range of 3000.0 to 100000.0.\nYou must use structures to define and store employee information.\nDynamically allocate memory to store the employee records.",
+ "samples": [
+  {
+   "input": "The first line contains an integer n (1 \u2264 n \u2264 100), representing the number of employees.\nThe next n lines each contain the employee details: a string name, an integer age, and a floating-point salary.",
+   "output": "Print the details of all employees in the format: Name: , Age: , Salary: .\nPrint the details of the employee with the highest salary in the format: Highest Salary -> Name: , Age: , Salary: ."
+  }
+ ],
+ "raw": ""
+}

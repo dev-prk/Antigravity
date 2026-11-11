@@ -1,0 +1,17 @@
+{
+ "title": "1036. Library Rack Allocation System",
+ "slug": "library-rack-allocation-system",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1036. Library Rack Allocation System\n\n70\n\nHard\n\nProblem Statement:\nCreate a book rack allocation system in a library, which allocates appropriate space for the books based on category using appropriate data structures.",
+ "input_spec": "The first line of the input is the integer denoting the number of available empty racks in the library which is always greater than the available book categories.\n\nEach rack can accommodate up to 10 books and can have books only from the same category.\n\nThe next line is the integer input N denoting the number of book categories that are still needed to be stored in the library.\n\nFollowed by details of the books in each category in the following format:\n\n< category name > < book available > < popularity >\n\nAllocate the available racks based on the popularity of books(higher the better). But not exceeding their available stocks.",
+ "output_spec": "Print the details of the book category and the number of racks allocated as follows:\n\n< category name > < racks allocated >",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n3\nTamil 50 2\nEnglish 100 1\nMagazines 20 3",
+   "output": "Tamil 2\nMagazines 2"
+  }
+ ],
+ "raw": ""
+}

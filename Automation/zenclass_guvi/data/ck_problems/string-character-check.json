@@ -1,0 +1,17 @@
+{
+ "title": "167. String Character Check",
+ "slug": "string-character-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n167. String Character Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S, check whether it contains only the characters 'a' and 'b' or only 'a' or only 'b'",
+ "input_spec": "The input consists of a string S with size |S| <= 100000.",
+ "output_spec": "The output should be 'yes' if the string S contains only 'a' and 'b' (or only 'a' or only 'b'), and 'no' otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aabbaaab",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1772. Balanced Parentheses Checker",
+ "slug": "balanced-parentheses-checker",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1772. Balanced Parentheses Checker\n\n60\n\nMedium\n\nBalanced Parentheses Checker\nProblem Statement\n\nWrite a program to check if a given expression has balanced parentheses (), {}, and [] using a stack.\n\nDescription\n\nPush opening brackets onto a stack.\n\nPop when encountering closing brackets and check for matching pairs.\n\nIf any mismatch or leftover brackets remain, the expression is not balanced.\n\nInput Format\n\nSingle string expression\n\nOutput Format\n\nPrint \"Balanced\" if parentheses are correctly matched\n\nPrint \"Not Balanced\" otherwise",
+ "input_spec": "Single string expression",
+ "output_spec": "Print \"Balanced\" if parentheses are correctly matched\n\nPrint \"Not Balanced\" otherwise",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "{[()]}",
+   "output": "Balanced"
+  }
+ ],
+ "raw": ""
+}

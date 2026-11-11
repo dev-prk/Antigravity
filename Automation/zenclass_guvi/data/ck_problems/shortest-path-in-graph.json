@@ -1,0 +1,17 @@
+{
+ "title": "176. Shortest Path in Graph",
+ "slug": "shortest-path-in-graph",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n176. Shortest Path in Graph\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 3 numbers N,E,A where N is the number of nodes and E is the number of edges(weight of each edge is 1), find the shortest path from node 1 to given node A.",
+ "input_spec": "The input consists of three numbers N, E, A, followed by E lines, each describing an edge. E,N <= 100000.",
+ "output_spec": "The output is the shortest path length from node 1 to node A.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 2 2\n1 2\n2 1",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

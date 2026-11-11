@@ -1,0 +1,17 @@
+{
+ "title": "279. Find the Single Number",
+ "slug": "find-the-single-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n279. Find the Single Number\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N followed by an array of N integers, every element appears twice except for one. Find that single one and print it.",
+ "input_spec": "The input consists of a number N followed by an array of N integers. N is the size of the array, where N <= 100000.",
+ "output_spec": "The output is the single integer that appears only once in the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n30 5 5 30 -45",
+   "output": "-45"
+  }
+ ],
+ "raw": ""
+}

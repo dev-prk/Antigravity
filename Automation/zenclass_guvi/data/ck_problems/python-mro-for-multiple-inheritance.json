@@ -1,0 +1,17 @@
+{
+ "title": "1083. Python MRO for Multiple Inheritance",
+ "slug": "python-mro-for-multiple-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1083. Python MRO for Multiple Inheritance\n\n50\n\nMedium\n\nProblem Statement:\nConsider an e-commerce application that uses a class hierarchy to represent different types of products. We have a base class  Product  and two subclasses  Book  and  Electronics . Both  Book  and  Electronics  classes override a method  get_details()  from the  Product  class. Now, we have a new product type  EBook  that is both a  Book  and an  Electronics . The  EBook  class inherits from both  Book  and  Electronics .\n\nWrite a Python function  mro_sequence(cls)  that takes a class  cls  as input and returns the Method Resolution Order (MRO) for that class as a list of class names.",
+ "input_spec": "and returns the Method Resolution Order (MRO) for that class as a list of class names.\n\nInput Description:\nThe input consists of a Python class  cls .",
+ "output_spec": "The output is the Method Resolution Order (MRO) for the given class as a list of class names.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "EBook",
+   "output": "['EBook', 'Book', 'Electronics', 'Product', 'object']"
+  }
+ ],
+ "raw": ""
+}

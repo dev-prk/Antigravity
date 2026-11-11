@@ -1,0 +1,17 @@
+{
+ "title": "761. Anagram Check-2",
+ "slug": "anagram-check-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n761. Anagram Check-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program that takes 2 strings as input and checks if they are anagrams or not.",
+ "input_spec": "and checks if they are anagrams or not.\n\nInput Description:\nTwo strings",
+ "output_spec": "Print '1' if it is an anagram and '-1' if it is not",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "tomm marvolo riddle\ni am lord voldemort",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

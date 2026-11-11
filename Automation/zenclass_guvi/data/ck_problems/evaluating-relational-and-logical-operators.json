@@ -1,0 +1,17 @@
+{
+ "title": "2086. Evaluating Relational and Logical Operators",
+ "slug": "evaluating-relational-and-logical-operators",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2086. Evaluating Relational and Logical Operators\n\n60\n\nMedium\n\nProblem Statement\nRead three integers and evaluate a compound condition using relational and logical operators, printing the result as 1 or 0.\nDescription\nRead three integers a, b, and c. Evaluate the expression result - a greater than b and c greater than zero using relational and logical operators, without using an if statement. Since C treats true as 1 and false as 0, print the resulting value directly.",
+ "input_spec": "Three integers a, b, and c, separated by spaces.",
+ "output_spec": "Print 1 if the combined condition is true, otherwise print 0.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 5 3",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

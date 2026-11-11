@@ -1,0 +1,17 @@
+{
+ "title": "424. Longest Common Prefix-2",
+ "slug": "longest-common-prefix-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n424. Longest Common Prefix-2\n\n70\n\nHard  Topics\n\nProblem Statement:\nThe longest common prefix for N strings of length at most M each is defined as a string KSuch that every string has K as a prefix.You are given the task of finding the longest common prefix for N such strings.",
+ "input_spec": "The first line contains a single integer N : the number of stringsThe next N line contains the N strings - one in each lineAll strings consists of only lowercase alphabets from \u2018a\u2019-\u2019z\u2019",
+ "output_spec": "Output a single line : the longest common prefix of the N strings .If no longest common prefix exists output \u201cNo common prefix exists\u201d",
+ "constraints": "1<=N<=100001<=M<=100",
+ "samples": [
+  {
+   "input": "4\nabcdjkhkjh\nahhjk\nabcdhjjj\naa",
+   "output": "a"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "215. Binary Length of Decimal Number",
+ "slug": "binary-length-of-decimal-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n215. Binary Length of Decimal Number\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N in decimal, print the length of the corresponding binary digit.",
+ "input_spec": "The input consists of a number N in decimal, where 1 <= N <= 100000.",
+ "output_spec": "The output is the length of the binary representation of N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

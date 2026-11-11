@@ -1,0 +1,17 @@
+{
+ "title": "401. Range Sum and Update",
+ "slug": "range-sum-and-update",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n401. Range Sum and Update\n\n70\n\nHard  Topics\n\nProblem Statement:\nRajat is famous for being a lazy competitive programmer. This time his teacher has given him a different task : The teacher has given rajat an array of N integers . There are Q queries\n\nEach query can be either of the following\n\n1 x y z: add z to every element from x to y\n\n2 x y : report the sum of all numbers from x to y\n\nRajat , being lazy did not want to solve this problem but since he wants to make his teacher happy he gave this task to you.\n\nSolve this problem for Rajat",
+ "input_spec": "The first line N contains a single integer N : the number of integers in the array\nThe second line contains N integers - the contents of the array\nThe third line contains a single integer Q : the number of queries\nThe next Q lines can be either:\n1 x y z or 2 x y as described in the problem statement",
+ "output_spec": "For each type 2 query output the sum of the numbers in the required range",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n2\n1 1 4 1\n2 1 4",
+   "output": "14"
+  }
+ ],
+ "raw": ""
+}

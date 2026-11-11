@@ -1,0 +1,17 @@
+{
+ "title": "292. LRU Cache Implementation",
+ "slug": "lru-cache-implementation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n292. LRU Cache Implementation\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a cache and 2 integers N(number of Cache entries), K(Size of the cache) followed by N queries each containing an integer, implement a LRU cache and output the final cache after all N queries.",
+ "input_spec": "Input Size : 1 <= N <= 100000",
+ "output_spec": "the final cache after all N queries.\n\nInput Description:\nInput Size : 1 <= N <= 100000",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 2\n1 2 3",
+   "output": "2 3"
+  }
+ ],
+ "raw": ""
+}

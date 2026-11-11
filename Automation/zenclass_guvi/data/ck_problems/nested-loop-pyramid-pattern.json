@@ -1,0 +1,17 @@
+{
+ "title": "1163. Nested Loop Pyramid Pattern",
+ "slug": "nested-loop-pyramid-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1163. Nested Loop Pyramid Pattern\n\n50\n\nMedium\n\nProblem Statement:\nWrite a program that generates a pattern based on user input using nested loops. The pattern to be generated is a pyramid where each level contains a specific number of symbols. Each level's pattern should follow a unique rule:\n\nThe number of symbols on each level is equal to the level number.\n\nThe symbol for each level is based on the level number where odd levels use * and even levels use #.",
+ "input_spec": "using nested loops. The pattern to be generated is a pyramid where each level contains a specific number of symbols. Each level's pattern should follow a unique rule:\n\nThe number of symbols on each level is equal to the level number.\n\nThe symbol for each level is based on the level number where odd levels use * and even levels use #.\n\nInput Description:\nYou need to implement a Java program that:\n\nTakes an integer\n\nN (number of levels) as input.\n\nGenerates and prints the pyramid pattern according to the rules described.\nSingle line: Integer\nN (Number of levels)",
+ "output_spec": "Pyramid pattern with\nN levels, where odd levels use * and even levels use #.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": ""
+  }
+ ],
+ "raw": ""
+}

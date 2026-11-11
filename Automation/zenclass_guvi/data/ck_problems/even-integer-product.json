@@ -1,0 +1,17 @@
+{
+ "title": "1152. Even Integer Product",
+ "slug": "even-integer-product",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1152. Even Integer Product\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program that converts a list of string representations of numbers into their Integer equivalent and calculates the product of all even integers in the list. The program should use Integer.parseInt() for conversion and Integer wrapper class methods to determine if a number is even.",
+ "input_spec": "The first line contains an integer N, the number of elements in the list. The second line contains N space-separated strings representing integers.",
+ "output_spec": "Print the product of all even integers in the list. If there are no even integers, print 0.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n2 3 4 5 6",
+   "output": "48"
+  }
+ ],
+ "raw": ""
+}

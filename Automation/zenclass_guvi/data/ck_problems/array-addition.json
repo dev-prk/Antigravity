@@ -1,0 +1,17 @@
+{
+ "title": "998. Array Addition",
+ "slug": "array-addition",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n998. Array Addition\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a numbers n followed by x and y array of n numbers add the array x and y and print the numbers",
+ "input_spec": "0<n<100 Given a number n Followed by n number in next line Followed by n number in next line",
+ "output_spec": "Print added n numbers",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n5 7 4 4 6 8\n1 2 3 5 1 1",
+   "output": "6 9 7 9 7 9"
+  }
+ ],
+ "raw": ""
+}

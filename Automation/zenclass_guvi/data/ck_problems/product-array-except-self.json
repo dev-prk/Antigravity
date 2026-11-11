@@ -1,0 +1,17 @@
+{
+ "title": "259. Product Array Except Self",
+ "slug": "product-array-except-self",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n259. Product Array Except Self\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven an array A[n] of n numbers, create an output array such that out[i] is equal to the product of all the elements of A[n] except A[i]. Ex. out[4] assuming n >= 5 will be the product of the numbers from A[0] through A[3] and the numbers from A[5] through A[n - 1]. print the out array.",
+ "input_spec": "Input Size : 1 <= N <= 100000",
+ "output_spec": "array such that out[i] is equal to the product of all the elements of A[n] except A[i]. Ex. out[4] assuming n >= 5 will be the product of the numbers from A[0] through A[3] and the numbers from A[5] through A[n - 1]. print the out array.\n\nInput Description:\nInput Size : 1 <= N <= 100000",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "120 60 40 30 24"
+  }
+ ],
+ "raw": ""
+}

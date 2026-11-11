@@ -1,0 +1,17 @@
+{
+ "title": "529. Minimum Steps in a Weighted Maze",
+ "slug": "minimum-steps-in-a-weighted-maze",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n529. Minimum Steps in a Weighted Maze\n\n70\n\nHard  Topics\n\nProblem Statement:\nRohit is going to enter the maze in Takeshi's Castle. The maze is modelled as a square matrix with every cell in the maze having a weight in the matrix. Every cell in the maze is of unequal dimensions and the weight denotes the average number of steps needed to walk from one end of the cell to another end of the same cell, in the maze. Ram is Rohit's friend and decides to help him out by finding out the shortest number of steps with which Rohit can come out of the maze. Rohit enters the maze at (0.0) and exists at (N-1,N-1) where N is the number of rows and columns in the matrix. Your task is to help Ram calculate. Note: Rohit cannot go backwards in any instant. Only directions allowed are 'right' and 'down'. No diagonal movements.",
+ "input_spec": "Dimensions of the square matrix followed by elements of the matrix (range: 1 to 100)",
+ "output_spec": "Smallest sum of elements on the path from (0,0) to (N-1,N-1)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "21"
+  }
+ ],
+ "raw": ""
+}

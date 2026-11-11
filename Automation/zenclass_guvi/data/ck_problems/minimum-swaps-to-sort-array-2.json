@@ -1,0 +1,17 @@
+{
+ "title": "1446. Minimum Swaps to Sort Array-2",
+ "slug": "minimum-swaps-to-sort-array-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1446. Minimum Swaps to Sort Array-2\n\n50\n\nMedium\n\nProblem Statement:\nYou are given an array of distinct integers. Your task is to find the minimum number of swaps required to sort the array.",
+ "input_spec": "First line contains an integer, n, the number of elements in the array. Second line contains n space-separated integers, the elements of the array.",
+ "output_spec": "Output a single integer, the minimum number of swaps required to sort the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n4 3 1 2 5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

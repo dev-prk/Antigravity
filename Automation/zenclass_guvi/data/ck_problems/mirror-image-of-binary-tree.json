@@ -1,0 +1,17 @@
+{
+ "title": "233. Mirror Image of Binary Tree",
+ "slug": "mirror-image-of-binary-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n233. Mirror Image of Binary Tree\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a Binary Tree with N nodes and N-1 edges, print the mirror image of the tree with 1 as the root.",
+ "input_spec": "The input consists of a Binary Tree with N nodes and N-1 edges, where 1 <= N <= 100000.",
+ "output_spec": "The output should be the mirror image of the given binary tree.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

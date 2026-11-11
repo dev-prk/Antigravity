@@ -1,0 +1,17 @@
+{
+ "title": "377. Group Identical Recipes",
+ "slug": "group-identical-recipes",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n377. Group Identical Recipes\n\n100\n\nHard  Topics\n\nProblem Statement:\nBowman planned a vacation to Alphabet Land. He had to solve a problem to enter Alphabet Land. He was given N recipes made up of lower case English alphabets. The recipes were indexed from 1 to N. R[1], R[2], ..., R[N]. He had to group identical recipes and put them into bags. Help Bowman print the indices of the recipes in each bag.",
+ "input_spec": "The first line contains the number of recipes. The next line contains N space separated recipes as strings.",
+ "output_spec": "The first line should contain the number of bags \u2018M\u2019 required.\nThen M lines follow, each line containing the contents of each bag - space separated indices.\nThe indices should be in sorted in ascending order and the bags should be ordered lexicographically. See the example for better understanding.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nabcd\ncdef\nabcd",
+   "output": "2\n1 3\n2"
+  }
+ ],
+ "raw": ""
+}

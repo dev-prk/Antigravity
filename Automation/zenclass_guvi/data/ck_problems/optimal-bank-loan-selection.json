@@ -1,0 +1,17 @@
+{
+ "title": "615. Optimal Bank Loan Selection",
+ "slug": "optimal-bank-loan-selection",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n615. Optimal Bank Loan Selection\n\n60\n\nMedium  Topics\n\nProblem Statement:\nThe interest rates of two banks A and B vary. You have received offers from both bank in terms of annual rate of interest, tenure and variations of rate of interest over the entire tenure. You have to choose the offer which costs you least interest and reject the other. The loan repayment happens at a monthly frequency and Equated Monthly Installment (EMI) is calculated using the formula given below : EMI = loanAmount * monthlyInterestRate / ( 1 - 1 / (1 + monthlyInterestRate)^(numberOfYears * 12))",
+ "input_spec": "First line : P \u2013 principal amount (Loan Amount)\nSecond line : T \u2013 Total Tenure (in years).\nThird Line : N1 is number of slabs of interest rates for a given period T by Bank A. First slab starts from first year and second slab starts from end of first slab and so on.\nNext, there will be N1 lines of input containing interest rate and their period seperated by a single space.\nAfter N1 lines, we will receive N2 which will be the number of slabs offered by Bank B.\nNext N2 lines are number of slabs of interest rates for a given period by Bank B. First slab starts from first year and second slab starts from end of first slab and so on.\nThe period and rate will be delimited by single white space.",
+ "output_spec": "Print 'Bank A' or 'Bank B' based on the factor which cost you the least interest amount.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10000\n20\n3\n5 9.5\n10 9.6\n5 8.5\n3\n10 6.9\n5 8.5\n5 7.9",
+   "output": "Bank B"
+  }
+ ],
+ "raw": ""
+}

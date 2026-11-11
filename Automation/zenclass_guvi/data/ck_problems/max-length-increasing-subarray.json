@@ -1,0 +1,17 @@
+{
+ "title": "57. Max Length Increasing Subarray",
+ "slug": "max-length-increasing-subarray",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n57. Max Length Increasing Subarray\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven an array of N elements,find the maximum length of increasing continuous sub-array.If it is not found print '-1'.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": "The maximum length of the increasing continuous sub-array, or '-1' if not found.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 2 1",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

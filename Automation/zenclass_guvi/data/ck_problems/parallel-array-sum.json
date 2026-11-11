@@ -1,0 +1,17 @@
+{
+ "title": "1764. Parallel Array Sum",
+ "slug": "parallel-array-sum",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1764. Parallel Array Sum\n\n50\n\nMedium\n\nParallel Array Sum\n\nProblem Statement:\nWrite a program to calculate the sum of a large array using multiple threads in parallel.\n\nDescription:\n\nDivide the array into segments.\n\nEach thread calculates sum of its segment.\n\nUse synchronization to accumulate total sum.\n\nInput Format:\n\nFirst line: Number of elements n\n\nSecond line: n space-separated integers\n\nThird line: Number of threads t\n\nOutput Format:\n\nTotal sum of the array",
+ "input_spec": "First line: Number of elements n\n\nSecond line: n space-separated integers\n\nThird line: Number of threads t",
+ "output_spec": "Total sum of the array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n1 2 3 4 5 6\n3",
+   "output": "Total Sum: 21"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1819. Corporate Role Conflict System using Virtual Base Class",
+ "slug": "corporate-role-conflict-system-using-virtual-base-class",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1818. Shape Area Calculator using Abstract Class\n\n50\n\nMedium\n\nShape Area Calculator using Abstract Class\n\nProblem Statement:\nCreate an abstract base class Shape.\n\nDescription:\n1. Pure virtual function area().\n2. Derived classes: Circle and Rectangle.\n3. Use base class pointer.\n4. Demonstrate runtime polymorphism.\n5. Prevent instantiation of Shape.\n\nInput Format:\nRadius\nLength\nWidth\n\nOutput Format:\nCircle Area\nRectangle Area",
+ "input_spec": "Radius\nLength\nWidth",
+ "output_spec": "Circle Area\nRectangle Area",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n10\n5",
+   "output": "Circle Area: 153.94\nRectangle Area: 50.00"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1230. Dynamic Array Manipulation with Pointers",
+ "slug": "dynamic-array-manipulation-with-pointers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1230. Dynamic Array Manipulation with Pointers\n\n80\n\nHard  Topics\n\nProblem Statement:\nPointer Arithmetic and Dynamic Array Modification\nWrite a C program that uses pointers to manipulate a dynamically allocated array. The program should:\n1. Allocate memory for an array of n integers.\n2. Initialize the array with values such that each element is the square of its index.\n3. Create a function that takes a pointer to the array and performs the following:\n- Increase each element by the value of the next element, except for the last element.\n- Swap the first and last elements of the array.\n- Print the modified array.\nUse pointers to manage and modify the array. Ensure that you use the address-of operator (&) to pass pointers to functions and the value-at operator (*) to manipulate array elements. Handle memory allocation and deallocation properly.",
+ "input_spec": "An integer n indicating the number of elements in the array.",
+ "output_spec": "Print the modified array, with each element separated by a space.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "16 5 13 25 1"
+  }
+ ],
+ "raw": ""
+}

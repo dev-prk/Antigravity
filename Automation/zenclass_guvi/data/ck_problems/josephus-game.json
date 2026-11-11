@@ -1,0 +1,17 @@
+{
+ "title": "470. Josephus Game",
+ "slug": "josephus-game",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n470. Josephus Game\n\n60\n\nMedium  Topics\n\nProblem Statement:\nRohit wants to intern at Guvi Geek Network.To get the internship, he has to go through a test in form of gaming process. There are N candidates applying for the internship including Rohit and only one will be selected.\nSince he wants to qualify he asks you to help him. The test is as follows.\nThe candidates are asked to stand in a line at positions 1 to N and given a number K. Now, every Kth candidate remains and the rest are eliminated. This is repeated until the number of candidates are less than K.\nOut of the remaining candidates, the one standing at smallest position is selected. You need to tell Rohit at which position he must stand so that he will get selected.",
+ "input_spec": "Input contains 2 space-separated integers N, denoting number of candidates and K.",
+ "output_spec": "For each test case, print the required position in a new line.",
+ "constraints": "1 <= N <= 10^5\n2 <= K <= 10",
+ "samples": [
+  {
+   "input": "3\n30 3\n18 3\n5 2",
+   "output": "27\n9\n4"
+  }
+ ],
+ "raw": ""
+}

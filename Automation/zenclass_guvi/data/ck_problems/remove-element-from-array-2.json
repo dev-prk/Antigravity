@@ -1,0 +1,17 @@
+{
+ "title": "997. Remove Element from Array-2",
+ "slug": "remove-element-from-array-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n997. Remove Element from Array-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number n and m followed by n numbers remove the number m in the n number and print the remaining n number if m is not found print -1",
+ "input_spec": "0<n<100\nGiven a number n Followed by n number in next line",
+ "output_spec": "Print the remaining numbers or -1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 43\n5 7 4 4 6 8",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "434. Minimal Remaining String",
+ "slug": "minimal-remaining-string",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n434. Minimal Remaining String\n\n70\n\nHard  Topics\n\nProblem Statement:\nIn this task you have to find the minimal remaining string\n\nThe minimal remaining string is as follows:\n\nTake a given string and find the maximal prefix which when reversed is also a suffix.\n\nRemove this prefix and suffix. What you have left now is the minimal remaining string",
+ "input_spec": "The input consists of only one line - the string to be processed",
+ "output_spec": "The output consists of only a single line - the minimal remaining string\nIf the minimal remainging string is empty print \"Minimal string is empty\" (without quotes)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcdjklcba",
+   "output": "djkl"
+  }
+ ],
+ "raw": ""
+}

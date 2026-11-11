@@ -1,0 +1,17 @@
+{
+ "title": "1010. Camel Case Conversion",
+ "slug": "camel-case-conversion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1010. Camel Case Conversion\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string convert string into camel case",
+ "input_spec": "Given a string",
+ "output_spec": "Print string into camel case",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi geek",
+   "output": "guviGeek"
+  }
+ ],
+ "raw": ""
+}

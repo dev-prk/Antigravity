@@ -1,0 +1,17 @@
+{
+ "title": "545. Is it a ZX Number?",
+ "slug": "is-it-a-zx-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n545. Is it a ZX Number?\n\n40\n\nMedium  Topics\n\nProblem Statement:\nA \u2018zx\u2019 number is a number which is formed from the sum of 3 numbers ,and the three numbers are such that their hcf equal to 1.You are given a number.You have to tell whether the number is \u2018zx\u2019 or not,if yes then print the three numbers else 0",
+ "input_spec": "You are given a number \u2018n\u2019",
+ "output_spec": "Print the three numbers if n is \u2018zx\u2019 number in ascending order else 0",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7",
+   "output": "2 2 3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1785. Topological Sort Using DFS",
+ "slug": "topological-sort-using-dfs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1785. Topological Sort Using DFS\n\n50\n\nMedium\n\nTopological Sort Using DFS\n\nProblem Statement:\nPerform topological sort of a Directed Acyclic Graph (DAG) using DFS.\n\nDescription:\n\nThe graph is directed and acyclic.\n\nUse DFS to compute a valid topological ordering of the vertices.\n\nInput Format:\n\nFirst line: n m \u2014 number of vertices and edges.\n\nNext m lines: u v \u2014 directed edge from u to v.\n\nOutput Format:\n\nSingle line: vertices in topological order (space-separated).",
+ "input_spec": "First line: n m \u2014 number of vertices and edges.\n\nNext m lines: u v \u2014 directed edge from u to v.",
+ "output_spec": "Single line: vertices in topological order (space-separated).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 6\n5 2\n5 0\n4 0\n4 1\n2 3\n3 1",
+   "output": "5 4 2 3 1 0"
+  }
+ ],
+ "raw": ""
+}

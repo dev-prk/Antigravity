@@ -1,0 +1,21 @@
+{
+ "title": "2029. Find Height of BST",
+ "slug": "find-height-of-bst",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2029. Find Height of BST\n\n90\n\nHard\n\nProblem Statement\n\nCreate a Binary Search Tree and determine the height of the tree.\n\nFor this problem, the height is defined as the number of nodes in the longest path from the root to a leaf.\n\nInput\nFirst line contains N.\nSecond line contains N integers.\nOutput\n\nPrint the height of the BST.",
+ "input_spec": "First line contains N.\nSecond line contains N integers.",
+ "output_spec": "Print the height of the BST.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "First line contains N.\nSecond line contains N integers.",
+   "output": "Print the height of the BST."
+  },
+  {
+   "input": "7\n50 30 70 20 40 60 80",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

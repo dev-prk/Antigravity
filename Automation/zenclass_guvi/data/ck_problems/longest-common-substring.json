@@ -1,0 +1,17 @@
+{
+ "title": "324. Longest Common Substring",
+ "slug": "longest-common-substring",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n324. Longest Common Substring\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 strings S and A find the longest common substring.If no common substring is found print '-1'",
+ "input_spec": "The input consists of two strings, S and A. The size of string S is at most 1000 characters, and the size of string A is at most 1000 characters.",
+ "output_spec": "The output is the longest common substring found between S and A. If no common substring is found, print '-1'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "codekata code",
+   "output": "code"
+  }
+ ],
+ "raw": ""
+}

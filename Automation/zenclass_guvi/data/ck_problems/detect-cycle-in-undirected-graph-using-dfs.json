@@ -1,0 +1,17 @@
+{
+ "title": "1784. Detect Cycle in Undirected Graph Using DFS",
+ "slug": "detect-cycle-in-undirected-graph-using-dfs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1784. Detect Cycle in Undirected Graph Using DFS\n\n50\n\nMedium\n\nDetect Cycle in Undirected Graph Using DFS\n\nProblem Statement:\nCheck if an undirected graph contains a cycle using DFS.\n\nDescription:\n\nUse DFS traversal to detect cycles in the graph.\n\nIf a cycle exists, print \"Cycle Found\", else print \"No Cycle\".\n\nInput Format:\n\nFirst line: n m \u2014 number of vertices and edges.\n\nNext m lines: u v \u2014 edge between u and v.\n\nOutput Format:\n\nSingle line: \"Cycle Found\" or \"No Cycle\".",
+ "input_spec": "First line: n m \u2014 number of vertices and edges.\n\nNext m lines: u v \u2014 edge between u and v.",
+ "output_spec": "Single line: \"Cycle Found\" or \"No Cycle\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n0 1\n1 2\n2 3\n3 0",
+   "output": "Cycle Found"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1654. Ticket Booking System",
+ "slug": "ticket-booking-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1654. Ticket Booking System\n\n60\n\nMedium\n\nTicket Booking System\n\nProblem Statement:\nWrite a program to calculate the fare of a ticket based on the travel type.\nThe program should use an abstract class Ticket with an abstract method calculateFare(). Subclasses BusTicket, TrainTicket, and FlightTicket override this method.\nFare per km:\n\nBus = 5\n\nTrain = 8\n\nFlight = 15\n\nDescription:\nThe program should accept ticket type and distance in kilometers.\nIt should calculate and display the fare according to the ticket type.\n\nInput Format:\n\nA string (ticket type: bus/train/flight)\n\nAn integer (distance in km)\n\nOutput Format:\n\nTicket type\n\nFare",
+ "input_spec": "A string (ticket type: bus/train/flight)\n\nAn integer (distance in km)",
+ "output_spec": "Ticket type\n\nFare",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "bus\n120",
+   "output": "Ticket Type: Bus Ticket\nFare: 600"
+  }
+ ],
+ "raw": ""
+}

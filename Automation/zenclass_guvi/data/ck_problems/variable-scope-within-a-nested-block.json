@@ -1,0 +1,17 @@
+{
+ "title": "2099. Variable Scope Within a Nested Block",
+ "slug": "variable-scope-within-a-nested-block",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2099. Variable Scope Within a Nested Block\n\n80\n\nHard\n\nProblem Statement\nRead two integers and use them to show that a variable declared inside a nested block is separate from a variable of the same name declared in the outer scope.\nDescription\nRead two integers into an outer variable x (declared in main) and a separate variable innerVal. Print the outer x. Then open a nested block ({ }) and, inside it, declare a new variable also named x \u2014 this inner x is a completely separate variable that exists only within the block. Assign innerVal to this inner x and print it. After the block ends, print the outer x again to confirm that it was never changed by the block-scoped variable of the same name.",
+ "input_spec": "Two integers: the outer value, then the inner value, separated by a space.",
+ "output_spec": "Print the outer x, then the inner x (inside the block), then the outer x again (after the block).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 99",
+   "output": "10\n99\n10"
+  }
+ ],
+ "raw": ""
+}

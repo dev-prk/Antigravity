@@ -1,0 +1,17 @@
+{
+ "title": "726. Remove Duplicates from Array-2",
+ "slug": "remove-duplicates-from-array-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n726. Remove Duplicates from Array-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to remove duplicate elements in an array",
+ "input_spec": "Input contains array size and values",
+ "output_spec": "print the unique values",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 15 20 25 20",
+   "output": "10 15 25"
+  }
+ ],
+ "raw": ""
+}

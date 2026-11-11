@@ -1,0 +1,17 @@
+{
+ "title": "117. Bitwise Right Shift",
+ "slug": "bitwise-right-shift",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n117. Bitwise Right Shift\n\n50\n\nMedium  Company\n\nProblem Statement:\nGiven 2 numbers N and K print the number after performing bitwise right shift 'K' times(upto 2 decimal places).",
+ "input_spec": "The input consists of two numbers, N and K, where 1 <= N, K <= 1000.",
+ "output_spec": "The output is the number N after performing a bitwise right shift K times, rounded to 2 decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

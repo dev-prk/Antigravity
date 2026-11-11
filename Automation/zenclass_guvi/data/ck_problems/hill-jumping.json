@@ -1,0 +1,17 @@
+{
+ "title": "372. Hill Jumping",
+ "slug": "hill-jumping",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n372. Hill Jumping\n\n50\n\nMedium  Topics\n\nProblem Statement:\nThere are N hills each of height H[i] 1<=i<=N.Peter is scaling these hills and would like to ask Q questionsEach question is of the form L,R to know if he can jump from hill L to R.Peter can jump from hill L to hill R if there is no hill in between that has height of greater than the height of the first hill . i.e ( H[i]<=H[L] L+1<=i<=R )Help Peter find the answer for all his questions",
+ "input_spec": "The first line contains a single integer N - the number of hillsThe second line contains N integers the heights of each hillThe third line contains a number P - the number of questionsThe next P lines contains two integers L, R- the height of the hills he wants to jump between",
+ "output_spec": "The output must contain P lines- each line the answer for a questionIn each line output \u201cYES\u201d (without quotes) if he can jumpOr \u201cNO\u201d (without quotes\u201d) if he can\u2019t.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n3 2 2 3\n2\n1 2\n3 4",
+   "output": "YES\nNO"
+  }
+ ],
+ "raw": ""
+}

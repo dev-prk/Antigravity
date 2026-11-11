@@ -1,0 +1,17 @@
+{
+ "title": "440. Lexicographically Smallest String-2",
+ "slug": "lexicographically-smallest-string-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n440. Lexicographically Smallest String-2\n\n70\n\nHard  Topics\n\nProblem Statement:\nYour task is simple.\n\nYou will be given a dictionary of N words . You are playing a game with Kumar. In this game there are Q turns .\n\nOn each turn Kumar will give you a string . You have to report an answer .\n\nThe answer can be found out as follows:\n\nTake the string given to you , and reverse it. Print the lexicographically smallest string such that the reversed string contains the given string as a prefix. If no such string exists print the string as it is Play the game and return the answer successfully",
+ "input_spec": "The first line contains a single integer N denoting the number of strings in your dictionary\nThe next N lines contains a single string each\nThe next line contains a single integer Q : the no of turns in the game\nThe next Q lines contain a single string each",
+ "output_spec": "Your output must consist of Q lines : one string per line corresponding to the answer for a turn in the game.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\nabcd\nefgh\n1\nab",
+   "output": "abcd"
+  }
+ ],
+ "raw": ""
+}

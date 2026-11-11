@@ -1,0 +1,17 @@
+{
+ "title": "58. Merge and Sort Two Arrays",
+ "slug": "merge-and-sort-two-arrays",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n58. Merge and Sort Two Arrays\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 array of size N and M.merge them in sorted order and print it.",
+ "input_spec": "The input consists of two integers N and M representing the sizes of the arrays, followed by N integers for the first array and M integers for the second array. The",
+ "output_spec": "The output is the merged sorted array.",
+ "constraints": "are |N||M| <= 100000.",
+ "samples": [
+  {
+   "input": "5 4\n1 2 3 4 5\n1 2 3 4",
+   "output": "1 1 2 2 3 3 4 4 5"
+  }
+ ],
+ "raw": ""
+}

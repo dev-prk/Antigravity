@@ -1,0 +1,17 @@
+{
+ "title": "1033. Queue using Linked List",
+ "slug": "queue-using-linked-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1033. Queue using Linked List\n\n50\n\nMedium\n\nProblem Statement:\nCreation of Linked List implementation of Queue ADT.",
+ "input_spec": "Creation of Linked List implementation of Queue ADT.\n\nThe first line of the input N is an integer denoting the number of elements in the queue Q.\n\nThe second line of the input consists of the N space-separated queue element from start to .\n\nThe third line of the input is the integer O denoting the operation that needs to be performed and additional new value X in case of the enqueue operation.\n\nThe operations are as follows:\n\n1- Enqueue\n\n2- Dequeue",
+ "output_spec": "Print the queue from start to end in a space-separated format after performing the selected operation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 40 50\n1 60",
+   "output": "10 20 30 40 50 60"
+  }
+ ],
+ "raw": ""
+}

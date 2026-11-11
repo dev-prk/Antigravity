@@ -1,0 +1,17 @@
+{
+ "title": "1652. Abstract Class, Method Overriding",
+ "slug": "abstract-class-method-overriding",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1652. Abstract Class, Method Overriding\n\n40\n\nMedium\n\nVehicle Fuel Efficiency with Abstract Class\n\nProblem Statement:\nCreate an abstract class Vehicle with abstract method fuelEfficiency(). Implement Car and Truck classes with overridden method to calculate efficiency based on distance and fuel.\n\nDescription:\nDemonstrates abstract classes, runtime polymorphism, and arithmetic computation.\n\nInput Format:\n\nvehicleType distance fuel\n\nOutput Format:\n\nFuel Efficiency: <value>",
+ "input_spec": "vehicleType distance fuel",
+ "output_spec": "Fuel Efficiency: <value>",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Car 500 25",
+   "output": "Fuel Efficiency: 20.0"
+  }
+ ],
+ "raw": ""
+}

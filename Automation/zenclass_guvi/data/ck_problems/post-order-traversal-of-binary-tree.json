@@ -1,0 +1,17 @@
+{
+ "title": "1778. Post-order Traversal of Binary Tree",
+ "slug": "post-order-traversal-of-binary-tree",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1778. Post-order Traversal of Binary Tree\n\n50\n\nMedium\n\nPost-order Traversal of Binary Tree\n\nProblem Statement:\nWrite a program to perform post-order traversal of a binary tree. The traversal should follow Left \u2192 Right \u2192 Root order.\n\nDescription:\nThe program will read the binary tree in level order. Use -1 to represent a NULL node. Build the binary tree from the input and then print its post-order traversal sequence.\n\nInput Format:\n\nFirst line: Integer n \u2014 number of nodes (including NULLs as -1 in level order).\n\nSecond line: n space-separated integers representing the node values in level order (-1 for NULL).\n\nOutput Format:\n\nSingle line: Post-order traversal sequence (space-separated).",
+ "input_spec": "and then print its post-order traversal sequence.\n\nInput Format:\n\nFirst line: Integer n \u2014 number of nodes (including NULLs as -1 in level order).\n\nSecond line: n space-separated integers representing the node values in level order (-1 for NULL).",
+ "output_spec": "Single line: Post-order traversal sequence (space-separated).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n1 2 3 4 5 -1 6",
+   "output": "4 5 2 6 3 1"
+  }
+ ],
+ "raw": ""
+}

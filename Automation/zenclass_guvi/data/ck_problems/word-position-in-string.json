@@ -1,0 +1,17 @@
+{
+ "title": "136. Word Position in String",
+ "slug": "word-position-in-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n136. Word Position in String\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 strings S and X print the word position of X in S.(word count starts from 1).If the given word doesn't exists in S print '-1'.",
+ "input_spec": "The input consists of 2 strings S and X. The size of S and X are between 1 and 1000 characters (1 <= |s|, |x| <= 1000).",
+ "output_spec": "The output is the word position of X in S (starting from 1), or -1 if X is not found.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "codekata coding challenge\ncoding",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

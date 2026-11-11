@@ -1,0 +1,17 @@
+{
+ "title": "1149. String Integer Arithmetic",
+ "slug": "string-integer-arithmetic",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1149. String Integer Arithmetic\n\n50\n\nMedium\n\nProblem Statement:\nCreate a Java program that performs arithmetic operations on integers represented as String inputs using Integer wrapper class methods. The program should:\n* Parse two integers from string inputs.\n* Perform addition, subtraction, multiplication, and division.\n* Print the results of each operation.",
+ "input_spec": "s using Integer wrapper class methods. The program should:\n* Parse two integers from string inputs.\n* Perform addition, subtraction, multiplication, and division.\n* Print the results of each operation.\n\nInput Description:\nTwo lines of input, each containing a string representation of an integer.",
+ "output_spec": "The results of addition, subtraction, multiplication, and division.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20\n5",
+   "output": "Addition: 25\nSubtraction: 15\nMultiplication: 100\nDivision: 4"
+  }
+ ],
+ "raw": ""
+}

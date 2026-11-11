@@ -1,0 +1,17 @@
+{
+ "title": "1448. Sort List Elements by Frequency",
+ "slug": "sort-list-elements-by-frequency",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1448. Sort List Elements by Frequency\n\n40\n\nMedium\n\nProblem Statement:\nWrite a Java program to count the frequency of each element in a list of integers and print them in descending order of frequency. You are given a list of integers. Your task is to write a Java program that calculates and prints the frequency of each unique element in the list in descending order of their frequency. The program should read the list from the user, calculate frequencies, and then output them accordingly.",
+ "input_spec": "The first line contains an integer n, representing the number of elements in the list. The next n lines each contain one integer, representing elements of the list.",
+ "output_spec": "them accordingly.\n\nInput Description:\nThe first line contains an integer n, representing the number of elements in the list. The next n lines each contain one integer, representing elements of the list.\n\nOutput Description:\nOutput each unique element followed by its frequency in descending order of frequency. If two elements have the same frequency, order them by their first appearance in the list.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1\n2\n3\n4",
+   "output": "1:1\n2:1\n3:1\n4:1"
+  }
+ ],
+ "raw": ""
+}

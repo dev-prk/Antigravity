@@ -1,0 +1,17 @@
+{
+ "title": "1644. Passing this as Argument with Garage System",
+ "slug": "passing-this-as-argument-with-garage-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1644. Passing this as Argument with Garage System\n\n50\n\nMedium\n\nPassing this as Argument with Garage System\n\nProblem Statement:\nWrite a program where a Car object passes itself using the this keyword to a Garage class method. The garage should assign a slot to each car parked and display all parked cars with their slot numbers.\n\nDescription:\n\nCreate two classes: Car and Garage.\n\nThe Car object uses the this keyword to call the parkCar(Car c) method of the Garage.\n\nEach parked car should be assigned an incrementing slot number.\n\nThe garage should also be able to display the list of all parked cars.\n\nInput Format:\n\nAn integer n (number of cars).\n\nFor each car:\n\nCar brand\n\nCar model\n\nOutput Format:\n\nConfirmation message for each parked car with its slot number.\n\nA garage status list showing all parked cars and their slot assignments.",
+ "input_spec": "An integer n (number of cars).\n\nFor each car:\n\nCar brand\n\nCar model",
+ "output_spec": "Confirmation message for each parked car with its slot number.\n\nA garage status list showing all parked cars and their slot assignments.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\nTesla\nModel S\nBMW\nX5",
+   "output": "Car Tesla Model S has been parked in slot #1\nCar BMW X5 has been parked in slot #2\n\n--- Garage Status ---\nSlot 1: Tesla Model S\nSlot 2: BMW X5"
+  }
+ ],
+ "raw": ""
+}

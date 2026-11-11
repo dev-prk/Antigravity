@@ -1,0 +1,17 @@
+{
+ "title": "1813. Access Control Analyzer using Public and Private",
+ "slug": "access-control-analyzer-using-public-and-private",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1813. Access Control Analyzer using Public and Private\n\n50\n\nMedium\n\nAccess Control Analyzer using Public and Private\n\nProblem Statement:\nDesign a system to analyze member accessibility under different inheritance modes.\n\nDescription:\nBase Class: Account\nMembers:\n1. public: accountNumber\n2. protected: balance\n3. private: pin\n\nDerived Class 1: SavingsAccount (public inheritance)\nDerived Class 2: SecureAccount (private inheritance)\n\nRequirements:\n1. Attempt accessing all base members inside derived classes.\n2. Attempt accessing base members from main().\n3. Demonstrate how access levels change in private inheritance.\n4. Show compilation-safe implementation.\n5. Print accessible member details.\n\nInput Format:\nAccount Number\nBalance\nPIN\n\nOutput Format:\nAccessible members printed.",
+ "input_spec": "Account Number\nBalance\nPIN",
+ "output_spec": "Accessible members printed.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "12345\n5000\n1111",
+   "output": "Savings Account: 12345 5000\nSecure Account: Access Restricted\n\nSavings Account: 12345 5000\nSecure Account: Access Restricted"
+  }
+ ],
+ "raw": ""
+}

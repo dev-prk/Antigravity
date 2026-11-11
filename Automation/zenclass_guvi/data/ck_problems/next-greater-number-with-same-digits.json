@@ -1,0 +1,17 @@
+{
+ "title": "231. Next Greater Number With Same Digits",
+ "slug": "next-greater-number-with-same-digits",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n231. Next Greater Number With Same Digits\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number N, find the smallest number which is greater than N with the same digits in N. If N is the greatest digit print 'impossible'.",
+ "input_spec": "Input Size : 1 <= N <= 1000000000000000000",
+ "output_spec": "The smallest number which is greater than N with the same digits in N, or 'impossible' if N is the greatest digit.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "123",
+   "output": "132"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "103. Substring Check-2",
+ "slug": "substring-check-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n103. Substring Check-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 strings.check if the second string is a substring of the first string.Print 'yes' if there exists a valid substring otherwise print 'no'.",
+ "input_spec": "The input consists of two strings. The size of the strings (N) is between 1 and 100000 (inclusive).",
+ "output_spec": "Print 'yes' if the second string is a substring of the first string, otherwise print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "codekata code",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

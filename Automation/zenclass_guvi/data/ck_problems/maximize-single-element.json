@@ -1,0 +1,17 @@
+{
+ "title": "422. Maximize Single Element",
+ "slug": "maximize-single-element",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n422. Maximize Single Element\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given an array A of N numbers. You need to perform the following operation on it until only one element is remaining in A. Take two numbers A[i] and A[j] for each valid i, j. Compute X = 2*(A[i] + A[j]). Delete A[i] and A[j] and add X to the array A. Find the maximum possible value of the single element left in the end.",
+ "input_spec": "The first line contains an integer N, denoting the number of array elements. The next line contains N space separated integers.",
+ "output_spec": "Print a single integer denoting the maximum possible value of the single element left in the end.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n4 3",
+   "output": "343"
+  }
+ ],
+ "raw": ""
+}

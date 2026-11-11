@@ -1,0 +1,17 @@
+{
+ "title": "384. Find Fish Pair with Product X",
+ "slug": "find-fish-pair-with-product-x",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n384. Find Fish Pair with Product X\n\n40\n\nMedium  Topics\n\nProblem Statement:\nKumar picks up N \"Thraki\" fish. \"Thraki\" fish like humans have myopia or hypermetropia. He knows that the product of the eye powers (integers, in dioptres) of two fish is X for exactly one pair of fish. Print the indices of the two fish having product of eye powers equal to X in sorted order. (1-based indexing).",
+ "input_spec": "The first line contains two space separated integers N and X denoting the number of Thraki fish Kumar picked up and the product value respectively. The second line contains N space separated integers denoting the eye powers of the N fish.",
+ "output_spec": "Print two space separated integers denoting the indices of the fish having eye power product equal to X.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 -8 -1 8 3 2",
+   "output": "1 2"
+  }
+ ],
+ "raw": ""
+}

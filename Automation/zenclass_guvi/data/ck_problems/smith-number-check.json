@@ -1,0 +1,17 @@
+{
+ "title": "815. Smith Number Check",
+ "slug": "smith-number-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n815. Smith Number Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to check the given number is smith number or not",
+ "input_spec": "The input contains an Integer",
+ "output_spec": "If its smith number print Yes otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

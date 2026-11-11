@@ -1,0 +1,17 @@
+{
+ "title": "958. Reachability in a Social Network",
+ "slug": "reachability-in-a-social-network",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n958. Reachability in a Social Network\n\n90\n\nHard\n\nProblem Statement:\nReact Developer Community is a community of React developers. It allows developers to reach out to others and discuss various topics around JS programming. This community has been modelled as a directed social network graph. JS newbie A wants to check if he can reach out to a React expert B using his network.",
+ "input_spec": "total members in React Developer Community\nmemberId1\nMemberId2 \u2026\u2026\u2026\u2026\u2026. MemberIdN\nTotal possible edges\n< follower1 > < following1 >\n< follower2 > < following2 > \u2026\u2026\u2026\u2026\u2026\u2026 < followerN > < followingN >\nFollower\nFollowing",
+ "output_spec": "\u201c0\u201d OR \u201c1\u201d",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n2\n5\n7\n9\n4\n2 9\n7 2\n7 9\n9 5\n7\n9",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

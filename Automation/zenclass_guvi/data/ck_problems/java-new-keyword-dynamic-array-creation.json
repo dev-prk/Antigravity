@@ -1,0 +1,12 @@
+{
+ "title": "1518. Java New Keyword: Dynamic Array Creation",
+ "slug": "java-new-keyword-dynamic-array-creation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1518. Java New Keyword: Dynamic Array Creation\n\n70\n\nHard\n\nProblem Statement:\nCreate a Java program that demonstrates the use of the new keyword to dynamically create objects and arrays. The program should read the number of elements from the user, create an array of that size, and then read values into the array.",
+ "input_spec": "The first line contains an integer n, the size of the array. The next n lines each contain an integer to fill the array.",
+ "output_spec": "The program should output the contents of the array.",
+ "constraints": "",
+ "samples": [],
+ "raw": ""
+}

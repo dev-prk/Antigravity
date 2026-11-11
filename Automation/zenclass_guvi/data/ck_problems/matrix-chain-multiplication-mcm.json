@@ -1,0 +1,12 @@
+{
+ "title": "1890. Matrix Chain Multiplication (MCM)",
+ "slug": "matrix-chain-multiplication-mcm",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1890. Matrix Chain Multiplication (MCM)\n\n60\n\nMedium  Topics\n\nQuestion: Matrix Chain Multiplication (MCM)\n\nYou are given a sequence of matrices.\n\nIf there are N matrices, you are given an array arr[] of size N+1 where:\n\nMatrix 1 has dimension arr[0] \u00d7 arr[1]\n\nMatrix 2 has dimension arr[1] \u00d7 arr[2]\n\n...\n\nMatrix N has dimension arr[N-1] \u00d7 arr[N]\n\nYour task is to determine the minimum number of scalar multiplications needed to multiply the entire chain.\n\nYou can change the parenthesization order, but the matrix order must remain the same.\n\nInput Format\nN\narr0 arr1 arr2 ... arrN\n\nWhere:\n\nN = number of matrices\n\narr size = N + 1\n\nOutput Format\n\nPrint a single integer \u2014\nminimum multiplication cost.",
+ "input_spec": "N\narr0 arr1 arr2 ... arrN\n\nWhere:\n\nN = number of matrices\n\narr size = N + 1",
+ "output_spec": "Print a single integer \u2014\nminimum multiplication cost.",
+ "constraints": "1 \u2264 N \u2264 200\n\n1 \u2264 arr[i] \u2264 1000\n\nAccepted  0\n\nSubmissions  0\n\nAcceptance Rate  0%\n\nTopics\n\ndynamic programming  data structures\n\n0\n\nCode Editor\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nChange Layout\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n#A Simple Hello World\n\nprint  (  \"Hello World\"  )\n\n#Getting",
+ "samples": [],
+ "raw": ""
+}

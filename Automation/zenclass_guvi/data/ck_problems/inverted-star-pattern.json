@@ -1,0 +1,17 @@
+{
+ "title": "880. Inverted Star Pattern",
+ "slug": "inverted-star-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n880. Inverted Star Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGenerate the following inverted character with star pattern.\n\nbbbb*bbbb\nbbb***bbb\nbb*****bb\nb*******b\n*********",
+ "input_spec": "Input consists of a single integer that corresponds to R, the number of rows. R is always an odd number.Where 1<=R<=100",
+ "output_spec": "Print the inverted character pattern from the given input size R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "bbbb*bbbb\nbbb***bbb\nbb*****bb\nb*******b\n*********"
+  }
+ ],
+ "raw": ""
+}

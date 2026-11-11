@@ -1,0 +1,17 @@
+{
+ "title": "408. Bracelet Restoration",
+ "slug": "bracelet-restoration",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n408. Bracelet Restoration\n\n100\n\nHard  Topics\n\nProblem Statement:\nNila was gifted a bracelet G made of lower case English Alphabets on her birthday. She ordered Q more bracelets each not longer than the gifted bracelet.\n\nShe reversed one of the ordered bracelet and placed it below G such that the last alphabet of it and the last alphabet of G coincide, as shown below(example). Let the bracelet picked be H = \"hgfedc\".\n\nBracelet G         :     ab|cdefgh\n\nReversed H         :      cdefgh\n\nShe then cut (|) G at the point as shown and obtained G = ab. She then concatenated H to G at the point of cut and obtained G = abcdefgh. Here we see that the bracelet before cutting it was obtained again. [The entire string can be cut too]\n\nNila tried doing this with each of the Q bracelets. (She repairs G to the state before cutting after performing each operation)\n\nDetermine if the bracelet before cutting was obtained again for all Q bracelets.",
+ "input_spec": "The first line contains a string denoting bracelet G\nThe next line contains an integer Q\nThe next Q lines contain a string each, denoting a bracelet.",
+ "output_spec": "Print Q lines each containing YES if the bracelet was restored, NO otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcd\n2\ndc\nb",
+   "output": "YES\nNO"
+  }
+ ],
+ "raw": ""
+}

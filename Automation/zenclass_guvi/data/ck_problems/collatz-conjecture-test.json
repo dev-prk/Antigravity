@@ -1,0 +1,17 @@
+{
+ "title": "825. Collatz Conjecture Test",
+ "slug": "collatz-conjecture-test",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n825. Collatz Conjecture Test\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to test Collatz Conjecture for a Given Number",
+ "input_spec": "The input contains an integer",
+ "output_spec": "print collatz conjecture",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "4 2 1"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "2085. Exploring Pre and Post Increment Operators",
+ "slug": "exploring-pre-and-post-increment-operators",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2085. Exploring Pre and Post Increment Operators\n\n50\n\nMedium\n\nProblem Statement\nRead an integer and print the results of using it with both post-increment and pre-increment operators in expressions.\nDescription\nRead an integer x. Compute a = post-increment of x. Compute b = pre-increment of x. Print a, b, and the final value of x, each on its own line.",
+ "input_spec": "A single integer x.",
+ "output_spec": "Print a, then b, then the final value of x, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "5\n7\n7"
+  }
+ ],
+ "raw": ""
+}

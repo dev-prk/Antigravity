@@ -1,0 +1,17 @@
+{
+ "title": "454. Palindromic Number from Concatenation",
+ "slug": "palindromic-number-from-concatenation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n454. Palindromic Number from Concatenation\n\n80\n\nHard  Topics\n\nProblem Statement:\nJack gives you a list of N positive numbers in the form of an array A Jack wants to know if it is possible to construct a palindromic number from the given list A palindromic number is one that reads the same when reversed. For example: 828 is a palindromic number since its reverse has the same value. The number 2134 is not a palindromic number since its reverse 4312 is not equal to 2134. To construct a palindromic number Jack takes any two numbers present in the list A[i] and A[j] and concates them : A[i]+A[j] Report \"YES\" if it possible to form a palindromic number or \"NO\" if it is not possible to form a number in the manner given above NOTE: if a palindormic number is already present in the array it does not count as \"YES\" since we are not following the method above to construct the number.",
+ "input_spec": "First line contains a single integer N denoting the number of numbers in the list. The second line contains N integers.",
+ "output_spec": "The output consists of a single line: either :\"YES\" or \"NO\" .",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n123 321",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

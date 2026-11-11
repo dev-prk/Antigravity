@@ -1,0 +1,17 @@
+{
+ "title": "311. Counting Pairs with Increasing Order",
+ "slug": "counting-pairs-with-increasing-order",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n311. Counting Pairs with Increasing Order\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a limit N followed by N numbers, find the number of pairs which satisfies the condition of ai < aj for all i < j.",
+ "input_spec": "The input consists of a limit N, followed by N numbers. N is constrained such that 1 <= N <= 100000.",
+ "output_spec": "The output is the total count of pairs (ai, aj) that satisfy the condition ai < aj for all i < j.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 4 2 3 5",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "729. Speed Dating Token Exchanges",
+ "slug": "speed-dating-token-exchanges",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n729. Speed Dating Token Exchanges\n\n60\n\nMedium  Topics\n\nProblem Statement:\nA nationwide speed dating event is organised on 14th of February every year. Let's say 'N' men and 'M' women attended the speed dating event in the year 2019. Each person attending the event will be given a special token. On each successful meet, the token has to be exchanged with the other person. A prize is given for one among the lucky participants, who has got their own token back. Since it is a onetime opportunity it's made sure that each men and women meet each other once. Your task is to find out how many times the tokens are being exchanged in total.",
+ "input_spec": "Input contains two integer values N and M.",
+ "output_spec": "One single number - Total number of token exchanges",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "123 341",
+   "output": "41943"
+  }
+ ],
+ "raw": ""
+}

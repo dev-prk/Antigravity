@@ -1,0 +1,17 @@
+{
+ "title": "275. Print Substrings of Length K",
+ "slug": "print-substrings-of-length-k",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n275. Print Substrings of Length K\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S and a number K. Print all the substrings of S of length K(space separeted output).",
+ "input_spec": "|S| <= 100 and K<= 50",
+ "output_spec": ").\n\nInput Description:\n|S| <= 100 and K<= 50\n\nOutput Description:\nAll substrings of S of length K, space separated.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "prog 2",
+   "output": "pr ro og"
+  }
+ ],
+ "raw": ""
+}

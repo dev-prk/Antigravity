@@ -1,0 +1,17 @@
+{
+ "title": "229. Selection Algorithm on Array",
+ "slug": "selection-algorithm-on-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n229. Selection Algorithm on Array\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N and an array of N elements, a selection algorithm is implemented on this array where numbers at even position would be chosen, the algorithm is again and again implemented on the newly chosen array until only 1 element is remaining. Print the original position(index) of this element in the initial array.",
+ "input_spec": "The input consists of a number N and an array of N elements. Input Size: 1 <= N <= 100000.",
+ "output_spec": "The output is the original position(index) of the remaining element in the initial array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n1 2 3 4 5 6",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

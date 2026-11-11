@@ -1,0 +1,17 @@
+{
+ "title": "339. Sort by Binary Ones and Value",
+ "slug": "sort-by-binary-ones-and-value",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n339. Sort by Binary Ones and Value\n\n70\n\nHard  Topics\n\nProblem Statement:\nYou are given an array 'a' of size N. Your task is to print the array one element in a line in the decreasing order of number of ones in its binary representation. In case of two numbers having same number of ones, the bigger number in its decimal representation comes first.",
+ "input_spec": "The input consists of an array 'a' of size N, where N<=10000.",
+ "output_spec": "The output should be the array elements, one per line, sorted in decreasing order based on the count of set bits in their binary representation. If two numbers have the same number of set bits, the larger decimal number should come first.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n31 14 15 7 2",
+   "output": "31\n15\n14\n7\n2"
+  }
+ ],
+ "raw": ""
+}

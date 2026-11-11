@@ -1,0 +1,17 @@
+{
+ "title": "385. Duplicate Array Check",
+ "slug": "duplicate-array-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n385. Duplicate Array Check\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given N integer arrays, find if the same array occurs more than once. Print YES if it does, NO otherwise. Two arrays A and B are same only if they are of equal size, say M, and for all 0 <= i <= M-1, A[i] = B[i].",
+ "input_spec": "The first line contains a single integer N, denoting the number of arrays.\nFrom the second line, 2*N lines follow.\nThe (2i - 1)th line contains an integer M denoting the number of integers in the array.\nThe 2i th line contains M space separated integers denoting the elements of the array.",
+ "output_spec": "Print a single line YES or NO",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n5\n1 8 3 1 2\n1\n9\n1\n9",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

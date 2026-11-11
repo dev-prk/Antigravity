@@ -1,0 +1,17 @@
+{
+ "title": "2175. Menu-Driven Calculator",
+ "slug": "menu-driven-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2175. Menu-Driven Calculator\n\n60\n\nMedium\n\nProblem Statement\nWrite a menu-driven calculator that keeps reading a choice and performing the operation until the choice is Exit.\nDescription\nThe program repeatedly reads a choice and does the following. Choice 1: read two integers and print their sum. Choice 2: read two integers and print their difference (first number - second number). Choice 3: read two integers and print their product. Choice 4: print Exit and stop the program. Any other choice: print Invalid Choice and continue with the next choice. Do not print the menu.",
+ "input_spec": "Several lines. Each operation starts with a line containing the choice (an integer). For choice 1, 2 or 3, two more lines follow, containing the first integer and the second integer. The input ends with the choice 4. (-1000 <= first integer, second integer <= 1000)",
+ "output_spec": "For each choice, print the result on its own line: the sum, the difference or the product as an integer, the word Invalid Choice, or the word Exit.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n10\n5\n3\n4\n7\n5\n4",
+   "output": "15\n28\nInvalid Choice\nExit"
+  }
+ ],
+ "raw": ""
+}

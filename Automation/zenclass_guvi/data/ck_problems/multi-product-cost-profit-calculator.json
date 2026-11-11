@@ -1,0 +1,17 @@
+{
+ "title": "1221. Multi-Product Cost & Profit Calculator",
+ "slug": "multi-product-cost-profit-calculator",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1221. Multi-Product Cost & Profit Calculator\n\n80\n\nHard  Topics\n\nProblem Statement:\nComplex Budget Calculator for Product Manufacturing\nYou are tasked with designing a program to assist a manufacturing company in calculating the overall production cost, profit margins, and tax deductions for multiple products. The program should allow the user to input the cost of raw materials, labor, and overhead for each product. The program should then compute the following:\nTotal Production Cost: Calculated as the sum of raw material cost, labor cost, and overhead cost.\nGross Profit: Calculated as 20% of the total production cost.\nTax Deduction: If the gross profit is greater than \u20b9100,000, a 15% tax is applied; otherwise, a 10% tax is applied.\nNet Profit: Calculated as gross profit minus tax deduction.\nProduct Status:\nIf the net profit is greater than or equal to \u20b975,000, the product is considered \"Highly Profitable\".\nIf the net profit is between \u20b950,000 and \u20b974,999, it is considered \"Moderately Profitable\".\nIf the net profit is less than \u20b950,000, it is considered \"Less Profitable\".",
+ "input_spec": "the cost of raw materials, labor, and overhead for each product. The program should then compute the following:\nTotal Production Cost: Calculated as the sum of raw material cost, labor cost, and overhead cost.\nGross Profit: Calculated as 20% of the total production cost.\nTax Deduction: If the gross profit is greater than \u20b9100,000, a 15% tax is applied; otherwise, a 10% tax is applied.\nNet Profit: Calculated as gross profit minus tax deduction.\nProduct Status:\nIf the net profit is greater than or equal to \u20b975,000, the product is considered \"Highly Profitable\".\nIf the net profit is between \u20b950,000 and \u20b974,999, it is considered \"Moderately Profitable\".\nIf the net profit is less than \u20b950,000, it is considered \"Less Profitable\".",
+ "output_spec": "For each product, output the total production cost, gross profit, tax deduction, net profit, and product status.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n250000 150000 50000\n100000 80000 20000\n500000 300000 100000",
+   "output": "Product 1:\nTotal Production Cost: \u20b9450000\nGross Profit: \u20b990000.00\nTax Deduction: \u20b99000.00\nNet Profit: \u20b981000.00\nProduct Status: Highly Profitable\nProduct 2:\nTotal Production Cost: \u20b9200000\nGross Profit: \u20b940000.00\nTax Deduction: \u20b94000.00\nNet Profit: \u20b936000.00\nProduct Status: Less Profitable\nProduct 3:\nTotal Production Cost: \u20b9900000\nGross Profit: \u20b9180000.00\nTax Deduction: \u20b927000.00\nNet Profit: \u20b9153000.00\nProduct Status: Highly Profitable"
+  }
+ ],
+ "raw": ""
+}

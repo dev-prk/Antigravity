@@ -1,0 +1,17 @@
+{
+ "title": "1080. E-commerce Platform with Multiple Inheritance",
+ "slug": "e-commerce-platform-with-multiple-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1080. E-commerce Platform with Multiple Inheritance\n\n50\n\nMedium\n\nProblem Statement:\nDesign a Python program that uses multiple inheritance to model an e-commerce platform. The platform sells two types of products: physical products and digital products. Both types of products have a name and a price. However, a physical product also has a shipping weight, while a digital product has a file size.\n\nCreate classes to represent both types of products and use multiple inheritance to create a third class that represents a product that is both physical and digital (for example, a video game that can be purchased as a physical disc or downloaded digitally).\n\nWrite a method in each class to print the details of the product.",
+ "input_spec": "Book, 9.99, 1.0\nEbook, 6.99, 2\nVideo Game, 59.99, 0.2, 25\n\nSample",
+ "output_spec": "Physical Product: Book, Price: $9.99, Shipping Weight: 1.0 kg\nDigital Product: Ebook, Price: $6.99, File Size: 2 MB\nHybrid Product: Video Game, Price: $59.99, Shipping Weight: 0.2 kg, File Size: 25 GB",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Book, 9.99, 1.0\nEbook, 6.99, 2\nVideo Game, 59.99, 0.2, 25",
+   "output": "Physical Product: Book, Price: $9.99, Shipping Weight: 1.0 kg\nDigital Product: Ebook, Price: $6.99, File Size: 2 MB\nHybrid Product: Video Game, Price: $59.99, Shipping Weight: 0.2 kg, File Size: 25 GB"
+  }
+ ],
+ "raw": ""
+}

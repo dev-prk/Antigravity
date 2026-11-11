@@ -1,0 +1,17 @@
+{
+ "title": "1159. Generic Sort using Comparators",
+ "slug": "generic-sort-using-comparators",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1159. Generic Sort using Comparators\n\n50\n\nMedium\n\nProblem Statement:\nCreate a generic Sorter<T> class that sorts an array of elements using a Comparator<T>. The Sorter class should have a method sort that accepts an array and a comparator. Demonstrate its usage by sorting arrays of Integer and String.",
+ "input_spec": "The user selects the type of array (Integer or String).\nFor Integer, input a list of integers.\nFor String, input a list of strings.",
+ "output_spec": "Print the sorted array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Integer\n5 2 9 1 5\nString\njava code lang",
+   "output": "Sorted Integer Array: [1, 2, 5, 5, 9]\nSorted String Array: [code, java, lang]"
+  }
+ ],
+ "raw": ""
+}

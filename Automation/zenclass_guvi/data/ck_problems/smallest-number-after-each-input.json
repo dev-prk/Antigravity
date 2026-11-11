@@ -1,0 +1,17 @@
+{
+ "title": "276. Smallest Number after each Input",
+ "slug": "smallest-number-after-each-input",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n276. Smallest Number after each Input\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N. There will be N numbers given. Print the smallest number in the given list after each input(Hint use priority queue).",
+ "input_spec": "60\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N. There will be N numbers given. Print the smallest number in the given list after each input(Hint use priority queue).\n\nInput Description:\nThe input consists of an integer N, followed by N numbers. N is at most 100000.",
+ "output_spec": "The output should be the smallest number in the given list after each input, printed sequentially.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n3 2 4 1",
+   "output": "3 2 2 1"
+  }
+ ],
+ "raw": ""
+}

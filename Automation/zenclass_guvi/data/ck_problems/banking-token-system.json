@@ -1,0 +1,17 @@
+{
+ "title": "1034. Banking Token System",
+ "slug": "banking-token-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1034. Banking Token System\n\n60\n\nMedium\n\nProblem Statement:\nChoose an appropriate data structures and create a token system for banking service (withdrawal, deposit and money transfer).",
+ "input_spec": "The first line of the input is the integer N denoting the number of bank accounts.\n\nIt is followed by the N lines of bank account details in the below format:\n\n< account number > < name > < balance >\n\nThe last line of the input contains the operation that needs to be performed and the corresponding details depending upon the choice selected as follows:\n\n1. Withdrawal :\n\nThe last line of the input will be in the format as below:\n\n< choice > < account number > < withdrawal amount >\n\n2. Deposit:\n\nThe last line of the input will be in the format as below:\n\n< choice > < account number > < deposit amount >\n\n3. Money Transfer:\n\nThe last line of the input will be in the format as below:\n\n< choice > < from account number > < to account number > < transfer amount >",
+ "output_spec": "Print all the back accounts after performing the selected banking operation",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1111 John 100000\n1112 Prem 200000\n1113 Kumar 500000\n1 1111 1000",
+   "output": "1111 John 99000\n1112 Prem 200000\n1113 Kumar 500000"
+  }
+ ],
+ "raw": ""
+}

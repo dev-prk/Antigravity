@@ -1,0 +1,17 @@
+{
+ "title": "724. Remove Vowels from String",
+ "slug": "remove-vowels-from-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n724. Remove Vowels from String\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string str, write a program to eliminate all the vowels from it",
+ "input_spec": "Input contains the string",
+ "output_spec": "print the string without vowels",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello",
+   "output": "hll"
+  }
+ ],
+ "raw": ""
+}

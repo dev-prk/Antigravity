@@ -1,0 +1,17 @@
+{
+ "title": "853. Simplify Absolute Path",
+ "slug": "simplify-absolute-path",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n853. Simplify Absolute Path\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string A representing an absolute path for a file.Print the string A after simplifying the absolute path using Stack.",
+ "input_spec": "Given a string S contains the absolute path of file.",
+ "output_spec": "Print the string S after simplified absolute path of a file.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "C:/home/guvi",
+   "output": "/guvi"
+  }
+ ],
+ "raw": ""
+}

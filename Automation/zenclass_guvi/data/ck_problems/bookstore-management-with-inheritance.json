@@ -1,0 +1,17 @@
+{
+ "title": "1077. Bookstore Management with Inheritance",
+ "slug": "bookstore-management-with-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1077. Bookstore Management with Inheritance\n\n50\n\nMedium\n\nProblem Statement:\nDesign a Python program for a bookstore that uses classes and inheritance. The bookstore sells two types of items: books and magazines. Both books and magazines have a title and a price. However, a book also has an author, while a magazine has an issue number. Create classes to represent both items and use inheritance to avoid code duplication.\n\nWrite a method in each class to print the details of the book or magazine. Also, write a method in each class to change the price of the book or magazine.",
+ "input_spec": "The Great Gatsby, F. Scott Fitzgerald, 15.99\nTime, 5.99, 23\n12.99\n4.99\n\nSample",
+ "output_spec": "Book: The Great Gatsby by F. Scott Fitzgerald, priced at $15.99\nMagazine: Time, Issue No. 23, priced at $5.99\nBook: The Great Gatsby by F. Scott Fitzgerald, priced at $12.99\nMagazine: Time, Issue No. 23, priced at $4.99",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "The Great Gatsby, F. Scott Fitzgerald, 15.99\nTime, 5.99, 23\n12.99\n4.99",
+   "output": "Book: The Great Gatsby by F. Scott Fitzgerald, priced at $15.99\nMagazine: Time, Issue No. 23, priced at $5.99\nBook: The Great Gatsby by F. Scott Fitzgerald, priced at $12.99\nMagazine: Time, Issue No. 23, priced at $4.99"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "960. Credit Score Calculation System-2",
+ "slug": "credit-score-calculation-system-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n960. Credit Score Calculation System-2\n\n60\n\nMedium\n\nProblem Statement:\nYou are tasked with implementing a credit score calculation system for banks. Each bank must adhere to rules set by the Reserve Bank of India (RBI), and any changes made by the RBI must be universally followed by all banks.\n\nThe RBI has announced a new rule: a fixed credit score percentage to be applied to all transactions. According to this rule, for every transaction, 10% of the transaction amount will be added to the customer's credit score.\n\nYou need to implement a system with the following classes:\n\n- Banks: An interface with a method calculateCreditScore() that returns a double.\n- RBI: A class that implements the Banks interface. It has private data members accountNumber (string), creditScore (double), and holderName (string). It also has a fixed variable CREDIT (double) set to 10%. Implement the calculateCreditScore() method and a display() method.\n- ICICI: A class that extends RBI.\n- HDFC: A class that extends RBI.\n\nYour task is to implement the required classes and methods to calculate the credit score for a customer based on the given rules. Ensure that the credit score is rounded to two decimal places.",
+ "input_spec": "The input consists of a single line containing the following space-separated values:\n\n- An integer representing the bank: 1 for ICICI, 2 for HDFC.\n- The holder's name (string).\n- The account number (string).\n- The previous credit score (double).\n- The amount to be paid (double).",
+ "output_spec": "Print the following:\n\n- The bank type (string).\n- The account number (string).\n- The updated credit score (double, rounded to two decimal places).\n- A message indicating the credit gained for the payment and the total credit score.\n\nNote\n\nEnsure that the credit score is rounded to two decimal places in the output.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 MadhanKumar 218463 652 500",
+   "output": "Hi, MadhanKumar You have gained 50.00 credit score for the payment of 500.0\nYour Total Credit Score is 702.00"
+  }
+ ],
+ "raw": ""
+}

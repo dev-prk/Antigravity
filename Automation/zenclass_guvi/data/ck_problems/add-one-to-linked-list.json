@@ -1,0 +1,17 @@
+{
+ "title": "837. Add One to Linked List",
+ "slug": "add-one-to-linked-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n837. Add One to Linked List\n\n50\n\nMedium  Topics\n\nProblem Statement:\nNumber is represented in linked list such that each digit corresponds to a node in linked list. Add 1 to it. For example 1999 is represented as (1-> 9-> 9 -> 9) and adding 1 to it should change it to (2->0->0->0)",
+ "input_spec": "First line consists of length of the linked list.\nSecond line consists the linked list each node in the linked list are having numbers as their data(separated by space).",
+ "output_spec": "Print the linked list after adding 1 to it(separated by space)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 9 9 9",
+   "output": "2 0 0 0"
+  }
+ ],
+ "raw": ""
+}

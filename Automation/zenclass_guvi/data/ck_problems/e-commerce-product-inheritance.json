@@ -1,0 +1,17 @@
+{
+ "title": "1082. E-commerce Product Inheritance",
+ "slug": "e-commerce-product-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1082. E-commerce Product Inheritance\n\n50\n\nMedium\n\nProblem Statement:\nDesign a Python program for an e-commerce platform that sells products. Each product on the platform has a name, price, and seller. There are two types of products: new and used. Used products have an additional attribute: condition.\n\nCreate classes to represent a  Product ,  NewProduct , and  UsedProduct . Use inheritance and the  super()  function to avoid code duplication. Write a method in each class to print the details of the product.\n- The name of the product and the seller is a string and can contain any printable ASCII characters.\n- The price of the product is a float and can be any positive number.\n- The condition of the used product is a string and can contain any printable ASCII characters.",
+ "input_spec": "Laptop, 1200.99, ElectronicsHub\nSmartphone, 450.50, TechResell, Good\n\nSample",
+ "output_spec": "New Product: Laptop, Price: $1200.99, Seller: ElectronicsHub\nUsed Product: Smartphone, Price: $450.50, Seller: TechResell, Condition: Good",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Laptop, 1200.99, ElectronicsHub\nSmartphone, 450.50, TechResell, Good",
+   "output": "New Product: Laptop, Price: $1200.99, Seller: ElectronicsHub\nUsed Product: Smartphone, Price: $450.50, Seller: TechResell, Condition: Good"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "816. Deficient Number Check",
+ "slug": "deficient-number-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n816. Deficient Number Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nwrite a program to check the given number is a deficient number or not",
+ "input_spec": "The input contains an integer",
+ "output_spec": "If its deficient number print Yes otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "284",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

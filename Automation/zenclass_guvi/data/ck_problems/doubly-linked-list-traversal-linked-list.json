@@ -1,0 +1,17 @@
+{
+ "title": "1638. Doubly Linked List, Traversal, Linked List",
+ "slug": "doubly-linked-list-traversal-linked-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1638. Doubly Linked List, Traversal, Linked List\n\n60\n\nMedium\n\nProblem Statement:\nInsert and Display Doubly Linked List\n\nWrite a program to create a doubly linked list and display it in both forward and backward order.\n\nDescription\n\nInsert n elements into a doubly linked list.\n\nDisplay elements from head to tail and then tail to head.\n\nEach node contains a single integer value.\n\nInput Format\n\nFirst line: Integer n (number of elements)\n\nNext line: n integers representing the list elements\n\nOutput Format\n\nFirst line: Forward traversal: \"Forward: <elements>\"\n\nSecond line: Backward traversal: \"Backward: <elements>\"",
+ "input_spec": "First line: Integer n (number of elements)\n\nNext line: n integers representing the list elements",
+ "output_spec": "First line: Forward traversal: \"Forward: <elements>\"\n\nSecond line: Backward traversal: \"Backward: <elements>\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 40 50",
+   "output": "Forward: 10 20 30 40 50\nBackward: 50 40 30 20 10"
+  }
+ ],
+ "raw": ""
+}

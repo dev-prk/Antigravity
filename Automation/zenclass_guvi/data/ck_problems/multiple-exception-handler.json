@@ -1,0 +1,17 @@
+{
+ "title": "1991. Multiple Exception Handler",
+ "slug": "multiple-exception-handler",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1991. Multiple Exception Handler\n\n90\n\nHard\n\nProblem Statement\n\nGiven two values intended to be integers, divide the first by the second. Handle both invalid numeric input and division by zero using multiple catch blocks.\n\nDescription\n\nRead two lines of text, x and y, that are expected to represent integers. Inside a single try block, convert both to integers and divide x by y. Use one catch block to handle the case where either value is not a valid integer, and a separate catch block to handle division by zero.",
+ "input_spec": "and division by zero using multiple catch blocks.\n\nDescription\n\nRead two lines of text, x and y, that are expected to represent integers. Inside a single try block, convert both to integers and divide x by y. Use one catch block to handle the case where either value is not a valid integer, and a separate catch block to handle division by zero.\n\nInput Description\n\nTwo lines, each containing a string: x and y.",
+ "output_spec": "If both values are valid integers and y is not zero, print the quotient of x divided by y. If either value is not a valid integer, print \"Error: Invalid number format\". If y is zero, print \"Error: Division by zero not allowed\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20\n5",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

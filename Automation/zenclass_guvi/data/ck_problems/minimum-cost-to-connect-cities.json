@@ -1,0 +1,17 @@
+{
+ "title": "1572. Minimum Cost to Connect Cities",
+ "slug": "minimum-cost-to-connect-cities",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1572. Minimum Cost to Connect Cities\n\n90\n\nHard\n\nProblem Statement:\nYou are given N cities numbered from 1 to N and a list of M possible connections between pairs of cities. Each connection has a cost associated with it. Your task is to find the minimum total cost required to connect all the cities such that there is a path between any two cities (i.e., the network is connected). If it is not possible to connect all the cities, output -1.",
+ "input_spec": "- The first line contains two integers N and M, the number of cities and the number of possible connections.\n- The next M lines each contain three integers u, v, and w, denoting a connection between city u and city v with cost w.",
+ "output_spec": "1.\n\nInput Description:\n- The first line contains two integers N and M, the number of cities and the number of possible connections.\n- The next M lines each contain three integers u, v, and w, denoting a connection between city u and city v with cost w.\n\nOutput Description:\n- Output a single integer, the minimum total cost to connect all the cities, or -1 if it is not possible.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 5\n1 2 3\n2 3 4\n3 4 5\n1 4 2\n2 4 1",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

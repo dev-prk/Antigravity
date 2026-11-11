@@ -1,0 +1,17 @@
+{
+ "title": "287. Remove Element from Array",
+ "slug": "remove-element-from-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n287. Remove Element from Array\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N and K and followed by an array of N integers. The given element K is removed from the array and new array is printed. If after removing every occurance of K the array becomes empty, print 'empty' without quotes.",
+ "input_spec": "The input consists of two integers N and K, followed by an array of N integers. N represents the size of the array, and K is the element to be removed. The size N is at most 100000.",
+ "output_spec": "The output is the new array after removing all occurrences of K. If the array becomes empty after removal, print 'empty'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 10\n10 10 20 30 76",
+   "output": "20 30 76"
+  }
+ ],
+ "raw": ""
+}

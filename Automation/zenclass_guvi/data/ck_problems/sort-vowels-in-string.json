@@ -1,0 +1,17 @@
+{
+ "title": "658. Sort Vowels in String",
+ "slug": "sort-vowels-in-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n658. Sort Vowels in String\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given a long string without spaces.Your task is to place the vowels in ascending order. Then print the resulting string",
+ "input_spec": "You are given a string \u2018s\u2019",
+ "output_spec": "Print the obtained string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ebcda",
+   "output": "abcde"
+  }
+ ],
+ "raw": ""
+}

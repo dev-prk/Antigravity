@@ -1,0 +1,17 @@
+{
+ "title": "1802. Product Calculator",
+ "slug": "product-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1802. Product Calculator\n\n50\n\nMedium\n\nProduct Calculator\n\nProblem Statement:\nCreate a class ProductCalculator. Each object should store two numbers and the constructor should compute the product. The program should read three pairs of numbers (which can be integers or floating-point numbers with varying precision) and calculate the sum of all three products. The final output should be displayed based on the precision of the input values.\n\nDescription:\n1. Accept three pairs of numeric inputs (either integers, floating-point numbers with up to 2 decimal places, or floating-point numbers with up to 6 decimal places).\n\n2. Calculate the product of each pair using objects.\n\n3. Sum all the products.\n\nInput Format:\nThree lines, each containing two numbers.\n\nOutput Format:\nPrint the sum of all the products:\n\n1. If the result is a whole number, display without decimal places.\n\n2. If the input contains up to 2 decimal places, display the sum rounded to 2 decimal places.\n\n3. If the input contains up to 6 decimal places, display the sum rounded to 6 decimal places.",
+ "input_spec": "values.\n\nDescription:\n1. Accept three pairs of numeric inputs (either integers, floating-point numbers with up to 2 decimal places, or floating-point numbers with up to 6 decimal places).\n\n2. Calculate the product of each pair using objects.\n\n3. Sum all the products.\n\nInput Format:\nThree lines, each containing two numbers.",
+ "output_spec": "should be displayed based on the precision of the input values.\n\nDescription:\n1. Accept three pairs of numeric inputs (either integers, floating-point numbers with up to 2 decimal places, or floating-point numbers with up to 6 decimal places).\n\n2. Calculate the product of each pair using objects.\n\n3. Sum all the products.\n\nInput Format:\nThree lines, each containing two numbers.\n\nOutput Format:\nPrint the sum of all the products:\n\n1. If the result is a whole number, display without decimal places.\n\n2. If the input contains up to 2 decimal places, display the sum rounded to 2 decimal places.\n\n3. If the input contains up to 6 decimal places, display the sum rounded to 6 decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20 30\n50 60\n80 90",
+   "output": "10800"
+  }
+ ],
+ "raw": ""
+}

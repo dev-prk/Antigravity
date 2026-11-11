@@ -1,0 +1,17 @@
+{
+ "title": "840. Delete Last Occurrence of Key",
+ "slug": "delete-last-occurrence-of-key",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n840. Delete Last Occurrence of Key\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a linked list and a key,find the last occurrence of the key and delete it from the linked list. The list may have duplicate values.",
+ "input_spec": "First line represents the size of the linked list.\nNext line represents the sequence of numbers as the node value of the linked list(separated by space).\nThird line contains the key to be deleted",
+ "output_spec": "Print the resultant linked list(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n1 21 3 5 21 10\n21",
+   "output": "1 21 3 5 10"
+  }
+ ],
+ "raw": ""
+}

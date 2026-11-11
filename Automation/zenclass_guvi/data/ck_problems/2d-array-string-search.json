@@ -1,0 +1,17 @@
+{
+ "title": "264. 2D Array String Search",
+ "slug": "2d-array-string-search",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n264. 2D Array String Search\n\n70\n\nHard  Topics\n\nProblem Statement:\nSave the string \u201cWELCOMETOGUVICORPORATIONS\u201d in a two dimensional array of size (5*5) and search for the given substring. If it exists print the start index and end index in the matrix in separate lines. If it does not exist print 0.",
+ "input_spec": "The input consists of a substring to be searched within the 5x5 matrix.",
+ "output_spec": "If the substring is found, print its start index and end index in the matrix on separate lines. Otherwise, print 0.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "TIO",
+   "output": "4 0\n4 2"
+  }
+ ],
+ "raw": ""
+}

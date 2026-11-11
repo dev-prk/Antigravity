@@ -1,0 +1,17 @@
+{
+ "title": "329. Minimum Edit Distance",
+ "slug": "minimum-edit-distance",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n329. Minimum Edit Distance\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven 2 strings X and Y convert X to Y as cheaply as possible. Let the cost of insertion, deletion and updation be 1. Print the minimum cost.",
+ "input_spec": "Input Size : 1<= N<=1000",
+ "output_spec": "The minimum cost to convert string X to string Y.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "codekata code",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "346. Minimum k for Dominant Character",
+ "slug": "minimum-k-for-dominant-character",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n346. Minimum k for Dominant Character\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nYou are given a string s consisting of lowercase Latin letters. Character c is called k-dominant iff each substring of s with length at least k contains this character c. You have to find minimum k such that there exists at least one k-dominant character.",
+ "input_spec": "The input consists of a string s. The size of the string |S| is at most 10000.",
+ "output_spec": "The output is the minimum k such that there exists at least one k-dominant character.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abacaba",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

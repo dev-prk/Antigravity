@@ -1,0 +1,17 @@
+{
+ "title": "406. Range Updates and Queries",
+ "slug": "range-updates-and-queries",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n406. Range Updates and Queries\n\n80\n\nHard  Topics\n\nProblem Statement:\nThe question is simple.\n\nYou are given an array X of N numbers. We have Q queries which can be either of the following forms:\n\n1 x y S : increase numbers from X[x]. X[x+1] ...X[y] by S\n\n2 x y : Find the maximum of numbers from X[x] . X[x+1] . X[x+2]....X[y]\n\nPerform the above operations and report the answer",
+ "input_spec": "First line contains an single integer N denoting the number of integers in X\nSecond line contains N integers the contents of X\nThe next line contains a single integer Q : the number of queries\nThe next Q lines contains either:\n1 x y S (or) 2 x y",
+ "output_spec": "For each query of type 2 output the maximum in a single line",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n2\n1 1 2 1\n2 1 4",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

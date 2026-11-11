@@ -1,0 +1,17 @@
+{
+ "title": "425. Longest Common Presuf",
+ "slug": "longest-common-presuf",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n425. Longest Common Presuf\n\n80\n\nHard  Topics\n\nProblem Statement:\nWe know what the longest common prefix is but what is the longest common presuf?\n\nThe longest common presuf is defined as follows:\n\nLet us have n strings as follows:\n\nS1\n\nS2\n\nS3\n\nS4\n\n....\n\nSn\n\nFor the above strings the longest common presuf defined as the maximal string which is a common prefix of odd numbered strings and when reversed the common suffix of even numbered strings\n\nSo for the example:\n\nabcd (prefix is considered since it is 1st string-odd)\n\ngcba (suffix is considered since it is 2nd string-even)\n\nabhj (same as 1st string)\n\nThe longest common prefux is : ab",
+ "input_spec": "The first line contains two integers N,M denoting the number of strings and the maximum length of the string\nThe next N line contains a string in each line",
+ "output_spec": "Your output must consist of a single line\nOutput the longest common prefux for the given strings.\nIf no common prefux exists output: \"No common prefux exists\" (without quotes)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nabcd\nba\naa",
+   "output": "a"
+  }
+ ],
+ "raw": ""
+}

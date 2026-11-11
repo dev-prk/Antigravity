@@ -1,0 +1,17 @@
+{
+ "title": "376. Boxer's Diet Check",
+ "slug": "boxer-s-diet-check",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n376. Boxer's Diet Check\n\n70\n\nHard  Topics\n\nProblem Statement:\nRocky is training to become a boxer and hence has to eat properly.His trainer however suspects that he hasn't been eating properly . So his trainer comes up with N types of food for rocky to eat. The amount of each food is given as A[i].Two types of event can happen\nType 1: 1 i x : Rocky eats x amount of food of A[i]\n( if there is food less than x he eats all of it)\nType 2: 2 l r m : The trainer checks if the total amount of food rocky has not eaten from type l to type r is at most m . If it is at most m he is \"satisfied\" else he is \"disappointed\".\nGiven that a total of Q types of events happen and for each type 2 event display if the trainer will be \"satisfied\" or \"disappointed\"",
+ "input_spec": "The first line contains an integer N - the no of days\nThe second line consists of N integers - the amount of food he has to eat for N days\nThe third line has a single integer Q - the no of events\nThe next Q lines contains either of the following\n1 i x : type 1\n2 l r m : type 2",
+ "output_spec": "For each event of type 2 display whether his trainer is \"satisfied\" or \"dissatisfied\". If the trainer asks no questions no need to output anything.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n3\n1 1 1\n2 1 3 3\n2 1 3 2",
+   "output": "satisfied\ndissappointed"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "2204. Converting a Decimal Number to Binary Using an Array",
+ "slug": "converting-a-decimal-number-to-binary-using-an-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2204. Converting a Decimal Number to Binary Using an Array\n\n70\n\nHard\n\nProblem Statement\nRead a decimal number and print its binary equivalent of any length, by storing the bits in an array and printing them in reverse.\n\nDescription\nRead a non-negative integer n (n <= 1000). If n is 0, print 0. Otherwise, use a while loop that repeatedly stores n % 2 in the next position of an integer array bits and then divides n by 2; the first remainder stored is the least significant bit. After the loop, use another loop to print the stored bits starting from the last position and moving back to the first, so that the most significant bit is printed first. Print the bits together with no spaces between them.",
+ "input_spec": "A single integer n (0 <= n <= 1000).",
+ "output_spec": "Print the binary equivalent of n, with no leading zeros and no spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "37",
+   "output": "100101"
+  }
+ ],
+ "raw": ""
+}

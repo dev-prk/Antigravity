@@ -1,0 +1,17 @@
+{
+ "title": "692. String Composition Check",
+ "slug": "string-composition-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n692. String Composition Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given a string 's'.Determine whether the string given is made up of either\nA\nAB\nABB\nIf the string given is made up of any frequency occurrence of the above Print 1 else 0",
+ "input_spec": "You are given a string 's'.",
+ "output_spec": "Print 1 else 0",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "AAAAA",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

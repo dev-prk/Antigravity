@@ -1,0 +1,17 @@
+{
+ "title": "558. Water Tank Level Stabilization",
+ "slug": "water-tank-level-stabilization",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n558. Water Tank Level Stabilization\n\n100\n\nHard  Topics\n\nProblem Statement:\nThere is a large water tank which consists of many smaller adjacent water tanks with same capacity, but have varying levels of water in them. The tank is managed in such a way that if any of the smaller tanks have water below a minimum threshold, then a shutter is opened and water from adjacent tanks flow into them, as long as the water in those adjacent tanks stay above the minimum threshold. The tank can be modelled as a matrix and the amount of water currently present in each of the smaller tanks is known using sensors and is given as input to you. Help the management maintain the adequate water levels in the tank and display the amounts of water in each of the smaller tanks after all the tanks have water above their threshold. Note: The threshold for all the tanks is 5 kilolitres and there are 9 tanks in the structure. The maximum capacity of each tank is 20 kilolitres. Every tank(other the ones in the edge) are enclosed by 4 shutters.\n\nA tank can be shown like\n\nwhere the four lines denote the four shutters. The top shutter opens first, followed by the right, down and left.\n\nIf a tank can use its top shutter to allow water from a tank above, then it cannot use any of its other shutters. A tank opens the shutter to a tank with maximum amount of water.If many tanks have the same max value, then the shutter opening priority is considered. Same shutter is never opened consecutively. Bottom shutter of one tank and top of another,right below it, are the same.",
+ "input_spec": "to you. Help the management maintain the adequate water levels in the tank and display the amounts of water in each of the smaller tanks after all the tanks have water above their threshold. Note: The threshold for all the tanks is 5 kilolitres and there are 9 tanks in the structure. The maximum capacity of each tank is 20 kilolitres. Every tank(other the ones in the edge) are enclosed by 4 shutters.\n\nA tank can be shown like\n\nwhere the four lines denote the four shutters. The top shutter opens first, followed by the right, down and left.\n\nIf a tank can use its top shutter to allow water from a tank above, then it cannot use any of its other shutters. A tank opens the shutter to a tank with maximum amount of water.If many tanks have the same max value, then the shutter opening priority is considered. Same shutter is never opened consecutively. Bottom shutter of one tank and top of another,right below it, are the same.\n\nInput Description:\nA 3*3 matrix which denotes the current water levels in all the tanks",
+ "output_spec": "Final water levels in the tanks such that all tanks have water above the threshold. If there is at least one tank which has water below threshold, then display \u201cERROR\u201d",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 10 10\n3 1 7\n5 4 1",
+   "output": "8 5 8\n5 5 5\n5 5 5"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "488. Sunset View from Buildings",
+ "slug": "sunset-view-from-buildings",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n488. Sunset View from Buildings\n\n80\n\nHard  Topics\n\nProblem Statement:\nDas lives in a city which is having skyscrapers. Das has a wish and wants to see the buildings on which sunlight falls when the sun sets. Help him in counting the number of buildings receiving the sunlight. Note: A taller building casts a shadow on a shorter building.\n\nGiven an array H denoting heights of buildings. You have to count the buildings which will see the sun set (Assume : Sun set on the side of array ending i.e at the last element of the array).",
+ "input_spec": "The first line of input contains an integer T denoting the number of test cases. The first line of each test case is N, N is the number of buildings. The second line of each test case contains separated values of heights of buildings.",
+ "output_spec": "Print the total number of buildings which will see the sunset.",
+ "constraints": "1 <= T <= 100\n\n1 <= N <= 106\n\n1 <= Hi <= 108",
+ "samples": [
+  {
+   "input": "2\n5\n7 4 8 2 9\n4\n5 3 4 1",
+   "output": "1\n3"
+  }
+ ],
+ "raw": ""
+}

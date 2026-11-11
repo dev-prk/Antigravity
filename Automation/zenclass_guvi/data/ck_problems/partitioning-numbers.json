@@ -1,0 +1,17 @@
+{
+ "title": "331. Partitioning Numbers",
+ "slug": "partitioning-numbers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n331. Partitioning Numbers\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven three numbers N,A,B. Find if it is possible to partition N into 2 equal groups containing A and B only.print 'yes' if it can be partitioned otherwise print 'no'.",
+ "input_spec": "The input consists of three numbers N, A, B. The",
+ "output_spec": "yes",
+ "constraints": "are 1<=N,A,B<=10000.",
+ "samples": [
+  {
+   "input": "20 2 3",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "874. Number Pyramid Pattern",
+ "slug": "number-pyramid-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n874. Number Pyramid Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGenerate a full pyramid using numbers.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the full pyramid using numbers based on the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "1\n232\n34543\n4567654\n567898765"
+  }
+ ],
+ "raw": ""
+}

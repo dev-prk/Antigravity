@@ -1,0 +1,17 @@
+{
+ "title": "162. Sort Half Ascending, Half Descending",
+ "slug": "sort-half-ascending-half-descending",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n162. Sort Half Ascending, Half Descending\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven array sort it in ascending order till the half of array and in descending order after the half.(array index starts at 0). conditions to calculate the position of half of the array: if the array has odd number elements : floor((lastindex-1)/2) if the array has even number of elements:floor(lastindex/2)",
+ "input_spec": "The input consists of the size of the array N, followed by N integer elements. N <= 100000.",
+ "output_spec": "The output is the array sorted according to the specified conditions (ascending till half, descending after half).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n4 3 1 2 4",
+   "output": "3 4 4 2 1"
+  }
+ ],
+ "raw": ""
+}

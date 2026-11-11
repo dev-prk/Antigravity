@@ -1,0 +1,17 @@
+{
+ "title": "2151. Checking Whether Three Sides Form a Valid Triangle",
+ "slug": "checking-whether-three-sides-form-a-valid-triangle",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2151. Checking Whether Three Sides Form a Valid Triangle\n\n50\n\nMedium\n\nProblem Statement\nRead three side lengths and determine whether they can form a triangle, using a function that returns 1 or 0.\n\nDescription\nThree side lengths can form a triangle only if the sum of any two sides is greater than the third side. Read three positive integers a, b and c from input. Write a function isValidTriangle that takes three integer parameters and returns 1 if they form a valid triangle, otherwise 0. In main(), print \"Valid\" or \"Not Valid\" based on the returned value.",
+ "input_spec": ". Write a function isValidTriangle that takes three integer parameters and returns 1 if they form a valid triangle, otherwise 0. In main(), print \"Valid\" or \"Not Valid\" based on the returned value.\n\nInput Description\nThree positive integers a, b and c separated by spaces.",
+ "output_spec": "Print \"Valid\" if the sides form a triangle, otherwise print \"Not Valid\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 4 5",
+   "output": "Valid"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1515. Maximum Independent Set in a Tree",
+ "slug": "maximum-independent-set-in-a-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1515. Maximum Independent Set in a Tree\n\n70\n\nHard\n\nProblem Statement:\nGiven an undirected tree with N nodes, find the size of the largest set of nodes such that no two nodes in the set are directly connected by an edge. This set is called an independent set. You are given the tree as a list of edges.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the tree (nodes are numbered from 1 to N).\n- The next N-1 lines each contain two integers u and v, denoting an edge between node u and node v.",
+ "output_spec": "- Print a single integer, the size of the largest independent set in the tree.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2\n1 3\n3 4\n3 5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1012. String Uppercase Vowels",
+ "slug": "string-uppercase-vowels",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1012. String Uppercase Vowels\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string convert string into upper case where their vowel character",
+ "input_spec": "Given a string",
+ "output_spec": "Print string into upper case",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi geek",
+   "output": "gUvI gEEk"
+  }
+ ],
+ "raw": ""
+}

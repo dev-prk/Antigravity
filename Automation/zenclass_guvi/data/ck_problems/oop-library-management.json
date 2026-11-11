@@ -1,0 +1,17 @@
+{
+ "title": "1165. OOP Library Management",
+ "slug": "oop-library-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1165. OOP Library Management\n\n50\n\nMedium\n\nProblem Statement:\nDesign a library management system using OOP principles. The system should allow adding books, borrowing books, and returning books. Implement classes for Book and Library. Your task is to create a Java program that models a library management system. You need to create a class Book with attributes for the book title, author, and a boolean to indicate if it is borrowed. Create another class Library that contains a list of books and methods to add a book, borrow a book by title, and return a book by title.",
+ "input_spec": "The first line contains an integer N, the number of operations. The next N lines contain operations in the format add <title> <author>, borrow <title>, or return <title>.",
+ "output_spec": "Print the result of each operation. For borrow, print \"Book borrowed\" if successful or \"Book not available\" if not. For return, print \"Book returned\". For add, print \"Book added\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nadd HarryPotter J.K.Rowling\nborrow HarryPotter\nreturn HarryPotter",
+   "output": "Book added\nBook borrowed\nBook returned"
+  }
+ ],
+ "raw": ""
+}

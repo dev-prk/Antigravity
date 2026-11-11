@@ -1,0 +1,17 @@
+{
+ "title": "1814. Employee Bonus Calculator Using Private Inheritance",
+ "slug": "employee-bonus-calculator-using-private-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1814. Employee Bonus Calculator Using Private Inheritance\n\n50\n\nMedium\n\nEmployee Bonus Calculator Using Private Inheritance\n\nProblem Statement\nDesign a payroll system in C++ using private inheritance to calculate employee bonuses securely while restricting direct access to salary computation methods.\n\nThe system must demonstrate how private inheritance hides internal calculation logic and exposes only controlled functionality.\n\nDescription\nYou are required to implement two classes:\n\nBase Class: Employee\nProvides the following functionality:\n\n1. public function\nvoid processSalary(int baseSalary)\n\nControls the workflow of bonus calculation.\n\n2. protected function\nint calculateBonus(int baseSalary)\n\nCalculates bonus as:\nbonus = 20% of baseSalary\n\n3. private function\nvoid displayTotal(int totalSalary)\n\nDisplays the final salary after adding bonus.\n\nWorkflow inside processSalary():\ncalculateBonus \u2192 add to baseSalary \u2192 displayTotal\n\nDerived Class: SecureEmployee\n1. Must inherit from Employee using private inheritance\n\n2. Must expose a public wrapper function:\nvoid generateSalary(int baseSalary)\n\n3. Must prevent direct access to base class methods from main()\n\nRequirements\n1. Use private inheritance\n2. Expose only one public function (generateSalary)\n3. Prevent access to:\nprocessSalary()\ncalculateBonus()\ndisplayTotal()\n4. Handle invalid input:\nSalary \u2264 0 \u2192 print \"Invalid Salary\"\n5. Ensure proper encapsulation\n\nInput Format\nA single integer representing base salary\n\nOutput Format\nIf valid:\nTotal Salary: <amount>\n\nIf invalid:\nInvalid Salary",
+ "input_spec": "Salary \u2264 0 \u2192 print \"Invalid Salary\"\n5. Ensure proper encapsulation\n\nInput Format\nA single integer representing base salary",
+ "output_spec": "If valid:\nTotal Salary: <amount>\n\nIf invalid:\nInvalid Salary",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10000",
+   "output": "Total Salary: 12000"
+  }
+ ],
+ "raw": ""
+}

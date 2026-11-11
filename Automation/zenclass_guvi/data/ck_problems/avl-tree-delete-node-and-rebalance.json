@@ -1,0 +1,17 @@
+{
+ "title": "1532. AVL Tree: Delete Node and Rebalance",
+ "slug": "avl-tree-delete-node-and-rebalance",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1532. AVL Tree: Delete Node and Rebalance\n\n80\n\nHard\n\nProblem Statement:\nGiven an AVL tree and a key, write a function to delete the node with the given key from the AVL tree. After deletion, ensure that the tree remains balanced according to AVL tree properties. An AVL tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one for all nodes.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the AVL tree.\n- The second line contains N space-separated integers representing the values to be inserted into the AVL tree in the given order.\n- The third line contains an integer K, the key to be deleted from the AVL tree.",
+ "output_spec": "- Print the in-order traversal of the AVL tree after deleting the node with key K.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n20 4 26 3 9 15 30\n26",
+   "output": "3 4 9 15 20 30"
+  }
+ ],
+ "raw": ""
+}

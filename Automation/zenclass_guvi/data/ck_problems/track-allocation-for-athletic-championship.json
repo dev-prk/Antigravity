@@ -1,0 +1,17 @@
+{
+ "title": "496. Track Allocation for Athletic Championship",
+ "slug": "track-allocation-for-athletic-championship",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n496. Track Allocation for Athletic Championship\n\n90\n\nHard  Topics\n\nProblem Statement:\nAn athletic championship is to be conducted in Chennai. But due to flash floods, the track got damaged severely. However, the authorities managed to repair most of the tracks. A barrier is placed across those tracks which couldn't be repaired. i1 and i2 denote the span of a barrier (eg) if i1=2 and i2=5, then the barrier spans from track 2 to track 5. Help the Sports Authority decide how many athletes can run in a single race so that none of them would have to switch tracks? Note: An athlete cannot switch from one track to another while sprinting.",
+ "input_spec": "First line contains number of barriers followed by the total number of tracks.",
+ "output_spec": "Number of athletes that can run in a single race.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 10\n5 6",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

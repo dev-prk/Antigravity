@@ -1,0 +1,17 @@
+{
+ "title": "314. Prefix-Suffix Sum Check",
+ "slug": "prefix-suffix-sum-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n314. Prefix-Suffix Sum Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N followed by N numbers,find if in any position of the array, the sum of numbers in the previous positions is equal to the sum of elements after the current position. i.e., at a particular position the prefix sum should be equal to suffix sum, if yes print 'yes' else 'no'.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": "yes",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 1 1 1 1",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

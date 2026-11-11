@@ -1,0 +1,17 @@
+{
+ "title": "1000. String Length Without Spaces-2",
+ "slug": "string-length-without-spaces-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1000. String Length Without Spaces-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string find the length of the string without space",
+ "input_spec": "Given a string",
+ "output_spec": "Print length in number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi geek",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

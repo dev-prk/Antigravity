@@ -1,0 +1,17 @@
+{
+ "title": "1500. Fibonacci Number Dynamic Programming",
+ "slug": "fibonacci-number-dynamic-programming",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1500. Fibonacci Number Dynamic Programming\n\n50\n\nMedium\n\nProblem Statement:\nGiven an integer n, compute the nth Fibonacci number. The Fibonacci sequence is defined as follows:\n- F(0) = 0\n- F(1) = 1\n- F(n) = F(n-1) + F(n-2) for n > 1\nWrite a program that calculates the nth Fibonacci number using dynamic programming.",
+ "input_spec": "A single integer n.",
+ "output_spec": "A single integer representing the nth Fibonacci number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

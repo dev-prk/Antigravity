@@ -1,0 +1,17 @@
+{
+ "title": "1773. Evaluate Postfix Expression",
+ "slug": "evaluate-postfix-expression",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1773. Evaluate Postfix Expression\n\n60\n\nMedium\n\nEvaluate Postfix Expression\nProblem Statement\n\nGiven a postfix expression, evaluate its value using a stack.\n\nDescription\n\nEach token can be an integer or operator (+, -, *, /).\n\nUse a stack to push operands and pop them when an operator is encountered.\n\nCompute and push the result back on the stack.\n\nInput Format\n\nSingle string postfix expression (tokens separated by spaces)\n\nOutput Format\n\nResult as an integer",
+ "input_spec": "Single string postfix expression (tokens separated by spaces)",
+ "output_spec": "Result as an integer",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 1 * + 9 -",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

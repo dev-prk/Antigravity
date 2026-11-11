@@ -1,0 +1,17 @@
+{
+ "title": "327. Longest Common Prefix",
+ "slug": "longest-common-prefix",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n327. Longest Common Prefix\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N and N strings of length atmost M, print the longest common prefix.",
+ "input_spec": "The input consists of a number N and N strings of length at most M.",
+ "output_spec": "The output is the longest common prefix.",
+ "constraints": "1<=N, M<=100000.",
+ "samples": [
+  {
+   "input": "2\nVishal\nVidharba",
+   "output": "Vi"
+  }
+ ],
+ "raw": ""
+}

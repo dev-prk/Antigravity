@@ -1,0 +1,17 @@
+{
+ "title": "531. Board Game Navigation",
+ "slug": "board-game-navigation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n531. Board Game Navigation\n\n60\n\nMedium  Topics\n\nProblem Statement:\nVasanth is playing a board game on a rectangular grid (matrix). Each cell of the matrix has a number, representing the \"value\" of that tile. The player can move only from left to right in the same row. When the player reaches the end of a row, they automatically move to the first cell of the next row (row + 1, column = 0). A move is valid only if the value of the next cell is strictly greater than the current cell. i.e., you can only step to a higher value. Diagonal or backward moves are not allowed. Determine if Vasanth\u2019s piece can reach the bottom-right corner of the board starting from a given starting position (startRow, startCol).",
+ "input_spec": "Dimensions of the matrix, elements of the matrix, followed by location of Vasanth\u2019s piece [ i j ]",
+ "output_spec": "yes if the piece can reach the rightmost lower corner, no if otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9\n1 2",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

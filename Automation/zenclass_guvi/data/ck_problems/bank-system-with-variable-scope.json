@@ -1,0 +1,17 @@
+{
+ "title": "1216. Bank System with Variable Scope",
+ "slug": "bank-system-with-variable-scope",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1216. Bank System with Variable Scope\n\n80\n\nHard\n\nProblem Statement:\nWrite a C program to simulate a simplified banking system that manages transactions for multiple accounts. The program should demonstrate the use of variable scope and lifetime by:\n\nDeclaring a global variable to keep track of the total number of transactions across all accounts.\nDeclaring static variables within functions to maintain the balance of each account.\nUsing local variables to handle individual transaction details.\nThe program should perform the following tasks:\n\nInitialize a given number of accounts with starting balances.\nAllow the user to perform a sequence of transactions (deposit or withdraw) on any account.\nDisplay the balance of an account after each transaction.\nAt the end, display the total number of transactions made.",
+ "input_spec": "An integer n (number of accounts, where 1 <= n <= 10).\nn initial account balances as floating-point numbers.\nAn integer t (number of transactions, where 1 <= t <= 50).\nFor each transaction:\nAn integer account_number (1 to n) indicating the target account.\nA character type ('D' for deposit, 'W' for withdrawal).\nA floating-point number amount (transaction amount).",
+ "output_spec": "The balance of the specified account after each transaction.\nThe total number of transactions performed.",
+ "constraints": "The number of accounts n must be between 1 and 10.\nThe number of transactions t must be between 1 and 50.\nTransaction amounts should be in the range of 0.01 to 1,000,000.00.\nWithdrawals should not exceed the current balance of the account.\nAccounts are 1-indexed (account numbers start from 1).",
+ "samples": [
+  {
+   "input": "3\n1000.00 2000.00 3000.00\n5\n1 D 500.00\n2 W 250.00\n3 D 1000.00\n1 W 750.00\n3 W 1500.00",
+   "output": "Account 1 Balance: 1500.00\nAccount 2 Balance: 1750.00\nAccount 3 Balance: 4000.00\nAccount 1 Balance: 750.00\nAccount 3 Balance: 2500.00\nTotal Transactions: 5"
+  }
+ ],
+ "raw": ""
+}

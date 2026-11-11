@@ -1,0 +1,17 @@
+{
+ "title": "595. Median Equalization",
+ "slug": "median-equalization",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n595. Median Equalization\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nRamesh is given a task to generalise the array. An array is called generalise if median of that array is equal to sum 'k'.Ramesh has less knowledge amongst median so he decided to take help from you.Your task is to count the number of elements that you must add to the median of given array equal to a number 'k'.",
+ "input_spec": "First line contains a number \u2018n\u2019.next line contains n space separated numbers.next line contains a number \u2018k\u2019",
+ "output_spec": "Print the count required in order to make the median of array equal to k",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n10 20 30 100 150 200\n30",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

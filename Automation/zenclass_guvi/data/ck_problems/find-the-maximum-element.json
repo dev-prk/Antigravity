@@ -1,0 +1,12 @@
+{
+ "title": "1836. Find the Maximum Element",
+ "slug": "find-the-maximum-element",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1836. Find the Maximum Element\n\n60\n\nMedium  Topics\n\nProblem: Find the Maximum Element\n\nYou are given an array of integers.\nYour task is to print the largest element in the array.\n\n\ud83d\udce5 Input Format\nN\na1 a2 a3 ... aN\n\nN \u2192 number of elements\n\nNext line contains N space-separated integers\n\n\ud83d\udce4 Output Format\n\nPrint the maximum element in the array\n\n\ud83d\udccc",
+ "input_spec": "N\na1 a2 a3 ... aN\n\nN \u2192 number of elements\n\nNext line contains N space-separated integers\n\n\ud83d\udce4",
+ "output_spec": "Print the maximum element in the array\n\n\ud83d\udccc",
+ "constraints": "1 \u2264 N \u2264 1000\n\n-10^9 \u2264 ai \u2264 10^9\n\nAccepted  0\n\nSubmissions  0\n\nAcceptance Rate  0%\n\nTopics\n\narray  data structures\n\n1\n\nCode Editor\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nChange Layout\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n#A Simple Hello World\n\nprint  (  \"Hello World\"  )\n\n#Getting",
+ "samples": [],
+ "raw": ""
+}

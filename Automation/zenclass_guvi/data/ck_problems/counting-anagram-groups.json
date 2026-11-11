@@ -1,0 +1,17 @@
+{
+ "title": "192. Counting Anagram Groups",
+ "slug": "counting-anagram-groups",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n192. Counting Anagram Groups\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven with Size of the array 'N' followed by array of 'N' strings, group the anagrams and print the number of grouping possible.If grouping not possible print '0'.",
+ "input_spec": "The input consists of the size of the array 'N' followed by an array of 'N' strings.",
+ "output_spec": "The output is the number of possible anagram groupings. If grouping is not possible, print '0'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\nrat art cat act dog god tar pat",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

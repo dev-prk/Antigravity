@@ -1,0 +1,17 @@
+{
+ "title": "252. Find Star and Super Star Elements",
+ "slug": "find-star-and-super-star-elements",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n252. Find Star and Super Star Elements\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N an array of N numbers.The task is to find all the star and super star elements in the array an print in a seperate line.Star are those elements which are strictly greater than all the elements on its right side. Super star are those elements which are strictly greater than all the elements on its left and right side.Assume first element (A[0]) is greater than all the elements on its left side, And last element (A[n-1]) is greater than all the elements on its right side.",
+ "input_spec": "The input consists of a number N and an array of N numbers. The size N is between 1 and 100000 (inclusive).",
+ "output_spec": "The output should be the star and super star elements found in the array, printed on separate lines.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n4 2 5 7 2 1",
+   "output": "7 2 1\n7"
+  }
+ ],
+ "raw": ""
+}

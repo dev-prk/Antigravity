@@ -1,0 +1,17 @@
+{
+ "title": "1997. Stack Operations Simulator",
+ "slug": "stack-operations-simulator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1997. Stack Operations Simulator\n\n60\n\nMedium\n\nProblem Statement\n\nSimulate a series of stack operations \u2014 PUSH, POP, and PEEK \u2014 and print the appropriate output for each.\n\nDescription\n\nRead an integer q, the number of operations, followed by q operations. Each operation is one of: \"PUSH x\" (push the integer x onto the stack), \"POP\" (remove and print the top element, or print \"Stack is empty\" if the stack has no elements), or \"PEEK\" (print the top element without removing it, or print \"Stack is empty\" if the stack has no elements).",
+ "input_spec": "The first line contains an integer q (1 \u2264 q \u2264 100). Each of the next q lines contains one operation: either \"PUSH x\", \"POP\", or \"PEEK\".",
+ "output_spec": "for each.\n\nDescription\n\nRead an integer q, the number of operations, followed by q operations. Each operation is one of: \"PUSH x\" (push the integer x onto the stack), \"POP\" (remove and print the top element, or print \"Stack is empty\" if the stack has no elements), or \"PEEK\" (print the top element without removing it, or print \"Stack is empty\" if the stack has no elements).\n\nInput Description\n\nThe first line contains an integer q (1 \u2264 q \u2264 100). Each of the next q lines contains one operation: either \"PUSH x\", \"POP\", or \"PEEK\".\n\nOutput Description\n\nFor every POP or PEEK operation, print the result on its own line. PUSH operations do not produce any output.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nPUSH 10\nPUSH 20\nPEEK\nPOP\nPOP",
+   "output": "20\n20\n10"
+  }
+ ],
+ "raw": ""
+}

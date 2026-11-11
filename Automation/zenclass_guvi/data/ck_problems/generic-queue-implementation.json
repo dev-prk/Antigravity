@@ -1,0 +1,17 @@
+{
+ "title": "1160. Generic Queue Implementation",
+ "slug": "generic-queue-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1160. Generic Queue Implementation\n\n50\n\nMedium\n\nProblem Statement:\nCreate a generic Queue<T> class that implements a basic queue with the following operations:\n\n* Enqueue an item to the queue.\n* Dequeue an item from the queue.\n* Peek at the front item of the queue.\n* Check if the queue is empty.\n* Print the queue contents.\n\nWrite a main method that interacts with the Queue class by allowing the user to enqueue, dequeue, and peek items, and print the queue contents. The queue should support different data types such as Integer and String.",
+ "input_spec": "The user provides commands in the format enqueue <value>, dequeue, peek, or print.\nThe value to enqueue should be provided as part of the command.",
+ "output_spec": "Print the result of each operation or the contents of the queue.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "enqueue 5\nenqueue World\nprint\nexit\n\nenqueue 5\nenqueue World\npeek\ndequeue\nprint\nexit",
+   "output": "Queue contents: [5, World]\n\nFront of the queue: 5\nDequeued value: 5\nQueue contents: [World]"
+  }
+ ],
+ "raw": ""
+}

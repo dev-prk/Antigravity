@@ -1,0 +1,17 @@
+{
+ "title": "641. Rot Card Game Arrangement",
+ "slug": "rot-card-game-arrangement",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n641. Rot Card Game Arrangement\n\n100\n\nHard  Topics\n\nProblem Statement:\nJaved is playing one game called \"rot card\". In this game you are given a sorted deck of card numbered from 1 to N.\n\n1) We pick up 1 card and put it on the back of the deck.\n2) Now, we pick up another card , it turns out to be card numbered 1 , we put it outside the deck.\n3) Now we pick up 2 cards and put it on the back of the deck.\n4) Now, we pick up another card and it turns out to be card numbered 2 , we put it outside the deck. ...\n\nWe perform this step till the last card.\nIf we some combination is possible, output the arrangement else print -1.",
+ "input_spec": "You are given with a number \u2018n\u2019.",
+ "output_spec": "the arrangement else print -1.\n\nInput Description:\nYou are given with a number \u2018n\u2019.\n\nOutput Description:\nPrint the arrangement or print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "2 1 4 3"
+  }
+ ],
+ "raw": ""
+}

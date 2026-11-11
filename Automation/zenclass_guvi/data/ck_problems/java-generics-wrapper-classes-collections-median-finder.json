@@ -1,0 +1,17 @@
+{
+ "title": "1672. Java, Generics, Wrapper Classes, Collections - Median Finder",
+ "slug": "java-generics-wrapper-classes-collections-median-finder",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1672. Java, Generics, Wrapper Classes, Collections - Median Finder\n\n50\n\nMedium\n\nMedian Finder\n\nProblem Statement:\nWrite a program to find the median of a list of numeric values using wrapper classes and generics. The program must sort the list and find the middle value (or average of two middle values if the list size is even).\n\nDescription:\n\nCreate a generic class MedianFinder<T extends Number & Comparable<T>>.\n\nImplement a method findMedian(List<T> list) to return the median.\n\nUse Collections.sort() for type-safe sorting.\n\nInput Format:\n\nFirst line: number of elements n\n\nSecond line: n space-separated numbers\n\nOutput Format:\n\nMedian value",
+ "input_spec": "First line: number of elements n\n\nSecond line: n space-separated numbers",
+ "output_spec": "Median value",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 40 50",
+   "output": "Median: 30.0"
+  }
+ ],
+ "raw": ""
+}

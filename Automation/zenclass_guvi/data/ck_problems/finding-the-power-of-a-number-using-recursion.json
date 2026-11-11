@@ -1,0 +1,17 @@
+{
+ "title": "2156. Finding the Power of a Number Using Recursion",
+ "slug": "finding-the-power-of-a-number-using-recursion",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2156. Finding the Power of a Number Using Recursion\n\n90\n\nHard\n\nProblem Statement\nRead a base and an exponent and print the base raised to the exponent, using a recursive function.\n\nDescription\nRead two integers base and exp from input. Write a recursive function power that takes two integer parameters. If exp is 0, the function returns 1 (this is the base case). Otherwise, it returns base multiplied by the result of calling itself with exp - 1. Call the function from main() and print the result. No loop should be used, and the result is guaranteed to fit in an int.",
+ "input_spec": ". Write a recursive function power that takes two integer parameters. If exp is 0, the function returns 1 (this is the base case). Otherwise, it returns base multiplied by the result of calling itself with exp - 1. Call the function from main() and print the result. No loop should be used, and the result is guaranteed to fit in an int.\n\nInput Description\nTwo integers base and exp separated by a space (exp >= 0).",
+ "output_spec": "Print the value of base raised to the power exp.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 5",
+   "output": "32"
+  }
+ ],
+ "raw": ""
+}

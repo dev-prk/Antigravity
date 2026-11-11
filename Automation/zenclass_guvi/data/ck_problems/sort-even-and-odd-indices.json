@@ -1,0 +1,17 @@
+{
+ "title": "502. Sort Even and Odd Indices",
+ "slug": "sort-even-and-odd-indices",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n502. Sort Even and Odd Indices\n\n70\n\nHard  Topics\n\nProblem Statement:\nVishal is a competitive coder and he loves problems on sorting and searching. He is bored right now and decides to solve a sorting problem with a modification. He decides to sort the elements at the even indices of an array in ascending order and the elements at the odd indices in descending order. Vishal goes outside his room after coding the solution, but his laptop crashes and he is unable to show it to his teacher. Can you help Vishal by coding the solution to the problem?",
+ "input_spec": "Size of the array followed by the elements of the array",
+ "output_spec": "Sorted elements of the array",
+ "constraints": "0<=array[i]<=10000",
+ "samples": [
+  {
+   "input": "10\n9 8 7 1 2 3 6 5 4 10",
+   "output": "2 10 4 8 6 5 7 3 9 1"
+  }
+ ],
+ "raw": ""
+}

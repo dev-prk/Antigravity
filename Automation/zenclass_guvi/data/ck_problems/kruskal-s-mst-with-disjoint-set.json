@@ -1,0 +1,17 @@
+{
+ "title": "1573. Kruskal's MST with Disjoint Set",
+ "slug": "kruskal-s-mst-with-disjoint-set",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1573. Kruskal's MST with Disjoint Set\n\n80\n\nHard\n\nProblem Statement:\nGiven an undirected, weighted graph with N nodes and M edges, find the weight of the Minimum Spanning Tree (MST) using Kruskal\u2019s algorithm. Use a disjoint-set (union-find) data structure to efficiently detect cycles during the construction of the MST.",
+ "input_spec": "- The first line contains two integers N and M, the number of nodes and edges.\n- The next M lines each contain three integers u, v, and w, representing an edge between nodes u and v with weight w.",
+ "output_spec": "- Print a single integer, the total weight of the Minimum Spanning Tree.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 5\n1 2 1\n1 3 4\n2 3 2\n2 4 3\n3 4 5",
+   "output": "6"
+  }
+ ],
+ "raw": ""
+}

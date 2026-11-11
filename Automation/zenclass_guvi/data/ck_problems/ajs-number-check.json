@@ -1,0 +1,17 @@
+{
+ "title": "544. AJS Number Check",
+ "slug": "ajs-number-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n544. AJS Number Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given an integer n (may be negative). Treat the number as its absolute decimal digits (ignore a leading -). Let the first two digits (most-significant) be d1 and d2. Compute s = d1 + d2. Print 1 if the decimal string representation of s appears as a contiguous substring anywhere in the decimal digits of n; otherwise print 0. If n has fewer than 2 digits, print 0",
+ "input_spec": "A number \u2019n\u2019 is given to you",
+ "output_spec": "Print 1 if number is ajs or 0 if it is not",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "9817",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

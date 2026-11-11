@@ -1,0 +1,17 @@
+{
+ "title": "1492. Implement Deque Using Array",
+ "slug": "implement-deque-using-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1492. Implement Deque Using Array\n\n50\n\nMedium\n\nProblem Statement:\nWrite a program to implement a double-ended queue (deque) using an array.",
+ "input_spec": "First line: size of deque\nNext lines: operations like insertFront X, insertRear X, deleteFront, deleteRear, display\nEnds with \u201cexit\u201d",
+ "output_spec": "Deque contents after display command.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\ninsertRear 1\ninsertRear 2\ninsertFront 3\ndeleteRear\ndisplay\nexit",
+   "output": "3 1"
+  }
+ ],
+ "raw": ""
+}

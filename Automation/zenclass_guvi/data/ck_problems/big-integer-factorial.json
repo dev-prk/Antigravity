@@ -1,0 +1,17 @@
+{
+ "title": "686. Big Integer Factorial",
+ "slug": "big-integer-factorial",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n686. Big Integer Factorial\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou will be given an integer. Your task is to find the factorial of that big integer.",
+ "input_spec": "You are given an integer",
+ "output_spec": "Print the factorial of that number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "100",
+   "output": "93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000"
+  }
+ ],
+ "raw": ""
+}

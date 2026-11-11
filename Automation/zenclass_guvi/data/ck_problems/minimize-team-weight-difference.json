@@ -1,0 +1,17 @@
+{
+ "title": "268. Minimize Team Weight Difference",
+ "slug": "minimize-team-weight-difference",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n268. Minimize Team Weight Difference\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nN players with weights are given as input. Divide them into 2 teams such that the difference between the total weights of the 2 teams are minimum. While dividing , ensure that difference in number of players between the teams is minimum. Output the difference in number of players in 2 teams.",
+ "input_spec": ". Divide them into 2 teams such that the difference between the total weights of the 2 teams are minimum. While dividing , ensure that difference in number of players between the teams is minimum.",
+ "output_spec": "the difference in number of players in 2 teams.\n\nInput Description:\nThe input consists of N players with their weights. The size N is between 1 and 100000 (inclusive).\n\nOutput Description:\nThe output is the minimum difference in the number of players between the two teams.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n1 2 3 4 5 6 7",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

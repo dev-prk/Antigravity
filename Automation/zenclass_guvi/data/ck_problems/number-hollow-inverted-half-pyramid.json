@@ -1,0 +1,17 @@
+{
+ "title": "877. Number Hollow Inverted Half Pyramid",
+ "slug": "number-hollow-inverted-half-pyramid",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n877. Number Hollow Inverted Half Pyramid\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGenerate a hollow inverted half pyramid pattern using numbers.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the hollow inverted half pyramid pattern using numbers based on the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "1\n1 2\n1   3\n1     4\n1 2 3 4 5"
+  }
+ ],
+ "raw": ""
+}

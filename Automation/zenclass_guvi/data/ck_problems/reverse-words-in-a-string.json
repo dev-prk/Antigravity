@@ -1,0 +1,17 @@
+{
+ "title": "1009. Reverse Words in a String",
+ "slug": "reverse-words-in-a-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1009. Reverse Words in a String\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string reverse the words in the string",
+ "input_spec": "Given a string",
+ "output_spec": "Print string into reverse the words in the string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi geek",
+   "output": "ivug keeg"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "286. Optimal Currency Denomination",
+ "slug": "optimal-currency-denomination",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n286. Optimal Currency Denomination\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven an amount A(integer) find the number of currency notes required to make the amount up in the most optimal way. The available denominations are 1000,500,100,50,10,1. The question is set in PRE-DEMONITISATION era so 1000 rupee notes are available :)",
+ "input_spec": "The input is an integer amount A, where A <= 100000000.",
+ "output_spec": "The number of currency notes required to make the amount in the most optimal way.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "689",
+   "output": "15"
+  }
+ ],
+ "raw": ""
+}

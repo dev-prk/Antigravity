@@ -1,0 +1,17 @@
+{
+ "title": "362. Longest Substring Without Repeating Characters",
+ "slug": "longest-substring-without-repeating-characters",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n362. Longest Substring Without Repeating Characters\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a string, find the length of the longest substring without repeating characters.",
+ "input_spec": "The input consists of a string S, where its length |S| is at most 1000.",
+ "output_spec": "The output is an integer representing the length of the longest substring without repeating characters.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcabcccdd",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "430. Max Nodes in Binary Heap of Height H",
+ "slug": "max-nodes-in-binary-heap-of-height-h",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n430. Max Nodes in Binary Heap of Height H\n\n70\n\nHard  Topics\n\nProblem Statement:\nGeorge wanted to construct a large binary heap. However his professor restricted the height of the heap he can construct to H. Help George find the maximum number of nodes he can insert in his binary heap.",
+ "input_spec": "The only line of input is an integer H",
+ "output_spec": "Print the maximum no. of nodes",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "15"
+  }
+ ],
+ "raw": ""
+}

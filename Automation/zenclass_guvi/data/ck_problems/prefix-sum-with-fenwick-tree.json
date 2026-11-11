@@ -1,0 +1,17 @@
+{
+ "title": "1565. Prefix Sum with Fenwick Tree",
+ "slug": "prefix-sum-with-fenwick-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1565. Prefix Sum with Fenwick Tree\n\n90\n\nHard\n\nProblem Statement:\nYou are given an array of integers of size N. You need to efficiently perform the following two types of operations:\n1. Update the value at a specific index.\n2. Query the sum of elements from index 1 to a given index.\nImplement a Fenwick Tree (Binary Indexed Tree) to support these operations efficiently.",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial values of the array (1-based indexing).\n- The next Q lines each contain a query in one of the following formats:\n- \"1 x y\" : Update the value at index x to y.\n- \"2 x\" :",
+ "output_spec": "the sum of elements from index 1 to x.\n\nOutput Description:\nFor each query of type 2, output the result on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5\n1 2 3 4 5\n2 3\n1 2 10\n2 3\n2 5\n1 5 7",
+   "output": "6\n14\n23"
+  }
+ ],
+ "raw": ""
+}

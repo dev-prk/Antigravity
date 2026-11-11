@@ -1,0 +1,17 @@
+{
+ "title": "746. Snake Spiral Pattern",
+ "slug": "snake-spiral-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n746. Snake Spiral Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a task is to print snake spiral pattern with integers by getting a number n as input.",
+ "input_spec": ".\n\nInput Description:\nYou are given a number of integer \u2018n\u2019",
+ "output_spec": "Print pattern as shown",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "4 3 2 1\n5 6 7 8\n12 11 10 9\n13 14 15 16"
+  }
+ ],
+ "raw": ""
+}

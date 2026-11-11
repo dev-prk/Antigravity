@@ -1,0 +1,17 @@
+{
+ "title": "2201. Finding the Average of an Array and Counting Elements Above It",
+ "slug": "finding-the-average-of-an-array-and-counting-elements-above-it",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2201. Finding the Average of an Array and Counting Elements Above It\n\n50\n\nMedium\n\nProblem Statement\nRead N integers into an array, print their average, and count how many elements are greater than the average.\n\nDescription\nRead an integer N, then read N integers into a one-dimensional array and find their sum. Calculate the average as a float by converting the sum using (float) before dividing by N. Use another loop with an if statement to count how many array elements are greater than the average. Print the average with two digits after the decimal point on the first line, and the count on the second line.",
+ "input_spec": "An integer N (N >= 1), followed by N integers, all separated by spaces.",
+ "output_spec": "Print the average with two digits after the decimal point on the first line, and the number of elements greater than the average on the second line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 10 20 30 40 50",
+   "output": "30.00\n2"
+  }
+ ],
+ "raw": ""
+}

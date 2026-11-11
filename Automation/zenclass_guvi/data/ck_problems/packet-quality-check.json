@@ -1,0 +1,17 @@
+{
+ "title": "2169. Packet Quality Check",
+ "slug": "packet-quality-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2169. Packet Quality Check\n\n50\n\nMedium\n\nProblem Statement\nRead the weight, the number of damaged seals and the shelf life of a packet. Print True if the packet is good, otherwise print False.\nDescription\nIn a packing unit, every packet is checked before it is sent out. A packet is good only if all three conditions are true:\n1. The weight is between 495 and 505 grams (both 495 and 505 are allowed).\n2. The number of damaged seals is 0.\n3. The shelf life is 30 days or more.\nRead the three values and print True if the packet is good, otherwise print False.",
+ "input_spec": "Three integers, each on a separate line: the weight in grams, the number of damaged seals, and the shelf life in days. (1 <= weight <= 2000, 0 <= damaged seals <= 10, 1 <= shelf life <= 365)",
+ "output_spec": "Print True if the packet is good, otherwise print False.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "500\n0\n45",
+   "output": "True"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "732. Binary Age Sum Deviation",
+ "slug": "binary-age-sum-deviation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n732. Binary Age Sum Deviation\n\n40\n\nMedium  Topics\n\nProblem Statement:\nKanishkar a computer geek, is invited to address a group of school kids on children's day. He was asked to write a program to find the sum of the ages of the kids in the class. But he did a small mistake. He wrote a program to find the sum of the binary equivalent(considered as integer) of all the ages of the students. Find the magnitude of deviation from the actual desired output.",
+ "input_spec": "First line of input will contain one single integer N corresponding to the number of students\nSecond line of input will contain the age of the students, each age separated with a space",
+ "output_spec": ".\n\nInput Description:\nFirst line of input will contain one single integer N corresponding to the number of students\nSecond line of input will contain the age of the students, each age separated with a space\n\nOutput Description:\nOne number - the deviation from the desired result and the actual output",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n5 6",
+   "output": "200"
+  }
+ ],
+ "raw": ""
+}

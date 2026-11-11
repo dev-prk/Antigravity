@@ -1,0 +1,17 @@
+{
+ "title": "1548. SPFA Shortest Path",
+ "slug": "spfa-shortest-path",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1548. SPFA Shortest Path\n\n80\n\nHard\n\nProblem Statement:\nGiven a directed weighted graph with N nodes and M edges, some of which may have negative weights (but no negative cycles), implement the Shortest Path Faster Algorithm (SPFA) to find the shortest distances from a given source node S to all other nodes. If a node is unreachable from the source, output -1 for that node.",
+ "input_spec": "- The first line contains three integers N, M, and S: the number of nodes, the number of edges, and the source node (1-based indexing).\n- The next M lines each contain three integers u, v, and w, representing a directed edge from node u to node v with weight w.",
+ "output_spec": "1 for that node.\n\nInput Description:\n- The first line contains three integers N, M, and S: the number of nodes, the number of edges, and the source node (1-based indexing).\n- The next M lines each contain three integers u, v, and w, representing a directed edge from node u to node v with weight w.\n\nOutput Description:\n- Output N space-separated integers, where the i-th integer is the shortest distance from S to node i (1-based). If node i is unreachable from S, output -1 for that node.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 2 1\n1 2 5\n3 4 7",
+   "output": "0 5 -1 -1"
+  }
+ ],
+ "raw": ""
+}

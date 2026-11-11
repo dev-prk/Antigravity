@@ -1,0 +1,17 @@
+{
+ "title": "2138. Searching for an Element in an Array Using Linear Search",
+ "slug": "searching-for-an-element-in-an-array-using-linear-search",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2138. Searching for an Element in an Array Using Linear Search\n\n90\n\nHard\n\nProblem Statement\nRead N integers into an array, then read a key value, and determine whether the key is present in the array using linear search.\n\nDescription\nRead an integer N, then read N integers into a one-dimensional array. Read a key value to search for. Use a loop to compare the key against every array element one by one, using an if statement to record the position if a match is found. After the loop, use an if-else statement to print the position (starting from 0) if the key was found, or print \"Not Found\" otherwise.",
+ "input_spec": "An integer N, followed by N integers, followed by the key value to search for.",
+ "output_spec": "Print the index of the key in the array if found, otherwise print \"Not Found\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 4 8 15 16 23 15",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

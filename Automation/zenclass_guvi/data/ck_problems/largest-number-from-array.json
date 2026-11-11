@@ -1,0 +1,17 @@
+{
+ "title": "580. Largest Number From Array",
+ "slug": "largest-number-from-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n580. Largest Number From Array\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given with arrays containing some non negative integers.Your task is to make the largest number out of it.",
+ "input_spec": "First line contains the size of array \u2019n\u2019. Second line contains the n space separated integers.",
+ "output_spec": "Print the largest element that can be form out of the array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n12 19 546 60",
+   "output": "605461912"
+  }
+ ],
+ "raw": ""
+}

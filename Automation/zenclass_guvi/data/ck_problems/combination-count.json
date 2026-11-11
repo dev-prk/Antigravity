@@ -1,0 +1,17 @@
+{
+ "title": "271. Combination Count",
+ "slug": "combination-count",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n271. Combination Count\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N and K, print the number of ways of taking k elements from the first n elements.",
+ "input_spec": "The input consists of two integers, N and K, representing the total number of elements and the number of elements to choose, respectively.",
+ "output_spec": "The output is a single integer representing the number of ways of taking K elements from N elements.",
+ "constraints": "are 1 <= N <= K <= 100000.",
+ "samples": [
+  {
+   "input": "2 2",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

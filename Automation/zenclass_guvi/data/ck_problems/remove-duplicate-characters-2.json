@@ -1,0 +1,17 @@
+{
+ "title": "826. Remove Duplicate Characters-2",
+ "slug": "remove-duplicate-characters-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n826. Remove Duplicate Characters-2\n\n70\n\nHard  Company\n\nProblem Statement:\nGiven a linked list(where each node has a character) remove the duplicate character and maintain the same order.",
+ "input_spec": "Characters of a String in linked list format",
+ "output_spec": "Characters of a String in linked list format after removing the repeated character",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "H->e->l->l->o->w->o->r->l->d->h->i",
+   "output": "H->e->l->o->w->r->d->h->i"
+  }
+ ],
+ "raw": ""
+}

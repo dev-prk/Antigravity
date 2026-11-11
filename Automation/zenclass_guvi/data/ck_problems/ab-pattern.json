@@ -1,0 +1,17 @@
+{
+ "title": "783. AB Pattern",
+ "slug": "ab-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n783. AB Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a task is to print pattern using alphabets A and B by getting a number n as input.",
+ "input_spec": ".\n\nInput Description:\nYou are given a number \u2018n' as input",
+ "output_spec": "Print the pattern as shown",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "BABA\nABAB\nBABA\nABAB"
+  }
+ ],
+ "raw": ""
+}

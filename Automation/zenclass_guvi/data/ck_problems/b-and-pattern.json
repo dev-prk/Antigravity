@@ -1,0 +1,17 @@
+{
+ "title": "879. b and * pattern",
+ "slug": "b-and-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n879. b and * pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate the following pattern.\n\n*********\nb*******b\nbb*****bb\nbbb***bbb\nbbbb*bbbb",
+ "input_spec": "Input consists of a single integer that corresponds to R, the number of rows. R is always an odd number.Where 1<=R<=100",
+ "output_spec": "Print the character with the letter 'b' pattern with the size based on the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "*********\nb*******b\nbb*****bb\nbbb***bbb\nbbbb*bbbb"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "588. Array Right Rotation",
+ "slug": "array-right-rotation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n588. Array Right Rotation\n\n70\n\nHard  Topics\n\nProblem Statement:\nYou are given with an array. Your task is to print the right rotated array after k operations. Time:O(n) Extra Space: O(1)",
+ "input_spec": "First line contains two number \u2018n\u2019 and \u2018k\u2019.Next line contains n space separated numbers.",
+ "output_spec": "Print the array as mentioned.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "14 117\n15 26 35 98 61 1230 75 96 63 21 1654 98654 320145 987",
+   "output": "21 1654 98654 320145 987 15 26 35 98 61 1230 75 96 63"
+  }
+ ],
+ "raw": ""
+}

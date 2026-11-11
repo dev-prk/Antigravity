@@ -1,0 +1,17 @@
+{
+ "title": "1507. Greedy Coin Change Problem",
+ "slug": "greedy-coin-change-problem",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1507. Greedy Coin Change Problem\n\n50\n\nMedium\n\nProblem Statement:\nYou are given an array of distinct positive integers representing coin denominations and an integer amount representing a total amount of money. Your task is to determine the minimum number of coins required to make up that amount. If it is not possible to make up the amount with the given denominations, return -1. Use greedy technique.",
+ "input_spec": "- The first line contains two integers n and amount, where n is the number of coin denominations.\n- The second line contains n space-separated integers representing the coin denominations.",
+ "output_spec": "- Print a single integer: the minimum number of coins needed to make up the amount, or -1 if it is not possible.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3\n2 4",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

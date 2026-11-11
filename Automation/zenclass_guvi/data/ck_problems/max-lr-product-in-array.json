@@ -1,0 +1,17 @@
+{
+ "title": "850. Max LR Product in Array",
+ "slug": "max-lr-product-in-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n850. Max LR Product in Array\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven an array a[1..N]. For each element at position i (1 <= i <= N). Where i) L(i) is defined as closest index j such that j < i and a[j] > a[i]. If no such j exists then L(i) = 0. ii) R(i) is defined as closest index k such that k > i and a[k] > a[i]. If no such k exists then R(i) = 0. LRProduct(i) = L(i)*R(i). Hint: Use two stacks for left(L) and right(R), find any greater element is there in the left and right side of the current element if it is there add the index of the corresponding greater element in the appropriate left or right stack.multiply the elements in the left and right of the stack and print the maximum LR product.",
+ "input_spec": "First line N indicates the length of the array. Second line indicates the elements of the array",
+ "output_spec": "Print index with maximum LR Product",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n5 4 3 4 5",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

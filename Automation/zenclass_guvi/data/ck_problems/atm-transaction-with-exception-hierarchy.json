@@ -1,0 +1,17 @@
+{
+ "title": "1662. ATM Transaction with Exception Hierarchy",
+ "slug": "atm-transaction-with-exception-hierarchy",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1662. ATM Transaction with Exception Hierarchy\n\n50\n\nMedium\n\nATM Transaction with Exception Hierarchy\n\nProblem Statement:\nCreate a program to simulate an ATM. It should handle InvalidPINException and InsufficientBalanceException using exception hierarchy.\n\nDescription:\nDemonstrates user-defined exceptions, inheritance, and structured handling.\n\nInput Format:\n\nFirst line: PIN\n\nSecond line: withdrawal amount\n\nOutput Format:\n\nBalance after withdrawal or exception message",
+ "input_spec": "First line: PIN\n\nSecond line: withdrawal amount",
+ "output_spec": "Balance after withdrawal or exception message",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1234\n2000",
+   "output": "Insufficient balance!"
+  }
+ ],
+ "raw": ""
+}

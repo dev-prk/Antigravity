@@ -1,0 +1,17 @@
+{
+ "title": "1946. Employee Salary Calculator Using Methods",
+ "slug": "employee-salary-calculator-using-methods",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1946. Employee Salary Calculator Using Methods\n\n40\n\nMedium\n\nProblem Statement\n\nWrite a program that uses methods to calculate various salary components of an employee.\n\nDescription\n\nCreate separate methods to perform the following tasks:\n\nCalculate HRA (20% of Basic Salary).\nCalculate DA (10% of Basic Salary).\nCalculate Gross Salary.\nDisplay all calculated values.\n\nRead the employee's basic salary and invoke the methods to generate the output.",
+ "input_spec": "30000\nSample",
+ "output_spec": ".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "30000",
+   "output": "HRA: 6000\nDA: 3000\nGross Salary: 39000"
+  }
+ ],
+ "raw": ""
+}

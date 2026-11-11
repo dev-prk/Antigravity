@@ -1,0 +1,17 @@
+{
+ "title": "310. Sum of Digit Powers-2",
+ "slug": "sum-of-digit-powers-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n310. Sum of Digit Powers-2\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N, Print sum of every didgit to the power of the weight of corresponding digit.",
+ "input_spec": "The input is an integer N with",
+ "output_spec": "The output is the sum of every digit to the power of the weight of its corresponding digit.",
+ "constraints": "1 <= N <= 100000.",
+ "samples": [
+  {
+   "input": "100",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

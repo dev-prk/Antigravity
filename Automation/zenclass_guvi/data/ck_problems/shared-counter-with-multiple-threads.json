@@ -1,0 +1,17 @@
+{
+ "title": "1767. Shared Counter with Multiple Threads",
+ "slug": "shared-counter-with-multiple-threads",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1767. Shared Counter with Multiple Threads\n\n60\n\nMedium\n\nShared Counter with Multiple Threads\n\nProblem Statement:\nWrite a program where multiple threads increment and decrement a shared counter. Synchronization must ensure the counter value is always consistent.\n\nDescription:\n\nCreate a Counter class with synchronized increment() and decrement().\n\nLaunch multiple threads performing increments and decrements.\n\nFinal value should be correct.\n\nInput Format:\n\nFirst line: Initial counter value\n\nSecond line: Number of operations\n\nNext lines: Operation type (inc / dec).\n\nOutput Format:\n\nLog of operations\n\nFinal counter value.",
+ "input_spec": "First line: Initial counter value\n\nSecond line: Number of operations\n\nNext lines: Operation type (inc / dec).",
+ "output_spec": "Log of operations\n\nFinal counter value.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n4\ninc\ndec\ninc\ndec",
+   "output": "Incremented: 6\nDecremented: 5\nIncremented: 6\nDecremented: 5\nFinal Counter Value: 5"
+  }
+ ],
+ "raw": ""
+}

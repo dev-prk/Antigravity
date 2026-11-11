@@ -1,0 +1,17 @@
+{
+ "title": "1674. Max-Min Difference Calculator",
+ "slug": "max-min-difference-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1674. Max-Min Difference Calculator\n\n50\n\nMedium\n\nMax-Min Difference Calculator\n\nProblem Statement:\nWrite a program that computes the difference between the maximum and minimum values of a numeric list using wrapper classes and generics.\n\nDescription:\n\nCreate a generic class MaxMinDifference<T extends Number & Comparable<T>>.\n\nImplement findDifference(List<T> list) to return (max - min).\n\nEnsure type-safety using generics.\n\nInput Format:\n\nFirst line: number of elements n\n\nSecond line: n space-separated numbers\n\nOutput Format:\n\nDifference between max and min",
+ "input_spec": "First line: number of elements n\n\nSecond line: n space-separated numbers",
+ "output_spec": "Difference between max and min",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 5 15",
+   "output": "Difference: 25.0"
+  }
+ ],
+ "raw": ""
+}

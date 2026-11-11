@@ -1,0 +1,17 @@
+{
+ "title": "1649. Inheritance, Super, Constructors",
+ "slug": "inheritance-super-constructors",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1649. Inheritance, Super, Constructors\n\n70\n\nHard\n\nLibrary Book Borrowing System\nProblem Statement\nDesign a program for a Library Book Borrowing System using inheritance.\n\nDescription:\nDesign a program where LibraryItem is a base class. Book and Magazine inherit from it. Use method overriding to calculate the late fee depending on the type of item.\n1. Books charge \u20b95/day late\n2. Magazines charge \u20b92/day late\nUse constructors and super keyword to initialize.\n\nInput Format:\nFirst line: type of item (book or magazine)\nSecond line: number of late days\n\nOutput Format:\nLate fee in \u20b9",
+ "input_spec": "First line: type of item (book or magazine)\nSecond line: number of late days",
+ "output_spec": "Late fee in \u20b9",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "book\n4",
+   "output": "20"
+  }
+ ],
+ "raw": ""
+}

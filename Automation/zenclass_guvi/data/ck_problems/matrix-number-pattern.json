@@ -1,0 +1,17 @@
+{
+ "title": "919. Matrix Number Pattern",
+ "slug": "matrix-number-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n919. Matrix Number Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a matrix number pattern.",
+ "input_spec": "Given an odd integer R indicates number of rows.R is always odd integer. Where 1<=R<=100",
+ "output_spec": "Print the matrix number pattern R*R based on the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "33333\n32223\n32123\n32223\n33333"
+  }
+ ],
+ "raw": ""
+}

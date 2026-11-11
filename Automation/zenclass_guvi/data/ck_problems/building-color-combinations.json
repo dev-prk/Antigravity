@@ -1,0 +1,17 @@
+{
+ "title": "461. Building Color Combinations",
+ "slug": "building-color-combinations",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n461. Building Color Combinations\n\n80\n\nHard  Topics\n\nProblem Statement:\nCP Inc gives you the task of building N buildings in a line . (1<=N<=1000000). The buildings are numbered from 1 to N (1-based indexing).The buildings come in two colors: red and blue\n\nThey want you to use a specific building style which can be described as follows:\n\n1) We can build a red building. If we build a red building at some position i then i+1th building also has to be red. However the i+2th building can be of any color. This rule doesn't apply to the last building if it is red in color.\n\n2) We can build a blue building at the current location . In that case the next building can be of any color we want.\n\nBefore you start building CP Inc being a company of competitve programmers decides to ask you what is the total number of ways you can build the buildings.\n\nReport the answer modulo 1000000007.",
+ "input_spec": "The first and only line of input contains a single integer N denoting the number of buildings that need to be built",
+ "output_spec": "The output must consist of a single line",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "301. Count Numbers with Digit N",
+ "slug": "count-numbers-with-digit-n",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n301. Count Numbers with Digit N\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven three numbers L,R,N, print the count of numbers with occurences of the number N in [L,R].",
+ "input_spec": "Input Size : 1 <= L,R,N <= 100000",
+ "output_spec": "11",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 130 11",
+   "output": "11"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "943. Even and Odd Digits",
+ "slug": "even-and-odd-digits",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n943. Even and Odd Digits\n\n60\n\nMedium  Topics\n\nProblem Statement:\nWrite a code get an integer number as input and print the odd and even digits of the number separately.",
+ "input_spec": "and print the odd and even digits of the number separately.\n\nInput Description:\nA single line containing an integer.",
+ "output_spec": "Print the even and odd integers of the integer in a separate line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1234",
+   "output": "2 4\n1 3"
+  }
+ ],
+ "raw": ""
+}

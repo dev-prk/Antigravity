@@ -1,0 +1,17 @@
+{
+ "title": "415. Office Staff Management",
+ "slug": "office-staff-management",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n415. Office Staff Management\n\n80\n\nHard  Topics\n\nProblem Statement:\nKumar gives up pursuing sports and decides to open up a company for helping students ace interviews and get placed. After a few months of hard work he decides to expand the company .He builds N offices in a line numbered 1 2 3..N. Each office deals with a certain product and has a staff requirement of X[i] 1<=i<=N . The staff requirement is the minimum number of employees required for the offices to operate correctly. The initial arrangement of employees Is given by Y[i] 1<=i<=N. Kumar can do one of three things: 1)He can expand the number of people in office numbered x by y employees 2)He can fire y people from office numbered x 3)He can check if at least one office from office numbered X to office numbered Y is understaffed Help Kumar carry out these operations efficiently Note: The initial arrangement will always be less the required arrangement. If Kumar tries to fire say A people from an office containing B people where A>B , the number of employees in that office reduces to 0.",
+ "input_spec": "The first line contains an integer N denoting the number of offices . The second line contains N integers : the contents of X : the staff requirement The third line contains N integers : the contents of Y : the initial arrangement of staff in the offices The fourth line contains a single integer Q : the no of actions kumar takes The next Q line can contains either of the following: 1 x y : Kumar increases the number of employees in office x by y 2 x y : Kumar fires y people from office numbered x 3 x y : Kumar wants to know if any office in the range [x,y] is understaffed",
+ "output_spec": "For each type 3 event output in a single line either \u201cUnderstaffed offices present\u201d :if there is at least once office understaffed in the given range Or \u201cAll offices at full efficiency\u201d if no office is understaffed in the given range Note: Print without quotes",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n2 2 2 2\n1 1 1 1\n3\n1 1 1\n3 1 1\n3 2 4",
+   "output": "All offices at full efficiency\nUnderstaffed offices present"
+  }
+ ],
+ "raw": ""
+}

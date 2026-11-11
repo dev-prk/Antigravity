@@ -1,0 +1,17 @@
+{
+ "title": "814. Betrothed Numbers Check",
+ "slug": "betrothed-numbers-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n814. Betrothed Numbers Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to check the given two number is betrothed number or not",
+ "input_spec": "The input contains an integer",
+ "output_spec": "If its betrothed print Yes otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "48 75",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

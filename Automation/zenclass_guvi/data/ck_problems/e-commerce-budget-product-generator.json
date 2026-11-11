@@ -1,0 +1,17 @@
+{
+ "title": "1096. E-commerce Budget Product Generator",
+ "slug": "e-commerce-budget-product-generator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1096. E-commerce Budget Product Generator\n\n50\n\nMedium\n\nProblem Statement:\nIn an e-commerce application, you have a list of n products. Each product has a unique ID and a price. You need to implement a generator function get_products_in_budget(budget, products) that yields products one by one, sorted by price, until the total price of yielded products exceeds the budget.",
+ "input_spec": "- budget: an integer representing the total budget.\n- products: a list of tuples. Each tuple contains two elements - the first element is the product ID (a string), and the second element is the product price (an integer).",
+ "output_spec": "- The function should yield tuples. Each tuple contains two elements - the first element is the product ID (a string), and the second element is the product price (an integer).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "100\n[(\"p1\", 30), (\"p2\", 50), (\"p3\", 40), (\"p4\", 60)]",
+   "output": "('p1', 30)\n('p3', 40)"
+  }
+ ],
+ "raw": ""
+}

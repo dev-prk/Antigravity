@@ -1,0 +1,17 @@
+{
+ "title": "140. Common Numbers in Sorted Order",
+ "slug": "common-numbers-in-sorted-order",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n140. Common Numbers in Sorted Order\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers N and M followed by N numbers and M numbers, print the common numbers in sorted order.",
+ "input_spec": "N,M <= 100000 (ie do it in O(n) time complexity)",
+ "output_spec": "The common numbers in sorted order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 4\n1 2 3 4 5 1 2 3 4",
+   "output": "1 2 3 4"
+  }
+ ],
+ "raw": ""
+}

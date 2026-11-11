@@ -1,0 +1,21 @@
+{
+ "title": "2020. Check Palindrome Using StringBuffer",
+ "slug": "check-palindrome-using-stringbuffer",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2020. Check Palindrome Using StringBuffer\n\n60\n\nMedium\n\nProblem Statement\n\nGiven a string, determine whether it is a palindrome.\n\nInput\n\nA string.\n\nOutput\n\nPrint Palindrome or Not Palindrome.",
+ "input_spec": "A string.",
+ "output_spec": "Print Palindrome or Not Palindrome.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "A string.",
+   "output": "Print Palindrome or Not Palindrome."
+  },
+  {
+   "input": "madam",
+   "output": "Palindrome"
+  }
+ ],
+ "raw": ""
+}

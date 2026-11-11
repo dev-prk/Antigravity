@@ -1,0 +1,17 @@
+{
+ "title": "410. Planet Gravity and Potential Energy",
+ "slug": "planet-gravity-and-potential-energy",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n410. Planet Gravity and Potential Energy\n\n50\n\nMedium  Topics\n\nProblem Statement:\nThe potential energy of a ball of mass m placed at height h is given by U = m.g.h. (m - mass, g - acceleration due to gravity). The acceleration due to gravity of K planets is given to you. Answer Q queries of the form,\nU P h\nU denotes the potential energy of a ball placed at height h on planet P.\nAnswer each query by printing the mass of the ball used.",
+ "input_spec": "The first line contains an integer K denoting the number of planets.\nThe next K lines contains the name of the planet and it's acceleration due to gravity, separated by a space.\nThe next line contains an integer Q denoting the number of queries.\nThe next Q lines contains a query as specified in the question.",
+ "output_spec": "Print Q lines denoting the mass of the ball used in each query.\nRound off the mass to two decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\nearth 10\nvenus 20\n1\n200 earth 6",
+   "output": "3.33"
+  }
+ ],
+ "raw": ""
+}

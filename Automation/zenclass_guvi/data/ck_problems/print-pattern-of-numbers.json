@@ -1,0 +1,17 @@
+{
+ "title": "745. Print Pattern of Numbers",
+ "slug": "print-pattern-of-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n745. Print Pattern of Numbers\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a task is to print pattern",
+ "input_spec": "You are given number \u2018n\u2019",
+ "output_spec": "Print the pattern as follows",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "4 4 4 4\n4 3 3 4\n4 3 3 4\n4 4 4 4"
+  }
+ ],
+ "raw": ""
+}

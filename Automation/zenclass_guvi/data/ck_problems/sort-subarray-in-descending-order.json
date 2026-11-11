@@ -1,0 +1,17 @@
+{
+ "title": "503. Sort Subarray in Descending Order",
+ "slug": "sort-subarray-in-descending-order",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n503. Sort Subarray in Descending Order\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given an array of N elements. Your task is to sort a subarray denoted by the index values i1 and i2 in descending order. Note: Index values start at 0. The sorting must be completed in O(i2-i1+1)log(i2-i1+1)",
+ "input_spec": "Size of array followed by elements of the array. The third line contains the start and end indices of the subarray( i1 and i2)",
+ "output_spec": "A partially sorted array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n34 9 2 10 56\n1 3",
+   "output": "34 2 9 10 56"
+  }
+ ],
+ "raw": ""
+}

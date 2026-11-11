@@ -1,0 +1,17 @@
+{
+ "title": "462. Minimum Subarray Sum-3",
+ "slug": "minimum-subarray-sum-3",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n462. Minimum Subarray Sum-3\n\n50\n\nMedium  Topics\n\nProblem Statement:\nQuinton was given an array of integers and was asked to find the minimum subarray sum. A subarray is a contigous non-empty segment of an array. Help Quinton solve this problem.",
+ "input_spec": "The first line contains an integer N denoting the number of citizens.\nThe next line contains N space separated integers A[i] (1",
+ "output_spec": "Print a single line, the minimum subarray sum.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n4 -1 -2",
+   "output": "-3"
+  }
+ ],
+ "raw": ""
+}

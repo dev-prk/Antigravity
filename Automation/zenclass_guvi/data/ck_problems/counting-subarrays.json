@@ -1,0 +1,17 @@
+{
+ "title": "141. Counting Subarrays",
+ "slug": "counting-subarrays",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n141. Counting Subarrays\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven an array print the number of subarrays that can be formed with it.",
+ "input_spec": "The input consists of an integer N representing the size of the array, where N <= 100000, followed by N space-separated integers representing the array elements.",
+ "output_spec": "The output is a single integer representing the total number of subarrays that can be formed from the given array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 2 1",
+   "output": "15"
+  }
+ ],
+ "raw": ""
+}

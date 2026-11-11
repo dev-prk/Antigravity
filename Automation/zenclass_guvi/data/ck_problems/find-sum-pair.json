@@ -1,0 +1,17 @@
+{
+ "title": "262. Find Sum Pair",
+ "slug": "find-sum-pair",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n262. Find Sum Pair\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven N, K and follwed by N of integers , find two numbers such that they add up to a specific target number K. Example Input: numbers={2, 7, 11, 15}, K=9,print 'yes' if target achieved (2,7 can be added to get 9) if there is no such pair print 'no'.",
+ "input_spec": "numbers={2, 7, 11, 15}, K=9,print 'yes' if target achieved (2,7 can be added to get 9) if there is no such pair print 'no'.\n\nInput Description:\nThe input consists of two integers N and K, followed by N integers. N is constrained by 1 <= N <= 100000.",
+ "output_spec": "The output should be 'yes' if there exists a pair of numbers in the given N integers that sum up to K, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 6\n1 2 3 4 5 6 7",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

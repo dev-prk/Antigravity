@@ -1,0 +1,17 @@
+{
+ "title": "447. 13-D Dice Outcomes",
+ "slug": "13-d-dice-outcomes",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n447. 13-D Dice Outcomes\n\n70\n\nHard  Topics\n\nProblem Statement:\nRaju is in horror land, which is 13-dimensional. The dice in horror land have 13 faces. When a die is thrown there are 13 possible outcomes from 1 to 13. N dice are thrown simultaneously. Find the number of possible outcomes.",
+ "input_spec": "The only line of input contains an integer N.",
+ "output_spec": "Print a line, the number of possible outcomes. Since the answer can be very large, print it modulo 1,000,000,007",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1",
+   "output": "13"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,25 @@
+{
+ "title": "1622. Type Qualifiers: const",
+ "slug": "type-qualifiers-const",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1622. Type Qualifiers: const\n\n50\n\nMedium\n\nProblem Statement\nTitle: Read-Only Data Access in Sensor Systems\n\nIn a weather monitoring system, multiple sensors are deployed to collect critical information like temperature, humidity, and wind speed. These sensor readings are stored in memory and should be made read-only to ensure data integrity once the readings are taken. You are tasked with creating a program that collects sensor data, stores it in a way that the values cannot be altered, and displays the collected data.\n\nYour task is to write a C program that uses the const qualifier to store sensor readings in an immutable manner, making sure that no function can alter the sensor data once it has been set.\n\nInput:\n\nThe first input is an integer n (1 <= n <= 10), representing the number of sensors.\nThen, you need to take n floating-point numbers, which represent the sensor readings for different environmental parameters.\n\nOutput:\n\nThe program should output the sensor readings after all inputs have been received, ensuring they remain unaltered.",
+ "input_spec": "The first input is an integer n (1 <= n <= 10), representing the number of sensors.\nThen, you need to take n floating-point numbers, which represent the sensor readings for different environmental parameters.",
+ "output_spec": "The program should output the sensor readings after all inputs have been received, ensuring they remain unaltered.",
+ "constraints": "You must use the const type qualifier to ensure that the sensor readings cannot be modified once initialized.\nYou cannot use any external files for",
+ "samples": [
+  {
+   "input": "The first input is an integer n (1 <= n <= 10), representing the number of sensors.\nThen, you need to take n floating-point numbers, which represent the sensor readings for different environmental parameters.",
+   "output": "The program should output the sensor readings after all inputs have been received, ensuring they remain unaltered."
+  },
+  {
+   "input": "4\n23.5 78.6 19.2 45.3",
+   "output": "Sensor Readings:\n23.50\n78.60\n19.20\n45.30\n\nExample 2:"
+  },
+  {
+   "input": "2\n50.5 60.1",
+   "output": "Sensor Readings:\n50.50\n60.10"
+  }
+ ],
+ "raw": ""
+}

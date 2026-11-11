@@ -1,0 +1,17 @@
+{
+ "title": "565. Shortest Path in a Matrix",
+ "slug": "shortest-path-in-a-matrix",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n565. Shortest Path in a Matrix\n\n50\n\nMedium  Topics\n\nProblem Statement:\nSalesman A has to reach a destination B as soon as possible to deliver a product. The roads of the city are modelled as a matrix, with every cell in the matrix denoting the distance a road covers. Find out the shortest distance that the salesman can travel so as to reach the destination soon.",
+ "input_spec": "Dimensions of the matrix followed by the elements of the matrix. Elements A and B represent positions of the salesman and the destination respectively.",
+ "output_spec": "Length of the shortest path.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\nA 2 3\n1 1 B\n1 2 3",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1027. Multi-Base Number Converter",
+ "slug": "multi-base-number-converter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1027. Multi-Base Number Converter\n\n40\n\nMedium\n\nProblem Statement:\nDesign and develop a number converter that performs the decimal number into binary, octal, and hexadecimal numbers using user-defined functions and vice-versa.",
+ "input_spec": "The first line of the space-separated integer input consists of choices C1 and C2 indicating the conversion units from a given unit to a required unit.\n\nBelow are the choices that are available:\n\n1- Decimal\n\n2- Binary\n\n3- Octal\n\n4- Hexadecimal\n\nThe second line of the input consists of a single input value X(a C1 number) which need to be converted to a C2 number",
+ "output_spec": "The output consists of a single value indicating the converted C2 number of the given input X",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2\n35",
+   "output": "100011"
+  }
+ ],
+ "raw": ""
+}

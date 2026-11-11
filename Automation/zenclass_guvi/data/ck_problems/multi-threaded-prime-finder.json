@@ -1,0 +1,17 @@
+{
+ "title": "1763. Multi-Threaded Prime Finder",
+ "slug": "multi-threaded-prime-finder",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1763. Multi-Threaded Prime Finder\n\n60\n\nMedium\n\nMulti-Threaded Prime Finder\n\nProblem Statement:\nWrite a program to find all prime numbers in a range using multiple threads.\n\nDescription:\n\nDivide the range into equal parts.\n\nEach thread finds primes in its segment.\n\nCollect all primes in a synchronized list.\n\nInput Format:\n\nFirst line: Start of range start\n\nSecond line: End of range end\n\nThird line: Number of threads t\n\nOutput Format:\n\nList of prime numbers",
+ "input_spec": "First line: Start of range start\n\nSecond line: End of range end\n\nThird line: Number of threads t",
+ "output_spec": "List of prime numbers",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n20\n4",
+   "output": "Primes: [2, 3, 5, 7, 11, 13, 17, 19]"
+  }
+ ],
+ "raw": ""
+}

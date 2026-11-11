@@ -1,0 +1,17 @@
+{
+ "title": "1161. Generic Pair Equality Check",
+ "slug": "generic-pair-equality-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1161. Generic Pair Equality Check\n\n50\n\nMedium\n\nProblem Statement:\nCreate a generic Pair<T, U> class with methods to:\n* Compare two pairs to check if they are equal.\n* Print a detailed comparison result showing if the pairs are equal or not.\n\nWrite a main method that:\n* Prompts the user to input pairs of Integer and String.\n* Compares the pairs and displays the result.",
+ "input_spec": "pairs of Integer and String.\n* Compares the pairs and displays the result.\n\nInput Description:\nThe user inputs two pairs, each with values for Integer and String.",
+ "output_spec": "Print whether the pairs are equal or not based on their values.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\napple\n10\napple\n2\njava\n3\ncode",
+   "output": "The pairs are equal.\nThe pairs are not equal."
+  }
+ ],
+ "raw": ""
+}

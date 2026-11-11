@@ -1,0 +1,17 @@
+{
+ "title": "1641. Employee Salary Calculator (Method Overloading)",
+ "slug": "employee-salary-calculator-method-overloading",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1641. Employee Salary Calculator (Method Overloading)\n\n80\n\nHard\n\nEmployee Salary Calculator (Method Overloading)\n\nProblem Statement:\nWrite a program to demonstrate method overloading by creating a class Employee with overloaded methods calculateSalary().\n\nOne method should accept base salary only.\n\nAnother should accept base salary and bonus.\n\nAnother should accept base salary, bonus, and deductions.\n\nDescription:\nUse method overloading to calculate salary with different parameters.\n\nInput Format:\n\nFirst line: base salary\n\nSecond line: bonus (optional)\n\nThird line: deductions (optional)\n\nOutput Format:\nFinal calculated salary",
+ "input_spec": "First line: base salary\n\nSecond line: bonus (optional)\n\nThird line: deductions (optional)",
+ "output_spec": "Final calculated salary",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "30000\n5000\n2000",
+   "output": "33000"
+  }
+ ],
+ "raw": ""
+}

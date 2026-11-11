@@ -1,0 +1,17 @@
+{
+ "title": "1547. Minimum Cost Path in a Grid",
+ "slug": "minimum-cost-path-in-a-grid",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1547. Minimum Cost Path in a Grid\n\n70\n\nHard\n\nProblem Statement:\nGiven an m x n grid where each cell contains a non-negative integer representing the cost to enter that cell, find the minimum cost to reach the bottom-right cell (m-1, n-1) from the top-left cell (0, 0). You can only move either down or right at any point in time. The cost of a path is the sum of the costs of all cells visited along the path, including the starting and ending cells. Implement your solution using Dijkstra\u2019s algorithm.",
+ "input_spec": "- The first line contains two integers m and n, the number of rows and columns in the grid.\n- The next m lines each contain n integers, representing the cost grid.",
+ "output_spec": "- A single integer representing the minimum cost to reach the bottom-right cell from the top-left cell.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 3 1\n1 5 1\n4 2 1",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1642. Polymorphism, Method Overloading - Volume Finder",
+ "slug": "polymorphism-method-overloading-volume-finder",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1642. Polymorphism, Method Overloading - Volume Finder\n\n50\n\nMedium\n\nVolume Finder\n\nProblem Statement:\nWrite a program using method overloading\n\nDescription:\nFind the volume of:\n\n1. Cube (side)\n\n2. Cuboid (length, breadth, height)\n\n3. Cylinder (radius, height)\n\nInput Format:\nUser chooses shape and provides dimensions.\n\nOutput Format:\nVolume of the chosen shape.",
+ "input_spec": "User chooses shape and provides dimensions.",
+ "output_spec": "Volume of the chosen shape.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "cylinder\n3 7",
+   "output": "197.92"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "561. Solve 4x4 Sudoku",
+ "slug": "solve-4x4-sudoku",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n561. Solve 4x4 Sudoku\n\n70\n\nHard  Topics\n\nProblem Statement:\nVaibhav loves to solve sudoku. He wants you to try solving a sudoku puzzle. As you are a beginner, he gives you a 4x4 puzzle. You have almost solved the puzzle but are just short of 1 number. You solve the puzzle but decide to write a program for solving the same. The program, when fed with a partially solved sudoku, returns a completely solved one. The places in the matrix with an unsolved sudoku value are marked with a 0. To make it easier, a constraint that every row and column can have a max of 2 unknown values is added.",
+ "input_spec": "Elements of the 4*4 matrix",
+ "output_spec": "Completely solved sudoku puzzle",
+ "constraints": "that every row and column can have a max of 2 unknown values is added.",
+ "samples": [
+  {
+   "input": "1 4 3 2\n3 0 1 4\n4 1 2 0\n2 3 4 1",
+   "output": "1 4 3 2\n3 2 1 4\n4 1 2 3\n2 3 4 1"
+  }
+ ],
+ "raw": ""
+}

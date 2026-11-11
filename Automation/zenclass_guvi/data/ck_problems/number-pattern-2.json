@@ -1,0 +1,17 @@
+{
+ "title": "747. Number Pattern-2",
+ "slug": "number-pattern-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n747. Number Pattern-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a task is to print pattern using numbers by getting n as input.",
+ "input_spec": ".\n\nInput Description:\nYou are given an integer \u2018n\u2019",
+ "output_spec": "Print pattern as shown",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "1234321\n123 321\n12   21\n1     1"
+  }
+ ],
+ "raw": ""
+}

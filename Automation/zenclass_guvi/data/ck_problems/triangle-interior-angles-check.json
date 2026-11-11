@@ -1,0 +1,17 @@
+{
+ "title": "107. Triangle Interior Angles Check",
+ "slug": "triangle-interior-angles-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n107. Triangle Interior Angles Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven 3 angles A,B,C find if they can be interior angles of a triangle.If they form an interior triangle for the given angle,print 'yes' otherwise print 'no'.",
+ "input_spec": "The input consists of three integers A, B, and C, representing the angles. The",
+ "output_spec": "The output should be 'yes' if the given angles can form an interior triangle, and 'no' otherwise.",
+ "constraints": "for the angles are 0 <= A,B,C <= 180.",
+ "samples": [
+  {
+   "input": "2 2 176",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

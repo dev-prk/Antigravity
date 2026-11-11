@@ -1,0 +1,17 @@
+{
+ "title": "122. Swap Adjacent Elements",
+ "slug": "swap-adjacent-elements",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n122. Swap Adjacent Elements\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven an array of N elements switch(swap) the element with the adjacent element and print the output.",
+ "input_spec": "5\n3 2 1 2 3\n\nSample",
+ "output_spec": ".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n3 2 1 2 3",
+   "output": "2 3 2 1 3"
+  }
+ ],
+ "raw": ""
+}

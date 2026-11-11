@@ -1,0 +1,17 @@
+{
+ "title": "1666. Removing Duplicates from a List",
+ "slug": "removing-duplicates-from-a-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1666. Removing Duplicates from a List\n\n50\n\nMedium\n\nRemoving Duplicates from a List\n\nProblem Statement:\nWrite a Java program to remove duplicates from a given list of integers while preserving the order of elements.\n\nDescription:\nYou are given a list of integers. Your task is to write a Java program that removes duplicate elements from the list while maintaining the original order of elements. The program should read the list of integers from the user, process it to remove duplicates, and then output the modified list.\n\nInput Format:\n\nThe first line contains an integer n, representing the number of elements in the list.\nThe next n lines each contain one integer, representing elements of the list.\nOutput Format:\n\nOutput the modified list after removing duplicates, each element in a new line.",
+ "input_spec": "The first line contains an integer n, representing the number of elements in the list.\nThe next n lines each contain one integer, representing elements of the list.",
+ "output_spec": "the modified list.\n\nInput Format:\n\nThe first line contains an integer n, representing the number of elements in the list.\nThe next n lines each contain one integer, representing elements of the list.\nOutput Format:\n\nOutput the modified list after removing duplicates, each element in a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n1\n2\n3\n2\n4\n3\n1",
+   "output": "1\n2\n3\n4"
+  }
+ ],
+ "raw": ""
+}

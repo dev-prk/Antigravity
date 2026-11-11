@@ -1,0 +1,17 @@
+{
+ "title": "187. Run-Length Encoding",
+ "slug": "run-length-encoding",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n187. Run-Length Encoding\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a string, print the run-length encoded output.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": ".\n\nInput Description:\nInput Size : N <= 100000",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aaab",
+   "output": "a3b1"
+  }
+ ],
+ "raw": ""
+}

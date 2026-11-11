@@ -1,0 +1,17 @@
+{
+ "title": "1643. Banking System with Static Interest Rate",
+ "slug": "banking-system-with-static-interest-rate",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1643. Banking System with Static Interest Rate\n\n50\n\nMedium\n\nBanking System with Static Interest Rate\nProblem Statement\nCreate a banking system where the interest rate is static across all accounts. Demonstrate deposits, withdrawals, and interest calculation.\n\nDescription\n1. Define a class BankAccount with variables:\nbalance (for storing account balance).\n2. Use a static variable interestRate applicable to all accounts.\n3. Implement methods:\ndeposit(amount) \u2192 Adds money to balance.\nwithdraw(amount) \u2192 Deducts money if sufficient balance exists.\ncalculateInterest() \u2192 Returns interest based on current balance and static interest rate.\n4. After deposit and withdrawal, calculate interest and display the final balance and interest.\n\nInput Format\nInitial deposit amount\nWithdrawal amount\n\nOutput Format\nBalance\nInterest",
+ "input_spec": "Initial deposit amount\nWithdrawal amount",
+ "output_spec": "Balance\nInterest",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5000\n2000",
+   "output": "3000.0\n150"
+  }
+ ],
+ "raw": ""
+}

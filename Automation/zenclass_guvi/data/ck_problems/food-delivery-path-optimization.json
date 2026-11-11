@@ -1,0 +1,17 @@
+{
+ "title": "1035. Food Delivery Path Optimization",
+ "slug": "food-delivery-path-optimization",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1035. Food Delivery Path Optimization\n\n70\n\nHard\n\nProblem Statement:\nCreate a food delivering system which allocates the path for delivery of food using appropriate data structures.",
+ "input_spec": "The first line of the input is the two space-separated integers N and M denoting the size of the sample space.\n\nIt is followed N rows and M column matrix denoting the time weightage of each route points in minutes to move from given (nx, mx) to (ny, mx).\n\nThe last line of the input contains space-separated co-ordinate values indicating the source and destination in the following format:\n\nns,ms nd,md\n\nNote: The movements can be made only in top, left, right and bottom directions",
+ "output_spec": "Print the shortest time to reach the destination",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n3 2 1\n2 1 3\n0,0 2,2",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

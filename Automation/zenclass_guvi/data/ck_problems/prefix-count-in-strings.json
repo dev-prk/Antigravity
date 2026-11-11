@@ -1,0 +1,17 @@
+{
+ "title": "288. Prefix Count in Strings",
+ "slug": "prefix-count-in-strings",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n288. Prefix Count in Strings\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven N strings and a prefix string p. Find how many of the N strings have p as their prefix. For example: String[] input={'100','111','10100','10','1111'} prefix='10' output=2",
+ "input_spec": "={'100','111','10100','10','1111'} prefix='10'",
+ "output_spec": "=2\n\nInput Description:\nInput Size : N <= 100000, string length <=1000, prefix length <=100",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n100 111 10100 10 1111\n10",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

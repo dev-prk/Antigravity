@@ -1,0 +1,17 @@
+{
+ "title": "1454. N-Queens Problem Solutions",
+ "slug": "n-queens-problem-solutions",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1454. N-Queens Problem Solutions\n\n40\n\nMedium\n\nProblem Statement:\nGiven an integer N, place N queens on an N\u00d7N chessboard so that no two queens threaten each other. A queen can attack another queen if they are on the same row, column, or diagonal. Your task is to print all possible distinct solutions to the N-Queens problem. Each solution should be represented as a list of strings, where each string represents a row of the chessboard, and 'Q' indicates a queen and '.' indicates an empty space.",
+ "input_spec": "- A single integer N (1 \u2264 N \u2264 9), the size of the chessboard and the number of queens to place.",
+ "output_spec": "- Print all possible solutions. For each solution, print N lines representing the chessboard configuration. Separate different solutions by a blank line. If there are no solutions, print \"No solution\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q.."
+  }
+ ],
+ "raw": ""
+}

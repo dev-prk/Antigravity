@@ -1,0 +1,17 @@
+{
+ "title": "1483. Dynamic Memory Graph Connected Components",
+ "slug": "dynamic-memory-graph-connected-components",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1483. Dynamic Memory Graph Connected Components\n\n40\n\nMedium\n\nProblem Statement:\nTitle: Memory Efficient Graph Operations using Dynamic Memory Allocation\nYou are tasked with creating a memory-efficient program to process and manage a graph in C using dynamic memory allocation. The program should allow you to store and manipulate an undirected graph represented by n nodes and m edges, and later release the allocated memory using free() when operations are complete.\nGiven a list of edges, your task is to:\nStore the edges in an adjacency list.\nCounting the number of the connected components that are in the graph.",
+ "input_spec": "The first line contains two integers n (1 \u2264 n \u2264 10^5) and m (1 \u2264 m \u2264 2 * 10^5), representing the number of nodes and the number of edges.\nThe next m lines contain two integers u and v (1 \u2264 u, v \u2264 n), indicating that there is an edge between node u and node v.",
+ "output_spec": "Output a single integer, the number of connected components in the graph.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3\n1 2\n2 3\n4 5",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

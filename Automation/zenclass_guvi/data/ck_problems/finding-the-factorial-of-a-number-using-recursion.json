@@ -1,0 +1,17 @@
+{
+ "title": "2203. Finding the Factorial of a Number Using Recursion",
+ "slug": "finding-the-factorial-of-a-number-using-recursion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2203. Finding the Factorial of a Number Using Recursion\n\n60\n\nMedium\n\nProblem Statement\nRead an integer and print its factorial using a recursive function.\n\nDescription\nThe factorial of n, written n!, is the product of all integers from 1 to n, and the factorial of 0 is 1. Read an integer n from input. Write a recursive function factorial that takes an integer parameter. If n is 0, the function returns 1 (this is the base case). Otherwise, it returns n multiplied by the result of calling itself with n - 1. Call the function from main() and print the result. No loop should be used.",
+ "input_spec": ". Write a recursive function factorial that takes an integer parameter. If n is 0, the function returns 1 (this is the base case). Otherwise, it returns n multiplied by the result of calling itself with n - 1. Call the function from main() and print the result. No loop should be used.\n\nInput Description\nA single integer n (0 <= n <= 10).",
+ "output_spec": "Print the factorial of n.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6",
+   "output": "720"
+  }
+ ],
+ "raw": ""
+}

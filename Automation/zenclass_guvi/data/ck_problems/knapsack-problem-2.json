@@ -1,0 +1,17 @@
+{
+ "title": "952. Knapsack Problem-2",
+ "slug": "knapsack-problem-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n952. Knapsack Problem-2\n\n70\n\nHard\n\nProblem Statement:\nGiven two numbers N, W, and two arrays each containing N integers(1 Weight array,1 Value array), print the maximum value that can be obtained by picking a list of elements with total weight <=W.",
+ "input_spec": "The first line consists of N and W space-separated values denoting the size of the array and weight.\nThe following line consists of two space-separated arrays of size N.",
+ "output_spec": "Print the maximum weight.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5\n1 2 3 4 5\n1 1 1 1 1",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

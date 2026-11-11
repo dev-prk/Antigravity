@@ -1,0 +1,17 @@
+{
+ "title": "1585. Counting Sort for Limited Range Array",
+ "slug": "counting-sort-for-limited-range-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1585. Counting Sort for Limited Range Array\n\n80\n\nHard\n\nProblem Statement:\nGiven an array of N integers where each element is in the range [0, K], sort the array in non-decreasing order. Your solution should be optimized for the given",
+ "input_spec": "- The first line contains two integers N and K, the size of the array and the maximum value in the array.\n- The second line contains N space-separated integers representing the elements of the array.",
+ "output_spec": "- Print the sorted array as N space-separated integers.",
+ "constraints": ".",
+ "samples": [
+  {
+   "input": "6 5\n1 4 2 2 5 0\n5 3\n3 1 2 1 0",
+   "output": "0 1 2 2 4 5\n0 1 1 2 3"
+  }
+ ],
+ "raw": ""
+}

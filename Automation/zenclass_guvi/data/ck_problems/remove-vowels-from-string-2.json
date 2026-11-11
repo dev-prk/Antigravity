@@ -1,0 +1,17 @@
+{
+ "title": "1005. Remove Vowels from String-2",
+ "slug": "remove-vowels-from-string-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1005. Remove Vowels from String-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string remove the vowels in the string",
+ "input_spec": "Given a string",
+ "output_spec": "Print the string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi geek",
+   "output": "gv gk"
+  }
+ ],
+ "raw": ""
+}

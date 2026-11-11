@@ -1,0 +1,17 @@
+{
+ "title": "1856. Job Scheduling to Maximize Profit",
+ "slug": "job-scheduling-to-maximize-profit",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1856. Job Scheduling to Maximize Profit\n\n80\n\nHard  Topics\n\nJob Scheduling to Maximize Profit\n\nProblem Statement:\nYou are given jobs with deadlines and profits. Schedule the jobs such that total profit is maximized. Each job takes a unit of time and only one job can be scheduled at a time.\n\nDescription:\nUse Greedy and Disjoint Set Union (DSU) or sorting technique to solve the problem.\n\nInput Format:\nFirst line: n (number of jobs)\nNext n lines: Job id, deadline, profit\n\nOutput Format:\nA single integer representing the maximum total profit",
+ "input_spec": "First line: n (number of jobs)\nNext n lines: Job id, deadline, profit",
+ "output_spec": "A single integer representing the maximum total profit",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 4 20\n2 1 10\n3 1 40\n4 1 30",
+   "output": "60"
+  }
+ ],
+ "raw": ""
+}

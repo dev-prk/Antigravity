@@ -1,0 +1,17 @@
+{
+ "title": "1031. Stack using Linked List",
+ "slug": "stack-using-linked-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1031. Stack using Linked List\n\n50\n\nMedium\n\nProblem Statement:\nCreation of Linked List implementation of Stack ADT.",
+ "input_spec": "The first line of the input N is an integer denoting the number of elements in the stack S.\nThe second line of the input consists of the N space-separated stack element from bottom to top.\nThe third line of the input is the integer O denoting the operation that needs to be performed and additional new value X in case of the push operation.\nThe operations are as follows:\n\n1- Push\n2- Pop",
+ "output_spec": "Print the stack from bottom to top in a space-separated format after performing the selected operation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 40 50\n1 60",
+   "output": "10 20 30 40 50 60"
+  }
+ ],
+ "raw": ""
+}

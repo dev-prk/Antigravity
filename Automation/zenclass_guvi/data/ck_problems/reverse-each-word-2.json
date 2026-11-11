@@ -1,0 +1,17 @@
+{
+ "title": "718. Reverse Each Word-2",
+ "slug": "reverse-each-word-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n718. Reverse Each Word-2\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to reverse each of a sentence.\nSentence length<100 characters.",
+ "input_spec": "The single line contains a set of words separated by space and ends with a new line character.",
+ "output_spec": "Print the sentence with each word in reverse order",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "This is a sample Sentence",
+   "output": "sihT si a elpmas ecnetneS"
+  }
+ ],
+ "raw": ""
+}

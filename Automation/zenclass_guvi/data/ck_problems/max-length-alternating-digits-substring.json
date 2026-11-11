@@ -1,0 +1,17 @@
+{
+ "title": "159. Max Length Alternating Digits Substring",
+ "slug": "max-length-alternating-digits-substring",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n159. Max Length Alternating Digits Substring\n\n50\n\nMedium  Topics\n\nProblem Statement:\nA number is given as input(as string). Find the maximum length of substring alternating digits of odd and even.",
+ "input_spec": "(as string). Find the maximum length of substring alternating digits of odd and even.\n\nInput Description:\nThe input is a number given as a string. The input size N is less than or equal to 10000000000.",
+ "output_spec": "The output is the maximum length of a substring with alternating odd and even digits.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4123",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

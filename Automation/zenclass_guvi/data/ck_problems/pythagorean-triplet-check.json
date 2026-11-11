@@ -1,0 +1,17 @@
+{
+ "title": "484. Pythagorean Triplet Check",
+ "slug": "pythagorean-triplet-check",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n484. Pythagorean Triplet Check\n\n80\n\nHard  Topics\n\nProblem Statement:\nRavi is doing his schooling and he has got a homework problem to solve. The objective of the problem is to find whether any 3 numbers in given list of numbers can satisfy the formation:a^2+b^2=c^2. Your task is to help ravi in determining whether a triplet (a,b,c) exists or not. If a triplet is possible print yes else no. O(n^2) is required",
+ "input_spec": "First line of test case contains a number t denoting number of testcases. First line of each test case contains a number n,next line contains n space seperated integers.",
+ "output_spec": "Print Yes or No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n5\n1 2 3 4 5",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

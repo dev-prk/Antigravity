@@ -1,0 +1,17 @@
+{
+ "title": "2087. Using Enumeration Constants for Days of the Week",
+ "slug": "using-enumeration-constants-for-days-of-the-week",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2087. Using Enumeration Constants for Days of the Week\n\n65\n\nProblem Statement\nUse an enum to represent days of the week, read a day number, and print the corresponding enum value back.\nDescription\nDefine an enumeration named Day with constants Sunday through Saturday (following the default enum numbering). Read an integer dayNumber, assign it to a variable of type enum Day, and print that variable's integer value.",
+ "input_spec": "An integer dayNumber (0 to 6).",
+ "output_spec": "Print the integer value stored in the enum Day variable.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

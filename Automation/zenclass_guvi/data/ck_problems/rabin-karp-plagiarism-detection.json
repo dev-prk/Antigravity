@@ -1,0 +1,17 @@
+{
+ "title": "1552. Rabin-Karp Plagiarism Detection",
+ "slug": "rabin-karp-plagiarism-detection",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1552. Rabin-Karp Plagiarism Detection\n\n80\n\nHard\n\nProblem Statement:\nGiven two documents represented as strings, determine if one document is a substring of the other using the Rabin-Karp algorithm. If either document is a substring of the other, print \"Plagiarism Detected\", otherwise print \"No Plagiarism\".",
+ "input_spec": "The first line contains the string S1 representing the first document.\nThe second line contains the string S2 representing the second document.",
+ "output_spec": "Print \"Plagiarism Detected\" if either S1 is a substring of S2 or S2 is a substring of S1. Otherwise, print \"No Plagiarism\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello\nhello world",
+   "output": "Plagiarism Detected"
+  }
+ ],
+ "raw": ""
+}

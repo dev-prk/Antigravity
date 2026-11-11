@@ -1,0 +1,17 @@
+{
+ "title": "1219. C Student Record Management",
+ "slug": "c-student-record-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1219. C Student Record Management\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a C program to manage student records for a class. Each student has a name, roll number, marks in three subjects, and their calculated total and average marks. The program should:\nDeclare a structure to hold a student\u2019s information.\nRead student data from the user.\nCompute the total and average marks for each student.\nDisplay the student information along with total and average marks in a sorted order based on the average marks in descending order.",
+ "input_spec": "An integer n (number of students, where 1 \u2264 n \u2264 100).\nFor each student:\nA string name (up to 50 characters).\nAn integer roll_number (1 to 1000).\nThree floating-point numbers representing marks in three subjects.",
+ "output_spec": "Student information (name, roll number, total marks, average marks) sorted by average marks in descending order.",
+ "constraints": "The number of students n must be between 1 and 100.\nRoll numbers are unique integers between 1 and 1000.\nMarks should be in the range of 0.0 to 100.0.\nUse appropriate data types to store student information and calculate totals and averages with precision.",
+ "samples": [
+  {
+   "input": "1\nJohn Doe\n101\n85\n92\n78",
+   "output": "Name: John Doe , Roll Number: 101, Total Marks: 255.00, Average Marks: 85.00"
+  }
+ ],
+ "raw": ""
+}

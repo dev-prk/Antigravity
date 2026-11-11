@@ -1,0 +1,17 @@
+{
+ "title": "1750. Transpose of a Matrix",
+ "slug": "transpose-of-a-matrix",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1750. Transpose of a Matrix\n\n50\n\nMedium\n\n#Transpose of a Matrix\n\nProblem Statement:\nGiven a square matrix, print its transpose.",
+ "input_spec": "First line: integer N (size).\nNext N lines: N integers each.",
+ "output_spec": "Print the transposed matrix.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n1 2\n3 4",
+   "output": "1 3\n2 4"
+  }
+ ],
+ "raw": ""
+}

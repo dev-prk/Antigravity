@@ -1,0 +1,17 @@
+{
+ "title": "933. String Character Separation-2",
+ "slug": "string-character-separation-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n933. String Character Separation-2\n\n90\n\nHard  Topics\n\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format.",
+ "input_spec": "in the given format and print the",
+ "output_spec": "in the given format.\n\nInput Description:\nA single line contains a string.\n\nOutput Description:\nPrint the characters in a string separated by line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvigeek",
+   "output": "g\nu\nv\ni\ng\ne\ne\nk"
+  }
+ ],
+ "raw": ""
+}

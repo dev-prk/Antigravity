@@ -1,0 +1,17 @@
+{
+ "title": "2014. Vehicle Polymorphism Using Interface",
+ "slug": "vehicle-polymorphism-using-interface",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2014. Vehicle Polymorphism Using Interface\n\n90\n\nHard\n\nProblem Statement\n\nCreate an interface Vehicle with two methods:\n\ngetSpeed()\ndisplay()\n\nCreate three classes:\n\nCar\nBike\nBus\n\nEach class should implement both methods.\n\nUse a Vehicle reference to demonstrate runtime polymorphism and display the speed of the selected vehicle.",
+ "input_spec": "The first line contains the vehicle type: car, bike, or bus.\n\nThe second line contains its speed.",
+ "output_spec": "Print the vehicle type and speed.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "car\n120",
+   "output": "Car Speed: 120"
+  }
+ ],
+ "raw": ""
+}

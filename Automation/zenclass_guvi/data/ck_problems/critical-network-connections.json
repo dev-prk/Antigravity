@@ -1,0 +1,17 @@
+{
+ "title": "1580. Critical Network Connections",
+ "slug": "critical-network-connections",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1580. Critical Network Connections\n\n80\n\nHard\n\nProblem Statement:\nYou are given a network of n servers labeled from 0 to n-1. The network is connected by a list of connections, where each connection is a pair of servers [u, v] representing a bidirectional connection between server u and server v. A critical connection is a connection that, if removed, will make some servers unable to reach some others (i.e., the network becomes disconnected). Your task is to find all such critical connections in the network.",
+ "input_spec": "- The first line contains two integers n and m, the number of servers and the number of connections.\n- The next m lines each contain two integers u and v, representing a connection between servers u and v.",
+ "output_spec": "- Output all critical connections as a list of pairs [u, v]. Each pair should be printed on a separate line, with u and v separated by a space. The order of the pairs does not matter.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n0 1\n1 2\n2 0\n1 3",
+   "output": "1 3"
+  }
+ ],
+ "raw": ""
+}

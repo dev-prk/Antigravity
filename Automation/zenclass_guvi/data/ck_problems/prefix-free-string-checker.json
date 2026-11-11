@@ -1,0 +1,17 @@
+{
+ "title": "431. Prefix-Free String Checker",
+ "slug": "prefix-free-string-checker",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n431. Prefix-Free String Checker\n\n70\n\nHard  Topics\n\nProblem Statement:\nCarlos goes digging for gold and uncovers a machine that can accept strings as input. The machine requires N strings to be inserted. Only one condition exists: no string must be a prefix of a string that was input before it.If the condition is not followed the machine will explode If the above condition is followed the machine dispenses 1000 gold coins and that would make carlos very happy. But since Carlos is tired from digging he takes rest and asks his assistant to enter the N strings into the machine. The assistant however is not very clever and tends to make mistakes.So he has decided to take your help He will give you N strings and ask you if the machine will dispense the gold coins or explode Give him the required answer",
+ "input_spec": ". The machine requires N strings to be inserted. Only one condition exists: no string must be a prefix of a string that was input before it.If the condition is not followed the machine will explode If the above condition is followed the machine dispenses 1000 gold coins and that would make carlos very happy. But since Carlos is tired from digging he takes rest and asks his assistant to enter the N strings into the machine. The assistant however is not very clever and tends to make mistakes.So he has decided to take your help He will give you N strings and ask you if the machine will dispense the gold coins or explode Give him the required answer\n\nInput Description:\nThe first line contains a single integer N denoting the number of strings to be inserted\nThe next N lines contain a string each denoting the string his assistant inputs , in that specific order",
+ "output_spec": "Output a single line If the machine will explode output the first string that caused it to explode after printing the text \u201cBad input\u201d without quotes\nOr if it won\u2019t explode output \u201c1000 Gold coins dispensed\u201d",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nabcd\nab\nhhj",
+   "output": "Bad Input ab"
+  }
+ ],
+ "raw": ""
+}

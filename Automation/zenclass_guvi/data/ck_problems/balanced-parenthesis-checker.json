@@ -1,0 +1,17 @@
+{
+ "title": "1992. Balanced Parenthesis Checker",
+ "slug": "balanced-parenthesis-checker",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1992. Balanced Parenthesis Checker\n\n90\n\nHard\n\nProblem Statement\n\nGiven a string containing only round brackets, determine whether the brackets are balanced using a stack.\n\nDescription\n\nRead a string consisting only of the characters '(' and ')'. Use a stack to check whether every opening bracket has a matching closing bracket in the correct order. Push each opening bracket onto the stack; when a closing bracket is seen, it must match the most recently pushed opening bracket.",
+ "input_spec": "A single line containing a string s (1 \u2264 length of s \u2264 100) made up only of '(' and ')' characters.",
+ "output_spec": "Print \"Balanced\" if every bracket is correctly matched and nested, otherwise print \"Not Balanced\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "(())",
+   "output": "Balanced"
+  }
+ ],
+ "raw": ""
+}

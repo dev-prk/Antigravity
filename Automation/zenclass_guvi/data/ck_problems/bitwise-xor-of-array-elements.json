@@ -1,0 +1,17 @@
+{
+ "title": "115. Bitwise XOR of Array Elements",
+ "slug": "bitwise-xor-of-array-elements",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n115. Bitwise XOR of Array Elements\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number N and an array of N elements, find the Bitwise XOR of the array elements.",
+ "input_spec": "The input consists of an integer N, representing the size of the array, followed by N array elements. The input size N is at most 100000.",
+ "output_spec": "The output is the Bitwise XOR of all elements in the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n2 4",
+   "output": "6"
+  }
+ ],
+ "raw": ""
+}

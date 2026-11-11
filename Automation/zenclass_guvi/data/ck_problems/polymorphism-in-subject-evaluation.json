@@ -1,0 +1,17 @@
+{
+ "title": "1086. Polymorphism in Subject Evaluation",
+ "slug": "polymorphism-in-subject-evaluation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1086. Polymorphism in Subject Evaluation\n\n50\n\nMedium\n\nProblem Statement:\nIn a B.Tech course, there are several subjects, each with a different method of evaluation. Some subjects have lab work, some have project work, and some have only theory exams. Define an interface  Subject  with the methods  has_lab() ,  has_project() , and  get_theory_marks() . Then, define three classes  LabSubject ,  ProjectSubject , and  TheorySubject  that implement this interface according to the following rules:\n\n-  LabSubject  returns  True  for  has_lab() ,  False  for  has_project() , and a fixed score of 70 for  get_theory_marks() .\n-  ProjectSubject  returns  False  for  has_lab() ,  True  for  has_project() , and a fixed score of 80 for  get_theory_marks() .\n-  TheorySubject  returns  False  for both  has_lab()  and  has_project() , and a fixed score of 90 for  get_theory_marks() .",
+ "input_spec": "LabSubject().has_lab()\nProjectSubject().has_project()\nTheorySubject().get_theory_marks()\n\nSample",
+ "output_spec": "True\nTrue\n90",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "LabSubject().has_lab()\nProjectSubject().has_project()\nTheorySubject().get_theory_marks()",
+   "output": "True\nTrue\n90"
+  }
+ ],
+ "raw": ""
+}

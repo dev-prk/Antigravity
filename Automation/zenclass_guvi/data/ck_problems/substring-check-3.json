@@ -1,0 +1,17 @@
+{
+ "title": "270. Substring Check-3",
+ "slug": "substring-check-3",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n270. Substring Check-3\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 2 strings S1 and S2. Find if String2 is substring of String1. If it is print the index of the first occurrence. else print -1.",
+ "input_spec": "Input Size : 1<= N <= 100000",
+ "output_spec": "If it is print the index of the first occurrence. else print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "test123string\n123",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

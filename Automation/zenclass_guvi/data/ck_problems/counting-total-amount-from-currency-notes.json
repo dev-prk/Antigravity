@@ -1,0 +1,17 @@
+{
+ "title": "2089. Counting Total Amount from Currency Notes",
+ "slug": "counting-total-amount-from-currency-notes",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2089. Counting Total Amount from Currency Notes\n\n40\n\nMedium\n\nProblem Statement\nRead the number of currency notes of three denominations and print the total amount of money, by directly multiplying and adding the values together.\n\nDescription\nRead three integers n500, n200 and n100, representing the number of notes of value Rs.500, Rs.200 and Rs.100 respectively. Multiply each count by its denomination value, add the three results together, and store the result in a variable. Print the total amount. No loop is needed since the count of denominations is fixed at three.",
+ "input_spec": "Three integers n500, n200 and n100 separated by spaces.",
+ "output_spec": "Print the total amount of money represented by the notes.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 1",
+   "output": "1700"
+  }
+ ],
+ "raw": ""
+}

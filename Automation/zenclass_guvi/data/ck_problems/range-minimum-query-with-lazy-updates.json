@@ -1,0 +1,17 @@
+{
+ "title": "1568. Range Minimum Query with Lazy Updates",
+ "slug": "range-minimum-query-with-lazy-updates",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1568. Range Minimum Query with Lazy Updates\n\n80\n\nHard\n\nProblem Statement:\nRange Minimum Query with Lazy Updates\nYou are given an array of N integers. You need to efficiently perform two types of operations:\n1. Update: Add a given value to all elements in a specified range [L, R].\n2. Query: Find the minimum value in a specified range [L, R].\nYou are required to process Q such operations.",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of operations.\n- The second line contains N integers, the initial elements of the array.\n- The next Q lines each describe an operation:\n- For an update operation: \"1 L R V\" (add value V to all elements from index L to R, 1-based indexing)\n- For a query operation: \"2 L R\" (find the minimum value from index L to R, 1-based indexing)",
+ "output_spec": "For each query operation, output the minimum value in the specified range on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5\n1 3 5 7 9\n2 2 4\n1 1 3 2\n2 1 5\n1 2 5 1\n2 3 5",
+   "output": "3\n3\n8"
+  }
+ ],
+ "raw": ""
+}

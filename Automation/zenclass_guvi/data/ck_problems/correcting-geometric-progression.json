@@ -1,0 +1,17 @@
+{
+ "title": "455. Correcting Geometric Progression",
+ "slug": "correcting-geometric-progression",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n455. Correcting Geometric Progression\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given a sequence containing N integers. Changing a maximum of one element of the sequence will result in a geometric progression with an integer common ratio. Your task is to print the correct geometric progression. ((Ref.  https://en.wikipedia.org/wiki/Geometric_progression ), N >= 4)",
+ "input_spec": "The first line contains the integer N.\nThe next line contains N space separated integers, A[0], A[1]...A[n-1]/",
+ "output_spec": "Print N space separated integers, which are in Geometric Progression",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n2 3 8 16",
+   "output": "2 4 8 16"
+  }
+ ],
+ "raw": ""
+}

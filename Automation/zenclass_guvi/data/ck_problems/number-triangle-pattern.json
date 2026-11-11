@@ -1,0 +1,17 @@
+{
+ "title": "2174. Number Triangle Pattern",
+ "slug": "number-triangle-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n739. Number Triangle Pattern\n\n20\n\nEasy  Topics\n\nProblem Statement:\nYou are given a task is to print triangle shaped pattern using numbers by getting a number n as input.",
+ "input_spec": ".\n\nInput Description:\nYou are given a number \u2018n\u2019",
+ "output_spec": "Print the pattern as follows",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "4\n33\n222\n1111"
+  }
+ ],
+ "raw": ""
+}

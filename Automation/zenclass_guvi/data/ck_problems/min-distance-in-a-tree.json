@@ -1,0 +1,17 @@
+{
+ "title": "827. Min Distance in a Tree",
+ "slug": "min-distance-in-a-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n827. Min Distance in a Tree\n\n80\n\nHard  Company\n\nProblem Statement:\nThere are a number of cities. Not all cities are connected.\n\nThe cities are connected in the hirarchial fashion like the one below:\n\nA\n/     \\\nB       C\n/   \\     \\\nD     E     F\n/          /   \\\nG          I     J\n\\\nH\n\nThis means A has a connection with all other cities. City C has a connection with F, I and J. City G has a connection with H and so on.\n\nThe task is to calculate the minimum number of distance it takes to reach from one city to another. If the city has a connection with another city then the distance between them is 1.\n\nFor example, The distance between H and E cities is 4.It takes 4 connections to reach.\n\nGiving a binary tree and its inorder and postorder traversal, calculate the minimum distance between given nodes.",
+ "input_spec": "First-line represents Binary tree inorder traversal\nSecond-line represents Binary tree postorder traversal\nThe next line represents two cities to which minimum distance to be calculated.",
+ "output_spec": "Minimum Distance between given 2 cities",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ACDFHIJK\nADCIHKJF\nA K",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "289. Student with Max Total Marks",
+ "slug": "student-with-max-total-marks",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n289. Student with Max Total Marks\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven an arraylist A of string type which has name#mark1#mark2#mark3 format. Retrieve the name of the student who has scored max marks(total of three).",
+ "input_spec": "The input consists of an arraylist A of string type, where each string is in 'name#mark1#mark2#mark3' format. The size of A is at most 100000.",
+ "output_spec": "The output is the name of the student who has scored the maximum total marks.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "arun#12#12#12\ndeepak#13#12#12",
+   "output": "deepak"
+  }
+ ],
+ "raw": ""
+}

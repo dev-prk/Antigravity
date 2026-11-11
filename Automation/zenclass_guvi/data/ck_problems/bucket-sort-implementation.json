@@ -1,0 +1,17 @@
+{
+ "title": "862. Bucket Sort Implementation",
+ "slug": "bucket-sort-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n862. Bucket Sort Implementation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nBucket sort  is a comparison sort algorithm that operates on elements by dividing them into different buckets and then sorting these buckets individually. Each bucket is sorted individually using a separate sorting algorithm or by applying the bucket sort algorithm recursively. Bucket sort is mainly useful when the input is uniformly distributed over a range. You have to sort the given array of integer values in Bucket sort manner.",
+ "input_spec": "is uniformly distributed over a range. You have to sort the given array of integer values in Bucket sort manner.\n\nInput Description:\nGiven an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1",
+ "output_spec": "Print the resultant sorted array by using bucket sort method.where 1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n27 24 4 49 8 37 22 44",
+   "output": "4 8 22 24 27 37 44 49"
+  }
+ ],
+ "raw": ""
+}

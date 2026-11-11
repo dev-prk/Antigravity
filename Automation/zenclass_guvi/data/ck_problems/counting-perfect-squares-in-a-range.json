@@ -1,0 +1,17 @@
+{
+ "title": "89. Counting Perfect Squares in a Range",
+ "slug": "counting-perfect-squares-in-a-range",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n89. Counting Perfect Squares in a Range\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a range (i.e) two numbers L and R count the number of perfect squares within the range (inclusive of L and R).If no perfect square exists within the range print '-1'.",
+ "input_spec": "The input consists of two integers L and R, representing the range, where L <= R <= 100000.",
+ "output_spec": "The output is an integer representing the count of perfect squares within the range [L, R], or -1 if none exist.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 10",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

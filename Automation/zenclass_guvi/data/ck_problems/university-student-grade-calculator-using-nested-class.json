@@ -1,0 +1,17 @@
+{
+ "title": "1799. University Student Grade Calculator using Nested Class",
+ "slug": "university-student-grade-calculator-using-nested-class",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1799. University Student Grade Calculator using Nested Class\n\n40\n\nMedium\n\nUniversity Student Grade Calculator using Nested Class\n\nProblem Statement:\nWrite a program demonstrating nested classes where a University class contains a nested Student class that computes grade.\n\nDescription:\nThe nested class should:\n\nStore name and marks\n\nCompute grade (A/B/C)\n\nDemonstrate interaction between outer and inner class\n\nGrade Criteria:\nMarks \u2265 80 \u2192 A\nMarks \u2265 60 \u2192 B\nElse \u2192 C\n\nInput Format:\nName Marks\n\nOutput Format:\nGrade",
+ "input_spec": "Name Marks",
+ "output_spec": "Grade",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "John 85",
+   "output": "A"
+  }
+ ],
+ "raw": ""
+}

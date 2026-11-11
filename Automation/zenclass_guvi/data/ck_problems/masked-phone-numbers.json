@@ -1,0 +1,21 @@
+{
+ "title": "1602. Masked Phone Numbers",
+ "slug": "masked-phone-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1602. Masked Phone Numbers\n\n60\n\nMedium\n\nProblem Statement:  Masked Phone Numbers\nIn a call center application, employees need to mask the personal information of users while displaying their phone numbers for privacy protection. The goal is to create a program that takes a string representing a list of phone numbers (with spaces separating them) and masks all but the last four digits of each phone number with asterisks ('*').\n\nThe numbers may contain non-numeric characters such as spaces, dashes ('-'), or parentheses ('()'), but these should be ignored while processing. The output should retain any formatting, but only the last four digits of each phone number should remain visible, and the rest should be replaced with asterisks.\n\nInput:\nA string phone_numbers containing multiple phone numbers separated by spaces. The length of the string is n (1 \u2264 n \u2264 10^4). Each phone number is between 7 and 15 digits, and can include non-numeric characters for formatting.\n\nOutput:\nA string with each phone number masked except for the last four digits, retaining any formatting.\n\nExample\nInput:\n+1 (555) 123-4567 123-456-7890 800-555-1212\n\nOutput:\n+1 (***) ***-**67 ***-***-7890 ***-***-1212\n\nExplanation:\nThe first phone number +1 (555) 123-4567 becomes +1 (***) ***-**67.\nThe second phone number 123-456-7890 becomes ***-***-7890.\nThe third phone number 800-555-1212 becomes ***-***-1212.",
+ "input_spec": "A string phone_numbers containing multiple phone numbers separated by spaces. The length of the string is n (1 \u2264 n \u2264 10^4). Each phone number is between 7 and 15 digits, and can include non-numeric characters for formatting.",
+ "output_spec": "should retain any formatting, but only the last four digits of each phone number should remain visible, and the rest should be replaced with asterisks.\n\nInput:\nA string phone_numbers containing multiple phone numbers separated by spaces. The length of the string is n (1 \u2264 n \u2264 10^4). Each phone number is between 7 and 15 digits, and can include non-numeric characters for formatting.\n\nOutput:\nA string with each phone number masked except for the last four digits, retaining any formatting.\n\nExample\nInput:\n+1 (555) 123-4567 123-456-7890 800-555-1212\n\nOutput:\n+1 (***) ***-**67 ***-***-7890 ***-***-1212",
+ "constraints": "Each phone number contains between 7 and 15 digits.\nNon-numeric characters (spaces, dashes, parentheses, etc.) should not affect the masking process.\nThe",
+ "samples": [
+  {
+   "input": "A string phone_numbers containing multiple phone numbers separated by spaces. The length of the string is n (1 \u2264 n \u2264 10^4). Each phone number is between 7 and 15 digits, and can include non-numeric characters for formatting.",
+   "output": "A string with each phone number masked except for the last four digits, retaining any formatting.\n\nExample"
+  },
+  {
+   "input": "+1 (555) 123-4567 123-456-7890 800-555-1212",
+   "output": "+1 (***) ***-**67 ***-***-7890 ***-***-1212"
+  }
+ ],
+ "raw": ""
+}

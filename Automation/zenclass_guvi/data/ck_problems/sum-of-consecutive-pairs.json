@@ -1,0 +1,17 @@
+{
+ "title": "133. Sum of Consecutive Pairs",
+ "slug": "sum-of-consecutive-pairs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n133. Sum of Consecutive Pairs\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N elements, find the sum of the sums obtained by considering all consecutive pairs of adjacent elements.",
+ "input_spec": "The input consists of a number N and an array of N elements. N <= 100000.",
+ "output_spec": "The output is the sum of the sums obtained by considering all consecutive pairs of adjacent elements.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "24((1+2)+(2+3)+(3+4)+(4+5))"
+  }
+ ],
+ "raw": ""
+}

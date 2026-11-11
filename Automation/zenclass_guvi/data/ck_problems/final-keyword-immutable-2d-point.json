@@ -1,0 +1,17 @@
+{
+ "title": "1484. Final Keyword: Immutable 2D Point",
+ "slug": "final-keyword-immutable-2d-point",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1484. Final Keyword: Immutable 2D Point\n\n70\n\nHard\n\nProblem Statement:\nCreate a program that simulates an immutable class representing a Point in a 2D plane. The class should use the final keyword to ensure immutability.\nYou need to create a class Point with the following specifications:\nTwo private final fields x and y representing the coordinates of the point.\nA constructor that initializes these fields.\nGetter methods to retrieve the values of x and y.\nA method distance(Point other) to calculate the distance between the current point and another point.\nEnsure that the Point class is immutable.",
+ "input_spec": "The first line contains two integers representing the coordinates of the first point.\nThe second line contains two integers representing the coordinates of the second point.",
+ "output_spec": "Print the distance between the two points, rounded to 2 decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 4\n0 0",
+   "output": "Distance: 5.00"
+  }
+ ],
+ "raw": ""
+}

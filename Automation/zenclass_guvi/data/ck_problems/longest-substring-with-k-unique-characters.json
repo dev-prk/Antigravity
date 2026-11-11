@@ -1,0 +1,17 @@
+{
+ "title": "689. Longest Substring with K Unique Characters",
+ "slug": "longest-substring-with-k-unique-characters",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n689. Longest Substring with K Unique Characters\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given a string 's'.You are required to print the longest substring possible which has exactly k unique characters.",
+ "input_spec": "You are given a string 's'. Next line contains an integer k.",
+ "output_spec": "Print the length of string if possible else print -1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aabbggh\n3",
+   "output": "6"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1226. Array Manipulation with Pointers",
+ "slug": "array-manipulation-with-pointers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1226. Array Manipulation with Pointers\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a C program that takes an array of integers and modifies it in the following way: For each element in the array, if the element is even, multiply it by the next element in the array using pointer arithmetic. If the element is odd, divide it by the previous element using pointer arithmetic. The last element should remain unchanged.",
+ "input_spec": "The first line contains an integer n, representing the number of elements in the array. The second line contains n space-separated integers, representing the elements of the array.",
+ "output_spec": "A single line containing n space-separated integers, representing the modified array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n4 7 2 9 6",
+   "output": "28 0 18 0 6"
+  }
+ ],
+ "raw": ""
+}

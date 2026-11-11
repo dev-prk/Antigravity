@@ -1,0 +1,17 @@
+{
+ "title": "1220. Smart Home Permission Control",
+ "slug": "smart-home-permission-control",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1220. Smart Home Permission Control\n\n50\n\nMedium\n\nProblem Statement:\nPermission Control System for a Smart Home\nImagine you're developing a permission control system for a smart home where various devices (like lights, locks, thermostats, and cameras) are controlled based on user permissions. Each device has a specific bit in a control register (an integer) that determines whether a user has permission to control that device.\n\nGiven two users, you need to implement a system that:\nGrants control over specific devices to a user.\nRevokes control over specific devices.\nChecks whether a user has control over a specific device.\nCombines permissions from two users to create a third user's control register that represents the combined permissions.\nDisplays the control register in binary format to see which devices are controllable by the user.\n\nDevices:\nBit 0: Lights\nBit 1: Locks\nBit 2: Thermostat\nBit 3: Cameras\nBit 4: Garage Door\nBit 5: Sprinklers\nBit 6: Alarm System\nBit 7: Music System",
+ "input_spec": "Two integers representing the control registers of two users. Operations that include granting or revoking permissions, checking control, combining permissions, and displaying the control register.",
+ "output_spec": "Results of the operations including the updated control registers and binary representation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "170 85\nOperation: Grant Lights to User A\nOperation: Revoke Music System from User B",
+   "output": "User A Control Register after Granting Lights: 171\nUser B Control Register after Revoking Music System: 85\nUser A has control over Cameras: Yes\nCombined Control Register (User C): 255\nUser A Control Register in Binary: 10101011"
+  }
+ ],
+ "raw": ""
+}

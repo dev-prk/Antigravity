@@ -1,0 +1,21 @@
+{
+ "title": "2026. Find Minimum Element in BST",
+ "slug": "find-minimum-element-in-bst",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2026. Find Minimum Element in BST\n\n60\n\nMedium\n\nProblem Statement\n\nCreate a Binary Search Tree and find the minimum element present in the tree.\n\nInput\nFirst line contains N.\nSecond line contains N integers.\nOutput\n\nPrint the minimum element.",
+ "input_spec": "First line contains N.\nSecond line contains N integers.",
+ "output_spec": "Print the minimum element.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "First line contains N.\nSecond line contains N integers.",
+   "output": "Print the minimum element."
+  },
+  {
+   "input": "6\n50 30 70 20 40 10",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

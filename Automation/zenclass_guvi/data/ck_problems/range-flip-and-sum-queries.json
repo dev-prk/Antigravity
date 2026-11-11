@@ -1,0 +1,17 @@
+{
+ "title": "412. Range Flip and Sum Queries",
+ "slug": "range-flip-and-sum-queries",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n412. Range Flip and Sum Queries\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given an array containing N integers: each integer is either 0 or 1.\n\nYou can \"flip a range\"\nI.e make all the 0's ->1's and all the 1's->0s in a subarray [L,R] . You also want to know what is the sum of a subarray which is nothing but the number of 1s present in a subarray\nThese two operations are interweaved ( may occur in any order multiple number of times)\nFor example:  for an array of size 10 (1-based indexing) the sequence of operations might be:\nFlip bits in range [1,3]\nFind sum of range [2,7]\nFlip bits in range[1,2]\nAnd so on.\nThere are Q such operations\n\nPerform the operations and report the answer successfully",
+ "input_spec": "The first line contains an integer N : the number of elements in the array\nThe next line contains N integers - each of which is either 0 or 1 : describing the contents of the array\nThe next line contains a single integer Q denoting the number of operations\nThe next Q line can be either of the following format:\n1 x y : flip all bits from xth element of array to yth element of array\n2 x y : report the sum for the subarray [x,y]",
+ "output_spec": "For every type two operation output the subarray sum on a single line",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 0 0 1\n2\n1 1 2\n2 1 4",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

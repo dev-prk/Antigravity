@@ -1,0 +1,17 @@
+{
+ "title": "509. Minimum Swaps to Sort Array",
+ "slug": "minimum-swaps-to-sort-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n509. Minimum Swaps to Sort Array\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven an array of size N, find the minimum number of swaps required to sort the array.",
+ "input_spec": "Size of the array followed by the elements of the array",
+ "output_spec": "Minimum number of swaps required",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n4 3 2 1",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1758. Complex Number Operations Using Structures",
+ "slug": "complex-number-operations-using-structures",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1758. Complex Number Operations Using Structures\n\n70\n\nHard\n\nComplex Number Operations Using Structures\n\nProblem Statement:\nImplement a program that handles operations on complex numbers using structures. The program should allow for addition, subtraction, multiplication, and division of complex numbers.\n\nDescription:\nDefine a structure ComplexNumber with two fields real and imaginary representing the real and imaginary parts of a complex number.\nImplement functions to:\nAdd two complex numbers.\nSubtract one complex number from another.\nMultiply two complex numbers.\nDivide one complex number by another.\nInput Format:\nFirst line: Two integers representing the real and imaginary parts of the first complex number.\nSecond line: Two integers representing the real and imaginary parts of the second complex number.\nOutput Format:\nPrint the results of the addition, subtraction, multiplication, and division operations.",
+ "input_spec": "First line: Two integers representing the real and imaginary parts of the first complex number.\nSecond line: Two integers representing the real and imaginary parts of the second complex number.",
+ "output_spec": "Print the results of the addition, subtraction, multiplication, and division operations.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 4\n1 2",
+   "output": "Addition: 4.00 + 6.00i\nSubtraction: 2.00 + 2.00i\nMultiplication: -5.00 + 10.00i\nDivision: 2.20 - 0.40i"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "2152. Counting the Digits of a Number Using a Function",
+ "slug": "counting-the-digits-of-a-number-using-a-function",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2152. Counting the Digits of a Number Using a Function\n\n60\n\nMedium\n\nProblem Statement\nRead a positive integer and print how many digits it has, using a function that contains a loop.\n\nDescription\nRead a positive integer num from input. Write a function countDigits that takes an integer parameter, uses a while loop to remove its last digit repeatedly using / 10 while counting how many times this is done, and returns the count. Call the function from main() and print the returned count.",
+ "input_spec": ". Write a function countDigits that takes an integer parameter, uses a while loop to remove its last digit repeatedly using / 10 while counting how many times this is done, and returns the count. Call the function from main() and print the returned count.\n\nInput Description\nA single positive integer num.",
+ "output_spec": "Print the number of digits in num.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "12345",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

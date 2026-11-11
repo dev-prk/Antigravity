@@ -1,0 +1,17 @@
+{
+ "title": "809. Compare Strings Without Built-in Functions",
+ "slug": "compare-strings-without-built-in-functions",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n809. Compare Strings Without Built-in Functions\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Take in Two Strings and Display the Larger String without Using Built-in Functions. If Both String are Equal then Print Equal Otherwise Print the Larger String",
+ "input_spec": "The input contains a string",
+ "output_spec": "print the larger string if both string equal then print Equal",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello\nhi",
+   "output": "hello"
+  }
+ ],
+ "raw": ""
+}

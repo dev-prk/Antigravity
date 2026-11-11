@@ -1,0 +1,17 @@
+{
+ "title": "942. Sum of Integer Digits",
+ "slug": "sum-of-integer-digits",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n942. Sum of Integer Digits\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code get an integer number as input and print the sum of the digits.",
+ "input_spec": "and print the sum of the digits.\n\nInput Description:\nA single line containing an integer.",
+ "output_spec": "Print the sum of the digits of the integer.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "124",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

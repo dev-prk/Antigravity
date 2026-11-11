@@ -1,0 +1,17 @@
+{
+ "title": "1087. Staff Salary Calculation",
+ "slug": "staff-salary-calculation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1087. Staff Salary Calculation\n\n50\n\nMedium\n\nProblem Statement:\nIn a school, there are several types of staff members: Teachers, Janitors, and Administrators. All staff members have a method  get_salary()  that returns their monthly salary. However, the salary is calculated differently for each type of staff member. For Teachers, the salary is a fixed amount of $3000. For Janitors, the salary is a fixed amount of $2000. For Administrators, the salary is a fixed amount of $4000.\n\nWrite a Python program that defines an abstract class  StaffMember  with the abstract method  get_salary() . Then, define three classes  Teacher ,  Janitor , and  Administrator  that inherit from the  StaffMember  class and implement the  get_salary()  method.",
+ "input_spec": "Teacher().get_salary()\nJanitor().get_salary()\nAdministrator().get_salary()\n\nSample",
+ "output_spec": "3000\n2000\n4000",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Teacher().get_salary()\nJanitor().get_salary()\nAdministrator().get_salary()",
+   "output": "3000\n2000\n4000"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1807. Distance Comparison",
+ "slug": "distance-comparison",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1807. Distance Comparison\n\n50\n\nMedium\n\nDistance Comparison\n\nProblem Statement:\nWrite a program to overload the > operator using a friend function to compare two distances.\n\nDescription:\nCreate a class Distance that:\n1. Stores distance in meters.\n2. Uses constructor to initialize value.\n3. Overloads > operator using a friend function.\n\nPrints:\n\"First is Greater\" if first distance is larger\nOtherwise print \"Second is Greater\"\n\nInput Format:\nTwo integers representing distances in meters.\n\nOutput Format:\nComparison result string.",
+ "input_spec": "Two integers representing distances in meters.",
+ "output_spec": "Comparison result string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "100 200",
+   "output": "Second is Greater"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "400. Counting Beautiful Indices",
+ "slug": "counting-beautiful-indices",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n400. Counting Beautiful Indices\n\n40\n\nMedium  Topics\n\nProblem Statement:\nJ.S.Bhayana gave an integer array A of size N. If A[i] occurs A[i + 1] times in the array, i is called a beautiful index. Find the number of beautiful indices in the array. (1 <= i < N) (1 based indexing)",
+ "input_spec": "The first line contains an integer N, denoting the size of the array.\nThe next line contains N space separated integers.",
+ "output_spec": "Print a line containing the number of beautiful indices in the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 1 4 1 1",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

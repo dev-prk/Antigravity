@@ -1,0 +1,17 @@
+{
+ "title": "1100. Student Grading with Map Function",
+ "slug": "student-grading-with-map-function",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1100. Student Grading with Map Function\n\n50\n\nMedium\n\nProblem Statement:\nYou are a college professor and you have the scores of your students in a list. You want to grade the students based on their scores. Write a Python function  grade_students(scores)  that takes a list of scores and returns a list of grades. Use the  map  function to apply the grading scheme to all scores.\n\nThe grading scheme is as follows:\n- Score >= 90: 'A'\n- 80 <= Score < 90: 'B'\n- 70 <= Score < 80: 'C'\n- 60 <= Score < 70: 'D'\n- Score < 60: 'F'",
+ "input_spec": "The input is a list of integers,  scores , representing the scores of the students.",
+ "output_spec": "The function should return a list of strings representing the grades of the students.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "[95,55]",
+   "output": "['A','F']"
+  }
+ ],
+ "raw": ""
+}

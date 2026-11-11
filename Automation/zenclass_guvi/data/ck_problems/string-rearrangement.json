@@ -1,0 +1,17 @@
+{
+ "title": "694. String Rearrangement",
+ "slug": "string-rearrangement",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n694. String Rearrangement\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given a string \u2018s\u2019. You have to tell whether the string can be arranged in last to first order.A last to first order is order in which if word 1 ends in say(char \u2018a\u2019) then the other word must start in char \u2018a\u2019.",
+ "input_spec": "You are given a string \u2018s\u2019.",
+ "output_spec": "Print \u20181\u2019 if string can be arranged in last to first sequence and",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Loan avail",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

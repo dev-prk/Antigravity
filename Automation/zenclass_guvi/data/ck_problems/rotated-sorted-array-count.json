@@ -1,0 +1,17 @@
+{
+ "title": "282. Rotated Sorted Array Count",
+ "slug": "rotated-sorted-array-count",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n282. Rotated Sorted Array Count\n\n70\n\nHard  Topics\n\nProblem Statement:\nFind the count k by which array has been rotated in the rotated sorted array. Given a number N followed 2 arrays A and B of length N. Find the amount K by which the array has been rotated.",
+ "input_spec": "The input consists of a number N, followed by two arrays A and B of length N. N is at most 100000.",
+ "output_spec": "The output should be the integer K, representing the count by which the array has been rotated.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n4 3 2 5\n3 2 5 4",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

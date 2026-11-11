@@ -1,0 +1,17 @@
+{
+ "title": "428. Heap Sort Strings",
+ "slug": "heap-sort-strings",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n428. Heap Sort Strings\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nMr. Kanga had a PhD in Heap Algorithms. Today, he was given a list of strings in random order. Help him sort the list in increasing order(lexicographically increasing) using heap sort.",
+ "input_spec": "The first line is an integer N denoting the number of strings.The next line contains N space separated strings containing lower case English Alphabets.",
+ "output_spec": "Print N space separated strings in increasing order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\nbag axe",
+   "output": "axe bag"
+  }
+ ],
+ "raw": ""
+}

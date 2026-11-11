@@ -1,0 +1,21 @@
+{
+ "title": "1748. Employee Performance Tracker (Pointer Initialization)",
+ "slug": "employee-performance-tracker-pointer-initialization",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1748. Employee Performance Tracker (Pointer Initialization)\n\n50\n\nMedium\n\n#Employee Performance Tracker (Pointer Initialization)\n\nProblem Statement:\nYou are tasked with creating a performance tracking system for a company. The company needs a program to store employee performance ratings dynamically using pointers. The performance ratings are based on specific projects, and each project has a different weight. The system should calculate and display the total performance score for each employee.\n\nYour job is to:\n\nStore the performance ratings of employees for multiple projects using dynamic memory allocation.\nUse the pointers to basically initialize and than manipulate these ratings.\nCalculate the total score for each employee by multiplying each project rating by a specific weight (given as input).\n\nInput:\nThe first line will contain an integer named n, the number of employees.\nThe second line contains n integers representing the employee IDs.\nThe third line will contain an integer named m, the number of projects.\nThe fourth line contains m integers representing the project weights.\nFor each employee, there are m integers representing their performance ratings for each project.\n\nOutput:\nFor each employee, output their employee ID and their total performance score.",
+ "input_spec": ").\n\nInput:\nThe first line will contain an integer named n, the number of employees.\nThe second line contains n integers representing the employee IDs.\nThe third line will contain an integer named m, the number of projects.\nThe fourth line contains m integers representing the project weights.\nFor each employee, there are m integers representing their performance ratings for each project.",
+ "output_spec": "For each employee, output their employee ID and their total performance score.",
+ "constraints": "1 \u2264 n \u2264 50 (employees)\n1 \u2264 m \u2264 10 (projects)\n1 \u2264 employee ID \u2264 1000\n0 \u2264 performance rating \u2264 10\n1 \u2264 project weight \u2264 10",
+ "samples": [
+  {
+   "input": "The first line will contain an integer named n, the number of employees.\nThe second line contains n integers representing the employee IDs.\nThe third line will contain an integer named m, the number of projects.\nThe fourth line contains m integers representing the project weights.\nFor each employee, there are m integers representing their performance ratings for each project.",
+   "output": "For each employee, output their employee ID and their total performance score."
+  },
+  {
+   "input": "3\n101 102 103\n3\n2 3 4\n5 6 7\n8 5 9\n7 6 8",
+   "output": "Employee ID 101 has a total score of 56\nEmployee ID 102 has a total score of 65\nEmployee ID 103 has a total score of 71\n\nIn this example:\n\nEmployee 101 has ratings [5, 6, 7], and weights [2, 3, 4]. Total score = (5 * 2) + (6 * 3) + (7 * 4) = 56.\nEmployee 102 has ratings [8, 5, 9], and weights [2, 3, 4]. Total score = (8 * 2) + (5 * 3) + (9 * 4) = 65.\nEmployee 103 has ratings [7, 6, 8], and weights [2, 3, 4]. Total score = (7 * 2) + (6 * 3) + (8 * 4) = 71."
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1762. Multi-Threaded Counter",
+ "slug": "multi-threaded-counter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1762. Multi-Threaded Counter\n\n60\n\nMedium\n\nMulti-Threaded Counter\n\nProblem Statement:\nWrite a program to increment a shared counter using multiple threads. Ensure that the counter updates are synchronized to avoid race conditions.\n\nDescription:\n\nCreate a class Counter with a synchronized method increment().\n\nCreate multiple threads that call increment() multiple times.\n\nDisplay the final value of the counter.\n\nInput Format:\n\nFirst line: Number of threads n\n\nSecond line: Number of increments per thread m\n\nOutput Format:\n\nFinal value of the counter",
+ "input_spec": "First line: Number of threads n\n\nSecond line: Number of increments per thread m",
+ "output_spec": "Final value of the counter",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n5",
+   "output": "Final Counter: 15"
+  }
+ ],
+ "raw": ""
+}

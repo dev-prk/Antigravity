@@ -1,0 +1,17 @@
+{
+ "title": "511. Sort by Set Bits",
+ "slug": "sort-by-set-bits",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n511. Sort by Set Bits\n\n90\n\nHard  Topics\n\nProblem Statement:\nRam loves bit magic. He is given a set of integers, and wants to sort them based on the number of 1s in their binary representations ( in descending order). Help Ram do a little bit of bit magic!",
+ "input_spec": "Number of elements followed by the elements",
+ "output_spec": "Sorted list of numbers",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n1 2 3 4 5 6",
+   "output": "3 5 6 1 2 4"
+  }
+ ],
+ "raw": ""
+}

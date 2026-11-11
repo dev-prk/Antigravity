@@ -1,0 +1,17 @@
+{
+ "title": "1618. Insertion Sort, Arrays, Sorting",
+ "slug": "insertion-sort-arrays-sorting",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1618. Insertion Sort, Arrays, Sorting\n\n50\n\nMedium\n\nProblem Statement:  Sort Integers in Ascending Order Using Insertion Sort\nWrite a program to sort an array of integers in ascending order using insertion sort.\n\nDescription:\nThe program should take an integer array as input and apply insertion sort to arrange elements in non-decreasing order.\n\nInput Format:\n\nFirst line: Integer n (array size)\n\nNext line: n integers\n\nOutput Format:\nSorted array in ascending order.",
+ "input_spec": "and apply insertion sort to arrange elements in non-decreasing order.\n\nInput Format:\n\nFirst line: Integer n (array size)\n\nNext line: n integers",
+ "output_spec": "Sorted array in ascending order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n9 4 6 2 1",
+   "output": "1 2 4 6 9"
+  }
+ ],
+ "raw": ""
+}

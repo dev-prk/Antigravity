@@ -1,0 +1,17 @@
+{
+ "title": "590. Sum of Number Permutations",
+ "slug": "sum-of-number-permutations",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n590. Sum of Number Permutations\n\n70\n\nHard  Topics\n\nProblem Statement:\nRohan's teacher wants to teach him about permuting the numbers.He is given an assignment,in which he is given a number,His task is to print the sum of all permutations that can be made up using those digits.",
+ "input_spec": "You are given a number",
+ "output_spec": "Your task is to print the sum of all permutations of number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "18",
+   "output": "99"
+  }
+ ],
+ "raw": ""
+}

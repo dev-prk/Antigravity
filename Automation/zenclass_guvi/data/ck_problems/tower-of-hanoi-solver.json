@@ -1,0 +1,17 @@
+{
+ "title": "1450. Tower of Hanoi Solver",
+ "slug": "tower-of-hanoi-solver",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1450. Tower of Hanoi Solver\n\n50\n\nMedium\n\nProblem Statement:\nGiven the number of disks N, write a recursive function to solve the Tower of Hanoi problem. The objective is to move all the disks from the source rod to the destination rod using an auxiliary rod, following these rules:\n1. Only one disk can be moved at a time.\n2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.\n3. No disk may be placed on top of a smaller disk.",
+ "input_spec": "- An integer N, representing the number of disks.",
+ "output_spec": "- Print the sequence of moves required to solve the Tower of Hanoi problem.\n- Each move should be printed on a new line in the format: \"Move disk X from rod A to rod B\", where X is the disk number, A is the source rod, and B is the destination rod.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "Move disk 1 from rod A to rod C\nMove disk 2 from rod A to rod B\nMove disk 1 from rod C to rod B\nMove disk 3 from rod A to rod C\nMove disk 1 from rod B to rod A\nMove disk 2 from rod B to rod C\nMove disk 1 from rod A to rod C"
+  }
+ ],
+ "raw": ""
+}

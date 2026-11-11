@@ -1,0 +1,17 @@
+{
+ "title": "2133. Reversing a String Using a Character Array",
+ "slug": "reversing-a-string-using-a-character-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2133. Reversing a String Using a Character Array\n\n50\n\nMedium\n\nProblem Statement\nRead a word and print it with its characters in reverse order, using a character array and a loop.\n\nDescription\nRead a string word into a character array using scanf. Find the position of its last character using a loop that stops at the null terminator. Use another loop to print the characters of word starting from the last one and moving backward to the first one.",
+ "input_spec": "A single word with no spaces.",
+ "output_spec": "Print the word with its characters in reverse order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello",
+   "output": "olleh"
+  }
+ ],
+ "raw": ""
+}

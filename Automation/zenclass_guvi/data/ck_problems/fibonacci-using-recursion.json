@@ -1,0 +1,17 @@
+{
+ "title": "1743. Fibonacci Using Recursion",
+ "slug": "fibonacci-using-recursion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1743. Fibonacci Using Recursion\n\n50\n\nMedium\n\n#Fibonacci Using Recursion\n\nProblem Statement:\nWrite a program to print the Nth Fibonacci number using recursion.",
+ "input_spec": "A single integer N.",
+ "output_spec": "Print the Nth Fibonacci number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

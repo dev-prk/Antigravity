@@ -1,0 +1,17 @@
+{
+ "title": "1546. All Topological Sorts of a DAG",
+ "slug": "all-topological-sorts-of-a-dag",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1546. All Topological Sorts of a DAG\n\n80\n\nHard\n\nProblem Statement:\nGiven a directed acyclic graph (DAG) with N vertices and M edges, print all possible topological orderings of its vertices. A topological ordering of a DAG is a linear ordering of its vertices such that for every directed edge u \u2192 v, vertex u comes before v in the ordering. If there are multiple possible orderings, print each one on a separate line in lexicographical order.",
+ "input_spec": "- The first line contains two integers N and M, the number of vertices and the number of edges.\n- The next M lines each contain two integers u and v, representing a directed edge from vertex u to vertex v.\n- Vertices are numbered from 1 to N.",
+ "output_spec": "- Print all possible topological orderings, one per line, in lexicographical order. Each ordering should be a sequence of N space-separated integers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 3\n1 2\n1 3\n3 4",
+   "output": "1 2 3 4\n1 3 2 4\n1 3 4 2"
+  }
+ ],
+ "raw": ""
+}

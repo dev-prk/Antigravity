@@ -1,0 +1,17 @@
+{
+ "title": "77. Smallest LCM of two numbers",
+ "slug": "smallest-lcm-of-two-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n77. Smallest LCM of two numbers\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven two numbers L,R print the smallest number which is divisible by both L and R.",
+ "input_spec": "The input consists of two numbers L and R, where 1 <= L,R <= 100000.",
+ "output_spec": "The output is the smallest number which is divisible by both L and R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 130",
+   "output": "130"
+  }
+ ],
+ "raw": ""
+}

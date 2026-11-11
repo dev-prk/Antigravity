@@ -1,0 +1,12 @@
+{
+ "title": "1863. Search an Element in a Singly Linked List",
+ "slug": "search-an-element-in-a-singly-linked-list",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1863. Search an Element in a Singly Linked List\n\n90\n\nHard  Topics\n\nProblem: Search an Element in a Singly Linked List\n\nYou are given N integers.\nCreate a Singly Linked List by inserting elements at the end.\n\nThen you are given an integer X.\nYour task is to check whether X exists in the linked list.\n\nInput Format\nN\na1 a2 a3 ... aN\nX\n\nN \u2192 number of elements\n\nNext line contains N space-separated integers\n\nLast line contains integer X (element to search)\n\nOutput Format\n\nPrint \"Found\" if element exists\n\nPrint \"Not Found\" if element does not exist",
+ "input_spec": "N\na1 a2 a3 ... aN\nX\n\nN \u2192 number of elements\n\nNext line contains N space-separated integers\n\nLast line contains integer X (element to search)",
+ "output_spec": "Print \"Found\" if element exists\n\nPrint \"Not Found\" if element does not exist",
+ "constraints": "1 \u2264 N \u2264 1000\n\n-10^9 \u2264 ai, X \u2264 10^9\n\nAccepted  0\n\nSubmissions  0\n\nAcceptance Rate  0%\n\nTopics\n\nlinked list  data structures\n\n1\n\nCode Editor\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nChange Layout\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n#A Simple Hello World\n\nprint  (  \"Hello World\"  )\n\n#Getting",
+ "samples": [],
+ "raw": ""
+}

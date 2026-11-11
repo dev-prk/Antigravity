@@ -1,0 +1,21 @@
+{
+ "title": "1722. Mixed Data Type Calculations",
+ "slug": "mixed-data-type-calculations",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1722. Mixed Data Type Calculations\n\n40\n\nMedium\n\nProblem:  Mixed Data Type Calculations\nObjective:\n\nWrite a C program that reads a series of values, performs arithmetic calculations, and then outputs the results. The values and operations are defined as follows:\n\nInput:\n\nInteger n which is representing the number of sets of data to process.\nFor each set:\nAn integer value a.\nA floating-point number b.\nA character op representing an arithmetic operation (+, -, *, /).\nA double precision number c.\nOutput:\n\nFor each set of data, perform the operation specified by op on a and b, and add the result to c.\nOutput the result as a double-precision floating-point number with two decimal places.",
+ "input_spec": "Integer n which is representing the number of sets of data to process.\nFor each set:\nAn integer value a.\nA floating-point number b.\nA character op representing an arithmetic operation (+, -, *, /).\nA double precision number c.",
+ "output_spec": "s the results. The values and operations are defined as follows:\n\nInput:\n\nInteger n which is representing the number of sets of data to process.\nFor each set:\nAn integer value a.\nA floating-point number b.\nA character op representing an arithmetic operation (+, -, *, /).\nA double precision number c.\nOutput:\n\nFor each set of data, perform the operation specified by op on a and b, and add the result to c.\nOutput the result as a double-precision floating-point number with two decimal places.",
+ "constraints": "1 <= n <= 100\n0 <= a <= 1000\n0.0 <= b <= 1000.0\nop will be one of the characters: +, -, *, /.\nc will be a valid double precision number.\nIf the operation is division (/), ensure no division by zero occurs.\n\nExample",
+ "samples": [
+  {
+   "input": "Integer n which is representing the number of sets of data to process.\nFor each set:\nAn integer value a.\nA floating-point number b.\nA character op representing an arithmetic operation (+, -, *, /).\nA double precision number c.",
+   "output": "For each set of data, perform the operation specified by op on a and b, and add the result to c.\nOutput the result as a double-precision floating-point number with two decimal places."
+  },
+  {
+   "input": "3\n5 3.2 + 2.5\n8 4.0 * 1.2\n10 0.0 / 10.0",
+   "output": "10.70\n33.20\n10.00"
+  }
+ ],
+ "raw": ""
+}

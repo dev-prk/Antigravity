@@ -1,0 +1,17 @@
+{
+ "title": "1097. Timing Task Decorator",
+ "slug": "timing-task-decorator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1097. Timing Task Decorator\n\n50\n\nMedium\n\nProblem Statement:\nYou are organizing a marriage function and you have a list of tasks to be done. Each task has a time duration. You want to keep track of how long each task takes. Write a Python decorator  time_it  that takes a function and prints the time taken by that function. Use this decorator to decorate the function  do_task(task) , which simulates doing the task by sleeping for the duration of the task.\n\nThe output of the  do_task  function should be in the format:  f\\\"{task[0]} took {round(end - start, 2)} seconds\\\"",
+ "input_spec": "-  task : a tuple. The first element is the task name (a string), and the second element is the task duration in seconds (an integer).",
+ "output_spec": "of the  do_task  function should be in the format:  f\\\"{task[0]} took {round(end - start, 2)} seconds\\\"\n\nInput Description:\n-  task : a tuple. The first element is the task name (a string), and the second element is the task duration in seconds (an integer).\n\nOutput Description:\n- The function should print the task name and the time taken by the task in the format:  f\\\"{task[0]} took {round(end - start, 2)} seconds\\\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Decorating the hall, 2",
+   "output": "Decorating the hall took 2.0 seconds"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1619. Sort Words Alphabetically Using Insertion Sort",
+ "slug": "sort-words-alphabetically-using-insertion-sort",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1619. Sort Words Alphabetically Using Insertion Sort\n\n70\n\nHard\n\nProblem Statement:  Sort Words Alphabetically Using Insertion Sort\n\nWrite a program that sorts words in lexicographical (dictionary) order using the insertion sort algorithm.\n\nDescription:\n\nThe program should take n words as input and arrange them in alphabetical order.\n\n1. Use insertion sort logic for sorting (do not use built-in sort functions).\n\n2. Lexicographical order means words are ordered like in a dictionary (e.g., \"apple\" < \"banana\" < \"cherry\").\n\n3. Sorting should be case-sensitive (assume all words are lowercase for simplicity).\n\nInput Format:\n\n1. First line: Integer n (number of words)\n\n2. Next n lines: One word per line\n\nOutput Format:\n\nWords sorted alphabetically, each printed on a new line",
+ "input_spec": "and arrange them in alphabetical order.\n\n1. Use insertion sort logic for sorting (do not use built-in sort functions).\n\n2. Lexicographical order means words are ordered like in a dictionary (e.g., \"apple\" < \"banana\" < \"cherry\").\n\n3. Sorting should be case-sensitive (assume all words are lowercase for simplicity).\n\nInput Format:\n\n1. First line: Integer n (number of words)\n\n2. Next n lines: One word per line",
+ "output_spec": "Words sorted alphabetically, each printed on a new line",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nbanana\napple\ncherry\ndate",
+   "output": "apple\nbanana\ncherry\ndate"
+  }
+ ],
+ "raw": ""
+}

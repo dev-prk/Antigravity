@@ -1,0 +1,17 @@
+{
+ "title": "1673. Java, Generics, Wrapper Classes - Sum of Squares",
+ "slug": "java-generics-wrapper-classes-sum-of-squares",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1673. Java, Generics, Wrapper Classes - Sum of Squares\n\n50\n\nMedium\n\nSum of Squares\n\nProblem Statement:\nWrite a program to calculate the sum of squares of a list of numeric values using wrapper classes and generics.\n\nDescription:\n\nCreate a generic class SumOfSquares<T extends Number>.\n\nImplement computeSumOfSquares(List<T> list) to return the sum of squares.\n\nUse .doubleValue() for numeric conversion.\n\nInput Format:\n\nFirst line: number of elements n\n\nSecond line: n space-separated numbers\n\nOutput Format:\n\nSum of squares",
+ "input_spec": "First line: number of elements n\n\nSecond line: n space-separated numbers",
+ "output_spec": "Sum of squares",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n2 3 4",
+   "output": "Sum of Squares: 29.0"
+  }
+ ],
+ "raw": ""
+}

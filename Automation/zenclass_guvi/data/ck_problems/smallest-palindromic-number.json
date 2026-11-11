@@ -1,0 +1,17 @@
+{
+ "title": "594. Smallest Palindromic Number",
+ "slug": "smallest-palindromic-number",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n594. Smallest Palindromic Number\n\n90\n\nHard  Topics\n\nProblem Statement:\nPalash is fond of palindromic numbers.So he decided to give this knowledge to his younger brother.Hence he decided to frame one question.To make him more clear he decided that he will tell his younger brother \u2018suresh\u2019 about this concept using problem.The problem statement is as follows,You are given with array conatining digits 0-9 your task is to print the smallest palindromic number \u2019t\u2019 but this number must be greater than the number obtained using digits.Now your task is to help suresh to solve the this tricky question",
+ "input_spec": "You are given with size of array \u2018n\u2019. Next line contains n space separated integers",
+ "output_spec": "Print the smallest palindromic number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n1 2 3 5 9 6 8 4 7 0",
+   "output": "1235995321"
+  }
+ ],
+ "raw": ""
+}

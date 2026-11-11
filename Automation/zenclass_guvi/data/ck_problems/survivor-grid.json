@@ -1,0 +1,17 @@
+{
+ "title": "1595. Survivor Grid",
+ "slug": "survivor-grid",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1595. Survivor Grid\n\n80\n\nHard\n\nProblem Statement:  Survivor Grid\nYou are given a grid representing a battle zone, where each cell has a certain number of soldiers. Some of the cells are designated as \"safe zones\" (represented by 0 soldiers), which are protected and cannot be attacked. Your task is to simulate a strategic attack where you can choose to attack a group of connected cells in the grid.\n\nCells are considered connected if they share a side (left, right, up, or down) with another cell containing soldiers. When you attack a connected group of cells, all the soldiers in that group are eliminated, and the total number of soldiers eliminated is counted.\n\nYour goal is to find the maximum number of soldiers you can eliminate in a single attack on a connected group of cells.\n\nInput Format:\nThe first line contains two integers n and m (where 2 \u2264 n, m \u2264 500), representing the number of rows and columns in the grid.\nThe next n lines each contain m integers, representing the number of soldiers in each cell of the grid. A value of 0 in the grid represents a \"safe zone\" that cannot be attacked or crossed.\n\nOutput Format:\nOutput a single integer, the maximum number of soldiers you can eliminate in a single attack.",
+ "input_spec": "The first line contains two integers n and m (where 2 \u2264 n, m \u2264 500), representing the number of rows and columns in the grid.\nThe next n lines each contain m integers, representing the number of soldiers in each cell of the grid. A value of 0 in the grid represents a \"safe zone\" that cannot be attacked or crossed.",
+ "output_spec": "Output a single integer, the maximum number of soldiers you can eliminate in a single attack.",
+ "constraints": "2 \u2264 n, m \u2264 500\nThe number of soldiers in any cell will be between 1 and 1000, except for safe zones which have 0 soldiers.\nThe grid contains at least one cell with soldiers (\u2265 1).\n\nExample:",
+ "samples": [
+  {
+   "input": "5 5\n10 0 0 10 0\n10 10 0 10 0\n0 0 0 10 10\n10 10 0 0 0\n10 0 10 10 10",
+   "output": "50"
+  }
+ ],
+ "raw": ""
+}

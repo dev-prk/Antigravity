@@ -1,0 +1,17 @@
+{
+ "title": "585. Cricket Partnership Runs",
+ "slug": "cricket-partnership-runs",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n585. Cricket Partnership Runs\n\n80\n\nHard  Topics\n\nProblem Statement:\nIn a Test cricket match the runs scored by batsmen are given to you. Your task is to print partnership formed by batsmen.if it is assumed that if there are \u2018n\u2019 batsmen then n-1 wicket will fall and each batsmen will divide his individual runs equally in all partnerships he is involved in. Note :batsmen will fall serial wise and last batsmen will remain not out",
+ "input_spec": "You are given a number \u2018n\u2019,representing the number of batsmen.Next line contains n space separated integers representing score of each batsman",
+ "output_spec": "Print the score in n-1 partnership",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 36 64 98 100",
+   "output": "28 50 96 81 149"
+  }
+ ],
+ "raw": ""
+}

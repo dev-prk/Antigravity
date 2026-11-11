@@ -1,0 +1,17 @@
+{
+ "title": "2090. Computing the Factorial of a Fixed Number",
+ "slug": "computing-the-factorial-of-a-fixed-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2090. Computing the Factorial of a Fixed Number\n\n50\n\nMedium\n\nProblem Statement\nCompute and print the factorial of 5 by directly multiplying the numbers from 1 to 5 together.\n\nDescription\nThe factorial of 5, written 5!, is the product of all integers from 1 to 5. Using variables to hold intermediate products, directly compute the factorial by multiplying step by step (1, then by 2, then by 3, and so on) and print the final result. No loop is required since the number of multiplications is fixed.",
+ "input_spec": "This program does not read any input.",
+ "output_spec": "Print the value of 5 factorial.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "(no input)",
+   "output": "120"
+  }
+ ],
+ "raw": ""
+}

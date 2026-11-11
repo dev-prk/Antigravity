@@ -1,0 +1,17 @@
+{
+ "title": "298. Print Primes Less Than N",
+ "slug": "print-primes-less-than-n",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n298. Print Primes Less Than N\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number N, print all prime numbers less than N(in ascending order).",
+ "input_spec": "Input Size : 1 <= N <= 100000",
+ "output_spec": "The output consists of all prime numbers less than N, printed in ascending order, separated by spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10",
+   "output": "2 3 5 7"
+  }
+ ],
+ "raw": ""
+}

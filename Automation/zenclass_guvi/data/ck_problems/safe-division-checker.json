@@ -1,0 +1,17 @@
+{
+ "title": "1986. Safe Division Checker",
+ "slug": "safe-division-checker",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1986. Safe Division Checker\n\n90\n\nHard\n\nProblem Statement\n\nGiven two integers, divide the first by the second. Handle the case where the divisor is zero using exception handling instead of letting the program crash.\n\nDescription\n\nRead two integers a and b from input, one per line. Divide a by b and print the quotient. If b is zero, print an error message instead of the result.",
+ "input_spec": ", one per line. Divide a by b and print the quotient. If b is zero, print an error message instead of the result.\n\nInput Description\n\nTwo lines, each containing an integer: a and b (-1000 \u2264 a, b \u2264 1000)",
+ "output_spec": "Print the quotient of a divided by b. If b is zero, print \"Error: Division by zero not allowed\" instead.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n2",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

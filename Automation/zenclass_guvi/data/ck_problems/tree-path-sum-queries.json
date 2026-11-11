@@ -1,0 +1,17 @@
+{
+ "title": "1517. Tree Path Sum Queries",
+ "slug": "tree-path-sum-queries",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1517. Tree Path Sum Queries\n\n70\n\nHard\n\nProblem Statement:\nYou are given a tree with N nodes, where each node has an integer value assigned to it. The tree is rooted at node 1. You are also given Q queries. Each query consists of two nodes u and v, and asks for the sum of the values of all nodes on the path from u to v (including u and v themselves). Your task is to answer all queries efficiently.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the tree.\n- The second line contains N integers, where the i-th integer is the value assigned to node i.\n- The next N-1 lines each contain two integers a and b, denoting an undirected edge between nodes a and b.\n- The next line contains an integer Q, the number of queries.\n- The next Q lines each contain two integers u and v, representing a query for the sum of values along the path from u to v.",
+ "output_spec": "- For each query, output a single integer: the sum of values along the path from u to v.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n1 2\n1 3\n2 4\n2 5\n3\n4 5\n3 4\n2 3",
+   "output": "11\n8\n5"
+  }
+ ],
+ "raw": ""
+}

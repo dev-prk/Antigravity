@@ -1,0 +1,17 @@
+{
+ "title": "2150. Checking Divisibility by 3 and 5 Using a Function",
+ "slug": "checking-divisibility-by-3-and-5-using-a-function",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2150. Checking Divisibility by 3 and 5 Using a Function\n\n40\n\nMedium\n\nProblem Statement\nRead an integer and determine whether it is divisible by both 3 and 5, using a function that returns 1 or 0.\n\nDescription\nRead an integer num from input. Write a function isDivisible that takes one integer parameter and returns 1 if the number is divisible by both 3 and 5, and returns 0 otherwise. In main(), call the function and use an if-else statement on the returned value to print \"Divisible\" or \"Not Divisible\".",
+ "input_spec": ". Write a function isDivisible that takes one integer parameter and returns 1 if the number is divisible by both 3 and 5, and returns 0 otherwise. In main(), call the function and use an if-else statement on the returned value to print \"Divisible\" or \"Not Divisible\".\n\nInput Description\nA single positive integer num.",
+ "output_spec": "Print \"Divisible\" if num is divisible by both 3 and 5, otherwise print \"Not Divisible\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "15",
+   "output": "Divisible"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1150. Java Data Type Conversion",
+ "slug": "java-data-type-conversion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1150. Java Data Type Conversion\n\n50\n\nMedium\n\nProblem Statement:\nCreate a Java program that converts various types of data (e.g., double, float) to integers using the Integer wrapper class methods. The program should:\n\nConvert a double value to an integer using Double and Integer methods.\n\nConvert a float value to an integer.\n\nHandle any potential issues related to data loss or rounding.",
+ "input_spec": "Two lines of input: one containing a double value and the other a float value.",
+ "output_spec": "The integer values obtained from conversions. Information on rounding or data loss.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "15.75\n3.14",
+   "output": "Converted Integer from Double: 15\nConverted Integer from Float: 3\nNote: Data was truncated, not rounded."
+  }
+ ],
+ "raw": ""
+}

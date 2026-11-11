@@ -1,0 +1,17 @@
+{
+ "title": "1575. Prim's Algorithm for Dense Graph MST",
+ "slug": "prim-s-algorithm-for-dense-graph-mst",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1575. Prim's Algorithm for Dense Graph MST\n\n90\n\nHard\n\nProblem Statement:\nYou are given a dense undirected weighted graph with N vertices, represented as an adjacency matrix. Your task is to use Prim\u2019s algorithm to compute the Minimum Spanning Tree (MST) of the graph and print the edges included in the MST. The graph is connected and contains no self-loops or multiple edges.",
+ "input_spec": "- The first line contains an integer N, the number of vertices in the graph.\n- The next N lines each contain N integers, where the j-th integer in the i-th line represents the weight of the edge between vertex i and vertex j. If there is no edge between i and j, the weight will be 0.",
+ "output_spec": "- Print N-1 lines, each containing three integers u v w, representing an edge between vertices u and v with weight w that is included in the MST. Print the edges in the order they are added to the MST.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n0 2 3 0\n2 0 1 4\n3 1 0 5\n0 4 5 0",
+   "output": "1 2 2\n2 3 1\n2 4 4"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "148. Lexicographically Smallest String",
+ "slug": "lexicographically-smallest-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n148. Lexicographically Smallest String\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N strings, find the lexicographically smallest string.",
+ "input_spec": "The input consists of an integer N, representing the number of strings, followed by N strings. N is less than or equal to 1000.",
+ "output_spec": "The output is the lexicographically smallest string among the given N strings.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\ncode\nlearn\npractice",
+   "output": "code"
+  }
+ ],
+ "raw": ""
+}

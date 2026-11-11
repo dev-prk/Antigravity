@@ -1,0 +1,17 @@
+{
+ "title": "2193. Set Operations on Two Groups of Numbers",
+ "slug": "set-operations-on-two-groups-of-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2193. Set Operations on Two Groups of Numbers\n\n60\n\nMedium\n\nProblem Statement\nRead two groups of integers, A and B, and print their union, their intersection and the numbers that are in A but not in B.\nDescription\nTwo groups of integers, A and B, are given. A number may be repeated inside a group, but each group must be treated as a set. Print the union of A and B, the intersection of A and B, and the difference A - B (the numbers that are in A but not in B). Print every result in increasing order.",
+ "input_spec": "Two lines. The first line contains the integers of group A and the second line contains the integers of group B, separated by single spaces. (Each group has 1 to 20 integers, each between -100 and 100)",
+ "output_spec": "Print 3 lines: the union, the intersection and the difference A - B. Print each result as a list in square brackets, in increasing order, with the numbers separated by a comma and a space, for example [1, 2, 3]. If a result has no numbers, print [].",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2 3 4\n3 4 5 6",
+   "output": "[1, 2, 3, 4, 5, 6]\n[3, 4]\n[1, 2]"
+  }
+ ],
+ "raw": ""
+}

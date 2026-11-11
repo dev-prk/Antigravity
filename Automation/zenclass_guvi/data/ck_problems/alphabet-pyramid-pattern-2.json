@@ -1,0 +1,17 @@
+{
+ "title": "908. Alphabet Pyramid Pattern-2",
+ "slug": "alphabet-pyramid-pattern-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n908. Alphabet Pyramid Pattern-2\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a aplhabet pyramid pattern.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the alphabet pyramid pattern according to the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "A\nBAB\nCBABC\nDCBABCD\nEDCBABCDE"
+  }
+ ],
+ "raw": ""
+}

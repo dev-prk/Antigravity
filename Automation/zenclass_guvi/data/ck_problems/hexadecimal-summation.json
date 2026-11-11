@@ -1,0 +1,17 @@
+{
+ "title": "1153. Hexadecimal Summation",
+ "slug": "hexadecimal-summation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1153. Hexadecimal Summation\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program to sum a list of hexadecimal numbers provided as strings. You must use the Integer.parseInt() method with base 16 for conversion and Integer.toHexString() for the final result.",
+ "input_spec": "The first line contains an integer N, the number of hexadecimal numbers. The second line contains N space-separated hexadecimal strings.",
+ "output_spec": "Print the sum of the hexadecimal numbers in hexadecimal format (without 0x prefix).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "210 f",
+   "output": "1f"
+  }
+ ],
+ "raw": ""
+}

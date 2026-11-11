@@ -1,0 +1,17 @@
+{
+ "title": "1509. Tree Diameter",
+ "slug": "tree-diameter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1509. Tree Diameter\n\n50\n\nMedium\n\nProblem Statement:\nGiven an undirected tree with N nodes (numbered from 1 to N), find the length of the longest path between any two nodes in the tree. The length of a path is measured by the number of edges between the two nodes.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the tree.\n- Each of the next N-1 lines contains two integers u and v, denoting an edge between node u and node v.",
+ "output_spec": "- Print a single integer, the length of the longest path between any two nodes in the tree.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2\n1 3\n3 4\n3 5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

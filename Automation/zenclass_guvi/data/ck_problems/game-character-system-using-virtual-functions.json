@@ -1,0 +1,17 @@
+{
+ "title": "1821. Game Character System using Virtual Functions",
+ "slug": "game-character-system-using-virtual-functions",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1821. Game Character System using Virtual Functions\n\n40\n\nMedium\n\nGame Character System using Virtual Functions\n\nProblem Statement:\nDesign a game character hierarchy demonstrating dynamic binding.\n\nDescription:\nBase Class: Character\nVirtual function attack()\n\nDerived Classes:\n1. Warrior\n2. Mage\n3. Archer\n\nRequirements:\n1. Use base class pointer.\n2. Call attack() dynamically.\n3. Add virtual destructor.\n4. Show output difference based on actual object.\n5. Demonstrate polymorphic behavior in loop.\n\nInput Format:\nCharacter Type\n\nOutput Format:\nCharacter Attack Message",
+ "input_spec": "Character Type",
+ "output_spec": "difference based on actual object.\n5. Demonstrate polymorphic behavior in loop.\n\nInput Format:\nCharacter Type\n\nOutput Format:\nCharacter Attack Message",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Mage",
+   "output": "Mage casts Fireball!"
+  }
+ ],
+ "raw": ""
+}

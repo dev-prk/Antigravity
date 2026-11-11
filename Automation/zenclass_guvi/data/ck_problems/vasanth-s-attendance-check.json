@@ -1,0 +1,17 @@
+{
+ "title": "390. Vasanth's Attendance Check",
+ "slug": "vasanth-s-attendance-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n390. Vasanth's Attendance Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nVasanth is working at GUVI. He has been taking leave often in the past couple of weeks and his manager, who also happens to be his friend, is worried that Vasanth might be exceeding his number of paid holidays, which might be a black mark in Vasanth monthly report. The manager analysis Vasanth's attendance register and decides to warn him beforehand. The attendance register has a 'P' marked for present and an 'A' marked for absent. Vasanth will be blacklisted if his attendance falls below 25%. Your task is to help the manager find out whether Vasanth could be blacklisted or not.",
+ "input_spec": "First line contains the number of entries in the attendance register, followed by space separated values of attendance (\u2018P\u2019 or \u2018A\u2019)",
+ "output_spec": "\u2018Blacklisted\u2019 if attendance is below 25%\n\u2018Not Blacklisted\u2019 if attendance is above 25%",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nP P A A A",
+   "output": "Not Blacklisted"
+  }
+ ],
+ "raw": ""
+}

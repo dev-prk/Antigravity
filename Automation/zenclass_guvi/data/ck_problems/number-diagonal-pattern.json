@@ -1,0 +1,17 @@
+{
+ "title": "784. Number Diagonal Pattern",
+ "slug": "number-diagonal-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n784. Number Diagonal Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a task is to print pattern using numbers in diagonal and others as 0 by getting a number n as input.",
+ "input_spec": ".\n\nInput Description:\nYou are given a number \u2018n\u2019 as integer",
+ "output_spec": "Print the pattern as shown",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "0 0 0 0 1\n0 0 0 2 0\n0 0 3 0 0\n0 4 0 0 0\n5 0 0 0 0"
+  }
+ ],
+ "raw": ""
+}

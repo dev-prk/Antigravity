@@ -1,0 +1,17 @@
+{
+ "title": "2012. Employee Salary Using Abstract Class",
+ "slug": "employee-salary-using-abstract-class",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2012. Employee Salary Using Abstract Class\n\n60\n\nMedium\n\nProblem Statement\n\nCreate an abstract class Employee with:\n\nname\nAn abstract method calculateSalary()\n\nCreate two subclasses:\n\nFullTimeEmployee \u2014 has a monthly salary.\nPartTimeEmployee \u2014 has hourly rate and number of hours.\n\nOverride calculateSalary() in both classes and print the calculated salary.",
+ "input_spec": "The first line contains the employee type: fulltime or parttime.\n\nFor fulltime, the second line contains the monthly salary.\n\nFor parttime, the second line contains the hourly rate and number of hours.",
+ "output_spec": "Print the calculated salary.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "fulltime\n50000",
+   "output": "50000"
+  }
+ ],
+ "raw": ""
+}

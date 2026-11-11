@@ -1,0 +1,17 @@
+{
+ "title": "1513. Travelling Salesman Problem DP Bitmasking",
+ "slug": "travelling-salesman-problem-dp-bitmasking",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1513. Travelling Salesman Problem DP Bitmasking\n\n50\n\nMedium\n\nProblem Statement:\nYou are given N cities, numbered from 0 to N-1, and a 2D array  dist  where  dist[i][j]  represents the distance between city i and city j. Your task is to find the minimum possible total distance to start from city 0, visit every other city exactly once, and return to city 0. You must use dynamic programming with bitmasking to solve this problem efficiently.",
+ "input_spec": "- The first line contains an integer N, the number of cities.\n- The next N lines each contain N integers, where the j-th integer in the i-th line is  dist[i][j] .",
+ "output_spec": "- Print a single integer, the minimum possible total distance to complete the tour.",
+ "constraints": "- 2 \u2264 N \u2264 16\n- 0 \u2264 dist[i][j] \u2264 10^6\n- dist[i][i] = 0 for all 0 \u2264 i < N",
+ "samples": [
+  {
+   "input": "4\n0 10 15 20\n10 0 35 25\n15 35 0 30\n20 25 30 0",
+   "output": "80"
+  }
+ ],
+ "raw": ""
+}

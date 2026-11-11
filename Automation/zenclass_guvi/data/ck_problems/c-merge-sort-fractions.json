@@ -1,0 +1,17 @@
+{
+ "title": "1627. C, Merge Sort, Fractions",
+ "slug": "c-merge-sort-fractions",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1627. C, Merge Sort, Fractions\n\n50\n\nMedium\n\nProblem Statement  Sorting Fractions Using Merge Sort\n\nWrite a program to sort an array of fractions in ascending order using Merge Sort.\nEach fraction is given as numerator/denominator. The fractions must be sorted based on their decimal values.\n\nDescription\n\n1. You are given n fractions, where each fraction is represented by two integers: numerator and denominator.\n\n2. The task is to sort these fractions in ascending order according to their decimal values (i.e., numerator \u00f7 denominator).\n\n3. Use the Merge Sort algorithm for sorting.\n\nThe program should handle:\n\n1. Proper fractions (numerator < denominator)\n\n2. Improper fractions (numerator \u2265 denominator)\n\n3. Negative fractions\n\nInput Format\n\nFirst line: An integer n representing the number of fractions\n\nNext n lines: Each line contains two integers separated by space \u2192 numerator denominator\n\nOutput Format\n\nPrint the sorted fractions in ascending order, one per line, in the format:\n\nnumerator/denominator",
+ "input_spec": "First line: An integer n representing the number of fractions\n\nNext n lines: Each line contains two integers separated by space \u2192 numerator denominator",
+ "output_spec": "Print the sorted fractions in ascending order, one per line, in the format:\n\nnumerator/denominator",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n4\n1 2\n3 4\n1 3\n5 6",
+   "output": "1\n1/3\n1/2\n3/4\n5/6"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1085. Polymorphism with Student Fees",
+ "slug": "polymorphism-with-student-fees",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1085. Polymorphism with Student Fees\n\n50\n\nMedium\n\nProblem Statement:\nIn a college, there are two types of students: Undergraduate and Graduate. Both types of students have a method  get_fee()  that returns the tuition fee. However, the tuition fee is calculated differently for Undergraduate and Graduate students. For Undergraduate students, the tuition fee is a fixed amount of $5000. For Graduate students, the tuition fee is the number of credits taken times $50.\n\nPlease write a Python program that defines classes for Undergraduate and Graduate students, both inheriting from a common Student class. The Student class should have the  get_fee()  method, which should be overridden in the Undergraduate and Graduate classes.",
+ "input_spec": "The input consists of the number of credits taken by a Graduate student.",
+ "output_spec": "The output consists of two lines: the fixed tuition fee for an Undergraduate student, and the calculated tuition fee for a Graduate student based on the given credits.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "60",
+   "output": "5000\n3000"
+  }
+ ],
+ "raw": ""
+}

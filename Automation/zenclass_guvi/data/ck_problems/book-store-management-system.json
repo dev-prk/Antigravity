@@ -1,0 +1,17 @@
+{
+ "title": "1089. Book Store Management System",
+ "slug": "book-store-management-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1089. Book Store Management System\n\n50\n\nMedium\n\nProblem Statement:\nYou are developing a book management system for a bookstore. The system has a function  get_book_details(isbn: str) -\\> dict  that takes an ISBN number as input and returns a dictionary with book details. The dictionary contains the following keys: 'title', 'author', 'price', and 'quantity'.\n\nThe bookstore has the following books:\n1. \"Python Programming\" by John Doe, ISBN: \"1234567890\", Price: 500, Quantity: 10\n2. \"Data Structures and Algorithms\" by Jane Doe, ISBN: \"9876543210\", Price: 600, Quantity: 5\n3. \"Machine Learning\" by Sam Smith, ISBN: \"1111111111\", Price: 700, Quantity: 2\n\nHowever, not all books are available in the store at all times. If a book is not available, the function should raise a  ValueError  with a message \"Book not found\".\n\nWrite a Python function  handle_book_request(isbn: str) -\\> str  that calls  get_book_details(isbn: str) -\\> dict  and handles any  ValueError  that might be raised. The function should return a string message about the status of the request.\n\nIf the book is found, the function should return a message in the following format: \"Book found: {title} by {author}. Price: {price}, Quantity: {quantity}\". If the book is not found, it should return the message \"Book not found\".",
+ "input_spec": "and returns a dictionary with book details. The dictionary contains the following keys: 'title', 'author', 'price', and 'quantity'.\n\nThe bookstore has the following books:\n1. \"Python Programming\" by John Doe, ISBN: \"1234567890\", Price: 500, Quantity: 10\n2. \"Data Structures and Algorithms\" by Jane Doe, ISBN: \"9876543210\", Price: 600, Quantity: 5\n3. \"Machine Learning\" by Sam Smith, ISBN: \"1111111111\", Price: 700, Quantity: 2\n\nHowever, not all books are available in the store at all times. If a book is not available, the function should raise a  ValueError  with a message \"Book not found\".\n\nWrite a Python function  handle_book_request(isbn: str) -\\> str  that calls  get_book_details(isbn: str) -\\> dict  and handles any  ValueError  that might be raised. The function should return a string message about the status of the request.\n\nIf the book is found, the function should return a message in the following format: \"Book found: {title} by {author}. Price: {price}, Quantity: {quantity}\". If the book is not found, it should return the message \"Book not found\".",
+ "output_spec": "Book found: Python Programming by John Doe. Price: 500, Quantity: 10",
+ "constraints": "- ISBN is a string of length 10 or 13.\n- The title, author are strings and price, quantity are integers.\n- You can't install any external libraries.",
+ "samples": [
+  {
+   "input": "1234567890",
+   "output": "Book found: Python Programming by John Doe. Price: 500, Quantity: 10"
+  }
+ ],
+ "raw": ""
+}

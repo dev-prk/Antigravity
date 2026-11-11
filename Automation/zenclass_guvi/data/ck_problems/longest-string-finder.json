@@ -1,0 +1,17 @@
+{
+ "title": "1132. Longest String Finder",
+ "slug": "longest-string-finder",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1132. Longest String Finder\n\n50\n\nMedium\n\nProblem Statement:\nCreate a Java program using a custom functional interface to find the longest string in a list provided by the user. The program should then return the length of this longest string.",
+ "input_spec": "An integer n denoting the number of strings in the list.\nn space-separated strings representing the list elements.",
+ "output_spec": "A single integer which is the length of the longest string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\napple\nbanana\nstrawberry\nkiwi",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1525. Check Balanced Binary Tree",
+ "slug": "check-balanced-binary-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1525. Check Balanced Binary Tree\n\n70\n\nHard\n\nProblem Statement:\nGiven the root of a binary tree, determine if it is height-balanced. A binary tree is height-balanced if, for every node in the tree, the difference in height between its left and right subtrees is at most 1.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the binary tree.\n- The next N lines each contain three values: node value, left child value, and right child value. If a child does not exist, use -1.",
+ "output_spec": "- Print \"True\" if the binary tree is height-balanced, otherwise print \"False\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3\n2 4 -1\n3 -1 5\n4 -1 -1\n5 -1 -1",
+   "output": "true"
+  }
+ ],
+ "raw": ""
+}

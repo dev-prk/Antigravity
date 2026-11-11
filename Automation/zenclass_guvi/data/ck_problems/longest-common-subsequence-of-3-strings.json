@@ -1,0 +1,17 @@
+{
+ "title": "685. Longest Common Subsequence of 3 Strings",
+ "slug": "longest-common-subsequence-of-3-strings",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n685. Longest Common Subsequence of 3 Strings\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nAditi is fond of strings.she heard about Lcs for two strings.Now she wants to try this for 3 strings.But in between she got confused now, your task is to help her.You are given exactly 3 strings.Develop an algorithm which to find lcs for 3 strings.",
+ "input_spec": "You are given 3 strings.",
+ "output_spec": "Print the lcs of 3 string or print -1 if there is no lcs between 3 strings",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Guvi yuvi yuvirat",
+   "output": "uvi"
+  }
+ ],
+ "raw": ""
+}

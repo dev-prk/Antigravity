@@ -1,0 +1,17 @@
+{
+ "title": "369. Dish Preparation from Ingredients",
+ "slug": "dish-preparation-from-ingredients",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n369. Dish Preparation from Ingredients\n\n50\n\nMedium  Topics\n\nProblem Statement:\nA dish in Alphabet Land is made up of lower case English alphabets.You are given a source dish. Each alphabet from the source dish can be used as an ingredient at most once. The ingredients can be combined later to prepare a new dish.Your task is to determine if a given dish can be prepared from the ingredients of the source dish.",
+ "input_spec": "The first line is a string S denoting the source dish.The next line is an integer N denoting the number of dishes that have to be prepared.N lines follow. Each line consists of a string A representing a dish.",
+ "output_spec": "Print N lines. A line should contain \u2018YES\u2019 if the dish can be prepared from the source dish or \u2018NO\u2019 if the dish cannot be prepared from the source dish.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abbbcc\n4\nab\nabccc\nabbcc\nabd",
+   "output": "YES\nNO\nYES\nNO"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1923. AI Stock Market Pattern Analyzer",
+ "slug": "ai-stock-market-pattern-analyzer",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1923. AI Stock Market Pattern Analyzer\n\n80\n\nHard  Topics\n\nAI Stock Market Pattern Analyzer\n\nProblem Statement\n\nAn AI engine analyzes stock price data.\n\nGiven daily stock prices:\n\nThe system must:\n1. Find the longest increasing streak (consecutive days).\n2. Find the Next Greater Element for each day.\n3. Compute maximum profit with at most K transactions.\n\nDesign an efficient solution using advanced data structures.\n\nInput Format\nn\nprice1 price2 ... priceN\nk\n\nOutput Format\nPrint:\nLongest Increasing Streak: X\nMax Profit: Y",
+ "input_spec": "n\nprice1 price2 ... priceN\nk",
+ "output_spec": "Print:\nLongest Increasing Streak: X\nMax Profit: Y",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n100 180 260 310 40 535\n2",
+   "output": "Longest Increasing Streak: 4\nMax Profit: 705"
+  }
+ ],
+ "raw": ""
+}

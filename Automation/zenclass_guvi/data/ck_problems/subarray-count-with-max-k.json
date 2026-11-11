@@ -1,0 +1,17 @@
+{
+ "title": "579. Subarray Count with Max > k",
+ "slug": "subarray-count-with-max-k",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n579. Subarray Count with Max > k\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nYou are provided with an array. Your task is to print the count of subarray whose maximum element is strictly greater than 'k'.",
+ "input_spec": "First line contains two element 'N' and 'k'.Second line contains 'n' space separated numbers.",
+ "output_spec": "Print the count of subarray whose maximum element's value is strictly greater than 'k'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 4\n1 6 7 8 9",
+   "output": "14"
+  }
+ ],
+ "raw": ""
+}

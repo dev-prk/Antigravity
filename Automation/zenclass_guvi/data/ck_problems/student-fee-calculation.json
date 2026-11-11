@@ -1,0 +1,17 @@
+{
+ "title": "399. Student Fee Calculation",
+ "slug": "student-fee-calculation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n399. Student Fee Calculation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given an array of distinct roll numbers and an array of subjects. The student with the i th roll number , studies subject number i. (1 <= i <= N). Then you are given an array of subject-fee pairs. Subjects are unique in the array. Find the fee paid by all the N students with the N roll numbers to study that subject. If the fee for a subject is unavailable, print -1",
+ "input_spec": "First line contains an integer N. N is the size of the roll number array and subject name array\nThe next line contains N space separated integers denoting the roll numbers.\nThe next line contains N space separated strings denoting the subject names.\nThe ith student(roll no.) studies the ith subject\nThe next line contains an integer M denoting the number of subjects-fee pairs\nThen M lines follow each containing a subject name and a fee separated by space",
+ "output_spec": "Print N lines, each containing a roll number and the fee paid by the student with that roll number separated by a single space.\nPrint it in increasing order of roll numbers. [Print -1 if fee for a subject is not available].",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n99 81 8 82 32\nmath phy chem computers chem\n3\nphy 5000\nchem 2000\ncomputers 6000",
+   "output": "8 2000\n32 2000\n81 5000\n82 6000\n99 -1"
+  }
+ ],
+ "raw": ""
+}

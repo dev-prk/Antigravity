@@ -1,0 +1,17 @@
+{
+ "title": "416. Minimize Coins for Uniform Array",
+ "slug": "minimize-coins-for-uniform-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n416. Minimize Coins for Uniform Array\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou have an array of integers of length N. In one operation, you can change an integer X in the array to another using X coins. Find the minimum number of coins required to convert the array such that it contains only one distinct integer, N times.",
+ "input_spec": "The first line contains an integer N, denoting the size of the array.\nThe next line contains N space separated integers.",
+ "output_spec": "Print the minimum number of coins required.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n3 4",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

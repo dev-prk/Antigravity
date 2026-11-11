@@ -1,0 +1,17 @@
+{
+ "title": "1227. String Manipulation with Pointers",
+ "slug": "string-manipulation-with-pointers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1227. String Manipulation with Pointers\n\n80\n\nHard  Topics\n\nProblem Statement:\nWrite a C program that reads a list of strings from the user and then performs the following operations using pointer-to-pointer (char **):\n1. Reverse each string.\n2. Swap the first and last string in the list.\n3. Print the modified list.",
+ "input_spec": "The first line contains an integer n, the number of strings.\nThe next n lines each contain a single string.",
+ "output_spec": "Print the modified list of strings, one per line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nalgorithm\ncode\nlanguage",
+   "output": "egaugnal\nedoc\nmhtirogla"
+  }
+ ],
+ "raw": ""
+}

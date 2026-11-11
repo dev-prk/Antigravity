@@ -1,0 +1,17 @@
+{
+ "title": "1107. Unique Brands in E-commerce",
+ "slug": "unique-brands-in-e-commerce",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1107. Unique Brands in E-commerce\n\n50\n\nMedium\n\nProblem Statement:\nYou are managing an e-commerce website and you have a list of products. Each product is represented as a dictionary with three keys: 'name', 'category', and 'brand'. You want to create a set of all unique brands present in your product list. Write a Python function  unique_brands(products)  that takes a list of products and returns a set of unique brands. Use a set comprehension to create the set.",
+ "input_spec": "-  products : a list of dictionaries. Each dictionary represents a product and has three keys: 'name' (a string), 'category' (a string), and 'brand' (a string).",
+ "output_spec": "- The function should return a set of unique brands.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "[{'name': 'Product 1', 'category': 'Books', 'brand': 'Brand A'}, {'name': 'Product 2', 'category': 'Electronics', 'brand': 'Brand B'}, {'name': 'Product 3', 'category': 'Electronics', 'brand': 'Brand B'}]",
+   "output": "['Brand A', 'Brand B']"
+  }
+ ],
+ "raw": ""
+}

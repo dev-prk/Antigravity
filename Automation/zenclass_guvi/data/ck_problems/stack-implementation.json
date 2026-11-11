@@ -1,0 +1,17 @@
+{
+ "title": "1669. Stack Implementation",
+ "slug": "stack-implementation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1669. Stack Implementation\n\n80\n\nHard\n\nStack Implementation\n\nProblem Statement:\nWrite a program to implement a generic stack class using ArrayList<T>. The stack should support the basic operations: push, pop, and peek.\n\nDescription:\n\nCreate a generic class GenericStack<T>.\n\nThe class should allow storing integers, strings, or doubles.\n\nImplement methods push(T item), pop(), and peek().\n\nIf the stack is empty during pop or peek, handle it gracefully.\n\nInput Format:\n\nEach line contains a command:\n\npush <value> \u2192 pushes a value\n\npop \u2192 pops the top element\n\npeek \u2192 shows the top element\n\nOutput Format:\n\nOutput messages for each operation",
+ "input_spec": "Each line contains a command:\n\npush <value> \u2192 pushes a value\n\npop \u2192 pops the top element\n\npeek \u2192 shows the top element",
+ "output_spec": "Output messages for each operation",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\npush 10\npush 20\npop\npeek",
+   "output": "Pushed: 10\nPushed: 20\nPopped: 20\nPeek: 10"
+  }
+ ],
+ "raw": ""
+}

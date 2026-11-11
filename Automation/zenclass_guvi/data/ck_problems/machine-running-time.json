@@ -1,0 +1,17 @@
+{
+ "title": "2170. Machine Running Time",
+ "slug": "machine-running-time",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2170. Machine Running Time\n\n60\n\nMedium\n\nProblem Statement\nRead the running time of a machine in seconds. Print it as hours, minutes and seconds.\nDescription\nA machine's meter shows its running time only in seconds. Read this time and convert it into hours, minutes and seconds. 1 hour = 3600 seconds and 1 minute = 60 seconds. For example, 3725 seconds is 1 hour, 2 minutes and 5 seconds.",
+ "input_spec": "A single integer, the total running time in seconds. (0 <= seconds <= 86399)",
+ "output_spec": "Print the hours on the first line, the minutes on the second line, and the seconds on the third line. Print only the numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3725",
+   "output": "1\n2\n5"
+  }
+ ],
+ "raw": ""
+}

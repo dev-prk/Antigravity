@@ -1,0 +1,17 @@
+{
+ "title": "1164. Polymorphic Zoo Simulation",
+ "slug": "polymorphic-zoo-simulation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1164. Polymorphic Zoo Simulation\n\n50\n\nMedium\n\nProblem Statement:\nCreate a program that models a zoo with animals demonstrating polymorphism. Each animal should have a speak method, but the sound they make depends on the type of animal. Implement a system that allows adding different animals to the zoo and prints their sounds.",
+ "input_spec": "The first line of input contains an integer N, the number of animals. The next N lines each contain a string representing the type of animal (Lion, Elephant, Monkey).",
+ "output_spec": "The output should be the sounds of all animals in the zoo, each on a new line, in the order they were added.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nLion\nElephant\nMonkey",
+   "output": "Roar\nTrumpet\nOoh Ooh Aah Aah"
+  }
+ ],
+ "raw": ""
+}

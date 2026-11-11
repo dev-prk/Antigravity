@@ -1,0 +1,17 @@
+{
+ "title": "934. String Character Separation-3",
+ "slug": "string-character-separation-3",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n934. String Character Separation-3\n\n90\n\nHard  Topics\n\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format.",
+ "input_spec": "in the given format and print the",
+ "output_spec": "in the given format.\n\nInput Description:\nA single line contains a string.\n\nOutput Description:\nPrint the characters in a string separated by comma.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi",
+   "output": "g,u,v,i"
+  }
+ ],
+ "raw": ""
+}

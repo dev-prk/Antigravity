@@ -1,0 +1,17 @@
+{
+ "title": "612. Bride Selection",
+ "slug": "bride-selection",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n612. Bride Selection\n\n90\n\nHard  Topics\n\nProblem Statement:\nRohit is a bachelor and is looking for a suitable girl to marry.\n\nHe wants to marry a girl who has at least one of the 8 qualities mentioned below:-\n\n1) The girl should be rich.\n2) The girl should be an Engineer/Doctor.\n3) The girl should be beautiful.\n4) The girl should be of height 5.3\".\n5) The girl should be working in an MNC.\n6) The girl should be an extrovert.\n7) The girl should not have spectacles.\n8) The girl should be kind and honest.\n\nHe is in search of a bride who has some or all of the 8 qualities mentioned above. On bride hunting, he may find more than one contenders to be his wife.\n\nIn that case, he wants to choose a girl whose house is closest to his house. Find a bride for Rohit who has maximum qualities. If in case, there are more than one contenders who are at equal distance from Rohit's house; then\n\nprint \"\u201cHe's not interested in polygamy\u201d\".\n\nIn case there is no suitable girl who fits the criteria then print \u201c\"No suitable girl found\"\u201d\n\nGiven a Matrix N*M, Rohit's house is at (1, 1). It is denoted by value 1. In the same matrix, the location of a marriageable Girl is also denoted by 1. Since, the location of the boy is at location (1, 1), it should not be considered as the location of a marriageable Girl\u2019s location.\n\nThe qualities of that girl, as per Rohit's criteria, have to be decoded from the number of non-zero neighbors (max 8-way) she has. Similar to the condition above, 1 at location (1, 1) should not be considered as the quality of a Girl. See Example section to get a better understanding.\n\nFind a suitable bride for Rohit and print the row and column of the bride, and find out the number of qualities that the Bride possesses.\n\nNOTE: - Distance is calculated in number of hops in any direction i.e. (Left, Right, Up, Down and Diagonal)",
+ "input_spec": "First Line contains the row (N) and column (M) of the houses\nNext N lines contain the data about girls and their qualities.",
+ "output_spec": "It will contain the row and column of the bride, and the number of qualities that Bride possess separated by a colon (i.e. :).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 9\n1 0 1 1 0 1 1 1 1\n0 0 0 1 0 1 0 0 1",
+   "output": "1:7:3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1820. Online Shopping Cart using Composite",
+ "slug": "online-shopping-cart-using-composite",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1820. Online Shopping Cart using Composite\n\n50\n\nMedium\n\nOnline Shopping Cart using Composite\n\nProblem Statement:\nDesign an online shopping cart system demonstrating the Composite Design Pattern along with the Strategy Pattern for applying discounts dynamically.\n\nDescription:\nAbstract Base Class: Item\nVirtual function getPrice()\n\nLeaf Class:\n\nProduct\n\nComposite Class:\n\nComboPack (contains multiple Item objects)\n\nStrategy Interface:\nDiscountStrategy\nVirtual function applyDiscount(double total)\n\nConcrete Strategies:\n\nNoDiscount\nPercentageDiscount\nFlatDiscount\n\nRequirements:\nUse a base class pointer (Item*) to achieve polymorphism.\nTotal price of ComboPack = sum of all its child Items.\nSupport nested ComboPacks (a ComboPack can contain other ComboPacks).\nApply discount dynamically using Strategy Pattern.\nAdd virtual destructor in base class.\nDemonstrate polymorphic behavior while calculating total price.\n\nInput Format:\nItem Type (Product / Combo)\nDiscount Type (None / Percentage / Flat)\n\nOutput Format:\nFinal Cart Price after applying discount",
+ "input_spec": "Item Type (Product / Combo)\nDiscount Type (None / Percentage / Flat)",
+ "output_spec": "Final Cart Price after applying discount",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Combo\nPercentage",
+   "output": "Total Price before discount: 56000\nFinal Price after discount: 50400"
+  }
+ ],
+ "raw": ""
+}

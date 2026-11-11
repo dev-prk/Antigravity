@@ -1,0 +1,17 @@
+{
+ "title": "443. 3-Length Subsets",
+ "slug": "3-length-subsets",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n443. 3-Length Subsets\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given a small string not more then 10 characters and distinct characters. You are required to generate all the character subsets of length 3.",
+ "input_spec": "The only line of input is a string S.",
+ "output_spec": "Print the number of subsets of length three, N, on the first line.\nPrint N lines printing the subsets in alphabetical/lexicographical order.\nNote: If a character S[i] appears before S[j] in S, S[i] should occur before S[j] in each subset too. Print 0 if no cases are formed (for all valid i and j)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcd",
+   "output": "4\nabc\nabd\nacd\nbcd"
+  }
+ ],
+ "raw": ""
+}

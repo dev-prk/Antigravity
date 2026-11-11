@@ -1,0 +1,17 @@
+{
+ "title": "841. Reverse Alternate K Nodes",
+ "slug": "reverse-alternate-k-nodes",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n841. Reverse Alternate K Nodes\n\n50\n\nMedium  Topics\n\nProblem Statement:\nReverse alternate K nodes in a given Singly Linked List.",
+ "input_spec": "First line represents the size of the linked list.Next line represents the sequence of numbers as the node value of the linked list(separated by space).Third line contains size of 'K', reverse the linked list in chunks.",
+ "output_spec": "Print the chunk-reversed linked list(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "9\n1 2 3 4 5 6 7 8 9\n3",
+   "output": "3 2 1 4 5 6 9 8 7"
+  }
+ ],
+ "raw": ""
+}

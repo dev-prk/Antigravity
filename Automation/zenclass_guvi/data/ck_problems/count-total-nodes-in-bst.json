@@ -1,0 +1,21 @@
+{
+ "title": "2028. Count Total Nodes in BST",
+ "slug": "count-total-nodes-in-bst",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2028. Count Total Nodes in BST\n\n90\n\nHard\n\nProblem Statement\n\nCreate a Binary Search Tree and count the total number of nodes present in the tree.\n\nInput\nFirst line contains N.\nSecond line contains N integers.\nOutput\n\nPrint the total number of nodes in the BST.",
+ "input_spec": "First line contains N.\nSecond line contains N integers.",
+ "output_spec": "Print the total number of nodes in the BST.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "First line contains N.\nSecond line contains N integers.",
+   "output": "Print the total number of nodes in the BST."
+  },
+  {
+   "input": "7\n50 30 70 20 40 60 80",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

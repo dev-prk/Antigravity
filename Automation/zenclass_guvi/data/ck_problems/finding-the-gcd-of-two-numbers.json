@@ -1,0 +1,17 @@
+{
+ "title": "2125. Finding the GCD of Two Numbers",
+ "slug": "finding-the-gcd-of-two-numbers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2125. Finding the GCD of Two Numbers\n\n95\n\nHard\n\nProblem Statement\nRead two integers and print their greatest common divisor (GCD) using a while loop based on the Euclidean algorithm.\n\nDescription\nRead two integers a and b from input. Use a while loop that continues as long as b is not equal to 0. On each iteration, compute the remainder of a divided by b, then update a to hold the old value of b and b to hold the computed remainder. When the loop ends, a holds the GCD. Print this value.",
+ "input_spec": ". Use a while loop that continues as long as b is not equal to 0. On each iteration, compute the remainder of a divided by b, then update a to hold the old value of b and b to hold the computed remainder. When the loop ends, a holds the GCD. Print this value.\n\nInput Description\nTwo integers a and b (both greater than 0), separated by a space.",
+ "output_spec": "Print the GCD of a and b.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "36 24",
+   "output": "12"
+  }
+ ],
+ "raw": ""
+}

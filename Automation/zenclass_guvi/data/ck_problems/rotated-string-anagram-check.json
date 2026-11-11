@@ -1,0 +1,17 @@
+{
+ "title": "671. Rotated String Anagram Check",
+ "slug": "rotated-string-anagram-check",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n671. Rotated String Anagram Check\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are provided with a given string \u2019s\u2019.You will be given direction and magnitude so that you can rotate the string. You have to keep the track of first character after each rotation. Make a string out of it this first character and name it as s2 now check whether the s2 is anagram of original string \u2018s\u2019. For more better understanding go through example",
+ "input_spec": "The first line contains the original string s. The second line contains a single integer q. The i' th of the next q lines contains character d[i] denoting direction and integer r[i] denoting the magnitude.",
+ "output_spec": "Print yes if \u2018s2\u2019 is anagram of s1. and no otherwise",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "carrace\n\nL 2\nR 2\nL 3",
+   "output": "No"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "446. Longest Common Prefix Query",
+ "slug": "longest-common-prefix-query",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n446. Longest Common Prefix Query\n\n50\n\nMedium  Topics\n\nProblem Statement:\nPeter wants to play a game with you.He gives you N strings as S[1] S[2] S[3]....S[N] and he will ask you Q questions In each question he will give you a number M and X. He wants to know if the longest common prefix of the first M strings has length at least X If it is greater than or equal to X report to him \u201cYes\u201d or report to him \u201cNo\u201d",
+ "input_spec": "The first line contains a single integer N denoting the number of strings he will give you initially The next N line contains a single string per line The next line contains a single integer Q denoting the number of questions he will ask you The next Q line contains two integers M X denoting the number of strings from the first string he wants you to consider and the length he wants it to have respectively",
+ "output_spec": "Your output must consist of Q lines each line containing one of the following : \u201cYes\u201d or \u201cNo\u201d",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nabcdefg\nabcde\nabd\n2\n2 4\n3 4",
+   "output": "Yes\nNo"
+  }
+ ],
+ "raw": ""
+}

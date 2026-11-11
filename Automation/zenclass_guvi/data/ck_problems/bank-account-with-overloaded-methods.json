@@ -1,0 +1,17 @@
+{
+ "title": "1640. Bank Account with Overloaded Methods",
+ "slug": "bank-account-with-overloaded-methods",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1640. Bank Account with Overloaded Methods\n\n50\n\nMedium\n\nBank Account with Overloaded Methods\n\nProblem Statement:\nCreate a BankAccount class with method overloading to deposit money using either int or double. Compute the total balance after deposits.\n\nDescription:\nDemonstrates compile-time polymorphism, arithmetic calculation, and method overloading.\n\nInput Format:\n\ninitialBalance\nnumberOfDeposits\ndeposit1 deposit2 ...\n\nOutput Format:\n\nTotal Balance: <value>",
+ "input_spec": "initialBalance\nnumberOfDeposits\ndeposit1 deposit2 ...",
+ "output_spec": "Total Balance: <value>",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5000\n3\n1000 2000 500",
+   "output": "Total Balance: 8500"
+  }
+ ],
+ "raw": ""
+}

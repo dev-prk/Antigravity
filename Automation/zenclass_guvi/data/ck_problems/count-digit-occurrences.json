@@ -1,0 +1,17 @@
+{
+ "title": "722. Count Digit Occurrences",
+ "slug": "count-digit-occurrences",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n722. Count Digit Occurrences\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to count the number of occurrences of input num2 in input num1 and return it. The constraint is 0 <= num1 <= 99999 and 0 <= num2 <=9.",
+ "input_spec": "num2 in input num1 and return it. The constraint is 0 <= num1 <= 99999 and 0 <= num2 <=9.\n\nInput Description:\nInput contains num1 and num2",
+ "output_spec": "print the count",
+ "constraints": "is 0 <= num1 <= 99999 and 0 <= num2 <=9.",
+ "samples": [
+  {
+   "input": "1949 9",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

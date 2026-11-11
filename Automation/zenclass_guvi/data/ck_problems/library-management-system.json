@@ -1,0 +1,17 @@
+{
+ "title": "1658. Library Management System",
+ "slug": "library-management-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1212. Library Management System\n\n20\n\nEasy  Topics\n\nProblem Statement:\nScenario: You are tasked with developing a menu-driven program for a small library management system. The program should allow users to perform various operations such as adding a book, searching for a book by its ID, deleting a book by its ID, displaying all books, and exiting the program.",
+ "input_spec": "The program will repeatedly display a menu with the following options:\nAdd a book\nSearch for a book by ID\nDelete a book by ID\nDisplay all books\nExit\nFor Option 1 (Add a book): The user will input a book ID (integer) and a book title (string).\nFor Option 2 (Search for a book by ID): The user will input the book ID to search for.\nFor Option 3 (Delete a book by ID): The user will input the book ID to delete.\nFor Option 4 (Display all books): The program will display all the books currently in the system.\nFor Option 5 (Exit): The program will terminate.",
+ "output_spec": "For Option 1: The program should confirm that the book was added.\nFor Option 2: The program should display the book details if found or notify the user if the book is not found.\nFor Option 3: The program should confirm that the book was deleted or notify the user if the book ID is not found.\nFor Option 4: The program should list all books in the system.\nFor Option 5: The program will exit with a message.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n101\nC Programming Language\n1\n102\nData Structures in C\n2\n101\n4\n3\n102\n5",
+   "output": "Book added successfully.\nBook added successfully.\nBook found: ID=101, Title=\"C Programming Language\"\nBook ID=101, Title=\"C Programming Language\"\nBook ID=102, Title=\"Data Structures in C\"\nBook deleted successfully.\nExiting the program..."
+  }
+ ],
+ "raw": ""
+}

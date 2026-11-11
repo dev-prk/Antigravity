@@ -1,0 +1,17 @@
+{
+ "title": "418. Range GCD Queries-2",
+ "slug": "range-gcd-queries-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n418. Range GCD Queries-2\n\n80\n\nHard  Topics\n\nProblem Statement:\nThe problem statement is simple: you are given an array of integers having N integers. All integers are positive and greater than 0. You are given Q queries. In each query you must report the gcd of the numbers in the given range L to R. In other words assume the array is A[1] A[2] A[3].....A[N] (1-based indexing). gcd[L,R]= gcd(A[L],A[L+1].....A[R])",
+ "input_spec": "The first line contain a single integer N denoting the number of integers\nThe second line contains N integers: the contents if the array A.\nThe third line contains a single integer Q denoting the number of queries\nThe next Q line has two integers each L R : denoting the gcd of the range[L,R]",
+ "output_spec": "Your output must consist of Q lines each line containing the range gcd for a query",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 2 1\n2\n2 3\n1 4",
+   "output": "2\n1"
+  }
+ ],
+ "raw": ""
+}

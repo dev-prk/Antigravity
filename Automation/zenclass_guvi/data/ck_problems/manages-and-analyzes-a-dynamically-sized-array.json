@@ -1,0 +1,21 @@
+{
+ "title": "1597. Manages and Analyzes a dynamically sized array",
+ "slug": "manages-and-analyzes-a-dynamically-sized-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1597. Manages and Analyzes a dynamically sized array\n\n70\n\nHard\n\nProblem Statement\nWrite a C program that manages and analyzes a dynamically sized array of floating-point numbers. The program should:\n\nTake(read) the size of the array from the user.\nDeclare and initialize an array of the specified size.\nPopulate(fill) the array with user-input floating-point numbers.\nPerform these following operations and display the results:\nCalculate the average of the numbers.\nCompute the maximum and minimum numbers present in the array.\nCompute the standard deviation of the numbers.\n\nInput:\nAn integer n (size of the array, where 1 <= n <= 100).\nn floating-point numbers.\n\nOutput:\nThe average of the numbers with two decimal precision.\nThe maximum number in the array.\nThe minimum number in the array.\nThe standard deviation of the numbers with two decimal precision.",
+ "input_spec": "floating-point numbers.\nPerform these following operations and display the results:\nCalculate the average of the numbers.\nCompute the maximum and minimum numbers present in the array.\nCompute the standard deviation of the numbers.\n\nInput:\nAn integer n (size of the array, where 1 <= n <= 100).\nn floating-point numbers.",
+ "output_spec": "The average of the numbers with two decimal precision.\nThe maximum number in the array.\nThe minimum number in the array.\nThe standard deviation of the numbers with two decimal precision.",
+ "constraints": "The array size n must be between 1 and 100.\nThe",
+ "samples": [
+  {
+   "input": "An integer n (size of the array, where 1 <= n <= 100).\nn floating-point numbers.",
+   "output": "The average of the numbers with two decimal precision.\nThe maximum number in the array.\nThe minimum number in the array.\nThe standard deviation of the numbers with two decimal precision."
+  },
+  {
+   "input": "5\n10.5 20.8 30.1 40.2 50.6",
+   "output": "Average: 30.44\nMaximum: 50.60\nMinimum: 10.50\nStandard Deviation: 14.86"
+  }
+ ],
+ "raw": ""
+}

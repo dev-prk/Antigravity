@@ -1,0 +1,17 @@
+{
+ "title": "991. Second Smallest Element-2",
+ "slug": "second-smallest-element-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n991. Second Smallest Element-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number n followed by n numbers Print the 2nd smallest number in an array",
+ "input_spec": "0<n<100\nGiven a number n\nFollowed by n number in next line",
+ "output_spec": "Print the 2nd smallest number in an array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n5 7 4 4 6 8",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

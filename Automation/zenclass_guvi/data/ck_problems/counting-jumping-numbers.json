@@ -1,0 +1,17 @@
+{
+ "title": "295. Counting Jumping Numbers",
+ "slug": "counting-jumping-numbers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n295. Counting Jumping Numbers\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a positive number N, print count of all jumping numbers smaller than or equal to N. A number is called as a Jumping Number if all adjacent digits in it differ by 1. The difference between \u20189\u2019 and \u20180\u2019 is not considered as 1. All single digit numbers are considered as Jumping Numbers. For example 7, 8987 and 4343456 are Jumping numbers but 796 and 89098 are not.",
+ "input_spec": "The input consists of a positive number N, where 1 <= N <= 100000.",
+ "output_spec": "The output is the count of all jumping numbers smaller than or equal to N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "40",
+   "output": "16"
+  }
+ ],
+ "raw": ""
+}

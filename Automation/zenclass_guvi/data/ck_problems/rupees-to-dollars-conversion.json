@@ -1,0 +1,17 @@
+{
+ "title": "1809. Rupees to Dollars Conversion",
+ "slug": "rupees-to-dollars-conversion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1809. Rupees to Dollars Conversion\n\n50\n\nMedium\n\nRupees to Dollars Conversion\n\nProblem Statement:\nWrite a program to Implement user-defined type conversion from class Rupee to Dollar.\n\nDescription:\n1. Create class Rupee.\n2. Create class Dollar.\n3. Implement conversion operator inside Rupee.\n4. Conversion rate: 1 Dollar = 83 Rupees.\n\nInput Format:\nAmount in Rupees\n\nOutput Format:\nAmount in Dollars (2 decimal places)",
+ "input_spec": "Amount in Rupees",
+ "output_spec": "Amount in Dollars (2 decimal places)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "830",
+   "output": "10.00"
+  }
+ ],
+ "raw": ""
+}

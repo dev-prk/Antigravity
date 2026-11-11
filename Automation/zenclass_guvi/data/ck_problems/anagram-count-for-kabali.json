@@ -1,0 +1,17 @@
+{
+ "title": "78. Anagram Count for kabali",
+ "slug": "anagram-count-for-kabali",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n78. Anagram Count for kabali\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N strings, find the number of strings that are an anagram of 'kabali'.If there exists no anagram for the given string print '0'.",
+ "input_spec": "The input consists of an integer N, representing the number of strings, followed by N strings.",
+ "output_spec": "The output is a single integer representing the count of strings that are an anagram of 'kabali', or '0' if no such anagram exists.",
+ "constraints": "1 <= N <= 1000",
+ "samples": [
+  {
+   "input": "5\nkabali\nkaabli\nkababa\nkab\nkabail",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

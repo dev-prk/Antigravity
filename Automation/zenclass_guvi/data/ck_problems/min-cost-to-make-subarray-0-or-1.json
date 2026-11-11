@@ -1,0 +1,12 @@
+{
+ "title": "375. Min Cost to Make Subarray 0 or 1",
+ "slug": "min-cost-to-make-subarray-0-or-1",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n375. Min Cost to Make Subarray 0 or 1\n\n60\n\nMedium  Topics\n\nProblem Statement:\nJack is playing with an array A of N numbers. Each number in the array is either 0 or 1 Replacing a 0 with 1 costs X rupees. Replacing a 1 with 0 costs Y rupees. Jack is given Q queries of the form L R where he wants to know what is the minimum cost to make the subarray A[L] , A[L+1] , A[L+2] .... A[R] such that all elements are 0 or all elements are 1. Help him solve this problem.",
+ "input_spec": "The first line contains a single integer N representing the size of the array The second line contains N integers each of which is 0 or 1 The third line contains a single integer Q - the number of questions The next Q lines consist of a four integers L R X Y each representing the query for range L,R and the cost of replacement for that query",
+ "output_spec": "The output must consist of Q lines each of which contains a single integer-the answer to the corresponding query.",
+ "constraints": "",
+ "samples": [],
+ "raw": ""
+}

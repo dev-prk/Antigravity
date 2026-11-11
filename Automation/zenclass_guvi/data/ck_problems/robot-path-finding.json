@@ -1,0 +1,17 @@
+{
+ "title": "530. Robot Path Finding",
+ "slug": "robot-path-finding",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n530. Robot Path Finding\n\n90\n\nHard  Topics\n\nProblem Statement:\nFriday is a path finding robot. A tiled room is modelled as a binary matrix and is fed into the robot. A value of 1 implies that the robot can move on that tile. A value of 0 means the otherwise. Starting at location (0,0) find out whether friday can reach the corner of the room at (N-1,N-1) where N is the number of rows and columns in the square matrix.Note: The robot cannot move backwards. However it can move in any of the other directions(including diagonal).",
+ "input_spec": "Dimensions of the matrix followed by the elements in the matrix ( 0 or 1 )",
+ "output_spec": "\u201cyes\u201d if the robot can reach the corner. \u201cno\u201d if it cannot.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n1 0 1 1\n1 1 0 1\n0 0 1 0\n0 0 0 1",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

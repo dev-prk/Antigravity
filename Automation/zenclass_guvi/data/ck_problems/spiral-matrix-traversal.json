@@ -1,0 +1,17 @@
+{
+ "title": "535. Spiral Matrix Traversal",
+ "slug": "spiral-matrix-traversal",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n535. Spiral Matrix Traversal\n\n50\n\nMedium  Topics\n\nProblem Statement:\nVishal is a person who loves to find interesting applications of matrices. He decides he will store his password in a square matrix. The password can be recovered only if the matrix is traversed in a particular way. He leaves a clue to can crack his password which is \"To find it , make your head spin like a spiral, clockwise! \". Find out what was Vishal's password, given a square matrix.",
+ "input_spec": "Dimensions of the square matrix followed by elements of the matrix.",
+ "output_spec": "A specific sequence involving all the elements in the matrix.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "1 2 3 6 9 8 7 4 5"
+  }
+ ],
+ "raw": ""
+}

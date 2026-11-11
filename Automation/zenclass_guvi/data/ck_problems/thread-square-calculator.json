@@ -1,0 +1,17 @@
+{
+ "title": "2045. Thread Square Calculator",
+ "slug": "thread-square-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2045. Thread Square Calculator\n\n40\n\nMedium\n\nProblem Statement\nCreate a thread that calculates the square of a number and stores the result so the main thread can print it after the calculation completes.\nDescription\nRead an integer num. Create a thread (extending Thread) whose run() method calculates the square of num and stores it in an instance variable. Start the thread, wait for it to finish using join(), then print the stored result from the main thread.",
+ "input_spec": "A single line containing an integer num (-1000 \u2264 num \u2264 1000).",
+ "output_spec": "Print \"Square: \" followed by the square of num.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6",
+   "output": "Square: 36"
+  }
+ ],
+ "raw": ""
+}

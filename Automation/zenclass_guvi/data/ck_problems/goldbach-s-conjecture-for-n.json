@@ -1,0 +1,17 @@
+{
+ "title": "308. Goldbach's Conjecture for N",
+ "slug": "goldbach-s-conjecture-for-n",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n308. Goldbach's Conjecture for N\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N, How many ways are there to represent it as sum of 2 primes.",
+ "input_spec": "The input consists of a number N, where 1 <= N <= 1000.",
+ "output_spec": "The number of ways to represent N as a sum of two primes.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

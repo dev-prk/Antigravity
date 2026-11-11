@@ -1,0 +1,17 @@
+{
+ "title": "104. Rectangle with Integer Sides",
+ "slug": "rectangle-with-integer-sides",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n104. Rectangle with Integer Sides\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers P and A which are the perimeter and area of a rectangle respectively, find if there can actually be a rectangle with this perimeter and area having integer sides.If there exists such rectangle print 'yes' otherwise print 'no'.",
+ "input_spec": "Input Size : 1 <= P,A <= 100000",
+ "output_spec": "The output is 'yes' if such a rectangle exists, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20 25",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

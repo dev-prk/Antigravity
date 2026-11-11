@@ -1,0 +1,17 @@
+{
+ "title": "184. Find K in an Array",
+ "slug": "find-k-in-an-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n184. Find K in an Array\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N,K and an array of N integers, find if the element K exists in the array.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": "The output is 'yes' if the element K exists in the array, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2\n1 2 3 4 5",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1625. Quick Sort, Sorting, Employee Records",
+ "slug": "quick-sort-sorting-employee-records",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1625. Quick Sort, Sorting, Employee Records\n\n70\n\nHard\n\nProblem Statement:  Sort Employees by Salary Using Quick Sort\n\nWrite a program to sort employee records based on their salary in descending order using Quick Sort. If two employees have the same salary, sort them by their name in ascending lexicographic order.\n\nDescription\n\nEach employee record consists of a name (string) and salary (integer). The program should apply Quick Sort to sort by salary first. In case of ties, names should be compared alphabetically.\n\nInput Format\n\nFirst line: An integer n (number of employees)\n\nNext n lines: Each line contains a string (employee name) and an integer (salary)\n\nOutput Format\n\nSorted list of employees with their salaries",
+ "input_spec": "First line: An integer n (number of employees)\n\nNext n lines: Each line contains a string (employee name) and an integer (salary)",
+ "output_spec": "Sorted list of employees with their salaries",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nAmit 50000\nRiya 60000\nKaran 50000",
+   "output": "Riya 60000\nAmit 50000\nKaran 50000"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "457. Max Sum with Constraints",
+ "slug": "max-sum-with-constraints",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n457. Max Sum with",
+ "input_spec": "The first line contains a single integer N denoting the number of integers in your array\nThe next line contains N integers",
+ "output_spec": "Output must consist of a single number : the maximum sum possible by picking numbers according to the rule given above",
+ "constraints": "50\n\nMedium  Topics\n\nProblem Statement:\nYou are given an array of N integers : A. You want to pick some numbers from the array such that the sum of the numbers you picked is maximum\n\nHowever there is a constraint : if you pick an odd number you cannot pick the number to its right ( if you pick A[i] that is odd you cannot pick A[i+1]).\n\nIf you pick an even number you must pick the number to its right(if you pick A[i] that is even you have to pick A[i+1]). This rule is valid for all numbers except the last .\n\nSolve the problem and report the maximum sum that is possible by picking the numbers from the array.\n\nConstraints:\n\n1<=N<=100000",
+ "samples": [
+  {
+   "input": "2\n2 2",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

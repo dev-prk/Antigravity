@@ -1,0 +1,17 @@
+{
+ "title": "1989. Null Reference Checker",
+ "slug": "null-reference-checker",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1989. Null Reference Checker\n\n60\n\nMedium\n\nProblem Statement\n\nGiven a list of words where some entries may be missing (represented by the word \"null\"), safely print the length of each entry using exception handling.\n\nDescription\n\nRead an integer n, followed by n words. If a word is exactly \"null\", store an actual null reference for that position instead of the text. For every position, try to print the length of the string. If the reference is null, catch the exception and print an error message for that position instead.",
+ "input_spec": "The first line contains an integer n (1 \u2264 n \u2264 100). The next n lines each contain a word, or the literal text \"null\".",
+ "output_spec": "For each entry, print its length on its own line. For an entry that is null, print \"Error: Null reference encountered\" instead.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nhello\nnull\njava",
+   "output": "5\nError: Null reference encountered\n4"
+  }
+ ],
+ "raw": ""
+}

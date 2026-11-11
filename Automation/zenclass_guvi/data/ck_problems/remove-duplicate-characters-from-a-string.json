@@ -1,0 +1,21 @@
+{
+ "title": "2023. Remove Duplicate Characters from a String",
+ "slug": "remove-duplicate-characters-from-a-string",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2023. Remove Duplicate Characters from a String\n\n90\n\nHard\n\nProblem Statement\n\nGiven a string, remove duplicate characters while maintaining their first occurrence order.\n\nInput\n\nA string.\n\nOutput\n\nPrint the modified string.",
+ "input_spec": "A string.",
+ "output_spec": "Print the modified string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "A string.",
+   "output": "Print the modified string."
+  },
+  {
+   "input": "programming",
+   "output": "progamin"
+  }
+ ],
+ "raw": ""
+}

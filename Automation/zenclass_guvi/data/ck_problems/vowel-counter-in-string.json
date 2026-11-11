@@ -1,0 +1,17 @@
+{
+ "title": "811. Vowel Counter in String",
+ "slug": "vowel-counter-in-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n811. Vowel Counter in String\n\n40\n\nMedium  Topics\n\nProblem Statement:\nPython Program to Count the Number of Vowels in a String",
+ "input_spec": "Input contains string",
+ "output_spec": "Display the no of vowels in a string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Apple",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

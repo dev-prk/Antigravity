@@ -1,0 +1,17 @@
+{
+ "title": "823. Eiffel Tower Pattern",
+ "slug": "eiffel-tower-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n823. Eiffel Tower Pattern\n\n50\n\nMedium  Topics\n\nProblem Statement:\nProgram to print Eiffel tower pattern.",
+ "input_spec": "Give the 'n' as input",
+ "output_spec": "print the required pattern",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "1 1 1 1 222 222 222 3333 3333 44444"
+  }
+ ],
+ "raw": ""
+}

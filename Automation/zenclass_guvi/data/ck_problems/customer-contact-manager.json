@@ -1,0 +1,12 @@
+{
+ "title": "1769. Customer Contact Manager",
+ "slug": "customer-contact-manager",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1769. Customer Contact Manager\n\n50\n\nMedium\n\nCustomer Contact Manager\n\nProblem Statement:\nImplement a Java program to manage customer contacts in a CustomerDB database table using JDBC.\n\nDescription:\n\nTable Contacts has columns: cust_id(INT PRIMARY KEY), name(VARCHAR), email(VARCHAR), phone(VARCHAR)\n\nProgram should allow insert, update email/phone, delete, display contacts.\n\nUse PreparedStatement.\n\nInput Format:\n\nFirst line: Operation type (insert, update, delete, display)\n\nNext lines: Data depending on operation\n\nOutput Format:\n\nOperation result message\n\nDisplay all contacts for display operation",
+ "input_spec": "First line: Operation type (insert, update, delete, display)\n\nNext lines: Data depending on operation",
+ "output_spec": "Operation result message\n\nDisplay all contacts for display operation",
+ "constraints": "",
+ "samples": [],
+ "raw": ""
+}

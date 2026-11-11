@@ -1,0 +1,17 @@
+{
+ "title": "473. Course with Max Students",
+ "slug": "course-with-max-students",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n473. Course with Max Students\n\n80\n\nHard  Topics\n\nProblem Statement:\nN students have the option for opting N different courses. The data about which student has opted for which course is represented in a table with rows representing the course ids and the columns having the student names. The entries in the table are either 0 or 1. 1 if a particular student has opted for a particular course, and 0 if otherwise. Find the course id for which maximum number have opted for and also display the number of students who have opted for that course. Note: Course ids start from 0 and go upto N.",
+ "input_spec": "The first line is two integers row and col denoting the no of rows and columns of table . Then in the next line are row*col space separated values of whether a student has opted a course or not.",
+ "output_spec": "Print the required course id and the number of students, separated by colons.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 4\n0 1 1 1\n0 0 1 1\n0 0 1 1",
+   "output": "0:3"
+  }
+ ],
+ "raw": ""
+}

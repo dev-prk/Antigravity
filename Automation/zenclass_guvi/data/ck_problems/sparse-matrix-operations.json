@@ -1,0 +1,17 @@
+{
+ "title": "1235. Sparse Matrix Operations",
+ "slug": "sparse-matrix-operations",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1235. Sparse Matrix Operations\n\n80\n\nHard\n\nProblem Statement:\nYou are required to implement a structure-based sparse matrix representation. A sparse matrix is one in which the majority of the elements are zero. Your task is to store only the non-zero elements using an array of structures and then perform basic matrix operations (addition and subtraction) on the sparse matrices.\n\nDefine a structure SparseMatrixElement that contains three fields: row, col, and value, representing the row index, column index, and the value of the non-zero element in the matrix, respectively.\nImplement functions to:\n1. Create a sparse matrix by reading user inputs and storing only non-zero elements.\n2. Add two sparse matrices and return the result as a new sparse matrix.\n3. Subtract one sparse matrix from another and return the result as a new sparse matrix.",
+ "input_spec": "s and storing only non-zero elements.\n2. Add two sparse matrices and return the result as a new sparse matrix.\n3. Subtract one sparse matrix from another and return the result as a new sparse matrix.\n\nInput Description:\nFirst line: An integer n, the number of non-zero elements in the first matrix.\nNext n lines: Three integers representing row, col, and value for each non-zero element of the first matrix.\nFollowed by the same format for the second matrix.",
+ "output_spec": "Print the resultant sparse matrix after performing addition and subtraction operations.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n0 1 5\n1 2 8\n2 0 6\n3\n0 1 3\n1 0 7\n2 2 4",
+   "output": "Addition Result:\n0 1 8\n1 0 7\n1 2 8\n2 0 6\n2 2 4\n\nSubtraction Result:\n0 1 2\n1 0 -7\n1 2 8\n2 0 6"
+  }
+ ],
+ "raw": ""
+}

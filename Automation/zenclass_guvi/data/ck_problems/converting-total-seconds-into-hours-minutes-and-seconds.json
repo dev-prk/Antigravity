@@ -1,0 +1,17 @@
+{
+ "title": "2096. Converting Total Seconds into Hours, Minutes and Seconds",
+ "slug": "converting-total-seconds-into-hours-minutes-and-seconds",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2096. Converting Total Seconds into Hours, Minutes and Seconds\n\n90\n\nHard\n\nProblem Statement\nRead a total number of seconds and print the equivalent duration in hours, minutes and seconds, using the % and / operators to break it down.\n\nDescription\nRead an integer totalSeconds representing a duration in seconds. Extract the number of complete hours it contains using the / operator, then find the remaining seconds after removing those hours using the % operator. From the remaining seconds, extract the number of complete minutes using / and the leftover seconds using %. Print the hours, minutes and seconds, each on its own line. No loop or condition is needed since the breakdown is done with a fixed sequence of arithmetic steps.",
+ "input_spec": "A single integer totalSeconds (0 <= totalSeconds <= 86399).",
+ "output_spec": "Print the number of hours, then minutes, then seconds, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3725",
+   "output": "1\n2\n5"
+  }
+ ],
+ "raw": ""
+}

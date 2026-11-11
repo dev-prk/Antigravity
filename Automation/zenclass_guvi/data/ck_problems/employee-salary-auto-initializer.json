@@ -1,0 +1,17 @@
+{
+ "title": "1800. Employee Salary Auto-Initializer",
+ "slug": "employee-salary-auto-initializer",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1800. Employee Salary Auto-Initializer\n\n40\n\nMedium\n\nEmployee Salary Auto-Initializer\n\nProblem Statement:\n\nWrite a program that uses a default constructor to automatically initialize employee salary details and compute the final salary after tax deduction.\n\nDescription:\nCreate a class Employee that:\n1. Uses a default constructor (no parameters).\n2. Inside the constructor, read:\nBasic Salary\nHRA percentage\nDA percentage\nTax percentage\n3. Compute:\nGross Salary = Basic + (HRA% of Basic) + (DA% of Basic)\nNet Salary = Gross - (Tax% of Gross)\n4. Display the final Net Salary rounded to 2 decimal places.\n\nInput Format:\n\nFour space-separated numbers:\n\nBasicSalary HRA% DA% Tax%\n\nOutput Format:\n\nSingle value representing Net Salary (rounded to 2 decimal places).",
+ "input_spec": "Four space-separated numbers:\n\nBasicSalary HRA% DA% Tax%",
+ "output_spec": "Single value representing Net Salary (rounded to 2 decimal places).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10000 20 10 5",
+   "output": "12350.00"
+  }
+ ],
+ "raw": ""
+}

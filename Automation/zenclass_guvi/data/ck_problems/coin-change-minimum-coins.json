@@ -1,0 +1,17 @@
+{
+ "title": "1888. Coin Change (Minimum Coins)",
+ "slug": "coin-change-minimum-coins",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1888. Coin Change (Minimum Coins)\n\n60\n\nMedium  Topics\n\nQuestion: Coin Change (Minimum Coins)\n\nYou are given:\n\nN types of coins\n\nEach coin has a denomination coin[i]\n\nAn integer Amount\n\nYou may use each coin unlimited times.\n\nDetermine the minimum number of coins required to make the given amount.\n\nIf it is not possible, print:\n\n-1\n\nInput Format\nN Amount\nc1 c2 c3 ... cN\n\nOutput Format\n\nPrint a single integer \u2014\nminimum number of coins required, or -1 if impossible.",
+ "input_spec": "N Amount\nc1 c2 c3 ... cN",
+ "output_spec": "Print a single integer \u2014\nminimum number of coins required, or -1 if impossible.",
+ "constraints": "1 \u2264 N \u2264 1000\n\n1 \u2264 Amount \u2264 10^4\n\n1 \u2264 coin[i] \u2264 10^4\n\n\ud83d\udd39 Example",
+ "samples": [
+  {
+   "input": "3 11\n1 2 5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,21 @@
+{
+ "title": "2021. Concatenate Two Strings Using StringBuffer",
+ "slug": "concatenate-two-strings-using-stringbuffer",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2021. Concatenate Two Strings Using StringBuffer\n\n60\n\nMedium\n\nProblem Statement\n\nGiven two strings, concatenate them using StringBuffer.\n\nInput\n\nTwo strings.\n\nOutput\n\nPrint the concatenated string.",
+ "input_spec": "Two strings.",
+ "output_spec": "Print the concatenated string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Two strings.",
+   "output": "Print the concatenated string."
+  },
+  {
+   "input": "Hello\nWorld",
+   "output": "HelloWorld"
+  }
+ ],
+ "raw": ""
+}

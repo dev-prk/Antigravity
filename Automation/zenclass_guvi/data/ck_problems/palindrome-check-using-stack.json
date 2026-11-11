@@ -1,0 +1,17 @@
+{
+ "title": "250. Palindrome Check using Stack",
+ "slug": "palindrome-check-using-stack",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n250. Palindrome Check using Stack\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a string S of length N, find whether the given string is a palindrome using stack or linked list and print 'yes' otherwise print 'no'.",
+ "input_spec": "Input Size : 1 <= N <= 100000",
+ "output_spec": "print 'yes' otherwise print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "GuviGeek",
+   "output": "no"
+  }
+ ],
+ "raw": ""
+}

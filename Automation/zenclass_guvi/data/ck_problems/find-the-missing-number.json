@@ -1,0 +1,17 @@
+{
+ "title": "574. Find the Missing Number",
+ "slug": "find-the-missing-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n574. Find the Missing Number\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nYou are given a number n,ranging from 1 to n. Out of which one number is missing. Your task is to print that missing number.",
+ "input_spec": "You are given a number \u2018n\u2019.",
+ "output_spec": "Print the missing number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 3 5 2",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

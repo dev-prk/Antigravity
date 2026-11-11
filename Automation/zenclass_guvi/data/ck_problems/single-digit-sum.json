@@ -1,0 +1,17 @@
+{
+ "title": "445. Single Digit Sum",
+ "slug": "single-digit-sum",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n445. Single Digit Sum\n\n40\n\nMedium  Topics\n\nProblem Statement:\nQuinton was given an integer N. He was asked to find the digitized sum of N. The digitized sum is the summing up the digits until we obtain a single digit. Help Quinton solve this problem. For example: Digitized sum of 129 is 3, derived as,\n\n1 + 2 + 9 = 12\n\n1 + 2 = 3",
+ "input_spec": "The only line of input contains an integer N",
+ "output_spec": "Print one line, the digitized sum of N",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "789",
+   "output": "6"
+  }
+ ],
+ "raw": ""
+}

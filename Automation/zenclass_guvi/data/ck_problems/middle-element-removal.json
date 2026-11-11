@@ -1,0 +1,17 @@
+{
+ "title": "598. Middle Element Removal",
+ "slug": "middle-element-removal",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n598. Middle Element Removal\n\n40\n\nMedium  Topics\n\nProblem Statement:\nou are given with an array of numbers.You have to print the middlemost element until the size of array becomes zero. When n is odd print the (n/2)+1 index(indexing at 1)",
+ "input_spec": "You are given a number \u2018n\u2019 denoting the size of array.Next line contains n space separated numbers.",
+ "output_spec": "Print as mentioned above",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "3 2 4 1 5"
+  }
+ ],
+ "raw": ""
+}

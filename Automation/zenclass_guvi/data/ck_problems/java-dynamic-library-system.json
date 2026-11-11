@@ -1,0 +1,17 @@
+{
+ "title": "1422. Java Dynamic Library System",
+ "slug": "java-dynamic-library-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1422. Java Dynamic Library System\n\n50\n\nMedium\n\nProblem Statement:\nDesign a dynamic library system in Java where books can be added, borrowed, and returned. Each book should have a title, author, and a unique ID. Implement appropriate methods in a Library class to manage these operations. You need to define a class Book and a class Library with the following specifications: Book class: Member variables title, author, bookID (all strings) Library class: Member variables: a list to store Book objects Methods: addBook, borrowBook, returnBook Implement a mechanism to ensure a book cannot be borrowed more than once without being returned",
+ "input_spec": "The first input will be a sequence of commands (add, borrow, return) followed by the details of the book. For add: title author bookID For borrow and return: bookID",
+ "output_spec": "Appropriate success or error messages for each operation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "add \"Networking\" \"Bob\" \"301\"\nreturn \"301\"",
+   "output": "Book added successfully.\nBook returned successfully."
+  }
+ ],
+ "raw": ""
+}

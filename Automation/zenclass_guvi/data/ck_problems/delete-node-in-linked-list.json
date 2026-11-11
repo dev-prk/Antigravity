@@ -1,0 +1,17 @@
+{
+ "title": "831. Delete Node in Linked List",
+ "slug": "delete-node-in-linked-list",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n831. Delete Node in Linked List\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a linked list delete the given number node in the linked list without using a head pointer.",
+ "input_spec": "First line represents the size of the linked list.\nNext line contains characters of a linked list(separated by space).Third line contains the node that has to be deleted.",
+ "output_spec": "Print the values of linked list after deleting the node(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n1 2 3 4 5 6\n3",
+   "output": "1 2 4 5 6"
+  }
+ ],
+ "raw": ""
+}

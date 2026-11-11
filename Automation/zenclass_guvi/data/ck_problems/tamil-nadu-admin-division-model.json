@@ -1,0 +1,17 @@
+{
+ "title": "1079. Tamil Nadu Admin Division Model",
+ "slug": "tamil-nadu-admin-division-model",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1079. Tamil Nadu Admin Division Model\n\n50\n\nMedium\n\nProblem Statement:\nDesign a Python program that uses multilevel inheritance to model the administrative divisions of Tamil Nadu. Tamil Nadu is divided into districts, and each district is divided into cities. All divisions have a name and a population. However, a district also has a number of cities, and Tamil Nadu has a number of districts.\n\nCreate classes to represent Tamil Nadu, a district, and a city, and use multilevel inheritance to avoid code duplication. Write a method in each class to print the details of the division.",
+ "input_spec": "Coimbatore, 1064000\nCoimbatore District, 3472578, 2\nTamil Nadu, 77841267, 38\n\nSample",
+ "output_spec": "City: Coimbatore, Population: 1064000\nDistrict: Coimbatore District, Population: 3472578, Number of Cities: 2\nState: Tamil Nadu, Population: 77841267, Number of Districts: 38",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Coimbatore, 1064000\nCoimbatore District, 3472578, 2\nTamil Nadu, 77841267, 38",
+   "output": "City: Coimbatore, Population: 1064000\nDistrict: Coimbatore District, Population: 3472578, Number of Cities: 2\nState: Tamil Nadu, Population: 77841267, Number of Districts: 38"
+  }
+ ],
+ "raw": ""
+}

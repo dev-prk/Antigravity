@@ -1,0 +1,17 @@
+{
+ "title": "824. Largest Even and Odd Number",
+ "slug": "largest-even-and-odd-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n824. Largest Even and Odd Number\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Print Largest Even and Odd Number in a List",
+ "input_spec": "The input contains a integer",
+ "output_spec": "Print the largest even and odd values",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 5 6 7 8 3",
+   "output": "Largest even:8\nLargest odd:7"
+  }
+ ],
+ "raw": ""
+}

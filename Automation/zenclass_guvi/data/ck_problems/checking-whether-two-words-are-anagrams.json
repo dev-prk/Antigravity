@@ -1,0 +1,17 @@
+{
+ "title": "2207. Checking Whether Two Words Are Anagrams",
+ "slug": "checking-whether-two-words-are-anagrams",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2207. Checking Whether Two Words Are Anagrams\n\n90\n\nHard\n\nProblem Statement\nRead two words and determine whether they are anagrams of each other, using a letter-count array.\n\nDescription\nTwo words are anagrams if they contain exactly the same letters the same number of times, in any order, for example listen and silent. Read two words made of lowercase letters only. Use an integer array freq of size 26, where freq[0] counts the letter 'a', freq[1] counts 'b', and so on; the position of a letter ch in the array is ch - 'a'. Set all 26 counts to 0, add 1 to the count of every letter of the first word, and subtract 1 for every letter of the second word. If all 26 counts are 0 at the end, print \"Anagram\", otherwise print \"Not Anagram\".",
+ "input_spec": "Two words made of lowercase letters, separated by a space.",
+ "output_spec": "Print \"Anagram\" if the two words are anagrams, otherwise print \"Not Anagram\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "listen silent",
+   "output": "Anagram"
+  }
+ ],
+ "raw": ""
+}

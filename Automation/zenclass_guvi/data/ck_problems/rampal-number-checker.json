@@ -1,0 +1,17 @@
+{
+ "title": "525. Rampal Number Checker",
+ "slug": "rampal-number-checker",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n525. Rampal Number Checker\n\n50\n\nMedium  Topics\n\nProblem Statement:\nRampal is a number in which the sum of last two digits of that number is multiple of 4.Your teacher has given you the task to make a list of rampal numbers.Your task is to tell whether the number is rampal or not. Note : if the number is negative than rampal is a number which has sum of first and last digit as multiple of 4",
+ "input_spec": "First line contains an input n",
+ "output_spec": "Print yes or no",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20",
+   "output": "no"
+  }
+ ],
+ "raw": ""
+}

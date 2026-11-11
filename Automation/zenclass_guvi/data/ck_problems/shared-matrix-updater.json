@@ -1,0 +1,17 @@
+{
+ "title": "1768. Shared Matrix Updater",
+ "slug": "shared-matrix-updater",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1768. Shared Matrix Updater\n\n50\n\nMedium\n\nShared Matrix Updater\n\nProblem Statement:\nSimulate multiple threads updating a shared matrix where each thread updates one row. Synchronization ensures no two threads write to the same row simultaneously.\n\nDescription:\n\nShared 2D array.\n\nThreads update rows with new values.\n\nSynchronize row-level access.\n\nInput Format:\n\nFirst line: Rows & columns\n\nNext lines: Updates (row value).\n\nOutput Format:\n\nShow final matrix after all updates.",
+ "input_spec": "First line: Rows & columns\n\nNext lines: Updates (row value).",
+ "output_spec": "Show final matrix after all updates.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n0 5\n1 7\n2 9",
+   "output": "[5, 5, 5]\n[7, 7, 7]\n[9, 9, 9]"
+  }
+ ],
+ "raw": ""
+}

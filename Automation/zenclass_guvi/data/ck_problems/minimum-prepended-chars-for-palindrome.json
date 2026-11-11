@@ -1,0 +1,17 @@
+{
+ "title": "1556. Minimum Prepended Chars for Palindrome",
+ "slug": "minimum-prepended-chars-for-palindrome",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1556. Minimum Prepended Chars for Palindrome\n\n80\n\nHard\n\nProblem Statement:\nGiven a string S, find the minimum number of characters that need to be added to the front of S to make it a palindrome. You are required to use the Knuth-Morris-Pratt (KMP) algorithm or its concepts to solve this problem efficiently.",
+ "input_spec": "A single line containing the string S.",
+ "output_spec": "A single integer representing the minimum number of characters to be added to the front of S to make it a palindrome.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aacecaaa",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

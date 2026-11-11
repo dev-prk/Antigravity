@@ -1,0 +1,17 @@
+{
+ "title": "116. Bitwise Left Shift",
+ "slug": "bitwise-left-shift",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n116. Bitwise Left Shift\n\n40\n\nMedium  Company\n\nProblem Statement:\nGiven 2 numbers N,K print the number after performing bitwise left shift 'K' times.",
+ "input_spec": "The input consists of two integers, N and K, where 1 <= N, K <= 1000.",
+ "output_spec": "The output is the integer N after performing a bitwise left shift K times.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2",
+   "output": "20"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "458. Longest Increasing Subsequence",
+ "slug": "longest-increasing-subsequence",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n458. Longest Increasing Subsequence\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven an array A consisting of N integers, your task is to find the length of the longest increasing subsequence of the given array. The elements of the longest increasing subsequence need not be contiguous ( i.e they need not be present in neighbouring positions in the array) For example say the array is : [ 2 , 1 , 4 , 7 , 0, 9 ] Length of the longest increasing subsequence is 4 and the longest common subsequence is either [2,4,7,9] or [1,4,7,9] Report the answer required",
+ "input_spec": "The first line contains a single integer N denoting the number of integers in the array The second line contains N space separated integers denoting the contents of the array",
+ "output_spec": "The output consists of a single integer : the length of the longest common subsequence of the array",
+ "constraints": "1<=N<=1000",
+ "samples": [
+  {
+   "input": "6\n2 1 4 7 0 9",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

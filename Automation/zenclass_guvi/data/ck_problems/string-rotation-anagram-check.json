@@ -1,0 +1,17 @@
+{
+ "title": "661. String Rotation Anagram Check",
+ "slug": "string-rotation-anagram-check",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n661. String Rotation Anagram Check\n\n100\n\nHard  Topics\n\nProblem Statement:\nYou are provided with a string s. You are given q queries, each describing a rotation (direction L/R and magnitude). For each query, rotate the string accordingly and record the new first character. Concatenate these characters into a string s2. At the end, check whether s2 is an anagram of the original string s. Print Yes if it is, else No.",
+ "input_spec": "The first line contains the original string s. The second line contains a single integer q. The ith of the next q lines contains character d[i] denoting direction and integer r[i] denoting the magnitude.",
+ "output_spec": "Print yes if \u2018s2\u2019 is anagram of s1. And no otherwise",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "carrace\n3\nL 2\nR 2\nL 3",
+   "output": "No"
+  }
+ ],
+ "raw": ""
+}

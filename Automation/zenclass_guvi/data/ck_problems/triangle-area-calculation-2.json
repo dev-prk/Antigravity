@@ -1,0 +1,17 @@
+{
+ "title": "967. Triangle Area Calculation-2",
+ "slug": "triangle-area-calculation-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n967. Triangle Area Calculation-2\n\n40\n\nMedium\n\nProblem Statement:\nYou are required to write a program that calculates and prints the area of a triangle given its base and height. Implement a class named 'Triangle' without any parameter in its constructor.",
+ "input_spec": "The input consists of two lines. Each line contains an integer representing either the base or the height of the triangle.",
+ "output_spec": "Output the area of the triangle.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n6",
+   "output": "18"
+  }
+ ],
+ "raw": ""
+}

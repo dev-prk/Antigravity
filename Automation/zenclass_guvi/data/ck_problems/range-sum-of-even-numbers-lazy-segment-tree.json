@@ -1,0 +1,17 @@
+{
+ "title": "1570. Range Sum of Even Numbers (Lazy Segment Tree)",
+ "slug": "range-sum-of-even-numbers-lazy-segment-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1570. Range Sum of Even Numbers (Lazy Segment Tree)\n\n90\n\nHard\n\nProblem Statement:\nRange Sum of Even Numbers using Segment Tree (Lazy Propagation)\nYou are given an array of N integers. You need to efficiently answer Q queries of two types:\n1. Update the value at a given index to a new value.\n2. Compute the sum of all even numbers in a given range [L, R] (inclusive).\n\nTo handle these queries efficiently, implement a Segment Tree with Lazy Propagation.",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the elements of the array.\n- The next Q lines each contain a query:\n- For update: \"1 X Y\" (set the value at index X to Y, 1-based indexing)\n- For range sum: \"2 L R\" (compute the sum of even numbers from index L to R, inclusive, 1-based indexing)",
+ "output_spec": "For each range sum query, output the sum of even numbers in the specified range on a new line.",
+ "constraints": "- 1 \u2264 N, Q \u2264 10^5\n- 1 \u2264 Array elements, Y \u2264 10^9\n- 1 \u2264 X, L, R \u2264 N",
+ "samples": [
+  {
+   "input": "6 5\n2 3 4 5 6 7\n2 2 5\n1 3 10\n2 1 6\n1 5 9\n2 4 6",
+   "output": "10\n18\n0"
+  }
+ ],
+ "raw": ""
+}

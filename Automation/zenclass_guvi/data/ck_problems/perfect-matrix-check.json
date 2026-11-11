@@ -1,0 +1,17 @@
+{
+ "title": "1014. Perfect Matrix Check",
+ "slug": "perfect-matrix-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1014. Perfect Matrix Check\n\n60\n\nMedium  Topics\n\nProblem Statement:\nFind the perfect matrix or not perfect matrix means diagonales should contain only even numbers print yes if its perfect matrix else no. You will given a number n followed by n*n numbers",
+ "input_spec": "You will given a number n followed by n*n numbers by n lines . 0<n<100",
+ "output_spec": "Print yes or no",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "no"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1488. Circular Queue Array Implementation",
+ "slug": "circular-queue-array-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1488. Circular Queue Array Implementation\n\n40\n\nMedium\n\nProblem Statement:\nWrite a program to implement a circular queue using an array in Java.",
+ "input_spec": "First line: queue size\nFollowing lines: commands (enqueue X, dequeue, display). End with \"exit\".",
+ "output_spec": "Queue contents after each display command.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nenqueue 1\nenqueue 2\nenqueue 3\ndequeue\nenqueue 4\nenqueue 5\nenqueue 6\ndisplay\nexit",
+   "output": "2 3 4 5 6"
+  }
+ ],
+ "raw": ""
+}

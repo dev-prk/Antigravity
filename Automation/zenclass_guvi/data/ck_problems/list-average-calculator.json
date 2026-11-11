@@ -1,0 +1,17 @@
+{
+ "title": "793. List Average Calculator",
+ "slug": "list-average-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n793. List Average Calculator\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Calculate the Average of Numbers in a Given List",
+ "input_spec": "The input contains an integer",
+ "output_spec": "Print the average numbers in a list",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "99 98 100 100 100",
+   "output": "99.4"
+  }
+ ],
+ "raw": ""
+}

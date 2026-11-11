@@ -1,0 +1,17 @@
+{
+ "title": "851. Next Greater Element using Stack",
+ "slug": "next-greater-element-using-stack",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n851. Next Greater Element using Stack\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven an array of n elements and q queries, for each query which has an index i, find the next greater element and print its value using Stack. If there is no such greater element to its right then print -1.",
+ "input_spec": "First line N indicates length of the array.Second Line indicates the elements of the array.Third line M indicates the length of the query.Fourth line indicates the elements of the query.",
+ "output_spec": "Print the greater values in a single line",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n3 4 2 7 5 8 10 6\n3\n3 6 1",
+   "output": "8 -1 7\n\n**Explanation:**Print the values as a single line if next greater element exists as per the query elements"
+  }
+ ],
+ "raw": ""
+}

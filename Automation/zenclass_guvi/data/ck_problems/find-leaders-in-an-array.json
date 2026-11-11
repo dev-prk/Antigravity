@@ -1,0 +1,17 @@
+{
+ "title": "491. Find Leaders in an Array",
+ "slug": "find-leaders-in-an-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n491. Find Leaders in an Array\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nRam wants to be a leader. He is fascinated by any puzzle or news that has the word 'leader' in it. He comes across a puzzle about finding a leader amongst a list of numbers and is intrigued by the puzzle. As Ram is not good in either maths or logic, he is unable to solve the puzzle. Help Ram by finding out the leader among a given set of positive numbers.\nNote: An element in an array is a leader if it is greater than or equal to all the elements to its right side. Also, the rightmost element is always a leader.",
+ "input_spec": "The first line contains a single integer N denoting the size of array.\nThe second line contains N space-separated integers denoting the elements of the array.",
+ "output_spec": "Print all the leaders.",
+ "constraints": "1 <= N <= 100\n0 <= A[i] <= 100",
+ "samples": [
+  {
+   "input": "6\n16 17 4 3 5 2",
+   "output": "17 5 2"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "396. Batmobile Power Simulation",
+ "slug": "batmobile-power-simulation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n396. Batmobile Power Simulation\n\n80\n\nHard  Topics\n\nProblem Statement:\nBatman\u2019s cave is being invaded by Bane.To fight off Bane , Batman deploys N Batmobiles each with a different power given by P[i] 1<=i<=N. (1- based indexing for tanks) The tanks however are prone to damage from Bane's attacks and he can decrease the power of any tank he wants by a certain amount.Since Bane's energy source is not consistent each attack of bane will have a different power 'y' . So he attacks a tank a tank numbered 'x' with power 'y' . Batman on the other hand can reinforce tanks and increase their power with a certain amount . so Batman can increase the power of a tank 'x' by 'y' . Batman will flee if the power of a tank falls to 0. He checks if any tank from tank number 'x' to tank number 'y' have power 0. If so he will \"escape\" or he will \"stay and fight\" Before actually fighting bane he decides to run a simulation of the scenarios that can take place.Help him simulate the scenario.",
+ "input_spec": "The first line contains an integer N - the number of batmobiles\nThe second line contains the power of all the batmobiles\nThe third line consists of a single integer Q- the number of events\nThe next Q lines can be either of the following two:\n1 x y- Batman increases the power of batmobile x by power y\n2 x y - Bane attacks batmobile x with power y\n3 x y - Batman wants to know if the power of any batmobile from batmobile x to batmobile y is 0.If its zero he\u2019ll \u201cescape\u201d or \u201cstay and fight\u201d",
+ "output_spec": "For each event of type 3 output whether batman will \u201cescape\u201d or \u201cstay and fight\u201d",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n2\n2 1 1\n3 1 4",
+   "output": "escape"
+  }
+ ],
+ "raw": ""
+}

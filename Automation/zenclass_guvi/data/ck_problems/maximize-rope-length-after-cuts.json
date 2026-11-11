@@ -1,0 +1,17 @@
+{
+ "title": "435. Maximize Rope Length After Cuts",
+ "slug": "maximize-rope-length-after-cuts",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n435. Maximize Rope Length After Cuts\n\n60\n\nMedium  Topics\n\nProblem Statement:\nThere are N ropes of integer lengths L[i], (1 <= i <= N). In one operation, you pick a rope and cut it by half.That is L[i] := L[i] - ceil(L[i]/2), once the length of the rope becomes 0, you cannot pick it again. Let the sum of L[i] over all i at an instance be f(L). You are given an integer Q. Find the maximum value of f(L) after performing Q operations.",
+ "input_spec": "The first line contains two integers N and Q denoting the number of ropes and the number of operations to be performed.The next line contains N space separated integers L[i] (1",
+ "output_spec": "Print the maximum value of f(L)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 2\n5 4",
+   "output": "6"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "604. Nth Hyp Number",
+ "slug": "nth-hyp-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n604. Nth Hyp Number\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGunjan was going through the book of \u2018hyp\u2019 numbers. She is given task to find the nth hyp number.Your task is to help gunjanA hyp number is a number whose all digits are prime.",
+ "input_spec": "You are given a number \u2018n\u2019.",
+ "output_spec": "Print the \u2018nth\u2019 hyp number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

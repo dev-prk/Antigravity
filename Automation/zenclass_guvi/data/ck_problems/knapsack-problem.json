@@ -1,0 +1,17 @@
+{
+ "title": "468. Knapsack Problem",
+ "slug": "knapsack-problem",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n468. Knapsack Problem\n\n80\n\nHard  Topics\n\nProblem Statement:\nMr. Rafael was a goldsmith. He could gauge the weight of a piece of gold and how much he can sell it for by just glancing at the piece. Rafael, unhappy with his income, thought he deserved more for his capabilities. So he decided to steal from rich households. One night, he was at a house where he saw N gold pieces. Using his ability he gauged the weights and prices of the N pieces. He noted down the weights in an array W and the prices in an array P each of length N. He also knew that his bag couldn't hold more than M units of weight. He wants to maximize the price he can get from the pieces he steals. Help Rafael find the maximum price.",
+ "input_spec": "The first line contains two space separated integers N and M. The next two lines contain N space separated integers each denoting the arrays W and P",
+ "output_spec": "Print a single line the maximum selling price Mr. Rafael can get from his theft.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 7\n3 6\n4 3",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

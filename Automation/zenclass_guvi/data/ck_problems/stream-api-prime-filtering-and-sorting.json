@@ -1,0 +1,17 @@
+{
+ "title": "1134. Stream API: Prime Filtering and Sorting",
+ "slug": "stream-api-prime-filtering-and-sorting",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1134. Stream API: Prime Filtering and Sorting\n\n50\n\nMedium\n\nProblem Statement:\nCreate a Java program that uses the Stream API to read a list of integers from the user, filter out the prime numbers, sort them in descending order, and then print the sorted list.",
+ "input_spec": "An integer n denoting the number of elements in the list. n space-separated integers representing the list elements.",
+ "output_spec": "The sorted list of prime numbers in descending order, each number on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n2 3 4 5 6",
+   "output": "5\n3\n2"
+  }
+ ],
+ "raw": ""
+}

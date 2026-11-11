@@ -1,0 +1,17 @@
+{
+ "title": "1667. Java, Generics, Collections, Comparable, Max Element",
+ "slug": "java-generics-collections-comparable-max-element",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1667. Java, Generics, Collections, Comparable, Max Element\n\n50\n\nMedium\n\nGeneric Maximum Finder\n\nProblem Statement:\nWrite a program that defines a generic class MaxFinder<T extends Comparable<T>> to find the maximum element in a list of numbers or strings.\n\nDescription:\n\nImplement a method findMax(List<T> list) that returns the maximum element.\n\nThe class should work with integers, doubles, and strings.\n\nInput Format:\n\nFirst line: number of elements n\n\nNext n lines: elements (either integers, doubles, or strings)\n\nOutput Format:\n\nThe maximum element",
+ "input_spec": "First line: number of elements n\n\nNext n lines: elements (either integers, doubles, or strings)",
+ "output_spec": "The maximum element",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n23 78 45 12 89",
+   "output": "Maximum: 89"
+  }
+ ],
+ "raw": ""
+}

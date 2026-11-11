@@ -1,0 +1,17 @@
+{
+ "title": "1017. Column Sum Divisibility by 3",
+ "slug": "column-sum-divisibility-by-3",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1017. Column Sum Divisibility by 3\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a numbers n followed by n*n numbers in matrix format print the column which sum of the numbers in the column should be equal to multiple of 3 if there is no column print -1.",
+ "input_spec": "You will given a number n followed by n*m numbers in matrix format",
+ "output_spec": "print the column in row format",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "1 4 7\n2 5 8\n3 6 9"
+  }
+ ],
+ "raw": ""
+}

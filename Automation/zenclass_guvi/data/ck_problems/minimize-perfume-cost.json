@@ -1,0 +1,17 @@
+{
+ "title": "421. Minimize Perfume Cost",
+ "slug": "minimize-perfume-cost",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n421. Minimize Perfume Cost\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGrigor went shopping at a mall. He wanted to buy perfumes. The prices of the perfume of the available N brands is given by an array P[1], P[2]... P[N]. There are infinite supplies of each perfume brand. However P[i] can increase or decrease by a value X. You are given Q queries. Grigor want to spend the least amount of money possible. (The price will not become negative for the given input). Read further.",
+ "input_spec": "). Read further.\n\nInput Description:\nThe first line contains two space separated integers N, Q, the number of perfumes and the number of queries respectively.\nThe next line contains, N space separated integers P[i]\nThen Q lines follow.\nEach line contains two space separated integers of the form\n1 X , which means that the cheapest perfume\u2019s price increases by X.\n2, which denotes Grigor has to buy a perfume at that juncture.",
+ "output_spec": "Print two space separated integers, the number of perfumes Grigor buys and the minimum money he has spent.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3\n1 2 3 4 5\n2\n1 -1\n2",
+   "output": "2 1"
+  }
+ ],
+ "raw": ""
+}

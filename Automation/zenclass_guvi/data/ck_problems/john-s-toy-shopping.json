@@ -1,0 +1,17 @@
+{
+ "title": "576. John's Toy Shopping",
+ "slug": "john-s-toy-shopping",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n576. John's Toy Shopping\n\n40\n\nMedium  Topics\n\nProblem Statement:\nAssume you are john. John has one younger sister 'jenny'. He wants to gift her some toys. He has a price list of toys and he has some amount on hand. Your task is to tell him how many toys john will be able to buy for her sister",
+ "input_spec": "First line contains two integer 'n' and 'k' ,n denotes the number of toys and k denotes total money he has.Next line contains n space separated integers denoting price of each toy",
+ "output_spec": "Print the max number of toys he can buy.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 50\n1 12 5 111 200 1000 10",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1543. Topological Sort: Course Schedule",
+ "slug": "topological-sort-course-schedule",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1543. Topological Sort: Course Schedule\n\n90\n\nHard\n\nProblem Statement:\nYou are given a total of n courses labeled from 0 to n-1. Some courses may have prerequisites, represented as a list of prerequisite pairs. Each pair [a, b] indicates that to take course a, you must first complete course b. Your task is to determine a valid order in which to complete all the courses. If it is not possible to finish all courses due to a cycle (i.e., circular dependency), return an empty list.",
+ "input_spec": "- The first line contains an integer n, the total number of courses.\n- The second line contains an integer m, the number of prerequisite pairs.\n- The next m lines each contain two integers a and b, representing a prerequisite pair [a, b].",
+ "output_spec": "- Print a list of integers representing a valid order to complete all courses.\n- If there is no valid order, print an empty list.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n4\n1 0\n2 0\n3 1\n3 2",
+   "output": "[0, 1, 2, 3]"
+  }
+ ],
+ "raw": ""
+}

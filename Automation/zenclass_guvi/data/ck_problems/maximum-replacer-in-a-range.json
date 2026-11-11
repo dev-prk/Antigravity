@@ -1,0 +1,17 @@
+{
+ "title": "371. Maximum Replacer in a Range",
+ "slug": "maximum-replacer-in-a-range",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n371. Maximum Replacer in a Range\n\n50\n\nMedium  Topics\n\nProblem Statement:\nKumar is on vacation in the bahamas when his boss calls him suddenly asking him to do some work for a client.The client gave him an array representing the number of files of each type (there are n types of files , so for n=3 the array could be [20,7,3] denoting 20 files of type 1 , 7 files of type 2 and 3 files of type 3) . Now the client asked Kumar multiple questions . In each question he gave a range L,R representing all files file[L],file[L+1]....file[R].For each range the client wanted to know the value of the \"maximum replacer\" . The maximum replacer is a number 'G' such that every file its quantity from L to R can be represented asfile[i]=G*x for all L<=i<=R and for some x and G has the greatest possible value.NOTE: Assume 1-based indexing",
+ "input_spec": "The first line consists of a single integer \u2018N\u2019 denoting the total number of filesThe second line contains N integers representing the number of files of each type.The third line consists of a single integer Q - the number of questions askedThe next Q line consists of two integers each L and R- the range for which the client wants to find the maximum replacer.",
+ "output_spec": "The output must consist of Q lines each line containing the maximum replacer for that range of files",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n8 2 2 4\n1\n2 4",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

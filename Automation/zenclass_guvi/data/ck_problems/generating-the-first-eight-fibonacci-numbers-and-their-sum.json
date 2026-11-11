@@ -1,0 +1,17 @@
+{
+ "title": "2095. Generating the First Eight Fibonacci Numbers and Their Sum",
+ "slug": "generating-the-first-eight-fibonacci-numbers-and-their-sum",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2095. Generating the First Eight Fibonacci Numbers and Their Sum\n\n85\n\nHard\n\nProblem Statement\nPrint the first eight terms of the Fibonacci sequence and the sum of those eight terms.\nDescription\nThe Fibonacci sequence starts with 0 and 1, and every following term is the sum of the previous two terms. Directly compute the third through eighth terms one after another using addition. Then add all eight terms together to get their total sum. Print the eight terms on one line, followed by their sum on the next line.",
+ "input_spec": "This program does not read any input.",
+ "output_spec": "Print the first eight Fibonacci terms separated by spaces on the first line, then their sum on the second line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "(no input)",
+   "output": "0 1 1 2 3 5 8 13\n33"
+  }
+ ],
+ "raw": ""
+}

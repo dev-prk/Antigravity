@@ -1,0 +1,17 @@
+{
+ "title": "848. Postfix to Prefix Conversion-2",
+ "slug": "postfix-to-prefix-conversion-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n848. Postfix to Prefix Conversion-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nConvert a given postfix expression to prefix notation using Stack.",
+ "input_spec": "The code should take a string of arbitrary length (postfix notation).",
+ "output_spec": "Print the corresponding prefix notation form.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "123/-15/6-*",
+   "output": "*-1/23-/156"
+  }
+ ],
+ "raw": ""
+}

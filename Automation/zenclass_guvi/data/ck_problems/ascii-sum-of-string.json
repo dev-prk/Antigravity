@@ -1,0 +1,17 @@
+{
+ "title": "321. ASCII Sum of String",
+ "slug": "ascii-sum-of-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n321. ASCII Sum of String\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S convert each characters of the string into ASCII values and print the sum of the numbers.",
+ "input_spec": "The input consists of a string S with a maximum length of 100000 characters.",
+ "output_spec": "The output is a single integer representing the sum of the ASCII values of all characters in the input string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi",
+   "output": "443"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "959. Bank Transfer Encryption-2",
+ "slug": "bank-transfer-encryption-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n959. Bank Transfer Encryption-2\n\n60\n\nMedium\n\nProblem Statement:\nIn a scenario where banks need to perform confidential fund or message transfers, each bank may utilize its encryption and decryption techniques. The Reserve Bank provides an interface with method names, leaving the implementation details to the individual banks.\n\n- Create an interface BankTransfers.\n- Add two methods with the following prototypes:\n- public String encrypt(String a);\n- public String decrypt(String a);\n- Create a class ICICI which implements the BankTransfers interface and implements a simple encryption technique.\n- Create a class HDFC which implements the BankTransfers interface and implements a simple encryption technique.\n- Encryption techniques used by both banks:\n- ICICI: Add 1 to the ASCII value of each character and insert the number '1' after every character.\n- HDFC: Add 1 to the ASCII value of characters at even indices and subtract 1 from the ASCII value of characters at odd indices. Spaces are not encrypted.\n\nThe reverse of both techniques will decrypt the message (i.e., original text).",
+ "input_spec": "Bank Type and the message.",
+ "output_spec": "Output the encrypted input.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 welcome all",
+   "output": "x1f1m1d1p1n1f1!1b1m1m1"
+  }
+ ],
+ "raw": ""
+}

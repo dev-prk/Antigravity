@@ -1,0 +1,17 @@
+{
+ "title": "1135. Java Stream API Word Filter",
+ "slug": "java-stream-api-word-filter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1135. Java Stream API Word Filter\n\n50\n\nMedium\n\nProblem Statement:\nDevelop a Java program that reads a list of words from the user, uses the Stream API to filter out words with more than 5 characters, converts the filtered words to uppercase, and then prints the resulting list. Use var to declare all local variables.",
+ "input_spec": "An integer n denoting the number of words in the list. n space-separated words representing the list elements.",
+ "output_spec": "The resulting list of uppercase words, each word on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\napple\nbanana\npear\nfig",
+   "output": "PEAR\nFIG"
+  }
+ ],
+ "raw": ""
+}

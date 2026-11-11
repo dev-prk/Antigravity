@@ -1,0 +1,17 @@
+{
+ "title": "559. Matrix Pattern Generation",
+ "slug": "matrix-pattern-generation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n559. Matrix Pattern Generation\n\n40\n\nMedium  Topics\n\nProblem Statement:\nRaman is very good in programming. His teacher wants to test Raman's skills and gives him a problem to code. He is given a matrix pattern and is asked to write a code to print the same. The pattern is different for different values of input, but the logic for all the patterns is the same. Help Raman to develop the code for the same, by referring to the",
+ "input_spec": ", but the logic for all the patterns is the same. Help Raman to develop the code for the same, by referring to the",
+ "output_spec": ".\n\nInput Description:\nA positive integer N\n\nOutput Description:\nA particular matrix pattern",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "5 4 3 2 1 2 3 4 5\n4 4 3 2 1 2 3 4 4\n3 3 3 2 1 2 3 3 3\n2 2 2 2 1 2 2 2 2\n1 1 1 1 1 1 1 1 1\n2 2 2 2 1 2 2 2 2\n3 3 3 2 1 2 3 3 3\n4 4 3 2 1 2 3 4 4\n5 4 3 2 1 2 3 4 5"
+  }
+ ],
+ "raw": ""
+}

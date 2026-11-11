@@ -1,0 +1,17 @@
+{
+ "title": "849. Nearest Element with Higher Frequency",
+ "slug": "nearest-element-with-higher-frequency",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n849. Nearest Element with Higher Frequency\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven an array, for each element find the value of nearest element to the right which is having frequency greater than as that of current element using  Stack . If there does not exist an answer for a position, then make the value '-1'.",
+ "input_spec": "First line N indicates the size of the array.\nSecond line indicates elements of the array",
+ "output_spec": "Print the resultant array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n1 1 2 3 4 2 1",
+   "output": "-1 -1 1 2 2 1 -1"
+  }
+ ],
+ "raw": ""
+}

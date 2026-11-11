@@ -1,0 +1,17 @@
+{
+ "title": "1554. KMP Pattern Matching",
+ "slug": "kmp-pattern-matching",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1554. KMP Pattern Matching\n\n70\n\nHard\n\nProblem Statement:\nGiven two strings, a text and a pattern, implement the Knuth-Morris-Pratt (KMP) algorithm to find all starting indices where the pattern occurs in the text. The algorithm should efficiently search for all (possibly overlapping) occurrences of the pattern in the text.",
+ "input_spec": "- The first line contains the string text.\n- The second line contains the string pattern.",
+ "output_spec": "- Print the starting indices (0-based) of all occurrences of the pattern in the text, separated by spaces. If the pattern does not occur in the text, print \"-1\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ababcabcabababd\nababd",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

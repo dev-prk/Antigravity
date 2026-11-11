@@ -1,0 +1,17 @@
+{
+ "title": "2044. Runnable Message Printer",
+ "slug": "runnable-message-printer",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2044. Runnable Message Printer\n\n70\n\nHard\n\nProblem Statement\nGiven a message and a repeat count, use the Runnable interface to print the message that many times from a separate thread.\nDescription\nRead a string message and an integer count. Implement Runnable (not extend Thread) so that its run() method prints the message count times, one per line. Start a Thread using this Runnable, wait for it to finish using join(), and then print \"Finished\".",
+ "input_spec": "First line: a string message (no spaces). Second line: an integer count (1 \u2264 count \u2264 50).",
+ "output_spec": "Print the message count times, each on its own line, followed by \"Finished\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Hello\n3",
+   "output": "Hello\nHello\nHello\nFinished"
+  }
+ ],
+ "raw": ""
+}

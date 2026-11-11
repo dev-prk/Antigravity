@@ -1,0 +1,17 @@
+{
+ "title": "1174. OOP Student Grading System",
+ "slug": "oop-student-grading-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1174. OOP Student Grading System\n\n50\n\nMedium\n\nProblem Statement:\nImplement a student grading system using OOP principles. The system should handle multiple students and calculate their grades based on different criteria.",
+ "input_spec": "The first line contains an integer N, the number of operations.\nThe next N lines contain operations in the format add <name> <marks>, calculate <name>, or display <name>.",
+ "output_spec": "Print the result of each operation. For add, print \"Marks added\". For calculate, print \"Grade calculated\". For display, print the student's details.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nadd John 85\nadd John 90\ncalculate John\ndisplay John",
+   "output": "Marks added\nMarks added\nGrade calculated\nJohn: 87.5 - B"
+  }
+ ],
+ "raw": ""
+}

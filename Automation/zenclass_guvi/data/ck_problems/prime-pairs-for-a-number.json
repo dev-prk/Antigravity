@@ -1,0 +1,17 @@
+{
+ "title": "99. Prime Pairs for a Number",
+ "slug": "prime-pairs-for-a-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n99. Prime Pairs for a Number\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N, print the distinct pairs formed by multiplying two prime numbers (i.e)prime x prime should yield the N.Also print the numbers in descending order.If no such pairs can be formed print '-1'.",
+ "input_spec": "The input consists of a single integer N, where 1 <= N <= 100000.",
+ "output_spec": "Print the distinct pairs of prime numbers (prime x prime = N) in descending order. If no such pairs can be formed, print '-1'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "65",
+   "output": "13 5"
+  }
+ ],
+ "raw": ""
+}

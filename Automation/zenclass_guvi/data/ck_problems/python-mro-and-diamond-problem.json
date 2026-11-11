@@ -1,0 +1,17 @@
+{
+ "title": "1084. Python MRO and Diamond Problem",
+ "slug": "python-mro-and-diamond-problem",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1084. Python MRO and Diamond Problem\n\n50\n\nMedium\n\nProblem Statement:\nConsider an election scenario where we have different roles such as  Citizen ,  Politician , and  PublicServant . Both  Politician  and  PublicServant  are subclasses of  Citizen . Now, we have a new role  Mayor  who is both a  Politician  and a  PublicServant . The  Mayor  class inherits from both  Politician  and  PublicServant .\n\nEach of these classes has a method  role_duties()  that describes the duties of the role. However, when a  Mayor  object calls this method, which method should it execute? This is known as the Diamond Problem.\n\nWrite a Python function  mro_sequence(cls)  that takes a class  cls  as input and returns the Method Resolution Order (MRO) for that class as a list of class names.",
+ "input_spec": "and returns the Method Resolution Order (MRO) for that class as a list of class names.\n\nInput Description:\nThe input class  cls  is a valid Python class.",
+ "output_spec": "The Method Resolution Order (MRO) for the input class as a list of class names.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Mayor",
+   "output": "['Mayor', 'Politician', 'PublicServant', 'Citizen', 'object']"
+  }
+ ],
+ "raw": ""
+}

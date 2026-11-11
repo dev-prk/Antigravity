@@ -1,0 +1,17 @@
+{
+ "title": "682. Max Ones in a Row",
+ "slug": "max-ones-in-a-row",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n682. Max Ones in a Row\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given two numbers 'n' and 'm', denoting the size of matrix made up of only 1's and 0's. Your task is to calculate the maximum one's in single row.",
+ "input_spec": "You are given two numbers n and m",
+ "output_spec": "Next line contains n*m space separated numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3\n1 1 1 1 0 0",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

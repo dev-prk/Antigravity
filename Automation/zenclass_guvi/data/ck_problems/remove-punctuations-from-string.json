@@ -1,0 +1,17 @@
+{
+ "title": "790. Remove Punctuations From String",
+ "slug": "remove-punctuations-from-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n790. Remove Punctuations From String\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Remove Punctuations From a String",
+ "input_spec": "Input contains a string",
+ "output_spec": "print the string without punctuation",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "how are you?",
+   "output": "how are you"
+  }
+ ],
+ "raw": ""
+}

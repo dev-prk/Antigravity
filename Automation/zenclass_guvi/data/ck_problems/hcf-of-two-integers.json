@@ -1,0 +1,17 @@
+{
+ "title": "946. HCF of two integers",
+ "slug": "hcf-of-two-integers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n946. HCF of two integers\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to get 2 integers as input and find the HCF of the 2 integer without using recursion or Euclidean algorithm.",
+ "input_spec": "and find the HCF of the 2 integer without using recursion or Euclidean algorithm.\n\nInput Description:\nA single line containing 2 integers separated by space.",
+ "output_spec": "Print the HCF of the integers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,21 @@
+{
+ "title": "1770. Escaping the Maze",
+ "slug": "escaping-the-maze",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1770. Escaping the Maze\n\n50\n\nMedium\n\nProblem Title: Escaping the Maze\nProblem Statement\nDescription:\n\nYou are given a maze represented by a 2D grid where cells contain integers. The goal is to find the minimum number of steps required to reach the exit of the maze starting from a given entry point. The maze has the following properties:\n\nCells that basically have the value 0 are walls and cannot be traversed.\nCells with any positive integer n represent open paths. You can move from a cell to any other cell that is exactly n steps away either vertically or horizontally.\n\nFunction Signature:\nint minimumStepsToExit(int n, int m, int maze[n][m], int startX, int startY, int endX, int endY);\n\nInput:\nAn integer n representing the number of rows in the maze.\nAn integer m is representing the number of columns in the maze.\nA 2D array maze of size n x m representing the maze.\nTwo integers startX and startY are representing the starting cell coordinates (0-based index).\nTwo integers endX and endY representing the exit cell coordinates (0-based index).\n\nOutput:\nYou have to basically return the minimum number of steps which are required to reach the exit cell from the start cell. If it is not possible to reach the exit, return -1.",
+ "input_spec": "An integer n representing the number of rows in the maze.\nAn integer m is representing the number of columns in the maze.\nA 2D array maze of size n x m representing the maze.\nTwo integers startX and startY are representing the starting cell coordinates (0-based index).\nTwo integers endX and endY representing the exit cell coordinates (0-based index).",
+ "output_spec": "You have to basically return the minimum number of steps which are required to reach the exit cell from the start cell. If it is not possible to reach the exit, return -1.",
+ "constraints": "1 <= n, m <= 100\n0 <= maze[i][j] <= 100\n0 <= startX, startY, endX, endY < n\n\nExample",
+ "samples": [
+  {
+   "input": "An integer n representing the number of rows in the maze.\nAn integer m is representing the number of columns in the maze.\nA 2D array maze of size n x m representing the maze.\nTwo integers startX and startY are representing the starting cell coordinates (0-based index).\nTwo integers endX and endY representing the exit cell coordinates (0-based index).",
+   "output": "You have to basically return the minimum number of steps which are required to reach the exit cell from the start cell. If it is not possible to reach the exit, return -1."
+  },
+  {
+   "input": "int n = 4;\nint m = 4;\nint maze[4][4] = {\n{2, 0, 0, 1},\n{1, 1, 0, 1},\n{1, 0, 1, 0},\n{1, 1, 1, 0}\n};\nint startX = 0, startY = 0;\nint endX = 3, endY = 3;",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

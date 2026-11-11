@@ -1,0 +1,17 @@
+{
+ "title": "2139. Concatenating Two Strings Without Using strcat()",
+ "slug": "concatenating-two-strings-without-using-strcat",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2139. Concatenating Two Strings Without Using strcat()\n\n95\n\nHard\n\nProblem Statement\nRead two words and print them joined together into a single string, without using the strcat() function.\n\nDescription\nRead two strings, str1 and str2, into separate character arrays using scanf. Find the length of str1 using a loop. Use another loop to copy each character of str2 into str1, starting right after str1's last character, and finally place a null terminator at the end. Print the resulting combined string.",
+ "input_spec": "Two words separated by a space.",
+ "output_spec": "Print the two words joined together with no space between them.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Hello World",
+   "output": "HelloWorld"
+  }
+ ],
+ "raw": ""
+}

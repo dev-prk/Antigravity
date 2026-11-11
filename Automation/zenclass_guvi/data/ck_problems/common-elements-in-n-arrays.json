@@ -1,0 +1,17 @@
+{
+ "title": "256. Common Elements in N Arrays",
+ "slug": "common-elements-in-n-arrays",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n256. Common Elements in N Arrays\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N,K and N arrays each of size K, print the elements that have appeared in all arrays,if any element are not same print '-1'.",
+ "input_spec": "The input consists of 2 numbers N, K, and N arrays each of size K.",
+ "output_spec": "Print the elements that have appeared in all arrays. If no common elements are found, print '-1'.",
+ "constraints": "2 <= N, K <= 100000",
+ "samples": [
+  {
+   "input": "2 3\n1 0 2\n0 8 7",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

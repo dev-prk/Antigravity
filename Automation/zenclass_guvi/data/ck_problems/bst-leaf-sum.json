@@ -1,0 +1,17 @@
+{
+ "title": "950. BST Leaf Sum",
+ "slug": "bst-leaf-sum",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n950. BST Leaf Sum\n\n70\n\nHard\n\nProblem Statement:\nGiven a Binary Search Tree, find the sum of all leaf nodes. BST has the following property (duplicate nodes are possible): The left subtree of a node contains only nodes with keys less than the node\u2019s key. The right subtree of a node contains only nodes with keys greater than or equal to the node\u2019s key.",
+ "input_spec": "The first line consists of integer N, denoting the number of elements in the BST. The second line of each test case consists of N space-separated integers denoting the elements in the BST.where,1",
+ "output_spec": "print the sum of leaf nodes.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n67 34 82 12 45 78",
+   "output": "135"
+  }
+ ],
+ "raw": ""
+}

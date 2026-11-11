@@ -1,0 +1,17 @@
+{
+ "title": "1447. Merge Two Sorted Linked Lists-2",
+ "slug": "merge-two-sorted-linked-lists-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1447. Merge Two Sorted Linked Lists-2\n\n50\n\nMedium\n\nProblem Statement:\nYou are given two sorted singly linked lists. Your task is to merge these two lists into one sorted linked list and return the head of the new list.",
+ "input_spec": "Given two sorted singly linked lists, you need to merge them into one sorted linked list. The input lists may have different lengths. Ensure the resulting linked list maintains the sorted order. First line contains an integer, n, the number of elements in the first linked list. Second line contains n space-separated integers, the elements of the first linked list in sorted order. Third line contains an integer, m, the number of elements in the second linked list. Fourth line contains m space-separated integers, the elements of the second linked list in sorted order.",
+ "output_spec": "Output the elements of the merged sorted linked list in a single line, space-separated.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1 3 5\n3\n2 4 6",
+   "output": "1 2 3 4 5 6"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "886. IPL Dance Program Seating",
+ "slug": "ipl-dance-program-seating",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n886. IPL Dance Program Seating\n\n40\n\nMedium  Topics\n\nProblem Statement:\nIn the IPL season's valedictory function the organizers have organized for a dance program. The dance has to be performed by men along with the points of the diagonals of the square of side 'n' and the females along with points of the borders. The remaining positions are filled by children. You have to determine their respective positions by writing a program.",
+ "input_spec": "Given an integer N indicates representing the matrix (N*N).Where 1<=R<=100",
+ "output_spec": "Print the N*N character matrix with the character F(Female), M(Male), C(Children).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7",
+   "output": "M F F F F F M\nF M C C C M F\nF C M C M C F\nF C C M C C F\nF C M C M C F\nF M C C C M F\nM F F F F F M"
+  }
+ ],
+ "raw": ""
+}

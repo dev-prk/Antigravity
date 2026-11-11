@@ -1,0 +1,17 @@
+{
+ "title": "278. Minimum Absolute Sum Pair",
+ "slug": "minimum-absolute-sum-pair",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n278. Minimum Absolute Sum Pair\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nThis problem is also called minimum absolute sum pair. You are given a number N followed by an array of N numbers, containing both +ve and -ve numbers. You need to print the two elements such that their sum is closest to zero.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": "The output is the two elements such that their sum is closest to zero.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n15 5 -20 30 -45",
+   "output": "15 -20"
+  }
+ ],
+ "raw": ""
+}

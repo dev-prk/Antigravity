@@ -1,0 +1,17 @@
+{
+ "title": "668. Sum of Two Minimum Numbers",
+ "slug": "sum-of-two-minimum-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n668. Sum of Two Minimum Numbers\n\n60\n\nMedium  Topics\n\nProblem Statement:\nrahul is given an array containing digits values ranging from 0-9,Rahul's task is to find the sum of minimum two numbers formed by the digits,but he has some other work to do, he called you and told you that he is busy with some work,your task is to do the same work for rahul",
+ "input_spec": "You are given a number \u2018n\u2019 denoting size of array\nNext line contains n space separated numbers",
+ "output_spec": "Print the sum of numbers formed by it",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n6 8 4 5 2 3",
+   "output": "604"
+  }
+ ],
+ "raw": ""
+}

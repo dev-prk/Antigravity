@@ -1,0 +1,17 @@
+{
+ "title": "444. String Partitioning",
+ "slug": "string-partitioning",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n444. String Partitioning\n\n70\n\nHard  Topics\n\nProblem Statement:\nJack is bored in english class and decides to play a game with you. He will ask you Q questions and in each question He will give you a string S Such that it has length at most 500. You have to tell him if the string can be partitioned into two substrings s1 and s2 such that s1 is present in the dictionary s2 is present in the dictionary s1+s2 is equal to S note that s1 could be equal to s2. They need not be distinct strings The list of words in the dictionary will be given to you initially and using this answer Jack's questions.",
+ "input_spec": "The first line contains a single integer N denoting denoting the number of strings in the dictionary The next N lines contains a single string each denoting the words in the dictionary The next line contains a single integer Q : the number of questions you will be asked The next Q line contains a single string each which will be given to you",
+ "output_spec": "Your output must consist of Q lines , each of which you must answer with \u201cYes\u201d if the string can be partitioned into two strings s1 and s2 as given in the problem statement Or \u201cNo\u201d if the string cannot be partitioned",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nancd\nhhgy\nytre\n2\nancdhhgy\nancdoo",
+   "output": "Yes\nNo"
+  }
+ ],
+ "raw": ""
+}

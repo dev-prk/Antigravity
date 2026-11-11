@@ -1,0 +1,17 @@
+{
+ "title": "1489. Reverse First K Elements of a Queue",
+ "slug": "reverse-first-k-elements-of-a-queue",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1489. Reverse First K Elements of a Queue\n\n50\n\nMedium\n\nProblem Statement:\nWrite a program to reverse the first K elements of a queue using a stack.\nTake a queue of integers and an integer K. Reverse the first K elements of the queue.",
+ "input_spec": "First line: elements of the queue (space separated)\nSecond line: integer K",
+ "output_spec": "Queue after reversing first K elements",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 20 30 40 50\n3",
+   "output": "30 20 10 40 50"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "812. Adam Number Checker",
+ "slug": "adam-number-checker",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n812. Adam Number Checker\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to check the given number is Adam number or not",
+ "input_spec": "Input contains Integer",
+ "output_spec": "If its Adam print Yes otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "12",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

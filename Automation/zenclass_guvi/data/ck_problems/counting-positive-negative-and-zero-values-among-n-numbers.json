@@ -1,0 +1,17 @@
+{
+ "title": "2122. Counting Positive, Negative, and Zero Values Among N Numbers",
+ "slug": "counting-positive-negative-and-zero-values-among-n-numbers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2122. Counting Positive, Negative, and Zero Values Among N Numbers\n\n80\n\nHard\n\nProblem Statement\nRead a count N followed by N integers, and count how many of them are positive, negative, or zero, using a loop combined with an if-else-if ladder.\n\nDescription\nRead an integer N specifying how many values will follow. Use a for loop to read each of the N values one at a time. Inside the loop, use an if-else-if ladder to classify the current value as positive, negative, or zero, and increase the corresponding counter. After the loop ends, print the three counts.",
+ "input_spec": "An integer N, followed by N integers, all separated by spaces.",
+ "output_spec": "Print the count of positive numbers, then negative numbers, then zeros, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 4 -3 0 7 -1 0",
+   "output": "2\n2\n2"
+  }
+ ],
+ "raw": ""
+}

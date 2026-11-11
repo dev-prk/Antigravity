@@ -1,0 +1,17 @@
+{
+ "title": "1228. Even-Indexed Sum in Dynamic Array",
+ "slug": "even-indexed-sum-in-dynamic-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1228. Even-Indexed Sum in Dynamic Array\n\n50\n\nMedium\n\nProblem Statement:\nCreate a C program that dynamically allocates memory for an array of integers on the heap. The program should read the array's size and elements from the user. Then, calculate the sum of all even-indexed elements and store the result in the first element of the array using L-value expressions.",
+ "input_spec": "1. First, an integer representing the size of the array.\nThen, n integers representing the elements of the array.",
+ "output_spec": "Print the modified array, with the first element now holding the sum of all even-indexed elements.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "9 2 3 4 5"
+  }
+ ],
+ "raw": ""
+}

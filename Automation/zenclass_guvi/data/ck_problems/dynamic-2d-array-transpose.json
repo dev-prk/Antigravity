@@ -1,0 +1,17 @@
+{
+ "title": "1231. Dynamic 2D Array Transpose",
+ "slug": "dynamic-2d-array-transpose",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1231. Dynamic 2D Array Transpose\n\n80\n\nHard\n\nProblem Statement:\nWrite a C program that creates a dynamically allocated 2D array (matrix) using pointers to pointers. The program should:\n\nAllocate memory for a matrix of size m x n.\nInitialize the matrix such that each element matrix[i][j] is the product of its indices (i * j).\nCreate a function that takes a pointer to the matrix and:\nTransposes the matrix (swap rows and columns).\nPrints the transposed matrix.\nDescription:\nUse pointer-to-pointer (int **) to manage the 2D array. Implement the transpose function by correctly accessing and modifying the matrix elements using the value-at (*) and address-of (&) operators.",
+ "input_spec": "Two integers m and n, indicating the number of rows and columns in the matrix.",
+ "output_spec": "Print the transposed matrix, with each row on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3",
+   "output": "0 0\n0 1\n0 2"
+  }
+ ],
+ "raw": ""
+}

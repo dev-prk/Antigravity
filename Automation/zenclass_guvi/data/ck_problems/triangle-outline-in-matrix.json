@@ -1,0 +1,17 @@
+{
+ "title": "569. Triangle Outline in Matrix",
+ "slug": "triangle-outline-in-matrix",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n569. Triangle Outline in Matrix\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given a matrix of dimensions M*N. Find out whether there is an outline of a triangle formed by the number 7 in the matrix of numbers.",
+ "input_spec": "Dimensions of the matrix followed followed by the elements of the matrix.",
+ "output_spec": "YES/NO",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5\n1 2 7 3 4\n3 7 2 7 1\n7 7 7 7 7\n1 2 3 4 5\n9 8 7 6 1",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

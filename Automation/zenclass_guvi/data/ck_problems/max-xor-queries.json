@@ -1,0 +1,17 @@
+{
+ "title": "436. Max XOR Queries",
+ "slug": "max-xor-queries",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n436. Max XOR Queries\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou will be given N integers (1<=N<=100000) .Jack wants to play a game with you lasting for Q turnsOn every turn of the game , he will give you an integer and you will have to report the maximum xor obtained by taking an integer from the given array .More formally, on the ith turn (1<=i<=Q)Jack will give you an integer X, you have to find an index j such that 1<=j<=N and X^A[j] is maximum . After finding such index you will have to report the value of X^A[j] to him.Note: XOR operator is denoted by \" ^ \"",
+ "input_spec": "The first line contains two space separated integers : N Q : the number of integers that will be given to you and the number of turns the game will last for.The next line contains N integers : the integers given to you initiallyThe next Q lines contain a single integer each denoting the integer given to you by Jack.",
+ "output_spec": "The output must consist of Q lines each containing a single integer : The answer as requested by jack for the corresponding integer he gives you",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 2\n1 2 3 4\n1\n2",
+   "output": "5\n6"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "835. Flatten Sorted Linked Lists",
+ "slug": "flatten-sorted-linked-lists",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n835. Flatten Sorted Linked Lists\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a linked list where every node represents a linked list and contains two pointers of its type: (i) Pointer to next node in the main list (we call it 'right' pointer in below code) (ii) Pointer to a linked list where this node is head (we call it 'down' pointer in below code). All linked lists are sorted. See the following exampleWrite a function flatten() to flatten the lists into a single linked list. The flattened linked list should also be sorted. For example, for the above input list, output list should be 5 7 8 10 19 20 22 28 30 35 40 45 50.",
+ "input_spec": "list,",
+ "output_spec": "list should be 5 7 8 10 19 20 22 28 30 35 40 45 50.\n\nInput Description:\nGiven a linked list where every node represents a linked list and -1 indicates the end of the linked list.\n\nOutput Description:\nPrint the value flattened linked list which is sorted(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 10 19 28\n7 20 22 35\n8 -1 50 40\n30 -1 -1 45",
+   "output": "5 7 8 10 19 20 22 28 30 35 40 45 50"
+  }
+ ],
+ "raw": ""
+}

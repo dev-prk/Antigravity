@@ -1,0 +1,17 @@
+{
+ "title": "2094. Reversing a 5-Digit Integer and Summing It With the Original",
+ "slug": "reversing-a-5-digit-integer-and-summing-it-with-the-original",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2094. Reversing a 5-Digit Integer and Summing It With the Original\n\n80\n\nHard\n\nProblem Statement\nRead a 5-digit integer, reverse its digits, and print both the reversed number and the sum of the original number and its reverse.\nDescription\nRead a 5-digit integer num and store its original value in a separate variable, since num itself will be modified while extracting digits. Extract all five digits using % and / repeated five times, and rebuild them in reverse order to get the reversed number. Print the reversed number, then print the sum of the original number and the reversed number.",
+ "input_spec": "A single line containing a 5-digit integer num (10000 \u2264 num \u2264 99999).",
+ "output_spec": "Print the reverse of num on the first line, then the sum of num and its reverse on the second line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "12345",
+   "output": "54321\n66666"
+  }
+ ],
+ "raw": ""
+}

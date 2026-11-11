@@ -1,0 +1,17 @@
+{
+ "title": "254. Counting Islands in a Matrix",
+ "slug": "counting-islands-in-a-matrix",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n254. Counting Islands in a Matrix\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N and a 2D matrix(N*N filled with 1's or 0's), find the number of island 1's(An island 1 is a 1 surrounded by 0's on all sides).",
+ "input_spec": "The input consists of an integer N, representing the size of the square matrix, followed by N lines, each containing N integers (1s or 0s) representing the 2D matrix. N is between 2 and 100000 (inclusive).",
+ "output_spec": "The output should be a single integer, representing the total count of island 1's in the given matrix.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n1 0\n0 0",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

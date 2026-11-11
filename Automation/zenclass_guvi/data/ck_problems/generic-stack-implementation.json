@@ -1,0 +1,17 @@
+{
+ "title": "1158. Generic Stack Implementation",
+ "slug": "generic-stack-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1158. Generic Stack Implementation\n\n50\n\nMedium\n\nProblem Statement:\nCreate a generic Stack<T> class that supports the following operations:\n* Push an item onto the stack.\n* Pop an item from the stack.\n* Peek at the top item of the stack.\n* Check if the stack is empty, if empty print \"Stack is empty.\"\n* Print the stack contents.\n\nWrite a main method that allows the user to interact with the stack by providing commands to push, pop, and peek values. The stack should support different data types such as Integer and String.",
+ "input_spec": "The user provides commands in the format push <value>, pop, peek, or print.\nThe value to push should be provided as part of the command.",
+ "output_spec": "Print the result of each operation or the contents of the stack.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "push 10\npush Hello\npeek\npop\nprint\nexit",
+   "output": "Top of the stack: Hello\nPopped value: Hello\nStack contents: [10]"
+  }
+ ],
+ "raw": ""
+}

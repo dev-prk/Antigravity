@@ -1,0 +1,17 @@
+{
+ "title": "2202. Checking Whether a Number Is a Palindrome Using a Function",
+ "slug": "checking-whether-a-number-is-a-palindrome-using-a-function",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2202.  Checking Whether a Number Is a Palindrome Using a Function\n\n60\n\nMedium\n\nProblem Statement\nRead an integer and determine whether it reads the same forward and backward, using a function that returns 1 or 0.\n\nDescription\nA palindrome number is a number that is equal to its own reverse, for example 121. Read a positive integer num from input. Write a function isPalindrome that takes an integer parameter, builds the reverse of the number using a while loop (take the last digit with % 10, add it to the reverse after multiplying the reverse by 10, and remove the digit using / 10), and returns 1 if the reverse equals the original number, otherwise 0. In main(), print \"Palindrome\" or \"Not Palindrome\" based on the returned value.",
+ "input_spec": ". Write a function isPalindrome that takes an integer parameter, builds the reverse of the number using a while loop (take the last digit with % 10, add it to the reverse after multiplying the reverse by 10, and remove the digit using / 10), and returns 1 if the reverse equals the original number, otherwise 0. In main(), print \"Palindrome\" or \"Not Palindrome\" based on the returned value.\n\nInput Description\nA single positive integer num.",
+ "output_spec": "Print \"Palindrome\" if num is a palindrome number, otherwise print \"Not Palindrome\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "121",
+   "output": "Palindrome"
+  }
+ ],
+ "raw": ""
+}

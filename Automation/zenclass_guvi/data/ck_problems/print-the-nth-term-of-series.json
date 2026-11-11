@@ -1,0 +1,17 @@
+{
+ "title": "607. Print the nth term of series",
+ "slug": "print-the-nth-term-of-series",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n607. Print the nth term of series\n\n60\n\nMedium  Topics\n\nProblem Statement:\nRamesh is given a special series to print,as he has some other work to do.Help ramesh in printing the series. Note:Observe the series very keenly in examples",
+ "input_spec": "You are given a number \u2018n\u2019.",
+ "output_spec": "Print the n term of series.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6",
+   "output": "1 6 120"
+  }
+ ],
+ "raw": ""
+}

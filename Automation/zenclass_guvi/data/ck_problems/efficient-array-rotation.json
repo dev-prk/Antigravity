@@ -1,0 +1,17 @@
+{
+ "title": "1223. Efficient Array Rotation",
+ "slug": "efficient-array-rotation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1223. Efficient Array Rotation\n\n80\n\nHard\n\nProblem Statement:\nYou are working on a project where you need to manipulate a large array of integers for data processing. One of the operations involves rotating the elements of the array to the left or right by a given number of positions. The goal is to write a C program that performs this operation efficiently. You are required to implement the function rotateArray(int arr[], int n, int d, char dir) that rotates the array arr[] of size n by d positions. The direction of rotation is determined by the dir parameter, where 'L' indicates a left rotation and 'R' indicates a right rotation. The solution must include proper looping through the array elements to achieve the rotation without using extra space for another array (in-place rotation).",
+ "input_spec": "The first line contains two integers n and d (1 \u2264 d \u2264 n \u2264 10^6), representing the size of the array and the number of positions to rotate. The second line will contain the n space-separated integers which basically represents the elements of the array arr[i] (-10^4 \u2264 arr[i] \u2264 10^4). The third line contains a single character dir which is either 'L' or 'R', representing the direction of rotation.",
+ "output_spec": "Print the rotated array as a single line of space-separated integers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2\n1 2 3 4 5\nL",
+   "output": "3 4 5 1 2"
+  }
+ ],
+ "raw": ""
+}

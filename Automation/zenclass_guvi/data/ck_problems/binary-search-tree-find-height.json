@@ -1,0 +1,17 @@
+{
+ "title": "2054. Binary Search Tree - Find Height",
+ "slug": "binary-search-tree-find-height",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2054. Binary Search Tree - Find Height\n\n80\n\nHard\n\nProblem Statement\nCreate a Binary Search Tree from given integers and find the height of the tree.\nDescription\nRead n integers and insert them into a Binary Search Tree. Find the height of the tree, where a tree containing only the root node has height 0. The height is the maximum number of edges from the root to any leaf.",
+ "input_spec": "The first line contains an integer n. The second line contains n space-separated integers to be inserted into the Binary Search Tree.",
+ "output_spec": "Print the height of the Binary Search Tree.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n50 30 70 20 40 60 80",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

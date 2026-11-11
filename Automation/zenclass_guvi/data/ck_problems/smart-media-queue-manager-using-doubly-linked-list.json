@@ -1,0 +1,17 @@
+{
+ "title": "1870. Smart Media Queue Manager Using Doubly Linked List",
+ "slug": "smart-media-queue-manager-using-doubly-linked-list",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1870. Smart Media Queue Manager Using Doubly Linked List\n\n70\n\nHard  Topics\n\nTitle: Smart Media Queue Manager Using Doubly Linked List\n\nProblem Statement\nA multimedia streaming platform manages a play queue of media tracks for its users.\nEach track contains:\n\nTrack name\n\nDuration (in seconds)\n\nThe queue must support dynamic navigation and modification, allowing users to move forward and backward between tracks.\n\nThe queue must be implemented using a Doubly Linked List.\n\nOperations Supported\nThe system must support the following commands:\n\n1. PUSH\nAdd a new track to the end of the queue.\n\nPUSH trackName duration\n\n2. REMOVE\nRemove a track from the queue using its name.\n\nREMOVE trackName\n\nIf the track does not exist, print:\n\nTrack not found\n\n3. FORWARD\n\nMove the pointer to the next track.\n\nIf no next track exists:\n\nNo forward track\n\n4. BACK\n\nMove the pointer to the previous track.\n\nIf no previous track exists:\n\nNo backward track\n\n5. SHOW\n\nDisplay all tracks starting from the current track until the end.\n\nTracks must be printed space separated.\n\nInput Format\nQ\noperation1\noperation2\n...\noperationQ\n\nWhere:\n\nQ \u2192 number of operations\n\nEach operation follows one of the formats defined above.\n\nOutput Format\nFor each SHOW operation, print the tracks from the current pointer to the end of the queue.",
+ "input_spec": "Q\noperation1\noperation2\n...\noperationQ\n\nWhere:\n\nQ \u2192 number of operations\n\nEach operation follows one of the formats defined above.",
+ "output_spec": "For each SHOW operation, print the tracks from the current pointer to the end of the queue.",
+ "constraints": "1 \u2264 Q \u2264 1000\n\nTrack name length \u2264 100\n\nDuration \u2264 10000\n\nMaximum tracks \u2264 1000",
+ "samples": [
+  {
+   "input": "6\nPUSH Track1 150\nPUSH Track2 160\nPUSH Track3 170\nFORWARD\nFORWARD\nSHOW",
+   "output": "Track3"
+  }
+ ],
+ "raw": ""
+}

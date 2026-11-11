@@ -1,0 +1,17 @@
+{
+ "title": "1564. Segment Tree: Range Count > X with Updates",
+ "slug": "segment-tree-range-count-x-with-updates",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1564. Segment Tree: Range Count > X with Updates\n\n80\n\nHard\n\nProblem Statement:\nGiven an array of integers, you are required to answer two types of queries efficiently:\n1. Update the value at a specific index in the array.\n2. Given a range [L, R] and an integer X, count how many elements in the subarray from index L to R (inclusive) are strictly greater than X.\nYou need to process Q such queries.",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial elements of the array.\n- The next Q lines each describe a query:\n- For an update query: \"1 idx val\" (set array[idx] = val, 0-based indexing)\n- For a range query: \"2 L R X\" (count elements > X in array[L..R], 0-based indexing)",
+ "output_spec": "For each range query, output a single integer (the count), each on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 5\n1 5 2 7 3 4\n2 1 4 3\n1 2 8\n2 0 5 4\n1 4 1\n2 3 5 2",
+   "output": "2\n3\n2"
+  }
+ ],
+ "raw": ""
+}

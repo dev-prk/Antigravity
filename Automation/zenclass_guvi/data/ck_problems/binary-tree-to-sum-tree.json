@@ -1,0 +1,17 @@
+{
+ "title": "951. Binary Tree to Sum Tree",
+ "slug": "binary-tree-to-sum-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n951. Binary Tree to Sum Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven a Binary Search Tree, You have to convert the tree into a Sum Tree. For converting a Sum Tree, You have to replace each and every node value with the sum of left and right subtree values. For leaf nodes, there will be no left and right subtrees so the values will be zero. After converting the tree into a Sum Tree, Print the values of the tree in the preorder traversal.",
+ "input_spec": "The first line consists of integer N, denoting the number of elements in the Binary tree.\nThe second line of each test case consists of N space-separated integers denoting the elements in the Binary tree of size N.",
+ "output_spec": "The output will be a space-separated sum tree of the given binary tree",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "9\n5 6 4 8 2 7 3 9 1",
+   "output": "40 6 4 0 0 24 16 0 0"
+  }
+ ],
+ "raw": ""
+}

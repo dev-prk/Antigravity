@@ -1,0 +1,17 @@
+{
+ "title": "1459. Generating Valid Parentheses",
+ "slug": "generating-valid-parentheses",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1459. Generating Valid Parentheses\n\n50\n\nMedium\n\nProblem Statement:\nGiven n pairs of parentheses, write a function to generate all possible combinations of well-formed parentheses using recursion.",
+ "input_spec": "- A single integer n, representing the number of pairs of parentheses.",
+ "output_spec": "- A list of strings, where each string represents a valid combination of well-formed parentheses.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "[\"((()))\", \"(()())\", \"(())()\", \"()(())\", \"()()()\"]"
+  }
+ ],
+ "raw": ""
+}

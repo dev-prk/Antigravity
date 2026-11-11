@@ -1,0 +1,17 @@
+{
+ "title": "1739. Multiply Two 3x3 Matrices",
+ "slug": "multiply-two-3x3-matrices",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1739. Multiply Two 3x3 Matrices\n\n50\n\nMedium  Topics\n\n#Multiply Two 3x3 Matrices\n\nProblem Statement:\nMultiply two 3\u00d73 matrices and print the result.",
+ "input_spec": "Two 3\u00d73 matrices.",
+ "output_spec": "Resultant 3\u00d73 matrix.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2 3\n4 5 6\n7 8 9\n\n1 0 0\n0 1 0\n0 0 1",
+   "output": "1 2 3\n4 5 6\n7 8 9"
+  }
+ ],
+ "raw": ""
+}

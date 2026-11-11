@@ -1,0 +1,21 @@
+{
+ "title": "1847. City Grid Traffic Optimization Problem",
+ "slug": "city-grid-traffic-optimization-problem",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1847. City Grid Traffic Optimization Problem\n\n90\n\nHard  Topics\n\nProblem Statement: City Grid Traffic Optimization\n\nYou are given a city represented as a 2D grid of intersections, where each element in the grid represents the time (in minutes) it takes for traffic to pass through that intersection. The city mayor wants to optimize traffic flow by finding the fastest route from the top-left corner of the city to the bottom-right corner. You are allowed to move only right or down at any intersection.\n\nGiven a matrix M x N representing the city grid, where each value at grid[i][j] represents the time required at the (i, j) intersection, write a program that finds the minimum total time required to move from the top-left corner (0,0) to the bottom-right corner (M-1, N-1).\n\nInput:\nThe first line contains two integers M and N \u2014 the number of rows and columns of the grid.\nThe next M lines each contain N integers representing the city grid, where each integer is the time in minutes for that particular intersection.\n\nOutput:\nA single integer, the minimum time required to travel from the top-left to the bottom-right corner.",
+ "input_spec": "The first line contains two integers M and N \u2014 the number of rows and columns of the grid.\nThe next M lines each contain N integers representing the city grid, where each integer is the time in minutes for that particular intersection.",
+ "output_spec": "A single integer, the minimum time required to travel from the top-left to the bottom-right corner.",
+ "constraints": "2 <= M, N <= 100 (grid size between 2x2 and 100x100)\n1 <= grid[i][j] <= 100 (time taken at each intersection is between 1 and 100 minutes)",
+ "samples": [
+  {
+   "input": "The first line contains two integers M and N \u2014 the number of rows and columns of the grid.\nThe next M lines each contain N integers representing the city grid, where each integer is the time in minutes for that particular intersection.",
+   "output": "A single integer, the minimum time required to travel from the top-left to the bottom-right corner."
+  },
+  {
+   "input": "3 3\n4 7 8\n6 5 9\n3 2 1",
+   "output": "18"
+  }
+ ],
+ "raw": ""
+}

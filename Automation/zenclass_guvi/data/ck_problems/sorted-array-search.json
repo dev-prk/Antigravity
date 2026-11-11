@@ -1,0 +1,17 @@
+{
+ "title": "92. Sorted Array Search",
+ "slug": "sorted-array-search",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n92. Sorted Array Search\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers N,K followed by a sorted array of N elements, search and tell if an element K is present in the array.print 'yes' if element is present otherwise print 'no'.",
+ "input_spec": "Input Size : 1 <= N <= 1000000000000000(Do it in logN time complexity)",
+ "output_spec": "print 'yes' if element is present otherwise print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 2\n2 3 7",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

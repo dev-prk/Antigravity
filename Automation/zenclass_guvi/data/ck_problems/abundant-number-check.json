@@ -1,0 +1,17 @@
+{
+ "title": "817. Abundant Number Check",
+ "slug": "abundant-number-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n817. Abundant Number Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to check the given number is an abundant number or not",
+ "input_spec": "The input contains an integer",
+ "output_spec": "if its abundant number print Yes otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "220",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

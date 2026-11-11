@@ -1,0 +1,17 @@
+{
+ "title": "1559. Pattern Occurrences using Z Algorithm",
+ "slug": "pattern-occurrences-using-z-algorithm",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1559. Pattern Occurrences using Z Algorithm\n\n80\n\nHard\n\nProblem Statement:\nGiven a string  text  and a string  pattern , find all starting indices in  text  where  pattern  occurs as a substring. Use the Z Algorithm to efficiently find all occurrences. Return the list of starting indices (0-based).",
+ "input_spec": "- The first line contains the string  text .\n- The second line contains the string  pattern .",
+ "output_spec": "- Print the starting indices (space-separated) of all occurrences of  pattern  in  text . If there are no occurrences, print an empty line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ababcababcabc\nabc",
+   "output": "2 7 10"
+  }
+ ],
+ "raw": ""
+}

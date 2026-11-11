@@ -1,0 +1,17 @@
+{
+ "title": "1155. Average 1s in Binary",
+ "slug": "average-1s-in-binary",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1155. Average 1s in Binary\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program that reads a list of integers from the user and performs the following tasks using the Integer wrapper class:\n* Convert each integer to its binary representation.\n* Count the number of 1s in each binary string.\n* Calculate the average count of 1s across all integers and print it.\n\nExplanation:\nUse Integer.toBinaryString() to convert integers to their binary forms and analyze the binary strings to count the number of 1s. Compute the average count of 1s for all integers.",
+ "input_spec": "The first line contains an integer N, the number of integers.\nThe second line contains N space-separated integers.",
+ "output_spec": "Print the average number of 1s in binary representations, rounded to the nearest integer.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n3 5 7 9",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

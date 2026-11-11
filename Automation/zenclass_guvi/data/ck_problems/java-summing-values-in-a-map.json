@@ -1,0 +1,17 @@
+{
+ "title": "1664. Java, Summing Values in a Map",
+ "slug": "java-summing-values-in-a-map",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1664. Java, Summing Values in a Map\n\n70\n\nHard\n\nSumming Values in a Map\nProblem Statement:\nGiven a list of key-value pairs, sum the values for each unique key.\n\nDescription:\nYou need to read a list of key-value pairs from the user and calculate the sum of values for each unique key. Use Java's Map interface to store the key-value pairs and perform the sum operation.\n\nInput Format:\n\nThe first line contains an integer,\nn (1 \u2264 n \u2264 100), denoting the number of key-value pairs.\nThe next\nn lines each contain a key (string) and a value (integer).\nOutput Format:\n\nPrint each unique key and its summed value, one per line.",
+ "input_spec": "The first line contains an integer,\nn (1 \u2264 n \u2264 100), denoting the number of key-value pairs.\nThe next\nn lines each contain a key (string) and a value (integer).",
+ "output_spec": "Print each unique key and its summed value, one per line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\napple 10\nbanana 5\napple 20\nbanana 15",
+   "output": "banana 20\napple 30"
+  }
+ ],
+ "raw": ""
+}

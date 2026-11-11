@@ -1,0 +1,17 @@
+{
+ "title": "1859. Race Time Sorting",
+ "slug": "race-time-sorting",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1859. Race Time Sorting\n\n60\n\nMedium  Topics\n\nRace Time Sorting\n\nProblem Statement\n\nWrite a program to sort race completion times and determine the winner (the fastest time).\n\nInput Format\n\nLine 1: Number of participants (N)\nNext N lines: Completion time of each participant in seconds\n\nOutput Format\n\nLine 1: Sorted race times (space-separated)\nLine 2: Fastest Time (Winner)",
+ "input_spec": "Line 1: Number of participants (N)\nNext N lines: Completion time of each participant in seconds",
+ "output_spec": "Line 1: Sorted race times (space-separated)\nLine 2: Fastest Time (Winner)",
+ "constraints": "1 \u2264 N \u2264 300\n\n1 \u2264 Time \u2264 10,000",
+ "samples": [
+  {
+   "input": "6\n52\n47\n63\n49\n58\n44",
+   "output": "44 47 49 52 58 63\n44"
+  }
+ ],
+ "raw": ""
+}

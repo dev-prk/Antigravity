@@ -1,0 +1,17 @@
+{
+ "title": "1628. Pointers and Functions",
+ "slug": "pointers-and-functions",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1628. Pointers and Functions\n\n70\n\nHard\n\nProblem Statement:\nDynamic Memory Management in Linked List Using Pointers and Functions\n\nYou're needed to produce a dynamic linked list of integers using pointers and functions in C. The task involves several operations similar as fitting new bumps, deleting bumps grounded on their values, and reversing the linked list. You must produce individual functions for insertion, omission, and reversal, all while using pointer manipulation. This simulates real- world scripts of managing dynamic data structures like linked lists in memory- constrained systems or databases.\n\nProblem Description\nThe problem involves enforcing a independently linked list with the following operations\n\nfit fit a knot at the end of the linked list.\ncancel cancel all bumps with a given value from the linked list.\nRear Rear the entire linked list.\nThe program should take the number of operations and also execute each operation on the linked list. After performing all the operations, the final state of the linked list should be published.\n\nInput Format\nThe first line contains an integer Q, which represents the number of operations to be performed.\nEach of the coming Q lines contains an operation\nThe operation\" INSERT X\" means to fit an integer X at the end of the linked list.\nThe operation\" cancel X\" means to cancel all bumps that contain the integer X.\nThe operation\" REVERSE\" means to reverse the linked list.\n\nOutput Format\nAfter performing all operations, publish the final state of the linked list. publish EMPTY if the linked list is empty.",
+ "input_spec": "The first line contains an integer Q, which represents the number of operations to be performed.\nEach of the coming Q lines contains an operation\nThe operation\" INSERT X\" means to fit an integer X at the end of the linked list.\nThe operation\" cancel X\" means to cancel all bumps that contain the integer X.\nThe operation\" REVERSE\" means to reverse the linked list.",
+ "output_spec": "After performing all operations, publish the final state of the linked list. publish EMPTY if the linked list is empty.",
+ "constraints": "1 \u2264 Q \u2264 1000( Number of operations).\n* 109 \u2264 X \u2264 109( Value of integer bumps).\n\nillustration",
+ "samples": [
+  {
+   "input": "5\nINSERT 1\nINSERT 2\nINSERT 3\ncancel 2\nREVERSE",
+   "output": "3 1"
+  }
+ ],
+ "raw": ""
+}

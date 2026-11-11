@@ -1,0 +1,17 @@
+{
+ "title": "1503. Minimum Coin Change",
+ "slug": "minimum-coin-change",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1503. Minimum Coin Change\n\n50\n\nMedium\n\nProblem Statement:\nYou are given an integer array coins representing different denominations of coins and an integer amount representing a total amount of money. Return the minimum number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. You may assume that you have an infinite number of each kind of coin.",
+ "input_spec": "- The first line contains an integer n, the number of coin denominations.\n- The second line contains n space-separated integers, the values of the coin denominations.\n- The third line contains an integer amount, the total amount to make.",
+ "output_spec": "- Output a single integer: the minimum number of coins needed to make up the amount, or -1 if it is not possible.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1 2 5\n11",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

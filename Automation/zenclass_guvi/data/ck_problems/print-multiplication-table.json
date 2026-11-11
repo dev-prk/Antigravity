@@ -1,0 +1,17 @@
+{
+ "title": "1728. Print Multiplication Table",
+ "slug": "print-multiplication-table",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1728. Print Multiplication Table\n\n40\n\nMedium  Topics\n\n#Print Multiplication Table\n\nProblem Statement:\nGiven an integer N, print its multiplication table up to 10.",
+ "input_spec": "A single integer N.",
+ "output_spec": "Print 10 multiples of N separated by space.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "5 10 15 20 25 30 35 40 45 50"
+  }
+ ],
+ "raw": ""
+}

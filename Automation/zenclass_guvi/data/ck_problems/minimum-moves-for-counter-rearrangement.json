@@ -1,0 +1,17 @@
+{
+ "title": "335. Minimum Moves for Counter Rearrangement",
+ "slug": "minimum-moves-for-counter-rearrangement",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n335. Minimum Moves for Counter Rearrangement\n\n90\n\nHard  Topics\n\nProblem Statement:\nThere is a line of 2N counters with no spaces between adjacent counters. The counters alternate between black and white: BWBW ... B W. The objective is to rearrange the counters so that all the white counters are before all the black ones with no gaps between the counters: W W ... WBB ... B. The counters are to be moved in pairs, On each move, a pair of adjacent counters can be moved, without changing their order, into a vacant location(either before everything or after everything). What is the minimum number of moves required to solve this problem?",
+ "input_spec": "The input consists of an integer N, where 3<=N<=1000.",
+ "output_spec": "The output is a single integer representing the minimum number of moves required to solve the problem.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "72. Cyclic Right Shift Array",
+ "slug": "cyclic-right-shift-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n72. Cyclic Right Shift Array\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven two numbers N,K followed by an array of N elements, print the array after doing right shift K times (in cyclic manner).",
+ "input_spec": "The input consists of two numbers N, K, followed by an array of N elements. Input Size: 1 <= N, K <= 100000.",
+ "output_spec": "The output is the array after performing a right cyclic shift K times.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 2\n7 2 3",
+   "output": "2 3 7"
+  }
+ ],
+ "raw": ""
+}

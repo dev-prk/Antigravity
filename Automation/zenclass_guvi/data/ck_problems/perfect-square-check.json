@@ -1,0 +1,17 @@
+{
+ "title": "820. Perfect Square Check",
+ "slug": "perfect-square-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n820. Perfect Square Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to check the given number is a perfect square or not",
+ "input_spec": "The input contains an integer",
+ "output_spec": "If its Perfect square print Yes otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "25",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

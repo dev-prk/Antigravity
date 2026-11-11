@@ -1,0 +1,17 @@
+{
+ "title": "891. Number Half Pyramid Pattern-3",
+ "slug": "number-half-pyramid-pattern-3",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n891. Number Half Pyramid Pattern-3\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a half pyramid pattern using numbers.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the number half pyramid pattern with the size R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "4321\n321\n21\n1"
+  }
+ ],
+ "raw": ""
+}

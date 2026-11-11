@@ -1,0 +1,17 @@
+{
+ "title": "1498. AVL Tree Insertion with Balancing",
+ "slug": "avl-tree-insertion-with-balancing",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1498. AVL Tree Insertion with Balancing\n\n50\n\nMedium\n\nProblem Statement:\nGiven an initially empty AVL (Adelson-Velsky and Landis) tree, implement the insertion operation. After each insertion, ensure the tree remains balanced according to AVL tree properties. An AVL tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one for all nodes.",
+ "input_spec": "- The first line contains an integer n, the number of elements to insert.\n- The second line contains n space-separated integers, representing the values to be inserted in the given order.",
+ "output_spec": "- Print the pre-order traversal of the AVL tree after all insertions.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 40 50",
+   "output": "20 10 40 30 50"
+  }
+ ],
+ "raw": ""
+}

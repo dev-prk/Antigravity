@@ -1,0 +1,17 @@
+{
+ "title": "433. Maximal Palindrome from Lists",
+ "slug": "maximal-palindrome-from-lists",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n433. Maximal Palindrome from Lists\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given two lists of N strings each .You have to find the maximal palindrome from the two lists\n\nThe maximal palindrome is constructed as follows\n\nTake a suffix of any string in the first list. Take a matching prefix for the reversed suffix picked from the first list in from the second list. Concatenate them and you have a palindrome.\n\nOut of all the possible palindromes find the maximal palindrome i.e the one with the maximum size.\n\nFor example :\n\nConsider the two lists as follows:\n\nList1: [ abcd , efgh , hhjsgh , kkjk]\n\nList2: [ bbng , dcnn , llolk , iiii ]\n\nThe answer is \u201ccddn\u201d constructed as follows:\n\nabcd -> pick cd as suffix\n\ndcnn-> pick dc as prefix\n\nConcatenating them we get the palindrome: cddc Which is maximal from all possible palindromes constructed by appending a suffix from the first list and a prefix from the second list\n\nIf there are multiple answers print the lexicographically smallest one (i.e the one that comes first when they are written in alphabetical order)",
+ "input_spec": "First line contains a single integer N ,M - no of strings in each list\nThe next N lines contain a single string each describing the contents of the first list\nThe next M lines contain a single string each describing the contents of the second list",
+ "output_spec": "The output must consist of a single line . Print the maximal palindrome possible or if no maximal palindrome is possible display \u201cNo maximal palindrome\u201d",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 1\nujv\ndsstrhmcpupd\nmsyrsriedme",
+   "output": "No maximal palindrome"
+  }
+ ],
+ "raw": ""
+}

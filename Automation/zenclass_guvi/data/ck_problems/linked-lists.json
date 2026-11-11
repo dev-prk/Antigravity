@@ -1,0 +1,21 @@
+{
+ "title": "1629. Linked Lists",
+ "slug": "linked-lists",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1629. Linked Lists\n\n70\n\nHard\n\nProblem Statement:  Distributed Data Management Using Linked Lists\nTitle: Merge and Sort K Linked Lists in a Distributed System\n\nProblem Description:\nIn a distributed system, data is partitioned into multiple servers. Each server holds a linked list of integers. The system periodically merges the data from these servers into a single, sorted list for centralized processing. You are tasked with simulating this process by merging K sorted linked lists into a single sorted linked list.\n\nYour task is to write a C program that takes K linked lists and merges them into one sorted list. The merging process must maintain the original order of elements in each individual list. The challenge lies in handling large amounts of data efficiently, ensuring the merged list is sorted in ascending order.\n\nInput:\nThe first line contains an integer K, the number of linked lists (1 \u2264 K \u2264 100).\nFor each of the next K lines:\nThe first integer N indicates the number of elements in the list (1 \u2264 N \u2264 10^4).\nThe next N integers represent the elements of the linked list in ascending order.\n\nOutput:\nPrint the elements of the merged and sorted linked list.",
+ "input_spec": "The first line contains an integer K, the number of linked lists (1 \u2264 K \u2264 100).\nFor each of the next K lines:\nThe first integer N indicates the number of elements in the list (1 \u2264 N \u2264 10^4).\nThe next N integers represent the elements of the linked list in ascending order.",
+ "output_spec": "Print the elements of the merged and sorted linked list.",
+ "constraints": "Each linked list is already sorted in ascending order.\nThe total number of elements across all lists will not exceed 10^5.\nEfficient merging is required to handle large datasets within time limits.\n\nExample",
+ "samples": [
+  {
+   "input": "The first line contains an integer K, the number of linked lists (1 \u2264 K \u2264 100).\nFor each of the next K lines:\nThe first integer N indicates the number of elements in the list (1 \u2264 N \u2264 10^4).\nThe next N integers represent the elements of the linked list in ascending order.",
+   "output": "Print the elements of the merged and sorted linked list."
+  },
+  {
+   "input": "3\n4 1 4 7 8\n3 2 5 9\n5 0 3 6 10 11",
+   "output": "0 1 2 3 4 5 6 7 8 9 10 11\n\nDetailed Explanation:\nTest Case 1:\n\nLinked List 1: 1 -> 4 -> 7 -> 8\nLinked List 2: 2 -> 5 -> 9\nLinked List 3: 0 -> 3 -> 6 -> 10 -> 11\nYou need to merge these three sorted linked lists into one sorted list. The final merged list should look like:\n0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11"
+  }
+ ],
+ "raw": ""
+}

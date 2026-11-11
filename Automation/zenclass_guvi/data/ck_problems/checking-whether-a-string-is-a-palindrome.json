@@ -1,0 +1,17 @@
+{
+ "title": "2134. Checking Whether a String Is a Palindrome",
+ "slug": "checking-whether-a-string-is-a-palindrome",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2134. Checking Whether a String Is a Palindrome\n\n60\n\nMedium\n\nProblem Statement\nRead a word and determine whether it reads the same forward and backward, using a character array and a loop.\n\nDescription\nRead a string word into a character array using scanf, and find its length using a loop. Use another loop to compare characters from the front and back of the string moving toward the middle, using a flag variable to record whether any mismatch is found. After the loop, use an if-else statement to print \"Palindrome\" or \"Not Palindrome\" based on the flag.",
+ "input_spec": "A single word with no spaces.",
+ "output_spec": "Print \"Palindrome\" if the word reads the same forward and backward, otherwise print \"Not Palindrome\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "madam",
+   "output": "Palindrome"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "2092. Converting a Decimal Number to Octal",
+ "slug": "converting-a-decimal-number-to-octal",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2092. Converting a Decimal Number to Octal\n\n65\n\nProblem Statement\nRead a decimal number between 0 and 511 and print its 3-digit octal equivalent, using % and / to extract each octal digit.\n\nDescription\nRead an integer num between 0 and 511. Extract its octal digits one at a time using the % operator with 8 (which gives the current least significant octal digit) and the / operator with 8 (which removes that digit), repeating this three times since the result always fits in 3 octal digits. Print the three digits together, most significant digit first, with no spaces between them.",
+ "input_spec": "A single line containing an integer num (0 <= num <= 511).",
+ "output_spec": "Print the 3-digit octal equivalent of num, as three digits with no spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "83",
+   "output": "123"
+  }
+ ],
+ "raw": ""
+}

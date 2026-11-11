@@ -1,0 +1,17 @@
+{
+ "title": "2124. Checking Whether a Number Is Prime",
+ "slug": "checking-whether-a-number-is-prime",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2124. Checking Whether a Number Is Prime\n\n90\n\nHard\n\nProblem Statement\nRead an integer and determine whether it is prime using a for loop combined with an if statement.\n\nDescription\nRead an integer num from input (num > 1). Use a for loop with a counter starting at 2 and running up to num - 1, checking on each iteration whether num is exactly divisible by the counter using the % operator. Use a flag variable to record whether any divisor was found. After the loop, use an if-else statement to print \"Prime\" if no divisor was found, or \"Not Prime\" otherwise.",
+ "input_spec": "(num > 1). Use a for loop with a counter starting at 2 and running up to num - 1, checking on each iteration whether num is exactly divisible by the counter using the % operator. Use a flag variable to record whether any divisor was found. After the loop, use an if-else statement to print \"Prime\" if no divisor was found, or \"Not Prime\" otherwise.\n\nInput Description\nA single integer num (num > 1).",
+ "output_spec": "Print \"Prime\" if num is a prime number, otherwise print \"Not Prime\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "13",
+   "output": "Prime"
+  }
+ ],
+ "raw": ""
+}

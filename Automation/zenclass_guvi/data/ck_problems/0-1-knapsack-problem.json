@@ -1,0 +1,17 @@
+{
+ "title": "1505. 0/1 Knapsack Problem",
+ "slug": "0-1-knapsack-problem",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1505. 0/1 Knapsack Problem\n\n50\n\nMedium\n\nProblem Statement:\nYou are given N items, each with a weight and a value. You have a knapsack with a maximum weight capacity W. Your task is to determine the maximum total value of items that can be put into the knapsack such that the total weight does not exceed W. You cannot break an item, either pick the complete item or don't pick it (0/1 property).",
+ "input_spec": "- The first line contains two integers N and W, the number of items and the maximum weight capacity of the knapsack.\n- The second line contains N integers, the values of the items.\n- The third line contains N integers, the weights of the items.",
+ "output_spec": "- Print a single integer, the maximum value that can be put in the knapsack.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 8\n10 40 50 70\n1 3 4 5",
+   "output": "110"
+  }
+ ],
+ "raw": ""
+}

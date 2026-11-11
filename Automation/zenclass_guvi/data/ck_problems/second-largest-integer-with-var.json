@@ -1,0 +1,17 @@
+{
+ "title": "1137. Second Largest Integer with var",
+ "slug": "second-largest-integer-with-var",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1137. Second Largest Integer with var\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program that uses var to store a list of user-input integers, and then finds the second largest number in the list. The program should use var to handle all variables.",
+ "input_spec": "integers, and then finds the second largest number in the list. The program should use var to handle all variables.\n\nInput Description:\nAn integer n denoting the number of elements in the list.\nn space-separated integers representing the list elements.",
+ "output_spec": "A single integer which is the second largest number in the list.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

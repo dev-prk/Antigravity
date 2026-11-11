@@ -1,0 +1,17 @@
+{
+ "title": "1900. Cloud Resource Allocation Manager",
+ "slug": "cloud-resource-allocation-manager",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1900. Cloud Resource Allocation Manager\n\n60\n\nMedium  Topics\n\nCloud Resource Allocation Manager\n\nProblem Statement\n\nA cloud provider manages N servers.\nEach server initially has 1 unit of free CPU resource.\n\nThe system must efficiently process up to 10^5 operations.\n\nOperations:\n\n1. ALLOCATE L R\n\u2192 Allocate (reduce by 1) CPU resources from server L to R.\n\n2. DEALLOCATE L R\n\u2192 Free (increase by 1) CPU resources from server L to R.\n\n3. QUERY L R\n\u2192 Return total free CPU resources in range L to R.",
+ "input_spec": "N Q\nQ lines of operations",
+ "output_spec": "For every QUERY operation, print result.",
+ "constraints": "1 \u2264 N \u2264 10^5\n\n1 \u2264 Operations \u2264 10^5\n\nUse efficient data structure.",
+ "samples": [
+  {
+   "input": "5 5\nQUERY 1 5\nALLOCATE 1 3\nQUERY 1 5\nDEALLOCATE 2 3\nQUERY 1 5",
+   "output": "5\n2\n4"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "183. Vowel Check in Strings",
+ "slug": "vowel-check-in-strings",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n183. Vowel Check in Strings\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number N and an array of N strings,Print yes, if all strings have atleast one vowel in them otherwise print no.",
+ "input_spec": "The input consists of an integer N (where N <= 1000), followed by N strings.",
+ "output_spec": "The output is \"yes\" if all N strings contain at least one vowel, and \"no\" otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\ncode\noverload\nvishal\nsundar\nanish",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1816. Access Specifier Conflict Resolution with Friend Class",
+ "slug": "access-specifier-conflict-resolution-with-friend-class",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1816. Access Specifier Conflict Resolution with Friend Class\n\n40\n\nMedium\n\nAccess Specifier Conflict Resolution with Friend Class\n\nProblem Statement:\nResolve access restrictions using friend class in inherited hierarchy.\n\nDescription:\nBase Class: Vault\n1. private password\n2. protected vaultID\n3. public open()\n\nDerived Class: SecureVault (protected inheritance)\n\nFriend Class: Auditor\n\nRequirements:\n1. Auditor must access private password.\n2. Demonstrate how protected inheritance affects open().\n3. Prevent direct access from main().\n4. Show controlled auditing process.\n5. Print audit result.\n\nInput Format:\nVault ID\nPassword\n\nOutput Format:\nAudit Successful message.",
+ "input_spec": "Vault ID\nPassword",
+ "output_spec": "Audit Successful message.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000\n5555\n5555",
+   "output": "Vault 1000 Audit Successful"
+  }
+ ],
+ "raw": ""
+}

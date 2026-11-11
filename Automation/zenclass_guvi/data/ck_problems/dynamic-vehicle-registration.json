@@ -1,0 +1,17 @@
+{
+ "title": "1166. Dynamic Vehicle Registration",
+ "slug": "dynamic-vehicle-registration",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1166. Dynamic Vehicle Registration\n\n50\n\nMedium\n\nProblem Statement:\nYou need to design a dynamic Vehicle Registration System where each vehicle can be of different types (Car, Motorcycle, or Truck) and should be able to report its registration details. Implement a base class Vehicle and three subclasses Car, Motorcycle, and Truck.\n\nCreate a base class Vehicle with:\n\nA constructor to initialize the vehicle's registration number and owner\u2019s name.\nA method displayDetails() to display the vehicle's details.\nExtend this base class with three subclasses:\n\nCar with an additional attribute for the number of doors.\nMotorcycle with an additional attribute for engine capacity.\nTruck with an additional attribute for cargo capacity.",
+ "input_spec": "First line: Integer N (Number of operations to perform)\nNext N lines: Each line will describe an operation in the format REGISTER <vehicle_type> <registration_number> <owner_name> <specific_attribute>.",
+ "output_spec": "For each operation, output the details of the registered vehicle.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nREGISTER Car ABC123 John 4\nREGISTER Motorcycle XYZ789 Alice 600cc\nREGISTER Truck LMN456 Bob 10000kg",
+   "output": "Vehicle: Car\nRegistration Number: ABC123\nOwner: John\nNumber of Doors: 4\nVehicle: Motorcycle\nRegistration Number: XYZ789\nOwner: Alice\nEngine Capacity: 600cc\nVehicle: Truck\nRegistration Number: LMN456\nOwner: Bob\nCargo Capacity: 10000kg"
+  }
+ ],
+ "raw": ""
+}

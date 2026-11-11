@@ -1,0 +1,17 @@
+{
+ "title": "1224. Character Frequency Counter",
+ "slug": "character-frequency-counter",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1224. Character Frequency Counter\n\n80\n\nHard\n\nProblem Statement:\nYou are required to write a program that accepts a paragraph from the user and dynamically allocates memory to store it. The program should then count the frequency of each character (ignoring case) and print the character frequency distribution in descending order of frequency. Ignore spaces and punctuation in the count.\n\nExplanation:\nYour task is to handle a paragraph input dynamically using heap memory. The input paragraph may contain multiple sentences, spaces, and punctuation marks. You need to count the frequency of each character (ignoring case and excluding spaces/punctuation) and then print the frequencies in descending order. The characters with the same frequency should be printed in alphabetical order.",
+ "input_spec": "dynamically using heap memory. The input paragraph may contain multiple sentences, spaces, and punctuation marks. You need to count the frequency of each character (ignoring case and excluding spaces/punctuation) and then print the frequencies in descending order. The characters with the same frequency should be printed in alphabetical order.\n\nInput Description:\nA single line of text containing a paragraph.",
+ "output_spec": "A list of characters with their frequencies, sorted by frequency in descending order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "C programming is fun!",
+   "output": "g: 2\ni: 2\nm: 2\nn: 2\nr: 2\na: 1\nc: 1\nf: 1\no: 1\np: 1\ns: 1\nu: 1"
+  }
+ ],
+ "raw": ""
+}

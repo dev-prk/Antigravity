@@ -1,0 +1,17 @@
+{
+ "title": "1553. Distinct Substrings using Z Algorithm",
+ "slug": "distinct-substrings-using-z-algorithm",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1553. Distinct Substrings using Z Algorithm\n\n90\n\nHard\n\nProblem Statement:\nGiven a string S, count the number of distinct substrings present in S. A substring is a contiguous sequence of characters within the string. You are required to use the Z Algorithm to efficiently solve this problem.",
+ "input_spec": "- The first line contains a single integer T, the number of test cases.\n- Each of the next T lines contains a string S consisting of lowercase English letters.",
+ "output_spec": "For each test case, output a single integer \u2014 the number of distinct substrings in the given string S.",
+ "constraints": "- 1 \u2264 T \u2264 10\n- 1 \u2264 |S| \u2264 10^5\n- The sum of |S| over all test cases does not exceed 10^6",
+ "samples": [
+  {
+   "input": "2\nababa\naaaa",
+   "output": "9\n4"
+  }
+ ],
+ "raw": ""
+}

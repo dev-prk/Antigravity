@@ -1,0 +1,17 @@
+{
+ "title": "1583. Shortest Unique Prefixes",
+ "slug": "shortest-unique-prefixes",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1583. Shortest Unique Prefixes\n\n70\n\nHard\n\nProblem Statement:\nGiven a list of words, find the shortest unique prefix for each word. The shortest unique prefix of a word is the smallest prefix which is not shared by any other word in the list. Return the list of shortest unique prefixes in the same order as the input words.",
+ "input_spec": "words.\n\nInput Description:\n- The first line contains an integer N, the number of words.\n- The next N lines each contain a word consisting of lowercase English letters.",
+ "output_spec": "- Output N lines, each containing the shortest unique prefix for the corresponding word in the input.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\ndog\ncat\ncar\napple",
+   "output": "d\ncat\ncar\na"
+  }
+ ],
+ "raw": ""
+}

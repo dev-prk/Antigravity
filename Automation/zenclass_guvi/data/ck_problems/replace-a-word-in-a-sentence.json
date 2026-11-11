@@ -1,0 +1,21 @@
+{
+ "title": "2022. Replace a Word in a Sentence",
+ "slug": "replace-a-word-in-a-sentence",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2022. Replace a Word in a Sentence\n\n80\n\nHard\n\nProblem Statement\n\nGiven a sentence, an old word, and a new word, replace all occurrences of the old word with the new word.\n\nInput\n\nSentence\nOld Word\nNew Word\n\nOutput\n\nPrint the modified sentence.",
+ "input_spec": "Sentence\nOld Word\nNew Word",
+ "output_spec": "Print the modified sentence.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Sentence\nOld Word\nNew Word",
+   "output": "Print the modified sentence."
+  },
+  {
+   "input": "Java is easy and Java is powerful\nJava\nPython",
+   "output": "Python is easy and Python is powerful"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "368. Fair Restaurant Bill Split",
+ "slug": "fair-restaurant-bill-split",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n368. Fair Restaurant Bill Split\n\n100\n\nHard  Topics  Company\n\nProblem Statement:\nAnna and Brian order n items at a restaurant, but Anna declines to eat any of the kth item due to an allergy. When the check comes, they decide to split the cost of all the items they shared; however, Brian may have forgotten that they didn't split the kth item and accidentally charged Anna for it. You are given n,k the cost of each of the n items, and the total amount of money that Brian charged Anna for her portion of the bill. If the bill is fairly split, print 'Bon Appetit'; otherwise, print the amount of money that Brian must refund to Anna.",
+ "input_spec": "The first line contains two space-separated integers denoting the respective values of n (the number of items ordered) and k (the 0-based index of the item that Anna did not eat). The second line contains n space-separated integers where each integer i denotes the cost c[i], of item i. The third line contains an integer ,b(charged), denoting the amount of money that Brian charged Anna for her share of the bill. Input Size : N<=1000000",
+ "output_spec": "If Brian did not overcharge Anna, print Bon Appetit on a new line; otherwise, print the difference (i.e.b(charged) - b(actual), ) that Brian must refund to Anna (it is guaranteed that this will always be an integer).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 1\n3 10 2 9\n12",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

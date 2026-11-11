@@ -1,0 +1,17 @@
+{
+ "title": "456. Tower of Hanoi Moves",
+ "slug": "tower-of-hanoi-moves",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n456. Tower of Hanoi Moves\n\n40\n\nMedium  Topics\n\nProblem Statement:\nThe Tower of Hanoi (also called the Tower of Brahma) is a mathematical game or puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.\n\nThe objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:\n\n-Only one disk can be moved at a time.\n\n-Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.\n\n-No larger disk may be placed on top of a smaller disk.\n\nYou are given the number of disks N. (Here 1 <= N <= 20)\n\nFind the minimum number of moves required to solve the puzzle.",
+ "input_spec": "The only line of input contains an integer N",
+ "output_spec": "Print a single line, the minimum number of moves.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

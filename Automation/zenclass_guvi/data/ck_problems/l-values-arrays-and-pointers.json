@@ -1,0 +1,17 @@
+{
+ "title": "1232. L-values, Arrays, and Pointers",
+ "slug": "l-values-arrays-and-pointers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1232. L-values, Arrays, and Pointers\n\n80\n\nHard  Topics\n\nProblem Statement:\nWrite a C program to illustrate the behavior of L-values with arrays and pointers. The program should:\n\nDefine an array of integers and use a pointer to traverse and modify it.\nUse a function to modify the array by passing the array name (which is a pointer) and demonstrate how array elements can be modified using pointer arithmetic.\nDescription:\nThis question examines how arrays (which are L-values) and pointers interact. You will demonstrate how changes made through a pointer affect the original array and how array names can be used as pointers.",
+ "input_spec": "An integer n for the size of the array, followed by n integers.",
+ "output_spec": "Print the array elements before and after modification.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 1 2 3 4",
+   "output": "Array before modification:\n1 2 3 4\n\nArray after modification:\n5 6 7 8"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "524. Rotate Square Matrix 90 Degrees",
+ "slug": "rotate-square-matrix-90-degrees",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n524. Rotate Square Matrix 90 Degrees\n\n60\n\nMedium  Topics\n\nProblem Statement:\nQuerty is a decryption program which uses a key to decrypt security codes for ethical hacking. Querty is on the process of hacking into the server of a terrorist organisation. The decryption key is a square matrix consisting of positive integers. Querty has almost decrypted the security key and is just one step short of complete decryption. It has found the right values of the matrix elements but it needs to rotate the matrix by 90 degrees clockwise for complete decryption. Help querty to do the same.",
+ "input_spec": "First line contains dimensions of the matrix N*N\nNext line contains the elements of the matrix.",
+ "output_spec": "Matrix rotated by 90 degrees in clockwise direction",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n1 2 3 4\n4 5 6 7\n6 8 4 3\n8 1 4 7",
+   "output": "8 6 4 1\n1 8 5 2\n4 4 6 3\n7 3 7 4"
+  }
+ ],
+ "raw": ""
+}

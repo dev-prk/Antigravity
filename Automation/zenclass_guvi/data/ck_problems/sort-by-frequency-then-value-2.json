@@ -1,0 +1,17 @@
+{
+ "title": "504. Sort by Frequency then Value-2",
+ "slug": "sort-by-frequency-then-value-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n504. Sort by Frequency then Value-2\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nGiven an array of N elements, sort the elements of the array based on frequency. If two numbers have the same frequency,then the smaller number comes first (eg) if the elements are 1,1,3,1,2,3,4 then the output is 2,4,3,3,1,1,1",
+ "input_spec": "Size of the array followed by the number of elements",
+ "output_spec": "is 2,4,3,3,1,1,1\n\nInput Description:\nSize of the array followed by the number of elements\n\nOutput Description:\nArray elements sorted based on increasing frequency",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n8 8 1 1 3",
+   "output": "3 1 1 8 8"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "307. Count of Numbers with Prime Digit Sum",
+ "slug": "count-of-numbers-with-prime-digit-sum",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n307. Count of Numbers with Prime Digit Sum\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven two integers L,R. How many numbers exist in [L,R] with sum of digits as a prime number",
+ "input_spec": "The input consists of two integers L and R. L is inclusive and R is exclusive in the range [L,R]. Input size: 1 <= L, R <= 1000000.",
+ "output_spec": "The count of numbers in the given range [L,R] whose sum of digits is a prime number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 10",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

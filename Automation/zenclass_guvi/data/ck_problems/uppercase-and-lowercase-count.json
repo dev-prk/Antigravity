@@ -1,0 +1,17 @@
+{
+ "title": "808. Uppercase and Lowercase Count",
+ "slug": "uppercase-and-lowercase-count",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n808. Uppercase and Lowercase Count\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Calculate the Number of Upper Case Letters and Lower Case Letters in a String",
+ "input_spec": "The input contains a string",
+ "output_spec": "Print the no of uppercase and lowercase letters",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Hello",
+   "output": "lowercase:4\nuppercase:1"
+  }
+ ],
+ "raw": ""
+}

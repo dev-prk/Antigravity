@@ -1,0 +1,17 @@
+{
+ "title": "697. Topological Sort of Words",
+ "slug": "topological-sort-of-words",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n697. Topological Sort of Words\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given space separated words. In the ascending order according to special dictionary. Your task is to print the string denoting the order of characters in dictionary.",
+ "input_spec": "You are given a string \u2018s\u2019.",
+ "output_spec": "Print the string denoting the order of characters in dictionary",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "baa abcd abca cab cad",
+   "output": "bdac"
+  }
+ ],
+ "raw": ""
+}

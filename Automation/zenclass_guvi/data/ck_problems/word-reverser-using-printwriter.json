@@ -1,0 +1,17 @@
+{
+ "title": "2047. Word Reverser Using PrintWriter",
+ "slug": "word-reverser-using-printwriter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2047. Word Reverser Using PrintWriter\n\n40\n\nMedium\n\nProblem Statement\nRead a line of text and print it reversed using a PrintWriter stream.\nDescription\nUse BufferedReader to read a line of text, reverse its characters, and use a PrintWriter, wrapping System.out, to print the reversed string.",
+ "input_spec": "A single line containing a string, str (no spaces).",
+ "output_spec": "Print the reverse of str.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello",
+   "output": "olleh"
+  }
+ ],
+ "raw": ""
+}

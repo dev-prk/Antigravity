@@ -1,0 +1,17 @@
+{
+ "title": "452. Word List Sentence Checker",
+ "slug": "word-list-sentence-checker",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n452. Word List Sentence Checker\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou wake up one morning and the time is 8:10!! . You reach school late and the teacher decides to let you only on one condition. You will be given a list of words of N words present in a subject textbook. The teacher will then give you Q sentences. Each sentence consists of multiple space separated words ( does not contain punctuations , only words and spaces ). You must tell the teacher if all the words present in the sentence(say 'All words in list' else say 'Not all words in list')are from the initial list of words given to you( . If you manage to answer at least one question correctly you will be let in . However you don't want to attend class at this point and decide to answer ALL questions wrong. Write a program to answer ALL questions wrong efficiently.",
+ "input_spec": "The first line contains a single integer N denoting the number of words present in the book. The next N lines contain a single string each . The next line contains a single integer Q denoting the number of questions the teachers will ask you. The next Q lines are of the following format: a single integer denoting the number of words in that sentence followed by that number of words.",
+ "output_spec": "Output must consist of Q lines . If the at least one word in that sentence is not in the list print \"All words in list\" but if all the words are in the list print \"Not all words in list\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\nabcd\nefgh\n2\n2 abcd efgh\n2 kkij abcd",
+   "output": "Not all words in list\nAll words in list"
+  }
+ ],
+ "raw": ""
+}

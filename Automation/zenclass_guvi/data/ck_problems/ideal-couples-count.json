@@ -1,0 +1,17 @@
+{
+ "title": "735. Ideal Couples Count",
+ "slug": "ideal-couples-count",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n735. Ideal Couples Count\n\n90\n\nHard  Topics\n\nProblem Statement:\nA couple is said to be an ideal couple if the characteristic trait of on math the other. This is not limited only to humans but also numbers. There are certain numbers who match each other. Two numbers are said to be an ideal couple, if sum of the factors of one number (excluding the number itself) is equal to the other number and the vice versa is also true. You will be given a two integer inputs, L and R. Your task is to write a program to print the count of such pairs in the given range of L to R (including the lower and upper limit).",
+ "input_spec": "s, L and R. Your task is to write a program to print the count of such pairs in the given range of L to R (including the lower and upper limit).\n\nInput Description:\nTwo integer values L and R\n1",
+ "output_spec": "One single integer output",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "250 300",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "319. Sum of Primes Ending in 3",
+ "slug": "sum-of-primes-ending-in-3",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n319. Sum of Primes Ending in 3\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N, find the sum of prime numbers that end with 3 from 2 to N.",
+ "input_spec": "The input consists of a single integer N, where N <= 100000.",
+ "output_spec": "The output is the sum of prime numbers that end with 3, from 2 to N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

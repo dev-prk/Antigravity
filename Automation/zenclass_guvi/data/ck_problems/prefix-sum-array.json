@@ -1,0 +1,17 @@
+{
+ "title": "137. Prefix Sum Array",
+ "slug": "prefix-sum-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n137. Prefix Sum Array\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N elements, print the prefix sum array.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": "The output is the prefix sum array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n2 4 4 2",
+   "output": "2 6 10 12"
+  }
+ ],
+ "raw": ""
+}

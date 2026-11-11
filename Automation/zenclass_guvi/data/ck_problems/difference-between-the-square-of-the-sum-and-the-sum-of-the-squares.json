@@ -1,0 +1,17 @@
+{
+ "title": "2093. Difference Between the Square of the Sum and the Sum of the Squares",
+ "slug": "difference-between-the-square-of-the-sum-and-the-sum-of-the-squares",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2093. Difference Between the Square of the Sum and the Sum of the Squares\n\n70\n\nHard\n\nProblem Statement\nRead three integers and compute the difference between the square of their sum and the sum of their squares.\nDescription\nRead three integers a, b and c. Compute the sum of their squares (a*a + b*b + c*c). Separately compute the square of their sum ((a+b+c)*(a+b+c)). Print the sum of squares, the square of the sum, and finally the difference between the square of the sum and the sum of the squares.",
+ "input_spec": "Three integers a, b and c separated by spaces.",
+ "output_spec": "Print the sum of squares on the first line, the square of the sum on the second line, and their difference on the third line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2 3",
+   "output": "14\n36\n22"
+  }
+ ],
+ "raw": ""
+}

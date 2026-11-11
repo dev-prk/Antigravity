@@ -1,0 +1,17 @@
+{
+ "title": "1156. Integer Range and Sign Analysis",
+ "slug": "integer-range-and-sign-analysis",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1156. Integer Range and Sign Analysis\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program that reads a list of integers and determines the range and sign of the integer values. Use the Integer wrapper class to perform the following tasks:\n* Find the minimum and maximum integer values from the list.\n* Check if each integer is positive, negative, or zero.\n* Print the results in a formatted output.\n\nThe program should use Integer.MIN_VALUE and Integer.MAX_VALUE to determine the range and manually check the sign of each integer.",
+ "input_spec": "The first line contains an integer N, the number of integers.\nThe second line contains N space-separated integers.",
+ "output_spec": ".\n\nThe program should use Integer.MIN_VALUE and Integer.MAX_VALUE to determine the range and manually check the sign of each integer.\n\nInput Description:\nThe first line contains an integer N, the number of integers.\nThe second line contains N space-separated integers.\n\nOutput Description:\nPrint the minimum and maximum integer values.\nFor each integer, print its sign.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n-10 0 15 23",
+   "output": "Min: -10\nMax: 23\n-10: Negative\n0: Zero\n15: Positive\n23: Positive"
+  }
+ ],
+ "raw": ""
+}

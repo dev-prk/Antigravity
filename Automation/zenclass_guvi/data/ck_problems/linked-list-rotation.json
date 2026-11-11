@@ -1,0 +1,17 @@
+{
+ "title": "829. Linked List Rotation",
+ "slug": "linked-list-rotation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n829. Linked List Rotation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a linked list,rotate it for a given number of times and print the values of linked list after rotation.",
+ "input_spec": "First line represents the size of the linked list.\nNext line represents the sequence of numbers as the node value of the linked list(separated by space).\nThird line contains the number of rotations to be done.",
+ "output_spec": "Print the resultant rotated linked list value(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n1 2 3 4 5 6 7 8\n4",
+   "output": "5 6 7 8 1 2 3 4"
+  }
+ ],
+ "raw": ""
+}

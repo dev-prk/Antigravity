@@ -1,0 +1,17 @@
+{
+ "title": "481. Josephus Problem",
+ "slug": "josephus-problem",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n481. Josephus Problem\n\n90\n\nHard  Topics\n\nProblem Statement:\nind the man who will survive. There is a scenario that only one person will survive. 'N' person will stand in a circle. Initially first person will be holding the gun. You are given with number 'k'. The person who is holding the gun has to count to 'k' starting from him and shoot the person at which k ends and then pass the gun to next alive person. Your task is to find the place where you will survive.",
+ "input_spec": "Two numbers \u2013 'N' and 'k'",
+ "output_spec": "Find the place where you will be safe (indexing at 1)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n1",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

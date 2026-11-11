@@ -1,0 +1,21 @@
+{
+ "title": "1623. Multifunction Aggregator",
+ "slug": "multifunction-aggregator",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1623. Multifunction Aggregator\n\n70\n\nHard\n\nProblem Statement:  Multifunction Aggregator\nYou are building a program that processes multiple operations on a variable number of integers passed as arguments. The operations include finding the sum, the product, and the maximum of a list of integers. The number of integers is variable and can differ each time the function is called. You are required to implement a solution using variable argument lists (varargs) in C.\n\nInput:\nThe first input is a string that defines the operation. It will be of three values:\n\"sum\": Calculate the sum of the integers.\n\"product\": Calculate the product of the integers.\n\"max\": Find the maximum value among the integers.\nThe second input is an integer n (number of integers to be processed).\nThe third input is a list of n integers.\n\nOutput:\nPrint a single integer representing the result of the specified operation.\n\nProblem Statement:\nGiven an operation (\"sum\", \"product\", or \"max\") and a variable number of integers, your task is to implement a function that performs the specified operation using C\u2019s variable argument capabilities (stdarg.h).\n\nExample:\nInput:\nsum\n5\n1 2 3 4 5\nOutput:\n15\n\nExplanation:\nThe operation is \"sum\", and the integers are 1, 2, 3, 4, 5. The sum of these integers is 15.",
+ "input_spec": "The first input is a string that defines the operation. It will be of three values:\n\"sum\": Calculate the sum of the integers.\n\"product\": Calculate the product of the integers.\n\"max\": Find the maximum value among the integers.\nThe second input is an integer n (number of integers to be processed).\nThe third input is a list of n integers.",
+ "output_spec": "Print a single integer representing the result of the specified operation.\n\nProblem Statement:\nGiven an operation (\"sum\", \"product\", or \"max\") and a variable number of integers, your task is to implement a function that performs the specified operation using C\u2019s variable argument capabilities (stdarg.h).\n\nExample:\nInput:\nsum\n5\n1 2 3 4 5\nOutput:\n15",
+ "constraints": "1 <= n <= 100\n-10^6 <= value of each integer <= 10^6\nThe",
+ "samples": [
+  {
+   "input": "The first input is a string that defines the operation. It will be of three values:\n\"sum\": Calculate the sum of the integers.\n\"product\": Calculate the product of the integers.\n\"max\": Find the maximum value among the integers.\nThe second input is an integer n (number of integers to be processed).\nThe third input is a list of n integers.",
+   "output": "Print a single integer representing the result of the specified operation.\n\nProblem Statement:\nGiven an operation (\"sum\", \"product\", or \"max\") and a variable number of integers, your task is to implement a function that performs the specified operation using C\u2019s variable argument capabilities (stdarg.h).\n\nExample:"
+  },
+  {
+   "input": "sum\n5\n1 2 3 4 5",
+   "output": "15"
+  }
+ ],
+ "raw": ""
+}

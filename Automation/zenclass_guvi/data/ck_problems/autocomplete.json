@@ -1,0 +1,17 @@
+{
+ "title": "439. Autocomplete",
+ "slug": "autocomplete",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n439. Autocomplete\n\n80\n\nHard  Topics\n\nProblem Statement:\nJack is designing an app for his teacher . The app uses a text box and he needs to implement an auto complete feature for his text box. He is unfortunately weak at algorithms and requires your help to do so. You will be given a dictionary consisting of the possible words the user will type into the text box. You will also be given a word consisting of an incomplete string that the user has entered . Your task will be to output the completed string for that incomplete string\n\n1<=Number of strings<=1000",
+ "input_spec": "The first line contains a single integer N denoting the number of strings in the dictionary\nThe next N line contains a single string per line denoting the words in the dictionary\nThe next line contains a single integer Q denoting the number of user strings you will be asked to auto complete.\nThe next Q line contains a single string per line, each of which is a string you will be required to complete",
+ "output_spec": "the completed string for that incomplete string\n\n1<=Number of strings<=1000\n\nInput Description:\nThe first line contains a single integer N denoting the number of strings in the dictionary\nThe next N line contains a single string per line denoting the words in the dictionary\nThe next line contains a single integer Q denoting the number of user strings you will be asked to auto complete.\nThe next Q line contains a single string per line, each of which is a string you will be required to complete\n\nOutput Description:\nYour output must consist of Q lines. On each line output the completed string for that query\nIf only a single autocomplete exists output the completed string\nIf multiple autocompleted strings exists output the lexicographically first string followed by the character \u201c+\u201d (without quotes)\nIf no autocomplete exists print the string as it is",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nabcd\nabgh\nkfdh\npqpq\n3\nab\nabc\nyt",
+   "output": "ab\nabc\nyt"
+  }
+ ],
+ "raw": ""
+}

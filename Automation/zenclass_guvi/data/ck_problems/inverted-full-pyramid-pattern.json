@@ -1,0 +1,17 @@
+{
+ "title": "869. Inverted Full Pyramid Pattern",
+ "slug": "inverted-full-pyramid-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n869. Inverted Full Pyramid Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate an inverted full pyramid pattern using stars.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the star inverted full pyramid with the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "* * * * *\n* * * *\n* * *\n* *\n*"
+  }
+ ],
+ "raw": ""
+}

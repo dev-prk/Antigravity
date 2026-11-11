@@ -1,0 +1,17 @@
+{
+ "title": "172. Permutation Check of 1 to N",
+ "slug": "permutation-check-of-1-to-n",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n172. Permutation Check of 1 to N\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N integers, check if its a permutation of(1-N).",
+ "input_spec": "The input consists of an integer N, followed by N integers representing the array. N is constrained such that N <= 100000.",
+ "output_spec": "The output should be 'yes' if the given array is a permutation of integers from 1 to N, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

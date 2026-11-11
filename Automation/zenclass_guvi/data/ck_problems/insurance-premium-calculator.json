@@ -1,0 +1,17 @@
+{
+ "title": "1653. Insurance Premium Calculator",
+ "slug": "insurance-premium-calculator",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1653. Insurance Premium Calculator\n\n70\n\nHard\n\nInsurance Premium Calculator\n\nProblem Statement:\nWrite a program to calculate the insurance premium for different types of insurance.\nThe program should use an abstract class Insurance with an abstract method calculatePremium(). Subclasses LifeInsurance, HealthInsurance, and CarInsurance override this method.\nThe base premium is entered by the user, and additional percentage is added depending on the insurance type:\n\nLife Insurance \u2192 +10%\n\nHealth Insurance \u2192 +20%\n\nCar Insurance \u2192 +30%\n\nDescription:\nThe program should accept insurance type and base premium from the user.\nIt should calculate the final premium based on the given rules.\nThe output should display the insurance type and final premium.\n\nInput Format:\n\nA string (insurance type: life/health/car)\n\nAn integer (base premium)\n\nOutput Format:\n\nInsurance type\n\nFinal premium",
+ "input_spec": "A string (insurance type: life/health/car)\n\nAn integer (base premium)",
+ "output_spec": "should display the insurance type and final premium.\n\nInput Format:\n\nA string (insurance type: life/health/car)\n\nAn integer (base premium)\n\nOutput Format:\n\nInsurance type\n\nFinal premium",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "car\n5000",
+   "output": "Insurance Type: Car Insurance\nPremium: 6500.0"
+  }
+ ],
+ "raw": ""
+}

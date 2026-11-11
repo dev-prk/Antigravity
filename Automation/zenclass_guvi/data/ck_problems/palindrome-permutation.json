@@ -1,0 +1,17 @@
+{
+ "title": "387. Palindrome Permutation",
+ "slug": "palindrome-permutation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n387. Palindrome Permutation\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a string, find if you can form a palindrome by permuting the characters of the string. If it is possible, print the palindromic string obtained through permutation. If it is not, print the string \"no\". If there multiple possible outputs, print the lexicographically smallest string.",
+ "input_spec": "The first and only line contains a string S",
+ "output_spec": "s, print the lexicographically smallest string.\n\nInput Description:\nThe first and only line contains a string S\n\nOutput Description:\nPrint a line containing the palindromic string or \"no\" (without quotes)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "caac",
+   "output": "acca"
+  }
+ ],
+ "raw": ""
+}

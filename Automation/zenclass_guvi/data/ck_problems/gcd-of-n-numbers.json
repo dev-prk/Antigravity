@@ -1,0 +1,17 @@
+{
+ "title": "609. GCD of N Numbers",
+ "slug": "gcd-of-n-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n609. GCD of N Numbers\n\n40\n\nMedium  Topics\n\nProblem Statement:\nharish learnt about gcd and and want to apply the concept to find the gcd of n numbers.But in between he got stuck and now he is asking for some help your task is to print the gcd of n numbers and print -1 if there is no gcd possible",
+ "input_spec": "You are given an array size \u2018n\u2019.Next line contains n space separated numbers.",
+ "output_spec": "Your task is to print the gcd of number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n2 4 8 16",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "499. Bubble Sort and Marks Deduction",
+ "slug": "bubble-sort-and-marks-deduction",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n499. Bubble Sort and Marks Deduction\n\n90\n\nHard  Topics\n\nProblem Statement:\nA school was conducting the annual exam for students of class 6. A teacher invigilates the Computer Science exam and had strictly ordered all students to sit according to their roll numbers. However when she started checking the papers, she found out that some of the papers were randomly ordered, even though she had collected them bench-wise.The teacher got very angry and wanted to teach the students a lesson. She decides to sort the papers by Bubble Sort, count the number of swaps required for each and every student and deduct as many marks of a student as were the number of swaps required for that student.",
+ "input_spec": "Number of students N, followed by their roll numbers(in the order in which they sat). The second line contains the individual marks of the students.",
+ "output_spec": "Final marks of the students after deduction.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 5 4\n98 100 67 88 76",
+   "output": "98 100 67 87 75"
+  }
+ ],
+ "raw": ""
+}

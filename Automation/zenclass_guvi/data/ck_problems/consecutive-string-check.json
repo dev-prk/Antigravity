@@ -1,0 +1,17 @@
+{
+ "title": "168. Consecutive String Check",
+ "slug": "consecutive-string-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n168. Consecutive String Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N strings, find if two consecutive words are same.",
+ "input_spec": "The input consists of a number N, representing the size of the array, followed by N strings. N is an integer such that N <= 1000.",
+ "output_spec": "The output is 'yes' if two consecutive words in the array are the same, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\ncode\noverload\nvishal\nsundar\nanish",
+   "output": "no"
+  }
+ ],
+ "raw": ""
+}

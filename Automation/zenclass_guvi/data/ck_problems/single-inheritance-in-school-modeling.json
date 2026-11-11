@@ -1,0 +1,17 @@
+{
+ "title": "1078. Single Inheritance in School Modeling",
+ "slug": "single-inheritance-in-school-modeling",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1078. Single Inheritance in School Modeling\n\n50\n\nMedium\n\nProblem Statement:\nDesign a Python program that uses single level inheritance to model a school. The school has two types of people: students and teachers. Both students and teachers have a name and an age. However, a student also has a department, while a teacher has a subject they teach.\n\nCreate classes to represent both a student and a teacher, and use inheritance to avoid code duplication. Write a method in each class to print the details of the student or teacher.",
+ "input_spec": "Ravi Kumar, 20, Computer Science\nDr. Srinivasan, 45, Data Structures and Algorithms\n\nSample",
+ "output_spec": "Student: Ravi Kumar, Age: 20, Department: Computer Science\nTeacher: Dr. Srinivasan, Age: 45, Subject: Data Structures and Algorithms",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Ravi Kumar, 20, Computer Science\nDr. Srinivasan, 45, Data Structures and Algorithms",
+   "output": "Student: Ravi Kumar, Age: 20, Department: Computer Science\nTeacher: Dr. Srinivasan, Age: 45, Subject: Data Structures and Algorithms"
+  }
+ ],
+ "raw": ""
+}

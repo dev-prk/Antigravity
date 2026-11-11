@@ -1,0 +1,17 @@
+{
+ "title": "2088. Swapping Two Numbers Without Using a Third Variable",
+ "slug": "swapping-two-numbers-without-using-a-third-variable",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2088. Swapping Two Numbers Without Using a Third Variable\n\n40\n\nMedium\n\nProblem Statement\nRead two integers and exchange (swap) their values without using any third (temporary) variable, then print the swapped values.\n\nDescription\nRead two integers a and b from input. Exchange the values of a and b using only arithmetic operators (+ and -), without declaring a third variable. Print the new value of a followed by the new value of b. This uses only variables, assignment statements, and printf/scanf \u2014 no loops or conditions are needed.",
+ "input_spec": ". Exchange the values of a and b using only arithmetic operators (+ and -), without declaring a third variable. Print the new value of a followed by the new value of b. This uses only variables, assignment statements, and printf/scanf \u2014 no loops or conditions are needed.\n\nInput Description\nTwo integers a and b separated by a space.",
+ "output_spec": "Print the swapped value of a, then the swapped value of b, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 10",
+   "output": "10\n5"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "804. Sort Strings by Length",
+ "slug": "sort-strings-by-length",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n804. Sort Strings by Length\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Sort a List According to the Length of the Elements",
+ "input_spec": "input contains String",
+ "output_spec": "print the list according to length of the string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcd cef e",
+   "output": "e cef abcd"
+  }
+ ],
+ "raw": ""
+}

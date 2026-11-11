@@ -1,0 +1,17 @@
+{
+ "title": "1917. Social Media Viral Spread Analyzer",
+ "slug": "social-media-viral-spread-analyzer",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1917. Social Media Viral Spread Analyzer\n\n80\n\nHard  Topics\n\nSocial Media Viral Spread Analyzer\n\nProblem Statement\n\nA social media platform contains N users connected by directed follower relationships.\n\nWhen a user shares a post:\nThe post spreads level by level (BFS traversal).\nEvery minute, it spreads to direct followers of the current level.\nA user receives the post only once.\n\nYour task is to analyze viral spread for a given starting user.\n\nYou must calculate:\n1. Total Reach \u2192 Total number of users who receive the post\n2. Time to Go Viral \u2192 Number of minutes required to reach all possible users\n3. Most Influential User \u2192 The user who can reach the maximum number of users if they start the post\n\nInput Format\nFirst line:\nn m\n\nNext m lines:\nu v (user u follows user v \u2192 directed edge u \u2192 v)\n\nLast line:\nstartUser\n\nOutput Format\nPrint in a single line:\n\nTotalReach TimeToViral MostInfluentialUser",
+ "input_spec": "First line:\nn m\n\nNext m lines:\nu v (user u follows user v \u2192 directed edge u \u2192 v)\n\nLast line:\nstartUser",
+ "output_spec": "Print in a single line:\n\nTotalReach TimeToViral MostInfluentialUser",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 4\n0 1\n1 2\n2 3\n1 4\n0",
+   "output": "5 3 0"
+  }
+ ],
+ "raw": ""
+}

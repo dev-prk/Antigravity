@@ -1,0 +1,17 @@
+{
+ "title": "1154. Integer Frequency Counter",
+ "slug": "integer-frequency-counter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1154. Integer Frequency Counter\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program to determine the frequency of each integer in a list. Use the Integer wrapper class and appropriate collection classes to achieve this. The program should use a Map<Integer, Integer> to count the occurrences of each integer and output the frequency of each integer in ascending order.",
+ "input_spec": "The first line contains an integer N, the number of elements in the list. The second line contains N space-separated integers.",
+ "output_spec": "the frequency of each integer in ascending order.\n\nInput Description:\nThe first line contains an integer N, the number of elements in the list. The second line contains N space-separated integers.\n\nOutput Description:\nPrint each integer and its frequency, sorted by the integer values.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 2 3 3 3",
+   "output": "1: 1\n2: 2\n3: 2"
+  }
+ ],
+ "raw": ""
+}

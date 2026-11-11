@@ -1,0 +1,17 @@
+{
+ "title": "2083. Evaluating an Expression Using Operator Precedence",
+ "slug": "evaluating-an-expression-using-operator-precedence",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2083. Evaluating an Expression Using Operator Precedence\n\n40\n\nMedium\n\nProblem Statement\nRead four integers and evaluate a mixed arithmetic expression correctly using C's operator precedence rules.\nDescription\nRead four integers a, b, c, and d. Compute result = a + b * c - d / 2 in a single expression, relying on C's precedence rules rather than adding extra parentheses. Print the result.",
+ "input_spec": "Four integers a, b, c, and d, separated by spaces.",
+ "output_spec": "Print the value of the expression a + b * c - d / 2.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 4 8",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

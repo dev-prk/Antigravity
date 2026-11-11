@@ -1,0 +1,17 @@
+{
+ "title": "1088. Python Player Class with Goals Property",
+ "slug": "python-player-class-with-goals-property",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1088. Python Player Class with Goals Property\n\n50\n\nMedium\n\nProblem Statement:\nIn a sports team, each player has a name and a number of goals scored. The number of goals scored should always be a non-negative integer. If a negative value or a non-integer value is assigned to the number of goals, it should be automatically set to 0.\n\nPlease write a Python class  Player  that has  name  and  goals  as attributes. Use the  property  decorator to ensure that  goals  is always a non-negative integer.",
+ "input_spec": "John, 5\n10\n\nJohn, 10\n-5\n\nSample",
+ "output_spec": "John\n5\n10\n\nJohn\n10\n0",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "John, 5\n10\n\nJohn, 10\n-5",
+   "output": "John\n5\n10\n\nJohn\n10\n0"
+  }
+ ],
+ "raw": ""
+}

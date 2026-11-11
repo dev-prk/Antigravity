@@ -1,0 +1,17 @@
+{
+ "title": "654. String Expansion",
+ "slug": "string-expansion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n654. String Expansion\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given a string 's' which is in compressed form. Your task is to expand the string and then print it.",
+ "input_spec": "given a string 's'",
+ "output_spec": "expand the string and print it.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3(abc2(a))",
+   "output": "abcaaabcaaabcaa"
+  }
+ ],
+ "raw": ""
+}

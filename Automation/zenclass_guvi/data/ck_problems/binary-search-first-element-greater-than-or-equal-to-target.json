@@ -1,0 +1,17 @@
+{
+ "title": "2052. Binary Search - First Element Greater Than or Equal to Target",
+ "slug": "binary-search-first-element-greater-than-or-equal-to-target",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2052. Binary Search - First Element Greater Than or Equal to Target\n\n50\n\nMedium\n\nProblem Statement\nGiven a sorted array and a target value, find the first element whose value is greater than or equal to the target using binary search.\nDescription\nRead a sorted array in ascending order and a target value. Use binary search to find the first index `i` such that `a[i] >= target`. If every element is smaller than the target, print -1.",
+ "input_spec": "The first line contains an integer n. The second line contains n space-separated integers in ascending order. The third line contains an integer target.",
+ "output_spec": "Print the 0-based index of the first element greater than or equal to target. If no such element exists, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n2 5 8 12 16 20 25\n13",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

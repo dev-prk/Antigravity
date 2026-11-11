@@ -1,0 +1,17 @@
+{
+ "title": "1598. Warehouse Management System Optimization",
+ "slug": "warehouse-management-system-optimization",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1598. Warehouse Management System Optimization\n\n50\n\nMedium\n\nProblem Statement\nTitle: Warehouse Management System Optimization\n\nProblem Description:\nYou are tasked with optimizing a warehouse management system. The warehouse stores items in containers, and each container has a specific weight. The system should dynamically determine the most suitable container for the next operation based on the weights of the containers and the operation type. Operations include adding more items to a container (increasing weight) or removing items (decreasing weight).\n\nYou must use the sizeof, comma, and conditional (?:) operators to achieve the following:\n\nDetermine the Container with Minimum Weight:\n\nUse the ?: operator to select the container with the minimum weight.\nCalculate the Size of the Selected Container:\n\nUse the sizeof operator to calculate the size of the selected container.\nSequence the Operations Efficiently:\n\nUse the comma operator to sequence operations, ensuring the selection and size calculation is efficient and correctly ordered.\n\nInput:\nAn integer n (3 \u2264 n \u2264 100) representing the number of containers.\nAn array weights of n integers (1 \u2264 weights[i] \u2264 1000) representing the weights of each container.\nAn integer operation (0 or 1), where 0 indicates an \"add\" operation and 1 indicates a \"remove\" operation.\n\nOutput:\nThe weight of the selected container after performing the specified operation.\nThe size of the selected container (in bytes).",
+ "input_spec": "An integer n (3 \u2264 n \u2264 100) representing the number of containers.\nAn array weights of n integers (1 \u2264 weights[i] \u2264 1000) representing the weights of each container.\nAn integer operation (0 or 1), where 0 indicates an \"add\" operation and 1 indicates a \"remove\" operation.",
+ "output_spec": "The weight of the selected container after performing the specified operation.\nThe size of the selected container (in bytes).",
+ "constraints": "The weights of containers are always positive.\nThe operation should be performed on the container with the minimum weight.\nAssume that the sizeof(int) is equal to 4 bytes for this problem.\nYou cannot use loops; all operations must be performed using the sizeof, comma, and conditional operators.",
+ "samples": [
+  {
+   "input": "An integer n (3 \u2264 n \u2264 100) representing the number of containers.\nAn array weights of n integers (1 \u2264 weights[i] \u2264 1000) representing the weights of each container.\nAn integer operation (0 or 1), where 0 indicates an \"add\" operation and 1 indicates a \"remove\" operation.",
+   "output": "The weight of the selected container after performing the specified operation.\nThe size of the selected container (in bytes)."
+  }
+ ],
+ "raw": ""
+}

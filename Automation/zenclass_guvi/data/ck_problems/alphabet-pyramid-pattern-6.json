@@ -1,0 +1,17 @@
+{
+ "title": "916. Alphabet Pyramid Pattern-6",
+ "slug": "alphabet-pyramid-pattern-6",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n916. Alphabet Pyramid Pattern-6\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a triangle character pattern.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the alphabet pyramid pattern according to the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "A\nA B\nA B C\nA B C D\nA B C D E"
+  }
+ ],
+ "raw": ""
+}

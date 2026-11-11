@@ -1,0 +1,17 @@
+{
+ "title": "1803. Deep Copy Array Modification",
+ "slug": "deep-copy-array-modification",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1803. Deep Copy Array Modification\n\n40\n\nMedium\n\nDeep Copy Array Modification\n\nProblem Statement:\n\nCreate a class Array. The class should dynamically allocate memory for an integer array using a parameterized constructor. Implement a deep copy constructor to ensure that when one object is copied to another, both objects maintain independent memory.\n\nThe program should:\n\nRead the size of the array.\n\nRead array elements.\n\nCreate a clone of the original array using the copy constructor.\n\nModify the first element of the original array with a new value.\n\nDisplay both arrays to prove that deep copy works correctly.\n\nDescription:\n\nRead an integer n representing the size of the array.\n\nRead n integer elements.\n\nCreate object a1 using the parameterized constructor.\n\nCreate object a2 as a copy of a1 using the copy constructor.\n\nRead an integer modifyValue.\n\nModify only the first element of a1 with modifyValue.\n\nDisplay both arrays:\nOriginal: followed by modified array.\nClone: followed by unchanged copied array.\n\nInput Format:\nn\na1 a2 a3 ... an\nmodifyValue\n\nOutput Format:\nOriginal: <elements>\nClone: <elements>",
+ "input_spec": "n\na1 a2 a3 ... an\nmodifyValue",
+ "output_spec": "Original: <elements>\nClone: <elements>",
+ "constraints": "0 \u2264 n \u2264 10\u2075\n\n\u221210\u2079 \u2264 array elements \u2264 10\u2079\n\n\u221210\u2079 \u2264 modifyValue \u2264 10\u2079",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n10",
+   "output": "Original: 10 2 3 4 5\nClone: 1 2 3 4 5"
+  }
+ ],
+ "raw": ""
+}

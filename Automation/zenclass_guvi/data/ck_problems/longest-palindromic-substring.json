@@ -1,0 +1,17 @@
+{
+ "title": "659. Longest Palindromic Substring",
+ "slug": "longest-palindromic-substring",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n659. Longest Palindromic Substring\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nYou are given a string 's'.Your task is to print the maximum length of longest palindrome present in string.",
+ "input_spec": "You are given string 's'",
+ "output_spec": "Print length of longest palindrome in string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcb",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

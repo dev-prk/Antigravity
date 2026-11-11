@@ -1,0 +1,17 @@
+{
+ "title": "1534. Red-Black Tree Node Insertion",
+ "slug": "red-black-tree-node-insertion",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1534. Red-Black Tree Node Insertion\n\n80\n\nHard\n\nProblem Statement:\nGiven an initially empty Red-Black Tree, implement the insertion operation for a Red-Black Tree. After each insertion, ensure that all Red-Black Tree properties are maintained:\n1. Every node is either red or black.\n2. The root is always black.\n3. All leaves (NIL nodes) are black.\n4. If a node is red, then both its children are black.\n5. Every path from a node to its descendant NIL nodes contains the same number of black nodes.You are required to implement the insertion function and output the in-order traversal of the tree after all insertions.",
+ "input_spec": "- The first line contains an integer n, the number of nodes to insert.- The second line contains n space-separated integers, the values to insert in order.",
+ "output_spec": "the in-order traversal of the tree after all insertions.\n\nInput Description:\n- The first line contains an integer n, the number of nodes to insert.- The second line contains n space-separated integers, the values to insert in order.\n\nOutput Description:\n- Print the in-order traversal of the Red-Black Tree after all insertions, with each node's value followed by its color in parentheses (\"R\" for red, \"B\" for black), separated by spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 15 25",
+   "output": "10(B) 15(R) 20(B) 25(R) 30(B)"
+  }
+ ],
+ "raw": ""
+}

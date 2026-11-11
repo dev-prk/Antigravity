@@ -1,0 +1,17 @@
+{
+ "title": "2155. Calculating an Electricity Bill Using a Function",
+ "slug": "calculating-an-electricity-bill-using-a-function",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2155. Calculating an Electricity Bill Using a Function\n\n80\n\nHard\n\nProblem Statement\nRead the number of electricity units consumed and print the bill amount, using a function that applies slab-wise rates.\n\nDescription\nAn electricity board charges Rs.3 per unit for the first 100 units, Rs.5 per unit for the next 100 units (units 101 to 200), and Rs.8 per unit for every unit above 200. Read an integer units from input. Write a function calculateBill that takes the units as a parameter, uses an if-else-if ladder to apply the rates slab by slab, and returns the total bill. Print the returned bill from main().",
+ "input_spec": ". Write a function calculateBill that takes the units as a parameter, uses an if-else-if ladder to apply the rates slab by slab, and returns the total bill. Print the returned bill from main().\n\nInput Description\nA single integer units (units >= 0).",
+ "output_spec": "Print the total bill amount.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "150",
+   "output": "550"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "2116. Finding the Largest of Three Numbers",
+ "slug": "finding-the-largest-of-three-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2116. Finding the Largest of Three Numbers\n\n40\n\nMedium\n\nProblem Statement\nRead three integers and print the largest of the three using nested if-else statements.\n\nDescription\nRead three integers a, b and c from input. Use nested if-else statements to compare the three values and determine the largest one, then print it.",
+ "input_spec": ". Use nested if-else statements to compare the three values and determine the largest one, then print it.\n\nInput Description\nThree integers a, b and c separated by spaces.",
+ "output_spec": "Print the largest of the three numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 9 7",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

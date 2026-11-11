@@ -1,0 +1,17 @@
+{
+ "title": "679. Prefix Expression Evaluation",
+ "slug": "prefix-expression-evaluation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n679. Prefix Expression Evaluation\n\n80\n\nHard  Topics\n\nProblem Statement:\nA string containing the prefix expression is given to you.Evaluate it and print the single integer giving the answer.",
+ "input_spec": "You are given a string \u2018s\u2019.",
+ "output_spec": "Print the evaluated answer of that string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "+23",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1093. Higher-Order Function Calculator",
+ "slug": "higher-order-function-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1093. Higher-Order Function Calculator\n\n50\n\nMedium\n\nProblem Statement:\nYou are developing a calculator in C. The calculator has four operations: add, subtract, multiply, and divide. Each operation is a function that takes two numbers and returns the result of the operation.\n\nWrite a Python function  calculate(operation: Callable[[float, float], float], num1: float, num2: float) -\\> float  that takes an operation function and two numbers as input and returns the result of the operation. The operation function is a higher-order function that can be any of the four operation functions.",
+ "input_spec": "and returns the result of the operation. The operation function is a higher-order function that can be any of the four operation functions.",
+ "output_spec": "The output is a single floating-point number representing the result of the applied operation.",
+ "constraints": "- num1 and num2 are floats.\n- You can't install any external libraries.",
+ "samples": [
+  {
+   "input": "add, 1.0, 2.0",
+   "output": "3.0"
+  }
+ ],
+ "raw": ""
+}

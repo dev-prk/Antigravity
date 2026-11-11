@@ -1,0 +1,17 @@
+{
+ "title": "1234. Dynamic Circular Buffer",
+ "slug": "dynamic-circular-buffer",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1234. Dynamic Circular Buffer\n\n80\n\nHard\n\nProblem Statement:\nCreate a circular buffer using dynamic memory allocation. The buffer should support adding elements, removing elements, and checking if it is full or empty. You must handle the dynamic resizing of the buffer when it is full or if it is resized.\n\nImplement a circular buffer that can grow and shrink dynamically.\nHandle cases where the buffer needs resizing using realloc.\nProperly manage memory using malloc, calloc, realloc, and free.",
+ "input_spec": "An integer n indicating the number of operations.\nFor each operation, you will receive:\nAn operation type (ADD, REMOVE, RESIZE).\nDepending on the operation, additional parameters such as the value to add, or the new size for resizing.",
+ "output_spec": "After each operation, print the current state of the buffer.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\nADD 5\nADD 10\nRESIZE 5\nADD 15\nREMOVE\nADD 20",
+   "output": "5\n5 10\n5 10\n5 10 15\n10 15\n10 15 20"
+  }
+ ],
+ "raw": ""
+}

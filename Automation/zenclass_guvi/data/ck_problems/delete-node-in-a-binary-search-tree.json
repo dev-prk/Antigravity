@@ -1,0 +1,17 @@
+{
+ "title": "1528. Delete Node in a Binary Search Tree",
+ "slug": "delete-node-in-a-binary-search-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1528. Delete Node in a Binary Search Tree\n\n80\n\nHard\n\nProblem Statement:\nDelete Node in a Binary Search Tree. Given the root of a binary search tree (BST) and a key, delete the node with the given key in the BST. Return the root of the BST after deletion. If the key does not exist in the BST, return the original root. The BST must maintain its properties after deletion.",
+ "input_spec": "- The first line contains space-separated integers representing the values of nodes inserted into the BST in order.\n- The second line contains a single integer, the key to be deleted.",
+ "output_spec": "- Output the in-order traversal of the BST after deletion, as space-separated integers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3 6 2 4 7\n3",
+   "output": "2 4 5 6 7"
+  }
+ ],
+ "raw": ""
+}

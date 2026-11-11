@@ -1,0 +1,17 @@
+{
+ "title": "263. Count Grandchildren in Binary Tree",
+ "slug": "count-grandchildren-in-binary-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n263. Count Grandchildren in Binary Tree\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a binary tree with strings as keys with N nodes and M edges, Print the number of grandchildren for the specified name.",
+ "input_spec": "The input consists of a binary tree with strings as keys with N nodes and M edges. Input Size: 1 <= N, M <= 100000.",
+ "output_spec": "The output is the number of grandchildren for the specified name.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 2 Vishal\nSundar Vishal\nVishal Adithya",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

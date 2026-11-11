@@ -1,0 +1,17 @@
+{
+ "title": "426. Knight's Movement on a Chessboard",
+ "slug": "knight-s-movement-on-a-chessboard",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n426. Knight's Movement on a Chessboard\n\n100\n\nHard  Topics\n\nProblem Statement:\nYou are given a configuration of a 4 x 4 chess board. An empty square is represented by a '.' and an occupied square is represented by a '#'. You are given Q queries of the form \"x y\" denoting the coordinate of the square (one of (0 0) to (3 3)). If a knight can be placed on that square, print the number of squares it can reach from that square, print -1 if the square is blocked and the knight cannot be placed. A blocked square cannot be reached. For Reference:  https://en.wikipedia.org/wiki/Knight_(chess)#Movement",
+ "input_spec": "You are given a 4 by 4 character matrix denoting the board configuration\nThe next line contains the number of queries Q\nThe next Q lines contain a coordinate pair.",
+ "output_spec": "Print Q lines answering each query",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "....\n..#.\n....\n....\n2\n0 0\n1 2",
+   "output": "1\n-1"
+  }
+ ],
+ "raw": ""
+}

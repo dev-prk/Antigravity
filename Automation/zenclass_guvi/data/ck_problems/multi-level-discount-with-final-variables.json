@@ -1,0 +1,17 @@
+{
+ "title": "1650. Multi-level Discount with Final Variables",
+ "slug": "multi-level-discount-with-final-variables",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1650. Multi-level Discount with Final Variables\n\n50\n\nMedium\n\nMulti-level Discount with Final Variables\n\nProblem Statement:\nCreate a Product class and a subclass SpecialProduct. Use final variable maxDiscount and calculate discount for multiple products.\n\nDescription:\nDemonstrates final variables, inheritance, and arithmetic calculations.\n\nInput Format:\n\nprice discount\n\nOutput Format:\n\nApplied Discount: <value>",
+ "input_spec": "price discount",
+ "output_spec": "Applied Discount: <value>",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2000 500",
+   "output": "Applied Discount: 500"
+  }
+ ],
+ "raw": ""
+}

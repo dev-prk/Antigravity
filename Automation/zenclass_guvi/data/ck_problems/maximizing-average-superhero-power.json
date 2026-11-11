@@ -1,0 +1,17 @@
+{
+ "title": "1074. Maximizing Average Superhero Power",
+ "slug": "maximizing-average-superhero-power",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1074. Maximizing Average Superhero Power\n\n80\n\nHard\n\nProblem Statement:\nThe Felicity Committee assigns a power value to each superhero, and the Avengers aim to maximize their team's average power through strategic operations.\n\nInitially, the Avengers have n superheroes with powers a1, a2, ..., an. In each operation, they can either remove a superhero (if there are at least two) or increase a superhero's power by 1.\n\nThey are allowed a maximum of m operations, with each superhero limited to k power increases. Can you assist the Avengers in maximizing their team's average power",
+ "input_spec": "The first line contains three integers n, k and m (1\u2264n\u2264105, 1\u2264k\u2264105, 1\u2264m\u2264107) \u2014 the number of superheroes, the maximum number of times you can increase power of a particular superhero, and the total maximum number of operations. The second line contains n integers a1,a2,\u2026,an (1\u2264ai\u2264106) \u2014 the initial powers of the superheroes in the cast of avengers.",
+ "output_spec": "Output a single number \u2014 the maximum final average power. Your answer is considered correct if its absolute or relative error does not exceed 10\u22126. Formally, let your answer be a, and the jury's answer be b. Your answer is accepted if and only if |a\u2212b|max(1,|b|)\u226410\u22126.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 4 6\n4 7",
+   "output": "11.0"
+  }
+ ],
+ "raw": ""
+}

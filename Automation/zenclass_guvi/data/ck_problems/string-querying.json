@@ -1,0 +1,17 @@
+{
+ "title": "432. String Querying",
+ "slug": "string-querying",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n432. String Querying\n\n80\n\nHard  Topics\n\nProblem Statement:\nYour task is simple You are given N strings each of length at most M. You will be given Q queries In each query you will be given a string of length at most M Your task is to find out the number of occurrences in the given list of N strings.",
+ "input_spec": "The first line contains two space separated integers N Q-denoting the number of string and the number of queries.\nThe next N line contains a string each\nThe next Q lines contains a string each",
+ "output_spec": "For each query print the number of occurrences of that string in a single line I that string does not occur in the given list at all print a \u201c0\u201d (without quotes)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\nahojheu\nwufnyucoks\nflaw\nyhcrcomqq\nymflzdwdxuj\npazhhqzdrkf",
+   "output": "0\n0\n0"
+  }
+ ],
+ "raw": ""
+}

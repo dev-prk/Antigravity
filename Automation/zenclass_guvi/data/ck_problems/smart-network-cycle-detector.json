@@ -1,0 +1,17 @@
+{
+ "title": "1906. Smart Network Cycle Detector",
+ "slug": "smart-network-cycle-detector",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1906. Smart Network Cycle Detector\n\n40\n\nMedium  Topics\n\nSmart Network Cycle Detector\n\nProblem Statement:\nThe smart city network \u201cMegaMart Elite SmartGrid\u201d now supports one-way communication channels between zones.\n\nThe system forms a Directed Graph.\n\nDue to configuration errors, circular dependencies (cycles) may form.\n\nYour task is to determine:\nReturn true if a cycle exists\nOtherwise return false\n\nUse DFS with Recursion Stack logic.\n\nInput Format\nTwo inputs:\n1. V (number of zones)\n2. E (number of directed connections)\n\nNext E lines contain u v meaning a connection from u \u2192 v.\n\nOutput Format\nPrint:\ntrue\nor\nfalse",
+ "input_spec": "Two inputs:\n1. V (number of zones)\n2. E (number of directed connections)\n\nNext E lines contain u v meaning a connection from u \u2192 v.",
+ "output_spec": "Print:\ntrue\nor\nfalse",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n0 1\n1 2\n2 3\n3 1",
+   "output": "true"
+  }
+ ],
+ "raw": ""
+}

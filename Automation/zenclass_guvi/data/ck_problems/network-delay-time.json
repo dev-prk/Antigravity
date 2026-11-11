@@ -1,0 +1,17 @@
+{
+ "title": "1544. Network Delay Time",
+ "slug": "network-delay-time",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1544. Network Delay Time\n\n80\n\nHard\n\nProblem Statement:\nYou are given a network of N nodes, labeled from 1 to N. Times of signal transmission between pairs of nodes are given as a list of travel times, where each entry times[i] = (u, v, w) represents that a signal can travel from node u to node v in w units of time. You are also given a starting node K. The signal is sent from node K to all other nodes in the network. Return the time it takes for all nodes to receive the signal. If it is impossible for all nodes to receive the signal, return -1.",
+ "input_spec": "- The first line contains two integers N and M, the number of nodes and the number of edges.\n- The next M lines each contain three integers u, v, w, representing a directed edge from u to v with travel time w.\n- The last line contains the integer K, the starting node.",
+ "output_spec": "- A single integer representing the time it takes for all nodes to receive the signal, or -1 if it is impossible.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n2 1 1\n2 3 1\n3 4 1\n1 4 4\n2",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

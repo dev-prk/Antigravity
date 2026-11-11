@@ -1,0 +1,17 @@
+{
+ "title": "464. Divisibility by 11",
+ "slug": "divisibility-by-11",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n464. Divisibility by 11\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven an integer N, find if it is divisible by 11\n\nN >= 1\n\n1 <= No. of digits in N <= 1000",
+ "input_spec": "The only line of input contains an integer N",
+ "output_spec": "Print YES if N is divisible by 11, NO otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1331",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1225. 2D Array 90-Degree Rotation",
+ "slug": "2d-array-90-degree-rotation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1225. 2D Array 90-Degree Rotation\n\n80\n\nHard\n\nProblem Statement:\nWrite a program that accepts a 2D array of integers (a matrix) from the user, dynamically allocates memory for the matrix, and rotates the matrix by 90 degrees clockwise. The rotated matrix should then be printed as the output.",
+ "input_spec": "Your task is to handle the matrix input dynamically using heap memory. The input matrix will be square (n x n), and you need to rotate the matrix by 90 degrees clockwise. This operation involves transposing the matrix and then reversing the rows.\nThe first line contains an integer n, the size of the matrix (n x n).\nThe next n lines contain n integers each, representing the matrix.",
+ "output_spec": ".\n\nInput Description:\nYour task is to handle the matrix input dynamically using heap memory. The input matrix will be square (n x n), and you need to rotate the matrix by 90 degrees clockwise. This operation involves transposing the matrix and then reversing the rows.\nThe first line contains an integer n, the size of the matrix (n x n).\nThe next n lines contain n integers each, representing the matrix.\n\nOutput Description:\nThe output should be the rotated matrix, with each row printed on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "7 4 1\n8 5 2\n9 6 3"
+  }
+ ],
+ "raw": ""
+}

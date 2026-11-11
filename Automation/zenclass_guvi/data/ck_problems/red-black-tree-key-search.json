@@ -1,0 +1,17 @@
+{
+ "title": "1536. Red-Black Tree Key Search",
+ "slug": "red-black-tree-key-search",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1536. Red-Black Tree Key Search\n\n80\n\nHard\n\nProblem Statement:\nGiven a Red-Black Tree and a key, implement a function to search for the key in the tree. If the key exists in the tree, return \"Found\", otherwise return \"Not Found\". The Red-Black Tree will be provided as a set of node values and their relationships.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the Red-Black Tree.\n- The next N lines each contain three space-separated values: node_value, left_child_value, right_child_value. If a child does not exist, it is represented by -1.\n- The last line contains an integer K, the key to search for.",
+ "output_spec": "- Output \"Found\" if the key exists in the tree, otherwise output \"Not Found\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 5 15\n5 -1 -1\n15 12 20\n12 -1 -1\n20 -1 -1\n12",
+   "output": "Found"
+  }
+ ],
+ "raw": ""
+}

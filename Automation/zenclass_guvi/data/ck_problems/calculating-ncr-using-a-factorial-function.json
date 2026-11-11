@@ -1,0 +1,17 @@
+{
+ "title": "2158. Calculating nCr Using a Factorial Function",
+ "slug": "calculating-ncr-using-a-factorial-function",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2158. Calculating nCr Using a Factorial Function\n\n90\n\nHard\n\nProblem Statement\nRead n and r and print the value of nCr (the number of ways to choose r items from n items), by calling a factorial function more than once.\n\nDescription\nThe number of ways to choose r items from n items is given by nCr = n! / (r! x (n - r)!). Read two integers n and r from input. Write a function factorial that takes an integer parameter and uses a for loop to return its factorial (the factorial of 0 is 1). In main(), call this one function three times, for n, for r, and for n - r, and use the results to calculate and print nCr.",
+ "input_spec": ". Write a function factorial that takes an integer parameter and uses a for loop to return its factorial (the factorial of 0 is 1). In main(), call this one function three times, for n, for r, and for n - r, and use the results to calculate and print nCr.\n\nInput Description\nTwo integers n and r separated by a space (0 <= r <= n <= 10).",
+ "output_spec": "Print the value of nCr.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

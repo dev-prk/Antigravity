@@ -1,0 +1,17 @@
+{
+ "title": "884. Star and b Pattern",
+ "slug": "star-and-b-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n884. Star and b Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nwrite a code to generate the following pattern.",
+ "input_spec": "Given an even integer R indicates number of stars in first and last row.R is always an even number.Where 2<=R<=100",
+ "output_spec": "Print the pattern based on the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10",
+   "output": "**********\n****bb****\n***bbbb***\n**bbbbbb**\n*bbbbbbbb*\n**bbbbbb**\n***bbbb***\n****bb****\n**********"
+  }
+ ],
+ "raw": ""
+}

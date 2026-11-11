@@ -1,0 +1,17 @@
+{
+ "title": "646. Path Finding in a Grid",
+ "slug": "path-finding-in-a-grid",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n646. Path Finding in a Grid\n\n90\n\nHard  Topics\n\nProblem Statement:\nJoseph is present at starting point ie his office,He wants to reach home(last vertex on map) but he has no idea which path to choose because he is new to city, he has one map with him describing path to reach home. If in a grid '1' is present than there is way else no way/ obstacle. Help him so that he could reach home safely.from every point he can take only single step towards the direction where it is one.",
+ "input_spec": "You are given with size of grid 'n' and 'm' representing dimensions of grid. Next line contains n*m space separated numbers",
+ "output_spec": "Print 1 if he can reach home and 0 if he cannot",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3\n1 1 0 0 1 1",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

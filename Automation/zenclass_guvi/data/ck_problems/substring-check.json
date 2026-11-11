@@ -1,0 +1,17 @@
+{
+ "title": "655. Substring Check",
+ "slug": "substring-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n655. Substring Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nyou are given with two strings.Your task is to check whether one of the string is substring of the other.If substring exists,then print the starting index of sub-string.",
+ "input_spec": "You are given two strings",
+ "output_spec": "Print the index of string if substring exists else print -1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Yuvi\nYuvirat",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

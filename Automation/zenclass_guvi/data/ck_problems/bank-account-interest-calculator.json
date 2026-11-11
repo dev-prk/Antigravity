@@ -1,0 +1,17 @@
+{
+ "title": "1798. Bank Account Interest Calculator",
+ "slug": "bank-account-interest-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1798. Bank Account Interest Calculator\n\n50\n\nMedium\n\nBank Account Interest Calculator\n\nProblem Statement:\nWrite a program to calculate simple interest using a constant object of a class.\n\nDescription:\nCreate a class BankAccount with private data member principal.\nUse a const member function to calculate simple interest without modifying the object state.\nCreate the object as constant in main() and compute interest.\n\nFormula:\nInterest = (Principal \u00d7 Rate \u00d7 Time) / 100\n\nInput Format:\nThree space-separated numbers:\nPrincipal Rate Time\n\nOutput Format:\nA single number representing the interest amount.",
+ "input_spec": "Three space-separated numbers:\nPrincipal Rate Time",
+ "output_spec": "A single number representing the interest amount.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000 5 2",
+   "output": "100"
+  }
+ ],
+ "raw": ""
+}

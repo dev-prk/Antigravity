@@ -1,0 +1,17 @@
+{
+ "title": "834. Merge Two Sorted Linked Lists",
+ "slug": "merge-two-sorted-linked-lists",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n834. Merge Two Sorted Linked Lists\n\n60\n\nMedium  Topics\n\nProblem Statement:\nMerge two sorted linked lists and print the new merged linked list.The new list should be made by splicing together the nodes of the first two lists, and should also be sorted.",
+ "input_spec": "Given two sorted linked list of size M,N First line M is the size of the first sorted linked list,Second line N is the size of the first sorted linked list.Third and Fourth line contains respective linked list values(separated by space)",
+ "output_spec": "Print the resultant linked list after merging the two sorted linked list(separated by space)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n3\n5 8 20\n4 11 15",
+   "output": "4 5 8 11 15 20"
+  }
+ ],
+ "raw": ""
+}

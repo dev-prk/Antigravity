@@ -1,0 +1,17 @@
+{
+ "title": "903. Right Arrow Pattern",
+ "slug": "right-arrow-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n903. Right Arrow Pattern\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a right arrow using patterns.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the right arrow pattern using stars based on the given integer R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "*\n*\n*\n*\n*****\n*\n*\n*\n*"
+  }
+ ],
+ "raw": ""
+}

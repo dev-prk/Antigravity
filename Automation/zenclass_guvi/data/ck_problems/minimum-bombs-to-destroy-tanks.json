@@ -1,0 +1,17 @@
+{
+ "title": "358. Minimum Bombs to Destroy Tanks",
+ "slug": "minimum-bombs-to-destroy-tanks",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n358. Minimum Bombs to Destroy Tanks\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nDhoni plays his favorite game 'Peace Lightning'. Now he is flying a bomber on a very specific map. Formally, map is a checkered field of size 1\u2009\u00d7\u2009n, the cells of which are numbered from 1 to n, in each cell there can be one or several tanks. Dhoni doesn't know the number of tanks and their positions, because he flies very high, but he can drop a bomb in any cell. All tanks in this cell will be damaged. If a tank takes damage for the first time, it instantly moves to one of the neighboring cells (a tank in the cell n can only move to the cell n\u2009-\u20091, a tank in the cell 1 can only move to the cell 2). If a tank takes damage for the second time, it's counted as destroyed and never moves again. The tanks move only when they are damaged for the first time, they do not move by themselves. Help Dhoni to destroy all tanks using as few bombs as possible.",
+ "input_spec": "The input consists of a single integer N (1 <= N <= 1000000), representing the size of the map (1 x N).",
+ "output_spec": "The output is the minimum number of bombs required to destroy all tanks, followed by the sequence of cells where bombs are dropped.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2",
+   "output": "3\n2 1 2"
+  }
+ ],
+ "raw": ""
+}

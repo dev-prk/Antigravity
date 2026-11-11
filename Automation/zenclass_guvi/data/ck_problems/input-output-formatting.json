@@ -1,0 +1,17 @@
+{
+ "title": "928. Input-Output Formatting",
+ "slug": "input-output-formatting",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n928. Input-Output Formatting\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format",
+ "input_spec": "",
+ "output_spec": "ting\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format\n\nInput Description:\nFirst-line indicates two integers separated by space. Second-line indicates two integers separated by space. Third-line indicates two integers separated by space.\n\nOutput Description:\nPrint the input in the same format.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 4\n2 4\n2 4",
+   "output": "2 4\n2 4\n2 4"
+  }
+ ],
+ "raw": ""
+}

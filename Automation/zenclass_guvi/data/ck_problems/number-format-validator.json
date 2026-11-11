@@ -1,0 +1,17 @@
+{
+ "title": "1988. Number Format Validator",
+ "slug": "number-format-validator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1988. Number Format Validator\n\n60\n\nMedium\n\nProblem Statement\n\nGiven a string, attempt to convert it to an integer. Handle the case where the string does not represent a valid number using exception handling.\n\nDescription\n\nRead a single line of text. Attempt to convert it into an integer. If the text is not a valid integer, an exception is thrown; catch it and print an error message instead of the converted value.",
+ "input_spec": "A single line containing a string, str.",
+ "output_spec": "If str can be converted to a valid integer, print that integer. Otherwise, print \"Error: Invalid number format\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "123",
+   "output": "123"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1817. Vehicle Taxation System using Multilevel Inheritance",
+ "slug": "vehicle-taxation-system-using-multilevel-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1817. Vehicle Taxation System using Multilevel Inheritance\n\n40\n\nMedium\n\nVehicle Taxation System using Multilevel Inheritance\n\nProblem Statement:\nImplement a multilevel inheritance structure to calculate vehicle tax.\n\nDescription:\nBase class: Vehicle (price)\nDerived class: Car (adds fuelType)\nDerived class from Car: ElectricCar (adds batteryCapacity)\n\nRequirements:\n1. Tax = 10% of price.\n2. Electric cars get 50% tax discount.\n3. Use constructor chaining.\n4. Prevent direct instantiation of intermediate class.\n5. Demonstrate runtime object behavior.\n\nInput Format:\nVehicle price\nFuel type\nBattery capacity\n\nOutput Format:\nFinal tax amount.",
+ "input_spec": "Vehicle price\nFuel type\nBattery capacity",
+ "output_spec": "Final tax amount.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000000\nElectric\n75",
+   "output": "Final Tax: 50000"
+  }
+ ],
+ "raw": ""
+}

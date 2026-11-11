@@ -1,0 +1,17 @@
+{
+ "title": "285. Replace with Greatest on Right",
+ "slug": "replace-with-greatest-on-right",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n285. Replace with Greatest on Right\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N followed by an array of N integers, replace every element with the greatest element on the right side(to that element) in the array. Replace last element with 0 as there no element on the right side of it. For example, if the array is {6, 7, 4, 3, 5, 2}, the output is {7, 5, 5, 5, 2, 0}.",
+ "input_spec": "The input consists of a number N, followed by an array of N integers. N is less than or equal to 100000.",
+ "output_spec": "is {7, 5, 5, 5, 2, 0}.\n\nInput Description:\nThe input consists of a number N, followed by an array of N integers. N is less than or equal to 100000.\n\nOutput Description:\nThe output is the modified array where each element is replaced by the greatest element on its right side, and the last element is replaced by 0.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n6 7 4 3 5 2",
+   "output": "7 5 5 5 2 0"
+  }
+ ],
+ "raw": ""
+}

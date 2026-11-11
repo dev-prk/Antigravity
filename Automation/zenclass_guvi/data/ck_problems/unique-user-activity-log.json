@@ -1,0 +1,17 @@
+{
+ "title": "1167. Unique User Activity Log",
+ "slug": "unique-user-activity-log",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1167. Unique User Activity Log\n\n50\n\nMedium\n\nProblem Statement:\nYou are tasked with developing a system to track unique user activities in a social media application. Each user can perform various activities, and you need to ensure that each activity is only logged once per user. Your task is to create a class that maintains user activity logs, ensuring that each activity for a user is unique.\nImplement a class UserActivityTracker with methods to add activities and display unique activities. Use a Map<String, Set<String>> where the key is the userId and the value is a Set of activities performed by that user. Implement the following methods: addActivity(String userId, String activity): Adds an activity for the specified user. If the activity already exists for the user, it should not be added again. displayActivities(String userId): Displays all unique activities performed by the specified user in a sorted order.",
+ "input_spec": "The first line contains an integer n, the number of operations. Each of the next n lines contains a command followed by the necessary details: ADD_ACTIVITY userId activity DISPLAY_ACTIVITIES userId",
+ "output_spec": "For each DISPLAY_ACTIVITIES command, output the list of unique activities for the specified user, each on a new line in sorted order. If the user has no activities, print \"No activities found.\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\nADD_ACTIVITY user1 login\nADD_ACTIVITY user1 post\nADD_ACTIVITY user1 login\nADD_ACTIVITY user2 login\nDISPLAY_ACTIVITIES user1\nDISPLAY_ACTIVITIES user2",
+   "output": "login\npost\nlogin"
+  }
+ ],
+ "raw": ""
+}

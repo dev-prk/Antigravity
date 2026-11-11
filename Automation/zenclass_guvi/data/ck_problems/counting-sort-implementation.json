@@ -1,0 +1,17 @@
+{
+ "title": "861. Counting Sort Implementation",
+ "slug": "counting-sort-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n861. Counting Sort Implementation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nIn Counting sort, the frequencies of distinct elements of the array to be sorted is counted and stored in an auxiliary array, by mapping its value as an index of the auxiliary array.\nIn counting sort,\n- Take two arrays, Count[] and Result[] and given array is input[].\n- Count[] will store the counts of each integer in the given array.\n- Update the Count[] so that each index will store the sum till previous step. (Count[i]=Count[i] + Count[i-1]). Now updated Count[] array will reflect the actual position of each integer in Result[].\n- Now navigate the input array taking one element at a time, Count[input[i]] will tell you the index position of input[i] in Result[]. When you do that, decrease the count in Count[input[i]] by 1.\n- For Example:\nYou have to sort the given array of integer values in counting sort manner.",
+ "input_spec": "[].\n- Count[] will store the counts of each integer in the given array.\n- Update the Count[] so that each index will store the sum till previous step. (Count[i]=Count[i] + Count[i-1]). Now updated Count[] array will reflect the actual position of each integer in Result[].\n- Now navigate the input array taking one element at a time, Count[input[i]] will tell you the index position of input[i] in Result[]. When you do that, decrease the count in Count[input[i]] by 1.\n- For Example:\nYou have to sort the given array of integer values in counting sort manner.\n\nInput Description:\nGiven an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1",
+ "output_spec": "Print the resultant sorted array by using counting sort method.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n2 1 4 6 7 2 4 1 2 11",
+   "output": "1 1 2 2 2 4 4 6 7 11"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "643. Level Order Traversal of Binary Tree",
+ "slug": "level-order-traversal-of-binary-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n643. Level Order Traversal of Binary Tree\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nYou are given a String representing a binary tree your task is print the level order traversal of it.",
+ "input_spec": "You are given with a string \u2018s\u2019.",
+ "output_spec": "Print the binary tree\u2019s level order traversal",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 0 L 1 2 R",
+   "output": "1 0 2"
+  }
+ ],
+ "raw": ""
+}

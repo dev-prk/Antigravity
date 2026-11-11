@@ -1,0 +1,17 @@
+{
+ "title": "66. Isomorphic Strings",
+ "slug": "isomorphic-strings",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n66. Isomorphic Strings\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 strings,check whether it is isomorphic.If it is not isomorphic print '-1'.",
+ "input_spec": "The input consists of two strings. The size of each string |s| is at most 100000.",
+ "output_spec": "The output is 'yes' if the strings are isomorphic, otherwise '-1'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aab xxy",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "930. Read and Print Integers",
+ "slug": "read-and-print-integers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n930. Read and Print Integers\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format",
+ "input_spec": "in the given format and print the",
+ "output_spec": "in the given format\n\nInput Description:\nThree integers are given in line by line.\n\nOutput Description:\nPrint the integers in a single line separate by space.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n4\n5",
+   "output": "2 4 5"
+  }
+ ],
+ "raw": ""
+}

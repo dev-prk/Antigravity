@@ -1,0 +1,17 @@
+{
+ "title": "1110. Transaction Square Root",
+ "slug": "transaction-square-root",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1110. Transaction Square Root\n\n50\n\nMedium\n\nProblem Statement:\nYou are managing a bank's software system. Every time a customer makes a transaction, the transaction amount is recorded. You want to create a function that calculates the square root of the transaction amount. Write a Python function  transaction_sqrt(transaction_amount)  that takes a transaction amount and returns the square root of the transaction amount. Use the  sqrt  function from the built-in Python  math  module to calculate the square root.",
+ "input_spec": "-  transaction_amount : a float representing the transaction amount.",
+ "output_spec": "- The function should return a float representing the square root of the transaction amount.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "100.0",
+   "output": "10.0"
+  }
+ ],
+ "raw": ""
+}

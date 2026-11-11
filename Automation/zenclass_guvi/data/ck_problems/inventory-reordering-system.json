@@ -1,0 +1,17 @@
+{
+ "title": "1860. Inventory Reordering System",
+ "slug": "inventory-reordering-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1860. Inventory Reordering System\n\n50\n\nMedium  Topics\n\nInventory Reordering System\n\nProblem Statement\n\nWrite a program to sort inventory items based on stock levels and identify critical items that need urgent attention.\n\nAn item is considered critical if its stock is less than 10 units.\n\nInput Format\n\nLine 1: Number of items (N)\n\nNext N lines:\nItemName, Stock\n\nOutput Format\n\nDisplay all items sorted in ascending order of stock, one per line in the format:\nItemName,Stock\n\nFinal line:\nComma-separated list of critical items (items with stock < 10), in the order they appear after sorting",
+ "input_spec": "Line 1: Number of items (N)\n\nNext N lines:\nItemName, Stock",
+ "output_spec": "Display all items sorted in ascending order of stock, one per line in the format:\nItemName,Stock\n\nFinal line:\nComma-separated list of critical items (items with stock < 10), in the order they appear after sorting",
+ "constraints": "1 \u2264 N \u2264 100\n\nItem names contain no spaces\n\n0 \u2264 Stock \u2264 10,000\n\nSorting must be based on stock in ascending order\n\nAn item is critical if Stock < 10",
+ "samples": [
+  {
+   "input": "5\nPen,50\nNotebook,5\nMarker,12\nCharger,8\nMouse,10",
+   "output": "Notebook,5\nCharger,8\nMouse,10\nMarker,12\nPen,50\nNotebook,Charger"
+  }
+ ],
+ "raw": ""
+}

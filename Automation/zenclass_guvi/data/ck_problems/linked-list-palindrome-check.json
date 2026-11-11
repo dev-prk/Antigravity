@@ -1,0 +1,17 @@
+{
+ "title": "832. Linked List Palindrome Check",
+ "slug": "linked-list-palindrome-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n832. Linked List Palindrome Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nDetermine whether the contents in the form of linked list is a palindrome or not.",
+ "input_spec": "First line represents the size of the linked list.Next line contains characters in the form of a linked list(separated by space).",
+ "output_spec": "Print 'yes' if it forms a palindrome otherwise print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nr a d a r",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

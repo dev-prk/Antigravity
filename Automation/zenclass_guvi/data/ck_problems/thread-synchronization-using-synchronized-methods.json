@@ -1,0 +1,17 @@
+{
+ "title": "1761. Thread Synchronization using Synchronized Methods",
+ "slug": "thread-synchronization-using-synchronized-methods",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1761. Thread Synchronization using Synchronized Methods\n\n60\n\nMedium\n\nThread Synchronization using Synchronized Methods\nProblem Statement\nWrite a Java program to demonstrate thread synchronization using synchronized methods. The program should simulate a bank account where multiple threads attempt to deposit and withdraw money concurrently, ensuring data consistency.\n\nDescription\nThe program should read an initial account balance and a series of deposit and withdrawal operations. Use synchronized methods to ensure that the account balance is updated correctly.\n\nInput Format\nThe first line contains an integer representing the initial account balance.\nThe second line contains an integer n, the number of operations.\nThe next n lines each contain an operation in the format: operation amount, where operation is either \"deposit\" or \"withdraw\".\nOutput Format\nA single line containing the final account balance after all operations.",
+ "input_spec": "The first line contains an integer representing the initial account balance.\nThe second line contains an integer n, the number of operations.\nThe next n lines each contain an operation in the format: operation amount, where operation is either \"deposit\" or \"withdraw\".",
+ "output_spec": "A single line containing the final account balance after all operations.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "750\n2\nwithdraw 200\ndeposit 300",
+   "output": "850"
+  }
+ ],
+ "raw": ""
+}

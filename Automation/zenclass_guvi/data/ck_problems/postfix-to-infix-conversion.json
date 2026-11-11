@@ -1,0 +1,17 @@
+{
+ "title": "842. Postfix to Infix Conversion",
+ "slug": "postfix-to-infix-conversion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n842. Postfix to Infix Conversion\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nConvert a given expression postfix to infix notation using Stack",
+ "input_spec": "The code should take a string of arbitrary length (postfix notation).",
+ "output_spec": "Print the corresponding form of infix notation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ab+c/",
+   "output": "a+b/c"
+  }
+ ],
+ "raw": ""
+}

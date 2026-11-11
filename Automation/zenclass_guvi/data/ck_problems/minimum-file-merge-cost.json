@@ -1,0 +1,17 @@
+{
+ "title": "1485. Minimum File Merge Cost",
+ "slug": "minimum-file-merge-cost",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1485. Minimum File Merge Cost\n\n40\n\nMedium\n\nProblem Statement:\nGiven n files, each with a certain size, you need to merge all the files into one. The cost of each merge is the sum of the sizes of the two files being merged. After a merge, the two files are replaced by a single file of their combined size. The goal is to find the minimum cost required to merge all the files into one file.",
+ "input_spec": "The first input is an integer whose name is n which means number of files. The second input is a list of n integers which represents the size of each file.",
+ "output_spec": "Print a single integer representing the minimum cost to merge all files into one file.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n10 20 30 40",
+   "output": "190"
+  }
+ ],
+ "raw": ""
+}

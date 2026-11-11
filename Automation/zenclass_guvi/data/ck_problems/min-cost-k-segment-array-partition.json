@@ -1,0 +1,17 @@
+{
+ "title": "1514. Min Cost K-Segment Array Partition",
+ "slug": "min-cost-k-segment-array-partition",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1514. Min Cost K-Segment Array Partition\n\n50\n\nMedium\n\nProblem Statement:\nYou are given an array of N integers. Your task is to partition this array into exactly K non-empty contiguous segments. For each segment, you can define its cost as the sum of all its elements multiplied by the number of elements in that segment. The total cost is the sum of the costs of all segments. Find the minimum possible total cost you can achieve by partitioning the array into K segments.",
+ "input_spec": "The first line contains two integers N and K (1",
+ "output_spec": "Print a single integer",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 2\n5 5 5 5",
+   "output": "40"
+  }
+ ],
+ "raw": ""
+}

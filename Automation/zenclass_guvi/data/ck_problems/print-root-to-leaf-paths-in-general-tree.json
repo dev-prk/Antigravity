@@ -1,0 +1,17 @@
+{
+ "title": "1582. Print Root-to-Leaf Paths in General Tree",
+ "slug": "print-root-to-leaf-paths-in-general-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1582. Print Root-to-Leaf Paths in General Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven a general tree (a tree where each node can have any number of children), print all possible paths from the root node to every leaf node. Each path should be printed as a sequence of node values from the root to a leaf.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the tree.\n- The second line contains N space-separated integers representing the values of the nodes (node values are unique).\n- The next N-1 lines each contain two integers u and v, indicating an edge between node u and node v.",
+ "output_spec": "- Print each root-to-leaf path on a separate line. Each path should be a space-separated sequence of node values from root to leaf.",
+ "constraints": "- 1 \u2264 N \u2264 10^4\n- Node values are unique integers in the range [1, 10^5]\n- The tree is rooted at the first node value given in the second line.",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n1 2\n1 3\n2 4\n2 5",
+   "output": "1 2 4\n1 2 5\n1 3"
+  }
+ ],
+ "raw": ""
+}

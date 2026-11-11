@@ -1,0 +1,17 @@
+{
+ "title": "1531. Inorder Successor in Binary Search Tree",
+ "slug": "inorder-successor-in-binary-search-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1531. Inorder Successor in Binary Search Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven a Binary Search Tree (BST) and a node in it, find the inorder successor of that node in the BST. The inorder successor of a node is the node with the smallest key greater than the given node's key. If the given node has no inorder successor in the tree, return null.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the BST.\n- The second line contains N space-separated integers representing the values of the nodes inserted into the BST in the given order.\n- The third line contains an integer K, the value of the node whose inorder successor is to be found.",
+ "output_spec": "- Print the value of the inorder successor node. If there is no inorder successor, print \"null\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n20 8 22 4 12 10 14\n14",
+   "output": "20"
+  }
+ ],
+ "raw": ""
+}

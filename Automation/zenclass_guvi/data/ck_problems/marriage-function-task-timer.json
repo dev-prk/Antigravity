@@ -1,0 +1,17 @@
+{
+ "title": "1098. Marriage Function Task Timer",
+ "slug": "marriage-function-task-timer",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1098. Marriage Function Task Timer\n\n50\n\nMedium\n\nProblem Statement:\nYou are organizing a marriage function and you have a list of tasks to be done. Each task has a time duration. You want to keep track of the total time taken by all tasks. Write a Python class  MarriageFunction  with a class method  do_task  that simulates doing a task and keeps track of the total time taken by all tasks.",
+ "input_spec": "-  task : a tuple. The first element is the task name (a string), and the second element is the task duration in seconds (an integer).",
+ "output_spec": "- The function should print the task name and the time taken by the task in the format:  f\"{task[0]} took {round(end - start, 2)} seconds",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "[(\"Decorating the hall\", 2)]",
+   "output": "Decorating the hall took 2.0 seconds"
+  }
+ ],
+ "raw": ""
+}

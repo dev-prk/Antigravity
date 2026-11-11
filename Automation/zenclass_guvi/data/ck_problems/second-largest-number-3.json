@@ -1,0 +1,17 @@
+{
+ "title": "990. Second Largest Number-3",
+ "slug": "second-largest-number-3",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n990. Second Largest Number-3\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number n followed by n numbers Print the 2nd largest number in an array",
+ "input_spec": "0<n<100\nGiven a number n\nFollowed by n number in next line",
+ "output_spec": "Print the second largest number in an array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n5 7 4 4 6 8",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

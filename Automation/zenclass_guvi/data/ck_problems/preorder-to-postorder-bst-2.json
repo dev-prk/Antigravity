@@ -1,0 +1,17 @@
+{
+ "title": "667. Preorder to Postorder BST-2",
+ "slug": "preorder-to-postorder-bst-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n667. Preorder to Postorder BST-2\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given a preorder traversal of binary search tree print the post order traversal of it.",
+ "input_spec": "You are given with preorder traversal of binary search tree",
+ "output_spec": "Print the post order traversal of tree",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 0 2",
+   "output": "0 2 1"
+  }
+ ],
+ "raw": ""
+}

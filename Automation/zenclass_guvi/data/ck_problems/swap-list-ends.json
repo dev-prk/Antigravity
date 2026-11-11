@@ -1,0 +1,17 @@
+{
+ "title": "805. Swap List Ends",
+ "slug": "swap-list-ends",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n805. Swap List Ends\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Swap the First and Last Value of a List",
+ "input_spec": "The input contains an integer",
+ "output_spec": "Swap the first and last value in the list",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 20 30 40",
+   "output": "40 20 30 10"
+  }
+ ],
+ "raw": ""
+}

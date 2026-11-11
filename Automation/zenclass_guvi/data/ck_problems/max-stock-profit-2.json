@@ -1,0 +1,17 @@
+{
+ "title": "467. Max Stock Profit-2",
+ "slug": "max-stock-profit-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n467. Max Stock Profit-2\n\n60\n\nMedium  Topics\n\nProblem Statement:\nKumar is interested in investing in CP Inc after hearing of their profits. He believes that CP Inc will make more money in the future. To confirm this he uses his secret time travelling machine to travel N days into the future. Once in the future he obtains a record of the prices of a single stock for each of the N days and returns to his timeline. After he returns he decides to analyze how to make the most profit by investing. Given a list of prices of the stock for N days, help Kumar find the maximum profit he can make by buying one stock and selling one stock. Note: Assume Kumar has an infinite amount of money, so he can buy any stock of any price. Your goal is to maximize his profit. Kumar can also refuse to buy or sell any stock, in that case his profit is 0. Also note that kumar has to first buy a stock before he can sell the same stock",
+ "input_spec": "The first line contains a single integer N denoting the number of days for which stock prices are known.\nThe second line contains N integers denoting the prices of the stock. The ith integer is the price of the stock on the ith day (1",
+ "output_spec": "The output must consist of a single integer : the maximum profit",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1584. Red-Black Tree Zigzag Order",
+ "slug": "red-black-tree-zigzag-order",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1584. Red-Black Tree Zigzag Order\n\n80\n\nHard\n\nProblem Statement:\nGiven a Red-Black Tree, print its nodes in zigzag (spiral) order. In zigzag order, the first level is printed from left to right, the next level from right to left, and so on, alternating at each level. You are given the root of the Red-Black Tree. Assume the tree nodes contain integer values.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the tree.\n- The next N lines each contain three space-separated values: value, left_child_index, right_child_index.\n- value: integer value of the node.\n- left_child_index: index (1-based) of the left child node, or -1 if there is no left child.\n- right_child_index: index (1-based) of the right child node, or -1 if there is no right child.\n- The root of the tree is always the first node (index 1).\n- 1 <= N <= 10^4\n- -10^5 <= value <= 10^5\n- Each left_child_index and right_child_index is either -1 or a valid index (1-based) of another node.",
+ "output_spec": "- Print the node values in zigzag order, separated by spaces, in a single line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n10 2 3\n5 4 5\n15 6 7\n2 -1 -1\n7 -1 -1\n12 -1 -1\n20 -1 -1",
+   "output": "10 15 5 2 7 12 20"
+  }
+ ],
+ "raw": ""
+}

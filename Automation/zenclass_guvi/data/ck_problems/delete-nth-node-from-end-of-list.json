@@ -1,0 +1,17 @@
+{
+ "title": "833. Delete Nth Node from End of List",
+ "slug": "delete-nth-node-from-end-of-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n833. Delete Nth Node from End of List\n\n40\n\nMedium  Topics\n\nProblem Statement:\nDelete the N-th node from the end of the linked list",
+ "input_spec": "First line represents the size of the linked list.\nNext line represents the sequence of numbers as the node value of the linked list(separated by space).\nThird line contains which node value to be delete",
+ "output_spec": "Delete the N-th Node from the last and print result the values of linked list(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n3",
+   "output": "1 2 4 5"
+  }
+ ],
+ "raw": ""
+}

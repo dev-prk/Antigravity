@@ -1,0 +1,17 @@
+{
+ "title": "695. String Weight Calculator",
+ "slug": "string-weight-calculator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n695. String Weight Calculator\n\n50\n\nMedium  Topics\n\nProblem Statement:\nQues36:You are given a String \u2018s\u2019 and a Bigstring g,g=\"abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXY\"He wants to compute the weight of the string s.Weight is computed as for weight is equal to weight of that character +index of that character.Using big string. SEE EXAMPLE FOR MORE CLARITY",
+ "input_spec": "You are given a string \u2018s\u2019",
+ "output_spec": "Print the weight",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aA1 b",
+   "output": "66"
+  }
+ ],
+ "raw": ""
+}

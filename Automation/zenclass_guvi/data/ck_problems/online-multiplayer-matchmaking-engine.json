@@ -1,0 +1,17 @@
+{
+ "title": "1861. online-multiplayer-matchmaking-engine",
+ "slug": "online-multiplayer-matchmaking-engine",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1861. online-multiplayer-matchmaking-engine\n\n40\n\nMedium  Topics\n\nOnline Multiplayer Matchmaking Engine\n\nProblem Statement\nAn online multiplayer gaming platform needs to match players based on their skill ratings.\n\nEach player has a skill value.\n\nMatching Rules:\n1. Two players can form a match only if\n|skill1 \u2212 skill2| \u2264 K\n2. Each player can play only once.\n3. You must maximize the total number of matches.\n\nYour task is to determine the maximum number of matches possible.\n\nInput Format\nFirst line contains:\nn k\n\nSecond line contains:\nn integers representing skill ratings.\n\nOutput Format\nPrint the maximum number of matches.",
+ "input_spec": "First line contains:\nn k\n\nSecond line contains:\nn integers representing skill ratings.",
+ "output_spec": "Print the maximum number of matches.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 3\n1 3 4 7 8 10",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

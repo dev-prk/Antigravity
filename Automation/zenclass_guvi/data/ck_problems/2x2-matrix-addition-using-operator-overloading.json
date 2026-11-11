@@ -1,0 +1,17 @@
+{
+ "title": "1806. 2x2 Matrix Addition using Operator Overloading",
+ "slug": "2x2-matrix-addition-using-operator-overloading",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1806. 2x2 Matrix Addition using Operator Overloading\n\n50\n\nMedium\n\n2x2 Matrix Addition using Operator Overloading\n\nProblem Statement:\nWrite a program to overload the + operator to add two 2x2 matrices.\n\nDescription:\nCreate a class Matrix that:\n1. Stores a 2x2 integer matrix.\n2. Uses constructor to read matrix values.\n3. Overloads the + operator to add two matrices.\n4. Returns the resultant matrix.\n5. Displays the final matrix.\n\nMatrix addition rule:\nResult[i][j] = A[i][j] + B[i][j]\n\nInput Format:\n8 integers\nFirst 4 integers \u2192 Matrix A (row-wise)\nNext 4 integers \u2192 Matrix B (row-wise)\n\nOutput Format:\nResultant 2x2 matrix (each row in new line)",
+ "input_spec": "8 integers\nFirst 4 integers \u2192 Matrix A (row-wise)\nNext 4 integers \u2192 Matrix B (row-wise)",
+ "output_spec": "Resultant 2x2 matrix (each row in new line)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 -3\n2 7\n-2 4\n6 -1",
+   "output": "3 1\n8 6"
+  }
+ ],
+ "raw": ""
+}

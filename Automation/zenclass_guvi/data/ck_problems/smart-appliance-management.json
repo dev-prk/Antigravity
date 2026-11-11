@@ -1,0 +1,17 @@
+{
+ "title": "1175. Smart Appliance Management",
+ "slug": "smart-appliance-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1175. Smart Appliance Management\n\n50\n\nMedium\n\nProblem Statement:\nDesign a smart appliance management system that allows users to manage a collection of appliances in a smart home. Each appliance has a unique ID, a name, a power rating, and a status (on/off). You need to implement a class called Appliance to represent an appliance, and a class called SmartHome to manage the collection of appliances. The SmartHome class should provide methods to add an appliance, remove an appliance by ID, toggle the status of an appliance by ID, and calculate the total power consumption of all appliances that are currently on.",
+ "input_spec": "The first line contains an integer n, the number of appliances to be added to the system. The next n lines each contain the details of an appliance in the following order: applianceID, name, powerRating, and status (either \"on\" or \"off\"). The next line contains an integer m, the number of operations to be performed. The next m lines each contain a string representing an operation: either \"add\", \"remove\", \"toggle\", or \"calculate\", followed by the relevant parameters (appliance details for \"add\", applianceID for \"remove\" and \"toggle\").",
+ "output_spec": "For each \"remove\" operation, output \"Appliance removed successfully\" if the appliance was removed, otherwise output \"Appliance not found\". For each \"toggle\" operation, output \"Appliance status toggled\" if the status was toggled, otherwise output \"Appliance not found\". For the \"calculate\" operation, output the total power consumption of all appliances that are currently on.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n501 Air_Conditioner 1.5 on\n502 Refrigerator 0.8 off\n3\ntoggle 502\ncalculate\nremove 501",
+   "output": "Appliance status toggled\nTotal Power Consumption: 2.3 kW\nAppliance removed successfully"
+  }
+ ],
+ "raw": ""
+}

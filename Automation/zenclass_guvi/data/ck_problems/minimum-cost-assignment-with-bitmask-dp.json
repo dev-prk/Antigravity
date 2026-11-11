@@ -1,0 +1,17 @@
+{
+ "title": "1516. Minimum Cost Assignment with Bitmask DP",
+ "slug": "minimum-cost-assignment-with-bitmask-dp",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1516. Minimum Cost Assignment with Bitmask DP\n\n70\n\nHard\n\nProblem Statement:\nYou are given an N x N matrix  cost  where  cost[i][j]  represents the cost of assigning the i-th task to the j-th person. Each person can be assigned to at most one task, and each task must be assigned to exactly one person. Your goal is to assign all tasks to people such that the total cost is minimized.",
+ "input_spec": "- The first line contains a single integer N (1 \u2264 N \u2264 20), the number of tasks and people.\n- The next N lines each contain N integers, where the j-th integer in the i-th line is  cost[i][j]  (0 \u2264 cost[i][j] \u2264 10^6).",
+ "output_spec": "- Print a single integer: the minimum total cost to assign all tasks to people.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n9 2 7\n6 4 3\n5 8 1",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

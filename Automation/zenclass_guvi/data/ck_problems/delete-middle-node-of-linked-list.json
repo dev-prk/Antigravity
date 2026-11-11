@@ -1,0 +1,17 @@
+{
+ "title": "839. Delete Middle Node of Linked List",
+ "slug": "delete-middle-node-of-linked-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n839. Delete Middle Node of Linked List\n\n50\n\nMedium  Topics\n\nProblem Statement:\nDelete the middle node of a linked list and print the resulting linked list.",
+ "input_spec": "First line represents the size of the linked list.\nNext line represents the sequence of numbers as the node value of the linked list.",
+ "output_spec": "Print the resultant linked list.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n45 56 67 78",
+   "output": "45 67 78"
+  }
+ ],
+ "raw": ""
+}

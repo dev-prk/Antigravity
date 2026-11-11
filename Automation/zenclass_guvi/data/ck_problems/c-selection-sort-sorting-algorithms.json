@@ -1,0 +1,17 @@
+{
+ "title": "1616. C, Selection Sort, Sorting, Algorithms",
+ "slug": "c-selection-sort-sorting-algorithms",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1616. C, Selection Sort, Sorting, Algorithms\n\n40\n\nMedium\n\nProblem Statement: Sorting Numbers Using Selection Sort\n\nWrite a program to sort an array of integers in ascending order using Selection Sort.\n\nDescription\n\nYou are given an array of n integers.\n\nThe program should implement the Selection Sort algorithm to sort the array in ascending order.\n\nSelection Sort works by repeatedly finding the minimum element from the unsorted part and moving it to the beginning.\n\nInput Format\n\nFirst line: Integer n (number of elements)\n\nSecond line: n space-separated integers\n\nOutput Format\n\nSorted array in ascending order (space-separated).",
+ "input_spec": "First line: Integer n (number of elements)\n\nSecond line: n space-separated integers",
+ "output_spec": "Sorted array in ascending order (space-separated).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n64 25 12 22 11",
+   "output": "11 12 22 25 64"
+  }
+ ],
+ "raw": ""
+}

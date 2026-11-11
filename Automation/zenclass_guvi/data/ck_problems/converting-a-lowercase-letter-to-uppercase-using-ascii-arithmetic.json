@@ -1,0 +1,17 @@
+{
+ "title": "2102. Converting a Lowercase Letter to Uppercase Using ASCII Arithmetic",
+ "slug": "converting-a-lowercase-letter-to-uppercase-using-ascii-arithmetic",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2102. Converting a Lowercase Letter to Uppercase Using ASCII Arithmetic\n\n95\n\nHard\n\nProblem Statement\nRead a lowercase letter and convert it to uppercase using arithmetic on its ASCII value, without using any built-in case-conversion function.\nDescription\nRead a single lowercase character. Compute and print the resulting uppercase character using arithmetic operation.",
+ "input_spec": "A single lowercase letter.",
+ "output_spec": "Print the corresponding uppercase letter.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "g",
+   "output": "G"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "945. LCM without GCD",
+ "slug": "lcm-without-gcd",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n945. LCM without GCD\n\n80\n\nHard  Topics\n\nProblem Statement:\nWrite a program to get a list of integers as input and find the LCM of the values without using GCD",
+ "input_spec": "and find the LCM of the values without using GCD\n\nInput Description:\nFirst line contains an integer N, number of values.\nSecond line contains N space separated values.",
+ "output_spec": "Print the LCM of the values.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2 3 4 5",
+   "output": "60"
+  }
+ ],
+ "raw": ""
+}

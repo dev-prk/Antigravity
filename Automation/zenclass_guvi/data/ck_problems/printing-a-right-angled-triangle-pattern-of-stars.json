@@ -1,0 +1,17 @@
+{
+ "title": "2123. Printing a Right-Angled Triangle Pattern of Stars",
+ "slug": "printing-a-right-angled-triangle-pattern-of-stars",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2123. Printing a Right-Angled Triangle Pattern of Stars\n\n90\n\nHard\n\nProblem Statement\nRead an integer N and print a right-angled triangle pattern of stars with N rows, using nested for loops.\n\nDescription\nRead an integer N from input. Use an outer for loop to control the row number, running from 1 to N. Use an inner for loop inside it to print a number of '*' characters equal to the current row number, with no spaces between them. After each row's stars are printed, move to a new line before starting the next row.",
+ "input_spec": ". Use an outer for loop to control the row number, running from 1 to N. Use an inner for loop inside it to print a number of '*' characters equal to the current row number, with no spaces between them. After each row's stars are printed, move to a new line before starting the next row.\n\nInput Description\nA single integer N (N >= 1).",
+ "output_spec": "Print N rows, where row i contains i stars.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "*\n**\n***\n****"
+  }
+ ],
+ "raw": ""
+}

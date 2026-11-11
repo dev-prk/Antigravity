@@ -1,0 +1,17 @@
+{
+ "title": "338. Range XOR Queries",
+ "slug": "range-xor-queries",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n338. Range XOR Queries\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N and Q followed by N numbers. Now Q inputs of 2 Numbers U and V are given. U indicates the starting index and V indicates the ending index. So for each U,V find the XOR of all values of the array from the index U to V (1 based indexing). HINT : USE SEGMENT TREE",
+ "input_spec": "s of 2 Numbers U and V are given. U indicates the starting index and V indicates the ending index. So for each U,V find the XOR of all values of the array from the index U to V (1 based indexing). HINT : USE SEGMENT TREE\n\nInput Description:\nThe input consists of 2 numbers N and Q, followed by N numbers. Then Q inputs of 2 numbers U and V are given, where U indicates the starting index and V indicates the ending index. Input Size : N<=100000",
+ "output_spec": "For each query (U,V), output the XOR sum of all values in the array from index U to V (1-based indexing).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3\n1 2 1 4 1\n1 3\n2 4\n3 4",
+   "output": "2\n7\n5"
+  }
+ ],
+ "raw": ""
+}

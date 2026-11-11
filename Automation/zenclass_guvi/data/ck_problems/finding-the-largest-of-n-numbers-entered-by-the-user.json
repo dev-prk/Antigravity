@@ -1,0 +1,17 @@
+{
+ "title": "2121. Finding the Largest of N Numbers Entered by the User",
+ "slug": "finding-the-largest-of-n-numbers-entered-by-the-user",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2121. Finding the Largest of N Numbers Entered by the User\n\n70\n\nHard\n\nProblem Statement\nRead a count N followed by N integers, and print the largest value among them, using a loop combined with an if statement.\n\nDescription\nRead an integer N specifying how many values will follow. Read the first value and store it as the current largest. Use a for loop to read each of the remaining N - 1 values one at a time, and inside the loop use an if statement to update the largest value whenever a bigger number is read. After the loop ends, print the largest value found.",
+ "input_spec": "An integer N, followed by N integers, all separated by spaces.",
+ "output_spec": "Print the largest of the N numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3 8 2 9 4",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

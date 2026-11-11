@@ -1,0 +1,17 @@
+{
+ "title": "674. Reverse String Words",
+ "slug": "reverse-string-words",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n674. Reverse String Words\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given with string of words,we have to arrange them in reverse saturated order.",
+ "input_spec": "You are given a string \u2018s\u2019.",
+ "output_spec": "Print the reverse saturated order",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "I am kohli fan",
+   "output": "I ma ilhok naf"
+  }
+ ],
+ "raw": ""
+}

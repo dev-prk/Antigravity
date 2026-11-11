@@ -1,0 +1,17 @@
+{
+ "title": "1646. Uses constructors to initialize a Person object with a name and age",
+ "slug": "uses-constructors-to-initialize-a-person-object-with-a-name-and-age",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1646. Uses constructors to initialize a Person object with a name and age\n\n50\n\nMedium\n\nUses constructors to initialize a Person object with a name and age\nProblem Statement\nCreate a program that uses constructors to initialize a Person object with a name and age. The program should then read a number of years from the user and update the person's age, outputting the updated age.\n\nDescription\nDefine a class Person with fields name and age. Use a constructor to initialize these fields. The program should read the initial name and age, and then read a number of years to add to the age. Output the updated age.\n\nInput Format\nThe first line contains the name (a string).\nThe second line contains the initial age (an integer).\nThe third line contains the number of years to add (an integer).\nOutput Format\nA single line containing the updated age.",
+ "input_spec": "The first line contains the name (a string).\nThe second line contains the initial age (an integer).\nThe third line contains the number of years to add (an integer).",
+ "output_spec": "ting the updated age.\n\nDescription\nDefine a class Person with fields name and age. Use a constructor to initialize these fields. The program should read the initial name and age, and then read a number of years to add to the age. Output the updated age.\n\nInput Format\nThe first line contains the name (a string).\nThe second line contains the initial age (an integer).\nThe third line contains the number of years to add (an integer).\nOutput Format\nA single line containing the updated age.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Diana\n20\n15",
+   "output": "35"
+  }
+ ],
+ "raw": ""
+}

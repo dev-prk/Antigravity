@@ -1,0 +1,17 @@
+{
+ "title": "620. XOR Sum of Pairs",
+ "slug": "xor-sum-of-pairs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n620. XOR Sum of Pairs\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given an array of 'N' numbers.You have to find the sum of XOR pairs of numbers in the array.",
+ "input_spec": "The first line of input denotes a number n. Next line contains n space separated numbers",
+ "output_spec": "Print the sum of all XOR pairs present in array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n7 3 5",
+   "output": "12"
+  }
+ ],
+ "raw": ""
+}

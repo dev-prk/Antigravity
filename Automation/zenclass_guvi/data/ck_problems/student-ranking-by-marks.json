@@ -1,0 +1,17 @@
+{
+ "title": "510. Student Ranking by Marks",
+ "slug": "student-ranking-by-marks",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n510. Student Ranking by Marks\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given with the marks of N students in CS, Maths and English. Sort the students based on marks in maths. If 2 students have the same marks in maths, sort them based on marks in CS. If there is a tie, sort based on marks in English. All the sorting must be done in descending order.",
+ "input_spec": "Number of students followed by student id,marks in CS, Maths and English",
+ "output_spec": "Sorted list of students",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nA 34 89 98\nB 98 87 98\nC 87 67 98",
+   "output": "A 34 89 98\nB 98 87 98\nC 87 67 98"
+  }
+ ],
+ "raw": ""
+}

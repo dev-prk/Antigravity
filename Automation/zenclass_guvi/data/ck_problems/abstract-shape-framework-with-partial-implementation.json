@@ -1,0 +1,17 @@
+{
+ "title": "1822. Abstract Shape Framework with Partial Implementation",
+ "slug": "abstract-shape-framework-with-partial-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1822. Abstract Shape Framework with Partial Implementation\n\n40\n\nMedium\n\nAbstract Shape Framework with Partial Implementation\n\nProblem Statement:\nCreate an abstract Shape framework where base class provides partial implementation.\n\nDescription:\nAbstract Base Class: Shape\n1. Pure virtual function area().\n2. Virtual function describe() with implementation.\n3. Virtual destructor.\n\nDerived Classes:\n1. Triangle\n2. Square\n\nRequirements:\n1. Override area().\n2. Use base pointer array.\n3. Demonstrate runtime polymorphism.\n4. Ensure destructor chaining.\n5. Prevent direct instantiation of Shape.\n\nInput Format:\nTriangle base height\nSquare side\n\nOutput Format:\nArea and Description of each shape.",
+ "input_spec": "Triangle base height\nSquare side",
+ "output_spec": "Area and Description of each shape.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 5\n4",
+   "output": "Shape Description\nTriangle Area: 25.00\nShape Description\nSquare Area: 16.00"
+  }
+ ],
+ "raw": ""
+}

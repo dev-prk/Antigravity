@@ -1,0 +1,17 @@
+{
+ "title": "1545. Bellman-Ford SSSP with Negative Edges & Cycles",
+ "slug": "bellman-ford-sssp-with-negative-edges-cycles",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1545. Bellman-Ford SSSP with Negative Edges & Cycles\n\n80\n\nHard\n\nProblem Statement:\nGiven a directed weighted graph with N vertices and M edges, some of which may have negative weights, find the shortest distance from a given source vertex S to all other vertices using the Bellman-Ford algorithm. If a vertex is unreachable from the source, output \"INF\" for that vertex. If the graph contains a negative weight cycle that is reachable from the source, output \"NEGATIVE CYCLE\" and terminate.",
+ "input_spec": "- The first line contains three integers N, M, and S \u2014 the number of vertices, the number of edges, and the source vertex (0-indexed).\n- The next M lines each contain three integers u, v, and w \u2014 representing a directed edge from vertex u to vertex v with weight w.",
+ "output_spec": "\"INF\" for that vertex. If the graph contains a negative weight cycle that is reachable from the source, output \"NEGATIVE CYCLE\" and terminate.\n\nInput Description:\n- The first line contains three integers N, M, and S \u2014 the number of vertices, the number of edges, and the source vertex (0-indexed).\n- The next M lines each contain three integers u, v, and w \u2014 representing a directed edge from vertex u to vertex v with weight w.\n\nOutput Description:\n- If there is a negative weight cycle reachable from the source, output \"NEGATIVE CYCLE\".\n- Otherwise, output N space-separated values, where the i-th value is the shortest distance from S to vertex i, or \"INF\" if vertex i is unreachable.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 8 0\n0 1 -1\n0 2 4\n1 2 3\n1 3 2\n1 4 2\n3 2 5\n3 1 1\n4 3 -3",
+   "output": "0 -1 2 -2 1"
+  }
+ ],
+ "raw": ""
+}

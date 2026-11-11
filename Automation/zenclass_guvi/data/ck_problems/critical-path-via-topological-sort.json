@@ -1,0 +1,17 @@
+{
+ "title": "1550. Critical Path via Topological Sort",
+ "slug": "critical-path-via-topological-sort",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1550. Critical Path via Topological Sort\n\n80\n\nHard\n\nProblem Statement:\nYou are given a set of tasks required to complete a project. Each task has a specific duration and may depend on the completion of other tasks. Your goal is to determine the critical path of the project, which is the longest path through the task dependency graph and determines the minimum time required to complete the project. Use topological sorting to help identify the critical path.",
+ "input_spec": "- The first line contains two integers N and M, where N is the number of tasks (numbered 1 to N), and M is the number of dependencies.\n- The second line contains N integers, where the i-th integer represents the duration of task i.\n- The next M lines each contain two integers u and v, indicating that task u must be completed before task v can start.",
+ "output_spec": "- Print a single integer representing the total duration of the critical path.\n- Print the sequence of tasks (space-separated) that form the critical path.",
+ "constraints": "- 1 \u2264 N \u2264 10^4\n- 0 \u2264 M \u2264 2\u00d710^4\n- 1 \u2264 duration of each task \u2264 10^4\n- 1 \u2264 u, v \u2264 N, u \u2260 v",
+ "samples": [
+  {
+   "input": "5 5\n2 4 3 1 2\n1 2\n1 3\n3 4\n2 4\n4 5",
+   "output": "9\n1 2 4 5"
+  }
+ ],
+ "raw": ""
+}

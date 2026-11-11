@@ -1,0 +1,17 @@
+{
+ "title": "2208. Printing All Prime Numbers up to N Using a Function",
+ "slug": "printing-all-prime-numbers-up-to-n-using-a-function",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2208. Printing All Prime Numbers up to N Using a Function\n\n90\n\nHard\n\nProblem Statement\nRead an integer N and print all prime numbers from 2 to N, using a function that checks whether a number is prime.\n\nDescription\nRead an integer N from input. Write a function isPrime that takes an integer parameter and returns 1 if it is a prime number, otherwise 0. Inside the function, a number smaller than 2 is not prime, and any other number is not prime if it is exactly divisible by any integer from 2 up to one less than itself. In main(), use a for loop from 2 to N, call isPrime for each number, and print the numbers for which it returns 1, separated by spaces.",
+ "input_spec": ". Write a function isPrime that takes an integer parameter and returns 1 if it is a prime number, otherwise 0. Inside the function, a number smaller than 2 is not prime, and any other number is not prime if it is exactly divisible by any integer from 2 up to one less than itself. In main(), use a for loop from 2 to N, call isPrime for each number, and print the numbers for which it returns 1, separated by spaces.\n\nInput Description\nA single integer N (N >= 2).",
+ "output_spec": "Print all prime numbers from 2 to N, separated by single spaces, on one line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20",
+   "output": "2 3 5 7 11 13 17 19"
+  }
+ ],
+ "raw": ""
+}

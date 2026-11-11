@@ -1,0 +1,17 @@
+{
+ "title": "158. Odd Digit Sum Check",
+ "slug": "odd-digit-sum-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n158. Odd Digit Sum Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nA number is given as input. Find the odd digits in the number, add them and find if the sum is odd or not. If even print E, if odd print O.",
+ "input_spec": ". Find the odd digits in the number, add them and find if the sum is odd or not. If even print E, if odd print O.\n\nInput Description:\nInput Size : N <= 10000000000",
+ "output_spec": "If the sum of odd digits is even print E, if odd print O.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "413",
+   "output": "E"
+  }
+ ],
+ "raw": ""
+}

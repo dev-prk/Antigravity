@@ -1,0 +1,17 @@
+{
+ "title": "1577. Minimum Spanning Tree in a Grid",
+ "slug": "minimum-spanning-tree-in-a-grid",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1577. Minimum Spanning Tree in a Grid\n\n90\n\nHard\n\nProblem Statement:\nGiven a 2D grid of size N x M, each cell contains a positive integer representing the cost to connect to its adjacent (up, down, left, right) neighbors. You are to connect all the cells in the grid such that the total cost is minimized and every cell is reachable from every other cell (i.e., the grid forms a single connected component). The cost to connect two adjacent cells is the sum of their individual costs. Find the minimum total cost required to connect all the cells.",
+ "input_spec": "- The first line contains two integers N and M, the number of rows and columns in the grid.\n- The next N lines each contain M integers, where the j-th integer in the i-th line represents the cost of the cell at position (i, j).",
+ "output_spec": "- Print a single integer, the minimum total cost to connect all the cells.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9\n\n2 2\n1 2\n3 4",
+   "output": "68\n\n13"
+  }
+ ],
+ "raw": ""
+}

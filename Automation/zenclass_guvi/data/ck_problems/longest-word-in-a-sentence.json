@@ -1,0 +1,17 @@
+{
+ "title": "146. Longest Word in a Sentence",
+ "slug": "longest-word-in-a-sentence",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n146. Longest Word in a Sentence\n\n50\n\nMedium  Topics\n\nProblem Statement:\nFind the word having maximum length in a given sentence and print it. If two words are of same length return the first occuring word of max-length.",
+ "input_spec": "The input consists of a sentence where its size |s| is less than or equal to 100000.",
+ "output_spec": "The output is the word with the maximum length.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi geek",
+   "output": "guvi"
+  }
+ ],
+ "raw": ""
+}

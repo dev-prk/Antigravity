@@ -1,0 +1,17 @@
+{
+ "title": "441. Prime Count in Range",
+ "slug": "prime-count-in-range",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n441. Prime Count in Range\n\n80\n\nHard  Topics\n\nProblem Statement:\nGiven Q ranges of the form L R, find the number of numbers X such that X is prime and L <= X <= R.",
+ "input_spec": "The first line contains an integer Q.\nThe next Q lines contain two space separated integers L and R.",
+ "output_spec": "Print Q lines answering each query.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n0 5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

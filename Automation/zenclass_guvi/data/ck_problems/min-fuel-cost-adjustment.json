@@ -1,0 +1,17 @@
+{
+ "title": "1068. Min Fuel Cost Adjustment",
+ "slug": "min-fuel-cost-adjustment",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1068. Min Fuel Cost Adjustment\n\n50\n\nMedium\n\nProblem Statement:\nA group of friends is planning a road trip to visit multiple destinations. Each friend owns a car, and they need to ensure that the total fuel consumption of their vehicles matches the distance they plan to travel. The distance to each destination is represented by a list of integers, where positive values indicate the distance in kilometers they need to travel, and negative values indicate the distance they need to backtrack. The friends can adjust the fuel levels of their cars by adding or subtracting fuel, with each adjustment costing one coin. They want to minimize the total cost of adjusting their fuel levels to match the total distance they plan to travel. What is the minimum cost the group will have to pay to ensure that the total fuel consumption of their vehicles equals the total distance they plan to travel?",
+ "input_spec": "- The first line contains a single integer n (1 \u2264 n \u2264 10^5) \u2014 the number of destinations the group plans to visit.\n- The second line contains n integers a1, a2, ..., an (-10^9 \u2264 ai \u2264 10^9) \u2014 representing the distances to each destination. Positive values indicate the distance they need to travel, and negative values indicate the distance they need to backtrack.",
+ "output_spec": "Output a single number \u2014 the minimal number of coins you need to pay to make the product equal to 1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n0 0 0 0",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

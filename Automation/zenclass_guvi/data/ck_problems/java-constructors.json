@@ -1,0 +1,17 @@
+{
+ "title": "1645. Java,Constructors",
+ "slug": "java-constructors",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1645. Java,Constructors\n\n50\n\nMedium\n\nConstructors\nProblem Statement:\nWrite a program that demonstrates the use of parameterized constructors by creating a class representing a rectangle and calculating its area.\n\nDescription:\nThe program should have a Rectangle class with a parameterized constructor to initialize the length and width. The class should have a method to calculate the area of the rectangle.\n\nInput Format:\n\nTwo integers representing the length and width of the rectangle.\nOutput Format:\n\nThe area of the rectangle.",
+ "input_spec": "Two integers representing the length and width of the rectangle.",
+ "output_spec": "The area of the rectangle.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 10",
+   "output": "50"
+  }
+ ],
+ "raw": ""
+}

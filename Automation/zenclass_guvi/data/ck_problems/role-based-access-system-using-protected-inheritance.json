@@ -1,0 +1,17 @@
+{
+ "title": "1815. Role-Based Access System using Protected Inheritance",
+ "slug": "role-based-access-system-using-protected-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1815. Role-Based Access System using Protected Inheritance\n\n40\n\nMedium\n\nRole-Based Access System using Protected Inheritance\n\nProblem Statement\n\nDesign a role-based access control system using protected inheritance.\n\nDescription\nBase Class: User\n\nMembers:\nPublic\nvoid login(string name)\n\nProtected\nint accessLevel\nvoid displayAccessLevel()\n\nPrivate\nstring password\n\nDerived Class: Admin (protected inheritance)\n\nInherit User using protected derivation\n\nProvide a public function:\n\nvoid adminLogin(string name, int level)\n\nSet access level\n\nCall base class login\n\nDisplay access level internally\n\nRestrictions\n\nlogin() must NOT be accessible from main() using Admin object.\n\ndisplayAccessLevel() must not be directly accessible in main().\n\nDemonstrate that protected inheritance converts public members into protected.\n\nInput Format\nUsername\nAccessLevel\n\nOutput Format\n\nIf accessLevel >= 5:\n\nAdmin Logged In\nAccess Level: <level>\n\nOtherwise:\n\nInsufficient Privileges",
+ "input_spec": "Username\nAccessLevel",
+ "output_spec": "If accessLevel >= 5:\n\nAdmin Logged In\nAccess Level: <level>\n\nOtherwise:\n\nInsufficient Privileges",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Ravi\n6",
+   "output": "Admin Logged In\nAccess Level: 6"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1810. Secure Wallet Initialization using Explicit Constructor",
+ "slug": "secure-wallet-initialization-using-explicit-constructor",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1810. Secure Wallet Initialization using Explicit Constructor\n\n50\n\nMedium\n\nSecure Wallet Initialization using Explicit Constructor\n\nProblem Statement:\nDesign a program to implement a SecureWallet class that stores a wallet balance using an explicit constructor.\n\nDescription:\nThe program should:\n\nDeclare the constructor as explicit to prevent implicit conversion from int to SecureWallet.\n\nAccept a single integer representing the initial balance.\n\nOverload the + operator to add two wallet objects.\n\nDisplay the total balance after addition.\n\nIf a negative balance is provided during construction, print \"Invalid Balance\" and terminate the program immediately.\n\nInput Format:\nA single integer B representing the initial wallet balance.\n\nOutput Format:\nIf the balance is valid:\nTotal Balance: <value>\n\nIf the balance is negative:\nInvalid Balance",
+ "input_spec": "A single integer B representing the initial wallet balance.",
+ "output_spec": "If the balance is valid:\nTotal Balance: <value>\n\nIf the balance is negative:\nInvalid Balance",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "500",
+   "output": "Total Balance: 1000"
+  }
+ ],
+ "raw": ""
+}

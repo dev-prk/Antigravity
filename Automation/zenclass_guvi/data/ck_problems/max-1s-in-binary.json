@@ -1,0 +1,17 @@
+{
+ "title": "727. Max 1s in Binary",
+ "slug": "max-1s-in-binary",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n727. Max 1s in Binary\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a C program to find the elements which have the maximum number of 1's in its binary form. Input consist of the size of the array , array values and the number of elements to be returned. If two number is having same count then return the elements with the greatest magnitude",
+ "input_spec": "consist of the size of the array , array values and the number of elements to be returned. If two number is having same count then return the elements with the greatest magnitude\n\nInput Description:\nInput consist of the size of the array , array values and the number of elements to be returned",
+ "output_spec": "Output return two values with maximum umber of one's in binary form",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 3 5 7 2\n2",
+   "output": "7 5"
+  }
+ ],
+ "raw": ""
+}

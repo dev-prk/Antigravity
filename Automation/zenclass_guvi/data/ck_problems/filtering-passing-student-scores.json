@@ -1,0 +1,17 @@
+{
+ "title": "1101. Filtering Passing Student Scores",
+ "slug": "filtering-passing-student-scores",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1101. Filtering Passing Student Scores\n\n50\n\nMedium\n\nProblem Statement:\nYou are a college professor and you have the scores of your students in a list. You want to find out which students have passed the course. A student passes the course if they score 60 or more. Write a Python function  passed_students(scores)  that takes a list of scores and returns a list of scores that are 60 or more. Use the  filter  function to filter out the passing scores.",
+ "input_spec": "-  scores : a list of integers representing the scores of the students.",
+ "output_spec": "- The function should return a list of integers representing the scores of the students who have passed.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "[55, 60, 65, 70, 75, 80, 85, 90, 95, 100]",
+   "output": "[60, 65, 70, 75, 80, 85, 90, 95, 100]"
+  }
+ ],
+ "raw": ""
+}

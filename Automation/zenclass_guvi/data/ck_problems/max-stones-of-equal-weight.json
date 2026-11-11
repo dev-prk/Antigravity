@@ -1,0 +1,17 @@
+{
+ "title": "1070. Max Stones of Equal Weight",
+ "slug": "max-stones-of-equal-weight",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1070. Max Stones of Equal Weight\n\n50\n\nMedium\n\nProblem Statement:\nGordon the wizard possesses an extraordinary collection of magical stones. Each stone has a unique weight ranging from 1 to n.\n\nGordon's peculiar ability allows him to fuse two stones together, resulting in a new stone with a weight equal to the sum of the weights of the two original stones. However, the two original stones vanish after fusion.\n\nGordon's ultimate goal is to maximize the number of stones that have the same weight. While it's not mandatory to make all stones uniform in weight, he desires to have as many stones of equal weight as possible.\n\nGiven the number of stones in Gordon's collection, determine how many stones of equal weight he can create using his magical fusion process.",
+ "input_spec": "The input consists of multiple test cases. The first line contains a single integer t (1",
+ "output_spec": "For each test case, print a single integer, the maximum number of stones with equal weight that Gordon can create.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n10",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

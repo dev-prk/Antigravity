@@ -1,0 +1,17 @@
+{
+ "title": "1025. School Employee Payslip Generator",
+ "slug": "school-employee-payslip-generator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1025. School Employee Payslip Generator\n\n40\n\nMedium\n\nProblem Statement:\nCreate a C application to get employee information for a reputed school and print the pay-slip of employees. Consider various possible roles in the school and perform the pay-slip generation.",
+ "input_spec": "The first line of the integer input N consists of the number of employees in the given school.\n\nIt will be followed by the details of the N employees in the N number of lines in the below format:\n\n< employee id > < name > < role > < salary per hour > < working hours >",
+ "output_spec": "For all the N employees, generate the pay slip in the below format:\n\n< employee id>\n\n< name >\n\n< role >\n\n< salary for the current month >\n\nSeparate multiple user payslips using line break between them.\n\nNote: The Salary is calculated by multiplying the working hours and salary per hour",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n1 Raja Principal 1000 240\n2 Rani Vice-Principal 900 250",
+   "output": "1\nRaja\nPrincipal\n240000\n\n2\nRani\nVice-Principal\n225000"
+  }
+ ],
+ "raw": ""
+}

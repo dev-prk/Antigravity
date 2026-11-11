@@ -1,0 +1,17 @@
+{
+ "title": "2084. Comparing Integer and Float Division",
+ "slug": "comparing-integer-and-float-division",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2084. Comparing Integer and Float Division\n\n40\n\nMedium\n\nProblem Statement\nRead two integers and print the result of dividing them once as integer division and once as float division.\nDescription\nRead two integers a and b. Compute their quotient using integer division (a / b) and print it. Then compute their quotient using float division by casting one operand to float, and print that result with two decimal places.",
+ "input_spec": "Two integers a and b, separated by a space.",
+ "output_spec": "Print the integer quotient, then the float quotient (2 decimal places).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 2",
+   "output": "3\n3.50"
+  }
+ ],
+ "raw": ""
+}

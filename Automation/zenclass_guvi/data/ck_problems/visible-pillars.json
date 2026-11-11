@@ -1,0 +1,17 @@
+{
+ "title": "681. Visible Pillars",
+ "slug": "visible-pillars",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n681. Visible Pillars\n\n40\n\nMedium  Topics\n\nProblem Statement:\nNishant is a short heighted person. He is standing facing N pillars of different heights with ith pillar having height hi. He tries to see all the possible pillars. He wants to know that how many buildings will he be able to see in the range.",
+ "input_spec": "First line contains input \u2018n\u2019 denoting size of array.Next line contains n space separated numbers",
+ "output_spec": "Print the maximum towers he can see",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n11 5 9 6 7",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

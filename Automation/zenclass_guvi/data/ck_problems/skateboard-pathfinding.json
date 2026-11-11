@@ -1,0 +1,17 @@
+{
+ "title": "613. Skateboard Pathfinding",
+ "slug": "skateboard-pathfinding",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n613. Skateboard Pathfinding\n\n100\n\nHard  Topics\n\nProblem Statement:\nA park in Chennai has introduced a new skateboard competition. The skating surface is a grid of N x N squares. Most squares are so constructed with slopes that it is possible to direct the skateboard in any of up to three directions of the possible four (North ,East, South or West, represented by the letters N, E, S and W respectively). Some squares however have a deep drop from the adjacent square from which it is impossible to go to any adjacent square. These are represented by D (for Drop) in that square. The objective is to maneuver the skateboard to reach the South East corner of the grid, marked F. Each contestant is given a map of the grid, which shows where the Drop squares are (marked D), where the Final destination is (marked F), and, for each other square, the directions it is possible to maneuver the skateboard in that square. The contestant draws lots to determine which of the squares on the boundaries of the grid on the North or the West of the grid (the top or the left in the diagram) he or she should start in. Then, using a map of the grid, he or she needs to try to reach the South East corner destination by maneuvering the skateboard.\n\nIn some cases, it is impossible to reach the destination. For example, in the diagram above, if one starts at the North East corner (top right in the diagram), the only way is to go is South, until the Drop square is reached (three squares South), and the contestant is stuck there. A contestant asks you to figure out the number of squares at the North or West boundary (top or left boundary in the map) from which it is feasible to reach the destination.",
+ "input_spec": "The first line of the input is a positive integer N, which is the number of squares in each side of the grid. The next N lines have a N strings of characters representing the contents of the map for that corresponding row. Each string may be F, representing the Final destination, D, representing a drop square, or a set of up to three of the possible four directions (N,E,S,W) in some random order. These represent the directions in which the contestant can maneuver the skateboard when in that square.",
+ "output_spec": "The output is one line with the number of North or West border squares from which there is a safe way to maneuver the skateboard to the final destination.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\nES,ES,SE,ES,ES,S\nSE,ES,SE,ES,ES,S\nES,ES,SE,ES,SE,S\nES,SE,ES,SE,E,D\nSE,ES,D,WSE,NES,NS\nE,E,NE,E,E,F",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

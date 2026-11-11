@@ -1,0 +1,17 @@
+{
+ "title": "631. Lexicographically Greater String-2",
+ "slug": "lexicographically-greater-string-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n631. Lexicographically Greater String-2\n\n90\n\nHard  Topics\n\nProblem Statement:\nGiven a string S of length N,rearrange the letters in the string to form a new string X which is lexicographically greater than current string(If many answers are possible,output lexicographically smallest one).If no string exists print '-1'.Input Size: 1<=N<=100000",
+ "input_spec": "Size: 1<=N<=100000\n\nInput Description:\nYou are given a string S of length N",
+ "output_spec": "lexicographically smallest one).If no string exists print '-1'.Input Size: 1<=N<=100000\n\nInput Description:\nYou are given a string S of length N\n\nOutput Description:\nA new string X which is lexicographically greater than current string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcd",
+   "output": "abdc"
+  }
+ ],
+ "raw": ""
+}

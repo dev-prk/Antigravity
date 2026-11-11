@@ -1,0 +1,17 @@
+{
+ "title": "1804. Scoped Resource Release Tracker",
+ "slug": "scoped-resource-release-tracker",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1804. Scoped Resource Release Tracker\n\n40\n\nMedium\n\nScoped Resource Release Tracker\n\nProblem Statement:\nWrite a program to track how many objects are currently active using constructors and destructors.\n\nDescription:\nCreate a class Resource that:\n1. Uses a static variable to count active objects.\n2. Increments count inside constructor.\n3. Decrements count inside destructor.\n4. Displays active object count after every creation and destruction.\n5. Demonstrate destruction using nested scope blocks.\n\nInput Format:\nSingle integer N (number of objects to create inside a scope).\n\nOutput Format:\nObject Created. Active: X\nObject Destroyed. Active: X",
+ "input_spec": "Single integer N (number of objects to create inside a scope).",
+ "output_spec": "Object Created. Active: X\nObject Destroyed. Active: X",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2",
+   "output": "Object Created. Active: 1\nObject Created. Active: 2\nObject Destroyed. Active: 1\nObject Destroyed. Active: 0"
+  }
+ ],
+ "raw": ""
+}

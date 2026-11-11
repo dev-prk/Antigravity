@@ -1,0 +1,17 @@
+{
+ "title": "818. Perfect Number Check",
+ "slug": "perfect-number-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n818. Perfect Number Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nwrite a program to check the given number is a perfect number or not",
+ "input_spec": "The input contains an integer",
+ "output_spec": "If its perfect number print YES otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

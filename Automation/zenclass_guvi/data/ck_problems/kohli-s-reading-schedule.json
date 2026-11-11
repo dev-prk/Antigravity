@@ -1,0 +1,17 @@
+{
+ "title": "356. Kohli's Reading Schedule",
+ "slug": "kohli-s-reading-schedule",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n356. Kohli's Reading Schedule\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nRecently Kohli bought a very interesting book. He knows that it will take t seconds to read the book. Kohli wants to finish reading as fast as he can.But he has some work to do in each of n next days. The number of seconds that Kohli has to spend working during i-th day is ai. If some free time remains, he can spend it on reading. Help Kohli to determine the minimum number of day when He finishes reading. It is guaranteed that the answer doesn't exceed n. Remember that there are 86400 seconds in a day.",
+ "input_spec": "The input consists of two integers, N and T, on the first line, followed by N integers (a_i) on the second line, representing the work time for each of the N days. N is the number of days (N<=100) and T is the total time required to read the book (T<=1000000).",
+ "output_spec": "The output is a single integer representing the minimum number of days Kohli needs to finish reading the book.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 2\n86400 86398",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

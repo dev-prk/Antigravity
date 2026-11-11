@@ -1,0 +1,17 @@
+{
+ "title": "2100. Computing a Weighted Average with Explicit Type Casting",
+ "slug": "computing-a-weighted-average-with-explicit-type-casting",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2100. Computing a Weighted Average with Explicit Type Casting\n\n85\n\nHard\n\nProblem Statement\nRead three marks and their weights, then compute the weighted average as a precise float using explicit type casting and compound assignment.\nDescription\nRead three integer marks (m1, m2, m3) and three integer weights (w1, w2, w3). Compute the weighted sum using the compound assignment operator (+=), then compute the weighted average by casting the weighted sum to float before dividing by the sum of the weights (also cast to float), so no precision is lost to integer division. Print the weighted average with two decimal places.",
+ "input_spec": "Six integers: m1 m2 m3 w1 w2 w3, separated by spaces.",
+ "output_spec": "Print the weighted average, rounded to two decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "80 90 70 1 2 1",
+   "output": "82.50"
+  }
+ ],
+ "raw": ""
+}

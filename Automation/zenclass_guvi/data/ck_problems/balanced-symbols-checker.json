@@ -1,0 +1,17 @@
+{
+ "title": "1993. Balanced Symbols Checker",
+ "slug": "balanced-symbols-checker",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1993. Balanced Symbols Checker\n\n90\n\nHard\n\nProblem Statement\n\nGiven a string containing round, curly, and square brackets, determine whether all the brackets are balanced and correctly nested using a stack.\n\nDescription\n\nRead a string made up of the characters '(', ')', '{', '}', '[' and ']'. Use a stack to verify that every closing bracket matches the type of the most recently seen unmatched opening bracket, and that all brackets are properly nested.",
+ "input_spec": "A single line containing a string s (1 \u2264 length of s \u2264 100) made up only of the characters ( ) { } [ ].",
+ "output_spec": "Print \"Balanced\" if all brackets are correctly matched and nested, otherwise print \"Not Balanced\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "{[()]}",
+   "output": "Balanced"
+  }
+ ],
+ "raw": ""
+}

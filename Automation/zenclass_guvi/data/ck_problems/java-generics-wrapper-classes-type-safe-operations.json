@@ -1,0 +1,17 @@
+{
+ "title": "1671. Java, Generics, Wrapper Classes, Type-Safe Operations",
+ "slug": "java-generics-wrapper-classes-type-safe-operations",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1671. Java, Generics, Wrapper Classes, Type-Safe Operations\n\n50\n\nMedium\n\nSum of Generic Numbers\n\nProblem Statement:\nWrite a program to compute the sum of elements in a generic list. The program should accept numeric values of Integer, Double, or Float type using wrapper classes and generics.\n\nDescription:\n\nCreate a generic class GenericSum<T extends Number>.\n\nImplement a method sum(List<T> list) to compute the sum of elements.\n\nEnsure type safety by restricting generics to numeric wrapper classes.\n\nInput Format:\n\nFirst line: number of elements n\n\nSecond line: n space-separated numbers\n\nOutput Format:\n\nSum of all elements",
+ "input_spec": "First line: number of elements n\n\nSecond line: n space-separated numbers",
+ "output_spec": "Sum of all elements",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10 20 30 40 50",
+   "output": "Sum: 150.0"
+  }
+ ],
+ "raw": ""
+}

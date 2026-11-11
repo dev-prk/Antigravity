@@ -1,0 +1,17 @@
+{
+ "title": "1752. Count Vowels",
+ "slug": "count-vowels",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1752. Count Vowels\n\n50\n\nMedium\n\n#Count Vowels\n\nProblem Statement:\nGiven a string, count how many vowels are in it.",
+ "input_spec": "A string S.",
+ "output_spec": "Print the count of vowels.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

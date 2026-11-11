@@ -1,0 +1,12 @@
+{
+ "title": "1880. Count Frequency of Each Character in a String",
+ "slug": "count-frequency-of-each-character-in-a-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1880. Count Frequency of Each Character in a String\n\n50\n\nMedium  Topics\n\nProblem Title:\n\nCount Frequency of Each Character in a String\n\nProblem Statement:\n\nYou are given a string consisting of uppercase and lowercase English letters.\n\nWrite a program to count the frequency of each character in the string and print the characters along with their frequencies in the order of their first appearance.\n\nCharacter comparison should be case-sensitive\n(i.e., 'A' and 'a' are treated as different characters)\n\nInput Format:\n\nA single line containing the string s\n\nOutput Format:\n\nFor each distinct character, print:\n\ncharacter frequency\n(one per line, space-separated)",
+ "input_spec": "A single line containing the string s",
+ "output_spec": "For each distinct character, print:\n\ncharacter frequency\n(one per line, space-separated)",
+ "constraints": "1 \u2264 length of string \u2264 10\u2075\n\nString contains only alphabets (A\u2013Z, a\u2013z)\n\nNo extra spaces in",
+ "samples": [],
+ "raw": ""
+}

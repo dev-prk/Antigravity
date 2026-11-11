@@ -1,0 +1,17 @@
+{
+ "title": "1004. Special Character Count",
+ "slug": "special-character-count",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1004. Special Character Count\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string find the number of special characters if their no special characters print -1",
+ "input_spec": "Given a string",
+ "output_spec": "Print number of special characters or -1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Guvi Geek",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

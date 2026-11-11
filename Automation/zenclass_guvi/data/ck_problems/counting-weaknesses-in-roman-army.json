@@ -1,0 +1,17 @@
+{
+ "title": "347. Counting Weaknesses in Roman Army",
+ "slug": "counting-weaknesses-in-roman-army",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n347. Counting Weaknesses in Roman Army\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nThe Romans have attacked again. This time they are much more than the Persians but Shapur is ready to defeat them. He says: 'A lion is never afraid of a hundred sheep'.Nevertheless Shapur has to find weaknesses in the Roman army to defeat them. So he gives the army a weakness number.In Shapur's opinion the weakness of an army is equal to the number of triplets i,\u2009j,\u2009k such that i\u2009<\u2009j\u2009<\u2009k and ai\u2009>\u2009aj\u2009>\u2009ak where ax is the power of man standing at position x. The Roman army has one special trait \u2014 powers of all the people in it are distinct.Help Shapur find out how weak the Romans are.",
+ "input_spec": "The first line of input contains a single number n, the number of men in Roman army. Next line contains n different positive integers powers of men in the Roman army.Input Size : N<=100000",
+ "output_spec": "The output is the weakness number of the Roman army, which is the count of triplets i, j, k such that i < j < k and ai > aj > ak.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n3 2 1",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

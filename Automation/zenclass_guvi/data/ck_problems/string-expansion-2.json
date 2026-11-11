@@ -1,0 +1,17 @@
+{
+ "title": "265. String Expansion-2",
+ "slug": "string-expansion-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n265. String Expansion-2\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nWrite a program to give the following output for the given string S of size N.(character containing even number of occurences should be elaborated else print the same format)\nEg 1: Input: a1b10\nOutput: a1bbbbbbbbbb\nEg: 2: Input: b3c6d15\nOutput: b3ccccccd15",
+ "input_spec": "a1b10",
+ "output_spec": "for the given string S of size N.(character containing even number of occurences should be elaborated else print the same format)\nEg 1: Input: a1b10\nOutput: a1bbbbbbbbbb\nEg: 2: Input: b3c6d15\nOutput: b3ccccccd15\n\nInput Description:\nInput Size : 1 <= N <= 100000",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "a1b10",
+   "output": "a1bbbbbbbbbb"
+  }
+ ],
+ "raw": ""
+}

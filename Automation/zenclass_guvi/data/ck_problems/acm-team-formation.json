@@ -1,0 +1,17 @@
+{
+ "title": "349. ACM Team Formation",
+ "slug": "acm-team-formation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n349. ACM Team Formation\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nThere are n students in an institution. For each student you know the number of times he/she has participated in the ACM ICPC world programming championship. According to the ACM ICPCrules, each person can participate in the world championship at most 5 times. The head of the institution is recently gathering teams to participate in the world championship. Each team must consist of exactly three people, at that, any person cannot be a member of two ormore teams. What maximum number of teams can the head make if he wants each team to participate in the world championship with the same members at least k times?",
+ "input_spec": "The input consists of two integers, N and K, followed by N integers representing the number of times each student has participated in the ACM ICPC world programming championship. N is the number of students (N<=10000).",
+ "output_spec": "The output is the maximum number of teams that can be formed.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2\n0 4 5 1 0",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

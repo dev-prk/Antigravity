@@ -1,0 +1,17 @@
+{
+ "title": "1451. Recursive Fibonacci with Memoization",
+ "slug": "recursive-fibonacci-with-memoization",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1451. Recursive Fibonacci with Memoization\n\n50\n\nMedium\n\nProblem Statement:\nGiven a positive integer N, implement a recursive function to compute the Nth Fibonacci number. To improve efficiency, optimize your solution using memoization to avoid redundant calculations.",
+ "input_spec": "ACRITICAL FORMATTING REQUIREMENTS:A single integer N, where N represents the position in the Fibonacci sequence (1-based indexing).",
+ "output_spec": "A single integer representing the Nth Fibonacci number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10",
+   "output": "5\n55"
+  }
+ ],
+ "raw": ""
+}

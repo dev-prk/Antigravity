@@ -1,0 +1,17 @@
+{
+ "title": "2002. Count Vowels in a String",
+ "slug": "count-vowels-in-a-string",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2002. Count Vowels in a String\n\n90\n\nHard\n\nProblem Statement\n\nGiven a string S, count the total number of vowels (a, e, i, o, u) present in the string and print the count.",
+ "input_spec": "A single string S.",
+ "output_spec": "Print the number of vowels present in the string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Programming",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

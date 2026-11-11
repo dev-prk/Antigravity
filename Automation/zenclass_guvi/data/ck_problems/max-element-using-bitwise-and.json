@@ -1,0 +1,17 @@
+{
+ "title": "61. Max Element using Bitwise AND",
+ "slug": "max-element-using-bitwise-and",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n61. Max Element using Bitwise AND\n\n40\n\nMedium  Company\n\nProblem Statement:\nGiven a number N and an array of N elements, find the maximum of the elements (using Bitwise AND) and print the output.",
+ "input_spec": "Input Size N <= 100000",
+ "output_spec": ".\n\nInput Description:\nInput Size N <= 100000",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n2 4 4 2",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

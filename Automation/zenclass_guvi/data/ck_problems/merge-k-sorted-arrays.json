@@ -1,0 +1,17 @@
+{
+ "title": "343. Merge K Sorted Arrays",
+ "slug": "merge-k-sorted-arrays",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n343. Merge K Sorted Arrays\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven k sorted arrays of possibly different sizes, merge them and print the sorted output.",
+ "input_spec": "Input Size : N<=100",
+ "output_spec": ".\n\nInput Description:\nInput Size : N<=100",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "k = 3\n1 3\n2 4 6\n0 9 10 11",
+   "output": "0 1 2 3 4 6 9 10 11"
+  }
+ ],
+ "raw": ""
+}

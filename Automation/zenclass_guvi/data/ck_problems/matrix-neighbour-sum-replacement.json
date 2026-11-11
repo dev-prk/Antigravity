@@ -1,0 +1,17 @@
+{
+ "title": "557. Matrix Neighbour Sum Replacement",
+ "slug": "matrix-neighbour-sum-replacement",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n557. Matrix Neighbour Sum Replacement\n\n70\n\nHard  Topics\n\nProblem Statement:\nYou are given a matrix of dimensions M*N. Replace every element in the matrix with the sum of all its surrounding elements (immediate neighbours).",
+ "input_spec": "Dimensions of the matrix followed by the elements of the matrix.",
+ "output_spec": "A matrix with every element replaced by sum of its neighbours",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 2\n1 2\n3 4\n5 6",
+   "output": "9    8\n18   17\n13  12"
+  }
+ ],
+ "raw": ""
+}

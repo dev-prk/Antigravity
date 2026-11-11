@@ -1,0 +1,12 @@
+{
+ "title": "291. Email Validation",
+ "slug": "email-validation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n291. Email Validation\n\n70\n\nHard  Topics\n\nProblem Statement:\nEmail Validation: Given a string S, check if it is a valid email id based on the following Conditions. 1)@ should be present; 2)@ & . should not be repeated; 3)there should be atleast four characters between @ and .; 4)there should be at-least 3 characters before @; 5)the end of mail id should be .com; If its a valid email id print 'yes' else print 'no'.",
+ "input_spec": "The input consists of a single string S. The length of S is at most 100000 characters.",
+ "output_spec": "The output is 'yes' if the given string S is a valid email ID according to the specified conditions, and 'no' otherwise.",
+ "constraints": "",
+ "samples": [],
+ "raw": ""
+}

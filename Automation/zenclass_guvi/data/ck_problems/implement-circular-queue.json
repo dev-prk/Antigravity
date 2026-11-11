@@ -1,0 +1,17 @@
+{
+ "title": "1774. Implement Circular Queue",
+ "slug": "implement-circular-queue",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1774. Implement Circular Queue\n\n60\n\nMedium\n\nImplement Circular Queue\nProblem Statement\n\nWrite a program to implement a circular queue with enqueue, dequeue, and display operations.\n\nDescription\n\nCreate a circular queue of size n.\n\nPerform operations:\n\nenqueue(x) \u2013 Add an element to the queue.\n\ndequeue() \u2013 Remove an element from the queue.\n\ndisplay() \u2013 Print all elements in queue order.\n\nMake sure to handle overflow and underflow conditions.\n\nInput Format\n\nFirst line: Integer n (size of the queue)\n\nSubsequent lines: Operations in the format:\n\n\"enqueue x\"\n\n\"dequeue\"\n\n\"display\"\n\nOutput Format\n\nPrint the queue after each display operation.\n\nPrint \"Queue Overflow\" or \"Queue Underflow\" for invalid operations.",
+ "input_spec": "First line: Integer n (size of the queue)\n\nSubsequent lines: Operations in the format:\n\n\"enqueue x\"\n\n\"dequeue\"\n\n\"display\"",
+ "output_spec": "Print the queue after each display operation.\n\nPrint \"Queue Overflow\" or \"Queue Underflow\" for invalid operations.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nenqueue 10\nenqueue 20\nenqueue 30\ndisplay\ndequeue\ndisplay",
+   "output": "10 20 30\n20 30"
+  }
+ ],
+ "raw": ""
+}

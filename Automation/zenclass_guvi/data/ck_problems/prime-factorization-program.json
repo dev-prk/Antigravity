@@ -1,0 +1,17 @@
+{
+ "title": "723. Prime Factorization Program",
+ "slug": "prime-factorization-program",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n723. Prime Factorization Program\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to find out prime factors of given number",
+ "input_spec": "Input represents the value n",
+ "output_spec": "Print the prime factors separated by space",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "315",
+   "output": "3 3 5 7"
+  }
+ ],
+ "raw": ""
+}

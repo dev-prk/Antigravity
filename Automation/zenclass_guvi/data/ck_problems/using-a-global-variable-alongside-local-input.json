@@ -1,0 +1,17 @@
+{
+ "title": "2098. Using a Global Variable Alongside Local Input",
+ "slug": "using-a-global-variable-alongside-local-input",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2098. Using a Global Variable Alongside Local Input\n\n70\n\nHard\n\nProblem Statement\nDeclare a global variable for a fixed base price, then read a local quantity value and compute the total cost directly using the global variable.\nDescription\nDeclare a global variable basePrice, initialized outside of main, so it exists for the lifetime of the program and is directly visible inside main (global / program scope) \u2014 unlike a local variable, which exists only within the block it is declared in. Inside main, declare a local variable quantity and read its value using scanf. Compute totalCost = basePrice * quantity directly, using the global variable without declaring it again inside main. Print basePrice first (to confirm it is directly visible inside main), then print totalCost.",
+ "input_spec": "70\n\nHard\n\nProblem Statement\nDeclare a global variable for a fixed base price, then read a local quantity value and compute the total cost directly using the global variable.\nDescription\nDeclare a global variable basePrice, initialized outside of main, so it exists for the lifetime of the program and is directly visible inside main (global / program scope) \u2014 unlike a local variable, which exists only within the block it is declared in. Inside main, declare a local variable quantity and read its value using scanf. Compute totalCost = basePrice * quantity directly, using the global variable without declaring it again inside main. Print basePrice first (to confirm it is directly visible inside main), then print totalCost.\nInput Description\nA single integer quantity.",
+ "output_spec": "Print the global basePrice, then the computed totalCost.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "50\n200"
+  }
+ ],
+ "raw": ""
+}

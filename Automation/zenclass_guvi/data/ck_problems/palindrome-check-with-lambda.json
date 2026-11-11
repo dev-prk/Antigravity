@@ -1,0 +1,17 @@
+{
+ "title": "1136. Palindrome Check with Lambda",
+ "slug": "palindrome-check-with-lambda",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1136. Palindrome Check with Lambda\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program using a lambda expression to determine if the list of strings provided by the user contains any palindromes. The program should return \"Yes\" if there is at least one palindrome, otherwise \"No\".",
+ "input_spec": "An integer n denoting the number of strings in the list.\nn space-separated strings representing the list elements.",
+ "output_spec": "\"Yes\" if there is at least one palindrome in the list, otherwise \"No\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nlevel\nracecar\nhello\nworld",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "2091. Sum of Digits of a 3-Digit Integer",
+ "slug": "sum-of-digits-of-a-3-digit-integer",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2091. Sum of Digits of a 3-Digit Integer\n\n60\n\nMedium\n\nProblem Statement\nRead a 3-digit integer and print the sum of its digits, using the % and / operators to pull out each digit.\n\nDescription\nRead a 3-digit integer num. Extract its last digit using the % operator, then remove that digit using the / operator, and repeat this to extract the middle and first digits. Add the three extracted digits together and print the sum. No loop is needed since the number always has exactly three digits.",
+ "input_spec": "A single line containing a 3-digit integer num (100 <= num <= 999).",
+ "output_spec": "Print the sum of the digits of num.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "123",
+   "output": "6"
+  }
+ ],
+ "raw": ""
+}

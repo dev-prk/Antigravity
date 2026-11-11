@@ -1,0 +1,17 @@
+{
+ "title": "1586. Quick Sort Strings Lexicographically",
+ "slug": "quick-sort-strings-lexicographically",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1586. Quick Sort Strings Lexicographically\n\n70\n\nHard\n\nProblem Statement:\nGiven an array of strings, sort the array in lexicographical (dictionary) order using the quick sort algorithm. You are required to implement the quick sort algorithm explicitly and not use any built-in sorting functions.",
+ "input_spec": "- The first line contains an integer N, the number of strings in the array.\n- The next N lines each contain a string.",
+ "output_spec": "- Output N lines, each containing a string from the sorted array in lexicographical order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nbanana\napple\ngrape\ncherry\ndate",
+   "output": "apple\nbanana\ncherry\ndate\ngrape"
+  }
+ ],
+ "raw": ""
+}

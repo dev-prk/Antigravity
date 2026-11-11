@@ -1,0 +1,17 @@
+{
+ "title": "638. Maximal Rectangle Area",
+ "slug": "maximal-rectangle-area",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n638. Maximal Rectangle Area\n\n80\n\nHard  Topics\n\nProblem Statement:\nRohan is given a matrix with 1's and 0's. His task is to calculate the maximum possible rectangular area formed by 1's. He has gone really confused after seeing this problem.Your task is to develop an algorithm for him.",
+ "input_spec": "You are given two integers \u2018a\u2019 and \u2018b\u2019,denoting the size of matrix \u2018m\u2019,\nNext line contains a*b elements.",
+ "output_spec": "Print the max area possible",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n0 1 1 0 1 1 1 1 1 1 1 1 1 1 0 0",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

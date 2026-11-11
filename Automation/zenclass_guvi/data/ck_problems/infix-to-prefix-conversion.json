@@ -1,0 +1,17 @@
+{
+ "title": "846. Infix to Prefix Conversion",
+ "slug": "infix-to-prefix-conversion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n846. Infix to Prefix Conversion\n\n40\n\nMedium  Topics\n\nProblem Statement:\nConvert a given infix expression into prefix notation using Stack.",
+ "input_spec": "The code should take a string of arbitrary length (infix notation).",
+ "output_spec": "Print the corresponding prefix notation form.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "(a+b)",
+   "output": "+ab"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "420. Minimum Operations for Palindromic Array",
+ "slug": "minimum-operations-for-palindromic-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n420. Minimum Operations for Palindromic Array\n\n70\n\nHard  Topics\n\nProblem Statement:\nYou are given an array of integers. You can perform the following operation any number of times.(including zero)\n\nOperation is: Replace an integer with another integer.\n\nFind if the array can be rearranged or permuted to obtain a palindromic array. If it can be, print the minimum number of operations required,\n\nPrint -1 otherwise.",
+ "input_spec": "The first line contains an integer N, denoting the size of the array.\nThe next line contains N space separated integers.",
+ "output_spec": "Print the minimum number of operations required.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n10 20 30 40",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

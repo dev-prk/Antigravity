@@ -1,0 +1,17 @@
+{
+ "title": "647. Max Consecutive Increases",
+ "slug": "max-consecutive-increases",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n647. Max Consecutive Increases\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given with list of numbers,Your task is to find the maximum count of the numbers which are consecutively increasing in list",
+ "input_spec": "You are given a number n denoting size of array,Next line contains \u2018n\u2019 space separated numbers.",
+ "output_spec": "Print the desired result",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n1 2 0 3 4 5",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

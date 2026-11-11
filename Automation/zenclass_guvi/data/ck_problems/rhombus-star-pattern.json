@@ -1,0 +1,17 @@
+{
+ "title": "898. Rhombus Star Pattern",
+ "slug": "rhombus-star-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n898. Rhombus Star Pattern\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate an Rhombus Pattern using stars.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the solid rhombus using stars with the size of rhombus R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "****\n****\n****\n****"
+  }
+ ],
+ "raw": ""
+}

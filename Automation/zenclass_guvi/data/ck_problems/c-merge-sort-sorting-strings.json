@@ -1,0 +1,17 @@
+{
+ "title": "1626. C, Merge Sort, Sorting, Strings",
+ "slug": "c-merge-sort-sorting-strings",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1626. C, Merge Sort, Sorting, Strings\n\n50\n\nMedium\n\nProblem Statement:  Sorting Student Records Using Merge Sort\n\nWrite a program that sorts student records based on their marks using Merge Sort.\n\nDescription:\nEach student record contains a name and marks. The program should sort the students in descending order of marks. If marks are the same, sort by name in ascending order.\n\nInput Format:\n\nFirst line: Integer n (number of students)\n\nNext n lines: name marks\n\nOutput Format:\nSorted list of students with their marks.",
+ "input_spec": "First line: Integer n (number of students)\n\nNext n lines: name marks",
+ "output_spec": "Sorted list of students with their marks.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nAmit 78\nRaj 90\nSneha 78\nKiran 85",
+   "output": "Raj 90\nKiran 85\nAmit 78\nSneha 78"
+  }
+ ],
+ "raw": ""
+}

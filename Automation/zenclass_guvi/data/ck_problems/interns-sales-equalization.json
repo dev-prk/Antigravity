@@ -1,0 +1,17 @@
+{
+ "title": "478. Interns' Sales Equalization",
+ "slug": "interns-sales-equalization",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n478. Interns' Sales Equalization\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nThere is a business analysis company named \"AJ\". It hired two interns \"A\" and \"B\". Both of them are given tasks to sell product in n days. The one who will sell more share will get the job. As A and B are good friends they decided that they will equalize the collected money, they are only allowed to swap more than one day's share to make the total of each same. Your task is to help them.",
+ "input_spec": "First line contains no of days. Next line contains the n space separated integers representing sale of A. Next line contains Space separated integers representing sale of B.",
+ "output_spec": "Print \u201cyes\u201d if it is possible by one one swap. Else no",
+ "constraints": "1<=N,a[i],b[i]<=50",
+ "samples": [
+  {
+   "input": "4\n5 7 4 6\n1 2 3 8",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

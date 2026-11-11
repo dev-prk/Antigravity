@@ -1,0 +1,17 @@
+{
+ "title": "1808. Dynamic String Assignment Operator Overloading",
+ "slug": "dynamic-string-assignment-operator-overloading",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1808. Dynamic String Assignment Operator Overloading\n\n50\n\nMedium\n\nDynamic String Assignment Operator Overloading\n\nProblem Statement:\nWrite a program to overload the assignment operator (=) to perform deep copy of dynamically allocated string data.\n\nDescription:\nCreate a class DynamicString that:\n1. Dynamically allocates memory using constructor.\n2. Overloads assignment operator to:\nHandle self-assignment.\nPerform deep copy.\nDeallocate previous memory properly.\n3. Prints the updated string after assignment.\n\nInput Format:\nTwo strings\n\nOutput Format:\nAfter Assignment: second_string",
+ "input_spec": "Two strings",
+ "output_spec": "After Assignment: second_string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Hello\nWorld",
+   "output": "After Assignment: World"
+  }
+ ],
+ "raw": ""
+}

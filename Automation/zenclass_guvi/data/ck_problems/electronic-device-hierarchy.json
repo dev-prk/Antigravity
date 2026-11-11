@@ -1,0 +1,17 @@
+{
+ "title": "1081. Electronic Device Hierarchy",
+ "slug": "electronic-device-hierarchy",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1081. Electronic Device Hierarchy\n\n50\n\nMedium\n\nProblem Statement:\nDesign a Python program that uses hierarchical inheritance to model electronic devices. There are two types of electronic devices: Mobiles and Laptops. Both Mobiles and Laptops have a brand name and a price. However, a Mobile also has a screen size, while a Laptop has a screen resolution.\n\nCreate classes to represent both types of devices and use hierarchical inheritance to avoid code duplication. Write a method in each class to print the details of the device.",
+ "input_spec": "Samsung Galaxy S21, 799.99, 6.2 inches\nDell XPS 13, 999.99, 1920 x 1080\n\nSample",
+ "output_spec": "Mobile: Samsung Galaxy S21, Price: $799.99, Screen Size: 6.2 inches\nLaptop: Dell XPS 13, Price: $999.99, Screen Resolution: 1920 x 1080",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Samsung Galaxy S21, 799.99, 6.2 inches\nDell XPS 13, 999.99, 1920 x 1080",
+   "output": "Mobile: Samsung Galaxy S21, Price: $799.99, Screen Size: 6.2 inches\nLaptop: Dell XPS 13, Price: $999.99, Screen Resolution: 1920 x 1080"
+  }
+ ],
+ "raw": ""
+}

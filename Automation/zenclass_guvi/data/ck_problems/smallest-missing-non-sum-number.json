@@ -1,0 +1,17 @@
+{
+ "title": "485. Smallest Missing Non-Sum Number",
+ "slug": "smallest-missing-non-sum-number",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n485. Smallest Missing Non-Sum Number\n\n70\n\nHard  Topics\n\nProblem Statement:\nDityan is alloted with a task. He is provided with some positive numbers. He has to tell the smallest positive natural number(greater than the minimum number present in the list) and in addition to it,the number should not be present in the list and it should not be equal to the sum of any combination of 'n' numbers present in the list.You have to develop a suitable program in order to find that number 'm'.",
+ "input_spec": "First line contains a number 'n' . next line contains 'n' space separated numbers.",
+ "output_spec": "print the smallest positive number 'm'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 10 12 13",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

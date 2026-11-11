@@ -1,0 +1,17 @@
+{
+ "title": "442. Dynamic English Dictionary",
+ "slug": "dynamic-english-dictionary",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n442. Dynamic English Dictionary\n\n60\n\nMedium  Topics\n\nProblem Statement:\nKumar has decided to become an expert at english and decides to implement his own dictionary\n\nHe has also decided to sell this dictionary and make profit out of it . He wants to beat his competitors and designs a dynamic dictionary. A dynamic dictionary is one that can have entries added to its list of words dynamically.\n\nEvery time the dictionary encounters a word not present in its database it adds the word to its database\n\nHelp kumar implement a dynamic dictionary.Initially the dictionary is empty",
+ "input_spec": "The first line contains a single integer N denoting the number of words that will be searched for in the dictionary.\nThe next N lines contain a single string each of max lengths 100.",
+ "output_spec": "Your output must consist of N lines each line corresponding to the particular word to be searched. Output \u201cWord found\u201d if the word is already present in the dictionary\nElse output \u201cWord not found , added to dictionary\u201d if the word was not found and the string was added to the dictionary",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nabcd\nefgh\nabcd\nkklo\nkklo",
+   "output": "Word not found , added to dictionary\nWord not found , added to dictionary\nWord found\nWord not found , added to dictionary\nWord found"
+  }
+ ],
+ "raw": ""
+}

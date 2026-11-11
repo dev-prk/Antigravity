@@ -1,0 +1,17 @@
+{
+ "title": "1530. Validate Binary Search Tree",
+ "slug": "validate-binary-search-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1530. Validate Binary Search Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven the root of a binary tree, determine if it is a valid binary search tree (BST). A valid BST is defined as follows: - The left subtree of a node contains only nodes with keys less than the node's key. - The right subtree of a node contains only nodes with keys greater than the node's key. - Both the left and right subtrees must also be binary search trees.",
+ "input_spec": "- The first line contains an integer n, the number of nodes in the tree.\n- The next n lines each contain three values: node value, left child index, right child index.\n- If a child does not exist, its index is -1.\n- The root node is always at index 0.",
+ "output_spec": "- Print \"true\" if the binary tree is a valid BST, otherwise print \"false\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n2 1 2\n1 -1 -1\n3 -1 -1",
+   "output": "true"
+  }
+ ],
+ "raw": ""
+}

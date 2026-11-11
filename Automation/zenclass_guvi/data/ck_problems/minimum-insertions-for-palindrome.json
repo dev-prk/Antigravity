@@ -1,0 +1,17 @@
+{
+ "title": "657. Minimum Insertions for Palindrome",
+ "slug": "minimum-insertions-for-palindrome",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n657. Minimum Insertions for Palindrome\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given a string 's', find the minimum number of characters to be inserted to convert it to palindrome.",
+ "input_spec": "You are given a string \u2018s\u2019",
+ "output_spec": "Print 0 if no extra character is required else print the amount of characters required.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcd",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

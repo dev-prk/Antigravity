@@ -1,0 +1,17 @@
+{
+ "title": "1558. DNA Pattern Matching with Rabin-Karp",
+ "slug": "dna-pattern-matching-with-rabin-karp",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1558. DNA Pattern Matching with Rabin-Karp\n\n80\n\nHard\n\nProblem Statement:\nGiven a DNA sequence consisting of the characters 'A', 'C', 'G', and 'T', and a pattern string of the same character set, find all starting indices in the DNA sequence where the pattern occurs as a substring. Use the Rabin-Karp algorithm for efficient pattern matching.",
+ "input_spec": "- The first line contains a string S, the DNA sequence.\n- The second line contains a string P, the pattern to search for.",
+ "output_spec": "- Print all starting indices (0-based) where the pattern P is found in S, separated by spaces. If the pattern is not found, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ACGTACGTGACG\nACG",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

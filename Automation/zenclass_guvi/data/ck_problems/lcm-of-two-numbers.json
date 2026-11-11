@@ -1,0 +1,17 @@
+{
+ "title": "822. LCM of Two Numbers",
+ "slug": "lcm-of-two-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n822. LCM of Two Numbers\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Find the LCM of Two Numbers",
+ "input_spec": "The input contains an integer",
+ "output_spec": "Print the LCM",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 7",
+   "output": "35"
+  }
+ ],
+ "raw": ""
+}

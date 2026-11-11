@@ -1,0 +1,17 @@
+{
+ "title": "1735. Second Largest Element",
+ "slug": "second-largest-element",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n490. Second Largest Element\n\n30\n\nEasy  Topics\n\nProblem Statement:\nRia is always fascinated by the number 2. She always wants to know who came second in a race, the second person to set foot on the moon and so on. She is given a list of numbers and asked to find the maximum. As always, she reports the second highest number as the maximum because according to her, 2 is higher than 1. Find out which was the number that Ria would have reported, given a list of N numbers.",
+ "input_spec": "Size of the array followed by the elements of the array.",
+ "output_spec": "Second largest element of the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n1 9 8 7 6 5 2 3 4 10",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

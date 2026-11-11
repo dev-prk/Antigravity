@@ -1,0 +1,12 @@
+{
+ "title": "1907. Detect Cycle in an Undirected Graph",
+ "slug": "detect-cycle-in-an-undirected-graph",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1907. Detect Cycle in an Undirected Graph\n\n60\n\nMedium  Topics\n\nQuestion: Detect Cycle in an Undirected Graph\n\nYou are given an undirected graph with:\n\nN vertices numbered from 1 to N\n\nM edges\n\nDetermine whether the graph contains a cycle.\n\nIf there is at least one cycle, print:\n\nCycle Detected\n\nOtherwise print:\n\nNo Cycle\n\n\ud83d\udd39 Input Format\nN M\nu1 v1\nu2 v2\n...\nuM vM\n\n\ud83d\udd39 Output Format\n\nPrint:\n\n\"Cycle Detected\"\nOR\n\n\"No Cycle\"\n\n\ud83d\udd39",
+ "input_spec": "N M\nu1 v1\nu2 v2\n...\nuM vM\n\n\ud83d\udd39",
+ "output_spec": "Print:\n\n\"Cycle Detected\"\nOR\n\n\"No Cycle\"\n\n\ud83d\udd39",
+ "constraints": "1 \u2264 N \u2264 10^5\n\n0 \u2264 M \u2264 10^5\n\nGraph is undirected\n\nNo self-loops\n\nAccepted  0\n\nSubmissions  0\n\nAcceptance Rate  0%\n\nTopics\n\ndata structures  graph\n\n0\n\nCode Editor\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nPYTHON 3  JAVASCRIPT  C  JAVA 8  C++  JAVA  PYTHON 2  C#  BASH  BASIC  RUBY  GO  PHP  CLOJURE  CRYSTAL  ELIXIR  ERLANG  HASKELL  INSECT  OCAML  OCTAVE  PASCAL  RUST  OBJECTIVE C  SCALA  NASM  CLANG C  COBOL  FORTRAN  GROOVY  KOTLIN  LUA  PROLOG  R  SQLITE  SWIFT  TYPESCRIPT  VBNC\n\nPYTHON 3\n\nChange Layout\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n#A Simple Hello World\n\nprint  (  \"Hello World\"  )\n\n#Getting",
+ "samples": [],
+ "raw": ""
+}

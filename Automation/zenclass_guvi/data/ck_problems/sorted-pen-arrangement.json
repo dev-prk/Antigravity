@@ -1,0 +1,17 @@
+{
+ "title": "642. Sorted Pen Arrangement",
+ "slug": "sorted-pen-arrangement",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n642. Sorted Pen Arrangement\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given some pens of specific serial number whenever a new pen is inserted you have to print the new arrangement of pens in sorted order.",
+ "input_spec": "You are given a number \u2018n\u2019 denoting the number of new pens to be added.\nNext line contains n space separated numbers denoting the serial numbers of new pens.\nNext line contains a number \u2018m\u2019 representing already present number\nNext line contains m space separated already present numbers.",
+ "output_spec": "Print the arrangement after adding the new number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n15 19 3\n2\n12 13",
+   "output": "3 12 13 15 19"
+  }
+ ],
+ "raw": ""
+}

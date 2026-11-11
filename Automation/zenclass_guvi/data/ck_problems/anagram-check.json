@@ -1,0 +1,17 @@
+{
+ "title": "628. Anagram Check",
+ "slug": "anagram-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n628. Anagram Check\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nJoseph was going through topic of strings. He learnt about anagrams. But due to some circumstances he forget ,now he hired you to help him in completing the work.Your task is to tell whether the two given strings are anagrams",
+ "input_spec": "The first line of the input is a string N, the second line of the input is a string M",
+ "output_spec": "Compare the two string input N and M. Print 1 if they are anagram else print 0.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcd\ncdab",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

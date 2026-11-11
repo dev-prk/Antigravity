@@ -1,0 +1,17 @@
+{
+ "title": "237. Sum of Digits Palindrome Check",
+ "slug": "sum-of-digits-palindrome-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n237. Sum of Digits Palindrome Check\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N, check if the sum of the digits is a Palindrome. Print 'yes' or 'no' accordingly.",
+ "input_spec": "The input consists of a number N, where 2 <= N <= 1000000000000000000.",
+ "output_spec": "The output should be 'yes' if the sum of the digits of N is a Palindrome, and 'no' otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "13",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

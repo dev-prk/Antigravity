@@ -1,0 +1,17 @@
+{
+ "title": "651. String Reduction",
+ "slug": "string-reduction",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n651. String Reduction\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given with a sequence of n words to manipulate.If in a sequence,if two same words come together then they will destroy each other.After the complete execution print the length of string obtained.",
+ "input_spec": "An integer \u2018n\u2019 denoting length of string,Next line contains string.",
+ "output_spec": "Print the length of string obtained",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nabc  aa aa abc",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

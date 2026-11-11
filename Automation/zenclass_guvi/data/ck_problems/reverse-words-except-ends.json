@@ -1,0 +1,17 @@
+{
+ "title": "64. Reverse Words Except Ends",
+ "slug": "reverse-words-except-ends",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n64. Reverse Words Except Ends\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S consisting of a sentence, the task is to reverse every word of the sentence except the first and last character of the words.",
+ "input_spec": "The input consists of a string S representing a sentence.",
+ "output_spec": "The output is the modified string with every word reversed except its first and last characters.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "guvi coding platform",
+   "output": "gvui cnidog proftalm."
+  }
+ ],
+ "raw": ""
+}

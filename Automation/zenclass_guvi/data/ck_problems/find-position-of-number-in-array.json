@@ -1,0 +1,17 @@
+{
+ "title": "54. Find Position of Number in Array",
+ "slug": "find-position-of-number-in-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n54. Find Position of Number in Array\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N,K followed by array of N elements where the difference between any adjacent elements is 1. Find the position of the given number K.If K not found in the array print -1",
+ "input_spec": "The input consists of two integers N and K, followed by an array of N elements where the difference between any adjacent elements is 1.",
+ "output_spec": "The output is the position of the given number K. If K is not found in the array, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 1\n3 2 1 2 3",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

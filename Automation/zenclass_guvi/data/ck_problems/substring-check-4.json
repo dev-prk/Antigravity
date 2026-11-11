@@ -1,0 +1,17 @@
+{
+ "title": "315. Substring Check-4",
+ "slug": "substring-check-4",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n315. Substring Check-4\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a String S and a string P, find if P is a substring of S. Print 'yes' if it is a substring else 'no'.",
+ "input_spec": "Input Size : |s| <= 10000 |p| <= 1000.",
+ "output_spec": "Print 'yes' if P is a substring of S else 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "sundar sun",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

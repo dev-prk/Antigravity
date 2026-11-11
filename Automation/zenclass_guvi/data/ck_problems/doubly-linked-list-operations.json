@@ -1,0 +1,17 @@
+{
+ "title": "1222. Doubly Linked List Operations",
+ "slug": "doubly-linked-list-operations",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1222. Doubly Linked List Operations\n\n50\n\nMedium\n\nProblem Statement:\nYou are tasked with implementing a function that manipulates a doubly linked list using the concept of call by address. The linked list contains integer nodes, and you need to perform the following operations on the list:\nReverse the List: Reverse the entire linked list.\nRemove Duplicates: After reversing, remove all duplicate elements from the list, retaining only the first occurrence of each element.\nInsert Sum at End: After removing duplicates, calculate the sum of all the elements in the linked list and insert this sum as a new node at the end of the list.\nThese operations should be done by passing the head of the list to the function by using a call by address.",
+ "input_spec": "The first line contains an integer n (1 \u2264 n \u2264 10^5), the number of nodes in the linked list.\nThe next line contains n space-separated integers representing the elements of the linked list.",
+ "output_spec": "Print the elements of the modified linked list after performing all the operations.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n4 3 2 3 4 5 2",
+   "output": "2 5 4 3 14"
+  }
+ ],
+ "raw": ""
+}

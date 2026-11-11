@@ -1,0 +1,17 @@
+{
+ "title": "2137. Sorting an Array in Ascending Order Using Bubble Sort",
+ "slug": "sorting-an-array-in-ascending-order-using-bubble-sort",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2137. Sorting an Array in Ascending Order Using Bubble Sort\n\n80\n\nHard\n\nProblem Statement\nRead N integers into an array and print them sorted in ascending order, using the bubble sort technique with nested loops.\n\nDescription\nRead an integer N, then read N integers into a one-dimensional array. Use bubble sort to sort the array: repeatedly compare each pair of adjacent elements using an outer and inner loop, and swap them using a temporary variable if they are in the wrong order. After sorting is complete, print the array elements in ascending order.",
+ "input_spec": "An integer N, followed by N integers separated by spaces.",
+ "output_spec": "Print the N array elements in ascending order, separated by spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5 2 9 1 5",
+   "output": "1 2 5 5 9"
+  }
+ ],
+ "raw": ""
+}

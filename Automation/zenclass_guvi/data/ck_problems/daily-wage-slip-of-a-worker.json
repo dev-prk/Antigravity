@@ -1,0 +1,17 @@
+{
+ "title": "2168. Daily Wage Slip of a Worker",
+ "slug": "daily-wage-slip-of-a-worker",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2168. Daily Wage Slip of a Worker\n\n40\n\nMedium\n\nProblem Statement\nRead the hourly rate, normal hours and overtime hours of a worker. Print the normal pay, the overtime pay and the total pay.\nDescription\nA worker in a factory is paid a fixed amount for every normal working hour. Extra hours are called overtime hours, and each overtime hour is paid 1.5 times the normal hourly rate. Read the hourly rate, the normal hours and the overtime hours. Find the normal pay (normal hours x rate), the overtime pay (overtime hours x 1.5 x rate), and the total pay (normal pay + overtime pay). Print all three with exactly 2 digits after the decimal point.",
+ "input_spec": "Three integers, each on a separate line: the hourly rate (in rupees), the normal hours, and the overtime hours. (1 <= rate <= 1000, 0 <= normal hours <= 12, 0 <= overtime hours <= 50)",
+ "output_spec": "Print the normal pay on the first line, the overtime pay on the second line, and the total pay on the third line. Each value must have exactly 2 digits after the decimal point.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "100\n8\n2",
+   "output": "800.00\n300.00\n1100.00"
+  }
+ ],
+ "raw": ""
+}

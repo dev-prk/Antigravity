@@ -1,0 +1,17 @@
+{
+ "title": "1157. Generic Pair Operations",
+ "slug": "generic-pair-operations",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1157. Generic Pair Operations\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program that defines a generic class Pair<T, U> to hold a pair of values. The class should provide methods to:\n* Set the values of the pair.\n* Get the values of the pair.\n* Swap the values of the pair.\n* Print the pair in a formatted manner.\n\nThe program should prompt the user to input values for the Pair object and demonstrate the following:\n* Create a Pair object with user-provided values.\n* Print the original pair.\n* Swap the values of the pair.\n* Print the swapped pair.",
+ "input_spec": "values for the Pair object and demonstrate the following:\n* Create a Pair object with user-provided values.\n* Print the original pair.\n* Swap the values of the pair.\n* Print the swapped pair.\n\nInput Description:\nThe user first inputs the type of Pair (String or Integer) for the first and second values.\nThen, the user inputs the first value followed by the second value.",
+ "output_spec": "Print the original pair.\nPrint the swapped pair.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Integer\n100\nString\nOne Hundred",
+   "output": "Original Pair: (100, One Hundred)\nSwapped Pair: (One Hundred, 100)"
+  }
+ ],
+ "raw": ""
+}

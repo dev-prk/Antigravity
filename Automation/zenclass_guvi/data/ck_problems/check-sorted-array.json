@@ -1,0 +1,17 @@
+{
+ "title": "102. Check Sorted Array",
+ "slug": "check-sorted-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n102. Check Sorted Array\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N, followed by an array of N elements,print 'yes' if it is a sorted array(either ascending or descending)otherwise print 'no'.",
+ "input_spec": "The input consists of a number N, followed by an array of N elements. N is between 1 and 100000.",
+ "output_spec": "The output is 'yes' if the given array is sorted (either ascending or descending), otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n2 3 7",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

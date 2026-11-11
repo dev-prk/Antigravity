@@ -1,0 +1,17 @@
+{
+ "title": "932. Formatted Float Output",
+ "slug": "formatted-float-output",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n932. Formatted Float Output\n\n80\n\nHard  Topics\n\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format.",
+ "input_spec": "in the given format and print the",
+ "output_spec": "80\n\nHard  Topics\n\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format.\n\nInput Description:\nA single line contains three float values separated by space.\n\nOutput Description:\nPrint the float value separated by line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2.3 4.5 7.8",
+   "output": "2.3\n4.5\n7.8"
+  }
+ ],
+ "raw": ""
+}

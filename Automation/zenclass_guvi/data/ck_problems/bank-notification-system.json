@@ -1,0 +1,17 @@
+{
+ "title": "961. Bank Notification System",
+ "slug": "bank-notification-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n961. Bank Notification System\n\n60\n\nMedium\n\nProblem Statement:\nYou are required to implement a notification system for banks that notifies customers through SMS, Email, and monthly e-statement. The system consists of an interface Notification with three methods:\n\n- notificationBySms()\n- notificationByEmail()\n- notificationByCourier()\n\nImplement two classes, Icici and Hdfc, which implement the Notification interface. Additionally, create a BankFactory class with two methods:\n\n- public Icici getIcici() (returns an object for Icici)\n- public Hdfc getHdfc() (returns an object for Hdfc)\n\nThe main class should get input from the user and display the appropriate notification based on the bank and notification type selected.",
+ "input_spec": "from the user and display the appropriate notification based on the bank and notification type selected.\n\nInput Description:\nThe first integer corresponds to the name of the bank, and the next integer corresponds to the type of notification. If there is no valid input, display 'Invalid input'.",
+ "output_spec": "Output the notification message based on the bank and notification type selected.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 1",
+   "output": "ICICI - Notification By SMS"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "463. Divisibility by 4",
+ "slug": "divisibility-by-4",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n463. Divisibility by 4\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given an integer N, find if the number is divisible by 4.\nN >= 1\n1 <= No. of digits in N <= 1000",
+ "input_spec": "Read an integer N",
+ "output_spec": "Print YES if N is divisible by 4, NO otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "64",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

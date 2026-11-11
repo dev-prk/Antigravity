@@ -1,0 +1,17 @@
+{
+ "title": "968. Rectangle Area and Perimeter",
+ "slug": "rectangle-area-and-perimeter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n968. Rectangle Area and Perimeter\n\n50\n\nMedium\n\nProblem Statement:\nYou're required to write a program to calculate and print the area and perimeter of two rectangles given their sides. Implement a class named 'Rectangle' with methods named 'Area' and 'Perimeter', which return the area and perimeter, respectively. The length and breadth of the rectangles are passed as parameters to its constructor.",
+ "input_spec": "The input consists of two lines. Each line contains two integers representing the sides of the rectangles in the format (a, b) for the first rectangle and (c, d) for the second rectangle.",
+ "output_spec": "Output the area and perimeter of both rectangles separated by spaces in the formatArea1 Perimeter1Area2 Perimeter2.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 4\n4 5",
+   "output": "12 14\n20 18"
+  }
+ ],
+ "raw": ""
+}

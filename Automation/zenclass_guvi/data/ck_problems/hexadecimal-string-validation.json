@@ -1,0 +1,17 @@
+{
+ "title": "214. Hexadecimal String Validation",
+ "slug": "hexadecimal-string-validation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n214. Hexadecimal String Validation\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S of length N, find if it can be a valid Hexadecimal representation of a numbe.If it i0s valid,print 'yes' otherwise print 'no'.",
+ "input_spec": "Input Size : N <= 10000",
+ "output_spec": "The output is 'yes' if the string is a valid hexadecimal number, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1AE23",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

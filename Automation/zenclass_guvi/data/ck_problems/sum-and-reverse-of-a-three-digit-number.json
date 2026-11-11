@@ -1,0 +1,17 @@
+{
+ "title": "2162. Sum and Reverse of a Three-Digit Number",
+ "slug": "sum-and-reverse-of-a-three-digit-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2162. Sum and Reverse of a Three-Digit Number\n\n40\n\nMedium\n\nProblem Statement\nRead a three-digit number and print the sum of its digits and the number formed by reversing its digits.\nDescription\nRead a three-digit number. Find the sum of its three digits, and also find the number formed when its digits are written in reverse order. The reversed number is printed as a normal integer, so leading zeros are not printed. For example, 120 reversed is 021, which is printed as 21.",
+ "input_spec": "A single integer n. (100 <= n <= 999)",
+ "output_spec": "Print the sum of the digits on the first line and the reversed number on the second line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "123",
+   "output": "6\n321"
+  }
+ ],
+ "raw": ""
+}

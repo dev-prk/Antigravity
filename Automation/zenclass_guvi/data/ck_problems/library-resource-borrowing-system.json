@@ -1,0 +1,17 @@
+{
+ "title": "1114. Library Resource Borrowing System",
+ "slug": "library-resource-borrowing-system",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1114. Library Resource Borrowing System\n\n90\n\nHard\n\nProblem Statement:\nYou are tasked with creating a Python program to manage the borrowing of resources from a library. The library offers both books and DVDs. Write a Python script that allows users to borrow items from the library. Faculty members can only borrow DVDs, while students can borrow both books and DVDs.\n\nHere are the operations the program should support:\n\n1. Allow a user to borrow an item from the library.\n2. Display a message indicating whether the borrowing was successful or not, based on the user's status and the type of item they are trying to borrow.\n3. Quit the program.\n\nEnsure the following message formats:\n- For borrowing a book: Book \"{book_title}\" successfully borrowed by {self.name}.\n- For borrowing a DVD by a faculty member: DVD \"{title}\" successfully borrowed by {self.name}.\n- For informing a faculty member that they can only borrow DVDs: Faculty members can only borrow DVDs.",
+ "input_spec": "Please enter the following details for borrowing:\n- Name of the borrower\n- Status of the borrower (faculty/student)\n- Title of the item to borrow",
+ "output_spec": "The program should display messages indicating the success or failure of borrowing based on user status and item type, and a message when quitting.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Alice\nfaculty\nThe Great Gatsby\nquit",
+   "output": "Faculty members can only borrow DVDs.\nQuitting the program."
+  }
+ ],
+ "raw": ""
+}

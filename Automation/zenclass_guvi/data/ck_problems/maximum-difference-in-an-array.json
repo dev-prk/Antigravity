@@ -1,0 +1,21 @@
+{
+ "title": "1840. Maximum Difference in an Array",
+ "slug": "maximum-difference-in-an-array",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1840. Maximum Difference in an Array\n\n90\n\nHard  Topics\n\nTitle: Maximum Difference in Array\n\nProblem Statement:\nYou are given an array of integers, and you need to find the maximum difference between any two elements in the array. The difference is defined as the absolute difference between the two elements. The array may contain both positive and negative numbers, and your task is to ensure the difference calculation considers all possible pairs within the array.\n\nInput:\n\nThe first line contains an integer N (1 \u2264 N \u2264 1000) representing the number of elements in the array.\nThe second line contains N space-separated integers representing the elements of the array A[i] (-10^5 \u2264 A[i] \u2264 10^5).\n\nOutput:\n\nA single integer, the maximum difference between any two elements in the array.",
+ "input_spec": "The first line contains an integer N (1 \u2264 N \u2264 1000) representing the number of elements in the array.\nThe second line contains N space-separated integers representing the elements of the array A[i] (-10^5 \u2264 A[i] \u2264 10^5).",
+ "output_spec": "A single integer, the maximum difference between any two elements in the array.",
+ "constraints": "1 \u2264 N \u2264 1000\n-10^5 \u2264 A[i] \u2264 10^5\n\nExample:\n\nExample 1:",
+ "samples": [
+  {
+   "input": "The first line contains an integer N (1 \u2264 N \u2264 1000) representing the number of elements in the array.\nThe second line contains N space-separated integers representing the elements of the array A[i] (-10^5 \u2264 A[i] \u2264 10^5).",
+   "output": "A single integer, the maximum difference between any two elements in the array."
+  },
+  {
+   "input": "5\n1 -3 2 10 6",
+   "output": "13"
+  }
+ ],
+ "raw": ""
+}

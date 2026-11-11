@@ -1,0 +1,17 @@
+{
+ "title": "2097. Swapping the First and Last Digits of a 4-Digit Number",
+ "slug": "swapping-the-first-and-last-digits-of-a-4-digit-number",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2097. Swapping the First and Last Digits of a 4-Digit Number\n\n95\n\nHard\n\nProblem Statement\nRead a 4-digit integer and print a new number formed by swapping its first and last digits, keeping the middle two digits unchanged.\n\nDescription\nRead a 4-digit integer num. Extract the last digit using % 10, and extract the first digit by dividing num by 1000. Extract the two middle digits as a group using / and % so their positions can be reused in the result. Form the new number by placing the original last digit in the thousands place, the original first digit in the ones place, and keeping the two middle digits in their original positions. Print the resulting number.",
+ "input_spec": "A single line containing a 4-digit integer num (1000 <= num <= 9999).",
+ "output_spec": "Print the number obtained after swapping the first and last digits of num.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1234",
+   "output": "4231"
+  }
+ ],
+ "raw": ""
+}

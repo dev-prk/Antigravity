@@ -1,0 +1,17 @@
+{
+ "title": "830. Sort 0s, 1s, and 2s in Linked List",
+ "slug": "sort-0s-1s-and-2s-in-linked-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n830. Sort 0s, 1s, and 2s in Linked List\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a linked list of 0's 1's and 2's sort the values in ascending order and print the result in the form of linked list.",
+ "input_spec": "First line represents the size of the linked list.Next line contains sequence of values containing 0\u2019s,1\u2019s and 2\u2019s(separated by space).",
+ "output_spec": "Print the value of the resultant linked list(separated by space).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n0 1 2 2 0 1",
+   "output": "0 0 1 1 2 2"
+  }
+ ],
+ "raw": ""
+}

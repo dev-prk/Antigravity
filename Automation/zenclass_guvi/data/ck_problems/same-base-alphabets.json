@@ -1,0 +1,17 @@
+{
+ "title": "191. Same Base Alphabets",
+ "slug": "same-base-alphabets",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n191. Same Base Alphabets\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nSwagger and Rock are playing a word game. They need to check the two strings use the same base alphabets. Two strings are said to have same base alphabets if they use the same characters to form the word. eg: rescue and curse have same base alphabets - c,e,r,s,u.If it so print 'true' else print 'false'.",
+ "input_spec": "The input consists of two strings. The length of each string, |S|, is at most 1000000.",
+ "output_spec": "The output should be 'true' if the two strings use the same base alphabets, otherwise 'false'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "rescue curse",
+   "output": "true"
+  }
+ ],
+ "raw": ""
+}

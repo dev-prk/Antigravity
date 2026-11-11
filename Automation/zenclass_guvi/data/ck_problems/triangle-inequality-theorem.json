@@ -1,0 +1,17 @@
+{
+ "title": "197. Triangle Inequality Theorem",
+ "slug": "triangle-inequality-theorem",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n197. Triangle Inequality Theorem\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 3 numbers A,B,C process and print 'yes' if they can form the sides of a triangle otherwise print 'no'.",
+ "input_spec": "The input consists of three numbers A, B, and C, where A, B, C are less than or equal to 100000.",
+ "output_spec": "Print 'yes' if the given numbers A, B, and C can form the sides of a triangle, otherwise print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 4 5",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

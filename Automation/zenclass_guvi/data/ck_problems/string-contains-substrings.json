@@ -1,0 +1,17 @@
+{
+ "title": "195. String Contains Substrings",
+ "slug": "string-contains-substrings",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n195. String Contains Substrings\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S, print 'yes' if the strings 'GUVI' and 'GEEK' is present case-sensitively in the string else print 'no'.",
+ "input_spec": "The input consists of a string S. The size of the string S is between 1 and 100 characters (inclusive).",
+ "output_spec": "Print 'yes' if both 'GUVI' and 'GEEK' are present case-sensitively in the string S, otherwise print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Vishal_Sundar prepared this question",
+   "output": "no"
+  }
+ ],
+ "raw": ""
+}

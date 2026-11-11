@@ -1,0 +1,17 @@
+{
+ "title": "605. Max Sum Increasing Subarray",
+ "slug": "max-sum-increasing-subarray",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n605. Max Sum Increasing Subarray\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nRamesh is searching a solution to problem posted. The statement is as follows Print the maximum sum produced by increasing subarray. Ramesh is very confused to see the question,Help him.",
+ "input_spec": "You are given a number \u2018n\u2019,Then next line contains n space separated numbers.",
+ "output_spec": "Maximum sum value produced by the increasing sub array of size 'n'",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n2 1 4 7 3 6",
+   "output": "12"
+  }
+ ],
+ "raw": ""
+}

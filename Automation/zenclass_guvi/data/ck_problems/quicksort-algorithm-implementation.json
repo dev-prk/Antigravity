@@ -1,0 +1,17 @@
+{
+ "title": "859. QuickSort Algorithm Implementation",
+ "slug": "quicksort-algorithm-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n859. QuickSort Algorithm Implementation\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou have to sort the given array of integer values in quick sort manner",
+ "input_spec": "Given an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1",
+ "output_spec": "Print the resultant sorted array by using quick sort method.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n4 2 6 5 3 9",
+   "output": "2 3 4 5 6 9"
+  }
+ ],
+ "raw": ""
+}

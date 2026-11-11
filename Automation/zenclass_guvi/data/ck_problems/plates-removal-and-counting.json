@@ -1,0 +1,17 @@
+{
+ "title": "404. Plates Removal and Counting",
+ "slug": "plates-removal-and-counting",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n404. Plates Removal and Counting\n\n80\n\nHard  Topics\n\nProblem Statement:\nRocky has once again started training but this time to climb mountains!! Unfortunately for rocky he has trouble training since he became lazy after winning a lot of matches. This time his coach gave him N stacks of iron plates. Each stack contains X plates stacked vertically. Rocky\u2019s task is to shift all the plates to another location i.e he has to empty all stacks or make sure no plants are remaining. To do this he has to lift every plate from every stack and move it to another location.To make his work easier he used a magnet . The magnet works as follows: it can remove a single plate from all stacks from stack x to stack y contiguously so the number of plates in each stack from stack number x to stack number y decreases by 1. Rocky\u2019s master also checks whether the stacks are being moved correctly occasionally.He wants to know what is the total number of stacks from stack x to stack y. Trying to remove from an already empty stack does not change anything, the stack still remains empty.Write a program to perform the above scenarioNote: The stacks appear as shown below: ( \" = \" denotes a single plate )For example if we have 4 stacks and each stack has 2 platesThen the arrangement would appear as follows:\n\n=  =  =  =\n=  =  =  =\n1  2  3  4",
+ "input_spec": "The first line contains a single integer N,X : the number of stacks and the number of metal plates in each stackThe second line contains a single integer E denoting that E events take placeThe next E lines can be either of the following formats:1 x y : Rocky uses the magnet to lift one plate each from stack X to stack Y2 x y : Rocky\u2019s coach wants to know what the total number of plates in a stack fromStack x to stack y",
+ "output_spec": "For each event where rocky\u2019s coach checks the number of plates output a single line with the answer containing the total number of plates in the given range",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 1\n2\n1 1 3\n2 1 4",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,12 @@
+{
+ "title": "527. Matrix Inverse for Car Unlock",
+ "slug": "matrix-inverse-for-car-unlock",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n527. Matrix Inverse for Car Unlock\n\n90\n\nHard  Topics\n\nProblem Statement: \\nHackerCon is conducting a hackathon for hackers to hack a self-driving automatic car that has been developed newly, to record the car's security breach index. The car is locked digitally with a matrix consisting of positive and negative integers. Only the owner of the car knows the matrix. The car's unlock code is unique. However, a group of hackers found a glitch in the car's software and reported that it can also be unlocked with the inverse of the matrix. This proved that the car did not have a unique unlock code. That group of hackers won the hackathon. Given a matrix, find out which was the matrix that the hackers used to unlock the car.\\n\\n",
+ "input_spec": "\\nDimensions of the square matrix followed by the elements of a matrix\\n\\n",
+ "output_spec": "\\nInverse of the matrix. If inverse does not exist, output \u201c Inverse does not exist\u201d\\n\\n",
+ "constraints": "",
+ "samples": [],
+ "raw": ""
+}

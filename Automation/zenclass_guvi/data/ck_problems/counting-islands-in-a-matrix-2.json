@@ -1,0 +1,17 @@
+{
+ "title": "93. Counting Islands in a Matrix-2",
+ "slug": "counting-islands-in-a-matrix-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n93. Counting Islands in a Matrix-2\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number N, and a N*N matrix containing only 0's and 1's, where 0's represent water and 1's representing land, find the number of island 1's(1 surrounded by 0 on all of its adjacent sides).If the island could not be found with the given matrix print -1.",
+ "input_spec": "The input consists of a number N, and an N*N matrix containing only 0's and 1's. 0's represent water and 1's represent land. N is between 1 and 1000 (inclusive).",
+ "output_spec": "The output should be the number of island 1's (1 surrounded by 0 on all of its adjacent sides). If no island could be found, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1 1 0\n0 0 0\n0 1 0",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

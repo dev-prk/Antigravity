@@ -1,0 +1,17 @@
+{
+ "title": "1104. Movie Data Extraction with Regex",
+ "slug": "movie-data-extraction-with-regex",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1104. Movie Data Extraction with Regex\n\n50\n\nMedium\n\nProblem Statement:\nYou are given a string that represents a list of movies and their release years. The format of the string is \"<movie title> (<release year>)\". Write a Python function  get_movies(data)  that takes this string and returns a list of tuples where each tuple contains the movie title and the release year. Use regular expressions to parse the data.",
+ "input_spec": "-  data : a string representing a list of movies and their release years.",
+ "output_spec": "- The function should return a list of tuples where each tuple contains a movie title and the release year.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "The Shawshank Redemption (1994), The Godfather (1972), The Dark Knight (2008)",
+   "output": "[('The Shawshank Redemption', '1994'), ('The Godfather', '1972'), ('The Dark Knight', '2008')]"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1501. Min Cost Climbing Stairs",
+ "slug": "min-cost-climbing-stairs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1501. Min Cost Climbing Stairs\n\n50\n\nMedium\n\nProblem Statement:\nYou are given an integer array cost where cost[i] is the cost of step i on a staircase. Once you pay the cost, you can either climb one or two steps. You can start from step 0 or step 1. Your goal is to reach the top of the staircase (beyond the last index) with the minimum total cost.",
+ "input_spec": "- The first line contains an integer n, the number of stairs.\n- The second line contains n space-separated integers, the cost of each stair.",
+ "output_spec": "- A single integer representing the minimum cost to reach the top of the staircase.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n10 15 20 5 10 5",
+   "output": "25"
+  }
+ ],
+ "raw": ""
+}

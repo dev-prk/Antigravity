@@ -1,0 +1,17 @@
+{
+ "title": "402. Swimming Pool Water Levels",
+ "slug": "swimming-pool-water-levels",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n402. Swimming Pool Water Levels\n\n60\n\nMedium  Topics\n\nProblem Statement:\nKumar , motivated by seeing the olympics , decides to take up swimming and builds N swimming pools . Each swimming pool has no water initially . Kumar hires a contractor who agreed to fill the swimming pools in a bizarre way. He will use a helicopter which can dispense water which will fill all swimming pools numbered j ( x<=j<=y) between x and y with some quantity Q. However kumar suspects that the contractor is trying to fool him. So he occasionally checks the total water level in swimming pools numbered k ( L<=k<=R) for some L and R. Help Kumar perform the above operations",
+ "input_spec": "First line contains a single integer N - the number of swimming pools Kumar has bought\nThe second line contains E - the no of events that can occur\nNext E lines can be either of the following:\n1 x y Q : The helicopter fills all pools j ( x<=j<=y) with Q quantity of water\n2 L R : Kumar wants to know the total level of water in pools with number k (L<=k<=R)",
+ "output_spec": "For each event where kumar wants to know the maximum level of water print a single line on each integer",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n4\n2 1 5\n1 2 4 10\n2 1 5\n2 3 3",
+   "output": "15\n45\n13"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "752. Alphabetic Pattern-3",
+ "slug": "alphabetic-pattern-3",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n752. Alphabetic Pattern-3\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a task is to print pattern using alphabets by getting an integer number 'n' as input.",
+ "input_spec": ".\n\nInput Description:\nYou are given an integer number \u2018n\u2019",
+ "output_spec": "Print pattern as shown",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "ABCD\nBCD\nCD\nD\nD\nCD\nBCD\nABCD"
+  }
+ ],
+ "raw": ""
+}

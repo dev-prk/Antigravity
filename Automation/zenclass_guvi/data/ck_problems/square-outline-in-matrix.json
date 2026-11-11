@@ -1,0 +1,17 @@
+{
+ "title": "564. Square Outline in Matrix",
+ "slug": "square-outline-in-matrix",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n564. Square Outline in Matrix\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given a matrix of dimensions M*N. Find out whether there is an outline of a square formed by the number 4 in the matrix of numbers.",
+ "input_spec": "Dimensions of the matrix followed followed by the elements of the matrix.",
+ "output_spec": "YES/NO",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5\n4 4 4 4 4\n4 1 2 3 4\n4 7 6 5 4\n4 9 8 7 4\n4 4 4 4 4",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

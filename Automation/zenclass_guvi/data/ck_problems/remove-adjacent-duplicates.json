@@ -1,0 +1,17 @@
+{
+ "title": "637. Remove Adjacent Duplicates",
+ "slug": "remove-adjacent-duplicates",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n637. Remove Adjacent Duplicates\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nYou are given a string s.Your task is to remove all the adjacent duplicate character from string.Print the string formed out of it.",
+ "input_spec": "You are given a string \u2018s\u2019",
+ "output_spec": "Print the resultant string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Geeksforgeek",
+   "output": "Gksforgk"
+  }
+ ],
+ "raw": ""
+}

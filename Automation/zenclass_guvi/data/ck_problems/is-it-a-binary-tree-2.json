@@ -1,0 +1,17 @@
+{
+ "title": "949. Is it a Binary Tree?-2",
+ "slug": "is-it-a-binary-tree-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n949. Is it a Binary Tree?-2\n\n50\n\nMedium\n\nProblem Statement:\nGiven a tree with N nodes and M edges, print whether it is a BinaryTree.",
+ "input_spec": "The first line consists of input N ranges from 1",
+ "output_spec": "Print YES if it was a binary tree else print NO",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n626 1026 310 410 63 13 2",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

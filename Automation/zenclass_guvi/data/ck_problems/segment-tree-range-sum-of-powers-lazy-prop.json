@@ -1,0 +1,17 @@
+{
+ "title": "1569. Segment Tree: Range Sum of Powers (Lazy Prop)",
+ "slug": "segment-tree-range-sum-of-powers-lazy-prop",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1569. Segment Tree: Range Sum of Powers (Lazy Prop)\n\n80\n\nHard\n\nProblem Statement:\nGiven an array of integers of size N, you are required to efficiently perform the following operations:\n1. Update the value at a specific index.\n2. Compute the sum of the k-th powers (for example, squares or cubes) of elements in a given range [L, R].\n\nYou need to implement a data structure (Segment Tree with Lazy Propagation) that supports these operations efficiently.",
+ "input_spec": "- The first line contains three integers N, Q, and K \u2014 the size of the array, the number of queries, and the power to which each element should be raised (2 for squares, 3 for cubes, etc.).\n- The second line contains N space-separated integers, the initial array.\n- The next Q lines each describe a query:\n- For update: \"1 idx val\" (update the element at index idx to val, 1-based indexing)\n- For query: \"2 L R\" (compute the sum of k-th powers from index L to R, inclusive, 1-based indexing)",
+ "output_spec": "For each query of type 2, output the result on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5 2\n1 2 3 4 5\n2 1 5\n1 3 10\n2 2 4\n1 5 6\n2 1 5",
+   "output": "55\n120\n157"
+  }
+ ],
+ "raw": ""
+}

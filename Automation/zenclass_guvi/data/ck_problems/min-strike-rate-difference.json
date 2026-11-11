@@ -1,0 +1,17 @@
+{
+ "title": "592. Min Strike Rate Difference",
+ "slug": "min-strike-rate-difference",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n592. Min Strike Rate Difference\n\n70\n\nHard  Topics\n\nProblem Statement:\nIn a cricket match the coach wanted to check the performance of batsmen o he decided strike rate as criteria. He planned that the two batsmen whose strike rate difference minimum will be sent no. 3 and no.4 in next match.Now your task is to help the coach in finding the two batsmen.",
+ "input_spec": "You are given an integer \u2019n\u2019 denoting the size of array. Next line contains n space separated integers.",
+ "output_spec": "Print the strike rate of two batsmen in same order of their occurence",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n138.3 156.5 156.6 160.2 198.3 146.2",
+   "output": "156.5 156.6"
+  }
+ ],
+ "raw": ""
+}

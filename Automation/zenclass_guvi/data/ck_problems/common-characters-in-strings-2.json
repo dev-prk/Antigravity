@@ -1,0 +1,17 @@
+{
+ "title": "1011. Common Characters in Strings-2",
+ "slug": "common-characters-in-strings-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1011. Common Characters in Strings-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a two string print the common characters if their no common characters print -1",
+ "input_spec": "Given a two strings in one by one line",
+ "output_spec": "Print number of special characters or -1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Guvi Geek\nGuvi",
+   "output": "Guvi"
+  }
+ ],
+ "raw": ""
+}

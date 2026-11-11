@@ -1,0 +1,17 @@
+{
+ "title": "1138. Stream API: Square and Filter",
+ "slug": "stream-api-square-and-filter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1138. Stream API: Square and Filter\n\n50\n\nMedium\n\nProblem Statement:\nCreate a Java program that uses the Stream API to read a list of integers from the user, squares each number, filters out the squares that are not divisible by 3, and then prints the resulting list.",
+ "input_spec": "An integer n denoting the number of elements in the list.\nn space-separated integers representing the list elements.",
+ "output_spec": "The resulting list of squares that are divisible by 3, each number on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

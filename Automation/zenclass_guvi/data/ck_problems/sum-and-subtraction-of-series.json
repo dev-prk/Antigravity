@@ -1,0 +1,17 @@
+{
+ "title": "1071. Sum and Subtraction of Series",
+ "slug": "sum-and-subtraction-of-series",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1071. Sum and Subtraction of Series\n\n80\n\nHard\n\nProblem Statement:\nSanjay is a student who hates maths. But he was a good programmer. There was a sum in second chapter which was given to him as a homework.Help him to finish his homework. You are given with a number n. You have to find the sum of numbers from 1 to n and subtract all the 2nd values from the sum. Help him to finish the exercise in the second chapter. Write a program to finish the maths homework.",
+ "input_spec": "- The first line contains an integer t, the total number of testcases.\n- The next t lines contain an integer n.\nInput",
+ "output_spec": "Print t lines of integer values",
+ "constraints": "1<=t<=100\n1<=n<=10^9",
+ "samples": [
+  {
+   "input": "2\n4\n1000000000",
+   "output": "-4\n499999998352516354"
+  }
+ ],
+ "raw": ""
+}

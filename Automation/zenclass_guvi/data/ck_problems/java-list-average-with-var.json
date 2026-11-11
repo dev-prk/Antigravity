@@ -1,0 +1,17 @@
+{
+ "title": "1133. Java List Average with var",
+ "slug": "java-list-average-with-var",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1133. Java List Average with var\n\n50\n\nMedium\n\nProblem Statement:\nImplement a Java program that uses var to store a list of user-input integers and then calculates the average of these integers. The program should handle the list and the average calculation using var.",
+ "input_spec": "integers and then calculates the average of these integers. The program should handle the list and the average calculation using var.\n\nInput Description:\nAn integer n denoting the number of elements in the list. n space-separated integers representing the list elements.",
+ "output_spec": "A single floating-point number which is the average of the list elements.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4",
+   "output": "2.5"
+  }
+ ],
+ "raw": ""
+}

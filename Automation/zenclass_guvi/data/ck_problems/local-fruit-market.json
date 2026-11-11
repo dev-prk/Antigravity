@@ -1,0 +1,21 @@
+{
+ "title": "1732. Local Fruit Market",
+ "slug": "local-fruit-market",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1732. Local Fruit Market\n\n50\n\nMedium\n\nProblem Statement:\nScenario:\nA local fruit market wants to digitize their daily sales process. Each day, they serve multiple customers, and each customer purchases a variety of fruits. Your task is to write a C program that will calculate the total amount of money each customer spends, and finally, the program should output the total earnings for the market at the day end.\n\nInput:\n\nThe number of customers visiting the market.\nFor each customer, the number of different fruits purchased.\nThe price for each type of fruit.\n\nOutput:\n\nThe total bill for each customer.\nThe total earnings for the market at the end of the day.",
+ "input_spec": "The number of customers visiting the market.\nFor each customer, the number of different fruits purchased.\nThe price for each type of fruit.",
+ "output_spec": "the total earnings for the market at the day end.\n\nInput:\n\nThe number of customers visiting the market.\nFor each customer, the number of different fruits purchased.\nThe price for each type of fruit.\n\nOutput:\n\nThe total bill for each customer.\nThe total earnings for the market at the end of the day.",
+ "constraints": "The number of customers will be a positive integer, not exceeding 100.\nThe number of different fruits each customer buys will be a positive integer, not exceeding 50.\nThe price of each fruit will be a positive floating-point number, not exceeding $500.\n\nExample:",
+ "samples": [
+  {
+   "input": "The number of customers visiting the market.\nFor each customer, the number of different fruits purchased.\nThe price for each type of fruit.",
+   "output": "The total bill for each customer.\nThe total earnings for the market at the end of the day."
+  },
+  {
+   "input": "Enter number of customers: 3\n\nCustomer 1:\nEnter number of different fruits: 2\nEnter price of fruit 1: 3.5\nEnter price of fruit 2: 2.0\n\nCustomer 2:\nEnter number of different fruits: 3\nEnter price of fruit 1: 5.0\nEnter price of fruit 2: 7.5\nEnter price of fruit 3: 2.5\n\nCustomer 3:\nEnter number of different fruits: 1\nEnter price of fruit 1: 10.0",
+   "output": "Total bill for Customer 1: $5.5\nTotal bill for Customer 2: $15.0\nTotal bill for Customer 3: $10.0\nTotal earnings for the day: $30.5"
+  }
+ ],
+ "raw": ""
+}

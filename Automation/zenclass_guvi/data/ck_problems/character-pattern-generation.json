@@ -1,0 +1,17 @@
+{
+ "title": "881. Character Pattern Generation",
+ "slug": "character-pattern-generation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n881. Character Pattern Generation\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGenerate the following pattern.\n\n*****\nb****\nbb***\nbbb**\nbbbb*",
+ "input_spec": "Input consists of a single integer that corresponds to n, the number of rows.Where 1<=R<=100",
+ "output_spec": "Print the character pattern from the given input n.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "*****\nb****\nbb***\nbbb**\nbbbb*"
+  }
+ ],
+ "raw": ""
+}

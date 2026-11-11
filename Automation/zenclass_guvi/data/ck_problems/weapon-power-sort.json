@@ -1,0 +1,17 @@
+{
+ "title": "514. Weapon Power Sort",
+ "slug": "weapon-power-sort",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n514. Weapon Power Sort\n\n70\n\nHard  Topics\n\nProblem Statement:\nThor wants to sort his weapons based on increasing value of its power to kill. The best coders in his team have done the task but are unable to sort the data in O(NlogN) time. Try to develop code that can sort the data in the required time complexity. Constraint: Power values lie between 0 and 10000",
+ "input_spec": "Name of weapons with their power denoted beside it.",
+ "output_spec": "Weapon named sorted in order of increasing power",
+ "constraints": "Power values lie between 0 and 10000",
+ "samples": [
+  {
+   "input": "Mjolnir 200\nStormBreaker 1000\nAsgardian 560",
+   "output": "1 Mjolnir\n2 Asgardian\n3 StormBreaker"
+  }
+ ],
+ "raw": ""
+}

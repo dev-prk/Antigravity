@@ -1,0 +1,17 @@
+{
+ "title": "1557. Rabin-Karp Multiple Pattern Search",
+ "slug": "rabin-karp-multiple-pattern-search",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1557. Rabin-Karp Multiple Pattern Search\n\n90\n\nHard\n\nProblem Statement:\nGiven a list of patterns and a text, your task is to find all patterns that appear in the text using the Rabin-Karp algorithm. For each pattern, output all starting indices (0-based) where the pattern occurs in the text. If a pattern does not occur in the text, output -1 for that pattern.",
+ "input_spec": "- The first line contains an integer N, the number of patterns.\n- The next N lines each contain a pattern string.\n- The next line contains the text string.",
+ "output_spec": "all starting indices (0-based) where the pattern occurs in the text. If a pattern does not occur in the text, output -1 for that pattern.\n\nInput Description:\n- The first line contains an integer N, the number of patterns.\n- The next N lines each contain a pattern string.\n- The next line contains the text string.\n\nOutput Description:\nFor each pattern (in the order given), output a line containing the starting indices (space-separated) where the pattern occurs in the text. If the pattern does not occur, output -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nabc\nde\na\nabcdeabc",
+   "output": "0 5\n3\n0 5"
+  }
+ ],
+ "raw": ""
+}

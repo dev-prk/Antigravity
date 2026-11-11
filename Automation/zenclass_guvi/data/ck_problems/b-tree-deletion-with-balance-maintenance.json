@@ -1,0 +1,17 @@
+{
+ "title": "1540. B-Tree Deletion with Balance Maintenance",
+ "slug": "b-tree-deletion-with-balance-maintenance",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1540. B-Tree Deletion with Balance Maintenance\n\n80\n\nHard\n\nProblem Statement:\nGiven a B-Tree of order t (minimum degree), implement a function to delete a given key from the B-Tree. The B-Tree should maintain all its properties after the deletion. You are required to handle all cases of deletion, including deleting from leaf and non-leaf nodes, and ensuring the tree remains balanced.",
+ "input_spec": "- The first line contains two integers n and t, where n is the number of keys initially in the B-Tree, and t is the minimum degree of the B-Tree.\n- The second line contains n space-separated integers representing the keys in the B-Tree in level order.\n- The third line contains an integer q, the number of keys to delete.\n- The fourth line contains q space-separated integers, each representing a key to delete from the B-Tree.",
+ "output_spec": "- For each deletion, output the level order traversal of the B-Tree after the deletion as a single line of space-separated integers. If the tree becomes empty, output \"Empty\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 2\n10 20 5 6 12 30 7\n3\n6 13 7\n6 13 7",
+   "output": "10 5 7 12 20 30\n10 5 7 12 20 30\n10 5 12 20 30"
+  }
+ ],
+ "raw": ""
+}

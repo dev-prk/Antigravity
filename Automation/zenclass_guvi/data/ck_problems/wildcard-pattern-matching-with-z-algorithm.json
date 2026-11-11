@@ -1,0 +1,17 @@
+{
+ "title": "1560. Wildcard Pattern Matching with Z Algorithm",
+ "slug": "wildcard-pattern-matching-with-z-algorithm",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1560. Wildcard Pattern Matching with Z Algorithm\n\n90\n\nHard\n\nProblem Statement:\nGiven a text string and a pattern string, implement a function to determine if the pattern matches the entire text. The pattern may contain the wildcard characters:\n- '?' which matches any single character.\n- '*' which matches any sequence of characters (including the empty sequence).\n\nYou are required to use the Z Algorithm as part of your solution.",
+ "input_spec": "The first line contains the text string. The second line contains the pattern string.",
+ "output_spec": "Print \"YES\" if the pattern matches the entire text, otherwise print \"NO\".",
+ "constraints": "1 \u2264 length of text \u2264 10^5 1 \u2264 length of pattern \u2264 10^5 Both text and pattern consist of lowercase English letters, '?', and '*'.",
+ "samples": [
+  {
+   "input": "abefcdgiescdfimde\nab*cd?i*de",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

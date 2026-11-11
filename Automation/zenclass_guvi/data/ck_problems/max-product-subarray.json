@@ -1,0 +1,17 @@
+{
+ "title": "228. Max Product Subarray",
+ "slug": "max-product-subarray",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n228. Max Product Subarray\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a number N and an array of size N(with both positive and negative integers), print the product of the elements in the maximum product subarray.",
+ "input_spec": "The input consists of a number N and an array of size N with both positive and negative integers. N is between 1 and 100000 (inclusive).",
+ "output_spec": "The output is the product of the elements in the maximum product subarray.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "120"
+  }
+ ],
+ "raw": ""
+}

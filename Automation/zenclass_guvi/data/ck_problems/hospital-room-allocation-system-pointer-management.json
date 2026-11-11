@@ -1,0 +1,21 @@
+{
+ "title": "1747. Hospital Room Allocation System (Pointer Management)",
+ "slug": "hospital-room-allocation-system-pointer-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1747. Hospital Room Allocation System (Pointer Management)\n\n50\n\nMedium\n\n#Hospital Room Allocation System (Pointer Management)\n\nProblem Statement:\nIn a hospital, rooms are dynamically allocated to patients based on their medical condition. Each room has a unique number, and patients are assigned based on availability. You need to implement a C program that helps the hospital allocate rooms dynamically using pointer declaration and initialization.\n\nEach patient is assigned a unique ID, and you need to store the room numbers for multiple patients using pointers. The program should allow dynamic allocation and deallocation of rooms.\n\nProblem Requirements:\n\nGiven a list of patient IDs and their respective medical conditions (represented as integers), assign rooms based on their condition.\nEach medical condition corresponds to a specific range of room numbers.\nUse pointers to allocate room numbers for patients.\nAfter assigning rooms, you need to release the rooms dynamically using pointers.\n\nInput:\nThe first line contains an integer n, representing the number of patients.\nThe second line contains n integers representing the patient IDs.\nThe third line contains n integers representing the patients' medical conditions (0 = critical, 1 = stable, 2 = recovering).\n\nOutput:\nFor each patient, output the patient ID followed by the room number assigned.\nAfter all assignments, print a message saying that the memory is released.",
+ "input_spec": "The first line contains an integer n, representing the number of patients.\nThe second line contains n integers representing the patient IDs.\nThe third line contains n integers representing the patients' medical conditions (0 = critical, 1 = stable, 2 = recovering).",
+ "output_spec": "For each patient, output the patient ID followed by the room number assigned.\nAfter all assignments, print a message saying that the memory is released.",
+ "constraints": "1 \u2264 n \u2264 100\nPatient IDs will be unique.\nMedical condition 0 assigns a room in the range 101-200.\nMedical condition 1 assigns a room in the range 201-300.\nMedical condition 2 assigns a room in the range 301-400.",
+ "samples": [
+  {
+   "input": "The first line contains an integer n, representing the number of patients.\nThe second line contains n integers representing the patient IDs.\nThe third line contains n integers representing the patients' medical conditions (0 = critical, 1 = stable, 2 = recovering).",
+   "output": "For each patient, output the patient ID followed by the room number assigned.\nAfter all assignments, print a message saying that the memory is released."
+  },
+  {
+   "input": "3\n101 102 103\n0 1 2",
+   "output": "Patient ID 101 is assigned Room 101\nPatient ID 102 is assigned Room 201\nPatient ID 103 is assigned Room 301\nMemory Released."
+  }
+ ],
+ "raw": ""
+}

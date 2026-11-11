@@ -1,0 +1,17 @@
+{
+ "title": "1539. B-Tree Insertion and Traversal",
+ "slug": "b-tree-insertion-and-traversal",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1539. B-Tree Insertion and Traversal\n\n80\n\nHard\n\nProblem Statement:\nGiven a B-Tree of order 'm', implement the insertion operation. A B-Tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. Each node in a B-Tree can have at most 'm' children and at least \u2308m/2\u2309 children (except for the root). When inserting a new key, ensure the B-Tree properties are maintained, including splitting nodes as necessary.",
+ "input_spec": "- The first line contains two integers n and m, where n is the number of keys to insert, and m is the order of the B-Tree.\n- The second line contains n space-separated integers representing the keys to be inserted in order.",
+ "output_spec": "- Print the level order traversal of the B-Tree after all insertions. Each level should be printed on a new line, with keys in each node separated by spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 3\n10 20 5 6 12 30 7",
+   "output": "10\n5 6 7 12 20 30"
+  }
+ ],
+ "raw": ""
+}

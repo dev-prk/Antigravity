@@ -1,0 +1,17 @@
+{
+ "title": "1173. List Combination with Lambdas",
+ "slug": "list-combination-with-lambdas",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1173. List Combination with Lambdas\n\n50\n\nMedium\n\nProblem Statement:\nCombine two lists of integers by applying a lambda expression that adds corresponding elements from the two lists.",
+ "input_spec": "The first line contains an integer n, the number of integers in each list. The next n lines contain integers for the first list. The next n lines contain integers for the second list.",
+ "output_spec": "Print the resulting list after combining each corresponding element.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1\n2\n3\n4\n5\n6",
+   "output": "5\n7\n9"
+  }
+ ],
+ "raw": ""
+}

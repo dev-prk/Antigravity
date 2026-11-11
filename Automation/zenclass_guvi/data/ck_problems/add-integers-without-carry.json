@@ -1,0 +1,17 @@
+{
+ "title": "948. Add Integers without Carry",
+ "slug": "add-integers-without-carry",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n948. Add Integers without Carry\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to get 2 integers as input and add the integers without any carry.",
+ "input_spec": "and add the integers without any carry.\n\nInput Description:\nA single line containing 2 integers.",
+ "output_spec": "Print sum of the 2 integers without carry",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "44 66",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "173. Factorial Ratio",
+ "slug": "factorial-ratio",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n173. Factorial Ratio\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers a and B.Print the value of a!/b!.",
+ "input_spec": "A,B <= 10000 and A-B <= 5",
+ "output_spec": "The value of a!/b!.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 2",
+   "output": "12"
+  }
+ ],
+ "raw": ""
+}

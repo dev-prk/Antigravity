@@ -1,0 +1,17 @@
+{
+ "title": "179. Uppercase Every Kth Character",
+ "slug": "uppercase-every-kth-character",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n179. Uppercase Every Kth Character\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a string and a number K, change every kth character to uppercase from beginning in string.",
+ "input_spec": "The input consists of a string and an integer K.",
+ "output_spec": "The output is the modified string where every Kth character is converted to uppercase.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "string 2",
+   "output": "sTrInG"
+  }
+ ],
+ "raw": ""
+}

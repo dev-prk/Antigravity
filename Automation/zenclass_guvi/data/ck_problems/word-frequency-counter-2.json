@@ -1,0 +1,17 @@
+{
+ "title": "1171. Word Frequency Counter-2",
+ "slug": "word-frequency-counter-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1171. Word Frequency Counter-2\n\n50\n\nMedium\n\nProblem Statement:\nYou are tasked with implementing a feature that counts the frequency of each word in a given text. The twist is that the word frequencies need to be sorted in descending order of frequency, and in case of a tie, the words should be sorted lexicographically.",
+ "input_spec": "A single line of text (can contain multiple words and punctuation).",
+ "output_spec": "Each line should contain a word followed by its frequency, sorted by frequency in descending order and lexicographically for tied frequencies.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "apple banana apple fruit banana apple",
+   "output": "apple 3\nbanana 2\nfruit 1"
+  }
+ ],
+ "raw": ""
+}

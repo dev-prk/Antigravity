@@ -1,0 +1,17 @@
+{
+ "title": "2153. Printing a Countdown Using Recursion",
+ "slug": "printing-a-countdown-using-recursion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2153. Printing a Countdown Using Recursion\n\n60\n\nMedium\n\nProblem Statement\nRead an integer N and print the numbers from N down to 1 using a recursive function.\n\nDescription\nA recursive function is a function that calls itself. Read an integer N from input. Write a void function countdown that takes an integer parameter n. If n is at least 1, the function prints n and then calls itself with n - 1. When n becomes 0, the function does nothing and the recursion stops. Call countdown from main() with N. No loop should be used.",
+ "input_spec": ". Write a void function countdown that takes an integer parameter n. If n is at least 1, the function prints n and then calls itself with n - 1. When n becomes 0, the function does nothing and the recursion stops. Call countdown from main() with N. No loop should be used.\n\nInput Description\nA single integer N (N >= 1).",
+ "output_spec": "Print the numbers from N down to 1, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "5\n4\n3\n2\n1"
+  }
+ ],
+ "raw": ""
+}

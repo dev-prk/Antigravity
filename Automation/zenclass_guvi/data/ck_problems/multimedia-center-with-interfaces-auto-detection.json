@@ -1,0 +1,17 @@
+{
+ "title": "1659. Multimedia Center with Interfaces (Auto-detection)",
+ "slug": "multimedia-center-with-interfaces-auto-detection",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1659. Multimedia Center with Interfaces (Auto-detection)\n\n70\n\nHard\n\nMultimedia Center with Interfaces (Auto-detection)\n\nProblem Statement:\nWrite a program with two interfaces: AudioPlayer (method playAudio()) and VideoPlayer (method playVideo()). Implement them in a class MediaCenter. The program should automatically detect whether the given file is audio or video based on its extension and simulate playback with realistic quality/resolution.\n\nDescription:\nThis program demonstrates multiple inheritance via interfaces in a multimedia application. It auto-detects media type from the file extension, avoiding manual input of \u201caudio\u201d or \u201cvideo\u201d.\n\nInput Format:\n\nA single line: File name (string with extension)\n\nOutput Format:\n\nA message showing detected type and realistic playback simulation.",
+ "input_spec": "of \u201caudio\u201d or \u201cvideo\u201d.\n\nInput Format:\n\nA single line: File name (string with extension)",
+ "output_spec": "A message showing detected type and realistic playback simulation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "song.mp3",
+   "output": "Audio file detected: Playing with 128kbps quality"
+  }
+ ],
+ "raw": ""
+}

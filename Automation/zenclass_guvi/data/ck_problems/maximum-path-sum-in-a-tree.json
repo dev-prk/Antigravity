@@ -1,0 +1,17 @@
+{
+ "title": "1511. Maximum Path Sum in a Tree",
+ "slug": "maximum-path-sum-in-a-tree",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1511. Maximum Path Sum in a Tree\n\n50\n\nMedium\n\nProblem Statement:\nGiven a tree where each node contains an integer value, find the maximum sum of values along any path in the tree. A path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to pass through the root.",
+ "input_spec": "- The first line contains an integer N, the number of nodes in the tree.\n- The second line contains N integers, the values of the nodes (1-indexed).\n- The next N-1 lines each contain two integers u and v, denoting an edge between node u and node v.",
+ "output_spec": "- Print a single integer, the maximum path sum in the tree.",
+ "constraints": "- 1 <= N <= 10^5\n- -10^4 <= Node value <= 10^4",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n1 2\n1 3\n3 4\n3 5",
+   "output": "12"
+  }
+ ],
+ "raw": ""
+}

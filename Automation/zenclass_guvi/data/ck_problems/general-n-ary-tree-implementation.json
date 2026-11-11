@@ -1,0 +1,17 @@
+{
+ "title": "1496. General N-ary Tree Implementation",
+ "slug": "general-n-ary-tree-implementation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1496. General N-ary Tree Implementation\n\n70\n\nHard\n\nProblem Statement:\nDesign and implement a general (n-ary) tree data structure that supports the following operations:\n1. Insert a node as a child of a given parent node.\n2. Delete a node and all its descendants.\n3. Traverse the tree in pre-order and post-order.",
+ "input_spec": "- The first line contains an integer n, the number of operations.\n- The next n lines each contain an operation in one of the following formats:\n- \"insert parent value\": Insert a node with value as a child of the node with value parent.\n- \"delete value\": Delete the node with value and all its descendants.\n- \"preorder\":",
+ "output_spec": "the pre-order traversal of the tree.\n- \"postorder\": Output the post-order traversal of the tree.\n\nOutput Description:\n- For each \"preorder\" or \"postorder\" operation, output a single line with the traversal result (space-separated node values).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\ninsert 1 2\ninsert 1 3\ninsert 2 4\ninsert 2 5\npreorder\ndelete 2\npreorder",
+   "output": "1 2 4 5 3\n1 3"
+  }
+ ],
+ "raw": ""
+}

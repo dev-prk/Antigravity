@@ -1,0 +1,25 @@
+{
+ "title": "1606. Type Qualifiers: restrict",
+ "slug": "type-qualifiers-restrict",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1606. Type Qualifiers: restrict\n\n70\n\nHard\n\nProblem Statement\nTitle: Vectorized Operations on Large Data Sets Using restrict\n\nIn a large-scale scientific computation system, you are given two large data arrays that represent measurements from different sensors. Your task is to perform a vectorized operation on these data sets to calculate the sum of corresponding elements from the two arrays and store the result in a third array. The restrict qualifier is crucial here to optimize memory access and prevent any aliasing issues that would otherwise degrade performance.\n\nYou need to implement a C program that uses the restrict keyword to ensure that the input arrays and the output array are distinct, allowing the compiler to optimize the vectorized operation for maximum performance.\n\nInput:\n\nThe first input is an integer n (1 <= n <= 1000), representing the size of the arrays.\nThe second input consists of n integers representing the first array.\nThe third input consists of n integers representing the second array.\n\nOutput:\n\nThe program should output the resulting array after performing the element-wise sum of the two arrays.",
+ "input_spec": "arrays and the",
+ "output_spec": "array are distinct, allowing the compiler to optimize the vectorized operation for maximum performance.\n\nInput:\n\nThe first input is an integer n (1 <= n <= 1000), representing the size of the arrays.\nThe second input consists of n integers representing the first array.\nThe third input consists of n integers representing the second array.\n\nOutput:\n\nThe program should output the resulting array after performing the element-wise sum of the two arrays.",
+ "constraints": "Use the restrict qualifier to optimize memory access for the two",
+ "samples": [
+  {
+   "input": "The first input is an integer n (1 <= n <= 1000), representing the size of the arrays.\nThe second input consists of n integers representing the first array.\nThe third input consists of n integers representing the second array.",
+   "output": "The program should output the resulting array after performing the element-wise sum of the two arrays."
+  },
+  {
+   "input": "5\n1 2 3 4 5\n5 4 3 2 1",
+   "output": "6 6 6 6 6\n\nExample 2:"
+  },
+  {
+   "input": "3\n10 20 30\n1 2 3",
+   "output": "11 22 33"
+  }
+ ],
+ "raw": ""
+}

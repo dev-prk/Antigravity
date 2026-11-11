@@ -1,0 +1,17 @@
+{
+ "title": "364. Minimum Refuels for Bus Journeys",
+ "slug": "minimum-refuels-for-bus-journeys",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n364. Minimum Refuels for Bus Journeys\n\n100\n\nHard  Topics  Company\n\nProblem Statement:\nA bus moves along the coordinate line Ox from the point x\u2009=\u20090 to the point x\u2009=\u2009a. After starting from the point x\u2009=\u20090, it reaches the point x\u2009=\u2009a, immediately turns back and then moves to the point x\u2009=\u20090. After returning to the point x\u2009=\u20090 it immediately goes back to the point x\u2009=\u2009a and so on. Thus, the bus moves from x\u2009=\u20090 to x\u2009=\u2009a and back. Moving from the point x\u2009=\u20090 to x\u2009=\u2009a or from the point x\u2009=\u2009a to x\u2009=\u20090 is called a bus journey. In total, the bus must make k journeys. The petrol tank of the bus can hold b liters of gasoline. To pass a single unit of distance the bus needs to spend exactly one liter of gasoline. The bus starts its first journey with a full petrol tank. There is a gas station in point x\u2009=\u2009f. This point is between points x\u2009=\u20090 and x\u2009=\u2009a. There are no other gas stations on the bus route. While passing by a gas station in either direction the bus can stop and completely refuel its tank. Thus, after stopping to refuel the tank will contain b liters of gasoline. What is the minimum number of times the bus needs to refuel at the point x\u2009=\u2009f to make k journeys? The first journey starts in the point x\u2009=\u20090.",
+ "input_spec": "The first line contains four integers a, b, f, k (0\u2009<\u2009f\u2009<\u2009a\u2009\u2264\u20091000000, 1\u2009\u2264\u2009b\u2009\u2264\u20091000000000, 1\u2009\u2264\u2009k\u2009\u2264\u200910000) \u2014 the endpoint of the first bus journey, the capacity of the fuel tank of the bus, the point where the gas station is located, and the required number of journeys.",
+ "output_spec": "The minimum number of times the bus needs to refuel at the point x\u2009=\u2009f to make k journeys.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 9 2 4",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1445. Quickselect: K-th Smallest with Duplicates",
+ "slug": "quickselect-k-th-smallest-with-duplicates",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1445. Quickselect: K-th Smallest with Duplicates\n\n40\n\nMedium\n\nProblem Statement:\nCreate a program to find the k-th smallest element in an array. The twist is that you must implement the Quickselect algorithm and handle arrays with duplicate values efficiently.",
+ "input_spec": "The first line contains an integer n, the number of elements in the array. The second line contains n integers, the elements of the array. The third line contains an integer k, the position (1-based) of the smallest element to find.",
+ "output_spec": "A single integer, the k-th smallest element in the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "67 10 4 3 20 153",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

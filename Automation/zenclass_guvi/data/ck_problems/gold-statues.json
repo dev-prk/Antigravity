@@ -1,0 +1,17 @@
+{
+ "title": "413. Gold Statues",
+ "slug": "gold-statues",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n413. Gold Statues\n\n80\n\nHard  Topics\n\nProblem Statement:\nThe citizens of the golden kingdom are fed up of their ruler King Gold who has been using up all the citizens money for desire of owning all the gold in the world . The citizens wanting to topple the king come up with a plan. They decide to build N statues (numbered 1 to N) of the king made of gold in front of his palace so he will spend all his time admiring the statues and will not care about the people as they overthrow his army. The king however only admires pure gold only and can easily detect fake gold . Out of the N barricades some of them are made of fake gold and some of them are made of pure gold. The king on each visit to the palace gates will inspect and admire all gold statues from some statue numbered X to statue numbered Y . Whenever he detects that a statue is not made of real gold he feels dissatisfied. The citizens can also modify statues to make them of real gold or they can replace a pure gold statue with fake gold. Everytime the king inspects the statues if the number of fake statues is greater than the number of real statues he feels \u201cdissatsfied\u201d or if the number of real statues is greater he feels \u201csatisfied\u201d or if the number of statues are equal he feels \u201cneutral\u201d",
+ "input_spec": "The first line contains a single integer N denoting the number of statues that have been built.\nThe next line contains N integers either 0 or 1 denoting: 0-> fake statue or 1->real statue\nThe next line contains a single integer Q denoting the number of events that can take place\nThe next Q lines can be either of the following:\n1 x : the citizens replace the statue numbered x . If its fake it will be replaced with a real statue or if its real it will be replaced with a fake statue\n2 x y: The king checks the statues from statue numbered x to statue numbered y .",
+ "output_spec": "For each type 2 events output any one of the following:\n\u201cDissatisfied\u201d , \u201cSatisfied\u201d , \u201cNeutral\u201d as given in the problem statement (output without quotes)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 1 1 0\n1 1\n2 1 4",
+   "output": "Neutral"
+  }
+ ],
+ "raw": ""
+}

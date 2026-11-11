@@ -1,0 +1,17 @@
+{
+ "title": "1482. Dynamic Mem: Kth Smallest Unique Element",
+ "slug": "dynamic-mem-kth-smallest-unique-element",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1482. Dynamic Mem: Kth Smallest Unique Element\n\n40\n\nMedium\n\nProblem Statement:\nDynamic Memory Allocation: Find the Kth Smallest Unique Element Write a program to find the Kth smallest unique element from an unsorted list of integers. The program should use dynamic memory allocation (malloc) to handle varying input sizes. If the Kth smallest unique element does not exist, the program should return -1.",
+ "input_spec": "sizes. If the Kth smallest unique element does not exist, the program should return -1.\n\nInput Description:\nThe first line contains an integer n (1 \u2264 n \u2264 10^5), which denotes the number of integers. The second line contains n space-separated integers where each integer arr[i] (\u221210^6 \u2264 arr[i] \u2264 10^6). The third line contains an integer k (1 \u2264 k \u2264 n), which denotes the position of the smallest unique element to be found.",
+ "output_spec": "Output the Kth smallest unique element. If such an element does not exist, output -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n4 2 2 8 3 3 1\n3",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

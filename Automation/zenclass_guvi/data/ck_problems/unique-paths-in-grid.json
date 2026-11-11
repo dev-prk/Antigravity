@@ -1,0 +1,17 @@
+{
+ "title": "1502. Unique Paths in Grid",
+ "slug": "unique-paths-in-grid",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1502. Unique Paths in Grid\n\n50\n\nMedium\n\nProblem Statement:\nYou are given an m x n grid. Your task is to find the number of unique paths from the top-left corner (cell (1,1)) to the bottom-right corner (cell (m,n)). At any point, you can only move either right or down.",
+ "input_spec": "The first line contains two integers m and n, representing the number of rows and columns in the grid.",
+ "output_spec": "Print a single integer, the number of unique paths from the top-left to the bottom-right corner.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 7",
+   "output": "28"
+  }
+ ],
+ "raw": ""
+}

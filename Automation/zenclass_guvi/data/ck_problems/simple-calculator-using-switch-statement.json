@@ -1,0 +1,17 @@
+{
+ "title": "2118. Simple Calculator Using Switch Statement",
+ "slug": "simple-calculator-using-switch-statement",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2118. Simple Calculator Using Switch Statement\n\n50\n\nMedium\n\nProblem Statement\nRead two integers and an operator symbol, then perform the corresponding arithmetic operation using a switch statement.\n\nDescription\nRead two integers a and b, followed by a character op representing one of the operators +, -, *, or /. Use a switch statement on op to perform the correct operation (addition, subtraction, multiplication, or integer division) and print the result. Assume b is never 0 when op is '/'.",
+ "input_spec": "Two integers a and b, followed by a single character operator (+, -, *, or /), all separated by spaces.",
+ "output_spec": "Print the result of applying the operator to a and b.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "12 4 *",
+   "output": "48"
+  }
+ ],
+ "raw": ""
+}

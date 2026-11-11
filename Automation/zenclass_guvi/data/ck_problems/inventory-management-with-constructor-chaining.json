@@ -1,0 +1,17 @@
+{
+ "title": "1647. Inventory Management with Constructor Chaining",
+ "slug": "inventory-management-with-constructor-chaining",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1647. Inventory Management with Constructor Chaining\n\n50\n\nMedium\n\nInventory Management with Constructor Chaining\n\nProblem Statement:\nWrite a program to manage product inventory using multi-level constructor chaining. Create Product \u2192 Electronics \u2192 Laptop. Compute final price after tax and warranty cost.\n\nDescription:\nDemonstrates constructor chaining, inheritance, and arithmetic computation.\n\nInput Format:\n\nbasePrice tax warrantyCost\n\nOutput Format:\n\nFinal Price: <value>",
+ "input_spec": "basePrice tax warrantyCost",
+ "output_spec": "Final Price: <value>",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "50000 5000 2000",
+   "output": "Final Price: 57000"
+  }
+ ],
+ "raw": ""
+}

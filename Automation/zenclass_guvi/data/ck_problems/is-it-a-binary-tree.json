@@ -1,0 +1,17 @@
+{
+ "title": "300. Is it a Binary Tree?",
+ "slug": "is-it-a-binary-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n300. Is it a Binary Tree?\n\n70\n\nHard  Topics\n\nProblem Statement:\nYou are given with number of nodes(N) and edges(E) in a tree followed by \u2018E\u2019 pairs of parent and child values,find whether it forms the binary tree structure print 'yes' otherwise print 'no'.",
+ "input_spec": "The input consists of number of nodes(N) and edges(E) followed by \u2018E\u2019 pairs of parent and child values. Let the first value in the first pair be the root. A child can be considered as either a left or right child of the corresponding parent. Input Size : 1 <= N, M <= 100000",
+ "output_spec": "Print 'yes' if the given structure forms a binary tree; otherwise, print 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 6\n26 10\n26 3\n10 4\n10 6\n3 1\n3 2",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

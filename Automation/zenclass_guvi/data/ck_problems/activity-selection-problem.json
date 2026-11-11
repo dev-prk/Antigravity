@@ -1,0 +1,17 @@
+{
+ "title": "1508. Activity Selection Problem",
+ "slug": "activity-selection-problem",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1508. Activity Selection Problem\n\n50\n\nMedium\n\nProblem Statement:\nGiven N activities with their start and end times, select the maximum number of activities that can be performed by a single person, assuming that a person can only work on a single activity at a time. Two activities are said to be non-overlapping if the start time of one activity is not less than the end time of the other.",
+ "input_spec": "- The first line contains a single integer N, the number of activities. - The next N lines each contain two integers, S and E, representing the start and end times of each activity.",
+ "output_spec": "- Print a single integer, the maximum number of non-overlapping activities that can be performed.",
+ "constraints": "- 1 \u2264 N \u2264 10^5 - 0 \u2264 S < E \u2264 10^9",
+ "samples": [
+  {
+   "input": "6\n1 3\n2 4\n3 5\n0 6\n5 7\n8 9",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

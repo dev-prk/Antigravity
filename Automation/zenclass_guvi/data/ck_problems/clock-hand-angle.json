@@ -1,0 +1,17 @@
+{
+ "title": "476. Clock Hand Angle",
+ "slug": "clock-hand-angle",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n476. Clock Hand Angle\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given with two integers denoting h and m. Your task is to find the angle between that particular min hand and hour hand.",
+ "input_spec": "First line contains two numbers h and n.",
+ "output_spec": "Print the angle form by the min pointer and hour pointer",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 30",
+   "output": "75"
+  }
+ ],
+ "raw": ""
+}

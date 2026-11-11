@@ -1,0 +1,17 @@
+{
+ "title": "924. X Number Pattern",
+ "slug": "x-number-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n924. X Number Pattern\n\n60\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate the X form of a number pattern.",
+ "input_spec": "Given an integer N indicates X pattern.Where 1<=N<=100",
+ "output_spec": "Print the numbers in X form based on the given integer N.Where 1<=N<=100",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "1       1\n2     2\n3   3\n4 4\n5\n4 4\n3   3\n2     2\n1       1"
+  }
+ ],
+ "raw": ""
+}

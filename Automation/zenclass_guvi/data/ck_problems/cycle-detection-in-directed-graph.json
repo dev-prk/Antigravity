@@ -1,0 +1,17 @@
+{
+ "title": "175. Cycle Detection in Directed Graph",
+ "slug": "cycle-detection-in-directed-graph",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n175. Cycle Detection in Directed Graph\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N,M where N is the number of nodes and M is the number of edges,followed by the connection between nodes, find if the resultant graph has cycles.(all the edges are directed edges)",
+ "input_spec": "The input consists of two numbers N and M, representing the number of nodes and edges respectively, followed by M lines describing the directed connections between nodes. N and M are up to 100000.",
+ "output_spec": "Output \"yes\" if the graph contains cycles, otherwise output \"no\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 2\n1 2\n2 1",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "2163. Average Marks and Pass Status",
+ "slug": "average-marks-and-pass-status",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2163. Average Marks and Pass Status\n\n50\n\nMedium\n\nProblem Statement\nRead the marks of three subjects. Print the average marks and also print whether the student has passed.\nDescription\nRead the marks of three subjects. Find and print the average marks. Also check whether the student has passed. A student has passed only if the average is 40 or more and the mark in every subject is 35 or more. Print True if the student has passed, otherwise print False.",
+ "input_spec": "Three integers, the marks of three subjects, each on a separate line. (0 <= mark <= 100)",
+ "output_spec": "Print the average with exactly 2 digits after the decimal point on the first line. Print True or False on the second line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "70\n80\n90",
+   "output": "80.00\nTrue"
+  }
+ ],
+ "raw": ""
+}

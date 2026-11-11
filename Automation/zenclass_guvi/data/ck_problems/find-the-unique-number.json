@@ -1,0 +1,17 @@
+{
+ "title": "242. Find the Unique Number",
+ "slug": "find-the-unique-number",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n242. Find the Unique Number\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N followed by N numbers. All the numbers in the given input appear twice except for one number(ie one number appears only once in the given input). Find the number which appears only once.",
+ "input_spec": "appear twice except for one number(ie one number appears only once in the given input). Find the number which appears only once.\n\nInput Description:\nThe input consists of a number N, followed by N numbers. N is between 1 and 100000 (inclusive).",
+ "output_spec": "The output is the number that appears only once in the given input.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 1 3 2",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

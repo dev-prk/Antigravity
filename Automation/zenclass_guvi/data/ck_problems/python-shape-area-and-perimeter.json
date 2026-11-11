@@ -1,0 +1,17 @@
+{
+ "title": "1113. Python Shape Area and Perimeter",
+ "slug": "python-shape-area-and-perimeter",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1113. Python Shape Area and Perimeter\n\n90\n\nHard\n\nProblem Statement:\nYou are developing a Python program for managing various shapes in a geometry application. The program should support different types of shapes, such as circles, rectangles, and triangles. Each shape has its own unique attributes and methods.\n\nWrite a Python script that demonstrates method overloading in the context of different shape classes. Your program should accomplish the following tasks:\n\n1. Define a base class called  Shape .\n2. Implement different subclasses for various shapes, such as  Circle ,  Rectangle , and  Triangle .\n3. Each shape class should have methods to calculate its area and perimeter.\n4. Demonstrate method overloading by implementing different versions of the  area  and  perimeter  methods for each shape class.\n\nEnsure the following operations can be performed:\n- Calculate the area and perimeter of a circle.\n- Calculate the area and perimeter of a rectangle.\n- Calculate the area and perimeter of a triangle.\n\nYour program should continuously prompt the user for shape inputs until the \"quit\" command is entered.\n\nProvide appropriate error handling for invalid inputs. Display a message in the following format for invalid inputs: \"Invalid input. Please enter a valid shape (circle/rectangle/triangle).\"",
+ "input_spec": "s until the \"quit\" command is entered.\n\nProvide appropriate error handling for invalid inputs. Display a message in the following format for invalid inputs: \"Invalid input. Please enter a valid shape (circle/rectangle/triangle).\"",
+ "output_spec": "Area of the circle: 78.54\nPerimeter of the circle: 31.42\nArea of the rectangle: 24.0\nPerimeter of the rectangle: 20.0\nArea of the triangle: 6.0\nPerimeter of the triangle: 12.0\nQuitting the program.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "circle\n5\nrectangle\n4 6\ntriangle\n3 4 5\nquit",
+   "output": "Area of the circle: 78.54\nPerimeter of the circle: 31.42\nArea of the rectangle: 24.0\nPerimeter of the rectangle: 20.0\nArea of the triangle: 6.0\nPerimeter of the triangle: 12.0\nQuitting the program."
+  }
+ ],
+ "raw": ""
+}

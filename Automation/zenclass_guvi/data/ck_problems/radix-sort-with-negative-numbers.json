@@ -1,0 +1,17 @@
+{
+ "title": "1589. Radix Sort with Negative Numbers",
+ "slug": "radix-sort-with-negative-numbers",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1589. Radix Sort with Negative Numbers\n\n70\n\nHard\n\nProblem Statement:\nRadix Sort is a non-comparative sorting algorithm that works efficiently for sorting integers. However, the standard Radix Sort algorithm is designed to handle only non-negative integers. Your task is to modify the Radix Sort algorithm so that it can sort an array containing both positive and negative integers in non-decreasing order.",
+ "input_spec": "- The first line contains an integer n, the number of elements in the array.\n- The second line contains n space-separated integers, which can be both positive and negative.",
+ "output_spec": "- Print the sorted array in non-decreasing order, with elements separated by a space.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n-5 3 0 -2 8 -1",
+   "output": "-5 -2 -1 0 3 8"
+  }
+ ],
+ "raw": ""
+}

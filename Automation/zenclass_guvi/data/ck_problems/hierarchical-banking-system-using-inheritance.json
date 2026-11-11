@@ -1,0 +1,17 @@
+{
+ "title": "1812. Hierarchical Banking System using Inheritance",
+ "slug": "hierarchical-banking-system-using-inheritance",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1812. Hierarchical Banking System using Inheritance\n\n50\n\nMedium\n\nHierarchical Banking System using Inheritance\n\nProblem Statement:\nDesign a C++ program to model a banking system using hierarchical inheritance.\n\nDescription:\nCreate a base class Account with accountNumber and balance.\nDerive two classes:\n1. SavingsAccount (adds interestRate)\n2. CurrentAccount (adds overdraftLimit)\n\nRequirements:\n1. Use protected members in base class.\n2. Implement deposit and withdraw in base class.\n3. Override withdraw in CurrentAccount to allow overdraft.\n4. Prevent negative balance beyond overdraft.\n5. Display complete account details.\n\nInput Format:\nAccount number\nInitial balance\nInterest rate\nOverdraft limit\nWithdrawal amount\n\nOutput Format:\nFinal balance for both account types.",
+ "input_spec": "Account number\nInitial balance\nInterest rate\nOverdraft limit\nWithdrawal amount",
+ "output_spec": "Final balance for both account types.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "101\n1000\n5\n500\n1200",
+   "output": "Savings Balance: -200 not allowed\nCurrent Balance: -200"
+  }
+ ],
+ "raw": ""
+}

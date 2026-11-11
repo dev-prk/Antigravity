@@ -1,0 +1,17 @@
+{
+ "title": "1443. Sorting Algorithm Time Complexity Analysis",
+ "slug": "sorting-algorithm-time-complexity-analysis",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1443. Sorting Algorithm Time Complexity Analysis\n\n70\n\nHard\n\nProblem Statement:\nWrite a Java program that demonstrates the analysis of sorting algorithms. Implement two sorting algorithms of your choice (e.g., Bubble Sort, Merge Sort) and compare their time complexities for sorting arrays of various sizes.",
+ "input_spec": "The size of the array (integer).\nThe elements of the array (integers separated by spaces).",
+ "output_spec": "Display the sorted array for each algorithm.\nDisplay the execution time (in milliseconds) for each algorithm.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n5 4 3 2 1",
+   "output": "Bubble Sort: [1, 2, 2, 3, 4]\nTime taken by Bubble Sort: 0 ms\nMerge Sort: [1, 2, 2, 3, 4]\nTime taken by Merge Sort: 0 ms"
+  }
+ ],
+ "raw": ""
+}

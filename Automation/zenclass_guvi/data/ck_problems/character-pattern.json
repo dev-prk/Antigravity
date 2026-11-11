@@ -1,0 +1,17 @@
+{
+ "title": "883. Character Pattern",
+ "slug": "character-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n883. Character Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrrite a code to generate the following pattern.\n\nbbbb*bbbb\nbbb***bbb\nbb*****bb\nb*******b\n*********\nb*******b\nbb*****bb\nbbb***bbb\nbbbb*bbbb",
+ "input_spec": "Given an odd integer R indicates number of rows.R is always an odd number.Where 1<=R<=100",
+ "output_spec": "Print the character pattern based on the given input R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "9",
+   "output": "bbbb*bbbb\nbbb***bbb\nbb*****bb\nb*******b\n*********\nb*******b\nbb*****bb\nbbb***bbb\nbbbb*bbbb"
+  }
+ ],
+ "raw": ""
+}

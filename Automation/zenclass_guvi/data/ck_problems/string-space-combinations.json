@@ -1,0 +1,17 @@
+{
+ "title": "673. String Space Combinations",
+ "slug": "string-space-combinations",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n673. String Space Combinations\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given a string 's'. Without spaces. Your task is to print all possible combination of strings by adding extra space.",
+ "input_spec": "You are given a string 's'.",
+ "output_spec": "Print the strings as described",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ABCD",
+   "output": "ABCD\nABC D\nAB CD\nAB C D\nA BCD\nA BC D\nA B CD\nA B C D"
+  }
+ ],
+ "raw": ""
+}

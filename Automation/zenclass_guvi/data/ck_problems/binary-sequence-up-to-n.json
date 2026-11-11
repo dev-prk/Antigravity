@@ -1,0 +1,17 @@
+{
+ "title": "660. Binary Sequence up to N",
+ "slug": "binary-sequence-up-to-n",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n660. Binary Sequence up to N\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a number \u2018n\u2019, Your task is to print the binary sequence of a number ranging from 1 to N.",
+ "input_spec": "Single line containing a number \u2018N\u2019.",
+ "output_spec": "Print the binary sequence of numbers",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "1 10 11"
+  }
+ ],
+ "raw": ""
+}

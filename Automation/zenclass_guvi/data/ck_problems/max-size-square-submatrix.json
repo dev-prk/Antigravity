@@ -1,0 +1,17 @@
+{
+ "title": "342. Max Size Square Submatrix",
+ "slug": "max-size-square-submatrix",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n342. Max Size Square Submatrix\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a binary matrix of size N * M consisting only 0s and 1s, find the maximum size square submatrix with all 1s.",
+ "input_spec": "Input Size : N<=1000, M<=1000",
+ "output_spec": "1 1 1\n1 1 1\n1 1 1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 5\n0 1 1 0 1\n1 1 0 1 0\n0 1 1 1 0\n1 1 1 1 0\n1 1 1 1 1\n0 0 0 0 0",
+   "output": "1 1 1\n1 1 1\n1 1 1"
+  }
+ ],
+ "raw": ""
+}

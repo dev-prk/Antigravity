@@ -1,0 +1,17 @@
+{
+ "title": "1801. Dynamic Memory Allocation",
+ "slug": "dynamic-memory-allocation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1801. Dynamic Memory Allocation\n\n40\n\nMedium\n\nDynamic Sentence Reverser using Parameterized Constructor (Dynamic Memory Allocation)\n\nProblem Statement:\n\nWrite a program to reverse a complete sentence using a parameterized constructor that dynamically allocates memory for a character array.\n\nDescription:\n\nCreate a class StringRev that:\n\n1. Accepts a full sentence (including spaces) as input.\n2. Uses a parameterized constructor to dynamically allocate memory for storing the sentence.\n3. Stores the input sentence inside dynamically allocated memory.\n4. Reverses the entire sentence character-by-character.\n5. Uses a destructor to properly deallocate memory.\n\nThe program must:\nUse new for allocation.\nUse delete[] in destructor.\nHandle full sentences (including spaces).\n\nInput Format:\n\nA single line containing a sentence (may include spaces).\n\nOutput Format:\n\nPrint the reversed sentence.",
+ "input_spec": ".\n2. Uses a parameterized constructor to dynamically allocate memory for storing the sentence.\n3. Stores the input sentence inside dynamically allocated memory.\n4. Reverses the entire sentence character-by-character.\n5. Uses a destructor to properly deallocate memory.\n\nThe program must:\nUse new for allocation.\nUse delete[] in destructor.\nHandle full sentences (including spaces).\n\nInput Format:\n\nA single line containing a sentence (may include spaces).",
+ "output_spec": "Print the reversed sentence.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello world",
+   "output": "dlrow olleh"
+  }
+ ],
+ "raw": ""
+}

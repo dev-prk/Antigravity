@@ -1,0 +1,17 @@
+{
+ "title": "2154. Multiplying Two Numbers Using Recursion",
+ "slug": "multiplying-two-numbers-using-recursion",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2154. Multiplying Two Numbers Using Recursion\n\n60\n\nMedium\n\nProblem Statement\nRead two non-negative integers and print their product using a recursive function that works by repeated addition.\n\nDescription\nMultiplying a by b is the same as adding a to itself b times. Read two integers a and b from input. Write a recursive function multiply that takes two integer parameters. If b is 0, the function returns 0 (this is the base case). Otherwise, it returns a plus the result of calling itself with the same a and with b - 1. Call the function from main() and print the result. The * operator must not be used inside the function.",
+ "input_spec": ". Write a recursive function multiply that takes two integer parameters. If b is 0, the function returns 0 (this is the base case). Otherwise, it returns a plus the result of calling itself with the same a and with b - 1. Call the function from main() and print the result. The * operator must not be used inside the function.\n\nInput Description\nTwo integers a and b separated by a space (0 <= a <= 100, 0 <= b <= 100).",
+ "output_spec": "Print the product of a and b.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 3",
+   "output": "12"
+  }
+ ],
+ "raw": ""
+}

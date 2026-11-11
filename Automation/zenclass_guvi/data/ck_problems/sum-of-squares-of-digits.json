@@ -1,0 +1,17 @@
+{
+ "title": "73. Sum of Squares of Digits",
+ "slug": "sum-of-squares-of-digits",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n73. Sum of Squares of Digits\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N, print the sum of the squares of its digits.",
+ "input_spec": "The input consists of a number N, where 1 <= N <= 1000000000000000000.",
+ "output_spec": "The output is the sum of the squares of the digits of N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "19",
+   "output": "82"
+  }
+ ],
+ "raw": ""
+}

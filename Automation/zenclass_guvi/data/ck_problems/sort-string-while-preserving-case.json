@@ -1,0 +1,17 @@
+{
+ "title": "498. Sort String while preserving case",
+ "slug": "sort-string-while-preserving-case",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n498. Sort String while preserving case\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a string containing a mix of upper and lowercase characters, sort the letters in ascending order such that the positions of upper and lowercase letters do not change. (eg) If the string is guVIONLineCoDIng, then the output must be egCDIILginNnOVou",
+ "input_spec": "A string",
+ "output_spec": "must be egCDIILginNnOVou\n\nInput Description:\nA string\n\nOutput Description:\nLetters of the string sorted such that positions of upper and lower characters do not change.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "GuVi",
+   "output": "GiVu"
+  }
+ ],
+ "raw": ""
+}

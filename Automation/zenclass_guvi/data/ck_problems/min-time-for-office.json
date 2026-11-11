@@ -1,0 +1,17 @@
+{
+ "title": "367. Min Time for Office",
+ "slug": "min-time-for-office",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n367. Min Time for Office\n\n100\n\nHard  Topics  Company\n\nProblem Statement:\nThere are n people and k keys on a straight line. Every person wants to get to the office which is located on the line as well. To do that, he needs to reach some point with a key, take the key and then go to the office. Once a key is taken by somebody, it couldn't be taken by anybody else. You are to determine the minimum time needed for all n people to get to the office with keys. Assume that people move a unit distance per 1 second. If two people reach a key at the same time, only one of them can take the key. A person can pass through a point with a key without taking it.",
+ "input_spec": "The first line contains three integers n, k and p (1\u2009\u2264\u2009n\u2009\u2264\u20091\u2009000, n\u2009\u2264\u2009k\u2009\u2264\u20092\u2009000, 1\u2009\u2264\u2009p\u2009\u2264\u20091000000000) \u2014 the number of people, the number of keys and the office location. The second line contains n distinct integers a1,\u2009a2,\u2009...,\u2009an (1\u2009\u2264\u2009ai\u2009\u2264\u20091000000000) \u2014 positions in which people are located initially. The positions are given in arbitrary order. The third line contains k distinct integers b1,\u2009b2,\u2009...,\u2009bk (1\u2009\u2264\u2009bj\u2009\u2264\u20091000000000) \u2014 positions of the keys. The positions are given in arbitrary order. Note that there can't be more than one person or more than one key in the same point. A person and a key can be located in the same point.",
+ "output_spec": "The output is the minimum time needed for all n people to get to the office with keys.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 4 50\n20 100\n60 10 40 80",
+   "output": "50"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "845. Min Parentheses Removal",
+ "slug": "min-parentheses-removal",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n845. Min Parentheses Removal\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S of '(' , ')' with alphabets. Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting string should have balanced opening and closing parentheses.Perform the operation using Stack.",
+ "input_spec": "Given a string with parentheses and alphabets.",
+ "output_spec": "Remove the minimum parentheses and print the resultant valid string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "g(u)((vi)",
+   "output": "g(u)(vi)"
+  }
+ ],
+ "raw": ""
+}

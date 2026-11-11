@@ -1,0 +1,17 @@
+{
+ "title": "1811. Slicing in Banking Interest Calculation",
+ "slug": "slicing-in-banking-interest-calculation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1811. Slicing in Banking Interest Calculation\n\n50\n\nMedium\n\nSlicing in Banking Interest Calculation\n\nProblem Statement:\nShow slicing effect when storing derived object in base container.\n\nDescription:\nBase Class: Account\n- balance\n- virtual calculateInterest()\n\nDerived Class: FixedDeposit\n- interestRate\n- override calculateInterest()\n\nRequirements:\n1. Store FixedDeposit in vector<Account>.\n2. Show slicing problem.\n3. Fix using vector<Account*>.\n4. Display interest in both cases.\n\nInput Format:\nBalance\nInterest Rate\n\nOutput Format:\nInterest (Sliced)\nInterest (Correct)",
+ "input_spec": "Balance\nInterest Rate",
+ "output_spec": "Interest (Sliced)\nInterest (Correct)",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "100000\n10",
+   "output": "Interest (Sliced): 0\nInterest (Correct): 10000"
+  }
+ ],
+ "raw": ""
+}

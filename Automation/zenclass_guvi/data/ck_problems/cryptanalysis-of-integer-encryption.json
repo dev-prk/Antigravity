@@ -1,0 +1,17 @@
+{
+ "title": "1076. Cryptanalysis of Integer Encryption",
+ "slug": "cryptanalysis-of-integer-encryption",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1076. Cryptanalysis of Integer Encryption\n\n80\n\nHard\n\nProblem Statement:\nMani, renowned for his cryptographic prowess, has developed a novel encryption technique for transmitting positive integers securely to his acquaintances. In his method, Mani selects three secret integers \u2014 a, b, and c \u2014 from a specified range determined by lower and upper bounds, denoted as l and r. Subsequently, he employs the formula m = n * a + b - c to generate the encrypted value of the integer n.However, an adversary has managed to intercept the parameters l, r, and m, posing a challenge to decrypt the original values of a, b, and c. The task at hand is to decipher any valid combination of a, b, and c that adheres to the following criteria:\n\n- The values of a, b, and c must be integers.\n- They must fall within the inclusive range [l, r].\n- There exists at least one positive integer n such that n * a + b - c equals the intercepted value m.\n- The input comprises multiple test cases, each presenting the intercepted values of l, r, and m. It is assured that at least one feasible solution exists, and any valid combination of a, b, and c may be outputted if multiple solutions are available.",
+ "input_spec": "comprises multiple test cases, each presenting the intercepted values of l, r, and m. It is assured that at least one feasible solution exists, and any valid combination of a, b, and c may be",
+ "output_spec": "ted if multiple solutions are available.\n\nInput Description:\nThe input comprises multiple test cases, each presenting the intercepted values of l, r, and m.\n\nOutput Description:\nAny valid combination of a, b, and c may be outputted if multiple solutions are available.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20\n10 12 43\n25 49 1\n5 7 39\n8 9 44\n16 17 50\n30 40 975\n601 801 1000\n100 102 909\n599 799 1000\n503 997 9\n194 383 5\n90000 100000 709999\n75000 100000 124999\n375000 499999 625001\n375000 500000 624999\n300000 400000 499999\n250000 500000 1\n70000 80000 2272770257\n70000 80000 9999953344\n90000 100000 9999955820",
+   "output": "11 11 12\n25 25 49\n5 6 7\n9 8 9\n17 16 17\n35 35 40\n800 801 601\n101 102 102\n599 601 799\n503 503 997\n194 194 383\n100000 100000 90001\n99999 100000 75000\n375000 375000 499999\n499999 500000 375000\n399999 400000 300000\n250000 250001 500000\n70007 73002 80000\n70009 80000 72198\n90003 92499 100000"
+  }
+ ],
+ "raw": ""
+}

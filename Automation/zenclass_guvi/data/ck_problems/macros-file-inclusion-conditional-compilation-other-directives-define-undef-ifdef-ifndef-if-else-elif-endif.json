@@ -1,0 +1,21 @@
+{
+ "title": "1631. Macros File Inclusion Conditional Compilation Other Directives: #define, #undef, #ifdef, #ifndef, #if, #else, #elif, #endif",
+ "slug": "macros-file-inclusion-conditional-compilation-other-directives-define-undef-ifdef-ifndef-if-else-elif-endif",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1631. Macros  File Inclusion  Conditional Compilation  Other Directives: #define, #undef, #ifdef, #ifndef, #if, #else, #elif, #endif\n\n40\n\nMedium\n\nProblem Statement:  \"Discount Based on Membership Level\"\nA retail store offers different discounts based on the customer\u2019s membership level. You are tasked to write a program that calculates the discount based on the membership level using conditional compilation and macros.\n\nThe store offers the following discounts:\n\nBronze Membership: 5% discount\nSilver Membership: 10% discount\nGold Membership: 15% discount\nPlatinum Membership: 20% discount\nThe program should use conditional compilation to apply the correct discount for the membership level chosen. Use macros to define the discount percentages and apply them based on the membership level.\n\nInput:\nThe total bill amount (a floating-point number).\nThe membership level of the customer (an integer representing the level: 1 for Bronze, 2 for Silver, 3 for Gold, and 4 for Platinum).\n\nOutput:\nThe discount percentage and the final price after applying the discount.",
+ "input_spec": "The total bill amount (a floating-point number).\nThe membership level of the customer (an integer representing the level: 1 for Bronze, 2 for Silver, 3 for Gold, and 4 for Platinum).",
+ "output_spec": "The discount percentage and the final price after applying the discount.",
+ "constraints": "The total bill amount will be a positive float number, between 0.0 and 10,000.0.\nMembership level will be an integer between 1 and 4.\nThe solution must be compatible with online compilers.\n\nExample:",
+ "samples": [
+  {
+   "input": "The total bill amount (a floating-point number).\nThe membership level of the customer (an integer representing the level: 1 for Bronze, 2 for Silver, 3 for Gold, and 4 for Platinum).",
+   "output": "The discount percentage and the final price after applying the discount."
+  },
+  {
+   "input": "2000.0\n3",
+   "output": "Gold Membership: 15% Discount\nFinal Price: 1700.00"
+  }
+ ],
+ "raw": ""
+}

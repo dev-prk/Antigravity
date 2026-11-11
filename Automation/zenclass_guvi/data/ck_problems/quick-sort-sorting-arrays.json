@@ -1,0 +1,17 @@
+{
+ "title": "1624. Quick Sort, Sorting, Arrays",
+ "slug": "quick-sort-sorting-arrays",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1624. Quick Sort, Sorting, Arrays\n\n70\n\nHard\n\nProblem Statement:  Sort Integers in Descending Order Using Quick Sort\nWrite a program to sort an array of integers in descending order using the Quick Sort algorithm.\n\nDescription\n\nQuick Sort is a divide-and-conquer algorithm. The program should take an integer array as input and rearrange the elements in non-increasing order. Use Quick Sort to partition the array around a pivot and recursively sort the sub-arrays.\n\nInput Format\n\nFirst line: An integer n (size of the array)\n\nSecond line: n integers separated by spaces\n\nOutput Format\n\nSorted array in descending order",
+ "input_spec": "and rearrange the elements in non-increasing order. Use Quick Sort to partition the array around a pivot and recursively sort the sub-arrays.\n\nInput Format\n\nFirst line: An integer n (size of the array)\n\nSecond line: n integers separated by spaces",
+ "output_spec": "Sorted array in descending order",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n2 9 1 7 3",
+   "output": "9 7 3 2 1"
+  }
+ ],
+ "raw": ""
+}

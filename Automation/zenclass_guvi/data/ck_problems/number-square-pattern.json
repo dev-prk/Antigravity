@@ -1,0 +1,17 @@
+{
+ "title": "897. Number Square Pattern",
+ "slug": "number-square-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n897. Number Square Pattern\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a square pattern using numbers.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the number pattern separated with space with the size R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "5 5 5 5 5\n4 5 5 5 5\n3 4 5 5 5\n2 3 4 5 5\n1 2 3 4 5"
+  }
+ ],
+ "raw": ""
+}

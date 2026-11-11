@@ -1,0 +1,17 @@
+{
+ "title": "610. LCM of n numbers",
+ "slug": "lcm-of-n-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n610. LCM of n numbers\n\n40\n\nMedium  Topics\n\nProblem Statement:\n:You are given an array of 'n' numbers.your task is to print the lcm of 'n' numbers",
+ "input_spec": "An integer 'n' denoting the size of array.Next line contains 'n' space separated numbers",
+ "output_spec": "Print the lcm",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n2 4 6 8",
+   "output": "24"
+  }
+ ],
+ "raw": ""
+}

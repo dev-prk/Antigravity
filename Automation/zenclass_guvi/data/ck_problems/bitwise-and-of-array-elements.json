@@ -1,0 +1,17 @@
+{
+ "title": "111. Bitwise AND of Array Elements",
+ "slug": "bitwise-and-of-array-elements",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n111. Bitwise AND of Array Elements\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N elements ,find the Bitwise AND of the array elements.",
+ "input_spec": "The input consists of an integer N, representing the size of the array, followed by N array elements. N <= 100000.",
+ "output_spec": "The output is the Bitwise AND of all elements in the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n4 3 2 1",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "666. Zig-Zag Tree Traversal",
+ "slug": "zig-zag-tree-traversal",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n666. Zig-Zag Tree Traversal\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given a string representing a binary tree,Your task is to print the zig-zag traversal of tree.",
+ "input_spec": "You are given a string representing a tree",
+ "output_spec": "print the zig zag traversal",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2 L 1 3 R 2 4 L 2 5 R",
+   "output": "1 3 2 4 5"
+  }
+ ],
+ "raw": ""
+}

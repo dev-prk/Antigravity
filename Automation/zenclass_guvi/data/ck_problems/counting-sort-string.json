@@ -1,0 +1,17 @@
+{
+ "title": "684. Counting Sort String",
+ "slug": "counting-sort-string",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n684. Counting Sort String\n\n90\n\nHard  Topics\n\nProblem Statement:\nGiven a string S consisting of lowercase latin letters, arrange all its letters in lexographical order using Counting Sort.",
+ "input_spec": "First Line contains positive integer N denoting the length of string.The second line of input contains the string S.",
+ "output_spec": "Print the sorted string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nedsab",
+   "output": "abdes"
+  }
+ ],
+ "raw": ""
+}

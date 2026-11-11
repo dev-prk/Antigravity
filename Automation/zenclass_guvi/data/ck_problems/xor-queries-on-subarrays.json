@@ -1,0 +1,17 @@
+{
+ "title": "417. Xor Queries on Subarrays",
+ "slug": "xor-queries-on-subarrays",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n417. Xor Queries on Subarrays\n\n80\n\nHard  Topics\n\nProblem Statement:\nCarlos the famous building demolisher is employed by BitMagic Inc. They have given him a list of prices they can pay him for demolishing each building. There are N buildings that he needs to demolish so he has a list of N prices . Carlos instead of carrying on with his work of demolishing started exploring the mathematical properties of the the list of prices. He wanted to compute the bitwise xor ( \"^\" operator) for any contiguous subarray present in the list of prices.If the bitwise xor of the given subarray is greater than or equal to a given Z then he is \"happy\" or else he is \"unhappy\". Being very curious he also changes some prices to a desired price as and when he requires.\n\nCarlos asks Q questions which can be either of the following:\n\n1) Find xor of a subarray and check if it will make him happy or not\n\n2) Modify an element to a given price\n\nHelp him find if he is happy or unhappy for the given question he asks.",
+ "input_spec": "The first line contains a single integer N denoting the number of buildings/number of prices\nThe second line contains the N integers - denoting the the prices being paid for each building\nThe next line contains a single integer Q denoting the number of questions Carlos asks\nThe next Q line can be either of the following:\n1 x y : Change price for building x to y\n2 x y z : Find subarray of the range [x,y] and compare it to Z",
+ "output_spec": "For each question of type 2 output whether carlos is \"happy\" or \"unhappy\" in a single line",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n2\n1 1 2\n2 1 2 1",
+   "output": "unhappy"
+  }
+ ],
+ "raw": ""
+}

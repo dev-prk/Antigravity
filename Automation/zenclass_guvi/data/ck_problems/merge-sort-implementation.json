@@ -1,0 +1,17 @@
+{
+ "title": "858. Merge Sort Implementation",
+ "slug": "merge-sort-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n858. Merge Sort Implementation\n\n60\n\nMedium  Topics\n\nProblem Statement:\nMerge Sort follows the rule of  Divide and Conquer  to sort a given set of numbers/elements, recursively, hence consuming less time.In  Merge Sort , the given unsorted array with N elements, is divided into N subarrays, each having  one  element, because a single element is always sorted in itself. Then, it repeatedly merges these subarrays, to produce new sorted subarrays, and in the end, one complete sorted array is produced.The concept of Divide and Conquer involves three steps:\n1.  Divide  the problem into multiple small problems.\n2.  Conquer  the subproblems by solving them. The idea is to break down the problem into atomic subproblems, where they are actually solved.\n3.  Combine  the solutions of the subproblems to find the solution of the actual problem.You have to sort the given array of integer values in merge sort manner.",
+ "input_spec": "Given an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1",
+ "output_spec": "Print the resultant sorted array by using merge sort method. where 1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n14 7 3 12 9 11 6 2",
+   "output": "2 3 6 7 9 11 12 14"
+  }
+ ],
+ "raw": ""
+}

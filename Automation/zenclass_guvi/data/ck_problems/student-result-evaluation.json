@@ -1,0 +1,17 @@
+{
+ "title": "1657. Student Result Evaluation",
+ "slug": "student-result-evaluation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1657. Student Result Evaluation\n\n50\n\nMedium\n\nStudent Result Evaluation\n\nProblem Statement:\nWrite a program that evaluates whether a student passes or fails based on marks and attendance. The program should use multiple inheritance with interfaces.\n\nDefine an interface Marks with method enterMarks(int marks).\n\nDefine an interface Attendance with method enterAttendance(int attendance).\n\nImplement both interfaces in the Student class and provide a method checkResult() that checks:\n\nMarks must be \u2265 40\n\nAttendance must be \u2265 75%\n\nIf both conditions are met, display \"Result: Pass\", otherwise \"Result: Fail\".\n\nDescription:\n\nThe program accepts marks and attendance percentage as input.\n\nUses multiple inheritance (via interfaces).\n\nEvaluates and prints result.\n\nInput Format:\n\nFirst line \u2192 Marks (integer)\n\nSecond line \u2192 Attendance percentage (integer)\n\nOutput Format:\n\n\"Result: Pass\" or \"Result: Fail\"",
+ "input_spec": ".\n\nUses multiple inheritance (via interfaces).\n\nEvaluates and prints result.\n\nInput Format:\n\nFirst line \u2192 Marks (integer)\n\nSecond line \u2192 Attendance percentage (integer)",
+ "output_spec": "\"Result: Pass\" or \"Result: Fail\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "55\n80",
+   "output": "Result: Pass"
+  }
+ ],
+ "raw": ""
+}

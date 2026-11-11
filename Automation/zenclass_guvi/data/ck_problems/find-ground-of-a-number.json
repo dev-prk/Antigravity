@@ -1,0 +1,17 @@
+{
+ "title": "599. Find Ground of a Number",
+ "slug": "find-ground-of-a-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n599. Find Ground of a Number\n\n50\n\nMedium  Topics\n\nProblem Statement:\nRahul was learning about numbers in list. He came across one word ground of a number.A ground of a number is defined as the number which is just smaller or equal to the number given to you.Hence he started solving some assignments related to it. He got struck in some questions. Your task is to help him.O(n) time complexityO(n) Auxilary space",
+ "input_spec": "First line contains two numbers \u2018n\u2019 denoting number of integers and \u2018k\u2019 whose ground is to be check. Next line contains n space separated numbers.",
+ "output_spec": "Print the index of val.Print -1 if equal or near exqual number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 3\n1 2 3 4 5 6 7",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

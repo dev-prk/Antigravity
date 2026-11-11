@@ -1,0 +1,21 @@
+{
+ "title": "2027. Find Maximum Element in BST",
+ "slug": "find-maximum-element-in-bst",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2027. Find Maximum Element in BST\n\n60\n\nMedium\n\nProblem Statement\n\nCreate a Binary Search Tree and find the maximum element present in the tree.\n\nInput\nFirst line contains N.\nSecond line contains N integers.\nOutput\n\nPrint the maximum element.",
+ "input_spec": "First line contains N.\nSecond line contains N integers.",
+ "output_spec": "Print the maximum element.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "First line contains N.\nSecond line contains N integers.",
+   "output": "Print the maximum element."
+  },
+  {
+   "input": "6\n50 30 70 20 40 80",
+   "output": "80"
+  }
+ ],
+ "raw": ""
+}

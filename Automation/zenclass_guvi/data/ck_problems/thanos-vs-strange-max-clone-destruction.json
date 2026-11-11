@@ -1,0 +1,17 @@
+{
+ "title": "374. Thanos vs. Strange: Max Clone Destruction",
+ "slug": "thanos-vs-strange-max-clone-destruction",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n374. Thanos vs. Strange: Max Clone Destruction\n\n70\n\nHard  Topics\n\nProblem Statement:\nIron man is fighting Thanos on his home planet Titan. To help iron man beat thanos doctor strange intervenes . Dr Strange can create multiple copies of himself each having a certain power .The power of all the copies are given in an array P as P[1],P[2],P[3]....P[N].Every attack of thanos has a power M. Thanos can destroy a number of clones whose maximum power is less than or equal to thanos's attack power M. Before thanos starts attacking doctor strange he asks multiple questions of the form L,R. i.e for each range of copiesfrom L, L+1,L+2... R having powers P[L] ,P[L+1],P[L+2],....P[R] . he wants to know for each L,R what is the maximum number of copies he can destroy starting from L and ending at some j where L<=j<=R.",
+ "input_spec": "The first line consists of a single integer N : the number of copies Dr Strange creates (dr strange is not included in this).\nThe second line consists of N positive integers : The power of each copy.\nThe third line consists of a single integer Q - the number of questions thanos asks\nThe next Q lines consists of three integers each- L and R and M, the range for which he wants the answer",
+ "output_spec": "Print Q lines each with one integer each -the answer to that query",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n1\n1 3 2",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

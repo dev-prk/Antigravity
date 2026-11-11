@@ -1,0 +1,17 @@
+{
+ "title": "1457. Unique Combinations with Target Sum",
+ "slug": "unique-combinations-with-target-sum",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1457. Unique Combinations with Target Sum\n\n50\n\nMedium\n\nProblem Statement:\nGiven an array of distinct integers and a target integer, find all unique combinations in the array where the numbers sum to the target. Each number in the array may be used an unlimited number of times in the combination. The solution set must not contain duplicate combinations.",
+ "input_spec": "- The first line contains two integers N and T, where N is the number of elements in the array and T is the target sum.\n- The second line contains N distinct integers representing the array.",
+ "output_spec": "- Print all unique combinations, one per line. Each combination should be printed as space-separated integers in non-decreasing order.\n- If there are no valid combinations, print \"No combination found\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 7\n2 3 6 7",
+   "output": "2 2 3\n7"
+  }
+ ],
+ "raw": ""
+}

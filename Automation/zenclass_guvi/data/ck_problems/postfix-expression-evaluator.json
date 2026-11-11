@@ -1,0 +1,17 @@
+{
+ "title": "1994. Postfix Expression Evaluator",
+ "slug": "postfix-expression-evaluator",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1994. Postfix Expression Evaluator\n\n60\n\nMedium\n\nProblem Statement\n\nGiven a postfix expression made up of single-digit operands and the operators +, -, *, /, evaluate its value using a stack.\n\nDescription\n\nRead a postfix expression as a line of space-separated tokens, where each token is either a single digit (0-9) or one of the operators +, -, *, /. Push operands onto a stack; whenever an operator is read, pop the top two operands, apply the operator, and push the result back onto the stack.",
+ "input_spec": "A single line containing a postfix expression with tokens separated by single spaces.",
+ "output_spec": "Print the integer result of evaluating the postfix expression.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3 +",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

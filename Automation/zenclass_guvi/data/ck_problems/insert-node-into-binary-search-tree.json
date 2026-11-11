@@ -1,0 +1,17 @@
+{
+ "title": "1526. Insert Node into Binary Search Tree",
+ "slug": "insert-node-into-binary-search-tree",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1526. Insert Node into Binary Search Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven the root of a Binary Search Tree (BST) and a value to insert, write a function to insert the value into the BST. Return the root of the BST after the insertion. The BST must maintain its property: for each node, all values in the left subtree are less than the node's value, and all values in the right subtree are greater than the node's value. If the value already exists in the BST, insert it in the right subtree.",
+ "input_spec": "- The first line contains a list of integers separated by spaces, representing the initial BST in level order, where 'null' represents a missing node.\n- The second line contains an integer, the value to insert.",
+ "output_spec": "- Output the level order traversal of the BST after insertion, with 'null' for missing nodes, as a space-separated string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 2 7 1 3\n5",
+   "output": "4 2 7 1 3 5"
+  }
+ ],
+ "raw": ""
+}

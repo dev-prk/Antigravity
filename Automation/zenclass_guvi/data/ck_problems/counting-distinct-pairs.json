@@ -1,0 +1,17 @@
+{
+ "title": "55. Counting Distinct Pairs",
+ "slug": "counting-distinct-pairs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n55. Counting Distinct Pairs\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven an array A of N elements, count the number of distinct pairs (i,j) such that i < j and A[i] < A[j].If no such pairs can be made print -1",
+ "input_spec": "The input consists of an integer N, representing the number of elements, followed by N space-separated integers representing the elements of array A.",
+ "output_spec": "The output is a single integer representing the count of distinct pairs (i,j) such that i < j and A[i] < A[j]. If no such pairs can be made, print -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

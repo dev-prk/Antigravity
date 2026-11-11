@@ -1,0 +1,17 @@
+{
+ "title": "280. Pair Difference Count",
+ "slug": "pair-difference-count",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n280. Pair Difference Count\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N followed by an unsorted array of N numbers and a number K, find if there exists a pair of elements in the array whose difference is K. Return count of such pairs.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": "The count of pairs whose difference is K.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 4\n8 12 16 4 0 20",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "899. Hollow Rhombus Pattern-2",
+ "slug": "hollow-rhombus-pattern-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n899. Hollow Rhombus Pattern-2\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate an hollow rhombus Pattern using stars.",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the solid rhombus using stars with the size R.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "****\n*  *\n*  *\n****"
+  }
+ ],
+ "raw": ""
+}

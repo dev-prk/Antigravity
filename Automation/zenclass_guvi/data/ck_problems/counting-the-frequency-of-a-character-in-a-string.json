@@ -1,0 +1,17 @@
+{
+ "title": "2140. Counting the Frequency of a Character in a String",
+ "slug": "counting-the-frequency-of-a-character-in-a-string",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2140. Counting the Frequency of a Character in a String\n\n90\n\nHard\n\nProblem Statement\nRead a word and a character, and count how many times that character appears in the word, using a loop combined with an if statement.\n\nDescription\nRead a string word into a character array using scanf, followed by a single character ch to search for. Use a loop to examine each character of word up to its null terminator, using an if statement to check whether it matches ch, and increase a counter whenever it does. Print the final count.",
+ "input_spec": "A word with no spaces, followed by a single character, separated by a space.",
+ "output_spec": "Print the number of times the character appears in the word.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "programming m",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

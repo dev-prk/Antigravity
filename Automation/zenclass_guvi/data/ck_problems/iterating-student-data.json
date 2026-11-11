@@ -1,0 +1,17 @@
+{
+ "title": "1095. Iterating Student Data",
+ "slug": "iterating-student-data",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1095. Iterating Student Data\n\n50\n\nMedium\n\nProblem Statement:\nYou are developing a student management system for a B.Tech program. The system has a list of students, where each student is represented as a dictionary with the following keys: 'id', 'name', 'course', and 'grade'. Write a Python function  iterate_students(students: List[Dict[str, Union[str, int]]]) -\\> None  that takes a list of students as input and prints each student's details using an iterator. The details should be printed in the following format: \"Student ID: {id}, Name: {name}, Course: {course}, Grade: {grade}\".",
+ "input_spec": "and prints each student's details using an iterator. The details should be printed in the following format: \"Student ID: {id}, Name: {name}, Course: {course}, Grade: {grade}\".",
+ "output_spec": "The output should print each student's details in the format: \"Student ID: {id}, Name: {name}, Course: {course}, Grade: {grade}\".",
+ "constraints": "- The id, name, course are strings and grade is an integer.\n- You can't install any external libraries.",
+ "samples": [
+  {
+   "input": "[\n{\"id\": \"BT202101\", \"name\": \"John Doe\", \"course\": \"Computer Science\", \"grade\": \"A\"},\n{\"id\": \"BT202102\", \"name\": \"Jane Doe\", \"course\": \"Electrical Engineering\", \"grade\": \"B\"},\n]",
+   "output": "Student ID: BT202101, Name: John Doe, Course: Computer Science, Grade: A\nStudent ID: BT202102, Name: Jane Doe, Course: Electrical Engineering, Grade: B"
+  }
+ ],
+ "raw": ""
+}

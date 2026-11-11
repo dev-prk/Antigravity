@@ -1,0 +1,17 @@
+{
+ "title": "391. Kth Smallest Element-2",
+ "slug": "kth-smallest-element-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n391. Kth Smallest Element-2\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven an array arr[] and a number K where K is smaller than the size of array, the task is to find the Kth smallest element in the given array. It is given that all array elements are NOT distinct.",
+ "input_spec": "The first line of input contains an integer T, denoting the number of test cases. Then T test cases follow. Each test case consists of three lines. First line of each test case contains an integer N denoting size of the array. Second line contains N space separated integer denoting elements of the array. Third line of the test case contains an integer K.",
+ "output_spec": "Corresponding to each test case, print the desired output in a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n6\n7 10 4 3 3 4\n3\n5\n7 10 4 15 15\n4",
+   "output": "7\n15"
+  }
+ ],
+ "raw": ""
+}

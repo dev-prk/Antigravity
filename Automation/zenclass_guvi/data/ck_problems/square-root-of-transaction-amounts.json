@@ -1,0 +1,17 @@
+{
+ "title": "1112. Square Root of Transaction Amounts",
+ "slug": "square-root-of-transaction-amounts",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1112. Square Root of Transaction Amounts\n\n50\n\nMedium\n\nProblem Statement:\nYou are working on a Python project that involves performing complex mathematical operations. For this project, you need to calculate the square root of a list of transaction amounts. So write a Python function  calculate_sqrt(transaction_amounts)  that takes a list of transaction amounts and returns a list of their square roots.",
+ "input_spec": "The input is a list of transaction amounts.",
+ "output_spec": "The output is a list containing the square roots of the input transaction amounts.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "[100.0, 200.0, 300.0, 400.0]",
+   "output": "[10.0, 14.142135623730951, 17.320508075688775, 20.0]"
+  }
+ ],
+ "raw": ""
+}

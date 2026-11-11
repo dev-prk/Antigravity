@@ -1,0 +1,17 @@
+{
+ "title": "532. MineSweeper Score Calculation",
+ "slug": "minesweeper-score-calculation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n532. MineSweeper Score Calculation\n\n90\n\nHard  Topics\n\nProblem Statement:\nRamesh is developing a different version of the famous MineSweeper game. The matrix contains enemies at locations unknown to the player. In the game, the player can place bombs anywhere in a square matrix. One bomb can kill any number of enemies located in any of the cells adjacent to the bomb. The player who manages to kill the maximum enemies gets the highest score. Ramesh has invited you to test the game. He tells you the locations of the enemy and asks you to check if his game calculates the score perfectly or not. Display the score that you calculate. NOTE: A player can place a maximum of N-1 bombs where N*N is the dimension of the matrix.",
+ "input_spec": "Dimensions of the square matrix followed by number of enemies, locations of enemy and locations of bomb.",
+ "output_spec": "Score that is calculated.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n4\n0 0\n1 2\n0 2\n1 1\n1 1",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

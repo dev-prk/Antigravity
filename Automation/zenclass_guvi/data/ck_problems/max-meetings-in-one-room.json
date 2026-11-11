@@ -1,0 +1,17 @@
+{
+ "title": "227. Max Meetings in One Room",
+ "slug": "max-meetings-in-one-room",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n227. Max Meetings in One Room\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nThere is one meeting room in Flipkart. There are n meetings in the form of (S [ i ], F [ i ]) where S [ i ] is start time of meeting i and F [ i ] is finish time of meeting i Given a number N followed by 2 arrays S and F of sizes N and N, What is the maximum number of meetings that can be accommodated in the meeting room assuming the room can only accommodate one meeting at a time.",
+ "input_spec": "The input consists of a number N followed by 2 arrays S and F of sizes N and N. N is between 1 and 100000 (inclusive).",
+ "output_spec": "The output is the maximum number of meetings that can be accommodated in the meeting room.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n10 12 30\n20 25 30",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "863. Radix Sort Implementation",
+ "slug": "radix-sort-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n863. Radix Sort Implementation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nRadix sort is one of the sorting algorithms used to sort a list of integer numbers in order. In radix sort algorithm, a list of integer numbers will be sorted based on the digits of individual numbers. Sorting is performed from least significant digit to the most significant digit. You have to sort the given array of integer values in radix sorting manner.",
+ "input_spec": "Given an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1",
+ "output_spec": "Print the resultant sorted array by using radix sort method.where 100",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n189 678 234 567 892 121 123 125",
+   "output": "121 123 125 189 234 567 678 892"
+  }
+ ],
+ "raw": ""
+}

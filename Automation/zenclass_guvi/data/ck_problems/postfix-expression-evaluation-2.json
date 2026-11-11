@@ -1,0 +1,17 @@
+{
+ "title": "630. Postfix Expression Evaluation-2",
+ "slug": "postfix-expression-evaluation-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n630. Postfix Expression Evaluation-2\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given a postfix expression. Evaluate the given expression and print the result.",
+ "input_spec": "The first line of the input is a string N, containing operators and numbers seperated by the single space which forms a postfix expression",
+ "output_spec": "Evaluate the post expression and print the result.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3 1 * + 9 -",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1562. Segment Tree Range XOR & Point Updates",
+ "slug": "segment-tree-range-xor-point-updates",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1562. Segment Tree Range XOR & Point Updates\n\n80\n\nHard\n\nProblem Statement:\nRange XOR Query using Segment Tree\n\nYou are given an array of N integers. You need to efficiently answer two types of queries:\n1. Given a range [L, R], find the XOR of all elements in that range.\n2. Update the value at a specific index to a new value.",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the elements of the array.\n- The next Q lines each contain a query:\n- For a range query: \"1 L R\" (find XOR from index L to R, 1-based indexing)\n- For an update query: \"2 X V\" (update index X to value V, 1-based indexing)",
+ "output_spec": "For each range query, output the XOR value on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5\n1 2 3 4 5\n1 2 4\n2 3 10\n1 1 5\n2 5 7\n1 4 5",
+   "output": "5\n8\n3"
+  }
+ ],
+ "raw": ""
+}

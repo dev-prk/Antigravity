@@ -1,0 +1,17 @@
+{
+ "title": "543. Smallest Number from Factorial Digit Sum",
+ "slug": "smallest-number-from-factorial-digit-sum",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n543. Smallest Number from Factorial Digit Sum\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a very long integer.Your task is to determine the smallest possible number such that sum of factorial of digits results back in \u2018n\u2019. Print -1 if no number is possible",
+ "input_spec": "You are given a number \u2018n\u2019",
+ "output_spec": "Print the smallest number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "145",
+   "output": "145"
+  }
+ ],
+ "raw": ""
+}

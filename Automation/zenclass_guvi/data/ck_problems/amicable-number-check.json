@@ -1,0 +1,17 @@
+{
+ "title": "813. Amicable Number Check",
+ "slug": "amicable-number-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n813. Amicable Number Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nwrite a program to check the given two number is an amicable number or not",
+ "input_spec": "The input contains an integer",
+ "output_spec": "If its Amicable print Yes otherwise No",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "220 284",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

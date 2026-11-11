@@ -1,0 +1,17 @@
+{
+ "title": "1075. Unique Integer Factor Combinations",
+ "slug": "unique-integer-factor-combinations",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1075. Unique Integer Factor Combinations\n\n80\n\nHard\n\nProblem Statement:\nYou are given a positive integer 'n'. Your task is to find all unique combinations of positive integers that multiply together to give 'n'. A combination is considered unique if there is no way to reorder it to get a different combination. The integers in each combination should be in non-decreasing order.\n\nYour goal is to implement a function that generates these combinations for a given value of 'n'.",
+ "input_spec": "- An integer 'n' (2 \u2264 n \u2264 30), representing the number to factorize.",
+ "output_spec": "- A list of lists, where each inner list contains a unique combination of integers greater than 1 that multiply to 'n'. The inner lists should be sorted in ascending order, and the outer list should also be sorted based on the first element of each inner list.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8",
+   "output": "[[2, 2, 2], [2, 4], [1, 8]]"
+  }
+ ],
+ "raw": ""
+}

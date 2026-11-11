@@ -1,0 +1,12 @@
+{
+ "title": "398. Alien Invasion: Beam Combat",
+ "slug": "alien-invasion-beam-combat",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n398. Alien Invasion: Beam Combat\n\n80\n\nHard  Topics\n\nProblem Statement:\nAliens are invading the planet and it is your job to fight them off . There are N aliens each having a power P[i] (1<=i<=N) . You have a ray gun which can fire two types of beams. Beam A can decrease the power of a single alien by X Beam B can decrease the power of a single alien by Y Whenever an alien's power reduces to 0 it is defeated While you are fighting off the aliens you also want to report the number of defeated aliens to the Military. The military asks questions of the form: \"What is the total number of defeated aliens from alien number 'x' to alien number 'y' \" Write a program to simulate the above scenario Note: If you shoot a beam at an already defeated alien , its power remains 0 and does not decrease further. It is possible that you may shoot at an already defeated alien",
+ "input_spec": "The first line contains three integers N X Y - the number of aliens, The power of beam A and the power of beam B\nThe second line contains the Powers of the N aliens numbered from 1 to N\nThe next line contains the number of events Q\nThe next Q lines can be either of the following:\n1 x y : shoot alien x with beam y ( 1<=x<=N and y is either \u2018A\u2019 or \u2018B\u2019)\n2 x y: report the total number of defeated aliens from alien x to alien y",
+ "output_spec": "For each type 2 event report the number of defeated aliens for the given range",
+ "constraints": "",
+ "samples": [],
+ "raw": ""
+}

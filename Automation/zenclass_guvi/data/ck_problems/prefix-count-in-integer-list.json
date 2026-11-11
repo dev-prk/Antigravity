@@ -1,0 +1,17 @@
+{
+ "title": "453. Prefix Count in Integer List",
+ "slug": "prefix-count-in-integer-list",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n453. Prefix Count in Integer List\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou will be given a list of N integers. Additionally you will be asked Q questions. For each question you will be given an integer X. You must report the number of integers in the given list that have X as a prefix. In other words you will have to find the count of numbers Z such that X+Y (+ denotes concatenation of two strings, not addition of two numbers) is equal to Z. As an example assume the list of integers is as follows: [ 1276,129,227,65 ]For X=12 count will be 2 since we have two numbers which have 12 as a prefix:1276 and 129 . (The prefix has been highlighted in bold)",
+ "input_spec": "The first line contains a single integer N denoting the number of integers that will be given to you\nThe next line will contain N space separated integers.\nThe next line will contain a single integer Q.\nThe next Q lines will contains a single integer in each line",
+ "output_spec": "Yout output must consist of Q lines :each line containing the required count.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1276 129 227 65\n1\n12",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

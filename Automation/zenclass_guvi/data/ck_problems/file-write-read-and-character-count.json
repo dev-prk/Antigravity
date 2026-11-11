@@ -1,0 +1,17 @@
+{
+ "title": "2048. File Write Read and Character Count",
+ "slug": "file-write-read-and-character-count",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2048. File Write Read and Character Count\n\n70\n\nHard\n\nProblem Statement\nWrite the given text to a file and then read it back from the same file using Java file I/O streams. After reading the content, print the content and the total number of characters read.\nDescription\nRead a line of text from the user. Use FileWriter to write the text into a file named output.txt. Then use FileReader wrapped in BufferedReader to read the content back from the file. Print the content and the number of characters present in the original text.",
+ "input_spec": "A single line containing a string, str.",
+ "output_spec": ".txt. Then use FileReader wrapped in BufferedReader to read the content back from the file. Print the content and the number of characters present in the original text.\nInput Description\nA single line containing a string, str.\nOutput Description\nPrint the content read from the file on the first line.\nPrint the total number of characters in the string on the second line in the format:\nCharacter Count: X",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "File handling in Java",
+   "output": "File handling in Java\nCharacter Count: 21"
+  }
+ ],
+ "raw": ""
+}

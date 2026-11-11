@@ -1,0 +1,17 @@
+{
+ "title": "449. Common Prefix Finder",
+ "slug": "common-prefix-finder",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n449. Common Prefix Finder\n\n60\n\nMedium  Topics\n\nProblem Statement:\nThe task is simple . Jack gives you N strings , these N strings describe the initial collection of words you have. He will ask you Q questions . In each question he will give you a string and you must print all strings having the given string as a common prefix.",
+ "input_spec": "The first line contains a single integer N denoting the number of strings present initially\nThe next N line contains a single string per line\nThe next line contains a single integer Q denoting the number of questions you will be asked\nThe next Q lines contains a single string each",
+ "output_spec": "Your output must consist of Q lines , all the strings satisfying a query in a single line .",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\nabcd\nabc\nhju\noopy\n2\nab\noo",
+   "output": "abcd abc\noopy"
+  }
+ ],
+ "raw": ""
+}

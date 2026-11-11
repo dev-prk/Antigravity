@@ -1,0 +1,21 @@
+{
+ "title": "1757. Manage Students Records",
+ "slug": "manage-students-records",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1757. Manage Students Records\n\n50\n\nMedium\n\nManage Students Records\n\nProblem Statement\nWrite a C program to manage student records for a class. Each student has a name, roll number, marks in three subjects, and their calculated total and average marks. The program should:\n\nDeclare a structure to hold a student\u2019s information.\nRead student data from the user.\nCompute the total and average marks for each student.\nDisplay the student information along with total and average marks in a sorted order based on the average marks in descending order.\n\nInput\nAn integer n (number of students, where 1 \u2264 n \u2264 100).\nFor each student:\nA string name (up to 50 characters).\nAn integer roll_number (1 to 1000).\nThree floating-point numbers representing marks in three subjects.\n\nOutput\nStudent information (name, roll number, total marks, average marks) sorted by average marks in descending order.",
+ "input_spec": "An integer n (number of students, where 1 \u2264 n \u2264 100).\nFor each student:\nA string name (up to 50 characters).\nAn integer roll_number (1 to 1000).\nThree floating-point numbers representing marks in three subjects.",
+ "output_spec": "Student information (name, roll number, total marks, average marks) sorted by average marks in descending order.",
+ "constraints": "The number of students n must be between 1 and 100.\nRoll numbers are unique integers between 1 and 1000.\nMarks should be in the range of 0.0 to 100.0.\nUse appropriate data types to store student information and calculate totals and averages with precision.",
+ "samples": [
+  {
+   "input": "An integer n (number of students, where 1 \u2264 n \u2264 100).\nFor each student:\nA string name (up to 50 characters).\nAn integer roll_number (1 to 1000).\nThree floating-point numbers representing marks in three subjects.",
+   "output": "Student information (name, roll number, total marks, average marks) sorted by average marks in descending order."
+  },
+  {
+   "input": "3\nJohn Doe 101 85.0 78.0 92.0\nJane Smith 102 88.0 79.5 94.0\nAlice Brown 103 70.0 65.0 80.0",
+   "output": "Student Information Sorted by Average Marks:\nName: Jane Smith, Roll Number: 102, Total Marks: 261.50, Average Marks: 87.17\nName: John Doe, Roll Number: 101, Total Marks: 255.00, Average Marks: 85.00\nName: Alice Brown, Roll Number: 103, Total Marks: 215.00, Average Marks: 71.67"
+  }
+ ],
+ "raw": ""
+}

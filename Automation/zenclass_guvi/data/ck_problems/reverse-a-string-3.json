@@ -1,0 +1,17 @@
+{
+ "title": "725. Reverse a String-3",
+ "slug": "reverse-a-string-3",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n725. Reverse a String-3\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to reverse the string",
+ "input_spec": "Input contains the sentence as string",
+ "output_spec": "Print the reverse string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Hello how are you",
+   "output": "uoy era woh olleH"
+  }
+ ],
+ "raw": ""
+}

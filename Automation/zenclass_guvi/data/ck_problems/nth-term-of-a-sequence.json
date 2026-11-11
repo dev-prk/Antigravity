@@ -1,0 +1,17 @@
+{
+ "title": "465. Nth Term of a Sequence",
+ "slug": "nth-term-of-a-sequence",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n465. Nth Term of a Sequence\n\n90\n\nHard  Topics\n\nProblem Statement:\nA sequence is given by: 2, 6, 11, 17, 24,....\nThe first term is 2.\nGiven an integer N, find the Nth term of the sequence.\n1 <= N <= 10^18\nSince the answer can be very large print it modulo 1,000,000,007 (10^9 + 7)",
+ "input_spec": "The only line of input contains an integer N",
+ "output_spec": "Print the Nth term of the sequence",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "24"
+  }
+ ],
+ "raw": ""
+}

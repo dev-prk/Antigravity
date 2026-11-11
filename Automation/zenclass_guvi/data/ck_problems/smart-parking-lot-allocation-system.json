@@ -1,0 +1,17 @@
+{
+ "title": "1901. Smart Parking Lot Allocation System",
+ "slug": "smart-parking-lot-allocation-system",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1901. Smart Parking Lot Allocation System\n\n80\n\nHard  Topics\n\nSmart Parking Lot Allocation System\n\nProblem Statement\n\nA smart parking system manages parking slots numbered from 1 to N.\n\nInitially, all slots are free.\n\nThe system must support Q operations:\n\n1. Allocate nearest available slot \u2265 x\nOperation: A x\n\n2. Free a slot\nOperation: F x\n\n3. Query longest continuous free block\nOperation: L\n\nRules:\n\nIf no slot available during allocation \u2192 print -1\n\nLongest continuous block means maximum consecutive free slots\n\nInput Format\nFirst line:\nN\n\nSecond line:\nQ\n\nNext Q lines:\nOperations\n\nOutput Format\nFor every A and L operation, print result.",
+ "input_spec": "First line:\nN\n\nSecond line:\nQ\n\nNext Q lines:\nOperations",
+ "output_spec": "For every A and L operation, print result.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n6\nA 2\nA 2\nL\nF 2\nL\nA 1",
+   "output": "2\n3\n2\n2\n1"
+  }
+ ],
+ "raw": ""
+}

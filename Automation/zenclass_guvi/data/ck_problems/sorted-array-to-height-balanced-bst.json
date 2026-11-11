@@ -1,0 +1,17 @@
+{
+ "title": "1581. Sorted Array to Height-Balanced BST",
+ "slug": "sorted-array-to-height-balanced-bst",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1581. Sorted Array to Height-Balanced BST\n\n80\n\nHard\n\nProblem Statement:\nGiven an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree (BST). A height-balanced BST is a binary tree in which the depth of the two subtrees of every node never differs by more than one.",
+ "input_spec": "- The first line contains an integer n, the number of elements in the array.\n- The second line contains n space-separated integers representing the sorted array nums.",
+ "output_spec": "- Print the preorder traversal of the constructed BST as space-separated integers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n-10 -3 0 5 9 12 15",
+   "output": "5 -3 -10 0 12 9 15"
+  }
+ ],
+ "raw": ""
+}

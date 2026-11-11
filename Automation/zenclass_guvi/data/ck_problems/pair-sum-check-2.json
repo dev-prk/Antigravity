@@ -1,0 +1,17 @@
+{
+ "title": "341. Pair Sum Check-2",
+ "slug": "pair-sum-check-2",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n341. Pair Sum Check-2\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N and K followed by N numbers such that sum of two pairs in the N numbers results K value, if it exist print 'yes' otherwise 'no'.",
+ "input_spec": "The input consists of two integers, N and K, on the first line. The second line contains N integers. N is an integer such that N<=100000.",
+ "output_spec": "The output should be 'yes' if there exist two numbers among the N given numbers whose sum equals K, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n1 2 2 4",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

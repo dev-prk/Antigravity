@@ -1,0 +1,17 @@
+{
+ "title": "1759. Handling Complex Data in Structures with Pointers",
+ "slug": "handling-complex-data-in-structures-with-pointers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1759. Handling Complex Data in Structures with Pointers\n\n50\n\nMedium\n\nHandling Complex Data in Structures with Pointers\n\nProblem Statement:\nDesign a C program that simulates an inventory management system for a store. Each product in the store can have multiple suppliers, and each supplier can offer different prices for the product. The program must calculate the average price of each product across all suppliers and determine the cheapest supplier for each product.\n\nDescription:\nYou need to create a program that manages a list of products, each with multiple suppliers. For each product, the user will input the number of suppliers and the price offered by each supplier. The program should calculate and display the average price for each product and identify the cheapest supplier. Use structures to represent the products and suppliers, and handle the input dynamically.\n\nInput Format:\nThe first input is an integer p representing the number of products.\nFor each product:\nA string product_name representing the name of the product.\nAn integer s representing the number of suppliers.\nFor each supplier:\nA string supplier_name representing the name of the supplier.\nA float price representing the price offered by the supplier.\nOutput Format:\nFor each product, output the average price across all suppliers.\nOutput the name of the cheapest supplier for each product.",
+ "input_spec": "the number of suppliers and the price offered by each supplier. The program should calculate and display the average price for each product and identify the cheapest supplier. Use structures to represent the products and suppliers, and handle the input dynamically.\n\nInput Format:\nThe first input is an integer p representing the number of products.\nFor each product:\nA string product_name representing the name of the product.\nAn integer s representing the number of suppliers.\nFor each supplier:\nA string supplier_name representing the name of the supplier.\nA float price representing the price offered by the supplier.",
+ "output_spec": "For each product, output the average price across all suppliers.\nOutput the name of the cheapest supplier for each product.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\nLaptop\n3\nSupplierA 1000.50\nSupplierB 980.75\nSupplierC 1025.00\nPhone\n2\nSupplierX 500.00\nSupplierY 495.50",
+   "output": "Product: Laptop\nAverage Price: 1002.08\nCheapest Supplier: SupplierB\nProduct: Phone\nAverage Price: 497.75\nCheapest Supplier: SupplierY"
+  }
+ ],
+ "raw": ""
+}

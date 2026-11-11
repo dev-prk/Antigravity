@@ -1,0 +1,17 @@
+{
+ "title": "713. Nth term in mixed geometric series",
+ "slug": "nth-term-in-mixed-geometric-series",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n713. Nth term in mixed geometric series\n\n50\n\nMedium  Topics\n\nProblem Statement:\nConsider the following series1,1,2,3,4,9,8,27,16,81,32,243,64,729,128,2187...This series is a mixture of 2 series - all the odd terms in this series form a geometric series and all the even terms form yet anothergeometric seriesWrite a program to findnd the Nth term in this series.",
+ "input_spec": "You can assume that N will not exceed 30",
+ "output_spec": "Print the Nth term",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "16",
+   "output": "2187"
+  }
+ ],
+ "raw": ""
+}

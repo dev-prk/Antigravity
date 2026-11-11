@@ -1,0 +1,17 @@
+{
+ "title": "1026. BMI Calculator and Diet Plan",
+ "slug": "bmi-calculator-and-diet-plan",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1026. BMI Calculator and Diet Plan\n\n40\n\nMedium\n\nProblem Statement:\nDesign and develop a health application that computes the Body Mass Index (BMI) of the individuals given with height and weight of persons and suggest the diet plan.",
+ "input_spec": "The first line of the input consists of two space-separated integer values H and W indicating the height and weight of the person in centimeter and kilograms respectively.",
+ "output_spec": "The first line of the output should consist of the BMI value of the person.\nwhere, BMI = Weight(in Kilogram) / (Height(in meter) * Height(in meter))\nNote: Round the BMI decimal values up to one decimal places\nThe second line of the output should consist of the diet plan suggestion according to their BMI value as below.\n19 - 25 = Maintain your Current Diet Plan\nBelow 19 = Follow a Calorie Surplus Diet Plan\nAbove 25 = Follow a Calorie Deficit Diet Plan",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "188 107",
+   "output": "30.3\nFollow a Calorie Deficit Diet Plan"
+  }
+ ],
+ "raw": ""
+}

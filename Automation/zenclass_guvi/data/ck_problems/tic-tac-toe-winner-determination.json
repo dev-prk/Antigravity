@@ -1,0 +1,17 @@
+{
+ "title": "566. Tic-Tac-Toe Winner Determination",
+ "slug": "tic-tac-toe-winner-determination",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n566. Tic-Tac-Toe Winner Determination\n\n50\n\nMedium  Topics\n\nProblem Statement:\nTron is an expert system which, when given the board configuration and entries, determines the winner of the tic tac toe game. Given a 3*3 tic tac toe board as input, along with the filled in entries, determine which one of the players wins the game. Note: Assume player1 takes X and player2 takes O.",
+ "input_spec": ", along with the filled in entries, determine which one of the players wins the game. Note: Assume player1 takes X and player2 takes O.\n\nInput Description:\nEntries in the tic tac toe board.",
+ "output_spec": "Player1/Player2 - whoever the winner is. If the game results in a tie, display \u201cTIE\u201d.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "X O X\nO X O\nO O X",
+   "output": "Player1"
+  }
+ ],
+ "raw": ""
+}

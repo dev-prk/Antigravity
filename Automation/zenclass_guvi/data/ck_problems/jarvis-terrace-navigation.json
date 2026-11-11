@@ -1,0 +1,17 @@
+{
+ "title": "519. JARVIS Terrace Navigation",
+ "slug": "jarvis-terrace-navigation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n519. JARVIS Terrace Navigation\n\n80\n\nHard  Topics\n\nProblem Statement:\nJARVIS is a robot that can be programmed to move in any of the four directions: left, right, front and back. JARVIS is placed on the terrace of a building at tile (i,j). The terrace has M*N square tiles and the sequence of movements that JARVIS has to follow, is programmed into it in the form of a string with values L for left, R for right, F for front and B for back. However, a hacker has hacked into the system and manipulated the string containing the list of movement values. Your task is to save JARVIS from falling off the terrace of the building by determining whether the sequence of values in the string could make the robot move outside the dimensions of the terrace.Note: JARVIS moves one tile at a time. Front and Back operations negate each other and right and left operations negate each other. Array index starts at 0.",
+ "input_spec": "First line contains the dimensions of the matrix N and MSecond line contains the size followed by the string of movement valuesThird line contains the initial location of JARVIS",
+ "output_spec": "\u201cSafe\u201d if the sequence of movements allow JARVIS to remain within the dimensions of the terrace. \u201cUnsafe\u201d if JARVIS might fall off.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n3 L L L\n1 2",
+   "output": "Unsafe"
+  }
+ ],
+ "raw": ""
+}

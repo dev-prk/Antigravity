@@ -1,0 +1,17 @@
+{
+ "title": "2058. Display Students Above Given Marks",
+ "slug": "display-students-above-given-marks",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2058. Display Students Above Given Marks\n\n60\n\nMedium\n\nWrite a Java program to simulate retrieving student records from a database based on a marks condition.\n\nThe program should read N student records containing:\n\nStudent ID\nStudent Name\nMarks\n\nThen read a minimum marks value.\n\nDisplay all students whose marks are greater than or equal to the given value.\n\nThe output format should be:\n\nID: <id>, Name: <name>, Marks: <marks>\n\nIf no student satisfies the condition, display:\n\nNo students found",
+ "input_spec": "5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n80\nSample",
+ "output_spec": "should be:\n\nID: <id>, Name: <name>, Marks: <marks>\n\nIf no student satisfies the condition, display:\n\nNo students found",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n80",
+   "output": "ID: 101, Name: Arun, Marks: 85\nID: 103, Name: Kiran, Marks: 90\nID: 105, Name: Rahul, Marks: 88"
+  }
+ ],
+ "raw": ""
+}

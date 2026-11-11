@@ -1,0 +1,17 @@
+{
+ "title": "1015. Column Sum of a Matrix",
+ "slug": "column-sum-of-a-matrix",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1015. Column Sum of a Matrix\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a numbers n followed by n*n numbers in matrix format print the sum of the numbers in the column",
+ "input_spec": "You will given a number n followed by n*m numbers in matrix format .",
+ "output_spec": "print the sum of the numbers in the column",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "12 15 18"
+  }
+ ],
+ "raw": ""
+}

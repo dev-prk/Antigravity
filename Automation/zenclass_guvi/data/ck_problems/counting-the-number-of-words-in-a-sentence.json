@@ -1,0 +1,17 @@
+{
+ "title": "2135. Counting the Number of Words in a Sentence",
+ "slug": "counting-the-number-of-words-in-a-sentence",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2135. Counting the Number of Words in a Sentence\n\n65\n\nProblem Statement\nRead a sentence and count the number of words in it, using a character array and a loop that looks for spaces.\n\nDescription\nRead a full line of text into a character array using fgets, since a sentence may contain multiple words separated by spaces. Use a loop to scan through the characters, using an if statement to detect a space that is immediately followed by a non-space character, marking the start of a new word. Count the first word directly, then add one for every new word detected, and print the final count.",
+ "input_spec": "A single line containing a sentence with words separated by single spaces.",
+ "output_spec": "Print the number of words in the sentence.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "I love C programming",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

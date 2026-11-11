@@ -1,0 +1,17 @@
+{
+ "title": "2011. Payment System Using Interface",
+ "slug": "payment-system-using-interface",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2011. Payment System Using Interface\n\n60\n\nMedium\n\nProblem Statement\n\nCreate an interface Payment with a method pay(int amount).\n\nCreate three classes:\n\nUPI\nCard\nCash\n\nEach class should implement the pay() method and print the corresponding payment method and amount.",
+ "input_spec": "The first line contains the payment method: upi, card, or cash.\n\nThe second line contains the payment amount.",
+ "output_spec": "Print the payment method and amount.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "upi\n500",
+   "output": "UPI Payment: 500"
+  }
+ ],
+ "raw": ""
+}

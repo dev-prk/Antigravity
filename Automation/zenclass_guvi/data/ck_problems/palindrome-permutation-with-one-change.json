@@ -1,0 +1,17 @@
+{
+ "title": "419. Palindrome Permutation with One Change",
+ "slug": "palindrome-permutation-with-one-change",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n419. Palindrome Permutation with One Change\n\n50\n\nMedium  Topics\n\nProblem Statement:\nQuinton is given a string, find if he can form a palindrome by permuting the characters of the string and changing at most one character of the string to another character. If he can form, print YES, else print NO.",
+ "input_spec": "The first and only line of input is a string S",
+ "output_spec": "Print a line containing YES or NO",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abc",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

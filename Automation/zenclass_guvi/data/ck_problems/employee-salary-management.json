@@ -1,0 +1,17 @@
+{
+ "title": "963. Employee Salary Management",
+ "slug": "employee-salary-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n963. Employee Salary Management\n\n60\n\nMedium\n\nProblem Statement:\nYou are required to implement a Python program for managing employee salaries. The program should define an Employee class with the following methods:\n- getInfo(salary, hours_worked): This method takes the salary and the number of hours worked per day by the employee as input parameters.\n- AddSal(): This method adds $100 to the salary of the employee if it is less than $500.\n- AddWorkSal(amount): This method adds a specified amount to the salary of the employee.",
+ "input_spec": "parameters.\n- AddSal(): This method adds $100 to the salary of the employee if it is less than $500.\n- AddWorkSal(amount): This method adds a specified amount to the salary of the employee.\n\nInput Description:\nThe input consists of the following:\n- The first line contains two integers separated by a space: employee_id and option. employee_id is an integer representing the ID of the employee (always 1 for this problem). option is an integer representing the selected operation (1 for getInfo(), 2 for AddSal(), and 3 for AddWorkSal()).\n- If option is 1 (getInfo()), the second line contains two integers separated by a space: salary (an integer) and hours_worked (an integer).\n- if the option is 2, there will be no second line input\n- If option is 3 (AddWorkSal()), the second line contains an integer amount representing the amount to be added to the salary.",
+ "output_spec": "Print the following:\n- For options 1 and 3, output the final salary of the employee after performing the operation.\n- For option 2, print the updated salary",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 1\n200 8",
+   "output": "200$"
+  }
+ ],
+ "raw": ""
+}

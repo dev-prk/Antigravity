@@ -1,0 +1,17 @@
+{
+ "title": "423. Alien Election Simulation",
+ "slug": "alien-election-simulation",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n423. Alien Election Simulation\n\n90\n\nHard  Topics\n\nProblem Statement:\nWe are in the land of Aliens.\n\nThere are two aliens Beta and Gamma competing in an election. According to their system, the one who gets to 1000 votes or above first will be declared the winner. Each alien citizen can cast many votes depending on their strength. If the strength of an alien citizen is S[i] at a point, he can cast S[i] votes. After casting a vote, the strength S[i] of alien becomes floor(S[i]/3). After S[i] becomes zero, the alien citizen can't vote. You are given N citizens and their strengths. Each day Beta first picks a citizen ONCE to vote for her and Gamma picks a citizen TWICE to vote for her (citizens picked can be the same). Find who wins the election if both pick optimally. Print -1 if both of them could not reach 1000 votes or above.",
+ "input_spec": "The first line contains an Integer N denoting the number of citizens.\nThe next line contains N space separated integers S[i] (1",
+ "output_spec": "Print a line, the winner as \"Beta\" or \"Gamma\" (without quotes) or -1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n900 900",
+   "output": "Gamma"
+  }
+ ],
+ "raw": ""
+}

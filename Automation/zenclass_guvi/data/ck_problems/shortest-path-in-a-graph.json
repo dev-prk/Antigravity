@@ -1,0 +1,17 @@
+{
+ "title": "354. Shortest Path in a Graph",
+ "slug": "shortest-path-in-a-graph",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n354. Shortest Path in a Graph\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven 2 integers N,M(where N is the number of vertices and M is the number of edges) followed by 'M' lines containing 2 vertices U,V and weight W. Find the shortest path from 1-N.If there is no path print '-1'.",
+ "input_spec": "The input consists of 2 integers N, M (where N is the number of vertices and M is the number of edges), followed by M lines, each containing 2 vertices U, V and a weight W.",
+ "output_spec": "The shortest path from vertex 1 to vertex N. If no path exists, print '-1'.",
+ "constraints": "1<=N, M<=100000.",
+ "samples": [
+  {
+   "input": "5 6\n1 2 2\n2 5 5\n2 3 4\n1 4 1\n4 3 3\n3 5 1",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

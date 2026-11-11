@@ -1,0 +1,17 @@
+{
+ "title": "693. Min Swaps to Sort Heights",
+ "slug": "min-swaps-to-sort-heights",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n693. Min Swaps to Sort Heights\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are head incharge of sports activity in queue. Your task is to sort the students height wise in line. But you can only swap students.Your task is to determine the minimum possible swaps required to sort the students in queue according to heights",
+ "input_spec": "You are given with number \u2018n\u2019 denoting number of students. Next line contains n space separated integers denoting their height.",
+ "output_spec": "Print the minimum number of swaps required to sort the students in line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 5 4 3 2",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

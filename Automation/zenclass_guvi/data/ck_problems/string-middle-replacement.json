@@ -1,0 +1,17 @@
+{
+ "title": "819. String Middle Replacement",
+ "slug": "string-middle-replacement",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n819. String Middle Replacement\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a program to replace by \"*\" in the middle of a string.",
+ "input_spec": "Enter the string",
+ "output_spec": "Replace by \" * \" in the middle of the string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "dharma",
+   "output": "dh**ma"
+  }
+ ],
+ "raw": ""
+}

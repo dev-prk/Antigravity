@@ -1,0 +1,17 @@
+{
+ "title": "407. Minimum X for Distinct Modulo",
+ "slug": "minimum-x-for-distinct-modulo",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n407. Minimum X for Distinct Modulo\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given an array A containing N distinct positive integers. Let A[i] represent an element in A. Mr. Beckham wants to perform an operation on the elements of A. He wants to choose a positive integer X and perform A[i] := A[i] mod X for all i (1 <= i <= N). Help Mr. Beckham choose the smallest possible value of X such that the elements of the array remain distinct even after performing the operation. (It can be proven that an answer exists for all possible inputs)",
+ "input_spec": "s)\n\nInput Description:\nThe first line contains an integer N representing the number of elements in the array.\nThe next line contains N distinct space separated integers denoting the array elements.",
+ "output_spec": "Print a single integer X",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n21 22",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

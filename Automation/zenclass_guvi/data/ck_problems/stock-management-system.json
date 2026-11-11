@@ -1,0 +1,17 @@
+{
+ "title": "1092. Stock Management System",
+ "slug": "stock-management-system",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1092. Stock Management System\n\n50\n\nMedium\n\nProblem Statement:\nYou are developing a stock management system for a market. The system has a function  get_stock(item: str) -\\> int  that takes an item name as input and returns the quantity of that item in stock.\n\nThe market has the following items in stock:\n1. \"Apples\" - 50\n2. \"Oranges\" - 30\n3. \"Grapes\" - 0\n\nHowever, not all items are available in the market at all times. If an item is not available, the function should raise a custom exception  ItemNotFoundError  with a message \"Item not found\".\n\nWrite a Python function  handle_stock_request(item: str) -\\> str  that calls  get_stock(item: str) -\\> int  and handles any  ItemNotFoundError  that might be raised. The function should return a string message about the status of the request.\n\nIf the item is found and the stock is greater than 0, the function should return a message in the following format: \"Stock for {item}: {stock}\". If the item is not found or the stock is 0, it should return the message \"Item not found\".",
+ "input_spec": "and returns the quantity of that item in stock.\n\nThe market has the following items in stock:\n1. \"Apples\" - 50\n2. \"Oranges\" - 30\n3. \"Grapes\" - 0\n\nHowever, not all items are available in the market at all times. If an item is not available, the function should raise a custom exception  ItemNotFoundError  with a message \"Item not found\".\n\nWrite a Python function  handle_stock_request(item: str) -\\> str  that calls  get_stock(item: str) -\\> int  and handles any  ItemNotFoundError  that might be raised. The function should return a string message about the status of the request.\n\nIf the item is found and the stock is greater than 0, the function should return a message in the following format: \"Stock for {item}: {stock}\". If the item is not found or the stock is 0, it should return the message \"Item not found\".",
+ "output_spec": "The function  handle_stock_request  returns a string message. If the item is found and its stock is greater than 0, the message is \"Stock for {item}: {stock}\". Otherwise (if the item is not found or its stock is 0), the message is \"Item not found\".",
+ "constraints": "- Item is a string.\n- You can't install any external libraries.",
+ "samples": [
+  {
+   "input": "Apples",
+   "output": "Stock for Apples: 50"
+  }
+ ],
+ "raw": ""
+}

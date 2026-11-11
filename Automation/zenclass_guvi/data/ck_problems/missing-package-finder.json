@@ -1,0 +1,17 @@
+{
+ "title": "472. Missing Package Finder",
+ "slug": "missing-package-finder",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n472. Missing Package Finder\n\n40\n\nMedium  Topics\n\nProblem Statement:\nRam is a marketing manager at GUVI. He observes that for every two batches of products, one package is extra in one of the batches. He realises that someone is stealing the package from the other batch. He decides to document the discovery so as to report to his superior. Find out the package number of the package that gets stolen from one of the batches of products.",
+ "input_spec": "The first line of input contains an integer T, denoting the no of test cases. Then T test cases follow. The first line of each test case contains an integer N, denoting the number of packages in Batch A. The second line of each test case contains N space separated values of number of items in each package of Batch A. The Third line of each test case contains N-1 space separated number of items in each package of Batch B.",
+ "output_spec": "Return the package number of the corresponding package stolen from Batch B. The array index denotes the package number.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n7\n2 4 6 8 9 10 12\n2 4 6 8 10 12\n6\n3 5 7 9 11 13\n3 5 7 11 13",
+   "output": "4\n3"
+  }
+ ],
+ "raw": ""
+}

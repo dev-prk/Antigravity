@@ -1,0 +1,17 @@
+{
+ "title": "97. Minimum Snow Drifts",
+ "slug": "minimum-snow-drifts",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n97. Minimum Snow Drifts\n\n50\n\nMedium  Topics\n\nProblem Statement:\nVishal is learning to skate on ice. He's a beginner, so his only mode of transportation is pushing off from a snow drift to the north, east, south or west and sliding until he lands in another snow drift. He has noticed that in this way it's impossible to get from some snow drifts to some other by any sequence of moves. He now wants to heap up some additional snow drifts, so that he can get from any snow drift to any other one. He asked you to find the minimal number of snow drifts that need to be created. We assume that Vishal can only heap up snow drifts at integer coordinates.",
+ "input_spec": "The first line of input contains a single integer N the number of snow drifts. Each of the following n lines contains two integers xi and yi the coordinates of the i-th snow drift. Note that the north direction coin\u0441ides with the direction of Oy axis, so the east direction coin\u0441ides with the direction of the Ox axis. All snow drift's locations are distinct. Input Size : 1 <= N,Xi,Yi <= 1000",
+ "output_spec": "The minimal number of snow drifts that need to be created.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n2 1\n1 2",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

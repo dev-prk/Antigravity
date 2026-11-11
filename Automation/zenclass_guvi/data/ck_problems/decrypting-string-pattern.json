@@ -1,0 +1,17 @@
+{
+ "title": "626. Decrypting String Pattern",
+ "slug": "decrypting-string-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n626. Decrypting String Pattern\n\n60\n\nMedium  Topics\n\nProblem Statement:\nShriti was going through some cryptographic concept. She just got stuck at some place . She needs your help to sort out the situation. Your task is to help her in writing the decrypted string.",
+ "input_spec": "The first line of the input consists of a Encrypted string input",
+ "output_spec": "Print the decrypted string, by analysing the logic behind the decryption using the",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3[b[2[aa]]]",
+   "output": "baaaabaaaabaaaa"
+  }
+ ],
+ "raw": ""
+}

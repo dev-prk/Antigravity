@@ -1,0 +1,17 @@
+{
+ "title": "2192. Cheapest Product",
+ "slug": "cheapest-product",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2192. Cheapest Product\n\n50\n\nMedium\n\nProblem Statement\nRead the names and prices of some products and print the name and price of the cheapest product.\nDescription\nThe name and the price of n products are given. Find the product that has the lowest price and print the name and the price of that product. The prices of all the products are different.",
+ "input_spec": "The first line contains an integer n. (1 <= n <= 20) Each of the next n lines contains the name of a product and the price of the product, separated by a single space. The name is a single word without spaces. The price is an integer. (1 <= price <= 10000) All the prices are different.",
+ "output_spec": "Print one line that contains the name and the price of the cheapest product, separated by a single space.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nPen 10\nPencil 5\nBook 45",
+   "output": "Pencil 5"
+  }
+ ],
+ "raw": ""
+}

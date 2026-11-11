@@ -1,0 +1,17 @@
+{
+ "title": "2053. Binary Search Tree - Find Minimum and Maximum",
+ "slug": "binary-search-tree-find-minimum-and-maximum",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2053. Binary Search Tree - Find Minimum and Maximum\n\n70\n\nHard\n\nProblem Statement\nCreate a Binary Search Tree from given integers and find the minimum and maximum values stored in the tree.\nDescription\nRead n integers and insert them into a Binary Search Tree. Find the minimum value by following left child links and the maximum value by following right child links. Print both values.",
+ "input_spec": "The first line contains an integer n. The second line contains n space-separated integers to be inserted into the Binary Search Tree.",
+ "output_spec": "Print the minimum value on the first line and the maximum value on the second line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n50 30 70 20 40 60 80",
+   "output": "20\n80"
+  }
+ ],
+ "raw": ""
+}

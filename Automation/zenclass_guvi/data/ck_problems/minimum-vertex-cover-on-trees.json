@@ -1,0 +1,21 @@
+{
+ "title": "1510. Minimum Vertex Cover on Trees",
+ "slug": "minimum-vertex-cover-on-trees",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1510. Minimum Vertex Cover on Trees\n\n50\n\nMedium\n\nProblem Statement:\nGiven an undirected tree with N vertices, find the minimum number of vertices you need to select such that every edge in the tree has at least one of its endpoints selected. This set of selected vertices is called a vertex cover of the tree. Output the size of the minimum vertex cover.",
+ "input_spec": "- The first line contains a single integer N (the number of vertices in the tree).\n- The next N-1 lines each contain two integers u and v, denoting an edge between vertex u and vertex v.",
+ "output_spec": "the size of the minimum vertex cover.\n\nInput Description:\n- The first line contains a single integer N (the number of vertices in the tree).\n- The next N-1 lines each contain two integers u and v, denoting an edge between vertex u and vertex v.\n\nOutput Description:\n- Output a single integer: the size of the minimum vertex cover.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1:\n4\n1 2\n1 3\n3 4",
+   "output": "1:\n2"
+  },
+  {
+   "input": "2:\n3\n1 2\n2 3",
+   "output": "2:\n1"
+  }
+ ],
+ "raw": ""
+}

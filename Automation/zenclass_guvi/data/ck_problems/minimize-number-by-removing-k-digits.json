@@ -1,0 +1,17 @@
+{
+ "title": "1590. Minimize Number by Removing K Digits",
+ "slug": "minimize-number-by-removing-k-digits",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1590. Minimize Number by Removing K Digits\n\n80\n\nHard\n\nProblem Statement:\nGiven a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible. The result should not contain any leading zeros unless the result is 0.",
+ "input_spec": "- The first line contains a string num representing the non-negative integer.\n- The second line contains an integer k, the number of digits to remove.",
+ "output_spec": "- A string representing the smallest possible number after removing k digits.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1432219\n3",
+   "output": "1219"
+  }
+ ],
+ "raw": ""
+}

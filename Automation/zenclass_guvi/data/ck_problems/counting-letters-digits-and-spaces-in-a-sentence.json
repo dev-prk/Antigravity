@@ -1,0 +1,17 @@
+{
+ "title": "2200. Counting Letters, Digits, and Spaces in a Sentence",
+ "slug": "counting-letters-digits-and-spaces-in-a-sentence",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2200. Counting Letters, Digits, and Spaces in a Sentence\n\n40\n\nMedium\n\nProblem Statement\nRead a sentence and count how many letters, digits, and spaces it contains, using a character array and an if-else-if ladder.\n\nDescription\nRead a full line of text into a character array using fgets. Use a loop to examine each character until the end of the line. Use an if-else-if ladder to check whether the character is a letter (between 'a' and 'z', or between 'A' and 'Z'), a digit (between '0' and '9'), or a space, and increase the matching counter. Any other character is ignored. Print the number of letters, the number of digits, and the number of spaces, each on its own line.",
+ "input_spec": "A single line of text containing at most 100 characters.",
+ "output_spec": "Print the number of letters, the number of digits, and the number of spaces, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "I have 2 cats and 10 dogs",
+   "output": "16\n3\n6"
+  }
+ ],
+ "raw": ""
+}

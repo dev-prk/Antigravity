@@ -1,0 +1,17 @@
+{
+ "title": "2173. Prime Number Check",
+ "slug": "prime-number-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2. Prime Number Check\n\n30\n\nEasy  Topics\nSolved!\n\nProblem Statement:\nGiven a number N, check whether it is prime or not. Print 'yes' if it is prime else print 'no'.",
+ "input_spec": "The input consists of a single integer N.",
+ "output_spec": "The output is 'yes' if N is prime, otherwise 'no'.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "123",
+   "output": "no"
+  }
+ ],
+ "raw": ""
+}

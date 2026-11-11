@@ -1,0 +1,17 @@
+{
+ "title": "1148. Integer Wrapper Class Usage",
+ "slug": "integer-wrapper-class-usage",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1148. Integer Wrapper Class Usage\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program that takes a string input representing a list of integers (e.g., \"1 2 3 4 5\") and performs the following operations:\nConvert the string into an array of integers using Integer wrapper class methods.\nCompute the sum of the integers and print it.\nPrint the maximum and minimum values from the array using Integer methods.\nPrint the average of the integers rounded to two decimal places.",
+ "input_spec": "representing a list of integers (e.g., \"1 2 3 4 5\") and performs the following operations:\nConvert the string into an array of integers using Integer wrapper class methods.\nCompute the sum of the integers and print it.\nPrint the maximum and minimum values from the array using Integer methods.\nPrint the average of the integers rounded to two decimal places.\n\nInput Description:\nA single line of input containing space-separated integers.",
+ "output_spec": "A single line containing the sum of integers.\nA second line containing the maximum and minimum values.\nA third line containing the average of the integers rounded to two decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 -3 5 7 2",
+   "output": "21\n10 -3\n4.20"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "460. Maximal Palindrome Length",
+ "slug": "maximal-palindrome-length",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n460. Maximal Palindrome Length\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a string containing of length N , find the length of the maixmal palindrome formed from the string\n\nThe maximal palindrome can be formed as follows:\n\nSay we are given the string : \"abdbcda\" . The length of the maximal palindrome will be 4 since the maximal palindrome will be abba or adda.\n\nWe can form a palindrome by \"linking up the characters at any two indices : if we have the maixmal palindrome as \"abba\" from the string \"abdbcda\" we link up the 'a' s at index 0 and at index 6\n\nThe we nest that linking by linking the 'b' s at index 2 and index 3. (NOTE: 0-based indexing is used here)\n\nNote that we form the palindrome by nesting links and we cannot have any links crossing each other. So from the string \"abdbcda\" the palindrome \"abddba\" is not valid since the links for d and the links for b \"cross each other\" . More formally two links between indices i1 and i2 and between j1 and j2 are said to cross when either j1<i1<j2<i2 or i1<j1<i2<j2 . A maximal palindrome is the palindrome of maximum length formed by nesting these links\n\nReport the length of the largest maximal palindrome.",
+ "input_spec": "The first and only line of input contains a string of at most 1000 characters",
+ "output_spec": "Output a single number : the length of the maximal palindrome formed. We can prove that this length is at least 1 .",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abddba",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

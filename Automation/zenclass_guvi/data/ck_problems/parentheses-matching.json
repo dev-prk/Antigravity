@@ -1,0 +1,17 @@
+{
+ "title": "843. Parentheses Matching",
+ "slug": "parentheses-matching",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n843. Parentheses Matching\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a string expression examine the correctness of pairs and orders of parantheses using Stack. If it has pair of parentheses print yes else print no",
+ "input_spec": "An expression containing various types of Parentheses.",
+ "output_spec": "Print yes or no based on the given input",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "{([])}",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

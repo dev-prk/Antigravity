@@ -1,0 +1,17 @@
+{
+ "title": "581. Maximize Ones by Swapping",
+ "slug": "maximize-ones-by-swapping",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n581. Maximize Ones by Swapping\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given with an array containing only 1s and 0s.You can select two index \u2018a\u2019 and \u2018b\u2019 such that a<b in which you will change \u20181 to 0\u2019 and \u20180 to 1\u2019,in order to get maximum no of 1s in result.",
+ "input_spec": "You are given with array of 1\u2019s and 0\u2019s",
+ "output_spec": "Print the two index \u2018a\u2019 and \u2018b\u2018.Print -1 if we don\u2019t require a and b",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1111100",
+   "output": "6 7"
+  }
+ ],
+ "raw": ""
+}

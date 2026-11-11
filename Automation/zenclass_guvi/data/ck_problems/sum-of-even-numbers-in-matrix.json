@@ -1,0 +1,17 @@
+{
+ "title": "1018. Sum of Even Numbers in Matrix",
+ "slug": "sum-of-even-numbers-in-matrix",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1018. Sum of Even Numbers in Matrix\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a numbers n and m followed by n*m numbers in matrix format print the sum of the elements in the matrix the element which is even number",
+ "input_spec": "You will given a number n and m followed by n*m numbers in matrix format .\n0<n<100\n0,m<100",
+ "output_spec": "print the sum of the elements in the matrix the element which is even number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "20"
+  }
+ ],
+ "raw": ""
+}

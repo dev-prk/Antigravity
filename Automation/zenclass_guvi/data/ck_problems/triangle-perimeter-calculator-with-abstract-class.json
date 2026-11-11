@@ -1,0 +1,17 @@
+{
+ "title": "1651. Triangle Perimeter Calculator with Abstract Class",
+ "slug": "triangle-perimeter-calculator-with-abstract-class",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1651. Triangle Perimeter Calculator with Abstract Class\n\n50\n\nMedium\n\nTriangle Perimeter Calculator with Abstract Class\n\nProblem Statement:\nWrite a program to calculate the perimeter of a triangle using an abstract class Shape with abstract method perimeter(). Implement a Triangle class that overrides the method.\n\nDescription:\nDemonstrates abstract classes, method overriding, and runtime polymorphism for a triangle.\n\nInput Format:\n\ntriangle side1 side2 side3\n\nOutput Format:\n\nPerimeter: <value>",
+ "input_spec": "triangle side1 side2 side3",
+ "output_spec": "Perimeter: <value>",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "triangle 3 4 5",
+   "output": "Perimeter: 12"
+  }
+ ],
+ "raw": ""
+}

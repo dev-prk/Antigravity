@@ -1,0 +1,17 @@
+{
+ "title": "260. LCA in BST from ordered input",
+ "slug": "lca-in-bst-from-ordered-input",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n260. LCA in BST from ordered input\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N- (number of nodes) followed by N numbers. Construct a BST with the inputs in the same order. Now 2 numbers U and V are given. Find the LCA( Lowest Common Anscestor) of U and V.",
+ "input_spec": "70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N- (number of nodes) followed by N numbers. Construct a BST with the inputs in the same order. Now 2 numbers U and V are given. Find the LCA( Lowest Common Anscestor) of U and V.\n\nInput Description:\nInput Size : 1 <= N <= 10000",
+ "output_spec": "The Lowest Common Ancestor (LCA) of U and V.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n4 5",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

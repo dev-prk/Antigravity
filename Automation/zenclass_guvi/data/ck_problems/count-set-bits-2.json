@@ -1,0 +1,17 @@
+{
+ "title": "796. Count Set Bits-2",
+ "slug": "count-set-bits-2",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n796. Count Set Bits-2\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a Program to Count Set Bits in a Number",
+ "input_spec": "Input contains a integer",
+ "output_spec": "Count Set Bits in a number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

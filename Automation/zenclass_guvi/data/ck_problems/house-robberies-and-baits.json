@@ -1,0 +1,17 @@
+{
+ "title": "411. House Robberies and Baits",
+ "slug": "house-robberies-and-baits",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n411. House Robberies and Baits\n\n70\n\nHard  Topics\n\nProblem Statement:\nJack lives in the tri state area which is notorious for robberies. So as a responsible citizen of his community he has set up N baits to catch the robbers . The bait is in the form of a house containing a certain amount of money. His local community however do not have consistent funds and do not regularly supply him with money for the baits. Also , they are scared that the robbers will steal their money so they want their money back sometimes. Initially all the houses have some amount of money which will be given . Three types of events can happen :1 x y z : The community gives Z amount of money for each house from house x to house y to set up baits2 x y z: The community takes away Z amount of money from each house from house x to house y as they are scared they will lose their money. If amount of money in each house is less than Z all the money is taken away from that house and it'll become 0.3 x y : Jack wants to know what is the sum of the money from house x to house y. These three scenarios can happen multiple times, one after the other in any fashion.(For example : the order of events could be event1,event2,event1,event3 etc.)Help Jack perform the above operations and report the required answer successfully",
+ "input_spec": "The first line contains a single integer N :the number of houses he sets up as bait\nThe second line contains N integers denoting the initial money in all the houses\nThe third line contains a single integer E : the number of events that can happen\nThe next E lines can be either one of the three events as described in the problem statement:\n1 x y z (OR) 2 x y z (OR) 3 x y",
+ "output_spec": "Output a single line containing the sum of money in all houses from house x to house y for each event of type 3",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n1 1 2 1\n2 1 2 1\n3 1 2",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

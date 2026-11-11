@@ -1,0 +1,17 @@
+{
+ "title": "2131. Sum of All Elements in a 2D Matrix",
+ "slug": "sum-of-all-elements-in-a-2d-matrix",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2131. Sum of All Elements in a 2D Matrix\n\n40\n\nMedium\n\nProblem Statement\nRead a matrix of size M x N and print the sum of all its elements, using nested loops.\n\nDescription\nRead two integers M and N representing the number of rows and columns. Read M x N integers into a two-dimensional array using nested loops. Use another pair of nested loops to add up every element of the matrix into a running sum, and print the final sum.",
+ "input_spec": "Two integers M and N, followed by M x N integers given row by row.",
+ "output_spec": "Print the sum of all elements in the matrix.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 1 2 3 4 5 6",
+   "output": "21"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1541. Single Source Shortest Path (SSSP)",
+ "slug": "single-source-shortest-path-sssp",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1541. Single Source Shortest Path (SSSP)\n\n80\n\nHard\n\nShortest Path in Weighted Directed Graph\n\nProblem Statement:\nGiven a weighted directed graph with N nodes and M edges, and a source node S, find the shortest distance from the source node S to every other node in the graph. If a node is unreachable from the source, output -1 for that node. The graph does not contain negative weight edges.",
+ "input_spec": "- The first line contains three integers N, M, and S \u2014 the number of nodes, the number of edges, and the source node (1-based indexing).\n- The next M lines each contain three integers u, v, w \u2014 representing a directed edge from node u to node v with weight w.",
+ "output_spec": "1 for that node. The graph does not contain negative weight edges.\n\nInput Description:\n- The first line contains three integers N, M, and S \u2014 the number of nodes, the number of edges, and the source node (1-based indexing).\n- The next M lines each contain three integers u, v, w \u2014 representing a directed edge from node u to node v with weight w.\n\nOutput Description:\n- Output N space-separated integers, where the i-th integer is the shortest distance from S to node i (1-based). If a node is unreachable, output -1 for that node.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 6 1\n1 2 2\n1 3 4\n2 3 1\n2 4 7\n3 5 3\n4 5 1",
+   "output": "0 2 3 9 6"
+  }
+ ],
+ "raw": ""
+}

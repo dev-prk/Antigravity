@@ -1,0 +1,17 @@
+{
+ "title": "1633. Linked List, Cycle Detection",
+ "slug": "linked-list-cycle-detection",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1633. Linked List, Cycle Detection\n\n70\n\nHard\n\nProblem Statement:\nDetect a Cycle in a Linked List\n\nCheck if a singly linked list contains a cycle.\n\nDescription\n\nThe program should take n integers as input to create a singly linked list.\n\nDetect if the list contains a loop (cycle).\n\nIf a cycle exists, print \"Cycle Found\". Otherwise, print \"No Cycle\".\n\nUse Floyd\u2019s cycle detection algorithm (Tortoise and Hare) or equivalent.\n\nInput Format\n\nFirst line: Integer n (number of elements in the linked list)\n\nNext line: n integers representing the linked list elements\n\n(For testing, the cycle may be created manually in code, or a position index can be specified to link the last node to a previous node.)\n\nOutput Format\n\n\"Cycle Found\" if a cycle exists\n\n\"No Cycle\" if there is no cycle",
+ "input_spec": "to create a singly linked list.\n\nDetect if the list contains a loop (cycle).\n\nIf a cycle exists, print \"Cycle Found\". Otherwise, print \"No Cycle\".\n\nUse Floyd\u2019s cycle detection algorithm (Tortoise and Hare) or equivalent.\n\nInput Format\n\nFirst line: Integer n (number of elements in the linked list)\n\nNext line: n integers representing the linked list elements\n\n(For testing, the cycle may be created manually in code, or a position index can be specified to link the last node to a previous node.)",
+ "output_spec": "\"Cycle Found\" if a cycle exists\n\n\"No Cycle\" if there is no cycle",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n-1",
+   "output": "No Cycle"
+  }
+ ],
+ "raw": ""
+}

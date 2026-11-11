@@ -1,0 +1,17 @@
+{
+ "title": "2101. Understanding Macro Expansion Pitfalls with Precedence",
+ "slug": "understanding-macro-expansion-pitfalls-with-precedence",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2101. Understanding Macro Expansion Pitfalls with Precedence\n\n90\n\nHard\n\nProblem Statement\nUse a function-like macro to compute the square of an expression, and observe how macro substitution combined with operator precedence can produce an unexpected result.\nDescription\nDefine a function-like macro SQUARE(x) that expands to x * x (without internal parentheses). Read two integers a and b. Compute result = SQUARE(a + b) and print it, then separately compute expected = (a + b) * (a + b) and print it, so the effect of literal macro substitution can be compared against the mathematically correct value.",
+ "input_spec": "Two integers a and b, separated by a space.",
+ "output_spec": "Print the value produced by SQUARE(a + b), then the correctly parenthesized expected value.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3",
+   "output": "11\n25"
+  }
+ ],
+ "raw": ""
+}

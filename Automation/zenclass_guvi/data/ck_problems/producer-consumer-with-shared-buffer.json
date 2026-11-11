@@ -1,0 +1,17 @@
+{
+ "title": "1766. Producer-Consumer with Shared Buffer",
+ "slug": "producer-consumer-with-shared-buffer",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1766. Producer-Consumer with Shared Buffer\n\n60\n\nMedium\n\nProducer-Consumer with Shared Buffer\n\nProblem Statement:\nImplement the Producer-Consumer problem using a shared queue. Multiple producers insert items, and multiple consumers remove items. Use synchronization (wait/notify).\n\nDescription:\n\nShared buffer with fixed size.\n\nProducers add items if space available.\n\nConsumers remove items if available.\n\nUse synchronized, wait(), and notifyAll().\n\nInput Format:\n\nFirst line: Buffer size\n\nSecond line: Number of producer actions\n\nThird line: Number of consumer actions\n\nOutput Format:\n\nShow items produced and consumed in order.",
+ "input_spec": "First line: Buffer size\n\nSecond line: Number of producer actions\n\nThird line: Number of consumer actions",
+ "output_spec": "Show items produced and consumed in order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n5\n5",
+   "output": "Produced: 1\nConsumed: 1\nProduced: 2\nConsumed: 2\nProduced: 3\nProduced: 4\nConsumed: 3\nConsumed: 4"
+  }
+ ],
+ "raw": ""
+}

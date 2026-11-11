@@ -1,0 +1,17 @@
+{
+ "title": "388. Subset-Superset Array Check",
+ "slug": "subset-superset-array-check",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n388. Subset-Superset Array Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven three integer arrays of sizes P, Q and R, determine if there is a subset-superset relation between any two of the arrays.",
+ "input_spec": "The first line contains 3 space separated integers P, Q and R\nThe next three lines contain P, Q and R space separated integers respectively, denoting the three arrays.",
+ "output_spec": "Print YES if there is a subset-superset relationship between any two of the array. Print NO otherwise.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 4\n4 5\n6 5 4\n7 8 4 4",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

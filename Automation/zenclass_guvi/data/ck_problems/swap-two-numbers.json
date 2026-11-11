@@ -1,0 +1,17 @@
+{
+ "title": "1745. Swap Two Numbers",
+ "slug": "swap-two-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1745. Swap Two Numbers\n\n40\n\nMedium\n\n#Swap Two Numbers\n\nProblem Statement:\nUsing pointers, swap two integers.",
+ "input_spec": "Two integers A and B.",
+ "output_spec": "Print swapped numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 10",
+   "output": "10 5"
+  }
+ ],
+ "raw": ""
+}

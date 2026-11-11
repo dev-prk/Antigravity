@@ -1,0 +1,17 @@
+{
+ "title": "1670. Java, Generics, Collections, HashMap, Frequency Counter",
+ "slug": "java-generics-collections-hashmap-frequency-counter",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1670. Java, Generics, Collections, HashMap, Frequency Counter\n\n50\n\nMedium\n\nFrequency Counter\n\nProblem Statement:\nWrite a program with a generic method to count the frequency of elements in a list using a HashMap.\n\nDescription:\n\nThe program should accept n elements of any type (string or integer).\n\nImplement a method countFrequency(List<T> list) to count and print the frequency of each element.\n\nUse a HashMap<T, Integer> to store frequency counts.\n\nInput Format:\n\nFirst line: integer n \u2192 number of elements\n\nSecond line: n space-separated elements\n\nOutput Format:\n\nEach unique element with its frequency",
+ "input_spec": "First line: integer n \u2192 number of elements\n\nSecond line: n space-separated elements",
+ "output_spec": "Each unique element with its frequency",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\napple mango apple orange mango apple grape mango",
+   "output": "apple -> 3\nmango -> 3\norange -> 1\ngrape -> 1"
+  }
+ ],
+ "raw": ""
+}

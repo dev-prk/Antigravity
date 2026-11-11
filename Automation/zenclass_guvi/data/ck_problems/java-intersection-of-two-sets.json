@@ -1,0 +1,17 @@
+{
+ "title": "1663. Java,Intersection of Two Sets",
+ "slug": "java-intersection-of-two-sets",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1663. Java,Intersection of Two Sets\n\n50\n\nMedium\n\nIntersection of Two Sets\nProblem Statement:\nFind the intersection of two sets of integers.\n\nDescription:\nYou need to read two sets of integers from the user and print their intersection. Use Java's Set interface and its operations to achieve this.\n\nInput Format:\n\nThe first line contains an integer,\nn (1 \u2264 n \u2264 100), denoting the number of elements in the first set.\nThe second line contains\nn space-separated integers.\nThe third line contains an integer,\nm (1 \u2264 m \u2264 100), denoting the number of elements in the second set.\nThe fourth line contains\nm space-separated integers.\nOutput Format:\n\nPrint the elements in the intersection of the two sets, one per line. If there are no common elements, print \"No common elements.\"",
+ "input_spec": "The first line contains an integer,\nn (1 \u2264 n \u2264 100), denoting the number of elements in the first set.\nThe second line contains\nn space-separated integers.\nThe third line contains an integer,\nm (1 \u2264 m \u2264 100), denoting the number of elements in the second set.\nThe fourth line contains\nm space-separated integers.",
+ "output_spec": "Print the elements in the intersection of the two sets, one per line. If there are no common elements, print \"No common elements.\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n3\n3 4 5",
+   "output": "3\n4"
+  }
+ ],
+ "raw": ""
+}

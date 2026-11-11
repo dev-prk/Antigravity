@@ -1,0 +1,17 @@
+{
+ "title": "466. Minimum Jumps to Array End",
+ "slug": "minimum-jumps-to-array-end",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n466. Minimum Jumps to Array End\n\n70\n\nHard  Topics\n\nProblem Statement:\nJack becomes adventurous suddenly and decides to play the game of \"array\" jumping .In this game he will be given an arrray A of N integers. When Jack is at a position i in the Array A (1<=i<=N , we use 1-based indexing here) , he can jump to any position A[i] - this is counted as one jump.Find the minimum number of moves that is required for Jack to reach the end of the array- index N from the index 1.",
+ "input_spec": "The first line contains a single integer N denoting the number of positions in the arrayThe next line contains N integers as described in the problem statement",
+ "output_spec": "Output a single integer : the minimum number of jumps required to reach the end of the array",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n3 3 10 10 6 3 4 4 1 7",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

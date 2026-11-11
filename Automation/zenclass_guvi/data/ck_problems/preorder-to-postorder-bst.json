@@ -1,0 +1,17 @@
+{
+ "title": "640. Preorder to Postorder BST",
+ "slug": "preorder-to-postorder-bst",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n640. Preorder to Postorder BST\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given a preorder traversal of Binary search tree inform of array. Your task is to print the postorder traversal of that tree.",
+ "input_spec": "You are given with an integer n denoting the number of elements in array",
+ "output_spec": "Print the post order traversal of bst",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n40 30 35 80 100",
+   "output": "35 30 100 80 40"
+  }
+ ],
+ "raw": ""
+}

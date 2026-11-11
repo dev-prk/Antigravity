@@ -1,0 +1,17 @@
+{
+ "title": "690. Lowest Number After Removal",
+ "slug": "lowest-number-after-removal",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n690. Lowest Number After Removal\n\n70\n\nHard  Topics\n\nProblem Statement:\nYou are given a number \u201cN\u201d and string \u2018S\u2019 of digits denoting a positive integer [ N < sizeof(S) ] , build the lowest number possible by removing N digits from S, without changing their order.",
+ "input_spec": "The first line contains a positive integer N.The second line contains a string of digits denoting a positive integer S.",
+ "output_spec": "Print the lowest number that is formed",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1234567",
+   "output": "123"
+  }
+ ],
+ "raw": ""
+}

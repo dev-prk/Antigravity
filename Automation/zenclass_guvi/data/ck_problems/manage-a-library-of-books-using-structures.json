@@ -1,0 +1,17 @@
+{
+ "title": "1755. Manage a Library of Books using Structures",
+ "slug": "manage-a-library-of-books-using-structures",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1755. Manage a Library of Books using Structures\n\n40\n\nMedium\n\nManage a Library of Books using Structures\nProblem Statement:\nYou are developing a system to manage a library of books. Each book has three attributes: title, author, and year of publication. Your task is to create a structure to define a book, store information for n books, and then print the details of all the books in a formatted way.\n\nYou need to declare and define a structure Book and dynamically allocate memory to store details of multiple books.\n\nInput:\nThe first line contains an integer n (1 \u2264 n \u2264 100), representing the number of books.\nThe next n lines contain a string title, a string author, and an integer year separated by spaces, which represent the title, author, and year of publication for each book.\n\nOutput:\nPrint all the books in the format: Title: , Author: , Year: for each book.",
+ "input_spec": "The first line contains an integer n (1 \u2264 n \u2264 100), representing the number of books.\nThe next n lines contain a string title, a string author, and an integer year separated by spaces, which represent the title, author, and year of publication for each book.",
+ "output_spec": "Print all the books in the format: Title: , Author: , Year: for each book.",
+ "constraints": "Each string (title or author) will not exceed 100 characters.\nThe year will be between 1800 and 2024.\nYou must use structures to manage the book information.\nDynamically allocate memory to store the list of books.",
+ "samples": [
+  {
+   "input": "The first line contains an integer n (1 \u2264 n \u2264 100), representing the number of books.\nThe next n lines contain a string title, a string author, and an integer year separated by spaces, which represent the title, author, and year of publication for each book.",
+   "output": "Print all the books in the format: Title: , Author: , Year: for each book."
+  }
+ ],
+ "raw": ""
+}

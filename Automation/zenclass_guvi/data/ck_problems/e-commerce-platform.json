@@ -1,0 +1,21 @@
+{
+ "title": "1600. e-commerce platform",
+ "slug": "e-commerce-platform",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1600. e-commerce platform\n\n50\n\nMedium\n\nProblem Statement\nYou are designing a system for an e-commerce platform where you need to calculate the total cost of items in a shopping cart with multiple discount tiers. Each discount tier provides a different discount rate depending on the total number of items in the cart. You will use recursion to calculate the total cost with discounts applied.\n\nDiscount Tiers:\n\nTier 1: 5% discount for 1 to 5 items.\nTier 2: 10% discount for 6 to 10 items.\nTier 3: 15% discount for more than 10 items.\nYour task is to:\n\nCalculate the total cost of items before applying the discount.\nApply the discount based on the total number of items.\nReturn the final cost after applying the specific amount of discount.\n\nFunctions Required\ncalculateTotalCost(int items[], int n): Recursively calculates the total cost of the items in the cart.\napplyDiscount(float totalCost, int itemCount): Determines the amount of discount basically based on the number of items and then calculates the final price after applying the discount amount.\n\nInput\nThe first line contains an integer N representing the number of items in the cart.\nThe second line contains N integers where each integer represents the price of an item.\n\nOutput\nOutput the final cost of the items in the cart after applying the discount, rounded to two decimal places.",
+ "input_spec": "The first line contains an integer N representing the number of items in the cart.\nThe second line contains N integers where each integer represents the price of an item.",
+ "output_spec": "Output the final cost of the items in the cart after applying the discount, rounded to two decimal places.",
+ "constraints": "1 \u2264 N \u2264 100\n0 < items[i] \u2264 500\n\nExample",
+ "samples": [
+  {
+   "input": "The first line contains an integer N representing the number of items in the cart.\nThe second line contains N integers where each integer represents the price of an item.",
+   "output": "Output the final cost of the items in the cart after applying the discount, rounded to two decimal places."
+  },
+  {
+   "input": "4\n30 20 50 40",
+   "output": "124.50"
+  }
+ ],
+ "raw": ""
+}

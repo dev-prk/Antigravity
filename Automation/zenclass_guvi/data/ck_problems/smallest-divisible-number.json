@@ -1,0 +1,17 @@
+{
+ "title": "151. Smallest Divisible Number",
+ "slug": "smallest-divisible-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n151. Smallest Divisible Number\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N integers, find the smallest number divisible by all the elements of the array.",
+ "input_spec": "Input Size : N <= 100000",
+ "output_spec": "The smallest number divisible by all the elements of the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "60"
+  }
+ ],
+ "raw": ""
+}

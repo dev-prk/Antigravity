@@ -1,0 +1,17 @@
+{
+ "title": "785. Most Frequent Integer",
+ "slug": "most-frequent-integer",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n785. Most Frequent Integer\n\n80\n\nHard  Topics\n\nProblem Statement:\nPrint the most repeating term from the list of numbers",
+ "input_spec": "'n' spaced integers.",
+ "output_spec": "Single number 'X'",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2 3 4 5 6 2 2 2 1 1 1 1 1",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

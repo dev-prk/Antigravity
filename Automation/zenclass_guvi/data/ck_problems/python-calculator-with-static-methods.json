@@ -1,0 +1,17 @@
+{
+ "title": "1099. Python Calculator with Static Methods",
+ "slug": "python-calculator-with-static-methods",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1099. Python Calculator with Static Methods\n\n50\n\nMedium\n\nProblem Statement:\nYou are implementing a simple calculator. Write a Python class  Calculator  with static methods  add ,  subtract ,  multiply , and  divide  that perform the respective operations.",
+ "input_spec": "-  num1 : a float, the first number.\n-  num2 : a float, the second number.",
+ "output_spec": "- The function should return the result of the operation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Calculator.add(5, 3)",
+   "output": "8"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1103. Calculating Total Score with Reduce",
+ "slug": "calculating-total-score-with-reduce",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1103. Calculating Total Score with Reduce\n\n50\n\nMedium\n\nProblem Statement:\nYou are a college professor and you have the scores of your students in a list. You want to find the total score of all students. Write a Python function  total_score(scores)  that takes a list of scores and returns the total score. Use the  reduce  function to calculate the total score.",
+ "input_spec": "scores : a list of integers representing the scores of the students.",
+ "output_spec": "The function should return an integer representing the total score of all students.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "[85, 90, 78, 92]",
+   "output": "345"
+  }
+ ],
+ "raw": ""
+}

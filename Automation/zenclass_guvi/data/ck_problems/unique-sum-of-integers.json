@@ -1,0 +1,17 @@
+{
+ "title": "1151. Unique Sum of Integers",
+ "slug": "unique-sum-of-integers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1151. Unique Sum of Integers\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program to calculate the unique sum of integer elements in a list. You need to use Integer wrapper class methods to achieve this. The unique sum is defined as the sum of all distinct integers in the list.",
+ "input_spec": "The first line contains an integer N, the number of elements in the list. The second line contains N space-separated integers.",
+ "output_spec": "Print the unique sum of the integers in the list.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 2 3 4",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

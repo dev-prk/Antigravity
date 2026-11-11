@@ -1,0 +1,17 @@
+{
+ "title": "2206. Finding Row Sums and Column Sums of a Matrix",
+ "slug": "finding-row-sums-and-column-sums-of-a-matrix",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2206. Finding Row Sums and Column Sums of a Matrix\n\n80\n\nHard\n\nProblem Statement\nRead a matrix of size M x N and print the sum of each row and the sum of each column, using nested loops and two helper arrays.\n\nDescription\nRead two integers M and N representing the number of rows and columns, and then read M x N integers into a two-dimensional array. Use two one-dimensional arrays, rowSum and colSum, to hold the sum of every row and every column, and set all their values to 0 before using them. Use nested loops to add each element matrix[i][j] to both rowSum[i] and colSum[j]. Print the M row sums separated by spaces on the first line, and the N column sums separated by spaces on the second line.",
+ "input_spec": "Two integers M and N, followed by M x N integers given row by row.",
+ "output_spec": "Print the row sums on the first line and the column sums on the second line, each separated by spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 1 2 3 4 5 6",
+   "output": "6 15\n5 7 9"
+  }
+ ],
+ "raw": ""
+}

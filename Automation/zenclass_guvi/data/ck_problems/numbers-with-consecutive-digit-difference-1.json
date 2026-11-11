@@ -1,0 +1,17 @@
+{
+ "title": "706. Numbers with Consecutive Digit Difference 1",
+ "slug": "numbers-with-consecutive-digit-difference-1",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n706. Numbers with Consecutive Digit Difference 1\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given a number 'n'. Your task is to tell all the numbers ranging from 1-n with the fact that absolute diff between consecutive digits is 1.",
+ "input_spec": "You are given a number 'n'.",
+ "output_spec": "Print all the numbers that satisfy this condition and '-1' if no number is present.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20",
+   "output": "10 12"
+  }
+ ],
+ "raw": ""
+}

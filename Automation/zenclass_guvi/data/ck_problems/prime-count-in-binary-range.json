@@ -1,0 +1,17 @@
+{
+ "title": "257. Prime Count in Binary Range",
+ "slug": "prime-count-in-binary-range",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n257. Prime Count in Binary Range\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven two numbers a and b, write a program to print the count of numbers in the range [a,b] in which there are prime number of 1's in their binary representation.",
+ "input_spec": "The input consists of two integers, a and b, where 1 <= A <= B <= 100000.",
+ "output_spec": "The output is the count of numbers in the given range [a,b] that have a prime number of 1's in their binary representation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 3",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

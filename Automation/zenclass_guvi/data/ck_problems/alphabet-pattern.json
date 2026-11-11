@@ -1,0 +1,17 @@
+{
+ "title": "882. Alphabet Pattern",
+ "slug": "alphabet-pattern",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n882. Alphabet Pattern\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGenerate the aplhabet pattern using nested loops.",
+ "input_spec": "Input consists of a string S.where length of the string (S) Where 2<=R<=100",
+ "output_spec": "Print the alphabet pattern from the given input string S.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abcdef",
+   "output": "abcdef\nb    e\nc    d\nd    c\ne    b\nfedcba"
+  }
+ ],
+ "raw": ""
+}

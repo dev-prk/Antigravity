@@ -1,0 +1,17 @@
+{
+ "title": "312. Counting Triplet Pairs",
+ "slug": "counting-triplet-pairs",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n312. Counting Triplet Pairs\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a limit N followed by N numbers, find the number of pairs such ai + aj = ak for all i < j < k.",
+ "input_spec": "The input consists of an integer N representing the limit, followed by N numbers. The size of N is between 3 and 1000 (inclusive).",
+ "output_spec": "The output is the number of pairs (ai, aj, ak) such that ai + aj = ak for all i < j < k.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 4 2 3 5",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

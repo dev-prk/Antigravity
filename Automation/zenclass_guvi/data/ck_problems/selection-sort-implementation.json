@@ -1,0 +1,17 @@
+{
+ "title": "855. Selection Sort Implementation",
+ "slug": "selection-sort-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n855. Selection Sort Implementation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nSelection sort  is an algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.You have to sort the given array of integer value in selection sort manner.",
+ "input_spec": "Given an integer 'n' which indicates the length of array and next line followed by space separated \u2018n\u2019 integer values.Where 1",
+ "output_spec": "Print step by step process of applying selection sort(print all the iteration of selection sorting).where 1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n20 120 10 1050 2",
+   "output": "2 120 10 1050 20\n2 10 120 1050 20\n2 10 20 1050 120\n2 10 20 120 1050\n2 10 20 120 1050"
+  }
+ ],
+ "raw": ""
+}

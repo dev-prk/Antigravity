@@ -1,0 +1,17 @@
+{
+ "title": "397. Building Demolition Queries",
+ "slug": "building-demolition-queries",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n397. Building Demolition Queries\n\n70\n\nHard  Topics\n\nProblem Statement:\nCarlos is a building demolisher. He has been employed by \"Competitive Programmers Inc\" to destroy their old office so they can build a new office space. However being programmers they have built their office in a modular way having N separate offices in a line instead of having all the offices in a single building.Carlos however is lazy and only demolishes a building occasionally.\nThe competitive programmers also occasionally check on his work . They want to know the maximum height of a building from buildings number L to R.\nInitially all the buildings have the same height of X meters\nTwo types of events can occur:\n1 x y : carlos demolishes building x by y meters\n2 x y : CP inc want to know the maximum height of buildings from building x to building.Report it\nHelp carlos answer the questions and do the events accordingly",
+ "input_spec": "The first line contains a single integer N X Q denoting the number of buildings and the initial heights of all buildings and the number of events\nThe next Q lines can be either of the following:\n1 x y or 2 x y as explained above",
+ "output_spec": "For each event of type 2 report the maximum height of buildings from building 'x' to building 'y' in a single line",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 3 4\n1 1 1\n2 1 4",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

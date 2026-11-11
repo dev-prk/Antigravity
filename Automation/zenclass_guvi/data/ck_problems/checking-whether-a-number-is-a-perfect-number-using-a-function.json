@@ -1,0 +1,17 @@
+{
+ "title": "2157. Checking Whether a Number Is a Perfect Number Using a Function",
+ "slug": "checking-whether-a-number-is-a-perfect-number-using-a-function",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2157. Checking Whether a Number Is a Perfect Number Using a Function\n\n90\n\nHard\n\nProblem Statement\nRead an integer and determine whether it is a perfect number, using a function that adds up its divisors.\n\nDescription\nA perfect number is a number that is equal to the sum of all its divisors excluding the number itself. For example, the divisors of 28 (excluding 28) are 1, 2, 4, 7 and 14, and their sum is 28. Read an integer num from input. Write a function isPerfect that uses a for loop to add up all divisors of num smaller than num, and returns 1 if the sum equals num, otherwise 0. In main(), print \"Perfect\" or \"Not Perfect\" based on the returned value.",
+ "input_spec": ". Write a function isPerfect that uses a for loop to add up all divisors of num smaller than num, and returns 1 if the sum equals num, otherwise 0. In main(), print \"Perfect\" or \"Not Perfect\" based on the returned value.\n\nInput Description\nA single positive integer num.",
+ "output_spec": "Print \"Perfect\" if num is a perfect number, otherwise print \"Not Perfect\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "28",
+   "output": "Perfect"
+  }
+ ],
+ "raw": ""
+}

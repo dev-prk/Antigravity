@@ -1,0 +1,17 @@
+{
+ "title": "1760. Bank Account Management System",
+ "slug": "bank-account-management-system",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1760. Bank Account Management System\n\n90\n\nHard\n\nBank Account Management System\n\nProblem Statement:\nDesign a program to manage bank accounts using structures and unions. The program should handle two types of accounts: Savings Account and Checking Account. Each account type has different attributes. The program should calculate and display the account balance based on the type of account.\n\nDescription:\nDefine a union AccountDetails that contains:\n\nsavings structure with:\n\nbalance (float) for the current balance.\ninterestRate (float) for the annual interest rate.\nchecking structure with:\n\nbalance (float) for the current balance.\noverdraftLimit (float) for the overdraft limit.\nDefine a structure BankAccount that includes:\n\nA string accountHolderName for the name of the account holder.\nAn integer accountType (1 for Savings Account, 2 for Checking Account).\nAn AccountDetails union.\nThe program should:\n\nFor Savings Account: Display the balance and interest rate.\nFor Checking Account: Display the balance and overdraft limit.\nInput Format:\nThe first line contains the name of the account holder.\nThe second line contains an integer representing the account type (1 for Savings Account, 2 for Checking Account).\nIf the account type is 1, the next line contains two floats: balance and interest rate.\nIf the account type is 2, the next line contains two floats: balance and overdraft limit.\nOutput Format:\nDisplay the account details based on the account type.",
+ "input_spec": "The first line contains the name of the account holder.\nThe second line contains an integer representing the account type (1 for Savings Account, 2 for Checking Account).\nIf the account type is 1, the next line contains two floats: balance and interest rate.\nIf the account type is 2, the next line contains two floats: balance and overdraft limit.",
+ "output_spec": "Display the account details based on the account type.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Alice Johnson\n1\n1500.75 2.5",
+   "output": "Savings Account Balance: 1500.75\nAnnual Interest Rate: 2.50%"
+  }
+ ],
+ "raw": ""
+}

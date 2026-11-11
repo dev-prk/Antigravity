@@ -1,0 +1,17 @@
+{
+ "title": "633. Max Length of Alternating String",
+ "slug": "max-length-of-alternating-string",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n633. Max Length of Alternating String\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given with a string 's'. Print the largest possible length of the string that contains two characters that are repeated alternatively, by removing any number of characters from the input string.Note: If the a character is removed from the string then all the occurence of the characters in the string should be removed.",
+ "input_spec": "string.Note: If the a character is removed from the string then all the occurence of the characters in the string should be removed.\n\nInput Description:\nYou are given a string \u2018s\u2019",
+ "output_spec": "Print length of string formed or 0",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "beabeefeab",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

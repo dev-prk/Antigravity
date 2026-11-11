@@ -1,0 +1,17 @@
+{
+ "title": "860. Heap Sort Implementation",
+ "slug": "heap-sort-implementation",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n860. Heap Sort Implementation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nHeaps can be used in sorting an array. In max-heaps, maximum element will always be at the root. Heap Sort uses this property of heap to sort the array.\nConsider an array A which is to be sorted using Heap Sort.\n1. Step 1: Initially build a max heap of elements in A.\n2. Step 2: The root element, that is A[1], will contain maximum element of A. After that, swap this element with the last element of A and heapify the max heap excluding the last element which is already in its correct position and then decrease the length of heap by one.\nRepeat the step 2, until all the elements are in their correct position.\nYou have to sort the given array of integer values in heap sort manner.",
+ "input_spec": "Given an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1",
+ "output_spec": "Print the resultant sorted array by using heap sort method.where 1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n4 3 7 1 8 5",
+   "output": "1 3 4 5 7 8"
+  }
+ ],
+ "raw": ""
+}

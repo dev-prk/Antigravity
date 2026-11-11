@@ -1,0 +1,17 @@
+{
+ "title": "180. Hybrid Sort of an Array",
+ "slug": "hybrid-sort-of-an-array",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n180. Hybrid Sort of an Array\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven an array N, sort it in ascending order till it reaches kth elements and after that sort it in descending order.",
+ "input_spec": "The input consists of two integers N and K on the first line, followed by N integers representing the array elements on the second line. N <= 100000.",
+ "output_spec": "The output should be the modified array after applying the specified sorting logic.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2\n4 3 1 2 4",
+   "output": "3 4 4 2 1"
+  }
+ ],
+ "raw": ""
+}

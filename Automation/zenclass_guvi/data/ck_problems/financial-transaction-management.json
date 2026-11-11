@@ -1,0 +1,17 @@
+{
+ "title": "1217. Financial Transaction Management",
+ "slug": "financial-transaction-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1217. Financial Transaction Management\n\n50\n\nMedium\n\nProblem Statement:\nYou are tasked with creating a simple financial application that can manage and display data for different types of transactions. The application should be able to handle three types of transactions: Deposit, Withdrawal, and Transfer. Each transaction type has different attributes, and you will use a union to store the transaction data efficiently.\n\nTransaction Types and Attributes: Deposit: Amount (float) Account Number (integer) Withdrawal: Amount (float) Account Number (integer) ATM Location (string) Transfer: Amount (float) From Account Number (integer) To Account Number (integer)\n\nTask  Write a program that takes user input to fill in the transaction details and then prints out the transaction information.",
+ "input_spec": "to fill in the transaction details and then prints out the transaction information.\n\nInput Description:\nThis first line will contain a character representing the transaction type: D for Deposit W for Withdrawal T for Transfer The subsequent lines contain the necessary transaction details based on the transaction type: For Deposit: A floating-point number representing the amount. An integer for the account number. For Withdrawal: A floating-point number representing the amount. An integer for the account number. A string for the ATM location. For Transfer: A floating-point number representing the amount. An integer for the from account number. An integer for the to account number.",
+ "output_spec": "The program should output the transaction details formatted appropriately, including the transaction type, amount, account numbers, and other relevant details.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "D\n5000.00\n12345",
+   "output": "Transaction Type: Deposit\nAmount: 5000.00\nAccount Number: 12345"
+  }
+ ],
+ "raw": ""
+}

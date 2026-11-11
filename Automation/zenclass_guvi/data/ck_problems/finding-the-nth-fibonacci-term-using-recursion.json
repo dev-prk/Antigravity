@@ -1,0 +1,17 @@
+{
+ "title": "2205. Finding the Nth Fibonacci Term Using Recursion",
+ "slug": "finding-the-nth-fibonacci-term-using-recursion",
+ "difficulty": "Hard",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2205. Finding the Nth Fibonacci Term Using Recursion\n\n70\n\nHard\n\nProblem Statement\nRead an integer n and print the nth term of the Fibonacci sequence using a recursive function.\n\nDescription\nThe Fibonacci sequence is 0, 1, 1, 2, 3, 5, 8, ... where the 1st term is 0, the 2nd term is 1, and every later term is the sum of the two terms before it. Read an integer n from input. Write a recursive function fibonacci that takes an integer parameter. If n is 1, it returns 0, and if n is 2, it returns 1 (these are the base cases). Otherwise, it returns the sum of fibonacci(n - 1) and fibonacci(n - 2). Call the function from main() and print the result. No loop should be used.",
+ "input_spec": ". Write a recursive function fibonacci that takes an integer parameter. If n is 1, it returns 0, and if n is 2, it returns 1 (these are the base cases). Otherwise, it returns the sum of fibonacci(n - 1) and fibonacci(n - 2). Call the function from main() and print the result. No loop should be used.\n\nInput Description\nA single integer n (1 <= n <= 20).",
+ "output_spec": "Print the nth term of the Fibonacci sequence.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6",
+   "output": "5"
+  }
+ ],
+ "raw": ""
+}

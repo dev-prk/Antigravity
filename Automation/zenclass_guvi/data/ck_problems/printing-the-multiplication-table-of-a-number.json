@@ -1,0 +1,17 @@
+{
+ "title": "2120. Printing the Multiplication Table of a Number",
+ "slug": "printing-the-multiplication-table-of-a-number",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2120. Printing the Multiplication Table of a Number\n\n65\n\nProblem Statement\nRead an integer and print its multiplication table from 1 to 10 using a for loop.\n\nDescription\nRead an integer num from input. Use a for loop with a counter running from 1 to 10. On each iteration, print num, the counter, and their product in the format \"num x counter = product\".",
+ "input_spec": ". Use a for loop with a counter running from 1 to 10. On each iteration, print num, the counter, and their product in the format \"num x counter = product\".\n\nInput Description\nA single integer num.",
+ "output_spec": "Print 10 lines showing num multiplied by each value from 1 to 10.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "5 x 1 = 5\n5 x 2 = 10\n5 x 3 = 15\n5 x 4 = 20\n5 x 5 = 25\n5 x 6 = 30\n5 x 7 = 35\n5 x 8 = 40\n5 x 9 = 45\n5 x 10 = 50"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,17 @@
+{
+ "title": "1102. Student Score Association with Zip",
+ "slug": "student-score-association-with-zip",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1102. Student Score Association with Zip\n\n50\n\nMedium\n\nProblem Statement:\nYou are a college professor and you have two lists: one with the names of your students and another with their corresponding scores. You want to associate each student with their score. Write a Python function  associate_students(names, scores)  that takes a list of names and a list of scores and returns a list of tuples where each tuple contains a name and the corresponding score. Use the  zip  function to associate the names with the scores.",
+ "input_spec": "-  names : a list of strings representing the names of the students.\n-  scores : a list of integers representing the scores of the students.",
+ "output_spec": "- The function should return a list of tuples where each tuple contains a name and the corresponding score.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "['Alice', 'Bob', 'Charlie', 'Dave'], [85, 90, 78, 92]",
+   "output": "[('Alice', 85), ('Bob', 90), ('Charlie', 78), ('Dave', 92)]"
+  }
+ ],
+ "raw": ""
+}

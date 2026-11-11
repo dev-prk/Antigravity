@@ -1,0 +1,17 @@
+{
+ "title": "2191. Row and Column Sums of a Matrix",
+ "slug": "row-and-column-sums-of-a-matrix",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2191.  Row and Column Sums of a Matrix\n\n40\n\nMedium\n\nProblem Statement\nRead a matrix of integers and print the sum of each row and the sum of each column.\nDescription\nA matrix (a table of numbers) with r rows and c columns is given. Find the sum of the numbers in each row and the sum of the numbers in each column, and print them.",
+ "input_spec": "The first line contains two integers r and c, separated by a space. (1 <= r, c <= 5) Each of the next r lines contains c integers separated by single spaces. (Each integer is between -100 and 100)",
+ "output_spec": "Print 2 lines. Line 1: the sums of the rows, from the first row to the last row. Line 2: the sums of the columns, from the first column to the last column. Print each result as a list in square brackets, with the numbers separated by a comma and a space, for example [6, 15].",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3\n1 2 3\n4 5 6",
+   "output": "[6, 15]\n[5, 7, 9]"
+  }
+ ],
+ "raw": ""
+}

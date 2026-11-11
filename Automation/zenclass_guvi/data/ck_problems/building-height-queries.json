@@ -1,0 +1,17 @@
+{
+ "title": "381. Building Height Queries",
+ "slug": "building-height-queries",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n381. Building Height Queries\n\n60\n\nMedium  Topics\n\nProblem Statement:\nKumar changes his career from database administrator to building contractor.He has taken a contract from N companies to build N buildings.Each building has to have a certain height H[i]\n\n1<=i<=N. Initially all building have a height 0.Two types of things could happen\n\nType 1: Kumar decides to build building i by increasing it by a height of X. i.e its height changes from y to y+x. If the building is already of required height. He won't change anything\n\nType 2: Some company could ask him for the maximum of all buildings from building L to building R. Kumar is obliged to report the answer even if the range L to R does not include the building of the company asking the question.\n\nHelp kumar solve this problem",
+ "input_spec": "The first line contains a single integer N- the number of companies / buildings\nThe second line contains N integers - the heights that you need the building to be\nThe third line contains the number of events - Q\nThe next Q line can be either of two types:\n1 x y : Kumar increases building x by height y\n2 x y: Find the max height of a building from building x to building y",
+ "output_spec": "For each type 2 event output the max building height",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n3 3 3 3\n2\n1 1 1\n2 1 4",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

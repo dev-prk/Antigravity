@@ -1,0 +1,17 @@
+{
+ "title": "989. Remove Repeating Numbers",
+ "slug": "remove-repeating-numbers",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n989. Remove Repeating Numbers\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number n followed by n numbers Remove repeating numbers",
+ "input_spec": "0<n<100\nGiven a number n\nFollowed by n number in next line",
+ "output_spec": "Print the numbers which is non- repeating numbers",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n5 7 4 4 6 8",
+   "output": "5 7 6 8"
+  }
+ ],
+ "raw": ""
+}

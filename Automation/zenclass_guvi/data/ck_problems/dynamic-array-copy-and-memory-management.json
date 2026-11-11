@@ -1,0 +1,17 @@
+{
+ "title": "1229. Dynamic Array Copy and Memory Management",
+ "slug": "dynamic-array-copy-and-memory-management",
+ "difficulty": "Medium",
+ "completed": false,
+ "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1229. Dynamic Array Copy and Memory Management\n\n50\n\nMedium\n\nProblem Statement:\nWrite a C program that reads a series of integers into a dynamically allocated array. After reading the integers, the program should create a copy of the array, double the size of the original array, and then replace the original array with this new array. The program should print both the original and copied arrays before deallocating the memory. Ensure that you avoid memory leaks by freeing allocated memory appropriately.\nThe program should:\nDynamically allocate memory for an array to store integers.\nCopy the contents of the original array into a new, larger array.\nPrint both the original and the new array.\nEnsure proper memory management by freeing all dynamically allocated memory.",
+ "input_spec": "An integer n, the number of elements in the array.\nn integers to populate the array.",
+ "output_spec": "Print the original array.\nPrint the copied array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1 2 3",
+   "output": "Original array: 1 2 3\nCopied array: 1 2 3 0 0 0"
+  }
+ ],
+ "raw": ""
+}
