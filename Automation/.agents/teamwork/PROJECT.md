@@ -45,8 +45,8 @@
 | 2 | M2: Problem Solver Engine & Sandbox | Problem extractor, Python 3 algorithmic synthesizer, sandboxed test runner, Ace editor adapter | M1 | DONE |
 | 3 | M3: Guvi CodeKata Driver & Automation | Authentication, 143-page table discovery, `#completed-icon_svg__a` filtering, Run/Submit lifecycle | M1, M2 | DONE |
 | 4 | M4: ZenClass Tasks Driver | Authentication, Kanban discovery, task detail extraction, dynamic 13-field submission, UI confirmation | M1 | DONE |
-| 5 | M5: ZenClass Projects Driver & R2 HITL | Project discovery, local solution synthesis in `projects/<slug>/`, local build test, human pause protocol, submission | M1, M4 | IN_PROGRESS |
-| 6 | M6: Dual Track Final Milestone | Pass 100% of E2E test suite, live platform verification, final persistent state and summary report | M1, M2, M3, M4, M5, E2E_READY | PLANNED |
+| 5 | M5: ZenClass Projects Driver & R2 HITL | Project discovery, local solution synthesis in `projects/<slug>/`, local build test, human pause protocol, submission | M1, M4 | DONE |
+| 6 | M6: Dual Track Final Milestone | Pass 100% of E2E test suite, live platform verification, final persistent state and summary report | M1, M2, M3, M4, M5, E2E_READY | AWAITING_USER_INPUT |
 
 ## Interface Contracts
 
