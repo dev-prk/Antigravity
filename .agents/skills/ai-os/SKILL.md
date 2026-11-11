@@ -77,6 +77,19 @@ For a multi-step task, route by required capability and evidence, not by brand l
 
 If the selected route is unavailable, rate-limited, exceeds context, or changes its price/terms, stop before incurring cost or sending sensitive content. Re-check current options and reselect using the same filters. Preserve task state so a compatible alternative can continue. Never silently switch to a paid route or weaker model while claiming unchanged capability.
 
+### Optional FreeLLMAPI route
+
+When the user has installed and configured [FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi), prefer its local router for suitable low-risk subtasks when that reduces use of a metered or limited primary assistant. This is a routing option, not a guarantee of free inference or a replacement for the current assistant's own reasoning. Do not claim ChatGPT's own generation tokens were avoided unless the user explicitly routed the task through the FreeLLMAPI tool/client and confirms its returned usage metadata.
+
+- First confirm the local service is available at the configured loopback URL (documented default `http://127.0.0.1:3001`) and check its current `/v1/models` and health/usage information. Use the service's MCP tool where configured; otherwise use a compatible client with the documented `/v1` endpoint. Never hard-code the router's unified key in this skill, a project file, a URL, logs, or prompts.
+- Use FreeLLMAPI only if at least one provider/model is configured and eligible for the user's zero-cost requirement. The router aggregates upstream providers; each provider still receives the request and its own terms, privacy policy, rate limits, and free-tier eligibility apply. Its catalog and claims are not independent proof of an upstream provider's terms.
+- Choose the model from the live catalog using the task-specific evidence policy above. Prefer `auto` or an appropriate live routing profile only if its behavior is inspectable and all eligible fallbacks are verified free. Exclude paid/custom endpoints, premium catalog access, and any paid fallback. Stop instead of failing over when the next route is not verified at $0.
+- Keep sensitive, confidential, credential-bearing, or private workspace content out of upstream calls unless the user has authorized that specific data and destination and the provider's current data terms are acceptable. Send only the smallest useful context; do not send whole repositories or conversation transcripts by default.
+- Verify the served model/provider and usage from response metadata (including the router's routed-via/usage fields) and report if the call failed, used a different model than requested, or consumed a quota. Do not represent a request as successful based only on a generated answer.
+- For an Antigravity integration, use its documented MCP/client configuration mechanism and preserve existing configuration; inspect and merge rather than replace. If the service or credentials are absent, describe the exact local setup needed and continue with work that does not depend on it.
+
+FreeLLMAPI's repository describes the router as local-first and experimental, with upstream free-tier limits, variable latency, no SLA, and no frontier-model guarantee. Treat those as material operational limitations and verify current project documentation before setup or use.
+
 ## Whole-system architecture guidance
 
 When asked to design an AI-OS or related system, treat it as a blueprint unless the user explicitly requests implementation. Keep the system's durable workflow and governance independent of model-specific prompts:
