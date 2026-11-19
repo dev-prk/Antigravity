@@ -1,4 +1,4 @@
-# Profile A — Database Lead / Lead DBA (Team Lead track)
+# Profile A — Database Lead / Lead DBA (Team Lead track) — PRIMARY
 
 > Positioning: hands-on DBA (PostgreSQL + Db2 LUW) who already leads people, delivery and automation.
 > Target titles: **Lead Database Administrator · Database Lead · Senior DBA – Team Lead · Database Reliability Lead · Lead Database Engineer**
@@ -17,7 +17,7 @@
 | Total experience | 4 years 8 months (Jul 2021 – Dec 2024, Sep 2025 – now) |
 | Current location | Hyderabad |
 | Preferred locations | Hyderabad, Bengaluru, Pune, Remote `<<confirm>>` |
-| Current CTC / Expected CTC | `<<fill>>` / `<<fill>>` |
+| Current CTC / Expected CTC | ₹15,00,000 / ₹24,00,000+ (enter 24 LPA where a single number is required) |
 | Notice period | `<<fill>>` |
 | Education | B.Tech, Computer Science & Engineering, SRM IST, 2017–2021, 85.6% |
 | Industry | IT Services & Consulting |

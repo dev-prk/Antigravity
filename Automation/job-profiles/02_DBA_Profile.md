@@ -1,4 +1,4 @@
-# Profile B — Database Administrator (hands-on IC track)
+# Profile B — Database Administrator (hands-on IC track) — SECONDARY / fallback
 
 > Positioning: hands-on PostgreSQL + Db2 LUW DBA, strongest in HA/DR, patching, recovery and automation.
 > Target titles: **Database Administrator · Senior DBA · PostgreSQL DBA · Db2 LUW DBA · Database Engineer**
@@ -9,7 +9,7 @@
 
 ## Shared fields
 
-Same as Profile A (name, company, 4 yrs 8 months, Hyderabad, education, CTC, notice). Only the content below changes.
+Same as Profile A (name, company, 4 yrs 8 months, Hyderabad, education, notice), except **Expected CTC = ₹18–22 LPA** (enter 20 LPA where a single number is required; current CTC ₹15,00,000). Only the content below changes.
 
 ---
 
