@@ -491,17 +491,17 @@
       const dock = document.getElementById('disciplineDock');
       const cards = [
         {
-          title: '1. Vedic & Western Astrology',
+          title: '1. Vedic Jyotish (D1/D9/D10/Yogas) & Western',
           badge: 'Swiss Ephemeris',
           color: 'violet',
-          summary: `Sidereal Lagna: <strong>${d.astrology.sidereal_ascendant.sign}</strong> • Tropical Asc: <strong>${d.astrology.tropical_ascendant.sign}</strong><br/>Nakshatra: <strong>${d.astrology.vimshottari_dasha.nakshatra}</strong> • Active Mahadasha: <strong>${d.astrology.vimshottari_dasha.active_mahadasha} (${d.astrology.vimshottari_dasha.active_window})</strong>`,
+          summary: `Sidereal Lagna: <strong>${d.astrology.sidereal_ascendant.sign}</strong> (D9: <strong>${d.astrology.sidereal_ascendant.navamsha_d9_sign || '—'}</strong> • D10: <strong>${d.astrology.sidereal_ascendant.dashamsha_d10_sign || '—'}</strong>) • Tropical: <strong>${d.astrology.tropical_ascendant.sign}</strong><br/>Nakshatra: <strong>${d.astrology.vimshottari_dasha.nakshatra} (Pada ${d.astrology.vimshottari_dasha.nakshatra_pada || 1})</strong> • Atmakaraka: <strong>${(d.astrology.chara_karakas || {}).atmakaraka_soul || 'Sun'}</strong><br/>Active Period: <strong>${d.astrology.vimshottari_dasha.active_mahadasha} / ${d.astrology.vimshottari_dasha.active_antardasha || ''} (${d.astrology.vimshottari_dasha.active_antardasha_window || d.astrology.vimshottari_dasha.active_window})</strong>`,
           claims: d.astrology.claims
         },
         {
-          title: '2. Numerology (Pythagorean & Chaldean)',
+          title: '2. Numerology (Pythagorean, Chaldean & Lo Shu)',
           badge: 'Math Calculus',
           color: 'amber',
-          summary: `Life Path: <strong>${d.numerology.life_path}</strong> • Expression: <strong>${d.numerology.expression_number}</strong> • Soul Urge: <strong>${d.numerology.soul_urge_number}</strong><br/>Chaldean Name: <strong>${d.numerology.chaldean_compound}</strong> • Personal Year: <strong>${d.numerology.personal_year}</strong>`,
+          summary: `Life Path: <strong>${d.numerology.life_path}</strong> • Expression: <strong>${d.numerology.expression_number}</strong> • Soul Urge: <strong>${d.numerology.soul_urge_number}</strong> • Maturity: <strong>${d.numerology.maturity_number || '—'}</strong><br/>Chaldean Name: <strong>${d.numerology.chaldean_compound}</strong> • Personal Yr/Mo: <strong>${d.numerology.personal_year} / ${d.numerology.personal_month || '—'}</strong> • Active: <strong>${(d.numerology.active_pinnacle || {}).stage || 'Pinnacle'} #${(d.numerology.active_pinnacle || {}).number || ''}</strong>`,
           claims: d.numerology.claims
         },
         {
@@ -512,24 +512,24 @@
           claims: d.palmistry.claims
         },
         {
-          title: '4. Vastu Shastra & Feng Shui',
-          badge: 'Spatial Grid',
+          title: '4. MahaVastu 16-Zone & Classical Kua Feng Shui',
+          badge: `Kua ${(d.vastu_fengshui.feng_shui_kua || {}).kua_number || 4}`,
           color: 'sky',
-          summary: `Entrance: <strong>${d.vastu_fengshui.entrance_direction}</strong> • Workspace: <strong>${d.vastu_fengshui.workspace_zone}</strong><br/>Desk Facing: <strong>${d.vastu_fengshui.desk_facing}</strong> • Sleep Head: <strong>${d.vastu_fengshui.sleeping_head_direction}</strong>`,
+          summary: `Entrance: <strong>${d.vastu_fengshui.entrance_direction}</strong> • Workspace: <strong>${d.vastu_fengshui.workspace_zone}</strong> • Desk Facing: <strong>${d.vastu_fengshui.desk_facing}</strong><br/>Personal Kua: <strong>${(d.vastu_fengshui.feng_shui_kua || {}).kua_number || 4} (${(d.vastu_fengshui.feng_shui_kua || {}).trigram || ''})</strong> • Sheng Qi Wealth: <strong>${((d.vastu_fengshui.feng_shui_kua || {}).auspicious_directions || {}).sheng_qi_wealth_expansion || 'North'}</strong>`,
           claims: d.vastu_fengshui.claims
         },
         {
-          title: '5. Locational Astrology (Astrocartography)',
-          badge: 'Planetary Lines',
+          title: '5. 3D Spherical Astrocartography',
+          badge: 'Equatorial + Horizon',
           color: 'rose',
-          summary: d.locational.planetary_lines.slice(0, 3).map(l => `${l.planet} MC: <strong>${l.mc_hub}</strong>`).join(' • '),
+          summary: d.locational.planetary_lines.slice(0, 3).map(l => `${l.planet} MC: <strong>${l.mc_hub}</strong> (ASC: <strong>${l.asc_hub}</strong>)`).join('<br/>'),
           claims: d.locational.claims
         },
         {
-          title: '6. Symbolic Oracles & Custom Disciplines',
+          title: '6. Symbolic Oracles (Tarot, I Ching, Runes & Custom)',
           badge: `${d.oracles.claims.length} Claims`,
           color: 'indigo',
-          summary: `Tarot: <strong>${d.oracles.tarot_card}</strong><br/>I Ching: <strong>${d.oracles.iching_hexagram}</strong>`,
+          summary: `Tarot: <strong>${d.oracles.tarot_card}</strong><br/>I Ching: <strong>${d.oracles.iching_hexagram}</strong><br/>Rune: <strong>${d.oracles.elder_rune || 'Ansuz'}</strong>`,
           claims: d.oracles.claims
         }
       ];

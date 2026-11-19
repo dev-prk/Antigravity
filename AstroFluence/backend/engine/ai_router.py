@@ -180,20 +180,35 @@ def compile_deterministic_master_synthesis(
 
     # 1. Core Identity & Cognitive Architecture
     trop_asc = astro.get("tropical_ascendant", {}).get("sign", "Leo")
-    sid_asc = astro.get("sidereal_ascendant", {}).get("sign", "Cancer")
+    sid_asc_obj = astro.get("sidereal_ascendant", {})
+    sid_asc = sid_asc_obj.get("sign", "Cancer")
+    d9_asc = sid_asc_obj.get("navamsha_d9_sign", "Scorpio")
+    d10_asc = sid_asc_obj.get("dashamsha_d10_sign", "Aries")
+    karakas = astro.get("chara_karakas", {})
+    ak = karakas.get("atmakaraka_soul", "Saturn")
+    amk = karakas.get("amatyakaraka_career", "Mercury")
     dasha = astro.get("vimshottari_dasha", {})
+    yogas = astro.get("vedic_yogas", [])
+    yoga_names = ", ".join(y["name"] for y in yogas) if yogas else "Budhaditya & Saraswati Yoga"
+    loshu = num.get("loshu_grid", {})
+    loshu_arrows = "; ".join(loshu.get("completed_planes_and_arrows", [])) or "Diagonal Axis of Self-Reliance"
+
     core_text = (
         f"### 1. Core Identity & Cognitive Architecture\n"
         f"Your foundational blueprint is anchored by a multi-system convergence between your physical hand morphology, "
-        f"name/birth mathematics, and natal sky. In Palmistry, your **{palm.get('head_line', 'deep, forked Head Line sloping toward the Mount of Moon')}** "
-        f"and **Mystic Cross in the Quadrangle** match your **Soul Urge {num.get('soul_urge_number', 7)}** and "
-        f"**Vedic Moon in {dasha.get('nakshatra', 'Ashwini')} Nakshatra** ({sid_asc} Sidereal Lagna / {trop_asc} Tropical Ascendant). "
-        f"Rather than operating as a single-track specialist, you possess a bifurcated cognitive engine: one branch demands rigorous, "
-        f"first-principles structural verification, while the other synthesizes symbolic, imaginative, and non-linear patterns."
+        f"name/birth mathematics, and natal sky:\n"
+        f"- **Somatic & Mathematical Echo:** In Palmistry, your **{palm.get('head_line', 'deep, forked Head Line sloping toward the Mount of Moon')}** "
+        f"and **Mystic Cross in the Quadrangle** lock directly into your **Soul Urge {num.get('soul_urge_number', 7)}**, "
+        f"**Maturity Number {num.get('maturity_number', 7)}**, and Lo Shu **{loshu_arrows}**.\n"
+        f"- **Vedic & Divisional Confirmation:** Your **Janma Nakshatra {dasha.get('nakshatra', 'Ashlesha')} (Pada {dasha.get('nakshatra_pada', 1)})** "
+        f"with **{sid_asc} Sidereal Lagna** (**Navamsha D9 in {d9_asc}**, **Dashamsha D10 in {d10_asc}**, Tropical Ascendant in **{trop_asc}**), "
+        f"**Atmakaraka (Soul Significator) {ak}**, and **{yoga_names}** confirm a dual cognitive engine: one hemisphere demands rigorous, "
+        f"first-principles structural verification, while the other synthesizes symbolic, esoteric, and non-linear architectures."
     )
     sections.append(core_text)
 
     # 2. Career, Purpose & Wealth Alchemy (Highlighting the Recursive Deepening Loop)
+    active_pin = num.get("active_pinnacle", {"stage": "2nd Pinnacle", "number": 4, "age_span": "Age 29–37"})
     if top_pat:
         supporting_summary = "; ".join(
             f"**{c.source_label}** (*{c.raw_feature}*)" for c in top_pat.supporting_claims[:4]
@@ -201,12 +216,15 @@ def compile_deterministic_master_synthesis(
         career_text = (
             f"### 2. Career Trajectory, Purpose & Wealth Alchemy\n"
             f"The highest-confidence pillar in your entire vault is **{top_pat.title}** "
-            f"({int(top_pat.combined_confidence * 100)}% cross-system confidence), independently confirmed by {supporting_summary}.\n\n"
-            f"- **Recursive Mechanism (How it operates):** {top_pat.recursive_mechanism}\n"
-            f"- **Secondary Authority Pillar:** Reinforced by **{second_pat.title if second_pat else 'Executive Leadership'}** "
-            f"(Life Path **{num.get('life_path', 1)}**, Chaldean **{num.get('chaldean_compound', '28/1')}**, and "
-            f"**{palm.get('fate_line', 'Fate Line rising to Saturn with Jupiter branch')}**), your wealth trajectory compounds fastest when you build "
-            f"proprietary frameworks, platforms, or intellectual assets rather than trading raw hours."
+            f"({int(top_pat.combined_confidence * 100)}% cross-system confidence across **{top_pat.convergence_count} independent disciplines**), "
+            f"confirmed by {supporting_summary}.\n\n"
+            f"- **Recursive Mechanism (D1/D9/D10 & Numerology Pinnacles):** {top_pat.recursive_mechanism} "
+            f"Your **Amatyakaraka (Career Minister) {amk}** and **{active_pin['stage']} (Number {active_pin['number']}, {active_pin['age_span']})** "
+            f"channel this directly into system building, media/AI synthesis, and high-leverage intellectual property.\n"
+            f"- **Secondary Authority Pillar:** Reinforced by **{second_pat.title if second_pat else 'Autonomous Executive Leadership'}** "
+            f"(Life Path **{num.get('life_path', 1)}**, Expression **{num.get('expression_number', 3)}**, Chaldean **{num.get('chaldean_compound', '45/9')}**, and "
+            f"**{palm.get('fate_line', 'Fate Line rising to Saturn with Jupiter branch')}**), your wealth compounds fastest when you own "
+            f"proprietary frameworks and automated platforms rather than trading raw hours."
         )
     else:
         career_text = (
@@ -243,29 +261,38 @@ def compile_deterministic_master_synthesis(
 
     # 5. Space, Location & Vastu/Astrocartography Alignment
     lines = loc.get("planetary_lines", [])
+    kua = vastu.get("feng_shui_kua", {})
+    kua_dirs = kua.get("auspicious_directions", {})
     line_bullets = []
-    for ln in lines[:3]:
+    for ln in lines[:4]:
         line_bullets.append(
-            f"**{ln['planet']} Angular Corridor** (MC at `{ln['mc_longitude']}°` near **{ln['mc_hub']}**; ASC near **{ln['asc_hub']}**): {ln['theme']}."
+            f"**{ln['planet']} Angular Corridor** (MC at `{ln['mc_longitude']}°` near **{ln['mc_hub']}** [orb `{ln.get('mc_orb_deg', 1.2)}°`]; "
+            f"3D Spherical ASC near **{ln['asc_hub']}**): {ln['theme']}."
         )
     space_text = (
-        f"### 5. Optimal Environment: Vastu Shastra & Astrocartography\n"
-        f"When the engine uses your verified creative-leadership core as a search query across spatial systems, two environmental layers lock together:\n"
-        f"- **Local Architectural Alignment (Vastu & Feng Shui):** Your workspace in the **{vastu.get('workspace_zone', 'North-West')}** quadrant "
+        f"### 5. Optimal Environment: MahaVastu, Classical Kua Feng Shui & 3D Astrocartography\n"
+        f"When the engine uses your verified creative-leadership core as a search query across spatial systems, three environmental layers lock together:\n"
+        f"- **MahaVastu 16-Zone Alignment:** Your workspace in the **{vastu.get('workspace_zone', 'North-West')}** quadrant "
         f"facing **{vastu.get('desk_facing', 'North')}** with a **{vastu.get('entrance_direction', 'North-East')}** main entrance directly feeds your "
-        f"Mercury/Moon creative circuit. Keep a solid wall behind your chair (South-West Earth backing) and keep the North-East window line completely unobstructed.\n"
-        f"- **Global Locational Astrology (Astrocartography):**\n  - " + "\n  - ".join(line_bullets)
+        f"Mercury/Moon creative circuit. Keep a solid wall behind your chair (**South-West Nairutya Earth backing**) and keep the **North-East (Ishanya)** window line completely unobstructed.\n"
+        f"- **Classical Ba Zhai Feng Shui (Personal Kua {kua.get('kua_number', 4)} — {kua.get('trigram', 'Xun')} / {kua.get('group', 'East Group')}):** "
+        f"Your personal **Sheng Qi (Wealth & Expansion)** vector is **{kua_dirs.get('sheng_qi_wealth_expansion', 'North')}**, "
+        f"**Tian Yi (Health & Mentors)** is **{kua_dirs.get('tian_yi_health_mentors', 'South')}**, and **Fu Wei (Mental Clarity)** is "
+        f"**{kua_dirs.get('fu_wei_clarity_stability', 'South-East')}**.\n"
+        f"- **3D Spherical Astrocartography Corridors:**\n  - " + "\n  - ".join(line_bullets)
     )
     sections.append(space_text)
 
     # 6. Active Timing & Actionable Alignments
     sections.append(
-        f"### 6. Upcoming Timing & 4 Concrete Actionable Alignments\n"
-        f"1. **Execute Within the Active Convergence Window ({dasha.get('active_window', '2026–2027')}):** Your **{dasha.get('active_mahadasha', 'Mercury')} Mahadasha**, "
-        f"**Personal Year {num.get('personal_year', 1)}**, and **{oracles.get('iching_hexagram', 'Hexagram 50 — The Cauldron')}** all align for packaging disparate knowledge streams into one flagship system.\n"
-        f"2. **Apply the 48-Hour Two-Gear Decision Protocol:** Honor your Palmistry Fate/Head Line caution by dedicating 48 hours to architectural stress-testing, then switch fully into your **{oracles.get('tarot_card', 'The Magician (I)')}** execution gear without second-guessing.\n"
-        f"3. **Tune the North-West & North-East Vastu Axis Today:** Seat yourself facing **{vastu.get('desk_facing', 'North')} or East** during deep creative synthesis, clear any stagnant storage from the **North-West (Vayu)** and **North-East (Ishanya)** corners, and sleep with your head oriented **South**.\n"
-        f"4. **Leverage Your {lines[1]['mc_hub'] if len(lines) > 1 else 'Bengaluru'} / {lines[0]['mc_hub'] if lines else 'Dubai'} Corridors:** Even without relocating physically, align key client partnerships, launches, or remote collaborations with hubs sitting along your Mercury and Jupiter Midheaven meridians."
+        f"### 6. Upcoming Timing & 5 Concrete Actionable Alignments\n"
+        f"1. **Execute Within the Active Mahadasha-Antardasha Window ({dasha.get('active_antardasha_window', 'Current Cycle')}):** Your **{dasha.get('active_mahadasha', 'Mercury')} Mahadasha / {dasha.get('active_antardasha', 'Venus')} Antardasha**, "
+        f"**Personal Year {num.get('personal_year', 1)} (Month {num.get('personal_month', 5)})**, **{oracles.get('iching_hexagram', 'Hexagram 50 — The Cauldron')}**, and "
+        f"Elder Rune **{oracles.get('elder_rune', 'Ansuz')}** all converge on packaging disparate knowledge streams into one flagship platform.\n"
+        f"2. **Apply the 48-Hour Two-Gear Decision Protocol:** Honor your Palmistry Fate/Head Line and Sidereal Saturn caution by dedicating 48 hours to architectural stress-testing, then switch fully into your **{oracles.get('tarot_card', 'The Magician (I)')}** execution gear without second-guessing.\n"
+        f"3. **Lock In Your Kua {kua.get('kua_number', 4)} & Vastu Desk Axis Today:** Seat yourself facing **{kua_dirs.get('sheng_qi_wealth_expansion', 'North')} (Sheng Qi)** or **East** during deep synthesis, clear stagnant weight from the **North-West (Vayu)** and **North-East (Ishanya)** corners, and sleep with your head oriented **{vastu.get('sleeping_head_direction', 'South')}**.\n"
+        f"4. **Activate Your {lines[1]['mc_hub'] if len(lines) > 1 else 'Bengaluru'} & {lines[3]['mc_hub'] if len(lines) > 3 else 'Singapore'} Meridians:** Align key product launches, client alliances, or remote deployments with hubs sitting along your Mercury and Jupiter Midheaven/Ascendant lines.\n"
+        f"5. **Exploit Your Lo Shu & Yogas Compounding Advantage:** Because your chart unites **{yoga_names}** with Palmistry's **Writer's Fork to the Mount of Moon**, write and publish authoritative architectural blueprints alongside every system you build."
     )
 
     return "\n\n".join(sections)

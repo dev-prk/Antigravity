@@ -37,8 +37,33 @@ def test_cross_validation_and_recursive_triangulation():
 
     bundle = compute_full_profile_readings("prf_test_triangulation", inp)
     audit = bundle["cross_validation_audit"]
+    disciplines = bundle["disciplines"]
 
-    assert audit["total_claims_analyzed"] >= 15
+    # Verify high-precision Vedic Divisional Charts (D9 Navamsha & D10 Dashamsha), Nakshatra Pada, and Antardashas
+    astro = disciplines["astrology"]
+    assert "navamsha_d9_sign" in astro["sidereal_ascendant"]
+    assert "dashamsha_d10_sign" in astro["sidereal_ascendant"]
+    assert "nakshatra_pada" in astro["vimshottari_dasha"]
+    assert "active_antardasha" in astro["vimshottari_dasha"]
+    assert "atmakaraka_soul" in astro["chara_karakas"]
+
+    # Verify Numerology Pinnacles, Challenges, Maturity & Lo Shu Grid
+    num = disciplines["numerology"]
+    assert len(num["pinnacles"]) == 4
+    assert "loshu_grid" in num
+    assert "maturity_number" in num
+
+    # Verify 3D Spherical Astrocartography Declination & Horizon orbs
+    loc = disciplines["locational"]
+    assert "declination" in loc["planetary_lines"][0]
+    assert "mc_orb_deg" in loc["planetary_lines"][0]
+
+    # Verify Classical Feng Shui Kua & Eight Mansions Vectors alongside Vastu
+    vastu = disciplines["vastu_fengshui"]
+    assert "feng_shui_kua" in vastu
+    assert "sheng_qi_wealth_expansion" in vastu["feng_shui_kua"]["auspicious_directions"]
+
+    assert audit["total_claims_analyzed"] >= 18
     assert len(audit["active_disciplines"]) >= 6
 
     verified_tags = {p["trait_tag"]: p for p in audit["verified_core_patterns"]}

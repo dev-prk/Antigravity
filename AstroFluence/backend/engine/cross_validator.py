@@ -219,6 +219,14 @@ def run_cross_validation_and_deepening(
             f"[CONSTRUCTIVE TENSION] {tns.title}: {tns.strategic_resolution}"
         )
 
+    # Compute domain-level consensus scores (0.0 to 1.0)
+    by_domain: Dict[str, List[AtomicClaim]] = defaultdict(list)
+    for c in claims:
+        by_domain[c.domain].append(c)
+    domain_consensus_scores: Dict[str, float] = {}
+    for dom, dom_claims in by_domain.items():
+        domain_consensus_scores[dom] = _compute_combined_confidence(dom_claims)
+
     return CrossValidationAudit(
         profile_id=profile_id,
         total_claims_analyzed=len(claims),
@@ -226,5 +234,6 @@ def run_cross_validation_and_deepening(
         verified_core_patterns=verified_patterns,
         constructive_tensions=constructive_tensions,
         isolated_nuances=isolated_nuances,
+        domain_consensus_scores=domain_consensus_scores,
         audit_bullets=audit_bullets,
     )

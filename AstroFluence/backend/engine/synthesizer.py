@@ -44,6 +44,8 @@ def compute_full_profile_readings(profile_id: str, inp: ProfileInput) -> Dict[st
     )
     vastu_res = analyze_vastu_fengshui(
         profile_id=profile_id,
+        birth_date=inp.birth_date,
+        gender=inp.gender,
         vastu_data=inp.vastu_data,
     )
     palm_res = analyze_palmistry(
