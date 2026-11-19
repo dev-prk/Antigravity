@@ -1,0 +1,43 @@
+{
+  "project": "AstroFluence",
+  "version": "1.0.0",
+  "governance": "ai-os",
+  "zero_cost_guard": true,
+  "objective": "Dual-mode Cross-Disciplinary Esoteric Synthesis Engine with Personal Workbench (/workbench) and Public Website Chatbot (/chat)",
+  "decisions": [
+    {
+      "id": "DEC-01",
+      "topic": "System Architecture",
+      "choice": "One shared Synthesis Engine backend powering two frontends: Personal Workbench (/workbench) and Public Website Chatbot (/chat)"
+    },
+    {
+      "id": "DEC-02",
+      "topic": "Discipline Input Pipeline",
+      "choice": "Hybrid deterministic math (Natal/Vedic Astrology, Numerology, Astrocartography, Vastu Grid, Tarot/I Ching casting) + AI/structured ingestion for physical/spatial readings and raw notes"
+    },
+    {
+      "id": "DEC-03",
+      "topic": "V1 Discipline Scope",
+      "choice": "6 Core Pillars (Vedic & Western Astrology, Numerology, Locational Astrology/Astrocartography, Vastu/Feng Shui, Palmistry/Samudrika, Symbolic Oracles Tarot/I Ching) + Universal Custom Discipline Importer"
+    },
+    {
+      "id": "DEC-04",
+      "topic": "Cross-Validation & Recursive Deepening",
+      "choice": "Structured Claim Ledger + Deterministic Graph Matching first (Convergence, Constructive Tensions, Recursive Triangulation for Mechanism/Timing/Environment), LLM Synthesis second"
+    },
+    {
+      "id": "DEC-05",
+      "topic": "Model Routing Policy",
+      "choice": "Provider-Agnostic AI-OS Zero-Cost Router (FreeLLMAPI :3001 -> Local Ollama :11434 -> Gemini Free Tier -> OpenRouter Free -> Deterministic Master Synthesis Compiler)"
+    }
+  ],
+  "milestones": [
+    {"id": "M1", "name": "Architecture Blueprint & AI-OS Task Ledger", "status": "completed"},
+    {"id": "M2", "name": "Canonical Ontology & 6-Pillar Calculation/Ingestion Engine", "status": "completed"},
+    {"id": "M3", "name": "Deterministic Cross-Validation & Recursive Deepening Engine", "status": "completed"},
+    {"id": "M4", "name": "Zero-Cost AI-OS Model Router & Master Synthesis Prompt Engine", "status": "completed"},
+    {"id": "M5", "name": "FastAPI Backend, SQLite Claim Vault & Seed Profiles", "status": "completed"},
+    {"id": "M6", "name": "Dual-Mode Web Application (/workbench & /chat)", "status": "completed"},
+    {"id": "M7", "name": "Automated Test Suite & End-to-End Verification", "status": "completed"}
+  ]
+}

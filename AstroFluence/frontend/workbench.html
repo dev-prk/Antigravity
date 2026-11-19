@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroFluence Workbench — Cross-Disciplinary Esoteric Synthesis Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 15% 15%, #16182c 0%, #090a12 55%, #05060a 100%);
+      color: #e2e8f0;
+    }
+    h1, h2, h3, .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass {
+      background: rgba(17, 20, 36, 0.78);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+    }
+    .glass-card {
+      background: rgba(24, 28, 48, 0.65);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+    }
+    .markdown-prose h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #c4b5fd;
+      margin-top: 1.15rem;
+      margin-bottom: 0.45rem;
+    }
+    .markdown-prose p {
+      margin-bottom: 0.75rem;
+      line-height: 1.65;
+      color: #cbd5e1;
+    }
+    .markdown-prose ul, .markdown-prose ol {
+      margin-left: 1.25rem;
+      margin-bottom: 0.85rem;
+      color: #cbd5e1;
+    }
+    .markdown-prose li {
+      margin-bottom: 0.4rem;
+      line-height: 1.55;
+    }
+    .markdown-prose strong {
+      color: #f8fafc;
+      font-weight: 600;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(15, 23, 42, 0.4); }
+    ::-webkit-scrollbar-thumb { background: rgba(139, 92, 246, 0.4); border-radius: 3px; }
+  </style>
+</head>
+<body class="h-screen overflow-hidden flex flex-col">
+
+  <!-- Top Navigation Bar -->
+  <header class="h-14 glass px-5 flex items-center justify-between shrink-0 z-20">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-600 via-indigo-600 to-amber-500 flex items-center justify-center shadow-lg shadow-violet-600/30 font-display font-bold text-white text-lg">
+        AF
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-display font-bold text-base tracking-tight text-white">AstroFluence</span>
+          <span class="text-[11px] font-mono uppercase px-2 py-0.5 rounded-full bg-violet-500/20 text-violet-300 border border-violet-500/30">
+            Personal Workbench
+          </span>
+        </div>
+        <p class="text-[11px] text-slate-400">6-Pillar Esoteric Vault • Deterministic Cross-Validation • Recursive Triangulation</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <!-- AI-OS Telemetry Badge -->
+      <div id="routerBadge" class="hidden md:flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-950/60 border border-emerald-500/30 text-xs text-emerald-300 font-mono">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span id="routerLabel">AI-OS Zero-Cost Guard: $0.00</span>
+      </div>
+
+      <button onclick="openModal('promptStudioModal')" class="px-3 py-1.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 text-xs font-medium text-slate-200 border border-slate-700 transition">
+        Master Prompt & Ontology Studio
+      </button>
+
+      <a href="/chat" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-xs font-semibold text-slate-950 shadow-md transition flex items-center gap-1.5">
+        <span>Open Website Chatbot (/chat)</span>
+        <span>↗</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main 3-Column Studio Layout -->
+  <div class="flex-1 flex overflow-hidden">
+
+    <!-- LEFT COLUMN: Profile Vault & 6-Pillar Discipline Dock -->
+    <aside class="w-80 lg:w-96 glass border-r border-slate-800/80 flex flex-col overflow-hidden shrink-0">
+      <!-- Profile Selector -->
+      <div class="p-4 border-b border-slate-800/80">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Multi-Profile Vault</span>
+          <button onclick="openModal('newProfileModal')" class="text-xs text-violet-400 hover:text-violet-300 font-medium">
+            + New Profile
+          </button>
+        </div>
+        <select id="profileSelect" onchange="switchProfile(this.value)" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-violet-500">
+        </select>
+        <div id="profileMetaSummary" class="mt-2.5 text-xs text-slate-400 flex flex-wrap gap-1.5"></div>
+      </div>
+
+      <!-- 6-Pillar Stored Readings Accordion & Ingest Controls -->
+      <div class="p-3 border-b border-slate-800/80 flex items-center justify-between bg-slate-900/40">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">6 Core Discipline Pillars</span>
+        <button onclick="openModal('enrichModal')" class="px-2.5 py-1 rounded-md bg-violet-600/30 hover:bg-violet-600/50 text-violet-200 border border-violet-500/40 text-xs font-medium transition">
+          + Ingest Note / Palm / Vastu
+        </button>
+      </div>
+
+      <div id="disciplineDock" class="flex-1 overflow-y-auto p-3 space-y-2.5">
+        <!-- Populated dynamically -->
+      </div>
+    </aside>
+
+    <!-- CENTER COLUMN: Unified Synthesis Chat & Detective Queries -->
+    <main class="flex-1 flex flex-col overflow-hidden bg-slate-950/30">
+      <!-- Quick Detective Query Bar -->
+      <div class="px-5 py-3 border-b border-slate-800/80 flex items-center justify-between gap-2 flex-wrap bg-slate-900/30">
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <span class="text-xs text-slate-400 mr-1">Run Synthesis:</span>
+          <button onclick="askPreset('Generate my complete cross-validated synthesis across all stored readings, showing how Palmistry and Numerology trigger deeper Astrology and Vastu insights.')" class="px-2.5 py-1 rounded-full text-xs bg-violet-500/15 hover:bg-violet-500/30 text-violet-200 border border-violet-500/30 transition">
+            Full Holistic Profile
+          </button>
+          <button onclick="askPreset('Based on this cross-validated synthesis, what should my top career and wealth priority be over the next 6 months?')" class="px-2.5 py-1 rounded-full text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+            Next 6 Months Career Priority
+          </button>
+          <button onclick="askPreset('Should I relocate or adjust my room Vastu right now? Cross-reference my Astrocartography lines, Vastu directions, and Palmistry/Numerology traits.')" class="px-2.5 py-1 rounded-full text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+            Location & Vastu Alignment
+          </button>
+          <button onclick="askPreset('How do I resolve the constructive tensions between my cautious palm lines and my bold astrological/numerological timing cycles?')" class="px-2.5 py-1 rounded-full text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+            Resolve Constructive Tensions
+          </button>
+        </div>
+
+        <label class="flex items-center gap-1.5 text-xs text-slate-300 cursor-pointer select-none">
+          <input type="checkbox" id="includeAuditToggle" checked class="accent-violet-500 rounded" />
+          <span>Show Detective Audit</span>
+        </label>
+      </div>
+
+      <!-- Chat Stream -->
+      <div id="chatStream" class="flex-1 overflow-y-auto p-6 space-y-5">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Input Composer -->
+      <div class="p-4 glass border-t border-slate-800/80">
+        <form onsubmit="submitWorkbenchChat(event)" class="flex items-center gap-3">
+          <input
+            id="chatInput"
+            type="text"
+            placeholder="Ask anything against your cross-validated vault (e.g., 'What does my palm + numerology say about my ideal workspace & timing?')..."
+            class="flex-1 bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-violet-500"
+          />
+          <button
+            id="sendBtn"
+            type="submit"
+            class="px-5 py-3 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-sm font-semibold text-white shadow-lg shadow-violet-600/25 transition shrink-0"
+          >
+            Synthesize ✦
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- RIGHT COLUMN: Live Cross-Validation Matrix & Recursive Deepening Inspector -->
+    <aside class="w-96 xl:w-[27rem] glass border-l border-slate-800/80 flex flex-col overflow-hidden shrink-0">
+      <div class="p-4 border-b border-slate-800/80 flex items-center justify-between">
+        <div>
+          <h2 class="font-display font-bold text-sm text-white">Cross-Validation & Recursive Matrix</h2>
+          <p class="text-[11px] text-slate-400">Live Signal vs. Noise & 3-Step Detective Loop</p>
+        </div>
+        <span id="claimCountBadge" class="px-2.5 py-1 rounded-full text-xs font-mono bg-amber-500/20 text-amber-300 border border-amber-500/30">
+          0 Claims
+        </span>
+      </div>
+
+      <div id="auditInspector" class="flex-1 overflow-y-auto p-4 space-y-4">
+        <!-- Populated dynamically -->
+      </div>
+    </aside>
+  </div>
+
+  <!-- MODAL 1: Enrich / Ingest Reading Notes, Palmistry, Vastu & Oracles -->
+  <div id="enrichModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div class="glass max-w-2xl w-full rounded-2xl border border-slate-700 p-6 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+        <h3 class="font-display font-bold text-lg text-white">Update & Ingest Multi-Discipline Readings</h3>
+        <button onclick="closeModal('enrichModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
+      </div>
+
+      <div class="mt-4 space-y-5 text-sm">
+        <!-- Palmistry Section -->
+        <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2.5">
+          <div class="font-semibold text-violet-300">1. Palmistry / Samudrika Shastra Traits</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+            <div>
+              <label class="text-xs text-slate-400">Head Line</label>
+              <select id="enrHeadLine" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs">
+                <option value="forked_to_moon">Deep Forked to Mount of Moon (Creative)</option>
+                <option value="straight_long">Long Straight Across Palm (Analytical)</option>
+                <option value="separated_from_life">Separated from Life Line (Bold Independent)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs text-slate-400">Fate Line</label>
+              <select id="enrFateLine" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs">
+                <option value="deep_to_saturn_and_jupiter">Deep to Saturn + Jupiter Branch</option>
+                <option value="self_made_from_head">Strengthens from Head Line (Age 28+)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs text-slate-400">Dominant Mounts</label>
+              <select id="enrMounts" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs">
+                <option value="mercury_and_moon">Mercury & Moon (Creative Synthesis)</option>
+                <option value="jupiter_and_sun">Jupiter & Apollo/Sun (Leadership)</option>
+                <option value="intuition_crescent">Mystic Cross & Line of Intuition</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="text-xs text-slate-400">Additional Palmistry Observation / Raw Notes</label>
+            <input id="enrPalmNotes" type="text" placeholder="e.g., Writer's fork on right hand, Mystic Cross in quadrangle..." class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs" />
+          </div>
+        </div>
+
+        <!-- Vastu / Feng Shui Section -->
+        <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2.5">
+          <div class="font-semibold text-amber-300">2. Vastu Shastra & Feng Shui Room Alignment</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+            <div>
+              <label class="text-xs text-slate-400">Main Entrance</label>
+              <select id="enrEntrance" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs">
+                <option>North-East</option><option>North</option><option>North-West</option>
+                <option>East</option><option>West</option><option>South-East</option>
+                <option>South</option><option>South-West</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs text-slate-400">Workspace Quadrant</label>
+              <select id="enrWorkspace" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs">
+                <option>North-West</option><option>West</option><option>North</option>
+                <option>North-East</option><option>East</option><option>South-East</option>
+                <option>South-West</option><option>South</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-xs text-slate-400">Desk Facing Direction</label>
+              <select id="enrDeskFacing" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs">
+                <option>North</option><option>East</option><option>North-East</option>
+                <option>West</option><option>North-West</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Discipline Note Ingestion (Graphology, Physiognomy, Tarot, Dream, etc.) -->
+        <div class="p-3.5 rounded-xl bg-slate-900/70 border border-slate-800 space-y-2.5">
+          <div class="font-semibold text-emerald-300">3. Ingest Raw External Reading (Any Esoteric Discipline)</div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+            <div>
+              <label class="text-xs text-slate-400">Discipline Source Name</label>
+              <input id="enrCustomName" type="text" placeholder="e.g., Graphology, Physiognomy, Gematria, Bazi, Tarot..." class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs" />
+            </div>
+            <div>
+              <label class="text-xs text-slate-400">Canonical Trait Tag (Auto-Inferred if blank)</label>
+              <select id="enrCustomTrait" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs">
+                <option value="">Auto-Detect via Semantic Parser</option>
+                <option value="creative_communication">Creative Communication & Story Architecture</option>
+                <option value="executive_leadership">Autonomous Leadership & Authority</option>
+                <option value="analytical_precision">Systems Architecture & Analytical Precision</option>
+                <option value="intuitive_depth">Esoteric & Psychological Intuition</option>
+                <option value="adaptive_change">Catalytic Mobility & Reinvention</option>
+                <option value="relational_harmony">Magnetic Partnership & Harmony</option>
+                <option value="material_manifestation">Resource Alchemy & Wealth</option>
+                <option value="disciplined_endurance">Long-Arc Mastery & Endurance</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="text-xs text-slate-400">Raw Reading Text / Observation</label>
+            <textarea id="enrCustomText" rows="2" placeholder="Paste any note from another app, PDF, or practitioner..." class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-1.5 text-xs"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 flex justify-end gap-2.5">
+        <button onclick="closeModal('enrichModal')" class="px-4 py-2 rounded-lg bg-slate-800 text-xs text-slate-300">Cancel</button>
+        <button onclick="saveEnrichment()" class="px-5 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-xs font-semibold text-white">
+          Re-Compute Claim Graph & Triangulate ✦
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Create New Profile -->
+  <div id="newProfileModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div class="glass max-w-lg w-full rounded-2xl border border-slate-700 p-6">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+        <h3 class="font-display font-bold text-lg text-white">Create New Profile in Vault</h3>
+        <button onclick="closeModal('newProfileModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
+      </div>
+      <div class="mt-4 space-y-3 text-xs">
+        <div>
+          <label class="text-slate-400">Full Birth Name (Used for Pythagorean & Chaldean Numerology)</label>
+          <input id="npName" type="text" value="Vikram Aditya" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-slate-400">Birth Date</label>
+            <input id="npDate" type="date" value="1995-05-21" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
+          </div>
+          <div>
+            <label class="text-slate-400">Birth Time (24h)</label>
+            <input id="npTime" type="time" value="09:45" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-2.5">
+          <div>
+            <label class="text-slate-400">Birth City</label>
+            <input id="npCity" type="text" value="Bengaluru, India" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+          </div>
+          <div>
+            <label class="text-slate-400">Latitude</label>
+            <input id="npLat" type="number" step="0.0001" value="12.9716" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+          </div>
+          <div>
+            <label class="text-slate-400">Longitude</label>
+            <input id="npLon" type="number" step="0.0001" value="77.5946" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 flex justify-end gap-2.5">
+        <button onclick="closeModal('newProfileModal')" class="px-4 py-2 rounded-lg bg-slate-800 text-xs text-slate-300">Cancel</button>
+        <button onclick="createNewProfile()" class="px-5 py-2 rounded-lg bg-violet-600 hover:bg-violet-500 text-xs font-semibold text-white">
+          Calculate 6 Pillars & Save
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Master Prompt & Ontology Studio -->
+  <div id="promptStudioModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div class="glass max-w-3xl w-full rounded-2xl border border-slate-700 p-6 max-h-[88vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+        <div>
+          <h3 class="font-display font-bold text-lg text-white">Master Synthesis Prompt & AI-OS Zero-Cost Router</h3>
+          <p class="text-xs text-slate-400">Inspect the 4-step synthesis protocol and live zero-cost provider telemetry</p>
+        </div>
+        <button onclick="closeModal('promptStudioModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
+      </div>
+      <div class="mt-4 space-y-4">
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-violet-300 mb-1.5">AI-OS Model Routes ($0.00 Enforced)</div>
+          <div id="routesList" class="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs"></div>
+        </div>
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-amber-300 mb-1.5">Master Synthesis System Prompt</div>
+          <pre id="masterPromptPre" class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono whitespace-pre-wrap leading-relaxed"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentProfileId = 'prf_devesh_prime';
+    let currentBundle = null;
+
+    function openModal(id) {
+      const el = document.getElementById(id);
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+    }
+
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+    }
+
+    function renderMarkdown(md) {
+      if (!md) return '';
+      let html = md
+        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-800 text-violet-300 font-mono text-xs">$1</code>');
+
+      const lines = html.split('\n');
+      let out = [];
+      let inList = false;
+      for (let line of lines) {
+        const trimmed = line.trim();
+        if (trimmed.startsWith('- ') || /^\d+\.\s/.test(trimmed)) {
+          if (!inList) { out.push('<ul class="list-disc pl-5 space-y-1.5 my-2">'); inList = true; }
+          const itemText = trimmed.replace(/^-\s+/, '').replace(/^\d+\.\s+/, '');
+          out.push(`<li>${itemText}</li>`);
+        } else {
+          if (inList) { out.push('</ul>'); inList = false; }
+          if (trimmed.startsWith('<h3>')) {
+            out.push(trimmed);
+          } else if (trimmed.length > 0) {
+            out.push(`<p>${trimmed}</p>`);
+          }
+        }
+      }
+      if (inList) out.push('</ul>');
+      return out.join('\n');
+    }
+
+    async function initWorkbench() {
+      const [healthRes, ontRes, profsRes] = await Promise.all([
+        fetch('/api/health').then(r => r.json()),
+        fetch('/api/ontology').then(r => r.json()),
+        fetch('/api/profiles').then(r => r.json())
+      ]);
+
+      // Populate AI-OS routes
+      const routesContainer = document.getElementById('routesList');
+      routesContainer.innerHTML = healthRes.routes.map(r => `
+        <div class="p-2.5 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-between">
+          <div>
+            <div class="font-medium text-slate-200">${r.name}</div>
+            <div class="text-[11px] text-emerald-400 font-mono">${r.cost}</div>
+          </div>
+          <span class="px-2 py-0.5 rounded text-[10px] font-mono uppercase ${r.status === 'online' ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'bg-slate-800 text-slate-400'}">
+            ${r.status}
+          </span>
+        </div>
+      `).join('');
+
+      document.getElementById('masterPromptPre').textContent = ontRes.master_prompt;
+
+      // Populate profile selector
+      const select = document.getElementById('profileSelect');
+      select.innerHTML = profsRes.profiles.map(p => `
+        <option value="${p.profile_id}">${p.name} — (${p.role_tag})</option>
+      `).join('');
+
+      if (profsRes.profiles.length > 0) {
+        currentProfileId = profsRes.profiles[0].profile_id;
+        select.value = currentProfileId;
+        await loadProfileBundle(currentProfileId);
+      }
+    }
+
+    async function switchProfile(pid) {
+      currentProfileId = pid;
+      await loadProfileBundle(pid);
+    }
+
+    async function loadProfileBundle(pid) {
+      const bundle = await fetch(`/api/profiles/${pid}`).then(r => r.json());
+      currentBundle = bundle;
+
+      const inp = bundle.profile_input;
+      const d = bundle.disciplines;
+      const audit = bundle.cross_validation_audit;
+
+      document.getElementById('profileMetaSummary').innerHTML = `
+        <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Born: ${inp.birth_date} (${inp.birth_time})</span>
+        <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">${inp.birth_city}</span>
+        <span class="px-2 py-0.5 rounded bg-violet-500/20 text-violet-300">Life Path ${d.numerology.life_path} • Exp ${d.numerology.expression_number}</span>
+      `;
+
+      renderDisciplineDock(d, inp);
+      renderAuditInspector(audit);
+
+      const history = bundle.chat_history_workbench || [];
+      const stream = document.getElementById('chatStream');
+      if (history.length === 0) {
+        stream.innerHTML = '';
+        await askPreset('Generate my complete cross-validated synthesis across all stored readings, showing how Palmistry and Numerology trigger deeper Astrology and Vastu insights.');
+      } else {
+        stream.innerHTML = history.map(m => renderChatBubble(m.role, m.content, m.metadata)).join('');
+        stream.scrollTop = stream.scrollHeight;
+      }
+    }
+
+    function renderDisciplineDock(d, inp) {
+      const dock = document.getElementById('disciplineDock');
+      const cards = [
+        {
+          title: '1. Vedic & Western Astrology',
+          badge: 'Swiss Ephemeris',
+          color: 'violet',
+          summary: `Sidereal Lagna: <strong>${d.astrology.sidereal_ascendant.sign}</strong> • Tropical Asc: <strong>${d.astrology.tropical_ascendant.sign}</strong><br/>Nakshatra: <strong>${d.astrology.vimshottari_dasha.nakshatra}</strong> • Active Mahadasha: <strong>${d.astrology.vimshottari_dasha.active_mahadasha} (${d.astrology.vimshottari_dasha.active_window})</strong>`,
+          claims: d.astrology.claims
+        },
+        {
+          title: '2. Numerology (Pythagorean & Chaldean)',
+          badge: 'Math Calculus',
+          color: 'amber',
+          summary: `Life Path: <strong>${d.numerology.life_path}</strong> • Expression: <strong>${d.numerology.expression_number}</strong> • Soul Urge: <strong>${d.numerology.soul_urge_number}</strong><br/>Chaldean Name: <strong>${d.numerology.chaldean_compound}</strong> • Personal Year: <strong>${d.numerology.personal_year}</strong>`,
+          claims: d.numerology.claims
+        },
+        {
+          title: '3. Palmistry & Samudrika Shastra',
+          badge: 'Somatic Reading',
+          color: 'emerald',
+          summary: `Head Line: <strong>${d.palmistry.head_line}</strong><br/>Mounts: <strong>${d.palmistry.dominant_mounts}</strong>`,
+          claims: d.palmistry.claims
+        },
+        {
+          title: '4. Vastu Shastra & Feng Shui',
+          badge: 'Spatial Grid',
+          color: 'sky',
+          summary: `Entrance: <strong>${d.vastu_fengshui.entrance_direction}</strong> • Workspace: <strong>${d.vastu_fengshui.workspace_zone}</strong><br/>Desk Facing: <strong>${d.vastu_fengshui.desk_facing}</strong> • Sleep Head: <strong>${d.vastu_fengshui.sleeping_head_direction}</strong>`,
+          claims: d.vastu_fengshui.claims
+        },
+        {
+          title: '5. Locational Astrology (Astrocartography)',
+          badge: 'Planetary Lines',
+          color: 'rose',
+          summary: d.locational.planetary_lines.slice(0, 3).map(l => `${l.planet} MC: <strong>${l.mc_hub}</strong>`).join(' • '),
+          claims: d.locational.claims
+        },
+        {
+          title: '6. Symbolic Oracles & Custom Disciplines',
+          badge: `${d.oracles.claims.length} Claims`,
+          color: 'indigo',
+          summary: `Tarot: <strong>${d.oracles.tarot_card}</strong><br/>I Ching: <strong>${d.oracles.iching_hexagram}</strong>`,
+          claims: d.oracles.claims
+        }
+      ];
+
+      dock.innerHTML = cards.map(c => `
+        <div class="p-3 rounded-xl bg-slate-900/75 border border-slate-800/90 hover:border-slate-700 transition">
+          <div class="flex items-center justify-between mb-1">
+            <span class="text-xs font-semibold text-white">${c.title}</span>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">${c.badge}</span>
+          </div>
+          <div class="text-[11px] text-slate-400 leading-relaxed">${c.summary}</div>
+          <div class="mt-2 pt-2 border-t border-slate-800/70 flex flex-wrap gap-1">
+            ${c.claims.map(cl => `
+              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-violet-950/60 text-violet-300 border border-violet-500/20" title="${cl.raw_feature}">
+                #${cl.trait_tag}
+              </span>
+            `).join('')}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderAuditInspector(audit) {
+      document.getElementById('claimCountBadge').textContent = `${audit.total_claims_analyzed} Claims • ${audit.active_disciplines.length} Systems`;
+      const container = document.getElementById('auditInspector');
+
+      const verifiedHtml = audit.verified_core_patterns.map(pat => `
+        <div class="p-3.5 rounded-xl glass-card space-y-2">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                Verified Core Pattern • ${pat.convergence_count} Systems
+              </span>
+              <h4 class="font-display font-bold text-sm text-white mt-1.5">${pat.title}</h4>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="text-base font-display font-bold text-emerald-400">${Math.round(pat.combined_confidence * 100)}%</div>
+              <div class="text-[10px] text-slate-400">Confidence</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-1">
+            ${pat.confirming_disciplines.map(d => `
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-violet-500/20 text-violet-200 border border-violet-500/30">
+                ✓ ${d.replace('_', ' ')}
+              </span>
+            `).join('')}
+          </div>
+
+          <div class="text-xs text-slate-300 space-y-1 bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
+            <div class="text-[11px] font-semibold text-violet-300">Step 1 & 2: Cross-System Evidence</div>
+            ${pat.supporting_claims.map(sc => `
+              <div class="text-[11px] text-slate-300 leading-snug">
+                • <strong>${sc.source_label}:</strong> ${sc.raw_feature}
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="text-xs space-y-1.5 bg-indigo-950/35 p-2.5 rounded-lg border border-indigo-500/25">
+            <div class="text-[11px] font-semibold text-amber-300">Step 3: Recursive Deepening (Triangulation)</div>
+            <div class="text-[11px] text-slate-300"><strong>⚙ Mechanism:</strong> ${pat.recursive_mechanism}</div>
+            <div class="text-[11px] text-slate-300"><strong>⏱ Timing:</strong> ${pat.recursive_timing}</div>
+            <div class="text-[11px] text-slate-300"><strong>🧭 Environment:</strong> ${pat.recursive_environment}</div>
+          </div>
+        </div>
+      `).join('');
+
+      const tensionsHtml = audit.constructive_tensions.map(t => `
+        <div class="p-3.5 rounded-xl bg-amber-950/20 border border-amber-500/30 space-y-1.5">
+          <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-amber-500/20 text-amber-300">
+            Constructive Tension (Divergence)
+          </span>
+          <h4 class="font-display font-semibold text-xs text-white">${t.title}</h4>
+          <p class="text-[11px] text-slate-300 leading-relaxed">${t.strategic_resolution}</p>
+        </div>
+      `).join('');
+
+      container.innerHTML = `
+        <div class="space-y-3">
+          ${verifiedHtml}
+          ${tensionsHtml}
+        </div>
+      `;
+    }
+
+    function renderChatBubble(role, content, metadata = {}) {
+      if (role === 'user') {
+        return `
+          <div class="flex justify-end">
+            <div class="max-w-2xl px-4 py-3 rounded-2xl rounded-tr-sm bg-violet-600/30 border border-violet-500/40 text-sm text-white">
+              ${content}
+            </div>
+          </div>
+        `;
+      }
+      const routeInfo = metadata.model_used
+        ? `<div class="mt-3 pt-2.5 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
+             <span>Synthesized via: <strong class="text-emerald-300">${metadata.model_used}</strong></span>
+             <span>Cost: <strong class="text-emerald-400">$0.00</strong> • ${metadata.latency_ms || 0}ms</span>
+           </div>`
+        : '';
+      return `
+        <div class="flex justify-start">
+          <div class="max-w-4xl w-full p-5 rounded-2xl rounded-tl-sm glass border border-slate-700/80 shadow-xl">
+            <div class="flex items-center gap-2 mb-2 pb-2 border-b border-slate-800/80">
+              <span class="w-2 h-2 rounded-full bg-violet-400"></span>
+              <span class="text-xs font-display font-bold text-violet-300 uppercase tracking-wider">Unified Master Synthesis</span>
+            </div>
+            <div class="markdown-prose text-sm">${renderMarkdown(content)}</div>
+            ${routeInfo}
+          </div>
+        </div>
+      `;
+    }
+
+    async function askPreset(queryText) {
+      document.getElementById('chatInput').value = queryText;
+      await executeSynthesisQuery(queryText);
+    }
+
+    async function submitWorkbenchChat(e) {
+      e.preventDefault();
+      const input = document.getElementById('chatInput');
+      const q = input.value.trim();
+      if (!q) return;
+      await executeSynthesisQuery(q);
+    }
+
+    async function executeSynthesisQuery(queryText) {
+      const input = document.getElementById('chatInput');
+      const sendBtn = document.getElementById('sendBtn');
+      const stream = document.getElementById('chatStream');
+      const includeAudit = document.getElementById('includeAuditToggle').checked;
+
+      input.value = '';
+      sendBtn.disabled = true;
+      sendBtn.textContent = 'Triangulating...';
+
+      stream.insertAdjacentHTML('beforeend', renderChatBubble('user', queryText));
+      stream.scrollTop = stream.scrollHeight;
+
+      try {
+        const res = await fetch('/api/chat/synthesize', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            profile_id: currentProfileId,
+            query: queryText,
+            surface: 'workbench',
+            include_audit_section: includeAudit,
+            preferred_route: 'auto'
+          })
+        }).then(r => r.json());
+
+        stream.insertAdjacentHTML('beforeend', renderChatBubble('assistant', res.synthesis_markdown, res.telemetry));
+        stream.scrollTop = stream.scrollHeight;
+      } finally {
+        sendBtn.disabled = false;
+        sendBtn.textContent = 'Synthesize ✦';
+      }
+    }
+
+    async function saveEnrichment() {
+      const payload = {
+        palmistry_data: {
+          head_line: document.getElementById('enrHeadLine').value,
+          fate_line: document.getElementById('enrFateLine').value,
+          dominant_mounts: document.getElementById('enrMounts').value,
+          raw_notes: document.getElementById('enrPalmNotes').value
+        },
+        vastu_data: {
+          entrance_direction: document.getElementById('enrEntrance').value,
+          workspace_zone: document.getElementById('enrWorkspace').value,
+          desk_facing: document.getElementById('enrDeskFacing').value
+        }
+      };
+
+      const customName = document.getElementById('enrCustomName').value.trim();
+      const customText = document.getElementById('enrCustomText').value.trim();
+      const customTrait = document.getElementById('enrCustomTrait').value;
+
+      if (customName && customText) {
+        payload.custom_note = {
+          discipline_name: customName,
+          text: customText,
+          trait_tag: customTrait || null
+        };
+      }
+
+      await fetch(`/api/profiles/${currentProfileId}/enrich`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      closeModal('enrichModal');
+      document.getElementById('enrCustomText').value = '';
+      await loadProfileBundle(currentProfileId);
+      await askPreset('I just updated my stored readings. Re-run the Cross-Validation Audit and synthesize the updated profile.');
+    }
+
+    async function createNewProfile() {
+      const payload = {
+        role_tag: 'Personal Vault',
+        profile_input: {
+          name: document.getElementById('npName').value.trim() || 'Explorer',
+          birth_date: document.getElementById('npDate').value || '1995-05-21',
+          birth_time: document.getElementById('npTime').value || '09:45',
+          timezone_offset: 5.5,
+          birth_city: document.getElementById('npCity').value || 'Bengaluru, India',
+          latitude: parseFloat(document.getElementById('npLat').value || '12.9716'),
+          longitude: parseFloat(document.getElementById('npLon').value || '77.5946')
+        }
+      };
+
+      const bundle = await fetch('/api/profiles', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(r => r.json());
+
+      closeModal('newProfileModal');
+      await initWorkbench();
+      document.getElementById('profileSelect').value = bundle.profile_id;
+      await switchProfile(bundle.profile_id);
+    }
+
+    window.addEventListener('DOMContentLoaded', initWorkbench);
+  </script>
+</body>
+</html>

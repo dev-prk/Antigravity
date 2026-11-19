@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroFluence — Unified Esoteric & Spatial Synthesis Chatbot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #090a14 55%, #040508 100%);
+      color: #f1f5f9;
+    }
+    h1, h2, h3, .font-display { font-family: 'Space Grotesk', sans-serif; }
+    .glass {
+      background: rgba(15, 18, 34, 0.82);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(139, 92, 246, 0.22);
+    }
+    .markdown-prose h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fcd34d;
+      margin-top: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+    .markdown-prose p {
+      margin-bottom: 0.7rem;
+      line-height: 1.65;
+      color: #e2e8f0;
+    }
+    .markdown-prose ul {
+      margin-left: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #cbd5e1;
+    }
+    .markdown-prose li {
+      margin-bottom: 0.35rem;
+      line-height: 1.55;
+    }
+    .markdown-prose strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Website Header -->
+  <header class="h-16 px-6 border-b border-slate-800/80 flex items-center justify-between glass sticky top-0 z-20">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 via-violet-600 to-indigo-500 flex items-center justify-center font-display font-bold text-white shadow-lg">
+        ✦
+      </div>
+      <div>
+        <span class="font-display font-bold text-lg text-white">AstroFluence</span>
+        <span class="ml-2 text-xs px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
+          6-Discipline Unified Oracle
+        </span>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <button onclick="resetVisitorOnboarding()" class="text-xs text-slate-400 hover:text-white transition">
+        Switch Birth Profile
+      </button>
+      <a href="/workbench" class="px-3 py-1.5 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-xs text-violet-300 border border-slate-700 transition">
+        Founder Workbench (/workbench) ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="flex-1 max-w-4xl w-full mx-auto p-4 md:p-6 flex flex-col">
+
+    <!-- STEP 1: 2-Second Progressive Onboarding Card -->
+    <div id="onboardingCard" class="my-auto glass rounded-3xl p-6 md:p-8 shadow-2xl border border-violet-500/30">
+      <div class="max-w-xl mx-auto text-center space-y-2 mb-6">
+        <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Cross-Validated Esoteric Synthesis</span>
+        <h1 class="font-display font-bold text-2xl md:text-3xl text-white">
+          One Unified Reading Across Astrology, Numerology, Palmistry & Vastu
+        </h1>
+        <p class="text-xs md:text-sm text-slate-300 leading-relaxed">
+          Enter your birth baseline below to calculate your Vedic & Western chart, Numerology, and Astrocartography lines in 2 seconds—then optionally enrich with your Palm lines, Vastu room orientation, or Tarot/I Ching inside the chat.
+        </p>
+      </div>
+
+      <form onsubmit="startInstantBaseline(event)" class="max-w-xl mx-auto space-y-4">
+        <div>
+          <label class="text-xs text-slate-300 font-medium">Your Full Name (for Pythagorean & Chaldean Numerology)</label>
+          <input id="visName" type="text" required value="Devesh Prakash" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-violet-500" />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div>
+            <label class="text-xs text-slate-300 font-medium">Birth Date</label>
+            <input id="visDate" type="date" required value="1996-08-15" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
+          </div>
+          <div>
+            <label class="text-xs text-slate-300 font-medium">Birth Time</label>
+            <input id="visTime" type="time" value="10:30" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
+          </div>
+          <div>
+            <label class="text-xs text-slate-300 font-medium">Birth City</label>
+            <select id="visCity" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white">
+              <option value="New Delhi, India|28.6139|77.2090">New Delhi, India</option>
+              <option value="Mumbai, India|19.0760|72.8777">Mumbai, India</option>
+              <option value="Bengaluru, India|12.9716|77.5946">Bengaluru, India</option>
+              <option value="London, UK|51.5072|-0.1276">London, UK</option>
+              <option value="New York, USA|40.7128|-74.0060">New York, USA</option>
+              <option value="San Francisco, USA|37.7749|-122.4194">San Francisco, USA</option>
+              <option value="Singapore|1.3521|103.8198">Singapore</option>
+              <option value="Dubai, UAE|25.2048|55.2708">Dubai, UAE</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-violet-600 via-indigo-600 to-amber-500 hover:opacity-95 font-display font-bold text-sm text-white shadow-xl shadow-violet-600/30 transition">
+          Calculate My Multi-System Synthesis ✦
+        </button>
+      </form>
+    </div>
+
+    <!-- STEP 2: Active Website Chatbot View -->
+    <div id="activeChatView" class="hidden flex-1 flex flex-col overflow-hidden">
+
+      <!-- Active Cross-Validation Pill Header -->
+      <div class="glass rounded-2xl p-3.5 mb-3 flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center gap-2.5 flex-wrap">
+          <span id="visitorBadgeName" class="font-display font-bold text-sm text-white"></span>
+          <span id="visitorVerifiedCount" class="text-xs px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-medium"></span>
+        </div>
+
+        <!-- Progressive In-Chat Enrichment Chips -->
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <span class="text-[11px] text-slate-400 mr-1">Deepen Triangulation:</span>
+          <button onclick="toggleQuickEnrich('palmDrawer')" class="px-2.5 py-1 rounded-full text-xs bg-violet-500/20 hover:bg-violet-500/35 text-violet-200 border border-violet-500/30 transition">
+            ✋ + Palm Reading
+          </button>
+          <button onclick="toggleQuickEnrich('vastuDrawer')" class="px-2.5 py-1 rounded-full text-xs bg-amber-500/20 hover:bg-amber-500/35 text-amber-200 border border-amber-500/30 transition">
+            🧭 + Room Vastu
+          </button>
+          <button onclick="toggleQuickEnrich('oracleDrawer')" class="px-2.5 py-1 rounded-full text-xs bg-emerald-500/20 hover:bg-emerald-500/35 text-emerald-200 border border-emerald-500/30 transition">
+            🎴 + Tarot / I Ching
+          </button>
+        </div>
+      </div>
+
+      <!-- Progressive Enrichment Drawers (Collapsible in-chat) -->
+      <div id="palmDrawer" class="hidden glass rounded-2xl p-4 mb-3 border border-violet-500/40 text-xs space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span class="font-semibold text-violet-300">✋ Add Your Palmistry Signature for Cross-Validation</span>
+          <button onclick="toggleQuickEnrich('palmDrawer')" class="text-slate-400 hover:text-white">&times;</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+          <select id="visHeadLine" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white">
+            <option value="forked_to_moon">Deep Forked Head Line toward Moon (Creative)</option>
+            <option value="straight_long">Long Straight Head Line (Analytical Logic)</option>
+            <option value="separated_from_life">Head Line Separated from Life Line (Independent)</option>
+          </select>
+          <select id="visFateLine" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white">
+            <option value="deep_to_saturn_and_jupiter">Deep Fate Line to Saturn + Jupiter Branch</option>
+            <option value="self_made_from_head">Fate Line Rising from Head Line (Age 28+ Pivot)</option>
+          </select>
+          <button onclick="applyVisitorPalm()" class="py-2 px-4 rounded-lg bg-violet-600 hover:bg-violet-500 font-semibold text-white">
+            Cross-Validate Palm ✦
+          </button>
+        </div>
+      </div>
+
+      <div id="vastuDrawer" class="hidden glass rounded-2xl p-4 mb-3 border border-amber-500/40 text-xs space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span class="font-semibold text-amber-300">🧭 Add Your Room / Workspace Vastu & Feng Shui Directions</span>
+          <button onclick="toggleQuickEnrich('vastuDrawer')" class="text-slate-400 hover:text-white">&times;</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+          <select id="visWorkspace" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white">
+            <option value="North-West">Workspace in North-West (Vayu / Creative)</option>
+            <option value="North">Workspace in North (Kubera / Career)</option>
+            <option value="North-East">Workspace in North-East (Ishanya / Wisdom)</option>
+            <option value="West">Workspace in West (Varuna / Gains)</option>
+            <option value="East">Workspace in East (Surya / Authority)</option>
+            <option value="South-East">Workspace in South-East (Agni / Spark)</option>
+          </select>
+          <select id="visDeskFacing" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white">
+            <option value="North">Desk Facing North</option>
+            <option value="East">Desk Facing East</option>
+            <option value="North-East">Desk Facing North-East</option>
+            <option value="West">Desk Facing West</option>
+          </select>
+          <button onclick="applyVisitorVastu()" class="py-2 px-4 rounded-lg bg-amber-500 hover:bg-amber-400 font-semibold text-slate-950">
+            Align My Space ✦
+          </button>
+        </div>
+      </div>
+
+      <div id="oracleDrawer" class="hidden glass rounded-2xl p-4 mb-3 border border-emerald-500/40 text-xs space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span class="font-semibold text-emerald-300">🎴 Pull a Synchronistic Tarot & I Ching Cast</span>
+          <button onclick="toggleQuickEnrich('oracleDrawer')" class="text-slate-400 hover:text-white">&times;</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+          <select id="visTarot" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white">
+            <option>The Magician (I)</option>
+            <option>The Emperor (IV)</option>
+            <option>The Hermit (IX)</option>
+            <option>Wheel of Fortune (X)</option>
+            <option>Queen of Swords</option>
+            <option>Ace of Wands</option>
+          </select>
+          <select id="visIching" class="bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white">
+            <option>Hexagram 50 — Ding (The Cauldron / Alchemical Vessel)</option>
+            <option>Hexagram 14 — Da You (Possession in Great Measure)</option>
+            <option>Hexagram 57 — Xun (The Gentle / Penetrating Wind)</option>
+            <option>Hexagram 49 — Ge (Revolution / Molting)</option>
+          </select>
+          <button onclick="applyVisitorOracle()" class="py-2 px-4 rounded-lg bg-emerald-500 hover:bg-emerald-400 font-semibold text-slate-950">
+            Fold into Synthesis ✦
+          </button>
+        </div>
+      </div>
+
+      <!-- Messages Stream -->
+      <div id="visitorStream" class="flex-1 overflow-y-auto space-y-4 pr-1 pb-4"></div>
+
+      <!-- Quick Prompt Suggestions -->
+      <div class="py-2 flex items-center gap-2 overflow-x-auto no-scrollbar">
+        <button onclick="sendVisitorQuestion('What should my #1 career and creative priority be over the next 6 months?')" class="px-3 py-1.5 rounded-full text-xs glass hover:border-violet-400 text-slate-200 shrink-0">
+          🎯 Top Priority Next 6 Months
+        </button>
+        <button onclick="sendVisitorQuestion('Which cities and room directions amplify my natural strengths?')" class="px-3 py-1.5 rounded-full text-xs glass hover:border-violet-400 text-slate-200 shrink-0">
+          🌍 Best Cities & Room Directions
+        </button>
+        <button onclick="sendVisitorQuestion('Where do my readings disagree, and how do I use that tension strategically?')" class="px-3 py-1.5 rounded-full text-xs glass hover:border-violet-400 text-slate-200 shrink-0">
+          ⚡ My Constructive Tensions
+        </button>
+      </div>
+
+      <!-- Chat Input Bar -->
+      <form onsubmit="submitVisitorForm(event)" class="mt-1 flex items-center gap-2.5">
+        <input
+          id="visitorInput"
+          type="text"
+          placeholder="Ask your unified synthesis anything (career, relocation, relationships, room Vastu, timing)..."
+          class="flex-1 glass rounded-2xl px-4 py-3.5 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-violet-500"
+        />
+        <button
+          id="visitorSendBtn"
+          type="submit"
+          class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-violet-600 to-amber-500 hover:opacity-95 font-display font-bold text-sm text-white shadow-lg transition shrink-0"
+        >
+          Ask ✦
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <script>
+    let visitorProfileId = 'prf_devesh_prime';
+
+    function renderMarkdown(md) {
+      if (!md) return '';
+      let html = md
+        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        .replace(/`(.*?)`/g, '<code class="px-1.5 py-0.5 rounded bg-slate-800 text-amber-300 font-mono text-xs">$1</code>');
+
+      const lines = html.split('\n');
+      let out = [];
+      let inList = false;
+      for (let line of lines) {
+        const trimmed = line.trim();
+        if (trimmed.startsWith('- ') || /^\d+\.\s/.test(trimmed)) {
+          if (!inList) { out.push('<ul class="list-disc pl-5 space-y-1.5 my-2">'); inList = true; }
+          const itemText = trimmed.replace(/^-\s+/, '').replace(/^\d+\.\s+/, '');
+          out.push(`<li>${itemText}</li>`);
+        } else {
+          if (inList) { out.push('</ul>'); inList = false; }
+          if (trimmed.startsWith('<h3>')) {
+            out.push(trimmed);
+          } else if (trimmed.length > 0) {
+            out.push(`<p>${trimmed}</p>`);
+          }
+        }
+      }
+      if (inList) out.push('</ul>');
+      return out.join('\n');
+    }
+
+    function toggleQuickEnrich(id) {
+      ['palmDrawer', 'vastuDrawer', 'oracleDrawer'].forEach(d => {
+        if (d !== id) document.getElementById(d).classList.add('hidden');
+      });
+      document.getElementById(id).classList.toggle('hidden');
+    }
+
+    function resetVisitorOnboarding() {
+      document.getElementById('activeChatView').classList.add('hidden');
+      document.getElementById('onboardingCard').classList.remove('hidden');
+    }
+
+    async function startInstantBaseline(e) {
+      e.preventDefault();
+      const name = document.getElementById('visName').value.trim();
+      const birth_date = document.getElementById('visDate').value;
+      const birth_time = document.getElementById('visTime').value || '12:00';
+      const [birth_city, latStr, lonStr] = document.getElementById('visCity').value.split('|');
+
+      const bundle = await fetch('/api/profiles', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          role_tag: 'Website Chatbot Visitor',
+          profile_input: {
+            name,
+            birth_date,
+            birth_time,
+            timezone_offset: 5.5,
+            birth_city,
+            latitude: parseFloat(latStr),
+            longitude: parseFloat(lonStr)
+          }
+        })
+      }).then(r => r.json());
+
+      visitorProfileId = bundle.profile_id;
+      document.getElementById('onboardingCard').classList.add('hidden');
+      document.getElementById('activeChatView').classList.remove('hidden');
+
+      updateVisitorHeader(bundle);
+      document.getElementById('visitorStream').innerHTML = '';
+      await sendVisitorQuestion('Give me my unified cross-disciplinary reading organized by life themes.');
+    }
+
+    function updateVisitorHeader(bundle) {
+      const inp = bundle.profile_input;
+      const audit = bundle.cross_validation_audit;
+      document.getElementById('visitorBadgeName').textContent = `${inp.name} (${inp.birth_city})`;
+      document.getElementById('visitorVerifiedCount').textContent = `${audit.verified_core_patterns.length} Verified Core Patterns across ${audit.active_disciplines.length} Systems`;
+    }
+
+    async function sendVisitorQuestion(queryText) {
+      const stream = document.getElementById('visitorStream');
+      const btn = document.getElementById('visitorSendBtn');
+      document.getElementById('visitorInput').value = '';
+
+      stream.insertAdjacentHTML('beforeend', `
+        <div class="flex justify-end">
+          <div class="max-w-xl px-4 py-3 rounded-2xl rounded-tr-sm bg-violet-600/35 border border-violet-500/40 text-sm text-white">
+            ${queryText}
+          </div>
+        </div>
+      `);
+      stream.scrollTop = stream.scrollHeight;
+
+      btn.disabled = true;
+      btn.textContent = 'Synthesizing...';
+
+      try {
+        const res = await fetch('/api/chat/synthesize', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            profile_id: visitorProfileId,
+            query: queryText,
+            surface: 'chat',
+            include_audit_section: false,
+            preferred_route: 'auto'
+          })
+        }).then(r => r.json());
+
+        const patterns = res.cross_validation_audit.verified_core_patterns || [];
+        const pillsHtml = patterns.slice(0, 3).map(p => `
+          <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+            ✓ ${p.title} (${Math.round(p.combined_confidence * 100)}% • ${p.confirming_disciplines.join(' + ')})
+          </span>
+        `).join('');
+
+        stream.insertAdjacentHTML('beforeend', `
+          <div class="flex justify-start">
+            <div class="max-w-3xl w-full glass rounded-3xl rounded-tl-sm p-5 md:p-6 shadow-xl space-y-3">
+              <div class="flex flex-wrap gap-1.5 pb-2 border-b border-slate-800">
+                ${pillsHtml}
+              </div>
+              <div class="markdown-prose text-sm">${renderMarkdown(res.synthesis_markdown)}</div>
+            </div>
+          </div>
+        `);
+        stream.scrollTop = stream.scrollHeight;
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Ask ✦';
+      }
+    }
+
+    async function submitVisitorForm(e) {
+      e.preventDefault();
+      const q = document.getElementById('visitorInput').value.trim();
+      if (!q) return;
+      await sendVisitorQuestion(q);
+    }
+
+    async function applyVisitorPalm() {
+      const bundle = await fetch(`/api/profiles/${visitorProfileId}/enrich`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          palmistry_data: {
+            head_line: document.getElementById('visHeadLine').value,
+            fate_line: document.getElementById('visFateLine').value
+          }
+        })
+      }).then(r => r.json());
+      toggleQuickEnrich('palmDrawer');
+      updateVisitorHeader(bundle);
+      await sendVisitorQuestion('I just added my Palmistry traits. Cross-validate them with my Numerology and Astrology and show what deeper pattern unlocks.');
+    }
+
+    async function applyVisitorVastu() {
+      const bundle = await fetch(`/api/profiles/${visitorProfileId}/enrich`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          vastu_data: {
+            workspace_zone: document.getElementById('visWorkspace').value,
+            desk_facing: document.getElementById('visDeskFacing').value
+          }
+        })
+      }).then(r => r.json());
+      toggleQuickEnrich('vastuDrawer');
+      updateVisitorHeader(bundle);
+      await sendVisitorQuestion('I just added my workspace Vastu directions. How does my space align with my chart, palm, and career timing?');
+    }
+
+    async function applyVisitorOracle() {
+      const bundle = await fetch(`/api/profiles/${visitorProfileId}/enrich`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          oracle_data: {
+            tarot_card: document.getElementById('visTarot').value,
+            iching_hexagram: document.getElementById('visIching').value
+          }
+        })
+      }).then(r => r.json());
+      toggleQuickEnrich('oracleDrawer');
+      updateVisitorHeader(bundle);
+      await sendVisitorQuestion('Fold my Tarot and I Ching pull into my unified synthesis for immediate timing guidance.');
+    }
+  </script>
+</body>
+</html>
