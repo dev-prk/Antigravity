@@ -1,4 +1,4 @@
-# Using db2-coach on each platform
+# Using pg-coach on each platform
 
 Paste everything in `SKILL.md` **below the `---` frontmatter** as the instructions.
 
@@ -7,7 +7,7 @@ Paste everything in `SKILL.md` **below the `---` frontmatter** as the instructio
 | Claude | Create a Project, then paste into Project instructions (or upload `SKILL.md` as a Skill) | Best for long sessions |
 | ChatGPT | Create a Custom GPT and paste into Instructions (or use a Project's instructions) | Custom instructions have a ~1,500-char limit, so use a GPT or Project instead |
 | Gemini | Create a Gem and paste into Instructions | |
-| Antigravity | Type `/db2-coach` | |
+| Antigravity | Type `/pg-coach` | |
 
 ## Each session
 1. Open a new chat and type `start`, then paste your last STATE block (the first time, just type `start`).
