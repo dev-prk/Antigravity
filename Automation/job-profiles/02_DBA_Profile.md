@@ -9,7 +9,7 @@
 
 ## Shared fields
 
-Same as Profile A (name, company, 4 yrs 8 months, Hyderabad, education, notice), except **Expected CTC = ₹18–22 LPA** (enter 20 LPA where a single number is required; current CTC ₹15,00,000). Only the content below changes.
+Same as Profile A (name, company, 4 yrs 8 months, Hyderabad, education, notice); same CTC rule: don't disclose unless mandatory. Only the content below changes.
 
 ---
 

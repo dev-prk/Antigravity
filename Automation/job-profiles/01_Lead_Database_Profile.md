@@ -17,7 +17,7 @@
 | Total experience | 4 years 8 months (Jul 2021 – Dec 2024, Sep 2025 – now) |
 | Current location | Hyderabad |
 | Preferred locations | Hyderabad, Bengaluru, Pune, Remote `<<confirm>>` |
-| Current CTC / Expected CTC | ₹15,00,000 / ₹24,00,000+ (enter 24 LPA where a single number is required) |
+| CTC | Leave blank / hidden wherever optional. If mandatory, fill current only; discuss expected on the call |
 | Notice period | `<<fill>>` |
 | Education | B.Tech, Computer Science & Engineering, SRM IST, 2017–2021, 85.6% |
 | Industry | IT Services & Consulting |
@@ -95,7 +95,7 @@ Instahyre builds most of the profile from the uploaded resume + LinkedIn; edit t
 ```
 PostgreSQL + Db2 LUW DBA (4.7 yrs) with team-lead experience: interim lead for 3 engineers now, earlier 16-member team at Deloitte. 100+ instances, 20TB+, 99.99% uptime, 15+ HADR clusters. Automation that cut daily monitoring from 8 hrs to 30 min. Seeking Lead DBA roles.
 ```
-- Turn **"Open to opportunities"** ON; salary + notice must be filled or Instahyre hides you from most recruiters.
+- Turn **"Open to opportunities"** ON. Instahyre requires salary fields; set salary visibility to hidden where the setting exists.
 
 ---
 

@@ -15,7 +15,6 @@ All four portals allow only **one account per email + mobile number**. So you ne
 ## Facts used
 Every number comes from the 30-Oct Db2/Postgres resumes. Some claims in older resumes don't match those, so I left them out: 180+ instances, 30+ MySQL on AWS/GCP, a Softility start date of Jan 2025, and a 30% storage saving instead of ~60%. A recruiter who compares versions will notice the differences, so delete or fix the old resumes.
 
-## Priority (decided 19-Nov)
-- **Profile A (Lead) is the main one.** Expected ₹24 LPA+, current ₹15 LPA. If you keep only one account per portal, it carries the Lead headline, summary and resume.
-- Profile B (DBA) is the fallback. Expected ₹18–22 LPA. Use it only with a second email/phone, or as an extra resume on Naukri.
-- Ask for 24 LPA, which is a ~60% hike. For Lead DBA roles that ask for 4–6 years this is a stretch but achievable. Your interim-lead experience (3 and 16 people) has to carry it, so lead with it in every recruiter call.
+## Priority
+- **Profile A (Lead) is the main one.** Profile B (DBA) is only a fallback.
+- Salary: keep it off profiles wherever the portal allows. Talk about it only on recruiter calls.
