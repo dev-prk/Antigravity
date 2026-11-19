@@ -25,6 +25,7 @@ from backend.engine.ai_router import MASTER_SYNTHESIS_SYSTEM_PROMPT, detect_avai
 from backend.engine.disciplines.oracles import ICHING_HEXAGRAMS, TAROT_ARCHETYPES
 from backend.engine.disciplines.palmistry import FATE_LINE_PATTERNS, HEAD_LINE_PATTERNS, MOUNT_PATTERNS
 from backend.engine.disciplines.vastu_fengshui import VASTU_DIRECTIONS
+from backend.engine.geocoder import search_birthplaces
 from backend.engine.ontology import CANONICAL_TRAITS, DISCIPLINE_CATALOG, ProfileInput
 from backend.engine.synthesizer import compute_full_profile_readings, run_chat_synthesis
 
@@ -100,6 +101,17 @@ def api_ontology() -> Dict[str, Any]:
         "tarot_cards": list(TAROT_ARCHETYPES.keys()),
         "iching_hexagrams": list(ICHING_HEXAGRAMS.keys()),
     }
+
+
+@app.get("/api/geocode")
+async def api_geocode(
+    q: str = "",
+    birth_date: str = "1996-08-15",
+    birth_time: str = "10:30",
+    limit: int = 12,
+) -> Dict[str, Any]:
+    places = await search_birthplaces(query=q, birth_date=birth_date, birth_time=birth_time, limit=limit)
+    return {"query": q, "results": places}
 
 
 @app.get("/api/profiles")

@@ -226,11 +226,14 @@ class ProfileInput(BaseModel):
     gender: str = Field(default="male", description="male | female | neutral (used for classical Feng Shui Kua calculation)")
     birth_date: str = Field(description="YYYY-MM-DD")
     birth_time: str = Field(default="12:00", description="HH:MM (24h)")
-    timezone_offset: float = Field(default=5.5, description="UTC offset in hours, e.g. 5.5 for IST")
-    birth_city: str = Field(default="New Delhi, India")
-    latitude: float = Field(default=28.6139)
-    longitude: float = Field(default=77.2090)
-    current_city: Optional[str] = Field(default="Bengaluru, India")
+    timezone_name: Optional[str] = Field(default=None, description="IANA timezone e.g. Asia/Kolkata, America/New_York")
+    timezone_offset: Optional[float] = Field(default=None, description="Auto-computed historical UTC offset in hours from birthplace & birth date")
+    birth_city: str = Field(default="New Delhi, Delhi, India")
+    latitude: Optional[float] = Field(default=None)
+    longitude: Optional[float] = Field(default=None)
+    current_city: Optional[str] = Field(default="Bengaluru, Karnataka, India")
+    current_latitude: Optional[float] = Field(default=None)
+    current_longitude: Optional[float] = Field(default=None)
     palmistry_data: Optional[Dict[str, Any]] = None
     vastu_data: Optional[Dict[str, Any]] = None
     oracle_data: Optional[Dict[str, Any]] = None

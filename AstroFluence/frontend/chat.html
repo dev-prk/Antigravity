@@ -88,33 +88,61 @@
       </div>
 
       <form onsubmit="startInstantBaseline(event)" class="max-w-xl mx-auto space-y-4">
-        <div>
-          <label class="text-xs text-slate-300 font-medium">Your Full Name (for Pythagorean & Chaldean Numerology)</label>
-          <input id="visName" type="text" required value="Devesh Prakash" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-violet-500" />
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-          <div>
-            <label class="text-xs text-slate-300 font-medium">Birth Date</label>
-            <input id="visDate" type="date" required value="1996-08-15" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
+        <div class="grid grid-cols-3 gap-3">
+          <div class="col-span-2">
+            <label class="text-xs text-slate-300 font-medium">Your Full Birth Name (for Pythagorean & Chaldean Numerology)</label>
+            <input id="visName" type="text" required value="Devesh Prakash" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-violet-500" />
           </div>
           <div>
-            <label class="text-xs text-slate-300 font-medium">Birth Time</label>
-            <input id="visTime" type="time" value="10:30" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
-          </div>
-          <div>
-            <label class="text-xs text-slate-300 font-medium">Birth City</label>
-            <select id="visCity" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white">
-              <option value="New Delhi, India|28.6139|77.2090">New Delhi, India</option>
-              <option value="Mumbai, India|19.0760|72.8777">Mumbai, India</option>
-              <option value="Bengaluru, India|12.9716|77.5946">Bengaluru, India</option>
-              <option value="London, UK|51.5072|-0.1276">London, UK</option>
-              <option value="New York, USA|40.7128|-74.0060">New York, USA</option>
-              <option value="San Francisco, USA|37.7749|-122.4194">San Francisco, USA</option>
-              <option value="Singapore|1.3521|103.8198">Singapore</option>
-              <option value="Dubai, UAE|25.2048|55.2708">Dubai, UAE</option>
+            <label class="text-xs text-slate-300 font-medium">Gender (Feng Shui Kua)</label>
+            <select id="visGender" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
             </select>
           </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div>
+            <label class="text-xs text-slate-300 font-medium">Birth Date</label>
+            <input id="visDate" type="date" required value="1996-08-15" onchange="refreshVisitorBirthplace()" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
+          </div>
+          <div>
+            <label class="text-xs text-slate-300 font-medium">Exact Birth Time (Local Clock at Birthplace)</label>
+            <input id="visTime" type="time" value="10:30" onchange="refreshVisitorBirthplace()" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-3.5 py-2.5 text-sm text-white" />
+          </div>
+        </div>
+
+        <!-- Place of Birth Search with Live Geodesy & Historical Timezone Resolution -->
+        <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-violet-500/35 space-y-2">
+          <div class="flex items-center justify-between flex-wrap gap-1">
+            <label class="text-xs text-violet-300 font-semibold">📍 Place of Birth (Type any City, Town, or Village on Earth)</label>
+            <span id="visGeoBadge" class="text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              28.6139°N, 77.2090°E • Asia/Kolkata (UTC+5.5)
+            </span>
+          </div>
+          <div class="relative">
+            <input
+              id="visCityInput"
+              type="text"
+              required
+              value="New Delhi, Delhi, India"
+              placeholder="Start typing your birth city (e.g. Varanasi, Mumbai, London, New York, Tokyo)..."
+              oninput="searchVisitorBirthCity(this.value)"
+              autocomplete="off"
+              class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-violet-500"
+            />
+            <div id="visCityDropdown" class="hidden absolute left-0 right-0 top-full mt-1 bg-slate-950 border border-violet-500/50 rounded-xl shadow-2xl max-h-52 overflow-y-auto z-50 divide-y divide-slate-800"></div>
+          </div>
+          <input id="visLat" type="hidden" value="28.6139" />
+          <input id="visLon" type="hidden" value="77.2090" />
+          <input id="visTzName" type="hidden" value="Asia/Kolkata" />
+          <input id="visUtcOffset" type="hidden" value="5.5" />
+        </div>
+
+        <div>
+          <label class="text-xs text-slate-300 font-medium">Current City of Residence (Optional — calculates Relocation Chart & Astrocartography lines)</label>
+          <input id="visCurrentCity" type="text" value="Bengaluru, Karnataka, India" placeholder="Where do you live currently?" class="w-full mt-1 bg-slate-950/90 border border-slate-700 rounded-xl px-4 py-2 text-xs text-white" />
         </div>
 
         <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-violet-600 via-indigo-600 to-amber-500 hover:opacity-95 font-display font-bold text-sm text-white shadow-xl shadow-violet-600/30 transition">
@@ -303,12 +331,72 @@
       document.getElementById('onboardingCard').classList.remove('hidden');
     }
 
+    let visGeocodeTimer = null;
+    async function searchVisitorBirthCity(q) {
+      clearTimeout(visGeocodeTimer);
+      const dd = document.getElementById('visCityDropdown');
+      if (!q || q.trim().length < 2) {
+        dd.classList.add('hidden');
+        return;
+      }
+      visGeocodeTimer = setTimeout(async () => {
+        const bDate = document.getElementById('visDate').value || '1996-08-15';
+        const bTime = document.getElementById('visTime').value || '10:30';
+        const res = await fetch(`/api/geocode?q=${encodeURIComponent(q)}&birth_date=${bDate}&birth_time=${bTime}`).then(r => r.json());
+        if (!res.results || res.results.length === 0) {
+          dd.classList.add('hidden');
+          return;
+        }
+        dd.innerHTML = res.results.map(item => `
+          <button type="button" onclick='selectVisitorBirthCity(${JSON.stringify(item).replace(/'/g, "&#39;")})' class="w-full text-left px-3.5 py-2.5 hover:bg-violet-600/25 transition flex items-center justify-between gap-2">
+            <div>
+              <div class="text-xs font-medium text-white">${item.city}</div>
+              <div class="text-[10px] font-mono text-slate-400">Lat ${item.latitude}°, Lon ${item.longitude}°</div>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                ${item.timezone_name} (UTC${item.utc_offset_hours >= 0 ? '+' : ''}${item.utc_offset_hours})
+              </span>
+              ${item.is_dst_active ? '<div class="text-[9px] text-amber-300 font-mono mt-0.5">DST Active on Birth Date</div>' : ''}
+            </div>
+          </button>
+        `).join('');
+        dd.classList.remove('hidden');
+      }, 180);
+    }
+
+    function selectVisitorBirthCity(item) {
+      document.getElementById('visCityInput').value = item.city;
+      document.getElementById('visLat').value = item.latitude;
+      document.getElementById('visLon').value = item.longitude;
+      document.getElementById('visTzName').value = item.timezone_name;
+      document.getElementById('visUtcOffset').value = item.utc_offset_hours;
+      document.getElementById('visGeoBadge').textContent = `${item.latitude}°N, ${item.longitude}°E • ${item.timezone_name} (UTC${item.utc_offset_hours >= 0 ? '+' : ''}${item.utc_offset_hours}${item.is_dst_active ? ' • DST' : ''})`;
+      document.getElementById('visCityDropdown').classList.add('hidden');
+    }
+
+    async function refreshVisitorBirthplace() {
+      const q = document.getElementById('visCityInput').value.trim();
+      if (!q) return;
+      const bDate = document.getElementById('visDate').value || '1996-08-15';
+      const bTime = document.getElementById('visTime').value || '10:30';
+      const res = await fetch(`/api/geocode?q=${encodeURIComponent(q)}&birth_date=${bDate}&birth_time=${bTime}&limit=1`).then(r => r.json());
+      if (res.results && res.results.length > 0) {
+        selectVisitorBirthCity(res.results[0]);
+      }
+    }
+
     async function startInstantBaseline(e) {
       e.preventDefault();
       const name = document.getElementById('visName').value.trim();
+      const gender = document.getElementById('visGender').value;
       const birth_date = document.getElementById('visDate').value;
       const birth_time = document.getElementById('visTime').value || '12:00';
-      const [birth_city, latStr, lonStr] = document.getElementById('visCity').value.split('|');
+      const birth_city = document.getElementById('visCityInput').value.trim();
+      const current_city = document.getElementById('visCurrentCity').value.trim() || birth_city;
+
+      // Ensure fresh geocode resolution if user typed a city without clicking dropdown
+      await refreshVisitorBirthplace();
 
       const bundle = await fetch('/api/profiles', {
         method: 'POST',
@@ -317,12 +405,15 @@
           role_tag: 'Website Chatbot Visitor',
           profile_input: {
             name,
+            gender,
             birth_date,
             birth_time,
-            timezone_offset: 5.5,
-            birth_city,
-            latitude: parseFloat(latStr),
-            longitude: parseFloat(lonStr)
+            timezone_name: document.getElementById('visTzName').value || null,
+            timezone_offset: parseFloat(document.getElementById('visUtcOffset').value || '5.5'),
+            birth_city: document.getElementById('visCityInput').value.trim(),
+            latitude: parseFloat(document.getElementById('visLat').value || '28.6139'),
+            longitude: parseFloat(document.getElementById('visLon').value || '77.2090'),
+            current_city
           }
         })
       }).then(r => r.json());
@@ -333,13 +424,14 @@
 
       updateVisitorHeader(bundle);
       document.getElementById('visitorStream').innerHTML = '';
-      await sendVisitorQuestion('Give me my unified cross-disciplinary reading organized by life themes.');
+      await sendVisitorQuestion('Give me my unified cross-disciplinary reading organized by life themes, factoring in my exact birthplace horizon and relocation coordinates.');
     }
 
     function updateVisitorHeader(bundle) {
       const inp = bundle.profile_input;
       const audit = bundle.cross_validation_audit;
-      document.getElementById('visitorBadgeName').textContent = `${inp.name} (${inp.birth_city})`;
+      const d = bundle.disciplines;
+      document.getElementById('visitorBadgeName').textContent = `${inp.name} • Born: ${inp.birth_city} (${Number(inp.latitude).toFixed(2)}°, ${Number(inp.longitude).toFixed(2)}° • ${inp.timezone_name} UTC${inp.timezone_offset >= 0 ? '+' : ''}${inp.timezone_offset}) • Lagna: ${d.astrology.sidereal_ascendant.sign}`;
       document.getElementById('visitorVerifiedCount').textContent = `${audit.verified_core_patterns.length} Verified Core Patterns across ${audit.active_disciplines.length} Systems`;
     }
 

@@ -305,39 +305,80 @@
 
   <!-- MODAL 2: Create New Profile -->
   <div id="newProfileModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
-    <div class="glass max-w-lg w-full rounded-2xl border border-slate-700 p-6">
+    <div class="glass max-w-xl w-full rounded-2xl border border-slate-700 p-6 max-h-[92vh] overflow-y-auto">
       <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-        <h3 class="font-display font-bold text-lg text-white">Create New Profile in Vault</h3>
+        <div>
+          <h3 class="font-display font-bold text-lg text-white">Create New Profile in Vault</h3>
+          <p class="text-[11px] text-slate-400">Exact Place of Birth resolves Latitude, Longitude, IANA Timezone & Historical DST</p>
+        </div>
         <button onclick="closeModal('newProfileModal')" class="text-slate-400 hover:text-white text-xl">&times;</button>
       </div>
-      <div class="mt-4 space-y-3 text-xs">
-        <div>
-          <label class="text-slate-400">Full Birth Name (Used for Pythagorean & Chaldean Numerology)</label>
-          <input id="npName" type="text" value="Vikram Aditya" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
+      <div class="mt-4 space-y-3.5 text-xs">
+        <div class="grid grid-cols-3 gap-3">
+          <div class="col-span-2">
+            <label class="text-slate-300 font-medium">Full Birth Name (Pythagorean & Chaldean Numerology)</label>
+            <input id="npName" type="text" value="Vikram Aditya" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
+          </div>
+          <div>
+            <label class="text-slate-300 font-medium">Gender (Feng Shui Kua)</label>
+            <select id="npGender" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
         </div>
         <div class="grid grid-cols-2 gap-3">
           <div>
-            <label class="text-slate-400">Birth Date</label>
-            <input id="npDate" type="date" value="1995-05-21" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
+            <label class="text-slate-300 font-medium">Birth Date</label>
+            <input id="npDate" type="date" value="1995-05-21" onchange="refreshBirthplaceGeodesy()" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
           </div>
           <div>
-            <label class="text-slate-400">Birth Time (24h)</label>
-            <input id="npTime" type="time" value="09:45" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
+            <label class="text-slate-300 font-medium">Exact Birth Time (24h Local Clock)</label>
+            <input id="npTime" type="time" value="09:45" onchange="refreshBirthplaceGeodesy()" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white" />
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-2.5">
-          <div>
-            <label class="text-slate-400">Birth City</label>
-            <input id="npCity" type="text" value="Bengaluru, India" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+
+        <!-- Live Place of Birth Autocomplete Search -->
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-violet-500/30 space-y-2.5">
+          <div class="flex items-center justify-between">
+            <label class="text-violet-300 font-semibold">Place of Birth (Type any City/Town worldwide)</label>
+            <span id="npTzBadge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Asia/Kolkata (UTC+5.5)
+            </span>
           </div>
-          <div>
-            <label class="text-slate-400">Latitude</label>
-            <input id="npLat" type="number" step="0.0001" value="12.9716" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+          <div class="relative">
+            <input
+              id="npCity"
+              type="text"
+              value="Bengaluru, Karnataka, India"
+              placeholder="Search any birthplace city, town, or village..."
+              oninput="searchBirthCityAutocomplete(this.value)"
+              autocomplete="off"
+              class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-violet-500"
+            />
+            <div id="npCitySuggestions" class="hidden absolute left-0 right-0 top-full mt-1 bg-slate-950 border border-violet-500/50 rounded-xl shadow-2xl max-h-48 overflow-y-auto z-50 divide-y divide-slate-800/80"></div>
           </div>
-          <div>
-            <label class="text-slate-400">Longitude</label>
-            <input id="npLon" type="number" step="0.0001" value="77.5946" class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+          <div class="grid grid-cols-3 gap-2">
+            <div>
+              <label class="text-[10px] text-slate-400">Latitude (°N/S)</label>
+              <input id="npLat" type="number" step="0.0001" value="12.9716" class="w-full mt-0.5 bg-slate-950 border border-slate-800 rounded px-2.5 py-1.5 text-xs font-mono text-slate-200" />
+            </div>
+            <div>
+              <label class="text-[10px] text-slate-400">Longitude (°E/W)</label>
+              <input id="npLon" type="number" step="0.0001" value="77.5946" class="w-full mt-0.5 bg-slate-950 border border-slate-800 rounded px-2.5 py-1.5 text-xs font-mono text-slate-200" />
+            </div>
+            <div>
+              <label class="text-[10px] text-slate-400">Historical UTC Offset</label>
+              <input id="npUtcOffset" type="number" step="0.25" value="5.5" class="w-full mt-0.5 bg-slate-950 border border-slate-800 rounded px-2.5 py-1.5 text-xs font-mono text-emerald-300" />
+            </div>
           </div>
+          <input id="npTzName" type="hidden" value="Asia/Kolkata" />
+        </div>
+
+        <!-- Current Residence City (For Relocation Chart & Astrocartography Orbs) -->
+        <div>
+          <label class="text-slate-300 font-medium">Current Residence City (for Relocation Ascendant & Astrocartography Lines)</label>
+          <input id="npCurrentCity" type="text" value="Bengaluru, Karnataka, India" placeholder="e.g., London, New York, Dubai, Bengaluru..." class="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
         </div>
       </div>
       <div class="mt-5 flex justify-end gap-2.5">
@@ -469,8 +510,10 @@
 
       document.getElementById('profileMetaSummary').innerHTML = `
         <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">Born: ${inp.birth_date} (${inp.birth_time})</span>
-        <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">${inp.birth_city}</span>
-        <span class="px-2 py-0.5 rounded bg-violet-500/20 text-violet-300">Life Path ${d.numerology.life_path} • Exp ${d.numerology.expression_number}</span>
+        <span class="px-2 py-0.5 rounded bg-emerald-950/70 text-emerald-300 border border-emerald-500/30 font-mono" title="Exact Birthplace Coordinates & Historical Timezone">
+          📍 ${inp.birth_city} (${Number(inp.latitude).toFixed(2)}°N, ${Number(inp.longitude).toFixed(2)}°E • ${inp.timezone_name || 'UTC'} ${inp.timezone_offset >= 0 ? '+' : ''}${inp.timezone_offset}h)
+        </span>
+        <span class="px-2 py-0.5 rounded bg-violet-500/20 text-violet-300">Lagna: ${d.astrology.sidereal_ascendant.sign} ${d.astrology.sidereal_ascendant.degree}° • Life Path ${d.numerology.life_path}</span>
       `;
 
       renderDisciplineDock(d, inp);
@@ -731,17 +774,75 @@
       await askPreset('I just updated my stored readings. Re-run the Cross-Validation Audit and synthesize the updated profile.');
     }
 
+    let geocodeTimeout = null;
+    async function searchBirthCityAutocomplete(q) {
+      clearTimeout(geocodeTimeout);
+      const box = document.getElementById('npCitySuggestions');
+      if (!q || q.trim().length < 2) {
+        box.classList.add('hidden');
+        return;
+      }
+      geocodeTimeout = setTimeout(async () => {
+        const bDate = document.getElementById('npDate').value || '1995-05-21';
+        const bTime = document.getElementById('npTime').value || '09:45';
+        const res = await fetch(`/api/geocode?q=${encodeURIComponent(q)}&birth_date=${bDate}&birth_time=${bTime}`).then(r => r.json());
+        if (!res.results || res.results.length === 0) {
+          box.classList.add('hidden');
+          return;
+        }
+        box.innerHTML = res.results.map(item => `
+          <button type="button" onclick='selectBirthplaceSuggestion(${JSON.stringify(item).replace(/'/g, "&#39;")})' class="w-full text-left px-3 py-2 hover:bg-violet-600/25 transition flex items-center justify-between gap-2">
+            <div>
+              <div class="text-xs font-medium text-white">${item.city}</div>
+              <div class="text-[10px] font-mono text-slate-400">Lat ${item.latitude}°, Lon ${item.longitude}°</div>
+            </div>
+            <div class="text-right shrink-0">
+              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                ${item.timezone_name} (UTC${item.utc_offset_hours >= 0 ? '+' : ''}${item.utc_offset_hours})
+              </span>
+              ${item.is_dst_active ? '<div class="text-[9px] text-amber-300 font-mono mt-0.5">DST Active on Birth Date</div>' : ''}
+            </div>
+          </button>
+        `).join('');
+        box.classList.remove('hidden');
+      }, 180);
+    }
+
+    function selectBirthplaceSuggestion(item) {
+      document.getElementById('npCity').value = item.city;
+      document.getElementById('npLat').value = item.latitude;
+      document.getElementById('npLon').value = item.longitude;
+      document.getElementById('npUtcOffset').value = item.utc_offset_hours;
+      document.getElementById('npTzName').value = item.timezone_name;
+      document.getElementById('npTzBadge').textContent = `${item.timezone_name} (UTC${item.utc_offset_hours >= 0 ? '+' : ''}${item.utc_offset_hours}${item.is_dst_active ? ' • DST' : ''})`;
+      document.getElementById('npCitySuggestions').classList.add('hidden');
+    }
+
+    async function refreshBirthplaceGeodesy() {
+      const q = document.getElementById('npCity').value.trim();
+      if (!q) return;
+      const bDate = document.getElementById('npDate').value || '1995-05-21';
+      const bTime = document.getElementById('npTime').value || '09:45';
+      const res = await fetch(`/api/geocode?q=${encodeURIComponent(q)}&birth_date=${bDate}&birth_time=${bTime}&limit=1`).then(r => r.json());
+      if (res.results && res.results.length > 0) {
+        selectBirthplaceSuggestion(res.results[0]);
+      }
+    }
+
     async function createNewProfile() {
       const payload = {
         role_tag: 'Personal Vault',
         profile_input: {
           name: document.getElementById('npName').value.trim() || 'Explorer',
+          gender: document.getElementById('npGender').value || 'male',
           birth_date: document.getElementById('npDate').value || '1995-05-21',
           birth_time: document.getElementById('npTime').value || '09:45',
-          timezone_offset: 5.5,
-          birth_city: document.getElementById('npCity').value || 'Bengaluru, India',
+          timezone_name: document.getElementById('npTzName').value || null,
+          timezone_offset: parseFloat(document.getElementById('npUtcOffset').value || '5.5'),
+          birth_city: document.getElementById('npCity').value || 'Bengaluru, Karnataka, India',
           latitude: parseFloat(document.getElementById('npLat').value || '12.9716'),
-          longitude: parseFloat(document.getElementById('npLon').value || '77.5946')
+          longitude: parseFloat(document.getElementById('npLon').value || '77.5946'),
+          current_city: document.getElementById('npCurrentCity').value || document.getElementById('npCity').value
         }
       };
 

@@ -182,8 +182,19 @@ def compile_deterministic_master_synthesis(
     trop_asc = astro.get("tropical_ascendant", {}).get("sign", "Leo")
     sid_asc_obj = astro.get("sidereal_ascendant", {})
     sid_asc = sid_asc_obj.get("sign", "Cancer")
+    sid_asc_deg = sid_asc_obj.get("degree", 14.2)
     d9_asc = sid_asc_obj.get("navamsha_d9_sign", "Scorpio")
     d10_asc = sid_asc_obj.get("dashamsha_d10_sign", "Aries")
+    birth_geo = astro.get("birthplace_geodesy", {})
+    b_city = birth_geo.get("city", loc.get("birthplace", {}).get("city", "Birthplace"))
+    b_lat = birth_geo.get("latitude", 28.6139)
+    b_lon = birth_geo.get("longitude", 77.2090)
+    b_tz = birth_geo.get("timezone_name", "Asia/Kolkata")
+    b_off = birth_geo.get("utc_offset_hours", 5.5)
+    b_dst = "DST Active" if birth_geo.get("is_dst_active") else "Standard Time"
+    reloc = loc.get("relocation_analysis", {})
+    curr_city = loc.get("current_location", {}).get("city", b_city)
+
     karakas = astro.get("chara_karakas", {})
     ak = karakas.get("atmakaraka_soul", "Saturn")
     amk = karakas.get("amatyakaraka_career", "Mercury")
@@ -194,14 +205,18 @@ def compile_deterministic_master_synthesis(
     loshu_arrows = "; ".join(loshu.get("completed_planes_and_arrows", [])) or "Diagonal Axis of Self-Reliance"
 
     core_text = (
-        f"### 1. Core Identity & Cognitive Architecture\n"
-        f"Your foundational blueprint is anchored by a multi-system convergence between your physical hand morphology, "
-        f"name/birth mathematics, and natal sky:\n"
-        f"- **Somatic & Mathematical Echo:** In Palmistry, your **{palm.get('head_line', 'deep, forked Head Line sloping toward the Mount of Moon')}** "
+        f"### 1. Core Identity, Birthplace Geodesy & Cognitive Architecture\n"
+        f"- **Exact Birthplace Horizon & Meridian Anchor:** Born in **{b_city}** (`{b_lat:.4f}°N, {b_lon:.4f}°E` • Timezone `{b_tz}`, `UTC{b_off:+.2f}` [{b_dst}]), "
+        f"your exact eastern horizon casts a **{sid_asc} {sid_asc_deg}° Sidereal Lagna** (**Navamsha D9 in {d9_asc}**, **Dashamsha D10 in {d10_asc}**, Tropical Ascendant in **{trop_asc}**). "
+        + (
+            f"Relocated to your current residence in **{curr_city}**, your active horizon shifts to **{reloc.get('relocated_sidereal_lagna', sid_asc)}** (Relocated Midheaven in **{reloc.get('relocated_sidereal_mc', 'Aries')}**).\n"
+            if curr_city and curr_city != b_city
+            else "\n"
+        )
+        + f"- **Somatic & Mathematical Echo:** In Palmistry, your **{palm.get('head_line', 'deep, forked Head Line sloping toward the Mount of Moon')}** "
         f"and **Mystic Cross in the Quadrangle** lock directly into your **Soul Urge {num.get('soul_urge_number', 7)}**, "
         f"**Maturity Number {num.get('maturity_number', 7)}**, and Lo Shu **{loshu_arrows}**.\n"
-        f"- **Vedic & Divisional Confirmation:** Your **Janma Nakshatra {dasha.get('nakshatra', 'Ashlesha')} (Pada {dasha.get('nakshatra_pada', 1)})** "
-        f"with **{sid_asc} Sidereal Lagna** (**Navamsha D9 in {d9_asc}**, **Dashamsha D10 in {d10_asc}**, Tropical Ascendant in **{trop_asc}**), "
+        f"- **Vedic & Divisional Confirmation:** Your **Janma Nakshatra {dasha.get('nakshatra', 'Ashlesha')} (Pada {dasha.get('nakshatra_pada', 1)})**, "
         f"**Atmakaraka (Soul Significator) {ak}**, and **{yoga_names}** confirm a dual cognitive engine: one hemisphere demands rigorous, "
         f"first-principles structural verification, while the other synthesizes symbolic, esoteric, and non-linear architectures."
     )

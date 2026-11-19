@@ -12,15 +12,45 @@ from backend.engine.disciplines.numerology import calculate_numerology
 from backend.engine.disciplines.oracles import analyze_oracles_and_custom
 from backend.engine.disciplines.palmistry import analyze_palmistry
 from backend.engine.disciplines.vastu_fengshui import analyze_vastu_fengshui
+from backend.engine.geocoder import resolve_place_sync
 from backend.engine.ontology import AtomicClaim, ProfileInput
 
 
 def compute_full_profile_readings(profile_id: str, inp: ProfileInput) -> Dict[str, Any]:
     """
-    Runs all 6 Core Discipline Engines + Custom Discipline Note Importer for a profile,
+    Resolves exact birthplace & current residence coordinates + historical IANA timezone/DST offset,
+    runs all 6 Core Discipline Engines + Custom Discipline Note Importer for a profile,
     collects all AtomicClaims, and executes the deterministic Cross-Validation & Recursive
     Deepening loop.
     """
+    birth_geo = resolve_place_sync(
+        city_name=inp.birth_city,
+        latitude=inp.latitude,
+        longitude=inp.longitude,
+        timezone_name=inp.timezone_name,
+        timezone_offset=inp.timezone_offset,
+        birth_date=inp.birth_date,
+        birth_time=inp.birth_time,
+    )
+    inp.birth_city = birth_geo["city"]
+    inp.latitude = birth_geo["latitude"]
+    inp.longitude = birth_geo["longitude"]
+    inp.timezone_name = birth_geo["timezone_name"]
+    inp.timezone_offset = birth_geo["utc_offset_hours"]
+
+    curr_geo = resolve_place_sync(
+        city_name=inp.current_city or inp.birth_city,
+        latitude=inp.current_latitude,
+        longitude=inp.current_longitude,
+        timezone_name=None,
+        timezone_offset=None,
+        birth_date=inp.birth_date,
+        birth_time=inp.birth_time,
+    )
+    inp.current_city = curr_geo["city"]
+    inp.current_latitude = curr_geo["latitude"]
+    inp.current_longitude = curr_geo["longitude"]
+
     astro_res = calculate_astrology(
         profile_id=profile_id,
         birth_date=inp.birth_date,
@@ -29,6 +59,8 @@ def compute_full_profile_readings(profile_id: str, inp: ProfileInput) -> Dict[st
         latitude=inp.latitude,
         longitude=inp.longitude,
     )
+    astro_res["birthplace_geodesy"] = birth_geo
+
     num_res = calculate_numerology(
         profile_id=profile_id,
         name=inp.name,
@@ -41,6 +73,10 @@ def compute_full_profile_readings(profile_id: str, inp: ProfileInput) -> Dict[st
         timezone_offset=inp.timezone_offset,
         birth_lat=inp.latitude,
         birth_lon=inp.longitude,
+        birth_city=inp.birth_city,
+        current_city=inp.current_city,
+        current_lat=inp.current_latitude,
+        current_lon=inp.current_longitude,
     )
     vastu_res = analyze_vastu_fengshui(
         profile_id=profile_id,

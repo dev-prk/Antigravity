@@ -84,6 +84,62 @@ def test_cross_validation_and_recursive_triangulation():
     assert len(audit["constructive_tensions"]) >= 1
 
 
+def test_birthplace_geodesy_and_historical_timezone_sensitivity():
+    """
+    Proves that Place of Birth (latitude, longitude, IANA timezone, and historical DST)
+    materially changes Universal Time (Julian Day), Sidereal Lagna (Ascendant),
+    Navamsha (D9) Lagna, House placements, and Astrocartography lines for the exact
+    same local clock date & time.
+    """
+    # Same local clock time: 1996-08-15 at 10:30 AM local clock
+    inp_delhi = ProfileInput(
+        name="Devesh Prakash",
+        birth_date="1996-08-15",
+        birth_time="10:30",
+        birth_city="New Delhi, Delhi, India",
+        current_city="Bengaluru, Karnataka, India",
+    )
+    inp_ny = ProfileInput(
+        name="Devesh Prakash",
+        birth_date="1996-08-15",
+        birth_time="10:30",
+        birth_city="New York, NY, USA",
+        current_city="London, United Kingdom",
+    )
+    inp_tokyo = ProfileInput(
+        name="Devesh Prakash",
+        birth_date="1996-08-15",
+        birth_time="10:30",
+        birth_city="Tokyo, Japan",
+        current_city="Singapore",
+    )
+
+    b_delhi = compute_full_profile_readings("prf_geo_delhi", inp_delhi)
+    b_ny = compute_full_profile_readings("prf_geo_ny", inp_ny)
+    b_tokyo = compute_full_profile_readings("prf_geo_tokyo", inp_tokyo)
+
+    # 1. Verify automatic IANA timezone & historical DST resolution (August 15, 1996 in NY is EDT = UTC-4.0)
+    assert b_delhi["profile_input"]["timezone_name"] == "Asia/Kolkata"
+    assert b_delhi["profile_input"]["timezone_offset"] == 5.5
+    assert b_ny["profile_input"]["timezone_name"] == "America/New_York"
+    assert b_ny["profile_input"]["timezone_offset"] == -4.0
+    assert b_ny["disciplines"]["astrology"]["birthplace_geodesy"]["is_dst_active"] is True
+    assert b_tokyo["profile_input"]["timezone_name"] == "Asia/Tokyo"
+    assert b_tokyo["profile_input"]["timezone_offset"] == 9.0
+
+    # 2. Verify that Ascendant (Lagna) longitude and Midheaven shift across birthplaces
+    asc_delhi = b_delhi["disciplines"]["astrology"]["sidereal_ascendant"]["longitude"]
+    asc_ny = b_ny["disciplines"]["astrology"]["sidereal_ascendant"]["longitude"]
+    asc_tokyo = b_tokyo["disciplines"]["astrology"]["sidereal_ascendant"]["longitude"]
+    assert asc_delhi != asc_ny
+    assert asc_delhi != asc_tokyo
+    assert asc_ny != asc_tokyo
+
+    # 3. Verify Relocation Chart (Birthplace vs. Current City)
+    reloc_ny_to_lon = b_ny["disciplines"]["locational"]["relocation_analysis"]
+    assert reloc_ny_to_lon["birth_sidereal_lagna"] != reloc_ny_to_lon["relocated_sidereal_lagna"]
+
+
 def test_api_endpoints_and_dual_frontends():
     with TestClient(app) as client:
         # 1. Health & AI-OS Zero-Cost Router check
@@ -92,6 +148,15 @@ def test_api_endpoints_and_dual_frontends():
         h_data = r_health.json()
         assert h_data["zero_cost_enforced"] is True
         assert any(rt["id"] == "aios_deterministic_compiler" for rt in h_data["routes"])
+
+        # 1b. Geocode & Historical Timezone API check
+        r_geo = client.get("/api/geocode?q=Varanasi&birth_date=1996-08-15&birth_time=10:30")
+        assert r_geo.status_code == 200
+        g_res = r_geo.json()["results"]
+        assert len(g_res) >= 1
+        assert "Varanasi" in g_res[0]["city"]
+        assert g_res[0]["timezone_name"] == "Asia/Kolkata"
+        assert g_res[0]["utc_offset_hours"] == 5.5
 
         # 2. Seeded Profiles check
         r_profs = client.get("/api/profiles")

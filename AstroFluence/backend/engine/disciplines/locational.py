@@ -155,9 +155,27 @@ def calculate_locational_astrology(
     timezone_offset: float = 5.5,
     birth_lat: float = 28.6139,
     birth_lon: float = 77.2090,
+    birth_city: str = "New Delhi, Delhi, India",
+    current_city: str = "Bengaluru, Karnataka, India",
+    current_lat: float = 12.9716,
+    current_lon: float = 77.5946,
 ) -> Dict[str, Any]:
     jd = _to_julian_day(birth_date, birth_time, timezone_offset)
+    swe.set_sid_mode(swe.SIDM_LAHIRI)
+    ayanamsa = swe.get_ayanamsa_ut(jd)
     gst_deg = (swe.sidtime(jd) * 15.0) % 360.0
+
+    # Compute Birth Ascendant/MC vs. Relocated (Current Residence) Ascendant/MC
+    _, birth_ascmc = swe.houses(jd, birth_lat, birth_lon, b"P")
+    _, reloc_ascmc = swe.houses(jd, current_lat, current_lon, b"P")
+
+    from backend.engine.disciplines.astrology import _sign_and_deg
+
+    b_sid_asc, b_sid_idx, b_sid_deg = _sign_and_deg((birth_ascmc[0] - ayanamsa) % 360.0)
+    r_sid_asc, r_sid_idx, r_sid_deg = _sign_and_deg((reloc_ascmc[0] - ayanamsa) % 360.0)
+    r_trop_asc, _, r_trop_deg = _sign_and_deg(reloc_ascmc[0])
+    r_sid_mc, _, r_sid_mc_deg = _sign_and_deg((reloc_ascmc[1] - ayanamsa) % 360.0)
+    house_shift = (r_sid_idx - b_sid_idx) % 12
 
     planetary_lines: List[Dict[str, Any]] = []
     claims: List[AtomicClaim] = []
@@ -171,10 +189,15 @@ def calculate_locational_astrology(
         mc_lon = _norm_lon_180(ra_deg - gst_deg)
         ic_lon = _norm_lon_180(mc_lon + 180.0)
         asc_at_birth, dsc_at_birth = _asc_dsc_longitudes_at_lat(ra_deg, dec_deg, gst_deg, birth_lat)
+        asc_at_curr, dsc_at_curr = _asc_dsc_longitudes_at_lat(ra_deg, dec_deg, gst_deg, current_lat)
 
         mc_match = _best_hub_for_angle(ra_deg, dec_deg, gst_deg, "MC")
         asc_match = _best_hub_for_angle(ra_deg, dec_deg, gst_deg, "ASC")
         dsc_match = _best_hub_for_angle(ra_deg, dec_deg, gst_deg, "DSC")
+
+        # Distance in degrees from current city to this planet's MC and ASC lines
+        orb_to_current_mc = round(_ang_diff(current_lon, mc_lon), 2)
+        orb_to_current_asc = round(_ang_diff(current_lon, asc_at_curr), 2)
 
         meta = PLANET_LOCATIONAL_THEMES[p_name]
         planetary_lines.append(
@@ -191,10 +214,43 @@ def calculate_locational_astrology(
                 "asc_hub": asc_match["city"],
                 "asc_orb_deg": asc_match["orb_deg"],
                 "dsc_hub": dsc_match["city"],
+                "orb_to_current_city_mc_deg": orb_to_current_mc,
+                "orb_to_current_city_asc_deg": orb_to_current_asc,
                 "theme": meta["theme"],
                 "directional_correlate": meta["direction"],
             }
         )
+
+    # 1. Explicit Birthplace vs. Current City Relocation Chart Claim
+    claims.append(
+        AtomicClaim(
+            claim_id=f"clm_loc_{uuid.uuid4().hex[:8]}",
+            profile_id=profile_id,
+            discipline="locational",
+            source_label=f"Relocation Chart ({birth_city} -> {current_city})",
+            domain="space_location",
+            trait_tag="adaptive_change" if house_shift != 0 else "executive_leadership",
+            action_polarity="bold_initiative",
+            valence="supportive",
+            intensity=0.90,
+            confidence=0.92,
+            raw_feature=(
+                f"Birthplace {birth_city} ({birth_lat:.2f}°N, {birth_lon:.2f}°E -> Sidereal Lagna {b_sid_asc} {b_sid_deg}°) "
+                f"vs. Current Residence {current_city} ({current_lat:.2f}°N, {current_lon:.2f}°E -> Relocated Lagna {r_sid_asc} {r_sid_deg}°, "
+                f"Relocated MC {r_sid_mc} {r_sid_mc_deg}°)"
+            ),
+            core_insight=(
+                f"Born in {birth_city} with {b_sid_asc} Sidereal Lagna, living in {current_city} places your Relocated "
+                f"Sidereal Ascendant in {r_sid_asc} ({r_trop_asc} Tropical) and Relocated Midheaven in {r_sid_mc}"
+                + (
+                    f", shifting your angular house emphasis by {house_shift} sign(s)."
+                    if house_shift != 0
+                    else ", locking in the same powerful meridian corridor as your birthplace."
+                )
+            ),
+            spatial_direction=f"{birth_city} -> {current_city}",
+        )
+    )
 
     for line in planetary_lines:
         if line["planet"] in ("Mercury", "Jupiter", "Sun", "Venus", "Saturn"):
@@ -226,6 +282,15 @@ def calculate_locational_astrology(
 
     return {
         "discipline": "locational",
+        "birthplace": {"city": birth_city, "latitude": birth_lat, "longitude": birth_lon},
+        "current_location": {"city": current_city, "latitude": current_lat, "longitude": current_lon},
+        "relocation_analysis": {
+            "birth_sidereal_lagna": f"{b_sid_asc} {b_sid_deg}°",
+            "relocated_sidereal_lagna": f"{r_sid_asc} {r_sid_deg}°",
+            "relocated_tropical_ascendant": f"{r_trop_asc} {r_trop_deg}°",
+            "relocated_sidereal_mc": f"{r_sid_mc} {r_sid_mc_deg}°",
+            "house_rotation_signs": house_shift,
+        },
         "origin_coordinates": {"latitude": birth_lat, "longitude": birth_lon},
         "greenwich_sidereal_time_deg": round(gst_deg, 3),
         "planetary_lines": planetary_lines,
