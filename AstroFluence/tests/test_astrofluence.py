@@ -188,9 +188,38 @@ def test_api_endpoints_and_dual_frontends():
         assert r_chat.status_code == 200
         c_data = r_chat.json()
         assert c_data["telemetry"]["verified_cost_usd"] == 0.0
-        assert "Core Identity" in c_data["synthesis_markdown"]
-        assert "Career Trajectory" in c_data["synthesis_markdown"]
-        assert "Optimal Environment" in c_data["synthesis_markdown"]
+        assert "Your #1 Career & Wealth Priority for the Next 6 Months" in c_data["synthesis_markdown"]
+
+        # 4b. Verify that asking a specific 5-year critical challenges question returns a distinct, live-computed forecast
+        r_chal = client.post(
+            "/api/chat/synthesize",
+            json={
+                "profile_id": "prf_devesh_prime",
+                "query": "what is the biggest ciritical challenges coming my way in the next 5 years",
+                "surface": "chat",
+                "include_audit_section": False,
+            },
+        )
+        assert r_chal.status_code == 200
+        chal_md = r_chal.json()["synthesis_markdown"]
+        assert chal_md != c_data["synthesis_markdown"]
+        assert "Critical Challenge #1" in chal_md
+        assert "Year-by-Year Multi-System Risk & Opportunity Roadmap" in chal_md
+
+        # 4c. Verify that asking a location/Vastu question returns a distinct spatial & Astrocartography answer
+        r_loc = client.post(
+            "/api/chat/synthesize",
+            json={
+                "profile_id": "prf_devesh_prime",
+                "query": "Which cities and room directions amplify my natural strengths?",
+                "surface": "chat",
+                "include_audit_section": False,
+            },
+        )
+        assert r_loc.status_code == 200
+        loc_md = r_loc.json()["synthesis_markdown"]
+        assert loc_md != chal_md
+        assert "Your 7 Global 3D Astrocartography Power Corridors" in loc_md
 
         # 5. Progressive Enrichment endpoint check
         r_enrich = client.post(

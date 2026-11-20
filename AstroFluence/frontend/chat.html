@@ -255,6 +255,9 @@
 
       <!-- Quick Prompt Suggestions -->
       <div class="py-2 flex items-center gap-2 overflow-x-auto no-scrollbar">
+        <button onclick="sendVisitorQuestion('What are the biggest critical challenges coming my way in the next 5 years?')" class="px-3 py-1.5 rounded-full text-xs glass hover:border-amber-400 text-amber-200 shrink-0">
+          ⚠️ Biggest Critical Challenges (Next 5 Years)
+        </button>
         <button onclick="sendVisitorQuestion('What should my #1 career and creative priority be over the next 6 months?')" class="px-3 py-1.5 rounded-full text-xs glass hover:border-violet-400 text-slate-200 shrink-0">
           🎯 Top Priority Next 6 Months
         </button>
@@ -263,6 +266,9 @@
         </button>
         <button onclick="sendVisitorQuestion('Where do my readings disagree, and how do I use that tension strategically?')" class="px-3 py-1.5 rounded-full text-xs glass hover:border-violet-400 text-slate-200 shrink-0">
           ⚡ My Constructive Tensions
+        </button>
+        <button onclick="sendVisitorQuestion('What does my cross-validated profile say about my relationships, marriage & co-founder compatibility?')" class="px-3 py-1.5 rounded-full text-xs glass hover:border-violet-400 text-slate-200 shrink-0">
+          🤝 Relationships & Co-Founders
         </button>
       </div>
 
@@ -424,7 +430,7 @@
 
       updateVisitorHeader(bundle);
       document.getElementById('visitorStream').innerHTML = '';
-      await sendVisitorQuestion('Give me my unified cross-disciplinary reading organized by life themes, factoring in my exact birthplace horizon and relocation coordinates.');
+      await sendVisitorQuestion('Generate my complete cross-validated synthesis across all stored readings, factoring in my exact birthplace horizon and relocation coordinates.');
     }
 
     function updateVisitorHeader(bundle) {

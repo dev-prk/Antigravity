@@ -141,6 +141,7 @@ async def run_chat_synthesis(
         user_query=user_query,
         audit=audit,
         discipline_payloads=disciplines,
+        profile_input=inp,
         include_audit_section=include_audit_section,
         preferred_route=preferred_route,
     )
