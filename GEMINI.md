@@ -41,4 +41,4 @@ If the user gives you (the Antigravity agent) a link to this GitHub repository o
 4. **Automated GitHub Sync (`hooks.json`):**
    - **On `SessionStart`**: `.agents/scripts/session-start.sh` automatically runs `bootstrap.sh` and `git pull --rebase --autostash origin main` so the workspace always starts with the latest online commits.
    - **On `Stop` (End of Every Turn)**: `.agents/scripts/auto-sync.sh` automatically stages all changes (`git add -A`), creates a timestamped commit, and pushes to `origin main`.
-   - **Manual Verification**: Whenever you finish creating a major feature, skill, or project, verify that `.agents/scripts/auto-sync.sh` has cleanly committed and pushed all changes (`git status` should be clean).
+   - **Never Manually Trigger `auto-sync.sh`**: The agent MUST NEVER manually execute `.agents/scripts/auto-sync.sh` via `run_command` unless the user explicitly asks to sync/push. Manual invocation spawns background tasks and wastes tokens; let the `Stop` hook handle syncing automatically.
