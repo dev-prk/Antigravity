@@ -1,44 +1,51 @@
-# Antigravity Cloud-First Workspace & Zero-Touch Laptop Reset Protocol
+# Devesh's Antigravity Rules
 
-This repository is the single source of truth for all of Devesh's Antigravity projects, custom skills, rules, and automation hooks. Nothing should ever remain trapped offline.
+## 1. Operating Standard (always on, every model, every project)
+
+These rules come from a review of 200+ past chats in which work failed, was called "garbage", got cut off, or needed many retries. Follow them on every task, whether or not a skill is invoked.
+
+### Understand before building
+- Restate the goal in one sentence and list the **acceptance criteria**: what the user will look at to decide it's done. For anything bigger than a small edit, put them at the top of the plan.
+- Before building, ask: *"What would an expert in this field say is missing?"* Find the domain-critical inputs first. For example, an astrology app built without place of birth was rejected outright.
+- Treat every specific in the user's message as a hard requirement ("3D not 2D", "natural kid-friendly voice", "PostgreSQL only", "no salary figures", "run in background"). Re-check each one before finishing.
+- If a critical input or preference is missing and a wrong guess would be expensive, ask up to 3 short questions in one message. Otherwise state the assumption in one line and proceed.
+
+### Do the work directly and simply
+- **Use one agent by default.** Use subagents or /teamwork only for truly independent, parallel work, with at most 3 running at once. Past runs spawned 180+ subagents, used up the quota, and left tasks half-finished.
+- If the user stacks skills (e.g. `/aios /teamwork /goal /chain-of-mindset`), choose one lead process and use the rest as guidance. Never run several protocols on top of each other.
+- Never show internal rituals to the user (phase headers, "constraint anchoring", `<thinking>` blocks, quoting the prompt back). Think silently and show results.
+- Build the simplest thing that meets the acceptance criteria. Add frameworks, ledgers, extra pipelines or hundreds of tests only when asked.
+
+### Verify the way the user will
+- Before saying "done", check the real output the way the user will experience it. Look at rendered frames, listen to the audio, open the page, ask the chatbot a real follow-up question, run the code on real input. Passing unit tests does not prove the product works.
+- Finish with a check against every acceptance criterion and every explicit specific, marked done / not done / not verified. Never claim anything you didn't check.
+- Never end a turn on "waiting for X to finish" or "I will update you" when the user isn't needed. Wait for the task, then report. If you must stop, say exactly what's finished, what isn't, and the next step.
+- When the user rejects work, find the root cause, fix it, and re-verify the whole deliverable, not just the one symptom they mentioned.
+
+### Respect the quota
+- The user is on a limited plan. Read only what you need, don't re-read large files, keep replies short, and don't re-summarize artifacts.
+- For multi-step work, keep a short `PROGRESS.md` (goal, criteria, done, next) in the project folder. On "resume" or "continue", read it first and pick up from there without redoing work.
+
+### Communicate plainly
+- Lead with the result, in short, plain language. Say when you're unsure. If the user is wrong, say so politely and explain why.
+- Never ask the user to paste passwords or secrets into chat. Ask them to log in themselves in the browser.
+
+### Browser
+- Reuse the existing browser session and open new tabs instead of launching new windows. If the user says they're using the browser, work in the background or headless.
 
 ---
 
-## 1. Zero-Explanation Laptop Reset Protocol (For Fresh Machines)
+## 2. Cloud Sync & Zero-Touch Laptop Reset
 
-If the user gives you (the Antigravity agent) a link to this GitHub repository on a freshly formatted laptop—even with **zero additional instructions**—you **MUST** execute the following recovery sequence immediately and autonomously without asking unnecessary questions:
+This repo (`git@github.com:dev-prk/Antigravity.git`) is the single source of truth for all projects, skills, rules and hooks.
 
-1. **Clone into the Standard Workspace Root (if not already cloned):**
-   ```sh
-   mkdir -p ~/Documents
-   git clone <REPO_URL> ~/Documents/Antigravity
-   ```
-2. **Execute the Zero-Touch Bootstrap Script:**
-   ```sh
-   chmod +x ~/Documents/Antigravity/.agents/scripts/*.sh
-   ~/Documents/Antigravity/.agents/scripts/bootstrap.sh
-   ```
-   Running `bootstrap.sh` automatically:
-   - Restores all global skills (`~/.gemini/config/skills` $\to$ `~/Documents/Antigravity/.agents/skills`), including `/claude`.
-   - Installs global rules (`~/.gemini/config/GEMINI.md` and `AGENTS.md`).
-   - Activates global lifecycle hooks (`~/.gemini/config/hooks.json`) for automatic `SessionStart` pull and `Stop` auto-commit/push.
-3. **Confirm Ready State:**
-   Inform the user in one concise sentence that all projects, skills (`/claude`), and continuous GitHub auto-sync hooks are restored and active.
+- **Fresh laptop + repo link (even with no instructions):** clone to `~/Documents/Antigravity` if it isn't there, run `chmod +x ~/Documents/Antigravity/.agents/scripts/*.sh && ~/Documents/Antigravity/.agents/scripts/bootstrap.sh`, then confirm in one sentence that skills, rules and sync hooks are restored.
+- **Projects** live in subfolders of `~/Documents/Antigravity/`, never only in `/tmp`, `~/Desktop` or untracked folders.
+- **Skills** live in `~/Documents/Antigravity/.agents/skills/<name>/SKILL.md`, which is symlinked to `~/.gemini/config/skills/`.
+- **Sync is automatic:** the SessionStart hook pulls and the Stop hook commits and pushes. Both are shell scripts that use no AI tokens. **Never run `.agents/scripts/auto-sync.sh` manually**, and never wait on a sync, unless the user asks.
 
----
+## 3. Skill Invocation
 
-## 2. Continuous Online Sync Rules (Always Active)
-
-1. **Where to Store Projects:**
-   All projects live as subdirectories inside `~/Documents/Antigravity/` (e.g., `Random Ask/`, `Automation/`, or any new project folder). Never store project code solely in `/tmp`, `~/Desktop`, or untracked directories.
-2. **Where to Store Skills & Rules:**
-   All reusable skills MUST be stored in `~/Documents/Antigravity/.agents/skills/<skill-name>/SKILL.md` (which is symlinked to `~/.gemini/config/skills/`). Creating or updating a skill here makes it immediately available across all workspaces and pushes it to GitHub automatically.
-3. **Explicit-Only Skill Invocation Rule (For Global Skills in `~/.gemini/config/skills/`):**
-   - **Never Invoke Global Skills by Default**: Custom global skills in `~/.gemini/config/skills/` (`~/Documents/Antigravity/.agents/skills/`) MUST NEVER be activated automatically or by default based on general topic matching.
-   - **Explicit Call Required for Global Skills**: Only activate or read a global skill when the user explicitly invokes it by slash command (e.g., `/claude`, `/fable-mindset`, `/orchestration`, `/loop-engineering`, `/chain-of-mindset`, `/universal-fable-5`, `/ponytail`, `/karpathy-guidelines`, `/founder-skill`, `/founder-board`, etc.) or explicitly names the skill in their prompt.
-   - **Frontmatter Enforcement for Global Skills**: Every existing and newly created global `SKILL.md` in `~/Documents/Antigravity/.agents/skills/` MUST include `disable-model-invocation: true` and `disable-slash-command: false` in its YAML frontmatter, and its `description` must state `ONLY invoke when explicitly called by the user (e.g., /<skill-name>); never activate by default.`
-   - **Project-Scoped Exception (`Content Creation/.agents/skills/`)**: Project-local skills stored inside `~/Documents/Antigravity/Content Creation/.agents/skills/` are scoped exclusively to the `Content Creation` workspace (`disable-model-invocation: false`) and **MUST automatically activate** whenever the user prompts for content creation, 2D/3D animation, character consistency, or voice/video production inside `Content Creation/`.
-4. **Automated GitHub Sync (`hooks.json`):**
-   - **On `SessionStart`**: `.agents/scripts/session-start.sh` automatically runs `bootstrap.sh` and `git pull --rebase --autostash origin main` so the workspace always starts with the latest online commits.
-   - **On `Stop` (End of Every Turn)**: `.agents/scripts/auto-sync.sh` automatically stages all changes (`git add -A`), creates a timestamped commit, and pushes to `origin main`.
-   - **Never Manually Trigger `auto-sync.sh`**: The agent MUST NEVER manually execute `.agents/scripts/auto-sync.sh` via `run_command` unless the user explicitly asks to sync/push. Manual invocation spawns background tasks and wastes tokens; let the `Stop` hook handle syncing automatically.
+- **Global skills** (`~/Documents/Antigravity/.agents/skills/`) run ONLY when the user calls them explicitly (`/<skill-name>` or by name). Every global `SKILL.md` must have `disable-model-invocation: true`, `disable-slash-command: false`, and a description that says `ONLY invoke when explicitly called by the user (e.g., /<skill-name>); never activate by default.`
+- **Exception:** project skills in `Content Creation/.agents/skills/` activate automatically for content and video work inside `Content Creation/` (see `Content Creation/GEMINI.md`).
+- Section 1 above is always on. A skill adds to it but never replaces it.
