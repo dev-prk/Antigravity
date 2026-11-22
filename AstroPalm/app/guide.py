@@ -3,12 +3,14 @@ from __future__ import annotations
 
 import json
 import os
+from pathlib import Path
 import re
 
 from dotenv import load_dotenv
 from google import genai
 
 MODEL = "gemini-4-hydrogen"
+ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
 
 CRISIS_PATTERNS = re.compile(
     r"\b("
@@ -60,7 +62,7 @@ How to handle Follow-up Questions (Turn 2+):
 
 
 def _get_api_key() -> str | None:
-    load_dotenv(override=True)
+    load_dotenv(ENV_PATH, override=True)
     key = (os.getenv("GEMINI_API_KEY") or "").strip()
     return key or None
 

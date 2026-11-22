@@ -17,9 +17,14 @@ from app.palm import analyze_palm_photo, build_palm_from_questions
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
+ENV_PATH = BASE_DIR.parent / ".env"
 
 app = FastAPI(title="AstroPalm", version="1.0.0")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
+
+
+class ApiKeyRequest(BaseModel):
+    api_key: str
 
 
 class ChartRequest(BaseModel):
@@ -62,9 +67,24 @@ def index():
 
 @app.get("/api/status")
 def status():
-    load_dotenv(override=True)
+    load_dotenv(ENV_PATH, override=True)
     has_key = bool((os.getenv("GEMINI_API_KEY") or "").strip())
     return {"gemini_configured": has_key}
+
+
+@app.post("/api/config/key")
+def save_api_key(req: ApiKeyRequest):
+    key = (req.api_key or "").strip()
+    if len(key) < 10 or "\n" in key or "\r" in key:
+        raise HTTPException(status_code=400, detail="Please enter a valid Gemini API key.")
+    lines = []
+    if ENV_PATH.exists():
+        lines = [l for l in ENV_PATH.read_text().splitlines() if not l.startswith("GEMINI_API_KEY=")]
+    lines.append(f"GEMINI_API_KEY={key}")
+    ENV_PATH.write_text("\n".join(lines) + "\n")
+    os.chmod(ENV_PATH, 0o600)
+    os.environ["GEMINI_API_KEY"] = key
+    return {"ok": True, "gemini_configured": True}
 
 
 @app.get("/api/places")

@@ -307,10 +307,17 @@
   </header>
 
   <div id="apiBanner" class="banner">
-    <strong>Gemini API key not configured yet.</strong>
-    You can calculate charts and use Guided Palm Questions right now, but Palm Photo Reading and AI Guidance require a free key from
-    <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>.
-    Paste <code>GEMINI_API_KEY=your_key</code> into <code>AstroPalm/.env</code> (never share keys in chat) and refresh.
+    <div>
+      <strong>Gemini API key not configured yet.</strong>
+      Palm Photo Reading and AI Guidance need a free key from
+      <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>
+      (sign in with Google → Create API key → copy it, no card needed).
+    </div>
+    <div class="row" style="margin-top:10px; max-width:560px;">
+      <input type="password" id="apiKeyInput" placeholder="Paste your Gemini API key here (saved locally to .env)" autocomplete="off" />
+      <button type="button" class="btn" id="saveKeyBtn" style="flex:0 0 auto;">Save Key</button>
+    </div>
+    <div id="keyMsg" style="margin-top:6px; font-size:0.82rem;"></div>
   </div>
 
   <div class="grid">
@@ -565,6 +572,29 @@ async function checkStatus() {
   }
 }
 checkStatus();
+
+$("saveKeyBtn").onclick = async () => {
+  const key = $("apiKeyInput").value.trim();
+  const msg = $("keyMsg");
+  msg.textContent = "";
+  if (!key) { msg.textContent = "Paste your key first."; return; }
+  $("saveKeyBtn").disabled = true;
+  try {
+    const r = await fetch("/api/config/key", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ api_key: key }),
+    });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || "Could not save key");
+    $("apiKeyInput").value = "";
+    await checkStatus();
+  } catch (e) {
+    msg.textContent = e.message;
+  } finally {
+    $("saveKeyBtn").disabled = false;
+  }
+};
 
 // System switch
 $("systemSeg").addEventListener("click", (e) => {

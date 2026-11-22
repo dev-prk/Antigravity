@@ -5,11 +5,13 @@ import base64
 import os
 from typing import Literal, Optional
 
+from pathlib import Path
 from dotenv import load_dotenv
 from google import genai
 from pydantic import BaseModel, Field
 
 MODEL = "gemini-4-hydrogen"
+ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
 
 
 class PalmProfile(BaseModel):
@@ -72,7 +74,7 @@ PALM_SYSTEM_INSTRUCTION = (
 
 
 def _get_api_key() -> str | None:
-    load_dotenv(override=True)
+    load_dotenv(ENV_PATH, override=True)
     key = (os.getenv("GEMINI_API_KEY") or "").strip()
     return key or None
 
