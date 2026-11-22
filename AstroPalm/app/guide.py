@@ -2,15 +2,9 @@
 from __future__ import annotations
 
 import json
-import os
-from pathlib import Path
 import re
 
-from dotenv import load_dotenv
-from google import genai
-
-MODEL = "gemini-4-hydrogen"
-ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
+from app.llm import create_interaction, get_api_key
 
 CRISIS_PATTERNS = re.compile(
     r"\b("
@@ -61,12 +55,6 @@ How to handle Follow-up Questions (Turn 2+):
 - Pull in only the relevant chart + palm factors for that specific question. Keep it concise, specific, and honest."""
 
 
-def _get_api_key() -> str | None:
-    load_dotenv(ENV_PATH, override=True)
-    key = (os.getenv("GEMINI_API_KEY") or "").strip()
-    return key or None
-
-
 def is_crisis(text: str) -> bool:
     return bool(CRISIS_PATTERNS.search(text or ""))
 
@@ -76,7 +64,6 @@ def mentions_out_of_scope(text: str) -> list[str]:
 
 
 def _context_block(chart: dict, palm: dict, situation: str) -> str:
-    # Compact JSON keeps token usage reasonable while giving every exact number/date.
     return (
         "=== COMPUTED ASTROLOGY CHART (SOURCE OF TRUTH) ===\n"
         + json.dumps(chart, ensure_ascii=False)
@@ -104,12 +91,11 @@ def ask_guide(
             "interaction_id": previous_interaction_id,
         }
 
-    api_key = _get_api_key()
-    if not api_key:
+    if not get_api_key():
         return {
             "ok": False,
             "error": "missing_api_key",
-            "message": "GEMINI_API_KEY is not set in .env yet. Create a free key at https://aistudio.google.com/apikey and add GEMINI_API_KEY=your_key to AstroPalm/.env, then retry.",
+            "message": "GEMINI_API_KEY is not set in .env yet. Create a free key at https://aistudio.google.com/apikey and save it above, then retry.",
         }
 
     oos = mentions_out_of_scope(message or situation)
@@ -120,15 +106,12 @@ def ask_guide(
         else ""
     )
 
-    client = genai.Client(api_key=api_key)
-
     if previous_interaction_id:
         try:
-            interaction = client.interactions.create(
-                model=MODEL,
+            interaction, _ = create_interaction(
                 system_instruction=GUIDE_SYSTEM_INSTRUCTION,
                 previous_interaction_id=previous_interaction_id,
-                input=f"{oos_note}Follow-up question: {message.strip()}",
+                input_data=f"{oos_note}Follow-up question: {message.strip()}",
             )
             return {
                 "ok": True,
@@ -137,7 +120,7 @@ def ask_guide(
                 "interaction_id": interaction.id,
             }
         except Exception:
-            # Fall back to stateless context rebuild if interaction expired (e.g., >1 day on free tier).
+            # Fall back to stateless context rebuild if interaction expired or model switched.
             pass
 
     history_text = ""
@@ -153,10 +136,9 @@ def ask_guide(
         + f"\n\n=== CURRENT QUESTION TO ANSWER NOW ===\n{message.strip()}"
     )
 
-    interaction = client.interactions.create(
-        model=MODEL,
+    interaction, _ = create_interaction(
         system_instruction=GUIDE_SYSTEM_INSTRUCTION,
-        input=full_input,
+        input_data=full_input,
     )
     return {
         "ok": True,

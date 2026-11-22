@@ -2,16 +2,11 @@
 from __future__ import annotations
 
 import base64
-import os
 from typing import Literal, Optional
 
-from pathlib import Path
-from dotenv import load_dotenv
-from google import genai
 from pydantic import BaseModel, Field
 
-MODEL = "gemini-4-hydrogen"
-ENV_PATH = Path(__file__).resolve().parent.parent / ".env"
+from app.llm import create_interaction
 
 
 class PalmProfile(BaseModel):
@@ -73,12 +68,6 @@ PALM_SYSTEM_INSTRUCTION = (
 )
 
 
-def _get_api_key() -> str | None:
-    load_dotenv(ENV_PATH, override=True)
-    key = (os.getenv("GEMINI_API_KEY") or "").strip()
-    return key or None
-
-
 def analyze_palm_photo(
     image_bytes: bytes,
     mime_type: str,
@@ -87,25 +76,15 @@ def analyze_palm_photo(
     user_note: str = "",
 ) -> dict:
     """Read an uploaded palm photo using Gemini vision with structured JSON output."""
-    api_key = _get_api_key()
-    if not api_key:
-        return {
-            "ok": False,
-            "error": "missing_api_key",
-            "message": "GEMINI_API_KEY is not set in .env yet. Add your free Google AI Studio key to .env (or use the Guided Questions tab right now without an API key).",
-        }
-
-    client = genai.Client(api_key=api_key)
     prompt = (
         f"User states this is their {hand_role} hand ({hand_side} palm)."
         + (f" User note: {user_note}" if user_note.strip() else "")
         + "\nEvaluate photo clarity first, then extract only clearly visible palm features into the JSON schema."
     )
 
-    interaction = client.interactions.create(
-        model=MODEL,
+    interaction, err = create_interaction(
         system_instruction=PALM_SYSTEM_INSTRUCTION,
-        input=[
+        input_data=[
             {"type": "text", "text": prompt},
             {
                 "type": "image",
@@ -119,6 +98,12 @@ def analyze_palm_photo(
             "schema": PalmProfile.model_json_schema(),
         },
     )
+    if err == "missing_api_key":
+        return {
+            "ok": False,
+            "error": "missing_api_key",
+            "message": "GEMINI_API_KEY is not set in .env yet. Add your free Google AI Studio key above (or use the Guided Questions tab right now without an API key).",
+        }
 
     parsed = PalmProfile.model_validate_json(interaction.output_text)
     data = parsed.model_dump()

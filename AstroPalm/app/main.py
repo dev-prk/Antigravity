@@ -7,17 +7,18 @@ from typing import Optional
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 from app.chart import build_chart, search_places
 from app.guide import ask_guide
+from app.llm import ENV_PATH, get_api_key
 from app.palm import analyze_palm_photo, build_palm_from_questions
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
-ENV_PATH = BASE_DIR.parent / ".env"
 
 app = FastAPI(title="AstroPalm", version="1.0.0")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
@@ -67,9 +68,7 @@ def index():
 
 @app.get("/api/status")
 def status():
-    load_dotenv(ENV_PATH, override=True)
-    has_key = bool((os.getenv("GEMINI_API_KEY") or "").strip())
-    return {"gemini_configured": has_key}
+    return {"gemini_configured": bool(get_api_key())}
 
 
 @app.post("/api/config/key")
@@ -125,7 +124,8 @@ async def palm_photo(
     if len(data) < 500:
         raise HTTPException(status_code=400, detail="Image file appears empty or corrupted.")
     try:
-        return analyze_palm_photo(
+        return await run_in_threadpool(
+            analyze_palm_photo,
             image_bytes=data,
             mime_type=file.content_type,
             hand_role=hand_role,

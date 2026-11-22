@@ -665,6 +665,7 @@ $("calcChartBtn").onclick = async () => {
   }
 
   $("calcChartBtn").disabled = true;
+  $("calcChartBtn").textContent = "Calculating…";
   try {
     const r = await fetch("/api/chart", {
       method: "POST",
@@ -692,6 +693,7 @@ $("calcChartBtn").onclick = async () => {
     err.style.display = "block";
   } finally {
     $("calcChartBtn").disabled = false;
+    $("calcChartBtn").textContent = "Calculate Chart";
   }
 };
 
@@ -840,7 +842,9 @@ async function sendGuidance(messageText, isFirst) {
 
   appendMsg("user", messageText);
   const btn = isFirst ? $("getGuidanceBtn") : $("sendFollowUpBtn");
+  const origLabel = btn.textContent;
   btn.disabled = true;
+  btn.textContent = isFirst ? "Generating guidance…" : "Thinking…";
 
   try {
     const r = await fetch("/api/guide", {
@@ -871,6 +875,7 @@ async function sendGuidance(messageText, isFirst) {
     err.style.display = "block";
   } finally {
     btn.disabled = false;
+    btn.textContent = origLabel;
   }
 }
 
