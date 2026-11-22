@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstroPalm — Astrology + Palmistry Guidance</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card: #171b24;
+      --card2: #1e2330;
+      --border: #2b3245;
+      --text: #e8ecf4;
+      --muted: #98a2b3;
+      --accent: #d4a656;
+      --accent-soft: rgba(212, 166, 86, 0.14);
+      --ok: #4ade80;
+      --warn: #fbbf24;
+      --err: #f87171;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 18px 64px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      letter-spacing: 0.01em;
+    }
+    h1 span { color: var(--accent); }
+    .sub {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 2px;
+    }
+    .pill {
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--muted);
+    }
+    .pill.ok { border-color: rgba(74, 222, 128, 0.35); color: var(--ok); }
+    .pill.warn { border-color: rgba(251, 191, 36, 0.35); color: var(--warn); }
+
+    .banner {
+      background: rgba(251, 191, 36, 0.1);
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      color: #fde68a;
+      padding: 12px 14px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .banner a { color: var(--accent); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 780px) { .grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .step-tag {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    label {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin: 10px 0 4px;
+    }
+    input[type="text"], input[type="date"], input[type="time"], select, textarea {
+      width: 100%;
+      padding: 9px 11px;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 0.92rem;
+      font-family: inherit;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    input:disabled { opacity: 0.45; }
+
+    .row { display: flex; gap: 10px; align-items: center; }
+    .row > * { flex: 1; }
+    .checkline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      font-size: 0.86rem;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .checkline input { width: auto; }
+
+    .seg {
+      display: flex;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 3px;
+      gap: 4px;
+    }
+    .seg button {
+      flex: 1;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 500;
+    }
+    .seg button.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #14110b;
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 15px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn-ghost {
+      background: var(--card2);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .place-list {
+      margin-top: 6px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card2);
+      max-height: 180px;
+      overflow-y: auto;
+      display: none;
+    }
+    .place-item {
+      padding: 8px 10px;
+      font-size: 0.84rem;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+    }
+    .place-item:last-child { border-bottom: 0; }
+    .place-item:hover { background: var(--accent-soft); }
+    .selected-place {
+      margin-top: 6px;
+      font-size: 0.82rem;
+      color: var(--ok);
+    }
+
+    .summary-box {
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      font-size: 0.86rem;
+      display: none;
+    }
+    .summary-box .kv { margin-bottom: 5px; }
+    .summary-box .kv strong { color: var(--accent); font-weight: 600; }
+    .error-msg {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      background: rgba(248, 113, 113, 0.12);
+      border: 1px solid rgba(248, 113, 113, 0.35);
+      color: #fecaca;
+      font-size: 0.86rem;
+      display: none;
+    }
+    .mounts-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .chip {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--card2);
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+    }
+    .chip.active {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .preview-img {
+      max-width: 100%;
+      max-height: 200px;
+      border-radius: 8px;
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      display: none;
+    }
+    .tips {
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: var(--card2);
+      padding: 8px 10px;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+    details { margin-top: 8px; }
+    summary { cursor: pointer; color: var(--muted); font-size: 0.82rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 0.8rem; }
+    th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--border); }
+
+    .chat-box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .msg {
+      padding: 12px 14px;
+      border-radius: 12px;
+      font-size: 0.92rem;
+      max-width: 100%;
+    }
+    .msg.user {
+      background: var(--accent-soft);
+      border: 1px solid rgba(212, 166, 86, 0.3);
+      align-self: flex-end;
+      max-width: 85%;
+    }
+    .msg.bot {
+      background: var(--card2);
+      border: 1px solid var(--border);
+    }
+    .msg.bot p { margin: 0 0 8px; }
+    .msg.bot p:last-child { margin-bottom: 0; }
+    .msg.bot ul { margin: 6px 0 8px 20px; padding: 0; }
+    .msg.bot h3, .msg.bot h4 { margin: 10px 0 4px; color: var(--accent); font-size: 0.96rem; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Astro<span>Palm</span></h1>
+      <div class="sub">Astrology + Palmistry together, built for difficult situations</div>
+    </div>
+    <div id="apiStatus" class="pill">Checking API status…</div>
+  </header>
+
+  <div id="apiBanner" class="banner">
+    <strong>Gemini API key not configured yet.</strong>
+    You can calculate charts and use Guided Palm Questions right now, but Palm Photo Reading and AI Guidance require a free key from
+    <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">Google AI Studio</a>.
+    Paste <code>GEMINI_API_KEY=your_key</code> into <code>AstroPalm/.env</code> (never share keys in chat) and refresh.
+  </div>
+
+  <div class="grid">
+    <!-- STEP 1: ASTROLOGY -->
+    <div class="card">
+      <h2>
+        <span>1. Birth Chart</span>
+        <span class="step-tag" id="chartBadge">Pending</span>
+      </h2>
+
+      <label>Astrology System</label>
+      <div class="seg" id="systemSeg">
+        <button type="button" data-sys="vedic" class="active">Vedic (Jyotish)</button>
+        <button type="button" data-sys="western">Western (Tropical)</button>
+      </div>
+
+      <label for="nameInput">Name (optional)</label>
+      <input type="text" id="nameInput" placeholder="e.g., Devesh" />
+
+      <div class="row">
+        <div>
+          <label for="dateInput">Birth Date</label>
+          <input type="date" id="dateInput" />
+        </div>
+        <div>
+          <label for="timeInput">Birth Time</label>
+          <input type="time" id="timeInput" />
+        </div>
+      </div>
+
+      <label class="checkline">
+        <input type="checkbox" id="unknownTimeCheck" />
+        <span>I don't know my exact birth time (omits Ascendant &amp; houses)</span>
+      </label>
+
+      <label for="placeInput">Place of Birth</label>
+      <div class="row">
+        <input type="text" id="placeInput" placeholder="City, state or country (e.g., Jaipur, India)" />
+        <button type="button" class="btn btn-ghost" id="findPlaceBtn" style="flex:0 0 auto;">Find</button>
+      </div>
+      <div id="placeList" class="place-list"></div>
+      <div id="selectedPlace" class="selected-place"></div>
+
+      <div style="margin-top:14px;">
+        <button type="button" class="btn" id="calcChartBtn">Calculate Chart</button>
+      </div>
+
+      <div id="chartError" class="error-msg"></div>
+      <div id="chartSummary" class="summary-box"></div>
+    </div>
+
+    <!-- STEP 2: PALMISTRY -->
+    <div class="card">
+      <h2>
+        <span>2. Palm Reading</span>
+        <span class="step-tag" id="palmBadge">Pending</span>
+      </h2>
+
+      <div class="seg" id="palmModeSeg">
+        <button type="button" data-mode="photo" class="active">Palm Photo</button>
+        <button type="button" data-mode="questions">Guided Questions</button>
+      </div>
+
+      <!-- PHOTO MODE -->
+      <div id="photoPane">
+        <div class="row">
+          <div>
+            <label for="photoRole">Hand Role</label>
+            <select id="photoRole">
+              <option value="dominant">Dominant hand (active / present path)</option>
+              <option value="non-dominant">Non-dominant hand (inherited traits)</option>
+            </select>
+          </div>
+          <div>
+            <label for="photoSide">Left or Right</label>
+            <select id="photoSide">
+              <option value="right">Right palm</option>
+              <option value="left">Left palm</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="palmFile">Upload Open Palm Photo</label>
+        <input type="file" id="palmFile" accept="image/*" />
+        <img id="palmPreview" class="preview-img" alt="Palm preview" />
+
+        <div class="tips">
+          Tips: bright indirect light (no flash glare), open relaxed palm facing camera, full palm + base of fingers visible. Non-palm or blurry photos are rejected.
+        </div>
+
+        <label for="photoNote">Optional note (e.g. dominant hand changed, scar)</label>
+        <input type="text" id="photoNote" placeholder="Optional" />
+
+        <div style="margin-top:12px;">
+          <button type="button" class="btn" id="readPhotoBtn">Read Palm Photo</button>
+        </div>
+      </div>
+
+      <!-- QUESTIONS MODE -->
+      <div id="questionsPane" style="display:none;">
+        <div class="row">
+          <div>
+            <label for="qRole">Hand Role</label>
+            <select id="qRole">
+              <option value="dominant">Dominant hand</option>
+              <option value="non-dominant">Non-dominant hand</option>
+            </select>
+          </div>
+          <div>
+            <label for="qSide">Side</label>
+            <select id="qSide">
+              <option value="right">Right</option>
+              <option value="left">Left</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="qShape">Palm Shape</label>
+            <select id="qShape">
+              <option value="square">Square / broad palm</option>
+              <option value="long">Long / rectangular palm</option>
+            </select>
+          </div>
+          <div>
+            <label for="qFingers">Finger Length</label>
+            <select id="qFingers">
+              <option value="short">Shorter than palm height</option>
+              <option value="medium">About equal to palm</option>
+              <option value="long">Longer than palm height</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="qLife">Life Line (curves around thumb base)</label>
+        <select id="qLife">
+          <option value="clear_deep">Clear, deep &amp; unbroken</option>
+          <option value="wide_curve">Wide sweeping arc toward center</option>
+          <option value="close_to_thumb">Hugs close to the thumb</option>
+          <option value="broken_or_chained">Breaks, overlaps, or chains</option>
+          <option value="faint_or_short">Faint, short, or branching</option>
+        </select>
+
+        <label for="qHead">Head Line (middle horizontal line)</label>
+        <select id="qHead">
+          <option value="sloping">Slopes downward toward wrist/outer edge</option>
+          <option value="straight">Straight across the palm</option>
+          <option value="joined_life">Joined to Life line at start</option>
+          <option value="separated_life">Clear gap from Life line at start</option>
+          <option value="forked_or_broken">Forked end, island, or break</option>
+        </select>
+
+        <label for="qHeart">Heart Line (top horizontal line under fingers)</label>
+        <select id="qHeart">
+          <option value="curved_jupiter">Curves up toward index finger</option>
+          <option value="ends_between">Ends between index &amp; middle finger</option>
+          <option value="ends_saturn">Ends under middle finger</option>
+          <option value="straight_flat">Straight / relatively flat</option>
+          <option value="chained_or_broken">Chained, feathered, or broken</option>
+        </select>
+
+        <label for="qFate">Fate Line (vertical center line)</label>
+        <select id="qFate">
+          <option value="present_steady">Clearly visible &amp; steady</option>
+          <option value="starts_late_or_moon">Starts mid-palm or from outer edge</option>
+          <option value="broken_or_shifting">Broken, overlapping, or shifts track</option>
+          <option value="faint_or_absent">Very faint or not visible</option>
+        </select>
+
+        <label>Most padded / prominent mounts (tap any)</label>
+        <div class="mounts-grid" id="mountsChips">
+          <span class="chip" data-val="Venus (thumb base)">Venus</span>
+          <span class="chip" data-val="Jupiter (index base)">Jupiter</span>
+          <span class="chip" data-val="Saturn (middle base)">Saturn</span>
+          <span class="chip" data-val="Sun/Apollo (ring base)">Sun</span>
+          <span class="chip" data-val="Mercury (pinky base)">Mercury</span>
+          <span class="chip" data-val="Moon/Luna (outer base)">Moon</span>
+        </div>
+
+        <label for="qMarks">Any clear marks? (optional)</label>
+        <input type="text" id="qMarks" placeholder="e.g., triangle on head line, travel lines, deep sun line" />
+
+        <div style="margin-top:12px;">
+          <button type="button" class="btn" id="saveQuestionsBtn">Use These Palm Details</button>
+        </div>
+      </div>
+
+      <div id="palmError" class="error-msg"></div>
+      <div id="palmSummary" class="summary-box"></div>
+    </div>
+  </div>
+
+  <!-- STEP 3: DIFFICULT SITUATION & GUIDANCE -->
+  <div class="card">
+    <h2>
+      <span>3. Situation &amp; Combined Guidance (Astrology + Palmistry Only)</span>
+      <span class="step-tag" id="readyBadge">Needs Chart &amp; Palm</span>
+    </h2>
+
+    <label for="situationInput">What difficult situation are you facing?</label>
+    <textarea id="situationInput" rows="3" placeholder="Be specific—for example: career burnout and deciding whether to leave my job in the next 3 months, a recurring conflict in my relationship, or feeling stuck after a major setback."></textarea>
+
+    <div class="mounts-grid" style="margin-top:8px;">
+      <span class="chip example-chip" data-text="I feel stuck in my career and am debating whether to switch jobs or wait a few months. What do my chart timing and palm show, and what should I do this week?">Career crossroads</span>
+      <span class="chip example-chip" data-text="A close relationship has been strained for months and I don't know whether to keep investing or step back. What do my chart and palm point to?">Relationship strain</span>
+      <span class="chip example-chip" data-text="I've been dealing with heavy mental exhaustion and self-doubt after repeated setbacks. What period am I in and how do I navigate it?">Heavy setback &amp; stress</span>
+    </div>
+
+    <div style="margin-top:12px;">
+      <button type="button" class="btn" id="getGuidanceBtn" disabled>Get Combined Guidance</button>
+    </div>
+
+    <div id="guideError" class="error-msg"></div>
+    <div id="chatBox" class="chat-box"></div>
+
+    <div id="followUpRow" class="row" style="margin-top:12px; display:none;">
+      <input type="text" id="followUpInput" placeholder="Ask a specific follow-up question..." />
+      <button type="button" class="btn" id="sendFollowUpBtn" style="flex:0 0 auto;">Ask</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const state = {
+  system: "vedic",
+  place: null,
+  chart: null,
+  palm: null,
+  interactionId: null,
+  history: [],
+};
+
+const $ = (id) => document.getElementById(id);
+
+async function checkStatus() {
+  try {
+    const r = await fetch("/api/status");
+    const d = await r.json();
+    const pill = $("apiStatus");
+    if (d.gemini_configured) {
+      pill.textContent = "Gemini API Ready";
+      pill.className = "pill ok";
+      $("apiBanner").style.display = "none";
+    } else {
+      pill.textContent = "Gemini API Key Missing";
+      pill.className = "pill warn";
+      $("apiBanner").style.display = "block";
+    }
+  } catch {
+    $("apiStatus").textContent = "Offline";
+  }
+}
+checkStatus();
+
+// System switch
+$("systemSeg").addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-sys]");
+  if (!btn) return;
+  state.system = btn.dataset.sys;
+  $("systemSeg").querySelectorAll("button").forEach(b => b.classList.toggle("active", b === btn));
+  if (state.chart) {
+    state.chart = null;
+    $("chartBadge").textContent = "Re-calculate";
+    $("chartSummary").style.display = "none";
+    updateReady();
+  }
+});
+
+// Unknown birth time
+$("unknownTimeCheck").addEventListener("change", (e) => {
+  $("timeInput").disabled = e.target.checked;
+  if (e.target.checked) $("timeInput").value = "";
+});
+
+// Place lookup
+async function findPlaces() {
+  const q = $("placeInput").value.trim();
+  const list = $("placeList");
+  if (q.length < 2) return;
+  list.style.display = "block";
+  list.innerHTML = `<div class="place-item">Searching…</div>`;
+  try {
+    const r = await fetch(`/api/places?q=${encodeURIComponent(q)}`);
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || "Search failed");
+    if (!d.places.length) {
+      list.innerHTML = `<div class="place-item">No matching places found. Try city + country.</div>`;
+      return;
+    }
+    list.innerHTML = "";
+    d.places.forEach((p) => {
+      const div = document.createElement("div");
+      div.className = "place-item";
+      div.textContent = `${p.name} (${p.tz})`;
+      div.onclick = () => {
+        state.place = p;
+        $("selectedPlace").textContent = `Selected: ${p.name} · ${p.lat}, ${p.lon} · ${p.tz}`;
+        list.style.display = "none";
+      };
+      list.appendChild(div);
+    });
+  } catch (err) {
+    list.innerHTML = `<div class="place-item">${err.message}</div>`;
+  }
+}
+$("findPlaceBtn").onclick = findPlaces;
+$("placeInput").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); findPlaces(); } });
+
+// Calculate Chart
+$("calcChartBtn").onclick = async () => {
+  const err = $("chartError");
+  err.style.display = "none";
+  const date = $("dateInput").value;
+  if (!date) { err.textContent = "Please enter your birth date."; err.style.display = "block"; return; }
+  if (!state.place) { err.textContent = "Please search and click a place of birth from the list."; err.style.display = "block"; return; }
+  const time = $("unknownTimeCheck").checked ? null : ($("timeInput").value || null);
+  if (!$("unknownTimeCheck").checked && !time) {
+    err.textContent = "Enter your birth time, or check 'I don't know my exact birth time'.";
+    err.style.display = "block";
+    return;
+  }
+
+  $("calcChartBtn").disabled = true;
+  try {
+    const r = await fetch("/api/chart", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: $("nameInput").value,
+        system: state.system,
+        date,
+        time,
+        lat: state.place.lat,
+        lon: state.place.lon,
+        tz: state.place.tz,
+        place_name: state.place.name,
+      }),
+    });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || "Chart error");
+    state.chart = d.chart;
+    state.interactionId = null;
+    renderChartSummary(d.chart);
+    $("chartBadge").textContent = "Ready";
+    updateReady();
+  } catch (e) {
+    err.textContent = e.message;
+    err.style.display = "block";
+  } finally {
+    $("calcChartBtn").disabled = false;
+  }
+};
+
+function renderChartSummary(c) {
+  const box = $("chartSummary");
+  box.style.display = "block";
+  let html = `<div class="kv"><strong>System:</strong> ${esc(c.system)}</div>`;
+  html += `<div class="kv"><strong>Birth:</strong> ${esc(c.birth.local)} · ${esc(c.birth.timezone)}</div>`;
+  if (c.system.startsWith("Vedic")) {
+    if (c.lagna) html += `<div class="kv"><strong>Lagna:</strong> ${esc(c.lagna.sign)} ${esc(c.lagna.degree)} (${esc(c.lagna.nakshatra.name)})</div>`;
+    html += `<div class="kv"><strong>Moon (Rashi):</strong> ${esc(c.moon_sign_rashi)} · ${esc(c.janma_nakshatra.name)} Pada ${c.janma_nakshatra.pada}</div>`;
+    html += `<div class="kv"><strong>Dasha now:</strong> ${esc(c.dasha.current.mahadasha)} MD / ${esc(c.dasha.current.antardasha)} AD (until ${esc(c.dasha.current.antardasha_to)})</div>`;
+    html += `<div class="kv"><strong>Saturn phase:</strong> ${esc(c.current_transits.saturn_phase)}</div>`;
+  } else {
+    if (c.ascendant) html += `<div class="kv"><strong>Ascendant / MC:</strong> ${esc(c.ascendant.sign)} ${esc(c.ascendant.degree)} / ${esc(c.midheaven.sign)} ${esc(c.midheaven.degree)}</div>`;
+    html += `<div class="kv"><strong>Sun / Moon:</strong> ${esc(c.planets.Sun.sign)} ${esc(c.planets.Sun.degree)} / ${esc(c.planets.Moon.sign)} ${esc(c.planets.Moon.degree)}</div>`;
+    html += `<div class="kv"><strong>Active transits:</strong> ${esc(c.current_transits.aspects_to_natal.slice(0, 3).join("; "))}</div>`;
+  }
+  if (c.time_unknown_notes) {
+    html += `<div class="kv" style="color:var(--warn)"><strong>Note:</strong> ${esc(c.time_unknown_notes.join(" "))}</div>`;
+  }
+  let rows = "";
+  for (const [p, v] of Object.entries(c.planets)) {
+    rows += `<tr><td>${esc(p)}</td><td>${esc(v.sign)} ${esc(v.degree)}</td><td>${v.house ?? "—"}</td><td>${v.retrograde ? "R" : ""} ${esc(v.dignity || "")}</td></tr>`;
+  }
+  html += `<details><summary>All planetary placements</summary><table><tr><th>Body</th><th>Position</th><th>House</th><th>Notes</th></tr>${rows}</table></details>`;
+  box.innerHTML = html;
+}
+
+// Palm mode tabs
+$("palmModeSeg").addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-mode]");
+  if (!btn) return;
+  const mode = btn.dataset.mode;
+  $("palmModeSeg").querySelectorAll("button").forEach(b => b.classList.toggle("active", b === btn));
+  $("photoPane").style.display = mode === "photo" ? "block" : "none";
+  $("questionsPane").style.display = mode === "questions" ? "block" : "none";
+});
+
+$("palmFile").addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  const img = $("palmPreview");
+  if (!file) { img.style.display = "none"; return; }
+  img.src = URL.createObjectURL(file);
+  img.style.display = "block";
+});
+
+$("mountsChips").addEventListener("click", (e) => {
+  const chip = e.target.closest(".chip");
+  if (chip) chip.classList.toggle("active");
+});
+
+$("readPhotoBtn").onclick = async () => {
+  const err = $("palmError");
+  err.style.display = "none";
+  const file = $("palmFile").files[0];
+  if (!file) { err.textContent = "Please choose a palm photo first."; err.style.display = "block"; return; }
+  const fd = new FormData();
+  fd.append("file", file);
+  fd.append("hand_role", $("photoRole").value);
+  fd.append("hand_side", $("photoSide").value);
+  fd.append("user_note", $("photoNote").value);
+
+  $("readPhotoBtn").disabled = true;
+  $("readPhotoBtn").textContent = "Reading palm…";
+  try {
+    const r = await fetch("/api/palm/photo", { method: "POST", body: fd });
+    const d = await r.json();
+    if (!d.ok) {
+      err.textContent = d.message || "Could not read palm photo. Try better lighting or switch to Guided Questions.";
+      err.style.display = "block";
+      return;
+    }
+    state.palm = d.profile;
+    state.interactionId = null;
+    renderPalmSummary(d.profile);
+    $("palmBadge").textContent = "Ready (Photo)";
+    updateReady();
+  } catch (e) {
+    err.textContent = e.message;
+    err.style.display = "block";
+  } finally {
+    $("readPhotoBtn").disabled = false;
+    $("readPhotoBtn").textContent = "Read Palm Photo";
+  }
+};
+
+$("saveQuestionsBtn").onclick = async () => {
+  const err = $("palmError");
+  err.style.display = "none";
+  const mounts = [...$("mountsChips").querySelectorAll(".chip.active")].map(c => c.dataset.val);
+  const marksRaw = $("qMarks").value.trim();
+  const payload = {
+    hand_role: $("qRole").value,
+    hand_side: $("qSide").value,
+    palm_shape: $("qShape").value,
+    finger_length: $("qFingers").value,
+    life_line: $("qLife").value,
+    head_line: $("qHead").value,
+    heart_line: $("qHeart").value,
+    fate_line: $("qFate").value,
+    prominent_mounts: mounts,
+    notable_marks: marksRaw ? marksRaw.split(",").map(s => s.trim()).filter(Boolean) : [],
+  };
+  const r = await fetch("/api/palm/questions", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  const d = await r.json();
+  state.palm = d.profile;
+  state.interactionId = null;
+  renderPalmSummary(d.profile);
+  $("palmBadge").textContent = "Ready (Guided)";
+  updateReady();
+};
+
+function renderPalmSummary(p) {
+  const box = $("palmSummary");
+  box.style.display = "block";
+  box.innerHTML =
+    `<div class="kv"><strong>Hand:</strong> ${esc(p.hand_side)} · <strong>Element:</strong> ${esc(p.hand_element)}</div>` +
+    `<div class="kv"><strong>Life Line:</strong> ${esc(p.life_line)}</div>` +
+    `<div class="kv"><strong>Head Line:</strong> ${esc(p.head_line)}</div>` +
+    `<div class="kv"><strong>Heart Line:</strong> ${esc(p.heart_line)}</div>` +
+    `<div class="kv"><strong>Fate Line:</strong> ${esc(p.fate_line)}</div>` +
+    `<div class="kv"><strong>Mounts:</strong> ${esc((p.prominent_mounts || []).join(", ") || "balanced / none standout")}</div>` +
+    (p.notable_marks?.length ? `<div class="kv"><strong>Marks:</strong> ${esc(p.notable_marks.join(", "))}</div>` : "");
+}
+
+function updateReady() {
+  const ok = Boolean(state.chart && state.palm);
+  $("getGuidanceBtn").disabled = !ok;
+  $("readyBadge").textContent = ok ? "Ready" : "Needs Chart & Palm";
+}
+
+document.querySelectorAll(".example-chip").forEach((c) => {
+  c.onclick = () => { $("situationInput").value = c.dataset.text; };
+});
+
+async function sendGuidance(messageText, isFirst) {
+  const err = $("guideError");
+  err.style.display = "none";
+  const situation = $("situationInput").value.trim();
+  if (!situation) { err.textContent = "Describe your situation first."; err.style.display = "block"; return; }
+
+  appendMsg("user", messageText);
+  const btn = isFirst ? $("getGuidanceBtn") : $("sendFollowUpBtn");
+  btn.disabled = true;
+
+  try {
+    const r = await fetch("/api/guide", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chart: state.chart,
+        palm: state.palm,
+        situation,
+        message: messageText,
+        previous_interaction_id: state.interactionId,
+        history: state.history,
+      }),
+    });
+    const d = await r.json();
+    if (!d.ok) {
+      err.textContent = d.message || "Guidance error.";
+      err.style.display = "block";
+      return;
+    }
+    state.interactionId = d.interaction_id || state.interactionId;
+    state.history.push({ role: "user", text: messageText });
+    state.history.push({ role: "assistant", text: d.reply });
+    appendMsg("bot", d.reply);
+    $("followUpRow").style.display = "flex";
+  } catch (e) {
+    err.textContent = e.message;
+    err.style.display = "block";
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+$("getGuidanceBtn").onclick = () => {
+  state.interactionId = null;
+  state.history = [];
+  $("chatBox").innerHTML = "";
+  sendGuidance($("situationInput").value.trim(), true);
+};
+
+$("sendFollowUpBtn").onclick = () => {
+  const q = $("followUpInput").value.trim();
+  if (!q) return;
+  $("followUpInput").value = "";
+  sendGuidance(q, false);
+};
+
+$("followUpInput").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") { e.preventDefault(); $("sendFollowUpBtn").click(); }
+});
+
+function appendMsg(role, text) {
+  const div = document.createElement("div");
+  div.className = `msg ${role}`;
+  div.innerHTML = role === "bot" ? renderMd(text) : esc(text).replace(/\n/g, "<br>");
+  $("chatBox").appendChild(div);
+  div.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, (m) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m]));
+}
+
+function renderMd(md) {
+  const lines = esc(md).split("\n");
+  let out = "", inUl = false;
+  for (const raw of lines) {
+    const line = raw.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/`(.+?)`/g, "<code>$1</code>");
+    if (/^###\s+/.test(line)) { if (inUl) { out += "</ul>"; inUl = false; } out += `<h4>${line.replace(/^###\s+/, "")}</h4>`; }
+    else if (/^##\s+/.test(line)) { if (inUl) { out += "</ul>"; inUl = false; } out += `<h3>${line.replace(/^##\s+/, "")}</h3>`; }
+    else if (/^[-*]\s+/.test(line)) { if (!inUl) { out += "<ul>"; inUl = true; } out += `<li>${line.replace(/^[-*]\s+/, "")}</li>`; }
+    else if (!line.trim()) { if (inUl) { out += "</ul>"; inUl = false; } }
+    else { if (inUl) { out += "</ul>"; inUl = false; } out += `<p>${line}</p>`; }
+  }
+  if (inUl) out += "</ul>";
+  return out;
+}
+</script>
+</body>
+</html>
