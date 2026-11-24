@@ -52,8 +52,8 @@ a public profile. Raise it in the brief as an *ask*, with the recommended answer
 It even confirmed that a working Gemini key existed. Then it built a 640-line regex "DBA domain
 engine" as the core, with the LLM as "optional", and wrote the user's own strengths and canned
 advice into the code as constants. A pastry chef's resume scored a "projected 89/100 after
-fixes". The JD's "8+ years" wasn't parsed. It ended the turn with "I will report the verification
-results as soon as the browser check completes."
+fixes". The JD's "8+ years" wasn't parsed. Its browser check went to a sub-agent and only
+re-ran the happy path, so the canned output was never caught.
 
 **With this skill:** The model does the matching and rewriting, since a key exists. Code only
 extracts text, sends both documents, and shows a structured answer. The resume comes only from

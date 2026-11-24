@@ -1,138 +1,139 @@
-"""FastAPI server for the Lead DBA Resume & JD Matcher local web app."""
+"""FastAPI backend for the PostgreSQL EXPLAIN (ANALYZE) & Query Tuning Advisor."""
 from __future__ import annotations
 
 from pathlib import Path
 from typing import Any
 
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from analyzer import (
-    analyze_resume_vs_jd,
-    extract_text_from_docx_bytes,
-    generate_ai_deep_critique,
-)
+from explain_analyzer import analyze_explain_and_query
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
 
-app = FastAPI(title="Lead DBA Resume & JD Matcher")
+app = FastAPI(title="PostgreSQL EXPLAIN (ANALYZE) & Query Tuning Advisor")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
-# Paths to Devesh's real resumes on disk so presets load his genuine up-to-date text
-RESUME_PATHS: dict[str, Path] = {
-    "lead_dba": Path("/Users/devesh/Documents/Antigravity/Automation/job-profiles/Devesh_Pareek_Lead_DBA_Resume.docx"),
-    "postgres_dba": Path("/Users/devesh/Documents/Resume/Devesh_Pareek_Resume_Postgres_DBA.docx"),
-    "db2_dba": Path("/Users/devesh/Documents/Resume/Devesh_Pareek_Resume_Db2_DBA.docx"),
+
+PRESET_SCENARIOS: dict[str, dict[str, str]] = {
+    "seq_scan_external_sort": {
+        "title": "Ticket #1: Slow Order History API (Seq Scan + 49MB External Disk Sort + Deep OFFSET)",
+        "category": "Indexing · work_mem · Keyset Pagination",
+        "difficulty": "Lead DBA Core",
+        "sql": """SELECT id, customer_id, total_amount, created_at
+FROM orders o
+WHERE o.tenant_id = 42
+  AND o.status = 'PAID'
+ORDER BY o.created_at DESC
+LIMIT 50 OFFSET 50000;""",
+        "explain": """Limit  (cost=184520.45..184520.58 rows=50 width=148) (actual time=1428.412..1428.445 rows=50 loops=1)
+  Buffers: shared hit=4210 read=98450, temp read=12450 written=12455
+  ->  Sort  (cost=184395.45..186895.45 rows=1000000 width=148) (actual time=1412.110..1425.890 rows=50050 loops=1)
+        Sort Key: created_at DESC
+        Sort Method: external merge  Disk: 49800kB
+        Buffers: shared hit=4210 read=98450, temp read=12450 written=12455
+        ->  Seq Scan on orders o  (cost=0.00..115160.00 rows=1000000 width=148) (actual time=0.045..960.230 rows=420000 loops=1)
+              Filter: ((tenant_id = 42) AND ((status)::text = 'PAID'::text))
+              Rows Removed by Filter: 4580000
+              Buffers: shared hit=4210 read=98450
+Planning Time: 0.420 ms
+Execution Time: 1435.820 ms""",
+    },
+    "bad_stats_nested_loop": {
+        "title": "Ticket #2: P1 Checkout Spike (240x Row Underestimate Driving 12,000 Nested Loop Probes)",
+        "category": "Planner Statistics · Nested Loop vs Hash Join · Missing FK Index",
+        "difficulty": "Lead DBA Core",
+        "sql": """SELECT c.id, c.region, c.tier, i.invoice_number, i.amount_cents
+FROM customers c
+JOIN invoices i ON i.customer_id = c.id
+WHERE c.region = 'APAC'
+  AND c.tier = 'ENTERPRISE'
+  AND i.billing_state = 'UNPAID';""",
+        "explain": """Nested Loop  (cost=0.43..4825.60 rows=45 width=96) (actual time=0.310..2840.650 rows=18420 loops=1)
+  Buffers: shared hit=142000 read=318400
+  ->  Index Scan using idx_customers_region on customers c  (cost=0.43..124.50 rows=50 width=44) (actual time=0.040..18.420 rows=12000 loops=1)
+        Index Cond: ((region)::text = 'APAC'::text)
+        Filter: ((tier)::text = 'ENTERPRISE'::text)
+        Rows Removed by Filter: 34000
+        Buffers: shared hit=1200 read=410
+  ->  Seq Scan on invoices i  (cost=0.00..94.00 rows=2 width=52) (actual time=0.012..0.234 rows=2 loops=12000)
+        Filter: ((customer_id = c.id) AND ((billing_state)::text = 'UNPAID'::text))
+        Rows Removed by Filter: 4850
+        Buffers: shared hit=140800 read=317990
+Planning Time: 0.610 ms
+Execution Time: 2846.190 ms""",
+    },
+    "correlated_subplan_sargable": {
+        "title": "Ticket #3: Reporting Timeout (Correlated SubPlan x8,500 Loops + Non-Sargable DATE_TRUNC)",
+        "category": "Query Rewrite · Sargability · Functional Filter",
+        "difficulty": "Senior / Lead Interview",
+        "sql": """SELECT a.account_id,
+       a.company_name,
+       (SELECT COUNT(*) FROM audit_events e WHERE e.account_id = a.account_id AND e.severity = 'HIGH') AS high_alerts
+FROM accounts a
+WHERE date_trunc('day', a.updated_at) = '2026-11-01 00:00:00'
+  AND a.account_id NOT IN (SELECT account_id FROM suspended_accounts);""",
+        "explain": """Seq Scan on accounts a  (cost=0.00..412890.00 rows=8500 width=72) (actual time=1.240..3412.880 rows=8500 loops=1)
+  Filter: ((NOT (hashed SubPlan 2)) AND (date_trunc('day'::text, updated_at) = '2026-11-01 00:00:00'::timestamp without time zone))
+  Rows Removed by Filter: 941500
+  Buffers: shared hit=910200 read=84500
+  SubPlan 1
+    ->  Aggregate  (cost=48.10..48.11 rows=1 width=8) (actual time=0.365..0.365 rows=1 loops=8500)
+          Buffers: shared hit=850000 read=42000
+          ->  Seq Scan on audit_events e  (cost=0.00..48.00 rows=4 width=0) (actual time=0.015..0.358 rows=6 loops=8500)
+                Filter: ((account_id = a.account_id) AND ((severity)::text = 'HIGH'::text))
+                Rows Removed by Filter: 2400
+                Buffers: shared hit=850000 read=42000
+  SubPlan 2
+    ->  Seq Scan on suspended_accounts  (cost=0.00..24.00 rows=1400 width=8) (actual time=0.010..0.190 rows=1400 loops=1)
+          Buffers: shared hit=10
+Planning Time: 0.540 ms
+Execution Time: 3418.450 ms""",
+    },
+    "lossy_bitmap_leading_wildcard": {
+        "title": "Ticket #4: Customer Search Degradation (Lossy Bitmap Heap Scan + Leading Wildcard ILIKE)",
+        "category": "work_mem Lossy Pages · pg_trgm GIN · Autovacuum Visibility Map",
+        "difficulty": "Lead DBA Deep Dive",
+        "sql": """SELECT id, email, full_name, phone, last_login_at
+FROM user_profiles u
+WHERE u.org_id = 108
+  AND u.email ILIKE '%@enterprise-client.com';""",
+        "explain": """Bitmap Heap Scan on user_profiles u  (cost=412.80..48920.50 rows=4200 width=112) (actual time=38.400..842.150 rows=3850 loops=1)
+  Recheck Cond: (org_id = 108)
+  Rows Removed by Index Recheck: 1420000
+  Filter: ((email)::text ~~* '%@enterprise-client.com'::text)
+  Rows Removed by Filter: 286150
+  Heap Blocks: exact=4120 lossy=28450
+  Buffers: shared hit=8120 read=24450
+  ->  Bitmap Index Scan on idx_user_profiles_org_id  (cost=0.00..411.75 rows=290000 width=0) (actual time=24.110..24.110 rows=290000 loops=1)
+        Index Cond: (org_id = 108)
+        Buffers: shared hit=795
+Planning Time: 0.310 ms
+Execution Time: 845.600 ms""",
+    },
+    "healthy_index_only_scan": {
+        "title": "Ticket #5 (Contrast Check): Already-Optimized Index Only Scan (0.06 ms)",
+        "category": "Healthy Baseline · Zero Spills · Avoid Over-Indexing",
+        "difficulty": "Contrast Verification",
+        "sql": """SELECT id, email
+FROM users u
+WHERE u.email = 'devesh.pareek@example.com';""",
+        "explain": """Index Only Scan using idx_users_email_covering on users u  (cost=0.43..4.45 rows=1 width=36) (actual time=0.028..0.031 rows=1 loops=1)
+  Index Cond: (email = 'devesh.pareek@example.com'::text)
+  Heap Fetches: 0
+  Buffers: shared hit=4
+Planning Time: 0.085 ms
+Execution Time: 0.055 ms""",
+    },
 }
 
-FALLBACK_LEAD_RESUME = """Devesh Pareek
-Lead Database Administrator · PostgreSQL & Db2 LUW
-Hyderabad, India | +91 7815887659 | devsh.pareek@gmail.com | linkedin.com/in/devesh-pareek
 
-SUMMARY
-Database engineer with 4.7 years in production database operations and repeated team-lead responsibility. Currently a PostgreSQL DBA and interim lead for 3 engineers at Softility; previously a Db2 LUW DBA at Deloitte supporting 100+ instances (20TB+) at 99.99% uptime, and interim lead of a 16-member monitoring team. Combines hands-on HA/DR, recovery and performance work with delivery ownership, vendor transitions, mentoring and automation that removes repeat operational work.
-
-LEADERSHIP HIGHLIGHTS
-• Interim lead for 3 engineers (Softility) and for a 16-member monitoring team for 6 months (Deloitte).
-• Led knowledge transfer (SOPs, documentation) to a client's incoming vendor; trained 3 new team members.
-• Trusted SME for incidents by client DBAs with 15+ years of experience, across up to 4 concurrent accounts.
-• Automation adopted by a 17-person team: daily monitoring cut from about 8 hours to 30 minutes.
-
-CORE SKILLS
-• Databases: PostgreSQL (Patroni, replication, autovacuum, roles/grants), Db2 LUW v11.x (HADR 3/4-node, reorg, runstats), SQL
-• Reliability: HA/DR, failover/takeover, backup/restore/PITR, zero-downtime patching, upgrades, server/VM migrations, RCA
-• Leadership: team leadership, delivery and process improvement, stakeholder management, vendor transition, mentoring
-• Automation & tools: Python (pandas, Selenium), shell, runbooks, CI/CD, Git, Linux, New Relic, ServiceNow, Tableau; AWS (RDS, S3, IAM) in progress
-
-EXPERIENCE
-Softility, Hyderabad — Senior Software Engineer (PostgreSQL DBA), Interim Lead | Sep 2025 – Present
-• Own production PostgreSQL reliability for a client: Patroni failover/switchover, autovacuum, patching, storage maintenance, backup recoverability, security via roles and grants.
-• Interim lead for 3 engineers; work with leadership and team leads on process optimisation and delivery.
-• Built an AI-assisted PostgreSQL monitoring tool (lower environment) that reads configs, logs and parameters and recommends fixes without an external monitoring tool.
-
-Deloitte USI, Hyderabad — Analyst, Database Administrator (Db2 LUW) | Jan 2023 – Dec 2024
-• Supported 100+ Db2 LUW instances (20TB+) across 4 client accounts, including a global e-commerce platform through Black Friday, July 4th and year-end peaks; 99.99% uptime.
-• Built 15+ HADR clusters (3- and 4-node); delivered zero-downtime Linux patching using scripted failover and takeover.
-• Resolved lock contention and database-down incidents; performed backup, restore, PITR and server/VM migrations.
-• Ran CI/CD releases across DEV, SIT, QA and Prod with tested rollback scripts.
-• Trained 3 new team members and led knowledge transfer to the client's incoming vendor.
-
-Deloitte USI, Hyderabad — Operations Analyst, Automation and Interim Team Lead | Jul 2021 – Dec 2022
-• Interim lead of a 16-member monitoring team for 6 months.
-• Python (Selenium, Outlook) automation cut daily monitoring from about 8 hours to 30 minutes; adopted by the 17-person team.
-• Cleared about 1,500 tickets from a 5,000-ticket backlog using pandas and Tableau.
-• Built a storage capacity forecast from 3 years of metrics that cut predicted client cost by about 60% and supported a 5-year contract renewal.
-
-Career break — independent AI and data automation projects (Python) | Jan 2025 – Aug 2025
-
-EDUCATION
-B.Tech, Computer Science and Engineering — SRM Institute of Science and Technology | 2017 – 2021 | 85.6%
-Admitted to MSE, Data Science, Johns Hopkins University (2025 intake); did not enrol because US student visa slots were unavailable in India."""
-
-SAMPLE_JDS: dict[str, dict[str, str]] = {
-    "pg_lead": {
-        "title": "Lead PostgreSQL DBA (Patroni HA, Cloud & Team Lead)",
-        "text": """Role: Lead Database Administrator (PostgreSQL)
-Location: Hyderabad / Bengaluru (Hybrid)
-Experience: 5+ Years
-
-About the Role:
-We are seeking a hands-on Lead PostgreSQL DBA to lead a pod of 3–5 database engineers and own reliability, High Availability, performance tuning, and automation across our production PostgreSQL estate.
-
-Key Responsibilities & Requirements:
-• 5+ years of production Database Administration experience with strong expertise in PostgreSQL (v14/15/16) and enterprise RDBMS (such as Db2 LUW or Oracle).
-• Proven hands-on experience designing and operating PostgreSQL High Availability clusters using Patroni, streaming & logical replication, PgBouncer connection pooling, and automated failover/switchover.
-• Own backup and recovery strategy including Point-in-Time Recovery (PITR), pgBackRest / Barman, disaster recovery drills, and zero-downtime patching/upgrades.
-• Deep expertise in SQL query optimization, execution plan analysis (EXPLAIN ANALYZE), indexing strategies, table partitioning, autovacuum tuning, bloat remediation, and resolving lock contention.
-• Lead and mentor junior DBAs, act as P1/P2 incident escalation SME, enforce SOPs and operational runbooks, and coordinate database CI/CD schema releases across DEV, QA, and Production.
-• Build operational automation using Python and Bash/Shell scripting on Linux (RHEL), and maintain monitoring/observability dashboards in New Relic, Prometheus, or Grafana.
-• Working knowledge of AWS database services (RDS for PostgreSQL, Aurora, S3 backup storage, IAM) and capacity planning / cost optimization.""",
-    },
-    "enterprise_multi_db_lead": {
-        "title": "Database Operations Lead — Enterprise RDBMS (Db2 LUW / PostgreSQL)",
-        "text": """Role: Database Operations Lead (Db2 LUW & PostgreSQL)
-Location: Hyderabad / Pune
-Experience: 4–7 Years
-
-Responsibilities:
-• Lead a 24x7 production database operations team supporting 100+ multi-terabyte (15TB+) database instances across enterprise and e-commerce accounts at 99.99% SLA uptime.
-• Architect and maintain multi-node Db2 LUW v11.x HADR clusters and PostgreSQL Patroni replication topologies.
-• Execute zero-downtime Linux OS and database patching via scripted failover/takeover, server/VM database migrations, and Point-in-Time Recovery (PITR).
-• Troubleshoot complex database-down incidents, deadlocks, lock contention, transaction log saturation, and query slowdowns using db2diag, reorg, runstats, and execution plans.
-• Drive team leadership: onboard and train team members, manage vendor transitions and knowledge transfer (KT), maintain runbooks/SOPs, and handle stakeholder communication.
-• Automate repetitive DBA and monitoring tasks with Python and Shell scripts, integrate with ServiceNow and New Relic observability, and deliver storage capacity planning.""",
-    },
-    "cloud_sre_stretch": {
-        "title": "Principal Cloud DBA — Oracle RAC, MySQL & Kubernetes (Stretch/Gap Test)",
-        "text": """Role: Principal Cloud Database Engineer (Oracle, MySQL & Kubernetes)
-Experience: 8+ Years
-
-Requirements:
-• 8+ years administering Oracle 19c RAC, Oracle Data Guard, GoldenGate, and MySQL InnoDB Cluster in high-throughput fintech environments.
-• Deploy and manage containerized databases on Kubernetes using CloudNativePG and Helm charts.
-• Provision cloud infrastructure on AWS and Azure using Terraform and Ansible Infrastructure-as-Code (IaC).
-• Handle PostgreSQL replication, backup/PITR, Python/Bash automation, and production incident management.""",
-    },
-}
-
-
-def load_resume_preset(key: str) -> str:
-    path = RESUME_PATHS.get(key)
-    if path and path.exists():
-        try:
-            return extract_text_from_docx_bytes(path.read_bytes())
-        except Exception:
-            pass
-    return FALLBACK_LEAD_RESUME
-
-
-class AnalyzeRequest(BaseModel):
-    resume_text: str
-    jd_text: str
-    include_ai: bool = False
+class ExplainAnalyzeRequest(BaseModel):
+    explain_text: str
+    sql_text: str = ""
 
 
 @app.get("/")
@@ -142,62 +143,25 @@ def index() -> FileResponse:
 
 @app.get("/api/presets")
 def get_presets() -> JSONResponse:
-    return JSONResponse({
-        "resumes": {
-            "lead_dba": {
-                "label": "Devesh — Lead DBA Resume (.docx)",
-                "text": load_resume_preset("lead_dba"),
-            },
-            "postgres_dba": {
-                "label": "Devesh — PostgreSQL DBA Resume (.docx)",
-                "text": load_resume_preset("postgres_dba"),
-            },
-            "db2_dba": {
-                "label": "Devesh — Db2 LUW DBA Resume (.docx)",
-                "text": load_resume_preset("db2_dba"),
-            },
-        },
-        "jds": SAMPLE_JDS,
-    })
-
-
-@app.post("/api/upload-resume")
-async def upload_resume(file: UploadFile = File(...)) -> JSONResponse:
-    filename = (file.filename or "").lower()
-    raw = await file.read()
-    if not raw:
-        raise HTTPException(status_code=400, detail="Uploaded file is empty.")
-
-    if filename.endswith(".docx"):
-        try:
-            text = extract_text_from_docx_bytes(raw)
-        except Exception as exc:
-            raise HTTPException(status_code=400, detail=f"Could not parse .docx file: {exc}") from exc
-    elif filename.endswith((".txt", ".md")):
-        text = raw.decode("utf-8", errors="replace")
-    else:
-        raise HTTPException(status_code=400, detail="Please upload a .docx, .txt, or .md resume file (or paste text directly).")
-
-    return JSONResponse({"filename": file.filename, "text": text})
+    return JSONResponse({"scenarios": PRESET_SCENARIOS})
 
 
 @app.post("/api/analyze")
-def analyze_endpoint(req: AnalyzeRequest) -> JSONResponse:
-    resume = (req.resume_text or "").strip()
-    jd = (req.jd_text or "").strip()
+def analyze_plan(req: ExplainAnalyzeRequest) -> JSONResponse:
+    explain_raw = (req.explain_text or "").strip()
+    sql_raw = (req.sql_text or "").strip()
 
-    if len(resume) < 40:
+    if len(explain_raw) < 15:
         raise HTTPException(
             status_code=422,
-            detail="Please paste a complete resume (at least a few lines of skills and experience) before analyzing.",
-        )
-    if len(jd) < 40:
-        raise HTTPException(
-            status_code=422,
-            detail="Please paste a complete Job Description (at least a few requirements) before analyzing.",
+            detail="Please paste a PostgreSQL EXPLAIN or EXPLAIN (ANALYZE, BUFFERS) output before running diagnosis.",
         )
 
-    result: dict[str, Any] = analyze_resume_vs_jd(resume, jd)
-    if req.include_ai:
-        result["ai_critique"] = generate_ai_deep_critique(resume, jd, result)
+    try:
+        result: dict[str, Any] = analyze_explain_and_query(explain_raw, sql_raw)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    except Exception as exc:
+        raise HTTPException(status_code=400, detail=f"Could not parse EXPLAIN output: {exc}") from exc
+
     return JSONResponse(result)

@@ -1,27 +1,28 @@
-# SkillTest — Lead DBA Resume & JD Matcher
+# SkillTest — PostgreSQL EXPLAIN (ANALYZE) & Query Tuning Advisor
 
 ## Brief
-1. **Ask:** Build a small local web app in `~/Documents/Antigravity/SkillTest` where the user pastes their resume and a job description, and it tells them how well they match and exactly what to fix in their resume before applying (specifically for Lead DBA applications).
+1. **Ask:** Build a small local web tool in `~/Documents/Antigravity/SkillTest` where the user pastes a PostgreSQL `EXPLAIN (ANALYZE)` output and the SQL query, and it tells them what's slow, why, and exactly what to change (index, rewrite, setting) for Lead DBA interview practice and real tickets.
 2. **Must-haves:**
-   - "small local web app"
-   - "where I paste my resume and a job description"
-   - "tells me how well I match"
-   - "and exactly what to fix in my resume before I apply"
+   - "small local web tool"
+   - "paste a PostgreSQL EXPLAIN (ANALYZE) output and the query"
+   - "tells me what's slow, why, and exactly what to change (index, rewrite, setting)"
    - "Put it in ~/Documents/Antigravity/SkillTest"
-   - "I want to actually use this for my Lead DBA applications"
-3. **Done test:** Open the local web app in a browser, load or paste a real resume (including Devesh's actual Lead DBA / Postgres / Db2 resumes) and two different real Lead DBA job descriptions, click analyze, and see: (a) an evidence-based match breakdown across DBA dimensions (DB engines, HA/DR & reliability, scale/operations, leadership/team management, automation/cloud, experience/seniority), (b) exact requirement-by-requirement matched vs. missing/weak points, and (c) concrete, truthful before → after bullet/summary/skills edits ready to copy-paste without inventing fake experience. Also test empty/bad input to verify validation.
+   - "practise for Lead DBA interviews and on real tickets"
+3. **Done test:** Open the local web app in the browser, paste or load a slow `EXPLAIN (ANALYZE, BUFFERS)` plan and SQL query, click Analyze, and see: (a) the exact bottleneck node(s) ranked by self/exclusive time with parent-child plan tree timing & buffer metrics, (b) plain-English root cause ("why it's slow"), and (c) concrete, copy-ready fixes categorized into **Index DDL** (`CREATE INDEX CONCURRENTLY ...` derived from the actual table/columns in the plan & query), **Query Rewrite** (before/after SQL tailored to the query), and **PostgreSQL Settings / Maintenance** (`SET work_mem`, `ANALYZE`, `random_page_cost`, etc.), plus an Interactive Lead DBA Interview Practice mode (hide findings first so the user can diagnose the plan themselves, then reveal the Lead DBA model answer). Contrast-test against a fast already-indexed query (~0.2ms Index Only Scan) to confirm it reports the query is already healthy rather than inventing fake index recommendations, and test malformed/empty input.
 4. **Expert gap:**
-   - Generic keyword counters fail on DBA roles because ATS and hiring managers distinguish **Primary DB Engine** (PostgreSQL vs Db2 LUW vs Oracle/MySQL/MSSQL), **HA/DR stack** (Patroni, HADR, streaming replication, Pacemaker, PGD, pgBackRest, Barman, PITR), **Scale metrics** (instance count, TB size, uptime SLA, peak traffic), **Leadership proof** (team size led, mentoring, vendor transitions, incident SME, stakeholder management), and **Truthfulness constraint** (never tell a candidate to fabricate 8 years of Oracle if they have 4.7 years of Postgres + Db2; distinguish *Reframe existing experience*, *Surface from your other profile/resume*, and *True gap — address via framing/cover note*).
-   - Pre-loading Devesh's real profiles (`Lead DBA`, `PostgreSQL DBA`, `Db2 LUW DBA` from his workspace) as 1-click presets alongside free paste + `.docx`/`.txt` upload makes the tool immediately usable for his actual Lead DBA applications.
-   - Reliable dual engine: deterministic domain-tuned DBA ATS & requirement parser (instant, works offline) + optional live Gemini AI deep rewrite (`GEMINI_API_KEY` from `.env`) when available.
-5. **Smallest version:** FastAPI + single-page HTML/JS frontend served locally, with deterministic DBA domain analyzer + live Gemini AI deep-tailoring integration, pre-loaded with Devesh's real Lead DBA resume presets and sample Lead DBA JDs, plus copy-ready bullet/headline/skills fixes.
-6. **Not building:** Multi-user auth, external job board scrapers, database persistence servers, paid SaaS wrappers, or bloated React build pipelines.
+   - **Inclusive vs. Exclusive (Self) Time & Loop Multipliers:** In PostgreSQL `EXPLAIN ANALYZE`, `actual time=start..end` is *per-loop average* and *inclusive of child nodes*. True node duration is `end * actual_loops`, and true **self (exclusive) time** is `(node_end * node_loops) - sum(child_end * child_loops)`. A Lead DBA tool must calculate exclusive time accurately so a top-level `Limit` or `Nested Loop` isn't blamed when its inner child scan or sort is doing 98% of the work.
+   - **Format coverage:** Real tickets have Text `EXPLAIN (ANALYZE, BUFFERS)` output (sometimes with `VERBOSE` or `SETTINGS`) or JSON `EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON)`. The parser must accept both text and JSON plans, as well as bare `EXPLAIN` (cost-only without `ANALYZE`, flagging that runtime actuals aren't present).
+   - **Buffers & I/O math:** 1 PostgreSQL block = 8 KiB. `Buffers: shared hit=X read=Y temp read=Z written=W` must be converted to actual MiB/GiB read from disk or spilled to temp files so a DBA can quantify I/O pressure immediately.
+   - **Dynamic DDL & SQL extraction from actual input:** Never show canned advice. Parse the actual relation name, alias, `Filter:`, `Index Cond:`, `Recheck Cond:`, `Hash Cond:`, `Join Filter:`, `Sort Key:`, `Order By`, and SQL query AST/clauses to synthesize exact `CREATE INDEX CONCURRENTLY idx_<table>_<cols> ON <table> (...)` (including covering `INCLUDE (...)`, partial `WHERE ...`, or functional `LOWER(...)` / date range adjustments), exact SQL rewrites (`NOT IN` -> `NOT EXISTS`, non-sargable function wrapper -> range predicate, `OFFSET` pagination -> keyset pagination, CTE materialization / correlated subquery -> window or join), and exact `postgresql.conf` / session commands (`work_mem` sized to `Sort Method: external merge Disk: XkB`, `ANALYZE <table>`, `CREATE STATISTICS`, `random_page_cost`, `effective_cache_size`, `max_parallel_workers_per_gather`).
+   - **Lead DBA Interview Practice Mode:** A toggleable "Interview Practice Mode" that lets the user inspect the plan + query first, write their own diagnosis, and then reveal the Lead DBA scorecard & talking points (covering production rollout safety like `CONCURRENTLY`, `lock_timeout`, write amplification, and verification via `pg_stat_statements`).
+5. **Smallest version:** FastAPI backend (`app.py` + `explain_analyzer.py`) serving a single-page local web UI (`static/index.html`) on `http://127.0.0.1:8765`, with realistic production ticket presets and interview practice toggle.
+6. **Not building:** External cloud telemetry agents, mandatory live Postgres connection requirement to paste a plan, heavy frontend build steps, or fake keyword scorers.
 7. **Unknowns:**
-   - *Assume:* Single-command Python FastAPI app (`uvicorn`) using the existing Python 3.12 + `google-genai` setup and pre-loaded with Devesh's real Lead DBA resume text as a convenient default button (while keeping the paste textarea and `.docx` upload front-and-center).
+   - *Assume:* Host at `~/Documents/Antigravity/SkillTest` on port `8765` (replacing the earlier app in `SkillTest` per user's explicit instruction "Put it in ~/Documents/Antigravity/SkillTest"). No external API key is required for core analysis.
 
-## Status
-- [x] Brief written in `PROGRESS.md`
-- [x] Build backend analyzer (`analyzer.py` + `app.py`)
-- [x] Build frontend UI (`static/index.html`)
-- [x] Verify end-to-end with real Lead DBA JDs and browser inspection
-
+## Progress
+- [x] Write brief in `PROGRESS.md`
+- [ ] Build `explain_analyzer.py` (PostgreSQL Text & JSON EXPLAIN parser, exclusive-time & buffer calculator, SQL correlate & diagnosis engine)
+- [ ] Test `explain_analyzer.py` via CLI on multiple real plans (slow seq scan/external sort, bad row estimate nested loop, correlated subquery / non-sargable filter, fast healthy index-only scan, malformed input)
+- [ ] Update `app.py` and `static/index.html`
+- [ ] Verify end-to-end in the live browser

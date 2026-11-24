@@ -86,6 +86,11 @@ rules out any design that needs an API key.
   cannot wait, report what is done and say the check result is unknown.
 - On long tasks, keep `PROGRESS.md` current (brief, done, next). On "resume" or "continue", read
   it first and carry on without redoing work.
+- **Audit every step.** Mark a step done only with evidence in `PROGRESS.md`, one line each:
+  `claim → command or check you ran → what you actually saw`. "Tests pass" without the output
+  isn't evidence. For any formula or calculation, work one small example by hand and compare it
+  with what the code gives. Then try the case most likely to break it (zero, empty, loops,
+  parallel or nested, very large). An audit that never finds anything means it isn't looking.
 
 ## 5. Tripwires: if you catch yourself doing one, stop and fix it now
 
