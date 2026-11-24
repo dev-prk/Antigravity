@@ -121,7 +121,8 @@ def print_status():
             keys = con.execute("SELECT platform, status FROM api_keys WHERE enabled=1").fetchall()
             cools = con.execute("SELECT count(*) FROM rate_limit_cooldowns WHERE expires_at_ms > ?", (now_ms,)).fetchone()[0]
             con.close()
-            urllib.request.urlopen(BASE + "/v1/models", timeout=3).read()
+            req = urllib.request.Request(BASE + "/v1/models", headers={"Authorization": "Bearer " + key})
+            urllib.request.urlopen(req, timeout=3).read()
             t1 = f"online | enabled_keys={keys} | active_cooldowns={cools}"
         except Exception as e:
             t1 = f"unreachable ({e})"
