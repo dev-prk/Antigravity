@@ -60,3 +60,16 @@ extracts text, sends both documents, and shows a structured answer. The resume c
 what's pasted. Contrast test: the user's real resume against a matching JD and an unrelated
 resume against the same JD. The second must score low and get no tailored DBA bullets. Wait for
 the browser check, then report.
+
+## 6. "Paste an EXPLAIN ANALYZE plan and tell me what's slow" (PostgreSQL)
+
+**What went wrong (second test of this skill):** The core math was real and the healthy-plan
+contrast test passed. But the report said self times were "confirmed" when parallel plans had
+never been tried, and on a parallel plan the scan below the first level showed 1800 ms instead of
+600 ms (the time was multiplied by the worker count). The brief's own expert gap had named
+parallel workers as a risk, but they weren't on the "Not checked" list. It also added a JSON
+mode, an interview-practice mode and presets nobody asked for.
+
+**With this skill:** Every risk the expert gap names is either tested, with one value worked by
+hand, or listed under "Not checked". Never write "confirmed" for a case you didn't run. v1 is only
+the must-haves; extras go in one line after the report ("Could add: JSON input, presets").

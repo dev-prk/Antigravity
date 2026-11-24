@@ -1,0 +1,10 @@
+Gather  (cost=1000.00..50000.00 rows=10000 width=16) (actual time=5.000..700.000 rows=30000 loops=1)
+  Workers Planned: 2
+  Workers Launched: 2
+  ->  Parallel Hash Join  (cost=500.00..48000.00 rows=4167 width=16) (actual time=4.000..680.000 rows=10000 loops=3)
+        Hash Cond: (o.customer_id = c.id)
+        ->  Parallel Seq Scan on orders o  (cost=0.00..45000.00 rows=416667 width=12) (actual time=0.050..600.000 rows=333333 loops=3)
+        ->  Parallel Hash  (cost=400.00..400.00 rows=4000 width=8) (actual time=3.500..3.500 rows=3333 loops=3)
+              ->  Parallel Seq Scan on customers c  (cost=0.00..400.00 rows=4000 width=8) (actual time=0.010..2.000 rows=3333 loops=3)
+Planning Time: 0.200 ms
+Execution Time: 702.000 ms

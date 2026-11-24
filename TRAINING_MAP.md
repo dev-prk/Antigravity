@@ -3,7 +3,7 @@
 The single source of state for the "train Antigravity like a child" project. A new session reads
 this file instead of old chats. Update it at the end of every session (scorecard + next steps).
 
-Last updated: 2026-11-24
+Last updated: 2026-11-24 (session 2)
 
 ## Graph
 
@@ -12,7 +12,7 @@ graph TD
   U[Devesh<br/>vision + final judge] -->|asks| C[Claude<br/>planner · architect · mentor · auditor]
   C -->|writes brief + exam tasks| A[Antigravity · Gemini 4 Argon<br/>executor]
   A -->|loads| S["/deliver skill<br/>.agents/skills/deliver/SKILL.md"]
-  S -->|real cases| E[references/examples.md<br/>lessons 1–5]
+  S -->|real cases| E[references/examples.md<br/>lessons 1–6]
   A -->|builds in| T[SkillTest/<br/>current test app]
   A -->|writes evidence| P[PROGRESS.md<br/>brief + audit trail]
   C -->|audits: hand math, contrast,<br/>edge cases| T
@@ -20,7 +20,8 @@ graph TD
   L -->|added to| E
   L -->|rule tightened in| S
   G[GEMINI.md<br/>always-on rules] -.->|loaded every chat| A
-  X[Exam set<br/>NOT BUILT YET] -.->|scores progress| A
+  X[exams/ · check.py graders<br/>01 ready, 02–05 to draft] -.->|scores progress| A
+  W[FreeLLMAPI workers<br/>draft · digest · 2nd opinion] -.->|no Claude usage| X
 ```
 
 **Loop:** Claude briefs → Argon builds with `/deliver` → Claude audits every step → each failure
@@ -61,18 +62,25 @@ since its answer is now in the examples).
 | Honest report | ❌ | ⚠️ | ⚠️ claimed timings "confirmed", parallel untested |
 | Scope discipline | ❌ | ❌ | ❌ JSON + practice mode + presets |
 
-## Open lessons (not yet in the skill)
+## Rule: no Claude models in training
 
-- **Report only what was tested.** "Confirmed exclusive timings" without trying parallel plans is
-  an overclaim. The "Not checked" list must name the untested cases the expert gap itself raised.
-- **Scope:** the "smallest version" keeps growing. Consider a hard rule: v1 = only the must-haves,
-  with extras offered as a one-line list after delivery.
+Training uses only FreeLLMAPI workers, Gemini (Antigravity) and deterministic `check.py` graders.
+On a worker 429, wait for the reset; never fall back to Claude. See `train-antigravity` skill.
+
+## Open lessons
+
+- Lesson 6 (report only what was tested; v1 = must-haves only) is now in examples.md. Promote it
+  into SKILL.md section 7 if exam 01 shows the same overclaim again.
 
 ## Next steps
 
-1. Add the two open lessons to `/deliver` (examples.md #6).
-2. Optional: have Argon fix the parallel bug from a one-line hint, to test the rejection flow
-   (section 8).
-3. Build the exam set: 5 fixed tasks from past failures plus a scoring rubric Claude applies.
-   Re-run it when new Gemini models ship.
+1. **Run exam 01 now:** paste `/deliver ~/Documents/Antigravity/exams/01_parallel_selftime/BRIEF.md`
+   into Antigravity (Argon). Baseline on current code (2026-11-24): check.py FAIL (orders 1800
+   vs 600 ms, % sum 115), hidden check FAIL (scan 1500 vs 300 ms); non-parallel regression PASS.
+2. Grade: `python3 exams/01_parallel_selftime/check.py SkillTest` and
+   `python3 ~/.claude/skills/train-antigravity/hidden/01_hidden_check.py SkillTest`, then
+   `freellm -m reader` digest of the transcript + `freellm -m auditor` on report honesty.
+3. Draft exams 02–05 with `freellm -m tester` / `coder`. **Blocked on 2026-11-24:** all OVH
+   models were rate-limited (reset ~24h).
+4. Re-run the exam set when new Gemini models ship.
 4. Keep `LESSONS.md` short: promote proven lessons into the skill, delete unused ones.
