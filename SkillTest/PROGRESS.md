@@ -22,7 +22,7 @@
 
 ## Progress
 - [x] Write brief in `PROGRESS.md`
-- [ ] Build `explain_analyzer.py` (PostgreSQL Text & JSON EXPLAIN parser, exclusive-time & buffer calculator, SQL correlate & diagnosis engine)
-- [ ] Test `explain_analyzer.py` via CLI on multiple real plans (slow seq scan/external sort, bad row estimate nested loop, correlated subquery / non-sargable filter, fast healthy index-only scan, malformed input)
-- [ ] Update `app.py` and `static/index.html`
-- [ ] Verify end-to-end in the live browser
+- [x] Build `explain_analyzer.py` (PostgreSQL Text & JSON EXPLAIN parser, exclusive-time & buffer calculator, SQL correlate & diagnosis engine)
+- [x] Test `explain_analyzer.py` via CLI on multiple real plans (slow seq scan/external sort, bad row estimate nested loop, correlated subquery / non-sargable filter, fast healthy index-only scan, malformed input)
+- [x] Update `app.py` and `static/index.html`
+- [x] Verify end-to-end in the live browser
