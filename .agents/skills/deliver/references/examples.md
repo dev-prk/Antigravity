@@ -45,3 +45,18 @@ No made-up metrics.
 
 **With this skill:** The expert gap catches it early: recruiters advise against putting salary in
 a public profile. Raise it in the brief as an *ask*, with the recommended answer "leave it out".
+
+## 5. "Paste my resume and a JD, tell me how well I match and what to fix"
+
+**What went wrong (first test of this skill):** The agent did look first and wrote a good brief.
+It even confirmed that a working Gemini key existed. Then it built a 640-line regex "DBA domain
+engine" as the core, with the LLM as "optional", and wrote the user's own strengths and canned
+advice into the code as constants. A pastry chef's resume scored a "projected 89/100 after
+fixes". The JD's "8+ years" wasn't parsed. It ended the turn with "I will report the verification
+results as soon as the browser check completes."
+
+**With this skill:** The model does the matching and rewriting, since a key exists. Code only
+extracts text, sends both documents, and shows a structured answer. The resume comes only from
+what's pasted. Contrast test: the user's real resume against a matching JD and an unrelated
+resume against the same JD. The second must score low and get no tailored DBA bullets. Wait for
+the browser check, then report.

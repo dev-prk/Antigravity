@@ -21,6 +21,7 @@
 
 ## Status
 - [x] Brief written in `PROGRESS.md`
-- [ ] Build backend analyzer (`analyzer.py` + `app.py`)
-- [ ] Build frontend UI (`static/index.html`)
-- [ ] Verify end-to-end with real Lead DBA JDs and browser inspection
+- [x] Build backend analyzer (`analyzer.py` + `app.py`)
+- [x] Build frontend UI (`static/index.html`)
+- [x] Verify end-to-end with real Lead DBA JDs and browser inspection
+
