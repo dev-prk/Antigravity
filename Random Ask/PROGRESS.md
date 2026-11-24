@@ -37,7 +37,7 @@
 - Oikotie (`tyopaikat.oikotie.fi`) check → navigated in Brave → Redirects to `asunnot.oikotie.fi` (Oikotie discontinued its job board; real estate only).
 - Job Market Finland (`tyomarkkinatori.fi/en/personal-customers/my-job-path/profile/`) full profile build → signed in via passwordless Email OTP (`devsh.pareek@gmail.com`, OTP `476618` read from Gmail tab), set Country of residence `India`, added title (`Database Administrator | PostgreSQL · Db2 LUW · HA`), international introduction, preferred roles, 31 DBA skills + FINESCO occupation/skill keywords (`database administrator`, `PostgreSQL`, `DB2`, etc.), Softility + 2 Deloitte roles (`Joined as Analyst; Consultant at exit`), B.Tech SRM (`85.6%`), job search area (`Helsinki, Espoo, Finland`, willing to travel & remote), LinkedIn link, and published profile (`Valid until 24.5.2027, Published 24.11.2026`).
 - Talent500 (`talent500.com/dashboard/my-resume/`) resume & login completion → bypassed Google pop-up by using Email OTP (`988427` read from Gmail tab), uploaded `Devesh_Pareek_Database_Administrator.pdf` via JS `DataTransfer` API, and ran Upload & Analyze → Verified `Devesh_Pareek_Database_Administrator.pdf` is saved at the top of `My Resumes` (7.5/10).
+- Added Japan and Singapore market research & salary bands to `Profile_Kit.md` → SG Employment Pass floor `S$5,600–6,200/mo` (target `SGD 7,000–8,500/mo`), JP target `JPY 8M–10M/yr`.
 
 ## 3. Next Steps
-- All reachable profiles are built, verified, and logged in `Audit.md`.
-- User can complete the 3 open password/CAPTCHA tabs (`TradeMe`, `EURES`, `Jobsplus`) and the 1-click file picker replacement on `Indeed`.
+- Complete Hays (SG & JP), NodeFlair (SG), JobStreet SG, Michael Page (SG & JP), Robert Walters (SG & JP), and Daijob (JP).
