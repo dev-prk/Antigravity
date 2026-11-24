@@ -59,6 +59,14 @@ rules out any design that needs an API key.
 
 - Order the work: the riskiest unknown first, then **one complete path from real input to real
   output**, then widen. A thin app that works end to end beats six engines that aren't connected.
+- **Put judgment where judgment lives.** If the core of the task is judgment (matching, advice,
+  rewriting, reading, answering questions) and a working model or API is available, the model
+  does that judgment and code only collects inputs and shows outputs. A regex/keyword engine as
+  the "core" with "optional AI" on top is the fake-intelligence trap in disguise. Use rules only
+  for hard facts (dates, math, parsing) or as a clearly labelled fallback when no model exists.
+- **Never bake the user's own data into the logic.** Their resume, chart or profile is *input*.
+  If you hardcode it as constants (a list of "their strengths", canned advice about them), the
+  tool will give the same answer to anyone, so it isn't analysing anything.
 - Give every step its own check ("run X, expect Y").
 - Choose one approach. Mention an alternative only if a specific condition would change the choice.
 - Work alone by default. Use sub-agents only for independent parallel work, at most 3 at a time.
@@ -67,12 +75,15 @@ rules out any design that needs an API key.
 ## 4. Build in small loops
 
 - Write a little, run it, read the real output, and only then go on. Don't write more than about
-  150 lines or one file without running something.
+  150 lines or one file without running something. If a single file write would be over 200
+  lines, split it: write the core, run it, then add to it.
 - Use real inputs. Never put in a placeholder value where user data should go.
 - When something fails, read the whole error, form one hypothesis and test it. If the same fix has
   failed twice, stop: the approach is wrong. Rethink it or tell the user.
-- Wait for long commands yourself. Never end a turn with "I'll share it when it finishes" while
-  the user isn't needed.
+- Wait for long commands, renders and sub-agents yourself, in the same turn. Your final message
+  must never contain "I will report", "as soon as it finishes", "once the check completes" or
+  similar. If you started a check, read its result before you write the report. If you truly
+  cannot wait, report what is done and say the check result is unknown.
 - On long tasks, keep `PROGRESS.md` current (brief, done, next). On "resume" or "continue", read
   it first and carry on without redoing work.
 
@@ -81,7 +92,9 @@ rules out any design that needs an API key.
 | You notice | It means | Do instead |
 |---|---|---|
 | A hardcoded value standing in for user input (a default birth date, `timezone=5.5`, sign "Leo") | A required input is missing and is being faked | Make the input required, or ask for it |
-| Keyword `if/else` or a canned template where the user expects reasoning or AI answers | Fake intelligence | Connect a real model, or tell the user plainly that it's rule-based |
+| Keyword `if/else`, regex scoring or a canned template where the user expects reasoning or AI answers, including when it's "core engine + optional AI" | Fake intelligence | Let the model do the judgment. Use rules only as a labelled fallback |
+| The user's own data (resume, profile, chart) written into the code as constants | The output doesn't depend on the input | Treat it as input only |
+| Nonsense input (e.g. a pastry chef's resume for a DBA job) still gets good scores or tailored advice | Canned output | Fix it before anything else |
 | The only evidence is tests you wrote yourself | Self-certification | Use the product the way the done test says |
 | Two different inputs give the same output | A broken or fake pipeline | Fix it before anything else |
 | The plan has more parts than the must-haves need | Scope creep | Cut back to the smallest version |
@@ -96,7 +109,11 @@ rules out any design that needs an API key.
 - Run the done test yourself: open the page and click through, render the video and look at the
   frames, play the audio, ask the chatbot two *different* questions and compare the answers, run
   the script on real data.
-- Try one bad input: empty, wrong, or a different user.
+- Run the **contrast test**: one input that should do well and one that clearly shouldn't (an
+  unrelated resume, a different person, a different question). If the outputs don't differ in the
+  way a human expert would expect, the tool is faking. Check this yourself before using any
+  sub-agent.
+- Try one bad input: empty or malformed.
 - Go through the must-haves list and mark each one **done**, **not done** or **not checked**.
   If something important is not done, go back and do it before reporting.
 
