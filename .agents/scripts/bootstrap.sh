@@ -43,6 +43,29 @@ ln -sfn "$REPO_ROOT/AGENTS.md" "$GLOBAL_CONFIG_DIR/AGENTS.md"
 # 4. Symlink Global Hooks & Scripts so hooks work even outside the repo root
 ln -sfn "$REPO_ROOT/.agents/hooks.json" "$GLOBAL_CONFIG_DIR/hooks.json"
 ln -sfn "$REPO_ROOT/.agents/scripts" "$GLOBAL_CONFIG_DIR/scripts"
+mkdir -p "$HOME/.local/bin"
+chmod +x "$REPO_ROOT/.agents/scripts/freellm"
+ln -sfn "$REPO_ROOT/.agents/scripts/freellm" "$HOME/.local/bin/freellm"
+
+# 4b. Auto-wire FreeLLMAPI MCP server into ~/.gemini/config/mcp_config.json if FreeLLMAPI DB exists
+FREELLM_DB="$HOME/Library/Application Support/FreeLLMAPI/freeapi.db"
+if [ -f "$FREELLM_DB" ] && [ ! -f "$GLOBAL_CONFIG_DIR/mcp_config.json" ]; then
+  FREE_KEY="$(sqlite3 -readonly "$FREELLM_DB" "SELECT value FROM settings WHERE key='unified_api_key'" 2>/dev/null || true)"
+  if [ -n "$FREE_KEY" ]; then
+    cat > "$GLOBAL_CONFIG_DIR/mcp_config.json" <<EOF
+{
+  "mcpServers": {
+    "freellmapi": {
+      "serverUrl": "http://127.0.0.1:31415/mcp",
+      "headers": {
+        "Authorization": "$FREE_KEY"
+      }
+    }
+  }
+}
+EOF
+  fi
+fi
 
 # 5. If remote 'origin' is configured, pull latest state from GitHub
 if git remote get-url origin >/dev/null 2>&1; then

@@ -1,0 +1,227 @@
+#!/usr/bin/env python3
+"""freellm - Priority router for Antigravity & CLI workflows.
+
+Priority order:
+  1. FreeLLMAPI local router (http://127.0.0.1:31415) — uses all healthy keys/providers first
+  2. FreeLLMAPI built-in keyless gateway (Kilo free router) — zero-key free pool when local keys expire
+  3. Antigravity model fallback (Gemini -> Claude -> GPT via `agy`) — ONLY if all free models are expired
+
+Usage:
+  freellm --status
+  freellm [-m ROLE_OR_MODEL] [-s SYSTEM] [-f FILE ...] [-o OUT] [--max N] [--free-only] "task"
+"""
+import argparse, json, os, shutil, sqlite3, subprocess, sys, time, urllib.error, urllib.request
+
+BASE = os.environ.get("FREELLM_BASE", "http://127.0.0.1:31415")
+KILO_URL = "https://api.kilo.ai/api/gateway/v1/chat/completions"
+DB = os.path.expanduser("~/Library/Application Support/FreeLLMAPI/freeapi.db")
+ROLES = os.path.expanduser("~/.claude/skills/freellm-workers/roles.json")
+AGY_BIN = os.path.expanduser("~/.gemini/bin/agy") if os.path.exists(os.path.expanduser("~/.gemini/bin/agy")) else shutil.which("agy")
+
+KEYLESS_MODELS = ["kilo-auto/free", "openrouter/free"]
+
+FALLBACK_CHAIN = {
+    "fast": ["gemini-3.8-flash-medium", "gemini-4-argon-medium", "claude-sonnet-5-5-medium", "gpt-oss-120b-medium"],
+    "default": ["gemini-4-argon-medium", "gemini-3.8-flash-medium", "gemini-4-carbon-medium", "claude-sonnet-5-5-medium", "claude-opus-5-5-medium", "gpt-oss-120b-medium"],
+}
+
+
+def get_api_key():
+    if os.environ.get("FREELLM_KEY"):
+        return os.environ["FREELLM_KEY"]
+    if not os.path.exists(DB):
+        return None
+    con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+    row = con.execute("SELECT value FROM settings WHERE key='unified_api_key'").fetchone()
+    con.close()
+    return row[0] if row else None
+
+
+def resolve_models(name):
+    try:
+        roles = json.load(open(ROLES))["roles"]
+    except Exception:
+        roles = {}
+    models = list(roles[name]["models"]) if name in roles else [name]
+    if "auto" not in models and name != "guard":
+        models.append("auto")
+    return models
+
+
+def is_junk_output(text, requested_role):
+    t = (text or "").strip()
+    if not t:
+        return True
+    if requested_role != "guard" and t.startswith("Safety:") and "Categories:" in t and len(t) < 80:
+        return True
+    return False
+
+
+def call_freellmapi(model, system, prompt, max_tokens, key, timeout):
+    body = {"model": model, "max_tokens": max_tokens, "messages": [{"role": "user", "content": prompt}]}
+    if system:
+        body["system"] = system
+    req = urllib.request.Request(
+        BASE + "/v1/messages",
+        data=json.dumps(body).encode(),
+        headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        d = json.load(r)
+    text = "".join(b.get("text", "") for b in d.get("content", []) if b.get("type") == "text")
+    return text, d.get("model", model), d.get("usage", {})
+
+
+def call_keyless_kilo(model, system, prompt, max_tokens, timeout):
+    msgs = []
+    if system:
+        msgs.append({"role": "system", "content": system})
+    msgs.append({"role": "user", "content": prompt})
+    # Reasoning-capable free models need headroom so final content is not truncated
+    eff_max = max(max_tokens, 1024)
+    req = urllib.request.Request(
+        KILO_URL,
+        data=json.dumps({"model": model, "messages": msgs, "max_tokens": eff_max}).encode(),
+        headers={"Content-Type": "application/json", "User-Agent": "FreeLLMAPI"},
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        d = json.load(r)
+    msg = (d.get("choices") or [{}])[0].get("message") or {}
+    text = msg.get("content") or ""
+    usage = d.get("usage") or {}
+    return text, d.get("model", model), {
+        "input_tokens": usage.get("prompt_tokens"),
+        "output_tokens": usage.get("completion_tokens"),
+    }
+
+
+def call_agy_fallback(role_or_model, system, prompt, timeout):
+    if not AGY_BIN:
+        raise RuntimeError("agy CLI binary not found for fallback")
+    full_prompt = f"{system}\n\n{prompt}" if system else prompt
+    chain = FALLBACK_CHAIN["fast"] if role_or_model in ("fast", "triage", "polyglot", "writer") else FALLBACK_CHAIN["default"]
+    errs = []
+    for m in chain:
+        cmd = [AGY_BIN, f"--model={m}", "--disable-slash-commands", f"--print={full_prompt}"]
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        out = (proc.stdout or "").strip()
+        if proc.returncode == 0 and out:
+            return out, m, {}
+        errs.append(f"{m}: rc={proc.returncode} {(proc.stderr or out)[:140].strip()}")
+    raise RuntimeError("agy fallback exhausted: " + " | ".join(errs))
+
+
+def print_status():
+    key = get_api_key()
+    t1 = "offline (open FreeLLMAPI.app)"
+    if key:
+        try:
+            con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
+            now_ms = int(time.time() * 1000)
+            keys = con.execute("SELECT platform, status FROM api_keys WHERE enabled=1").fetchall()
+            cools = con.execute("SELECT count(*) FROM rate_limit_cooldowns WHERE expires_at_ms > ?", (now_ms,)).fetchone()[0]
+            con.close()
+            urllib.request.urlopen(BASE + "/v1/models", timeout=3).read()
+            t1 = f"online | enabled_keys={keys} | active_cooldowns={cools}"
+        except Exception as e:
+            t1 = f"unreachable ({e})"
+    try:
+        urllib.request.urlopen("https://api.kilo.ai/api/gateway/models", timeout=5).read()
+        t2 = f"online | models={KEYLESS_MODELS}"
+    except Exception as e:
+        t2 = f"unreachable ({e})"
+    t3 = f"ready ({AGY_BIN}) | order: Gemini -> Claude -> GPT" if AGY_BIN else "missing agy binary"
+    print(f"Tier 1 (FreeLLMAPI local):   {t1}\nTier 2 (Free keyless pool):  {t2}\nTier 3 (Expiry fallback):    {t3}")
+
+
+def emit_result(text, tier_label, used_model, secs, usage, out_path):
+    if out_path:
+        os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
+        with open(out_path, "w") as fh:
+            fh.write(text)
+        print(f"[freellm -> {tier_label}:{used_model}] {secs:.1f}s in={usage.get('input_tokens')} out={usage.get('output_tokens')} -> {out_path} ({len(text)} chars)")
+    else:
+        print(text)
+        print(f"\n[freellm -> {tier_label}:{used_model}] {secs:.1f}s", file=sys.stderr)
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("-m", "--model", default="auto")
+    p.add_argument("-s", "--system", default=None)
+    p.add_argument("-f", "--file", action="append", default=[])
+    p.add_argument("-o", "--out", default=None)
+    p.add_argument("--max", type=int, default=4096)
+    p.add_argument("--timeout", type=int, default=180)
+    p.add_argument("--free-only", action="store_true", default=os.environ.get("FREELLM_FREE_ONLY") == "1")
+    p.add_argument("--force-fallback", action="store_true", help="Skip free tiers to test Gemini/Claude/GPT fallback")
+    p.add_argument("--status", action="store_true", help="Show live tier health and exit")
+    p.add_argument("task", nargs="*")
+    a = p.parse_args()
+
+    if a.status:
+        print_status()
+        return
+
+    prompt = " ".join(a.task) or ("" if sys.stdin.isatty() else sys.stdin.read())
+    for f in a.file:
+        with open(os.path.expanduser(f), errors="replace") as fh:
+            prompt += f"\n\n=== FILE: {f} ===\n" + fh.read()
+    if not prompt.strip():
+        sys.exit("freellm: empty task")
+
+    errors = []
+
+    if not a.force_fallback:
+        # Tier 1: Local FreeLLMAPI router (127.0.0.1:31415)
+        key = get_api_key()
+        if key:
+            for model in resolve_models(a.model):
+                try:
+                    t0 = time.time()
+                    text, used, usage = call_freellmapi(model, a.system, prompt, a.max, key, a.timeout)
+                    if is_junk_output(text, a.model):
+                        errors.append(f"tier1/{model}: empty or guard-only output")
+                        continue
+                    emit_result(text, "tier1:freellmapi", used, time.time() - t0, usage, a.out)
+                    return
+                except urllib.error.HTTPError as e:
+                    msg = e.read().decode(errors="replace")[:220]
+                    errors.append(f"tier1/{model}: HTTP {e.code} {msg}")
+                    if "exhausted" in msg.lower() or "no upstream tried" in msg.lower():
+                        break
+                except Exception as e:
+                    errors.append(f"tier1/{model}: {e}")
+                    break
+
+        # Tier 2: Built-in FreeLLMAPI keyless pool (Kilo Gateway)
+        if a.model != "guard":
+            for kmodel in KEYLESS_MODELS:
+                try:
+                    t0 = time.time()
+                    text, used, usage = call_keyless_kilo(kmodel, a.system, prompt, a.max, a.timeout)
+                    if is_junk_output(text, a.model):
+                        errors.append(f"tier2/{kmodel}: empty output")
+                        continue
+                    emit_result(text, "tier2:free-keyless", used, time.time() - t0, usage, a.out)
+                    return
+                except Exception as e:
+                    errors.append(f"tier2/{kmodel}: {e}")
+
+    if a.free_only:
+        sys.exit("freellm: all free models expired (--free-only set)\n" + "\n".join(errors))
+
+    # Tier 3: Paid/Quota Fallback (Gemini -> Claude -> GPT) ONLY when free tiers are expired
+    try:
+        t0 = time.time()
+        text, used, usage = call_agy_fallback(a.model, a.system, prompt, a.timeout)
+        emit_result(text, "tier3:fallback", used, time.time() - t0, usage, a.out)
+        return
+    except Exception as e:
+        errors.append(f"tier3/fallback: {e}")
+
+    sys.exit("freellm: all tiers failed\n" + "\n".join(errors))
+
+
+if __name__ == "__main__":
+    main()

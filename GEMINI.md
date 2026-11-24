@@ -24,6 +24,10 @@ These rules come from a review of 200+ past chats in which work failed, was call
 
 ### Respect the quota
 - The user is on a limited plan. Read only what you need, don't re-read large files, keep replies short, and don't re-summarize artifacts.
+- **Model priority (`FreeLLMAPI` first → `Gemini → Claude → GPT` on expiry):**
+  - Antigravity's main UI turn runs on the selected cloud model, while worker tasks route through `~/.local/bin/freellm` (and the `freellmapi` MCP server at `127.0.0.1:31415`).
+  - Offload self-contained volume work (summarizing big files/logs with `-f`/`-o`, drafting text/boilerplate/tests, independent math/diff checks) to `~/.local/bin/freellm -m <coder|reader|auditor|writer|polyglot|fast>` **first** so free models absorb token volume.
+  - `freellm` tries `FreeLLMAPI` (`127.0.0.1:31415`) first, then the built-in keyless free pool, and **automatically falls back to `Gemini → Claude → GPT` (`agy`) only when all free models are expired/exhausted**. Always verify worker output before accepting it.
 - For multi-step work, keep a short `PROGRESS.md` (goal, criteria, done, next) in the project folder. On "resume" or "continue", read it first and pick up from there without redoing work.
 
 ### Communicate plainly
