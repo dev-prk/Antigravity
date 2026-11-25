@@ -84,3 +84,6 @@ On a worker 429, wait for the reset; never fall back to Claude. See `train-antig
    models were rate-limited (reset ~24h).
 4. Re-run the exam set when new Gemini models ship.
 4. Keep `LESSONS.md` short: promote proven lessons into the skill, delete unused ones.
+
+## Free-model runner KB (added 2026-11-25)
+SOP + known issues + student record for the free-model browser runner: `~/Documents/Anthropic/runner/SOP_KB.md`. Worker pass/fail log: `~/.claude/skills/freellm-workers/LOG.md`. New models read SOP_KB first.
