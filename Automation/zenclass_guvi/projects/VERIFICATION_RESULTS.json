@@ -1,0 +1,58 @@
+[
+  {
+    "project": "intel-aiml-ncaafb-api-data-analysis",
+    "files_ok": true,
+    "pytest_ok": true,
+    "pytest_summary": "4 passed, 1 warning in 0.42s",
+    "streamlit_ui_ok": true,
+    "streamlit_summary": "STREAMLIT_RENDER_OK 5 metrics"
+  },
+  {
+    "project": "intl-aiml-traffic-violations-insight-system",
+    "files_ok": true,
+    "pytest_ok": true,
+    "pytest_summary": "3 passed in 0.52s",
+    "streamlit_ui_ok": true,
+    "streamlit_summary": "STREAMLIT_RENDER_OK 5 metrics"
+  },
+  {
+    "project": "intel-aiml-rapido-intelligent-mobility-insights",
+    "files_ok": true,
+    "pytest_ok": true,
+    "pytest_summary": "3 passed in 1.89s",
+    "streamlit_ui_ok": true,
+    "streamlit_summary": "STREAMLIT_RENDER_OK 8 metrics"
+  },
+  {
+    "project": "intel-aiml-visual-product-similarity-image-based-recommend",
+    "files_ok": true,
+    "pytest_ok": true,
+    "pytest_summary": "3 passed, 3 warnings in 3.79s",
+    "streamlit_ui_ok": true,
+    "streamlit_summary": "STREAMLIT_RENDER_OK 5 metrics"
+  },
+  {
+    "project": "intl-aiml-ai-powered-banking-support-fraud-intelligence",
+    "files_ok": true,
+    "pytest_ok": true,
+    "pytest_summary": "3 passed, 4 warnings in 1.79s",
+    "streamlit_ui_ok": true,
+    "streamlit_summary": "STREAMLIT_RENDER_OK 7 metrics"
+  },
+  {
+    "project": "intel-aiml-multi-agent-support-ticket-automation-system",
+    "files_ok": true,
+    "pytest_ok": true,
+    "pytest_summary": "2 passed, 3 warnings in 1.84s",
+    "streamlit_ui_ok": true,
+    "streamlit_summary": "STREAMLIT_RENDER_OK 5 metrics"
+  },
+  {
+    "project": "int-aiml-c-we-e-b2-b3-b4-final-project",
+    "files_ok": true,
+    "pytest_ok": true,
+    "pytest_summary": "3 passed, 1 warning in 1.58s",
+    "streamlit_ui_ok": true,
+    "streamlit_summary": "STREAMLIT_RENDER_OK 9 metrics"
+  }
+]

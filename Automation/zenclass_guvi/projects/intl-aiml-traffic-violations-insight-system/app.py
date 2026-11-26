@@ -75,18 +75,32 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 with tab1:
     geo_df = filtered.dropna(subset=["Latitude", "Longitude"]).head(4000)
     if not geo_df.empty:
-        fig_map = px.scatter_mapbox(
-            geo_df,
-            lat="Latitude",
-            lon="Longitude",
-            color="Violation_Category",
-            hover_name="Location",
-            hover_data=["SubAgency", "Violation Type", "Make", "Model", "Accident"],
-            zoom=9.6,
-            height=520,
-            mapbox_style="open-street-map",
-            title="Traffic Violation Coordinates & Corridor Hotspots",
-        )
+        if hasattr(px, "scatter_map"):
+            fig_map = px.scatter_map(
+                geo_df,
+                lat="Latitude",
+                lon="Longitude",
+                color="Violation_Category",
+                hover_name="Location",
+                hover_data=["SubAgency", "Violation Type", "Make", "Model", "Accident"],
+                zoom=9.6,
+                height=520,
+                map_style="open-street-map",
+                title="Traffic Violation Coordinates & Corridor Hotspots",
+            )
+        else:
+            fig_map = px.scatter_mapbox(
+                geo_df,
+                lat="Latitude",
+                lon="Longitude",
+                color="Violation_Category",
+                hover_name="Location",
+                hover_data=["SubAgency", "Violation Type", "Make", "Model", "Accident"],
+                zoom=9.6,
+                height=520,
+                mapbox_style="open-street-map",
+                title="Traffic Violation Coordinates & Corridor Hotspots",
+            )
         st.plotly_chart(fig_map, use_container_width=True)
 
     loc_counts = filtered.groupby("Location", as_index=False).agg(
