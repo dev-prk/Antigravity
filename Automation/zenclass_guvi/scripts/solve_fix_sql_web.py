@@ -129,7 +129,6 @@ def sweep_table_inplace(
     page.goto(base_url, wait_until="domcontentloaded", timeout=25000)
     page.wait_for_timeout(1800)
     dismiss_popups(page)
-    set_50_per_page(page)
 
     max_p = page.evaluate(
         """() => {
@@ -152,13 +151,18 @@ def sweep_table_inplace(
                 page.goto(base_url, wait_until="domcontentloaded", timeout=25000)
                 page.wait_for_timeout(1300)
                 dismiss_popups(page)
-                set_50_per_page(page)
-                for _ in range(pno - 1):
-                    nb = page.locator('button[aria-label="Go to next page"], button:has-text("Go to next page")').first
-                    if nb.count() == 0 or nb.get_attribute("disabled") is not None:
-                        return
-                    nb.click(force=True)
-                    page.wait_for_timeout(450)
+                if pno > 1:
+                    num_btn = page.locator("button").filter(has_text=re.compile(f"^{pno}$")).first
+                    if num_btn.count() > 0 and num_btn.is_visible():
+                        num_btn.click(force=True)
+                        page.wait_for_timeout(600)
+                    else:
+                        for _ in range(pno - 1):
+                            nb = page.locator('button[aria-label="Go to next page"], button:has-text("Go to next page")').first
+                            if nb.count() == 0 or nb.get_attribute("disabled") is not None:
+                                return
+                            nb.click(force=True)
+                            page.wait_for_timeout(500)
 
             rows = page.evaluate(
                 """() => Array.from(document.querySelectorAll('tbody tr')).map((r, i) => ({
@@ -227,6 +231,12 @@ def solve_one_sqlkata(page: Page, seq: int, state: Dict[str, Any]) -> bool:
         state["sqlkata_solved"] += 1
         return True
     scen = page.evaluate("() => (document.querySelector('main')||document.body).innerText.slice(0, 1000)")
+    # Ensure Database Tables pane is open and cache initial schema so it is never lost
+    if not page.evaluate("() => document.body.innerText.includes('Database Tables')"):
+        page.evaluate("() => { for (const b of document.querySelectorAll('button')) if (b.offsetParent!==null && b.innerText.trim()==='Tables') b.click(); }")
+        page.wait_for_timeout(400)
+    base_tbl = page.evaluate("() => { const t = document.body.innerText; const i = t.indexOf('Database Tables'); return i!==-1 ? t.slice(i, i+2600) : ''; }")
+
     n_q = page.locator("div.collapse").count()
     saved_queries: List[str] = []
 
@@ -234,10 +244,11 @@ def solve_one_sqlkata(page: Page, seq: int, state: Dict[str, Any]) -> bool:
         if page.evaluate(f"() => document.querySelectorAll('div.collapse')[{qi}]?.className?.includes('correct-submission')"):
             continue
         page.locator("div.collapse").nth(qi).click(force=True)
-        page.wait_for_timeout(380)
-        page.evaluate("() => { for (const b of document.querySelectorAll('button')) if (b.offsetParent!==null && b.innerText.trim()==='Tables') b.click(); }")
-        page.wait_for_timeout(280)
-        tbl = page.evaluate("() => { const t = document.body.innerText; const i = t.indexOf('Database Tables'); return i!==-1 ? t.slice(i, i+2500) : ''; }")
+        page.wait_for_timeout(400)
+        if not page.evaluate("() => document.body.innerText.includes('Database Tables')"):
+            page.evaluate("() => { for (const b of document.querySelectorAll('button')) if (b.offsetParent!==null && b.innerText.trim()==='Tables') b.click(); }")
+            page.wait_for_timeout(300)
+        cur_tbl = page.evaluate("() => { const t = document.body.innerText; const i = t.indexOf('Database Tables'); return i!==-1 ? t.slice(i, i+2600) : ''; }") or base_tbl
         qtxt = page.evaluate(f"() => document.querySelectorAll('div.collapse')[{qi}]?.innerText || ''")
         sql_err = ""
 
@@ -246,19 +257,26 @@ def solve_one_sqlkata(page: Page, seq: int, state: Dict[str, Any]) -> bool:
                 call_llm(
                     "Expert SQL developer (MySQL / SQLite) for GUVI SQLKata. "
                     "Write ONLY the exact SQL query/statement(s) requested ending with semicolon. "
-                    "Match exact column names & string spellings in Database Tables. No prose.",
-                    f"Scenario:\n{scen}\n\n{tbl}\n\nActive Sub-Question:\n{qtxt}\n{sql_err}",
-                    seq + qi * 3 + att * 5,
+                    "Match exact table/column names & exact string spellings in Database Tables. No prose.",
+                    f"Scenario:\n{scen}\n\n{cur_tbl}\n\nActive Sub-Question:\n{qtxt}\n{sql_err}",
+                    seq + qi * 3 + att * 2,
                 )
             ).strip()
             if not sql:
                 continue
+            # Directly Submit (NEVER click Run Code first, which double-executes INSERT/UPDATE/DELETE and disables Submit!)
             page.evaluate("(s) => window.ace.edit('editor').setValue(s, -1)", sql)
-            page.evaluate("() => document.querySelector('button.run-code')?.click()")
-            page.wait_for_timeout(1000)
-            run_out = page.evaluate("() => { const t = document.body.innerText; const i = t.indexOf('Tables\\nOutput'); return i!==-1 ? t.slice(i, i+500) : ''; }")
             page.evaluate("() => document.querySelector('button.submit-code')?.click()")
-            page.wait_for_timeout(1600)
+
+            sub_ok = False
+            for _ in range(22):
+                page.wait_for_timeout(160)
+                sub_ok = page.evaluate(
+                    f"() => Boolean(document.querySelectorAll('div.collapse')[{qi}]?.className?.includes('correct-submission') || document.body.innerText.includes('Solved!'))"
+                )
+                if sub_ok:
+                    break
+
             dismiss_popups(page)
             page.evaluate(
                 """() => {
@@ -270,13 +288,10 @@ def solve_one_sqlkata(page: Page, seq: int, state: Dict[str, Any]) -> bool:
                     }
                 }"""
             )
-            sub_ok = page.evaluate(
-                f"() => document.querySelectorAll('div.collapse')[{qi}]?.className?.includes('correct-submission') || document.body.innerText.includes('Solved!')"
-            )
             if sub_ok:
                 saved_queries.append(f"-- Q{qi+1}\n{sql}")
                 break
-            sql_err = f"\nPrevious SQL failed:\n{sql}\nRun Output:\n{run_out}\nCheck column aliases, ROUND(...,2), ORDER BY, or single vs multi-statement!"
+            sql_err = f"\nPrevious SQL was rejected by judge:\n{sql}\nCheck column order, exact column aliases if requested, ROUND(..., 2) vs unrounded, or whether UPDATE/DELETE/INSERT should NOT have an extra SELECT!"
 
     prob_ok = page.evaluate(
         "() => document.body.innerText.includes('Solved!') || (document.querySelectorAll('div.collapse').length > 0 && Array.from(document.querySelectorAll('div.collapse')).every(c => c.className.includes('correct-submission')))"
