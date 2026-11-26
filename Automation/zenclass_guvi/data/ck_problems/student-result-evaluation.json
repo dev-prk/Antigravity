@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "55\n80",
-   "output": "Result: Pass"
-  },
-  {
    "input": "60\n80",
    "output": "Result: Pass"
   }

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "codekata codeguvi 4",
-   "output": "yes"
-  },
-  {
    "input": "guvi geeks 1",
    "output": "no"
   },

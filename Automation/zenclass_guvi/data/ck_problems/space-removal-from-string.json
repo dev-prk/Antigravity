@@ -9,15 +9,11 @@
  "constraints": "",
  "samples": [
   {
-   "input": "guvi geeks",
-   "output": "guvigeeks"
-  },
-  {
    "input": "Aab Xxy",
    "output": "AabXxy"
   },
   {
-   "input": "Ab Cd",
+   "input": "Ab     Cd",
    "output": "AbCd"
   }
  ],

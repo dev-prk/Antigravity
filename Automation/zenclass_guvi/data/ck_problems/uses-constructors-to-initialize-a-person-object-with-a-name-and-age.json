@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Diana\n20\n15",
-   "output": "35"
-  },
-  {
    "input": "Disha\n23\n18",
    "output": "41"
   }

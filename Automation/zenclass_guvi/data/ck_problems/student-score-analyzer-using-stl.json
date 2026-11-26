@@ -10,7 +10,7 @@
  "samples": [
   {
    "input": "3\nAlice 80\nBob 70\nEmma 90",
-   "output": "Sorted Scores: 70 80 90 \nHighest Score: 90\nLowest Score: 70\nStudents above 75: 2"
+   "output": "Sorted Scores: 70 80 90\nHighest Score: 90\nLowest Score: 70\nStudents above 75: 2"
   }
  ],
  "raw": ""

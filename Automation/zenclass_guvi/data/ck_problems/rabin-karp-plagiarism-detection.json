@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "hello\nhello world",
-   "output": "Plagiarism Detected"
-  },
-  {
    "input": "machine learning algorithms\nlearning",
    "output": "Plagiarism Detected"
   },

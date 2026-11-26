@@ -9,15 +9,11 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\n1000.00 2000.00 3000.00\n5\n1 D 500.00\n2 W 250.00\n3 D 1000.00\n1 W 750.00\n3 W 1500.00",
-   "output": "Account 1 Balance: 1500.00\nAccount 2 Balance: 1750.00\nAccount 3 Balance: 4000.00\nAccount 1 Balance: 750.00\nAccount 3 Balance: 2500.00\nTotal Transactions: 5"
-  },
-  {
-   "input": "2 \n5000.00 3000.00 \n3 \n1 D 1500.00 \n2 W 1000.00 \n1 W 2000.00",
+   "input": "2\n5000.00 3000.00\n3\n1 D 1500.00\n2 W 1000.00\n1 W 2000.00",
    "output": "Account 1 Balance: 6500.00\nAccount 2 Balance: 2000.00\nAccount 1 Balance: 4500.00\nTotal Transactions: 3"
   },
   {
-   "input": "4 \n2500.00 3500.00 1500.00 1000.00 \n4 \n3 D 200.00 \n4 W 500.00 \n1 D 1500.00 \n2 W 1000.00",
+   "input": "4\n2500.00 3500.00 1500.00 1000.00\n4\n3 D 200.00\n4 W 500.00\n1 D 1500.00\n2 W 1000.00",
    "output": "Account 3 Balance: 1700.00\nAccount 4 Balance: 500.00\nAccount 1 Balance: 4000.00\nAccount 2 Balance: 2500.00\nTotal Transactions: 4"
   }
  ],

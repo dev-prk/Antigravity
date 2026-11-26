@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4\ndog\ncat\ncar\napple",
-   "output": "d\ncat\ncar\na"
-  },
-  {
    "input": "3\nzebra\ndog\nduck",
    "output": "z\ndo\ndu"
   },

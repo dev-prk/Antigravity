@@ -1,12 +1,10 @@
-2026/11/27-02:11:08.420 39a275 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
-2026/11/27-02:11:08.420 39a275 Recovering log #14
-2026/11/27-02:11:08.450 39a275 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/000014.log 
-2026/11/27-02:12:08.429 39a270 Level-0 table #19: started
-2026/11/27-02:12:08.450 39a270 Level-0 table #19: 1114038 bytes OK
-2026/11/27-02:12:08.453 39a270 Delete type=0 #14
-2026/11/27-02:12:09.438 39a275 Compacting 1@1 + 1@2 files
-2026/11/27-02:12:09.457 39a275 Generated table #20@1: 4038 keys, 1091067 bytes
-2026/11/27-02:12:09.457 39a275 Compacted 1@1 + 1@2 files => 1091067 bytes
-2026/11/27-02:12:09.459 39a275 compacted to: files[ 0 0 1 0 0 0 0 ]
-2026/11/27-02:12:09.459 39a275 Delete type=2 #16
-2026/11/27-02:12:09.459 39a275 Delete type=2 #19
+2026/11/27-02:42:54.646 39a270 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/27-02:42:54.646 39a270 Recovering log #22
+2026/11/27-02:42:54.660 39a270 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/000022.log 
+2026/11/27-02:53:34.896 39a275 Level-0 table #27: started
+2026/11/27-02:53:34.917 39a275 Level-0 table #27: 1171661 bytes OK
+2026/11/27-02:53:34.921 39a275 Delete type=0 #22
+2026/11/27-02:53:37.695 39a275 Compacting 1@1 + 1@2 files
+2026/11/27-02:53:37.713 39a275 Generated table #28@1: 5439 keys, 1342980 bytes
+2026/11/27-02:53:37.713 39a275 Compacted 1@1 + 1@2 files => 1342980 bytes
+2026/11/27-02:53:37.714 39a275 compacted to: files[ 0 0 1 0 0 0 0 ]

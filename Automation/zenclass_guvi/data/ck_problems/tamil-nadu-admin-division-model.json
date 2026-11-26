@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Coimbatore, 1064000\nCoimbatore District, 3472578, 2\nTamil Nadu, 77841267, 38",
-   "output": "City: Coimbatore, Population: 1064000\nDistrict: Coimbatore District, Population: 3472578, Number of Cities: 2\nState: Tamil Nadu, Population: 77841267, Number of Districts: 38"
-  },
-  {
    "input": "Chennai, 4681087\nChennai District, 7100000, 1\nTamil Nadu, 77841267, 38",
    "output": "City: Chennai, Population: 4681087\nDistrict: Chennai District, Population: 7100000, Number of Cities: 1\nState: Tamil Nadu, Population: 77841267, Number of Districts: 38"
   },

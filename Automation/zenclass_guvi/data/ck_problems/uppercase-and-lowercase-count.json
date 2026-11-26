@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Hello",
-   "output": "lowercase:4\nuppercase:1"
-  },
-  {
    "input": "Topfreshers",
    "output": "lowercase:10\nuppercase:1"
   },

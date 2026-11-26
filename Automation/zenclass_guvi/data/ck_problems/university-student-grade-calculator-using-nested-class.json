@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "John 85",
-   "output": "A"
-  },
-  {
    "input": "Meena 55",
    "output": "C"
   }

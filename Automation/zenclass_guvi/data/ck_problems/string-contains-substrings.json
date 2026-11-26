@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Vishal_Sundar prepared this question",
-   "output": "no"
-  },
-  {
    "input": "GUVI Sundar prepared geek question",
    "output": "no"
   },

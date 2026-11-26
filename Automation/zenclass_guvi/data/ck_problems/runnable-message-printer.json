@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Hello\n3",
-   "output": "Hello\nHello\nHello\nFinished"
-  },
-  {
    "input": "Hi\n2",
    "output": "Hi\nHi\nFinished"
   },

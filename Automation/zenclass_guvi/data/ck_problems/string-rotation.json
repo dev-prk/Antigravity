@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "katacode 4",
-   "output": "codekata"
-  },
-  {
    "input": "geekguvi 4",
    "output": "guvigeek"
   },

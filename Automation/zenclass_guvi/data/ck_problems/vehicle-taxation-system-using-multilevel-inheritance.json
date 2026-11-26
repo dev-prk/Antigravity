@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "1000000\nElectric\n75",
-   "output": "Final Tax: 50000"
-  },
-  {
    "input": "200000\nElectric\n40",
    "output": "Final Tax: 10000"
   }

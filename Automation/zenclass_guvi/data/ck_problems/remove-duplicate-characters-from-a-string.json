@@ -9,12 +9,16 @@
  "constraints": "",
  "samples": [
   {
-   "input": "A string.",
-   "output": "Print the modified string."
-  },
-  {
    "input": "programming",
    "output": "progamin"
+  },
+  {
+   "input": "banana",
+   "output": "ban"
+  },
+  {
+   "input": "mississippi",
+   "output": "misp"
   }
  ],
  "raw": ""

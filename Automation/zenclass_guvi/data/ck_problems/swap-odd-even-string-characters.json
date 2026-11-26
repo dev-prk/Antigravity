@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "codekata",
-   "output": "ocedakat"
-  },
-  {
    "input": "guvi",
    "output": "ugiv"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\nancd\nhhgy\nytre\n2\nancdhhgy\nancdoo",
-   "output": "Yes\nNo"
-  },
-  {
    "input": "7\nkvydfjibddihqi\nvpabiyx\nmsruiaefkzfne\nxhrcsbuavsrvvz\nslimef\nejbqkgfrueynjqod\njvjfqi\n6\nejbqkgfrueynjqodvpabiyx\nvpabiyxjvjfqi\ngztxmzedvjdjsux\nslimefmsruiaefkzfne\nxhrcsbuavsrvvzjvjfqi\nmsruiaefkzfnekvydfjibddihqi",
    "output": "YES\nYES\nNO\nYES\nYES\nYES"
   },

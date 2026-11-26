@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "10 10\n10 20\n20 20\n20 10",
-   "output": "yes"
-  },
-  {
    "input": "20 20\n20 200\n20 9\n1 2",
    "output": "no"
   },

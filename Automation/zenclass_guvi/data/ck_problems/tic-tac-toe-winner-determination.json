@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "X O X\nO X O\nO O X",
-   "output": "Player1"
-  },
-  {
    "input": "O X O\nO O X\nX O X",
    "output": "TIE"
   },

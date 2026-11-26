@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\nP P A A A",
-   "output": "Not Blacklisted"
-  },
-  {
    "input": "10\nP P P A A A P A A A",
    "output": "Not Blacklisted"
   },

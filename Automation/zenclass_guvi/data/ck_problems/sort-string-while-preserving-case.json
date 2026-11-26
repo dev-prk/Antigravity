@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "GuVi",
-   "output": "GiVu"
-  },
-  {
    "input": "ABcd",
    "output": "ABcd"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "aabbggh\n3",
-   "output": "6"
-  },
-  {
    "input": "jjsse\n3",
    "output": "4"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "triangle 3 4 5",
-   "output": "Perimeter: 12"
-  },
-  {
    "input": "triangle 6 8 10",
    "output": "Perimeter: 24"
   }

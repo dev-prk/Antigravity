@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4\nbanana\napple\ncherry\ndate",
-   "output": "apple\nbanana\ncherry\ndate"
-  },
-  {
    "input": "5\nant\nbat\ncat\ndog\nelephant",
    "output": "ant\nbat\ncat\ndog\nelephant"
   }

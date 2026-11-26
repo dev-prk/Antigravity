@@ -9,12 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "2 3 4\n4 5\n6 5 4\n7 8 4 4",
-   "output": "YES"
-  },
-  {
    "input": "1 1 1\n2\n3\n4",
    "output": "NO"
+  },
+  {
+   "input": "2 3 4\n4 5\n6 5 4\n7 8 4 4",
+   "output": "YES"
   }
  ],
  "raw": ""

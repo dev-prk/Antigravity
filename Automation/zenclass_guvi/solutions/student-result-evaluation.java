@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+
+interface Marks {
+    void enterMarks(int marks);
+}
+
+interface Attendance {
+    void enterAttendance(int attendance);
+}
+
+class Student implements Marks, Attendance {
+    private int marks;
+    private int attendance;
+
+    @Override
+    public void enterMarks(int marks) {
+        this.marks = marks;
+    }
+
+    @Override
+    public void enterAttendance(int attendance) {
+        this.attendance = attendance;
+    }
+
+    public void checkResult() {
+        if (marks >= 40 && attendance >= 75) {
+            System.out.println("Result: Pass");
+        } else {
+            System.out.println("Result: Fail");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Student student = new Student();
+        int marks = sc.nextInt();
+        int attendance = sc.nextInt();
+        student.enterMarks(marks);
+        student.enterAttendance(attendance);
+        student.checkResult();
+        sc.close();
+    }
+}

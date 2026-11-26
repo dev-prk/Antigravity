@@ -13,7 +13,7 @@
    "output": "75.00"
   },
   {
-   "input": "4 6\n1 6 3 6 4 6 3 4\nW M G G G G\nM G W G M M\nG W G G G G\nW G W M W G",
+   "input": " 4 6\n1 6 3 6 4 6 3 4\nW M G G G G\nM G W G M M\nG W G G G G\nW G W M W G",
    "output": "61.54"
   }
  ],

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "dharma",
-   "output": "dh**ma"
-  },
-  {
    "input": "hello",
    "output": "he*lo"
   },

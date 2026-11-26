@@ -9,12 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n31 14 15 7 2",
-   "output": "31\n15\n14\n7\n2"
-  },
-  {
    "input": "3\n7 0 5",
    "output": "7\n5\n0"
+  },
+  {
+   "input": "5\n31 14 15 7 2",
+   "output": "31\n15\n14\n7\n2"
   }
  ],
  "raw": ""

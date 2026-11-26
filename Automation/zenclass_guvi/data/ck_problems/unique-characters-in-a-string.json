@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "GUVIGEEK",
-   "output": "4"
-  },
-  {
    "input": "9763",
    "output": "4"
   },

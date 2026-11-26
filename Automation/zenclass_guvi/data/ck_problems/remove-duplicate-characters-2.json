@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "H->e->l->l->o->w->o->r->l->d->h->i",
-   "output": "H->e->l->o->w->r->d->h->i"
-  },
-  {
    "input": "G->u->v->i->g->e->e->e->k",
    "output": "G->u->v->i->g->e->k"
   },

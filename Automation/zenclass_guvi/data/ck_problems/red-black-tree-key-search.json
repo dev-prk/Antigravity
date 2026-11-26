@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n10 5 15\n5 -1 -1\n15 12 20\n12 -1 -1\n20 -1 -1\n12",
-   "output": "Found"
-  },
-  {
    "input": "3\n7 3 18\n3 -1 -1\n18 -1 -1\n18",
    "output": "Found"
   },

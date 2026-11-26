@@ -9,12 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "18",
-   "output": "2 3"
-  },
-  {
    "input": "5",
    "output": "5"
+  },
+  {
+   "input": "18",
+   "output": "2 3"
   }
  ],
  "raw": ""

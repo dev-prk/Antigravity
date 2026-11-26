@@ -9,12 +9,16 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Sentence\nOld Word\nNew Word",
-   "output": "Print the modified sentence."
+   "input": "Java is easy\nJava\nPython",
+   "output": "Python is easy"
   },
   {
-   "input": "Java is easy and Java is powerful\nJava\nPython",
-   "output": "Python is easy and Python is powerful"
+   "input": "I like apples\napples\nmangoes",
+   "output": "I like mangoes"
+  },
+  {
+   "input": "cat cat dog\ncat\nrat",
+   "output": "rat rat dog"
   }
  ],
  "raw": ""

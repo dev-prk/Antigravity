@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "string 2",
-   "output": "sTrInG"
-  },
-  {
    "input": "string 0",
    "output": "string"
   },

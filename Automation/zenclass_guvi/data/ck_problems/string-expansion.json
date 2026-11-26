@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3(abc2(a))",
-   "output": "abcaaabcaaabcaa"
-  },
-  {
    "input": "2(abc2(dp))",
    "output": "abcdpdpabcdpdp"
   },

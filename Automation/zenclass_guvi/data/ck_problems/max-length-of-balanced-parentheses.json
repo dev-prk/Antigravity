@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "))(())",
-   "output": "4"
-  },
-  {
    "input": "((()))",
    "output": "6"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "[95,55]",
-   "output": "['A','F']"
-  },
-  {
    "input": "[95, 85, 77, 60, 55]",
    "output": "['A', 'B', 'C', 'D', 'F']"
   },

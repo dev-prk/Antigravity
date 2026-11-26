@@ -9,11 +9,7 @@
  "constraints": "",
  "samples": [
   {
-   "input": "carrace \n L 2\n R 2\n L 3",
-   "output": "No"
-  },
-  {
-   "input": "carrace\n L 2\n R 2\n L 3",
+   "input": "carrace\n\n L 2\n R 2\n L 3",
    "output": "No"
   },
   {

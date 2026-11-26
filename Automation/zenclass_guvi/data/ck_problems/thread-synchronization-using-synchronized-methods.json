@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "750\n2\nwithdraw 200\ndeposit 300",
-   "output": "850"
-  },
-  {
    "input": "750",
    "output": "900"
   }

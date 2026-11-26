@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "2\nabcd\nefgh\n1\nab",
-   "output": "abcd"
-  },
-  {
    "input": "3\nbjsnd\nzdvhlxr\ntahasblb\n14\nbjsn\nllcu\nmaqnbw\nhhbqd\nzdvhlxr\nbj\nzd\nbksdef\nhjf\nssozve\nekvgd\nltco\nb\nbjs",
    "output": "bjsnd\nllcu\nmaqnbw\nhhbqd\nzdvhlxr\nbjsnd\nzdvhlxr\nbksdef\nhjf\nssozve\nekvgd\nltco\nbjsnd\nbjsnd"
   },

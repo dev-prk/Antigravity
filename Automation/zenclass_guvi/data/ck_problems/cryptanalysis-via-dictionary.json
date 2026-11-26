@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "6\nand\nkick\njane\npuff\nspot\nyertle\ngjvg xsb hxsn xsb qymm xsb rqat xsb pnetfnxxxx yyy zzzz www yyyy aaa bbbb ccc dddddd",
-   "output": "kick and jane and puff and spot and yertle \n**** *** **** *** **** *** **** *** ******"
-  },
-  {
    "input": "6\nand\nkick\njane\npuff\nspot\nyertle\ngjvg xsb hxsn xsb qymm xsb rqat xsb pnetfn\nxxxx yyy zzzz www yyyy aaa bbbb ccc dddddd",
    "output": "kick and jane and puff and spot and yertle\n**** *** **** *** **** *** **** *** ******"
   },

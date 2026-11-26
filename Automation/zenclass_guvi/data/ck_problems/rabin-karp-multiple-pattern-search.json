@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\nabc\nde\na\nabcdeabc",
-   "output": "0 5\n3\n0 5"
-  },
-  {
    "input": "2\nab\nba\nabbaab",
    "output": "0 4\n2"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\nA 34 89 98\nB 98 87 98\nC 87 67 98",
-   "output": "A 34 89 98\nB 98 87 98\nC 87 67 98"
-  },
-  {
    "input": "2\nA 98 23 34\nB 99 34 78",
    "output": "B 99 34 78\nA 98 23 34"
   },

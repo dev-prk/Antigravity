@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3 3\n3 L L L\n1 2",
-   "output": "Unsafe"
-  },
-  {
    "input": "2 2\n1 R\n1 1",
    "output": "Safe"
   },

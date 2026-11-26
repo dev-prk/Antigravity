@@ -9,12 +9,8 @@
  "constraints": "The array size n must be between 1 and 100.\nThe",
  "samples": [
   {
-   "input": "An integer n (size of the array, where 1 <= n <= 100).\nn floating-point numbers.",
-   "output": "The average of the numbers with two decimal precision.\nThe maximum number in the array.\nThe minimum number in the array.\nThe standard deviation of the numbers with two decimal precision."
-  },
-  {
-   "input": "5\n10.5 20.8 30.1 40.2 50.6",
-   "output": "Average: 30.44\nMaximum: 50.60\nMinimum: 10.50\nStandard Deviation: 14.86"
+   "input": "3\n1.0 2.0 3.0",
+   "output": "Average: 2.00\nMaximum: 3.00\nMinimum: 1.00\nStandard Deviation: 0.82"
   }
  ],
  "raw": ""

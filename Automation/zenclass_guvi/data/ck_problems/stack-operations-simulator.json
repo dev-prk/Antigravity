@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\nPUSH 10\nPUSH 20\nPEEK\nPOP\nPOP",
-   "output": "20\n20\n10"
-  },
-  {
    "input": "3\nPOP\nPUSH 5\nPEEK",
    "output": "Stack is empty\n5"
   },

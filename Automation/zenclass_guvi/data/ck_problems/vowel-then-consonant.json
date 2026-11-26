@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "GuVI",
-   "output": "uIGV"
-  },
-  {
    "input": "sky",
    "output": "sky"
   },

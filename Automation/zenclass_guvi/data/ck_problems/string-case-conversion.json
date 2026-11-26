@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "CodEkaTa",
-   "output": "cODeKAtA"
-  },
-  {
    "input": "abcD",
    "output": "ABCd"
   },

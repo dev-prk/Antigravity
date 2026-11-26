@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "bus\n120",
-   "output": "Ticket Type: Bus Ticket\nFare: 600"
-  },
-  {
    "input": "bus\n100",
    "output": "Ticket Type: Bus Ticket\nFare: 500"
   }

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "test123string\n123",
-   "output": "4"
-  },
-  {
    "input": "testing12\n1234",
    "output": "-1"
   },

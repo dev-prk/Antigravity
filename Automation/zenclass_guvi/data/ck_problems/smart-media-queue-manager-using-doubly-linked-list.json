@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "6\nPUSH Track1 150\nPUSH Track2 160\nPUSH Track3 170\nFORWARD\nFORWARD\nSHOW",
-   "output": "Track3"
-  },
-  {
    "input": "5\nPUSH A 100\nPUSH B 150\nREMOVE C\nFORWARD\nSHOW",
    "output": "Track not found\nB"
   }

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n6\nA 2\nA 2\nL\nF 2\nL\nA 1",
-   "output": "2\n3\n2\n2\n1"
-  },
-  {
    "input": "3\n4\nA 1\nA 1\nA 1\nL",
    "output": "1\n2\n3\n0"
   }

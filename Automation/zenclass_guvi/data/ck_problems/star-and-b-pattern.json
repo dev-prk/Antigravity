@@ -10,10 +10,6 @@
  "samples": [
   {
    "input": "10",
-   "output": "********** \n****bb**** \n***bbbb*** \n**bbbbbb** \n*bbbbbbbb* \n**bbbbbb** \n***bbbb*** \n****bb**** \n**********"
-  },
-  {
-   "input": "10",
    "output": "**********\n****bb****\n***bbbb***\n**bbbbbb**\n*bbbbbbbb*\n**bbbbbb**\n***bbbb***\n****bb****\n**********"
   },
   {

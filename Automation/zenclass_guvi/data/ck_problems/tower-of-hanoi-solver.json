@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3",
-   "output": "Move disk 1 from rod A to rod C\nMove disk 2 from rod A to rod B\nMove disk 1 from rod C to rod B\nMove disk 3 from rod A to rod C\nMove disk 1 from rod B to rod A\nMove disk 2 from rod B to rod C\nMove disk 1 from rod A to rod C"
-  },
-  {
    "input": "1",
    "output": "Move disk 1 from rod A to rod C"
   },

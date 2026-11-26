@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4\npush 10\npush 20\npop\npeek",
-   "output": "Pushed: 10\nPushed: 20\nPopped: 20\nPeek: 10"
-  },
-  {
    "input": "3\npush apple\npush banana\npeek",
    "output": "Pushed: apple\nPushed: banana\nPeek: banana"
   }

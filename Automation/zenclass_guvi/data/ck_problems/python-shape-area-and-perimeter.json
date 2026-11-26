@@ -10,10 +10,6 @@
  "samples": [
   {
    "input": "circle\n5\nrectangle\n4 6\ntriangle\n3 4 5\nquit",
-   "output": "Area of the circle: 78.54\nPerimeter of the circle: 31.42\nArea of the rectangle: 24.0\nPerimeter of the rectangle: 20.0\nArea of the triangle: 6.0\nPerimeter of the triangle: 12.0\nQuitting the program."
-  },
-  {
-   "input": "circle\n5\nrectangle\n4 6\ntriangle\n3 4 5\nquit",
    "output": "Area of the circle: 78.54\nPerimeter of the circle: 31.42\nArea of the rectangle: 24.00\nPerimeter of the rectangle: 20.00\nArea of the triangle: 6.00\nPerimeter of the triangle: 12.00\nQuitting the program."
   },
   {

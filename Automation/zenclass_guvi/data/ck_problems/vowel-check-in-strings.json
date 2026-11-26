@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\ncode\noverload\nvishal\nsundar\nanish",
-   "output": "yes"
-  },
-  {
    "input": "3\nToday\nwonderful\nsky",
    "output": "no"
   },

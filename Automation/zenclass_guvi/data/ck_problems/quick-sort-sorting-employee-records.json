@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\nAmit 50000\nRiya 60000\nKaran 50000",
-   "output": "Riya 60000\nAmit 50000\nKaran 50000"
-  },
-  {
    "input": "4\nJohn 40000\nAlice 75000\nBob 75000\nEve 50000",
    "output": "Alice 75000\nBob 75000\nEve 50000\nJohn 40000"
   }

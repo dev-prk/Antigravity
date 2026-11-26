@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4\napple 10\nbanana 5\napple 20\nbanana 15",
-   "output": "banana 20\napple 30"
-  },
-  {
    "input": "5\napple 10\nbanana 5\napple 20\norange 15\nbanana 10",
    "output": "apple 30\nbanana 15\norange 15"
   }

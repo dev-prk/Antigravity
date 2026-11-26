@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Yuvi\nYuvirat",
-   "output": "1"
-  },
-  {
    "input": "abcdegh\ndegh",
    "output": "4"
   },

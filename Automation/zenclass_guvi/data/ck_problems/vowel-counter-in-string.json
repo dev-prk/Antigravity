@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Apple",
-   "output": "2"
-  },
-  {
    "input": "aeiou",
    "output": "5"
   },

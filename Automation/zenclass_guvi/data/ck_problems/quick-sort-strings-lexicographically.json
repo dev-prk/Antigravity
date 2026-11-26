@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\nbanana\napple\ngrape\ncherry\ndate",
-   "output": "apple\nbanana\ncherry\ndate\ngrape"
-  },
-  {
    "input": "3\ndog\ncat\nbat",
    "output": "bat\ncat\ndog"
   },

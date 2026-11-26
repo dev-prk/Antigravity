@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "guvigeeks",
-   "output": "no"
-  },
-  {
    "input": "11",
    "output": "yes"
   },

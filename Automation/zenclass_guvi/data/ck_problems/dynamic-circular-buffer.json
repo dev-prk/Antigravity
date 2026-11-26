@@ -13,12 +13,8 @@
    "output": "5\n5 10\n5 10\n5 10 15\n10 15\n10 15 20"
   },
   {
-   "input": "6\nADD 5\nADD 10\nRESIZE 5\nADD 15\nREMOVE\nADD 20",
-   "output": "5 \n5 10 \n5 10 \n5 10 15 \n10 15 \n10 15 20"
-  },
-  {
    "input": "4\nADD 1\nADD 2\nRESIZE 4\nREMOVE",
-   "output": "1 \n1 2 \n1 2 \n2"
+   "output": "1\n1 2\n1 2\n2"
   }
  ],
  "raw": ""

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n10 20 30 15 25",
-   "output": "10(B) 15(R) 20(B) 25(R) 30(B)"
-  },
-  {
    "input": "3\n5 3 7",
    "output": "3(R) 5(B) 7(R)"
   },

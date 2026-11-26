@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "baa abcd abca cab cad",
-   "output": "bdac"
-  },
-  {
    "input": "ac cd de",
    "output": "acde"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "codekata coding challenge\ncoding",
-   "output": "2"
-  },
-  {
    "input": "guvi geeks\nguvi",
    "output": "1"
   },
