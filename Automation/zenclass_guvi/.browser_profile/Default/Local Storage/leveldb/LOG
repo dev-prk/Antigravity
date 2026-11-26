@@ -258,3 +258,21 @@
 2026/11/27-00:41:07.519 2c10ca Level-0 table #158: started
 2026/11/27-00:41:07.520 2c10ca Level-0 table #158: 69464 bytes OK
 2026/11/27-00:41:07.522 2c10ca Delete type=0 #155
+2026/11/27-00:43:53.394 2c10ca Level-0 table #160: started
+2026/11/27-00:43:53.396 2c10ca Level-0 table #160: 68419 bytes OK
+2026/11/27-00:43:53.397 2c10ca Delete type=0 #157
+2026/11/27-00:45:07.519 2c10ca Level-0 table #162: started
+2026/11/27-00:45:07.529 2c10ca Level-0 table #162: 68063 bytes OK
+2026/11/27-00:45:07.536 2c10ca Delete type=0 #159
+2026/11/27-00:45:07.537 2c10ca Compacting 4@0 + 1@1 files
+2026/11/27-00:45:07.542 2c10ca Generated table #163@0: 139 keys, 42345 bytes
+2026/11/27-00:45:07.542 2c10ca Compacted 4@0 + 1@1 files => 42345 bytes
+2026/11/27-00:45:07.544 2c10ca compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-00:45:07.545 2c10ca Delete type=2 #160
+2026/11/27-00:45:07.545 2c10ca Delete type=2 #162
+2026/11/27-00:45:07.545 2c10ca Delete type=2 #158
+2026/11/27-00:45:07.545 2c10ca Delete type=2 #154
+2026/11/27-00:45:07.545 2c10ca Delete type=2 #156
+2026/11/27-00:47:07.519 2c10ca Level-0 table #165: started
+2026/11/27-00:47:07.522 2c10ca Level-0 table #165: 69981 bytes OK
+2026/11/27-00:47:07.528 2c10ca Delete type=0 #161

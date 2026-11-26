@@ -262,3 +262,36 @@
 2026/11/27-00:42:07.523 2c10ca Level-0 table #123: started
 2026/11/27-00:42:07.527 2c10ca Level-0 table #123: 22770 bytes OK
 2026/11/27-00:42:07.531 2c10ca Delete type=0 #120
+2026/11/27-00:43:53.208 2c10ca Level-0 table #125: started
+2026/11/27-00:43:53.214 2c10ca Level-0 table #125: 23298 bytes OK
+2026/11/27-00:43:53.218 2c10ca Delete type=0 #122
+2026/11/27-00:43:53.218 2c10ca Compacting 4@0 + 1@1 files
+2026/11/27-00:43:53.224 2c10ca Generated table #126@0: 1392 keys, 49570 bytes
+2026/11/27-00:43:53.224 2c10ca Compacted 4@0 + 1@1 files => 49570 bytes
+2026/11/27-00:43:53.227 2c10ca compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/27-00:43:53.227 2c10ca Delete type=2 #117
+2026/11/27-00:43:53.227 2c10ca Delete type=2 #123
+2026/11/27-00:43:53.227 2c10ca Delete type=2 #121
+2026/11/27-00:43:53.227 2c10ca Delete type=2 #125
+2026/11/27-00:43:53.227 2c10ca Delete type=2 #119
+2026/11/27-00:45:07.524 2c10cb Level-0 table #128: started
+2026/11/27-00:45:07.530 2c10cb Level-0 table #128: 23444 bytes OK
+2026/11/27-00:45:07.537 2c10cb Delete type=0 #124
+2026/11/27-00:46:07.523 2c10ca Level-0 table #130: started
+2026/11/27-00:46:07.528 2c10ca Level-0 table #130: 23595 bytes OK
+2026/11/27-00:46:07.532 2c10ca Delete type=0 #127
+2026/11/27-00:47:07.521 2c10cb Level-0 table #132: started
+2026/11/27-00:47:07.523 2c10cb Level-0 table #132: 23768 bytes OK
+2026/11/27-00:47:07.528 2c10cb Delete type=0 #129
+2026/11/27-00:48:07.521 2c10ca Level-0 table #134: started
+2026/11/27-00:48:07.522 2c10ca Level-0 table #134: 24025 bytes OK
+2026/11/27-00:48:07.524 2c10ca Delete type=0 #131
+2026/11/27-00:48:07.525 2c10ca Compacting 4@0 + 1@1 files
+2026/11/27-00:48:07.528 2c10ca Generated table #135@0: 1436 keys, 50940 bytes
+2026/11/27-00:48:07.528 2c10ca Compacted 4@0 + 1@1 files => 50940 bytes
+2026/11/27-00:48:07.529 2c10ca compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/27-00:48:07.530 2c10ca Delete type=2 #128
+2026/11/27-00:48:07.530 2c10ca Delete type=2 #134
+2026/11/27-00:48:07.530 2c10ca Delete type=2 #130
+2026/11/27-00:48:07.530 2c10ca Delete type=2 #126
+2026/11/27-00:48:07.530 2c10ca Delete type=2 #132

@@ -9180,10 +9180,10 @@
  "dynamic-circular-buffer": {
   "status": "FAILED_PLATFORM",
   "language": "C",
-  "attempts": 1,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nC\nmain.c:70:6: error: conflicting types for \u2018remove\u2019 void remove(CircularBuffer **cb) { ^~~~~~ In file included from main.c:1:0: /usr/include/stdio.h:146:12: note: previous declaration of \u2018remov",
-  "duration_s": 54.29,
-  "ts": "2026-11-26T19:11:10.453317+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 2.7,
+  "ts": "2026-11-26T19:13:50.903625+00:00"
  },
  "dynamic-english-dictionary": {
   "status": "COMPLETED",
@@ -9216,5 +9216,301 @@
   "reason": "SOLVED_MODAL",
   "duration_s": 10.2,
   "ts": "2026-11-26T19:11:34.873723+00:00"
+ },
+ "dynamic-memory-graph-connected-components": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 8.68,
+  "ts": "2026-11-26T19:11:43.586979+00:00"
+ },
+ "dynamic-string-assignment-operator-overloading": {
+  "status": "FAILED_PLATFORM",
+  "language": "C++",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC++\nRuntime\n\n8ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n5",
+  "duration_s": 2.53,
+  "ts": "2026-11-26T19:13:53.441416+00:00"
+ },
+ "e-commerce-category-price-summation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.74,
+  "ts": "2026-11-26T19:11:46.972341+00:00"
+ },
+ "e-commerce-platform-with-multiple-inheritance": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nCompiler Error\nTest Cases\n3/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 58, in <module> main() File \"script-3.8.1.py\", line 52, in main size = int(parts[3].strip()) ValueError: invalid literal ",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:13:54.975711+00:00"
+ },
+ "e-commerce-product-inheritance": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n68ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\nimport sys\n\nclass Product:\n    de",
+  "duration_s": 1.55,
+  "ts": "2026-11-26T19:13:56.560657+00:00"
+ },
+ "edmonds-karp-algorithm-for-maximum-flow": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 117.6,
+  "ts": "2026-11-26T19:13:48.181233+00:00"
+ },
+ "balanced-ternary": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T19:13:58.066115+00:00"
+ },
+ "bank-account-management-using-constructors": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.56,
+  "ts": "2026-11-26T19:13:59.656418+00:00"
+ },
+ "batch-gcd-queries": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.47,
+  "ts": "2026-11-26T19:14:01.146268+00:00"
+ },
+ "efficient-array-rotation": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nC\nRuntime\n\n5ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 2.52,
+  "ts": "2026-11-26T19:14:45.249296+00:00"
+ },
+ "electronic-device-hierarchy": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T19:14:10.476432+00:00"
+ },
+ "elevator-sort": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n62ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\nimport sys\n\ndef solve():\n    data = ",
+  "duration_s": 1.9,
+  "ts": "2026-11-26T19:14:47.158469+00:00"
+ },
+ "employee-bonus-calculator-using-private-inheritance": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.4,
+  "ts": "2026-11-26T19:14:21.872851+00:00"
+ },
+ "employee-hierarchy-tree": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.96,
+  "ts": "2026-11-26T19:14:23.844150+00:00"
+ },
+ "employee-inheritance": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T19:14:25.335265+00:00"
+ },
+ "employee-performance-tracker-pointer-initialization": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 15.77,
+  "ts": "2026-11-26T19:14:41.155156+00:00"
+ },
+ "chinese-remainder-theorem": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.67,
+  "ts": "2026-11-26T19:16:04.581555+00:00"
+ },
+ "employee-record-system-using-random-access-object-serialization": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 11.67,
+  "ts": "2026-11-26T19:14:58.842742+00:00"
+ },
+ "c-merge-sort-fractions": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.36,
+  "ts": "2026-11-26T19:15:09.221303+00:00"
+ },
+ "employee-salary-auto-initializer": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 7.38,
+  "ts": "2026-11-26T19:15:16.616753+00:00"
+ },
+ "employee-salary-calculator-method-overloading": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.72,
+  "ts": "2026-11-26T19:15:27.347403+00:00"
+ },
+ "employee-salary-calculator-using-methods": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T19:15:28.854535+00:00"
+ },
+ "employee-salary-management-using-structures-and-dma": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:15:30.379709+00:00"
+ },
+ "employee-salary-management": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/5\nLanguage\nPYTHON 3\nRuntime\n\n62ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\nimport sys\n\nclass Employee:\n    def __init__(self):\n        sel",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T19:15:36.783917+00:00"
+ },
+ "enumerate-balanced-ternary": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/3\nLanguage\nPYTHON 3\nRuntime\n\n39ms\n\nMemory\n\n9kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\nimport sys\nfrom itertools import product\n\ndef main():\n    line = sys.stdin.readline().strip()\n",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:16:38.451166+00:00"
+ },
+ "equalize-string-lengths": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n65ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\nimport sys\n\ndef main():\n    lines = sys.stdin.read().splitlines()\n    if len(lines) < 2:\n    ",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:16:27.449174+00:00"
+ },
+ "erdos-numbers-calculation": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n69ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.66,
+  "ts": "2026-11-26T19:16:50.655037+00:00"
+ },
+ "escaping-the-maze": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/3\nLanguage\nC\nRuntime\n\n3ms\n\nMemory\n\n1kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T19:16:52.200299+00:00"
+ },
+ "employee-salary-management-system": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 11.62,
+  "ts": "2026-11-26T19:16:16.217548+00:00"
+ },
+ "euler-s-totient-phi": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T19:16:17.875464+00:00"
+ },
+ "evaluate-postfix-expression": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.03,
+  "ts": "2026-11-26T19:16:25.917547+00:00"
+ },
+ "electricity-bill-calculator-with-default-arguments": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.47,
+  "ts": "2026-11-26T19:16:36.927702+00:00"
+ },
+ "evaluating-relational-and-logical-operators": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.63,
+  "ts": "2026-11-26T19:16:43.093927+00:00"
+ },
+ "even-number-filter-with-lambda": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.87,
+  "ts": "2026-11-26T19:16:48.984747+00:00"
+ },
+ "even-odd-position-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.74,
+  "ts": "2026-11-26T19:16:53.957309+00:00"
+ },
+ "fair-restaurant-bill-split": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.26,
+  "ts": "2026-11-26T19:16:54.234311+00:00"
+ },
+ "fast-doubling": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T19:16:55.859048+00:00"
  }
 }
