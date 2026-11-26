@@ -1,0 +1,39 @@
+{
+  "title": "Autonomous Sports Commentary Observability",
+  "uid": "sports-commentary-obs",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "10s",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Agent Commentary Latency (p95 seconds)",
+      "type": "timeseries",
+      "targets": [{"expr": "histogram_quantile(0.95, rate(commentary_agent_latency_seconds_bucket[5m]))"}]
+    },
+    {
+      "id": 2,
+      "title": "TTS Time-To-First-Audio (p95 seconds)",
+      "type": "timeseries",
+      "targets": [{"expr": "histogram_quantile(0.95, rate(tts_time_to_first_audio_seconds_bucket[5m]))"}]
+    },
+    {
+      "id": 3,
+      "title": "Commentary Tokens Generated Rate",
+      "type": "stat",
+      "targets": [{"expr": "rate(commentary_tokens_generated_total[5m]) * 60"}]
+    },
+    {
+      "id": 4,
+      "title": "Viewer Questions per Minute (Text vs Voice)",
+      "type": "timeseries",
+      "targets": [{"expr": "sum by (modality) (rate(viewer_questions_total[1m]) * 60)"}]
+    },
+    {
+      "id": 5,
+      "title": "Pipeline Errors Total",
+      "type": "stat",
+      "targets": [{"expr": "commentary_errors_total"}]
+    }
+  ]
+}

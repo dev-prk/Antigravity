@@ -1,0 +1,71 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-cricket}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme_in_env}
+      POSTGRES_DB: ${POSTGRES_DB:-cricket_stats}
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+
+  game-state-api:
+    build: .
+    command: uvicorn api:app --host 0.0.0.0 --port 8000
+    environment:
+      AWS_REGION: ${AWS_REGION:-ap-south-1}
+      CRICSHEET_S3_BUCKET: ${CRICSHEET_S3_BUCKET:-}
+      KOKORO_TTS_URL: http://kokoro-tts:8880
+      WHISPER_ASR_URL: http://faster-whisper:8890
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+
+  streamlit-ui:
+    build: .
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0
+    environment:
+      GAME_STATE_API_URL: http://game-state-api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - game-state-api
+
+  kokoro-tts:
+    build: ./services/tts
+    ports:
+      - "8880:8880"
+
+  faster-whisper:
+    build: ./services/asr
+    ports:
+      - "8890:8890"
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.14.1
+    command: mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns
+    ports:
+      - "5000:5000"
+
+  prometheus:
+    image: prom/prometheus:v2.52.0
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/alerts.yml:/etc/prometheus/alerts.yml:ro
+    ports:
+      - "9090:9090"
+    depends_on:
+      - game-state-api
+
+  grafana:
+    image: grafana/grafana:11.0.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./monitoring/grafana_dashboard.json:/var/lib/grafana/dashboards/commentary_dashboard.json:ro
+    depends_on:
+      - prometheus

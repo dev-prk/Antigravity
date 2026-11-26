@@ -1,0 +1,116 @@
+{
+  "ride_outcome_model": {
+    "classes": [
+      "Cancelled",
+      "Completed",
+      "Incomplete"
+    ],
+    "best_params": {
+      "clf__learning_rate": 0.12,
+      "clf__max_depth": 5
+    },
+    "accuracy": 0.7259,
+    "f1_weighted": 0.6846,
+    "roc_auc_ovr": 0.7661,
+    "confusion_matrix": [
+      [
+        1971,
+        2668,
+        18
+      ],
+      [
+        1116,
+        12503,
+        50
+      ],
+      [
+        258,
+        1371,
+        45
+      ]
+    ],
+    "top_features": [
+      {
+        "feature": "cancellation_rate",
+        "importance": 0.03533
+      },
+      {
+        "feature": "surge_multiplier",
+        "importance": 0.0185
+      },
+      {
+        "feature": "acceptance_rate",
+        "importance": 0.0145
+      },
+      {
+        "feature": "Est_Min_per_KM",
+        "importance": 0.008
+      },
+      {
+        "feature": "weather_condition",
+        "importance": 0.00467
+      },
+      {
+        "feature": "estimated_ride_time_min",
+        "importance": 0.0035
+      },
+      {
+        "feature": "Customer_Loyalty_Score",
+        "importance": 0.00333
+      },
+      {
+        "feature": "avg_wait_time_min",
+        "importance": 0.002
+      },
+      {
+        "feature": "Base_Fare_per_KM",
+        "importance": 0.00183
+      },
+      {
+        "feature": "delay_rate",
+        "importance": 0.00167
+      }
+    ]
+  },
+  "fare_prediction_model": {
+    "best_params": {
+      "reg__learning_rate": 0.08,
+      "reg__max_depth": 5
+    },
+    "rmse": 11.764,
+    "mae": 8.643,
+    "r2": 0.9968,
+    "rmse_pct_of_mean_fare": 3.48,
+    "within_10pct_accuracy": 99.99
+  },
+  "customer_cancellation_model": {
+    "accuracy": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "confusion_matrix": [
+      [
+        931,
+        0
+      ],
+      [
+        0,
+        1069
+      ]
+    ]
+  },
+  "driver_delay_model": {
+    "accuracy": 0.918,
+    "f1_score": 0.7355,
+    "roc_auc": 0.9798,
+    "confusion_matrix": [
+      [
+        804,
+        65
+      ],
+      [
+        17,
+        114
+      ]
+    ]
+  }
+}

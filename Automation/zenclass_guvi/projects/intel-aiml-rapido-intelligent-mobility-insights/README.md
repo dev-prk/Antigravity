@@ -1,110 +1,35 @@
-# INTEL-AIML_Rapido: Intelligent Mobility Insights
+# Rapido: Intelligent Mobility Insights — Ride Patterns, Cancellations & Fare Forecasting
 
-> Autonomous ZenClass Capstone Project Solution (Requirement R2 Compliance).
+End-to-end mobility analytics, relational SQL warehouse, 4-model ML decision engine (`GridSearchCV` tuned), FastAPI prediction microservice, and Streamlit operational dashboard trained on the **100,000-row Rapido multi-table dataset**.
 
-## Overview
-- **Project ID**: `proj-intel-aiml-rapido-intelligent-mobility-insights`
-- **Architecture**: `fullstack_python`
-- **Tags**: Python, EDA, Machine Learning
-- **Description**: https://docs.google.com/document/d/1559SQPzB8acwTLk3KDi9NBEZ9eI4AVHAl1T2_ppUJk8/edit?tab=t.0
+## Architecture
 
-PROJECT DOUBT CLARIFICATION SESSION ( PROJECT AND CLASS DOUBTS)
-
-About Session: The Project Doubt Clarification Session is a helpful resource for resolving questions and concerns about projects and class topics. It provides support in understanding project requirements, addressing code issues, and clarifying class concepts. The session aims to enhance comprehension and provide guidance to overcome challenges effectively.
-
-Note: Book the slot at least before 12:00 Pm on the same day
-
-Timing: Monday-Saturday (3:30PM to 4:30PM)
-
-Booking link :https://forms.gle/XC553oSbMJ2Gcfug9
-
-LIVE EVALUATION SESSION (CAPSTONE AND FINAL PROJECT)
-
-About Session: The Live Evaluation Session for Capstone and Final Projects allows participants to showcase their projects and receive real-time feedback for improvement. It assesses project quality and provides an opportunity for discussion and evaluation.
-
-Note: This form will Open only on Saturday (after 2 PM ) and Sunday on Every Week
-
-Timing:
-
-Monday-Saturday (05:30PM to 06:30PM)
-
-Booking link : https://forms.gle/1m2Gsro41fLtZurRA
-
----
-
-## Architecture Diagram
 ```
-+-------------------------------------------------------+
-|                    Client / Frontend                  |
-|          (HTML5 / CSS3 Flexbox-Grid / Vanilla ES6+)   |
-+---------------------------+---------------------------+
-                            |
-                     HTTP / REST API
-                            |
-+---------------------------v---------------------------+
-|                    Server / Backend                   |
-|              (Express.js / Node / Flask)              |
-+-------------------------------------------------------+
+bookings.csv (100k) + customers.csv (10k) + drivers.csv (5k) + location_demand.csv + time_features.csv
+        │
+        ▼
+  Relational Ingestion & Feature Pipeline (src/data_pipeline.py)
+  ├── SQLite Warehouse (data/rapido_mobility.db)
+  └── Engineered Signals: Fare_per_KM, Fare_per_Min, Rush_Hour_Flag, Long_Distance_Flag,
+      City_Pair, Driver_Reliability_Score, Customer_Loyalty_Score (strictly leakage-free)
+        │
+        ▼
+  4-Model Tuned ML Suite (src/modeling.py — 80/20 Holdout + GridSearchCV)
+  ├── 1. Ride Outcome Classifier (Completed / Cancelled / Incomplete)
+  ├── 2. Dynamic Fare Regressor (RMSE, MAE, R², ±10% accuracy)
+  ├── 3. Customer Cancellation Risk Classifier
+  └── 4. Driver Delay Classifier
+        │
+        ├──► FastAPI Inference Service (api.py: /health, /metrics, /predict/ride)
+        └──► Interactive Streamlit Dashboard (app.py)
 ```
 
----
+## Quickstart
 
-## Local Setup & Execution
-
-### Prerequisites
-- Node.js >= 18.0.0 (or Python >= 3.9)
-- Modern web browser (Chrome, Firefox, Safari)
-
-### Running Locally
 ```bash
-# 1. Frontend
-cd client    # or cd frontend
-npx serve .
-
-# 2. Backend (if applicable)
-cd server    # or cd backend
-npm install
-npm start
+pip install -r requirements.txt
+pytest -q
+streamlit run app.py
+# Optional FastAPI server:
+uvicorn api:app --reload --port 8003
 ```
-
----
-
-## Deployment Instructions
-
-### 1. Initialize GitHub Repository
-```bash
-git init
-git add .
-git commit -m "feat: complete solution for INTEL-AIML_Rapido: Intelligent Mobility Insights"
-git branch -M main
-git remote add origin https://github.com/<your-username>/intel-aiml-rapido-intelligent-mobility-insights.git
-git push -u origin main
-```
-
-### 2. Frontend Hosting (Vercel / Netlify)
-1. Log in to [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/).
-2. Click **Add New Project** and select your GitHub repository `intel-aiml-rapido-intelligent-mobility-insights`.
-3. Configure Root Directory to `frontend` (or `client` or `./`).
-4. Click **Deploy**. Copy the live URL.
-
-### 3. Backend Hosting (Render / Railway)
-1. Log in to [Render](https://render.com/).
-2. Create a new **Web Service**, connect the `intel-aiml-rapido-intelligent-mobility-insights` repository.
-3. Set Root Directory to `server` (or `backend`), Build Command `npm install`, Start Command `node server.js`.
-4. Click **Create Web Service**. Copy the live backend URL.
-
----
-
-## Deliverable URLs for ZenClass Submission
-- **GitHub Repository URL**: `https://github.com/<your-username>/intel-aiml-rapido-intelligent-mobility-insights`
-- **Frontend Deployed URL**: `https://intel-aiml-rapido-intelligent-mobility-insights.vercel.app`
-- **Backend Deployed URL**: `https://intel-aiml-rapido-intelligent-mobility-insights.onrender.com` (if fullstack)
-
----
-
-## Test & Verification Checklist
-- [x] Responsive layout on Desktop (1920x1080) and Mobile (375x667).
-- [x] HTML5 semantic elements pass W3C validation.
-- [x] CSS parseable without unclosed braces.
-- [x] JavaScript executes with zero syntax errors.
-- [x] Local build check passes cleanly.

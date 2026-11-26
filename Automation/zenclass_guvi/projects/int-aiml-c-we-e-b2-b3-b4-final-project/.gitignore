@@ -1,8 +1,6 @@
-node_modules/
 __pycache__/
 *.pyc
-.DS_Store
+.pytest_cache/
 .env
-dist/
-build/
-validation_report.json
+data/cricket_stats.db
+data/parquet/

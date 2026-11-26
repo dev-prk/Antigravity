@@ -1,102 +1,44 @@
-# INTEL_AIML_Multi-Agent Support Ticket Automation System
+# Multi-Agent Customer Support Intelligence Platform
 
-> Autonomous ZenClass Capstone Project Solution (Requirement R2 Compliance).
+Autonomous 6-agent e-commerce ticket intelligence system combining **Supervised ML Classification (`>85%` accuracy on 10,000 tickets)**, **FAISS Vector RAG (`150` FAQs + historical precedents)**, **Confidence & Sentiment Escalation Routing**, **Continuous Feedback Learning**, **FastAPI REST endpoints**, and an **Interactive Streamlit Chat & Agent Log Inspector**.
 
-## Overview
-- **Project ID**: `proj-intel-aiml-multi-agent-support-ticket-automation-system`
-- **Architecture**: `frontend`
-- **Tags**: Deep Learning, Computer Vision
-- **Description**: https://docs.google.com/document/d/1dDFYf9xryQLhlh-jTIYs5QcCWasX4YFL__5nd_qoZJ8/edit?usp=sharing 
+## Multi-Agent Workflow
 
-PROJECT DOUBT CLARIFICATION SESSION ( PROJECT, CLASS and CODE_KATA DOUBTS)
-
-About Session: The Project Doubt Clarification Session is a helpful resource for resolving questions and concerns about projects and class topics. It provides support in understanding project requirements, addressing code issues, and clarifying class concepts. The session aims to enhance comprehension and provide guidance to overcome challenges effectively.
-
-Session Link : Project Doubt Session [DS/AIML]
-
-LIVE EVALUATION SESSION (CAPSTONE AND FINAL PROJECT)
-
-About Session: The Live Evaluation Session for Capstone and Final Projects allows participants to showcase their projects and receive real-time feedback for improvement. It assesses project quality and provides an opportunity for discussion and evaluation.
-
-Note: This form will Open only on Saturday (after 2 PM ) and Sunday on Every Week
-
-Booking link : https://forms.gle/1m2Gsro41fLtZurRA
-
----
-
-## Architecture Diagram
 ```
-+-------------------------------------------------------+
-|                    Client / Frontend                  |
-|          (HTML5 / CSS3 Flexbox-Grid / Vanilla ES6+)   |
-+---------------------------+---------------------------+
-                            |
-                     HTTP / REST API
-                            |
-+---------------------------v---------------------------+
-|                    Server / Backend                   |
-|              (Express.js / Node / Flask)              |
-+-------------------------------------------------------+
+User Ticket
+  │
+  ▼
+1. Intake Agent (Text normalization, #ORD / Product / Amount extraction, frustration cues)
+  │
+  ▼
+2. Classification Agent (Category + Priority + Sentiment + Calibrated Confidence)
+  │
+  ▼
+3. Retrieval Agent — FAISS RAG (Searches 150 FAQs + Resolved Precedents + Learned Feedback)
+  │
+  ▼
+4. Response Agent (Empathetic, policy-grounded contextual reply)
+  │
+  ▼
+5. Escalation Agent (Confidence + Angry Sentiment + Priority Gate → Auto-Resolve vs Escalate)
+  │
+  ▼
+6. Logging + Learning Agent (SQLite Short/Long/Feedback Memory + Live FAISS KB Updates)
 ```
 
----
+## FastAPI Endpoints (`api.py`)
+- `POST /ticket` — Submit raw ticket
+- `GET /ticket/{id}` — Inspect ticket state & resolution
+- `POST /process` — Execute 6-agent pipeline
+- `GET /logs/{id}` — Retrieve step-by-step trace across all 6 agents
+- `POST /feedback` — Store human feedback into FAISS continuous learning memory
 
-## Local Setup & Execution
+## Quickstart
 
-### Prerequisites
-- Node.js >= 18.0.0 (or Python >= 3.9)
-- Modern web browser (Chrome, Firefox, Safari)
-
-### Running Locally
 ```bash
-# 1. Frontend
-cd client    # or cd frontend
-npx serve .
-
-# 2. Backend (if applicable)
-cd server    # or cd backend
-npm install
-npm start
+pip install -r requirements.txt
+pytest -q
+streamlit run app.py
+# FastAPI service:
+uvicorn api:app --reload --port 8006
 ```
-
----
-
-## Deployment Instructions
-
-### 1. Initialize GitHub Repository
-```bash
-git init
-git add .
-git commit -m "feat: complete solution for INTEL_AIML_Multi-Agent Support Ticket Automation System"
-git branch -M main
-git remote add origin https://github.com/<your-username>/intel-aiml-multi-agent-support-ticket-automation-system.git
-git push -u origin main
-```
-
-### 2. Frontend Hosting (Vercel / Netlify)
-1. Log in to [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/).
-2. Click **Add New Project** and select your GitHub repository `intel-aiml-multi-agent-support-ticket-automation-system`.
-3. Configure Root Directory to `frontend` (or `client` or `./`).
-4. Click **Deploy**. Copy the live URL.
-
-### 3. Backend Hosting (Render / Railway)
-1. Log in to [Render](https://render.com/).
-2. Create a new **Web Service**, connect the `intel-aiml-multi-agent-support-ticket-automation-system` repository.
-3. Set Root Directory to `server` (or `backend`), Build Command `npm install`, Start Command `node server.js`.
-4. Click **Create Web Service**. Copy the live backend URL.
-
----
-
-## Deliverable URLs for ZenClass Submission
-- **GitHub Repository URL**: `https://github.com/<your-username>/intel-aiml-multi-agent-support-ticket-automation-system`
-- **Frontend Deployed URL**: `https://intel-aiml-multi-agent-support-ticket-automation-system.vercel.app`
-- **Backend Deployed URL**: `https://intel-aiml-multi-agent-support-ticket-automation-system.onrender.com` (if fullstack)
-
----
-
-## Test & Verification Checklist
-- [x] Responsive layout on Desktop (1920x1080) and Mobile (375x667).
-- [x] HTML5 semantic elements pass W3C validation.
-- [x] CSS parseable without unclosed braces.
-- [x] JavaScript executes with zero syntax errors.
-- [x] Local build check passes cleanly.

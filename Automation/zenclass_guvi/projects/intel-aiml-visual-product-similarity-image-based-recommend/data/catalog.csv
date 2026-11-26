@@ -1,0 +1,501 @@
+product_id,title,category,brand,price_inr,rating,in_stock,filename,image_rel_path
+PRD-0001,Wildcraft Backpack Series #0,backpack,Wildcraft,3113.0,4.4,False,backpack_0_1771054472729.jpg,data/images/backpack_0_1771054472729.jpg
+PRD-0002,Skybags Backpack Series #10,backpack,Skybags,1364.0,4.2,True,backpack_10_1771054475342.jpg,data/images/backpack_10_1771054475342.jpg
+PRD-0003,American Tourister Backpack Series #11,backpack,American Tourister,1106.0,4.1,True,backpack_11_1771054475787.jpg,data/images/backpack_11_1771054475787.jpg
+PRD-0004,Tommy Gear Backpack Series #12,backpack,Tommy Gear,1862.0,4.6,True,backpack_12_1771054475998.jpg,data/images/backpack_12_1771054475998.jpg
+PRD-0005,Wildcraft Backpack Series #13,backpack,Wildcraft,2730.0,3.8,True,backpack_13_1771054476098.jpg,data/images/backpack_13_1771054476098.jpg
+PRD-0006,Skybags Backpack Series #14,backpack,Skybags,3252.0,4.4,True,backpack_14_1771054476331.jpg,data/images/backpack_14_1771054476331.jpg
+PRD-0007,American Tourister Backpack Series #15,backpack,American Tourister,1155.0,4.9,True,backpack_15_1771054476730.jpg,data/images/backpack_15_1771054476730.jpg
+PRD-0008,Tommy Gear Backpack Series #16,backpack,Tommy Gear,1674.0,4.8,True,backpack_16_1771054477120.jpg,data/images/backpack_16_1771054477120.jpg
+PRD-0009,Wildcraft Backpack Series #17,backpack,Wildcraft,1633.0,4.6,True,backpack_17_1771054477015.jpg,data/images/backpack_17_1771054477015.jpg
+PRD-0010,Skybags Backpack Series #18,backpack,Skybags,2552.0,4.3,True,backpack_18_1771054477145.jpg,data/images/backpack_18_1771054477145.jpg
+PRD-0011,American Tourister Backpack Series #19,backpack,American Tourister,2574.0,4.2,True,backpack_19_1771054477802.jpg,data/images/backpack_19_1771054477802.jpg
+PRD-0012,Tommy Gear Backpack Series #1,backpack,Tommy Gear,3046.0,4.0,False,backpack_1_1771054472745.jpg,data/images/backpack_1_1771054472745.jpg
+PRD-0013,Wildcraft Backpack Series #20,backpack,Wildcraft,1307.0,3.9,True,backpack_20_1771054477848.jpg,data/images/backpack_20_1771054477848.jpg
+PRD-0014,Skybags Backpack Series #21,backpack,Skybags,1621.0,4.3,True,backpack_21_1771054478367.jpg,data/images/backpack_21_1771054478367.jpg
+PRD-0015,American Tourister Backpack Series #22,backpack,American Tourister,1137.0,4.5,True,backpack_22_1771054478552.jpg,data/images/backpack_22_1771054478552.jpg
+PRD-0016,Tommy Gear Backpack Series #23,backpack,Tommy Gear,2019.0,3.6,True,backpack_23_1771054478552.jpg,data/images/backpack_23_1771054478552.jpg
+PRD-0017,Wildcraft Backpack Series #24,backpack,Wildcraft,2110.0,4.1,True,backpack_24_1771054479263.jpg,data/images/backpack_24_1771054479263.jpg
+PRD-0018,Skybags Backpack Series #25,backpack,Skybags,2063.0,3.9,True,backpack_25_1771054479368.jpg,data/images/backpack_25_1771054479368.jpg
+PRD-0019,American Tourister Backpack Series #26,backpack,American Tourister,2140.0,4.2,True,backpack_26_1771054479835.jpg,data/images/backpack_26_1771054479835.jpg
+PRD-0020,Tommy Gear Backpack Series #27,backpack,Tommy Gear,2445.0,4.0,True,backpack_27_1771054479965.jpg,data/images/backpack_27_1771054479965.jpg
+PRD-0021,Wildcraft Backpack Series #28,backpack,Wildcraft,3407.0,4.7,True,backpack_28_1771054479966.jpg,data/images/backpack_28_1771054479966.jpg
+PRD-0022,Skybags Backpack Series #29,backpack,Skybags,1443.0,4.6,True,backpack_29_1771054480611.jpg,data/images/backpack_29_1771054480611.jpg
+PRD-0023,American Tourister Backpack Series #2,backpack,American Tourister,2273.0,4.0,False,backpack_2_1771054473191.jpg,data/images/backpack_2_1771054473191.jpg
+PRD-0024,Tommy Gear Backpack Series #30,backpack,Tommy Gear,2476.0,4.8,True,backpack_30_1771054480710.jpg,data/images/backpack_30_1771054480710.jpg
+PRD-0025,Wildcraft Backpack Series #31,backpack,Wildcraft,2965.0,4.2,True,backpack_31_1771054481289.jpg,data/images/backpack_31_1771054481289.jpg
+PRD-0026,Skybags Backpack Series #32,backpack,Skybags,2363.0,4.8,True,backpack_32_1771054481427.jpg,data/images/backpack_32_1771054481427.jpg
+PRD-0027,American Tourister Backpack Series #33,backpack,American Tourister,909.0,4.5,True,backpack_33_1771054481174.jpg,data/images/backpack_33_1771054481174.jpg
+PRD-0028,Tommy Gear Backpack Series #34,backpack,Tommy Gear,1729.0,4.0,True,backpack_34_1771054482094.jpg,data/images/backpack_34_1771054482094.jpg
+PRD-0029,Wildcraft Backpack Series #35,backpack,Wildcraft,1102.0,4.5,True,backpack_35_1771054481879.jpg,data/images/backpack_35_1771054481879.jpg
+PRD-0030,Skybags Backpack Series #36,backpack,Skybags,1579.0,3.9,True,backpack_36_1771054482277.jpg,data/images/backpack_36_1771054482277.jpg
+PRD-0031,American Tourister Backpack Series #37,backpack,American Tourister,2303.0,4.4,True,backpack_37_1771054482336.jpg,data/images/backpack_37_1771054482336.jpg
+PRD-0032,Tommy Gear Backpack Series #38,backpack,Tommy Gear,2181.0,3.8,True,backpack_38_1771054482451.jpg,data/images/backpack_38_1771054482451.jpg
+PRD-0033,Wildcraft Backpack Series #39,backpack,Wildcraft,1302.0,4.3,True,backpack_39_1771054483203.jpg,data/images/backpack_39_1771054483203.jpg
+PRD-0034,Skybags Backpack Series #3,backpack,Skybags,2800.0,4.4,False,backpack_3_1771054473290.jpg,data/images/backpack_3_1771054473290.jpg
+PRD-0035,American Tourister Backpack Series #40,backpack,American Tourister,989.0,4.1,True,backpack_40_1771054483062.jpg,data/images/backpack_40_1771054483062.jpg
+PRD-0036,Tommy Gear Backpack Series #41,backpack,Tommy Gear,1866.0,4.2,True,backpack_41_1771054483273.jpg,data/images/backpack_41_1771054483273.jpg
+PRD-0037,Wildcraft Backpack Series #42,backpack,Wildcraft,3124.0,4.5,True,backpack_42_1771054483649.jpg,data/images/backpack_42_1771054483649.jpg
+PRD-0038,Skybags Backpack Series #43,backpack,Skybags,2120.0,4.4,True,backpack_43_1771054483432.jpg,data/images/backpack_43_1771054483432.jpg
+PRD-0039,American Tourister Backpack Series #44,backpack,American Tourister,3336.0,3.6,True,backpack_44_1771054484398.jpg,data/images/backpack_44_1771054484398.jpg
+PRD-0040,Tommy Gear Backpack Series #45,backpack,Tommy Gear,1981.0,4.6,True,backpack_45_1771054484478.jpg,data/images/backpack_45_1771054484478.jpg
+PRD-0041,Wildcraft Backpack Series #46,backpack,Wildcraft,3169.0,4.0,True,backpack_46_1771054484240.jpg,data/images/backpack_46_1771054484240.jpg
+PRD-0042,Skybags Backpack Series #47,backpack,Skybags,2249.0,4.2,True,backpack_47_1771054484560.jpg,data/images/backpack_47_1771054484560.jpg
+PRD-0043,American Tourister Backpack Series #48,backpack,American Tourister,1688.0,4.8,True,backpack_48_1771054484967.jpg,data/images/backpack_48_1771054484967.jpg
+PRD-0044,Tommy Gear Backpack Series #49,backpack,Tommy Gear,1141.0,4.9,True,backpack_49_1771054485221.jpg,data/images/backpack_49_1771054485221.jpg
+PRD-0045,Wildcraft Backpack Series #4,backpack,Wildcraft,1816.0,4.1,False,backpack_4_1771054473950.jpg,data/images/backpack_4_1771054473950.jpg
+PRD-0046,Skybags Backpack Series #5,backpack,Skybags,1051.0,4.5,True,backpack_5_1771054473869.jpg,data/images/backpack_5_1771054473869.jpg
+PRD-0047,American Tourister Backpack Series #6,backpack,American Tourister,2815.0,4.3,True,backpack_6_1771054474160.jpg,data/images/backpack_6_1771054474160.jpg
+PRD-0048,Tommy Gear Backpack Series #7,backpack,Tommy Gear,1716.0,4.1,True,backpack_7_1771054474728.jpg,data/images/backpack_7_1771054474728.jpg
+PRD-0049,Wildcraft Backpack Series #8,backpack,Wildcraft,1393.0,4.8,True,backpack_8_1771054474758.jpg,data/images/backpack_8_1771054474758.jpg
+PRD-0050,Skybags Backpack Series #9,backpack,Skybags,2911.0,4.8,True,backpack_9_1771054475334.jpg,data/images/backpack_9_1771054475334.jpg
+PRD-0051,Borosil Bottle Series #0,bottle,Borosil,4826.0,3.8,True,bottle_0_1771054550088.jpg,data/images/bottle_0_1771054550088.jpg
+PRD-0052,HydroFlask Bottle Series #10,bottle,HydroFlask,3331.0,4.8,True,bottle_10_1771054552050.jpg,data/images/bottle_10_1771054552050.jpg
+PRD-0053,Milton Bottle Series #11,bottle,Milton,1788.0,4.0,True,bottle_11_1771054552857.jpg,data/images/bottle_11_1771054552857.jpg
+PRD-0054,Cello Bottle Series #12,bottle,Cello,702.0,4.0,True,bottle_12_1771054552956.jpg,data/images/bottle_12_1771054552956.jpg
+PRD-0055,Borosil Bottle Series #13,bottle,Borosil,1048.0,4.2,True,bottle_13_1771054553064.jpg,data/images/bottle_13_1771054553064.jpg
+PRD-0056,HydroFlask Bottle Series #14,bottle,HydroFlask,3555.0,3.7,False,bottle_14_1771054553184.jpg,data/images/bottle_14_1771054553184.jpg
+PRD-0057,Milton Bottle Series #15,bottle,Milton,2183.0,4.4,True,bottle_15_1771054553057.jpg,data/images/bottle_15_1771054553057.jpg
+PRD-0058,Cello Bottle Series #16,bottle,Cello,655.0,4.2,True,bottle_16_1771054554184.jpg,data/images/bottle_16_1771054554184.jpg
+PRD-0059,Borosil Bottle Series #17,bottle,Borosil,3045.0,4.3,True,bottle_17_1771054554359.jpg,data/images/bottle_17_1771054554359.jpg
+PRD-0060,HydroFlask Bottle Series #18,bottle,HydroFlask,3245.0,4.8,True,bottle_18_1771054554359.jpg,data/images/bottle_18_1771054554359.jpg
+PRD-0061,Milton Bottle Series #19,bottle,Milton,1933.0,3.8,True,bottle_19_1771054554073.jpg,data/images/bottle_19_1771054554073.jpg
+PRD-0062,Cello Bottle Series #1,bottle,Cello,4639.0,4.8,True,bottle_1_1771054550574.jpg,data/images/bottle_1_1771054550574.jpg
+PRD-0063,Borosil Bottle Series #20,bottle,Borosil,1675.0,4.4,True,bottle_20_1771054554371.jpg,data/images/bottle_20_1771054554371.jpg
+PRD-0064,HydroFlask Bottle Series #21,bottle,HydroFlask,4064.0,4.5,True,bottle_21_1771054555450.jpg,data/images/bottle_21_1771054555450.jpg
+PRD-0065,Milton Bottle Series #22,bottle,Milton,904.0,4.8,True,bottle_22_1771054555047.jpg,data/images/bottle_22_1771054555047.jpg
+PRD-0066,Cello Bottle Series #23,bottle,Cello,3001.0,3.9,True,bottle_23_1771054555273.jpg,data/images/bottle_23_1771054555273.jpg
+PRD-0067,Borosil Bottle Series #24,bottle,Borosil,3976.0,4.7,False,bottle_24_1771054555767.jpg,data/images/bottle_24_1771054555767.jpg
+PRD-0068,HydroFlask Bottle Series #25,bottle,HydroFlask,3235.0,3.8,True,bottle_25_1771054555774.jpg,data/images/bottle_25_1771054555774.jpg
+PRD-0069,Milton Bottle Series #26,bottle,Milton,4069.0,4.1,True,bottle_26_1771054555963.jpg,data/images/bottle_26_1771054555963.jpg
+PRD-0070,Cello Bottle Series #27,bottle,Cello,3307.0,4.6,True,bottle_27_1771054556349.jpg,data/images/bottle_27_1771054556349.jpg
+PRD-0071,Borosil Bottle Series #28,bottle,Borosil,2071.0,4.4,True,bottle_28_1771054556807.jpg,data/images/bottle_28_1771054556807.jpg
+PRD-0072,HydroFlask Bottle Series #29,bottle,HydroFlask,896.0,4.7,True,bottle_29_1771054556607.jpg,data/images/bottle_29_1771054556607.jpg
+PRD-0073,Milton Bottle Series #2,bottle,Milton,2187.0,4.0,True,bottle_2_1771054550325.jpg,data/images/bottle_2_1771054550325.jpg
+PRD-0074,Cello Bottle Series #30,bottle,Cello,3363.0,4.5,True,bottle_30_1771054556979.jpg,data/images/bottle_30_1771054556979.jpg
+PRD-0075,Borosil Bottle Series #31,bottle,Borosil,3241.0,4.5,True,bottle_31_1771054557430.jpg,data/images/bottle_31_1771054557430.jpg
+PRD-0076,HydroFlask Bottle Series #32,bottle,HydroFlask,2086.0,3.8,True,bottle_32_1771054558002.jpg,data/images/bottle_32_1771054558002.jpg
+PRD-0077,Milton Bottle Series #33,bottle,Milton,2672.0,3.6,True,bottle_33_1771054557357.jpg,data/images/bottle_33_1771054557357.jpg
+PRD-0078,Cello Bottle Series #34,bottle,Cello,1830.0,3.7,False,bottle_34_1771054558452.jpg,data/images/bottle_34_1771054558452.jpg
+PRD-0079,Borosil Bottle Series #35,bottle,Borosil,4674.0,3.9,True,bottle_35_1771054558252.jpg,data/images/bottle_35_1771054558252.jpg
+PRD-0080,HydroFlask Bottle Series #36,bottle,HydroFlask,3039.0,4.3,True,bottle_36_1771054558674.jpg,data/images/bottle_36_1771054558674.jpg
+PRD-0081,Milton Bottle Series #37,bottle,Milton,4936.0,4.7,True,bottle_37_1771054559029.jpg,data/images/bottle_37_1771054559029.jpg
+PRD-0082,Cello Bottle Series #38,bottle,Cello,3501.0,4.1,True,bottle_38_1771054559281.jpg,data/images/bottle_38_1771054559281.jpg
+PRD-0083,Borosil Bottle Series #39,bottle,Borosil,4019.0,4.0,True,bottle_39_1771054559665.jpg,data/images/bottle_39_1771054559665.jpg
+PRD-0084,HydroFlask Bottle Series #3,bottle,HydroFlask,2001.0,3.8,True,bottle_3_1771054550781.jpg,data/images/bottle_3_1771054550781.jpg
+PRD-0085,Milton Bottle Series #40,bottle,Milton,2597.0,4.7,True,bottle_40_1771054559695.jpg,data/images/bottle_40_1771054559695.jpg
+PRD-0086,Cello Bottle Series #41,bottle,Cello,3517.0,4.2,True,bottle_41_1771054559614.jpg,data/images/bottle_41_1771054559614.jpg
+PRD-0087,Borosil Bottle Series #42,bottle,Borosil,2077.0,4.8,True,bottle_42_1771054560236.jpg,data/images/bottle_42_1771054560236.jpg
+PRD-0088,HydroFlask Bottle Series #43,bottle,HydroFlask,3055.0,4.5,True,bottle_43_1771054560052.jpg,data/images/bottle_43_1771054560052.jpg
+PRD-0089,Milton Bottle Series #44,bottle,Milton,2934.0,4.8,False,bottle_44_1771054560569.jpg,data/images/bottle_44_1771054560569.jpg
+PRD-0090,Cello Bottle Series #45,bottle,Cello,3877.0,3.9,True,bottle_45_1771054560994.jpg,data/images/bottle_45_1771054560994.jpg
+PRD-0091,Borosil Bottle Series #46,bottle,Borosil,2608.0,4.5,True,bottle_46_1771054561217.jpg,data/images/bottle_46_1771054561217.jpg
+PRD-0092,HydroFlask Bottle Series #47,bottle,HydroFlask,3459.0,4.7,True,bottle_47_1771054561509.jpg,data/images/bottle_47_1771054561509.jpg
+PRD-0093,Milton Bottle Series #48,bottle,Milton,4627.0,4.5,True,bottle_48_1771054561155.jpg,data/images/bottle_48_1771054561155.jpg
+PRD-0094,Cello Bottle Series #49,bottle,Cello,2111.0,4.4,True,bottle_49_1771054561463.jpg,data/images/bottle_49_1771054561463.jpg
+PRD-0095,Borosil Bottle Series #4,bottle,Borosil,2909.0,3.7,True,bottle_4_1771054550728.jpg,data/images/bottle_4_1771054550728.jpg
+PRD-0096,HydroFlask Bottle Series #5,bottle,HydroFlask,2400.0,4.1,True,bottle_5_1771054551072.jpg,data/images/bottle_5_1771054551072.jpg
+PRD-0097,Milton Bottle Series #6,bottle,Milton,2236.0,3.9,True,bottle_6_1771054551459.jpg,data/images/bottle_6_1771054551459.jpg
+PRD-0098,Cello Bottle Series #7,bottle,Cello,4838.0,3.7,True,bottle_7_1771054551682.jpg,data/images/bottle_7_1771054551682.jpg
+PRD-0099,Borosil Bottle Series #8,bottle,Borosil,3492.0,3.7,True,bottle_8_1771054551552.jpg,data/images/bottle_8_1771054551552.jpg
+PRD-0100,HydroFlask Bottle Series #9,bottle,HydroFlask,2216.0,3.9,False,bottle_9_1771054551985.jpg,data/images/bottle_9_1771054551985.jpg
+PRD-0101,Featherlite Chair Series #0,chair,Featherlite,4237.0,4.0,True,chair_0_1771054524615.jpg,data/images/chair_0_1771054524615.jpg
+PRD-0102,GreenSoul Chair Series #10,chair,GreenSoul,14929.0,4.4,True,chair_10_1771054526994.jpg,data/images/chair_10_1771054526994.jpg
+PRD-0103,Wakefit Chair Series #11,chair,Wakefit,6989.0,4.5,True,chair_11_1771054526959.jpg,data/images/chair_11_1771054526959.jpg
+PRD-0104,Nilkamal Chair Series #12,chair,Nilkamal,6483.0,3.8,True,chair_12_1771054527400.jpg,data/images/chair_12_1771054527400.jpg
+PRD-0105,Featherlite Chair Series #13,chair,Featherlite,6526.0,4.1,True,chair_13_1771054527832.jpg,data/images/chair_13_1771054527832.jpg
+PRD-0106,GreenSoul Chair Series #14,chair,GreenSoul,13371.0,3.8,True,chair_14_1771054527817.jpg,data/images/chair_14_1771054527817.jpg
+PRD-0107,Wakefit Chair Series #15,chair,Wakefit,11829.0,4.3,True,chair_15_1771054528402.jpg,data/images/chair_15_1771054528402.jpg
+PRD-0108,Nilkamal Chair Series #16,chair,Nilkamal,12977.0,4.2,True,chair_16_1771054528430.jpg,data/images/chair_16_1771054528430.jpg
+PRD-0109,Featherlite Chair Series #17,chair,Featherlite,5450.0,4.6,True,chair_17_1771054528329.jpg,data/images/chair_17_1771054528329.jpg
+PRD-0110,GreenSoul Chair Series #18,chair,GreenSoul,6506.0,4.1,True,chair_18_1771054529255.jpg,data/images/chair_18_1771054529255.jpg
+PRD-0111,Wakefit Chair Series #19,chair,Wakefit,3969.0,4.9,False,chair_19_1771054528927.jpg,data/images/chair_19_1771054528927.jpg
+PRD-0112,Nilkamal Chair Series #1,chair,Nilkamal,4037.0,3.6,True,chair_1_1771054524597.jpg,data/images/chair_1_1771054524597.jpg
+PRD-0113,Featherlite Chair Series #20,chair,Featherlite,10671.0,4.2,True,chair_20_1771054529273.jpg,data/images/chair_20_1771054529273.jpg
+PRD-0114,GreenSoul Chair Series #21,chair,GreenSoul,5004.0,3.9,True,chair_21_1771054529185.jpg,data/images/chair_21_1771054529185.jpg
+PRD-0115,Wakefit Chair Series #22,chair,Wakefit,5699.0,4.3,True,chair_22_1771054529829.jpg,data/images/chair_22_1771054529829.jpg
+PRD-0116,Nilkamal Chair Series #23,chair,Nilkamal,7688.0,4.8,True,chair_23_1771054529848.jpg,data/images/chair_23_1771054529848.jpg
+PRD-0117,Featherlite Chair Series #24,chair,Featherlite,3904.0,3.7,True,chair_24_1771054530067.jpg,data/images/chair_24_1771054530067.jpg
+PRD-0118,GreenSoul Chair Series #25,chair,GreenSoul,15202.0,4.7,True,chair_25_1771054530050.jpg,data/images/chair_25_1771054530050.jpg
+PRD-0119,Wakefit Chair Series #26,chair,Wakefit,7101.0,4.7,True,chair_26_1771054530255.jpg,data/images/chair_26_1771054530255.jpg
+PRD-0120,Nilkamal Chair Series #27,chair,Nilkamal,5596.0,4.0,True,chair_27_1771054531197.jpg,data/images/chair_27_1771054531197.jpg
+PRD-0121,Featherlite Chair Series #28,chair,Featherlite,9439.0,4.5,True,chair_28_1771054530923.jpg,data/images/chair_28_1771054530923.jpg
+PRD-0122,GreenSoul Chair Series #29,chair,GreenSoul,12471.0,4.7,False,chair_29_1771054531417.jpg,data/images/chair_29_1771054531417.jpg
+PRD-0123,Wakefit Chair Series #2,chair,Wakefit,5166.0,4.0,True,chair_2_1771054524741.jpg,data/images/chair_2_1771054524741.jpg
+PRD-0124,Nilkamal Chair Series #30,chair,Nilkamal,15744.0,4.4,True,chair_30_1771054531163.jpg,data/images/chair_30_1771054531163.jpg
+PRD-0125,Featherlite Chair Series #31,chair,Featherlite,9449.0,3.7,True,chair_31_1771054531227.jpg,data/images/chair_31_1771054531227.jpg
+PRD-0126,GreenSoul Chair Series #32,chair,GreenSoul,12739.0,4.5,True,chair_32_1771054531834.jpg,data/images/chair_32_1771054531834.jpg
+PRD-0127,Wakefit Chair Series #33,chair,Wakefit,8567.0,3.8,True,chair_33_1771054531954.jpg,data/images/chair_33_1771054531954.jpg
+PRD-0128,Nilkamal Chair Series #34,chair,Nilkamal,7517.0,4.3,True,chair_34_1771054532335.jpg,data/images/chair_34_1771054532335.jpg
+PRD-0129,Featherlite Chair Series #35,chair,Featherlite,3586.0,4.4,True,chair_35_1771054532578.jpg,data/images/chair_35_1771054532578.jpg
+PRD-0130,GreenSoul Chair Series #36,chair,GreenSoul,9272.0,4.4,True,chair_36_1771054532417.jpg,data/images/chair_36_1771054532417.jpg
+PRD-0131,Wakefit Chair Series #37,chair,Wakefit,3816.0,4.8,True,chair_37_1771054532930.jpg,data/images/chair_37_1771054532930.jpg
+PRD-0132,Nilkamal Chair Series #38,chair,Nilkamal,9732.0,3.8,True,chair_38_1771054533267.jpg,data/images/chair_38_1771054533267.jpg
+PRD-0133,Featherlite Chair Series #39,chair,Featherlite,14166.0,4.1,False,chair_39_1771054533409.jpg,data/images/chair_39_1771054533409.jpg
+PRD-0134,GreenSoul Chair Series #3,chair,GreenSoul,7108.0,4.6,True,chair_3_1771054525158.jpg,data/images/chair_3_1771054525158.jpg
+PRD-0135,Wakefit Chair Series #40,chair,Wakefit,12529.0,3.9,True,chair_40_1771054533477.jpg,data/images/chair_40_1771054533477.jpg
+PRD-0136,Nilkamal Chair Series #41,chair,Nilkamal,11650.0,4.6,True,chair_41_1771054533660.jpg,data/images/chair_41_1771054533660.jpg
+PRD-0137,Featherlite Chair Series #42,chair,Featherlite,9276.0,4.6,True,chair_42_1771054534401.jpg,data/images/chair_42_1771054534401.jpg
+PRD-0138,GreenSoul Chair Series #43,chair,GreenSoul,13143.0,3.7,True,chair_43_1771054534415.jpg,data/images/chair_43_1771054534415.jpg
+PRD-0139,Wakefit Chair Series #44,chair,Wakefit,8598.0,4.8,True,chair_44_1771054534455.jpg,data/images/chair_44_1771054534455.jpg
+PRD-0140,Nilkamal Chair Series #45,chair,Nilkamal,6150.0,4.7,True,chair_45_1771054534435.jpg,data/images/chair_45_1771054534435.jpg
+PRD-0141,Featherlite Chair Series #46,chair,Featherlite,7617.0,4.3,True,chair_46_1771054534579.jpg,data/images/chair_46_1771054534579.jpg
+PRD-0142,GreenSoul Chair Series #47,chair,GreenSoul,6068.0,3.9,True,chair_47_1771054535447.jpg,data/images/chair_47_1771054535447.jpg
+PRD-0143,Wakefit Chair Series #48,chair,Wakefit,12241.0,3.6,True,chair_48_1771054535347.jpg,data/images/chair_48_1771054535347.jpg
+PRD-0144,Nilkamal Chair Series #49,chair,Nilkamal,8702.0,4.0,False,chair_49_1771054535319.jpg,data/images/chair_49_1771054535319.jpg
+PRD-0145,Featherlite Chair Series #4,chair,Featherlite,8023.0,4.8,True,chair_4_1771054525313.jpg,data/images/chair_4_1771054525313.jpg
+PRD-0146,GreenSoul Chair Series #5,chair,GreenSoul,6882.0,4.4,True,chair_5_1771054525857.jpg,data/images/chair_5_1771054525857.jpg
+PRD-0147,Wakefit Chair Series #6,chair,Wakefit,13366.0,4.2,True,chair_6_1771054525641.jpg,data/images/chair_6_1771054525641.jpg
+PRD-0148,Nilkamal Chair Series #7,chair,Nilkamal,5717.0,4.2,True,chair_7_1771054526056.jpg,data/images/chair_7_1771054526056.jpg
+PRD-0149,Featherlite Chair Series #8,chair,Featherlite,4994.0,4.3,True,chair_8_1771054526302.jpg,data/images/chair_8_1771054526302.jpg
+PRD-0150,GreenSoul Chair Series #9,chair,GreenSoul,11466.0,4.1,True,chair_9_1771054526575.jpg,data/images/chair_9_1771054526575.jpg
+PRD-0151,Sennheiser Headphones Series #0,headphones,Sennheiser,6782.0,4.3,True,headphones_0_1771054501377.jpg,data/images/headphones_0_1771054501377.jpg
+PRD-0152,JBL Headphones Series #10,headphones,JBL,5556.0,4.9,True,headphones_10_1771054503505.jpg,data/images/headphones_10_1771054503505.jpg
+PRD-0153,Sony Headphones Series #11,headphones,Sony,3396.0,4.8,True,headphones_11_1771054503563.jpg,data/images/headphones_11_1771054503563.jpg
+PRD-0154,boAt Headphones Series #12,headphones,boAt,8874.0,3.6,True,headphones_12_1771054503617.jpg,data/images/headphones_12_1771054503617.jpg
+PRD-0155,Sennheiser Headphones Series #13,headphones,Sennheiser,1673.0,4.7,False,headphones_13_1771054503706.jpg,data/images/headphones_13_1771054503706.jpg
+PRD-0156,JBL Headphones Series #14,headphones,JBL,4081.0,4.3,True,headphones_14_1771054504491.jpg,data/images/headphones_14_1771054504491.jpg
+PRD-0157,Sony Headphones Series #15,headphones,Sony,10158.0,4.1,True,headphones_15_1771054505054.jpg,data/images/headphones_15_1771054505054.jpg
+PRD-0158,boAt Headphones Series #16,headphones,boAt,7978.0,4.0,True,headphones_16_1771054505054.jpg,data/images/headphones_16_1771054505054.jpg
+PRD-0159,Sennheiser Headphones Series #17,headphones,Sennheiser,11544.0,4.1,True,headphones_17_1771054504694.jpg,data/images/headphones_17_1771054504694.jpg
+PRD-0160,JBL Headphones Series #18,headphones,JBL,10598.0,4.2,True,headphones_18_1771054504969.jpg,data/images/headphones_18_1771054504969.jpg
+PRD-0161,Sony Headphones Series #19,headphones,Sony,9554.0,4.8,True,headphones_19_1771054505716.jpg,data/images/headphones_19_1771054505716.jpg
+PRD-0162,boAt Headphones Series #1,headphones,boAt,11941.0,4.9,True,headphones_1_1771054501724.jpg,data/images/headphones_1_1771054501724.jpg
+PRD-0163,Sennheiser Headphones Series #20,headphones,Sennheiser,5103.0,3.8,True,headphones_20_1771054505683.jpg,data/images/headphones_20_1771054505683.jpg
+PRD-0164,JBL Headphones Series #21,headphones,JBL,7942.0,3.6,True,headphones_21_1771054506051.jpg,data/images/headphones_21_1771054506051.jpg
+PRD-0165,Sony Headphones Series #22,headphones,Sony,2930.0,3.7,True,headphones_22_1771054505848.jpg,data/images/headphones_22_1771054505848.jpg
+PRD-0166,boAt Headphones Series #23,headphones,boAt,8075.0,3.8,False,headphones_23_1771054506485.jpg,data/images/headphones_23_1771054506485.jpg
+PRD-0167,Sennheiser Headphones Series #24,headphones,Sennheiser,4472.0,4.9,True,headphones_24_1771054506850.jpg,data/images/headphones_24_1771054506850.jpg
+PRD-0168,JBL Headphones Series #25,headphones,JBL,4516.0,3.8,True,headphones_25_1771054506646.jpg,data/images/headphones_25_1771054506646.jpg
+PRD-0169,Sony Headphones Series #26,headphones,Sony,5862.0,4.8,True,headphones_26_1771054506900.jpg,data/images/headphones_26_1771054506900.jpg
+PRD-0170,boAt Headphones Series #27,headphones,boAt,2807.0,4.4,True,headphones_27_1771054507435.jpg,data/images/headphones_27_1771054507435.jpg
+PRD-0171,Sennheiser Headphones Series #28,headphones,Sennheiser,13413.0,4.1,True,headphones_28_1771054507609.jpg,data/images/headphones_28_1771054507609.jpg
+PRD-0172,JBL Headphones Series #29,headphones,JBL,11435.0,4.8,True,headphones_29_1771054507747.jpg,data/images/headphones_29_1771054507747.jpg
+PRD-0173,Sony Headphones Series #2,headphones,Sony,7647.0,4.3,True,headphones_2_1771054501523.jpg,data/images/headphones_2_1771054501523.jpg
+PRD-0174,boAt Headphones Series #30,headphones,boAt,14671.0,4.9,True,headphones_30_1771054508054.jpg,data/images/headphones_30_1771054508054.jpg
+PRD-0175,Sennheiser Headphones Series #31,headphones,Sennheiser,13054.0,4.2,True,headphones_31_1771054507902.jpg,data/images/headphones_31_1771054507902.jpg
+PRD-0176,JBL Headphones Series #32,headphones,JBL,8228.0,4.6,True,headphones_32_1771054508445.jpg,data/images/headphones_32_1771054508445.jpg
+PRD-0177,Sony Headphones Series #33,headphones,Sony,5381.0,3.9,False,headphones_33_1771054508398.jpg,data/images/headphones_33_1771054508398.jpg
+PRD-0178,boAt Headphones Series #34,headphones,boAt,10125.0,4.3,True,headphones_34_1771054508677.jpg,data/images/headphones_34_1771054508677.jpg
+PRD-0179,Sennheiser Headphones Series #35,headphones,Sennheiser,4097.0,4.7,True,headphones_35_1771054508939.jpg,data/images/headphones_35_1771054508939.jpg
+PRD-0180,JBL Headphones Series #36,headphones,JBL,1524.0,4.3,True,headphones_36_1771054509287.jpg,data/images/headphones_36_1771054509287.jpg
+PRD-0181,Sony Headphones Series #37,headphones,Sony,2579.0,4.8,True,headphones_37_1771054509740.jpg,data/images/headphones_37_1771054509740.jpg
+PRD-0182,boAt Headphones Series #38,headphones,boAt,1931.0,4.9,True,headphones_38_1771054509524.jpg,data/images/headphones_38_1771054509524.jpg
+PRD-0183,Sennheiser Headphones Series #39,headphones,Sennheiser,11877.0,4.2,True,headphones_39_1771054509915.jpg,data/images/headphones_39_1771054509915.jpg
+PRD-0184,JBL Headphones Series #3,headphones,JBL,11400.0,4.4,True,headphones_3_1771054501775.jpg,data/images/headphones_3_1771054501775.jpg
+PRD-0185,Sony Headphones Series #40,headphones,Sony,3200.0,3.7,True,headphones_40_1771054510289.jpg,data/images/headphones_40_1771054510289.jpg
+PRD-0186,boAt Headphones Series #41,headphones,boAt,1439.0,4.0,True,headphones_41_1771054510600.jpg,data/images/headphones_41_1771054510600.jpg
+PRD-0187,Sennheiser Headphones Series #42,headphones,Sennheiser,14005.0,4.6,True,headphones_42_1771054510558.jpg,data/images/headphones_42_1771054510558.jpg
+PRD-0188,JBL Headphones Series #43,headphones,JBL,6933.0,3.8,False,headphones_43_1771054511223.jpg,data/images/headphones_43_1771054511223.jpg
+PRD-0189,Sony Headphones Series #44,headphones,Sony,7363.0,4.5,True,headphones_44_1771054510959.jpg,data/images/headphones_44_1771054510959.jpg
+PRD-0190,boAt Headphones Series #45,headphones,boAt,2889.0,4.8,True,headphones_45_1771054511245.jpg,data/images/headphones_45_1771054511245.jpg
+PRD-0191,Sennheiser Headphones Series #46,headphones,Sennheiser,14728.0,4.6,True,headphones_46_1771054511451.jpg,data/images/headphones_46_1771054511451.jpg
+PRD-0192,JBL Headphones Series #47,headphones,JBL,13350.0,4.9,True,headphones_47_1771054511594.jpg,data/images/headphones_47_1771054511594.jpg
+PRD-0193,Sony Headphones Series #48,headphones,Sony,5506.0,4.6,True,headphones_48_1771054512015.jpg,data/images/headphones_48_1771054512015.jpg
+PRD-0194,boAt Headphones Series #49,headphones,boAt,8451.0,4.1,True,headphones_49_1771054512543.jpg,data/images/headphones_49_1771054512543.jpg
+PRD-0195,Sennheiser Headphones Series #4,headphones,Sennheiser,7808.0,4.8,True,headphones_4_1771054502512.jpg,data/images/headphones_4_1771054502512.jpg
+PRD-0196,JBL Headphones Series #5,headphones,JBL,6138.0,4.2,True,headphones_5_1771054502595.jpg,data/images/headphones_5_1771054502595.jpg
+PRD-0197,Sony Headphones Series #6,headphones,Sony,3340.0,4.2,True,headphones_6_1771054502588.jpg,data/images/headphones_6_1771054502588.jpg
+PRD-0198,boAt Headphones Series #7,headphones,boAt,11525.0,3.7,True,headphones_7_1771054502814.jpg,data/images/headphones_7_1771054502814.jpg
+PRD-0199,Sennheiser Headphones Series #8,headphones,Sennheiser,4770.0,4.3,False,headphones_8_1771054502718.jpg,data/images/headphones_8_1771054502718.jpg
+PRD-0200,JBL Headphones Series #9,headphones,JBL,3037.0,4.5,True,headphones_9_1771054503864.jpg,data/images/headphones_9_1771054503864.jpg
+PRD-0201,Philips Lamp Series #0,lamp,Philips,2644.0,4.0,True,lamp_0_1771054535750.jpg,data/images/lamp_0_1771054535750.jpg
+PRD-0202,Wipro Lamp Series #10,lamp,Wipro,2206.0,3.6,True,lamp_10_1771054539072.jpg,data/images/lamp_10_1771054539072.jpg
+PRD-0203,Syska Lamp Series #11,lamp,Syska,2180.0,3.8,True,lamp_11_1771054539398.jpg,data/images/lamp_11_1771054539398.jpg
+PRD-0204,IKEA Lamp Series #12,lamp,IKEA,1725.0,4.0,True,lamp_12_1771054540702.jpg,data/images/lamp_12_1771054540702.jpg
+PRD-0205,Philips Lamp Series #13,lamp,Philips,594.0,4.1,True,lamp_13_1771054540905.jpg,data/images/lamp_13_1771054540905.jpg
+PRD-0206,Wipro Lamp Series #14,lamp,Wipro,1801.0,4.2,True,lamp_14_1771054540675.jpg,data/images/lamp_14_1771054540675.jpg
+PRD-0207,Syska Lamp Series #15,lamp,Syska,665.0,3.8,True,lamp_15_1771054540457.jpg,data/images/lamp_15_1771054540457.jpg
+PRD-0208,IKEA Lamp Series #16,lamp,IKEA,615.0,4.7,True,lamp_16_1771054540321.jpg,data/images/lamp_16_1771054540321.jpg
+PRD-0209,Philips Lamp Series #17,lamp,Philips,2715.0,4.8,True,lamp_17_1771054541679.jpg,data/images/lamp_17_1771054541679.jpg
+PRD-0210,Wipro Lamp Series #18,lamp,Wipro,1676.0,4.7,False,lamp_18_1771054541532.jpg,data/images/lamp_18_1771054541532.jpg
+PRD-0211,Syska Lamp Series #19,lamp,Syska,947.0,4.1,True,lamp_19_1771054541510.jpg,data/images/lamp_19_1771054541510.jpg
+PRD-0212,IKEA Lamp Series #1,lamp,IKEA,943.0,4.3,True,lamp_1_1771054535643.jpg,data/images/lamp_1_1771054535643.jpg
+PRD-0213,Philips Lamp Series #20,lamp,Philips,1760.0,3.7,True,lamp_20_1771054541540.jpg,data/images/lamp_20_1771054541540.jpg
+PRD-0214,Wipro Lamp Series #21,lamp,Wipro,723.0,4.7,True,lamp_21_1771054542224.jpg,data/images/lamp_21_1771054542224.jpg
+PRD-0215,Syska Lamp Series #22,lamp,Syska,2200.0,4.1,True,lamp_22_1771054542807.jpg,data/images/lamp_22_1771054542807.jpg
+PRD-0216,IKEA Lamp Series #23,lamp,IKEA,2400.0,4.5,True,lamp_23_1771054542679.jpg,data/images/lamp_23_1771054542679.jpg
+PRD-0217,Philips Lamp Series #24,lamp,Philips,2084.0,4.6,True,lamp_24_1771054542894.jpg,data/images/lamp_24_1771054542894.jpg
+PRD-0218,Wipro Lamp Series #25,lamp,Wipro,1690.0,4.0,True,lamp_25_1771054543071.jpg,data/images/lamp_25_1771054543071.jpg
+PRD-0219,Syska Lamp Series #26,lamp,Syska,2163.0,4.8,True,lamp_26_1771054543339.jpg,data/images/lamp_26_1771054543339.jpg
+PRD-0220,IKEA Lamp Series #27,lamp,IKEA,1589.0,4.7,True,lamp_27_1771054543749.jpg,data/images/lamp_27_1771054543749.jpg
+PRD-0221,Philips Lamp Series #28,lamp,Philips,1432.0,4.7,False,lamp_28_1771054543888.jpg,data/images/lamp_28_1771054543888.jpg
+PRD-0222,Wipro Lamp Series #29,lamp,Wipro,1211.0,4.1,True,lamp_29_1771054543689.jpg,data/images/lamp_29_1771054543689.jpg
+PRD-0223,Syska Lamp Series #2,lamp,Syska,1770.0,4.5,True,lamp_2_1771054537044.jpg,data/images/lamp_2_1771054537044.jpg
+PRD-0224,IKEA Lamp Series #30,lamp,IKEA,2068.0,4.1,True,lamp_30_1771054543972.jpg,data/images/lamp_30_1771054543972.jpg
+PRD-0225,Philips Lamp Series #31,lamp,Philips,2445.0,4.2,True,lamp_31_1771054544463.jpg,data/images/lamp_31_1771054544463.jpg
+PRD-0226,Wipro Lamp Series #32,lamp,Wipro,2401.0,4.8,True,lamp_32_1771054544588.jpg,data/images/lamp_32_1771054544588.jpg
+PRD-0227,Syska Lamp Series #33,lamp,Syska,2662.0,4.8,True,lamp_33_1771054544740.jpg,data/images/lamp_33_1771054544740.jpg
+PRD-0228,IKEA Lamp Series #34,lamp,IKEA,2653.0,4.8,True,lamp_34_1771054544745.jpg,data/images/lamp_34_1771054544745.jpg
+PRD-0229,Philips Lamp Series #35,lamp,Philips,2360.0,4.4,True,lamp_35_1771054545355.jpg,data/images/lamp_35_1771054545355.jpg
+PRD-0230,Wipro Lamp Series #36,lamp,Wipro,837.0,4.6,True,lamp_36_1771054545738.jpg,data/images/lamp_36_1771054545738.jpg
+PRD-0231,Syska Lamp Series #37,lamp,Syska,2294.0,4.3,True,lamp_37_1771054545486.jpg,data/images/lamp_37_1771054545486.jpg
+PRD-0232,IKEA Lamp Series #38,lamp,IKEA,1715.0,3.9,False,lamp_38_1771054545586.jpg,data/images/lamp_38_1771054545586.jpg
+PRD-0233,Philips Lamp Series #39,lamp,Philips,1847.0,4.6,True,lamp_39_1771054546052.jpg,data/images/lamp_39_1771054546052.jpg
+PRD-0234,Wipro Lamp Series #3,lamp,Wipro,868.0,3.8,True,lamp_3_1771054537201.jpg,data/images/lamp_3_1771054537201.jpg
+PRD-0235,Syska Lamp Series #40,lamp,Syska,2314.0,3.7,True,lamp_40_1771054546486.jpg,data/images/lamp_40_1771054546486.jpg
+PRD-0236,IKEA Lamp Series #41,lamp,IKEA,2173.0,4.1,True,lamp_41_1771054546479.jpg,data/images/lamp_41_1771054546479.jpg
+PRD-0237,Philips Lamp Series #42,lamp,Philips,1644.0,4.5,True,lamp_42_1771054546488.jpg,data/images/lamp_42_1771054546488.jpg
+PRD-0238,Wipro Lamp Series #43,lamp,Wipro,554.0,4.0,True,lamp_43_1771054546559.jpg,data/images/lamp_43_1771054546559.jpg
+PRD-0239,Syska Lamp Series #44,lamp,Syska,1286.0,4.0,True,lamp_44_1771054546921.jpg,data/images/lamp_44_1771054546921.jpg
+PRD-0240,IKEA Lamp Series #45,lamp,IKEA,1574.0,4.3,True,lamp_45_1771054547186.jpg,data/images/lamp_45_1771054547186.jpg
+PRD-0241,Philips Lamp Series #46,lamp,Philips,1774.0,3.8,True,lamp_46_1771054547402.jpg,data/images/lamp_46_1771054547402.jpg
+PRD-0242,Wipro Lamp Series #47,lamp,Wipro,2011.0,4.6,True,lamp_47_1771054547587.jpg,data/images/lamp_47_1771054547587.jpg
+PRD-0243,Syska Lamp Series #48,lamp,Syska,2422.0,4.8,False,lamp_48_1771054547453.jpg,data/images/lamp_48_1771054547453.jpg
+PRD-0244,IKEA Lamp Series #49,lamp,IKEA,2298.0,4.1,True,lamp_49_1771054547723.jpg,data/images/lamp_49_1771054547723.jpg
+PRD-0245,Philips Lamp Series #4,lamp,Philips,1841.0,3.7,True,lamp_4_1771054537575.jpg,data/images/lamp_4_1771054537575.jpg
+PRD-0246,Wipro Lamp Series #5,lamp,Wipro,2507.0,4.9,True,lamp_5_1771054537393.jpg,data/images/lamp_5_1771054537393.jpg
+PRD-0247,Syska Lamp Series #6,lamp,Syska,1567.0,4.1,True,lamp_6_1771054537955.jpg,data/images/lamp_6_1771054537955.jpg
+PRD-0248,IKEA Lamp Series #7,lamp,IKEA,987.0,3.7,True,lamp_7_1771054539013.jpg,data/images/lamp_7_1771054539013.jpg
+PRD-0249,Philips Lamp Series #8,lamp,Philips,2675.0,4.2,True,lamp_8_1771054539193.jpg,data/images/lamp_8_1771054539193.jpg
+PRD-0250,Wipro Lamp Series #9,lamp,Wipro,2419.0,4.9,True,lamp_9_1771054539383.jpg,data/images/lamp_9_1771054539383.jpg
+PRD-0251,Lenovo Laptop Series #0,laptop,Lenovo,90140.0,4.8,True,laptop_0_1771054512224.jpg,data/images/laptop_0_1771054512224.jpg
+PRD-0252,ASUS Laptop Series #10,laptop,ASUS,43675.0,4.1,True,laptop_10_1771054514461.jpg,data/images/laptop_10_1771054514461.jpg
+PRD-0253,Dell Laptop Series #11,laptop,Dell,83515.0,4.5,True,laptop_11_1771054515179.jpg,data/images/laptop_11_1771054515179.jpg
+PRD-0254,HP Laptop Series #12,laptop,HP,49176.0,3.6,False,laptop_12_1771054516247.jpg,data/images/laptop_12_1771054516247.jpg
+PRD-0255,Lenovo Laptop Series #13,laptop,Lenovo,45319.0,4.2,True,laptop_13_1771054516279.jpg,data/images/laptop_13_1771054516279.jpg
+PRD-0256,ASUS Laptop Series #14,laptop,ASUS,66527.0,3.7,True,laptop_14_1771054516429.jpg,data/images/laptop_14_1771054516429.jpg
+PRD-0257,Dell Laptop Series #15,laptop,Dell,46250.0,4.0,True,laptop_15_1771054516239.jpg,data/images/laptop_15_1771054516239.jpg
+PRD-0258,HP Laptop Series #16,laptop,HP,61049.0,3.9,True,laptop_16_1771054516977.jpg,data/images/laptop_16_1771054516977.jpg
+PRD-0259,Lenovo Laptop Series #17,laptop,Lenovo,50293.0,4.4,True,laptop_17_1771054517191.jpg,data/images/laptop_17_1771054517191.jpg
+PRD-0260,ASUS Laptop Series #18,laptop,ASUS,90816.0,3.8,True,laptop_18_1771054517203.jpg,data/images/laptop_18_1771054517203.jpg
+PRD-0261,Dell Laptop Series #19,laptop,Dell,69924.0,4.1,True,laptop_19_1771054517242.jpg,data/images/laptop_19_1771054517242.jpg
+PRD-0262,HP Laptop Series #1,laptop,HP,80426.0,4.4,True,laptop_1_1771054512895.jpg,data/images/laptop_1_1771054512895.jpg
+PRD-0263,Lenovo Laptop Series #20,laptop,Lenovo,89360.0,4.4,True,laptop_20_1771054517829.jpg,data/images/laptop_20_1771054517829.jpg
+PRD-0264,ASUS Laptop Series #21,laptop,ASUS,57795.0,4.5,True,laptop_21_1771054517872.jpg,data/images/laptop_21_1771054517872.jpg
+PRD-0265,Dell Laptop Series #22,laptop,Dell,43411.0,4.7,False,laptop_22_1771054518238.jpg,data/images/laptop_22_1771054518238.jpg
+PRD-0266,HP Laptop Series #23,laptop,HP,52011.0,4.4,True,laptop_23_1771054518269.jpg,data/images/laptop_23_1771054518269.jpg
+PRD-0267,Lenovo Laptop Series #24,laptop,Lenovo,77323.0,3.9,True,laptop_24_1771054518185.jpg,data/images/laptop_24_1771054518185.jpg
+PRD-0268,ASUS Laptop Series #25,laptop,ASUS,71315.0,3.9,True,laptop_25_1771054518728.jpg,data/images/laptop_25_1771054518728.jpg
+PRD-0269,Dell Laptop Series #26,laptop,Dell,68427.0,3.6,True,laptop_26_1771054518781.jpg,data/images/laptop_26_1771054518781.jpg
+PRD-0270,HP Laptop Series #27,laptop,HP,58721.0,3.7,True,laptop_27_1771054519363.jpg,data/images/laptop_27_1771054519363.jpg
+PRD-0271,Lenovo Laptop Series #28,laptop,Lenovo,56869.0,4.0,True,laptop_28_1771054519401.jpg,data/images/laptop_28_1771054519401.jpg
+PRD-0272,ASUS Laptop Series #29,laptop,ASUS,74759.0,4.5,True,laptop_29_1771054519562.jpg,data/images/laptop_29_1771054519562.jpg
+PRD-0273,Dell Laptop Series #2,laptop,Dell,73783.0,4.6,True,laptop_2_1771054512479.jpg,data/images/laptop_2_1771054512479.jpg
+PRD-0274,HP Laptop Series #30,laptop,HP,39488.0,3.9,True,laptop_30_1771054519783.jpg,data/images/laptop_30_1771054519783.jpg
+PRD-0275,Lenovo Laptop Series #31,laptop,Lenovo,58695.0,4.8,True,laptop_31_1771054519894.jpg,data/images/laptop_31_1771054519894.jpg
+PRD-0276,ASUS Laptop Series #32,laptop,ASUS,87172.0,4.5,False,laptop_32_1771054520589.jpg,data/images/laptop_32_1771054520589.jpg
+PRD-0277,Dell Laptop Series #33,laptop,Dell,61398.0,3.6,True,laptop_33_1771054520836.jpg,data/images/laptop_33_1771054520836.jpg
+PRD-0278,HP Laptop Series #34,laptop,HP,58656.0,4.6,True,laptop_34_1771054521003.jpg,data/images/laptop_34_1771054521003.jpg
+PRD-0279,Lenovo Laptop Series #35,laptop,Lenovo,90392.0,3.7,True,laptop_35_1771054520960.jpg,data/images/laptop_35_1771054520960.jpg
+PRD-0280,ASUS Laptop Series #36,laptop,ASUS,68768.0,4.3,True,laptop_36_1771054520951.jpg,data/images/laptop_36_1771054520951.jpg
+PRD-0281,Dell Laptop Series #37,laptop,Dell,63802.0,4.2,True,laptop_37_1771054521551.jpg,data/images/laptop_37_1771054521551.jpg
+PRD-0282,HP Laptop Series #38,laptop,HP,35368.0,4.4,True,laptop_38_1771054521928.jpg,data/images/laptop_38_1771054521928.jpg
+PRD-0283,Lenovo Laptop Series #39,laptop,Lenovo,52184.0,4.0,True,laptop_39_1771054521838.jpg,data/images/laptop_39_1771054521838.jpg
+PRD-0284,ASUS Laptop Series #3,laptop,ASUS,83158.0,3.9,True,laptop_3_1771054513143.jpg,data/images/laptop_3_1771054513143.jpg
+PRD-0285,Dell Laptop Series #40,laptop,Dell,69593.0,3.7,True,laptop_40_1771054522053.jpg,data/images/laptop_40_1771054522053.jpg
+PRD-0286,HP Laptop Series #41,laptop,HP,54864.0,4.8,True,laptop_41_1771054522122.jpg,data/images/laptop_41_1771054522122.jpg
+PRD-0287,Lenovo Laptop Series #42,laptop,Lenovo,45606.0,4.4,False,laptop_42_1771054522967.jpg,data/images/laptop_42_1771054522967.jpg
+PRD-0288,ASUS Laptop Series #43,laptop,ASUS,87837.0,3.7,True,laptop_43_1771054522920.jpg,data/images/laptop_43_1771054522920.jpg
+PRD-0289,Dell Laptop Series #44,laptop,Dell,38035.0,4.8,True,laptop_44_1771054522741.jpg,data/images/laptop_44_1771054522741.jpg
+PRD-0290,HP Laptop Series #45,laptop,HP,40016.0,3.8,True,laptop_45_1771054523472.jpg,data/images/laptop_45_1771054523472.jpg
+PRD-0291,Lenovo Laptop Series #46,laptop,Lenovo,53940.0,4.6,True,laptop_46_1771054523256.jpg,data/images/laptop_46_1771054523256.jpg
+PRD-0292,ASUS Laptop Series #47,laptop,ASUS,43739.0,4.0,True,laptop_47_1771054523805.jpg,data/images/laptop_47_1771054523805.jpg
+PRD-0293,Dell Laptop Series #48,laptop,Dell,74389.0,4.1,True,laptop_48_1771054523942.jpg,data/images/laptop_48_1771054523942.jpg
+PRD-0294,HP Laptop Series #49,laptop,HP,59692.0,4.5,True,laptop_49_1771054523860.jpg,data/images/laptop_49_1771054523860.jpg
+PRD-0295,Lenovo Laptop Series #4,laptop,Lenovo,68248.0,4.7,True,laptop_4_1771054513158.jpg,data/images/laptop_4_1771054513158.jpg
+PRD-0296,ASUS Laptop Series #5,laptop,ASUS,63338.0,4.2,True,laptop_5_1771054513265.jpg,data/images/laptop_5_1771054513265.jpg
+PRD-0297,Dell Laptop Series #6,laptop,Dell,80391.0,3.9,True,laptop_6_1771054513735.jpg,data/images/laptop_6_1771054513735.jpg
+PRD-0298,HP Laptop Series #7,laptop,HP,52426.0,4.6,False,laptop_7_1771054514213.jpg,data/images/laptop_7_1771054514213.jpg
+PRD-0299,Lenovo Laptop Series #8,laptop,Lenovo,80833.0,4.4,True,laptop_8_1771054514450.jpg,data/images/laptop_8_1771054514450.jpg
+PRD-0300,ASUS Laptop Series #9,laptop,ASUS,48169.0,4.4,True,laptop_9_1771054514350.jpg,data/images/laptop_9_1771054514350.jpg
+PRD-0301,Nike Shoes Series #0,shoes,Nike,3832.0,3.7,True,shoes_0_1771054433710.jpg,data/images/shoes_0_1771054433710.jpg
+PRD-0302,Adidas Shoes Series #10,shoes,Adidas,7763.0,3.9,True,shoes_10_1771054436225.jpg,data/images/shoes_10_1771054436225.jpg
+PRD-0303,Puma Shoes Series #11,shoes,Puma,3697.0,4.0,True,shoes_11_1771054436354.jpg,data/images/shoes_11_1771054436354.jpg
+PRD-0304,Skechers Shoes Series #12,shoes,Skechers,5832.0,3.8,True,shoes_12_1771054437236.jpg,data/images/shoes_12_1771054437236.jpg
+PRD-0305,Nike Shoes Series #13,shoes,Nike,5069.0,4.6,True,shoes_13_1771054437521.jpg,data/images/shoes_13_1771054437521.jpg
+PRD-0306,Adidas Shoes Series #14,shoes,Adidas,7329.0,3.9,True,shoes_14_1771054437526.jpg,data/images/shoes_14_1771054437526.jpg
+PRD-0307,Puma Shoes Series #15,shoes,Puma,7183.0,4.7,True,shoes_15_1771054438154.jpg,data/images/shoes_15_1771054438154.jpg
+PRD-0308,Skechers Shoes Series #16,shoes,Skechers,2208.0,4.3,True,shoes_16_1771054437962.jpg,data/images/shoes_16_1771054437962.jpg
+PRD-0309,Nike Shoes Series #17,shoes,Nike,6791.0,4.3,False,shoes_17_1771054438449.jpg,data/images/shoes_17_1771054438449.jpg
+PRD-0310,Adidas Shoes Series #18,shoes,Adidas,7548.0,3.9,True,shoes_18_1771054438666.jpg,data/images/shoes_18_1771054438666.jpg
+PRD-0311,Puma Shoes Series #19,shoes,Puma,7133.0,4.1,True,shoes_19_1771054438885.jpg,data/images/shoes_19_1771054438885.jpg
+PRD-0312,Skechers Shoes Series #1,shoes,Skechers,2453.0,4.5,True,shoes_1_1771054433945.jpg,data/images/shoes_1_1771054433945.jpg
+PRD-0313,Nike Shoes Series #20,shoes,Nike,5694.0,4.1,True,shoes_20_1771054439814.jpg,data/images/shoes_20_1771054439814.jpg
+PRD-0314,Adidas Shoes Series #21,shoes,Adidas,1626.0,4.1,True,shoes_21_1771054438976.jpg,data/images/shoes_21_1771054438976.jpg
+PRD-0315,Puma Shoes Series #22,shoes,Puma,4322.0,3.9,True,shoes_22_1771054439983.jpg,data/images/shoes_22_1771054439983.jpg
+PRD-0316,Skechers Shoes Series #23,shoes,Skechers,5893.0,4.7,True,shoes_23_1771054440027.jpg,data/images/shoes_23_1771054440027.jpg
+PRD-0317,Nike Shoes Series #24,shoes,Nike,7292.0,4.7,True,shoes_24_1771054440614.jpg,data/images/shoes_24_1771054440614.jpg
+PRD-0318,Adidas Shoes Series #25,shoes,Adidas,3679.0,4.7,True,shoes_25_1771054440242.jpg,data/images/shoes_25_1771054440242.jpg
+PRD-0319,Puma Shoes Series #26,shoes,Puma,7530.0,3.9,True,shoes_26_1771054440779.jpg,data/images/shoes_26_1771054440779.jpg
+PRD-0320,Skechers Shoes Series #27,shoes,Skechers,7262.0,4.7,False,shoes_27_1771054441357.jpg,data/images/shoes_27_1771054441357.jpg
+PRD-0321,Nike Shoes Series #28,shoes,Nike,2165.0,4.1,True,shoes_28_1771054441329.jpg,data/images/shoes_28_1771054441329.jpg
+PRD-0322,Adidas Shoes Series #29,shoes,Adidas,3074.0,3.8,True,shoes_29_1771054441357.jpg,data/images/shoes_29_1771054441357.jpg
+PRD-0323,Puma Shoes Series #2,shoes,Puma,7906.0,3.7,True,shoes_2_1771054433472.jpg,data/images/shoes_2_1771054433472.jpg
+PRD-0324,Skechers Shoes Series #30,shoes,Skechers,4697.0,4.8,True,shoes_30_1771054441712.jpg,data/images/shoes_30_1771054441712.jpg
+PRD-0325,Nike Shoes Series #31,shoes,Nike,7751.0,4.2,True,shoes_31_1771054442152.jpg,data/images/shoes_31_1771054442152.jpg
+PRD-0326,Adidas Shoes Series #32,shoes,Adidas,1682.0,4.7,True,shoes_32_1771054442265.jpg,data/images/shoes_32_1771054442265.jpg
+PRD-0327,Puma Shoes Series #33,shoes,Puma,1661.0,4.4,True,shoes_33_1771054442511.jpg,data/images/shoes_33_1771054442511.jpg
+PRD-0328,Skechers Shoes Series #34,shoes,Skechers,2447.0,4.3,True,shoes_34_1771054442429.jpg,data/images/shoes_34_1771054442429.jpg
+PRD-0329,Nike Shoes Series #35,shoes,Nike,2887.0,4.5,True,shoes_35_1771054442669.jpg,data/images/shoes_35_1771054442669.jpg
+PRD-0330,Adidas Shoes Series #36,shoes,Adidas,6447.0,4.7,True,shoes_36_1771054443069.jpg,data/images/shoes_36_1771054443069.jpg
+PRD-0331,Puma Shoes Series #37,shoes,Puma,2136.0,4.4,False,shoes_37_1771054443420.jpg,data/images/shoes_37_1771054443420.jpg
+PRD-0332,Skechers Shoes Series #38,shoes,Skechers,6676.0,4.1,True,shoes_38_1771054443365.jpg,data/images/shoes_38_1771054443365.jpg
+PRD-0333,Nike Shoes Series #39,shoes,Nike,3879.0,3.8,True,shoes_39_1771054443967.jpg,data/images/shoes_39_1771054443967.jpg
+PRD-0334,Adidas Shoes Series #3,shoes,Adidas,2286.0,4.7,True,shoes_3_1771054433428.jpg,data/images/shoes_3_1771054433428.jpg
+PRD-0335,Puma Shoes Series #40,shoes,Puma,6354.0,4.8,True,shoes_40_1771054443701.jpg,data/images/shoes_40_1771054443701.jpg
+PRD-0336,Skechers Shoes Series #41,shoes,Skechers,3304.0,4.0,True,shoes_41_1771054444340.jpg,data/images/shoes_41_1771054444340.jpg
+PRD-0337,Nike Shoes Series #42,shoes,Nike,3567.0,4.0,True,shoes_42_1771054444454.jpg,data/images/shoes_42_1771054444454.jpg
+PRD-0338,Adidas Shoes Series #43,shoes,Adidas,1965.0,4.1,True,shoes_43_1771054444458.jpg,data/images/shoes_43_1771054444458.jpg
+PRD-0339,Puma Shoes Series #44,shoes,Puma,2230.0,4.2,True,shoes_44_1771054444847.jpg,data/images/shoes_44_1771054444847.jpg
+PRD-0340,Skechers Shoes Series #45,shoes,Skechers,2262.0,4.6,True,shoes_45_1771054445114.jpg,data/images/shoes_45_1771054445114.jpg
+PRD-0341,Nike Shoes Series #46,shoes,Nike,2980.0,4.2,True,shoes_46_1771054445260.jpg,data/images/shoes_46_1771054445260.jpg
+PRD-0342,Adidas Shoes Series #47,shoes,Adidas,4247.0,4.9,False,shoes_47_1771054445510.jpg,data/images/shoes_47_1771054445510.jpg
+PRD-0343,Puma Shoes Series #48,shoes,Puma,3475.0,4.3,True,shoes_48_1771054445469.jpg,data/images/shoes_48_1771054445469.jpg
+PRD-0344,Skechers Shoes Series #49,shoes,Skechers,2977.0,4.9,True,shoes_49_1771054446211.jpg,data/images/shoes_49_1771054446211.jpg
+PRD-0345,Nike Shoes Series #4,shoes,Nike,6058.0,4.4,True,shoes_4_1771054433720.jpg,data/images/shoes_4_1771054433720.jpg
+PRD-0346,Adidas Shoes Series #5,shoes,Adidas,4771.0,4.3,True,shoes_5_1771054434722.jpg,data/images/shoes_5_1771054434722.jpg
+PRD-0347,Puma Shoes Series #6,shoes,Puma,5134.0,4.5,True,shoes_6_1771054434939.jpg,data/images/shoes_6_1771054434939.jpg
+PRD-0348,Skechers Shoes Series #7,shoes,Skechers,2336.0,4.8,True,shoes_7_1771054435635.jpg,data/images/shoes_7_1771054435635.jpg
+PRD-0349,Nike Shoes Series #8,shoes,Nike,5756.0,4.4,True,shoes_8_1771054434964.jpg,data/images/shoes_8_1771054434964.jpg
+PRD-0350,Adidas Shoes Series #9,shoes,Adidas,7529.0,4.1,True,shoes_9_1771054435680.jpg,data/images/shoes_9_1771054435680.jpg
+PRD-0351,Vincent Chase Sunglasses Series #0,sunglasses,Vincent Chase,6190.0,4.8,True,sunglasses_0_1771054487411.jpg,data/images/sunglasses_0_1771054487411.jpg
+PRD-0352,Oakley Sunglasses Series #10,sunglasses,Oakley,4649.0,4.9,True,sunglasses_10_1771054490331.jpg,data/images/sunglasses_10_1771054490331.jpg
+PRD-0353,Ray-Ban Sunglasses Series #11,sunglasses,Ray-Ban,2468.0,4.8,False,sunglasses_11_1771054490337.jpg,data/images/sunglasses_11_1771054490337.jpg
+PRD-0354,Fastrack Sunglasses Series #12,sunglasses,Fastrack,2411.0,4.5,True,sunglasses_12_1771054490570.jpg,data/images/sunglasses_12_1771054490570.jpg
+PRD-0355,Vincent Chase Sunglasses Series #13,sunglasses,Vincent Chase,3158.0,3.8,True,sunglasses_13_1771054490425.jpg,data/images/sunglasses_13_1771054490425.jpg
+PRD-0356,Oakley Sunglasses Series #14,sunglasses,Oakley,5768.0,4.9,True,sunglasses_14_1771054491176.jpg,data/images/sunglasses_14_1771054491176.jpg
+PRD-0357,Ray-Ban Sunglasses Series #15,sunglasses,Ray-Ban,1644.0,3.8,True,sunglasses_15_1771054491175.jpg,data/images/sunglasses_15_1771054491175.jpg
+PRD-0358,Fastrack Sunglasses Series #16,sunglasses,Fastrack,5094.0,4.3,True,sunglasses_16_1771054491283.jpg,data/images/sunglasses_16_1771054491283.jpg
+PRD-0359,Vincent Chase Sunglasses Series #17,sunglasses,Vincent Chase,5270.0,4.5,True,sunglasses_17_1771054491671.jpg,data/images/sunglasses_17_1771054491671.jpg
+PRD-0360,Oakley Sunglasses Series #18,sunglasses,Oakley,1434.0,4.4,True,sunglasses_18_1771054491977.jpg,data/images/sunglasses_18_1771054491977.jpg
+PRD-0361,Ray-Ban Sunglasses Series #19,sunglasses,Ray-Ban,3217.0,4.7,True,sunglasses_19_1771054492311.jpg,data/images/sunglasses_19_1771054492311.jpg
+PRD-0362,Fastrack Sunglasses Series #1,sunglasses,Fastrack,4095.0,4.6,True,sunglasses_1_1771054487815.jpg,data/images/sunglasses_1_1771054487815.jpg
+PRD-0363,Vincent Chase Sunglasses Series #20,sunglasses,Vincent Chase,3238.0,4.6,True,sunglasses_20_1771054492119.jpg,data/images/sunglasses_20_1771054492119.jpg
+PRD-0364,Oakley Sunglasses Series #21,sunglasses,Oakley,1321.0,4.3,False,sunglasses_21_1771054492596.jpg,data/images/sunglasses_21_1771054492596.jpg
+PRD-0365,Ray-Ban Sunglasses Series #22,sunglasses,Ray-Ban,1689.0,4.1,True,sunglasses_22_1771054493078.jpg,data/images/sunglasses_22_1771054493078.jpg
+PRD-0366,Fastrack Sunglasses Series #23,sunglasses,Fastrack,1875.0,4.3,True,sunglasses_23_1771054493348.jpg,data/images/sunglasses_23_1771054493348.jpg
+PRD-0367,Vincent Chase Sunglasses Series #24,sunglasses,Vincent Chase,3186.0,4.7,True,sunglasses_24_1771054493485.jpg,data/images/sunglasses_24_1771054493485.jpg
+PRD-0368,Oakley Sunglasses Series #25,sunglasses,Oakley,5694.0,3.7,True,sunglasses_25_1771054493710.jpg,data/images/sunglasses_25_1771054493710.jpg
+PRD-0369,Ray-Ban Sunglasses Series #26,sunglasses,Ray-Ban,986.0,4.7,True,sunglasses_26_1771054493406.jpg,data/images/sunglasses_26_1771054493406.jpg
+PRD-0370,Fastrack Sunglasses Series #27,sunglasses,Fastrack,3319.0,4.4,True,sunglasses_27_1771054494305.jpg,data/images/sunglasses_27_1771054494305.jpg
+PRD-0371,Vincent Chase Sunglasses Series #28,sunglasses,Vincent Chase,6144.0,4.4,True,sunglasses_28_1771054494705.jpg,data/images/sunglasses_28_1771054494705.jpg
+PRD-0372,Oakley Sunglasses Series #29,sunglasses,Oakley,5673.0,3.9,True,sunglasses_29_1771054494538.jpg,data/images/sunglasses_29_1771054494538.jpg
+PRD-0373,Ray-Ban Sunglasses Series #2,sunglasses,Ray-Ban,5828.0,4.3,True,sunglasses_2_1771054487575.jpg,data/images/sunglasses_2_1771054487575.jpg
+PRD-0374,Fastrack Sunglasses Series #30,sunglasses,Fastrack,3665.0,4.8,True,sunglasses_30_1771054494573.jpg,data/images/sunglasses_30_1771054494573.jpg
+PRD-0375,Vincent Chase Sunglasses Series #31,sunglasses,Vincent Chase,4203.0,3.9,False,sunglasses_31_1771054494925.jpg,data/images/sunglasses_31_1771054494925.jpg
+PRD-0376,Oakley Sunglasses Series #32,sunglasses,Oakley,2826.0,4.6,True,sunglasses_32_1771054495493.jpg,data/images/sunglasses_32_1771054495493.jpg
+PRD-0377,Ray-Ban Sunglasses Series #33,sunglasses,Ray-Ban,5523.0,4.2,True,sunglasses_33_1771054496013.jpg,data/images/sunglasses_33_1771054496013.jpg
+PRD-0378,Fastrack Sunglasses Series #34,sunglasses,Fastrack,3190.0,4.9,True,sunglasses_34_1771054495705.jpg,data/images/sunglasses_34_1771054495705.jpg
+PRD-0379,Vincent Chase Sunglasses Series #35,sunglasses,Vincent Chase,5753.0,4.5,True,sunglasses_35_1771054495742.jpg,data/images/sunglasses_35_1771054495742.jpg
+PRD-0380,Oakley Sunglasses Series #36,sunglasses,Oakley,4644.0,4.8,True,sunglasses_36_1771054496030.jpg,data/images/sunglasses_36_1771054496030.jpg
+PRD-0381,Ray-Ban Sunglasses Series #37,sunglasses,Ray-Ban,1309.0,4.8,True,sunglasses_37_1771054496520.jpg,data/images/sunglasses_37_1771054496520.jpg
+PRD-0382,Fastrack Sunglasses Series #38,sunglasses,Fastrack,4881.0,4.4,True,sunglasses_38_1771054497082.jpg,data/images/sunglasses_38_1771054497082.jpg
+PRD-0383,Vincent Chase Sunglasses Series #39,sunglasses,Vincent Chase,3765.0,4.0,True,sunglasses_39_1771054496858.jpg,data/images/sunglasses_39_1771054496858.jpg
+PRD-0384,Oakley Sunglasses Series #3,sunglasses,Oakley,4147.0,3.9,True,sunglasses_3_1771054487830.jpg,data/images/sunglasses_3_1771054487830.jpg
+PRD-0385,Ray-Ban Sunglasses Series #40,sunglasses,Ray-Ban,2366.0,3.7,True,sunglasses_40_1771054497493.jpg,data/images/sunglasses_40_1771054497493.jpg
+PRD-0386,Fastrack Sunglasses Series #41,sunglasses,Fastrack,3828.0,3.8,False,sunglasses_41_1771054497359.jpg,data/images/sunglasses_41_1771054497359.jpg
+PRD-0387,Vincent Chase Sunglasses Series #42,sunglasses,Vincent Chase,3945.0,4.5,True,sunglasses_42_1771054497969.jpg,data/images/sunglasses_42_1771054497969.jpg
+PRD-0388,Oakley Sunglasses Series #43,sunglasses,Oakley,4836.0,3.6,True,sunglasses_43_1771054497848.jpg,data/images/sunglasses_43_1771054497848.jpg
+PRD-0389,Ray-Ban Sunglasses Series #44,sunglasses,Ray-Ban,5754.0,4.4,True,sunglasses_44_1771054498491.jpg,data/images/sunglasses_44_1771054498491.jpg
+PRD-0390,Fastrack Sunglasses Series #45,sunglasses,Fastrack,1729.0,4.1,True,sunglasses_45_1771054498792.jpg,data/images/sunglasses_45_1771054498792.jpg
+PRD-0391,Vincent Chase Sunglasses Series #46,sunglasses,Vincent Chase,997.0,3.8,True,sunglasses_46_1771054498793.jpg,data/images/sunglasses_46_1771054498793.jpg
+PRD-0392,Oakley Sunglasses Series #47,sunglasses,Oakley,4156.0,4.7,True,sunglasses_47_1771054498849.jpg,data/images/sunglasses_47_1771054498849.jpg
+PRD-0393,Ray-Ban Sunglasses Series #48,sunglasses,Ray-Ban,2018.0,4.1,True,sunglasses_48_1771054499289.jpg,data/images/sunglasses_48_1771054499289.jpg
+PRD-0394,Fastrack Sunglasses Series #49,sunglasses,Fastrack,2274.0,4.2,True,sunglasses_49_1771054499874.jpg,data/images/sunglasses_49_1771054499874.jpg
+PRD-0395,Vincent Chase Sunglasses Series #4,sunglasses,Vincent Chase,6018.0,4.9,True,sunglasses_4_1771054488476.jpg,data/images/sunglasses_4_1771054488476.jpg
+PRD-0396,Oakley Sunglasses Series #5,sunglasses,Oakley,4178.0,3.9,True,sunglasses_5_1771054488850.jpg,data/images/sunglasses_5_1771054488850.jpg
+PRD-0397,Ray-Ban Sunglasses Series #6,sunglasses,Ray-Ban,6425.0,3.8,False,sunglasses_6_1771054488726.jpg,data/images/sunglasses_6_1771054488726.jpg
+PRD-0398,Fastrack Sunglasses Series #7,sunglasses,Fastrack,1724.0,4.6,True,sunglasses_7_1771054489135.jpg,data/images/sunglasses_7_1771054489135.jpg
+PRD-0399,Vincent Chase Sunglasses Series #8,sunglasses,Vincent Chase,4521.0,4.8,True,sunglasses_8_1771054488978.jpg,data/images/sunglasses_8_1771054488978.jpg
+PRD-0400,Oakley Sunglasses Series #9,sunglasses,Oakley,2978.0,3.7,True,sunglasses_9_1771054489512.jpg,data/images/sunglasses_9_1771054489512.jpg
+PRD-0401,Levi's Tshirt Series #0,tshirt,Levi's,1582.0,4.6,True,tshirt_0_1771054448836.jpg,data/images/tshirt_0_1771054448836.jpg
+PRD-0402,Allen Solly Tshirt Series #10,tshirt,Allen Solly,1196.0,4.3,True,tshirt_10_1771054451139.jpg,data/images/tshirt_10_1771054451139.jpg
+PRD-0403,US Polo Tshirt Series #11,tshirt,US Polo,1670.0,4.7,True,tshirt_11_1771054451089.jpg,data/images/tshirt_11_1771054451089.jpg
+PRD-0404,Roadster Tshirt Series #12,tshirt,Roadster,1008.0,4.3,True,tshirt_12_1771054451173.jpg,data/images/tshirt_12_1771054451173.jpg
+PRD-0405,Levi's Tshirt Series #13,tshirt,Levi's,1045.0,3.9,True,tshirt_13_1771054451078.jpg,data/images/tshirt_13_1771054451078.jpg
+PRD-0406,Allen Solly Tshirt Series #14,tshirt,Allen Solly,1758.0,4.4,True,tshirt_14_1771054451435.jpg,data/images/tshirt_14_1771054451435.jpg
+PRD-0407,US Polo Tshirt Series #15,tshirt,US Polo,724.0,4.8,True,tshirt_15_1771054452060.jpg,data/images/tshirt_15_1771054452060.jpg
+PRD-0408,Roadster Tshirt Series #16,tshirt,Roadster,1350.0,3.7,False,tshirt_16_1771054452123.jpg,data/images/tshirt_16_1771054452123.jpg
+PRD-0409,Levi's Tshirt Series #17,tshirt,Levi's,1313.0,4.5,True,tshirt_17_1771054452205.jpg,data/images/tshirt_17_1771054452205.jpg
+PRD-0410,Allen Solly Tshirt Series #18,tshirt,Allen Solly,1607.0,4.7,True,tshirt_18_1771054452255.jpg,data/images/tshirt_18_1771054452255.jpg
+PRD-0411,US Polo Tshirt Series #19,tshirt,US Polo,1273.0,4.2,True,tshirt_19_1771054452365.jpg,data/images/tshirt_19_1771054452365.jpg
+PRD-0412,Roadster Tshirt Series #1,tshirt,Roadster,1312.0,4.6,True,tshirt_1_1771054449147.jpg,data/images/tshirt_1_1771054449147.jpg
+PRD-0413,Levi's Tshirt Series #20,tshirt,Levi's,920.0,3.7,True,tshirt_20_1771054453447.jpg,data/images/tshirt_20_1771054453447.jpg
+PRD-0414,Allen Solly Tshirt Series #21,tshirt,Allen Solly,825.0,4.6,True,tshirt_21_1771054453179.jpg,data/images/tshirt_21_1771054453179.jpg
+PRD-0415,US Polo Tshirt Series #22,tshirt,US Polo,1411.0,4.7,True,tshirt_22_1771054453517.jpg,data/images/tshirt_22_1771054453517.jpg
+PRD-0416,Roadster Tshirt Series #23,tshirt,Roadster,1617.0,4.2,True,tshirt_23_1771054453214.jpg,data/images/tshirt_23_1771054453214.jpg
+PRD-0417,Levi's Tshirt Series #24,tshirt,Levi's,1310.0,4.5,True,tshirt_24_1771054453435.jpg,data/images/tshirt_24_1771054453435.jpg
+PRD-0418,Allen Solly Tshirt Series #25,tshirt,Allen Solly,1498.0,4.0,True,tshirt_25_1771054454580.jpg,data/images/tshirt_25_1771054454580.jpg
+PRD-0419,US Polo Tshirt Series #26,tshirt,US Polo,1403.0,4.9,False,tshirt_26_1771054454033.jpg,data/images/tshirt_26_1771054454033.jpg
+PRD-0420,Roadster Tshirt Series #27,tshirt,Roadster,1547.0,4.1,True,tshirt_27_1771054454425.jpg,data/images/tshirt_27_1771054454425.jpg
+PRD-0421,Levi's Tshirt Series #28,tshirt,Levi's,1377.0,4.4,True,tshirt_28_1771054454817.jpg,data/images/tshirt_28_1771054454817.jpg
+PRD-0422,Allen Solly Tshirt Series #29,tshirt,Allen Solly,809.0,4.7,True,tshirt_29_1771054454650.jpg,data/images/tshirt_29_1771054454650.jpg
+PRD-0423,US Polo Tshirt Series #2,tshirt,US Polo,517.0,4.9,True,tshirt_2_1771054448590.jpg,data/images/tshirt_2_1771054448590.jpg
+PRD-0424,Roadster Tshirt Series #30,tshirt,Roadster,1311.0,4.8,True,tshirt_30_1771054455070.jpg,data/images/tshirt_30_1771054455070.jpg
+PRD-0425,Levi's Tshirt Series #31,tshirt,Levi's,1164.0,4.5,True,tshirt_31_1771054455428.jpg,data/images/tshirt_31_1771054455428.jpg
+PRD-0426,Allen Solly Tshirt Series #32,tshirt,Allen Solly,1465.0,3.8,True,tshirt_32_1771054455944.jpg,data/images/tshirt_32_1771054455944.jpg
+PRD-0427,US Polo Tshirt Series #33,tshirt,US Polo,1072.0,4.7,True,tshirt_33_1771054455621.jpg,data/images/tshirt_33_1771054455621.jpg
+PRD-0428,Roadster Tshirt Series #34,tshirt,Roadster,910.0,4.1,True,tshirt_34_1771054455676.jpg,data/images/tshirt_34_1771054455676.jpg
+PRD-0429,Levi's Tshirt Series #35,tshirt,Levi's,858.0,3.7,True,tshirt_35_1771054456022.jpg,data/images/tshirt_35_1771054456022.jpg
+PRD-0430,Allen Solly Tshirt Series #36,tshirt,Allen Solly,741.0,3.9,False,tshirt_36_1771054456475.jpg,data/images/tshirt_36_1771054456475.jpg
+PRD-0431,US Polo Tshirt Series #37,tshirt,US Polo,514.0,4.8,True,tshirt_37_1771054457008.jpg,data/images/tshirt_37_1771054457008.jpg
+PRD-0432,Roadster Tshirt Series #38,tshirt,Roadster,1264.0,4.1,True,tshirt_38_1771054456652.jpg,data/images/tshirt_38_1771054456652.jpg
+PRD-0433,Levi's Tshirt Series #39,tshirt,Levi's,1876.0,3.8,True,tshirt_39_1771054456981.jpg,data/images/tshirt_39_1771054456981.jpg
+PRD-0434,Allen Solly Tshirt Series #3,tshirt,Allen Solly,1583.0,4.7,True,tshirt_3_1771054448895.jpg,data/images/tshirt_3_1771054448895.jpg
+PRD-0435,US Polo Tshirt Series #40,tshirt,US Polo,1104.0,4.3,True,tshirt_40_1771054457069.jpg,data/images/tshirt_40_1771054457069.jpg
+PRD-0436,Roadster Tshirt Series #41,tshirt,Roadster,1790.0,4.2,True,tshirt_41_1771054457360.jpg,data/images/tshirt_41_1771054457360.jpg
+PRD-0437,Levi's Tshirt Series #42,tshirt,Levi's,1178.0,3.9,True,tshirt_42_1771054457643.jpg,data/images/tshirt_42_1771054457643.jpg
+PRD-0438,Allen Solly Tshirt Series #43,tshirt,Allen Solly,1761.0,4.8,True,tshirt_43_1771054457983.jpg,data/images/tshirt_43_1771054457983.jpg
+PRD-0439,US Polo Tshirt Series #44,tshirt,US Polo,1873.0,4.8,True,tshirt_44_1771054458039.jpg,data/images/tshirt_44_1771054458039.jpg
+PRD-0440,Roadster Tshirt Series #45,tshirt,Roadster,1775.0,4.8,True,tshirt_45_1771054457847.jpg,data/images/tshirt_45_1771054457847.jpg
+PRD-0441,Levi's Tshirt Series #46,tshirt,Levi's,1434.0,4.5,False,tshirt_46_1771054458477.jpg,data/images/tshirt_46_1771054458477.jpg
+PRD-0442,Allen Solly Tshirt Series #47,tshirt,Allen Solly,1187.0,4.3,True,tshirt_47_1771054459097.jpg,data/images/tshirt_47_1771054459097.jpg
+PRD-0443,US Polo Tshirt Series #48,tshirt,US Polo,521.0,4.9,True,tshirt_48_1771054458748.jpg,data/images/tshirt_48_1771054458748.jpg
+PRD-0444,Roadster Tshirt Series #49,tshirt,Roadster,851.0,3.6,True,tshirt_49_1771054459076.jpg,data/images/tshirt_49_1771054459076.jpg
+PRD-0445,Levi's Tshirt Series #4,tshirt,Levi's,1335.0,4.8,True,tshirt_4_1771054449251.jpg,data/images/tshirt_4_1771054449251.jpg
+PRD-0446,Allen Solly Tshirt Series #5,tshirt,Allen Solly,776.0,4.8,True,tshirt_5_1771054449992.jpg,data/images/tshirt_5_1771054449992.jpg
+PRD-0447,US Polo Tshirt Series #6,tshirt,US Polo,884.0,4.9,True,tshirt_6_1771054449825.jpg,data/images/tshirt_6_1771054449825.jpg
+PRD-0448,Roadster Tshirt Series #7,tshirt,Roadster,817.0,4.7,True,tshirt_7_1771054449775.jpg,data/images/tshirt_7_1771054449775.jpg
+PRD-0449,Levi's Tshirt Series #8,tshirt,Levi's,1000.0,4.3,True,tshirt_8_1771054450362.jpg,data/images/tshirt_8_1771054450362.jpg
+PRD-0450,Allen Solly Tshirt Series #9,tshirt,Allen Solly,1564.0,4.1,True,tshirt_9_1771054450072.jpg,data/images/tshirt_9_1771054450072.jpg
+PRD-0451,Casio Watch Series #0,watch,Casio,4669.0,4.1,True,watch_0_1771054461009.jpg,data/images/watch_0_1771054461009.jpg
+PRD-0452,Timex Watch Series #10,watch,Timex,1605.0,4.1,False,watch_10_1771054463752.jpg,data/images/watch_10_1771054463752.jpg
+PRD-0453,Titan Watch Series #11,watch,Titan,9702.0,3.7,True,watch_11_1771054464100.jpg,data/images/watch_11_1771054464100.jpg
+PRD-0454,Fossil Watch Series #12,watch,Fossil,2436.0,3.9,True,watch_12_1771054464195.jpg,data/images/watch_12_1771054464195.jpg
+PRD-0455,Casio Watch Series #13,watch,Casio,10670.0,4.6,True,watch_13_1771054464351.jpg,data/images/watch_13_1771054464351.jpg
+PRD-0456,Timex Watch Series #14,watch,Timex,7184.0,4.4,True,watch_14_1771054464418.jpg,data/images/watch_14_1771054464418.jpg
+PRD-0457,Titan Watch Series #15,watch,Titan,7371.0,4.6,True,watch_15_1771054464607.jpg,data/images/watch_15_1771054464607.jpg
+PRD-0458,Fossil Watch Series #16,watch,Fossil,7720.0,4.7,True,watch_16_1771054465429.jpg,data/images/watch_16_1771054465429.jpg
+PRD-0459,Casio Watch Series #17,watch,Casio,1726.0,4.4,True,watch_17_1771054465282.jpg,data/images/watch_17_1771054465282.jpg
+PRD-0460,Timex Watch Series #18,watch,Timex,6557.0,4.8,True,watch_18_1771054465258.jpg,data/images/watch_18_1771054465258.jpg
+PRD-0461,Titan Watch Series #19,watch,Titan,2257.0,4.4,True,watch_19_1771054465302.jpg,data/images/watch_19_1771054465302.jpg
+PRD-0462,Fossil Watch Series #1,watch,Fossil,2416.0,4.6,True,watch_1_1771054461885.jpg,data/images/watch_1_1771054461885.jpg
+PRD-0463,Casio Watch Series #20,watch,Casio,8908.0,4.6,False,watch_20_1771054465647.jpg,data/images/watch_20_1771054465647.jpg
+PRD-0464,Timex Watch Series #21,watch,Timex,6413.0,4.7,True,watch_21_1771054466612.jpg,data/images/watch_21_1771054466612.jpg
+PRD-0465,Titan Watch Series #22,watch,Titan,3850.0,4.3,True,watch_22_1771054466655.jpg,data/images/watch_22_1771054466655.jpg
+PRD-0466,Fossil Watch Series #23,watch,Fossil,10288.0,4.5,True,watch_23_1771054466317.jpg,data/images/watch_23_1771054466317.jpg
+PRD-0467,Casio Watch Series #24,watch,Casio,12157.0,4.1,True,watch_24_1771054466289.jpg,data/images/watch_24_1771054466289.jpg
+PRD-0468,Timex Watch Series #25,watch,Timex,9656.0,3.6,True,watch_25_1771054466794.jpg,data/images/watch_25_1771054466794.jpg
+PRD-0469,Titan Watch Series #26,watch,Titan,12013.0,4.2,True,watch_26_1771054467612.jpg,data/images/watch_26_1771054467612.jpg
+PRD-0470,Fossil Watch Series #27,watch,Fossil,12420.0,4.0,True,watch_27_1771054467440.jpg,data/images/watch_27_1771054467440.jpg
+PRD-0471,Casio Watch Series #28,watch,Casio,3574.0,4.1,True,watch_28_1771054467968.jpg,data/images/watch_28_1771054467968.jpg
+PRD-0472,Timex Watch Series #29,watch,Timex,4380.0,4.4,True,watch_29_1771054467673.jpg,data/images/watch_29_1771054467673.jpg
+PRD-0473,Titan Watch Series #2,watch,Titan,12865.0,4.1,True,watch_2_1771054461845.jpg,data/images/watch_2_1771054461845.jpg
+PRD-0474,Fossil Watch Series #30,watch,Fossil,7453.0,3.7,False,watch_30_1771054468170.jpg,data/images/watch_30_1771054468170.jpg
+PRD-0475,Casio Watch Series #31,watch,Casio,12590.0,3.6,True,watch_31_1771054468334.jpg,data/images/watch_31_1771054468334.jpg
+PRD-0476,Timex Watch Series #32,watch,Timex,12777.0,4.8,True,watch_32_1771054468781.jpg,data/images/watch_32_1771054468781.jpg
+PRD-0477,Titan Watch Series #33,watch,Titan,6797.0,4.3,True,watch_33_1771054468640.jpg,data/images/watch_33_1771054468640.jpg
+PRD-0478,Fossil Watch Series #34,watch,Fossil,1864.0,4.6,True,watch_34_1771054468843.jpg,data/images/watch_34_1771054468843.jpg
+PRD-0479,Casio Watch Series #35,watch,Casio,1841.0,4.5,True,watch_35_1771054469208.jpg,data/images/watch_35_1771054469208.jpg
+PRD-0480,Timex Watch Series #36,watch,Timex,9130.0,3.7,True,watch_36_1771054469328.jpg,data/images/watch_36_1771054469328.jpg
+PRD-0481,Titan Watch Series #37,watch,Titan,9922.0,4.4,True,watch_37_1771054469616.jpg,data/images/watch_37_1771054469616.jpg
+PRD-0482,Fossil Watch Series #38,watch,Fossil,11435.0,4.8,True,watch_38_1771054470020.jpg,data/images/watch_38_1771054470020.jpg
+PRD-0483,Casio Watch Series #39,watch,Casio,5609.0,4.6,True,watch_39_1771054470235.jpg,data/images/watch_39_1771054470235.jpg
+PRD-0484,Timex Watch Series #3,watch,Timex,12944.0,4.6,True,watch_3_1771054462378.jpg,data/images/watch_3_1771054462378.jpg
+PRD-0485,Titan Watch Series #40,watch,Titan,4602.0,4.5,False,watch_40_1771054470320.jpg,data/images/watch_40_1771054470320.jpg
+PRD-0486,Fossil Watch Series #41,watch,Fossil,12550.0,4.4,True,watch_41_1771054470887.jpg,data/images/watch_41_1771054470887.jpg
+PRD-0487,Casio Watch Series #42,watch,Casio,4434.0,4.3,True,watch_42_1771054471167.jpg,data/images/watch_42_1771054471167.jpg
+PRD-0488,Timex Watch Series #43,watch,Timex,7558.0,4.4,True,watch_43_1771054471188.jpg,data/images/watch_43_1771054471188.jpg
+PRD-0489,Titan Watch Series #44,watch,Titan,5638.0,3.6,True,watch_44_1771054471333.jpg,data/images/watch_44_1771054471333.jpg
+PRD-0490,Fossil Watch Series #45,watch,Fossil,8682.0,3.8,True,watch_45_1771054471310.jpg,data/images/watch_45_1771054471310.jpg
+PRD-0491,Casio Watch Series #46,watch,Casio,9451.0,4.0,True,watch_46_1771054471748.jpg,data/images/watch_46_1771054471748.jpg
+PRD-0492,Timex Watch Series #47,watch,Timex,6291.0,4.5,True,watch_47_1771054472535.jpg,data/images/watch_47_1771054472535.jpg
+PRD-0493,Titan Watch Series #48,watch,Titan,6040.0,3.9,True,watch_48_1771054472096.jpg,data/images/watch_48_1771054472096.jpg
+PRD-0494,Fossil Watch Series #49,watch,Fossil,12891.0,4.7,True,watch_49_1771054472153.jpg,data/images/watch_49_1771054472153.jpg
+PRD-0495,Casio Watch Series #4,watch,Casio,5060.0,4.5,True,watch_4_1771054461807.jpg,data/images/watch_4_1771054461807.jpg
+PRD-0496,Timex Watch Series #5,watch,Timex,5769.0,3.7,False,watch_5_1771054462067.jpg,data/images/watch_5_1771054462067.jpg
+PRD-0497,Titan Watch Series #6,watch,Titan,8227.0,4.3,True,watch_6_1771054462586.jpg,data/images/watch_6_1771054462586.jpg
+PRD-0498,Fossil Watch Series #7,watch,Fossil,8674.0,4.7,True,watch_7_1771054463303.jpg,data/images/watch_7_1771054463303.jpg
+PRD-0499,Casio Watch Series #8,watch,Casio,12769.0,4.3,True,watch_8_1771054462840.jpg,data/images/watch_8_1771054462840.jpg
+PRD-0500,Timex Watch Series #9,watch,Timex,2862.0,4.7,True,watch_9_1771054463341.jpg,data/images/watch_9_1771054463341.jpg
