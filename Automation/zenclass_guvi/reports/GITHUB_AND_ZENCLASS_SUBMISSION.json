@@ -1,0 +1,92 @@
+{
+  "github_owner": "dev-prk",
+  "remaining_pending_submit_buttons": 0,
+  "board_text_excerpt": "Dashboard\nAnnouncements\nClass\nTasks\nProjects\nQueries\nMockInterview\nZen Gpt\nPlacement\nRefer & Earn\n\nProject\n\nINT-AIML-C-WE-E-B2\n\nDevesh Pareek\n\nStudent\n\nActive Projects\nNo Active Projects\nPending Projects\nNo Pending Projects\nCompleted Projects\n7\nINT-AIML-C-WE-E-B2, B3 &B4_Final_Project\n\nMachine Learning\n\nDeep Learning\n\nLLM\n\nFinal Project - 1\n--/10\n\nView\n\nEdit\nINTEL_AIML_Multi-Agent Support Ticket Automation System\n\nDeep Learning\n\nComputer Vision\n\nMini Project - 6\n--/10\n\nView\n\nEdit\nINTL_AIML_AI-Powered Banking Support & Fraud Intelligence\n\nNLP\n\nMini Project - 5\n--/10\n\nView\n\nEdit\nINTEL_AIML_Visual Product Similarity & Image-Based Recommend\n\nDeep Learning\n\nComputer Vision\n\nMini Project - 4\n--/10\n\nView\n\nEdit\nINTEL-AIML_Rapido: Intelligent Mobility Insights\n\nPython\n\nEDA\n\nMachine Learning\n\nMini Project - 3\n--/10\n\nView\n\nEdit\nINTL_AIML_Traffic Violations Insight System\n\nEDA\n\nData Visualization\n\nPython\n\n+1\n\nMini Project - 2\n--/10\n\nView\n\nEdit\nINTEL_AIML_NCAAFB API: Data Analysis\n\nPython\n\nData Preparation\n\nSQL\n\nMini Project - 1\n--/10\n\nView\n\nEdit",
+  "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/final_zenclass_submitted.png",
+  "projects": {
+    "int-aiml-c-we-e-b2-b3-b4-final-project": {
+      "slot": "Final Project - 1",
+      "card_title": "INT-AIML-C-WE-E-B2, B3 &B4_Final_Project",
+      "github_url": "https://github.com/dev-prk/int-aiml-c-we-e-b2-b3-b4-final-project",
+      "github_published": true,
+      "zenclass_submission": {
+        "status": "SUBMITTED",
+        "fields_filled": 1,
+        "github_url": "https://github.com/dev-prk/int-aiml-c-we-e-b2-b3-b4-final-project",
+        "confirmation": "Modal closed cleanly \u2014 card moved to Completed Projects"
+      }
+    },
+    "intel-aiml-multi-agent-support-ticket-automation-system": {
+      "slot": "Mini Project - 6",
+      "card_title": "INTEL_AIML_Multi-Agent Support Ticket Automation System",
+      "github_url": "https://github.com/dev-prk/intel-aiml-multi-agent-support-ticket-automation-system",
+      "github_published": true,
+      "zenclass_submission": {
+        "status": "SUBMITTED",
+        "fields_filled": 1,
+        "github_url": "https://github.com/dev-prk/intel-aiml-multi-agent-support-ticket-automation-system",
+        "confirmation": "Modal closed cleanly \u2014 card moved to Completed Projects"
+      }
+    },
+    "intl-aiml-ai-powered-banking-support-fraud-intelligence": {
+      "slot": "Mini Project - 5",
+      "card_title": "INTL_AIML_AI-Powered Banking Support & Fraud Intelligence",
+      "github_url": "https://github.com/dev-prk/intl-aiml-ai-powered-banking-support-fraud-intelligence",
+      "github_published": true,
+      "zenclass_submission": {
+        "status": "SUBMITTED",
+        "fields_filled": 1,
+        "github_url": "https://github.com/dev-prk/intl-aiml-ai-powered-banking-support-fraud-intelligence",
+        "confirmation": "Modal closed cleanly \u2014 card moved to Completed Projects"
+      }
+    },
+    "intel-aiml-visual-product-similarity-image-based-recommend": {
+      "slot": "Mini Project - 4",
+      "card_title": "INTEL_AIML_Visual Product Similarity & Image-Based Recommend",
+      "github_url": "https://github.com/dev-prk/intel-aiml-visual-product-similarity-image-based-recommend",
+      "github_published": true,
+      "zenclass_submission": {
+        "status": "SUBMITTED",
+        "fields_filled": 1,
+        "github_url": "https://github.com/dev-prk/intel-aiml-visual-product-similarity-image-based-recommend",
+        "confirmation": "Modal closed cleanly \u2014 card moved to Completed Projects"
+      }
+    },
+    "intel-aiml-rapido-intelligent-mobility-insights": {
+      "slot": "Mini Project - 3",
+      "card_title": "INTEL-AIML_Rapido: Intelligent Mobility Insights",
+      "github_url": "https://github.com/dev-prk/intel-aiml-rapido-intelligent-mobility-insights",
+      "github_published": true,
+      "zenclass_submission": {
+        "status": "SUBMITTED",
+        "fields_filled": 1,
+        "github_url": "https://github.com/dev-prk/intel-aiml-rapido-intelligent-mobility-insights",
+        "confirmation": "Modal closed cleanly \u2014 card moved to Completed Projects"
+      }
+    },
+    "intl-aiml-traffic-violations-insight-system": {
+      "slot": "Mini Project - 2",
+      "card_title": "INTL_AIML_Traffic Violations Insight System",
+      "github_url": "https://github.com/dev-prk/intl-aiml-traffic-violations-insight-system",
+      "github_published": true,
+      "zenclass_submission": {
+        "status": "SUBMITTED",
+        "fields_filled": 1,
+        "github_url": "https://github.com/dev-prk/intl-aiml-traffic-violations-insight-system",
+        "confirmation": "Modal closed cleanly \u2014 card moved to Completed Projects"
+      }
+    },
+    "intel-aiml-ncaafb-api-data-analysis": {
+      "slot": "Mini Project - 1",
+      "card_title": "INTEL_AIML_NCAAFB API: Data Analysis",
+      "github_url": "https://github.com/dev-prk/intel-aiml-ncaafb-api-data-analysis",
+      "github_published": true,
+      "zenclass_submission": {
+        "status": "SUBMITTED",
+        "fields_filled": 1,
+        "github_url": "https://github.com/dev-prk/intel-aiml-ncaafb-api-data-analysis",
+        "confirmation": "Modal closed cleanly \u2014 card moved to Completed Projects"
+      }
+    }
+  }
+}

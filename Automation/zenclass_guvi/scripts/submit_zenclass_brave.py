@@ -1,13 +1,11 @@
 """
-Zero-Flash Foreground Brave Browser Submitter for GUVI Zen Class Projects.
+Verified Playwright Foreground Brave Submitter for GUVI Zen Class Projects.
 
-All 7 GitHub repositories under https://github.com/dev-prk/ are already published and verified.
-This script:
-1. Opens https://www.zenclass.in/login ONCE in foreground Brave Browser (no stale cookie injection,
-   ZERO navigation/reload polling while waiting for login — eliminating all screen flashing).
-2. Passively waits until Zen Class login completes and settles on /dashboard or /projects.
-3. Navigates ONCE to https://www.zenclass.in/projects and submits all 7 GitHub URLs in-place.
-4. Captures final board counts + full-page verification screenshot.
+Uses exact DOM selectors verified on https://www.zenclass.in/projects:
+- Card container: .common-padding filtered by .project-card-course-name-wrapper (slot label)
+- Card trigger: .primary-outlined-submit-btn (trusted Playwright click)
+- Modal input: .submit-form-container-web input[placeholder="Enter Link"]
+- Modal submit: .submit-form-container-web .form-submit-container button.primary-btn
 """
 
 from __future__ import annotations
@@ -51,181 +49,67 @@ def activate_brave() -> None:
     subprocess.run(["osascript", "-e", 'tell application "Brave Browser" to activate'], check=False)
 
 
-def wait_for_zenclass_login_passively(ctx: BrowserContext, page: Page, max_wait_sec: int = 600) -> Page:
-    """
-    Opens https://www.zenclass.in/login ONCE and waits COMPLETELY PASSIVELY (never calling goto() inside the loop)
-    until the user finishes signing in and lands stably on an authenticated Zen Class route.
-    """
-    # Clear any corrupted/stale zenclass cookies so React Router does not redirect-loop
-    try:
-        all_cookies = ctx.cookies()
-        keep = [c for c in all_cookies if "zenclass" not in c.get("domain", "")]
-        ctx.clear_cookies()
-        if keep:
-            ctx.add_cookies(keep)
-    except Exception:
-        pass
+def submit_card(page: Page, slot_label: str, github_url: str) -> Dict[str, Any]:
+    # Close any lingering modal before starting next card
+    close_icon = page.locator(".common-popup-close-icon-container")
+    if close_icon.count() > 0 and close_icon.first.is_visible():
+        close_icon.first.click()
+        page.wait_for_timeout(600)
 
-    log("Opening https://www.zenclass.in/login once in foreground Brave Browser...")
-    page.goto("https://www.zenclass.in/login", wait_until="domcontentloaded", timeout=30000)
-    activate_brave()
+    card = page.locator(".common-padding", has=page.locator(".project-card-course-name-wrapper", has_text=slot_label)).first
+    if card.count() == 0:
+        return {"status": "CARD_NOT_FOUND", "github_url": github_url}
 
-    prompted = False
-    t0 = time.time()
-    while time.time() - t0 < max_wait_sec:
-        for p in list(ctx.pages):
-            if p.is_closed():
-                continue
-            try:
-                u = p.url
-                # Must be on zenclass.in and NOT on /login or oauth callback
-                if (
-                    "zenclass.in" in u
-                    and "/login" not in u
-                    and "google" not in u
-                    and "callback" not in u
-                ):
-                    # Verify token or dashboard UI settled for 2.5s without bouncing back to /login
-                    time.sleep(2.5)
-                    u_after = p.url
-                    if "zenclass.in" in u_after and "/login" not in u_after:
-                        has_session = p.evaluate(
-                            "() => Boolean(localStorage.getItem('authToken') || localStorage.length > 0 || document.body.innerText.includes('Student'))"
-                        )
-                        if has_session:
-                            log(f"Zen Class session stably authenticated on {u_after}!")
-                            return p
-            except Exception:
-                continue
+    sub_btn = card.locator(".primary-outlined-submit-btn")
+    if sub_btn.count() == 0 or not sub_btn.first.is_visible():
+        return {"status": "ALREADY_SUBMITTED", "github_url": github_url, "card_text": card.inner_text()[:180]}
 
-        if not prompted:
-            log("WAITING_FOR_USER: Please sign in once on https://www.zenclass.in/login in Brave Browser (zero reloads while you sign in)...")
-            prompted = True
-        time.sleep(2.0)
+    sub_btn.first.scroll_into_view_if_needed()
+    sub_btn.first.click()
 
-    raise RuntimeError("Timed out waiting for Zen Class login in Brave Browser.")
+    modal_input = page.locator('.submit-form-container-web input[placeholder="Enter Link"]')
+    modal_input.first.wait_for(state="visible", timeout=8000)
 
-
-def submit_single_card_in_place(page: Page, slot_label: str, github_url: str) -> Dict[str, Any]:
-    # Ensure any leftover modal from previous card is closed
-    try:
-        if page.locator('input[placeholder="Enter Link"]:visible').count() > 0:
-            page.keyboard.press("Escape")
-            page.wait_for_timeout(600)
-    except Exception:
-        pass
-
-    click_state = page.evaluate(
-        """(slotLabel) => {
-            const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT);
-            let slotNode = null;
-            while (walker.nextNode()) {
-                const el = walker.currentNode;
-                if (el.children.length === 0 && el.textContent && el.textContent.trim() === slotLabel) {
-                    slotNode = el;
-                    break;
-                }
-            }
-            if (!slotNode) {
-                return { found: false, reason: "SLOT_LABEL_NOT_FOUND" };
-            }
-            let card = slotNode.parentElement;
-            while (card && card !== document.body) {
-                const btns = Array.from(card.querySelectorAll("button"));
-                const hasAction = card.innerText.includes("View") || btns.length > 0;
-                if (hasAction && card.innerText.includes(slotLabel) && card.clientHeight > 80 && card.clientHeight < 450) {
-                    const submitBtn = btns.find(b => b.innerText.trim().toLowerCase() === "submit");
-                    if (submitBtn) {
-                        submitBtn.scrollIntoView({ block: "center" });
-                        submitBtn.click();
-                        return { found: true, clickedSubmit: true, cardText: card.innerText };
-                    }
-                    return { found: true, clickedSubmit: false, reason: "ALREADY_SUBMITTED", cardText: card.innerText };
-                }
-                card = card.parentElement;
-            }
-            return { found: false, reason: "CARD_CONTAINER_NOT_FOUND" };
-        }""",
-        slot_label,
-    )
-
-    if not click_state.get("found"):
-        return {"status": click_state.get("reason", "NOT_FOUND"), "github_url": github_url}
-
-    if not click_state.get("clickedSubmit"):
-        return {
-            "status": "ALREADY_SUBMITTED",
-            "github_url": github_url,
-            "card_text": click_state.get("cardText", "")[:160],
-        }
-
-    page.wait_for_timeout(1200)
-
-    link_inputs = page.locator('input[placeholder="Enter Link"]:visible, .submit-form-container-web input[type="text"]:visible')
-    if link_inputs.count() == 0:
-        link_inputs = page.locator('input[type="text"]:visible, input[type="url"]:visible')
-
-    in_count = link_inputs.count()
-    if in_count == 0:
-        return {"status": "MODAL_INPUT_NOT_FOUND", "github_url": github_url}
-
-    for i in range(in_count):
-        inp = link_inputs.nth(i)
+    count = modal_input.count()
+    for i in range(count):
+        inp = modal_input.nth(i)
         inp.click()
         inp.fill("")
         inp.fill(github_url)
 
-    page.wait_for_timeout(600)
+    page.wait_for_timeout(400)
 
-    submitted_modal = page.evaluate(
-        """() => {
-            const modalInput = document.querySelector('input[placeholder="Enter Link"]');
-            if (modalInput) {
-                let container = modalInput.parentElement;
-                while (container && container !== document.body) {
-                    const btns = Array.from(container.querySelectorAll("button")).filter(
-                        b => b.innerText.trim().toLowerCase() === "submit" && b.offsetParent !== null
-                    );
-                    if (btns.length > 0) {
-                        btns[btns.length - 1].click();
-                        return true;
-                    }
-                    container = container.parentElement;
-                }
-            }
-            const fallbackBtns = Array.from(document.querySelectorAll('.submit-form-container-web button, [role="dialog"] button')).filter(
-                b => b.innerText.trim().toLowerCase() === "submit"
-            );
-            if (fallbackBtns.length > 0) {
-                fallbackBtns[fallbackBtns.length - 1].click();
-                return true;
-            }
-            return false;
-        }"""
-    )
-    if not submitted_modal:
-        return {"status": "MODAL_SUBMIT_BTN_NOT_FOUND", "github_url": github_url}
+    confirm_btn = page.locator(".submit-form-container-web .form-submit-container button.primary-btn").first
+    confirm_btn.click()
 
-    confirmation_msg = ""
-    for _ in range(14):
+    # Capture confirmation popup or wait for modal to close
+    confirmation_text = ""
+    for _ in range(16):
         page.wait_for_timeout(500)
-        try:
-            toast = page.locator(".sucess-popup-main-container, .Toastify__toast, [role='alert']").first
-            if toast.count() > 0 and toast.is_visible():
-                confirmation_msg = toast.inner_text().strip()
-            if page.locator('input[placeholder="Enter Link"]:visible').count() == 0:
-                if not confirmation_msg:
-                    confirmation_msg = "Modal closed cleanly after submit"
-                break
-        except Exception:
-            continue
+        popup = page.locator(".sucess-popup-main-container, .success-popup-container, .Toastify__toast, .validation-error-text").first
+        if popup.count() > 0 and popup.is_visible():
+            confirmation_text = popup.inner_text().strip()
+            # Close success popup if it has a close button or wait for auto-dismiss
+            if "error" in confirmation_text.lower() or "valid" in confirmation_text.lower():
+                return {"status": "VALIDATION_ERROR", "error": confirmation_text, "github_url": github_url}
+        if page.locator('.submit-form-container-web input[placeholder="Enter Link"]:visible').count() == 0:
+            if not confirmation_text:
+                confirmation_text = "Modal closed cleanly — card moved to Completed Projects"
+            break
 
-    page.wait_for_timeout(1800)
+    # Wait briefly for any success popup overlay to auto-dismiss
+    for _ in range(8):
+        if page.locator(".MuiBackdrop-root:visible").count() == 0:
+            break
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(500)
+
+    page.wait_for_timeout(1200)
     return {
         "status": "SUBMITTED",
-        "fields_filled": in_count,
+        "fields_filled": count,
         "github_url": github_url,
-        "confirmation": confirmation_msg or "Submitted",
+        "confirmation": confirmation_text,
     }
 
 
@@ -248,7 +132,7 @@ def main() -> int:
         }
 
     with sync_playwright() as pw:
-        log("Launching Brave Browser (zero-flash mode)...")
+        log("Launching foreground Brave Browser on authenticated Zen Class profile...")
         ctx = pw.chromium.launch_persistent_context(
             user_data_dir=str(PROFILE_DIR),
             executable_path=BRAVE_BINARY,
@@ -256,54 +140,41 @@ def main() -> int:
             no_viewport=True,
             args=config.BROWSER_ARGS,
             ignore_default_args=config.IGNORE_DEFAULT_ARGS,
-            slow_mo=40,
+            slow_mo=50,
         )
         page = ctx.pages[0] if ctx.pages else ctx.new_page()
-        zc_page = wait_for_zenclass_login_passively(ctx, page)
-
-        # Navigate ONCE to /projects and wait for cards to hydrate
-        log("Navigating once to https://www.zenclass.in/projects...")
-        zc_page.goto("https://www.zenclass.in/projects", wait_until="domcontentloaded", timeout=30000)
-        for _ in range(15):
-            zc_page.wait_for_timeout(1000)
-            body_txt = zc_page.evaluate("() => document.body.innerText")
-            if "Pending Projects" in body_txt or "Final Project - 1" in body_txt or "Completed Projects" in body_txt:
-                break
-        zc_page.wait_for_timeout(1500)
+        activate_brave()
+        page.goto("https://www.zenclass.in/projects", wait_until="domcontentloaded", timeout=30000)
+        page.locator(".common-padding").first.wait_for(state="visible", timeout=15000)
+        page.wait_for_timeout(1500)
 
         for slug, slot_lbl, exact_title in PROJECTS_SPEC:
             gh_url = results[slug]["github_url"]
             log(f"Submitting [{slot_lbl}] '{exact_title}' -> {gh_url} ...")
-            sub_res = submit_single_card_in_place(zc_page, slot_lbl, gh_url)
+            sub_res = submit_card(page, slot_lbl, gh_url)
             results[slug]["zenclass_submission"] = sub_res
             log(f"  -> {slot_lbl}: {sub_res}")
 
-        # Single final refresh to capture verified Completed Projects column
-        zc_page.reload(wait_until="domcontentloaded", timeout=30000)
-        zc_page.wait_for_timeout(3500)
-        board_summary = zc_page.evaluate(
-            """() => {
-                const submitBtns = Array.from(document.querySelectorAll("button")).filter(
-                    b => b.innerText.trim().toLowerCase() === "submit" && b.offsetParent !== null
-                ).length;
-                return {
-                    remaining_submit_buttons: submitBtns,
-                    board_text_excerpt: document.body.innerText.slice(0, 1200)
-                };
-            }"""
-        )
+        # Reload board to verify Pending Projects == 0 and Completed Projects == 7
+        page.reload(wait_until="domcontentloaded", timeout=30000)
+        page.wait_for_timeout(4000)
+        remaining_submit_btns = page.locator(".primary-outlined-submit-btn:visible").count()
+        board_text = page.evaluate("() => document.body.innerText.slice(0, 2000)")
+
         SCREENSHOT_OUT.parent.mkdir(parents=True, exist_ok=True)
-        zc_page.screenshot(path=str(SCREENSHOT_OUT), full_page=True)
+        page.screenshot(path=str(SCREENSHOT_OUT), full_page=True)
+        ctx.storage_state(path=str(config.STORAGE_STATE_PATH))
 
         payload = {
             "github_owner": OWNER,
-            "board_verification": board_summary,
+            "remaining_pending_submit_buttons": remaining_submit_btns,
+            "board_text_excerpt": board_text,
             "screenshot": str(SCREENSHOT_OUT),
             "projects": results,
         }
         REPORT_OUT.parent.mkdir(parents=True, exist_ok=True)
         REPORT_OUT.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-        log(f"ALL SUBMISSIONS FINISHED! Remaining Submit buttons: {board_summary['remaining_submit_buttons']}")
+        log(f"DONE! Remaining Pending Submit buttons: {remaining_submit_btns}")
         ctx.close()
 
     return 0

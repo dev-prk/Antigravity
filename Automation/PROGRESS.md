@@ -1,26 +1,25 @@
 # GUVI Autopilot Progress Tracker
 
 ## Goal
-Autonomously implement, test, debug, and package all 7 pending GUVI Zen Class AIML projects in `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/projects/` to full specification compliance, ready for user review before portal submission.
+Autonomously implement, test, debug, publish to GitHub, and submit all 7 GUVI Zen Class AIML projects in foreground Brave Browser.
 
 ## Acceptance Criteria
-- [x] Inspect authorized GUVI Zen Class portal (`https://www.zenclass.in/projects`) and extract all 7 pending project specifications, datasets, rubrics, and submission modal fields.
-- [x] Replace placeholder templates in `zenclass_guvi/projects/` with functional, modular Python AIML implementations for all 7 projects.
-- [x] Download/ingest real project datasets, train/evaluate models, build SQL schemas & FAISS vector indexes, and expose interactive Streamlit apps (+ FastAPI services where required).
-- [x] Run automated `pytest` verification (`21/21` tests passing) and headless `Streamlit AppTest` UI rendering (`7/7` apps passing) across all 7 projects; debugged OpenMP `libomp` collision and Plotly 6 `scatter_map` compatibility.
-- [x] Prepare complete documentation (`README.md`, architecture diagrams, metrics reports, deployment guides, and `DELIVERABLES_INDEX.md`) for user review prior to any portal submission.
+- [x] Inspect authorized GUVI Zen Class portal (`https://www.zenclass.in/projects`) and extract all 7 project specifications, datasets, rubrics, and submission modal fields.
+- [x] Build complete, modular Python AIML implementations for all 7 projects on official GUVI datasets (`21/21` `pytest` tests passing + `7/7` `Streamlit AppTest` UI renders passing).
+- [x] Create 7 standalone public GitHub repositories under `https://github.com/dev-prk/` and push all 7 verified branches over SSH.
+- [x] Submit all 7 public GitHub repository URLs on `https://www.zenclass.in/projects` using foreground Brave Browser and confirm portal transition to `Completed Projects` (`0` pending submit buttons remaining).
 
-## Project Matrix (Batch `INT-AIML-C-WE-E-B2`)
-| # | Slot | Directory Slug | Status | Verification |
-|---|---|---|---|---|
-| 1 | Mini Project 1 | `intel-aiml-ncaafb-api-data-analysis` | Complete | `4/4` pytest + Streamlit UI PASS |
-| 2 | Mini Project 2 | `intl-aiml-traffic-violations-insight-system` | Complete | `3/3` pytest + Streamlit UI PASS |
-| 3 | Mini Project 3 | `intel-aiml-rapido-intelligent-mobility-insights` | Complete | `3/3` pytest + Streamlit UI PASS |
-| 4 | Mini Project 4 | `intel-aiml-visual-product-similarity-image-based-recommend` | Complete | `3/3` pytest + Streamlit UI PASS |
-| 5 | Mini Project 5 | `intl-aiml-ai-powered-banking-support-fraud-intelligence` | Complete | `3/3` pytest + Streamlit UI PASS |
-| 6 | Mini Project 6 | `intel-aiml-multi-agent-support-ticket-automation-system` | Complete | `2/2` pytest + Streamlit UI PASS |
-| 7 | Final Project 1 | `int-aiml-c-we-e-b2-b3-b4-final-project` | Complete | `3/3` pytest + Streamlit UI PASS |
+## Published & Submitted Projects (`INT-AIML-C-WE-E-B2`)
+| # | Slot | Public GitHub Repository | Zen Class Portal Status |
+|---|---|---|---|
+| 1 | Final Project 1 | `https://github.com/dev-prk/int-aiml-c-we-e-b2-b3-b4-final-project` | Submitted |
+| 2 | Mini Project 6 | `https://github.com/dev-prk/intel-aiml-multi-agent-support-ticket-automation-system` | Submitted |
+| 3 | Mini Project 5 | `https://github.com/dev-prk/intl-aiml-ai-powered-banking-support-fraud-intelligence` | Submitted |
+| 4 | Mini Project 4 | `https://github.com/dev-prk/intel-aiml-visual-product-similarity-image-based-recommend` | Submitted |
+| 5 | Mini Project 3 | `https://github.com/dev-prk/intel-aiml-rapido-intelligent-mobility-insights` | Submitted |
+| 6 | Mini Project 2 | `https://github.com/dev-prk/intl-aiml-traffic-violations-insight-system` | Submitted |
+| 7 | Mini Project 1 | `https://github.com/dev-prk/intel-aiml-ncaafb-api-data-analysis` | Submitted |
 
-## Next (Requires User Authorization)
-- Review completed local repositories in `/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/projects/`.
-- Authorize pushing standalone GitHub repositories and/or submitting repository URLs in the Zen Class `Backend Source code` submission modals (and deploy Final Project Docker Compose stack to AWS EC2 prior to live demo evaluation).
+## Next Optional Steps for Student
+- Book your 30-minute Live Evaluation slot via `https://forms.gle/1m2Gsro41fLtZurRA` (form opens Saturday after 2 PM & Sunday).
+- Deploy `int-aiml-c-we-e-b2-b3-b4-final-project` `docker-compose.yml` onto an AWS EC2 instance (`docs/AWS_EC2_DEPLOYMENT.md`) right before your Final Project live demo, and stop the EC2 instance immediately afterward.
