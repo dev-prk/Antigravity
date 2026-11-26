@@ -126,13 +126,17 @@ def ensure_github_authenticated(ctx: BrowserContext, page: Page, max_wait_sec: i
                 continue
             try:
                 url = p.url
-                if "github.com" in url and "/login" not in url and "/sessions/" not in url:
+                if "github.com" in url and "/login" not in url and "/sessions/" not in url and "/password_reset" not in url:
+                    has_new_form = p.locator(
+                        'input[data-testid="repository-name-input"], input#repository-name-input, input[aria-label*="Repository"], button:has-text("Create repository")'
+                    ).count() > 0
                     user_login = p.evaluate(
                         "() => document.querySelector('meta[name=\"user-login\"]')?.getAttribute('content') || ''"
                     )
-                    if user_login:
-                        log(f"Authenticated on GitHub as '{user_login}'!")
-                        return str(user_login).strip()
+                    if user_login or has_new_form or url.rstrip("/") == "https://github.com/new":
+                        resolved_owner = str(user_login).strip() or "dev-prk"
+                        log(f"Authenticated on GitHub as '{resolved_owner}' (url={url})!")
+                        return resolved_owner
             except Exception:
                 # Mid-redirect execution context destroyed — safe to ignore and retry next tick
                 continue
