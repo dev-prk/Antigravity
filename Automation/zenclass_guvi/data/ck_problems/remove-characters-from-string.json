@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "GUVI GEEK",
-   "output": "UVI"
-  },
-  {
    "input": "valid not",
    "output": "valid"
   },

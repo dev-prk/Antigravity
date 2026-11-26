@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\n5\n5",
-   "output": "Produced: 1\nConsumed: 1\nProduced: 2\nConsumed: 2\nProduced: 3\nProduced: 4\nConsumed: 3\nConsumed: 4"
-  },
-  {
    "input": "2\n4\n4",
    "output": "Produced: 1\nConsumed: 1\nProduced: 2\nConsumed: 2\nProduced: 3\nProduced: 4\nConsumed: 3\nConsumed: 4"
   }

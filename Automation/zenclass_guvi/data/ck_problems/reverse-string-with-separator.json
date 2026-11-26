@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "codekata",
-   "output": "a-t-a-k-e-d-o-c"
-  },
-  {
    "input": "code",
    "output": "e-d-o-c"
   },

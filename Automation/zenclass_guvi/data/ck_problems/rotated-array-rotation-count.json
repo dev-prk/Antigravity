@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n15 18 2 3 6 12",
-   "output": "2"
-  },
-  {
    "input": "5\n1 1 1 1 1",
    "output": "-1"
   },

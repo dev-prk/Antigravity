@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "rescue curse",
-   "output": "true"
-  },
-  {
    "input": "alloy loyal",
    "output": "true"
   },

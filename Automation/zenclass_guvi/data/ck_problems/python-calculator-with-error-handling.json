@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "add, 1.0, 2.0",
-   "output": "Result: 3.0"
-  },
-  {
    "input": "multiply, 2.0, 3.0",
    "output": "Result: 6.0"
   },

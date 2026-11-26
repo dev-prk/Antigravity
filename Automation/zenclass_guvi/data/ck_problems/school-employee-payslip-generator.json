@@ -10,15 +10,11 @@
  "samples": [
   {
    "input": "2\n1 Raja Principal 1000 240\n2 Rani Vice-Principal 900 250",
-   "output": "1\nRaja\nPrincipal\n240000 \n2\nRani\nVice-Principal\n225000"
-  },
-  {
-   "input": "2\n1 Raja Principal 1000 240\n2 Rani Vice-Principal 900 250",
-   "output": "1\nRaja\nPrincipal\n240000\n2\nRani\nVice-Principal\n225000"
+   "output": "1\nRaja\nPrincipal\n240000\n\n2\nRani\nVice-Principal\n225000"
   },
   {
    "input": "3\n1 Raja Principal 1000 240\n2 Rani Vice-Principal 900 250\n3 Ramesh Clerk 50 300",
-   "output": "1\nRaja\nPrincipal\n240000\n2\nRani\nVice-Principal\n225000\n3\nRamesh\nClerk\n15000"
+   "output": "1\nRaja\nPrincipal\n240000\n\n2\nRani\nVice-Principal\n225000\n\n3\nRamesh\nClerk\n15000"
   }
  ],
  "raw": ""

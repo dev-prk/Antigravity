@@ -9,15 +9,11 @@
  "constraints": "",
  "samples": [
   {
-   "input": "codekata challenge",
-   "output": "codekata challenge"
-  },
-  {
-   "input": "coding platform",
+   "input": "coding  platform",
    "output": "coding platform"
   },
   {
-   "input": "guvi geeks",
+   "input": "guvi     geeks",
    "output": "guvi geeks"
   }
  ],

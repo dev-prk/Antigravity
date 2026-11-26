@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Ravi\n6",
-   "output": "Admin Logged In\nAccess Level: 6"
-  },
-  {
    "input": "Kiran\n5",
    "output": "Admin Logged In\nAccess Level: 5"
   }

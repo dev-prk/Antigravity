@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Hello how are you",
-   "output": "uoy era woh olleH"
-  },
-  {
    "input": "Little readers learn to overcome bad habits",
    "output": "stibah dab emocrevo ot nrael sredaer elttiL"
   },

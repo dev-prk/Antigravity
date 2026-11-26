@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "how are you?",
-   "output": "how are you"
-  },
-  {
    "input": "all is well.",
    "output": "all is well"
   },

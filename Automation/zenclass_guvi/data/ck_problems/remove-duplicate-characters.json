@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Engineering",
-   "output": "Er"
-  },
-  {
    "input": "codekata",
    "output": "codekt"
   },

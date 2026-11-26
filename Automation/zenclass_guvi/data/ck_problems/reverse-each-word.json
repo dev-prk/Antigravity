@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Hello World",
-   "output": "olleH dlroW"
-  },
-  {
    "input": "Programming with C++",
    "output": "gnimmargorP htiw ++C"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "901234",
-   "output": "Request handled\nProduct not found"
-  },
-  {
    "input": "123456",
    "output": "Request handled\nProduct found: Wireless Mouse, Category: Electronics, Price: 500, Stock: 10"
   },

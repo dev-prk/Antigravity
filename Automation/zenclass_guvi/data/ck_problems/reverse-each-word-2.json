@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "This is a sample Sentence",
-   "output": "sihT si a elpmas ecnetneS"
-  },
-  {
    "input": "Hi Hello How are You?",
    "output": "iH olleH woH era ?uoY"
   },

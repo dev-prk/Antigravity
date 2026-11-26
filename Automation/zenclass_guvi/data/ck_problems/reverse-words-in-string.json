@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "abcd er x",
-   "output": "dcba re x"
-  },
-  {
    "input": "GOODGOOD",
    "output": "DOOGDOOG"
   },

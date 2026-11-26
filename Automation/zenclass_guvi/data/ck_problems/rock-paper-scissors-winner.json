@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "R P",
-   "output": "P"
-  },
-  {
    "input": "R R",
    "output": "D"
   },

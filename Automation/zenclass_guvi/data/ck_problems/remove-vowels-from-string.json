@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "hello",
-   "output": "hll"
-  },
-  {
    "input": "abcdef",
    "output": "bcdf"
   },

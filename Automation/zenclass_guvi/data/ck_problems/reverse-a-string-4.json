@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "GUVI",
-   "output": "IVUG"
-  },
-  {
    "input": "Google",
    "output": "elgooG"
   },

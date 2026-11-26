@@ -9,11 +9,7 @@
  "constraints": "",
  "samples": [
   {
-   "input": "7\n1\n2\n3\n2\n4\n3\n1",
-   "output": "1\n2\n3\n4"
-  },
-  {
-   "input": "8\n1 \n2 \n3 \n2 \n4 \n1\n4\n5",
+   "input": "8\n1\n2\n3\n2\n4\n1\n4\n5",
    "output": "1\n2\n3\n4\n5"
   }
  ],

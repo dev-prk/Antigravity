@@ -9,15 +9,11 @@
  "constraints": "",
  "samples": [
   {
-   "input": "aa abba abba",
-   "output": "aa abba abba"
-  },
-  {
-   "input": "aaaaaaaa",
+   "input": " aaaaaaaa",
    "output": "aaaaaaaa"
   },
   {
-   "input": "abba aabbbb",
+   "input": "abba  aabbbb",
    "output": "abba aabbbb"
   }
  ],

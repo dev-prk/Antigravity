@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "2",
-   "output": "Object Created. Active: 1\nObject Created. Active: 2\nObject Destroyed. Active: 1\nObject Destroyed. Active: 0"
-  },
-  {
    "input": "3",
    "output": "Object Created. Active: 1\nObject Created. Active: 2\nObject Created. Active: 3\nObject Destroyed. Active: 2\nObject Destroyed. Active: 1\nObject Destroyed. Active: 0"
   }

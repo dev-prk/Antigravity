@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "prog 2",
-   "output": "pr ro og"
-  },
-  {
    "input": "prog 3",
    "output": "pro rog"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "John, 5\n10 \nJohn, 10\n-5",
-   "output": "John\n5\n10 \nJohn\n10\n0"
-  },
-  {
    "input": "Alice, 7\n15",
    "output": "Alice\n7\n15"
   },

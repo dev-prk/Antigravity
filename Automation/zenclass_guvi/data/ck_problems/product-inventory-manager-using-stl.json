@@ -10,7 +10,7 @@
  "samples": [
   {
    "input": "3\nLaptop 50000\nMouse 800\nKeyboard 1500",
-   "output": "Products (sorted): Keyboard Laptop Mouse \nHighest Price: 50000\nProducts above 1000: 2"
+   "output": "Products (sorted): Keyboard Laptop Mouse\nHighest Price: 50000\nProducts above 1000: 2"
   }
  ],
  "raw": ""

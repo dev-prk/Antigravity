@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "[{'name': 'Product 1', 'category': 'Books', 'stock': 20}, {'name': 'Product 2', 'category': 'Electronics', 'stock': 15}, {'name': 'Product 3', 'category': 'Electronics', 'stock': 30}]",
-   "output": "{'Product 1': 20, 'Product 2': 15, 'Product 3': 30}"
-  },
-  {
    "input": "[{'name': 'ProductX', 'category': 'CatX', 'stock': 100}, {'name': 'ProductX', 'category': 'CatX', 'stock': 200}, {'name': 'ProductX', 'category': 'CatX', 'stock': -50}]",
    "output": "{'ProductX': 250}"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "codekata",
-   "output": "atakedoc"
-  },
-  {
    "input": "i",
    "output": "i"
   },

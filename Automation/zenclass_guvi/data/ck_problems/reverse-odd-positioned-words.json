@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "This is an example for this question",
-   "output": "sihT is na example rof this noitseuq"
-  },
-  {
    "input": "Hello World",
    "output": "olleH World"
   },
