@@ -1,0 +1,1 @@
+{"slug": "evaluating-relational-and-logical-operators", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:\n        return\n    a, b, c = map(int, data[:3])\n    result = int(a > b and c > 0)\n    print(result)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

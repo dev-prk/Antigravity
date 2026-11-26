@@ -1,0 +1,1 @@
+{"slug": "number-diagonal-pattern", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    for i in range(n):\n        row = [0] * n\n        row[n - 1 - i] = i + 1\n        print(' '.join(map(str, row)))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

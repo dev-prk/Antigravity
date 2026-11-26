@@ -192,3 +192,69 @@
 2026/11/27-00:15:07.550 2c10ca Level-0 table #129: started
 2026/11/27-00:15:07.556 2c10ca Level-0 table #129: 66751 bytes OK
 2026/11/27-00:15:07.562 2c10ca Delete type=0 #125
+2026/11/27-00:17:07.548 2c10ca Level-0 table #131: started
+2026/11/27-00:17:07.555 2c10ca Level-0 table #131: 63868 bytes OK
+2026/11/27-00:17:07.558 2c10ca Delete type=0 #128
+2026/11/27-00:19:07.547 2c10ca Level-0 table #133: started
+2026/11/27-00:19:07.551 2c10ca Level-0 table #133: 65006 bytes OK
+2026/11/27-00:19:07.556 2c10ca Delete type=0 #130
+2026/11/27-00:21:07.547 2c10ca Level-0 table #135: started
+2026/11/27-00:21:07.554 2c10ca Level-0 table #135: 66029 bytes OK
+2026/11/27-00:21:07.560 2c10ca Delete type=0 #132
+2026/11/27-00:21:07.560 2c10ca Compacting 4@0 + 1@1 files
+2026/11/27-00:21:07.564 2c10ca Generated table #136@0: 139 keys, 40147 bytes
+2026/11/27-00:21:07.564 2c10ca Compacted 4@0 + 1@1 files => 40147 bytes
+2026/11/27-00:21:07.565 2c10ca compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-00:21:07.566 2c10ca Delete type=2 #129
+2026/11/27-00:21:07.566 2c10ca Delete type=2 #135
+2026/11/27-00:21:07.566 2c10ca Delete type=2 #131
+2026/11/27-00:21:07.566 2c10ca Delete type=2 #133
+2026/11/27-00:21:07.566 2c10ca Delete type=2 #127
+2026/11/27-00:23:07.545 2c10ca Level-0 table #138: started
+2026/11/27-00:23:07.556 2c10ca Level-0 table #138: 66806 bytes OK
+2026/11/27-00:23:07.565 2c10ca Delete type=0 #134
+2026/11/27-00:25:07.538 2c10ca Level-0 table #140: started
+2026/11/27-00:25:07.543 2c10ca Level-0 table #140: 65709 bytes OK
+2026/11/27-00:25:07.547 2c10ca Delete type=0 #137
+2026/11/27-00:27:07.540 2c10ca Level-0 table #142: started
+2026/11/27-00:27:07.546 2c10ca Level-0 table #142: 67223 bytes OK
+2026/11/27-00:27:07.551 2c10ca Delete type=0 #139
+2026/11/27-00:29:07.535 2c10ca Level-0 table #144: started
+2026/11/27-00:29:07.538 2c10ca Level-0 table #144: 66841 bytes OK
+2026/11/27-00:29:07.541 2c10ca Delete type=0 #141
+2026/11/27-00:29:07.541 2c10ca Compacting 4@0 + 1@1 files
+2026/11/27-00:29:07.546 2c10ca Generated table #145@0: 139 keys, 40474 bytes
+2026/11/27-00:29:07.546 2c10ca Compacted 4@0 + 1@1 files => 40474 bytes
+2026/11/27-00:29:07.547 2c10ca compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-00:29:07.547 2c10ca Delete type=2 #138
+2026/11/27-00:29:07.547 2c10ca Delete type=2 #140
+2026/11/27-00:29:07.547 2c10ca Delete type=2 #142
+2026/11/27-00:29:07.547 2c10ca Delete type=2 #144
+2026/11/27-00:29:07.547 2c10ca Delete type=2 #136
+2026/11/27-00:31:07.536 2c10ca Level-0 table #147: started
+2026/11/27-00:31:07.540 2c10ca Level-0 table #147: 67325 bytes OK
+2026/11/27-00:31:07.546 2c10ca Delete type=0 #143
+2026/11/27-00:33:07.534 2c10ca Level-0 table #149: started
+2026/11/27-00:33:07.538 2c10ca Level-0 table #149: 67052 bytes OK
+2026/11/27-00:33:07.540 2c10ca Delete type=0 #146
+2026/11/27-00:35:07.536 2c10ca Level-0 table #151: started
+2026/11/27-00:35:07.537 2c10ca Level-0 table #151: 67973 bytes OK
+2026/11/27-00:35:07.540 2c10ca Delete type=0 #148
+2026/11/27-00:37:07.535 2c10ca Level-0 table #153: started
+2026/11/27-00:37:07.539 2c10ca Level-0 table #153: 69338 bytes OK
+2026/11/27-00:37:07.546 2c10ca Delete type=0 #150
+2026/11/27-00:37:07.546 2c10ca Compacting 4@0 + 1@1 files
+2026/11/27-00:37:07.550 2c10ca Generated table #154@0: 139 keys, 41920 bytes
+2026/11/27-00:37:07.550 2c10ca Compacted 4@0 + 1@1 files => 41920 bytes
+2026/11/27-00:37:07.551 2c10ca compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-00:37:07.552 2c10ca Delete type=2 #149
+2026/11/27-00:37:07.552 2c10ca Delete type=2 #147
+2026/11/27-00:37:07.552 2c10ca Delete type=2 #153
+2026/11/27-00:37:07.552 2c10ca Delete type=2 #145
+2026/11/27-00:37:07.552 2c10ca Delete type=2 #151
+2026/11/27-00:39:07.532 2c10ca Level-0 table #156: started
+2026/11/27-00:39:07.540 2c10ca Level-0 table #156: 69274 bytes OK
+2026/11/27-00:39:07.544 2c10ca Delete type=0 #152
+2026/11/27-00:41:07.519 2c10ca Level-0 table #158: started
+2026/11/27-00:41:07.520 2c10ca Level-0 table #158: 69464 bytes OK
+2026/11/27-00:41:07.522 2c10ca Delete type=0 #155

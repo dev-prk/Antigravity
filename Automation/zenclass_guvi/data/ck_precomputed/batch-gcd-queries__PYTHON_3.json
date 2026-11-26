@@ -1,0 +1,1 @@
+{"slug": "batch-gcd-queries", "lang": "PYTHON 3", "code": "import sys\nimport math\nimport ast\n\ndata = sys.stdin.read().strip()\npairs = ast.literal_eval(data)\nfor a, b in pairs:\n    print(math.gcd(a, b))\n", "local_ok": true, "err": ""}

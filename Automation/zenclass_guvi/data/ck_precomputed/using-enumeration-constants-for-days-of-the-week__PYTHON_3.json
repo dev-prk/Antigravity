@@ -1,0 +1,1 @@
+{"slug": "using-enumeration-constants-for-days-of-the-week", "lang": "PYTHON 3", "code": "from enum import Enum\n\nclass Day(Enum):\n    Sunday = 0\n    Monday = 1\n    Tuesday = 2\n    Wednesday = 3\n    Thursday = 4\n    Friday = 5\n    Saturday = 6\n\ndayNumber = int(input())\nd = Day(dayNumber)\nprint(d.value)\n", "local_ok": true, "err": ""}

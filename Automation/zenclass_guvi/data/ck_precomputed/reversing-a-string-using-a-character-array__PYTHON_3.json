@@ -1,0 +1,1 @@
+{"slug": "reversing-a-string-using-a-character-array", "lang": "PYTHON 3", "code": "string = input().strip()\nchar_array = list(string)\nn = len(char_array)\nresult = []\ni = n - 1\nwhile i >= 0:\n    result.append(char_array[i])\n    i -= 1\nprint(''.join(result))\n", "local_ok": true, "err": ""}

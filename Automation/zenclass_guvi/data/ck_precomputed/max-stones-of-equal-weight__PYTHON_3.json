@@ -1,0 +1,1 @@
+{"slug": "max-stones-of-equal-weight", "lang": "PYTHON 3", "code": "import sys\n\ndef solve():\n    t = int(sys.stdin.readline().strip())\n    for _ in range(t):\n        n = int(sys.stdin.readline().strip())\n        print((n + 1) // 2)\n\nif __name__ == \"__main__\":\n    solve()\n", "local_ok": false, "err": "Mismatch #2: in='1\\n27' exp='13' got='14'"}
