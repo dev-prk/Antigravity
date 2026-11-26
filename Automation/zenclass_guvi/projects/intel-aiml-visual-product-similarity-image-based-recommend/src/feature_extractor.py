@@ -31,12 +31,11 @@ class ResNetVisualFeatureExtractor:
         self.pretrained_loaded = False
         self.backbone = self._build_resnet50_backbone()
         self.transform = transforms.Compose([
-            transforms.Resize(232),
-            transforms.CenterCrop(224),
+            transforms.Resize((256, 256)),
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ])
-        self.scaler = StandardScaler(with_mean=True, with_std=False)
+        self.scaler = StandardScaler()
         self.projector = None
 
     def _build_resnet50_backbone(self) -> nn.Module:
@@ -45,12 +44,11 @@ class ResNetVisualFeatureExtractor:
             net = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
             self.pretrained_loaded = True
         except Exception:
-            # Deterministic offline initialization of ResNet50 feature extractor
             torch.manual_seed(self.random_state)
             net = models.resnet50(weights=None)
             self.pretrained_loaded = False
-        # Remove final FC classification layer -> (B, 2048, 1, 1) pooled visual features
-        backbone = nn.Sequential(*list(net.children())[:-1])
+        # Keep up to layer4 spatial feature map (B, 2048, 8, 8) for MAC (Max + Avg) pooling
+        backbone = nn.Sequential(*list(net.children())[:-2])
         backbone.eval()
         for p in backbone.parameters():
             p.requires_grad = False
@@ -105,10 +103,15 @@ class ResNetVisualFeatureExtractor:
         with torch.no_grad():
             for i in range(0, len(pil_list), batch_size):
                 batch_tensors = torch.stack([self.transform(im) for im in pil_list[i:i + batch_size]]).to(self.device)
-                # Full 2048-d pooled ResNet50 feature vector
-                out = self.backbone(batch_tensors).squeeze(-1).squeeze(-1).cpu().numpy()
-                out = out / (np.linalg.norm(out, axis=1, keepdims=True) + 1e-8)
-                cnn_chunks.append(out)
+                # Spatial feature map (B, 2048, 8, 8) -> Concat Global Avg Pool + Global Max Pool (MAC descriptor)
+                fmap = self.backbone(batch_tensors)
+                gap = fmap.mean(dim=(2, 3))
+                gmp = fmap.amax(dim=(2, 3))
+                gap = gap / (torch.norm(gap, dim=1, keepdim=True) + 1e-8)
+                gmp = gmp / (torch.norm(gmp, dim=1, keepdim=True) + 1e-8)
+                mac = torch.cat([gap, gmp], dim=1).cpu().numpy()
+                mac = mac / (np.linalg.norm(mac, axis=1, keepdims=True) + 1e-8)
+                cnn_chunks.append(mac)
         cnn_feats = np.vstack(cnn_chunks).astype(np.float32)
         if self.pretrained_loaded:
             return cnn_feats
@@ -117,17 +120,18 @@ class ResNetVisualFeatureExtractor:
 
     def fit_projection(self, raw_features: np.ndarray, labels: np.ndarray) -> None:
         from sklearn.linear_model import LogisticRegression
-        self.scaler.fit(raw_features)
-        self.projector = LogisticRegression(C=2.0, max_iter=500, random_state=self.random_state)
-        self.projector.fit(raw_features, labels)
+        scaled = self.scaler.fit_transform(raw_features)
+        self.projector = LogisticRegression(C=0.25, max_iter=500, random_state=self.random_state)
+        self.projector.fit(scaled, labels)
 
     def project(self, raw_features: np.ndarray) -> np.ndarray:
-        # Fuse L2-normalized 2048-d ResNet50 embeddings with calibrated semantic category affinity
         base_norm = raw_features / (np.linalg.norm(raw_features, axis=1, keepdims=True) + 1e-8)
         if self.projector is None:
             return base_norm.astype(np.float32)
-        probs = self.projector.predict_proba(raw_features).astype(np.float32)
-        fused = np.hstack([base_norm, probs * 0.75]).astype(np.float32)
+        scaled = self.scaler.transform(raw_features)
+        probs = self.projector.predict_proba(scaled).astype(np.float32)
+        probs_norm = probs / (np.linalg.norm(probs, axis=1, keepdims=True) + 1e-8)
+        fused = np.hstack([base_norm * 0.65, probs_norm * 0.75]).astype(np.float32)
         norms = np.linalg.norm(fused, axis=1, keepdims=True) + 1e-8
         return (fused / norms).astype(np.float32)
 

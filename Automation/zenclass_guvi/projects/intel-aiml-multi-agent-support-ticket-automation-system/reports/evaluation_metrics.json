@@ -1,0 +1,25 @@
+{
+  "category_classification": {
+    "logistic_regression_accuracy": 1.0,
+    "random_forest_accuracy": 1.0,
+    "selected_model": "LogisticRegression",
+    "accuracy": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0
+  },
+  "priority_classification_accuracy": 0.921,
+  "sentiment_classification_accuracy": 0.521,
+  "rag_retrieval": {
+    "kb_documents_indexed": 270,
+    "top3_category_relevance_rate": 0.935,
+    "avg_top1_semantic_similarity": 0.7727,
+    "avg_token_f1_overlap": 0.1355
+  },
+  "business_impact": {
+    "dataset_baseline_resolution_days": 4.82,
+    "ai_pipeline_avg_latency_seconds": 0.08,
+    "estimated_automation_rate": 0.7467,
+    "historical_escalation_rate": 0.3378
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "production_prompt_version": "v2_broadcast_grounded",
+  "commentary_factual_accuracy": 1.0,
+  "llm_judge_fluency": 4.6,
+  "llm_judge_excitement": 4.52,
+  "llm_judge_overall": 4.56,
+  "qa_50_question_accuracy": 1.0,
+  "qa_questions_tested": 50,
+  "avg_event_to_audio_latency_s": 0.0052,
+  "avg_voice_question_to_spoken_answer_s": 0.0085,
+  "asr_word_error_rate": 0.0,
+  "estimated_aws_cost_per_match_usd": 0.042,
+  "mlflow_runs": [
+    {
+      "run_id": "2299f6a6af5b",
+      "timestamp": "2026-11-26T03:03:34.128478+00:00",
+      "prompt_version": "v1_minimal",
+      "deliveries_evaluated": 40,
+      "factual_accuracy": 1.0,
+      "avg_fluency_score": 3.902,
+      "avg_excitement_score": 3.65,
+      "avg_judge_score": 3.776,
+      "avg_event_to_audio_latency_s": 0.0055
+    },
+    {
+      "run_id": "8bd1ef64f453",
+      "timestamp": "2026-11-26T03:03:34.339173+00:00",
+      "prompt_version": "v2_broadcast_grounded",
+      "deliveries_evaluated": 40,
+      "factual_accuracy": 1.0,
+      "avg_fluency_score": 4.6,
+      "avg_excitement_score": 4.52,
+      "avg_judge_score": 4.56,
+      "avg_event_to_audio_latency_s": 0.0052
+    }
+  ]
+}
