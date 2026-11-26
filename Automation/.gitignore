@@ -1,0 +1,13 @@
+# Ignore virtual environments & caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Ignore oversized raw downloads (>50MB) that exceed GitHub push limits
+**/raw_downloads/
+**/Traffic_Violations.csv
+**/*.mp4
+**/*.zip
+zenclass_guvi/.browser_profile/

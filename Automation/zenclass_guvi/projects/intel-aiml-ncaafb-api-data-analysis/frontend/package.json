@@ -1,7 +1,0 @@
-{
-  "name": "intel-aiml-ncaafb-api-data-analysis-frontend",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "npx serve ."
-  }
-}

@@ -1,8 +1,5 @@
-node_modules/
 __pycache__/
 *.pyc
-.DS_Store
+.pytest_cache/
 .env
-dist/
-build/
-validation_report.json
+data/api_cache/
