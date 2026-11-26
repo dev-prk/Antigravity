@@ -11445,10 +11445,10 @@
  "masked-phone-numbers": {
   "status": "FAILED_PLATFORM",
   "language": "C",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n1/3\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
-  "duration_s": 38.37,
-  "ts": "2026-11-26T19:42:37.276991+00:00"
+  "attempts": 2,
+  "reason": "Answer\nCompiler Error\nTest Cases\n1/3\nLanguage\nC\nrun: line 1: 3 Segmentation fault (core dumped) ./a.out Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40",
+  "duration_s": 1.54,
+  "ts": "2026-11-26T19:44:15.828866+00:00"
  },
  "matrix-chain-multiplication-mcm": {
   "status": "COMPLETED",
@@ -11469,10 +11469,10 @@
  "matrix-inverse-for-car-unlock": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n63ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
-  "duration_s": 1.49,
-  "ts": "2026-11-26T19:42:54.514916+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n51ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:44:27.578011+00:00"
  },
  "matrix-neighbour-sum-replacement": {
   "status": "COMPLETED",
@@ -11493,26 +11493,26 @@
  "matrix-password-cracker": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n57ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\nimport sys\n\ndef main():\n    data = sys.std",
-  "duration_s": 1.53,
-  "ts": "2026-11-26T19:42:59.553551+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n66ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\nimport sys\n\ndef main():\n    data = sys.std",
+  "duration_s": 1.56,
+  "ts": "2026-11-26T19:44:21.241686+00:00"
  },
  "matrix-pattern-generation": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n58ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nimport sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    size = 2 * n - 1\n    \n    for i in ran",
-  "duration_s": 1.6,
-  "ts": "2026-11-26T19:43:01.167675+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n50ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nimport sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    size = 2 * n - 1\n    \n    for i in ran",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:44:24.264471+00:00"
  },
  "max-1s-in-binary": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to parse the problem statement correctly. It says: \"Write a C program to find the elements which have the maximum number of 1's in its binary form",
-  "duration_s": 1.65,
-  "ts": "2026-11-26T19:43:02.834351+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n61ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\nimport sys\n\ndef count_ones(n):\n    return bin(n).count('1')\n",
+  "duration_s": 1.78,
+  "ts": "2026-11-26T19:44:26.055900+00:00"
  },
  "max-after-each-insertion": {
   "status": "COMPLETED",
@@ -11613,18 +11613,18 @@
  "max-length-of-alternating-string": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n73ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\nimport sys\nfrom collecti",
-  "duration_s": 2.54,
-  "ts": "2026-11-26T19:43:42.400312+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n69ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\nimport sys\nfrom collections im",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T19:44:30.764865+00:00"
  },
  "max-length-of-balanced-parentheses": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n67ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\nimport sys\n\ndef solve():\n    s = sys.stdin.readline().strip()\n    ",
-  "duration_s": 1.49,
-  "ts": "2026-11-26T19:43:43.901989+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n66ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nimport sys\n\ndef solve():\n    s = sys.stdin.readline().strip()\n    if ",
+  "duration_s": 2.52,
+  "ts": "2026-11-26T19:44:33.292652+00:00"
  },
  "max-length-subarray-with-sum-zero": {
   "status": "COMPLETED",
@@ -11641,5 +11641,237 @@
   "reason": "SOLVED_MODAL",
   "duration_s": 1.77,
   "ts": "2026-11-26T19:43:47.463471+00:00"
+ },
+ "max-meetings-in-one-room": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:43:47.775164+00:00"
+ },
+ "max-min-difference-calculator": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.6,
+  "ts": "2026-11-26T19:44:38.111320+00:00"
+ },
+ "max-nodes-in-binary-heap-of-height-h": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nCompiler Error\nTest Cases\n2/5\nLanguage\nPYTHON 3\nMaximum Time Limit Exceeded\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\nimport sys\n\ndef main():\n    H = int(sys.stdin.readline().strip())\n    if H < 0:\n        print(-1)\n    else:\n        print((1 ",
+  "duration_s": 9.7,
+  "ts": "2026-11-26T19:44:47.826183+00:00"
+ },
+ "max-of-consecutive-pairs": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.66,
+  "ts": "2026-11-26T19:44:09.641841+00:00"
+ },
+ "max-of-mins-after-k-partitions": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:44:09.927037+00:00"
+ },
+ "max-ones-in-a-row": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T19:44:11.425495+00:00"
+ },
+ "max-product-subarray": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.3,
+  "ts": "2026-11-26T19:44:11.744529+00:00"
+ },
+ "max-repeated-character-count": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 2.5,
+  "ts": "2026-11-26T19:44:14.277291+00:00"
+ },
+ "max-size-square-submatrix": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.29,
+  "ts": "2026-11-26T19:44:16.153309+00:00"
+ },
+ "max-stock-profit-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T19:44:17.782804+00:00"
+ },
+ "max-stock-profit": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.3,
+  "ts": "2026-11-26T19:44:18.094014+00:00"
+ },
+ "max-stones-of-equal-weight": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n50ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\nimport sys\n\ndef solve():\n    t = int(sys.stdin.readline().strip())\n    for _ in range(t):\n        n = int(sys.stdin.readline().st",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T19:44:49.517481+00:00"
+ },
+ "max-subarray-sum": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T19:44:22.744049+00:00"
+ },
+ "max-sum-increasing-subarray": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T19:44:29.244541+00:00"
+ },
+ "max-sum-of-adjacent-pairs": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.69,
+  "ts": "2026-11-26T19:44:51.220599+00:00"
+ },
+ "max-sum-of-consecutive-pairs": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n50ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n    if not data:\n        return\n    n = in",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:44:52.792091+00:00"
+ },
+ "max-sum-with-constraints": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n62ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.54,
+  "ts": "2026-11-26T19:44:54.343854+00:00"
+ },
+ "max-xor-queries": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.7,
+  "ts": "2026-11-26T19:44:56.061808+00:00"
+ },
+ "maximal-palindrome-from-lists": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:44:57.717338+00:00"
+ },
+ "maximal-palindrome-length": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:44:59.262053+00:00"
+ },
+ "maximal-rectangle-area": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:45:00.799994+00:00"
+ },
+ "maximize-ones-by-swapping": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n68ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\nimport sys\n\ndef main():\n    s ",
+  "duration_s": 1.76,
+  "ts": "2026-11-26T19:45:02.576896+00:00"
+ },
+ "maximize-rope-length-after-cuts": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/6\nLanguage\nPYTHON 3\nRuntime\n\n79ms\n\nMemory\n\n19kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\nimport sys\nimport heapq\n\ndef main():\n  ",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:45:04.100384+00:00"
+ },
+ "maximize-single-element": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to find maximum possible final value by repeatedly combining two numbers a, b into X=2*(a+b). Wait sample: 4 and 3 -> 2*(4+3)=14, but output 343. ",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:45:05.640944+00:00"
+ },
+ "maximizing-average-superhero-power": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.36,
+  "ts": "2026-11-26T19:45:09.013522+00:00"
+ },
+ "maximum-circular-subarray-sum": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.67,
+  "ts": "2026-11-26T19:45:18.698554+00:00"
+ },
+ "maximum-difference-in-an-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T19:45:20.237831+00:00"
+ },
+ "maximum-difference-in-array": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 11.25,
+  "ts": "2026-11-26T19:45:31.505783+00:00"
+ },
+ "maximum-independent-set-in-a-tree": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.78,
+  "ts": "2026-11-26T19:45:40.298355+00:00"
  }
 }

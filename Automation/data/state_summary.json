@@ -1,34 +1,45 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-26T19:43:47.486680+00:00",
+  "last_updated": "2026-11-26T19:45:40.322703+00:00",
   "summary": {
-    "total_discovered": 173,
-    "total_completed": 100,
+    "total_discovered": 177,
+    "total_completed": 103,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 73,
-    "success_rate_percent": 57.8,
-    "total_time_spent_seconds": 997.49,
+    "total_failed": 74,
+    "success_rate_percent": 58.19,
+    "total_time_spent_seconds": 1011.1,
     "by_platform": {
       "guvi": {
-        "total_discovered": 173,
-        "total_completed": 100,
+        "total_discovered": 177,
+        "total_completed": 103,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 73,
-        "success_rate_percent": 57.8,
-        "time_spent_seconds": 997.49
+        "total_failed": 74,
+        "success_rate_percent": 58.19,
+        "time_spent_seconds": 1011.1
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 173,
-        "completed": 100,
-        "success_rate_percent": 57.8
+        "total": 177,
+        "completed": 103,
+        "success_rate_percent": 58.19
       }
     },
     "human_intervention_issues": [
+      {
+        "task_id": "guvi-masked-phone-numbers",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "masked-phone-numbers",
+        "status": "FAILED",
+        "attempts": 2,
+        "failure_reason": "Answer\nCompiler Error\nTest Cases\n1/3\nLanguage\nC\nrun: line 1: 3 Segmentation fault (core dumped) ./a.out Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40",
+        "next_action": "NONE",
+        "url": "https://www.guvi.in/code-kata/masked-phone-numbers/"
+      },
       {
         "task_id": "guvi-lowest-number-after-removal",
         "platform": "guvi",
@@ -4119,6 +4130,82 @@
       "created_at": "2026-11-26T19:43:47.485120+00:00",
       "updated_at": "2026-11-26T19:43:47.485120+00:00",
       "timestamp": "2026-11-26T19:43:47.485120+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-masked-phone-numbers",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "masked-phone-numbers",
+      "url": "https://www.guvi.in/code-kata/masked-phone-numbers/",
+      "status": "FAILED",
+      "attempt_count": 2,
+      "result": "FAILED_PLATFORM",
+      "failure_reason": "Answer\nCompiler Error\nTest Cases\n1/3\nLanguage\nC\nrun: line 1: 3 Segmentation fault (core dumped) ./a.out Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40",
+      "next_action": "NONE",
+      "time_spent_seconds": 1.54,
+      "metadata": {},
+      "created_at": "2026-11-26T19:44:15.843299+00:00",
+      "updated_at": "2026-11-26T19:44:15.843299+00:00",
+      "timestamp": "2026-11-26T19:44:15.843299+00:00",
+      "attempts": 2,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-max-sum-increasing-subarray",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "max-sum-increasing-subarray",
+      "url": "https://www.guvi.in/code-kata/max-sum-increasing-subarray/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 1.65,
+      "metadata": {},
+      "created_at": "2026-11-26T19:44:29.258036+00:00",
+      "updated_at": "2026-11-26T19:44:29.258036+00:00",
+      "timestamp": "2026-11-26T19:44:29.258036+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-maximal-palindrome-from-lists",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "maximal-palindrome-from-lists",
+      "url": "https://www.guvi.in/code-kata/maximal-palindrome-from-lists/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 1.64,
+      "metadata": {},
+      "created_at": "2026-11-26T19:44:57.735500+00:00",
+      "updated_at": "2026-11-26T19:44:57.735500+00:00",
+      "timestamp": "2026-11-26T19:44:57.735500+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-maximum-independent-set-in-a-tree",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "maximum-independent-set-in-a-tree",
+      "url": "https://www.guvi.in/code-kata/maximum-independent-set-in-a-tree/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 8.78,
+      "metadata": {},
+      "created_at": "2026-11-26T19:45:40.320661+00:00",
+      "updated_at": "2026-11-26T19:45:40.320661+00:00",
+      "timestamp": "2026-11-26T19:45:40.320661+00:00",
       "attempts": 1,
       "category": "CodeKata"
     }
