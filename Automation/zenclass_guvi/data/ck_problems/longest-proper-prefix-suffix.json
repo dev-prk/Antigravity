@@ -3,7 +3,7 @@
  "slug": "longest-proper-prefix-suffix",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1551. Longest Proper Prefix Suffix\n\n80\n\nHard\n\nProblem Statement:\nGiven a string S, find the length of the longest proper prefix of S which is also a suffix of S. A proper prefix is a prefix that is not equal to the string itself. The prefix and suffix should not overlap.",
+ "description": "blem\nHints & Solutions\nSubmissions\n1551\n. \nLongest Proper Prefix Suffix\n80\nHard\nProblem Statement:\nGiven a string S, find the length of the longest proper prefix of S which is also a suffix of S. A proper prefix is a prefix that is not equal to the string itself. The prefix and suffix should not overlap. \nInput Description:\n- A single line containing the string S. \nOutput Description:\n- An integer representing the length of the longest proper prefix of S which is also a suffix. \nSample Input:\nabab \nSample Output:\n0 \nExplanation:\nThe longest proper prefix which is also a suffix is \"ab\", which has length 2. \nAccepted \n9\nSubmissions \n34\nAcceptance Rate \n26.47\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabcdabc\nOutput\n3\nInput\nabcab\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabcdabc\nOutput\n3\nInput\nabcab\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLongest Proper Prefix Suffix\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- A single line containing the string S.",
  "output_spec": "- An integer representing the length of the longest proper prefix of S which is also a suffix.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "abab",
    "output": "0"
+  },
+  {
+   "input": "abcdabc",
+   "output": "3"
+  },
+  {
+   "input": "abcab",
+   "output": "2"
   }
  ],
  "raw": ""

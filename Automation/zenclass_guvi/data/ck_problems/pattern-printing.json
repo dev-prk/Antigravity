@@ -1,0 +1,25 @@
+{
+ "title": "821. Pattern Printing",
+ "slug": "pattern-printing",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n821\n. \nPattern Printing\n30\nEasy\nTopics\nProblem Statement:\nPrint the following pattern \nInput Description:\nGive the number n as input \nOutput Description:\nPrint the required pattern \nExplanation:\nprint the pattern \nSample Input:\n3 \nSample Output:\n111 \n00 \n1 \nAccepted \n295\nSubmissions \n603\nAcceptance Rate \n48.92\n%\nTopics\npatterns - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n0000 \n111 \n00 \n1 \nInput\n5\nOutput\n11111 \n0000 \n111 \n00 \n1 \nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n0000 \n111 \n00 \n1 \nInput\n5\nOutput\n11111 \n0000 \n111 \n00 \n1 \nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPattern Printing\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Give the number n as input",
+ "output_spec": "Print the required pattern \nExplanation:\nprint the pattern",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "111 \n00 \n1"
+  },
+  {
+   "input": "4",
+   "output": "0000 \n111 \n00 \n1"
+  },
+  {
+   "input": "5",
+   "output": "11111 \n0000 \n111 \n00 \n1"
+  }
+ ],
+ "raw": ""
+}

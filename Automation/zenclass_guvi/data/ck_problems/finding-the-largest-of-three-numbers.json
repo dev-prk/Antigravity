@@ -3,14 +3,22 @@
  "slug": "finding-the-largest-of-three-numbers",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2116. Finding the Largest of Three Numbers\n\n40\n\nMedium\n\nProblem Statement\nRead three integers and print the largest of the three using nested if-else statements.\n\nDescription\nRead three integers a, b and c from input. Use nested if-else statements to compare the three values and determine the largest one, then print it.",
- "input_spec": ". Use nested if-else statements to compare the three values and determine the largest one, then print it.\n\nInput Description\nThree integers a, b and c separated by spaces.",
+ "description": " & Solutions\nSubmissions\n2116\n. \nFinding the Largest of Three Numbers\n40\nMedium\nProblem Statement\nRead three integers and print the largest of the three using nested if-else statements.\nDescription\nRead three integers a, b and c from input. Use nested if-else statements to compare the three values and determine the largest one, then print it.\nInput Description\nThree integers a, b and c separated by spaces.\nOutput Description\nPrint the largest of the three numbers.\nSample Input\n4 9 7\nSample Output\n9\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n4 9 7\nOutput\n9\nInput\n10 2 3\nOutput\n10\nInput\n5 5 5\nOutput\n5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n4 9 7\nOutput\n9\nInput\n10 2 3\nOutput\n10\nInput\n5 5 5\nOutput\n5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Largest of Three Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Three integers a, b and c separated by spaces.",
  "output_spec": "Print the largest of the three numbers.",
  "constraints": "",
  "samples": [
   {
    "input": "4 9 7",
    "output": "9"
+  },
+  {
+   "input": "10 2 3",
+   "output": "10"
+  },
+  {
+   "input": "5 5 5",
+   "output": "5"
   }
  ],
  "raw": ""

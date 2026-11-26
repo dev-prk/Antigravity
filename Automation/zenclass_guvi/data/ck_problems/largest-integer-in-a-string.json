@@ -1,0 +1,25 @@
+{
+ "title": "475. Largest Integer in a String",
+ "slug": "largest-integer-in-a-string",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n475\n. \nLargest Integer in a String\n20\nEasy\nTopics\nProblem Statement:\nYou are given with a string which comprises of some numbers. Your task is to find the largest integer by converting the string to the corresponding integer. \nInput Description:\nFirst line contains n denoting number of Test Cases. The first and only Line of testcase has the string \nOutput Description:\nPrint the largest number \nSample Input:\nI was born on 12 october 1998. \nSample Output:\n1998 \nExplanation:\nIntegers present 12 and 1998\n1998>12 \nAccepted \n3k\nSubmissions \n5k\nAcceptance Rate \n66.53\n%\nTopics\nmathematics\nstrings\ninteger\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nIndia got independence on 15 august 1947. But they were fighting for it for last 90 years.\nOutput\n1947\nInput\nHer birthdate is 27 july but I wished her on 28.\nOutput\n28\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nIndia got independence on 15 august 1947. But they were fighting for it for last 90 years.\nOutput\n1947\nInput\nHer birthdate is 27 july but I wished her on 28.\nOutput\n28\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLargest Integer in a String\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains n denoting number of Test Cases. The first and only Line of testcase has the string",
+ "output_spec": "Print the largest number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "I was born on 12 october 1998.",
+   "output": "1998"
+  },
+  {
+   "input": "India got independence on 15 august 1947. But they were fighting for it for last 90 years.",
+   "output": "1947"
+  },
+  {
+   "input": "Her birthdate is 27 july but I wished her on 28.",
+   "output": "28"
+  }
+ ],
+ "raw": ""
+}

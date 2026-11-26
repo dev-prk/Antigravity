@@ -3,7 +3,7 @@
  "slug": "checking-whether-two-words-are-anagrams",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2207. Checking Whether Two Words Are Anagrams\n\n90\n\nHard\n\nProblem Statement\nRead two words and determine whether they are anagrams of each other, using a letter-count array.\n\nDescription\nTwo words are anagrams if they contain exactly the same letters the same number of times, in any order, for example listen and silent. Read two words made of lowercase letters only. Use an integer array freq of size 26, where freq[0] counts the letter 'a', freq[1] counts 'b', and so on; the position of a letter ch in the array is ch - 'a'. Set all 26 counts to 0, add 1 to the count of every letter of the first word, and subtract 1 for every letter of the second word. If all 26 counts are 0 at the end, print \"Anagram\", otherwise print \"Not Anagram\".",
+ "description": "& Solutions\nSubmissions\n2207\n. \nChecking Whether Two Words Are Anagrams\n90\nHard\nProblem Statement\nRead two words and determine whether they are anagrams of each other, using a letter-count array.\nDescription\nTwo words are anagrams if they contain exactly the same letters the same number of times, in any order, for example listen and silent. Read two words made of lowercase letters only. Use an integer array freq of size 26, where freq[0] counts the letter 'a', freq[1] counts 'b', and so on; the position of a letter ch in the array is ch - 'a'. Set all 26 counts to 0, add 1 to the count of every letter of the first word, and subtract 1 for every letter of the second word. If all 26 counts are 0 at the end, print \"Anagram\", otherwise print \"Not Anagram\".\nInput Description\nTwo words made of lowercase letters, separated by a space.\nOutput Description\nPrint \"Anagram\" if the two words are anagrams, otherwise print \"Not Anagram\".\nSample Input\nlisten silent\nSample Output\nAnagram\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nlisten silent\nOutput\nAnagram\nInput\nhello world\nOutput\nNot Anagram\nInput\nabc abcd\nOutput\nNot Anagram\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nlisten silent\nOutput\nAnagram\nInput\nhello world\nOutput\nNot Anagram\nInput\nabc abcd\nOutput\nNot Anagram\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nChecking Whether Two Words Are Anagrams\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two words made of lowercase letters, separated by a space.",
  "output_spec": "Print \"Anagram\" if the two words are anagrams, otherwise print \"Not Anagram\".",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "listen silent",
    "output": "Anagram"
+  },
+  {
+   "input": "hello world",
+   "output": "Not Anagram"
+  },
+  {
+   "input": "abc abcd",
+   "output": "Not Anagram"
   }
  ],
  "raw": ""

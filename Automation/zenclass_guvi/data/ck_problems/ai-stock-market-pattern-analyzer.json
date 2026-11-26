@@ -3,14 +3,18 @@
  "slug": "ai-stock-market-pattern-analyzer",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1923. AI Stock Market Pattern Analyzer\n\n80\n\nHard  Topics\n\nAI Stock Market Pattern Analyzer\n\nProblem Statement\n\nAn AI engine analyzes stock price data.\n\nGiven daily stock prices:\n\nThe system must:\n1. Find the longest increasing streak (consecutive days).\n2. Find the Next Greater Element for each day.\n3. Compute maximum profit with at most K transactions.\n\nDesign an efficient solution using advanced data structures.\n\nInput Format\nn\nprice1 price2 ... priceN\nk\n\nOutput Format\nPrint:\nLongest Increasing Streak: X\nMax Profit: Y",
- "input_spec": "n\nprice1 price2 ... priceN\nk",
- "output_spec": "Print:\nLongest Increasing Streak: X\nMax Profit: Y",
+ "description": "I Stock Market Pattern Analyzer\n80\nHard\nTopics\nAI Stock Market Pattern Analyzer\nProblem Statement\nAn AI engine analyzes stock price data.\nGiven daily stock prices:\nThe system must:\n1. Find the longest increasing streak (consecutive days).\n2. Find the Next Greater Element for each day.\n3. Compute maximum profit with at most K transactions.\nDesign an efficient solution using advanced data structures.\nInput Format\nn\nprice1 price2 ... priceN\nk\nOutput Format\nPrint:\nLongest Increasing Streak: X\nMax Profit: Y\nSample Input\n6\n100 180 260 310 40 535\n2\nSample Output\nLongest Increasing Streak: 4\nMax Profit: 705\nExplanation\nIncreasing streak: 100 \u2192 180 \u2192 260 \u2192 310 (length 4)\nMax Profit:\nBuy at 100 sell at 310 \u2192 210\nBuy at 40 sell at 535 \u2192 495\nTotal = 705 (if optimal strategy allowed)\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\nstack\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5\n5 4 3 2 1\n1\nOutput\nLongest Increasing Streak: 1\nMax Profit: 0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5\n5 4 3 2 1\n1\nOutput\nLongest Increasing Streak: 1\nMax Profit: 0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAI Stock Market Pattern Analyzer\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "6\n100 180 260 310 40 535\n2",
    "output": "Longest Increasing Streak: 4\nMax Profit: 705"
+  },
+  {
+   "input": "5\n5 4 3 2 1\n1",
+   "output": "Longest Increasing Streak: 1\nMax Profit: 0"
   }
  ],
  "raw": ""

@@ -1,0 +1,25 @@
+{
+ "title": "474. Find Rajesh's Highest Marks",
+ "slug": "find-rajesh-s-highest-marks",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n474\n. \nFind Rajesh's Highest Marks\n20\nEasy\nTopics\nProblem Statement:\nRajesh and Ram are having a conflict on the maximum marks that they have scored in all the exams conducted in the past year. The one having scored the maximum gets a treat from the other. They decide to go through their test papers and record their highest marks. You are Rajesh's best friend and as he has tutions to attend, he gives you all his test papers and asks you to find out the maximum marks that he has scored among all the marks in all exams. He promises you a treat if he wins the bet with Ram. Help Rajesh find out his highest marks. \nConstraints:\n1 <= N <= 10\n0 <= A[] <= 100 \nInput Description:\nFirst line contains count of marks. Next line is the list of marks obtained by Rajesh. \nOutput Description:\nHighest marks obtained by Rajesh. \nSample Input:\n3\n82 96 72 \nSample Output:\n96 \nExplanation:\nThe highest marks he has scored is 96. \nAccepted \n6k\nSubmissions \n6k\nAcceptance Rate \n95.25\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n10 9 8 7 6 5 4 3 2 1\nOutput\n10\nInput\n5\n210 888 21 90 1\nOutput\n888\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n10 9 8 7 6 5 4 3 2 1\nOutput\n10\nInput\n5\n210 888 21 90 1\nOutput\n888\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFind Rajesh's Highest Marks\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains count of marks. Next line is the list of marks obtained by Rajesh.",
+ "output_spec": "Highest marks obtained by Rajesh.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n82 96 72",
+   "output": "96"
+  },
+  {
+   "input": "10\n10 9 8 7 6 5 4 3 2 1",
+   "output": "10"
+  },
+  {
+   "input": "5\n210 888 21 90 1",
+   "output": "888"
+  }
+ ],
+ "raw": ""
+}

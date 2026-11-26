@@ -1,0 +1,21 @@
+{
+ "title": "1003. Uppercase and Lowercase Count-2",
+ "slug": "uppercase-and-lowercase-count-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " & Solutions\nSubmissions\n1003\n. \nUppercase and Lowercase Count-2\n30\nEasy\nTopics\nProblem Statement:\nGiven a string find the number of uppercase letters and lowercase letters \nInput Description:\nGiven a string \nOutput Description:\nPrint the number of uppercase and lowercase \nSample Input:\nGuvi Geek \nSample Output:\n2 6 \nExplanation:\n\u2018Guvi Geek\u2019 is the given string, G,G are two Uppercase and rest are lowercase so print count of uppercase and lowercase from string 2 6 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n93.51\n%\nTopics\nzen\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nGuvi Geek\nOutput\n2 6\nInput\nWELL\nOutput\n4 0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nGuvi Geek\nOutput\n2 6\nInput\nWELL\nOutput\n4 0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nUppercase and Lowercase Count-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Given a string",
+ "output_spec": "Print the number of uppercase and lowercase",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Guvi Geek",
+   "output": "2 6"
+  },
+  {
+   "input": "WELL",
+   "output": "4 0"
+  }
+ ],
+ "raw": ""
+}

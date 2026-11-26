@@ -1,0 +1,29 @@
+{
+ "title": "2061. Hashing Without Collision",
+ "slug": "hashing-without-collision",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nHints & Solutions\nSubmissions\n2061\n. \nHashing Without Collision\n30\nEasy\nProblem Statement\nGiven a hash table of size m and n keys, insert the keys into the hash table using the hash function:\nh(key) = key % m\nIt is guaranteed that no collisions will occur.\nPrint the final hash table. Empty positions should contain -1.\nInput Format\nFirst line contains two integers m and n.\nSecond line contains n space-separated integers representing the keys.\nOutput Format\nPrint the hash table elements separated by spaces.\nConstraints\n1 \u2264 m \u2264 100\n1 \u2264 n \u2264 m\nSample Input\n10 5\n12 25 36 47 58\nSample Output\n-1 -1 12 -1 -1 25 36 47 58 -1\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n7 3\n10 15 20\nOutput\n-1 15 -1 10 -1 -1 20\nInput\n5 2\n1 2\nOutput\n-1 1 2 -1 -1\nInput\n8 4\n8 17 26 35\nOutput\n8 17 26 35 -1 -1 -1 -1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n7 3\n10 15 20\nOutput\n-1 15 -1 10 -1 -1 20\nInput\n5 2\n1 2\nOutput\n-1 1 2 -1 -1\nInput\n8 4\n8 17 26 35\nOutput\n8 17 26 35 -1 -1 -1 -1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nHashing Without Collision\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 5\n12 25 36 47 58",
+   "output": "-1 -1 12 -1 -1 25 36 47 58 -1"
+  },
+  {
+   "input": "7 3\n10 15 20",
+   "output": "-1 15 -1 10 -1 -1 20"
+  },
+  {
+   "input": "5 2\n1 2",
+   "output": "-1 1 2 -1 -1"
+  },
+  {
+   "input": "8 4\n8 17 26 35",
+   "output": "8 17 26 35 -1 -1 -1 -1"
+  }
+ ],
+ "raw": ""
+}

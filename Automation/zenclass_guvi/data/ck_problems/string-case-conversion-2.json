@@ -1,0 +1,25 @@
+{
+ "title": "649. String Case Conversion-2",
+ "slug": "string-case-conversion-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n649\n. \nString Case Conversion-2\n20\nEasy\nTopics\nProblem Statement:\nWrite a program to get a string S, Type of conversion (1 - Convert to Lowercase, 2 - Convert to Uppercase) T, and integer P . Convert the case of the letters in the positions which are multiples of P.(1 based indexing). \nInput Description:\nGiven a string S, Type of conversion T, and integer P \nOutput Description:\nConvert the case of the letters and print the string \nSample Input:\nProFiLe\n1\n2 \nSample Output:\nProfile \nExplanation:\nthe given string ProFiLe is converted to case 1 in the positions of multiples of 2 \nAccepted \n3k\nSubmissions \n4k\nAcceptance Rate \n77.98\n%\nTopics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nGuViGEek\n1\n3\nOutput\nGuviGeek\nInput\nenvironment\n2\n1\nOutput\nENVIRONMENT\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nGuViGEek\n1\n3\nOutput\nGuviGeek\nInput\nenvironment\n2\n1\nOutput\nENVIRONMENT\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Case Conversion-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Given a string S, Type of conversion T, and integer P",
+ "output_spec": "Convert the case of the letters and print the string",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "ProFiLe\n1\n2",
+   "output": "Profile"
+  },
+  {
+   "input": "GuViGEek\n1\n3",
+   "output": "GuviGeek"
+  },
+  {
+   "input": "environment\n2\n1",
+   "output": "ENVIRONMENT"
+  }
+ ],
+ "raw": ""
+}

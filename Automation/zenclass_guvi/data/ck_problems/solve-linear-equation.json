@@ -1,0 +1,25 @@
+{
+ "title": "202. Solve Linear Equation",
+ "slug": "solve-linear-equation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n202\n. \nSolve Linear Equation\n30\nEasy\nTopics\nCompany\nProblem Statement:\nGiven the values of a,b and x in the equation ax + b = y. Find the value of y. \nInput Description:\nThe input consists of three space-separated integers a, b, and x. \nOutput Description:\nThe output is a single integer representing the value of y. \nSample Input:\n3 5 2 \nSample Output:\n11 \nAccepted \n8k\nSubmissions \n8k\nAcceptance Rate \n93.42\n%\nTopics\nmathematics\nCompany\ncompanies\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 5 0\nOutput\n5\nInput\n3 7 1\nOutput\n10\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 5 0\nOutput\n5\nInput\n3 7 1\nOutput\n10\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSolve Linear Equation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of three space-separated integers a, b, and x.",
+ "output_spec": "The output is a single integer representing the value of y.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 5 2",
+   "output": "11"
+  },
+  {
+   "input": "3 5 0",
+   "output": "5"
+  },
+  {
+   "input": "3 7 1",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

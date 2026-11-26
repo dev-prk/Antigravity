@@ -1,0 +1,17 @@
+{
+ "title": "1854. Sort by Frequency",
+ "slug": "sort-by-frequency",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "HCL GUVI | Learn to code in your native language\nCodeKata\nChange Layout\nLeaderboard\nClose\nDescription\nCode Editor\nProblem\nProblem\nHints & Solutions\nSubmissions\n1854\n. \nSort by Frequency\n30\nEasy\nTopics\nProblem: Sort by Frequency (Stable Order)\nYou are given an array of N integers.\nSort the array based on the frequency of elements in descending order.\nRules:\nElement with higher frequency comes first\nIf two elements have the same frequency, the one that appeared first in the original array should come first.\nPrint the full array after sorting.\n\ud83d\udce5 Input Format\nN\na1 a2 a3 ... aN\n\ud83d\udce4 Output Format\nPrint the sorted array.\n\ud83d\udccc Example Explanation\nInput\n7\n4 5 6 5 4 3 4\nFrequency:\n4 \u2192 3 times\n5 \u2192 2 times\n6 \u2192 1 time\n3 \u2192 1 time\nSorted by frequency (descending):\n4 4 4 5 5 6 3\n(6 appears before 3 because 6 appeared earlier in original array)\nOutput\n4 4 4 5 5 6 3\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\nsorting\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n7\n4 5 6 5 4 3 4\nOutput\n4 4 4 5 5 6 3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n7\n4 5 6 5 4 3 4\nOutput\n4 4 4 5 5 6 3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSort by Frequency\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n4 5 6 5 4 3 4",
+   "output": "4 4 4 5 5 6 3"
+  }
+ ],
+ "raw": ""
+}

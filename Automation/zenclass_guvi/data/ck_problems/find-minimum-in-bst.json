@@ -3,7 +3,7 @@
  "slug": "find-minimum-in-bst",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1529. Find Minimum in BST\n\n80\n\nHard\n\nProblem Statement:\nGiven a Binary Search Tree (BST), write a function to find the node with the minimum value. The minimum value node is the leftmost leaf node in the BST. Return the value of this node.",
+ "description": "oblem\nProblem\nHints & Solutions\nSubmissions\n1529\n. \nFind Minimum in BST\n80\nHard\nProblem Statement:\nGiven a Binary Search Tree (BST), write a function to find the node with the minimum value. The minimum value node is the leftmost leaf node in the BST. Return the value of this node. \nInput Description:\n- The first line contains an integer N, the number of nodes in the BST.\n- The second line contains N space-separated integers representing the values to be inserted into the BST in the given order. \nOutput Description:\n- Print a single integer, the minimum value in the BST. \nSample Input:\n7\n20 8 22 4 12 10 14 \nSample Output:\n4 \nExplanation:\nThe BST constructed from the input will have 4 as the leftmost node, which is the minimum value. \nAccepted \n29\nSubmissions \n32\nAcceptance Rate \n90.63\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n15 10 20 8 12\nOutput\n8\nInput\n3\n5 3 7\nOutput\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n15 10 20 8 12\nOutput\n8\nInput\n3\n5 3 7\nOutput\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFind Minimum in BST\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer N, the number of nodes in the BST.\n- The second line contains N space-separated integers representing the values to be inserted into the BST in the given order.",
  "output_spec": "- Print a single integer, the minimum value in the BST.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "7\n20 8 22 4 12 10 14",
    "output": "4"
+  },
+  {
+   "input": "5\n15 10 20 8 12",
+   "output": "8"
+  },
+  {
+   "input": "3\n5 3 7",
+   "output": "3"
   }
  ],
  "raw": ""

@@ -1,0 +1,25 @@
+{
+ "title": "560. Max Wickets Row Index",
+ "slug": "max-wickets-row-index",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nHints & Solutions\nSubmissions\n560\n. \nMax Wickets Row Index\n30\nEasy\nTopics\nProblem Statement:\nJasprit Bumrah's bowling is being analysed by the Indian coach. The pitch is modelled as a rectangular matrix and the point at which the ball bounces is recorded. A ball which leads to a wicket is marked with a 'W' at the place it bounces. The coach wants to know the place at which the ball bounced, which led to the maximum number of wickets. The points at which the ball didn't lead to a wicket are marked with a 'B'. \nInput Description:\nA matrix of dimensions 5*3 followed by the elements of the matrix \nOutput Description:\nThe row index(es) with maximum wickets. Row index starts at 1. \nSample Input:\nB B B\nB W B\nW B B\nB W B\nW W B \nSample Output:\n5 \nExplanation:\nRow index 5 has maximum wickets (2) \nAccepted \n333\nSubmissions \n645\nAcceptance Rate \n51.63\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nB W B\nW W W\nW W W\nW B W\nB B B\nOutput\n2\n3\nInput\nB B B \nW B W\nB B B\nW B B\nB B W\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nB W B\nW W W\nW W W\nW B W\nB B B\nOutput\n2\n3\nInput\nB B B \nW B W\nB B B\nW B B\nB B W\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMax Wickets Row Index\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A matrix of dimensions 5*3 followed by the elements of the matrix",
+ "output_spec": "The row index(es) with maximum wickets. Row index starts at 1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "B B B\nB W B\nW B B\nB W B\nW W B",
+   "output": "5"
+  },
+  {
+   "input": "B W B\nW W W\nW W W\nW B W\nB B B",
+   "output": "2\n3"
+  },
+  {
+   "input": "B B B \nW B W\nB B B\nW B B\nB B W",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

@@ -3,7 +3,7 @@
  "slug": "longest-string-finder",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1132. Longest String Finder\n\n50\n\nMedium\n\nProblem Statement:\nCreate a Java program using a custom functional interface to find the longest string in a list provided by the user. The program should then return the length of this longest string.",
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n1132\n. \nLongest String Finder\n50\nMedium\nProblem Statement:\nCreate a Java program using a custom functional interface to find the longest string in a list provided by the user. The program should then return the length of this longest string. \nInput Description:\nAn integer n denoting the number of strings in the list.\nn space-separated strings representing the list elements. \nOutput Description:\nA single integer which is the length of the longest string. \nSample Input:\n4\napple\nbanana\nstrawberry\nkiwi \nSample Output:\n10\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.29\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\napple\nbanana\nstrawberry\nkiwi\nOutput\n10\nInput\n2\nant\nelephant\nOutput\n8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\napple\nbanana\nstrawberry\nkiwi\nOutput\n10\nInput\n2\nant\nelephant\nOutput\n8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLongest String Finder\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "An integer n denoting the number of strings in the list.\nn space-separated strings representing the list elements.",
  "output_spec": "A single integer which is the length of the longest string.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "4\napple\nbanana\nstrawberry\nkiwi",
    "output": "10"
+  },
+  {
+   "input": "2\nant\nelephant",
+   "output": "8"
   }
  ],
  "raw": ""

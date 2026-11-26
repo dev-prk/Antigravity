@@ -1,0 +1,17 @@
+{
+ "title": "1787. OOPs Features & Interface",
+ "slug": "oops-features-interface",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Submissions\n1787\n. \nOOPs Features & Interface\n30\nEasy\nOOPs Features & Interface\nProblem Statement\nCreate an interface Shape with methods area and perimeter. Implement this interface in two classes: Rectangle and Circle. Each class should have appropriate constructors and methods to calculate the area and perimeter.\nDescription\nDefine an interface Shape with methods double area() and double perimeter().\nCreate a class Rectangle that implements Shape with properties length and width.\nCreate a class Circle that implements Shape with property radius.\nEnsure the Rectangle and Circle classes have constructors to initialize their properties.\nImplement the methods area and perimeter in both classes.\nInput Format\nString representing the shape type (Rectangle or Circle).\nIf Rectangle, two doubles representing length and width.\nIf Circle, one double representing radius.\nOutput Format\nDouble representing the area of the shape.\nDouble representing the perimeter of the shape.\nSample Input:\nRectangle\n5\n10\nSample Output:\nArea: 50.0\nPerimeter: 30.0\nAccepted \n3k\nSubmissions \n5k\nAcceptance Rate \n56.6\n%\n6\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nRectangle\n5\n10\nOutput\nArea: 50.0\nPerimeter: 30.0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nRectangle\n5\n10\nOutput\nArea: 50.0\nPerimeter: 30.0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nOOPs Features & Interface\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Rectangle\n5\n10",
+   "output": "Area: 50.0\nPerimeter: 30.0"
+  }
+ ],
+ "raw": ""
+}

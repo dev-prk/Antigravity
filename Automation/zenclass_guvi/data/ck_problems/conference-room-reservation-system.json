@@ -1,0 +1,25 @@
+{
+ "title": "1213. Conference Room Reservation System",
+ "slug": "conference-room-reservation-system",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n1213\n. \nConference Room Reservation System\n20\nEasy\nProblem Statement:\nYou are tasked with building a reservation system for a conference room in a corporate office. The room can be reserved or freed up based on employee requests. Each request includes an action\u2014either to reserve the room or free it up. Once reserved, no other employee can reserve the room until it is freed. \nYou need to handle these operations using the goto statement to jump to specific parts of the code based on the type of request and its outcome. \nInput Description:\nThe first line contains an integer N, the number of requests. The next N lines contain either one of two types of commands: \"RESERVE X\" where X is the employee ID attempting to reserve the room. \"FREE X\" where X is the employee ID freeing up the room. \nOutput Description:\nFor each \"RESERVE X\" command, output \"Room Reserved\" if the room was successfully reserved, or \"Room Already Reserved by Employee Y\" if the room is already reserved by another employee, where Y is the employee ID who holds the reservation. For each \"FREE X\" command, output \"Room Freed\" if the room is freed by the employee who reserved it, or \"No Reservation to Free\" if no reservation exists or the reservation doesn't match the given employee ID. \nSample Input:\n5\nRESERVE 101\nRESERVE 102\nFREE 101\nRESERVE 102\nFREE 102 \nSample Output:\nRoom Reserved\nRoom Already Reserved by Employee 101\nRoom Freed\nRoom Reserved\nRoom Freed \nExplanation:\nThe first request \"RESERVE 101\" successfully reserves the room for employee 101. The second request \"RESERVE 102\" fails because the room is already reserved by employee 101. The third request \"FREE 101\" successfully frees the room. The fourth request \"RESERVE 102\" successfully reserves the room for employee 102. The fifth request \"FREE 102\" successfully frees the room. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.74\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nRESERVE 201\nFREE 201\nRESERVE 202\nOutput\nRoom Reserved\nRoom Freed\nRoom Reserved\nInput\n4\nRESERVE 301\nRESERVE 302\nFREE 301\nRESERVE 302\nOutput\nRoom Reserved\nRoom Already Reserved by Employee 301\nRoom Freed\nRoom Reserved\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nRESERVE 201\nFREE 201\nRESERVE 202\nOutput\nRoom Reserved\nRoom Freed\nRoom Reserved\nInput\n4\nRESERVE 301\nRESERVE 302\nFREE 301\nRESERVE 302\nOutput\nRoom Reserved\nRoom Already Reserved by Employee 301\nRoom Freed\nRoom Reserved\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent",
+ "input_spec": "The first line contains an integer N, the number of requests. The next N lines contain either one of two types of commands: \"RESERVE X\" where X is the employee ID attempting to reserve the room. \"FREE X\" where X is the employee ID freeing up the room.",
+ "output_spec": "For each \"RESERVE X\" command, output \"Room Reserved\" if the room was successfully reserved, or \"Room Already Reserved by Employee Y\" if the room is already reserved by another employee, where Y is the employee ID who holds the reservation. For each \"FREE X\" command, output \"Room Freed\" if the room is freed by the employee who reserved it, or \"No Reservation to Free\" if no reservation exists or the reservation doesn't match the given employee ID.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\nRESERVE 101\nRESERVE 102\nFREE 101\nRESERVE 102\nFREE 102",
+   "output": "Room Reserved\nRoom Already Reserved by Employee 101\nRoom Freed\nRoom Reserved\nRoom Freed"
+  },
+  {
+   "input": "3\nRESERVE 201\nFREE 201\nRESERVE 202",
+   "output": "Room Reserved\nRoom Freed\nRoom Reserved"
+  },
+  {
+   "input": "4\nRESERVE 301\nRESERVE 302\nFREE 301\nRESERVE 302",
+   "output": "Room Reserved\nRoom Already Reserved by Employee 301\nRoom Freed\nRoom Reserved"
+  }
+ ],
+ "raw": ""
+}

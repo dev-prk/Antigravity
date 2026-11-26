@@ -1,0 +1,25 @@
+{
+ "title": "1124. Employee Interface Implementation",
+ "slug": "employee-interface-implementation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n1124\n. \nEmployee Interface Implementation\n20\nEasy\nProblem Statement:\nImplement an interface Employee with methods calculateSalary and getDetails. Create two classes FullTimeEmployee and PartTimeEmployee that implement this interface. Each class should have its own way of calculating salary. \nInput Description:\nString representing the employee type (FullTimeEmployee or PartTimeEmployee). If FullTimeEmployee, a string for name and a double for monthlySalary. If PartTimeEmployee, a string for name, a double for hourlyRate, and an integer for hoursWorked. \nOutput Description:\nString representing the employee details. Double representing the calculated salary. \nSample Input:\nFullTimeEmployee\nJohn\n3000.0\nPartTimeEmployee\nJane\n15.0\n120 \nSample Output:\nName: John, Salary: 3000.0\nName: Jane, Salary: 1800.0 \nExplanation:\nDefine an interface Employee with methods double calculateSalary() and String getDetails(). Create a class FullTimeEmployee with properties name (String), monthlySalary (double) and implement the interface methods. Create a class PartTimeEmployee with properties name (String), hourlyRate (double), and hoursWorked (int) and implement the interface methods. Ensure each class has a constructor to initialize its properties. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n97.41\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nFullTimeEmployee\nJohn\n3000.0\nOutput\nName: John, Salary: 3000.0\nInput\nPartTimeEmployee\nJane\n15.0\n120\nOutput\nName: Jane, Salary: 1800.0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nFullTimeEmployee\nJohn\n3000.0\nOutput\nName: John, Salary: 3000.0\nInput\nPartTimeEmployee\nJane\n15.0\n120\nOutput\nName: Jane, Salary: 1800.0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEmployee Interface Implementation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases ar",
+ "input_spec": "String representing the employee type (FullTimeEmployee or PartTimeEmployee). If FullTimeEmployee, a string for name and a double for monthlySalary. If PartTimeEmployee, a string for name, a double for hourlyRate, and an integer for hoursWorked.",
+ "output_spec": "String representing the employee details. Double representing the calculated salary.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "FullTimeEmployee\nJohn\n3000.0\nPartTimeEmployee\nJane\n15.0\n120",
+   "output": "Name: John, Salary: 3000.0\nName: Jane, Salary: 1800.0"
+  },
+  {
+   "input": "FullTimeEmployee\nJohn\n3000.0",
+   "output": "Name: John, Salary: 3000.0"
+  },
+  {
+   "input": "PartTimeEmployee\nJane\n15.0\n120",
+   "output": "Name: Jane, Salary: 1800.0"
+  }
+ ],
+ "raw": ""
+}

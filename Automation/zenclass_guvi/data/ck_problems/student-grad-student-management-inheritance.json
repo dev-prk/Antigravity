@@ -1,0 +1,25 @@
+{
+ "title": "1348. Student & Grad Student Management (Inheritance)",
+ "slug": "student-grad-student-management-inheritance",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ons\nSubmissions\n1348\n. \nStudent & Grad Student Management (Inheritance)\n10\nEasy\nProblem Statement:\nCreate a Student class and a GraduateStudent class that inherits from Student. \n1. Student should have attributes: name, rollNumber, and marks.\n2. GraduateStudent extends Student and adds a thesisTitle attribute.\n3. Implement a method to display final grade based on marks:\n90-100 \u2192 A\n75-89 \u2192 B\n50-74 \u2192 C\nBelow 50 \u2192 Fail \nInput Description:\n1. A string name\n2. An integer rollNumber\n3. An integer marks\n4. A string thesisTitle \nOutput Description:\nPrint grade and thesis title. \nSample Input:\nAlice\n101\n95\nDeep Learning Research \nSample Output:\nA\nDeep Learning Research \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.83\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nBob\n102\n78\nData Science Analysis\nOutput\nB\nData Science Analysis\nInput\nCharlie\n103\n45\nAI Ethics Study\nOutput\nFail\nAI Ethics Study\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nBob\n102\n78\nData Science Analysis\nOutput\nB\nData Science Analysis\nInput\nCharlie\n103\n45\nAI Ethics Study\nOutput\nFail\nAI Ethics Study\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nStudent & Grad Student Management (Inheritance)\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "1. A string name\n2. An integer rollNumber\n3. An integer marks\n4. A string thesisTitle",
+ "output_spec": "Print grade and thesis title.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Alice\n101\n95\nDeep Learning Research",
+   "output": "A\nDeep Learning Research"
+  },
+  {
+   "input": "Bob\n102\n78\nData Science Analysis",
+   "output": "B\nData Science Analysis"
+  },
+  {
+   "input": "Charlie\n103\n45\nAI Ethics Study",
+   "output": "Fail\nAI Ethics Study"
+  }
+ ],
+ "raw": ""
+}

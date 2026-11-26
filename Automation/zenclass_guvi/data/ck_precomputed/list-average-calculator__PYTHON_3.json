@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndata = sys.stdin.read().split()\nif not data:\n    print(0)\nelse:\n    values = [float(x) for x in data]\n    print(sum(values) / len(values))\n", "local_ok": true, "slug": "list-average-calculator", "lang": "PYTHON 3"}

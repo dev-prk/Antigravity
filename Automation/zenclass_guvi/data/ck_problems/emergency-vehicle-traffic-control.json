@@ -1,0 +1,21 @@
+{
+ "title": "1180. Emergency Vehicle Traffic Control",
+ "slug": "emergency-vehicle-traffic-control",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n1180\n. \nEmergency Vehicle Traffic Control\n20\nEasy\nProblem Statement:\nEmergency Response Traffic Light System \nYou are required to program a traffic light system that can handle emergency vehicle scenarios at a busy intersection. The traffic light can be: Red, Yellow, or Green. Depending on the state of the light and whether an emergency vehicle is approaching, the system should determine the appropriate action for the vehicles at the intersection. \nThe rules for determining the action are as follows: \nRed Light: \nIf the light is red and an emergency vehicle is approaching, vehicles must allow it to pass by preparing to go.\nIf no emergency vehicle is approaching, vehicles must stop.\nYellow Light: \nIf the light is yellow, vehicles must prepare to stop.\nIf the light is yellow and an emergency vehicle is approaching, vehicles must continue to allow the emergency vehicle to pass.\nGreen Light: \nIf the light is green, vehicles should proceed normally.\nIf the light is green and an emergency vehicle is approaching, vehicles must clear the way by pulling over.\nBased on the above rules, the program should output the action that vehicles should take. \nInput Description:\nThe first line contains a single character, T, representing the traffic light's current state. T can be 'R' for Red, 'Y' for Yellow, or 'G' for Green.\nThe second line contains a single integer, E, where E is 1 if an emergency vehicle is approaching, and 0 if there is no emergency vehicle. \nOutput Description:\nPrint the action vehicles should take: \"ALLOW EMERGENCY\", \"STOP\", \"PREPARE TO STOP\", \"PROCEED\", or \"CLEAR THE WAY\". \nSample Input:\nR\n1 \nSample Output:\nALLOW EMERGENCY \nExplanation:\nConsider a sample input to illustrate how the system determines the appropriate action:\nR\n1 \nHere, T = 'R' (Red Light) and E = 1 (An emergency vehicle is approaching). \nRule 1 (Red Light): Since an emergency vehicle is approaching, vehicles should prepare to go and allow the emergency vehicle to pass.\nResult: The output should be \"ALLOW EMERGENCY\". \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.7\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nR\n1\nOutput\nALLOW EMERGENCY\nInput\nY\n0\nOutput\nPREPARE TO STOP\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nR\n1\nOutput\nALLOW EMERGENCY\nInput\nY\n0\nOutput\nPREPARE TO STOP\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt",
+ "input_spec": "The first line contains a single character, T, representing the traffic light's current state. T can be 'R' for Red, 'Y' for Yellow, or 'G' for Green.\nThe second line contains a single integer, E, where E is 1 if an emergency vehicle is approaching, and 0 if there is no emergency vehicle.",
+ "output_spec": "Print the action vehicles should take: \"ALLOW EMERGENCY\", \"STOP\", \"PREPARE TO STOP\", \"PROCEED\", or \"CLEAR THE WAY\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "R\n1",
+   "output": "ALLOW EMERGENCY"
+  },
+  {
+   "input": "Y\n0",
+   "output": "PREPARE TO STOP"
+  }
+ ],
+ "raw": ""
+}

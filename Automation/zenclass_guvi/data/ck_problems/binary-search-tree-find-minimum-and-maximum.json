@@ -3,7 +3,7 @@
  "slug": "binary-search-tree-find-minimum-and-maximum",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2053. Binary Search Tree - Find Minimum and Maximum\n\n70\n\nHard\n\nProblem Statement\nCreate a Binary Search Tree from given integers and find the minimum and maximum values stored in the tree.\nDescription\nRead n integers and insert them into a Binary Search Tree. Find the minimum value by following left child links and the maximum value by following right child links. Print both values.",
+ "description": "tions\nSubmissions\n2053\n. \nBinary Search Tree - Find Minimum and Maximum\n70\nHard\nProblem Statement\nCreate a Binary Search Tree from given integers and find the minimum and maximum values stored in the tree.\nDescription\nRead n integers and insert them into a Binary Search Tree. Find the minimum value by following left child links and the maximum value by following right child links. Print both values.\nInput Description\nThe first line contains an integer n. The second line contains n space-separated integers to be inserted into the Binary Search Tree.\nOutput Description\nPrint the minimum value on the first line and the maximum value on the second line.\nSample Input\n7\n50 30 70 20 40 60 80\nSample Output\n20\n80\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n40 20 60 10 30\nOutput\n10\n60\nInput\n6\n25 15 35 5 20 45\nOutput\n5\n45\nInput\n1\n100\nOutput\n100\n100\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n40 20 60 10 30\nOutput\n10\n60\nInput\n6\n25 15 35 5 20 45\nOutput\n5\n45\nInput\n1\n100\nOutput\n100\n100\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBinary Search Tree - Find Minimum and Maximum\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains an integer n. The second line contains n space-separated integers to be inserted into the Binary Search Tree.",
  "output_spec": "Print the minimum value on the first line and the maximum value on the second line.",
  "constraints": "",
@@ -11,6 +11,18 @@
   {
    "input": "7\n50 30 70 20 40 60 80",
    "output": "20\n80"
+  },
+  {
+   "input": "5\n40 20 60 10 30",
+   "output": "10\n60"
+  },
+  {
+   "input": "6\n25 15 35 5 20 45",
+   "output": "5\n45"
+  },
+  {
+   "input": "1\n100",
+   "output": "100\n100"
   }
  ],
  "raw": ""

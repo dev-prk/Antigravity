@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    R = int(sys.stdin.readline())\n    for _ in range(R - 1):\n        print('*')\n    print('*' * R)\n    for _ in range(R - 1):\n        print('*')\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "left-arrow-star-pattern", "lang": "PYTHON 3"}

@@ -1,0 +1,21 @@
+{
+ "title": "1397. Java Thread Even Odd Printer",
+ "slug": "java-thread-even-odd-printer",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n1397\n. \nJava Thread Even Odd Printer\n10\nEasy\nProblem Statement:\nWrite a Java program that creates two threads. One thread prints even numbers and the other thread prints odd numbers up to a given limit. Your program should: Take an integer input from the user. Create two threads: one to print even numbers and another to print odd numbers up to the given limit. \nInput Description:\nA single integer. \nOutput Description:\nEven and odd numbers up to the given limit printed by two separate threads. \nSample Input:\n8 \nSample Output:\nEven Thread: 0\nEven Thread: 2\nEven Thread: 4\nEven Thread: 6\nEven Thread: 8\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5\nOdd Thread: 7 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n97.61\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\nEven Thread: 0\nEven Thread: 2\nEven Thread: 4\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5\nInput\n5\nOutput\nEven Thread: 0\nEven Thread: 2\nEven Thread: 4\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\nEven Thread: 0\nEven Thread: 2\nEven Thread: 4\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5\nInput\n5\nOutput\nEven Thread: 0\nEven Thread: 2\nEven Thread: 4\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava Thread Even Odd Printer\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer.",
+ "output_spec": "Even and odd numbers up to the given limit printed by two separate threads.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8",
+   "output": "Even Thread: 0\nEven Thread: 2\nEven Thread: 4\nEven Thread: 6\nEven Thread: 8\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5\nOdd Thread: 7"
+  },
+  {
+   "input": "5",
+   "output": "Even Thread: 0\nEven Thread: 2\nEven Thread: 4\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5"
+  }
+ ],
+ "raw": ""
+}

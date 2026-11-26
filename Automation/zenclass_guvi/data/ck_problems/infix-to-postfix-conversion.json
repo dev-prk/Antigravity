@@ -3,7 +3,7 @@
  "slug": "infix-to-postfix-conversion",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n852. Infix to Postfix Conversion\n\n50\n\nMedium  Topics\n\nProblem Statement:\nConvert a given infix expression into postfix notation using Stack.",
+ "description": "nts & Solutions\nSubmissions\n852\n. \nInfix to Postfix Conversion\n50\nMedium\nTopics\nProblem Statement:\nConvert a given infix expression into postfix notation using Stack.\nInput Description:\nThe code should take a string of arbitrary length (infix notation). \nOutput Description:\nPrint the corresponding form of postfix notation. \nSample Input:\nA+B*C+D \nSample Output:\nABC*+D+ \nExplanation:\nThe equivalent postfix notation of ABC*+D+ \nAccepted \n484\nSubmissions \n587\nAcceptance Rate \n82.45\n%\nTopics\nstack\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nA+B*C+D\nOutput\nABC*+D+\nInput\n(A+B)*(C+D)\nOutput\nAB+CD+*\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nA+B*C+D\nOutput\nABC*+D+\nInput\n(A+B)*(C+D)\nOutput\nAB+CD+*\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nInfix to Postfix Conversion\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The code should take a string of arbitrary length (infix notation).",
  "output_spec": "Print the corresponding form of postfix notation.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "A+B*C+D",
    "output": "ABC*+D+"
+  },
+  {
+   "input": "(A+B)*(C+D)",
+   "output": "AB+CD+*"
   }
  ],
  "raw": ""

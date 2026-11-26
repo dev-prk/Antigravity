@@ -1,0 +1,21 @@
+{
+ "title": "1304. Case-Insensitive Vowel Count",
+ "slug": "case-insensitive-vowel-count",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n1304\n. \nCase-Insensitive Vowel Count\n10\nEasy\nProblem Statement:\nGiven a string, count the number of vowels (a, e, i, o, u) present in it. The comparison should be case-insensitive. \nInput Description:\nA single line containing a string S. \nOutput Description:\nPrint the number of vowels in the string. \nSample Input:\nhello \nSample Output:\n2 \nAccepted \n106\nSubmissions \n108\nAcceptance Rate \n98.15\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nhello\nOutput\n2\nInput\nJAVA\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nhello\nOutput\n2\nInput\nJAVA\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCase-Insensitive Vowel Count\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line containing a string S.",
+ "output_spec": "Print the number of vowels in the string.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello",
+   "output": "2"
+  },
+  {
+   "input": "JAVA",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

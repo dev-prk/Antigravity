@@ -1,0 +1,25 @@
+{
+ "title": "1123. Person Class with Access Modifiers",
+ "slug": "person-class-with-access-modifiers",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n1123\n. \nPerson Class with Access Modifiers\n20\nEasy\nProblem Statement:\nCreate a class Person with private properties and public methods for accessing these properties. Ensure that the age of the person is always a positive value. \nInput Description:\nString representing the name of the person.\nInteger representing the age of the person. \nOutput Description:\nString representing the name of the person.\nInteger representing the age of the person.\nA message \"Invalid age\" indicating if the age is invalid. \nSample Input:\nAlice\n25\nDiana\n0 \nSample Output:\nName: Alice\nAge: 25\nInvalid age \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n97.22\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nAlice\n25\nOutput\nName: Alice\nAge: 25\nInput\nBob\n-5\nOutput\nInvalid age\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nAlice\n25\nOutput\nName: Alice\nAge: 25\nInput\nBob\n-5\nOutput\nInvalid age\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPerson Class with Access Modifiers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "String representing the name of the person.\nInteger representing the age of the person.",
+ "output_spec": "String representing the name of the person.\nInteger representing the age of the person.\nA message \"Invalid age\" indicating if the age is invalid.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Alice\n25\nDiana\n0",
+   "output": "Name: Alice\nAge: 25\nInvalid age"
+  },
+  {
+   "input": "Alice\n25",
+   "output": "Name: Alice\nAge: 25"
+  },
+  {
+   "input": "Bob\n-5",
+   "output": "Invalid age"
+  }
+ ],
+ "raw": ""
+}

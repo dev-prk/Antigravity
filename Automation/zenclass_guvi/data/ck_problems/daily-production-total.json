@@ -1,0 +1,25 @@
+{
+ "title": "2210. Daily Production Total",
+ "slug": "daily-production-total",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n2210\n. \nDaily Production Total\n10\nEasy\nProblem Statement\nRead the number of days and the items made on each day. Print the total items made and the average items per day. \nDescription\nA factory writes down how many items it makes each day. First read the number of days. Then read the items made on each of those days. Find the total items made, and find the average items made per day. The average is printed as a whole number (the decimal part is dropped). \nInput Description\nThe first line has an integer, the number of days. (1 <= days <= 30). Then there are that many lines, each with an integer, the items made on that day. (0 <= items <= 1000) \nOutput Description\nPrint the total items on the first line and the average items per day on the second line. Print only whole numbers. \nSample Input\n5\n120\n150\n130\n140\n110 \nSample Output\n650\n130\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n120\n150\n130\n140\n110\nOutput\n650\n130\nInput\n1\n500\nOutput\n500\n500\nInput\n3\n10\n20\n25\nOutput\n55\n18\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n120\n150\n130\n140\n110\nOutput\n650\n130\nInput\n1\n500\nOutput\n500\n500\nInput\n3\n10\n20\n25\nOutput\n55\n18\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDaily Production Total\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line has an integer, the number of days. (1 <= days <= 30). Then there are that many lines, each with an integer, the items made on that day. (0 <= items <= 1000)",
+ "output_spec": "Print the total items on the first line and the average items per day on the second line. Print only whole numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n120\n150\n130\n140\n110",
+   "output": "650\n130"
+  },
+  {
+   "input": "1\n500",
+   "output": "500\n500"
+  },
+  {
+   "input": "3\n10\n20\n25",
+   "output": "55\n18"
+  }
+ ],
+ "raw": ""
+}

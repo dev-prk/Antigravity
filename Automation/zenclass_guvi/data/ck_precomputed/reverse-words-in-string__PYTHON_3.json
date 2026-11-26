@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    s = sys.stdin.readline()\n    if s.endswith('\\n'):\n        s = s[:-1]\n    parts = s.split(' ')\n    reversed_parts = [p[::-1] for p in parts]\n    result = ' '.join(reversed_parts)\n    print(result)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "reverse-words-in-string", "lang": "PYTHON 3"}

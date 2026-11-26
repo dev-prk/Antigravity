@@ -3,14 +3,18 @@
  "slug": "job-scheduling-to-maximize-profit",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1856. Job Scheduling to Maximize Profit\n\n80\n\nHard  Topics\n\nJob Scheduling to Maximize Profit\n\nProblem Statement:\nYou are given jobs with deadlines and profits. Schedule the jobs such that total profit is maximized. Each job takes a unit of time and only one job can be scheduled at a time.\n\nDescription:\nUse Greedy and Disjoint Set Union (DSU) or sorting technique to solve the problem.\n\nInput Format:\nFirst line: n (number of jobs)\nNext n lines: Job id, deadline, profit\n\nOutput Format:\nA single integer representing the maximum total profit",
- "input_spec": "First line: n (number of jobs)\nNext n lines: Job id, deadline, profit",
- "output_spec": "A single integer representing the maximum total profit",
+ "description": " Scheduling to Maximize Profit\n80\nHard\nTopics\nJob Scheduling to Maximize Profit\nProblem Statement:\nYou are given jobs with deadlines and profits. Schedule the jobs such that total profit is maximized. Each job takes a unit of time and only one job can be scheduled at a time.\nDescription:\nUse Greedy and Disjoint Set Union (DSU) or sorting technique to solve the problem.\nInput Format:\nFirst line: n (number of jobs)\nNext n lines: Job id, deadline, profit\nOutput Format:\nA single integer representing the maximum total profit\nSample Input:\n4\n1 4 20\n2 1 10\n3 1 40\n4 1 30\nSample Output:\n60\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\nsorting\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5\n1 1 20\n2 2 15\n3 3 10\n4 4 5\n5 5 1\nOutput\n51\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5\n1 1 20\n2 2 15\n3 3 10\n4 4 5\n5 5 1\nOutput\n51\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJob Scheduling to Maximize Profit\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "4\n1 4 20\n2 1 10\n3 1 40\n4 1 30",
    "output": "60"
+  },
+  {
+   "input": "5\n1 1 20\n2 2 15\n3 3 10\n4 4 5\n5 5 1",
+   "output": "51"
   }
  ],
  "raw": ""

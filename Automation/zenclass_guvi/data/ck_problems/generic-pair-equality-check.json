@@ -3,14 +3,22 @@
  "slug": "generic-pair-equality-check",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1161. Generic Pair Equality Check\n\n50\n\nMedium\n\nProblem Statement:\nCreate a generic Pair<T, U> class with methods to:\n* Compare two pairs to check if they are equal.\n* Print a detailed comparison result showing if the pairs are equal or not.\n\nWrite a main method that:\n* Prompts the user to input pairs of Integer and String.\n* Compares the pairs and displays the result.",
- "input_spec": "pairs of Integer and String.\n* Compares the pairs and displays the result.\n\nInput Description:\nThe user inputs two pairs, each with values for Integer and String.",
+ "description": "lem\nHints & Solutions\nSubmissions\n1161\n. \nGeneric Pair Equality Check\n50\nMedium\nProblem Statement:\nCreate a generic Pair<T, U> class with methods to:\n* Compare two pairs to check if they are equal.\n* Print a detailed comparison result showing if the pairs are equal or not. \nWrite a main method that:\n* Prompts the user to input pairs of Integer and String.\n* Compares the pairs and displays the result. \nInput Description:\nThe user inputs two pairs, each with values for Integer and String. \nOutput Description:\nPrint whether the pairs are equal or not based on their values. \nSample Input:\n10\napple\n10\napple\n2\njava\n3\ncode \nSample Output:\nThe pairs are equal.\nThe pairs are not equal.\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.49\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\napple\n10\napple\nOutput\nThe pairs are equal.\nInput\n2\njava\n3\ncode\nOutput\nThe pairs are not equal.\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\napple\n10\napple\nOutput\nThe pairs are equal.\nInput\n2\njava\n3\ncode\nOutput\nThe pairs are not equal.\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nGeneric Pair Equality Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The user inputs two pairs, each with values for Integer and String.",
  "output_spec": "Print whether the pairs are equal or not based on their values.",
  "constraints": "",
  "samples": [
   {
    "input": "10\napple\n10\napple\n2\njava\n3\ncode",
    "output": "The pairs are equal.\nThe pairs are not equal."
+  },
+  {
+   "input": "10\napple\n10\napple",
+   "output": "The pairs are equal."
+  },
+  {
+   "input": "2\njava\n3\ncode",
+   "output": "The pairs are not equal."
   }
  ],
  "raw": ""

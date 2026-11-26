@@ -1,0 +1,25 @@
+{
+ "title": "1215. Heap-Allocated Inventory Management",
+ "slug": "heap-allocated-inventory-management",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n1215\n. \nHeap-Allocated Inventory Management\n20\nEasy\nProblem Statement:\nYou are working for a logistics company that manages inventory for different types of products stored in a warehouse. Each product has a unique identifier, a name, a quantity, and a price. You need to write a C program to store and manage the inventory information dynamically using heap-allocated arrays. \nYour task: \nAdd Product: Add a new product to the inventory.\nUpdate Product Quantity: Update the quantity of a specific product.\nCalculate Total Inventory Value: Calculate the total value of the inventory.\nRemove Product: Remove a product from the inventory.\nList All Products: List all products in the inventory.\nYou must use dynamic memory allocation to store the product information and ensure that the program efficiently handles memory reallocation as products are added or removed. \nInput Description:\nThe first input is an integer N, which represents the number of operations to be performed.\nEach of the following N lines represents an operation. The operations can be one of the following:\nADD id name quantity price\nUPDATE id quantity\nREMOVE id\nTOTAL\nLIST \nOutput Description:\nFor each operation, the output will vary: \nFor ADD, no output is required.\nFor UPDATE, print \"Product updated successfully\" if the product exists, otherwise print \"Product not found\".\nFor REMOVE, print \"Product removed successfully\" if the product exists, otherwise print \"Product not found\".\nFor TOTAL, print the total inventory value as a float rounded to 2 decimal places.\nFor LIST, print all products in the format: id name quantity price. \nSample Input:\n6\nADD 101 \"Laptop\" 10 599.99\nADD 102 \"Mouse\" 50 19.99\nUPDATE 101 15\nTOTAL\nREMOVE 102\nLIST \nSample Output:\nProduct updated successfully\n9999.35\nProduct removed successfully\n101 \"Laptop\" 15 599.99 \nExplanation:\nTwo products, Laptop and Mouse, are added to the inventory.\nThe quantity of the Laptop is updated to 15.\nThe total inventory value is calculated as (15 * 599.99) + (50 * 19.99) = 13499.85.\nThe Mouse is removed from the inventory.\nThe remaining product (Laptop) is listed with its details.\nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n99.63\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nADD 101 \"Laptop\" 10 599.99\nADD 102 \"Mouse\" 50 19.99\nTOTAL\nUPDATE 102 45\nLIST\nOutput\n6999.40\nProduct updated successfully\n101 \"Laptop\" 10 599.99\n102 \"Mouse\" 45 19.99\nInput\n4\nADD 103 \"Keyboard\" 30 49.99\nUPDATE 104 25\nREMOVE 103\nLIST\nOutput\nProduct not found\nProduct removed successfully\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nADD 101 \"Laptop\" 10 599.99\nADD 102 \"Mouse\" 50 19.99\nTOTAL\nUPDATE 102 45\nLIST\nOutput\n6999.40\nProduct updated successfully\n101 \"Laptop\" 10 599.99\n102 \"Mouse\" 45 19.99\nInput\n4\nADD 103 \"Keyboard\" 30 49.99\nUPDATE 104 25\nREMOVE 103\nLIST\nOutput\n",
+ "input_spec": "The first input is an integer N, which represents the number of operations to be performed.\nEach of the following N lines represents an operation. The operations can be one of the following:\nADD id name quantity price\nUPDATE id quantity\nREMOVE id\nTOTAL\nLIST",
+ "output_spec": "For each operation, the output will vary: \nFor ADD, no output is required.\nFor UPDATE, print \"Product updated successfully\" if the product exists, otherwise print \"Product not found\".\nFor REMOVE, print \"Product removed successfully\" if the product exists, otherwise print \"Product not found\".\nFor TOTAL, print the total inventory value as a float rounded to 2 decimal places.\nFor LIST, print all products in the format: id name quantity price.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\nADD 101 \"Laptop\" 10 599.99\nADD 102 \"Mouse\" 50 19.99\nUPDATE 101 15\nTOTAL\nREMOVE 102\nLIST",
+   "output": "Product updated successfully\n9999.35\nProduct removed successfully\n101 \"Laptop\" 15 599.99"
+  },
+  {
+   "input": "5\nADD 101 \"Laptop\" 10 599.99\nADD 102 \"Mouse\" 50 19.99\nTOTAL\nUPDATE 102 45\nLIST",
+   "output": "6999.40\nProduct updated successfully\n101 \"Laptop\" 10 599.99\n102 \"Mouse\" 45 19.99"
+  },
+  {
+   "input": "4\nADD 103 \"Keyboard\" 30 49.99\nUPDATE 104 25\nREMOVE 103\nLIST",
+   "output": "Product not found\nProduct removed successfully"
+  }
+ ],
+ "raw": ""
+}

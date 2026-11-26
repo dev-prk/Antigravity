@@ -1,0 +1,21 @@
+{
+ "title": "1883. Climbing Stairs with Variable Steps",
+ "slug": "climbing-stairs-with-variable-steps",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "g Stairs with Variable Steps\n30\nEasy\nTopics\nClimbing Stairs with Variable Steps\nProblem Statement\nA smart fitness tracker records stair climbing patterns.\nA person can climb:\n1 step\n2 steps\n3 steps\nat a time.\nGiven N steps, find the total number of distinct ways to reach the top.\nInput Format\nN\nOutput Format\nTotalWays\nSample Input\n4\nSample Output\n7\nExplanation\nWays:\n1+1+1+1\n1+1+2\n1+2+1\n2+1+1\n2+2\n1+3\n3+1\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\ndynamic programming\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n3\nOutput\n4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n3\nOutput\n4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nClimbing Stairs with Variable Steps\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "7"
+  },
+  {
+   "input": "3",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

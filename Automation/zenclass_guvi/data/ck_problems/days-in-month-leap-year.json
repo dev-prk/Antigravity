@@ -1,0 +1,21 @@
+{
+ "title": "1405. Days in Month (Leap Year)",
+ "slug": "days-in-month-leap-year",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nHints & Solutions\nSubmissions\n1405\n. \nDays in Month (Leap Year)\n10\nEasy\nProblem Statement:\nWrite a program that takes a month (as a number) and a year as input and prints the number of days in that month, considering leap years. \nInput Description:\nThe program should read the month and year continuously until the user inputs a stop value. You need to handle leap years and invalid inputs. The first line contains an integer n (number of entries). The next n lines contain two integers each: the month and the year. The input stops when the user enters -1 -1. \nOutput Description:\nPrint the number of days in the given month for each input. \nSample Input:\n2 2020 -1 -1 \nSample Output:\n29 \nAccepted \n78\nSubmissions \n89\nAcceptance Rate \n87.64\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2000 -1 -1\nOutput\n31\nInput\n2 2020 -1 -1\nOutput\n29\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2000 -1 -1\nOutput\n31\nInput\n2 2020 -1 -1\nOutput\n29\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDays in Month (Leap Year)\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The program should read the month and year continuously until the user inputs a stop value. You need to handle leap years and invalid inputs. The first line contains an integer n (number of entries). The next n lines contain two integers each: the month and the year. The input stops when the user enters -1 -1.",
+ "output_spec": "Print the number of days in the given month for each input.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 2020 -1 -1",
+   "output": "29"
+  },
+  {
+   "input": "1 2000 -1 -1",
+   "output": "31"
+  }
+ ],
+ "raw": ""
+}

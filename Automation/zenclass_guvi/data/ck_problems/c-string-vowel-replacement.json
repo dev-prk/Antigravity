@@ -1,0 +1,21 @@
+{
+ "title": "1194. C String Vowel Replacement",
+ "slug": "c-string-vowel-replacement",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n1194\n. \nC String Vowel Replacement\n20\nEasy\nTopics\nProblem Statement:\nYou need to implement a C function that replaces all vowels in a string with a specified character while considering the differences between using strings and character arrays. The function should handle cases where the input contains a mix of upper and lower-case vowels. Specifically, write a C function void replace_vowels(char arr[], char replacement) that replaces all vowels (a, e, i, o, u, A, E, I, O, U) in the string stored in the character array arr with the character replacement. The function should differentiate between character arrays and strings and handle null termination correctly.\nInput Description:\nThe first line contains a string stored in a character array arr (length \u2264 100). The second line contains a character replacement that will replace the vowels in the string.\nOutput Description:\nOutput the modified string after replacing the vowels.\nSample Input:\nhello_world\\0programming\n*\nSample Output:\nh*ll*_w*rld\\0pr*gr*mm*ng\nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n99.73\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nhello_world\\0programming\n*\nOutput\nh*ll*_w*rld\\0pr*gr*mm*ng\nInput\nBeautiful_Code\\0\n#\nOutput\nB###t#f#l_C#d#\\0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nhello_world\\0programming\n*\nOutput\nh*ll*_w*rld\\0pr*gr*mm*ng\nInput\nBeautiful_Code\\0\n#\nOutput\nB###t#f#l_C#d#\\0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nC String Vowel Replacement\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains a string stored in a character array arr (length \u2264 100). The second line contains a character replacement that will replace the vowels in the string.",
+ "output_spec": "Output the modified string after replacing the vowels.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "hello_world\\0programming\n*",
+   "output": "h*ll*_w*rld\\0pr*gr*mm*ng"
+  },
+  {
+   "input": "Beautiful_Code\\0\n#",
+   "output": "B###t#f#l_C#d#\\0"
+  }
+ ],
+ "raw": ""
+}

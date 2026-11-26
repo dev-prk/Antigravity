@@ -1,0 +1,25 @@
+{
+ "title": "754. Nth Term in Mixed Series",
+ "slug": "nth-term-in-mixed-series",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n754\n. \nNth Term in Mixed Series\n10\nEasy\nTopics\nProblem Statement:\nConsider the below series: 0,0,2,1,4,2,6,3,8,4,10,5,12,6,14,7,16,8\u2026 This series is a mixture of 2 series \u2013 all the odd terms in this series form even numbers in ascending order and every even term is derived from the previous term using the formula (x / 2). Write a program to find the Nth term in this series. \nInput Description:\nThe value N in a positive integer that should be read from STDIN. \nOutput Description:\nThe Nth term, no other characters/ string or message should be written to STDOUT. \nExplanation:\nFor example, if N=10, the 10th term in the series is to be derived from 9th term in the series. The 9th term is 8 so the 10th term is (8/2)=4. Only the value 4 should be printed to STDOUT. You can assume that N will not exceed 20,000. \nSample Input:\n10 \nSample Output:\n4 \nAccepted \n911\nSubmissions \n972\nAcceptance Rate \n93.72\n%\nTopics\nbasic io math - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n9\nOutput\n8\nInput\n1\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n9\nOutput\n8\nInput\n1\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth Term in Mixed Series\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The value N in a positive integer that should be read from STDIN.",
+ "output_spec": "The Nth term, no other characters/ string or message should be written to STDOUT. \nExplanation:\nFor example, if N=10, the 10th term in the series is to be derived from 9th term in the series. The 9th term is 8 so the 10th term is (8/2)=4. Only the value 4 should be printed to STDOUT. You can assume that N will not exceed 20,000.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10",
+   "output": "4"
+  },
+  {
+   "input": "9",
+   "output": "8"
+  },
+  {
+   "input": "1",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

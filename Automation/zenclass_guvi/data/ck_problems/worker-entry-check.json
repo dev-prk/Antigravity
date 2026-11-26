@@ -1,0 +1,25 @@
+{
+ "title": "2209. Worker Entry Check",
+ "slug": "worker-entry-check",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nProblem\nHints & Solutions\nSubmissions\n2209\n. \nWorker Entry Check\n10\nEasy\nProblem Statement\nRead whether a worker has an ID card and is wearing a helmet. Print whether the worker can enter the factory. \nDescription\nA factory gate checks every worker before letting them in. First, the worker must show an ID card. If there is no ID card, print Show ID Card. If the worker has an ID card, then the helmet is checked. If the worker is not wearing a helmet, print Wear Helmet. If the worker has both, print Entry Allowed. \nInput Description\nTwo integers, each on a separate line. The first is 1 if the worker has an ID card, otherwise 0. The second is 1 if the worker is wearing a helmet, otherwise 0. \nOutput Description\nPrint exactly one of these: Entry Allowed, Wear Helmet or Show ID Card. Match the capital letters and spaces exactly. \nSample Input\n1\n0 \nSample Output\nWear Helmet\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1\n0\nOutput\nWear Helmet\nInput\n1\n1\nOutput\nEntry Allowed\nInput\n0\n1\nOutput\nShow ID Card\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1\n0\nOutput\nWear Helmet\nInput\n1\n1\nOutput\nEntry Allowed\nInput\n0\n1\nOutput\nShow ID Card\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nWorker Entry Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers, each on a separate line. The first is 1 if the worker has an ID card, otherwise 0. The second is 1 if the worker is wearing a helmet, otherwise 0.",
+ "output_spec": "Print exactly one of these: Entry Allowed, Wear Helmet or Show ID Card. Match the capital letters and spaces exactly.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n0",
+   "output": "Wear Helmet"
+  },
+  {
+   "input": "1\n1",
+   "output": "Entry Allowed"
+  },
+  {
+   "input": "0\n1",
+   "output": "Show ID Card"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,1 @@
+{"code": "import sys\n\ns = sys.stdin.read()\nparts = s.split()\nif parts:\n    sys.stdout.write(\"\".join(w[0].upper() + w[1:] for w in parts))\nelse:\n    sys.stdout.write(\"\")\n", "local_ok": true, "slug": "camelcase-conversion", "lang": "PYTHON 3"}

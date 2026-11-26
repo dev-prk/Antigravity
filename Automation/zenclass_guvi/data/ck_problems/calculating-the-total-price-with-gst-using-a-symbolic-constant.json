@@ -1,0 +1,25 @@
+{
+ "title": "2194. Calculating the Total Price with GST Using a Symbolic Constant",
+ "slug": "calculating-the-total-price-with-gst-using-a-symbolic-constant",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\n2194\n. \nCalculating the Total Price with GST Using a Symbolic Constant\n10\nEasy\nProblem Statement\nRead the price of an item and print the total price after adding GST, using a symbolic constant for the GST rate.\nDescription\nA shop adds 18 percent GST to the price of every item. Define a symbolic constant GST_RATE with the value 18 using #define. Read the price of an item as a float from input, calculate the total price using the formula total = price + price * GST_RATE / 100, and print the total with exactly two digits after the decimal point.\nInput Description\nA single positive number price (it may have decimals).\nOutput Description\nPrint the total price after adding GST, with two digits after the decimal point.\nSample Input\n1000\nSample Output\n1180.00\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1000\nOutput\n1180.00\nInput\n250\nOutput\n295.00\nInput\n99.5\nOutput\n117.41\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1000\nOutput\n1180.00\nInput\n250\nOutput\n295.00\nInput\n99.5\nOutput\n117.41\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCalculating the Total Price with GST Using a Symbolic Constant\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single positive number price (it may have decimals).",
+ "output_spec": "Print the total price after adding GST, with two digits after the decimal point.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000",
+   "output": "1180.00"
+  },
+  {
+   "input": "250",
+   "output": "295.00"
+  },
+  {
+   "input": "99.5",
+   "output": "117.41"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,25 @@
+{
+ "title": "1183. Food Delivery Price Calculator",
+ "slug": "food-delivery-price-calculator",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n1183\n. \nFood Delivery Price Calculator\n20\nEasy\nProblem Statement:\nYou are developing a system for a food delivery service that needs to handle multiple customer orders. Each order includes a list of items, each with a specific quantity and price. You need to implement functions to:\nCalculate the total cost of each order.\nApply a discount based on the total cost of the order.\nDetermine the final price after applying the discount.\nThe system should handle multiple orders and output the final price for each order. \nFunctions Required\ncalculateTotalCost(float prices[], int quantities[], int n): This function calculates the total cost of an order based on the prices and quantities of the items.\napplyDiscount(float totalCost): This function applies a discount to the total cost. The discount is as follows:\nIf the total cost is less than $50, then there will be no discount.\nIf the total cost is between $50 and $100, a 10% discount.\nIf the total cost is more than $100, a 20% discount.\nfinalPriceAfterDiscount(float totalCost): This function calculates the final price after applying the discount. \nInput Description:\nThe first line contains an integer N representing the number of orders.\nThe next N lines each contain:\nAn integer M representing the number of items in the order.\nM pairs of floating-point numbers where each pair represents the price and quantity of an item. \nOutput Description:\nFor each order, output the final price after applying the discount, rounded to two decimal places. \nSample Input:\n2\n3 10.0 2 20.0 1 5.0 3\n4 15.0 1 25.0 2 10.0 2 \nSample Output:\n49.50\n76.50 \nExplanation:\nFor the first order: \nTotal cost = (10.0 * 2) + (20.0 * 1) + (5.0 * 3) = 20.0 + 20.0 + 15.0 = 55.0\nDiscount = 10% of 55.0 = 5.50\nFinal price = 55.0 - 5.50 = 49.50\nFor the second order: \nTotal cost = (15.0 * 1) + (25.0 * 1) + (10.0 * 2) = 15.0 + 25.0 + 20.0 = 60.0\nDiscount = 10% of 60.0 = 6.00\nFinal price = 60.0 - 6.00 = 54.00 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.7\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n2 30.0 3 10.0 2\nOutput\n88.00\nInput\n2\n3 5.0 10 2 20.0 1 4.0 5\n4 12.0 2 7.0 3 5.0 1 2.0 4\nOutput\n81.00\n62.10\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n2 30.0 3 10.0 2\nOutput\n88.00\nInput\n2\n3 5.0 10 2 20.0 1 4.0 5\n4 12.0 2 7.0 3 5.0 1 2.0 4\nOutput\n81.00\n62.10\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move line",
+ "input_spec": "The first line contains an integer N representing the number of orders.\nThe next N lines each contain:\nAn integer M representing the number of items in the order.\nM pairs of floating-point numbers where each pair represents the price and quantity of an item.",
+ "output_spec": "For each order, output the final price after applying the discount, rounded to two decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n3 10.0 2 20.0 1 5.0 3\n4 15.0 1 25.0 2 10.0 2",
+   "output": "49.50\n76.50"
+  },
+  {
+   "input": "1\n2 30.0 3 10.0 2",
+   "output": "88.00"
+  },
+  {
+   "input": "2\n3 5.0 10 2 20.0 1 4.0 5\n4 12.0 2 7.0 3 5.0 1 2.0 4",
+   "output": "81.00\n62.10"
+  }
+ ],
+ "raw": ""
+}

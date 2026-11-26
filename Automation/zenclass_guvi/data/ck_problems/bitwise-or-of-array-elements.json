@@ -3,7 +3,7 @@
  "slug": "bitwise-or-of-array-elements",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n112. Bitwise OR of Array Elements\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number N and an array of N elements, find the Bitwise OR of the array elements.",
+ "description": "utions\nSubmissions\n112\n. \nBitwise OR of Array Elements\n40\nMedium\nTopics\nCompany\nProblem Statement:\nGiven a number N and an array of N elements, find the Bitwise OR of the array elements. \nInput Description:\nInput Size : N <= 100000 \nOutput Description:\nThe output is the Bitwise OR of the array elements. \nSample Input:\n2\n2 4 \nSample Output:\n6 \nAccepted \n8k\nSubmissions \n9k\nAcceptance Rate \n90.9\n%\nTopics\nbasics\nCompany\nbitwise\n3\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n4 3 2 1\nOutput\n7\nInput\n5\n1 1 1 1 1\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n4 3 2 1\nOutput\n7\nInput\n5\n1 1 1 1 1\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBitwise OR of Array Elements\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Input Size : N <= 100000",
  "output_spec": "The output is the Bitwise OR of the array elements.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "2\n2 4",
    "output": "6"
+  },
+  {
+   "input": "4\n4 3 2 1",
+   "output": "7"
+  },
+  {
+   "input": "5\n1 1 1 1 1",
+   "output": "1"
   }
  ],
  "raw": ""

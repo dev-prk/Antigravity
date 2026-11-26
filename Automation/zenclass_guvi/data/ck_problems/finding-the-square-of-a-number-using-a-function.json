@@ -1,0 +1,25 @@
+{
+ "title": "2146. Finding the Square of a Number Using a Function",
+ "slug": "finding-the-square-of-a-number-using-a-function",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ons\nSubmissions\n2146\n. \nFinding the Square of a Number Using a Function\n30\nEasy\nProblem Statement\nRead an integer and print its square, by calculating the square inside a function that returns the result.\nDescription\nRead an integer num from input. Write a function square that takes one integer parameter, multiplies it by itself, and returns the result. Call this function from main(), store the returned value in a variable, and print it.\nInput Description\nA single integer num (-1000 <= num <= 1000).\nOutput Description\nPrint the square of num.\nSample Input\n5\nSample Output\n25\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\nOutput\n25\nInput\n-3\nOutput\n9\nInput\n0\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\nOutput\n25\nInput\n-3\nOutput\n9\nInput\n0\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Square of a Number Using a Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer num (-1000 <= num <= 1000).",
+ "output_spec": "Print the square of num.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "25"
+  },
+  {
+   "input": "-3",
+   "output": "9"
+  },
+  {
+   "input": "0",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

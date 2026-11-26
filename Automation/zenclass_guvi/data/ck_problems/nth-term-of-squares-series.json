@@ -1,0 +1,21 @@
+{
+ "title": "778. Nth Term of Squares Series",
+ "slug": "nth-term-of-squares-series",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n778\n. \nNth Term of Squares Series\n10\nEasy\nTopics\nProblem Statement:\nYou are provided with a number \"N\", Find the Nth term of the series: 1, 4, 9, 16, 25, 36, 49, 64, 81, .......\n(Print \"Error\" if N = negative value and 0 if N = 0). \nInput Description:\nAn integer N is provided to you as the input. \nOutput Description:\nFind the Nth term in the provided series. \nExplanation:\nThe Nth term is the series = N\nN\n18\n18 = 324 \nSample Input:\n18 \nSample Output:\n324 \nAccepted \n20k\nSubmissions \n21k\nAcceptance Rate \n96.69\n%\nTopics\nabsolute beginner\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n18\nOutput\n324\nInput\n0\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n18\nOutput\n324\nInput\n0\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth Term of Squares Series\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "An integer N is provided to you as the input.",
+ "output_spec": "Find the Nth term in the provided series. \nExplanation:\nThe Nth term is the series = N\nN\n18\n18 = 324",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "18",
+   "output": "324"
+  },
+  {
+   "input": "0",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

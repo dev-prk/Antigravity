@@ -1,0 +1,25 @@
+{
+ "title": "1236. Simple Interest Calculator-3",
+ "slug": "simple-interest-calculator-3",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n1236\n. \nSimple Interest Calculator-3\n10\nEasy\nTopics\nProblem Statement:\nXYZ Bank needs to calculate the simple interest for a loan based on the principal amount, rate of interest, and time period. The formula for calculating simple interest is: Simple Interest=\ud835\udc43\u00d7\ud835\udc45\u00d7\ud835\udc47/100 Where: P is the principal amount, R is the rate of interest per year, T is the time period in years. Write a program to calculate the simple interest based on the above formula.\nSample Input:\n1000\n5\n2\nSample Output:\n100\nAccepted \n357\nSubmissions \n544\nAcceptance Rate \n65.63\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1000\n 5\n 2\nOutput\n100\nInput\n5000\n 7.5\n 3\nOutput\n1125\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1000\n 5\n 2\nOutput\n100\nInput\n5000\n 7.5\n 3\nOutput\n1125\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSimple Interest Calculator-3\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000\n5\n2",
+   "output": "100"
+  },
+  {
+   "input": "1000\n 5\n 2",
+   "output": "100"
+  },
+  {
+   "input": "5000\n 7.5\n 3",
+   "output": "1125"
+  }
+ ],
+ "raw": ""
+}

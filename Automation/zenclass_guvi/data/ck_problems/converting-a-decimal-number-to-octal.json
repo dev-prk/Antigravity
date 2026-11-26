@@ -3,7 +3,7 @@
  "slug": "converting-a-decimal-number-to-octal",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2092. Converting a Decimal Number to Octal\n\n65\n\nProblem Statement\nRead a decimal number between 0 and 511 and print its 3-digit octal equivalent, using % and / to extract each octal digit.\n\nDescription\nRead an integer num between 0 and 511. Extract its octal digits one at a time using the % operator with 8 (which gives the current least significant octal digit) and the / operator with 8 (which removes that digit), repeating this three times since the result always fits in 3 octal digits. Print the three digits together, most significant digit first, with no spaces between them.",
+ "description": "m\nHints & Solutions\nSubmissions\n2092\n. \nConverting a Decimal Number to Octal\n65\nProblem Statement\nRead a decimal number between 0 and 511 and print its 3-digit octal equivalent, using % and / to extract each octal digit.\nDescription\nRead an integer num between 0 and 511. Extract its octal digits one at a time using the % operator with 8 (which gives the current least significant octal digit) and the / operator with 8 (which removes that digit), repeating this three times since the result always fits in 3 octal digits. Print the three digits together, most significant digit first, with no spaces between them.\nInput Description\nA single line containing an integer num (0 <= num <= 511).\nOutput Description\nPrint the 3-digit octal equivalent of num, as three digits with no spaces.\nSample Input\n83\nSample Output\n123\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n83\nOutput\n123\nInput\n0\nOutput\n000\nInput\n511\nOutput\n777\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n83\nOutput\n123\nInput\n0\nOutput\n000\nInput\n511\nOutput\n777\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nConverting a Decimal Number to Octal\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single line containing an integer num (0 <= num <= 511).",
  "output_spec": "Print the 3-digit octal equivalent of num, as three digits with no spaces.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "83",
    "output": "123"
+  },
+  {
+   "input": "0",
+   "output": "000"
+  },
+  {
+   "input": "511",
+   "output": "777"
   }
  ],
  "raw": ""

@@ -1,0 +1,21 @@
+{
+ "title": "1207. Recursive 2D Array Operations",
+ "slug": "recursive-2d-array-operations",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nHints & Solutions\nSubmissions\n1207\n. \nRecursive 2D Array Operations\n20\nEasy\nProblem Statement:\nWrite a C program that uses recursion to manipulate a 2D array of integers. Your task is to implement a recursive function that performs the following operations: Traverse the 2D array and compute the sum of all elements. Compute the product of all elements. Count the number of elements greater than a given threshold. You need to implement a recursive function that takes a pointer to the 2D array and its dimensions (number of rows and columns). The function should return a structure containing the sum, product, and count of elements greater than a threshold. \nInput Description:\nThe first line contains two integers: rows and cols (dimensions of the 2D array). The next rows lines each contain cols integers representing the 2D array elements. The last line contains an integer threshold. \nOutput Description:\nPrint the sum, product, and count of elements greater than the threshold. \nSample Input:\n2 3\n1 2 3\n4 5 6\n4 \nSample Output:\nSum: 21\nProduct: 720\nCount greater than 4: 2 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n98.21\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 3\n1 2 3\n4 5 6\n4\nOutput\nSum: 21\nProduct: 720\nCount greater than 4: 2\nInput\n3 3\n1 1 1\n2 5 8\n3 1 9\n1\nOutput\nSum: 31\nProduct: 2160\nCount greater than 1: 5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 3\n1 2 3\n4 5 6\n4\nOutput\nSum: 21\nProduct: 720\nCount greater than 4: 2\nInput\n3 3\n1 1 1\n2 5 8\n3 1 9\n1\nOutput\nSum: 31\nProduct: 2160\nCount greater than 1: 5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRecursive 2D Array Operations\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geeko",
+ "input_spec": "The first line contains two integers: rows and cols (dimensions of the 2D array). The next rows lines each contain cols integers representing the 2D array elements. The last line contains an integer threshold.",
+ "output_spec": "Print the sum, product, and count of elements greater than the threshold.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3\n1 2 3\n4 5 6\n4",
+   "output": "Sum: 21\nProduct: 720\nCount greater than 4: 2"
+  },
+  {
+   "input": "3 3\n1 1 1\n2 5 8\n3 1 9\n1",
+   "output": "Sum: 31\nProduct: 2160\nCount greater than 1: 5"
+  }
+ ],
+ "raw": ""
+}

@@ -3,7 +3,7 @@
  "slug": "0-1-knapsack-problem",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1505. 0/1 Knapsack Problem\n\n50\n\nMedium\n\nProblem Statement:\nYou are given N items, each with a weight and a value. You have a knapsack with a maximum weight capacity W. Your task is to determine the maximum total value of items that can be put into the knapsack such that the total weight does not exceed W. You cannot break an item, either pick the complete item or don't pick it (0/1 property).",
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n1505\n. \n0/1 Knapsack Problem\n50\nMedium\nProblem Statement:\nYou are given N items, each with a weight and a value. You have a knapsack with a maximum weight capacity W. Your task is to determine the maximum total value of items that can be put into the knapsack such that the total weight does not exceed W. You cannot break an item, either pick the complete item or don't pick it (0/1 property). \nInput Description:\n- The first line contains two integers N and W, the number of items and the maximum weight capacity of the knapsack.\n- The second line contains N integers, the values of the items.\n- The third line contains N integers, the weights of the items. \nOutput Description:\n- Print a single integer, the maximum value that can be put in the knapsack. \nSample Input:\n4 8\n10 40 50 70\n1 3 4 5 \nSample Output:\n110 \nExplanation:\nPick items with values 40 and 70 (weights 3 and 5), total weight is 8 and total value is 110. \nAccepted \n33\nSubmissions \n34\nAcceptance Rate \n97.06\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 50\n60 100 120\n10 20 30\nOutput\n220\nInput\n2 3\n1 2\n4 5\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 50\n60 100 120\n10 20 30\nOutput\n220\nInput\n2 3\n1 2\n4 5\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\n0/1 Knapsack Problem\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains two integers N and W, the number of items and the maximum weight capacity of the knapsack.\n- The second line contains N integers, the values of the items.\n- The third line contains N integers, the weights of the items.",
  "output_spec": "- Print a single integer, the maximum value that can be put in the knapsack.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "4 8\n10 40 50 70\n1 3 4 5",
    "output": "110"
+  },
+  {
+   "input": "3 50\n60 100 120\n10 20 30",
+   "output": "220"
+  },
+  {
+   "input": "2 3\n1 2\n4 5",
+   "output": "0"
   }
  ],
  "raw": ""

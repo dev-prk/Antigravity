@@ -1,0 +1,1 @@
+{"code": "N = int(input())\n\nsum_squares = 0\nwhile N > 0:\n    digit = N % 10\n    sum_squares += digit ** 2\n    N //= 10\n\nprint(sum_squares)\n", "local_ok": true, "slug": "sum-of-squares-of-digits", "lang": "PYTHON 3"}

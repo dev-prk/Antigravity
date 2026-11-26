@@ -3,14 +3,22 @@
  "slug": "matrix-number-pattern",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n919. Matrix Number Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a matrix number pattern.",
+ "description": "lem\nHints & Solutions\nSubmissions\n919\n. \nMatrix Number Pattern\n40\nMedium\nTopics\nProblem Statement:\nWrite a code to generate a matrix number pattern. \nInput Description:\nGiven an odd integer R indicates number of rows.R is always odd integer. Where 1<=R<=100 \nOutput Description:\nPrint the matrix number pattern R*R based on the given integer R. \nExplanation:\nFrom the given input R=5, print the square matrix R*R. \nSample Input:\n5 \nSample Output:\n33333 \n32223 \n32123 \n32223 \n33333 \nAccepted \n229\nSubmissions \n407\nAcceptance Rate \n56.27\n%\nTopics\npatterns\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n33333\n32223\n32123\n32223\n33333\nInput\n7\nOutput\n4444444\n4333334\n4322234\n4321234\n4322234\n4333334\n4444444\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n33333\n32223\n32123\n32223\n33333\nInput\n7\nOutput\n4444444\n4333334\n4322234\n4321234\n4322234\n4333334\n4444444\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMatrix Number Pattern\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given an odd integer R indicates number of rows.R is always odd integer. Where 1<=R<=100",
- "output_spec": "Print the matrix number pattern R*R based on the given integer R.",
+ "output_spec": "Print the matrix number pattern R*R based on the given integer R. \nExplanation:\nFrom the given input R=5, print the square matrix R*R.",
  "constraints": "",
  "samples": [
   {
    "input": "5",
+   "output": "33333 \n32223 \n32123 \n32223 \n33333"
+  },
+  {
+   "input": "5",
    "output": "33333\n32223\n32123\n32223\n33333"
+  },
+  {
+   "input": "7",
+   "output": "4444444\n4333334\n4322234\n4321234\n4322234\n4333334\n4444444"
   }
  ],
  "raw": ""

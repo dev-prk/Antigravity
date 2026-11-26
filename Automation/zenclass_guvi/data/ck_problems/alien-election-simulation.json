@@ -3,13 +3,21 @@
  "slug": "alien-election-simulation",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n423. Alien Election Simulation\n\n90\n\nHard  Topics\n\nProblem Statement:\nWe are in the land of Aliens.\n\nThere are two aliens Beta and Gamma competing in an election. According to their system, the one who gets to 1000 votes or above first will be declared the winner. Each alien citizen can cast many votes depending on their strength. If the strength of an alien citizen is S[i] at a point, he can cast S[i] votes. After casting a vote, the strength S[i] of alien becomes floor(S[i]/3). After S[i] becomes zero, the alien citizen can't vote. You are given N citizens and their strengths. Each day Beta first picks a citizen ONCE to vote for her and Gamma picks a citizen TWICE to vote for her (citizens picked can be the same). Find who wins the election if both pick optimally. Print -1 if both of them could not reach 1000 votes or above.",
+ "description": "m\nHints & Solutions\nSubmissions\n423\n. \nAlien Election Simulation\n90\nHard\nTopics\nProblem Statement:\nWe are in the land of Aliens. \nThere are two aliens Beta and Gamma competing in an election. According to their system, the one who gets to 1000 votes or above first will be declared the winner. Each alien citizen can cast many votes depending on their strength. If the strength of an alien citizen is S[i] at a point, he can cast S[i] votes. After casting a vote, the strength S[i] of alien becomes floor(S[i]/3). After S[i] becomes zero, the alien citizen can't vote. You are given N citizens and their strengths. Each day Beta first picks a citizen ONCE to vote for her and Gamma picks a citizen TWICE to vote for her (citizens picked can be the same). Find who wins the election if both pick optimally. Print -1 if both of them could not reach 1000 votes or above. \nInput Description:\nThe first line contains an Integer N denoting the number of citizens.\nThe next line contains N space separated integers S[i] (1 \nOutput Description:\nPrint a line, the winner as \"Beta\" or \"Gamma\" (without quotes) or -1 \nSample Input:\n2\n900 900 \nSample Output:\nGamma \nExplanation:\nBeta picks citizen 1 and gets 900 votes. Now citizen 1's strength is 300 and citizen 2's strength is 900. Now Gamma can pick citizen 1 and then citizen 2 to reach 1200 votes and hence wins the election. \nAccepted \n922\nSubmissions \n1k\nAcceptance Rate \n91.38\n%\nTopics\nheaps\nqueue\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n800 800\nOutput\nGamma\nInput\n10\n54 456 29 293 92 102 121 121 40 200\nOutput\nGamma\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n800 800\nOutput\nGamma\nInput\n10\n54 456 29 293 92 102 121 121 40 200\nOutput\nGamma\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAlien Election Simulation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are",
  "input_spec": "The first line contains an Integer N denoting the number of citizens.\nThe next line contains N space separated integers S[i] (1",
  "output_spec": "Print a line, the winner as \"Beta\" or \"Gamma\" (without quotes) or -1",
  "constraints": "",
  "samples": [
   {
    "input": "2\n900 900",
+   "output": "Gamma"
+  },
+  {
+   "input": "2\n800 800",
+   "output": "Gamma"
+  },
+  {
+   "input": "10\n54 456 29 293 92 102 121 121 40 200",
    "output": "Gamma"
   }
  ],

@@ -1,0 +1,25 @@
+{
+ "title": "2224. Finding the Average of Two Numbers Using a Function",
+ "slug": "finding-the-average-of-two-numbers-using-a-function",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Submissions\n2224\n. \nFinding the Average of Two Numbers Using a Function\n30\nEasy\nProblem Statement\nRead two integers and print their average with two decimal places, using a function that returns a float.\nDescription\nRead two integers a and b from input. Write a function averageOfTwo that takes two integer parameters and returns their average as a float. Divide the sum by 2.0 (and not by 2) inside the function, so that the decimal part of the average is not lost. Call the function from main() and print the returned value with exactly two digits after the decimal point.\nInput Description\nTwo integers a and b separated by a space.\nOutput Description\nPrint the average of a and b with two digits after the decimal point.\nSample Input\n7 10\nSample Output\n8.50\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n7 10\nOutput\n8.50\nInput\n4 6\nOutput\n5.00\nInput\n0 5\nOutput\n2.50\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n7 10\nOutput\n8.50\nInput\n4 6\nOutput\n5.00\nInput\n0 5\nOutput\n2.50\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Average of Two Numbers Using a Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers a and b separated by a space.",
+ "output_spec": "Print the average of a and b with two digits after the decimal point.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 10",
+   "output": "8.50"
+  },
+  {
+   "input": "4 6",
+   "output": "5.00"
+  },
+  {
+   "input": "0 5",
+   "output": "2.50"
+  }
+ ],
+ "raw": ""
+}

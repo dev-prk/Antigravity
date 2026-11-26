@@ -1,0 +1,21 @@
+{
+ "title": "1168. Custom Exception Handling",
+ "slug": "custom-exception-handling",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nHints & Solutions\nSubmissions\n1168\n. \nCustom Exception Handling\n20\nEasy\nProblem Statement:\nYou are developing a user management system where users can register with a unique username. Implement a system where a custom exception is thrown when a user attempts to register with a username that contains forbidden characters or is too short. \nInput Description:\nA single line of input, the username to be validated. \nOutput Description:\nIf the username is valid, output \"Username registered successfully.\" If the username is invalid, output \"Invalid username: [error details].\" \nSample Input:\njohn_doe \nSample Output:\nInvalid username: Contains non-alphanumeric characters. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n96.66\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\njohn_doe\nOutput\nInvalid username: Contains non-alphanumeric characters.\nInput\njohn\nOutput\nInvalid username: Too short.\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\njohn_doe\nOutput\nInvalid username: Contains non-alphanumeric characters.\nInput\njohn\nOutput\nInvalid username: Too short.\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCustom Exception Handling\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line of input, the username to be validated.",
+ "output_spec": "If the username is valid, output \"Username registered successfully.\" If the username is invalid, output \"Invalid username: [error details].\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "john_doe",
+   "output": "Invalid username: Contains non-alphanumeric characters."
+  },
+  {
+   "input": "john",
+   "output": "Invalid username: Too short."
+  }
+ ],
+ "raw": ""
+}

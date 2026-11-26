@@ -1,0 +1,1 @@
+{"code": "import sys\n\nfor line in sys.stdin:\n    day = line.strip().lower()\n    if day in ('saturday', 'sunday'):\n        print('yes')\n    else:\n        print('no')\n", "local_ok": true, "slug": "holiday-check", "lang": "PYTHON 3"}

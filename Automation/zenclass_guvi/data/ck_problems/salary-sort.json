@@ -1,0 +1,25 @@
+{
+ "title": "494. Salary Sort",
+ "slug": "salary-sort",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nProblem\nHints & Solutions\nSubmissions\n494\n. \nSalary Sort\n30\nEasy\nTopics\nProblem Statement:\nRam is the CEO of an MNC. He wants to order the employee salaries in ascending order so that he can do a salary hike based on the salary values of employees. He selects you to do the task of sorting the salaries. Sort the salaries in ascending order and pass on the information to Ram. \nInput Description:\nNumber of employees followed by the salaries of employees. \nOutput Description:\nSalaries sorted in ascending order. \nExplanation:\nEmployee salaries sorted in ascending order. \nSample Input:\n8\n7000 8000 6500 1200 4000 2800 3000 5230 \nSample Output:\n1200 2800 3000 4000 5230 6500 7000 8000 \nAccepted \n5k\nSubmissions \n6k\nAcceptance Rate \n89.71\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n2 3 1 4 5\nOutput\n1 2 3 4 5\nInput\n3\n9 8 1\nOutput\n1 8 9\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n2 3 1 4 5\nOutput\n1 2 3 4 5\nInput\n3\n9 8 1\nOutput\n1 8 9\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSalary Sort\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Number of employees followed by the salaries of employees.",
+ "output_spec": "Salaries sorted in ascending order. \nExplanation:\nEmployee salaries sorted in ascending order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8\n7000 8000 6500 1200 4000 2800 3000 5230",
+   "output": "1200 2800 3000 4000 5230 6500 7000 8000"
+  },
+  {
+   "input": "5\n2 3 1 4 5",
+   "output": "1 2 3 4 5"
+  },
+  {
+   "input": "3\n9 8 1",
+   "output": "1 8 9"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,1 @@
+{"code": "import sys\n\ns = sys.stdin.readline().rstrip('\\n')\nprint(s[::-1])\n", "local_ok": true, "slug": "reverse-a-string-2", "lang": "PYTHON 3"}

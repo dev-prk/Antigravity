@@ -3,14 +3,22 @@
  "slug": "ab-pattern",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n783. AB Pattern\n\n40\n\nMedium  Topics\n\nProblem Statement:\nYou are given a task is to print pattern using alphabets A and B by getting a number n as input.",
- "input_spec": ".\n\nInput Description:\nYou are given a number \u2018n' as input",
- "output_spec": "Print the pattern as shown",
+ "description": "roblem\nProblem\nHints & Solutions\nSubmissions\n783\n. \nAB Pattern\n40\nMedium\nTopics\nProblem Statement:\nYou are given a task is to print pattern using alphabets A and B by getting a number n as input. \nInput Description:\nYou are given a number \u2018n' as input \nOutput Description:\nPrint the pattern as shown \nExplanation:\nPrint pattern using A and B only \nSample Input:\n4 \nSample Output:\nBABA \nABAB \nBABA \nABAB \nAccepted \n553\nSubmissions \n593\nAcceptance Rate \n93.25\n%\nTopics\npatterns - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\nBABAB\nABABA\nBABAB\nABABA\nBABAB\nInput\n6\nOutput\nBABABA\nABABAB\nBABABA\nABABAB\nBABABA\nABABAB\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\nBABAB\nABABA\nBABAB\nABABA\nBABAB\nInput\n6\nOutput\nBABABA\nABABAB\nBABABA\nABABAB\nBABABA\nABABAB\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAB Pattern\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given a number \u2018n' as input",
+ "output_spec": "Print the pattern as shown \nExplanation:\nPrint pattern using A and B only",
  "constraints": "",
  "samples": [
   {
    "input": "4",
-   "output": "BABA\nABAB\nBABA\nABAB"
+   "output": "BABA \nABAB \nBABA \nABAB"
+  },
+  {
+   "input": "5",
+   "output": "BABAB\nABABA\nBABAB\nABABA\nBABAB"
+  },
+  {
+   "input": "6",
+   "output": "BABABA\nABABAB\nBABABA\nABABAB\nBABABA\nABABAB"
   }
  ],
  "raw": ""

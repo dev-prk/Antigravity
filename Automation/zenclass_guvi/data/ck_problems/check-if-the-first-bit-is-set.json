@@ -1,0 +1,25 @@
+{
+ "title": "621. Check if the first bit is set",
+ "slug": "check-if-the-first-bit-is-set",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n621\n. \nCheck if the first bit is set\n30\nEasy\nTopics\nProblem Statement:\nYou are given a number 'n' and a bit 'K',your task is to tell whether the first bit is 1. Return true or false according to the scenario. First bit starts from right.(0 based indexing) \nInput Description:\nYou are given a number 'n' and a bit 'k'. \nOutput Description:\nPrint true if bit is set and false if bit is not true. \nSample Input:\n4\n0 \nSample Output:\nFalse \nExplanation:\nSelf Explanatory \nAccepted \n850\nSubmissions \n1k\nAcceptance Rate \n69.44\n%\nTopics\nbit manipulation\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n0\nOutput\nfalse\nInput\n3\n1\nOutput\ntrue\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n0\nOutput\nfalse\nInput\n3\n1\nOutput\ntrue\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCheck if the first bit is set\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given a number 'n' and a bit 'k'.",
+ "output_spec": "Print true if bit is set and false if bit is not true.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n0",
+   "output": "False"
+  },
+  {
+   "input": "4\n0",
+   "output": "false"
+  },
+  {
+   "input": "3\n1",
+   "output": "true"
+  }
+ ],
+ "raw": ""
+}

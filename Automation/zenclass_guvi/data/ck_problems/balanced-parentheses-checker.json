@@ -3,13 +3,17 @@
  "slug": "balanced-parentheses-checker",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1772. Balanced Parentheses Checker\n\n60\n\nMedium\n\nBalanced Parentheses Checker\nProblem Statement\n\nWrite a program to check if a given expression has balanced parentheses (), {}, and [] using a stack.\n\nDescription\n\nPush opening brackets onto a stack.\n\nPop when encountering closing brackets and check for matching pairs.\n\nIf any mismatch or leftover brackets remain, the expression is not balanced.\n\nInput Format\n\nSingle string expression\n\nOutput Format\n\nPrint \"Balanced\" if parentheses are correctly matched\n\nPrint \"Not Balanced\" otherwise",
- "input_spec": "Single string expression",
- "output_spec": "Print \"Balanced\" if parentheses are correctly matched\n\nPrint \"Not Balanced\" otherwise",
+ "description": "ons\n1772\n. \nBalanced Parentheses Checker\n60\nMedium\nBalanced Parentheses Checker\nProblem Statement\nWrite a program to check if a given expression has balanced parentheses (), {}, and [] using a stack.\nDescription\nPush opening brackets onto a stack.\nPop when encountering closing brackets and check for matching pairs.\nIf any mismatch or leftover brackets remain, the expression is not balanced.\nInput Format\nSingle string expression\nOutput Format\nPrint \"Balanced\" if parentheses are correctly matched\nPrint \"Not Balanced\" otherwise\nSample Input\n{[()]}\nSample Output\nBalanced\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n94.35\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n((()))\nOutput\nBalanced\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n((()))\nOutput\nBalanced\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBalanced Parentheses Checker\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "{[()]}",
+   "output": "Balanced"
+  },
+  {
+   "input": "((()))",
    "output": "Balanced"
   }
  ],

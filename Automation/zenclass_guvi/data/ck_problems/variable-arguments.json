@@ -1,0 +1,17 @@
+{
+ "title": "1611. Variable Arguments",
+ "slug": "variable-arguments",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nProblem\nHints & Solutions\nSubmissions\n1611\n. \nVariable Arguments\n10\nEasy\nProblem Statement:\n Dynamic Aggregation of Different Types of Values\nIn a financial application, you need to aggregate different types of values. These values could be monetary amounts, item counts, or percentages. The challenge is that the number of values and their types vary with each call. Depending on the type of aggregation, your task is to either sum, find the maximum, or average values of a specific type, all while working with a variable number of arguments.\nInput:\nThe first input is a string that defines the aggregation operation. It can be one of three values:\n\"sum\": Sum the values of a specified type.\n\"max\": Find the maximum value of a specified type.\n\"average\": Calculate the average of the values of a specified type.\nThe second input is a string that defines the type of value being aggregated. It can be:\n\"monetary\": Represents monetary amounts.\n\"count\": Represents item counts.\n\"percentage\": Represents percentage values.\nThe third input is an integer n (number of values to be processed).\nThe fourth input is a list of n integers representing the values of the specified type.\nOutput:\nPrint the result of the specified aggregation operation on the specified type of values.\nProblem Statement:\nGiven an aggregation operation (\"sum\", \"max\", \"average\") and a type of value (\"monetary\", \"count\", \"percentage\"), your task is to implement a function that performs the specified operation using variable argument handling in C.\nExample:\nInput:\nsum\nmonetary\n4\n100 200 300 400\nOutput:\n1000\nExplanation:\nThe operation is \"sum\", and the values are monetary amounts 100, 200, 300, 400. The sum of these values is 1000.\nConstraints:\n1 <= n <= 100\n-10^6 <= value of each integer <= 10^6\nThe input operation is guaranteed to be one of \"sum\", \"max\", or \"average\".\nThe type of value is guaranteed to be one of \"monetary\", \"count\", or \"percentage\".\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n91.94\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nsum\nmonetary\n4\n100 200 300 400\nOutput\n1000\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nsum\nmonetary\n4\n100 200 300 400\nOutput\n1000\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Quest",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "sum\nmonetary\n4\n100 200 300 400",
+   "output": "1000"
+  }
+ ],
+ "raw": ""
+}

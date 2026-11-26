@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    R = int(data)\n    width = 2 * R - 1\n    for i in range(R):\n        line = 'b' * i + '*' * (width - 2 * i) + 'b' * i\n        print(line)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "b-and-pattern", "lang": "PYTHON 3"}

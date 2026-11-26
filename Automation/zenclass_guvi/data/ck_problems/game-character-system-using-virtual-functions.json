@@ -3,14 +3,18 @@
  "slug": "game-character-system-using-virtual-functions",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1821. Game Character System using Virtual Functions\n\n40\n\nMedium\n\nGame Character System using Virtual Functions\n\nProblem Statement:\nDesign a game character hierarchy demonstrating dynamic binding.\n\nDescription:\nBase Class: Character\nVirtual function attack()\n\nDerived Classes:\n1. Warrior\n2. Mage\n3. Archer\n\nRequirements:\n1. Use base class pointer.\n2. Call attack() dynamically.\n3. Add virtual destructor.\n4. Show output difference based on actual object.\n5. Demonstrate polymorphic behavior in loop.\n\nInput Format:\nCharacter Type\n\nOutput Format:\nCharacter Attack Message",
- "input_spec": "Character Type",
- "output_spec": "difference based on actual object.\n5. Demonstrate polymorphic behavior in loop.\n\nInput Format:\nCharacter Type\n\nOutput Format:\nCharacter Attack Message",
+ "description": "using Virtual Functions\n40\nMedium\nGame Character System using Virtual Functions\nProblem Statement:\nDesign a game character hierarchy demonstrating dynamic binding.\nDescription:\nBase Class: Character\nVirtual function attack()\nDerived Classes:\n1. Warrior\n2. Mage\n3. Archer\nRequirements:\n1. Use base class pointer.\n2. Call attack() dynamically.\n3. Add virtual destructor.\n4. Show output difference based on actual object.\n5. Demonstrate polymorphic behavior in loop.\nInput Format:\nCharacter Type\nOutput Format:\nCharacter Attack Message\nSample Input:\nMage\nSample Output:\nMage casts Fireball!\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nWarrior\nOutput\nWarrior slashes with Sword!\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nWarrior\nOutput\nWarrior slashes with Sword!\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nGame Character System using Virtual Functions\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "Mage",
    "output": "Mage casts Fireball!"
+  },
+  {
+   "input": "Warrior",
+   "output": "Warrior slashes with Sword!"
   }
  ],
  "raw": ""

@@ -1,3 +1,21 @@
-2026/11/26-22:41:59.097 2b674a Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/11/26-22:41:59.098 2b674a Recovering log #26
-2026/11/26-22:41:59.098 2b674a Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/000026.log 
+2026/11/26-22:54:03.201 2bc3f7 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/11/26-22:54:03.201 2bc3f7 Recovering log #36
+2026/11/26-22:54:03.202 2bc3f7 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/000036.log 
+2026/11/26-22:55:03.205 2bc3fc Level-0 table #40: started
+2026/11/26-22:55:03.215 2bc3fc Level-0 table #40: 72333 bytes OK
+2026/11/26-22:55:03.221 2bc3fc Delete type=0 #36
+2026/11/26-22:58:03.891 2bc3fc Level-0 table #42: started
+2026/11/26-22:58:03.901 2bc3fc Level-0 table #42: 76531 bytes OK
+2026/11/26-22:58:03.906 2bc3fc Delete type=0 #39
+2026/11/26-23:00:03.889 2bc3fc Level-0 table #44: started
+2026/11/26-23:00:03.890 2bc3fc Level-0 table #44: 51908 bytes OK
+2026/11/26-23:00:03.897 2bc3fc Delete type=0 #41
+2026/11/26-23:00:03.897 2bc3fc Compacting 4@0 + 1@1 files
+2026/11/26-23:00:03.899 2bc3fc Generated table #45@0: 138 keys, 32850 bytes
+2026/11/26-23:00:03.899 2bc3fc Compacted 4@0 + 1@1 files => 32850 bytes
+2026/11/26-23:00:03.901 2bc3fc compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/26-23:00:03.901 2bc3fc Delete type=2 #34
+2026/11/26-23:00:03.901 2bc3fc Delete type=2 #37
+2026/11/26-23:00:03.901 2bc3fc Delete type=2 #42
+2026/11/26-23:00:03.901 2bc3fc Delete type=2 #40
+2026/11/26-23:00:03.901 2bc3fc Delete type=2 #44

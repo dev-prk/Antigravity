@@ -1,0 +1,25 @@
+{
+ "title": "2195. Checking Voting Eligibility",
+ "slug": "checking-voting-eligibility",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nHints & Solutions\nSubmissions\n2195\n. \nChecking Voting Eligibility\n20\nEasy\nProblem Statement\nRead a person's age and determine whether the person is eligible to vote, using an if-else statement.\nDescription\nA person is eligible to vote if their age is 18 or more. Read an integer age from input and use an if-else statement to print \"Eligible\" if the age is at least 18, otherwise print \"Not Eligible\".\nInput Description\nA single non-negative integer age.\nOutput Description\nPrint \"Eligible\" if age is 18 or more, otherwise print \"Not Eligible\".\nSample Input\n20\nSample Output\nEligible\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n20\nOutput\nEligible\nInput\n17\nOutput\nNot Eligible\nInput\n18\nOutput\nEligible\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n20\nOutput\nEligible\nInput\n17\nOutput\nNot Eligible\nInput\n18\nOutput\nEligible\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nChecking Voting Eligibility\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single non-negative integer age.",
+ "output_spec": "Print \"Eligible\" if age is 18 or more, otherwise print \"Not Eligible\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20",
+   "output": "Eligible"
+  },
+  {
+   "input": "17",
+   "output": "Not Eligible"
+  },
+  {
+   "input": "18",
+   "output": "Eligible"
+  }
+ ],
+ "raw": ""
+}

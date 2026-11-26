@@ -3,7 +3,7 @@
  "slug": "b-tree-deletion-with-balance-maintenance",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1540. B-Tree Deletion with Balance Maintenance\n\n80\n\nHard\n\nProblem Statement:\nGiven a B-Tree of order t (minimum degree), implement a function to delete a given key from the B-Tree. The B-Tree should maintain all its properties after the deletion. You are required to handle all cases of deletion, including deleting from leaf and non-leaf nodes, and ensuring the tree remains balanced.",
+ "description": " Solutions\nSubmissions\n1540\n. \nB-Tree Deletion with Balance Maintenance\n80\nHard\nProblem Statement:\nGiven a B-Tree of order t (minimum degree), implement a function to delete a given key from the B-Tree. The B-Tree should maintain all its properties after the deletion. You are required to handle all cases of deletion, including deleting from leaf and non-leaf nodes, and ensuring the tree remains balanced. \nInput Description:\n- The first line contains two integers n and t, where n is the number of keys initially in the B-Tree, and t is the minimum degree of the B-Tree.\n- The second line contains n space-separated integers representing the keys in the B-Tree in level order.\n- The third line contains an integer q, the number of keys to delete.\n- The fourth line contains q space-separated integers, each representing a key to delete from the B-Tree. \nOutput Description:\n- For each deletion, output the level order traversal of the B-Tree after the deletion as a single line of space-separated integers. If the tree becomes empty, output \"Empty\". \nSample Input:\n7 2\n10 20 5 6 12 30 7\n3\n6 13 7\n6 13 7 \nSample Output:\n10 5 7 12 20 30\n10 5 7 12 20 30\n10 5 12 20 30 \nExplanation:\n- After deleting 6, the tree is restructured but remains valid.\n- Deleting 13 (not present) does not change the tree.\n- After deleting 7, the tree is updated accordingly. \nAccepted \n7\nSubmissions \n18\nAcceptance Rate \n38.89\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 2\n8 9 10 11 15\n2\n10 8\nOutput\n9 8 11 15\n11 9 15\nInput\n6 3\n20 40 60 80 100 120\n1\n60\nOutput\n80 20 40 100 120\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 2\n8 9 10 11 15\n2\n10 8\nOutput\n9 8 11 15\n11 9 15\nInput\n6 3\n20 40 60 80 100 120\n1\n60\nOutput\n80 20 40 100 120\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nB-Tree Deletion with Balance Maintenance\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficu",
  "input_spec": "- The first line contains two integers n and t, where n is the number of keys initially in the B-Tree, and t is the minimum degree of the B-Tree.\n- The second line contains n space-separated integers representing the keys in the B-Tree in level order.\n- The third line contains an integer q, the number of keys to delete.\n- The fourth line contains q space-separated integers, each representing a key to delete from the B-Tree.",
  "output_spec": "- For each deletion, output the level order traversal of the B-Tree after the deletion as a single line of space-separated integers. If the tree becomes empty, output \"Empty\".",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "7 2\n10 20 5 6 12 30 7\n3\n6 13 7\n6 13 7",
    "output": "10 5 7 12 20 30\n10 5 7 12 20 30\n10 5 12 20 30"
+  },
+  {
+   "input": "5 2\n8 9 10 11 15\n2\n10 8",
+   "output": "9 8 11 15\n11 9 15"
+  },
+  {
+   "input": "6 3\n20 40 60 80 100 120\n1\n60",
+   "output": "80 20 40 100 120"
   }
  ],
  "raw": ""

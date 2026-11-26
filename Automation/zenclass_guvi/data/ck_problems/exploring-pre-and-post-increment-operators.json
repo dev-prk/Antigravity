@@ -3,7 +3,7 @@
  "slug": "exploring-pre-and-post-increment-operators",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2085. Exploring Pre and Post Increment Operators\n\n50\n\nMedium\n\nProblem Statement\nRead an integer and print the results of using it with both post-increment and pre-increment operators in expressions.\nDescription\nRead an integer x. Compute a = post-increment of x. Compute b = pre-increment of x. Print a, b, and the final value of x, each on its own line.",
+ "description": "utions\nSubmissions\n2085\n. \nExploring Pre and Post Increment Operators\n50\nMedium\nProblem Statement\nRead an integer and print the results of using it with both post-increment and pre-increment operators in expressions.\nDescription\nRead an integer x. Compute a = post-increment of x. Compute b = pre-increment of x. Print a, b, and the final value of x, each on its own line.\nInput Description\nA single integer x.\nOutput Description\nPrint a, then b, then the final value of x, each on its own line.\nSample Input\n5\nSample Output\n5\n7\n7\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n3\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\nOutput\n5\n7\n7\nInput\n10\nOutput\n10\n12\n12\nInput\n0\nOutput\n0\n2\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\nOutput\n5\n7\n7\nInput\n10\nOutput\n10\n12\n12\nInput\n0\nOutput\n0\n2\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nExploring Pre and Post Increment Operators\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single integer x.",
  "output_spec": "Print a, then b, then the final value of x, each on its own line.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5",
    "output": "5\n7\n7"
+  },
+  {
+   "input": "10",
+   "output": "10\n12\n12"
+  },
+  {
+   "input": "0",
+   "output": "0\n2\n2"
   }
  ],
  "raw": ""

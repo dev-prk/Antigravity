@@ -1,0 +1,21 @@
+{
+ "title": "1122. Shape Interface Implementation",
+ "slug": "shape-interface-implementation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n1122\n. \nShape Interface Implementation\n20\nEasy\nProblem Statement:\nCreate an interface Shape with methods area and perimeter. Implement this interface in two classes: Rectangle and Circle. Each class should have appropriate constructors and methods to calculate the area and perimeter.\nDefine an interface Shape with methods double area() and double perimeter(). \nCreate a class Rectangle that implements Shape with properties length and width. \nCreate a class Circle that implements Shape with property radius. \nEnsure the Rectangle and Circle classes have constructors to initialize their properties. \nImplement the methods area and perimeter in both classes.\nInput Description:\nString representing the shape type (Rectangle or Circle).\nIf Rectangle, two doubles representing length and width.\nIf Circle, one double representing radius. \nOutput Description:\nDouble representing the area of the shape.\nDouble representing the perimeter of the shape. \nSample Input:\nRectangle\n5\n10 \nSample Output:\nArea: 50.0\nPerimeter: 30.0 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n96.84\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nRectangle\n5\n10\nOutput\nArea: 50.0\nPerimeter: 30.0\nInput\nRectangle\n3\n4\nOutput\nArea: 12.0\nPerimeter: 14.0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nRectangle\n5\n10\nOutput\nArea: 50.0\nPerimeter: 30.0\nInput\nRectangle\n3\n4\nOutput\nArea: 12.0\nPerimeter: 14.0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nShape Interface Implementation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "String representing the shape type (Rectangle or Circle).\nIf Rectangle, two doubles representing length and width.\nIf Circle, one double representing radius.",
+ "output_spec": "Double representing the area of the shape.\nDouble representing the perimeter of the shape.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Rectangle\n5\n10",
+   "output": "Area: 50.0\nPerimeter: 30.0"
+  },
+  {
+   "input": "Rectangle\n3\n4",
+   "output": "Area: 12.0\nPerimeter: 14.0"
+  }
+ ],
+ "raw": ""
+}

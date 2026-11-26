@@ -3,14 +3,22 @@
  "slug": "add-one-to-linked-list",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n837. Add One to Linked List\n\n50\n\nMedium  Topics\n\nProblem Statement:\nNumber is represented in linked list such that each digit corresponds to a node in linked list. Add 1 to it. For example 1999 is represented as (1-> 9-> 9 -> 9) and adding 1 to it should change it to (2->0->0->0)",
+ "description": "em\nHints & Solutions\nSubmissions\n837\n. \nAdd One to Linked List\n50\nMedium\nTopics\nProblem Statement:\nNumber is represented in linked list such that each digit corresponds to a node in linked list. Add 1 to it. For example 1999 is represented as (1-> 9-> 9 -> 9) and adding 1 to it should change it to (2->0->0->0) \nInput Description:\nFirst line consists of length of the linked list.\nSecond line consists the linked list each node in the linked list are having numbers as their data(separated by space). \nOutput Description:\nPrint the linked list after adding 1 to it(separated by space) \nExplanation:\nadd 1 to the linked list \nSample Input:\n4\n1 9 9 9 \nSample Output:\n2 0 0 0 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n88.56\n%\nTopics\nlinked list\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 4\nOutput\n1 2 5\nInput\n1\n0\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 4\nOutput\n1 2 5\nInput\n1\n0\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAdd One to Linked List\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line consists of length of the linked list.\nSecond line consists the linked list each node in the linked list are having numbers as their data(separated by space).",
- "output_spec": "Print the linked list after adding 1 to it(separated by space)",
+ "output_spec": "Print the linked list after adding 1 to it(separated by space) \nExplanation:\nadd 1 to the linked list",
  "constraints": "",
  "samples": [
   {
    "input": "4\n1 9 9 9",
    "output": "2 0 0 0"
+  },
+  {
+   "input": "3\n1 2 4",
+   "output": "1 2 5"
+  },
+  {
+   "input": "1\n0",
+   "output": "1"
   }
  ],
  "raw": ""

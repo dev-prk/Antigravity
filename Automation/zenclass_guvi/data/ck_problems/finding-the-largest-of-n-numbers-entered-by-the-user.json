@@ -3,7 +3,7 @@
  "slug": "finding-the-largest-of-n-numbers-entered-by-the-user",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2121. Finding the Largest of N Numbers Entered by the User\n\n70\n\nHard\n\nProblem Statement\nRead a count N followed by N integers, and print the largest value among them, using a loop combined with an if statement.\n\nDescription\nRead an integer N specifying how many values will follow. Read the first value and store it as the current largest. Use a for loop to read each of the remaining N - 1 values one at a time, and inside the loop use an if statement to update the largest value whenever a bigger number is read. After the loop ends, print the largest value found.",
+ "description": "ubmissions\n2121\n. \nFinding the Largest of N Numbers Entered by the User\n70\nHard\nProblem Statement\nRead a count N followed by N integers, and print the largest value among them, using a loop combined with an if statement.\nDescription\nRead an integer N specifying how many values will follow. Read the first value and store it as the current largest. Use a for loop to read each of the remaining N - 1 values one at a time, and inside the loop use an if statement to update the largest value whenever a bigger number is read. After the loop ends, print the largest value found.\nInput Description\nAn integer N, followed by N integers, all separated by spaces.\nOutput Description\nPrint the largest of the N numbers.\nSample Input\n5 3 8 2 9 4\nSample Output\n9\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 3 8 2 9 4\nOutput\n9\nInput\n3 -1 -5 -2\nOutput\n-1\nInput\n1 42\nOutput\n42\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 3 8 2 9 4\nOutput\n9\nInput\n3 -1 -5 -2\nOutput\n-1\nInput\n1 42\nOutput\n42\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Largest of N Numbers Entered by the User\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "An integer N, followed by N integers, all separated by spaces.",
  "output_spec": "Print the largest of the N numbers.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5 3 8 2 9 4",
    "output": "9"
+  },
+  {
+   "input": "3 -1 -5 -2",
+   "output": "-1"
+  },
+  {
+   "input": "1 42",
+   "output": "42"
   }
  ],
  "raw": ""

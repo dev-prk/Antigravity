@@ -3,7 +3,7 @@
  "slug": "correcting-geometric-progression",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n455. Correcting Geometric Progression\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given a sequence containing N integers. Changing a maximum of one element of the sequence will result in a geometric progression with an integer common ratio. Your task is to print the correct geometric progression. ((Ref.  https://en.wikipedia.org/wiki/Geometric_progression ), N >= 4)",
+ "description": " Solutions\nSubmissions\n455\n. \nCorrecting Geometric Progression\n50\nMedium\nTopics\nProblem Statement:\nYou are given a sequence containing N integers. Changing a maximum of one element of the sequence will result in a geometric progression with an integer common ratio. Your task is to print the correct geometric progression. ((Ref. \nhttps://en.wikipedia.org/wiki/Geometric_progression\n), N >= 4) \nInput Description:\nThe first line contains the integer N.\nThe next line contains N space separated integers, A[0], A[1]...A[n-1]/ \nOutput Description:\nPrint N space separated integers, which are in Geometric Progression \nSample Input:\n4\n2 3 8 16 \nSample Output:\n2 4 8 16 \nExplanation:\nChanging 3 to 4 gives a GP with common ratio = 2 \nAccepted \n148\nSubmissions \n431\nAcceptance Rate \n34.34\n%\nTopics\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n2 4 7 16\nOutput\n2 4 8 16\nInput\n9\n-7 -7 -7 -7 -7 -7 -7 -7 8 \nOutput\n-7 -7 -7 -7 -7 -7 -7 -7 -7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n2 4 7 16\nOutput\n2 4 8 16\nInput\n9\n-7 -7 -7 -7 -7 -7 -7 -7 8 \nOutput\n-7 -7 -7 -7 -7 -7 -7 -7 -7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCorrecting Geometric Progression\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains the integer N.\nThe next line contains N space separated integers, A[0], A[1]...A[n-1]/",
  "output_spec": "Print N space separated integers, which are in Geometric Progression",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "4\n2 3 8 16",
    "output": "2 4 8 16"
+  },
+  {
+   "input": "4\n2 4 7 16",
+   "output": "2 4 8 16"
+  },
+  {
+   "input": "9\n-7 -7 -7 -7 -7 -7 -7 -7 8",
+   "output": "-7 -7 -7 -7 -7 -7 -7 -7 -7"
   }
  ],
  "raw": ""

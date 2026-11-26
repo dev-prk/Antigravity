@@ -1,0 +1,25 @@
+{
+ "title": "568. Spoilt Apples",
+ "slug": "spoilt-apples",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nProblem\nHints & Solutions\nSubmissions\n568\n. \nSpoilt Apples\n20\nEasy\nTopics\nProblem Statement:\nRamnath is a farmer who grows apples. He packs apples in batches of fixed sizes and transports it from Kashmir to Odisha. On the way, he checks if any of the apples have become spoilt. Even if one of the apples in a box is spoilt, he discards the entire box as there is a possibility that the others might become spoilt soon. Before discarding the box, he marks every apple in the box with an \u2018x\u2019 which indicates that the apples in the box are spoilt. The boxes are stacked one on top of another. A spoilt apple in a box is indicated by \u2018x\u2019 and a healthy one is indicated by \u2018a\u2019. Find out the final set of good and bad apples. \nInput Description:\nNumber of apples in a box, Number of boxes and initial condition of all apples (\u2018a\u2019 for healthy and \u2018x\u2019 for spoilt). \nOutput Description:\nFinal condition of all the apples in the boxes \nExplanation:\nAs one apple is spoilt in boxes 2 and 4, all the apples in the boxes are marked \u2018x\u2019 before discarding the boxes. \nSample Input:\n3 4\na a a\na x a\na a a\na a x \nSample Output:\nA a a\nX x x\nA a a\nX x x \nAccepted \n709\nSubmissions \n1k\nAcceptance Rate \n68.04\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\nA x a x a\nA a a a a\nX x x x a\nA x a a x\nA a a a x\nOutput\nX x x x x\nA a a a a\nX x x x x\nX x x x x\nX x x x x\nInput\n2 2\nA a\nA a\nOutput\nA a\nA a\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\nA x a x a\nA a a a a\nX x x x a\nA x a a x\nA a a a x\nOutput\nX x x x x\nA a a a a\nX x x x x\nX x x x x\nX x x x x\nInput\n2 2\nA a\nA a\nOutput\nA a\nA a\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSpoilt Apples\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCon",
+ "input_spec": "Number of apples in a box, Number of boxes and initial condition of all apples (\u2018a\u2019 for healthy and \u2018x\u2019 for spoilt).",
+ "output_spec": "Final condition of all the apples in the boxes \nExplanation:\nAs one apple is spoilt in boxes 2 and 4, all the apples in the boxes are marked \u2018x\u2019 before discarding the boxes.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 4\na a a\na x a\na a a\na a x",
+   "output": "A a a\nX x x\nA a a\nX x x"
+  },
+  {
+   "input": "5 5\nA x a x a\nA a a a a\nX x x x a\nA x a a x\nA a a a x",
+   "output": "X x x x x\nA a a a a\nX x x x x\nX x x x x\nX x x x x"
+  },
+  {
+   "input": "2 2\nA a\nA a",
+   "output": "A a\nA a"
+  }
+ ],
+ "raw": ""
+}

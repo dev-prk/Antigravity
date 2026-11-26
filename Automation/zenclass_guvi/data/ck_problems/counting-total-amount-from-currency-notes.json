@@ -3,7 +3,7 @@
  "slug": "counting-total-amount-from-currency-notes",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2089. Counting Total Amount from Currency Notes\n\n40\n\nMedium\n\nProblem Statement\nRead the number of currency notes of three denominations and print the total amount of money, by directly multiplying and adding the values together.\n\nDescription\nRead three integers n500, n200 and n100, representing the number of notes of value Rs.500, Rs.200 and Rs.100 respectively. Multiply each count by its denomination value, add the three results together, and store the result in a variable. Print the total amount. No loop is needed since the count of denominations is fixed at three.",
+ "description": "lutions\nSubmissions\n2089\n. \nCounting Total Amount from Currency Notes\n40\nMedium\nProblem Statement\nRead the number of currency notes of three denominations and print the total amount of money, by directly multiplying and adding the values together.\nDescription\nRead three integers n500, n200 and n100, representing the number of notes of value Rs.500, Rs.200 and Rs.100 respectively. Multiply each count by its denomination value, add the three results together, and store the result in a variable. Print the total amount. No loop is needed since the count of denominations is fixed at three.\nInput Description\nThree integers n500, n200 and n100 separated by spaces.\nOutput Description\nPrint the total amount of money represented by the notes.\nSample Input\n2 3 1\nSample Output\n1700\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 3 1\nOutput\n1700\nInput\n0 0 5\nOutput\n500\nInput\n1 1 1\nOutput\n800\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 3 1\nOutput\n1700\nInput\n0 0 5\nOutput\n500\nInput\n1 1 1\nOutput\n800\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCounting Total Amount from Currency Notes\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Three integers n500, n200 and n100 separated by spaces.",
  "output_spec": "Print the total amount of money represented by the notes.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "2 3 1",
    "output": "1700"
+  },
+  {
+   "input": "0 0 5",
+   "output": "500"
+  },
+  {
+   "input": "1 1 1",
+   "output": "800"
   }
  ],
  "raw": ""

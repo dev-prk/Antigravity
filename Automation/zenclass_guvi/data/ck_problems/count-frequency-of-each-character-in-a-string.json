@@ -3,10 +3,15 @@
  "slug": "count-frequency-of-each-character-in-a-string",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1880. Count Frequency of Each Character in a String\n\n50\n\nMedium  Topics\n\nProblem Title:\n\nCount Frequency of Each Character in a String\n\nProblem Statement:\n\nYou are given a string consisting of uppercase and lowercase English letters.\n\nWrite a program to count the frequency of each character in the string and print the characters along with their frequencies in the order of their first appearance.\n\nCharacter comparison should be case-sensitive\n(i.e., 'A' and 'a' are treated as different characters)\n\nInput Format:\n\nA single line containing the string s\n\nOutput Format:\n\nFor each distinct character, print:\n\ncharacter frequency\n(one per line, space-separated)",
- "input_spec": "A single line containing the string s",
- "output_spec": "For each distinct character, print:\n\ncharacter frequency\n(one per line, space-separated)",
- "constraints": "1 \u2264 length of string \u2264 10\u2075\n\nString contains only alphabets (A\u2013Z, a\u2013z)\n\nNo extra spaces in",
- "samples": [],
+ "description": "g\n50\nMedium\nTopics\nProblem Title:\nCount Frequency of Each Character in a String\nProblem Statement:\nYou are given a string consisting of uppercase and lowercase English letters.\nWrite a program to count the frequency of each character in the string and print the characters along with their frequencies in the order of their first appearance.\nCharacter comparison should be case-sensitive\n(i.e., 'A' and 'a' are treated as different characters)\nInput Format:\nA single line containing the string s\nOutput Format:\nFor each distinct character, print:\ncharacter frequency\n(one per line, space-separated)\nConstraints:\n1 \u2264 length of string \u2264 10\u2075\nString contains only alphabets (A\u2013Z, a\u2013z)\nNo extra spaces in input\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\ndata structures\nhash\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nprogramming\nOutput\np 1\nr 2\no 1\ng 2\na 1\nm 2\ni 1\nn 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nprogramming\nOutput\np 1\nr 2\no 1\ng 2\na 1\nm 2\ni 1\nn 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCount Frequency of Each Character in a String\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "programming",
+   "output": "p 1\nr 2\no 1\ng 2\na 1\nm 2\ni 1\nn 1"
+  }
+ ],
  "raw": ""
 }

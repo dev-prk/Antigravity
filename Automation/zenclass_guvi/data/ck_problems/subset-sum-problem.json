@@ -1,0 +1,25 @@
+{
+ "title": "1456. Subset Sum Problem",
+ "slug": "subset-sum-problem",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nProblem\nHints & Solutions\nSubmissions\n1456\n. \nSubset Sum Problem\n30\nEasy\nProblem Statement:\nGiven a set of integers and a target sum, determine whether there exists a subset of the given set whose sum is exactly equal to the target sum. If such a subset exists, print \"Yes\", otherwise print \"No\". \nInput Description:\n- The first line contains two integers N and S, where N is the number of elements in the set and S is the target sum.\n- The second line contains N space-separated integers representing the elements of the set. \nOutput Description:\n- Print \"Yes\" if there exists a subset whose sum is equal to S, otherwise print \"No\". \nSample Input:\n5 9\n3 34 4 12 5\n4 11\n1 2 3 4 \nSample Output:\nYes\nNo \nExplanation:\nThere exists a subset {4, 5} whose sum is 9.\nNo subset sums up to 11. \nAccepted \n54\nSubmissions \n61\nAcceptance Rate \n88.52\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 0\n1 2 3\nOutput\nYes\nInput\n6 10\n2 3 7 8 10 13\nOutput\nYes\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 0\n1 2 3\nOutput\nYes\nInput\n6 10\n2 3 7 8 10 13\nOutput\nYes\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSubset Sum Problem\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains two integers N and S, where N is the number of elements in the set and S is the target sum.\n- The second line contains N space-separated integers representing the elements of the set.",
+ "output_spec": "- Print \"Yes\" if there exists a subset whose sum is equal to S, otherwise print \"No\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 9\n3 34 4 12 5\n4 11\n1 2 3 4",
+   "output": "Yes\nNo"
+  },
+  {
+   "input": "3 0\n1 2 3",
+   "output": "Yes"
+  },
+  {
+   "input": "6 10\n2 3 7 8 10 13",
+   "output": "Yes"
+  }
+ ],
+ "raw": ""
+}

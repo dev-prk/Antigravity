@@ -3,14 +3,18 @@
  "slug": "banking-system-with-static-interest-rate",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1643. Banking System with Static Interest Rate\n\n50\n\nMedium\n\nBanking System with Static Interest Rate\nProblem Statement\nCreate a banking system where the interest rate is static across all accounts. Demonstrate deposits, withdrawals, and interest calculation.\n\nDescription\n1. Define a class BankAccount with variables:\nbalance (for storing account balance).\n2. Use a static variable interestRate applicable to all accounts.\n3. Implement methods:\ndeposit(amount) \u2192 Adds money to balance.\nwithdraw(amount) \u2192 Deducts money if sufficient balance exists.\ncalculateInterest() \u2192 Returns interest based on current balance and static interest rate.\n4. After deposit and withdrawal, calculate interest and display the final balance and interest.\n\nInput Format\nInitial deposit amount\nWithdrawal amount\n\nOutput Format\nBalance\nInterest",
- "input_spec": "Initial deposit amount\nWithdrawal amount",
- "output_spec": "Balance\nInterest",
+ "description": "em with Static Interest Rate\n50\nMedium\nBanking System with Static Interest Rate\nProblem Statement\nCreate a banking system where the interest rate is static across all accounts. Demonstrate deposits, withdrawals, and interest calculation.\nDescription\n1. Define a class BankAccount with variables:\n\u00a0balance (for storing account balance).\n2. Use a static variable interestRate applicable to all accounts.\n3. Implement methods:\n\u00a0 deposit(amount) \u2192 Adds money to balance.\n\u00a0 withdraw(amount) \u2192 Deducts money if sufficient balance exists.\n\u00a0 calculateInterest() \u2192 Returns interest based on current balance and static interest rate.\n4. After deposit and withdrawal, calculate interest and display the final balance and interest.\nInput Format\nInitial deposit amount\nWithdrawal amount\nOutput Format\nBalance\nInterest\nSample Input\n5000\n2000\nSample Output\n3000.0\n150\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n86.74\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n10000\n4000\nOutput\n6000.0\n300\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n10000\n4000\nOutput\n6000.0\n300\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBanking System with Static Interest Rate\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5000\n2000",
    "output": "3000.0\n150"
+  },
+  {
+   "input": "10000\n4000",
+   "output": "6000.0\n300"
   }
  ],
  "raw": ""

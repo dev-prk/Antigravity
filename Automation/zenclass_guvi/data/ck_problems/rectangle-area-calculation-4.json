@@ -1,0 +1,21 @@
+{
+ "title": "1366. Rectangle Area Calculation-4",
+ "slug": "rectangle-area-calculation-4",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n1366\n. \nRectangle Area Calculation-4\n10\nEasy\nProblem Statement:\nYou are given the length A and breadth B of a rectangle. Calculate and print the area C of the rectangle. \nInput Description:\nTwo natural numbers A and B representing the length and breadth of a rectangle. \nOutput Description:\nPrint the area of the rectangle. If required, round off the result to the first decimal place. \nSample Input:\n2\n3 \nSample Output:\n6 \nAccepted \n43\nSubmissions \n44\nAcceptance Rate \n97.73\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n3\nOutput\n6\nInput\n5\n4\nOutput\n20\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n3\nOutput\n6\nInput\n5\n4\nOutput\n20\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRectangle Area Calculation-4\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two natural numbers A and B representing the length and breadth of a rectangle.",
+ "output_spec": "Print the area of the rectangle. If required, round off the result to the first decimal place.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n3",
+   "output": "6"
+  },
+  {
+   "input": "5\n4",
+   "output": "20"
+  }
+ ],
+ "raw": ""
+}

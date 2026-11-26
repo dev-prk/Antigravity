@@ -1,0 +1,25 @@
+{
+ "title": "1309. Swap Two Numbers Without Third Variable-2",
+ "slug": "swap-two-numbers-without-third-variable-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Solutions\nSubmissions\n1309\n. \nSwap Two Numbers Without Third Variable-2\n10\nEasy\nProblem Statement:\nWrite a Java program to swap two numbers without using a third variable. The program should take two integer inputs, swap their values using arithmetic operations, and print the swapped values. \nInput Description:\nTwo space-separated integers. \nOutput Description:\nTwo space-separated integers after swapping. \nSample Input:\n3 5 \nSample Output:\n5 3 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.23\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10 20\nOutput\n20 10\nInput\n-1 -9\nOutput\n-9 -1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10 20\nOutput\n20 10\nInput\n-1 -9\nOutput\n-9 -1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSwap Two Numbers Without Third Variable-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two space-separated integers.",
+ "output_spec": "Two space-separated integers after swapping.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 5",
+   "output": "5 3"
+  },
+  {
+   "input": "10 20",
+   "output": "20 10"
+  },
+  {
+   "input": "-1 -9",
+   "output": "-9 -1"
+  }
+ ],
+ "raw": ""
+}

@@ -3,7 +3,7 @@
  "slug": "machine-running-time",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2170. Machine Running Time\n\n60\n\nMedium\n\nProblem Statement\nRead the running time of a machine in seconds. Print it as hours, minutes and seconds.\nDescription\nA machine's meter shows its running time only in seconds. Read this time and convert it into hours, minutes and seconds. 1 hour = 3600 seconds and 1 minute = 60 seconds. For example, 3725 seconds is 1 hour, 2 minutes and 5 seconds.",
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n2170\n. \nMachine Running Time\n60\nMedium\nProblem Statement\nRead the running time of a machine in seconds. Print it as hours, minutes and seconds.\nDescription\nA machine's meter shows its running time only in seconds. Read this time and convert it into hours, minutes and seconds. 1 hour = 3600 seconds and 1 minute = 60 seconds. For example, 3725 seconds is 1 hour, 2 minutes and 5 seconds.\nInput Description\nA single integer, the total running time in seconds. (0 <= seconds <= 86399)\nOutput Description\nPrint the hours on the first line, the minutes on the second line, and the seconds on the third line. Print only the numbers.\nSample Input\n3725\nSample Output\n1\n2\n5\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3725\nOutput\n1\n2\n5\nInput\n59\nOutput\n0\n0\n59\nInput\n86399\nOutput\n23\n59\n59\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3725\nOutput\n1\n2\n5\nInput\n59\nOutput\n0\n0\n59\nInput\n86399\nOutput\n23\n59\n59\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMachine Running Time\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single integer, the total running time in seconds. (0 <= seconds <= 86399)",
  "output_spec": "Print the hours on the first line, the minutes on the second line, and the seconds on the third line. Print only the numbers.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3725",
    "output": "1\n2\n5"
+  },
+  {
+   "input": "59",
+   "output": "0\n0\n59"
+  },
+  {
+   "input": "86399",
+   "output": "23\n59\n59"
   }
  ],
  "raw": ""

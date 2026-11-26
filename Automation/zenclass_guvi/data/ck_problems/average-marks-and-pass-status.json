@@ -3,7 +3,7 @@
  "slug": "average-marks-and-pass-status",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2163. Average Marks and Pass Status\n\n50\n\nMedium\n\nProblem Statement\nRead the marks of three subjects. Print the average marks and also print whether the student has passed.\nDescription\nRead the marks of three subjects. Find and print the average marks. Also check whether the student has passed. A student has passed only if the average is 40 or more and the mark in every subject is 35 or more. Print True if the student has passed, otherwise print False.",
+ "description": "m\nHints & Solutions\nSubmissions\n2163\n. \nAverage Marks and Pass Status\n50\nMedium\nProblem Statement\nRead the marks of three subjects. Print the average marks and also print whether the student has passed.\nDescription\nRead the marks of three subjects. Find and print the average marks. Also check whether the student has passed. A student has passed only if the average is 40 or more and the mark in every subject is 35 or more. Print True if the student has passed, otherwise print False.\nInput Description\nThree integers, the marks of three subjects, each on a separate line. (0 <= mark <= 100)\nOutput Description\nPrint the average with exactly 2 digits after the decimal point on the first line. Print True or False on the second line.\nSample Input\n70\n80\n90\nSample Output\n80.00\nTrue\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n70\n80\n90\nOutput\n80.00\nTrue\nInput\n90\n50\n20\nOutput\n53.33\nFalse\nInput\n35\n40\n45\nOutput\n40.00\nTrue\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n70\n80\n90\nOutput\n80.00\nTrue\nInput\n90\n50\n20\nOutput\n53.33\nFalse\nInput\n35\n40\n45\nOutput\n40.00\nTrue\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAverage Marks and Pass Status\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Three integers, the marks of three subjects, each on a separate line. (0 <= mark <= 100)",
  "output_spec": "Print the average with exactly 2 digits after the decimal point on the first line. Print True or False on the second line.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "70\n80\n90",
    "output": "80.00\nTrue"
+  },
+  {
+   "input": "90\n50\n20",
+   "output": "53.33\nFalse"
+  },
+  {
+   "input": "35\n40\n45",
+   "output": "40.00\nTrue"
   }
  ],
  "raw": ""

@@ -1,0 +1,21 @@
+{
+ "title": "1178. Bitwise Packet Header Manipulation",
+ "slug": "bitwise-packet-header-manipulation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n1178\n. \nBitwise Packet Header Manipulation\n20\nEasy\nProblem Statement:\nIn a specific network communication system, the data is transmitted in the form of packets. Each packet contains metadata in the form of an 8-bit header that encodes various properties such as packet type, priority, encryption status, and error flags. The bits in the header have the following significance: \nBit 0: Packet Type (0 for data, 1 for control)\nBit 1: Priority (0 for low, 1 for high)\nBit 2: Encryption Status (0 for unencrypted, 1 for encrypted)\nBit 3: Error Detected (0 for no error, 1 for error)\nBits 4-7: Reserved for future use \nYou are tasked with writing a program to manipulate this packet header using bitwise operators. The program should perform the following operations based on user input: \nToggle the Packet Type.\nSet the Priority to High.\nClear the Encryption Status (set to unencrypted).\nCheck if an error is detected.\nShift the header left by 1 bit and check the new value. \nInput Description:\nAn integer representing the 8-bit packet header. Operations specified by the user. \nOutput Description:\nThe resulting packet header after performing the specified operations, both in decimal and binary format. \nSample Input:\n210\nOperation: Toggle Packet Type\nOperation: Set Priority to High \nSample Output:\nNew Header in Decimal: 211\nNew Header in Binary: 11010011\nNew Header after clearing encryption status: 211\nNew Header in Binary: 11010011\nError Detected: No\nHeader after Left Shift by 1 Bit: 422\nNew Header in Binary: 10100110 \nExplanation:\nAssume the initial packet header is 11010010 (210 in decimal). \nStep 1: Toggle the Packet Type.\nThe initial header is 11010010. Toggling the Packet Type (Bit 0) flips the first bit, changing the header to 11010011 (211 in decimal).\nStep 2: Set the Priority to High.\nThe current header is 11010011. Setting the Priority to High (Bit 1) ensures the second bit is set to 1, but it is already 1, so the header remains 11010011 (211 in decimal).\nStep 3: Clear the Encryption Status.\nThe current header is 11010011. Clearing the Encryption Status (Bit 2) sets the third bit to 0, changing the header to 11010001 (209 in decimal).\nStep 4: Check if an error is detected.\nThe current header is 11010001. Checking if an error is detected (Bit 3) shows that the fourth bit is 1, indicating an error is present.\nStep 5: Shift the header left by 1 bit.\nThe current header is 11010001. Shifting the header left by 1 bit shifts all bits left, resulting in 10100010 (162 in decimal). \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.75\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n210\nOperation: Toggle Packet Type\nOperation: Set Priority to High\nOutput\nNew Header in Decimal: 211\nNew Header in Binary: 11010011\nNew Header after clearing encryption status: 211\nNew Header in Binary: 11010",
+ "input_spec": "An integer representing the 8-bit packet header. Operations specified by the user.",
+ "output_spec": "The resulting packet header after performing the specified operations, both in decimal and binary format.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "210\nOperation: Toggle Packet Type\nOperation: Set Priority to High",
+   "output": "New Header in Decimal: 211\nNew Header in Binary: 11010011\nNew Header after clearing encryption status: 211\nNew Header in Binary: 11010011\nError Detected: No\nHeader after Left Shift by 1 Bit: 422\nNew Header in Binary: 10100110"
+  },
+  {
+   "input": "210\nOperation: Clear Encryption Status\nOperation: Check Error Status",
+   "output": "New Header in Decimal: 211\nNew Header in Binary: 11010011\nNew Header after clearing encryption status: 211\nNew Header in Binary: 11010011\nError Detected: No\nHeader after Left Shift by 1 Bit: 422\nNew Header in Binary: 10100110"
+  }
+ ],
+ "raw": ""
+}

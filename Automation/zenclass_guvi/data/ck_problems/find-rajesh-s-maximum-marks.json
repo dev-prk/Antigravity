@@ -1,0 +1,21 @@
+{
+ "title": "1383. Find Rajesh's Maximum Marks",
+ "slug": "find-rajesh-s-maximum-marks",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nHints & Solutions\nSubmissions\n1383\n. \nFind Rajesh's Maximum Marks\n10\nEasy\nProblem Statement:\nRajesh and Ram are comparing their highest marks from previous exams. You are given Rajesh\u2019s marks from N exams. Help him find the maximum marks he has scored so he can prove it to Ram and win the bet. \nInput Description:\nFirst line contains an integer N, the number of exams. Second line contains N space-separated integers representing Rajesh\u2019s marks. \nOutput Description:\nA single integer representing the maximum marks obtained by Rajesh. \nSample Input:\n3\n82 96 72 \nSample Output:\n96 \nAccepted \n37\nSubmissions \n38\nAcceptance Rate \n97.37\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n82 96 72\nOutput\n96\nInput\n5\n45 23 67 89 12\nOutput\n89\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n82 96 72\nOutput\n96\nInput\n5\n45 23 67 89 12\nOutput\n89\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFind Rajesh's Maximum Marks\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains an integer N, the number of exams. Second line contains N space-separated integers representing Rajesh\u2019s marks.",
+ "output_spec": "A single integer representing the maximum marks obtained by Rajesh.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n82 96 72",
+   "output": "96"
+  },
+  {
+   "input": "5\n45 23 67 89 12",
+   "output": "89"
+  }
+ ],
+ "raw": ""
+}

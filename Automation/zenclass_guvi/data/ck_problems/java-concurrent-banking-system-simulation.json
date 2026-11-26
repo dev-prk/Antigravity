@@ -1,0 +1,25 @@
+{
+ "title": "1396. Java Concurrent Banking System Simulation",
+ "slug": "java-concurrent-banking-system-simulation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Solutions\nSubmissions\n1396\n. \nJava Concurrent Banking System Simulation\n10\nEasy\nProblem Statement:\nWrite a Java program that simulates a multi-threaded banking system where multiple users can deposit and withdraw money from a shared bank account. The program should use threads and synchronization to ensure that the operations are handled safely without race conditions. \nInput Description:\nThe initial balance of the bank account.\nNumber of users (threads) performing transactions.\nEach user specifies a transaction type (Deposit/Withdraw) and amount. \nOutput Description:\nThe transactions performed by each user.\nThe final account balance after all transactions. \nSample Input:\n1000\n3\nDeposit 500\nWithdraw 700\nWithdraw 1000 \nSample Output:\nDeposited 500. New Balance: 1500\nWithdrawn 700. New Balance: 800\nInsufficient funds! Withdrawal of 1000 failed.\nFinal Balance: 800\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n94.36\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2000 2\nWithdraw 500\nWithdraw 1000\nOutput\nWithdrawn\nWithdrawn\nInput\n500 3\nDeposit 200\nDeposit 100\nDeposit 50\nOutput\nDeposited\nDeposited\nDeposited\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2000 2\nWithdraw 500\nWithdraw 1000\nOutput\nWithdrawn\nWithdrawn\nInput\n500 3\nDeposit 200\nDeposit 100\nDeposit 50\nOutput\nDeposited\nDeposited\nDeposited\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava Concurrent Banking System Simulation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The initial balance of the bank account.\nNumber of users (threads) performing transactions.\nEach user specifies a transaction type (Deposit/Withdraw) and amount.",
+ "output_spec": "The transactions performed by each user.\nThe final account balance after all transactions.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000\n3\nDeposit 500\nWithdraw 700\nWithdraw 1000",
+   "output": "Deposited 500. New Balance: 1500\nWithdrawn 700. New Balance: 800\nInsufficient funds! Withdrawal of 1000 failed.\nFinal Balance: 800"
+  },
+  {
+   "input": "2000 2\nWithdraw 500\nWithdraw 1000",
+   "output": "Withdrawn\nWithdrawn"
+  },
+  {
+   "input": "500 3\nDeposit 200\nDeposit 100\nDeposit 50",
+   "output": "Deposited\nDeposited\nDeposited"
+  }
+ ],
+ "raw": ""
+}

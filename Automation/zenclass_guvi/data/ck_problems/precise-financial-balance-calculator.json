@@ -1,0 +1,21 @@
+{
+ "title": "1179. Precise Financial Balance Calculator",
+ "slug": "precise-financial-balance-calculator",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ts & Solutions\nSubmissions\n1179\n. \nPrecise Financial Balance Calculator\n20\nEasy\nProblem Statement:\nYou are developing a financial transaction system for a bank. The system must handle transactions involving different types of accounts, which store balances as different data types. The system needs to accurately calculate the total balance across all accounts, considering both implicit and explicit type conversions to avoid any loss of precision. \nScenario: The bank has three types of accounts: \nSavings Account: Balance is stored as an int.\nCurrent Account: Balance is stored as a float.\nFixed Deposit Account: Balance is stored as a double.\nYour task is to calculate the total balance of a customer by summing the balances from all three types of accounts. Due to the differences in data types, you need to ensure that conversions are handled properly to maintain precision. Use implicit and explicit type casting where necessary. \nInput Description:\nAn integer savings_balance representing the balance in the savings account.\nA float current_balance representing the balance in the current account.\nA double fixed_deposit_balance representing the balance in the fixed deposit account.\nConstraints: \nThe balances are always positive and non-zero.\nsavings_balance is an integer in the range [1, 1,000,000].\ncurrent_balance is a float in the range [0.01, 1,000,000.00].\nfixed_deposit_balance is a double in the range [0.01, 10,000,000.00].\nYou must use explicit type casting where necessary to ensure that the total balance is calculated correctly with the highest precision. \nOutput Description:\nA double value representing the total balance across all accounts, calculated with the highest precision. \nSample Input:\n1000000\n50000.50\n2500000.75 \nSample Output:\nTotal Balance: 3550001.25 \nExplanation:\nThe savings balance should be implicitly converted to float or double for precise calculation.\nExplicit type casting might be required to ensure the correct summation of different data types.\nThe output should maintain the precision of the double type. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.8\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1000000\n50000.50\n2500000.75\nOutput\nTotal Balance: 3550001.25\nInput\n150000\n1234.56\n1000000.78\nOutput\nTotal Balance: 1151235.34\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1000000\n50000.50\n2500000.75\nOutput\nTotal Balance: 3550001.25\nInput\n150000\n1234.56\n1000000.78\nOutput\nTotal Balance: 1151235.34\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\n",
+ "input_spec": "An integer savings_balance representing the balance in the savings account.\nA float current_balance representing the balance in the current account.\nA double fixed_deposit_balance representing the balance in the fixed deposit account.\nConstraints: \nThe balances are always positive and non-zero.\nsavings_balance is an integer in the range [1, 1,000,000].\ncurrent_balance is a float in the range [0.01, 1,000,000.00].\nfixed_deposit_balance is a double in the range [0.01, 10,000,000.00].\nYou must use explicit type casting where necessary to ensure that the total balance is calculated correctly with the highest precision.",
+ "output_spec": "A double value representing the total balance across all accounts, calculated with the highest precision.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000000\n50000.50\n2500000.75",
+   "output": "Total Balance: 3550001.25"
+  },
+  {
+   "input": "150000\n1234.56\n1000000.78",
+   "output": "Total Balance: 1151235.34"
+  }
+ ],
+ "raw": ""
+}

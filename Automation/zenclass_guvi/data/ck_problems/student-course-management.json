@@ -1,0 +1,21 @@
+{
+ "title": "1202. Student Course Management",
+ "slug": "student-course-management",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nHints & Solutions\nSubmissions\n1202\n. \nStudent Course Management\n20\nEasy\nProblem Statement:\nWrite a C program to manage a list of students, each with multiple courses, and each course with multiple assessments. The structure must support dynamic memory allocation for courses and assessments. The program should allow the user to input data and then calculate and display the average score for each course and the overall average for each student. \nInput Description:\nThe first input is an integer n representing the number of students.\nFor each student:\nAn integer c representing the number of courses.\nFor each course:\nAn integer a representing the number of assessments.\na integers representing the scores of the assessments. \nOutput Description:\nFor each student, output the average score for each course.\nOutput the overall average score for each student. \nSample Input:\n2\n2\n3\n80 90 85\n2\n75 80\n1\n2\n88 92 \nSample Output:\nStudent 1:\nCourse 1 Average: 85.00\nCourse 2 Average: 77.50\nOverall Average: 81.25\nStudent 2:\nCourse 1 Average: 90.00\nOverall Average: 90.00 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n96.98\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n2\n3\n80 90 85\n2\n75 80\n1\n2\n88 92\nOutput\nStudent 1:\nCourse 1 Average: 85.00\nCourse 2 Average: 77.50\nOverall Average: 81.25\nStudent 2:\nCourse 1 Average: 90.00\nOverall Average: 90.00\nInput\n1\n1\n4\n100 90 95 85\nOutput\nStudent 1:\nCourse 1 Average: 92.50\nOverall Average: 92.50\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n2\n3\n80 90 85\n2\n75 80\n1\n2\n88 92\nOutput\nStudent 1:\nCourse 1 Average: 85.00\nCourse 2 Average: 77.50\nOverall Average: 81.25\nStudent 2:\nCourse 1 Average: 90.00\nOverall Average: 90.00\nInput\n1\n1\n4\n100 90 95 85\nOutput\nStudent 1:\nCourse 1 Average: 92.50\nOverall Average: 92.50\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nStudent Course Management\nIssues Encountered\n*\nDescription or examples are",
+ "input_spec": "The first input is an integer n representing the number of students.\nFor each student:\nAn integer c representing the number of courses.\nFor each course:\nAn integer a representing the number of assessments.\na integers representing the scores of the assessments.",
+ "output_spec": "For each student, output the average score for each course.\nOutput the overall average score for each student.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\n2\n3\n80 90 85\n2\n75 80\n1\n2\n88 92",
+   "output": "Student 1:\nCourse 1 Average: 85.00\nCourse 2 Average: 77.50\nOverall Average: 81.25\nStudent 2:\nCourse 1 Average: 90.00\nOverall Average: 90.00"
+  },
+  {
+   "input": "1\n1\n4\n100 90 95 85",
+   "output": "Student 1:\nCourse 1 Average: 92.50\nOverall Average: 92.50"
+  }
+ ],
+ "raw": ""
+}

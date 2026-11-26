@@ -1,0 +1,1 @@
+{"code": "#include <stdio.h>\n\nint main(void) {\n    long long a, b, c, d;\n    if (scanf(\"%lld %lld %lld %lld\", &a, &b, &c, &d) != 4) return 0;\n    long long result = a + b * c - d / 2;\n    printf(\"%lld\", result);\n    return 0;\n}\n", "local_ok": true}

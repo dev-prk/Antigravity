@@ -1,0 +1,21 @@
+{
+ "title": "603. Net Goal Rate Calculation",
+ "slug": "net-goal-rate-calculation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n603\n. \nNet Goal Rate Calculation\n20\nEasy\nTopics\nProblem Statement:\nIn a world cup tournament,no of goals scored by each team is given to you. Your task is to calculate net goal rate of each team. Net goal rate of team is calculated No of goals(team)- sum of(no of goals by last 3 teams) \nInput Description:\nYou are given a number \u2018n\u2019.Next line contains n space separated numbers. \nOutput Description:\nPrint the net goal rate of each team \nSample Input:\n5\n95 85 75 12 11 \nSample Output:\n-3 -13 -23 -86 -87 \nExplanation:\nSelf Explanatory \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n60.24\n%\nTopics\narray\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n95 85 75 12 11\nOutput\n-3 -13 -23 -86 -87\nInput\n6\n100 85 70 65 13 9\nOutput\n13 -2 -17 -22 -74 -78\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n95 85 75 12 11\nOutput\n-3 -13 -23 -86 -87\nInput\n6\n100 85 70 65 13 9\nOutput\n13 -2 -17 -22 -74 -78\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNet Goal Rate Calculation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given a number \u2018n\u2019.Next line contains n space separated numbers.",
+ "output_spec": "Print the net goal rate of each team",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n95 85 75 12 11",
+   "output": "-3 -13 -23 -86 -87"
+  },
+  {
+   "input": "6\n100 85 70 65 13 9",
+   "output": "13 -2 -17 -22 -74 -78"
+  }
+ ],
+ "raw": ""
+}

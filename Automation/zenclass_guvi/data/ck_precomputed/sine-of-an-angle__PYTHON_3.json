@@ -1,0 +1,1 @@
+{"code": "import math\n\nA = int(input().strip())\nresult = math.sin(math.radians(A))\n\nrounded = round(result, 10)\nif rounded == 0.0:\n    print(0.0)\nelse:\n    if rounded == 1.0 or rounded == -1.0:\n        print(int(rounded))\n    else:\n        print(rounded)\n", "local_ok": true, "slug": "sine-of-an-angle", "lang": "PYTHON 3"}

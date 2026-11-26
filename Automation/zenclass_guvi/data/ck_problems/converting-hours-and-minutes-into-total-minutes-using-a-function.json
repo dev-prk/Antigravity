@@ -1,0 +1,25 @@
+{
+ "title": "2198. Converting Hours and Minutes into Total Minutes Using a Function",
+ "slug": "converting-hours-and-minutes-into-total-minutes-using-a-function",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "198\n. \nConverting Hours and Minutes into Total Minutes Using a Function\n30\nEasy\nProblem Statement\nRead a duration given in hours and minutes and print the total number of minutes, using a function that takes two parameters.\nDescription\nRead two integers hours and minutes from input. Write a function totalMinutes that takes two integer parameters, converts the hours into minutes (1 hour is 60 minutes), adds the remaining minutes, and returns the total. Call the function from main() and print the returned value.\nInput Description\nTwo integers hours and minutes separated by a space.\nOutput Description\nPrint the total number of minutes.\nSample Input\n2 30\nSample Output\n150\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 30\nOutput\n150\nInput\n0 45\nOutput\n45\nInput\n5 0\nOutput\n300\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 30\nOutput\n150\nInput\n0 45\nOutput\n45\nInput\n5 0\nOutput\n300\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nConverting Hours and Minutes into Total Minutes Using a Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers hours and minutes separated by a space.",
+ "output_spec": "Print the total number of minutes.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 30",
+   "output": "150"
+  },
+  {
+   "input": "0 45",
+   "output": "45"
+  },
+  {
+   "input": "5 0",
+   "output": "300"
+  }
+ ],
+ "raw": ""
+}

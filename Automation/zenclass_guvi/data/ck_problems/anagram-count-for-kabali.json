@@ -3,14 +3,18 @@
  "slug": "anagram-count-for-kabali",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n78. Anagram Count for kabali\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N strings, find the number of strings that are an anagram of 'kabali'.If there exists no anagram for the given string print '0'.",
- "input_spec": "The input consists of an integer N, representing the number of strings, followed by N strings.",
+ "description": "m\nHints & Solutions\nSubmissions\n78\n. \nAnagram Count for kabali\n40\nMedium\nTopics\nProblem Statement:\nGiven a number N and an array of N strings, find the number of strings that are an anagram of 'kabali'.If there exists no anagram for the given string print '0'. \nInput Description:\nThe input consists of an integer N, representing the number of strings, followed by N strings.\nConstraints: 1 <= N <= 1000 \nOutput Description:\nThe output is a single integer representing the count of strings that are an anagram of 'kabali', or '0' if no such anagram exists. \nSample Input:\n5\nkabali\nkaabli\nkababa\nkab\nkabail \nSample Output:\n3 \nAccepted \n4k\nSubmissions \n4k\nAcceptance Rate \n88.63\n%\nTopics\narray\nstrings\n3\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nkabali\nkaabli\nkababa\nkab\nkabail\nOutput\n3\nInput\n2\nshooter\nshivaji\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nkabali\nkaabli\nkababa\nkab\nkabail\nOutput\n3\nInput\n2\nshooter\nshivaji\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAnagram Count for kabali\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of an integer N, representing the number of strings, followed by N strings.\nConstraints: 1 <= N <= 1000",
  "output_spec": "The output is a single integer representing the count of strings that are an anagram of 'kabali', or '0' if no such anagram exists.",
- "constraints": "1 <= N <= 1000",
+ "constraints": "",
  "samples": [
   {
    "input": "5\nkabali\nkaabli\nkababa\nkab\nkabail",
    "output": "3"
+  },
+  {
+   "input": "2\nshooter\nshivaji",
+   "output": "0"
   }
  ],
  "raw": ""

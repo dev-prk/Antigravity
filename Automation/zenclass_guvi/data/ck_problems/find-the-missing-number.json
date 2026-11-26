@@ -3,7 +3,7 @@
  "slug": "find-the-missing-number",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n574. Find the Missing Number\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nYou are given a number n,ranging from 1 to n. Out of which one number is missing. Your task is to print that missing number.",
+ "description": "& Solutions\nSubmissions\n574\n. \nFind the Missing Number\n50\nMedium\nTopics\nCompany\nProblem Statement:\nYou are given a number n,ranging from 1 to n. Out of which one number is missing. Your task is to print that missing number.\nInput Description:\nYou are given a number \u2018n\u2019. \nOutput Description:\nPrint the missing number. \nSample Input:\n5\n1 3 5 2 \nSample Output:\n4 \nExplanation:\n4 is missing element \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n92.88\n%\nTopics\narray\nguvi-learning-path\nCompany\nAccolite\nAdobe\nAmazon\nCisco\nD-E-Shaw\nIntuit\nMicrosoft\nMorgan\nStanley\nOla\nCabs\nPayu\nQualcomm\nVisa\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n1 3 9 8 7 6 5 4 10\nOutput\n2\nInput\n7\n2 3 5 4 6 7\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n1 3 9 8 7 6 5 4 10\nOutput\n2\nInput\n7\n2 3 5 4 6 7\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFind the Missing Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given a number \u2018n\u2019.",
  "output_spec": "Print the missing number.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\n1 3 5 2",
    "output": "4"
+  },
+  {
+   "input": "10\n1 3 9 8 7 6 5 4 10",
+   "output": "2"
+  },
+  {
+   "input": "7\n2 3 5 4 6 7",
+   "output": "1"
   }
  ],
  "raw": ""

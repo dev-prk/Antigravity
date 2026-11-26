@@ -1,0 +1,25 @@
+{
+ "title": "1490. Duplicate Parentheses Detection using Stack",
+ "slug": "duplicate-parentheses-detection-using-stack",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lutions\nSubmissions\n1490\n. \nDuplicate Parentheses Detection using Stack\n30\nEasy\nProblem Statement:\nWrite a program to check if an expression contains duplicate brackets using a stack.\nAn expression has duplicate brackets if there are multiple brackets enclosing nothing. \nInput Description:\nA single string expression containing brackets and characters. \nOutput Description:\ntrue or false \nSample Input:\n((a+b)+((c+d))) \nSample Output:\ntrue\nAccepted \n28\nSubmissions \n31\nAcceptance Rate \n90.32\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n(a+(b)+c)\nOutput\nfalse\nInput\n((a+b))\nOutput\ntrue\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n(a+(b)+c)\nOutput\nfalse\nInput\n((a+b))\nOutput\ntrue\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDuplicate Parentheses Detection using Stack\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single string expression containing brackets and characters.",
+ "output_spec": "true or false",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "((a+b)+((c+d)))",
+   "output": "true"
+  },
+  {
+   "input": "(a+(b)+c)",
+   "output": "false"
+  },
+  {
+   "input": "((a+b))",
+   "output": "true"
+  }
+ ],
+ "raw": ""
+}

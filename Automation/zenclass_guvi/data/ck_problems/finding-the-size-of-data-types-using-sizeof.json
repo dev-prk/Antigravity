@@ -1,0 +1,17 @@
+{
+ "title": "2081. Finding the Size of Data Types Using sizeof",
+ "slug": "finding-the-size-of-data-types-using-sizeof",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lutions\nSubmissions\n2081\n. \nFinding the Size of Data Types Using sizeof\n20\nEasy\nProblem Statement\nPrint the number of bytes occupied by int, float, and double using the sizeof operator.\nDescription\nThis program does not read any input. Use the sizeof operator on the data types int, float, and double, and print the three sizes (in bytes), each on its own line.\nInput Description\nThis program does not read any input.\nOutput Description\nPrint the size in bytes of int, float, and double, each on its own line.\nSample Input\n(no input)\nSample Output\n4\n4\n8\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n3\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n(no input)\nOutput\n4\n4\n8\nInput\n(no input)\nOutput\n4\n4\n8\nInput\n(no input)\nOutput\n4\n4\n8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n(no input)\nOutput\n4\n4\n8\nInput\n(no input)\nOutput\n4\n4\n8\nInput\n(no input)\nOutput\n4\n4\n8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Size of Data Types Using sizeof\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "This program does not read any input.",
+ "output_spec": "Print the size in bytes of int, float, and double, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "(no input)",
+   "output": "4\n4\n8"
+  }
+ ],
+ "raw": ""
+}

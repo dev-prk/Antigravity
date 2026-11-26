@@ -1,0 +1,25 @@
+{
+ "title": "1455. String Permutations (Recursion & Backtracking)",
+ "slug": "string-permutations-recursion-backtracking",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ions\nSubmissions\n1455\n. \nString Permutations (Recursion & Backtracking)\n20\nEasy\nProblem Statement:\nGiven a string S, generate all possible permutations of the characters in the string using recursion and backtracking. Each permutation should be unique. Print the permutations in lexicographical order. \nInput Description:\n- A single line containing the string S. \nOutput Description:\n- Each line contains one permutation of the string S. \nSample Input:\nabc \nSample Output:\nabc\nacb\nbac\nbca\ncab\ncba \nExplanation:\nAll possible unique permutations of the string \"abc\" are printed in lexicographical order.\nAccepted \n60\nSubmissions \n65\nAcceptance Rate \n92.31\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\naab\nOutput\naab\naba\nbaa\nInput\nxyz\nOutput\nxyz\nxzy\nyxz\nyzx\nzxy\nzyx\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\naab\nOutput\naab\naba\nbaa\nInput\nxyz\nOutput\nxyz\nxzy\nyxz\nyzx\nzxy\nzyx\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Permutations (Recursion & Backtracking)\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- A single line containing the string S.",
+ "output_spec": "- Each line contains one permutation of the string S.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abc",
+   "output": "abc\nacb\nbac\nbca\ncab\ncba"
+  },
+  {
+   "input": "aab",
+   "output": "aab\naba\nbaa"
+  },
+  {
+   "input": "xyz",
+   "output": "xyz\nxzy\nyxz\nyzx\nzxy\nzyx"
+  }
+ ],
+ "raw": ""
+}

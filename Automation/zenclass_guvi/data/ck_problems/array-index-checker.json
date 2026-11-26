@@ -1,0 +1,29 @@
+{
+ "title": "1987. Array Index Checker",
+ "slug": "array-index-checker",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nProblem\nHints & Solutions\nSubmissions\n1987\n. \nArray Index Checker\n25\nEasy\nProblem Statement\nGiven an array of n elements and an index, print the element at that index. Handle the case where the index is invalid using exception handling.\nDescription\nRead an integer n, followed by n integers to fill an array, followed by an index value. Try to access the element at that index. If the index is invalid (negative or beyond the array bounds), catch the exception and print an error message instead of crashing.\nInput Description\nThe first line contains an integer n (1 \u2264 n \u2264 100). The next n lines contain the array elements. The last line contains the index to access.\nOutput Description\nPrint the element at the given index. If the index is out of bounds, print \"Error: Index out of bounds\" instead.\nSample Input\n5\n1\n2\n3\n4\n5\n2\nSample Output\n3\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\n10\n20\n30\n5\nOutput\nError: Index out of bounds\nInput\n4\n7\n8\n9\n10\n0\nOutput\n7\nInput\n2\n100\n200\n-1\nOutput\nError: Index out of bounds\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\n10\n20\n30\n5\nOutput\nError: Index out of bounds\nInput\n4\n7\n8\n9\n10\n0\nOutput\n7\nInput\n2\n100\n200\n-1\nOutput\nError: Index out of bounds\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nArray Index Checker\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains an integer n (1 \u2264 n \u2264 100). The next n lines contain the array elements. The last line contains the index to access.",
+ "output_spec": "Print the element at the given index. If the index is out of bounds, print \"Error: Index out of bounds\" instead.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1\n2\n3\n4\n5\n2",
+   "output": "3"
+  },
+  {
+   "input": "3\n10\n20\n30\n5",
+   "output": "Error: Index out of bounds"
+  },
+  {
+   "input": "4\n7\n8\n9\n10\n0",
+   "output": "7"
+  },
+  {
+   "input": "2\n100\n200\n-1",
+   "output": "Error: Index out of bounds"
+  }
+ ],
+ "raw": ""
+}

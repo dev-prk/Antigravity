@@ -1,0 +1,21 @@
+{
+ "title": "652. String Weight Divisibility",
+ "slug": "string-weight-divisibility",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n652\n. \nString Weight Divisibility\n20\nEasy\nTopics\nProblem Statement:\nYou are given a \u2018true\u2019 string. String is called true if weight of string is multiple of 8. Your task is to tell whether a string can be declared True or Not. Weight of string is the sum of ASCII value of Vowel character(s) present in the string. \nInput Description:\nYou are given as string \u2018s\u2019 in lower cases \nOutput Description:\nPrint 1 for true and 0 for false \nExplanation:\nSum of ASCII values of string is the weight and it should be multiple of 8. \nSample Input:\nraja \nAccepted \n5k\nSubmissions \n6k\nAcceptance Rate \n95.19\n%\nTopics\nmathematics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nraja\nOutput\n0\nInput\nzara\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nraja\nOutput\n0\nInput\nzara\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Weight Divisibility\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given as string \u2018s\u2019 in lower cases",
+ "output_spec": "Print 1 for true and 0 for false \nExplanation:\nSum of ASCII values of string is the weight and it should be multiple of 8.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "raja",
+   "output": "0"
+  },
+  {
+   "input": "zara",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

@@ -3,13 +3,21 @@
  "slug": "counting-local-extrema",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n348. Counting Local Extrema\n\n100\n\nHard  Topics\n\nProblem Statement:\nYou are given an array a. Some element of this array ai is a local minimum iff it is strictly less than both of its neighbours (that is, ai\u2009<\u2009ai\u2009-\u20091 and ai\u2009<\u2009ai\u2009+\u20091). Also the element can be called local maximum iff it is strictly greater than its neighbours (that is, ai\u2009>\u2009ai\u2009-\u20091 and ai\u2009>\u2009ai\u2009+\u20091). Since a1 and an have only one neighbour each, they are neither local minima nor local maxima. An element is called a local extremum iff it is either local maximum or local minimum. Your task is to calculate the number of local extrema in the given array.",
+ "description": "lem\nHints & Solutions\nSubmissions\n348\n. \nCounting Local Extrema\n100\nHard\nTopics\nProblem Statement:\nYou are given an array a. Some element of this array ai is a local minimum iff it is strictly less than both of its neighbours (that is, ai\u2009<\u2009ai\u2009-\u20091 and ai\u2009<\u2009ai\u2009+\u20091). Also the element can be called local maximum iff it is strictly greater than its neighbours (that is, ai\u2009>\u2009ai\u2009-\u20091 and ai\u2009>\u2009ai\u2009+\u20091). Since a1 and an have only one neighbour each, they are neither local minima nor local maxima. An element is called a local extremum iff it is either local maximum or local minimum. Your task is to calculate the number of local extrema in the given array. \nInput Description:\nThe input consists of an integer N, representing the size of the array, followed by N integers representing the elements of the array. N is at most 1000. \nOutput Description:\nThe output should be a single integer representing the total count of local extrema in the given array. \nSample Input:\n3\n1 2 3 \nSample Output:\n2 \nAccepted \n195\nSubmissions \n734\nAcceptance Rate \n26.57\n%\nTopics\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 3\nOutput\n0\nInput\n4\n1 5 2 5\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 3\nOutput\n0\nInput\n4\n1 5 2 5\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCounting Local Extrema\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of an integer N, representing the size of the array, followed by N integers representing the elements of the array. N is at most 1000.",
  "output_spec": "The output should be a single integer representing the total count of local extrema in the given array.",
  "constraints": "",
  "samples": [
   {
    "input": "3\n1 2 3",
+   "output": "2"
+  },
+  {
+   "input": "3\n1 2 3",
+   "output": "0"
+  },
+  {
+   "input": "4\n1 5 2 5",
    "output": "2"
   }
  ],

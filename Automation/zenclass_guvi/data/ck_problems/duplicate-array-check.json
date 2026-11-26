@@ -3,14 +3,22 @@
  "slug": "duplicate-array-check",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n385. Duplicate Array Check\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given N integer arrays, find if the same array occurs more than once. Print YES if it does, NO otherwise. Two arrays A and B are same only if they are of equal size, say M, and for all 0 <= i <= M-1, A[i] = B[i].",
+ "description": "lem\nHints & Solutions\nSubmissions\n385\n. \nDuplicate Array Check\n60\nMedium\nTopics\nProblem Statement:\nYou are given N integer arrays, find if the same array occurs more than once. Print YES if it does, NO otherwise. Two arrays A and B are same only if they are of equal size, say M, and for all 0 <= i <= M-1, A[i] = B[i]. \nInput Description:\nThe first line contains a single integer N, denoting the number of arrays.\nFrom the second line, 2*N lines follow.\nThe (2i - 1)th line contains an integer M denoting the number of integers in the array.\nThe 2i th line contains M space separated integers denoting the elements of the array. \nOutput Description:\nPrint a single line YES or NO \nExplanation:\nThe second array and third array are equal. Hence YES \nSample Input:\n3\n5\n1 8 3 1 2\n1\n9\n1\n9 \nSample Output:\nYES \nAccepted \n786\nSubmissions \n885\nAcceptance Rate \n88.81\n%\nTopics\nhashing\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n99\n100\n101\n102\nOutput\nNO\nInput\n4\n4\n1 1 1 1\n2\n1 1\n2\n0 0\n2\n1 0\nOutput\nNO\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n99\n100\n101\n102\nOutput\nNO\nInput\n4\n4\n1 1 1 1\n2\n1 1\n2\n0 0\n2\n1 0\nOutput\nNO\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDuplicate Array Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains a single integer N, denoting the number of arrays.\nFrom the second line, 2*N lines follow.\nThe (2i - 1)th line contains an integer M denoting the number of integers in the array.\nThe 2i th line contains M space separated integers denoting the elements of the array.",
- "output_spec": "Print a single line YES or NO",
+ "output_spec": "Print a single line YES or NO \nExplanation:\nThe second array and third array are equal. Hence YES",
  "constraints": "",
  "samples": [
   {
    "input": "3\n5\n1 8 3 1 2\n1\n9\n1\n9",
    "output": "YES"
+  },
+  {
+   "input": "2\n99\n100\n101\n102",
+   "output": "NO"
+  },
+  {
+   "input": "4\n4\n1 1 1 1\n2\n1 1\n2\n0 0\n2\n1 0",
+   "output": "NO"
   }
  ],
  "raw": ""

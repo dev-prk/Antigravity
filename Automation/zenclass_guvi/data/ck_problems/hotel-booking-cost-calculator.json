@@ -1,0 +1,25 @@
+{
+ "title": "1181. Hotel Booking Cost Calculator",
+ "slug": "hotel-booking-cost-calculator",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ts & Solutions\nSubmissions\n1181\n. \nHotel Booking Cost Calculator\n20\nEasy\nTopics\nProblem Statement:\nYou are developing a system for a hotel to manage room bookings over a month. The hotel has different rooms, each with a different nightly rate. Guests can book a room for a range of dates, and your system needs to calculate the total cost of the stay for each guest. You are tasked with handling the booking process and calculating the total cost using loops and conditional statements. \nEach booking request consists of: \n1. The room number (R) the guest wants to book.\n2. The start date (S) and end date (E) of their stay.\n3. Each room has a rate for the night that depends on the room number.\nYou need to ensure that: \n1. A booking is only valid if the start date is before or equal to the end date.\n2. The system should calculate the total cost by looping through each night of the guest's stay and summing the nightly rate for that room.\n3. If a guest's booking is invalid, the system should print \"Invalid booking\" and skip that request.\nYour program must handle multiple booking requests. \nInput Description:\nThe first line contains an integer N representing the number of booking requests.\nThe next N lines contain three integers each: R (the room number), S (the start date of the stay), and E (the end date of the stay). \nOutput Description:\nFor each valid booking request, output the total cost of the stay for the guest.\nFor each invalid booking request, output \"Invalid booking\". \nSample Input:\n3\n1 5 10\n2 12 15\n3 20 18 \nSample Output:\n600\n600\nInvalid booking \nExplanation:\nThe first request is to book Room 1 from day 5 to day 10, so the total cost is calculated as 6 * 100 = 600.\nThe second request is to book Room 2 from day 12 to day 15, so the total cost is 4 * 150 = 600.\nThe third request is invalid because the start date is after the end date, so the system outputs \"Invalid booking\". \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.44\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n5 1 7\n7 10 12\nOutput\n2100\n1200\nInput\n3\n3 5 5\n6 20 18\n10 15 17\nOutput\n200\nInvalid booking\n1650\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n5 1 7\n7 10 12\nOutput\n2100\n1200\nInput\n3\n3 5 5\n6 20 18\n10 15 17\nOutput\n200\nInvalid booking\n1650\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo acti",
+ "input_spec": "The first line contains an integer N representing the number of booking requests.\nThe next N lines contain three integers each: R (the room number), S (the start date of the stay), and E (the end date of the stay).",
+ "output_spec": "For each valid booking request, output the total cost of the stay for the guest.\nFor each invalid booking request, output \"Invalid booking\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1 5 10\n2 12 15\n3 20 18",
+   "output": "600\n600\nInvalid booking"
+  },
+  {
+   "input": "2\n5 1 7\n7 10 12",
+   "output": "2100\n1200"
+  },
+  {
+   "input": "3\n3 5 5\n6 20 18\n10 15 17",
+   "output": "200\nInvalid booking\n1650"
+  }
+ ],
+ "raw": ""
+}

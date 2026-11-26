@@ -1,0 +1,25 @@
+{
+ "title": "567. Prime Sum Matrix",
+ "slug": "prime-sum-matrix",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n567\n. \nPrime Sum Matrix\n20\nEasy\nTopics\nProblem Statement:\nMr. Prime is a coder who loves solving problems which involve the mention of the word 'prime'. He recently came across a puzzle in which he had to find sum of elements which are located at positions whose row+column index value is a prime number. After finding the sum, he had to check whether the sum obtained is a prime number or not. Assume that you are Mr. Prime and are given a matrix of arbitrary dimensions. Check whether the sum of elements located at prime indices is a prime number. \nInput Description:\nDimensions of the matrix followed by the elements of the matrix \nOutput Description:\nYES/NO \nExplanation:\nThe values at positions whose row+column index adds up to a prime number are 3(row=0,column=2),5,6,7,8Sum of the numbers=29 which is a prime number \nSample Input:\n3 3\n1 2 3\n4 5 6\n7 8 9 \nSample Output:\nYES \nAccepted \n736\nSubmissions \n904\nAcceptance Rate \n81.42\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n1 3 2\n1 0 1\n2 1 3\n1 1 4\n5 2 7\nOutput\nYES\nInput\n2 2\n1 1\n1 4\nOutput\nNO\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n1 3 2\n1 0 1\n2 1 3\n1 1 4\n5 2 7\nOutput\nYES\nInput\n2 2\n1 1\n1 4\nOutput\nNO\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrime Sum Matrix\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Dimensions of the matrix followed by the elements of the matrix",
+ "output_spec": "YES/NO \nExplanation:\nThe values at positions whose row+column index adds up to a prime number are 3(row=0,column=2),5,6,7,8Sum of the numbers=29 which is a prime number",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "YES"
+  },
+  {
+   "input": "5 3\n1 3 2\n1 0 1\n2 1 3\n1 1 4\n5 2 7",
+   "output": "YES"
+  },
+  {
+   "input": "2 2\n1 1\n1 4",
+   "output": "NO"
+  }
+ ],
+ "raw": ""
+}

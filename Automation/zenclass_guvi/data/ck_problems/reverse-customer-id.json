@@ -1,0 +1,25 @@
+{
+ "title": "1249. Reverse Customer ID",
+ "slug": "reverse-customer-id",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nProblem\nHints & Solutions\nSubmissions\n1249\n. \nReverse Customer ID\n10\nEasy\nProblem Statement:\nA customer service system needs to reverse a given customer ID to assist with error detection during data entry. If the ID is input incorrectly, reversing the number helps identify where the mistake occurred. The system will return the reversed customer ID for further processing or confirmation with the customer. \nSample Input:\n12345 \nSample Output:\n54321 \nAccepted \n161\nSubmissions \n189\nAcceptance Rate \n85.19\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n12345\nOutput\nReversed number: 54321\nInput\n98765\nOutput\nReversed number: 56789\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n12345\nOutput\nReversed number: 54321\nInput\n98765\nOutput\nReversed number: 56789\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nReverse Customer ID\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "12345",
+   "output": "54321"
+  },
+  {
+   "input": "12345",
+   "output": "Reversed number: 54321"
+  },
+  {
+   "input": "98765",
+   "output": "Reversed number: 56789"
+  }
+ ],
+ "raw": ""
+}

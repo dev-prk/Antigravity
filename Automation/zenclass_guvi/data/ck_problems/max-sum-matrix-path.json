@@ -1,0 +1,25 @@
+{
+ "title": "1214. Max Sum Matrix Path",
+ "slug": "max-sum-matrix-path",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nProblem\nHints & Solutions\nSubmissions\n1214\n. \nMax Sum Matrix Path\n20\nEasy\nProblem Statement:\nYou are given an n x m grid representing a matrix of integers. Your task is to find the maximum sum possible by starting at the top-left corner of the matrix (i.e., cell (0, 0)) and moving to the bottom-right corner of the matrix (i.e., cell (n-1, m-1)). You can only move either to the right or down at each step.You need to implement this using array declarations and the array index operator to access matrix elements.The solution must be implemented using a function findMaxPathSum(int matrix[][100], int n, int m) that calculates the maximum sum. The input should be handled by a helper function getInputMatrix(int matrix[][100], int n, int m). \nInput Description:\nThe first line contains two integers n and m (1 \u2264 n, m \u2264 100), representing the dimensions of the matrix.The next n lines each contain m space-separated integers representing the matrix elements. \nOutput Description:\nPrint a single integer, the maximum sum obtainable by following the path from the top-left to the bottom-right of the matrix. \nSample Input:\n3 31 2 34 5 67 8 9 \nSample Output:\n29 \nExplanation:\nConsider the following matrix with n = 3 and m = 3: Step 1: Find the maximum path sum The maximum path sum is 1 + 4 + 7 + 8 + 9 = 29. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.87\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3\n4 5 6\n7 8 9\nOutput\n29\nInput\n4 4\n-1 2 3 -4\n5 6 -7 8\n9 10 11 -12\n-13 14 15 16\nOutput\n68\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3\n4 5 6\n7 8 9\nOutput\n29\nInput\n4 4\n-1 2 3 -4\n5 6 -7 8\n9 10 11 -12\n-13 14 15 16\nOutput\n68\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMax Sum Matrix Path\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating ",
+ "input_spec": "The first line contains two integers n and m (1 \u2264 n, m \u2264 100), representing the dimensions of the matrix.The next n lines each contain m space-separated integers representing the matrix elements.",
+ "output_spec": "Print a single integer, the maximum sum obtainable by following the path from the top-left to the bottom-right of the matrix.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 31 2 34 5 67 8 9",
+   "output": "29"
+  },
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
+   "output": "29"
+  },
+  {
+   "input": "4 4\n-1 2 3 -4\n5 6 -7 8\n9 10 11 -12\n-13 14 15 16",
+   "output": "68"
+  }
+ ],
+ "raw": ""
+}

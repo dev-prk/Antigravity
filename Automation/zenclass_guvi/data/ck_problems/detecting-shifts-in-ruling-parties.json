@@ -1,0 +1,25 @@
+{
+ "title": "392. Detecting Shifts in Ruling Parties",
+ "slug": "detecting-shifts-in-ruling-parties",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " Solutions\nSubmissions\n392\n. \nDetecting Shifts in Ruling Parties\n30\nEasy\nTopics\nProblem Statement:\nIndian politics has an interesting trend in history. A party which assumes that it is the undefeatable champion in elections has been defeated by other parties in many instances.You are a data analyst in the Election Commission. You are given a list containing a year and the party which won the election in that particular year. Your task is to analyse the trend and find the years in which, one party, which won many elections consecutively, was suddenly defeated by another. \nInput Description:\nSize of the array, followed by 2 arrays, one containing the year values and the other containing the party which won the election that year. \nOutput Description:\nThe year of transition from one party to another. \nSample Input:\n5\n2004 1999 2019 2009 2014\nJDU JDU CON JDU CON \nSample Output:\n2014 \nExplanation:\nThere has been a shift in government from JDU to CON in the 2014 election. \nAccepted \n1k\nSubmissions \n2k\nAcceptance Rate \n46.46\n%\nTopics\nsearching\narray\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n1980 2005 1990 1985 1995 2000\nKRR BSP BSP BSP KRR KRR\nOutput\n1985\n1995\n2005\nInput\n5\n2005 1990 1995 1985 2000\nA B B B B\nOutput\n2005\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n1980 2005 1990 1985 1995 2000\nKRR BSP BSP BSP KRR KRR\nOutput\n1985\n1995\n2005\nInput\n5\n2005 1990 1995 1985 2000\nA B B B B\nOutput\n2005\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDetecting Shifts in Ruling Parties\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Size of the array, followed by 2 arrays, one containing the year values and the other containing the party which won the election that year.",
+ "output_spec": "The year of transition from one party to another.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n2004 1999 2019 2009 2014\nJDU JDU CON JDU CON",
+   "output": "2014"
+  },
+  {
+   "input": "6\n1980 2005 1990 1985 1995 2000\nKRR BSP BSP BSP KRR KRR",
+   "output": "1985\n1995\n2005"
+  },
+  {
+   "input": "5\n2005 1990 1995 1985 2000\nA B B B B",
+   "output": "2005"
+  }
+ ],
+ "raw": ""
+}

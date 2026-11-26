@@ -1,0 +1,25 @@
+{
+ "title": "1351. Check if Number is Duck Number",
+ "slug": "check-if-number-is-duck-number",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n1351\n. \nCheck if Number is Duck Number\n10\nEasy\nProblem Statement:\nA Duck Number is a positive number that contains at least one '0' but does not start with '0'.\nThe program should check whether the given number is a Duck Number or not. \nInput Description:\nA single integer N (1 \u2264 N \u2264 100000) \nOutput Description:\nPrint \"Duck Number\" if the number satisfies the condition, otherwise print \"Not a Duck Number\". \nSample Input:\n4023 \nSample Output:\nDuck Number\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.76\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5009\nOutput\nDuck Number\nInput\n1234\nOutput\nNot a Duck Number\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5009\nOutput\nDuck Number\nInput\n1234\nOutput\nNot a Duck Number\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCheck if Number is Duck Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer N (1 \u2264 N \u2264 100000)",
+ "output_spec": "Print \"Duck Number\" if the number satisfies the condition, otherwise print \"Not a Duck Number\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4023",
+   "output": "Duck Number"
+  },
+  {
+   "input": "5009",
+   "output": "Duck Number"
+  },
+  {
+   "input": "1234",
+   "output": "Not a Duck Number"
+  }
+ ],
+ "raw": ""
+}

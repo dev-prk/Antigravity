@@ -1,0 +1,25 @@
+{
+ "title": "1177. Integer Arithmetic with Type Modifiers",
+ "slug": "integer-arithmetic-with-type-modifiers",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "tions\nSubmissions\n1177\n. \nInteger Arithmetic with Type Modifiers\n20\nEasy\nTopics\nProblem Statement:\nYou are required to write a C program to handle and manipulate different types of integers using type modifiers. Specifically, you need to write a program that will: \nRead two integers from the user, one of type short and the other of type long long.\nCalculate and display the following:\nThe sum of the two integers.\nThe difference between the long long integer and the short integer.\nThe product of the two integers.\nThe result of dividing the long long integer by the short integer (consider integer division). \nInput Description:\nTwo integers:\na (short integer)\nb (long long integer)\nConstraints\nThe short integer a should be within the range of -32,768 to 32,767.\nThe long long integer b should be within the range of -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.\nThe short integer a should not be zero for the division operation. \nOutput Description:\nThe sum of a and b.\nThe difference between b and a.\nThe product of a and b.\nThe result of b divided by a (integer division). \nSample Input:\n5\n10000000000 \nSample Output:\nSum: 10000000005\nDifference: 9999999995\nProduct: 50000000000\nDivision: 2000000000 \nExplanation:\nThe program demonstrates the use of different type modifiers (short and long long) and performs basic arithmetic operations. It will handle integer overflow cases by leveraging the large range of long long and provide meaningful outputs. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n96.17\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n123456789012345\nOutput\nSum: 123456789012347\nDifference: 123456789012343\nProduct: 246913578024690\nDivision: 61728394506172\nInput\n0\n5000000000\nOutput\nDivision by zero is not allowed.\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n123456789012345\nOutput\nSum: 123456789012347\nDifference: 123456789012343\nProduct: 246913578024690\nDivision: 61728394506172\nInput\n0\n5000000000\nOutput\nDivision by zero is not allowed.\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Prac",
+ "input_spec": "Two integers:\na (short integer)\nb (long long integer)\nConstraints\nThe short integer a should be within the range of -32,768 to 32,767.\nThe long long integer b should be within the range of -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.\nThe short integer a should not be zero for the division operation.",
+ "output_spec": "The sum of a and b.\nThe difference between b and a.\nThe product of a and b.\nThe result of b divided by a (integer division).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n10000000000",
+   "output": "Sum: 10000000005\nDifference: 9999999995\nProduct: 50000000000\nDivision: 2000000000"
+  },
+  {
+   "input": "2\n123456789012345",
+   "output": "Sum: 123456789012347\nDifference: 123456789012343\nProduct: 246913578024690\nDivision: 61728394506172"
+  },
+  {
+   "input": "0\n5000000000",
+   "output": "Division by zero is not allowed."
+  }
+ ],
+ "raw": ""
+}

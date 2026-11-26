@@ -3,14 +3,22 @@
  "slug": "dinosaur-maze-escape-paths",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n563. Dinosaur Maze Escape Paths\n\n90\n\nHard  Topics\n\nProblem Statement:\nChris Pratt is being chased by a dinosaur and the only way out is through a maze. The maze has only 1 entrance and 1 exit. The maze consists of N*N cells placed adjacent to each other like a gigantic cube. Every cell, other than the ones at the lower edges, have 2 exits (right-R and down-D). But Chris soon realises that he is not alone in the maze. A few dinosaurs are present in few of the cells. The maze is modelled as a binary square matrix and the cells in which dinosaurs are present are marked with a zero. Help Chris get out of the maze alive by finding out all the possible paths that Chris can take to get out of the maze!",
+ "description": "\nHints & Solutions\nSubmissions\n563\n. \nDinosaur Maze Escape Paths\n90\nHard\nTopics\nProblem Statement:\nChris Pratt is being chased by a dinosaur and the only way out is through a maze. The maze has only 1 entrance and 1 exit. The maze consists of N*N cells placed adjacent to each other like a gigantic cube. Every cell, other than the ones at the lower edges, have 2 exits (right-R and down-D). But Chris soon realises that he is not alone in the maze. A few dinosaurs are present in few of the cells. The maze is modelled as a binary square matrix and the cells in which dinosaurs are present are marked with a zero. Help Chris get out of the maze alive by finding out all the possible paths that Chris can take to get out of the maze! \nInput Description:\nAn integer N denoting the dimension of the matrix, followed by the elements of the matrix (0 or 1) \nOutput Description:\nThe possible paths that Chris can take. \nExplanation:\nChris can take the path in the output to exit the maze alive \nSample Input:\n3\n1 0 0\n1 0 1\n1 1 1 \nSample Output:\nDDRRR \nAccepted \n17\nSubmissions \n86\nAcceptance Rate \n19.77\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n1 0 0 0 \n1 1 0 1 \n0 1 0 0 \n0 1 1 1\nOutput\nDRDDRRR\nInput\n4\n1 0 0 0 \n1 1 0 1 \n1 1 0 0 \n0 1 1 1\nOutput\nDDRDRRR\nDRDDRRR\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n1 0 0 0 \n1 1 0 1 \n0 1 0 0 \n0 1 1 1\nOutput\nDRDDRRR\nInput\n4\n1 0 0 0 \n1 1 0 1 \n1 1 0 0 \n0 1 1 1\nOutput\nDDRDRRR\nDRDDRRR\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDinosaur Maze Escape Paths\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "An integer N denoting the dimension of the matrix, followed by the elements of the matrix (0 or 1)",
- "output_spec": "The possible paths that Chris can take.",
+ "output_spec": "The possible paths that Chris can take. \nExplanation:\nChris can take the path in the output to exit the maze alive",
  "constraints": "",
  "samples": [
   {
    "input": "3\n1 0 0\n1 0 1\n1 1 1",
    "output": "DDRRR"
+  },
+  {
+   "input": "4\n1 0 0 0 \n1 1 0 1 \n0 1 0 0 \n0 1 1 1",
+   "output": "DRDDRRR"
+  },
+  {
+   "input": "4\n1 0 0 0 \n1 1 0 1 \n1 1 0 0 \n0 1 1 1",
+   "output": "DDRDRRR\nDRDDRRR"
   }
  ],
  "raw": ""

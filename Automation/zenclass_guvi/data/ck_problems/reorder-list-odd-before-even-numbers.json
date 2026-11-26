@@ -1,0 +1,21 @@
+{
+ "title": "1424. Reorder List: Odd Before Even Numbers",
+ "slug": "reorder-list-odd-before-even-numbers",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "s & Solutions\nSubmissions\n1424\n. \nReorder List: Odd Before Even Numbers\n30\nEasy\nProblem Statement:\nGiven a list of integers, reorder the list so that all odd numbers come before all even numbers while maintaining the relative order of odd and even numbers. You need to read a list of integers from the user and reorder it such that all odd numbers come before all even numbers. The relative order of odd and even numbers should be preserved. You must use Java's List interface and iterators. \nInput Description:\nThe first line contains an integer, n (1 \nOutput Description:\nPrint the reordered list, with all odd numbers appearing before all even numbers, maintaining their relative order. \nSample Input:\n5\n4 3 2 1 5 \nSample Output:\n3 1 5 4 2 \nAccepted \n64\nSubmissions \n74\nAcceptance Rate \n86.49\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n4 3 2 1 5\nOutput\n3 1 5 4 2 \nInput\n6\n10 21 32 43 54 65\nOutput\n21 43 65 10 32 54 \nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n4 3 2 1 5\nOutput\n3 1 5 4 2 \nInput\n6\n10 21 32 43 54 65\nOutput\n21 43 65 10 32 54 \nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nReorder List: Odd Before Even Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains an integer, n (1",
+ "output_spec": "Print the reordered list, with all odd numbers appearing before all even numbers, maintaining their relative order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n4 3 2 1 5",
+   "output": "3 1 5 4 2"
+  },
+  {
+   "input": "6\n10 21 32 43 54 65",
+   "output": "21 43 65 10 32 54"
+  }
+ ],
+ "raw": ""
+}

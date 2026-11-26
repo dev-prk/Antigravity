@@ -3,14 +3,18 @@
  "slug": "access-control-analyzer-using-public-and-private",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1813. Access Control Analyzer using Public and Private\n\n50\n\nMedium\n\nAccess Control Analyzer using Public and Private\n\nProblem Statement:\nDesign a system to analyze member accessibility under different inheritance modes.\n\nDescription:\nBase Class: Account\nMembers:\n1. public: accountNumber\n2. protected: balance\n3. private: pin\n\nDerived Class 1: SavingsAccount (public inheritance)\nDerived Class 2: SecureAccount (private inheritance)\n\nRequirements:\n1. Attempt accessing all base members inside derived classes.\n2. Attempt accessing base members from main().\n3. Demonstrate how access levels change in private inheritance.\n4. Show compilation-safe implementation.\n5. Print accessible member details.\n\nInput Format:\nAccount Number\nBalance\nPIN\n\nOutput Format:\nAccessible members printed.",
- "input_spec": "Account Number\nBalance\nPIN",
- "output_spec": "Accessible members printed.",
+ "description": "g Public and Private\n50\nMedium\nAccess Control Analyzer using Public and Private\nProblem Statement:\nDesign a system to analyze member accessibility under different inheritance modes.\nDescription:\nBase Class: Account\nMembers:\n1. public: accountNumber\n2. protected: balance\n3. private: pin\nDerived Class 1: SavingsAccount (public inheritance)\nDerived Class 2: SecureAccount (private inheritance)\nRequirements:\n1. Attempt accessing all base members inside derived classes.\n2. Attempt accessing base members from main().\n3. Demonstrate how access levels change in private inheritance.\n4. Show compilation-safe implementation.\n5. Print accessible member details.\nInput Format:\nAccount Number\nBalance\nPIN\nOutput Format:\nAccessible members printed.\nSample Input:\n12345\n5000\n1111\nSample Output:\nSavings Account: 12345 5000\nSecure Account: Access Restricted \nSavings Account: 12345 5000\nSecure Account: Access Restricted\nAccepted \n0\nSubmissions \n1\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n20001\n10000\n2222\nOutput\nSavings Account: 20001 10000\nSecure Account: Access Restricted\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n20001\n10000\n2222\nOutput\nSavings Account: 20001 10000\nSecure Account: Access Restricted\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAccess Control Analyzer using Public and Private\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "12345\n5000\n1111",
-   "output": "Savings Account: 12345 5000\nSecure Account: Access Restricted\n\nSavings Account: 12345 5000\nSecure Account: Access Restricted"
+   "output": "Savings Account: 12345 5000\nSecure Account: Access Restricted \nSavings Account: 12345 5000\nSecure Account: Access Restricted"
+  },
+  {
+   "input": "20001\n10000\n2222",
+   "output": "Savings Account: 20001 10000\nSecure Account: Access Restricted"
   }
  ],
  "raw": ""

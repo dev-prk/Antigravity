@@ -1,0 +1,25 @@
+{
+ "title": "1119. Grade Classification Program",
+ "slug": "grade-classification-program",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n1119\n. \nGrade Classification Program\n20\nEasy\nProblem Statement:\nWrite a program that classifies grades based on the score input by the user. The program should classify the score into \"Excellent\", \"Good\", \"Average\", \"Pass\", or \"Fail\" using if-else statements.\nInput Description:\nThe first line contains an integer n (number of scores).\nThe second line contains n integers separated by spaces.\nThe input stops when the user enters -1.\nOutput Description:\nFor each score, print its classification.\nSample Input:\n5\n95 85 65 45 30 -1\nSample Output:\nExcellent\nGood\nAverage\nPass\nFail\nExplanation:\nThe program should read the scores continuously until the user inputs a stop value. The classification is based on the following criteria:\n90-100: Excellent\n75-89: Good\n50-74: Average\n35-49: Pass\n0-34: Fail\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n96.6\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 \n95 85 65 45 30 -1\nOutput\nExcellent\nGood\nAverage\nPass\nFail\nInput\n3 \n50 50 50 -1\nOutput\nAverage\nAverage\nAverage\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 \n95 85 65 45 30 -1\nOutput\nExcellent\nGood\nAverage\nPass\nFail\nInput\n3 \n50 50 50 -1\nOutput\nAverage\nAverage\nAverage\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nGrade Classification Program\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains an integer n (number of scores).\nThe second line contains n integers separated by spaces.\nThe input stops when the user enters -1.",
+ "output_spec": "For each score, print its classification.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n95 85 65 45 30 -1",
+   "output": "Excellent\nGood\nAverage\nPass\nFail"
+  },
+  {
+   "input": "5 \n95 85 65 45 30 -1",
+   "output": "Excellent\nGood\nAverage\nPass\nFail"
+  },
+  {
+   "input": "3 \n50 50 50 -1",
+   "output": "Average\nAverage\nAverage"
+  }
+ ],
+ "raw": ""
+}

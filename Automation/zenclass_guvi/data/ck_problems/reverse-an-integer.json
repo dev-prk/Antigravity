@@ -1,0 +1,25 @@
+{
+ "title": "1307. Reverse an Integer",
+ "slug": "reverse-an-integer",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nProblem\nHints & Solutions\nSubmissions\n1307\n. \nReverse an Integer\n10\nEasy\nProblem Statement:\nWrite a program to reverse an integer. \nInput Description:\nA single integer n (-10^9 \u2264 n \u2264 10^9). \nOutput Description:\n1.Print the reversed integer.\n2. Ignore leading zeros in the output. \nSample Input:\n1234 \nSample Output:\n4321 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n96.46\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n-567\nOutput\n-765\nInput\n100\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n-567\nOutput\n-765\nInput\n100\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nReverse an Integer\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer n (-10^9 \u2264 n \u2264 10^9).",
+ "output_spec": "1.Print the reversed integer.\n2. Ignore leading zeros in the output.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1234",
+   "output": "4321"
+  },
+  {
+   "input": "-567",
+   "output": "-765"
+  },
+  {
+   "input": "100",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

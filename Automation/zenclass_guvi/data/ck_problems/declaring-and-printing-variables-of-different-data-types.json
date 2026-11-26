@@ -1,0 +1,25 @@
+{
+ "title": "2078. Declaring and Printing Variables of Different Data Types",
+ "slug": "declaring-and-printing-variables-of-different-data-types",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ssions\n2078\n. \nDeclaring and Printing Variables of Different Data Types\n10\nEasy\nProblem Statement\nRead an integer, a float, and a character, then print each of them back on its own line.\nDescription\nDeclare variables of type int, float, and char. Read one value of each type using scanf with the appropriate format specifiers, then print each value using printf with the matching format specifier. This uses only variables, assignment, and printf/scanf \u2014 no loops or conditions are needed.\nInput Description\nAn integer, a float, and a character, separated by spaces.\nOutput Description\nPrint the integer, then the float (2 decimal places), then the character, each on its own line.\nSample Input\n25 3.14 A\nSample Output\n25\n3.14\nA\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n3\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n25 3.14 A\nOutput\n25\n3.14\nA\nInput\n100 99.99 M\nOutput\n100\n99.99\nM\nInput\n-5 -2.50 x\nOutput\n-5\n-2.50\nx\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n25 3.14 A\nOutput\n25\n3.14\nA\nInput\n100 99.99 M\nOutput\n100\n99.99\nM\nInput\n-5 -2.50 x\nOutput\n-5\n-2.50\nx\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDeclaring and Printing Variables of Different Data Types\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "An integer, a float, and a character, separated by spaces.",
+ "output_spec": "Print the integer, then the float (2 decimal places), then the character, each on its own line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "25 3.14 A",
+   "output": "25\n3.14\nA"
+  },
+  {
+   "input": "100 99.99 M",
+   "output": "100\n99.99\nM"
+  },
+  {
+   "input": "-5 -2.50 x",
+   "output": "-5\n-2.50\nx"
+  }
+ ],
+ "raw": ""
+}

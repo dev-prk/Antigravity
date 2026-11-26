@@ -1,0 +1,25 @@
+{
+ "title": "1478. First Unique Character Index in String",
+ "slug": "first-unique-character-index-in-string",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " & Solutions\nSubmissions\n1478\n. \nFirst Unique Character Index in String\n30\nEasy\nProblem Statement:\nGiven a string, find the first non-repeating character in it and return its index. If it does not exist, return -1.\nConstraints:\n- 1 <= s.length <= 10^5\n- s consists only of lowercase English letters. \nInput Description:\n- A single line containing a string s consisting of lowercase English letters. \nOutput Description:\n- An integer representing the index of the first non-repeating character in the string. If there is no such character, output -1. \nSample Input:\nleetcode\nloveleetcode\naabb \nSample Output:\n0\n2\n-1 \nExplanation:\nThe first non-repeating character is 'l' at index 0.\nThe first non-repeating character is 'v' at index 2.\nThere are no non-repeating characters. \nAccepted \n42\nSubmissions \n45\nAcceptance Rate \n93.33\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabacabad\nOutput\n3\nInput\naabbcc\nOutput\n-1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabacabad\nOutput\n3\nInput\naabbcc\nOutput\n-1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFirst Unique Character Index in String\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- A single line containing a string s consisting of lowercase English letters.",
+ "output_spec": "- An integer representing the index of the first non-repeating character in the string. If there is no such character, output -1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "leetcode\nloveleetcode\naabb",
+   "output": "0\n2\n-1"
+  },
+  {
+   "input": "abacabad",
+   "output": "3"
+  },
+  {
+   "input": "aabbcc",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

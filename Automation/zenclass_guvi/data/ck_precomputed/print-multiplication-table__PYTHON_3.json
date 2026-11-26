@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    n = int(data)\n    multiples = [str(n * i) for i in range(1, 11)]\n    print(' '.join(multiples))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "print-multiplication-table", "lang": "PYTHON 3"}

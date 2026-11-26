@@ -1,0 +1,25 @@
+{
+ "title": "1184. E-commerce Multi-Tier Discount",
+ "slug": "e-commerce-multi-tier-discount",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n1184\n. \nE-commerce Multi-Tier Discount\n20\nEasy\nProblem Statement:\nYou are designing a system for an e-commerce platform where you need to calculate the total cost of items in a shopping cart with multiple discount tiers. Each discount tier provides a different discount rate depending on the total number of items in the cart. You will use recursion to calculate the total cost with discounts applied. \nDiscount Tiers: \nTier 1: 5% discount for 1 to 5 items.\nTier 2: 10% discount for 6 to 10 items.\nTier 3: 15% discount for more than 10 items.\nYour task is to: \n1) Calculate the total cost of items before applying the discount.\n2) Apply the discount based on the total number of items.\n3) Return the final cost after applying the specific amount of discount. \nFunctions Required\ncalculateTotalCost(int items[], int n): Recursively calculates the total cost of the items in the cart.\napplyDiscount(float totalCost, int itemCount): Determines the amount of discount basically based on the number of items and then calculates the final price after applying the discount amount. \nInput Description:\nThe first line contains an integer N representing the number of items in the cart.\nThe second line contains N integers where each integer represents the price of an item. \nOutput Description:\nOutput the final cost of the items in the cart after applying the discount, rounded to two decimal places. \nSample Input:\n4\n30 20 50 40 \nSample Output:\n133.00 \nExplanation:\nThe total cost of items is 30 + 20 + 50 + 40 = 140.\nThe number of items is 4, which falls under Tier 1 (5% discount).\nDiscount = 5% of 140 = 7.\nFinal cost = 140 - 7 = 133. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.8\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n10 20 30 40 50\nOutput\n142.50\nInput\n8\n5 15 25 35 45 55 65 75\nOutput\n288.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n10 20 30 40 50\nOutput\n142.50\nInput\n8\n5 15 25 35 45 55 65 75\nOutput\n288.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nc",
+ "input_spec": "The first line contains an integer N representing the number of items in the cart.\nThe second line contains N integers where each integer represents the price of an item.",
+ "output_spec": "Output the final cost of the items in the cart after applying the discount, rounded to two decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n30 20 50 40",
+   "output": "133.00"
+  },
+  {
+   "input": "5\n10 20 30 40 50",
+   "output": "142.50"
+  },
+  {
+   "input": "8\n5 15 25 35 45 55 65 75",
+   "output": "288.00"
+  }
+ ],
+ "raw": ""
+}

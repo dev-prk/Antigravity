@@ -3,14 +3,18 @@
  "slug": "java-generics-collections-comparable-max-element",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1667. Java, Generics, Collections, Comparable, Max Element\n\n50\n\nMedium\n\nGeneric Maximum Finder\n\nProblem Statement:\nWrite a program that defines a generic class MaxFinder<T extends Comparable<T>> to find the maximum element in a list of numbers or strings.\n\nDescription:\n\nImplement a method findMax(List<T> list) that returns the maximum element.\n\nThe class should work with integers, doubles, and strings.\n\nInput Format:\n\nFirst line: number of elements n\n\nNext n lines: elements (either integers, doubles, or strings)\n\nOutput Format:\n\nThe maximum element",
- "input_spec": "First line: number of elements n\n\nNext n lines: elements (either integers, doubles, or strings)",
- "output_spec": "The maximum element",
+ "description": "Generics, Collections, Comparable, Max Element\n50\nMedium\nGeneric Maximum Finder\nProblem Statement:\nWrite a program that defines a generic class MaxFinder<T extends Comparable<T>> to find the maximum element in a list of numbers or strings.\nDescription:\nImplement a method findMax(List<T> list) that returns the maximum element.\nThe class should work with integers, doubles, and strings.\nInput Format:\nFirst line: number of elements n\nNext n lines: elements (either integers, doubles, or strings)\nOutput Format:\nThe maximum element\nSample Input:\n5\n23 78 45 12 89\nSample Output:\nMaximum: 89\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n91.8\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5\n10 20 5 30 15\nOutput\nMaximum: 30\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5\n10 20 5 30 15\nOutput\nMaximum: 30\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava, Generics, Collections, Comparable, Max Element\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n23 78 45 12 89",
    "output": "Maximum: 89"
+  },
+  {
+   "input": "5\n10 20 5 30 15",
+   "output": "Maximum: 30"
   }
  ],
  "raw": ""

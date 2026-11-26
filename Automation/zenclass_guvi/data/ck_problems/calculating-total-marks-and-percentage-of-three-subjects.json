@@ -1,0 +1,25 @@
+{
+ "title": "2220. Calculating Total Marks and Percentage of Three Subjects",
+ "slug": "calculating-total-marks-and-percentage-of-three-subjects",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ssions\n2220\n. \nCalculating Total Marks and Percentage of Three Subjects\n10\nEasy\nProblem Statement\nRead the marks of a student in three subjects and print the total marks and the percentage.\nDescription\nRead the marks of a student in three subjects, each out of 100. Calculate the total marks and the percentage using the formula percentage = total * 100.0 / 300. Writing 100.0 (and not 100) makes the division use decimals, so the decimal part of the percentage is not lost. Print the total on the first line, and the percentage with exactly two digits after the decimal point on the second line.\nInput Description\nThree integers m1, m2 and m3 separated by spaces (0 <= each mark <= 100).\nOutput Description\nPrint the total marks on the first line and the percentage with two digits after the decimal point on the second line.\nSample Input\n80 70 90\nSample Output\n240\n80.00\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n80 70 90\nOutput\n240\n80.00\nInput\n100 100 100\nOutput\n300\n100.00\nInput\n45 50 56\nOutput\n151\n50.33\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n80 70 90\nOutput\n240\n80.00\nInput\n100 100 100\nOutput\n300\n100.00\nInput\n45 50 56\nOutput\n151\n50.33\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCalculating Total Marks and Percentage of Three Subjects\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Three integers m1, m2 and m3 separated by spaces (0 <= each mark <= 100).",
+ "output_spec": "Print the total marks on the first line and the percentage with two digits after the decimal point on the second line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "80 70 90",
+   "output": "240\n80.00"
+  },
+  {
+   "input": "100 100 100",
+   "output": "300\n100.00"
+  },
+  {
+   "input": "45 50 56",
+   "output": "151\n50.33"
+  }
+ ],
+ "raw": ""
+}

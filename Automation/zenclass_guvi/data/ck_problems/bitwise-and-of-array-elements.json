@@ -3,7 +3,7 @@
  "slug": "bitwise-and-of-array-elements",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n111. Bitwise AND of Array Elements\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N elements ,find the Bitwise AND of the array elements.",
+ "description": "s & Solutions\nSubmissions\n111\n. \nBitwise AND of Array Elements\n40\nMedium\nTopics\nProblem Statement:\nGiven a number N and an array of N elements ,find the Bitwise AND of the array elements. \nInput Description:\nThe input consists of an integer N, representing the size of the array, followed by N array elements. N <= 100000. \nOutput Description:\nThe output is the Bitwise AND of all elements in the array. \nSample Input:\n4\n4 3 2 1 \nSample Output:\n0 \nAccepted \n7k\nSubmissions \n8k\nAcceptance Rate \n91.18\n%\nTopics\nbasics\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n2 4\nOutput\n0\nInput\n5\n1 1 1 1 1\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n2 4\nOutput\n0\nInput\n5\n1 1 1 1 1\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBitwise AND of Array Elements\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of an integer N, representing the size of the array, followed by N array elements. N <= 100000.",
  "output_spec": "The output is the Bitwise AND of all elements in the array.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "4\n4 3 2 1",
    "output": "0"
+  },
+  {
+   "input": "2\n2 4",
+   "output": "0"
+  },
+  {
+   "input": "5\n1 1 1 1 1",
+   "output": "1"
   }
  ],
  "raw": ""

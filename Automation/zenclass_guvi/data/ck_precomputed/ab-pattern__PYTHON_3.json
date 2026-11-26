@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    for i in range(n):\n        if i % 2 == 0:\n            print(\"BABA\"[:n])\n        else:\n            print(\"ABAB\"[:n])\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "ab-pattern", "lang": "PYTHON 3"}

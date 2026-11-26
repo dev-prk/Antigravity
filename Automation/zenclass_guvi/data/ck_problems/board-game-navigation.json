@@ -3,14 +3,22 @@
  "slug": "board-game-navigation",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n531. Board Game Navigation\n\n60\n\nMedium  Topics\n\nProblem Statement:\nVasanth is playing a board game on a rectangular grid (matrix). Each cell of the matrix has a number, representing the \"value\" of that tile. The player can move only from left to right in the same row. When the player reaches the end of a row, they automatically move to the first cell of the next row (row + 1, column = 0). A move is valid only if the value of the next cell is strictly greater than the current cell. i.e., you can only step to a higher value. Diagonal or backward moves are not allowed. Determine if Vasanth\u2019s piece can reach the bottom-right corner of the board starting from a given starting position (startRow, startCol).",
+ "description": "lem\nHints & Solutions\nSubmissions\n531\n. \nBoard Game Navigation\n60\nMedium\nTopics\nProblem Statement:\nVasanth is playing a board game on a rectangular grid (matrix). Each cell of the matrix has a number, representing the \"value\" of that tile. The player can move only from left to right in the same row. When the player reaches the end of a row, they automatically move to the first cell of the next row (row + 1, column = 0). A move is valid only if the value of the next cell is strictly greater than the current cell. i.e., you can only step to a higher value. Diagonal or backward moves are not allowed. Determine if Vasanth\u2019s piece can reach the bottom-right corner of the board starting from a given starting position (startRow, startCol). \nInput Description:\nDimensions of the matrix, elements of the matrix, followed by location of Vasanth\u2019s piece [ i j ] \nOutput Description:\nyes if the piece can reach the rightmost lower corner, no if otherwise. \nExplanation:\nThe piece starting at 1,2 moves along 5-6-7-8-9 and thus reaches the rightmost lower tile \nSample Input:\n3 3\n1 2 3\n4 5 6\n7 8 9\n1 2 \nSample Output:\nyes \nAccepted \n637\nSubmissions \n719\nAcceptance Rate \n88.6\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 2\n2 3\n4 5\n0 0\nOutput\nyes\nInput\n3 3\n1 2 3\n7 8 9\n4 5 6\n0 2\nOutput\nno\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 2\n2 3\n4 5\n0 0\nOutput\nyes\nInput\n3 3\n1 2 3\n7 8 9\n4 5 6\n0 2\nOutput\nno\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBoard Game Navigation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Dimensions of the matrix, elements of the matrix, followed by location of Vasanth\u2019s piece [ i j ]",
- "output_spec": "yes if the piece can reach the rightmost lower corner, no if otherwise.",
+ "output_spec": "yes if the piece can reach the rightmost lower corner, no if otherwise. \nExplanation:\nThe piece starting at 1,2 moves along 5-6-7-8-9 and thus reaches the rightmost lower tile",
  "constraints": "",
  "samples": [
   {
    "input": "3 3\n1 2 3\n4 5 6\n7 8 9\n1 2",
    "output": "yes"
+  },
+  {
+   "input": "2 2\n2 3\n4 5\n0 0",
+   "output": "yes"
+  },
+  {
+   "input": "3 3\n1 2 3\n7 8 9\n4 5 6\n0 2",
+   "output": "no"
   }
  ],
  "raw": ""

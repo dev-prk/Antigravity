@@ -3,7 +3,7 @@
  "slug": "character-count-in-string",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n38. Character Count in String\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a string 'S' and a character 'K', find how many times 'K' got repeated in 'S'.If 'K' is not found in 'S' print -1",
+ "description": "\nHints & Solutions\nSubmissions\n38\n. \nCharacter Count in String\n50\nMedium\nTopics\nProblem Statement:\nGiven a string 'S' and a character 'K', find how many times 'K' got repeated in 'S'.If 'K' is not found in 'S' print -1 \nInput Description:\nThe input consists of a string 'S' and a character 'K'. The size of string 'S' is at most 100000. \nOutput Description:\nThe output is the count of character 'K' in string 'S'. If 'K' is not found, print -1. \nSample Input:\ncodekata a \nSample Output:\n2 \nAccepted \n5k\nSubmissions \n5k\nAcceptance Rate \n89.89\n%\nTopics\nstrings\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nguvigeeks e\nOutput\n2\nInput\nalpha s\nOutput\n-1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nguvigeeks e\nOutput\n2\nInput\nalpha s\nOutput\n-1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCharacter Count in String\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of a string 'S' and a character 'K'. The size of string 'S' is at most 100000.",
  "output_spec": "The output is the count of character 'K' in string 'S'. If 'K' is not found, print -1.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "codekata a",
    "output": "2"
+  },
+  {
+   "input": "guvigeeks e",
+   "output": "2"
+  },
+  {
+   "input": "alpha s",
+   "output": "-1"
   }
  ],
  "raw": ""

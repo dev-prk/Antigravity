@@ -1,0 +1,17 @@
+{
+ "title": "1864. Delete a Given Value from a Singly Linked List",
+ "slug": "delete-a-given-value-from-a-singly-linked-list",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "HCL GUVI | Learn to code in your native language\nCodeKata\nChange Layout\nLeaderboard\nClose\nDescription\nCode Editor\nProblem\nProblem\nHints & Solutions\nSubmissions\n1864\n. \nDelete a Given Value from a Singly Linked List\n30\nEasy\nTopics\nProblem: Delete a Given Value from a Singly Linked List\nYou are given N integers.\nCreate a Singly Linked List by inserting elements at the end.\nThen you are given an integer X.\nYour task is to delete the first occurrence of X from the linked list.\nIf X is not present, print:\nValue Not Found\nOtherwise, print the updated linked list after deletion.\nInput Format\nN\na1 a2 a3 ... aN\nX\nN \u2192 number of elements\nNext line contains N space-separated integers\nLast line contains integer X (value to delete)\nOutput Format\nIf deleted \u2192 print updated linked list\nIf not found \u2192 print \"Value Not Found\"\nConstraints\n1 \u2264 N \u2264 1000\n-10^9 \u2264 ai, X \u2264 10^9\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\nlinked list\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5\n1 2 3 4 5\n3\nOutput\n1 2 4 5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5\n1 2 3 4 5\n3\nOutput\n1 2 4 5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDelete a Given Value from a Singly Linked List\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5\n3",
+   "output": "1 2 4 5"
+  }
+ ],
+ "raw": ""
+}

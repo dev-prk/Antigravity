@@ -1,0 +1,17 @@
+{
+ "title": "2069. Generating the First Five Fibonacci Numbers",
+ "slug": "generating-the-first-five-fibonacci-numbers",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lutions\nSubmissions\n2069\n. \nGenerating the First Five Fibonacci Numbers\n20\nEasy\nProblem Statement\nPrint the first five terms of the Fibonacci sequence by directly computing each term from the two before it.\nDescription\nThe Fibonacci sequence starts with 0 and 1, and every following term is the sum of the previous two terms. Using variables to hold the first two terms, directly compute the third, fourth and fifth terms one after another using addition, then print all five terms separated by spaces. No loop is required since exactly five terms are needed.\nInput Description\nThis program does not read any input.\nOutput Description\nPrint the first five Fibonacci terms, separated by single spaces, on one line.\nSample Input\n(no input)\nSample Output\n0 1 1 2 3\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n11\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n(no input)\nOutput\n0 1 1 2 3\nInput\n(no input)\nOutput\n0 1 1 2 3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n(no input)\nOutput\n0 1 1 2 3\nInput\n(no input)\nOutput\n0 1 1 2 3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nGenerating the First Five Fibonacci Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "This program does not read any input.",
+ "output_spec": "Print the first five Fibonacci terms, separated by single spaces, on one line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "(no input)",
+   "output": "0 1 1 2 3"
+  }
+ ],
+ "raw": ""
+}

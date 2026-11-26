@@ -3,7 +3,7 @@
  "slug": "converting-total-seconds-into-hours-minutes-and-seconds",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2096. Converting Total Seconds into Hours, Minutes and Seconds\n\n90\n\nHard\n\nProblem Statement\nRead a total number of seconds and print the equivalent duration in hours, minutes and seconds, using the % and / operators to break it down.\n\nDescription\nRead an integer totalSeconds representing a duration in seconds. Extract the number of complete hours it contains using the / operator, then find the remaining seconds after removing those hours using the % operator. From the remaining seconds, extract the number of complete minutes using / and the leftover seconds using %. Print the hours, minutes and seconds, each on its own line. No loop or condition is needed since the breakdown is done with a fixed sequence of arithmetic steps.",
+ "description": "ssions\n2096\n. \nConverting Total Seconds into Hours, Minutes and Seconds\n90\nHard\nProblem Statement\nRead a total number of seconds and print the equivalent duration in hours, minutes and seconds, using the % and / operators to break it down.\nDescription\nRead an integer totalSeconds representing a duration in seconds. Extract the number of complete hours it contains using the / operator, then find the remaining seconds after removing those hours using the % operator. From the remaining seconds, extract the number of complete minutes using / and the leftover seconds using %. Print the hours, minutes and seconds, each on its own line. No loop or condition is needed since the breakdown is done with a fixed sequence of arithmetic steps.\nInput Description\nA single integer totalSeconds (0 <= totalSeconds <= 86399).\nOutput Description\nPrint the number of hours, then minutes, then seconds, each on its own line.\nSample Input\n3725\nSample Output\n1\n2\n5\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3725\nOutput\n1\n2\n5\nInput\n59\nOutput\n0\n0\n59\nInput\n86399\nOutput\n23\n59\n59\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3725\nOutput\n1\n2\n5\nInput\n59\nOutput\n0\n0\n59\nInput\n86399\nOutput\n23\n59\n59\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nConverting Total Seconds into Hours, Minutes and Seconds\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single integer totalSeconds (0 <= totalSeconds <= 86399).",
  "output_spec": "Print the number of hours, then minutes, then seconds, each on its own line.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3725",
    "output": "1\n2\n5"
+  },
+  {
+   "input": "59",
+   "output": "0\n0\n59"
+  },
+  {
+   "input": "86399",
+   "output": "23\n59\n59"
   }
  ],
  "raw": ""

@@ -1,0 +1,29 @@
+{
+ "title": "2062. Linear Probing",
+ "slug": "linear-probing",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "or\nProblem\nProblem\nHints & Solutions\nSubmissions\n2062\n. \nLinear Probing\n30\nEasy\nProblem Statement\nInsert the given keys into a hash table of size m using:\nh(key) = key % m\nIf a collision occurs, use linear probing:\n(index + 1) % m\nPrint the final hash table.\nInput Format\nFirst line contains m and n.\nSecond line contains n integers.\nOutput Format\nPrint the final hash table.\nSample Input\n7 4\n10 17 24 31\nSample Output\n31 24 -1 10 17 -1 -1\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 3\n10 15 20\nOutput\n10 15 20 -1 -1\nInput\n7 4\n7 14 21 28\nOutput\n7 14 21 28 -1 -1 -1\nInput\n10 4\n23 33 43 53\nOutput\n-1 -1 -1 23 33 43 53 -1 -1 -1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 3\n10 15 20\nOutput\n10 15 20 -1 -1\nInput\n7 4\n7 14 21 28\nOutput\n7 14 21 28 -1 -1 -1\nInput\n10 4\n23 33 43 53\nOutput\n-1 -1 -1 23 33 43 53 -1 -1 -1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLinear Probing\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7 4\n10 17 24 31",
+   "output": "31 24 -1 10 17 -1 -1"
+  },
+  {
+   "input": "5 3\n10 15 20",
+   "output": "10 15 20 -1 -1"
+  },
+  {
+   "input": "7 4\n7 14 21 28",
+   "output": "7 14 21 28 -1 -1 -1"
+  },
+  {
+   "input": "10 4\n23 33 43 53",
+   "output": "-1 -1 -1 23 33 43 53 -1 -1 -1"
+  }
+ ],
+ "raw": ""
+}

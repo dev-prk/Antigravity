@@ -1,0 +1,21 @@
+{
+ "title": "1314. Rectangle Area with Parameterized Constructor",
+ "slug": "rectangle-area-with-parameterized-constructor",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "tions\nSubmissions\n1314\n. \nRectangle Area with Parameterized Constructor\n10\nEasy\nProblem Statement:\nWrite a program that demonstrates the use of parameterized constructors by creating a class representing a rectangle and calculating its area. \nInput Description:\nTwo integers representing the length and width of the rectangle. \nOutput Description:\nThe area of the rectangle. \nSample Input:\n5 10 \nSample Output:\n50 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.74\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 10\nOutput\n50\nInput\n3 7\nOutput\n21\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 10\nOutput\n50\nInput\n3 7\nOutput\n21\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRectangle Area with Parameterized Constructor\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers representing the length and width of the rectangle.",
+ "output_spec": "The area of the rectangle.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 10",
+   "output": "50"
+  },
+  {
+   "input": "3 7",
+   "output": "21"
+  }
+ ],
+ "raw": ""
+}

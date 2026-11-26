@@ -3,14 +3,22 @@
  "slug": "josephus-game",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n470. Josephus Game\n\n60\n\nMedium  Topics\n\nProblem Statement:\nRohit wants to intern at Guvi Geek Network.To get the internship, he has to go through a test in form of gaming process. There are N candidates applying for the internship including Rohit and only one will be selected.\nSince he wants to qualify he asks you to help him. The test is as follows.\nThe candidates are asked to stand in a line at positions 1 to N and given a number K. Now, every Kth candidate remains and the rest are eliminated. This is repeated until the number of candidates are less than K.\nOut of the remaining candidates, the one standing at smallest position is selected. You need to tell Rohit at which position he must stand so that he will get selected.",
+ "description": "lem\nProblem\nHints & Solutions\nSubmissions\n470\n. \nJosephus Game\n60\nMedium\nTopics\nProblem Statement:\nRohit wants to intern at Guvi Geek Network.To get the internship, he has to go through a test in form of gaming process. There are N candidates applying for the internship including Rohit and only one will be selected.\nSince he wants to qualify he asks you to help him. The test is as follows.\nThe candidates are asked to stand in a line at positions 1 to N and given a number K. Now, every Kth candidate remains and the rest are eliminated. This is repeated until the number of candidates are less than K.\nOut of the remaining candidates, the one standing at smallest position is selected. You need to tell Rohit at which position he must stand so that he will get selected.\nConstraints :\n1 <= N <= 10^5\n2 <= K <= 10 \nInput Description:\nInput contains 2 space-separated integers N, denoting number of candidates and K. \nOutput Description:\nFor each test case, print the required position in a new line. \nExplanation:\nIn the third test case, the numbers are\n1,2,3,4,5 and the choice is to select every second number and eliminate the rest.\nSelecting every second number in the list, the numbers are\n2,4\nSelecting every second number in the list, the numbers are\n4\nTherefore, the ideal position for Rohit is 4. The first and second test cases follow the same logic. \nSample Input:\n3\n30 3\n18 3\n5 2 \nSample Output:\n27\n9\n4 \nAccepted \n599\nSubmissions \n931\nAcceptance Rate \n64.34\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n17 3\n8 2\nOutput\n9\n8\nInput\n1\n20 4\nOutput\n16\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n17 3\n8 2\nOutput\n9\n8\nInput\n1\n20 4\nOutput\n16\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJosephus Game\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge case",
  "input_spec": "Input contains 2 space-separated integers N, denoting number of candidates and K.",
- "output_spec": "For each test case, print the required position in a new line.",
- "constraints": "1 <= N <= 10^5\n2 <= K <= 10",
+ "output_spec": "For each test case, print the required position in a new line. \nExplanation:\nIn the third test case, the numbers are\n1,2,3,4,5 and the choice is to select every second number and eliminate the rest.\nSelecting every second number in the list, the numbers are\n2,4\nSelecting every second number in the list, the numbers are\n4\nTherefore, the ideal position for Rohit is 4. The first and second test cases follow the same logic.",
+ "constraints": "",
  "samples": [
   {
    "input": "3\n30 3\n18 3\n5 2",
    "output": "27\n9\n4"
+  },
+  {
+   "input": "2\n17 3\n8 2",
+   "output": "9\n8"
+  },
+  {
+   "input": "1\n20 4",
+   "output": "16"
   }
  ],
  "raw": ""

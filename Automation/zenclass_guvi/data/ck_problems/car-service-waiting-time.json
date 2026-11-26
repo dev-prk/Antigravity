@@ -1,0 +1,21 @@
+{
+ "title": "548. Car Service Waiting Time",
+ "slug": "car-service-waiting-time",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n548\n. \nCar Service Waiting Time\n30\nEasy\nTopics\nProblem Statement:\nIn a garage the service man takes 10 minutes to service one car.If there are N cars in garage and X is number of minutes after which one person arrives,Calculate how much time last person has to wait in garage.(Print answer in minutes) \nInput Description:\nYou are given Two numbers \u2018N\u2019 and \u2018X\u2019 \nOutput Description:\nWaiting time of last person \nExplanation:\n1 2 3 4 as servicing 1 is going on 2 and 3 will enter now as servicing of 2 is going on after 5 minutes 4 will enter so he has to wait 5 minutes so that service of 2 gets over and 10 minutes for 3 to get over total of 15 mins \nSample Input:\n4 5 \nSample Output:\n15 \nAccepted \n3k\nSubmissions \n5k\nAcceptance Rate \n69.17\n%\nTopics\nmathematics\ntime\nnumbers\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\nOutput\n28\nInput\n4 5\nOutput\n15\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\nOutput\n28\nInput\n4 5\nOutput\n15\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCar Service Waiting Time\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given Two numbers \u2018N\u2019 and \u2018X\u2019",
+ "output_spec": "Waiting time of last person \nExplanation:\n1 2 3 4 as servicing 1 is going on 2 and 3 will enter now as servicing of 2 is going on after 5 minutes 4 will enter so he has to wait 5 minutes so that service of 2 gets over and 10 minutes for 3 to get over total of 15 mins",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 5",
+   "output": "15"
+  },
+  {
+   "input": "5 3",
+   "output": "28"
+  }
+ ],
+ "raw": ""
+}

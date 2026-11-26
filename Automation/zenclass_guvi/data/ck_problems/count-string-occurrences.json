@@ -1,0 +1,25 @@
+{
+ "title": "39. Count String Occurrences",
+ "slug": "count-string-occurrences",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nHints & Solutions\nSubmissions\n39\n. \nCount String Occurrences\n30\nEasy\nTopics\nProblem Statement:\nGiven a sentence and string S, find how many times S occurs in the given sentence.If S is not found in the sentence print -1\nInput Description:\nInput Size : |sentence| <= 1000000(complexity O(n)).\nOutput Description:\nThe output is the number of times S occurs in the given sentence, or -1 if S is not found.\nSample Input:\nI enjoy doing codekata\ncodekata\nSample Output:\n1\nAccepted \n8k\nSubmissions \n9k\nAcceptance Rate \n89.78\n%\nTopics\narray\nstrings\n5\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nlearn practice get hired\npractice\nOutput\n1\nInput\ncode code code\nlearn\nOutput\n-1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nlearn practice get hired\npractice\nOutput\n1\nInput\ncode code code\nlearn\nOutput\n-1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCount String Occurrences\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Input Size : |sentence| <= 1000000(complexity O(n)).",
+ "output_spec": "The output is the number of times S occurs in the given sentence, or -1 if S is not found.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "I enjoy doing codekata\ncodekata",
+   "output": "1"
+  },
+  {
+   "input": "learn practice get hired\npractice",
+   "output": "1"
+  },
+  {
+   "input": "code code code\nlearn",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

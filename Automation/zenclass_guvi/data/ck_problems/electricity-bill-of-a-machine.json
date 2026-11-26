@@ -1,0 +1,25 @@
+{
+ "title": "2166. Electricity Bill of a Machine",
+ "slug": "electricity-bill-of-a-machine",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nHints & Solutions\nSubmissions\n2166\n. \nElectricity Bill of a Machine\n20\nEasy\nProblem Statement\nRead the units of electricity used by a machine and the price of one unit. Print the total bill.\nDescription\nA machine in a workshop uses some units of electricity in a month. The price of one unit is given. Read both values, find the total bill, and print it with exactly 2 digits after the decimal point.\nInput Description\nThe first line has an integer, the units used. (1 <= units <= 1000). The second line has a real number, the price of one unit, with at most 2 digits after the decimal point. (0.5 <= price <= 100)\nOutput Description\nPrint the total bill with exactly 2 digits after the decimal point.\nSample Input\n120\n6.5\nSample Output\n780.00\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n120\n6.5\nOutput\n780.00\nInput\n45\n7.25\nOutput\n326.25\nInput\n1000\n15\nOutput\n15000.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n120\n6.5\nOutput\n780.00\nInput\n45\n7.25\nOutput\n326.25\nInput\n1000\n15\nOutput\n15000.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nElectricity Bill of a Machine\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line has an integer, the units used. (1 <= units <= 1000). The second line has a real number, the price of one unit, with at most 2 digits after the decimal point. (0.5 <= price <= 100)",
+ "output_spec": "Print the total bill with exactly 2 digits after the decimal point.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "120\n6.5",
+   "output": "780.00"
+  },
+  {
+   "input": "45\n7.25",
+   "output": "326.25"
+  },
+  {
+   "input": "1000\n15",
+   "output": "15000.00"
+  }
+ ],
+ "raw": ""
+}

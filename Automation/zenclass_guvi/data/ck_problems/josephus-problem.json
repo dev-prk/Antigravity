@@ -3,14 +3,18 @@
  "slug": "josephus-problem",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n481. Josephus Problem\n\n90\n\nHard  Topics\n\nProblem Statement:\nind the man who will survive. There is a scenario that only one person will survive. 'N' person will stand in a circle. Initially first person will be holding the gun. You are given with number 'k'. The person who is holding the gun has to count to 'k' starting from him and shoot the person at which k ends and then pass the gun to next alive person. Your task is to find the place where you will survive.",
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n481\n. \nJosephus Problem\n90\nHard\nTopics\nProblem Statement:\nind the man who will survive. There is a scenario that only one person will survive. 'N' person will stand in a circle. Initially first person will be holding the gun. You are given with number 'k'. The person who is holding the gun has to count to 'k' starting from him and shoot the person at which k ends and then pass the gun to next alive person. Your task is to find the place where you will survive. \nInput Description:\nTwo numbers \u2013 'N' and 'k' \nOutput Description:\nFind the place where you will be safe (indexing at 1) \nExplanation:\nAssume two person on circle. According to given scenario he has to count k times before firing the shot. Now as k=1 he counts 1 from him He has to shoot himself. Hence the alive person is 2 \nSample Input:\n2\n1 \nSample Output:\n2 \nAccepted \n716\nSubmissions \n1k\nAcceptance Rate \n67.17\n%\nTopics\nmathematics\nlinkedlist\narray\naptitude\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n1\nOutput\n2\nInput\n10\n5\nOutput\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n1\nOutput\n2\nInput\n10\n5\nOutput\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJosephus Problem\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two numbers \u2013 'N' and 'k'",
- "output_spec": "Find the place where you will be safe (indexing at 1)",
+ "output_spec": "Find the place where you will be safe (indexing at 1) \nExplanation:\nAssume two person on circle. According to given scenario he has to count k times before firing the shot. Now as k=1 he counts 1 from him He has to shoot himself. Hence the alive person is 2",
  "constraints": "",
  "samples": [
   {
    "input": "2\n1",
    "output": "2"
+  },
+  {
+   "input": "10\n5",
+   "output": "3"
   }
  ],
  "raw": ""

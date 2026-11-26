@@ -3,14 +3,22 @@
  "slug": "display-students-above-given-marks",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2058. Display Students Above Given Marks\n\n60\n\nMedium\n\nWrite a Java program to simulate retrieving student records from a database based on a marks condition.\n\nThe program should read N student records containing:\n\nStudent ID\nStudent Name\nMarks\n\nThen read a minimum marks value.\n\nDisplay all students whose marks are greater than or equal to the given value.\n\nThe output format should be:\n\nID: <id>, Name: <name>, Marks: <marks>\n\nIf no student satisfies the condition, display:\n\nNo students found",
- "input_spec": "5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n80\nSample",
- "output_spec": "should be:\n\nID: <id>, Name: <name>, Marks: <marks>\n\nIf no student satisfies the condition, display:\n\nNo students found",
+ "description": "HCL GUVI | Learn to code in your native language\nCodeKata\nChange Layout\nLeaderboard\nClose\nDescription\nCode Editor\nProblem\nProblem\nHints & Solutions\nSubmissions\n2058\n. \nDisplay Students Above Given Marks\n60\nMedium\nWrite a Java program to simulate retrieving student records from a database based on a marks condition.\nThe program should read N student records containing:\nStudent ID\nStudent Name\nMarks\nThen read a minimum marks value.\nDisplay all students whose marks are greater than or equal to the given value.\nThe output format should be:\nID: <id>, Name: <name>, Marks: <marks>\nIf no student satisfies the condition, display:\nNo students found\nSample Input\n5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n80\nSample Output\nID: 101, Name: Arun, Marks: 85\nID: 103, Name: Kiran, Marks: 90\nID: 105, Name: Rahul, Marks: 88\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n80\nOutput\nID: 101, Name: Arun, Marks: 85\nID: 103, Name: Kiran, Marks: 90\nID: 105, Name: Rahul, Marks: 88\nInput\n5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n90\nOutput\nID: 103, Name: Kiran, Marks: 90\nInput\n5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n95\nOutput\nNo students found\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n80\nOutput\nID: 101, Name: Arun, Marks: 85\nID: 103, Name: Kiran, Marks: 90\nID: 105, Name: Rahul, Marks: 88\nInput\n5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n90\nOutput\nID: 103, Name: Kiran, Marks: 90\nInput\n5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n95\nOutput\nNo students found\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n80",
    "output": "ID: 101, Name: Arun, Marks: 85\nID: 103, Name: Kiran, Marks: 90\nID: 105, Name: Rahul, Marks: 88"
+  },
+  {
+   "input": "5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n90",
+   "output": "ID: 103, Name: Kiran, Marks: 90"
+  },
+  {
+   "input": "5\n101\nArun\n85\n102\nPriya\n72\n103\nKiran\n90\n104\nMeena\n65\n105\nRahul\n88\n95",
+   "output": "No students found"
   }
  ],
  "raw": ""

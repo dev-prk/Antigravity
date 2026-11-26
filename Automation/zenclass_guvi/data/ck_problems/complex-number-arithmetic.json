@@ -3,14 +3,18 @@
  "slug": "complex-number-arithmetic",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1805. Complex Number Arithmetic\n\n50\n\nMedium\n\nComplex Number Arithmetic\n\nProblem Statement:\nWrite a program to overload +, -, and * operators for complex numbers.\n\nDescription:\nCreate class Complex:\n1. Overload + for addition\n2. Overload - for subtraction\n3. Overload * for multiplication\n4. Output in format: a + bi\n\nFormula:\n(a+bi)*(c+di) = (ac \u2212 bd) + (ad + bc)i\n\nInput Format:\nFour integers\na b c d\n\nOutput Format:\nAddition: x + yi\nSubtraction: x + yi\nMultiplication: x + yi",
- "input_spec": "Four integers\na b c d",
- "output_spec": "in format: a + bi\n\nFormula:\n(a+bi)*(c+di) = (ac \u2212 bd) + (ad + bc)i\n\nInput Format:\nFour integers\na b c d\n\nOutput Format:\nAddition: x + yi\nSubtraction: x + yi\nMultiplication: x + yi",
+ "description": "bmissions\n1805\n. \nComplex Number Arithmetic\n50\nMedium\nComplex Number Arithmetic\nProblem Statement:\nWrite a program to overload +, -, and * operators for complex numbers.\nDescription:\nCreate class Complex:\n1. Overload + for addition\n2. Overload - for subtraction\n3. Overload * for multiplication\n4. Output in format: a + bi\nFormula:\n(a+bi)*(c+di) = (ac \u2212 bd) + (ad + bc)i\nInput Format:\nFour integers\na b c d\nOutput Format:\nAddition: x + yi\nSubtraction: x + yi\nMultiplication: x + yi\nSample Input:\n2 3 4 5\nSample Output:\nAddition: 6 + 8i\nSubtraction: -2 + -2i\nMultiplication: -7 + 22i\nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n94.64\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5 -3 2 4\nOutput\nAddition: 7 + 1i\nSubtraction: 3 + -7i\nMultiplication: 22 + 14i\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5 -3 2 4\nOutput\nAddition: 7 + 1i\nSubtraction: 3 + -7i\nMultiplication: 22 + 14i\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nComplex Number Arithmetic\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "2 3 4 5",
    "output": "Addition: 6 + 8i\nSubtraction: -2 + -2i\nMultiplication: -7 + 22i"
+  },
+  {
+   "input": "5 -3 2 4",
+   "output": "Addition: 7 + 1i\nSubtraction: 3 + -7i\nMultiplication: 22 + 14i"
   }
  ],
  "raw": ""

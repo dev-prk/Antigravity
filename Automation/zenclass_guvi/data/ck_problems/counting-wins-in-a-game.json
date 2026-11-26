@@ -1,0 +1,25 @@
+{
+ "title": "373. Counting Wins in a Game",
+ "slug": "counting-wins-in-a-game",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nHints & Solutions\nSubmissions\n373\n. \nCounting Wins in a Game\n30\nEasy\nTopics\nProblem Statement:\nRam and Sita are playing a game. There are N rounds for the game and the results are tabulated in a table of dimensions N x N. A '0' in the table implies that Ram has won the game, while a '1' denotes that Sita has won the game.You must compute the number of times Ram and Sita have won the game, individually.Note : Elements in table can only be either 1 or 0. \nInput Description:\nFirst line contains two space separated integers M,N denoting the size of the 2d matrix . Then in the next lines are the space separated values of the matrix mat[ ] [ ] . \nOutput Description:\nThe output will be the number of 0s and number of 1s, displayed separately. \nSample Input:\n1 3\n1 1 1 \nSample Output:\nRAM: 0\nSITA: 3 \nExplanation:\nThere are 3 ones in the matrix. Thus it means that Sita has won 3 times and Ram has won 0 out of the total 3 games. \nAccepted \n3k\nSubmissions \n4k\nAcceptance Rate \n85.99\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 9\n0 0 0 0 0 1 0 1 1\nOutput\nRAM: 6\nSITA: 3\nInput\n2 4\n0 0 1 1\n0 1 0 1\nOutput\nRAM: 4\nSITA: 4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 9\n0 0 0 0 0 1 0 1 1\nOutput\nRAM: 6\nSITA: 3\nInput\n2 4\n0 0 1 1\n0 1 0 1\nOutput\nRAM: 4\nSITA: 4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCounting Wins in a Game\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains two space separated integers M,N denoting the size of the 2d matrix . Then in the next lines are the space separated values of the matrix mat[ ] [ ] .",
+ "output_spec": "The output will be the number of 0s and number of 1s, displayed separately.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 3\n1 1 1",
+   "output": "RAM: 0\nSITA: 3"
+  },
+  {
+   "input": "1 9\n0 0 0 0 0 1 0 1 1",
+   "output": "RAM: 6\nSITA: 3"
+  },
+  {
+   "input": "2 4\n0 0 1 1\n0 1 0 1",
+   "output": "RAM: 4\nSITA: 4"
+  }
+ ],
+ "raw": ""
+}

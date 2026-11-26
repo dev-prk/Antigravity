@@ -1,0 +1,21 @@
+{
+ "title": "1296. Sum of Odd Numbers from 1 to N",
+ "slug": "sum-of-odd-numbers-from-1-to-n",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n1296\n. \nSum of Odd Numbers from 1 to N\n10\nEasy\nProblem Statement:\nWrite a Java program to find the sum of all odd numbers from 1 to N. \nInput Description:\nThe program should accept a single integer N as input. \nOutput Description:\nThe program should print the sum of all odd numbers from 1 to N. \nSample Input:\n10 \nSample Output:\n25 \nAccepted \n116\nSubmissions \n122\nAcceptance Rate \n95.08\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n25\nInput\n20\nOutput\n100\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n25\nInput\n20\nOutput\n100\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSum of Odd Numbers from 1 to N\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The program should accept a single integer N as input.",
+ "output_spec": "The program should print the sum of all odd numbers from 1 to N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10",
+   "output": "25"
+  },
+  {
+   "input": "20",
+   "output": "100"
+  }
+ ],
+ "raw": ""
+}

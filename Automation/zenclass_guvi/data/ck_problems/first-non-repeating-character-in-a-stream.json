@@ -1,0 +1,25 @@
+{
+ "title": "2015. First Non-Repeating Character in a Stream",
+ "slug": "first-non-repeating-character-in-a-stream",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Solutions\nSubmissions\n2015\n. \nFirst Non-Repeating Character in a Stream\n30\nEasy\nProblem Statement\nGiven a stream of lowercase characters, after reading each character print the first non-repeating character seen so far. If no such character exists, print -1.\nSample Input\naabc\nSample Output\na -1 b b\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\naabc\nOutput\na -1 b b \nInput\nabcabc\nOutput\na a a b c -1 \nInput\nzz\nOutput\nz -1 \nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\naabc\nOutput\na -1 b b \nInput\nabcabc\nOutput\na a a b c -1 \nInput\nzz\nOutput\nz -1 \nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFirst Non-Repeating Character in a Stream\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aabc",
+   "output": "a -1 b b"
+  },
+  {
+   "input": "abcabc",
+   "output": "a a a b c -1"
+  },
+  {
+   "input": "zz",
+   "output": "z -1"
+  }
+ ],
+ "raw": ""
+}

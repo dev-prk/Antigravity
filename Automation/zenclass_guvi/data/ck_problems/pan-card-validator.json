@@ -1,0 +1,21 @@
+{
+ "title": "624. PAN Card Validator",
+ "slug": "pan-card-validator",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n624\n. \nPAN Card Validator\n30\nEasy\nTopics\nProblem Statement:\nIndian PAN card issuing authority have found some fake PAN cards. They have hired you so that you can validate PAN card for them. Your task is to develop a suitable algorithm which could check if pan is valid or not \n1)Pan must have uppercase letters only. \n2)It must be of 10 character only \n3)From index 1 to 5 all must be letters(A-Z),last index must be letter \n4)Rest all must be integer Starting from 1 \nInput Description:\nYou are given a input string which indicates the PAN number \nOutput Description:\nPrint 'pan' if it is valid PAN number, else print 'not pan' \nExplanation:\nAll the above mentioned criteria must be satisfied \nSample Input:\nHXTPS2142R \nSample Output:\npan \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n87.45\n%\nTopics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nHXTPS2142R\nOutput\npan\nInput\nHXTPS21R2R\nOutput\nnot pan\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nHXTPS2142R\nOutput\npan\nInput\nHXTPS21R2R\nOutput\nnot pan\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPAN Card Validator\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given a input string which indicates the PAN number",
+ "output_spec": "Print 'pan' if it is valid PAN number, else print 'not pan' \nExplanation:\nAll the above mentioned criteria must be satisfied",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "HXTPS2142R",
+   "output": "pan"
+  },
+  {
+   "input": "HXTPS21R2R",
+   "output": "not pan"
+  }
+ ],
+ "raw": ""
+}

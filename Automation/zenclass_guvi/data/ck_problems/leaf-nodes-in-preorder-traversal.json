@@ -3,14 +3,18 @@
  "slug": "leaf-nodes-in-preorder-traversal",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n639. Leaf Nodes in Preorder Traversal\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given an array representing preorder traversal of binary tree, Your task is to print all the leaf nodes. Take the first node as the root node",
+ "description": " & Solutions\nSubmissions\n639\n. \nLeaf Nodes in Preorder Traversal\n90\nHard\nTopics\nProblem Statement:\nYou are given an array representing preorder traversal of binary tree, Your task is to print all the leaf nodes. Take the first node as the root node \nInput Description:\nYou are given a number n representing size of array\nNext line contains n space separated numbers \nOutput Description:\nPrint the leaf nodes \nExplanation:\nSelf Explanatory \nSample Input:\n3\n3 2 4 \nSample Output:\n2 4 \nAccepted \n173\nSubmissions \n300\nAcceptance Rate \n57.67\n%\nTopics\nbst\nsegment tree\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n3 2 4\nOutput\n2 4\nInput\n4\n5 1 6 7\nOutput\n1 7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n3 2 4\nOutput\n2 4\nInput\n4\n5 1 6 7\nOutput\n1 7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLeaf Nodes in Preorder Traversal\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given a number n representing size of array\nNext line contains n space separated numbers",
- "output_spec": "Print the leaf nodes",
+ "output_spec": "Print the leaf nodes \nExplanation:\nSelf Explanatory",
  "constraints": "",
  "samples": [
   {
    "input": "3\n3 2 4",
    "output": "2 4"
+  },
+  {
+   "input": "4\n5 1 6 7",
+   "output": "1 7"
   }
  ],
  "raw": ""

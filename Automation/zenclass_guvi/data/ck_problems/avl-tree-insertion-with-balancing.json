@@ -3,7 +3,7 @@
  "slug": "avl-tree-insertion-with-balancing",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1498. AVL Tree Insertion with Balancing\n\n50\n\nMedium\n\nProblem Statement:\nGiven an initially empty AVL (Adelson-Velsky and Landis) tree, implement the insertion operation. After each insertion, ensure the tree remains balanced according to AVL tree properties. An AVL tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one for all nodes.",
+ "description": "nts & Solutions\nSubmissions\n1498\n. \nAVL Tree Insertion with Balancing\n50\nMedium\nProblem Statement:\nGiven an initially empty AVL (Adelson-Velsky and Landis) tree, implement the insertion operation. After each insertion, ensure the tree remains balanced according to AVL tree properties. An AVL tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one for all nodes. \nInput Description:\n- The first line contains an integer n, the number of elements to insert.\n- The second line contains n space-separated integers, representing the values to be inserted in the given order. \nOutput Description:\n- Print the pre-order traversal of the AVL tree after all insertions. \nSample Input:\n5\n10 20 30 40 50 \nSample Output:\n20 10 40 30 50 \nExplanation:\nAfter inserting all elements and balancing after each insertion, the pre-order traversal of the AVL tree is 20 10 40 30 50. \nAccepted \n15\nSubmissions \n26\nAcceptance Rate \n57.69\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n 1 2 3\nOutput\n2 1 3\nInput\n6\n 50 40 30 20 10 60\nOutput\n40 20 10 30 50 60\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n 1 2 3\nOutput\n2 1 3\nInput\n6\n 50 40 30 20 10 60\nOutput\n40 20 10 30 50 60\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAVL Tree Insertion with Balancing\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer n, the number of elements to insert.\n- The second line contains n space-separated integers, representing the values to be inserted in the given order.",
  "output_spec": "- Print the pre-order traversal of the AVL tree after all insertions.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\n10 20 30 40 50",
    "output": "20 10 40 30 50"
+  },
+  {
+   "input": "3\n 1 2 3",
+   "output": "2 1 3"
+  },
+  {
+   "input": "6\n 50 40 30 20 10 60",
+   "output": "40 20 10 30 50 60"
   }
  ],
  "raw": ""

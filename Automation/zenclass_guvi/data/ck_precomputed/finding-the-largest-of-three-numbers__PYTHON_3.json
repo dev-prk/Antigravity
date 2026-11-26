@@ -1,0 +1,1 @@
+{"slug": "finding-the-largest-of-three-numbers", "lang": "PYTHON 3", "code": "a, b, c = map(int, input().split())\n\nif a >= b:\n    if a >= c:\n        print(a)\n    else:\n        print(c)\nelse:\n    if b >= c:\n        print(b)\n    else:\n        print(c)\n", "local_ok": true, "err": ""}

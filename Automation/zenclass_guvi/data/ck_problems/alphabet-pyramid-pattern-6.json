@@ -3,14 +3,22 @@
  "slug": "alphabet-pyramid-pattern-6",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n916. Alphabet Pyramid Pattern-6\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a triangle character pattern.",
+ "description": "ints & Solutions\nSubmissions\n916\n. \nAlphabet Pyramid Pattern-6\n40\nMedium\nTopics\nProblem Statement:\nWrite a code to generate a triangle character pattern. \nInput Description:\nGiven an integer R indicates number of rows.Where 1<=R<=100 \nOutput Description:\nPrint the alphabet pyramid pattern according to the given integer R. \nExplanation:\nFrom the given input R=5,print 5 rows of the pyramid alphabet pattern.First line print A,then next line print A B, repeat this process until reach R characters on last line. \nSample Input:\n5 \nSample Output:\n A \n A B \n A B C \n A B C D \nA B C D E \nAccepted \n786\nSubmissions \n917\nAcceptance Rate \n85.71\n%\nTopics\npatterns\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n A\n A B\n A B C\n A B C D\nA B C D E\nInput\n4\nOutput\n A\n A B\n A B C\nA B C D\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n A\n A B\n A B C\n A B C D\nA B C D E\nInput\n4\nOutput\n A\n A B\n A B C\nA B C D\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAlphabet Pyramid Pattern-6\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
- "output_spec": "Print the alphabet pyramid pattern according to the given integer R.",
+ "output_spec": "Print the alphabet pyramid pattern according to the given integer R. \nExplanation:\nFrom the given input R=5,print 5 rows of the pyramid alphabet pattern.First line print A,then next line print A B, repeat this process until reach R characters on last line.",
  "constraints": "",
  "samples": [
   {
    "input": "5",
-   "output": "A\nA B\nA B C\nA B C D\nA B C D E"
+   "output": "A \n A B \n A B C \n A B C D \nA B C D E"
+  },
+  {
+   "input": "5",
+   "output": "A\n A B\n A B C\n A B C D\nA B C D E"
+  },
+  {
+   "input": "4",
+   "output": "A\n A B\n A B C\nA B C D"
   }
  ],
  "raw": ""

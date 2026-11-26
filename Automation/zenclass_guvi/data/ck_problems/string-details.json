@@ -1,0 +1,25 @@
+{
+ "title": "2189. String Details",
+ "slug": "string-details",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "or\nProblem\nProblem\nHints & Solutions\nSubmissions\n2189\n. \nString Details\n10\nEasy\nProblem Statement\nRead a word and print its length, its first character, its last character, the word in reverse order and the word in capital letters.\nDescription\nRead a word. Print the length of the word, the first character of the word, the last character of the word, the word written in reverse order, and the word written in capital letters.\nInput Description\nA single word that contains only letters and no spaces. (1 <= length of the word <= 50)\nOutput Description\nPrint 5 lines: the length, the first character, the last character, the reversed word and the word in capital letters. The first character, the last character and the reversed word must be printed exactly as given in the input (capital letters stay capital and small letters stay small).\nSample Input\npython\nSample Output\n6\np\nn\nnohtyp\nPYTHON\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\npython\nOutput\n6\np\nn\nnohtyp\nPYTHON\nInput\na\nOutput\n1\na\na\na\nA\nInput\nLevel\nOutput\n5\nL\nl\nleveL\nLEVEL\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\npython\nOutput\n6\np\nn\nnohtyp\nPYTHON\nInput\na\nOutput\n1\na\na\na\nA\nInput\nLevel\nOutput\n5\nL\nl\nleveL\nLEVEL\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Details\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single word that contains only letters and no spaces. (1 <= length of the word <= 50)",
+ "output_spec": "Print 5 lines: the length, the first character, the last character, the reversed word and the word in capital letters. The first character, the last character and the reversed word must be printed exactly as given in the input (capital letters stay capital and small letters stay small).",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "python",
+   "output": "6\np\nn\nnohtyp\nPYTHON"
+  },
+  {
+   "input": "a",
+   "output": "1\na\na\na\nA"
+  },
+  {
+   "input": "Level",
+   "output": "5\nL\nl\nleveL\nLEVEL"
+  }
+ ],
+ "raw": ""
+}

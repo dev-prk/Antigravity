@@ -1,0 +1,21 @@
+{
+ "title": "1656. Shopping Cart System",
+ "slug": "shopping-cart-system",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Solutions\nSubmissions\n1656\n. \nShopping Cart System\n30\nEasy\nShopping Cart System\nProblem Statement:\nWrite a program to simulate a simple shopping cart system using multiple inheritance with interfaces.\nCreate an interface AddToCart with a method addItem(String item).\nCreate another interface Payment with a method makePayment().\nCreate a class ShoppingCart that implements both.\nDescription:\nUser first adds one or more items to the cart using the add command.\nWhen the user types pay, the system processes the payment and shows how many items were purchased.\nInput Format:\nFirst input: add <item> (to add an item).\nThen: pay (to make the payment).\nOutput Format:\nConfirmation of item addition.\nPayment success message with item count.\nSample Input:\nadd Laptop\npay\nSample Output:\nItem added: Laptop\nPayment successful for 1 items.\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n90.85\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nadd Mobile\npay\nOutput\nItem added: Mobile\nPayment successful for 1 items.\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nadd Mobile\npay\nOutput\nItem added: Mobile\nPayment successful for 1 items.\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nShopping Cart System\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "add Laptop\npay",
+   "output": "Item added: Laptop\nPayment successful for 1 items."
+  },
+  {
+   "input": "add Mobile\npay",
+   "output": "Item added: Mobile\nPayment successful for 1 items."
+  }
+ ],
+ "raw": ""
+}

@@ -3,14 +3,18 @@
  "slug": "abstract-shape-framework-with-partial-implementation",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1822. Abstract Shape Framework with Partial Implementation\n\n40\n\nMedium\n\nAbstract Shape Framework with Partial Implementation\n\nProblem Statement:\nCreate an abstract Shape framework where base class provides partial implementation.\n\nDescription:\nAbstract Base Class: Shape\n1. Pure virtual function area().\n2. Virtual function describe() with implementation.\n3. Virtual destructor.\n\nDerived Classes:\n1. Triangle\n2. Square\n\nRequirements:\n1. Override area().\n2. Use base pointer array.\n3. Demonstrate runtime polymorphism.\n4. Ensure destructor chaining.\n5. Prevent direct instantiation of Shape.\n\nInput Format:\nTriangle base height\nSquare side\n\nOutput Format:\nArea and Description of each shape.",
- "input_spec": "Triangle base height\nSquare side",
- "output_spec": "Area and Description of each shape.",
+ "description": "l Implementation\n40\nMedium\nAbstract Shape Framework with Partial Implementation\nProblem Statement:\nCreate an abstract Shape framework where base class provides partial implementation.\nDescription:\nAbstract Base Class: Shape\n1. Pure virtual function area().\n2. Virtual function describe() with implementation.\n3. Virtual destructor.\nDerived Classes:\n1. Triangle\n2. Square\nRequirements:\n1. Override area().\n2. Use base pointer array.\n3. Demonstrate runtime polymorphism.\n4. Ensure destructor chaining.\n5. Prevent direct instantiation of Shape.\nInput Format:\nTriangle base height\nSquare side\nOutput Format:\nArea and Description of each shape.\nSample Input:\n10 5\n4\nSample Output:\nShape Description\nTriangle Area: 25.00\nShape Description\nSquare Area: 16.00\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n3.5 4\n2.5\nOutput\nShape Description\nTriangle Area: 7.00\nShape Description\nSquare Area: 6.25\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n3.5 4\n2.5\nOutput\nShape Description\nTriangle Area: 7.00\nShape Description\nSquare Area: 6.25\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAbstract Shape Framework with Partial Implementation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "10 5\n4",
    "output": "Shape Description\nTriangle Area: 25.00\nShape Description\nSquare Area: 16.00"
+  },
+  {
+   "input": "3.5 4\n2.5",
+   "output": "Shape Description\nTriangle Area: 7.00\nShape Description\nSquare Area: 6.25"
   }
  ],
  "raw": ""

@@ -1,0 +1,25 @@
+{
+ "title": "769. Quadratic Equation Solver",
+ "slug": "quadratic-equation-solver",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n769\n. \nQuadratic Equation Solver\n20\nEasy\nTopics\nProblem Statement:\nYou are given the coefficients of a quadratic equation in order A, B & C.\nWhere A is the coefficient of X\u00b2, B is the coefficient of X and C is the constant term in the most simplified form.\nExample: For X\u00b2 + 5X + 6 = 0, you are given the input as: 1 5 6.\nWrite a program to find all of the roots of the quadratic.\nNote: The output should be up to 2nd decimal place (round off if needed) and in case of a recurring decimal use braces i.e. for eg: 0.33333..... => 0.33.\nNote: Use Shri Dharacharya's Method to solve i.e. X = {-b + \u221a(b\u00b2 - 4ac) } / 2a & {-b-\u221a(b\u00b2 -4ac)} / 2a \nInput Description:\nThree numbers corresponding to the coefficients of x(squared), x and constant are given as an input in that particular order \nOutput Description:\nPrint the two values of X after rounding off to 2 decimal places if required. \nExplanation:\nX = {-b + \u221a(b\u00b2 - 4ac) } / 2a & {-b-\u221a(b\u00b2 -4ac)} / 2a\na = 1, b = 5, c = 6. \nSample Input:\n1 5 6 \nSample Output:\n-2.00\n-3.00 \nAccepted \n12k\nSubmissions \n18k\nAcceptance Rate \n67.68\n%\nTopics\nabsolute beginner\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2 -3\nOutput\n1.00\n-3.00\nInput\n3 2 -1\nOutput\n0.33\n-1.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2 -3\nOutput\n1.00\n-3.00\nInput\n3 2 -1\nOutput\n0.33\n-1.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nQuadratic Equation Solver\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Three numbers corresponding to the coefficients of x(squared), x and constant are given as an input in that particular order",
+ "output_spec": "Print the two values of X after rounding off to 2 decimal places if required. \nExplanation:\nX = {-b + \u221a(b\u00b2 - 4ac) } / 2a & {-b-\u221a(b\u00b2 -4ac)} / 2a\na = 1, b = 5, c = 6.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 5 6",
+   "output": "-2.00\n-3.00"
+  },
+  {
+   "input": "1 2 -3",
+   "output": "1.00\n-3.00"
+  },
+  {
+   "input": "3 2 -1",
+   "output": "0.33\n-1.00"
+  }
+ ],
+ "raw": ""
+}

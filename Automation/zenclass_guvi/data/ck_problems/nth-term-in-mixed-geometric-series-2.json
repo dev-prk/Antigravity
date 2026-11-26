@@ -1,0 +1,25 @@
+{
+ "title": "756. Nth term in mixed geometric series-2",
+ "slug": "nth-term-in-mixed-geometric-series-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "olutions\nSubmissions\n756\n. \nNth term in mixed geometric series-2\n10\nEasy\nTopics\nProblem Statement:\nConsider the following series:\n1,1,2,3,4,9,8,27,16,81,32,243,64,729,128,2187...\nThis series is a mixture of 2 series - all the odd terms in this series form a geometric series and all the even terms form yet another geometric series.\nWrite a program to find the Nth term in this series. \nInput Description:\nThe value N in a positive integer that should be read from STDIN \nOutput Description:\nThe Nth term that is calculated by the program should be written to STDOUT. Other than the value of Nth term, no other characters/ string or message should be written to STDOUT. \nExplanation:\nFor example, if N=16, the 16th term in the series is 2187. So only the value 2187 should be printed to STDOUT. You can assume that N will not exceed 30. \nSample Input:\n16 \nSample Output:\n2187 \nAccepted \n935\nSubmissions \n975\nAcceptance Rate \n95.9\n%\nTopics\nbasic io math - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n15\nOutput\n128\nInput\n14\nOutput\n729\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n15\nOutput\n128\nInput\n14\nOutput\n729\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth term in mixed geometric series-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The value N in a positive integer that should be read from STDIN",
+ "output_spec": "The Nth term that is calculated by the program should be written to STDOUT. Other than the value of Nth term, no other characters/ string or message should be written to STDOUT. \nExplanation:\nFor example, if N=16, the 16th term in the series is 2187. So only the value 2187 should be printed to STDOUT. You can assume that N will not exceed 30.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "16",
+   "output": "2187"
+  },
+  {
+   "input": "15",
+   "output": "128"
+  },
+  {
+   "input": "14",
+   "output": "729"
+  }
+ ],
+ "raw": ""
+}

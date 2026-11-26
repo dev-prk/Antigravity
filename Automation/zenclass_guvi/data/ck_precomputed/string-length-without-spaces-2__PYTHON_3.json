@@ -1,0 +1,1 @@
+{"code": "import sys\nprint(sum(1 for c in sys.stdin.read() if c not in ' \\n\\r'))\n", "local_ok": true, "slug": "string-length-without-spaces-2", "lang": "PYTHON 3"}

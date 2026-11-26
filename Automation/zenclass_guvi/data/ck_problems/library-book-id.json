@@ -1,0 +1,25 @@
+{
+ "title": "2235. Library Book ID",
+ "slug": "library-book-id",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "or\nProblem\nProblem\nHints & Solutions\nSubmissions\n2235\n. \nLibrary Book ID\n5\nEasy\nProblem Statement\nA library uses numeric book IDs and places books with even IDs on one shelf and odd IDs on another. Write a C program to identify the shelf category for a given book ID using if-else.\nDescription\nRead the book ID as an integer num. If num is divisible by 2, print \"Even\"; otherwise print \"Odd\". The library uses these exact labels for its two shelf categories.\nInput Description\nA single integer num.\nOutput Description\nPrint \"Even\" if num is even, otherwise print \"Odd\".\nSample Input\n7\nSample Output\nOdd\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n7\nOutput\nOdd\nInput\n10\nOutput\nEven\nInput\n0\nOutput\nEven\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n7\nOutput\nOdd\nInput\n10\nOutput\nEven\nInput\n0\nOutput\nEven\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLibrary Book ID\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer num.",
+ "output_spec": "Print \"Even\" if num is even, otherwise print \"Odd\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7",
+   "output": "Odd"
+  },
+  {
+   "input": "10",
+   "output": "Even"
+  },
+  {
+   "input": "0",
+   "output": "Even"
+  }
+ ],
+ "raw": ""
+}

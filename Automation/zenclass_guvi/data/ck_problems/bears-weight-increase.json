@@ -3,7 +3,7 @@
  "slug": "bears-weight-increase",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1073. Bears Weight Increase\n\n50\n\nMedium\n\nProblem Statement:\nSanjay wants to become the largest of bears, or at least to become larger than his brother Midhun.Right now, Sanjay and Midhun weigh a and b respectively. It's guaranteed that Sanjay's weight is smaller than or equal to his brother's weight.Sanjay eats a lot and his weight is tripled after every year, while Midhun's weight is doubled after every year.After how many full years will Sanjay become strictly larger (strictly heavier) than Midhun?",
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n1073\n. \nBears Weight Increase\n50\nMedium\nProblem Statement:\nSanjay wants to become the largest of bears, or at least to become larger than his brother Midhun.Right now, Sanjay and Midhun weigh a and b respectively. It's guaranteed that Sanjay's weight is smaller than or equal to his brother's weight.Sanjay eats a lot and his weight is tripled after every year, while Midhun's weight is doubled after every year.After how many full years will Sanjay become strictly larger (strictly heavier) than Midhun? \nInput Description:\nThe only line of the input contains two integers a and b (1 \nOutput Description:\nPrint one integer, denoting the integer number of years after which Sanjay will become strictly larger than Midhun. \nSample Input:\n4 7 \nSample Output:\n2 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.46\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 7\nOutput\n2\nInput\n4 3\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 7\nOutput\n2\nInput\n4 3\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBears Weight Increase\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The only line of the input contains two integers a and b (1",
  "output_spec": "Print one integer, denoting the integer number of years after which Sanjay will become strictly larger than Midhun.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "4 7",
    "output": "2"
+  },
+  {
+   "input": "4 3",
+   "output": "1"
   }
  ],
  "raw": ""

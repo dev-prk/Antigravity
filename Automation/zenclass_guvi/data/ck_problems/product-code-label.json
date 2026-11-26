@@ -1,0 +1,25 @@
+{
+ "title": "2211. Product Code Label",
+ "slug": "product-code-label",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nProblem\nHints & Solutions\nSubmissions\n2211\n. \nProduct Code Label\n10\nEasy\nProblem Statement\nRead a product code. Print it in capital letters, its length, its first character and its last character. \nDescription\nEvery product in a store has a code, such as bolt-45a. For the label, the code must be printed in capital letters. Read the code and print four things: the code in capital letters, the number of characters in the code, the first character of the code, and the last character of the code. The first and last characters are printed as they were typed. \nInput Description\nA single line with the product code. It has letters, digits and the - sign, and has no spaces. (1 to 20 characters) \nOutput Description\nPrint four lines: the code in capital letters, the length of the code, the first character, and the last character. \nSample Input\nbolt-45a \nSample Output\nBOLT-45A\n8\nb\na\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nbolt-45a\nOutput\nBOLT-45A\n8\nb\na\nInput\nNUT7\nOutput\nNUT7\n4\nN\n7\nInput\nx\nOutput\nX\n1\nx\nx\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nbolt-45a\nOutput\nBOLT-45A\n8\nb\na\nInput\nNUT7\nOutput\nNUT7\n4\nN\n7\nInput\nx\nOutput\nX\n1\nx\nx\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nProduct Code Label\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line with the product code. It has letters, digits and the - sign, and has no spaces. (1 to 20 characters)",
+ "output_spec": "Print four lines: the code in capital letters, the length of the code, the first character, and the last character.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "bolt-45a",
+   "output": "BOLT-45A\n8\nb\na"
+  },
+  {
+   "input": "NUT7",
+   "output": "NUT7\n4\nN\n7"
+  },
+  {
+   "input": "x",
+   "output": "X\n1\nx\nx"
+  }
+ ],
+ "raw": ""
+}

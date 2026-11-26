@@ -3,14 +3,18 @@
  "slug": "dynamic-string-assignment-operator-overloading",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1808. Dynamic String Assignment Operator Overloading\n\n50\n\nMedium\n\nDynamic String Assignment Operator Overloading\n\nProblem Statement:\nWrite a program to overload the assignment operator (=) to perform deep copy of dynamically allocated string data.\n\nDescription:\nCreate a class DynamicString that:\n1. Dynamically allocates memory using constructor.\n2. Overloads assignment operator to:\nHandle self-assignment.\nPerform deep copy.\nDeallocate previous memory properly.\n3. Prints the updated string after assignment.\n\nInput Format:\nTwo strings\n\nOutput Format:\nAfter Assignment: second_string",
- "input_spec": "Two strings",
- "output_spec": "After Assignment: second_string",
+ "description": "t Operator Overloading\n50\nMedium\nDynamic String Assignment Operator Overloading\nProblem Statement:\nWrite a program to overload the assignment operator (=) to perform deep copy of dynamically allocated string data.\nDescription:\nCreate a class DynamicString that:\n1. Dynamically allocates memory using constructor.\n2. Overloads assignment operator to:\nHandle self-assignment.\nPerform deep copy.\nDeallocate previous memory properly.\n3. Prints the updated string after assignment.\nInput Format:\nTwo strings\nOutput Format:\nAfter Assignment: second_string\nSample Input:\nHello\nWorld\nSample Output:\nAfter Assignment: World\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n93.97\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nData Science\nOutput\nAfter Assignment: Science\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nData Science\nOutput\nAfter Assignment: Science\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDynamic String Assignment Operator Overloading\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "Hello\nWorld",
    "output": "After Assignment: World"
+  },
+  {
+   "input": "Data Science",
+   "output": "After Assignment: Science"
   }
  ],
  "raw": ""

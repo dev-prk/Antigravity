@@ -3,14 +3,22 @@
  "slug": "3-length-subsets",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n443. 3-Length Subsets\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given a small string not more then 10 characters and distinct characters. You are required to generate all the character subsets of length 3.",
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n443\n. \n3-Length Subsets\n80\nHard\nTopics\nProblem Statement:\nYou are given a small string not more then 10 characters and distinct characters. You are required to generate all the character subsets of length 3. \nInput Description:\nThe only line of input is a string S. \nOutput Description:\nPrint the number of subsets of length three, N, on the first line.\nPrint N lines printing the subsets in alphabetical/lexicographical order.\nNote: If a character S[i] appears before S[j] in S, S[i] should occur before S[j] in each subset too. Print 0 if no cases are formed (for all valid i and j) \nExplanation:\nSelf explanatory \nSample Input:\nabcd \nSample Output:\n4\nabc\nabd\nacd\nbcd \nAccepted \n61\nSubmissions \n86\nAcceptance Rate \n70.93\n%\nTopics\nrecursion\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nghteskal\nOutput\n56\neal\neka\nekl\nesa\nesk\nesl\ngal\ngea\ngek\ngel\nges\ngha\nghe\nghk\nghl\nghs\nght\ngka\ngkl\ngsa\ngsk\ngsl\ngta\ngte\ngtk\ngtl\ngts\nhal\nhea\nhek\nhel\nhes\nhka\nhkl\nhsa\nhsk\nhsl\nhta\nhte\nhtk\nhtl\nhts\nkal\nsal\nska\nskl\ntal\ntea\ntek\ntel\ntes\ntka\ntkl\ntsa\ntsk\ntsl\nInput\nda\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nghteskal\nOutput\n56\neal\neka\nekl\nesa\nesk\nesl\ngal\ngea\ngek\ngel\nges\ngha\nghe\nghk\nghl\nghs\nght\ngka\ngkl\ngsa\ngsk\ngsl\ngta\ngte\ngtk\ngtl\ngts\nhal\nhea\nhek\nhel\nhes\nhka\nhkl\nhsa\nhsk\nhsl\nhta\nhte\nhtk\nhtl\nhts\nkal\nsal\nska\nskl\ntal\ntea\ntek\ntel\ntes\ntka\ntkl\ntsa\ntsk\ntsl\nInput\nda\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\n3-Length Subsets\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The only line of input is a string S.",
- "output_spec": "Print the number of subsets of length three, N, on the first line.\nPrint N lines printing the subsets in alphabetical/lexicographical order.\nNote: If a character S[i] appears before S[j] in S, S[i] should occur before S[j] in each subset too. Print 0 if no cases are formed (for all valid i and j)",
+ "output_spec": "Print the number of subsets of length three, N, on the first line.\nPrint N lines printing the subsets in alphabetical/lexicographical order.\nNote: If a character S[i] appears before S[j] in S, S[i] should occur before S[j] in each subset too. Print 0 if no cases are formed (for all valid i and j) \nExplanation:\nSelf explanatory",
  "constraints": "",
  "samples": [
   {
    "input": "abcd",
    "output": "4\nabc\nabd\nacd\nbcd"
+  },
+  {
+   "input": "ghteskal",
+   "output": "56\neal\neka\nekl\nesa\nesk\nesl\ngal\ngea\ngek\ngel\nges\ngha\nghe\nghk\nghl\nghs\nght\ngka\ngkl\ngsa\ngsk\ngsl\ngta\ngte\ngtk\ngtl\ngts\nhal\nhea\nhek\nhel\nhes\nhka\nhkl\nhsa\nhsk\nhsl\nhta\nhte\nhtk\nhtl\nhts\nkal\nsal\nska\nskl\ntal\ntea\ntek\ntel\ntes\ntka\ntkl\ntsa\ntsk\ntsl"
+  },
+  {
+   "input": "da",
+   "output": "0"
   }
  ],
  "raw": ""

@@ -1,0 +1,25 @@
+{
+ "title": "551. Nth term of the series",
+ "slug": "nth-term-of-the-series",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n551\n. \nNth term of the series\n20\nEasy\nTopics\nProblem Statement:\nAjay is given a series(In example).he gone through the series but unable to understand it properly,he has hired you.Your task is to understand the series and print the series 2,6,12,20,30... .You are given with a number \u2018n\u2019. Find the nth number of series. \nInput Description:\nYou are given a number \u2018n\u2019. \nOutput Description:\nPrint the nth number of series \nExplanation:\nPrint the nth number of series \nSample Input:\n5 \nSample Output:\n30 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n85.03\n%\nTopics\nseries\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\n2\nInput\n888\nOutput\n789432\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\n2\nInput\n888\nOutput\n789432\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth term of the series\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given a number \u2018n\u2019.",
+ "output_spec": "Print the nth number of series \nExplanation:\nPrint the nth number of series",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "30"
+  },
+  {
+   "input": "1",
+   "output": "2"
+  },
+  {
+   "input": "888",
+   "output": "789432"
+  }
+ ],
+ "raw": ""
+}

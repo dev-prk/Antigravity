@@ -3,14 +3,18 @@
  "slug": "clock-hand-angle",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n476. Clock Hand Angle\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given with two integers denoting h and m. Your task is to find the angle between that particular min hand and hour hand.",
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n476\n. \nClock Hand Angle\n60\nMedium\nTopics\nProblem Statement:\nYou are given with two integers denoting h and m. Your task is to find the angle between that particular min hand and hour hand. \nInput Description:\nFirst line contains two numbers h and n. \nOutput Description:\nPrint the angle form by the min pointer and hour pointer \nExplanation:\nWhen min pointer is at 30 minutes it has covered 180* of angle. While the hour hand has covered 90 degree + as minutes are 30 so some more angle hence for 30 mins its 15 degree total is 105 degree\nSo answer is 180-105=75 \nSample Input:\n3 30 \nSample Output:\n75 \nAccepted \n591\nSubmissions \n888\nAcceptance Rate \n66.55\n%\nTopics\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 30\nOutput\n75\nInput\n8 00\nOutput\n120\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 30\nOutput\n75\nInput\n8 00\nOutput\n120\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nClock Hand Angle\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line contains two numbers h and n.",
- "output_spec": "Print the angle form by the min pointer and hour pointer",
+ "output_spec": "Print the angle form by the min pointer and hour pointer \nExplanation:\nWhen min pointer is at 30 minutes it has covered 180* of angle. While the hour hand has covered 90 degree + as minutes are 30 so some more angle hence for 30 mins its 15 degree total is 105 degree\nSo answer is 180-105=75",
  "constraints": "",
  "samples": [
   {
    "input": "3 30",
    "output": "75"
+  },
+  {
+   "input": "8 00",
+   "output": "120"
   }
  ],
  "raw": ""

@@ -1,0 +1,21 @@
+{
+ "title": "1927. Smart Warehouse Level Order Processor",
+ "slug": "smart-warehouse-level-order-processor",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ouse Level Order Processor\n30\nEasy\nTopics\nSmart Warehouse Level Order Processor\nProblem Statement:\nA premium logistics company \u201cMegaMart Elite Logistics\u201d manages its warehouse units in a hierarchical structure.\nEach warehouse unit may contain:\nA left sub-unit\nA right sub-unit\nThe warehouse structure forms a Binary Tree.\nThe company wants to process warehouse units level by level for daily inspection.\nYour task is to design a system that:\n1. Reads the binary tree in level order format\n2. Prints the nodes level by level using Queue (BFS)\n3. If the tree is empty, print EMPTY\nInput Format\nTwo inputs:\n1. N (number of nodes)\n2. N values in one line (Level Order Representation)\nNote:\n-1 represents NULL (no node).\nOutput Format\nPrint the tree nodes in level order traversal (space separated).\nIf tree is empty \u2192 print:\nEMPTY\nSample Input\n7\n1 2 3 4 5 -1 -1\nSample Output\n1 2 3 4 5\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\ntrees and graphs\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5\n1 2 3 -1 4\nOutput\n1 2 3 4 \nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5\n1 2 3 -1 4\nOutput\n1 2 3 4 \nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSmart Warehouse Level Order Processor\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7\n1 2 3 4 5 -1 -1",
+   "output": "1 2 3 4 5"
+  },
+  {
+   "input": "5\n1 2 3 -1 4",
+   "output": "1 2 3 4"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,25 @@
+{
+ "title": "1440. Sorting Strings by Length Stably",
+ "slug": "sorting-strings-by-length-stably",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1440\n. \nSorting Strings by Length Stably\n20\nEasy\nProblem Statement:\nGiven an array of strings, write a program to sort the strings in increasing order of their lengths. If two strings have the same length, maintain their original relative order (stable sorting). \nInput Description:\nYou are given an array of strings, and you need to sort them based on their lengths. If multiple strings have the same length, their relative order should not change from the input order.\nThe first line contains an integer N \u2014 the number of strings.\nThe next N lines each contain a string. \nOutput Description:\nPrint the sorted array of strings, each on a new line. \nSample Input:\n5\napple\nbanana\nkiwi\ngrape\norange \nSample Output:\nkiwi\ngrape\napple\nbanana\norange \nAccepted \n61\nSubmissions \n62\nAcceptance Rate \n98.39\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\napple\nbanana\nkiwi\ngrape\norange\nOutput\nkiwi\napple\ngrape\nbanana\norange\nInput\n4\nball\nbats\ncat\nbat\nOutput\ncat\nbat\nball\nbats\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\napple\nbanana\nkiwi\ngrape\norange\nOutput\nkiwi\napple\ngrape\nbanana\norange\nInput\n4\nball\nbats\ncat\nbat\nOutput\ncat\nbat\nball\nbats\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSorting Strings by Length Stably\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given an array of strings, and you need to sort them based on their lengths. If multiple strings have the same length, their relative order should not change from the input order.\nThe first line contains an integer N \u2014 the number of strings.\nThe next N lines each contain a string.",
+ "output_spec": "Print the sorted array of strings, each on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\napple\nbanana\nkiwi\ngrape\norange",
+   "output": "kiwi\ngrape\napple\nbanana\norange"
+  },
+  {
+   "input": "5\napple\nbanana\nkiwi\ngrape\norange",
+   "output": "kiwi\napple\ngrape\nbanana\norange"
+  },
+  {
+   "input": "4\nball\nbats\ncat\nbat",
+   "output": "cat\nbat\nball\nbats"
+  }
+ ],
+ "raw": ""
+}

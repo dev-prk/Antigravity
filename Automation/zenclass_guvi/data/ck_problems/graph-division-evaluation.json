@@ -1,0 +1,25 @@
+{
+ "title": "1466. Graph Division Evaluation",
+ "slug": "graph-division-evaluation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nHints & Solutions\nSubmissions\n1466\n. \nGraph Division Evaluation\n30\nEasy\nProblem Statement:\nYou are given a list of equations representing relationships between variables, where each equation is in the form A / B = k, meaning variable A divided by variable B equals k. Given some queries, return the result of each query. If the answer does not exist, return -1.0. \nInput Description:\n- The first line contains an integer n, the number of equations.\n- The next n lines each contain two strings and a floating-point number, representing an equation: variable1 variable2 value.\n- The next line contains an integer q, the number of queries.\n- The next q lines each contain two strings, representing a query: variable1 variable2. \nOutput Description:\n- For each query, output the result as a floating-point number on a new line. If the answer does not exist, output -1.0. \nSample Input:\n4\na b 2.0\nb c 3.0\nc d 4.0\nd e 5.0\n3\na c\nb e\na e \nSample Output:\n6.0\n60.0\n120.0 \nExplanation:\n- a / c = a / b * b / c = 2.0 * 3.0 = 6.0\n- b / e = b / c * c / d * d / e = 3.0 * 4.0 * 5.0 = 60.0\n- a / e = a / b * b / c * c / d * d / e = 2.0 * 3.0 * 4.0 * 5.0 = 120.0 \nAccepted \n33\nSubmissions \n35\nAcceptance Rate \n94.29\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\na b 2.0\nb c 3.0\n2\na c\nc a\nOutput\n6.0\n0.16666666666666666\nInput\n3\nx y 4.0\ny z 0.5\nz w 2.0\n2\nx w\nw x\nOutput\n4.0\n0.25\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\na b 2.0\nb c 3.0\n2\na c\nc a\nOutput\n6.0\n0.16666666666666666\nInput\n3\nx y 4.0\ny z 0.5\nz w 2.0\n2\nx w\nw x\nOutput\n4.0\n0.25\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nGraph Division Evaluation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins o",
+ "input_spec": "- The first line contains an integer n, the number of equations.\n- The next n lines each contain two strings and a floating-point number, representing an equation: variable1 variable2 value.\n- The next line contains an integer q, the number of queries.\n- The next q lines each contain two strings, representing a query: variable1 variable2.",
+ "output_spec": "- For each query, output the result as a floating-point number on a new line. If the answer does not exist, output -1.0.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\na b 2.0\nb c 3.0\nc d 4.0\nd e 5.0\n3\na c\nb e\na e",
+   "output": "6.0\n60.0\n120.0"
+  },
+  {
+   "input": "2\na b 2.0\nb c 3.0\n2\na c\nc a",
+   "output": "6.0\n0.16666666666666666"
+  },
+  {
+   "input": "3\nx y 4.0\ny z 0.5\nz w 2.0\n2\nx w\nw x",
+   "output": "4.0\n0.25"
+  }
+ ],
+ "raw": ""
+}

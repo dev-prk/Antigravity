@@ -3,14 +3,18 @@
  "slug": "doubly-linked-list-traversal-linked-list",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1638. Doubly Linked List, Traversal, Linked List\n\n60\n\nMedium\n\nProblem Statement:\nInsert and Display Doubly Linked List\n\nWrite a program to create a doubly linked list and display it in both forward and backward order.\n\nDescription\n\nInsert n elements into a doubly linked list.\n\nDisplay elements from head to tail and then tail to head.\n\nEach node contains a single integer value.\n\nInput Format\n\nFirst line: Integer n (number of elements)\n\nNext line: n integers representing the list elements\n\nOutput Format\n\nFirst line: Forward traversal: \"Forward: <elements>\"\n\nSecond line: Backward traversal: \"Backward: <elements>\"",
- "input_spec": "First line: Integer n (number of elements)\n\nNext line: n integers representing the list elements",
- "output_spec": "First line: Forward traversal: \"Forward: <elements>\"\n\nSecond line: Backward traversal: \"Backward: <elements>\"",
+ "description": "utions\nSubmissions\n1638\n. \nDoubly Linked List, Traversal, Linked List\n60\nMedium\nProblem Statement:\nInsert and Display Doubly Linked List\nWrite a program to create a doubly linked list and display it in both forward and backward order.\nDescription\nInsert n elements into a doubly linked list.\nDisplay elements from head to tail and then tail to head.\nEach node contains a single integer value.\nInput Format\nFirst line: Integer n (number of elements)\nNext line: n integers representing the list elements\nOutput Format\nFirst line: Forward traversal: \"Forward: <elements>\"\nSecond line: Backward traversal: \"Backward: <elements>\"\nSample Input\n5\n10 20 30 40 50\nSample Output\nForward: 10 20 30 40 50\nBackward: 50 40 30 20 10\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n90.87\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n3\n1 2 3\nOutput\nForward: 1 2 3\nBackward: 3 2 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n3\n1 2 3\nOutput\nForward: 1 2 3\nBackward: 3 2 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDoubly Linked List, Traversal, Linked List\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n10 20 30 40 50",
    "output": "Forward: 10 20 30 40 50\nBackward: 50 40 30 20 10"
+  },
+  {
+   "input": "3\n1 2 3",
+   "output": "Forward: 1 2 3\nBackward: 3 2 1"
   }
  ],
  "raw": ""

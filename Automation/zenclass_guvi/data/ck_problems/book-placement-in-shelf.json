@@ -3,14 +3,22 @@
  "slug": "book-placement-in-shelf",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n691. Book Placement in Shelf\n\n50\n\nMedium  Topics\n\nProblem Statement:\nAn organization named \u201cGupil\u201d has a well-maintained library in its own building. Librarian orders and gets books for the library very frequently. Each book which is newly arrived has its own unique serial number. The books initially are placed in descending order. The librarian want to place a new book without disturbing the descending order of books in terms of unique id. Now you must help librarian to find the right spot for placing the book.",
+ "description": "m\nHints & Solutions\nSubmissions\n691\n. \nBook Placement in Shelf\n50\nMedium\nTopics\nProblem Statement:\nAn organization named \u201cGupil\u201d has a well-maintained library in its own building. Librarian orders and gets books for the library very frequently. Each book which is newly arrived has its own unique serial number. The books initially are placed in descending order. The librarian want to place a new book without disturbing the descending order of books in terms of unique id. Now you must help librarian to find the right spot for placing the book. \nInput Description:\nThe first line of program contains integer \u2018n denoting no. of books already placed in the shelf. Next line contains n serial number of already placed books. Next line contains integer m denoting no of new books to be placed on the shelf. Next line contains m serial numbers of new book. \nOutput Description:\nprint the position at which it must be placed \nExplanation:\na)Our array is 95 68 62 58 55 41 30\nWe have to put book numbered 45 on shelf it will be placed between 55 and 41.\nThe new array will be 95 68 62 58 55 45 41 30\nPosition will be 6(index starts from 1)\nb) our array now is 95 68 62 58 55 45 41 30. We have to put book numbered 61 on shelf it will be placed between 62 and 58.\n Position will be 4(index starts from 1) \nSample Input:\n7\n95 68 62 58 55 41 30\n2\n45 61 \nSample Output:\n6 4 \nAccepted \n371\nSubmissions \n595\nAcceptance Rate \n62.35\n%\nTopics\narray\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n99 69 62 58 42 23\n2\n45 61\nOutput\n5 4\nInput\n6\n95 79 74 56 52 10\n1\n9\nOutput\n7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n99 69 62 58 42 23\n2\n45 61\nOutput\n5 4\nInput\n6\n95 79 74 56 52 10\n1\n9\nOutput\n7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBook Placement in Shelf\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incor",
  "input_spec": "The first line of program contains integer \u2018n denoting no. of books already placed in the shelf. Next line contains n serial number of already placed books. Next line contains integer m denoting no of new books to be placed on the shelf. Next line contains m serial numbers of new book.",
- "output_spec": "print the position at which it must be placed",
+ "output_spec": "print the position at which it must be placed \nExplanation:\na)Our array is 95 68 62 58 55 41 30\nWe have to put book numbered 45 on shelf it will be placed between 55 and 41.\nThe new array will be 95 68 62 58 55 45 41 30\nPosition will be 6(index starts from 1)\nb) our array now is 95 68 62 58 55 45 41 30. We have to put book numbered 61 on shelf it will be placed between 62 and 58.\n Position will be 4(index starts from 1)",
  "constraints": "",
  "samples": [
   {
    "input": "7\n95 68 62 58 55 41 30\n2\n45 61",
    "output": "6 4"
+  },
+  {
+   "input": "6\n99 69 62 58 42 23\n2\n45 61",
+   "output": "5 4"
+  },
+  {
+   "input": "6\n95 79 74 56 52 10\n1\n9",
+   "output": "7"
   }
  ],
  "raw": ""

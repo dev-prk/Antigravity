@@ -1,0 +1,17 @@
+{
+ "title": "1630. Secure Configuration Settings for an Embedded Device",
+ "slug": "secure-configuration-settings-for-an-embedded-device",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ubmissions\n1630\n. \nSecure Configuration Settings for an Embedded Device\n20\nEasy\nProblem Statement\nTitle: Secure Configuration Settings for an Embedded Device\nIn an embedded system for controlling a ballast water management system, you need to ensure that certain critical configuration settings are never altered after they are set. These settings are used to control various parameters like water levels, salinity thresholds, and ballast pump speed.\nYou need to write a C program that sets these configurations in a secure and non-mutable way using the const qualifier. Once the values are set, they should never be modified by any function in your program.\nInput:\nThe first input is an integer n (1 <= n <= 5), which represents the number of configurations to set.\nThen, you need to take n floating-point numbers which represent the configuration values for the device's ballast control parameters.\nOutput:\nAfter the input is received, display the configuration values.\nYour task is to ensure these values cannot be altered after being set, even if later functions in the program attempt to do so.\nConstraints:\nYou must use the const type qualifier to ensure immutability of configuration values.\nYou cannot use any external files for input or output, and all input should be taken through standard input methods.\nNo global variables are allowed.\nExplanation\nThe program takes in the number of configurations and their values, stores them in a way that prevents modification using const. The output is the same set of configuration values as a confirmation that they have been stored correctly.\nExample Input/Output\nExample 1:\nInput:\n3\n1.2 3.4 5.6\nOutput:\nConfiguration Values:\n1.2\n3.4\n5.6\nExample 2:\nInput:\n1\n9.81\nOutput:\nConfiguration Values:\n9.81\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n83.67\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n3\n1.2 3.4 5.6\nOutput\nConfiguration Values:\n1.20000\n3.40000\n5.60000\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n3\n1.2 3.4 5.6\nOutput\nConfiguration Values:\n1.20000\n3.40000\n5.60000\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice C",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n1.2 3.4 5.6",
+   "output": "Configuration Values:\n1.20000\n3.40000\n5.60000"
+  }
+ ],
+ "raw": ""
+}

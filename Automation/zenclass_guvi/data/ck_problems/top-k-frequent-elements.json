@@ -1,0 +1,25 @@
+{
+ "title": "1473. Top K Frequent Elements",
+ "slug": "top-k-frequent-elements",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n1473\n. \nTop K Frequent Elements\n30\nEasy\nProblem Statement:\nGiven an array of integers, return the k most frequent elements. If there are multiple answers, return any of them in any order. You must solve this problem using a priority queue (heap). \nInput Description:\n- The first line contains two integers n and k, where n is the number of elements in the array and k is the number of most frequent elements to return.\n- The second line contains n space-separated integers representing the elements of the array. \nOutput Description:\n- Print k space-separated integers representing the k most frequent elements in any order. \nSample Input:\n6 2\n1 1 1 2 2 3 \nSample Output:\n2 1 \nExplanation:\nThe number 1 appears 3 times, and the number 2 appears 2 times. These are the two most frequent elements. \nAccepted \n19\nSubmissions \n40\nAcceptance Rate \n47.5\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6 2\n1 1 1 1 2 3\nOutput\n3 1\nInput\n8 3\n4 4 4 5 5 6 6 7\nOutput\n5 6 4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6 2\n1 1 1 1 2 3\nOutput\n3 1\nInput\n8 3\n4 4 4 5 5 6 6 7\nOutput\n5 6 4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTop K Frequent Elements\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains two integers n and k, where n is the number of elements in the array and k is the number of most frequent elements to return.\n- The second line contains n space-separated integers representing the elements of the array.",
+ "output_spec": "- Print k space-separated integers representing the k most frequent elements in any order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 2\n1 1 1 2 2 3",
+   "output": "2 1"
+  },
+  {
+   "input": "6 2\n1 1 1 1 2 3",
+   "output": "3 1"
+  },
+  {
+   "input": "8 3\n4 4 4 5 5 6 6 7",
+   "output": "5 6 4"
+  }
+ ],
+ "raw": ""
+}

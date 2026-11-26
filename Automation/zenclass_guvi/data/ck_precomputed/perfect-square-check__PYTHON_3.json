@@ -1,0 +1,1 @@
+{"code": "import sys\nfrom math import isqrt\n\ndata = sys.stdin.read().split()\nif not data:\n    sys.exit(0)\n\nn = int(data[0])\n\nif n < 0:\n    print(\"No\")\nelse:\n    r = isqrt(n)\n    print(\"Yes\" if r * r == n else \"No\")\n", "local_ok": true, "slug": "perfect-square-check", "lang": "PYTHON 3"}

@@ -1,0 +1,1 @@
+{"slug": "nth-term-in-mixed-geometric-series", "lang": "PYTHON 3", "code": "def solve():\n    n = int(input().strip())\n    if n % 2 == 1:\n        k = (n + 1) // 2\n        result = 2 ** (k - 1)\n    else:\n        k = n // 2\n        result = 3 ** (k - 1)\n    print(result)\n\nsolve()\n", "local_ok": true, "err": ""}

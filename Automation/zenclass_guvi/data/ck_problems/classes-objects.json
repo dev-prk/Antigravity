@@ -1,0 +1,21 @@
+{
+ "title": "1786. Classes & Objects",
+ "slug": "classes-objects",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "s & Solutions\nSubmissions\n1786\n. \nClasses & Objects\n30\nEasy\nClasses and Objects\nProblem Statement\nCreate a class Car that represents a car with a unique twist. The Car class should include properties such as make, model, and year. Additionally, it should have a method getCarAge that calculates the car's age based on the current year input by the user. However, you need to ensure that the car's year of manufacture is validated to be not in the future.\nDescription\nDefine a class Car with private properties: make (String), model (String), and year (int).\nInclude a constructor that initializes these properties.\nCreate a method getCarAge that calculates the age of the car based on the current year provided by the user.\nEnsure the year property is validated to be less than or equal to the current year.\nInput Format\nString representing the make of the car.\nString representing the model of the car.\nInteger representing the year of the car.\nInteger representing the current year.\nOutput Format\nInteger representing the age of the car.\nA message indicating if the year is invalid.\nSample Input:\nToyota\u00a0\nCorolla\u00a0\n2015\u00a0\n2024\nSample Output:\n9\nAccepted \n4k\nSubmissions \n9k\nAcceptance Rate \n52.7\n%\n17\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nToyota \nCorolla \n2015 \n2024\nOutput\n9\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nToyota \nCorolla \n2015 \n2024\nOutput\n9\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nClasses & Objects\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Toyota\u00a0\nCorolla\u00a0\n2015\u00a0\n2024",
+   "output": "9"
+  },
+  {
+   "input": "Toyota \nCorolla \n2015 \n2024",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,25 @@
+{
+ "title": "2190. Slice and Update a List",
+ "slug": "slice-and-update-a-list",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n2190\n. \nSlice and Update a List\n20\nEasy\nProblem Statement\nRead a list of integers and an integer x. Print some slices of the list, then add x to the list, sort it and print it.\nDescription\nRead a list of integers and then an integer x. Print the first three items of the list, the last three items of the list, and every second item of the list (starting from the first item). After that, add x at the end of the list, sort the list in increasing order and print the list.\nInput Description\nThe first line contains the integers of the list, separated by single spaces. (5 to 20 integers, each between -1000 and 1000) The second line contains the integer x. (-1000 <= x <= 1000)\nOutput Description\nPrint 4 lines. Print each result as a list in square brackets, with the numbers separated by a comma and a space, for example [1, 2, 3]. Line 1: the first three items. Line 2: the last three items. Line 3: every second item, starting from the first. Line 4: the list after adding x and sorting. The first three lines are for the original list, before x is added.\nSample Input\n10 20 30 40 50 60 70\n35\nSample Output\n[10, 20, 30]\n[50, 60, 70]\n[10, 30, 50, 70]\n[10, 20, 30, 35, 40, 50, 60, 70]\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n10 20 30 40 50 60 70\n35\nOutput\n[10, 20, 30]\n[50, 60, 70]\n[10, 30, 50, 70]\n[10, 20, 30, 35, 40, 50, 60, 70]\nInput\n9 3 7 1 5\n4\nOutput\n[9, 3, 7]\n[7, 1, 5]\n[9, 7, 5]\n[1, 3, 4, 5, 7, 9]\nInput\n-2 8 -2 0 6 6\n-5\nOutput\n[-2, 8, -2]\n[0, 6, 6]\n[-2, -2, 6]\n[-5, -2, -2, 0, 6, 6, 8]\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n10 20 30 40 50 60 70\n35\nOutput\n[10, 20, 30]\n[50, 60, 70]\n[10, 30, 50, 70]\n[10, 20, 30, 35, 40, 50, 60, 70]\nInput\n9 3 7 1 5\n4\nOutput\n[9, 3, 7]\n[7, 1, 5]\n[9, 7, 5]\n[1, 3, 4, 5, 7, 9]\nInput\n-2 8 -2 0 6 6\n-5\nOutput\n[-2, 8, -2]\n[0, 6, 6]\n[-2, -2, 6]\n[-5, -2, -2, 0, 6, 6, 8]\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this prob",
+ "input_spec": "The first line contains the integers of the list, separated by single spaces. (5 to 20 integers, each between -1000 and 1000) The second line contains the integer x. (-1000 <= x <= 1000)",
+ "output_spec": "Print 4 lines. Print each result as a list in square brackets, with the numbers separated by a comma and a space, for example [1, 2, 3]. Line 1: the first three items. Line 2: the last three items. Line 3: every second item, starting from the first. Line 4: the list after adding x and sorting. The first three lines are for the original list, before x is added.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 20 30 40 50 60 70\n35",
+   "output": "[10, 20, 30]\n[50, 60, 70]\n[10, 30, 50, 70]\n[10, 20, 30, 35, 40, 50, 60, 70]"
+  },
+  {
+   "input": "9 3 7 1 5\n4",
+   "output": "[9, 3, 7]\n[7, 1, 5]\n[9, 7, 5]\n[1, 3, 4, 5, 7, 9]"
+  },
+  {
+   "input": "-2 8 -2 0 6 6\n-5",
+   "output": "[-2, 8, -2]\n[0, 6, 6]\n[-2, -2, 6]\n[-5, -2, -2, 0, 6, 6, 8]"
+  }
+ ],
+ "raw": ""
+}

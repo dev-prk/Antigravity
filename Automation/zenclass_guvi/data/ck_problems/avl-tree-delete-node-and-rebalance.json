@@ -3,7 +3,7 @@
  "slug": "avl-tree-delete-node-and-rebalance",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1532. AVL Tree: Delete Node and Rebalance\n\n80\n\nHard\n\nProblem Statement:\nGiven an AVL tree and a key, write a function to delete the node with the given key from the AVL tree. After deletion, ensure that the tree remains balanced according to AVL tree properties. An AVL tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one for all nodes.",
+ "description": "nts & Solutions\nSubmissions\n1532\n. \nAVL Tree: Delete Node and Rebalance\n80\nHard\nProblem Statement:\nGiven an AVL tree and a key, write a function to delete the node with the given key from the AVL tree. After deletion, ensure that the tree remains balanced according to AVL tree properties. An AVL tree is a self-balancing binary search tree where the difference between heights of left and right subtrees cannot be more than one for all nodes. \nInput Description:\n- The first line contains an integer N, the number of nodes in the AVL tree.\n- The second line contains N space-separated integers representing the values to be inserted into the AVL tree in the given order.\n- The third line contains an integer K, the key to be deleted from the AVL tree. \nOutput Description:\n- Print the in-order traversal of the AVL tree after deleting the node with key K. \nSample Input:\n7\n20 4 26 3 9 15 30\n26 \nSample Output:\n3 4 9 15 20 30 \nExplanation:\nAfter inserting the nodes, the AVL tree is constructed. Deleting 26 and rebalancing the tree results in the in-order traversal: 3 4 9 15 20 30. \nAccepted \n13\nSubmissions \n22\nAcceptance Rate \n59.09\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n10 20 30 40 50\n30\nOutput\n10 20 40 50\nInput\n6\n50 30 70 20 40 60\n50\nOutput\n20 30 40 60 70\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n10 20 30 40 50\n30\nOutput\n10 20 40 50\nInput\n6\n50 30 70 20 40 60\n50\nOutput\n20 30 40 60 70\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAVL Tree: Delete Node and Rebalance\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer N, the number of nodes in the AVL tree.\n- The second line contains N space-separated integers representing the values to be inserted into the AVL tree in the given order.\n- The third line contains an integer K, the key to be deleted from the AVL tree.",
  "output_spec": "- Print the in-order traversal of the AVL tree after deleting the node with key K.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "7\n20 4 26 3 9 15 30\n26",
    "output": "3 4 9 15 20 30"
+  },
+  {
+   "input": "5\n10 20 30 40 50\n30",
+   "output": "10 20 40 50"
+  },
+  {
+   "input": "6\n50 30 70 20 40 60\n50",
+   "output": "20 30 40 60 70"
   }
  ],
  "raw": ""

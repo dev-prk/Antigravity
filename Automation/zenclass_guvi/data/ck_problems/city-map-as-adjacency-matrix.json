@@ -1,0 +1,25 @@
+{
+ "title": "570. City Map as Adjacency Matrix",
+ "slug": "city-map-as-adjacency-matrix",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "olutions\nSubmissions\n570\n. \nCity Map as Adjacency Matrix\n30\nEasy\nTopics\nCompany\nProblem Statement:\nCities are represented as nodes in a graph. A link between two cities exist if there exists a road or railway line such that one city can be reached from another. Represent the map of the city in an adjacency matrix by denoting a link between two particular cities as the number 1 in the matrix. If there is no link between cities, denote it by a 0 in the matrix. \nInput Description:\nNumber of cities, name of cities, number of links followed by end points of links between cities. A link is given as input in the format \u201ccity1 city2\u201d \nOutput Description:\nThe adjacency matrix along with the corresponding city names \nExplanation:\nThe links are represented as 1s in the matrix. It is always possible to reach the same city starting from it. Therefore, that is also represented by a 1. \nSample Input:\n3\nCHENNAI\nMUMBAI\nDELHI\n2\nCHENNAI MUMBAI\nDELHI CHENNAI \nSample Output:\n CHENNAI MUMBAI DELHI\nCHENNAI 1 1 1\nMUMBAI 1 1 0\nDELHI 1 0 1 \nAccepted \n248\nSubmissions \n1k\nAcceptance Rate \n21.03\n%\nTopics\nmatrix\nguvi-learning-path\nCompany\nAdobe\nAmazon\nMorgan-Stanley\nSamsung\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nTHRISSUR\nTRICHY\nSALEM\nKOCHI\nCHENNAI\n2\nTHRISSUR TRICHY\nKOCHI CHENNAI\nOutput\n THRISSUR TRICHY SALEM KOCHI CHENNAI\nTHRISSUR 1 1 0 0 0\nTRICHY 1 1 0 0 0\nSALEM 0 0 1 0 0\nKOCHI 0 0 0 1 1\nCHENNAI 0 0 0 1 1\nInput\n2\nMADURAI\nCHENNAI\n0\nOutput\n MADURAI CHENNAI\nMADURAI 1 0\nCHENNAI 0 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nTHRISSUR\nTRICHY\nSALEM\nKOCHI\nCHENNAI\n2\nTHRISSUR TRICHY\nKOCHI CHENNAI\nOutput\n THRISSUR TRICHY SALEM KOCHI CHENNAI\nTHRISSUR 1 1 0 0 0\nTRICHY 1 1 0 0 0\nSALEM 0 0 1 0 0\nKOCHI 0 0 0 1 1\nCHENNAI 0 0 0 1 1\nInput\n2\nMADURAI\nCHENNAI\n0\nOutput\n MADURAI CHENNAI\nMADURAI 1 0\nCHENNAI 0 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCity Map as Adjacency Matrix\nI",
+ "input_spec": "Number of cities, name of cities, number of links followed by end points of links between cities. A link is given as input in the format \u201ccity1 city2\u201d",
+ "output_spec": "The adjacency matrix along with the corresponding city names \nExplanation:\nThe links are represented as 1s in the matrix. It is always possible to reach the same city starting from it. Therefore, that is also represented by a 1.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nCHENNAI\nMUMBAI\nDELHI\n2\nCHENNAI MUMBAI\nDELHI CHENNAI",
+   "output": "CHENNAI MUMBAI DELHI\nCHENNAI 1 1 1\nMUMBAI 1 1 0\nDELHI 1 0 1"
+  },
+  {
+   "input": "5\nTHRISSUR\nTRICHY\nSALEM\nKOCHI\nCHENNAI\n2\nTHRISSUR TRICHY\nKOCHI CHENNAI",
+   "output": "THRISSUR TRICHY SALEM KOCHI CHENNAI\nTHRISSUR 1 1 0 0 0\nTRICHY 1 1 0 0 0\nSALEM 0 0 1 0 0\nKOCHI 0 0 0 1 1\nCHENNAI 0 0 0 1 1"
+  },
+  {
+   "input": "2\nMADURAI\nCHENNAI\n0",
+   "output": "MADURAI CHENNAI\nMADURAI 1 0\nCHENNAI 0 1"
+  }
+ ],
+ "raw": ""
+}

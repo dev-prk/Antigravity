@@ -1,0 +1,21 @@
+{
+ "title": "1245. Food Delivery Charge Calculator",
+ "slug": "food-delivery-charge-calculator",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n1245\n. \nFood Delivery Charge Calculator\n10\nEasy\nProblem Statement:\nA food delivery service calculates delivery charges based on the customer's distance from the restaurant.\nWrite a C program that calculates the delivery charge based on the distance (in km) entered by the user:\nDistance <= 3 km: Free delivery\nDistance > 3 km and <= 10 km: \u20b910 per km\nDistance > 10 km: \u20b9100 flat fee plus \u20b98 per additional km beyond 10 km \nInput Description:\nThe input is a single numerical value representing the distance (in km) entered by the user. \nOutput Description:\nThe output is the calculated delivery charge. \nSample Input:\n2 \nSample Output:\nDelivery Charge: \u20b90.00 \nAccepted \n270\nSubmissions \n294\nAcceptance Rate \n91.84\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\nDelivery Charge: \u20b90.00\nInput\n5\nOutput\nDelivery Charge: \u20b950.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\nDelivery Charge: \u20b90.00\nInput\n5\nOutput\nDelivery Charge: \u20b950.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFood Delivery Charge Calculator\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input is a single numerical value representing the distance (in km) entered by the user.",
+ "output_spec": "The output is the calculated delivery charge.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2",
+   "output": "Delivery Charge: \u20b90.00"
+  },
+  {
+   "input": "5",
+   "output": "Delivery Charge: \u20b950.00"
+  }
+ ],
+ "raw": ""
+}

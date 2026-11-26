@@ -1,0 +1,25 @@
+{
+ "title": "1463. Cycle Detection in Directed Graph-2",
+ "slug": "cycle-detection-in-directed-graph-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n1463\n. \nCycle Detection in Directed Graph-2\n30\nEasy\nProblem Statement:\nGiven a directed graph with N nodes and M edges, determine whether the graph contains at least one cycle. A cycle is a path that starts and ends at the same node, following the direction of the edges. Your task is to detect if such a cycle exists in the given graph. \nInput Description:\n- The first line contains two integers N and M, the number of nodes and the number of edges in the graph.\n- The next M lines each contain two integers u and v, representing a directed edge from node u to node v. \nOutput Description:\n- Print \"Yes\" if the graph contains a cycle, otherwise print \"No\". \nSample Input:\n4 4\n1 2\n2 3\n3 4\n4 2\n3 2\n1 2\n2 3 \nSample Output:\nYes\nNo \nExplanation:\nThere is a cycle: 2 \u2192 3 \u2192 4 \u2192 2.\nThere is no cycle in the graph. \nAccepted \n39\nSubmissions \n42\nAcceptance Rate \n92.86\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\n1 2\n2 3\n3 4\n4 5\n5 1\nOutput\nYes\nInput\n6 4\n1 2\n2 3\n3 4\n5 6\nOutput\nNo\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\n1 2\n2 3\n3 4\n4 5\n5 1\nOutput\nYes\nInput\n6 4\n1 2\n2 3\n3 4\n5 6\nOutput\nNo\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCycle Detection in Directed Graph-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains two integers N and M, the number of nodes and the number of edges in the graph.\n- The next M lines each contain two integers u and v, representing a directed edge from node u to node v.",
+ "output_spec": "- Print \"Yes\" if the graph contains a cycle, otherwise print \"No\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 4\n1 2\n2 3\n3 4\n4 2\n3 2\n1 2\n2 3",
+   "output": "Yes\nNo"
+  },
+  {
+   "input": "5 5\n1 2\n2 3\n3 4\n4 5\n5 1",
+   "output": "Yes"
+  },
+  {
+   "input": "6 4\n1 2\n2 3\n3 4\n5 6",
+   "output": "No"
+  }
+ ],
+ "raw": ""
+}

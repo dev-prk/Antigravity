@@ -1,0 +1,25 @@
+{
+ "title": "505. Sort Even-Indexed Elements-2",
+ "slug": "sort-even-indexed-elements-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n505\n. \nSort Even-Indexed Elements-2\n20\nEasy\nTopics\nProblem Statement:\nLoki wants to steal the tesseract but in order to do so, he has to rearrange the elements in an array in a specific manner which is mentioned in a clue. The clue says \u2018cursed are the odd and sorted are the even\u2019. Loki manages to decode the clue which translates to \u201csort the even positioned elements of an array, starting from the element at index 0, in ascending order\u201d. Manipulate the array so as to help Loki steal the tesseract. \nInput Description:\nSize of the array followed by the elements of the array \nOutput Description:\nEven index array elements sorted in ascending order \nSample Input:\n5\n3 9 1 44 6 \nSample Output:\n1 9 3 44 6 \nExplanation:\nThe elements 3,1,6 are sorted in ascending order \nAccepted \n4k\nSubmissions \n5k\nAcceptance Rate \n81.16\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\n7 6 5 4 3 2 1\nOutput\n1 6 3 4 5 2 7\nInput\n6\n45 9 39 5 23 47\nOutput\n23 9 39 5 45 47\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\n7 6 5 4 3 2 1\nOutput\n1 6 3 4 5 2 7\nInput\n6\n45 9 39 5 23 47\nOutput\n23 9 39 5 45 47\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSort Even-Indexed Elements-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Size of the array followed by the elements of the array",
+ "output_spec": "Even index array elements sorted in ascending order",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n3 9 1 44 6",
+   "output": "1 9 3 44 6"
+  },
+  {
+   "input": "7\n7 6 5 4 3 2 1",
+   "output": "1 6 3 4 5 2 7"
+  },
+  {
+   "input": "6\n45 9 39 5 23 47",
+   "output": "23 9 39 5 45 47"
+  }
+ ],
+ "raw": ""
+}

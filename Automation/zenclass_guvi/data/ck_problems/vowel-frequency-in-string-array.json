@@ -1,0 +1,21 @@
+{
+ "title": "1193. Vowel Frequency in String Array",
+ "slug": "vowel-frequency-in-string-array",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n1193\n. \nVowel Frequency in String Array\n20\nEasy\nProblem Statement:\nWrite a program that accepts multiple strings from the user, stores them in a dynamically allocated array, and then counts and displays the frequency of each vowel (a, e, i, o, u) across all the strings combined. You are tasked with managing multiple strings using a dynamic array of pointers. Each string will be stored in the heap. After storing the strings, your program should calculate the frequency of each vowel in all the strings combined. Consider both uppercase and lowercase vowels, but treat them as the same (e.g., 'A' and 'a' should be counted together). \nInput Description:\nThe first line contains an integer n, the number of strings. The following n lines each contain a single string. \nOutput Description:\nPrint the frequency of each vowel (a, e, i, o, u) across all the strings. \nSample Input:\n3\nHello\nWorld\nEducation \nSample Output:\na: 1, e: 2, i: 1, o: 3, u: 1 \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n99.54\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nHello\nWorld\nEducation\nOutput\na: 1, e: 2, i: 1, o: 3, u: 1\nInput\n2\nProgramming\nLanguage\nOutput\na: 3, e: 1, i: 1, o: 1, u: 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nHello\nWorld\nEducation\nOutput\na: 1, e: 2, i: 1, o: 3, u: 1\nInput\n2\nProgramming\nLanguage\nOutput\na: 3, e: 1, i: 1, o: 1, u: 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nVowel Frequency in String Array\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains an integer n, the number of strings. The following n lines each contain a single string.",
+ "output_spec": "Print the frequency of each vowel (a, e, i, o, u) across all the strings.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nHello\nWorld\nEducation",
+   "output": "a: 1, e: 2, i: 1, o: 3, u: 1"
+  },
+  {
+   "input": "2\nProgramming\nLanguage",
+   "output": "a: 3, e: 1, i: 1, o: 1, u: 1"
+  }
+ ],
+ "raw": ""
+}

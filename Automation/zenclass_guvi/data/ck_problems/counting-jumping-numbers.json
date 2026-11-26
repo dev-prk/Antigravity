@@ -3,7 +3,7 @@
  "slug": "counting-jumping-numbers",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n295. Counting Jumping Numbers\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a positive number N, print count of all jumping numbers smaller than or equal to N. A number is called as a Jumping Number if all adjacent digits in it differ by 1. The difference between \u20189\u2019 and \u20180\u2019 is not considered as 1. All single digit numbers are considered as Jumping Numbers. For example 7, 8987 and 4343456 are Jumping numbers but 796 and 89098 are not.",
+ "description": "em\nHints & Solutions\nSubmissions\n295\n. \nCounting Jumping Numbers\n70\nHard\nTopics\nProblem Statement:\nGiven a positive number N, print count of all jumping numbers smaller than or equal to N. A number is called as a Jumping Number if all adjacent digits in it differ by 1. The difference between \u20189\u2019 and \u20180\u2019 is not considered as 1. All single digit numbers are considered as Jumping Numbers. For example 7, 8987 and 4343456 are Jumping numbers but 796 and 89098 are not. \nInput Description:\nThe input consists of a positive number N, where 1 <= N <= 100000. \nOutput Description:\nThe output is the count of all jumping numbers smaller than or equal to N. \nSample Input:\n40 \nSample Output:\n16 \nAccepted \n600\nSubmissions \n808\nAcceptance Rate \n74.26\n%\nTopics\narray\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n11\nInput\n20\nOutput\n12\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n11\nInput\n20\nOutput\n12\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCounting Jumping Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of a positive number N, where 1 <= N <= 100000.",
  "output_spec": "The output is the count of all jumping numbers smaller than or equal to N.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "40",
    "output": "16"
+  },
+  {
+   "input": "10",
+   "output": "11"
+  },
+  {
+   "input": "20",
+   "output": "12"
   }
  ],
  "raw": ""

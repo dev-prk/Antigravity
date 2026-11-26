@@ -1,0 +1,21 @@
+{
+ "title": "1127. Nested Exception Handling in Java",
+ "slug": "nested-exception-handling-in-java",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n1127\n. \nNested Exception Handling in Java\n20\nEasy\nProblem Statement:\nWrite a Java program that reads a list of integers from the user and calculates their sum. If any non-integer value is entered, handle the exception and continue reading the next value. Additionally, ensure that the program terminates gracefully by printing the final sum, even if an exception occurs during the input process. \nInput Description:\nThe input consists of a sequence of integers and non-integer values entered by the user. \nOutput Description:\nThe output should display the sum of all entered integers. \nSample Input:\n1 2 3 a 4 \nSample Output:\nSum of entered integers: 10 \nExplanation:\nYour task is to implement nested exception handling in Java. The program should continue reading integers from the user until a non-integer value is entered. If a non-integer value is encountered, the program should catch the exception and continue reading the next value. Use nested try-catch blocks to achieve this. Finally, ensure that the program prints the sum of all entered integers using a finally block. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.58\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2 3 a 4\nOutput\nSum of entered integers: 10\nInput\n5 5 5 5 5\nOutput\nSum of entered integers: 25\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2 3 a 4\nOutput\nSum of entered integers: 10\nInput\n5 5 5 5 5\nOutput\nSum of entered integers: 25\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNested Exception Handling in Java\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problem",
+ "input_spec": "The input consists of a sequence of integers and non-integer values entered by the user.",
+ "output_spec": "The output should display the sum of all entered integers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2 3 a 4",
+   "output": "Sum of entered integers: 10"
+  },
+  {
+   "input": "5 5 5 5 5",
+   "output": "Sum of entered integers: 25"
+  }
+ ],
+ "raw": ""
+}

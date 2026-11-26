@@ -1,0 +1,25 @@
+{
+ "title": "521. Matrix Multiplication",
+ "slug": "matrix-multiplication",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nHints & Solutions\nSubmissions\n521\n. \nMatrix Multiplication\n20\nEasy\nTopics\nProblem Statement:\nRadha is in class 10. She is being taught about the operations on matrices by her maths teacher. Radha is a little confused in matrix multiplication. When she comes home in the evening, she asks you to check whether her solutions are correct or not. As manual calculation of product of two matrices is a tedious task, you decide to write a program for the same. Help Radha check whether her solutions are correct or not.\nInput Description:\nFirst line contains the dimensions of matrix A\nSecond line contains the elements of matrix A\nSubsequent lines contain the dimension and elements of matrix B\nOutput Description:\nMatrix C, which is the product of A and B\nSample Input:\n1 2\n3 3\n2 1\n5 6\nSample Output:\n33\nExplanation:\nThe product is sum of (3_5)+(3_6) which is equal to 33.\nAccepted \n200\nSubmissions \n572\nAcceptance Rate \n34.97\n%\nTopics\nmatrix\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2\n3 4\n2 1\n5 \n6\nOutput\n39\nInput\n3 3\n8 5 7\n4 4 3\n9 7 5\n3 3\n1 4 7\n5 6 2\n8 6 8\nOutput\n89 104 122\n48 58 60\n84 108 117\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2\n3 4\n2 1\n5 \n6\nOutput\n39\nInput\n3 3\n8 5 7\n4 4 3\n9 7 5\n3 3\n1 4 7\n5 6 2\n8 6 8\nOutput\n89 104 122\n48 58 60\n84 108 117\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMatrix Multiplication\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains the dimensions of matrix A\nSecond line contains the elements of matrix A\nSubsequent lines contain the dimension and elements of matrix B",
+ "output_spec": "Matrix C, which is the product of A and B",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1 2\n3 3\n2 1\n5 6",
+   "output": "33"
+  },
+  {
+   "input": "1 2\n3 4\n2 1\n5 \n6",
+   "output": "39"
+  },
+  {
+   "input": "3 3\n8 5 7\n4 4 3\n9 7 5\n3 3\n1 4 7\n5 6 2\n8 6 8",
+   "output": "89 104 122\n48 58 60\n84 108 117"
+  }
+ ],
+ "raw": ""
+}

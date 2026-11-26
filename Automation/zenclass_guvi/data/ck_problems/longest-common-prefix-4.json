@@ -1,0 +1,25 @@
+{
+ "title": "1347. Longest Common Prefix-4",
+ "slug": "longest-common-prefix-4",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n1347\n. \nLongest Common Prefix-4\n10\nEasy\nProblem Statement:\nWrite a program to find the longest common prefix among an array of strings. If there is no common prefix, return an empty string (\"\"). \nInput Description:\n1. The program should take an integer n as input, representing the number of strings.\n2. The next n lines contain the strings.\n1. The first line contains an integer n (1 \u2264 n \u2264 100), representing the number of strings.\n2. The next n lines each contain a string (1 \u2264 length \u2264 100), consisting of lowercase English letters. \nOutput Description:\n3. The output should be the longest common prefix shared among all strings.\n4. If no common prefix exists, return an empty string.\n1. A single string representing the longest common prefix.\n2. If no common prefix exists, return \"\". \nSample Input:\n3\nflower\nflow\nflight \nSample Output:\nfl \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.87\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\napple\nape\napricot\napex\nOutput\nap\nInput\n4\ninterspecies\ninterstellar\ninterstate\nintermediate\nOutput\ninter\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\napple\nape\napricot\napex\nOutput\nap\nInput\n4\ninterspecies\ninterstellar\ninterstate\nintermediate\nOutput\ninter\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLongest Common Prefix-4\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "1. The program should take an integer n as input, representing the number of strings.\n2. The next n lines contain the strings.\n1. The first line contains an integer n (1 \u2264 n \u2264 100), representing the number of strings.\n2. The next n lines each contain a string (1 \u2264 length \u2264 100), consisting of lowercase English letters.",
+ "output_spec": "3. The output should be the longest common prefix shared among all strings.\n4. If no common prefix exists, return an empty string.\n1. A single string representing the longest common prefix.\n2. If no common prefix exists, return \"\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nflower\nflow\nflight",
+   "output": "fl"
+  },
+  {
+   "input": "4\napple\nape\napricot\napex",
+   "output": "ap"
+  },
+  {
+   "input": "4\ninterspecies\ninterstellar\ninterstate\nintermediate",
+   "output": "inter"
+  }
+ ],
+ "raw": ""
+}

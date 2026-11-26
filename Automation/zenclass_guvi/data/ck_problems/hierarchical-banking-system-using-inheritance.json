@@ -3,14 +3,18 @@
  "slug": "hierarchical-banking-system-using-inheritance",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1812. Hierarchical Banking System using Inheritance\n\n50\n\nMedium\n\nHierarchical Banking System using Inheritance\n\nProblem Statement:\nDesign a C++ program to model a banking system using hierarchical inheritance.\n\nDescription:\nCreate a base class Account with accountNumber and balance.\nDerive two classes:\n1. SavingsAccount (adds interestRate)\n2. CurrentAccount (adds overdraftLimit)\n\nRequirements:\n1. Use protected members in base class.\n2. Implement deposit and withdraw in base class.\n3. Override withdraw in CurrentAccount to allow overdraft.\n4. Prevent negative balance beyond overdraft.\n5. Display complete account details.\n\nInput Format:\nAccount number\nInitial balance\nInterest rate\nOverdraft limit\nWithdrawal amount\n\nOutput Format:\nFinal balance for both account types.",
- "input_spec": "Account number\nInitial balance\nInterest rate\nOverdraft limit\nWithdrawal amount",
- "output_spec": "Final balance for both account types.",
+ "description": "ystem using Inheritance\n50\nMedium\nHierarchical Banking System using Inheritance\nProblem Statement:\nDesign a C++ program to model a banking system using hierarchical inheritance.\nDescription:\nCreate a base class Account with accountNumber and balance.\nDerive two classes:\n1. SavingsAccount (adds interestRate)\n2. CurrentAccount (adds overdraftLimit)\nRequirements:\n1. Use protected members in base class.\n2. Implement deposit and withdraw in base class.\n3. Override withdraw in CurrentAccount to allow overdraft.\n4. Prevent negative balance beyond overdraft.\n5. Display complete account details.\nInput Format:\nAccount number\nInitial balance\nInterest rate\nOverdraft limit\nWithdrawal amount\nOutput Format:\nFinal balance for both account types.\nSample Input:\n101\n1000\n5\n500\n1200\nSample Output:\nSavings Balance: -200 not allowed\nCurrent Balance: -200\nAccepted \n1\nSubmissions \n2\nAcceptance Rate \n50\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n103\n3000\n6\n500\n3600\nOutput\nSavings Balance: -600 not allowed\nCurrent Balance: -600 exceeds overdraft limit\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n103\n3000\n6\n500\n3600\nOutput\nSavings Balance: -600 not allowed\nCurrent Balance: -600 exceeds overdraft limit\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nHierarchical Banking System using Inheritance\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "101\n1000\n5\n500\n1200",
    "output": "Savings Balance: -200 not allowed\nCurrent Balance: -200"
+  },
+  {
+   "input": "103\n3000\n6\n500\n3600",
+   "output": "Savings Balance: -600 not allowed\nCurrent Balance: -600 exceeds overdraft limit"
   }
  ],
  "raw": ""

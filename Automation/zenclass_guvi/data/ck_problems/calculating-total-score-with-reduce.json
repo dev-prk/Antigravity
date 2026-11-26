@@ -3,14 +3,18 @@
  "slug": "calculating-total-score-with-reduce",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1103. Calculating Total Score with Reduce\n\n50\n\nMedium\n\nProblem Statement:\nYou are a college professor and you have the scores of your students in a list. You want to find the total score of all students. Write a Python function  total_score(scores)  that takes a list of scores and returns the total score. Use the  reduce  function to calculate the total score.",
- "input_spec": "scores : a list of integers representing the scores of the students.",
+ "description": "s & Solutions\nSubmissions\n1103\n. \nCalculating Total Score with Reduce\n50\nMedium\nProblem Statement:\nYou are a college professor and you have the scores of your students in a list. You want to find the total score of all students. Write a Python function \ntotal_score(scores)\n that takes a list of scores and returns the total score. Use the \nreduce\n function to calculate the total score. \nInput Description:\nscores\n: a list of integers representing the scores of the students. \nOutput Description:\nThe function should return an integer representing the total score of all students. \nSample Input:\n[85, 90, 78, 92] \nSample Output:\n345 \nExplanation:\nThe \nreduce\n function applies a function of two arguments cumulatively to the items of an iterable, from left to right, so as to reduce the iterable to a single output. In this case, it takes two scores at a time and adds them, continuing this process until all scores have been added together. This demonstrates how the \nreduce\n function can be used to reduce a list to a single result. In the context of grading students in a college, this can be useful to calculate the total score of all students. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.68\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n[85, 90, 78, 92]\nOutput\n345\nInput\n[88, 92, 95, 90]\nOutput\n365\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n[85, 90, 78, 92]\nOutput\n345\nInput\n[88, 92, 95, 90]\nOutput\n365\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCalculating Total Score with Reduce\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "scores\n: a list of integers representing the scores of the students.",
  "output_spec": "The function should return an integer representing the total score of all students.",
  "constraints": "",
  "samples": [
   {
    "input": "[85, 90, 78, 92]",
    "output": "345"
+  },
+  {
+   "input": "[88, 92, 95, 90]",
+   "output": "365"
   }
  ],
  "raw": ""

@@ -1,0 +1,25 @@
+{
+ "title": "786. Fibonacci Sequence Generator",
+ "slug": "fibonacci-sequence-generator",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n786\n. \nFibonacci Sequence Generator\n20\nEasy\nTopics\nProblem Statement:\nFor this question, you will write a program that generates values from the Fibonacci sequence. The Fibonnaci sequence is recursively defined by:Fn = Fn - 1 + Fn - 2Using the following seed values:F0 = 0, F1 = 1Given a number n, print the nth value of the Fibonacci sequence. \nInput Description:\nN intiger \nOutput Description:\nNth Fibonacci number \nExplanation:\nFibonacci series \nSample Input:\n30 \nSample Output:\n832040 \nAccepted \n858\nSubmissions \n901\nAcceptance Rate \n95.23\n%\nTopics\nbasic io math - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\n1\nInput\n2\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\n1\nInput\n2\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFibonacci Sequence Generator\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "N intiger",
+ "output_spec": "Nth Fibonacci number \nExplanation:\nFibonacci series",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "30",
+   "output": "832040"
+  },
+  {
+   "input": "1",
+   "output": "1"
+  },
+  {
+   "input": "2",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

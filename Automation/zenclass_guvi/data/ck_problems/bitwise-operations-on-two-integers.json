@@ -1,0 +1,25 @@
+{
+ "title": "1364. Bitwise Operations on Two Integers",
+ "slug": "bitwise-operations-on-two-integers",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n1364\n. \nBitwise Operations on Two Integers\n10\nEasy\nProblem Statement:\nCreate a program that calculates the bitwise AND, OR, XOR, and NOT operations on two integers provided by the user. \nInput Description:\nThe program should read two integers.\nTwo integers separated by a space. \nOutput Description:\nThe program should compute and display the results of the bitwise AND, OR, XOR, and NOT operations.\nFour lines, each representing the result of bitwise AND, OR, XOR, and NOT operations respectively. \nSample Input:\n10 4 \nSample Output:\nBitwise AND: 0\nBitwise OR: 14\nBitwise XOR: 14\nBitwise NOT (first number): -11 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n97.81\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\nOutput\nBitwise AND: 1\nBitwise OR: 7\nBitwise XOR: 6\nBitwise NOT (first number): -6\nInput\n8 2\nOutput\nBitwise AND: 0\nBitwise OR: 10\nBitwise XOR: 10\nBitwise NOT (first number): -9\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\nOutput\nBitwise AND: 1\nBitwise OR: 7\nBitwise XOR: 6\nBitwise NOT (first number): -6\nInput\n8 2\nOutput\nBitwise AND: 0\nBitwise OR: 10\nBitwise XOR: 10\nBitwise NOT (first number): -9\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBitwise Operations on Two Integers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The program should read two integers.\nTwo integers separated by a space.",
+ "output_spec": "The program should compute and display the results of the bitwise AND, OR, XOR, and NOT operations.\nFour lines, each representing the result of bitwise AND, OR, XOR, and NOT operations respectively.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 4",
+   "output": "Bitwise AND: 0\nBitwise OR: 14\nBitwise XOR: 14\nBitwise NOT (first number): -11"
+  },
+  {
+   "input": "5 3",
+   "output": "Bitwise AND: 1\nBitwise OR: 7\nBitwise XOR: 6\nBitwise NOT (first number): -6"
+  },
+  {
+   "input": "8 2",
+   "output": "Bitwise AND: 0\nBitwise OR: 10\nBitwise XOR: 10\nBitwise NOT (first number): -9"
+  }
+ ],
+ "raw": ""
+}

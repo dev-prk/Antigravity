@@ -3,14 +3,22 @@
  "slug": "apartment-availability",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n366. Apartment Availability\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nMaxwell wants to buy an apartment in a new house at Line Avenue of Metropolis. The house has n apartments that are numbered from 1 to n and are arranged in a row. Two apartments are adjacent if their indices differ by 1. Some of the apartments can already be inhabited, others are available for sale. Maxwell often visits his neighbors, so apartment is good for him if it is available for sale and there is at least one already inhabited apartment adjacent to it. Maxwell knows that there are exactly k already inhabited apartments, but he doesn't know their indices yet. Find out what could be the minimum possible and the maximum possible number of apartments that are good for Maxwell.",
- "input_spec": "The input consists of two integers, N and K.",
+ "description": "ts & Solutions\nSubmissions\n366\n. \nApartment Availability\n80\nHard\nTopics\nCompany\nProblem Statement:\nMaxwell wants to buy an apartment in a new house at Line Avenue of Metropolis. The house has n apartments that are numbered from 1 to n and are arranged in a row. Two apartments are adjacent if their indices differ by 1. Some of the apartments can already be inhabited, others are available for sale. Maxwell often visits his neighbors, so apartment is good for him if it is available for sale and there is at least one already inhabited apartment adjacent to it. Maxwell knows that there are exactly k already inhabited apartments, but he doesn't know their indices yet. Find out what could be the minimum possible and the maximum possible number of apartments that are good for Maxwell. \nInput Description:\nThe input consists of two integers, N and K. Constraints: N<=K<=1000000000. \nOutput Description:\nThe output should be two integers: the minimum possible and the maximum possible number of apartments that are good for Maxwell. \nSample Input:\n6 3 \nSample Output:\n1 3 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n75.48\n%\nTopics\narray\nmathematics\nalgorithm\nCompany\ncompanies\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 2\nOutput\n0 0\nInput\n0 0\nOutput\n0 0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 2\nOutput\n0 0\nInput\n0 0\nOutput\n0 0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nApartment Availability\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of two integers, N and K. Constraints: N<=K<=1000000000.",
  "output_spec": "The output should be two integers: the minimum possible and the maximum possible number of apartments that are good for Maxwell.",
- "constraints": "N<=K<=1000000000.",
+ "constraints": "",
  "samples": [
   {
    "input": "6 3",
    "output": "1 3"
+  },
+  {
+   "input": "2 2",
+   "output": "0 0"
+  },
+  {
+   "input": "0 0",
+   "output": "0 0"
   }
  ],
  "raw": ""

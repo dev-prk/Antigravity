@@ -1,0 +1,25 @@
+{
+ "title": "507. Sort and Concatenate K Arrays",
+ "slug": "sort-and-concatenate-k-arrays",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n507\n. \nSort and Concatenate K Arrays\n20\nEasy\nTopics\nProblem Statement:\nYou are an intern at GUVI and the company wants to organise its data and delete unnecessary extra storage elements used. You are given k arrays of unequal dimensions. Sort the k arrays individually and concatenate them. \nInput Description:\nFirst line contains the number of arrays.Subsequent lines contain the size of the array followed by the elements of the array. \nOutput Description:\nAn array containing the sorted elements of k sorted arrays \nExplanation:\nThe elements in all the arrays are first sorted in ascending order and then the arrays are concatenated. \nSample Input:\n3\n2\n98 12\n6\n1 2 3 8 5 9\n1\n11 \nSample Output:\n12 98 1 2 3 5 8 9 11 \nAccepted \n3k\nSubmissions \n4k\nAcceptance Rate \n77.37\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n3\n3 2 1\n5\n76 66 43 12 10\nOutput\n1 2 3 10 12 43 66 76\nInput\n2\n3\n45 67 2\n3\n56 12 9\nOutput\n2 45 67 9 12 56\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n3\n3 2 1\n5\n76 66 43 12 10\nOutput\n1 2 3 10 12 43 66 76\nInput\n2\n3\n45 67 2\n3\n56 12 9\nOutput\n2 45 67 9 12 56\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSort and Concatenate K Arrays\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains the number of arrays.Subsequent lines contain the size of the array followed by the elements of the array.",
+ "output_spec": "An array containing the sorted elements of k sorted arrays \nExplanation:\nThe elements in all the arrays are first sorted in ascending order and then the arrays are concatenated.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n2\n98 12\n6\n1 2 3 8 5 9\n1\n11",
+   "output": "12 98 1 2 3 5 8 9 11"
+  },
+  {
+   "input": "2\n3\n3 2 1\n5\n76 66 43 12 10",
+   "output": "1 2 3 10 12 43 66 76"
+  },
+  {
+   "input": "2\n3\n45 67 2\n3\n56 12 9",
+   "output": "2 45 67 9 12 56"
+  }
+ ],
+ "raw": ""
+}

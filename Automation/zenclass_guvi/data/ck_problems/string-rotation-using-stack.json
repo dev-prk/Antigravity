@@ -1,0 +1,25 @@
+{
+ "title": "844. String Rotation using Stack",
+ "slug": "string-rotation-using-stack",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n844\n. \nString Rotation using Stack\n30\nEasy\nTopics\nProblem Statement:\nGiven two strings S1 and S2. The task is to find if a string 'S2' can be obtained by rotating another string 'S1' by 2 places using Stack.\nInput Description:\nThe first line of the input contains the string S1.\nThe second line of the input contains the string S2\nOutput Description:\nPrint 1 if the string S2 can be obtained by rotating string S1 by two places else print 0.\nExplanation:\namazon can be rotated clockwise by two places, which will make it as azonam. So the output is 1\nSample Input:\namazon\nazonam\nSample Output:\n1\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n87.09\n%\nTopics\narray\nstack\n6\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nguvigeektechnology\nvigeektechnologyug\nOutput\n0\nInput\njackal\nckalja\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nguvigeektechnology\nvigeektechnologyug\nOutput\n0\nInput\njackal\nckalja\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Rotation using Stack\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line of the input contains the string S1.\nThe second line of the input contains the string S2",
+ "output_spec": "Print 1 if the string S2 can be obtained by rotating string S1 by two places else print 0.\nExplanation:\namazon can be rotated clockwise by two places, which will make it as azonam. So the output is 1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "amazon\nazonam",
+   "output": "1"
+  },
+  {
+   "input": "guvigeektechnology\nvigeektechnologyug",
+   "output": "0"
+  },
+  {
+   "input": "jackal\nckalja",
+   "output": "0"
+  }
+ ],
+ "raw": ""
+}

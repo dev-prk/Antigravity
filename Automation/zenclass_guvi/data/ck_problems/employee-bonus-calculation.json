@@ -1,0 +1,21 @@
+{
+ "title": "1185. Employee Bonus Calculation",
+ "slug": "employee-bonus-calculation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nHints & Solutions\nSubmissions\n1185\n. \nEmployee Bonus Calculation\n20\nEasy\nProblem Statement:\nYou are developing a system to manage employee bonuses based on their performance scores and work hours. The system needs to handle various types of functions to calculate bonuses using different strategies. You will need to implement the functions that:Calculate the base bonus based on performance scores.Calculate additional bonuses based on work hours.Apply a special adjustment based on employee type (full-time or part-time).Functions Requiredfloat calculateBaseBonus(float performanceScore): Calculates the base bonus based on performance score.float calculateAdditionalBonus(float workHours): Calculates the additional bonus based on work hours.float applyAdjustment(float bonus, char employeeType): Applies a special adjustment based on whether the employee is full-time or part-time.Note: The special adjustment is:Full-time: No adjustment.Part-time: 5% reduction in the total bonus. \nInput Description:\nThe first line contains an integer N representing the number of employees.The next N lines each contain:A floating-point number representing the performance score.A floating-point number representing the total work hours.A character representing the employee type ('F' for full-time, 'P' for part-time). \nOutput Description:\nFor each employee, output the final bonus amount after applying the adjustment, rounded to two decimal places. \nSample Input:\n3\n9.5 40.0 F\n8.0 35.0 P\n7.0 30.0 F \nSample Output:\n875.00\n712.50\n650.00 \nExplanation:\nFor the first employee:Base bonus = 85.0 * 50 = 4250.00Additional bonus = 40.0 * 10 = 400.00Total bonus before adjustment = 4250.00 + 400.00 = 4650.00Adjustment (full-time) = 0%Final bonus = 4650.00For the second employee:Base bonus = 75.0 * 50 = 3750.00Additional bonus = 35.0 * 10 = 350.00Total bonus before adjustment = 3750.00 + 350.00 = 4100.00Adjustment (part-time) = 5%Final bonus = 4100.00 * 0.95 = 3895.00For the third employee:Base bonus = 90.0 * 50 = 4500.00Additional bonus = 50.0 * 10 = 500.00Total bonus before adjustment = 4500.00 + 500.00 = 5000.00Adjustment (full-time) = 0%Final bonus = 5000.00 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.6\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n9.5 40.0 F\n8.0 35.0 P\n7.0 30.0 F\nOutput\n875.00\n712.50\n650.00\nInput\n3\n60.0 50.0 F\n85.0 20.0 P\n95.0 60.0 F\nOutput\n3500.00\n4227.50\n5350.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n9.5 40.0 F\n8.0 35.0 P\n7.0 30.0 F\nOutput\n875.00\n712.50\n650.00\nInput\n3\n60.0 50.0 F\n85.0 20.0 P\n95.0 60.0 F\nOutput\n3500.00\n4227.50\n5350.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow G",
+ "input_spec": "The first line contains an integer N representing the number of employees.The next N lines each contain:A floating-point number representing the performance score.A floating-point number representing the total work hours.A character representing the employee type ('F' for full-time, 'P' for part-time).",
+ "output_spec": "For each employee, output the final bonus amount after applying the adjustment, rounded to two decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n9.5 40.0 F\n8.0 35.0 P\n7.0 30.0 F",
+   "output": "875.00\n712.50\n650.00"
+  },
+  {
+   "input": "3\n60.0 50.0 F\n85.0 20.0 P\n95.0 60.0 F",
+   "output": "3500.00\n4227.50\n5350.00"
+  }
+ ],
+ "raw": ""
+}

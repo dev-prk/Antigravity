@@ -1,0 +1,25 @@
+{
+ "title": "763. Sum of Two Numbers-2",
+ "slug": "sum-of-two-numbers-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nHints & Solutions\nSubmissions\n763\n. \nSum of Two Numbers-2\n10\nEasy\nTopics\nProblem Statement:\nYou are given Two Numbers, A and B. If C = A + B. Find C. Note: Round off the output to a single decimal place. \nInput Description:\nYou are provided with two numbers A and B. \nOutput Description:\nFind the sum of the two numbers (A + B) \nExplanation:\n1+1 = 2 \nSample Input:\n1\n1 \nSample Output:\n2 \nAccepted \n27k\nSubmissions \n35k\nAcceptance Rate \n79.48\n%\nTopics\nabsolute beginner\n28\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n10\nOutput\n20\nInput\n29\n-2\nOutput\n27\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n10\nOutput\n20\nInput\n29\n-2\nOutput\n27\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSum of Two Numbers-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are provided with two numbers A and B.",
+ "output_spec": "Find the sum of the two numbers (A + B) \nExplanation:\n1+1 = 2",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n1",
+   "output": "2"
+  },
+  {
+   "input": "10\n10",
+   "output": "20"
+  },
+  {
+   "input": "29\n-2",
+   "output": "27"
+  }
+ ],
+ "raw": ""
+}

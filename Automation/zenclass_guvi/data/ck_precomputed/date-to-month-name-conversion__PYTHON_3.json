@@ -1,0 +1,1 @@
+{"code": "months = ['January', 'February', 'March', 'April', 'May', 'June', \n          'July', 'August', 'September', 'October', 'November', 'December']\n\ndate = input().strip()\nparts = date.split('-')\nmonth_num = int(parts[1])\nprint(months[month_num - 1])\n", "local_ok": true, "slug": "date-to-month-name-conversion", "lang": "PYTHON 3"}

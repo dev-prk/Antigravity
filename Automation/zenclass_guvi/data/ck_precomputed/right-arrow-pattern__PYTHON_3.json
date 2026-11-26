@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    line = sys.stdin.readline().strip()\n    if not line:\n        return\n    R = int(line)\n    \n    for i in range(1, R):\n        print('*')\n    \n    print('*' * R)\n    \n    for i in range(1, R):\n        print('*')\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "right-arrow-pattern", "lang": "PYTHON 3"}

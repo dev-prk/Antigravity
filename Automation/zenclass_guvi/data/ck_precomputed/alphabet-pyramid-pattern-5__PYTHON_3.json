@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    R = int(data)\n    \n    for i in range(1, R + 1):\n        ch = chr(ord('A') + i - 1)\n        count = 2 * i - 1\n        print(ch * count)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "alphabet-pyramid-pattern-5", "lang": "PYTHON 3"}

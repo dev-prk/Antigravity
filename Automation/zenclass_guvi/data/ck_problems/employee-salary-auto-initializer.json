@@ -3,14 +3,18 @@
  "slug": "employee-salary-auto-initializer",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1800. Employee Salary Auto-Initializer\n\n40\n\nMedium\n\nEmployee Salary Auto-Initializer\n\nProblem Statement:\n\nWrite a program that uses a default constructor to automatically initialize employee salary details and compute the final salary after tax deduction.\n\nDescription:\nCreate a class Employee that:\n1. Uses a default constructor (no parameters).\n2. Inside the constructor, read:\nBasic Salary\nHRA percentage\nDA percentage\nTax percentage\n3. Compute:\nGross Salary = Basic + (HRA% of Basic) + (DA% of Basic)\nNet Salary = Gross - (Tax% of Gross)\n4. Display the final Net Salary rounded to 2 decimal places.\n\nInput Format:\n\nFour space-separated numbers:\n\nBasicSalary HRA% DA% Tax%\n\nOutput Format:\n\nSingle value representing Net Salary (rounded to 2 decimal places).",
- "input_spec": "Four space-separated numbers:\n\nBasicSalary HRA% DA% Tax%",
- "output_spec": "Single value representing Net Salary (rounded to 2 decimal places).",
+ "description": "\n. \nEmployee Salary Auto-Initializer\n40\nMedium\nEmployee Salary Auto-Initializer\nProblem Statement:\nWrite a program that uses a default constructor to automatically initialize employee salary details and compute the final salary after tax deduction.\nDescription:\nCreate a class Employee that:\n1. Uses a default constructor (no parameters).\n2. Inside the constructor, read:\nBasic Salary\nHRA percentage\nDA percentage\nTax percentage\n3. Compute:\nGross Salary = Basic + (HRA% of Basic) + (DA% of Basic)\nNet Salary = Gross - (Tax% of Gross)\n4. Display the final Net Salary rounded to 2 decimal places.\nInput Format:\nFour space-separated numbers:\nBasicSalary HRA% DA% Tax%\nOutput Format:\nSingle value representing Net Salary (rounded to 2 decimal places).\nSample Input:\n10000 20 10 5\nSample Output:\n12350.00\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n96.33\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n500000 25 20 30\nOutput\n507500.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n500000 25 20 30\nOutput\n507500.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEmployee Salary Auto-Initializer\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "10000 20 10 5",
    "output": "12350.00"
+  },
+  {
+   "input": "500000 25 20 30",
+   "output": "507500.00"
   }
  ],
  "raw": ""

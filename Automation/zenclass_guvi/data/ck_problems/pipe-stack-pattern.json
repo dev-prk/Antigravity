@@ -1,0 +1,25 @@
+{
+ "title": "2212. Pipe Stack Pattern",
+ "slug": "pipe-stack-pattern",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nProblem\nHints & Solutions\nSubmissions\n2212\n. \nPipe Stack Pattern\n10\nEasy\nProblem Statement\nRead a number and print a stack of pipes that grows row by row and then shrinks row by row. \nDescription\nIn a warehouse, pipes are stacked in rows. The first row has 1 pipe, the second row has 2 pipes, and so on, up to a row with N pipes. After that, the rows become smaller by 1 pipe each time, until the last row has 1 pipe. Each pipe is shown by the * sign. Read N and print the stack. Do not print any spaces. \nInput Description\nA single integer N, the number of pipes in the biggest row. (1 <= N <= 9) \nOutput Description\nPrint the stack of pipes. Each row has only * signs and no spaces. \nSample Input\n3 \nSample Output\n*\n**\n***\n**\n*\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\nOutput\n*\n**\n***\n**\n*\nInput\n1\nOutput\n*\nInput\n5\nOutput\n*\n**\n***\n****\n*****\n****\n***\n**\n*\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\nOutput\n*\n**\n***\n**\n*\nInput\n1\nOutput\n*\nInput\n5\nOutput\n*\n**\n***\n****\n*****\n****\n***\n**\n*\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPipe Stack Pattern\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer N, the number of pipes in the biggest row. (1 <= N <= 9)",
+ "output_spec": "Print the stack of pipes. Each row has only * signs and no spaces.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "*\n**\n***\n**\n*"
+  },
+  {
+   "input": "1",
+   "output": "*"
+  },
+  {
+   "input": "5",
+   "output": "*\n**\n***\n****\n*****\n****\n***\n**\n*"
+  }
+ ],
+ "raw": ""
+}

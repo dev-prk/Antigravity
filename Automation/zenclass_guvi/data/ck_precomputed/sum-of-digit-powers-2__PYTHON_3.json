@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    s = sys.stdin.read().strip()\n    total = 0\n    for i, ch in enumerate(s):\n        d = int(ch)\n        total += d ** (i + 1)\n    print(total)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "sum-of-digit-powers-2", "lang": "PYTHON 3"}

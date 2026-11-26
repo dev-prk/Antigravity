@@ -3,13 +3,21 @@
  "slug": "even-or-odd-product",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n155. Even or Odd Product\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N integers, predict if the product of all elements would be even or odd(actual multiplication may lead to overflows ai <= 100000000).If there is only one element present in the array print whether that number is odd or even.",
+ "description": "oblem\nHints & Solutions\nSubmissions\n155\n. \nEven or Odd Product\n50\nMedium\nTopics\nProblem Statement:\nGiven a number N and an array of N integers, predict if the product of all elements would be even or odd(actual multiplication may lead to overflows ai <= 100000000).If there is only one element present in the array print whether that number is odd or even. \nInput Description:\nThe input consists of a number N, followed by an array of N integers. N is up to 100000. \nOutput Description:\nThe output should be 'even' or 'odd', indicating whether the product of all elements is even or odd. If there is only one element, it indicates whether that single element is odd or even. \nSample Input:\n4\n2 4 4 2 \nSample Output:\neven \nAccepted \n1k\nSubmissions \n2k\nAcceptance Rate \n91.74\n%\nTopics\narray\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n2 4 4 1\nOutput\neven\nInput\n5\n1000000000 1000000000 1000000000 1000000000 3\nOutput\neven\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n2 4 4 1\nOutput\neven\nInput\n5\n1000000000 1000000000 1000000000 1000000000 3\nOutput\neven\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEven or Odd Product\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of a number N, followed by an array of N integers. N is up to 100000.",
  "output_spec": "The output should be 'even' or 'odd', indicating whether the product of all elements is even or odd. If there is only one element, it indicates whether that single element is odd or even.",
  "constraints": "",
  "samples": [
   {
    "input": "4\n2 4 4 2",
+   "output": "even"
+  },
+  {
+   "input": "4\n2 4 4 1",
+   "output": "even"
+  },
+  {
+   "input": "5\n1000000000 1000000000 1000000000 1000000000 3",
    "output": "even"
   }
  ],

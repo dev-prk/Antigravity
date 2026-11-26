@@ -1,0 +1,25 @@
+{
+ "title": "941. Print Integer Digits",
+ "slug": "print-integer-digits",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nHints & Solutions\nSubmissions\n941\n. \nPrint Integer Digits\n30\nEasy\nTopics\nProblem Statement:\nWrite a code to get an integer N and print the digits of the integer. \nInput Description:\nA single line contains an integer N. \nOutput Description:\nPrint the digits of the integer in a single line separated by space, \nExplanation:\nThe digits are splitted and displayed. \nSample Input:\n348 \nSample Output:\n3 4 8 \nAccepted \n15k\nSubmissions \n17k\nAcceptance Rate \n87.6\n%\nTopics\nabsolute beginner\nbasics\nLooping\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5456356\nOutput\n5 4 5 6 3 5 6\nInput\n2346\nOutput\n2 3 4 6\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5456356\nOutput\n5 4 5 6 3 5 6\nInput\n2346\nOutput\n2 3 4 6\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrint Integer Digits\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line contains an integer N.",
+ "output_spec": "Print the digits of the integer in a single line separated by space, \nExplanation:\nThe digits are splitted and displayed.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "348",
+   "output": "3 4 8"
+  },
+  {
+   "input": "5456356",
+   "output": "5 4 5 6 3 5 6"
+  },
+  {
+   "input": "2346",
+   "output": "2 3 4 6"
+  }
+ ],
+ "raw": ""
+}

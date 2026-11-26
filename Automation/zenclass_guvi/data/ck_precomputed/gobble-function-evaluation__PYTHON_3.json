@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    x = int(data)\n    print(1 + 9 * x)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "gobble-function-evaluation", "lang": "PYTHON 3"}

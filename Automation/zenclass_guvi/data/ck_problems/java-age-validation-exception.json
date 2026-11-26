@@ -1,0 +1,21 @@
+{
+ "title": "1126. Java Age Validation Exception",
+ "slug": "java-age-validation-exception",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nHints & Solutions\nSubmissions\n1126\n. \nJava Age Validation Exception\n20\nEasy\nProblem Statement:\nCreate a custom exception called InvalidAgeException. Write a Java program that takes the age of a user as input and throws this custom exception if the age is less than 18. Ensure the program catches the exception and prints an appropriate message. \nInput Description:\nThe first line contains an integer, age. \nOutput Description:\nIf age is 18 or older, print \"Age is valid\". If age is less than 18, print \"Age must be 18 or older\". \nSample Input:\n20 \nSample Output:\nAge is valid \nExplanation:\nDefine a custom exception InvalidAgeException that extends the Exception class. The program should prompt the user to enter their age. If the age is less than 18, throw the InvalidAgeException with a message \"Age must be 18 or older\". Catch this exception and print the message to the user. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.05\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n20\nOutput\nAge is valid\nInput\n17\nOutput\nAge must be 18 or older\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n20\nOutput\nAge is valid\nInput\n17\nOutput\nAge must be 18 or older\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava Age Validation Exception\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains an integer, age.",
+ "output_spec": "If age is 18 or older, print \"Age is valid\". If age is less than 18, print \"Age must be 18 or older\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20",
+   "output": "Age is valid"
+  },
+  {
+   "input": "17",
+   "output": "Age must be 18 or older"
+  }
+ ],
+ "raw": ""
+}

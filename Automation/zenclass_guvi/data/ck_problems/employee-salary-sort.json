@@ -1,0 +1,25 @@
+{
+ "title": "512. Employee Salary Sort",
+ "slug": "employee-salary-sort",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nHints & Solutions\nSubmissions\n512\n. \nEmployee Salary Sort\n20\nEasy\nTopics\nProblem Statement:\nYou are a software engineer at an MNC. You are given the task of sorting the employees in your company based on their salary. Perform the task so that the employees, including yourself, will get a bonus from the management. CONSTRAINT: 0<=salary<=1000000 \nInput Description:\nNumber of employees followed by their name and salary \nOutput Description:\nSorted list of employee names \nSample Input:\n3\nKarthik 23000 rohan 81734 varshini 12343 \nSample Output:\nvarshini\nKarthik\nRohan \nExplanation:\n12343 \nAccepted \n4k\nSubmissions \n5k\nAcceptance Rate \n81.95\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nrohit 2500000 ram 250000\nOutput\nram\nrohit\nInput\n2\njacob 34987 naveen 56934\nOutput\njacob\nnaveen\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nrohit 2500000 ram 250000\nOutput\nram\nrohit\nInput\n2\njacob 34987 naveen 56934\nOutput\njacob\nnaveen\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEmployee Salary Sort\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Number of employees followed by their name and salary",
+ "output_spec": "Sorted list of employee names",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nKarthik 23000 rohan 81734 varshini 12343",
+   "output": "varshini\nKarthik\nRohan"
+  },
+  {
+   "input": "2\nrohit 2500000 ram 250000",
+   "output": "ram\nrohit"
+  },
+  {
+   "input": "2\njacob 34987 naveen 56934",
+   "output": "jacob\nnaveen"
+  }
+ ],
+ "raw": ""
+}

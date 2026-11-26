@@ -1,0 +1,25 @@
+{
+ "title": "708. String Substring Check",
+ "slug": "string-substring-check",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n708\n. \nString Substring Check\n30\nEasy\nTopics\nProblem Statement:\nYou are given two string \u2018s1\u2019 and \u2018s2\u2019. You have to tell whether these form pair of (strset) A pair of strings is said to be str set if one string is substring of other. \nInput Description:\nYou are given two strings \u2018s1\u2019 and \u2018s2\u2019 \nOutput Description:\nPrint Yes if they form strset and No if they don\u2019t. \nSample Input:\nabc ab \nSample Output:\nYes \nExplanation:\nConsidering the sample input ab is a substring of abc so yes is printed. \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n84.67\n%\nTopics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\npavithra pavi\nOutput\nYes\nInput\nYuvi uviray\nOutput\nNo\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\npavithra pavi\nOutput\nYes\nInput\nYuvi uviray\nOutput\nNo\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Substring Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given two strings \u2018s1\u2019 and \u2018s2\u2019",
+ "output_spec": "Print Yes if they form strset and No if they don\u2019t.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "abc ab",
+   "output": "Yes"
+  },
+  {
+   "input": "pavithra pavi",
+   "output": "Yes"
+  },
+  {
+   "input": "Yuvi uviray",
+   "output": "No"
+  }
+ ],
+ "raw": ""
+}

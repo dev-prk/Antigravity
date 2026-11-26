@@ -3,7 +3,7 @@
  "slug": "insert-node-into-binary-search-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1526. Insert Node into Binary Search Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven the root of a Binary Search Tree (BST) and a value to insert, write a function to insert the value into the BST. Return the root of the BST after the insertion. The BST must maintain its property: for each node, all values in the left subtree are less than the node's value, and all values in the right subtree are greater than the node's value. If the value already exists in the BST, insert it in the right subtree.",
+ "description": "nts & Solutions\nSubmissions\n1526\n. \nInsert Node into Binary Search Tree\n80\nHard\nProblem Statement:\nGiven the root of a Binary Search Tree (BST) and a value to insert, write a function to insert the value into the BST. Return the root of the BST after the insertion. The BST must maintain its property: for each node, all values in the left subtree are less than the node's value, and all values in the right subtree are greater than the node's value. If the value already exists in the BST, insert it in the right subtree. \nInput Description:\n- The first line contains a list of integers separated by spaces, representing the initial BST in level order, where 'null' represents a missing node.\n- The second line contains an integer, the value to insert. \nOutput Description:\n- Output the level order traversal of the BST after insertion, with 'null' for missing nodes, as a space-separated string. \nSample Input:\n4 2 7 1 3\n5 \nSample Output:\n4 2 7 1 3 5 \nExplanation:\nThe initial BST is:\n 4\n / \\\n 2 7\n / \\\n 1 3\nAfter inserting 5, the BST becomes:\n 4\n / \\\n 2 7\n / \\ \\\n 1 3 5 \nAccepted \n22\nSubmissions \n36\nAcceptance Rate \n61.11\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 2 7 1 5\n6\nOutput\n4 2 7 1 5 6\nInput\n40 20 60 10 30 50 70\n25\nOutput\n40 20 60 10 30 50 70 null null 25\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 2 7 1 5\n6\nOutput\n4 2 7 1 5 6\nInput\n40 20 60 10 30 50 70\n25\nOutput\n40 20 60 10 30 50 70 null null 25\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nInsert Node into Binary Search Tree\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains a list of integers separated by spaces, representing the initial BST in level order, where 'null' represents a missing node.\n- The second line contains an integer, the value to insert.",
  "output_spec": "- Output the level order traversal of the BST after insertion, with 'null' for missing nodes, as a space-separated string.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "4 2 7 1 3\n5",
    "output": "4 2 7 1 3 5"
+  },
+  {
+   "input": "4 2 7 1 5\n6",
+   "output": "4 2 7 1 5 6"
+  },
+  {
+   "input": "40 20 60 10 30 50 70\n25",
+   "output": "40 20 60 10 30 50 70 null null 25"
   }
  ],
  "raw": ""

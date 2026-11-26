@@ -1,0 +1,21 @@
+{
+ "title": "1389. Check if Array is Sorted Ascending",
+ "slug": "check-if-array-is-sorted-ascending",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n1389\n. \nCheck if Array is Sorted Ascending\n10\nEasy\nProblem Statement:\nGiven a number N, followed by an array of N elements, print 'yes' if the array is sorted in ascending order only. Otherwise, print 'no'. \nInput Description:\nFirst line: an integer N (1 \u2264 N \u2264 100000) Second line: N space-separated integers \nOutput Description:\nPrint 'yes' if the array is in strictly or non-strictly ascending order Otherwise, print 'no' \nSample Input:\n3\n2 3 7 \nSample Output:\nyes \nAccepted \n26\nSubmissions \n27\nAcceptance Rate \n96.3\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n2 3 7\nOutput\nyes\nInput\n4\n9 6 3 1\nOutput\nno\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n2 3 7\nOutput\nyes\nInput\n4\n9 6 3 1\nOutput\nno\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCheck if Array is Sorted Ascending\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line: an integer N (1 \u2264 N \u2264 100000) Second line: N space-separated integers",
+ "output_spec": "Print 'yes' if the array is in strictly or non-strictly ascending order Otherwise, print 'no'",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n2 3 7",
+   "output": "yes"
+  },
+  {
+   "input": "4\n9 6 3 1",
+   "output": "no"
+  }
+ ],
+ "raw": ""
+}

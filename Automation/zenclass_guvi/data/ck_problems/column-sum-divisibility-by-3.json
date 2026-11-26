@@ -3,14 +3,18 @@
  "slug": "column-sum-divisibility-by-3",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1017. Column Sum Divisibility by 3\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a numbers n followed by n*n numbers in matrix format print the column which sum of the numbers in the column should be equal to multiple of 3 if there is no column print -1.",
+ "description": "nts & Solutions\nSubmissions\n1017\n. \nColumn Sum Divisibility by 3\n70\nHard\nTopics\nProblem Statement:\nGiven a numbers n followed by n*n numbers in matrix format print the column which sum of the numbers in the column should be equal to multiple of 3 if there is no column print -1. \nInput Description:\nYou will given a number n followed by n*m numbers in matrix format \nOutput Description:\nprint the column in row format \nExplanation:\n3 and 3 is the number of rows and columns of the matrix.\nFrom the matrix, print the sum of the column.\nIn column1, 1+4+7 = 12\nIn column2, 2+5+8 = 15\nIn column3, 3+6+9 = 18\nPrint the column if sum is divisible by 3, here all the column sum is divisible by 3,\nSo print\n1 4 7\n2 5 8\n3 6 9 \nSample Input:\n3 3\n1 2 3\n4 5 6\n7 8 9 \nSample Output:\n1 4 7\n2 5 8\n3 6 9 \nAccepted \n74\nSubmissions \n342\nAcceptance Rate \n21.64\n%\nTopics\nzen\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3\n4 5 6\n7 8 9\nOutput\n1 4 7\n2 5 8\n3 6 9\nInput\n5 5\n4 5 6 8 2\n3 2 1 2 3\n5 6 2 4 5\n6 8 6 4 3\n8 1 1 1 8\nOutput\n2 3 5 3 8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3\n4 5 6\n7 8 9\nOutput\n1 4 7\n2 5 8\n3 6 9\nInput\n5 5\n4 5 6 8 2\n3 2 1 2 3\n5 6 2 4 5\n6 8 6 4 3\n8 1 1 1 8\nOutput\n2 3 5 3 8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nColumn Sum Divisibility by 3\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You will given a number n followed by n*m numbers in matrix format",
- "output_spec": "print the column in row format",
+ "output_spec": "print the column in row format \nExplanation:\n3 and 3 is the number of rows and columns of the matrix.\nFrom the matrix, print the sum of the column.\nIn column1, 1+4+7 = 12\nIn column2, 2+5+8 = 15\nIn column3, 3+6+9 = 18\nPrint the column if sum is divisible by 3, here all the column sum is divisible by 3,\nSo print\n1 4 7\n2 5 8\n3 6 9",
  "constraints": "",
  "samples": [
   {
    "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
    "output": "1 4 7\n2 5 8\n3 6 9"
+  },
+  {
+   "input": "5 5\n4 5 6 8 2\n3 2 1 2 3\n5 6 2 4 5\n6 8 6 4 3\n8 1 1 1 8",
+   "output": "2 3 5 3 8"
   }
  ],
  "raw": ""

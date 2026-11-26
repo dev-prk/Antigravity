@@ -1,0 +1,25 @@
+{
+ "title": "533. North Korea Population",
+ "slug": "north-korea-population",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n533\n. \nNorth Korea Population\n20\nEasy\nTopics\nProblem Statement:\nThe population of North Korea and South Korea are represented in a square matrix, with the upper triangular elements(including the diagonal) representing North Korea and lower Triangular elements(excluding the diagonal) representing South Korea. Kim Jong-un asks you to inform him the current population figures of his country. Note: The elements are in a scale of 1000. 1 means 1000, 2 means 2000 and so on. \nInput Description:\nDimensions of the matrix followed by the elements of the matrix \nOutput Description:\nSum of upper triangular elements \nExplanation:\n1+2+3+3+3+2=14 Actual population = 14*1000=14000 \nSample Input:\n3 3\n1 2 3\n3.25 2 3\n1.1 1 3 \nSample Output:\n14000 \nAccepted \n930\nSubmissions \n1k\nAcceptance Rate \n84.16\n%\nTopics\nmatrix\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\n12 2 3 2 1.2\n22 3 4 6 2\n1 9 4 2 7\n1 1 0 3 2\n1.2 2.2 0 0 1\nOutput\n54200\nInput\n2 2\n1 3\n4 2\nOutput\n6000\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\n12 2 3 2 1.2\n22 3 4 6 2\n1 9 4 2 7\n1 1 0 3 2\n1.2 2.2 0 0 1\nOutput\n54200\nInput\n2 2\n1 3\n4 2\nOutput\n6000\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNorth Korea Population\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Dimensions of the matrix followed by the elements of the matrix",
+ "output_spec": "Sum of upper triangular elements \nExplanation:\n1+2+3+3+3+2=14 Actual population = 14*1000=14000",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n1 2 3\n3.25 2 3\n1.1 1 3",
+   "output": "14000"
+  },
+  {
+   "input": "5 5\n12 2 3 2 1.2\n22 3 4 6 2\n1 9 4 2 7\n1 1 0 3 2\n1.2 2.2 0 0 1",
+   "output": "54200"
+  },
+  {
+   "input": "2 2\n1 3\n4 2",
+   "output": "6000"
+  }
+ ],
+ "raw": ""
+}

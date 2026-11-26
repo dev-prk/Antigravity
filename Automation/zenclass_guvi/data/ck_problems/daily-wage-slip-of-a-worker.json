@@ -3,7 +3,7 @@
  "slug": "daily-wage-slip-of-a-worker",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2168. Daily Wage Slip of a Worker\n\n40\n\nMedium\n\nProblem Statement\nRead the hourly rate, normal hours and overtime hours of a worker. Print the normal pay, the overtime pay and the total pay.\nDescription\nA worker in a factory is paid a fixed amount for every normal working hour. Extra hours are called overtime hours, and each overtime hour is paid 1.5 times the normal hourly rate. Read the hourly rate, the normal hours and the overtime hours. Find the normal pay (normal hours x rate), the overtime pay (overtime hours x 1.5 x rate), and the total pay (normal pay + overtime pay). Print all three with exactly 2 digits after the decimal point.",
+ "description": "lem\nHints & Solutions\nSubmissions\n2168\n. \nDaily Wage Slip of a Worker\n40\nMedium\nProblem Statement\nRead the hourly rate, normal hours and overtime hours of a worker. Print the normal pay, the overtime pay and the total pay.\nDescription\nA worker in a factory is paid a fixed amount for every normal working hour. Extra hours are called overtime hours, and each overtime hour is paid 1.5 times the normal hourly rate. Read the hourly rate, the normal hours and the overtime hours. Find the normal pay (normal hours x rate), the overtime pay (overtime hours x 1.5 x rate), and the total pay (normal pay + overtime pay). Print all three with exactly 2 digits after the decimal point.\nInput Description\nThree integers, each on a separate line: the hourly rate (in rupees), the normal hours, and the overtime hours. (1 <= rate <= 1000, 0 <= normal hours <= 12, 0 <= overtime hours <= 50)\nOutput Description\nPrint the normal pay on the first line, the overtime pay on the second line, and the total pay on the third line. Each value must have exactly 2 digits after the decimal point.\nSample Input\n100\n8\n2\nSample Output\n800.00\n300.00\n1100.00\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n100\n8\n2\nOutput\n800.00\n300.00\n1100.00\nInput\n75\n6\n3\nOutput\n450.00\n337.50\n787.50\nInput\n250\n8\n0\nOutput\n2000.00\n0.00\n2000.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n100\n8\n2\nOutput\n800.00\n300.00\n1100.00\nInput\n75\n6\n3\nOutput\n450.00\n337.50\n787.50\nInput\n250\n8\n0\nOutput\n2000.00\n0.00\n2000.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDaily Wage Slip of a Worker\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on sol",
  "input_spec": "Three integers, each on a separate line: the hourly rate (in rupees), the normal hours, and the overtime hours. (1 <= rate <= 1000, 0 <= normal hours <= 12, 0 <= overtime hours <= 50)",
  "output_spec": "Print the normal pay on the first line, the overtime pay on the second line, and the total pay on the third line. Each value must have exactly 2 digits after the decimal point.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "100\n8\n2",
    "output": "800.00\n300.00\n1100.00"
+  },
+  {
+   "input": "75\n6\n3",
+   "output": "450.00\n337.50\n787.50"
+  },
+  {
+   "input": "250\n8\n0",
+   "output": "2000.00\n0.00\n2000.00"
   }
  ],
  "raw": ""

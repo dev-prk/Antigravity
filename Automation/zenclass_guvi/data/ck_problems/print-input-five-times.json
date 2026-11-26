@@ -1,0 +1,25 @@
+{
+ "title": "935. Print Input Five Times",
+ "slug": "print-input-five-times",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n935\n. \nPrint Input Five Times\n10\nEasy\nTopics\nProblem Statement:\nWrite a code to get the input and print it 5 times. \nInput Description:\nA single line contains an integer N. \nOutput Description:\nOutput contains 5 lines with each line having the value N. \nExplanation:\nThe value N has been written 5 times. \nSample Input:\n4 \nSample Output:\n4\n4\n4\n4\n4 \nAccepted \n20k\nSubmissions \n21k\nAcceptance Rate \n94.05\n%\nTopics\nabsolute beginner\nbasics\nLooping\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n5\n5\n5\n5\n5\nInput\n10\nOutput\n10\n10\n10\n10\n10\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n5\n5\n5\n5\n5\nInput\n10\nOutput\n10\n10\n10\n10\n10\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrint Input Five Times\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line contains an integer N.",
+ "output_spec": "Output contains 5 lines with each line having the value N. \nExplanation:\nThe value N has been written 5 times.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4",
+   "output": "4\n4\n4\n4\n4"
+  },
+  {
+   "input": "5",
+   "output": "5\n5\n5\n5\n5"
+  },
+  {
+   "input": "10",
+   "output": "10\n10\n10\n10\n10"
+  }
+ ],
+ "raw": ""
+}

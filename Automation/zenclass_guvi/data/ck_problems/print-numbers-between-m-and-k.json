@@ -1,0 +1,21 @@
+{
+ "title": "974. Print Numbers Between m and k",
+ "slug": "print-numbers-between-m-and-k",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n974\n. \nPrint Numbers Between m and k\n20\nEasy\nTopics\nProblem Statement:\nGiven a number m and k separated by a space print the numbers between m and k \nInput Description:\nnumber m and n separated by a space\n0<m<1000\n0<n<1000\nm<n \nOutput Description:\nprint the numbers between this two numbers \nExplanation:\n6 and 7, which are in-between numbers of 5 and 8. \nSample Input:\n5 8 \nSample Output:\n6 7 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n76.86\n%\nTopics\nzen\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 8\nOutput\n6 7\nInput\n2 8\nOutput\n3 4 5 6 7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 8\nOutput\n6 7\nInput\n2 8\nOutput\n3 4 5 6 7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrint Numbers Between m and k\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "number m and n separated by a space\n0<m<1000\n0<n<1000\nm<n",
+ "output_spec": "print the numbers between this two numbers \nExplanation:\n6 and 7, which are in-between numbers of 5 and 8.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 8",
+   "output": "6 7"
+  },
+  {
+   "input": "2 8",
+   "output": "3 4 5 6 7"
+  }
+ ],
+ "raw": ""
+}

@@ -3,7 +3,7 @@
  "slug": "check-balanced-binary-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1525. Check Balanced Binary Tree\n\n70\n\nHard\n\nProblem Statement:\nGiven the root of a binary tree, determine if it is height-balanced. A binary tree is height-balanced if, for every node in the tree, the difference in height between its left and right subtrees is at most 1.",
+ "description": "roblem\nHints & Solutions\nSubmissions\n1525\n. \nCheck Balanced Binary Tree\n70\nHard\nProblem Statement:\nGiven the root of a binary tree, determine if it is height-balanced. A binary tree is height-balanced if, for every node in the tree, the difference in height between its left and right subtrees is at most 1. \nInput Description:\n- The first line contains an integer N, the number of nodes in the binary tree.\n- The next N lines each contain three values: node value, left child value, and right child value. If a child does not exist, use -1. \nOutput Description:\n- Print \"True\" if the binary tree is height-balanced, otherwise print \"False\". \nSample Input:\n5\n1 2 3\n2 4 -1\n3 -1 5\n4 -1 -1\n5 -1 -1 \nSample Output:\ntrue \nExplanation:\nThe tree is:\n 1\n / \\\n 2 3\n / \\\n 4 5\nFor every node, the height difference between left and right subtrees is at most 1. \nAccepted \n26\nSubmissions \n28\nAcceptance Rate \n92.86\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 3\n2 -1 -1\n3 -1 -1\nOutput\ntrue\nInput\n4\n1 2 -1\n2 3 -1\n3 4 -1\n4 -1 -1\nOutput\nfalse\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 3\n2 -1 -1\n3 -1 -1\nOutput\ntrue\nInput\n4\n1 2 -1\n2 3 -1\n3 4 -1\n4 -1 -1\nOutput\nfalse\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCheck Balanced Binary Tree\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer N, the number of nodes in the binary tree.\n- The next N lines each contain three values: node value, left child value, and right child value. If a child does not exist, use -1.",
  "output_spec": "- Print \"True\" if the binary tree is height-balanced, otherwise print \"False\".",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\n1 2 3\n2 4 -1\n3 -1 5\n4 -1 -1\n5 -1 -1",
    "output": "true"
+  },
+  {
+   "input": "3\n1 2 3\n2 -1 -1\n3 -1 -1",
+   "output": "true"
+  },
+  {
+   "input": "4\n1 2 -1\n2 3 -1\n3 4 -1\n4 -1 -1",
+   "output": "false"
   }
  ],
  "raw": ""

@@ -1,0 +1,25 @@
+{
+ "title": "2046. Character Counter Using BufferedReader",
+ "slug": "character-counter-using-bufferedreader",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " & Solutions\nSubmissions\n2046\n. \nCharacter Counter Using BufferedReader\n25\nEasy\nProblem Statement\nRead a line of text using a BufferedReader wrapped over an InputStreamReader, and count the number of non-space characters in it.\nDescription\nUse BufferedReader and InputStreamReader, Java I/O stream classes, to read a single line from standard input. Count the number of characters in the line excluding space characters, and print that count.\nInput Description\nA single line containing a string, str (may contain spaces).\nOutput Description\nPrint the count of non-space characters in str.\nSample Input\nJava IO\nSample Output\n6\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nJava IO\nOutput\n6\nInput\nHello\nOutput\n5\nInput\na b c\nOutput\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nJava IO\nOutput\n6\nInput\nHello\nOutput\n5\nInput\na b c\nOutput\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCharacter Counter Using BufferedReader\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line containing a string, str (may contain spaces).",
+ "output_spec": "Print the count of non-space characters in str.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Java IO",
+   "output": "6"
+  },
+  {
+   "input": "Hello",
+   "output": "5"
+  },
+  {
+   "input": "a b c",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

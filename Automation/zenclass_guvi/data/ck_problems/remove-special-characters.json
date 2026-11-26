@@ -1,0 +1,21 @@
+{
+ "title": "1007. Remove Special Characters",
+ "slug": "remove-special-characters",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1007\n. \nRemove Special Characters\n30\nEasy\nTopics\nProblem Statement:\nGiven a string remove special characters if there is no special characters print -1 \nInput Description:\nGiven a string \nOutput Description:\nPrint the string or -1 \nExplanation:\nThe special character(-) present in the given string(Xyz-aBc-nMk) is removed. so the output is displayed as XyzaBcnMk \nSample Input:\nXyz-aBc-nMk \nSample Output:\nXyzaBcnMk \nAccepted \n651\nSubmissions \n1k\nAcceptance Rate \n54.89\n%\nTopics\nzen\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nGuvi Geek\nOutput\n-1\nInput\nXyz-aBc-nMk\nOutput\nXyzaBcnMk\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nGuvi Geek\nOutput\n-1\nInput\nXyz-aBc-nMk\nOutput\nXyzaBcnMk\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRemove Special Characters\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Given a string",
+ "output_spec": "Print the string or -1 \nExplanation:\nThe special character(-) present in the given string(Xyz-aBc-nMk) is removed. so the output is displayed as XyzaBcnMk",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Xyz-aBc-nMk",
+   "output": "XyzaBcnMk"
+  },
+  {
+   "input": "Guvi Geek",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

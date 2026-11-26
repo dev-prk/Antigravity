@@ -1,0 +1,25 @@
+{
+ "title": "517. Matrix Comparison for Bomb Diffusion",
+ "slug": "matrix-comparison-for-bomb-diffusion",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "olutions\nSubmissions\n517\n. \nMatrix Comparison for Bomb Diffusion\n10\nEasy\nTopics\nProblem Statement:\nEthan Hunt is an agent at the CBI. He is given the task of diffusing a bomb which has a decryption key consisting of integers ( positive and negative) represented in a matrix of dimensions M_N. Ethan also has a M_N matrix in his diffusion device. The bomb can be diffused only if both the matrices match perfectly. Help Ethan diffuse the bomb, thereby saving millions of lives.\nCONSTRAINTS:\n1<=N,M<=10\n-1000<=matrix[i][j]<=1000\nInput Description:\nTwo matrices of dimensions M*N where M is the number of rows and N is the number of columns.\nOutput Description:\nDisplay \u201cequal\u201d if the two matrices are equal, else display \u201c Not equal\u201d\nSample Input:\n2 2\n88 12\n96 -72\n2 2\n88 12\n96 -72\nSample Output:\nEqual\nExplanation:\nThe two matrices are equal.\nAccepted \n1k\nSubmissions \n2k\nAcceptance Rate \n86.56\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3\n4 5 6\n7 8 9\n3 3\n4 3 2 8 \n6 12 22\n9 67 2\nOutput\nNot equal\nInput\n1 2\n3 4\n1 2\n8 9\nOutput\nNot equal\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3\n4 5 6\n7 8 9\n3 3\n4 3 2 8 \n6 12 22\n9 67 2\nOutput\nNot equal\nInput\n1 2\n3 4\n1 2\n8 9\nOutput\nNot equal\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMatrix Comparison for Bomb Diffusion\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two matrices of dimensions M*N where M is the number of rows and N is the number of columns.",
+ "output_spec": "Display \u201cequal\u201d if the two matrices are equal, else display \u201c Not equal\u201d",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 2\n88 12\n96 -72\n2 2\n88 12\n96 -72",
+   "output": "Equal"
+  },
+  {
+   "input": "3 3\n1 2 3\n4 5 6\n7 8 9\n3 3\n4 3 2 8 \n6 12 22\n9 67 2",
+   "output": "Not equal"
+  },
+  {
+   "input": "1 2\n3 4\n1 2\n8 9",
+   "output": "Not equal"
+  }
+ ],
+ "raw": ""
+}

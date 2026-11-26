@@ -1,0 +1,25 @@
+{
+ "title": "755. String Compression",
+ "slug": "string-compression",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n755\n. \nString Compression\n10\nEasy\nTopics\nProblem Statement:\n. Given an string aaaabbBccdee, it can be written as a4b2B1c2d1e2. \nInput Description:\nwrite a program that accepts the input string through STDIN \nOutput Description:\nwrites the transformed string to STDOUT. \nSample Input:\naaaabbBccdee \nSample Output:\na4b2B1c2d1e2 \nExplanation:\na4b2B1c2d1e2 \nAccepted \n777\nSubmissions \n838\nAcceptance Rate \n92.72\n%\nTopics\nbasic io math - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\naaab\nOutput\na3b1\nInput\nabbCC\nOutput\na1b2C2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\naaab\nOutput\na3b1\nInput\nabbCC\nOutput\na1b2C2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Compression\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "write a program that accepts the input string through STDIN",
+ "output_spec": "writes the transformed string to STDOUT.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "aaaabbBccdee",
+   "output": "a4b2B1c2d1e2"
+  },
+  {
+   "input": "aaab",
+   "output": "a3b1"
+  },
+  {
+   "input": "abbCC",
+   "output": "a1b2C2"
+  }
+ ],
+ "raw": ""
+}

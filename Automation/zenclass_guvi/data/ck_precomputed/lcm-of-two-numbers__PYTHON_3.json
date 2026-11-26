@@ -1,0 +1,1 @@
+{"code": "import sys\nimport math\n\ndata = sys.stdin.read().strip().split()\nif len(data) >= 2:\n    a, b = int(data[0]), int(data[1])\n    lcm = abs(a * b) // math.gcd(a, b)\n    print(lcm)\n", "local_ok": true, "slug": "lcm-of-two-numbers", "lang": "PYTHON 3"}

@@ -1,0 +1,25 @@
+{
+ "title": "1198. L-value Modification in C",
+ "slug": "l-value-modification-in-c",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1198\n. \nL-value Modification in C\n20\nEasy\nTopics\nProblem Statement:\nWrite a C program that demonstrates the concept of L-value by creating an integer variable, assigning its address to a pointer, and modifying its value using the pointer. Then, dynamically allocate memory for another integer using malloc and modify its value, finally printing both integers. \nThe program should start by declaring an integer variable and assigning it a value. Next, assign the address of this variable to a pointer and use the pointer to modify the variable's value. The program should then dynamically allocate memory in the heap for another integer, modify its value using a pointer, and print both the original integer (modified through the pointer) and the dynamically allocated integer. \nInput Description:\nTwo integers: The first integer is the initial value for the integer variable, and the second integer is the value to be assigned to the dynamically allocated integer. \nOutput Description:\nPrint the modified value of the original integer.\nPrint the value stored in the dynamically allocated memory. \nSample Input:\n10 25 \nSample Output:\nOriginal Integer: 15\nHeap Integer: 25 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.8\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n0 100\nOutput\nOriginal Integer: 5\nHeap Integer: 100\nInput\n-10 50\nOutput\nOriginal Integer: -5\nHeap Integer: 50\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n0 100\nOutput\nOriginal Integer: 5\nHeap Integer: 100\nInput\n-10 50\nOutput\nOriginal Integer: -5\nHeap Integer: 50\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nL-value Modification in C\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCan",
+ "input_spec": "Two integers: The first integer is the initial value for the integer variable, and the second integer is the value to be assigned to the dynamically allocated integer.",
+ "output_spec": "Print the modified value of the original integer.\nPrint the value stored in the dynamically allocated memory.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10 25",
+   "output": "Original Integer: 15\nHeap Integer: 25"
+  },
+  {
+   "input": "0 100",
+   "output": "Original Integer: 5\nHeap Integer: 100"
+  },
+  {
+   "input": "-10 50",
+   "output": "Original Integer: -5\nHeap Integer: 50"
+  }
+ ],
+ "raw": ""
+}

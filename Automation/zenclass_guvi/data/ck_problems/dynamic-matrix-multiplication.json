@@ -3,14 +3,22 @@
  "slug": "dynamic-matrix-multiplication",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1233. Dynamic Matrix Multiplication\n\n80\n\nHard\n\nProblem Statement:\nWrite a program that dynamically allocates memory for two matrices, performs matrix multiplication, and then frees the allocated memory. The matrices' sizes should be taken from user input, and you must handle errors such as mismatched dimensions.",
- "input_spec": ", and you must handle errors such as mismatched dimensions.\n\nInput Description:\nThe dimensions of the first matrix R1 x C1.\nThe dimensions of the second matrix R2 x C2.\nR1 must be equal to R2 for matrix multiplication.\nFollowed by the elements of both matrices.",
+ "description": "lem\nHints & Solutions\nSubmissions\n1233\n. \nDynamic Matrix Multiplication\n80\nHard\nProblem Statement:\nWrite a program that dynamically allocates memory for two matrices, performs matrix multiplication, and then frees the allocated memory. The matrices' sizes should be taken from user input, and you must handle errors such as mismatched dimensions. \nInput Description:\nThe dimensions of the first matrix R1 x C1.\nThe dimensions of the second matrix R2 x C2.\nR1 must be equal to R2 for matrix multiplication.\nFollowed by the elements of both matrices. \nOutput Description:\nPrint the resulting matrix from the multiplication. \nSample Input:\n2 3\n3 2\n1 2 3\n4 5 6\n7 8\n9 10 \nSample Output:\n25 28\n73 82 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.43\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 3\n3 2\n1 2 3\n4 5 6\n7 8\n9 10\nOutput\n25 28 \n73 82 \nInput\n3 2\n2 3\n1 2\n3 4\n5 6\n7 8 9\n10 11 12\nOutput\n27 30 33 \n61 68 75 \n95 106 117 \nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2 3\n3 2\n1 2 3\n4 5 6\n7 8\n9 10\nOutput\n25 28 \n73 82 \nInput\n3 2\n2 3\n1 2\n3 4\n5 6\n7 8 9\n10 11 12\nOutput\n27 30 33 \n61 68 75 \n95 106 117 \nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDynamic Matrix Multiplication\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The dimensions of the first matrix R1 x C1.\nThe dimensions of the second matrix R2 x C2.\nR1 must be equal to R2 for matrix multiplication.\nFollowed by the elements of both matrices.",
  "output_spec": "Print the resulting matrix from the multiplication.",
  "constraints": "",
  "samples": [
   {
    "input": "2 3\n3 2\n1 2 3\n4 5 6\n7 8\n9 10",
    "output": "25 28\n73 82"
+  },
+  {
+   "input": "2 3\n3 2\n1 2 3\n4 5 6\n7 8\n9 10",
+   "output": "25 28 \n73 82"
+  },
+  {
+   "input": "3 2\n2 3\n1 2\n3 4\n5 6\n7 8 9\n10 11 12",
+   "output": "27 30 33 \n61 68 75 \n95 106 117"
   }
  ],
  "raw": ""

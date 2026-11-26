@@ -3,7 +3,7 @@
  "slug": "circular-queue-array-implementation",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1488. Circular Queue Array Implementation\n\n40\n\nMedium\n\nProblem Statement:\nWrite a program to implement a circular queue using an array in Java.",
+ "description": "s & Solutions\nSubmissions\n1488\n. \nCircular Queue Array Implementation\n40\nMedium\nProblem Statement:\nWrite a program to implement a circular queue using an array in Java. \nInput Description:\nFirst line: queue size\nFollowing lines: commands (enqueue X, dequeue, display). End with \"exit\". \nOutput Description:\nQueue contents after each display command. \nSample Input:\n5\nenqueue 1\nenqueue 2\nenqueue 3\ndequeue\nenqueue 4\nenqueue 5\nenqueue 6\ndisplay\nexit \nSample Output:\n2 3 4 5 6 \nAccepted \n20\nSubmissions \n34\nAcceptance Rate \n58.82\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nenqueue 10\nenqueue 20\nenqueue 30\ndequeue\nenqueue 40\ndisplay\nexit\nOutput\n20 30 40 \nInput\n4\nenqueue 7\nenqueue 8\nenqueue 9\nenqueue 10\ndequeue\ndequeue\nenqueue 11\nenqueue 12\ndisplay\nexit\nOutput\n9 10 11 12 \nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nenqueue 10\nenqueue 20\nenqueue 30\ndequeue\nenqueue 40\ndisplay\nexit\nOutput\n20 30 40 \nInput\n4\nenqueue 7\nenqueue 8\nenqueue 9\nenqueue 10\ndequeue\ndequeue\nenqueue 11\nenqueue 12\ndisplay\nexit\nOutput\n9 10 11 12 \nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCircular Queue Array Implementation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line: queue size\nFollowing lines: commands (enqueue X, dequeue, display). End with \"exit\".",
  "output_spec": "Queue contents after each display command.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\nenqueue 1\nenqueue 2\nenqueue 3\ndequeue\nenqueue 4\nenqueue 5\nenqueue 6\ndisplay\nexit",
    "output": "2 3 4 5 6"
+  },
+  {
+   "input": "3\nenqueue 10\nenqueue 20\nenqueue 30\ndequeue\nenqueue 40\ndisplay\nexit",
+   "output": "20 30 40"
+  },
+  {
+   "input": "4\nenqueue 7\nenqueue 8\nenqueue 9\nenqueue 10\ndequeue\ndequeue\nenqueue 11\nenqueue 12\ndisplay\nexit",
+   "output": "9 10 11 12"
   }
  ],
  "raw": ""

@@ -1,0 +1,25 @@
+{
+ "title": "867. Inverted Half Pyramid Pattern",
+ "slug": "inverted-half-pyramid-pattern",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n867\n. \nInverted Half Pyramid Pattern\n30\nEasy\nTopics\nProblem Statement:\nWrite a code to generate an inverted half pyramid pattern using stars. \nInput Description:\nGiven an integer R indicates number of rows.Where 1<=R<=100 \nOutput Description:\nPrint the star inverted pyramid with the given integer R. \nExplanation:\nFrom the given input R=5, print the inverted half pyramid star pattern with size 5. \nSample Input:\n5 \nSample Output:\n* * * * * \n* * * * \n* * * \n* * \n* \nAccepted \n1k\nSubmissions \n3k\nAcceptance Rate \n53.19\n%\nTopics\npatterns\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n* * * * *\n* * * *\n* * *\n* *\n*\nInput\n6\nOutput\n* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n* * * * *\n* * * *\n* * *\n* *\n*\nInput\n6\nOutput\n* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nInverted Half Pyramid Pattern\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the star inverted pyramid with the given integer R. \nExplanation:\nFrom the given input R=5, print the inverted half pyramid star pattern with size 5.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "* * * * * \n* * * * \n* * * \n* * \n*"
+  },
+  {
+   "input": "5",
+   "output": "* * * * *\n* * * *\n* * *\n* *\n*"
+  },
+  {
+   "input": "6",
+   "output": "* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*"
+  }
+ ],
+ "raw": ""
+}

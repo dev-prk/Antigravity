@@ -1,0 +1,21 @@
+{
+ "title": "1039. Celsius to Fahrenheit Conversion-2",
+ "slug": "celsius-to-fahrenheit-conversion-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n1039\n. \nCelsius to Fahrenheit Conversion-2\n10\nEasy\nProblem Statement:\nWrite a program to convert Celsius to Fahrenheit. If the output is float value round off upto 1 decimal places. \nInput Description:\nFirst line consists of input number celsius \nOutput Description:\nOutput consists of Fahrenheit \nExplanation:\nSelf Explanatory \nSample Input:\n78 \nSample Output:\n172.4 \nAccepted \n516\nSubmissions \n586\nAcceptance Rate \n88.05\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n78\nOutput\n172.4\nInput\n1\nOutput\n33.8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n78\nOutput\n172.4\nInput\n1\nOutput\n33.8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCelsius to Fahrenheit Conversion-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line consists of input number celsius",
+ "output_spec": "Output consists of Fahrenheit \nExplanation:\nSelf Explanatory",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "78",
+   "output": "172.4"
+  },
+  {
+   "input": "1",
+   "output": "33.8"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,21 @@
+{
+ "title": "766. Equilateral Triangle Area",
+ "slug": "equilateral-triangle-area",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n766\n. \nEquilateral Triangle Area\n10\nEasy\nTopics\nProblem Statement:\nThe area of an equilateral triangle is \u00bc(\u221a3a\u00b2) where \"a\" represents a side of the triangle. You are provided with the side \"a\". Find the area of the equilateral triangle. \nInput Description:\nThe side of an equilateral triangle is provided as the input. \nOutput Description:\nFind the area of the equilateral triangle and print the answer up to 2 decimal places after rounding off. \nExplanation:\nArea of Triangle = \u00bd \u00d7 base \u00d7 height \n\u21d2 Area = \u00bd \u00d7 a \u00d7 \u00bd(\u221a3a)\nwhen a = 20\nArea = 173.21 \nSample Input:\n20 \nSample Output:\n173.21 \nAccepted \n23k\nSubmissions \n26k\nAcceptance Rate \n86.67\n%\nTopics\nabsolute beginner\n5\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n20\nOutput\n173.21\nInput\n99\nOutput\n4243.96\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n20\nOutput\n173.21\nInput\n99\nOutput\n4243.96\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEquilateral Triangle Area\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The side of an equilateral triangle is provided as the input.",
+ "output_spec": "Find the area of the equilateral triangle and print the answer up to 2 decimal places after rounding off. \nExplanation:\nArea of Triangle = \u00bd \u00d7 base \u00d7 height \n\u21d2 Area = \u00bd \u00d7 a \u00d7 \u00bd(\u221a3a)\nwhen a = 20\nArea = 173.21",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "20",
+   "output": "173.21"
+  },
+  {
+   "input": "99",
+   "output": "4243.96"
+  }
+ ],
+ "raw": ""
+}

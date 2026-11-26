@@ -1,0 +1,21 @@
+{
+ "title": "601. Alternative Array Sorting",
+ "slug": "alternative-array-sorting",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "& Solutions\nSubmissions\n601\n. \nAlternative Array Sorting\n30\nEasy\nTopics\nCompany\nProblem Statement:\nRajesh was going through alternative array sorting. He wishes to print the array alternatively. Hence hired you. Your task is to help rajesh in printing the array alternatively.An alternative array is an array in which first element is maximum of the whole array second element is minimum of the whole array. Third element is the second largest. Fourth element is the second smallest And so on. print the array in the desired manner. \nInput Description:\nYou are given with the length of array \u2018n\u2019. followed by \u2018n\u2019 space separated numbers. \nOutput Description:\nPrint the array as mentioned. \nExplanation:\nSelf Explanatory \nSample Input:\n5\n1 7 11 16 19 \nSample Output:\n19 1 16 7 11 \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n62.17\n%\nTopics\narray\nguvi-learning-path\nCompany\nZoho\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 7 11 16 19\nOutput\n19 1 16 7 11\nInput\n11\n10 20 30 40 50 60 70 80 90 100 110\nOutput\n110 10 100 20 90 30 80 40 70 50 60\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 7 11 16 19\nOutput\n19 1 16 7 11\nInput\n11\n10 20 30 40 50 60 70 80 90 100 110\nOutput\n110 10 100 20 90 30 80 40 70 50 60\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAlternative Array Sorting\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given with the length of array \u2018n\u2019. followed by \u2018n\u2019 space separated numbers.",
+ "output_spec": "Print the array as mentioned. \nExplanation:\nSelf Explanatory",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 7 11 16 19",
+   "output": "19 1 16 7 11"
+  },
+  {
+   "input": "11\n10 20 30 40 50 60 70 80 90 100 110",
+   "output": "110 10 100 20 90 30 80 40 70 50 60"
+  }
+ ],
+ "raw": ""
+}

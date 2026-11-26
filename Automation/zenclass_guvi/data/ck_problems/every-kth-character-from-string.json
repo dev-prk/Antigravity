@@ -1,0 +1,25 @@
+{
+ "title": "1392. Every Kth Character from String",
+ "slug": "every-kth-character-from-string",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n1392\n. \nEvery Kth Character from String\n10\nEasy\nProblem Statement:\nGiven a string S and an integer K, print every Kth character starting from the beginning of the string (1-based index). \nInput Description:\nFirst line: A string S (1\n|S|\n100000) and an integer K (1\nK\n|S|) \nOutput Description:\nPrint every Kth character (1-based indexing) from the string, separated by a space. \nSample Input:\nstring 3\nhello 2 \nSample Output:\nr g\ne l \nAccepted \n17\nSubmissions \n20\nAcceptance Rate \n85\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nstring 3\nOutput\nr g\nInput\nhello 2\nOutput\ne l\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nstring 3\nOutput\nr g\nInput\nhello 2\nOutput\ne l\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEvery Kth Character from String\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line: A string S (1\n|S|\n100000) and an integer K (1\nK\n|S|)",
+ "output_spec": "Print every Kth character (1-based indexing) from the string, separated by a space.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "string 3\nhello 2",
+   "output": "r g\ne l"
+  },
+  {
+   "input": "string 3",
+   "output": "r g"
+  },
+  {
+   "input": "hello 2",
+   "output": "e l"
+  }
+ ],
+ "raw": ""
+}

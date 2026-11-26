@@ -3,7 +3,7 @@
  "slug": "addition-of-two-matrices",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2136. Addition of Two Matrices\n\n70\n\nHard\n\nProblem Statement\nRead two matrices of the same size M x N and print their sum, using nested loops.\n\nDescription\nRead two integers M and N representing the number of rows and columns. Read the first matrix of size M x N into a two-dimensional array, then read the second matrix of the same size into another two-dimensional array. Use nested loops to add the corresponding elements of the two matrices into a result matrix, and print the result matrix row by row.",
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n2136\n. \nAddition of Two Matrices\n70\nHard\nProblem Statement\nRead two matrices of the same size M x N and print their sum, using nested loops.\nDescription\nRead two integers M and N representing the number of rows and columns. Read the first matrix of size M x N into a two-dimensional array, then read the second matrix of the same size into another two-dimensional array. Use nested loops to add the corresponding elements of the two matrices into a result matrix, and print the result matrix row by row.\nInput Description\nTwo integers M and N, followed by the M x N elements of the first matrix, followed by the M x N elements of the second matrix, all given row by row.\nOutput Description\nPrint the resulting sum matrix, with M rows and N columns, each row's values separated by spaces.\nSample Input\n2 2 1 2 3 4 5 6 7 8\nSample Output\n6 8\n10 12\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 2 1 2 3 4 5 6 7 8\nOutput\n6 8\n10 12\nInput\n1 2 1 1 2 2\nOutput\n3 3\nInput\n2 1 1 2 3 4\nOutput\n4\n6\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 2 1 2 3 4 5 6 7 8\nOutput\n6 8\n10 12\nInput\n1 2 1 1 2 2\nOutput\n3 3\nInput\n2 1 1 2 3 4\nOutput\n4\n6\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAddition of Two Matrices\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two integers M and N, followed by the M x N elements of the first matrix, followed by the M x N elements of the second matrix, all given row by row.",
  "output_spec": "Print the resulting sum matrix, with M rows and N columns, each row's values separated by spaces.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "2 2 1 2 3 4 5 6 7 8",
    "output": "6 8\n10 12"
+  },
+  {
+   "input": "1 2 1 1 2 2",
+   "output": "3 3"
+  },
+  {
+   "input": "2 1 1 2 3 4",
+   "output": "4\n6"
   }
  ],
  "raw": ""

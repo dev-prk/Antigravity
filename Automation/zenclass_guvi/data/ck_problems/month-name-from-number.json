@@ -1,0 +1,25 @@
+{
+ "title": "2216. Month Name from Number",
+ "slug": "month-name-from-number",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n2216\n. \nMonth Name from Number\n20\nEasy\nProblem Statement\nRead a month number and print the name of the month.\nDescription\nRead a month number and print the name of that month. The months 1 to 12 are January, February, March, April, May, June, July, August, September, October, November and December. If the number is not a valid month number, print Invalid Month.\nInput Description\nA single integer n. (0 <= n <= 20)\nOutput Description\nPrint the name of the month, or print Invalid Month if n is not between 1 and 12. The first letter of every name must be a capital letter.\nSample Input\n3\nSample Output\nMarch\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\nOutput\nMarch\nInput\n12\nOutput\nDecember\nInput\n0\nOutput\nInvalid Month\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\nOutput\nMarch\nInput\n12\nOutput\nDecember\nInput\n0\nOutput\nInvalid Month\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMonth Name from Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer n. (0 <= n <= 20)",
+ "output_spec": "Print the name of the month, or print Invalid Month if n is not between 1 and 12. The first letter of every name must be a capital letter.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "March"
+  },
+  {
+   "input": "12",
+   "output": "December"
+  },
+  {
+   "input": "0",
+   "output": "Invalid Month"
+  }
+ ],
+ "raw": ""
+}

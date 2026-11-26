@@ -3,14 +3,18 @@
  "slug": "java-generics-wrapper-classes-type-safe-operations",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1671. Java, Generics, Wrapper Classes, Type-Safe Operations\n\n50\n\nMedium\n\nSum of Generic Numbers\n\nProblem Statement:\nWrite a program to compute the sum of elements in a generic list. The program should accept numeric values of Integer, Double, or Float type using wrapper classes and generics.\n\nDescription:\n\nCreate a generic class GenericSum<T extends Number>.\n\nImplement a method sum(List<T> list) to compute the sum of elements.\n\nEnsure type safety by restricting generics to numeric wrapper classes.\n\nInput Format:\n\nFirst line: number of elements n\n\nSecond line: n space-separated numbers\n\nOutput Format:\n\nSum of all elements",
- "input_spec": "First line: number of elements n\n\nSecond line: n space-separated numbers",
- "output_spec": "Sum of all elements",
+ "description": "enerics, Wrapper Classes, Type-Safe Operations\n50\nMedium\nSum of Generic Numbers\nProblem Statement:\nWrite a program to compute the sum of elements in a generic list. The program should accept numeric values of Integer, Double, or Float type using wrapper classes and generics.\nDescription:\nCreate a generic class GenericSum<T extends Number>.\nImplement a method sum(List<T> list) to compute the sum of elements.\nEnsure type safety by restricting generics to numeric wrapper classes.\nInput Format:\nFirst line: number of elements n\nSecond line: n space-separated numbers\nOutput Format:\nSum of all elements\nSample Input:\n5\n10 20 30 40 50\nSample Output:\nSum: 150.0\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n90.18\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5\n1 2 3 4 5\nOutput\nSum: 15.0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5\n1 2 3 4 5\nOutput\nSum: 15.0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava, Generics, Wrapper Classes, Type-Safe Operations\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n10 20 30 40 50",
    "output": "Sum: 150.0"
+  },
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "Sum: 15.0"
   }
  ],
  "raw": ""

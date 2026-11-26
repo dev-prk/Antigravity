@@ -3,7 +3,7 @@
  "slug": "delete-node-from-a-red-black-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1535. Delete Node from a Red-Black Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven a Red-Black Tree and a key, write a function to delete the node with the given key from the tree. After deletion, ensure that the Red-Black Tree properties are maintained. If the key is not present in the tree, the tree should remain unchanged.",
+ "description": "Hints & Solutions\nSubmissions\n1535\n. \nDelete Node from a Red-Black Tree\n80\nHard\nProblem Statement:\nGiven a Red-Black Tree and a key, write a function to delete the node with the given key from the tree. After deletion, ensure that the Red-Black Tree properties are maintained. If the key is not present in the tree, the tree should remain unchanged. \nInput Description:\n- The first line contains an integer N, the number of nodes in the Red-Black Tree.\n- The second line contains N space-separated integers, representing the keys of the nodes in level order traversal.\n- The third line contains N space-separated characters, each being 'R' or 'B', representing the color (Red or Black) of each node in the same order as the keys.\n- The fourth line contains an integer K, the key to be deleted. \nOutput Description:\n- Print the level order traversal of the tree after deletion.\n- Print the color of each node in the same order as the traversal, separated by spaces. \nSample Input:\n7\n10 5 20 3 7 15 25\nB R R B B B B\n7 \nSample Output:\n10 5 20 3 15 25\nB R R B B B \nExplanation:\nThe node with key 7 is deleted. The tree is rebalanced to maintain Red-Black Tree properties. \nAccepted \n4\nSubmissions \n16\nAcceptance Rate \n25\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\n10 5 20 3 7 15 30\nB R R B B B B\n5\nOutput\n10 7 20 3 15 30\nB B R B B B\nInput\n5\n8 4 12 2 6\nB R R B B\n4\nOutput\n8 6 12 2\nB B R B\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\n10 5 20 3 7 15 30\nB R R B B B B\n5\nOutput\n10 7 20 3 15 30\nB B R B B B\nInput\n5\n8 4 12 2 6\nB R R B B\n4\nOutput\n8 6 12 2\nB B R B\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDelete Node from a Red-Black Tree\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulat",
  "input_spec": "- The first line contains an integer N, the number of nodes in the Red-Black Tree.\n- The second line contains N space-separated integers, representing the keys of the nodes in level order traversal.\n- The third line contains N space-separated characters, each being 'R' or 'B', representing the color (Red or Black) of each node in the same order as the keys.\n- The fourth line contains an integer K, the key to be deleted.",
  "output_spec": "- Print the level order traversal of the tree after deletion.\n- Print the color of each node in the same order as the traversal, separated by spaces.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "7\n10 5 20 3 7 15 25\nB R R B B B B\n7",
    "output": "10 5 20 3 15 25\nB R R B B B"
+  },
+  {
+   "input": "7\n10 5 20 3 7 15 30\nB R R B B B B\n5",
+   "output": "10 7 20 3 15 30\nB B R B B B"
+  },
+  {
+   "input": "5\n8 4 12 2 6\nB R R B B\n4",
+   "output": "8 6 12 2\nB B R B"
   }
  ],
  "raw": ""

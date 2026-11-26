@@ -1,0 +1,25 @@
+{
+ "title": "1469. Kth Largest Element in Array",
+ "slug": "kth-largest-element-in-array",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n1469\n. \nKth Largest Element in Array\n30\nEasy\nProblem Statement:\nGiven an unsorted array of integers and an integer k, find the kth largest element in the array. The kth largest element is the element that would be in the kth position if the array was sorted in descending order. Note that it is the kth largest element in sorted order, not the kth distinct element. \nInput Description:\n- The first line contains two integers n and k, where n is the number of elements in the array.\n- The second line contains n space-separated integers representing the elements of the array. \nOutput Description:\n- Output a single integer, the kth largest element in the array. \nSample Input:\n6 2\n3 2 1 5 6 4 \nSample Output:\n5 \nExplanation:\nThe sorted array in descending order is [6, 5, 4, 3, 2, 1]. The 2nd largest element is 5. \nAccepted \n53\nSubmissions \n57\nAcceptance Rate \n92.98\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 1\n7 10 4 3 20\nOutput\n20\nInput\n5 3\n7 10 4 3 20\nOutput\n7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 1\n7 10 4 3 20\nOutput\n20\nInput\n5 3\n7 10 4 3 20\nOutput\n7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nKth Largest Element in Array\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains two integers n and k, where n is the number of elements in the array.\n- The second line contains n space-separated integers representing the elements of the array.",
+ "output_spec": "- Output a single integer, the kth largest element in the array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6 2\n3 2 1 5 6 4",
+   "output": "5"
+  },
+  {
+   "input": "5 1\n7 10 4 3 20",
+   "output": "20"
+  },
+  {
+   "input": "5 3\n7 10 4 3 20",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

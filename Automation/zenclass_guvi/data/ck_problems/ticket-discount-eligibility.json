@@ -1,0 +1,25 @@
+{
+ "title": "555. Ticket Discount Eligibility",
+ "slug": "ticket-discount-eligibility",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n555\n. \nTicket Discount Eligibility\n10\nEasy\nTopics\nProblem Statement:\nAssume that you are ticket verifier at a club. Your club has decided to give a special discount to the person(s) who are satisfying the following condition Condition:- If ticket number is divisible by date of month. You are eligible for a discount. \nInput Description:\nFirst line contains input \u2018n\u2019.Next line contains n space separated numbers denoting ticket numbers .Next line contains \u2018k\u2019 date of the month. \nOutput Description:\nPrint 1 if the ticket is eligible for discount else 0 \nExplanation:\nSolution no number in list is divisible by 22 \nSample Input:\n6\n112 139 165 175 262 130\n22 \nSample Output:\n0 0 0 0 0 0 \nAccepted \n6k\nSubmissions \n7k\nAcceptance Rate \n84.71\n%\nTopics\nmathematics\nnumbers\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n122 1999 615 705 632 30\n22\nOutput\n0 0 0 0 0 0\nInput\n10\n10 165 895 654 123 78 9 64 21 322\n10\nOutput\n1 0 0 0 0 0 0 0 0 0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n122 1999 615 705 632 30\n22\nOutput\n0 0 0 0 0 0\nInput\n10\n10 165 895 654 123 78 9 64 21 322\n10\nOutput\n1 0 0 0 0 0 0 0 0 0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTicket Discount Eligibility\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains input \u2018n\u2019.Next line contains n space separated numbers denoting ticket numbers .Next line contains \u2018k\u2019 date of the month.",
+ "output_spec": "Print 1 if the ticket is eligible for discount else 0 \nExplanation:\nSolution no number in list is divisible by 22",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n112 139 165 175 262 130\n22",
+   "output": "0 0 0 0 0 0"
+  },
+  {
+   "input": "6\n122 1999 615 705 632 30\n22",
+   "output": "0 0 0 0 0 0"
+  },
+  {
+   "input": "10\n10 165 895 654 123 78 9 64 21 322\n10",
+   "output": "1 0 0 0 0 0 0 0 0 0"
+  }
+ ],
+ "raw": ""
+}

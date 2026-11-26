@@ -1,0 +1,25 @@
+{
+ "title": "1310. Factorial Calculation",
+ "slug": "factorial-calculation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nProblem\nHints & Solutions\nSubmissions\n1310\n. \nFactorial Calculation\n10\nEasy\nProblem Statement:\nWrite a program to compute the factorial of a given number.\nFactorial of N is N! = N \u00d7 (N-1) \u00d7 (N-2) ... \u00d7 1. \nInput Description:\nA single integer N (0 \u2264 N \u2264 20). \nOutput Description:\nPrint the factorial of N. \nSample Input:\n5 \nSample Output:\n120 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.97\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\nOutput\n720\nInput\n10\nOutput\n3628800\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\nOutput\n720\nInput\n10\nOutput\n3628800\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFactorial Calculation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer N (0 \u2264 N \u2264 20).",
+ "output_spec": "Print the factorial of N.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "120"
+  },
+  {
+   "input": "6",
+   "output": "720"
+  },
+  {
+   "input": "10",
+   "output": "3628800"
+  }
+ ],
+ "raw": ""
+}

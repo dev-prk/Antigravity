@@ -3,7 +3,7 @@
  "slug": "gcd-of-n-numbers",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n609. GCD of N Numbers\n\n40\n\nMedium  Topics\n\nProblem Statement:\nharish learnt about gcd and and want to apply the concept to find the gcd of n numbers.But in between he got stuck and now he is asking for some help your task is to print the gcd of n numbers and print -1 if there is no gcd possible",
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n609\n. \nGCD of N Numbers\n40\nMedium\nTopics\nProblem Statement:\nharish learnt about gcd and and want to apply the concept to find the gcd of n numbers.But in between he got stuck and now he is asking for some help your task is to print the gcd of n numbers and print -1 if there is no gcd possible \nInput Description:\nYou are given an array size \u2018n\u2019.Next line contains n space separated numbers. \nOutput Description:\nYour task is to print the gcd of number \nSample Input:\n6\n2 4 8 16 \nSample Output:\n2 \nExplanation:\nSelf Explanatory \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n76.54\n%\nTopics\nmathematics\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n2 4 8 16\nOutput\n2\nInput\n17\n10 60 80 90 100 110 120 130 5 25 35 75 65 5 5 5 5\nOutput\n5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n2 4 8 16\nOutput\n2\nInput\n17\n10 60 80 90 100 110 120 130 5 25 35 75 65 5 5 5 5\nOutput\n5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nGCD of N Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given an array size \u2018n\u2019.Next line contains n space separated numbers.",
  "output_spec": "Your task is to print the gcd of number",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "6\n2 4 8 16",
    "output": "2"
+  },
+  {
+   "input": "4\n2 4 8 16",
+   "output": "2"
+  },
+  {
+   "input": "17\n10 60 80 90 100 110 120 130 5 25 35 75 65 5 5 5 5",
+   "output": "5"
   }
  ],
  "raw": ""

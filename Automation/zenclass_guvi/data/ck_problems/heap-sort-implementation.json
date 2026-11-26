@@ -3,7 +3,7 @@
  "slug": "heap-sort-implementation",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n860. Heap Sort Implementation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nHeaps can be used in sorting an array. In max-heaps, maximum element will always be at the root. Heap Sort uses this property of heap to sort the array.\nConsider an array A which is to be sorted using Heap Sort.\n1. Step 1: Initially build a max heap of elements in A.\n2. Step 2: The root element, that is A[1], will contain maximum element of A. After that, swap this element with the last element of A and heapify the max heap excluding the last element which is already in its correct position and then decrease the length of heap by one.\nRepeat the step 2, until all the elements are in their correct position.\nYou have to sort the given array of integer values in heap sort manner.",
+ "description": "\nHints & Solutions\nSubmissions\n860\n. \nHeap Sort Implementation\n50\nMedium\nTopics\nProblem Statement:\nHeaps can be used in sorting an array. In max-heaps, maximum element will always be at the root. Heap Sort uses this property of heap to sort the array.\nConsider an array A which is to be sorted using Heap Sort.\n1. Step 1: Initially build a max heap of elements in A.\n2. Step 2: The root element, that is A[1], will contain maximum element of A. After that, swap this element with the last element of A and heapify the max heap excluding the last element which is already in its correct position and then decrease the length of heap by one.\nRepeat the step 2, until all the elements are in their correct position.\nYou have to sort the given array of integer values in heap sort manner.\nInput Description:\nGiven an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1 \nOutput Description:\nPrint the resultant sorted array by using heap sort method.where 1 \nSample Input:\n6\n4 3 7 1 8 5 \nSample Output:\n1 3 4 5 7 8 \nExplanation:\nStep 1: 8 is swapped with 5.\nStep 2: 8 is disconnected from heap as 8 is in correct position now and.\nStep 3: Max-heap is created and 7 is swapped with 3.\nStep 4: 7 is disconnected from heap.\nStep 5: Max heap is created and 5 is swapped with 1.\nStep 6: 5 is disconnected from heap.\nStep 7: Max heap is created and 4 is swapped with 3.\nStep 8: 4 is disconnected from heap.\nStep 9: Max heap is created and 3 is swapped with 1.\nStep 10: 3 is disconnected. \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n93.94\n%\nTopics\nsorting\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n5 2 3 7\nOutput\n2 3 5 7\nInput\n5\n6 2 8 1 4\nOutput\n1 2 4 6 8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n5 2 3 7\nOutput\n2 3 5 7\nInput\n5\n6 2 8 1 4\nOutput\n1 2 4 6 8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nHeap Sort Implement",
  "input_spec": "Given an integer 'n' which indicates the length of array and followed by space separated \u2018n\u2019 integer values.Where 1",
  "output_spec": "Print the resultant sorted array by using heap sort method.where 1",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "6\n4 3 7 1 8 5",
    "output": "1 3 4 5 7 8"
+  },
+  {
+   "input": "4\n5 2 3 7",
+   "output": "2 3 5 7"
+  },
+  {
+   "input": "5\n6 2 8 1 4",
+   "output": "1 2 4 6 8"
   }
  ],
  "raw": ""

@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    R = int(data)\n    for i in range(1, R):\n        start = R - i\n        row = ''.join(str(j) for j in range(start, 0, -1))\n        print(row)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "number-half-pyramid-pattern-3", "lang": "PYTHON 3"}

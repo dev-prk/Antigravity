@@ -1,0 +1,25 @@
+{
+ "title": "389. Mirror String Pairs",
+ "slug": "mirror-string-pairs",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nHints & Solutions\nSubmissions\n389\n. \nMirror String Pairs\n30\nEasy\nTopics\nProblem Statement:\nGiven an array of pairs of strings, find if there are mirror pairs. (s1, s2) & (s3, s4) are mirror pairs, if s1 = s4 and s2 = s3. The first string in each pair is distinct. \nInput Description:\nThe first line contains the number string pairs N.\nThen N string pairs follow. \nOutput Description:\nPrint YES, if a mirror pair exists, print NO otherwise. \nExplanation:\n(raja, kili) and (kili, raja) are mirror pairs \nSample Input:\n3\nraja kili\npan quil\nkili raja \nSample Output:\nYES \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n85.36\n%\nTopics\nhashing\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nab cD\ncd ab\nOutput\nNO\nInput\n2\ngeek guvi\nguvi geek\nOutput\nYES\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nab cD\ncd ab\nOutput\nNO\nInput\n2\ngeek guvi\nguvi geek\nOutput\nYES\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMirror String Pairs\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains the number string pairs N.\nThen N string pairs follow.",
+ "output_spec": "Print YES, if a mirror pair exists, print NO otherwise. \nExplanation:\n(raja, kili) and (kili, raja) are mirror pairs",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nraja kili\npan quil\nkili raja",
+   "output": "YES"
+  },
+  {
+   "input": "2\nab cD\ncd ab",
+   "output": "NO"
+  },
+  {
+   "input": "2\ngeek guvi\nguvi geek",
+   "output": "YES"
+  }
+ ],
+ "raw": ""
+}

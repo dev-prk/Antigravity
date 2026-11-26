@@ -3,14 +3,18 @@
  "slug": "bst-leaf-sum",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n950. BST Leaf Sum\n\n70\n\nHard\n\nProblem Statement:\nGiven a Binary Search Tree, find the sum of all leaf nodes. BST has the following property (duplicate nodes are possible): The left subtree of a node contains only nodes with keys less than the node\u2019s key. The right subtree of a node contains only nodes with keys greater than or equal to the node\u2019s key.",
+ "description": "ditor\nProblem\nProblem\nHints & Solutions\nSubmissions\n950\n. \nBST Leaf Sum\n70\nHard\nProblem Statement:\nGiven a Binary Search Tree, find the sum of all leaf nodes. BST has the following property (duplicate nodes are possible): The left subtree of a node contains only nodes with keys less than the node\u2019s key. The right subtree of a node contains only nodes with keys greater than or equal to the node\u2019s key. \nInput Description:\nThe first line consists of integer N, denoting the number of elements in the BST. The second line of each test case consists of N space-separated integers denoting the elements in the BST.where,1 \nOutput Description:\nprint the sum of leaf nodes. \nExplanation:\nthe BST for the given input will be \n 67 \n / \\ \n 34 82 \n / \\ / \n 12 45 78 \nHence, the required sum= 12 + 45 + 78 = 135 \nSample Input:\n6\n67 34 82 12 45 78 \nSample Output:\n135 \nAccepted \n250\nSubmissions \n286\nAcceptance Rate \n87.41\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n67 34 82 12 45 78\nOutput\n135\nInput\n1\n45\nOutput\n45\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n67 34 82 12 45 78\nOutput\n135\nInput\n1\n45\nOutput\n45\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBST Leaf Sum\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line consists of integer N, denoting the number of elements in the BST. The second line of each test case consists of N space-separated integers denoting the elements in the BST.where,1",
- "output_spec": "print the sum of leaf nodes.",
+ "output_spec": "print the sum of leaf nodes. \nExplanation:\nthe BST for the given input will be \n 67 \n / \\ \n 34 82 \n / \\ / \n 12 45 78 \nHence, the required sum= 12 + 45 + 78 = 135",
  "constraints": "",
  "samples": [
   {
    "input": "6\n67 34 82 12 45 78",
    "output": "135"
+  },
+  {
+   "input": "1\n45",
+   "output": "45"
   }
  ],
  "raw": ""

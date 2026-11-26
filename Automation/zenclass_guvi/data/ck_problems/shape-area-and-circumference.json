@@ -1,0 +1,21 @@
+{
+ "title": "1023. Shape Area and Circumference",
+ "slug": "shape-area-and-circumference",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n1023\n. \nShape Area and Circumference\n30\nEasy\nProblem Statement:\nWrite a C program to get various shape information (Circle, Square, Rectangle, etc.,) and print the area and circumference. \nInput Description:\nThe first line of the input consists of the current chosen choice integer C. Below is the corresponding choice for each shape.\n1 - Circle\n2 - Square\n3 - Rectangle\nThe second line of the input consists of dimensions of the selected shape separated by space. Depending upon the chosen shape the below input varies as follows:\nCircle:\nThe second of the input will consist of a single integer value R denoting the radius of the circle\nRectangle:\nThe second of the input will consist of two integer values L and B denoting the length and breadth correspondingly separated by space\nSquare:\nThe second of the input will consist of a single integer value A denoting the length of each square side. \nOutput Description:\nThe first line of the output should be the area of the given shape\nThe second line of the output should be the circumference of the given shape\nNote: Round the Decimal values to two decimal places. \nExplanation:\nSelf Explanatory \nSample Input:\n1\n3 \nSample Output:\n28.27\n18.85 \nAccepted \n170\nSubmissions \n278\nAcceptance Rate \n61.15\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n3\nOutput\n28.27\n18.85\nInput\n2\n2\nOutput\n4\n8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n3\nOutput\n28.27\n18.85\nInput\n2\n2\nOutput\n4\n8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nShape Area and Circumference\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%",
+ "input_spec": "The first line of the input consists of the current chosen choice integer C. Below is the corresponding choice for each shape.\n1 - Circle\n2 - Square\n3 - Rectangle\nThe second line of the input consists of dimensions of the selected shape separated by space. Depending upon the chosen shape the below input varies as follows:\nCircle:\nThe second of the input will consist of a single integer value R denoting the radius of the circle\nRectangle:\nThe second of the input will consist of two integer values L and B denoting the length and breadth correspondingly separated by space\nSquare:\nThe second of the input will consist of a single integer value A denoting the length of each square side.",
+ "output_spec": "The first line of the output should be the area of the given shape\nThe second line of the output should be the circumference of the given shape\nNote: Round the Decimal values to two decimal places. \nExplanation:\nSelf Explanatory",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n3",
+   "output": "28.27\n18.85"
+  },
+  {
+   "input": "2\n2",
+   "output": "4\n8"
+  }
+ ],
+ "raw": ""
+}

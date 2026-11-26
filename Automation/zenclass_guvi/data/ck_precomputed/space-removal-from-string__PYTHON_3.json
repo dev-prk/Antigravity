@@ -1,0 +1,1 @@
+{"code": "import sys\ns = sys.stdin.readline().rstrip('\\r\\n')\nprint(s.replace(' ', ''))\n", "local_ok": true, "slug": "space-removal-from-string", "lang": "PYTHON 3"}

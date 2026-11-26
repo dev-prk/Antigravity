@@ -3,13 +3,21 @@
  "slug": "checking-divisibility-by-3-and-5-using-a-function",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2150. Checking Divisibility by 3 and 5 Using a Function\n\n40\n\nMedium\n\nProblem Statement\nRead an integer and determine whether it is divisible by both 3 and 5, using a function that returns 1 or 0.\n\nDescription\nRead an integer num from input. Write a function isDivisible that takes one integer parameter and returns 1 if the number is divisible by both 3 and 5, and returns 0 otherwise. In main(), call the function and use an if-else statement on the returned value to print \"Divisible\" or \"Not Divisible\".",
- "input_spec": ". Write a function isDivisible that takes one integer parameter and returns 1 if the number is divisible by both 3 and 5, and returns 0 otherwise. In main(), call the function and use an if-else statement on the returned value to print \"Divisible\" or \"Not Divisible\".\n\nInput Description\nA single positive integer num.",
+ "description": "Submissions\n2150\n. \nChecking Divisibility by 3 and 5 Using a Function\n40\nMedium\nProblem Statement\nRead an integer and determine whether it is divisible by both 3 and 5, using a function that returns 1 or 0.\nDescription\nRead an integer num from input. Write a function isDivisible that takes one integer parameter and returns 1 if the number is divisible by both 3 and 5, and returns 0 otherwise. In main(), call the function and use an if-else statement on the returned value to print \"Divisible\" or \"Not Divisible\".\nInput Description\nA single positive integer num.\nOutput Description\nPrint \"Divisible\" if num is divisible by both 3 and 5, otherwise print \"Not Divisible\".\nSample Input\n15\nSample Output\nDivisible\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n15\nOutput\nDivisible\nInput\n9\nOutput\nNot Divisible\nInput\n30\nOutput\nDivisible\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n15\nOutput\nDivisible\nInput\n9\nOutput\nNot Divisible\nInput\n30\nOutput\nDivisible\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nChecking Divisibility by 3 and 5 Using a Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single positive integer num.",
  "output_spec": "Print \"Divisible\" if num is divisible by both 3 and 5, otherwise print \"Not Divisible\".",
  "constraints": "",
  "samples": [
   {
    "input": "15",
+   "output": "Divisible"
+  },
+  {
+   "input": "9",
+   "output": "Not Divisible"
+  },
+  {
+   "input": "30",
    "output": "Divisible"
   }
  ],

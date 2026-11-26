@@ -1,0 +1,21 @@
+{
+ "title": "1939. Student Attendance Eligibility Checker",
+ "slug": "student-attendance-eligibility-checker",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " & Solutions\nSubmissions\n1939\n. \nStudent Attendance Eligibility Checker\n30\nEasy\nProblem Statement\nWrite a program to determine whether a student is eligible to appear for an examination based on attendance percentage.\nDescription\nA student must have at least 75% attendance to be eligible for the examination.\nRead the following inputs:\nTotal number of classes conducted.\nNumber of classes attended.\nPerform the following operations:\nCalculate attendance percentage.\nCalculate the number of classes missed.\nDetermine eligibility status.\nDisplay all values in the specified format.\nSample Input\n100\n80\nSample Output\nAttendance Percentage: 80\nMissed Classes: 20\nEligibility: Eligible\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n100\n80\nOutput\nAttendance Percentage: 80\nMissed Classes: 20\nEligibility: Eligible\nInput\n120\n60\nOutput\nAttendance Percentage: 50\nMissed Classes: 60\nEligibility: Not Eligible\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n100\n80\nOutput\nAttendance Percentage: 80\nMissed Classes: 20\nEligibility: Eligible\nInput\n120\n60\nOutput\nAttendance Percentage: 50\nMissed Classes: 60\nEligibility: Not Eligible\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nStudent Attendance Eligibility Checker\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "100\n80",
+   "output": "Attendance Percentage: 80\nMissed Classes: 20\nEligibility: Eligible"
+  },
+  {
+   "input": "120\n60",
+   "output": "Attendance Percentage: 50\nMissed Classes: 60\nEligibility: Not Eligible"
+  }
+ ],
+ "raw": ""
+}

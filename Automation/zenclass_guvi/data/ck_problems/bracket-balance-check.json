@@ -3,14 +3,18 @@
  "slug": "bracket-balance-check",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n629. Bracket Balance Check\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nYou are given a string of different type of brackets. Your task is to check whether the given string is balanced or not balanced.A string is said to be balanced if the number of opening brackets are equal to the number of closing brackets where the brackets should be of same kind.",
+ "description": "nts & Solutions\nSubmissions\n629\n. \nBracket Balance Check\n80\nHard\nTopics\nCompany\nProblem Statement:\nYou are given a string of different type of brackets. Your task is to check whether the given string is balanced or not balanced.A string is said to be balanced if the number of opening brackets are equal to the number of closing brackets where the brackets should be of same kind. \nInput Description:\nYou are given a string \u2018s\u2019. \nOutput Description:\nPrint 'yes' if the given string is balanced and no if it is not \nExplanation:\nSelf Explanatory \nSample Input:\n{}(())[][][{}] \nSample Output:\nyes \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n91.38\n%\nTopics\narray\nstack\nqueue\ngraph\nbst\nguvi-learning-path\nCompany\nAdobe\nAmazon\nFlipkart\nHike\nOracle\nOYO-Rooms\nSnapdeal\nWalmart\nWipro\nYatra.com\nZoho\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n{}(())[][][{}]\nOutput\nyes\nInput\n()()()()(\nOutput\nno\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n{}(())[][][{}]\nOutput\nyes\nInput\n()()()()(\nOutput\nno\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBracket Balance Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given a string \u2018s\u2019.",
- "output_spec": "Print 'yes' if the given string is balanced and no if it is not",
+ "output_spec": "Print 'yes' if the given string is balanced and no if it is not \nExplanation:\nSelf Explanatory",
  "constraints": "",
  "samples": [
   {
    "input": "{}(())[][][{}]",
    "output": "yes"
+  },
+  {
+   "input": "()()()()(",
+   "output": "no"
   }
  ],
  "raw": ""

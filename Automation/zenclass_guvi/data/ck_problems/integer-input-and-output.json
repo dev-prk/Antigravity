@@ -1,0 +1,21 @@
+{
+ "title": "925. Integer Input and Output",
+ "slug": "integer-input-and-output",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n925\n. \nInteger Input and Output\n10\nEasy\nTopics\nProblem Statement:\nWrite a code to get the input in the given format and print the output in the given format \nInput Description:\nTo take an integer value \nOutput Description:\nPrint the integer value \nSample Input:\n2 \nSample Output:\n2 \nExplanation:\nself \nAccepted \n50k\nSubmissions \n73k\nAcceptance Rate \n69.09\n%\nTopics\nInput/Output\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\n2\nInput\n4\nOutput\n4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\n2\nInput\n4\nOutput\n4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nInteger Input and Output\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "To take an integer value",
+ "output_spec": "Print the integer value",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2",
+   "output": "2"
+  },
+  {
+   "input": "4",
+   "output": "4"
+  }
+ ],
+ "raw": ""
+}

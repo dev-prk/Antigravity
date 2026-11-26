@@ -3,14 +3,18 @@
  "slug": "java-generics-wrapper-classes-collections-median-finder",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1672. Java, Generics, Wrapper Classes, Collections - Median Finder\n\n50\n\nMedium\n\nMedian Finder\n\nProblem Statement:\nWrite a program to find the median of a list of numeric values using wrapper classes and generics. The program must sort the list and find the middle value (or average of two middle values if the list size is even).\n\nDescription:\n\nCreate a generic class MedianFinder<T extends Number & Comparable<T>>.\n\nImplement a method findMedian(List<T> list) to return the median.\n\nUse Collections.sort() for type-safe sorting.\n\nInput Format:\n\nFirst line: number of elements n\n\nSecond line: n space-separated numbers\n\nOutput Format:\n\nMedian value",
- "input_spec": "First line: number of elements n\n\nSecond line: n space-separated numbers",
- "output_spec": "Median value",
+ "description": " Generics, Wrapper Classes, Collections - Median Finder\n50\nMedium\nMedian Finder\nProblem Statement:\nWrite a program to find the median of a list of numeric values using wrapper classes and generics. The program must sort the list and find the middle value (or average of two middle values if the list size is even).\nDescription:\nCreate a generic class MedianFinder<T extends Number & Comparable<T>>.\nImplement a method findMedian(List<T> list) to return the median.\nUse Collections.sort() for type-safe sorting.\nInput Format:\nFirst line: number of elements n\nSecond line: n space-separated numbers\nOutput Format:\nMedian value\nSample Input:\n5\n10 20 30 40 50\nSample Output:\nMedian: 30.0\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n91.81\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n4\n15 10 20 25\nOutput\nMedian: 17.5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n4\n15 10 20 25\nOutput\nMedian: 17.5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava, Generics, Wrapper Classes, Collections - Median Finder\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n10 20 30 40 50",
    "output": "Median: 30.0"
+  },
+  {
+   "input": "4\n15 10 20 25",
+   "output": "Median: 17.5"
   }
  ],
  "raw": ""

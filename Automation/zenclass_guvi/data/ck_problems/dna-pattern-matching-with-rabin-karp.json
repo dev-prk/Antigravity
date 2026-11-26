@@ -3,7 +3,7 @@
  "slug": "dna-pattern-matching-with-rabin-karp",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1558. DNA Pattern Matching with Rabin-Karp\n\n80\n\nHard\n\nProblem Statement:\nGiven a DNA sequence consisting of the characters 'A', 'C', 'G', and 'T', and a pattern string of the same character set, find all starting indices in the DNA sequence where the pattern occurs as a substring. Use the Rabin-Karp algorithm for efficient pattern matching.",
+ "description": "ts & Solutions\nSubmissions\n1558\n. \nDNA Pattern Matching with Rabin-Karp\n80\nHard\nProblem Statement:\nGiven a DNA sequence consisting of the characters 'A', 'C', 'G', and 'T', and a pattern string of the same character set, find all starting indices in the DNA sequence where the pattern occurs as a substring. Use the Rabin-Karp algorithm for efficient pattern matching. \nInput Description:\n- The first line contains a string S, the DNA sequence.\n- The second line contains a string P, the pattern to search for. \nOutput Description:\n- Print all starting indices (0-based) where the pattern P is found in S, separated by spaces. If the pattern is not found, print -1. \nSample Input:\nACGTACGTGACG\nACG \nSample Output:\n0 \nExplanation:\nThe pattern \"ACG\" appears in the DNA sequence at indices 0, 4, and 9. \nAccepted \n5\nSubmissions \n7\nAcceptance Rate \n71.43\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nABCDEFGH\nXYZ\nOutput\n-1\nInput\nTTTTTTTT\nTTT\nOutput\n0 1 2 3 4 5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nABCDEFGH\nXYZ\nOutput\n-1\nInput\nTTTTTTTT\nTTT\nOutput\n0 1 2 3 4 5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDNA Pattern Matching with Rabin-Karp\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains a string S, the DNA sequence.\n- The second line contains a string P, the pattern to search for.",
  "output_spec": "- Print all starting indices (0-based) where the pattern P is found in S, separated by spaces. If the pattern is not found, print -1.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "ACGTACGTGACG\nACG",
    "output": "0"
+  },
+  {
+   "input": "ABCDEFGH\nXYZ",
+   "output": "-1"
+  },
+  {
+   "input": "TTTTTTTT\nTTT",
+   "output": "0 1 2 3 4 5"
   }
  ],
  "raw": ""

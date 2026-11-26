@@ -3,14 +3,18 @@
  "slug": "counting-filled-buckets",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n477. Counting Filled Buckets\n\n80\n\nHard  Topics\n\nProblem Statement:\nA man has n buckets. He travels all the bucket and fills the water in bucket which is empty and empty the bucket which is already filled he goes for n times in this manner On first go 1,2,3,4,5,...n On second go 2,4,6,8... On third go 3,6,9... Your task is to develop a suitable algorithm in order to find the number of buckets which are filled with water at the end of last go. NOTE: INITIALLY ASSUME EVERY BUCKET IS EMPTY",
+ "description": "lem\nHints & Solutions\nSubmissions\n477\n. \nCounting Filled Buckets\n80\nHard\nTopics\nProblem Statement:\nA man has n buckets. He travels all the bucket and fills the water in bucket which is empty and empty the bucket which is already filled he goes for n times in this manner On first go 1,2,3,4,5,...n On second go 2,4,6,8... On third go 3,6,9... Your task is to develop a suitable algorithm in order to find the number of buckets which are filled with water at the end of last go. NOTE: INITIALLY ASSUME EVERY BUCKET IS EMPTY \nInput Description:\nFirst line of test case contains a positive number. Which means that there are these many buckets. \nOutput Description:\nPrint the number of buckets which are still having water. \nExplanation:\nOn start every bucket is empty after 1 go 1 2 3 4 are filled with water. On second go 1 and 3 are filled with water 2 and 4 are not. On 3 go 1 is only filled with water. On 4 go 1 and 4 are filled with water \nSample Input:\n4 \nSample Output:\n2 \nAccepted \n689\nSubmissions \n857\nAcceptance Rate \n80.4\n%\nTopics\nmathematics\naptitude\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n2\nInput\n372\nOutput\n19\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n2\nInput\n372\nOutput\n19\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCounting Filled Buckets\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line of test case contains a positive number. Which means that there are these many buckets.",
- "output_spec": "Print the number of buckets which are still having water.",
+ "output_spec": "Print the number of buckets which are still having water. \nExplanation:\nOn start every bucket is empty after 1 go 1 2 3 4 are filled with water. On second go 1 and 3 are filled with water 2 and 4 are not. On 3 go 1 is only filled with water. On 4 go 1 and 4 are filled with water",
  "constraints": "",
  "samples": [
   {
    "input": "4",
    "output": "2"
+  },
+  {
+   "input": "372",
+   "output": "19"
   }
  ],
  "raw": ""

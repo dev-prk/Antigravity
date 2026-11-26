@@ -3,7 +3,7 @@
  "slug": "dynamic-array-copy-and-memory-management",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1229. Dynamic Array Copy and Memory Management\n\n50\n\nMedium\n\nProblem Statement:\nWrite a C program that reads a series of integers into a dynamically allocated array. After reading the integers, the program should create a copy of the array, double the size of the original array, and then replace the original array with this new array. The program should print both the original and copied arrays before deallocating the memory. Ensure that you avoid memory leaks by freeing allocated memory appropriately.\nThe program should:\nDynamically allocate memory for an array to store integers.\nCopy the contents of the original array into a new, larger array.\nPrint both the original and the new array.\nEnsure proper memory management by freeing all dynamically allocated memory.",
+ "description": "olutions\nSubmissions\n1229\n. \nDynamic Array Copy and Memory Management\n50\nMedium\nProblem Statement:\nWrite a C program that reads a series of integers into a dynamically allocated array. After reading the integers, the program should create a copy of the array, double the size of the original array, and then replace the original array with this new array. The program should print both the original and copied arrays before deallocating the memory. Ensure that you avoid memory leaks by freeing allocated memory appropriately.\nThe program should:\nDynamically allocate memory for an array to store integers.\nCopy the contents of the original array into a new, larger array.\nPrint both the original and the new array.\nEnsure proper memory management by freeing all dynamically allocated memory. \nInput Description:\nAn integer n, the number of elements in the array.\nn integers to populate the array. \nOutput Description:\nPrint the original array.\nPrint the copied array. \nSample Input:\n3\n1 2 3 \nSample Output:\nOriginal array: 1 2 3\nCopied array: 1 2 3 0 0 0 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.53\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 3\nOutput\nOriginal array: 1 2 3 \nCopied array: 1 2 3 0 0 0 \nInput\n4\n4 5 6 7\nOutput\nOriginal array: 4 5 6 7 \nCopied array: 4 5 6 7 0 0 0 0 \nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n1 2 3\nOutput\nOriginal array: 1 2 3 \nCopied array: 1 2 3 0 0 0 \nInput\n4\n4 5 6 7\nOutput\nOriginal array: 4 5 6 7 \nCopied array: 4 5 6 7 0 0 0 0 \nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDynamic Array Copy and Memory Management\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView S",
  "input_spec": "An integer n, the number of elements in the array.\nn integers to populate the array.",
  "output_spec": "Print the original array.\nPrint the copied array.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3\n1 2 3",
    "output": "Original array: 1 2 3\nCopied array: 1 2 3 0 0 0"
+  },
+  {
+   "input": "3\n1 2 3",
+   "output": "Original array: 1 2 3 \nCopied array: 1 2 3 0 0 0"
+  },
+  {
+   "input": "4\n4 5 6 7",
+   "output": "Original array: 4 5 6 7 \nCopied array: 4 5 6 7 0 0 0 0"
   }
  ],
  "raw": ""

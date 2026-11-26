@@ -1,0 +1,1 @@
+{"slug": "java-stream-api-word-filter", "lang": "PYTHON 3", "code": "4\n     apple\n     banana\n     pear\n     fig\n", "local_ok": false, "err": "SyntaxError: unexpected indent (<sol>, line 2)"}

@@ -3,14 +3,18 @@
  "slug": "c-selection-sort-strings-sorting",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1617. C, Selection Sort, Strings, Sorting\n\n70\n\nHard\n\nProblem Statement:  Sort Words by Length Using Selection Sort\n\nWrite a program to sort a list of words based on their length using Selection Sort.\nIf two words have the same length, maintain lexicographic order.\n\nDescription\n\nInput contains n words.\n\nSort by word length in ascending order.\n\nIf lengths match, compare alphabetically.\n\nInput Format\n\nFirst line: Integer n\n\nNext n lines: One word per line\n\nOutput Format\n\nSorted list of words.",
- "input_spec": "contains n words.\n\nSort by word length in ascending order.\n\nIf lengths match, compare alphabetically.\n\nInput Format\n\nFirst line: Integer n\n\nNext n lines: One word per line",
- "output_spec": "Sorted list of words.",
+ "description": "nts & Solutions\nSubmissions\n1617\n. \nC, Selection Sort, Strings, Sorting\n70\nHard\nProblem Statement:\n Sort Words by Length Using Selection Sort \nWrite a program to sort a list of words based on their length using Selection Sort.\nIf two words have the same length, maintain lexicographic order.\nDescription\nInput contains n words.\nSort by word length in ascending order.\nIf lengths match, compare alphabetically.\nInput Format\nFirst line: Integer n\nNext n lines: One word per line\nOutput Format\nSorted list of words.\nSample Input\n5\napple\nis\nbanana\ncat\ndog\nSample Output\nis\ncat\ndog\napple\nbanana\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n93.6\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n4\nbat\ncat\nant\ndog\nOutput\nant\nbat\ncat\ndog\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n4\nbat\ncat\nant\ndog\nOutput\nant\nbat\ncat\ndog\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nC, Selection Sort, Strings, Sorting\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\napple\nis\nbanana\ncat\ndog",
    "output": "is\ncat\ndog\napple\nbanana"
+  },
+  {
+   "input": "4\nbat\ncat\nant\ndog",
+   "output": "ant\nbat\ncat\ndog"
   }
  ],
  "raw": ""

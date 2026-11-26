@@ -1,0 +1,25 @@
+{
+ "title": "887. Half Pyramid Number Pattern-2",
+ "slug": "half-pyramid-number-pattern-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "nts & Solutions\nSubmissions\n887\n. \nHalf Pyramid Number Pattern-2\n30\nEasy\nTopics\nProblem Statement:\nWrite a code to generate a half pyramid number pattern. \nInput Description:\nGiven an even integer R indicates number of rows.Where 1<=R<=100 \nOutput Description:\nPrint the number half pyramid pattern with the size R. \nExplanation:\nForm the given input R=5, print form 1 to 5, next line print for 4 to 1 and the third line 1 to 3, then fourth line 12 and last line end with 1 always. Alternate rows indicates in reverse the numbers. \nSample Input:\n5 \nSample Output:\n12345 \n4321 \n123 \n21 \n1 \nAccepted \n1k\nSubmissions \n2k\nAcceptance Rate \n68.7\n%\nTopics\npatterns\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n12345\n4321\n123\n21\n1\nInput\n10\nOutput\n12345678910\n987654321\n12345678\n7654321\n123456\n54321\n1234\n321\n12\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n12345\n4321\n123\n21\n1\nInput\n10\nOutput\n12345678910\n987654321\n12345678\n7654321\n123456\n54321\n1234\n321\n12\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nHalf Pyramid Number Pattern-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Given an even integer R indicates number of rows.Where 1<=R<=100",
+ "output_spec": "Print the number half pyramid pattern with the size R. \nExplanation:\nForm the given input R=5, print form 1 to 5, next line print for 4 to 1 and the third line 1 to 3, then fourth line 12 and last line end with 1 always. Alternate rows indicates in reverse the numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5",
+   "output": "12345 \n4321 \n123 \n21 \n1"
+  },
+  {
+   "input": "5",
+   "output": "12345\n4321\n123\n21\n1"
+  },
+  {
+   "input": "10",
+   "output": "12345678910\n987654321\n12345678\n7654321\n123456\n54321\n1234\n321\n12\n1"
+  }
+ ],
+ "raw": ""
+}

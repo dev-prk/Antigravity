@@ -1,0 +1,25 @@
+{
+ "title": "1182. Package Shipment Cost Calculator",
+ "slug": "package-shipment-cost-calculator",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1182\n. \nPackage Shipment Cost Calculator\n20\nEasy\nProblem Statement:\nYou are developing a system for a logistics company that needs to track the shipments of packages. The system will categorize packages based on their weight and determine the cost of shipment based on distance and weight category. The company charges different rates for domestic and international shipments. \nYou need to implement different types of functions to calculate:\nWeight Category: This function will bascially determine the weight category of the package.\nCost Calculation: This function calculates the shipment cost based on the weight category and distance.\nCost Display: This function displays the final cost along with the details of the shipment.\nWeight Categories:\nLightweight: 0 < weight \u2264 5 kg\nStandard: 5 < weight \u2264 20 kg\nHeavy: 20 < weight \u2264 50 kg\nOverweight: weight > 50 kg\nRate Table (per km):\nDomestic:\nLightweight: $1.00\nStandard: $1.50\nHeavy: $2.00\nOverweight: $3.00\nInternational:\nLightweight: $2.00\nStandard: $3.00\nHeavy: $4.00\nOverweight: $6.00 \nInput Description:\nThe first line will contain an integer N which represents the number of packages.\nThe next N lines contain:\nA float W representing the weight of the package.\nAn integer D will represent the distance in kilometers.\nA string T will represent the type of shipment (\"domestic\" or \"international\"). \nOutput Description:\nFor each package, output the weight category, shipment type, and the calculated cost, each on a new line. \nSample Input:\n3\n4.5 1000 domestic\n15.0 2000 international\n55.0 5000 domestic \nSample Output:\nLightweight\ndomestic\n1000.00\nStandard\ninternational\n6000.00\nOverweight\ndomestic\n15000.00 \nExplanation:\nThe first package is categorized as Lightweight and is domestic, so the rate is $1.00 per km. The cost is 1000 * 1.00 = 1000.00.\nThe second package is categorized as Standard and is international, so the rate is $3.00 per km. The cost is 2000 * 3.00 = 6000.00.\nThe third package is categorized as Overweight and is domestic, so the rate is $3.00 per km. The cost is 5000 * 3.00 = 15000.00. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.77\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n10.0 1500 domestic\n25.0 3000 international\nOutput\nStandard\ndomestic\n2250.00\nHeavy\ninternational\n12000.00\nInput\n1\n7.5 5000 international\nOutput\nStandard\ninternational\n15000.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n10.0 1500 domestic\n25.0 3000 international\nOutput\nStandard\ndomestic\n2250.00\nHeavy\ninternational\n12000.00\nInput\n1\n7.5 5000 international\nOutput\nStandard\ninternational\n15000.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense",
+ "input_spec": "The first line will contain an integer N which represents the number of packages.\nThe next N lines contain:\nA float W representing the weight of the package.\nAn integer D will represent the distance in kilometers.\nA string T will represent the type of shipment (\"domestic\" or \"international\").",
+ "output_spec": "For each package, output the weight category, shipment type, and the calculated cost, each on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n4.5 1000 domestic\n15.0 2000 international\n55.0 5000 domestic",
+   "output": "Lightweight\ndomestic\n1000.00\nStandard\ninternational\n6000.00\nOverweight\ndomestic\n15000.00"
+  },
+  {
+   "input": "2\n10.0 1500 domestic\n25.0 3000 international",
+   "output": "Standard\ndomestic\n2250.00\nHeavy\ninternational\n12000.00"
+  },
+  {
+   "input": "1\n7.5 5000 international",
+   "output": "Standard\ninternational\n15000.00"
+  }
+ ],
+ "raw": ""
+}

@@ -3,14 +3,22 @@
  "slug": "finding-the-power-of-a-number-using-recursion",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2156. Finding the Power of a Number Using Recursion\n\n90\n\nHard\n\nProblem Statement\nRead a base and an exponent and print the base raised to the exponent, using a recursive function.\n\nDescription\nRead two integers base and exp from input. Write a recursive function power that takes two integer parameters. If exp is 0, the function returns 1 (this is the base case). Otherwise, it returns base multiplied by the result of calling itself with exp - 1. Call the function from main() and print the result. No loop should be used, and the result is guaranteed to fit in an int.",
- "input_spec": ". Write a recursive function power that takes two integer parameters. If exp is 0, the function returns 1 (this is the base case). Otherwise, it returns base multiplied by the result of calling itself with exp - 1. Call the function from main() and print the result. No loop should be used, and the result is guaranteed to fit in an int.\n\nInput Description\nTwo integers base and exp separated by a space (exp >= 0).",
+ "description": "tions\nSubmissions\n2156\n. \nFinding the Power of a Number Using Recursion\n90\nHard\nProblem Statement\nRead a base and an exponent and print the base raised to the exponent, using a recursive function.\nDescription\nRead two integers base and exp from input. Write a recursive function power that takes two integer parameters. If exp is 0, the function returns 1 (this is the base case). Otherwise, it returns base multiplied by the result of calling itself with exp - 1. Call the function from main() and print the result. No loop should be used, and the result is guaranteed to fit in an int.\nInput Description\nTwo integers base and exp separated by a space (exp >= 0).\nOutput Description\nPrint the value of base raised to the power exp.\nSample Input\n2 5\nSample Output\n32\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 5\nOutput\n32\nInput\n3 4\nOutput\n81\nInput\n7 0\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 5\nOutput\n32\nInput\n3 4\nOutput\n81\nInput\n7 0\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Power of a Number Using Recursion\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers base and exp separated by a space (exp >= 0).",
  "output_spec": "Print the value of base raised to the power exp.",
  "constraints": "",
  "samples": [
   {
    "input": "2 5",
    "output": "32"
+  },
+  {
+   "input": "3 4",
+   "output": "81"
+  },
+  {
+   "input": "7 0",
+   "output": "1"
   }
  ],
  "raw": ""

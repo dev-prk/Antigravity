@@ -3,13 +3,21 @@
  "slug": "checking-whether-a-number-is-a-palindrome-using-a-function",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2202.  Checking Whether a Number Is a Palindrome Using a Function\n\n60\n\nMedium\n\nProblem Statement\nRead an integer and determine whether it reads the same forward and backward, using a function that returns 1 or 0.\n\nDescription\nA palindrome number is a number that is equal to its own reverse, for example 121. Read a positive integer num from input. Write a function isPalindrome that takes an integer parameter, builds the reverse of the number using a while loop (take the last digit with % 10, add it to the reverse after multiplying the reverse by 10, and remove the digit using / 10), and returns 1 if the reverse equals the original number, otherwise 0. In main(), print \"Palindrome\" or \"Not Palindrome\" based on the returned value.",
- "input_spec": ". Write a function isPalindrome that takes an integer parameter, builds the reverse of the number using a while loop (take the last digit with % 10, add it to the reverse after multiplying the reverse by 10, and remove the digit using / 10), and returns 1 if the reverse equals the original number, otherwise 0. In main(), print \"Palindrome\" or \"Not Palindrome\" based on the returned value.\n\nInput Description\nA single positive integer num.",
+ "description": "s\n2202\n. \n Checking Whether a Number Is a Palindrome Using a Function\n60\nMedium\nProblem Statement\nRead an integer and determine whether it reads the same forward and backward, using a function that returns 1 or 0.\nDescription\nA palindrome number is a number that is equal to its own reverse, for example 121. Read a positive integer num from input. Write a function isPalindrome that takes an integer parameter, builds the reverse of the number using a while loop (take the last digit with % 10, add it to the reverse after multiplying the reverse by 10, and remove the digit using / 10), and returns 1 if the reverse equals the original number, otherwise 0. In main(), print \"Palindrome\" or \"Not Palindrome\" based on the returned value.\nInput Description\nA single positive integer num.\nOutput Description\nPrint \"Palindrome\" if num is a palindrome number, otherwise print \"Not Palindrome\".\nSample Input\n121\nSample Output\nPalindrome\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n121\nOutput\nPalindrome\nInput\n123\nOutput\nNot Palindrome\nInput\n1221\nOutput\nPalindrome\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n121\nOutput\nPalindrome\nInput\n123\nOutput\nNot Palindrome\nInput\n1221\nOutput\nPalindrome\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\n Checking Whether a Number Is a Palindrome Using a Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single positive integer num.",
  "output_spec": "Print \"Palindrome\" if num is a palindrome number, otherwise print \"Not Palindrome\".",
  "constraints": "",
  "samples": [
   {
    "input": "121",
+   "output": "Palindrome"
+  },
+  {
+   "input": "123",
+   "output": "Not Palindrome"
+  },
+  {
+   "input": "1221",
    "output": "Palindrome"
   }
  ],

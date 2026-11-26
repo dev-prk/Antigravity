@@ -1,0 +1,21 @@
+{
+ "title": "403. Min Coins for Odd-Even Balance",
+ "slug": "min-coins-for-odd-even-balance",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ts & Solutions\nSubmissions\n403\n. \nMin Coins for Odd-Even Balance\n30\nEasy\nTopics\nProblem Statement:\nYou have an array of integers of length N, N is even. You can change an integer to 1 using 1 coin, an integer to 2 using 2 coins and so on, an integer to n using n coins. Find the minimum number of coins required to convert the array such that it contains N/2 odd numbers and N/2 even numbers. \nInput Description:\nThe first line contains an integer N, denoting the size of the array.The next line contains N space separated integers. \nOutput Description:\nPrint the minimum number of coins. \nSample Input:\n10\n1 2 3 4 5 6 7 8 9 10 \nExplanation:\nThere are 5 odd numbers and 5 even numbers already. So no need to spend any coins. \nAccepted \n552\nSubmissions \n896\nAcceptance Rate \n61.61\n%\nTopics\nhashing\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n10 12 14 16\nOutput\n2\nInput\n4\n9 7 9 2\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n10 12 14 16\nOutput\n2\nInput\n4\n9 7 9 2\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Coins for Odd-Even Balance\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains an integer N, denoting the size of the array.The next line contains N space separated integers.",
+ "output_spec": "Print the minimum number of coins.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n10 12 14 16",
+   "output": "2"
+  },
+  {
+   "input": "4\n9 7 9 2",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

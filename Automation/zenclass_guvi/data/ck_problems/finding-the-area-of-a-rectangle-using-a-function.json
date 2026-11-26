@@ -1,0 +1,25 @@
+{
+ "title": "2147. Finding the Area of a Rectangle Using a Function",
+ "slug": "finding-the-area-of-a-rectangle-using-a-function",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ns\nSubmissions\n2147\n. \nFinding the Area of a Rectangle Using a Function\n30\nEasy\nProblem Statement\nRead the length and breadth of a rectangle and print its area, by calculating the area inside a function that takes two parameters.\nDescription\nRead two integers length and breadth from input. Write a function rectangleArea that takes two integer parameters, multiplies them, and returns the area. Call this function from main() by passing the two values, and print the returned area.\nInput Description\nTwo integers length and breadth separated by a space.\nOutput Description\nPrint the area of the rectangle.\nSample Input\n5 4\nSample Output\n20\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 4\nOutput\n20\nInput\n10 10\nOutput\n100\nInput\n7 1\nOutput\n7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 4\nOutput\n20\nInput\n10 10\nOutput\n100\nInput\n7 1\nOutput\n7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Area of a Rectangle Using a Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers length and breadth separated by a space.",
+ "output_spec": "Print the area of the rectangle.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 4",
+   "output": "20"
+  },
+  {
+   "input": "10 10",
+   "output": "100"
+  },
+  {
+   "input": "7 1",
+   "output": "7"
+  }
+ ],
+ "raw": ""
+}

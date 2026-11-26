@@ -1,0 +1,1 @@
+{"code": "#include <stdio.h>\n\nint main(void) {\n    int x;\n    if (scanf(\"%d\", &x) != 1) return 0;\n\n    int a = x++;   // post-increment: use then increment\n    int b = ++x;   // pre-increment: increment then use\n\n    printf(\"%d\\n%d\\n%d\\n\", a, b, x);\n    return 0;\n}\n", "local_ok": true, "slug": "exploring-pre-and-post-increment-operators", "lang": "C"}

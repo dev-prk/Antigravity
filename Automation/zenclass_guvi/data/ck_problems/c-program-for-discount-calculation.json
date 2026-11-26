@@ -1,0 +1,21 @@
+{
+ "title": "1237. C Program for Discount Calculation",
+ "slug": "c-program-for-discount-calculation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Solutions\nSubmissions\n1237\n. \nC Program for Discount Calculation\n10\nEasy\nTopics\nProblem Statement:\nA store manager wants a program that calculates discounts using arithmetic operators based on the customer's total purchase amount.\nWrite a C program that takes the total purchase amount as input and calculates the discount based on the following rules:\nIf the amount is less than 1000, no discount.\nIf the amount is between 1000 and 5000, apply a 10% discount.\nIf the amount exceeds 5000, apply a 20% discount. \nInput Description:\nThe input consists of the total purchase amount. \nOutput Description:\nThe output should display the original amount, the calculated discount, and the final amount after applying the discount. \nSample Input:\n500 \nSample Output:\nOriginal Amount: 500.00\nDiscount: 0.00\nFinal Amount: 500.00 \nAccepted \n318\nSubmissions \n372\nAcceptance Rate \n85.48\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n500\nOutput\nOriginal Amount: 500.00\nDiscount: 0.00\nFinal Amount: 500.00\nInput\n1500\nOutput\nOriginal Amount: 1500.00\nDiscount: 150.00\nFinal Amount: 1350.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n500\nOutput\nOriginal Amount: 500.00\nDiscount: 0.00\nFinal Amount: 500.00\nInput\n1500\nOutput\nOriginal Amount: 1500.00\nDiscount: 150.00\nFinal Amount: 1350.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nC Program for Discount Calculation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of the total purchase amount.",
+ "output_spec": "The output should display the original amount, the calculated discount, and the final amount after applying the discount.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "500",
+   "output": "Original Amount: 500.00\nDiscount: 0.00\nFinal Amount: 500.00"
+  },
+  {
+   "input": "1500",
+   "output": "Original Amount: 1500.00\nDiscount: 150.00\nFinal Amount: 1350.00"
+  }
+ ],
+ "raw": ""
+}

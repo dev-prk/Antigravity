@@ -3,7 +3,7 @@
  "slug": "computing-a-weighted-average-with-explicit-type-casting",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2100. Computing a Weighted Average with Explicit Type Casting\n\n85\n\nHard\n\nProblem Statement\nRead three marks and their weights, then compute the weighted average as a precise float using explicit type casting and compound assignment.\nDescription\nRead three integer marks (m1, m2, m3) and three integer weights (w1, w2, w3). Compute the weighted sum using the compound assignment operator (+=), then compute the weighted average by casting the weighted sum to float before dividing by the sum of the weights (also cast to float), so no precision is lost to integer division. Print the weighted average with two decimal places.",
+ "description": "issions\n2100\n. \nComputing a Weighted Average with Explicit Type Casting\n85\nHard\nProblem Statement\nRead three marks and their weights, then compute the weighted average as a precise float using explicit type casting and compound assignment.\nDescription\nRead three integer marks (m1, m2, m3) and three integer weights (w1, w2, w3). Compute the weighted sum using the compound assignment operator (+=), then compute the weighted average by casting the weighted sum to float before dividing by the sum of the weights (also cast to float), so no precision is lost to integer division. Print the weighted average with two decimal places.\nInput Description\nSix integers: m1 m2 m3 w1 w2 w3, separated by spaces.\nOutput Description\nPrint the weighted average, rounded to two decimal places.\nSample Input\n80 90 70 1 2 1\nSample Output\n82.50\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n80 90 70 1 2 1\nOutput\n82.50\nInput\n60 60 60 1 1 1\nOutput\n60.00\nInput\n100 50 0 2 1 1\nOutput\n62.50\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n80 90 70 1 2 1\nOutput\n82.50\nInput\n60 60 60 1 1 1\nOutput\n60.00\nInput\n100 50 0 2 1 1\nOutput\n62.50\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nComputing a Weighted Average with Explicit Type Casting\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Six integers: m1 m2 m3 w1 w2 w3, separated by spaces.",
  "output_spec": "Print the weighted average, rounded to two decimal places.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "80 90 70 1 2 1",
    "output": "82.50"
+  },
+  {
+   "input": "60 60 60 1 1 1",
+   "output": "60.00"
+  },
+  {
+   "input": "100 50 0 2 1 1",
+   "output": "62.50"
   }
  ],
  "raw": ""

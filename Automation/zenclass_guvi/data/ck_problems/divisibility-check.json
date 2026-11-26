@@ -1,0 +1,25 @@
+{
+ "title": "983. Divisibility Check",
+ "slug": "divisibility-check",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n983\n. \nDivisibility Check\n30\nEasy\nTopics\nProblem Statement:\nGiven a number n,a,b and c Find the number n is divisible by a,b,c if divisible print yes else print no \nInput Description:\nGiven number n,a,b and c separated by a space\n0<n<10000<a<10000<b<10000<c<1000 \nOutput Description:\nPrint yes or no \nExplanation:\nThe number 3(n) is not divisible by 5(a) and 8(b). So, no is printed as output \nSample Input:\n3\n5 8 9 \nSample Output:\nno \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n91.03\n%\nTopics\nzen\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 5 8 9\nOutput\nno\nInput\n80 2 8 10\nOutput\nyes\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 5 8 9\nOutput\nno\nInput\n80 2 8 10\nOutput\nyes\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDivisibility Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Given number n,a,b and c separated by a space\n0<n<10000<a<10000<b<10000<c<1000",
+ "output_spec": "Print yes or no \nExplanation:\nThe number 3(n) is not divisible by 5(a) and 8(b). So, no is printed as output",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n5 8 9",
+   "output": "no"
+  },
+  {
+   "input": "3 5 8 9",
+   "output": "no"
+  },
+  {
+   "input": "80 2 8 10",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

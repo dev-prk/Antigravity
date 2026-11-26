@@ -1,0 +1,21 @@
+{
+ "title": "479. Memory Test Algorithm",
+ "slug": "memory-test-algorithm",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nHints & Solutions\nSubmissions\n479\n. \nMemory Test Algorithm\n20\nEasy\nTopics\nProblem Statement:\nShreya is a brilliant girl. She likes to memorize the numbers. These numbers will be shown to her. As an examiner develop an algorithm to test her memory. \nCONSTRAINTS\n1<=Y,N,T<=1000 \nInput Description:\nFirst line contains no. of test cases(Y). Next line contains a number N. Next line contains n space separated numbers\nNext line contains a number T denoting the number of questions asked from you regarding the given array.\nNext line contains T space separated numbers. \nOutput Description:\nPrint the occurrence of each number if present else \u201cNOT PRESENT\u201d \nExplanation:\nEXPLANATION: 1 IS REPEATED 3 TIMES,2 also 3 TIMES\nAnd 3 has occurred single time 0 and 5 are not present \nSample Input:\n10\n1 1 1 2 2 2 3 8 9 7\n5\n1 2 3 0 5 \nSample Output:\n3 3 1 Not Present Not Present \nAccepted \n4k\nSubmissions \n6k\nAcceptance Rate \n67.65\n%\nTopics\narray\nlinkedlist\nsorting\nmathematics\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n1 1 1 2 2 2 3 8 9 7\n5\n1 2 3 0 5\nOutput\n3 3 1 Not Present Not Present\nInput\n15\n1 2 3 4 5 6 7 8 9 12 13 14 15 16 17\n5\n1 23 21 6 8\nOutput\n1 Not Present Not Present 1 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n1 1 1 2 2 2 3 8 9 7\n5\n1 2 3 0 5\nOutput\n3 3 1 Not Present Not Present\nInput\n15\n1 2 3 4 5 6 7 8 9 12 13 14 15 16 17\n5\n1 23 21 6 8\nOutput\n1 Not Present Not Present 1 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMemory Test Algorithm\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains no. of test cases(Y). Next line contains a number N. Next line contains n space separated numbers\nNext line contains a number T denoting the number of questions asked from you regarding the given array.\nNext line contains T space separated numbers.",
+ "output_spec": "Print the occurrence of each number if present else \u201cNOT PRESENT\u201d \nExplanation:\nEXPLANATION: 1 IS REPEATED 3 TIMES,2 also 3 TIMES\nAnd 3 has occurred single time 0 and 5 are not present",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "10\n1 1 1 2 2 2 3 8 9 7\n5\n1 2 3 0 5",
+   "output": "3 3 1 Not Present Not Present"
+  },
+  {
+   "input": "15\n1 2 3 4 5 6 7 8 9 12 13 14 15 16 17\n5\n1 23 21 6 8",
+   "output": "1 Not Present Not Present 1 1"
+  }
+ ],
+ "raw": ""
+}

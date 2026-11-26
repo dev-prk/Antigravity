@@ -1,0 +1,25 @@
+{
+ "title": "731. Vicky's Weekly Average Speed",
+ "slug": "vicky-s-weekly-average-speed",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n731\n. \nVicky's Weekly Average Speed\n10\nEasy\nTopics\nProblem Statement:\nVicky is a bike rider. He studies Bsc. Maths in ABC college which functions on all the days except the two weekend days. His lives 40 kms away from his college, everyday the traffic varies and hence his average speed of driving also varies from day to day. You are his friend and you decide tgo calculate vicky's average speed of riding in a week while going to college. You fit a device in his bike whcih gives you the average speed of his bike everyday. Your task is to find out the average speed of his riding during the week. \nInput Description:\nYou will be given with the average speeds of each day \nOutput Description:\nOne single number - average speed of Vicky \nSample Input:\n45.1 36.2 81.3 23.5 45 \nSample Output:\n46.22 \nExplanation:\nAverage speed of Vicky \nAccepted \n521\nSubmissions \n1k\nAcceptance Rate \n49.29\n%\nTopics\narrays, list and tuples - tf\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n72.43 23.61 62.72 61.04 72.3\nOutput\n58.42\nInput\n24.2+54.3+59.4+59+89\nOutput\n57.18\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n72.43 23.61 62.72 61.04 72.3\nOutput\n58.42\nInput\n24.2+54.3+59.4+59+89\nOutput\n57.18\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nVicky's Weekly Average Speed\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You will be given with the average speeds of each day",
+ "output_spec": "One single number - average speed of Vicky",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "45.1 36.2 81.3 23.5 45",
+   "output": "46.22"
+  },
+  {
+   "input": "72.43 23.61 62.72 61.04 72.3",
+   "output": "58.42"
+  },
+  {
+   "input": "24.2+54.3+59.4+59+89",
+   "output": "57.18"
+  }
+ ],
+ "raw": ""
+}

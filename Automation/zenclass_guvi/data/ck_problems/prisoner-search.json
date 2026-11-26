@@ -1,0 +1,25 @@
+{
+ "title": "492. Prisoner Search",
+ "slug": "prisoner-search",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nProblem\nHints & Solutions\nSubmissions\n492\n. \nPrisoner Search\n30\nEasy\nTopics\nProblem Statement:\nThe prison warden at Central jail is given a tip-off that a prison inmate is planning an escape. The warden suspects a particular prisoner of planning an escape and wants to find out if he/she is present in his/her cell. The layout of the prison is modelled in a matrix with every cell of the matrix representing a prison cell. The matrix is filled with the prisoner ids at the corresponding cells. Find out whether the person the warden suspects is present in the prison or not. \nInput Description:\nFirst line contains the dimensions of the prison matrix, followed by the ids of prisoners as elements of the matrix. The third line contains the id to be searched. \nOutput Description:\n(yes/no) whether the given element is present in the matrix or not. \nExplanation:\nPrisoner with id 11 is not present in the prison and has substituted some other prisoner in his cell. \nSample Input:\n2 5\n2 3 0 7 1 5 3 4 1 8\n11 \nSample Output:\nno \nAccepted \n3k\nSubmissions \n4k\nAcceptance Rate \n88.23\n%\nTopics\nsearching\narray\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3 4 5 6 7 8 9\n10\nOutput\nno\nInput\n1 10\n2 3 0 7 1 5 3 4 1 8\n2\nOutput\nyes\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 2 3 4 5 6 7 8 9\n10\nOutput\nno\nInput\n1 10\n2 3 0 7 1 5 3 4 1 8\n2\nOutput\nyes\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrisoner Search\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains the dimensions of the prison matrix, followed by the ids of prisoners as elements of the matrix. The third line contains the id to be searched.",
+ "output_spec": "(yes/no) whether the given element is present in the matrix or not. \nExplanation:\nPrisoner with id 11 is not present in the prison and has substituted some other prisoner in his cell.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 5\n2 3 0 7 1 5 3 4 1 8\n11",
+   "output": "no"
+  },
+  {
+   "input": "3 3\n1 2 3 4 5 6 7 8 9\n10",
+   "output": "no"
+  },
+  {
+   "input": "1 10\n2 3 0 7 1 5 3 4 1 8\n2",
+   "output": "yes"
+  }
+ ],
+ "raw": ""
+}

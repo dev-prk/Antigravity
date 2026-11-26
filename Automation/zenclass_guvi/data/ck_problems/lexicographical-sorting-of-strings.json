@@ -1,0 +1,25 @@
+{
+ "title": "508. Lexicographical Sorting of Strings",
+ "slug": "lexicographical-sorting-of-strings",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " Solutions\nSubmissions\n508\n. \nLexicographical Sorting of Strings\n20\nEasy\nTopics\nProblem Statement:\nRia is a 5 year old girl. Her mother wants to teach her how to sort words in the same order that they appear in a dictionary. She decides to write a program to sort a given set of strings based on their alphabetical order. Help Ria's mother to complete the program. \nInput Description:\nA set of N strings \nOutput Description:\nAlphabetically sorted set of strings \nSample Input:\n3\nInfinityWar EndGame Avengers \nSample Output:\nAvengers EndGame InfinityWar \nExplanation:\nThe strings are sorted in alphabetical order.\nAccepted \n8k\nSubmissions \n9k\nAcceptance Rate \n87.83\n%\nTopics\nsorting\narray\nstrings\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nguvi online training\nOutput\nguvi online training\nInput\n2\nsboa jc\nOutput\njc sboa\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nguvi online training\nOutput\nguvi online training\nInput\n2\nsboa jc\nOutput\njc sboa\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLexicographical Sorting of Strings\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A set of N strings",
+ "output_spec": "Alphabetically sorted set of strings",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\nInfinityWar EndGame Avengers",
+   "output": "Avengers EndGame InfinityWar"
+  },
+  {
+   "input": "3\nguvi online training",
+   "output": "guvi online training"
+  },
+  {
+   "input": "2\nsboa jc",
+   "output": "jc sboa"
+  }
+ ],
+ "raw": ""
+}

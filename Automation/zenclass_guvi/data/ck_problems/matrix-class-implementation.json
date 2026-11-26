@@ -1,0 +1,21 @@
+{
+ "title": "964. Matrix Class Implementation",
+ "slug": "matrix-class-implementation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nHints & Solutions\nSubmissions\n964\n. \nMatrix Class Implementation\n10\nEasy\nProblem Statement:\nYou are required to implement a class called 'Matrix' containing a constructor that initializes the number of rows and the number of columns of a new Matrix object. The Matrix class should have the following methods: \n- print_rows(): Print the number of rows of the matrix.\n- print_cols(): Print the number of columns of the matrix.\n- print_elements(): Print the elements of the matrix in the form of a 2D array. \nIf the input is invalid, print 'invalid'. \nInput Description:\nThe input consists of a single line in the format rowsxcols total_elements, where rows and cols are integers representing the number of rows and columns of the matrix respectively, and total_elements is the total number of elements in the matrix. This is followed by the elements of the matrix, each element separated by a space. \nOutput Description:\nOutput the number of rows and columns of the matrix on separate lines, followed by the elements of the matrix in the form of a 2D array. \nSample Input:\n3x3 9\n1 2 3\n4 5 6\n7 8 9 \nSample Output:\n3\n3\n1 2 3\n4 5 6\n7 8 9 \nAccepted \n562\nSubmissions \n843\nAcceptance Rate \n66.67\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3x3 9\n1 2 3\n4 5 6\n7 8 9\nOutput\n3\n3\n1 2 3\n4 5 6\n7 8 9\nInput\n2x4 8\n1 2 3 4\n5 6 7 8\nOutput\n2\n4\n1 2 3 4\n5 6 7 8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3x3 9\n1 2 3\n4 5 6\n7 8 9\nOutput\n3\n3\n1 2 3\n4 5 6\n7 8 9\nInput\n2x4 8\n1 2 3 4\n5 6 7 8\nOutput\n2\n4\n1 2 3 4\n5 6 7 8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMatrix Class Implementation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView ",
+ "input_spec": "The input consists of a single line in the format rowsxcols total_elements, where rows and cols are integers representing the number of rows and columns of the matrix respectively, and total_elements is the total number of elements in the matrix. This is followed by the elements of the matrix, each element separated by a space.",
+ "output_spec": "Output the number of rows and columns of the matrix on separate lines, followed by the elements of the matrix in the form of a 2D array.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3x3 9\n1 2 3\n4 5 6\n7 8 9",
+   "output": "3\n3\n1 2 3\n4 5 6\n7 8 9"
+  },
+  {
+   "input": "2x4 8\n1 2 3 4\n5 6 7 8",
+   "output": "2\n4\n1 2 3 4\n5 6 7 8"
+  }
+ ],
+ "raw": ""
+}

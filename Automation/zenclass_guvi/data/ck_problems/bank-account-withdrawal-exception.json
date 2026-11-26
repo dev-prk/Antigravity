@@ -1,0 +1,21 @@
+{
+ "title": "1169. Bank Account Withdrawal Exception",
+ "slug": "bank-account-withdrawal-exception",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n1169\n. \nBank Account Withdrawal Exception\n20\nEasy\nProblem Statement:\nYou are designing a banking application where users can withdraw money from their account. Implement a custom exception that is thrown if a withdrawal amount exceeds the account balance. Create a custom exception named InsufficientFundsException that extends Exception. This exception should be thrown if a withdrawal attempt exceeds the account balance. The BankAccount class should handle this exception and provide appropriate feedback. \nInput Description:\nThe initial balance of the account (a floating-point number).\nThe withdrawal amount (a floating-point number). \nOutput Description:\nIf the withdrawal amount is valid, output \"Withdrawal successful. Remaining balance: [amount].\"\nIf the withdrawal amount exceeds the balance, output \"Insufficient funds: [error details].\" \nSample Input 1:\n500\n600 \nSample Output 1:\nInsufficient funds: Withdrawal exceeds balance. \nSample Input 2:\n200\n200 \nSample Output 2:\nWithdrawal successful. Remaining balance: 0.0\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.23\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n500\n600\nOutput\nInsufficient funds: Withdrawal exceeds balance.\nInput\n1000\n500\nOutput\nWithdrawal successful. Remaining balance: 500.0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n500\n600\nOutput\nInsufficient funds: Withdrawal exceeds balance.\nInput\n1000\n500\nOutput\nWithdrawal successful. Remaining balance: 500.0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBank Account Withdrawal Exception\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTe",
+ "input_spec": "The initial balance of the account (a floating-point number).\nThe withdrawal amount (a floating-point number).",
+ "output_spec": "If the withdrawal amount is valid, output \"Withdrawal successful. Remaining balance: [amount].\"\nIf the withdrawal amount exceeds the balance, output \"Insufficient funds: [error details].\"",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "500\n600",
+   "output": "Insufficient funds: Withdrawal exceeds balance."
+  },
+  {
+   "input": "1000\n500",
+   "output": "Withdrawal successful. Remaining balance: 500.0"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,25 @@
+{
+ "title": "1495. Custom Array-Based Queue in Java",
+ "slug": "custom-array-based-queue-in-java",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1495\n. \nCustom Array-Based Queue in Java\n30\nEasy\nProblem Statement:\nWrite a Java program that defines a custom QueueInterface with methods enqueue, dequeue, and peek. Implement this interface using an array. You should define your own interface and a class that implements queue operations without using java.util.Queue. \nInput Description:\nA series of commands: enqueue x, dequeue, peek, exit. \nOutput Description:\nResult of each dequeue or peek operation. \nSample Input:\nenqueue 1\nenqueue 2\npeek\ndequeue\npeek\nexit \nSample Output:\n1\n1\n2 \nAccepted \n15\nSubmissions \n30\nAcceptance Rate \n50\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nenqueue 9\ndequeue\ndequeue\nexit\nOutput\n9\n-1\nInput\npeek\nexit\nOutput\n-1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nenqueue 9\ndequeue\ndequeue\nexit\nOutput\n9\n-1\nInput\npeek\nexit\nOutput\n-1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCustom Array-Based Queue in Java\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A series of commands: enqueue x, dequeue, peek, exit.",
+ "output_spec": "Result of each dequeue or peek operation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "enqueue 1\nenqueue 2\npeek\ndequeue\npeek\nexit",
+   "output": "1\n1\n2"
+  },
+  {
+   "input": "enqueue 9\ndequeue\ndequeue\nexit",
+   "output": "9\n-1"
+  },
+  {
+   "input": "peek\nexit",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

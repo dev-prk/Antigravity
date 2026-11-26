@@ -1,0 +1,25 @@
+{
+ "title": "1346. Automorphic Number Checker",
+ "slug": "automorphic-number-checker",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nHints & Solutions\nSubmissions\n1346\n. \nAutomorphic Number Checker\n10\nEasy\nProblem Statement:\nWrite a program to check whether a given number is an Automorphic Number or not. A number is called Automorphic if its square ends with the number itself. \nInput Description:\nThe program should take an integer input and determine whether it is an Automorphic Number. The program should calculate the square of the number, extract the last digits equivalent to the length of the original number, and compare them. A single integer N (1 \b N \b 10000) \nOutput Description:\nPrint \"Automorphic Number\" if the number satisfies the condition, otherwise print \"Not an Automorphic Number\". \nSample Input:\n25 \nSample Output:\nAutomorphic Number \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.66\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\nOutput\nNot an Automorphic Number\nInput\n76\nOutput\nAutomorphic Number\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\nOutput\nNot an Automorphic Number\nInput\n76\nOutput\nAutomorphic Number\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nAutomorphic Number Checker\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The program should take an integer input and determine whether it is an Automorphic Number. The program should calculate the square of the number, extract the last digits equivalent to the length of the original number, and compare them. A single integer N (1 \b N \b 10000)",
+ "output_spec": "Print \"Automorphic Number\" if the number satisfies the condition, otherwise print \"Not an Automorphic Number\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "25",
+   "output": "Automorphic Number"
+  },
+  {
+   "input": "7",
+   "output": "Not an Automorphic Number"
+  },
+  {
+   "input": "76",
+   "output": "Automorphic Number"
+  }
+ ],
+ "raw": ""
+}

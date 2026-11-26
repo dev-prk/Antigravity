@@ -3,14 +3,22 @@
  "slug": "find-maximum-sensex-period",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n393. Find Maximum Sensex Period\n\n50\n\nMedium  Topics\n\nProblem Statement:\nSensex has never been steady and stock values have been rising and falling in the past. Ram is a stock broker and on analysing the trend of change in sensex points, he decides that there was a period when the points was at its all time high and investing during that period would have earned him a huge profit in trade. Ram immediately regrets not having done any trade in that particular period. Find out which period in time was Ram referring to.",
+ "description": "ints & Solutions\nSubmissions\n393\n. \nFind Maximum Sensex Period\n50\nMedium\nTopics\nProblem Statement:\nSensex has never been steady and stock values have been rising and falling in the past. Ram is a stock broker and on analysing the trend of change in sensex points, he decides that there was a period when the points was at its all time high and investing during that period would have earned him a huge profit in trade. Ram immediately regrets not having done any trade in that particular period. Find out which period in time was Ram referring to. Constraints: 3 <= N <= 106 \nInput Description:\nThe size of array N, the number of periods Ram has assessed. The values of the array are the values of the sensex points. \nOutput Description:\nPeriod in which the points was at its max value. The array index is the period value. \nExplanation:\nPeriod with maximum value of sensex point ( 45 ) is 3. \nSample Input:\n9\n1 15 25 45 42 21 17 12 11 \nSample Output:\n3 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n89.69\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n1 2 3 4 5 6 7 8 9 10\nOutput\n9\nInput\n5\n8 3 1 6 5\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\n1 2 3 4 5 6 7 8 9 10\nOutput\n9\nInput\n5\n8 3 1 6 5\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFind Maximum Sensex Period\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The size of array N, the number of periods Ram has assessed. The values of the array are the values of the sensex points.",
- "output_spec": "Period in which the points was at its max value. The array index is the period value.",
- "constraints": "3 <= N <= 106",
+ "output_spec": "Period in which the points was at its max value. The array index is the period value. \nExplanation:\nPeriod with maximum value of sensex point ( 45 ) is 3.",
+ "constraints": "",
  "samples": [
   {
    "input": "9\n1 15 25 45 42 21 17 12 11",
    "output": "3"
+  },
+  {
+   "input": "10\n1 2 3 4 5 6 7 8 9 10",
+   "output": "9"
+  },
+  {
+   "input": "5\n8 3 1 6 5",
+   "output": "0"
   }
  ],
  "raw": ""

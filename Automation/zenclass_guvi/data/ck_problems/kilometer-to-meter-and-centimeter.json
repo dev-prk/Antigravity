@@ -1,0 +1,25 @@
+{
+ "title": "765. Kilometer to Meter and Centimeter",
+ "slug": "kilometer-to-meter-and-centimeter",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "& Solutions\nSubmissions\n765\n. \nKilometer to Meter and Centimeter\n10\nEasy\nTopics\nProblem Statement:\nYou are given a number A in Kilometers. Convert this into B: Meters and C: Centi-Metres. \nInput Description:\nA number \"A\" representing some distance in kilometer is provided to you as the input. \nOutput Description:\nConvert and print this value in meters and centimeters. \nExplanation:\n1 KM = 1000 M\n1M = 100 CM\n1KM = 1000*100 CM = 100000 CM \nSample Input:\n2 \nSample Output:\n2000200000 \nAccepted \n25k\nSubmissions \n29k\nAcceptance Rate \n89.47\n%\nTopics\nabsolute beginner\n5\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\n2000\n200000\nInput\n4\nOutput\n4000\n400000\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\n2000\n200000\nInput\n4\nOutput\n4000\n400000\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nKilometer to Meter and Centimeter\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A number \"A\" representing some distance in kilometer is provided to you as the input.",
+ "output_spec": "Convert and print this value in meters and centimeters. \nExplanation:\n1 KM = 1000 M\n1M = 100 CM\n1KM = 1000*100 CM = 100000 CM",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2",
+   "output": "2000200000"
+  },
+  {
+   "input": "2",
+   "output": "2000\n200000"
+  },
+  {
+   "input": "4",
+   "output": "4000\n400000"
+  }
+ ],
+ "raw": ""
+}

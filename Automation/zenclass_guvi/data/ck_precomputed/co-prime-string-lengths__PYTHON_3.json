@@ -1,0 +1,1 @@
+{"code": "import sys\nimport math\n\ns, x = sys.stdin.read().split()\nif math.gcd(len(s), len(x)) == 1:\n    print(\"yes\")\nelse:\n    print(\"no\")\n", "local_ok": true, "slug": "co-prime-string-lengths", "lang": "PYTHON 3"}

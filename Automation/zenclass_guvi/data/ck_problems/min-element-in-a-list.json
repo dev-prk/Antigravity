@@ -1,0 +1,21 @@
+{
+ "title": "625. Min Element in a List",
+ "slug": "min-element-in-a-list",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nHints & Solutions\nSubmissions\n625\n. \nMin Element in a List\n20\nEasy\nTopics\nProblem Statement:\nRahul is fond of numbers.He is given a list of queries. 1 means store that element,2 means means print the minimum element of the stored list. For more clarity see the input and output example \nInput Description:\nThe first line of the input N indicates the size of the query list. For N lines, the queries are given with the format of '1 M', where M indicates the number to be stored and 1 indicates the query type. Similarly, '2' which indicates the type of query and it does not contain M since it is not required by this query type. Briefly saying, '1 M' means store that element M in a list '2' means print the minimum element of stored list \nOutput Description:\nPrint the minimum element and -1 if there are no elements in stored list if the querytype is 2. Store the given number in the list if the query type is 1. \nExplanation:\nSelf Explanatory \nSample Input:\n5\n1 60\n2\n1 58\n2\n1 69 \nSample Output:\n60 58 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n64.6\n%\nTopics\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 60\n2\n1 58\n2\n1 69\nOutput\n60 58\nInput\n4\n2\n1 60\n2\n1 58\nOutput\n-1 60\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 60\n2\n1 58\n2\n1 69\nOutput\n60 58\nInput\n4\n2\n1 60\n2\n1 58\nOutput\n-1 60\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Element in a List\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line of the input N indicates the size of the query list. For N lines, the queries are given with the format of '1 M', where M indicates the number to be stored and 1 indicates the query type. Similarly, '2' which indicates the type of query and it does not contain M since it is not required by this query type. Briefly saying, '1 M' means store that element M in a list '2' means print the minimum element of stored list",
+ "output_spec": "Print the minimum element and -1 if there are no elements in stored list if the querytype is 2. Store the given number in the list if the query type is 1. \nExplanation:\nSelf Explanatory",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 60\n2\n1 58\n2\n1 69",
+   "output": "60 58"
+  },
+  {
+   "input": "4\n2\n1 60\n2\n1 58",
+   "output": "-1 60"
+  }
+ ],
+ "raw": ""
+}

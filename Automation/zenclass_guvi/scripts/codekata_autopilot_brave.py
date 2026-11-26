@@ -347,7 +347,7 @@ async def crawl_full_catalog(page: Page) -> List[Dict[str, Any]]:
             pass
 
     page.on("response", handle_response)
-    log("Crawling full 2,182-problem CodeKata catalog (50 items/page) in foreground Brave...")
+    log("Crawling 'Easy' CodeKata problems (merging with 1,325 pre-crawled Medium/Hard items)...")
     await page.goto("https://www.guvi.in/code-kata/", wait_until="domcontentloaded", timeout=60000)
     await page.wait_for_timeout(3500)
 
@@ -360,71 +360,96 @@ async def crawl_full_catalog(page: Page) -> List[Dict[str, Any]]:
         }"""
     )
 
-    # Switch itemsPerPage to 50 via JS + SlimSelect / native select
+    # Switch itemsPerPage to 50 via SlimSelect UI if present, plus native fallback
     try:
-        await page.select_option("select#itemsPerPage", value="50", force=True)
-        await page.wait_for_timeout(2200)
+        did = await page.evaluate("() => document.querySelector('select#itemsPerPage')?.getAttribute('data-id') || ''")
+        if did:
+            ss = page.locator(f'.ss-main[data-id="{did}"]').first
+            if await ss.count() > 0 and await ss.is_visible():
+                await ss.click(force=True)
+                await page.wait_for_timeout(300)
+                opt50 = page.locator(f'.ss-content[data-id="{did}"] .ss-option', has_text="50").first
+                if await opt50.count() > 0:
+                    await opt50.click(force=True)
+                    await page.wait_for_timeout(1800)
+        else:
+            await page.select_option("select#itemsPerPage", index=2, force=True)
+            await page.wait_for_timeout(1800)
     except Exception:
         pass
 
+    # Filter to 'Easy' only (~857 items = ~18 pages at 50/page!) since Medium & Hard (1,325 items) are in ck_catalog.json
+    try:
+        diff_btn = page.locator("#difficulty-filter-id").first
+        if await diff_btn.count() > 0:
+            await diff_btn.click(force=True)
+            await page.wait_for_timeout(400)
+            easy_opt = page.locator("li.difficulty-filter-option:has-text('Easy')").first
+            if await easy_opt.count() > 0:
+                await easy_opt.click(force=True)
+                await page.wait_for_timeout(2200)
+    except Exception as exc:
+        log(f"Easy filter note: {exc}")
+
     catalog_by_slug: Dict[str, Dict[str, Any]] = {}
-    seen_page_fingerprints = set()
-
-    for page_no in range(1, 160):
-        rows_data = await page.evaluate(
-            """() => {
-                return Array.from(document.querySelectorAll('tbody tr')).map(r => {
-                    const tds = Array.from(r.querySelectorAll('td'));
-                    if (tds.length < 4) return null;
-                    const html0 = tds[0].innerHTML || '';
-                    const done = html0.includes('completed-icon_svg__a') || html0.includes('#0DBA4B');
-                    const cells = tds.map(c => c.innerText.trim());
-                    const title = cells.find(c => /^\\d+\\.\\s/.test(c)) || cells[1] || cells[0];
-                    const diff = cells.find(c => c === 'Easy' || c === 'Medium' || c === 'Hard') || 'Easy';
-                    return { title, difficulty: diff, completed: done };
-                }).filter(Boolean);
-            }"""
-        )
-        if not rows_data:
-            break
-        fp = rows_data[0]["title"] + "|" + str(len(rows_data))
-        if fp in seen_page_fingerprints:
-            break
-        seen_page_fingerprints.add(fp)
-
-        for item in rows_data:
-            sl = slugify(item["title"])
-            catalog_by_slug[sl] = {
-                "slug": sl,
-                "title": item["title"],
-                "difficulty": item["difficulty"],
-                "completed": bool(item["completed"]),
-            }
-
-        if page_no % 5 == 0 or page_no == 1:
-            log(f"Catalog crawl page {page_no}: {len(catalog_by_slug)} unique rows collected...")
-
-        nxt = page.locator('button[aria-label="Go to next page"], button:has-text("Go to next page")').first
-        if await nxt.count() == 0:
-            break
-        disabled = await nxt.get_attribute("disabled")
-        if disabled is not None:
-            break
-        await nxt.click(force=True)
-        await page.wait_for_timeout(1100)
-
-    # Merge captured exact uniqueUrl slugs + existing ck_catalog.json (which has exact -2 slugs for Medium/Hard!)
+    # Pre-seed with existing 1,325 Medium/Hard items right away so partial crawls are immediately usable
     old_cat_path = ROOT / "data" / "ck_catalog.json"
     if old_cat_path.exists():
         for c in json.loads(old_cat_path.read_text(encoding="utf-8")):
             sl = c["slug"]
-            if sl not in catalog_by_slug:
+            catalog_by_slug[sl] = {
+                "slug": sl,
+                "title": c.get("title", sl),
+                "difficulty": c.get("difficulty", "Medium"),
+                "completed": bool(c.get("completed", False)),
+            }
+
+    seen_page_fingerprints = set()
+
+    try:
+        for page_no in range(1, 70):
+            rows_data = await page.evaluate(
+                """() => {
+                    return Array.from(document.querySelectorAll('tbody tr')).map(r => {
+                        const tds = Array.from(r.querySelectorAll('td'));
+                        if (tds.length < 4) return null;
+                        const html0 = tds[0].innerHTML || '';
+                        const done = html0.includes('completed-icon_svg__a') || html0.includes('#0DBA4B');
+                        const cells = tds.map(c => c.innerText.trim());
+                        const title = cells.find(c => /^\\d+\\.\\s/.test(c)) || cells[1] || cells[0];
+                        const diff = cells.find(c => c === 'Easy' || c === 'Medium' || c === 'Hard') || 'Easy';
+                        return { title, difficulty: diff, completed: done };
+                    }).filter(Boolean);
+                }"""
+            )
+            if not rows_data:
+                break
+            fp = rows_data[0]["title"] + "|" + str(len(rows_data))
+            if fp in seen_page_fingerprints:
+                break
+            seen_page_fingerprints.add(fp)
+
+            for item in rows_data:
+                sl = slugify(item["title"])
                 catalog_by_slug[sl] = {
                     "slug": sl,
-                    "title": c.get("title", sl),
-                    "difficulty": c.get("difficulty", "Medium"),
-                    "completed": bool(c.get("completed", False)),
+                    "title": item["title"],
+                    "difficulty": item["difficulty"],
+                    "completed": bool(item["completed"]),
                 }
+
+            log(f"Easy catalog crawl page {page_no} (+{len(rows_data)} rows) -> {len(catalog_by_slug)} total merged...")
+
+            nxt = page.locator('button[aria-label="Go to next page"], button:has-text("Go to next page")').first
+            if await nxt.count() == 0:
+                break
+            disabled = await nxt.get_attribute("disabled")
+            if disabled is not None:
+                break
+            await nxt.click(force=True)
+            await page.wait_for_timeout(900)
+    except Exception as exc:
+        log(f"Catalog crawl interrupted ({exc}); proceeding with {len(catalog_by_slug)} collected problems!")
 
     for sl, doc in captured_docs.items():
         if sl in catalog_by_slug:
@@ -704,7 +729,13 @@ async def worker_loop(
                     status, reason = "FAILED_SYNTHESIS", local_err[:260]
 
         except Exception as exc:
-            status, reason = "ERROR", str(exc)[:260]
+            err_s = str(exc)
+            if "Target page, context or browser has been closed" in err_s:
+                log(f"[W{worker_id}] Browser/tab closed during '{slug}' — requeueing item and stopping worker.")
+                queue.put_nowait(item)
+                queue.task_done()
+                return
+            status, reason = "ERROR", err_s[:260]
 
         dur = round(time.time() - t0, 2)
         async with lock:

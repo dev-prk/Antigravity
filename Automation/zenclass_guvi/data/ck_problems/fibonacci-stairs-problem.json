@@ -3,7 +3,7 @@
  "slug": "fibonacci-stairs-problem",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1499. Fibonacci Stairs Problem\n\n50\n\nMedium\n\nProblem Statement:\nYou are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+ "description": "roblem\nHints & Solutions\nSubmissions\n1499\n. \nFibonacci Stairs Problem\n50\nMedium\nProblem Statement:\nYou are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? \nInput Description:\n- A single integer n, representing the total number of steps. \nOutput Description:\n- A single integer, the number of distinct ways to climb to the top. \nSample Input:\n3 \nSample Output:\n3 \nExplanation:\nThere are three ways to climb to the top when n = 3:\n1. 1 step + 1 step + 1 step\n2. 1 step + 2 steps\n3. 2 steps + 1 step \nAccepted \n25\nSubmissions \n29\nAcceptance Rate \n86.21\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\n2\nInput\n4\nOutput\n5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nOutput\n2\nInput\n4\nOutput\n5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFibonacci Stairs Problem\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- A single integer n, representing the total number of steps.",
  "output_spec": "- A single integer, the number of distinct ways to climb to the top.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3",
    "output": "3"
+  },
+  {
+   "input": "2",
+   "output": "2"
+  },
+  {
+   "input": "4",
+   "output": "5"
   }
  ],
  "raw": ""

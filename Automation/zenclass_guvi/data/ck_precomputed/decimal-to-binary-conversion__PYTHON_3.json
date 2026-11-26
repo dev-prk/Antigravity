@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef solve():\n    data = sys.stdin.read().split()\n    if not data:\n        return\n    n = int(data[0])\n    print(format(n, 'b'))\n\nsolve()\n", "local_ok": true, "slug": "decimal-to-binary-conversion", "lang": "PYTHON 3"}

@@ -1,0 +1,21 @@
+{
+ "title": "966. Triangle Perimeter",
+ "slug": "triangle-perimeter",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nProblem\nHints & Solutions\nSubmissions\n966\n. \nTriangle Perimeter\n30\nEasy\nProblem Statement:\nYou are required to write a program that calculates and prints the perimeter of a triangle given its three sides a, b, and c units. Implement a class named 'Triangle' without any parameter in its constructor. \nInput Description:\nThe input consists of three lines. Each line contains an integer representing one side of the triangle. \nOutput Description:\nOutput the perimeter of the triangle. \nSample Input:\n3\n4\n5 \nSample Output:\n12 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n72.88\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n4\n5\nOutput\n12\nInput\n3\n3\n3\nOutput\n9\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n4\n5\nOutput\n12\nInput\n3\n3\n3\nOutput\n9\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTriangle Perimeter\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of three lines. Each line contains an integer representing one side of the triangle.",
+ "output_spec": "Output the perimeter of the triangle.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n4\n5",
+   "output": "12"
+  },
+  {
+   "input": "3\n3\n3",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

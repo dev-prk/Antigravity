@@ -1,0 +1,25 @@
+{
+ "title": "2165. Items Made and Material Cost in a Factory",
+ "slug": "items-made-and-material-cost-in-a-factory",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Solutions\nSubmissions\n2165\n. \nItems Made and Material Cost in a Factory\n10\nEasy\nProblem Statement\nRead how many items a machine makes in one hour, the working hours, and the material cost of one item. Print the total items made and the total material cost.\nDescription\nA factory machine makes a fixed number of items every hour. It works for some hours in a day. Each item needs some material, and the material cost of one item is known. Read these three values. Find the total number of items made in the day and the total material cost for all those items.\nInput Description\nThree integers, each on a separate line: items made per hour, working hours, and material cost of one item (in rupees). (1 <= each value <= 1000)\nOutput Description\nPrint the total items on the first line and the total material cost on the second line. Print only the numbers.\nSample Input\n15\n8\n20\nSample Output\n120\n2400\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n3\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n15\n8\n20\nOutput\n120\n2400\nInput\n40\n10\n5\nOutput\n400\n2000\nInput\n1\n1\n1\nOutput\n1\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n15\n8\n20\nOutput\n120\n2400\nInput\n40\n10\n5\nOutput\n400\n2000\nInput\n1\n1\n1\nOutput\n1\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nItems Made and Material Cost in a Factory\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Three integers, each on a separate line: items made per hour, working hours, and material cost of one item (in rupees). (1 <= each value <= 1000)",
+ "output_spec": "Print the total items on the first line and the total material cost on the second line. Print only the numbers.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "15\n8\n20",
+   "output": "120\n2400"
+  },
+  {
+   "input": "40\n10\n5",
+   "output": "400\n2000"
+  },
+  {
+   "input": "1\n1\n1",
+   "output": "1\n1"
+  }
+ ],
+ "raw": ""
+}

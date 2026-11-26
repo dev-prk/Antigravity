@@ -1,0 +1,25 @@
+{
+ "title": "1413. Sum of Digits at Prime Positions",
+ "slug": "sum-of-digits-at-prime-positions",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1413\n. \nSum of Digits at Prime Positions\n10\nEasy\nProblem Statement:\nWrite a program that calculates the sum of digits that are present at prime positions in a given number. \nInput Description:\nA single line containing a positive integer n \nOutput Description:\nA single integer: The sum of digits at prime positions \nSample Input:\n8347512 \nSample Output:\n14 \nExplanation:\nConsider a number where digit positions are 1-based. Identify prime indices (e.g., 2, 3, 5...) and sum the digits at those positions. \nAccepted \n80\nSubmissions \n81\nAcceptance Rate \n98.77\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2468\nOutput\n10\nInput\n246813579\nOutput\n16\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2468\nOutput\n10\nInput\n246813579\nOutput\n16\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSum of Digits at Prime Positions\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line containing a positive integer n",
+ "output_spec": "A single integer: The sum of digits at prime positions",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "8347512",
+   "output": "14"
+  },
+  {
+   "input": "2468",
+   "output": "10"
+  },
+  {
+   "input": "246813579",
+   "output": "16"
+  }
+ ],
+ "raw": ""
+}

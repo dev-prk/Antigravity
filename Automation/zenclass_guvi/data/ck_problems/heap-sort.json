@@ -1,0 +1,25 @@
+{
+ "title": "2103. Heap Sort",
+ "slug": "heap-sort",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " Editor\nProblem\nProblem\nHints & Solutions\nSubmissions\n2103\n. \nHeap Sort\n30\nEasy\nProblem Statement:\nGiven an array of integers, sort the array in ascending order using the Heap Sort technique and print the sorted array.\nInput Format:\nThe first line contains an integer N, representing the number of elements in the array.\nThe second line contains N space-separated integers.\nOutput Format:\nPrint the sorted array in ascending order.\nConstraints:\n1 \u2264 N \u2264 10^5\n-10^9 \u2264 Array Element \u2264 10^9\nSample Test Case\nInput\n5\n4 10 3 5 1\nOutput\n1 3 4 5 10\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n4 10 3 5 1\nOutput\n1 3 4 5 10\nInput\n6\n12 11 13 5 6 7\nOutput\n5 6 7 11 12 13\nInput\n8\n20 15 8 10 5 7 6 2\nOutput\n2 5 6 7 8 10 15 20\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5\n4 10 3 5 1\nOutput\n1 3 4 5 10\nInput\n6\n12 11 13 5 6 7\nOutput\n5 6 7 11 12 13\nInput\n8\n20 15 8 10 5 7 6 2\nOutput\n2 5 6 7 8 10 15 20\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nHeap Sort\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n4 10 3 5 1",
+   "output": "1 3 4 5 10"
+  },
+  {
+   "input": "6\n12 11 13 5 6 7",
+   "output": "5 6 7 11 12 13"
+  },
+  {
+   "input": "8\n20 15 8 10 5 7 6 2",
+   "output": "2 5 6 7 8 10 15 20"
+  }
+ ],
+ "raw": ""
+}

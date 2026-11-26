@@ -3,14 +3,18 @@
  "slug": "integer-frequency-counter",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1154. Integer Frequency Counter\n\n50\n\nMedium\n\nProblem Statement:\nWrite a Java program to determine the frequency of each integer in a list. Use the Integer wrapper class and appropriate collection classes to achieve this. The program should use a Map<Integer, Integer> to count the occurrences of each integer and output the frequency of each integer in ascending order.",
+ "description": "oblem\nHints & Solutions\nSubmissions\n1154\n. \nInteger Frequency Counter\n50\nMedium\nProblem Statement:\nWrite a Java program to determine the frequency of each integer in a list. Use the Integer wrapper class and appropriate collection classes to achieve this. The program should use a Map<Integer, Integer> to count the occurrences of each integer and output the frequency of each integer in ascending order. \nInput Description:\nThe first line contains an integer N, the number of elements in the list. The second line contains N space-separated integers. \nOutput Description:\nPrint each integer and its frequency, sorted by the integer values. \nSample Input:\n5\n1 2 2 3 3 3 \nSample Output:\n1: 1\n2: 2\n3: 2 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.32\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 2 3 3 3\nOutput\n1: 1\n2: 2\n3: 2\nInput\n4\n5 5 5 6\nOutput\n5: 3\n6: 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 2 3 3 3\nOutput\n1: 1\n2: 2\n3: 2\nInput\n4\n5 5 5 6\nOutput\n5: 3\n6: 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nInteger Frequency Counter\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains an integer N, the number of elements in the list. The second line contains N space-separated integers.",
- "output_spec": "the frequency of each integer in ascending order.\n\nInput Description:\nThe first line contains an integer N, the number of elements in the list. The second line contains N space-separated integers.\n\nOutput Description:\nPrint each integer and its frequency, sorted by the integer values.",
+ "output_spec": "Print each integer and its frequency, sorted by the integer values.",
  "constraints": "",
  "samples": [
   {
    "input": "5\n1 2 2 3 3 3",
    "output": "1: 1\n2: 2\n3: 2"
+  },
+  {
+   "input": "4\n5 5 5 6",
+   "output": "5: 3\n6: 1"
   }
  ],
  "raw": ""

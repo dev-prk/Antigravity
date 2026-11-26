@@ -1,0 +1,21 @@
+{
+ "title": "976. Multiples of a Number",
+ "slug": "multiples-of-a-number",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nHints & Solutions\nSubmissions\n976\n. \nMultiples of a Number\n30\nEasy\nTopics\nProblem Statement:\nGiven a number m and k separated by a space print n numbers which multiple of m \nInput Description:\nnumber m and k separated by a space\n0<n<1000\n0<m<1000 \nOutput Description:\nprint n numbers which multiple of m \nExplanation:\nFirst 5(n) multiple of 4(m) is 4 8 12 16 20 \nSample Input:\n5 4 \nSample Output:\n4 8 12 16 20 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n78.84\n%\nTopics\nzen\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 4\nOutput\n4 8 12 16 20\nInput\n2 8\nOutput\n8 16\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 4\nOutput\n4 8 12 16 20\nInput\n2 8\nOutput\n8 16\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMultiples of a Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "number m and k separated by a space\n0<n<1000\n0<m<1000",
+ "output_spec": "print n numbers which multiple of m \nExplanation:\nFirst 5(n) multiple of 4(m) is 4 8 12 16 20",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 4",
+   "output": "4 8 12 16 20"
+  },
+  {
+   "input": "2 8",
+   "output": "8 16"
+  }
+ ],
+ "raw": ""
+}

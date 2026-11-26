@@ -3,14 +3,22 @@
  "slug": "java-data-type-conversion",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1150. Java Data Type Conversion\n\n50\n\nMedium\n\nProblem Statement:\nCreate a Java program that converts various types of data (e.g., double, float) to integers using the Integer wrapper class methods. The program should:\n\nConvert a double value to an integer using Double and Integer methods.\n\nConvert a float value to an integer.\n\nHandle any potential issues related to data loss or rounding.",
+ "description": "oblem\nHints & Solutions\nSubmissions\n1150\n. \nJava Data Type Conversion\n50\nMedium\nProblem Statement:\nCreate a Java program that converts various types of data (e.g., double, float) to integers using the Integer wrapper class methods. The program should: \nConvert a double value to an integer using Double and Integer methods. \nConvert a float value to an integer. \nHandle any potential issues related to data loss or rounding.\nInput Description:\nTwo lines of input: one containing a double value and the other a float value. \nOutput Description:\nThe integer values obtained from conversions. Information on rounding or data loss. \nSample Input:\n15.75\n3.14 \nSample Output:\nConverted Integer from Double: 15\nConverted Integer from Float: 3\nNote: Data was truncated, not rounded. \nExplanation:\nUse Double.intValue() and Float.intValue() methods to perform the conversions. Print the integer values and any relevant information about rounding or truncation. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.67\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n15.75\n3.14\nOutput\nConverted Integer from Double: 15\nConverted Integer from Float: 3\nNote: Data was truncated, not rounded.\nInput\n25.99\n7.89\nOutput\nConverted Integer from Double: 25\nConverted Integer from Float: 7\nNote: Data was truncated, not rounded.\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n15.75\n3.14\nOutput\nConverted Integer from Double: 15\nConverted Integer from Float: 3\nNote: Data was truncated, not rounded.\nInput\n25.99\n7.89\nOutput\nConverted Integer from Double: 25\nConverted Integer from Float: 7\nNote: Data was truncated, not rounded.\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava Data Type Conversion\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\n",
  "input_spec": "Two lines of input: one containing a double value and the other a float value.",
  "output_spec": "The integer values obtained from conversions. Information on rounding or data loss.",
  "constraints": "",
  "samples": [
   {
    "input": "15.75\n3.14",
+   "output": "Converted Integer from Double: 15\nConverted Integer from Float: 3"
+  },
+  {
+   "input": "15.75\n3.14",
    "output": "Converted Integer from Double: 15\nConverted Integer from Float: 3\nNote: Data was truncated, not rounded."
+  },
+  {
+   "input": "25.99\n7.89",
+   "output": "Converted Integer from Double: 25\nConverted Integer from Float: 7\nNote: Data was truncated, not rounded."
   }
  ],
  "raw": ""

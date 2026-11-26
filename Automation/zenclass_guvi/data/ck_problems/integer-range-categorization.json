@@ -1,0 +1,21 @@
+{
+ "title": "1358. Integer Range Categorization",
+ "slug": "integer-range-categorization",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n1358\n. \nInteger Range Categorization\n10\nEasy\nProblem Statement:\nWrite a Java program that categorizes a list of integers into different ranges and counts the number of integers in each range. \nYour program should:\n1. Take a series of integers as input until a negative number is encountered (the negative number should not be included in the list).\n2. Use branching statements to categorize each integer into one of the following ranges:\n0 to 10\n11 to 20\n21 to 30\n31 and above\n3. Output the count of integers in each range. \nInput Description:\nA series of integers separated by spaces. The sequence ends when a negative number is encountered. \nOutput Description:\nFour integers representing the count of numbers in the ranges 0-10, 11-20, 21-30, and 31 and above. \nSample Input:\n5 15 25 35 -1 \nSample Output:\n1 1 1 1\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.46\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 15 25 35 -1\nOutput\n1 1 1 1\nInput\n0 10 20 30 40 -1\nOutput\n2 1 1 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 15 25 35 -1\nOutput\n1 1 1 1\nInput\n0 10 20 30 40 -1\nOutput\n2 1 1 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nInteger Range Categorization\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A series of integers separated by spaces. The sequence ends when a negative number is encountered.",
+ "output_spec": "Four integers representing the count of numbers in the ranges 0-10, 11-20, 21-30, and 31 and above.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 15 25 35 -1",
+   "output": "1 1 1 1"
+  },
+  {
+   "input": "0 10 20 30 40 -1",
+   "output": "2 1 1 1"
+  }
+ ],
+ "raw": ""
+}

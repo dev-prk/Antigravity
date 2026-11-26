@@ -3,14 +3,18 @@
  "slug": "distance-comparison",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1807. Distance Comparison\n\n50\n\nMedium\n\nDistance Comparison\n\nProblem Statement:\nWrite a program to overload the > operator using a friend function to compare two distances.\n\nDescription:\nCreate a class Distance that:\n1. Stores distance in meters.\n2. Uses constructor to initialize value.\n3. Overloads > operator using a friend function.\n\nPrints:\n\"First is Greater\" if first distance is larger\nOtherwise print \"Second is Greater\"\n\nInput Format:\nTwo integers representing distances in meters.\n\nOutput Format:\nComparison result string.",
- "input_spec": "Two integers representing distances in meters.",
- "output_spec": "Comparison result string.",
+ "description": "Solutions\nSubmissions\n1807\n. \nDistance Comparison\n50\nMedium\nDistance Comparison\nProblem Statement:\nWrite a program to overload the > operator using a friend function to compare two distances.\nDescription:\nCreate a class Distance that:\n1. Stores distance in meters.\n2. Uses constructor to initialize value.\n3. Overloads > operator using a friend function.\nPrints:\n\"First is Greater\" if first distance is larger\nOtherwise print \"Second is Greater\"\nInput Format:\nTwo integers representing distances in meters.\nOutput Format:\nComparison result string.\nSample Input:\n100 200\nSample Output:\nSecond is Greater\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n97.83\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n500 100\nOutput\nFirst is Greater\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n500 100\nOutput\nFirst is Greater\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nDistance Comparison\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "100 200",
    "output": "Second is Greater"
+  },
+  {
+   "input": "500 100",
+   "output": "First is Greater"
   }
  ],
  "raw": ""

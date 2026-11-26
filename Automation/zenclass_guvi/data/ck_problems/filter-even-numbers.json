@@ -1,0 +1,21 @@
+{
+ "title": "1052. Filter Even Numbers",
+ "slug": "filter-even-numbers",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "oblem\nProblem\nHints & Solutions\nSubmissions\n1052\n. \nFilter Even Numbers\n10\nEasy\nProblem Statement:\nWrite a program to display only those numbers from a input list that satisfy the following conditions:\n1. The number must be divisible by 2\n2. If the number is greater than or equal 80, then skip it and move to the next number\n3. If the number is greater than 125, then stop the loop \nInput Description:\nFirst line contains size of the list\nSecond line contains list of elements \nOutput Description:\nConsists of only those numbers from a input list that satisfy the following conditions \nSample Input:\n6\n6 4 1 80 24 125 \nSample Output:\n6 4 24 125 \nExplanation:\nSelf Explanatory \nAccepted \n108\nSubmissions \n355\nAcceptance Rate \n30.42\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n6 4 1 80 24 125\nOutput\n6 4 24 125\nInput\n2\n24 12\nOutput\n24 12\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n6 4 1 80 24 125\nOutput\n6 4 24 125\nInput\n2\n24 12\nOutput\n24 12\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFilter Even Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains size of the list\nSecond line contains list of elements",
+ "output_spec": "Consists of only those numbers from a input list that satisfy the following conditions",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "6\n6 4 1 80 24 125",
+   "output": "6 4 24 125"
+  },
+  {
+   "input": "2\n24 12",
+   "output": "24 12"
+  }
+ ],
+ "raw": ""
+}

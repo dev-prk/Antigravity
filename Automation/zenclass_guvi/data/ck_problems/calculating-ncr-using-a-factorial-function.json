@@ -3,14 +3,22 @@
  "slug": "calculating-ncr-using-a-factorial-function",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2158. Calculating nCr Using a Factorial Function\n\n90\n\nHard\n\nProblem Statement\nRead n and r and print the value of nCr (the number of ways to choose r items from n items), by calling a factorial function more than once.\n\nDescription\nThe number of ways to choose r items from n items is given by nCr = n! / (r! x (n - r)!). Read two integers n and r from input. Write a function factorial that takes an integer parameter and uses a for loop to return its factorial (the factorial of 0 is 1). In main(), call this one function three times, for n, for r, and for n - r, and use the results to calculate and print nCr.",
- "input_spec": ". Write a function factorial that takes an integer parameter and uses a for loop to return its factorial (the factorial of 0 is 1). In main(), call this one function three times, for n, for r, and for n - r, and use the results to calculate and print nCr.\n\nInput Description\nTwo integers n and r separated by a space (0 <= r <= n <= 10).",
+ "description": "olutions\nSubmissions\n2158\n. \nCalculating nCr Using a Factorial Function\n90\nHard\nProblem Statement\nRead n and r and print the value of nCr (the number of ways to choose r items from n items), by calling a factorial function more than once.\nDescription\nThe number of ways to choose r items from n items is given by nCr = n! / (r! x (n - r)!). Read two integers n and r from input. Write a function factorial that takes an integer parameter and uses a for loop to return its factorial (the factorial of 0 is 1). In main(), call this one function three times, for n, for r, and for n - r, and use the results to calculate and print nCr.\nInput Description\nTwo integers n and r separated by a space (0 <= r <= n <= 10).\nOutput Description\nPrint the value of nCr.\nSample Input\n5 2\nSample Output\n10\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 2\nOutput\n10\nInput\n6 3\nOutput\n20\nInput\n4 0\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 2\nOutput\n10\nInput\n6 3\nOutput\n20\nInput\n4 0\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCalculating nCr Using a Factorial Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers n and r separated by a space (0 <= r <= n <= 10).",
  "output_spec": "Print the value of nCr.",
  "constraints": "",
  "samples": [
   {
    "input": "5 2",
    "output": "10"
+  },
+  {
+   "input": "6 3",
+   "output": "20"
+  },
+  {
+   "input": "4 0",
+   "output": "1"
   }
  ],
  "raw": ""

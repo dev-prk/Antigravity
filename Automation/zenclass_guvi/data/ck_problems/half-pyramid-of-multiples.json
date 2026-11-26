@@ -3,14 +3,22 @@
  "slug": "half-pyramid-of-multiples",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n920. Half Pyramid of Multiples\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a half pyramid pattern of mulitples of the given number.",
+ "description": "Hints & Solutions\nSubmissions\n920\n. \nHalf Pyramid of Multiples\n50\nMedium\nTopics\nProblem Statement:\nWrite a code to generate a half pyramid pattern of mulitples of the given number. \nInput Description:\nGiven an integer R indicates number of rows.Where 1<=R<=100 \nOutput Description:\nPrint the number half pyramid pattern of multiples based on the given integer R. \nExplanation:\nFrom the given input R=10, print 1 multiple in first line, print 2 multiples in second line with size 2, print 3 multiple with size 3,print 4 multiples with size 4,print until R rows with size R. \nSample Input:\n10 \nSample Output:\n1 \n2 4 \n3 6 9 \n4 8 12 16 \n5 10 15 20 25 \n6 12 18 24 30 36 \n7 14 21 28 35 42 49 \n8 16 24 32 40 48 56 64 \n9 18 27 36 45 54 63 72 81 \n10 20 30 40 50 60 70 80 90 100 \nAccepted \n861\nSubmissions \n979\nAcceptance Rate \n87.95\n%\nTopics\npatterns\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n1\n2 4\n3 6 9\n4 8 12 16\n5 10 15 20 25\n6 12 18 24 30 36\n7 14 21 28 35 42 49\n8 16 24 32 40 48 56 64\n9 18 27 36 45 54 63 72 81\n10 20 30 40 50 60 70 80 90 100\nInput\n4\nOutput\n1\n2 4\n3 6 9\n4 8 12 16\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n1\n2 4\n3 6 9\n4 8 12 16\n5 10 15 20 25\n6 12 18 24 30 36\n7 14 21 28 35 42 49\n8 16 24 32 40 48 56 64\n9 18 27 36 45 54 63 72 81\n10 20 30 40 50 60 70 80 90 100\nInput\n4\nOutput\n1\n2 4\n3 6 9\n4 8 12 16\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nHalf Pyramid of Multiples\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
- "output_spec": "Print the number half pyramid pattern of multiples based on the given integer R.",
+ "output_spec": "Print the number half pyramid pattern of multiples based on the given integer R. \nExplanation:\nFrom the given input R=10, print 1 multiple in first line, print 2 multiples in second line with size 2, print 3 multiple with size 3,print 4 multiples with size 4,print until R rows with size R.",
  "constraints": "",
  "samples": [
   {
    "input": "10",
+   "output": "1 \n2 4 \n3 6 9 \n4 8 12 16 \n5 10 15 20 25 \n6 12 18 24 30 36 \n7 14 21 28 35 42 49 \n8 16 24 32 40 48 56 64 \n9 18 27 36 45 54 63 72 81 \n10 20 30 40 50 60 70 80 90 100"
+  },
+  {
+   "input": "10",
    "output": "1\n2 4\n3 6 9\n4 8 12 16\n5 10 15 20 25\n6 12 18 24 30 36\n7 14 21 28 35 42 49\n8 16 24 32 40 48 56 64\n9 18 27 36 45 54 63 72 81\n10 20 30 40 50 60 70 80 90 100"
+  },
+  {
+   "input": "4",
+   "output": "1\n2 4\n3 6 9\n4 8 12 16"
   }
  ],
  "raw": ""

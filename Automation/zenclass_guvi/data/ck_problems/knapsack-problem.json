@@ -3,14 +3,22 @@
  "slug": "knapsack-problem",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n468. Knapsack Problem\n\n80\n\nHard  Topics\n\nProblem Statement:\nMr. Rafael was a goldsmith. He could gauge the weight of a piece of gold and how much he can sell it for by just glancing at the piece. Rafael, unhappy with his income, thought he deserved more for his capabilities. So he decided to steal from rich households. One night, he was at a house where he saw N gold pieces. Using his ability he gauged the weights and prices of the N pieces. He noted down the weights in an array W and the prices in an array P each of length N. He also knew that his bag couldn't hold more than M units of weight. He wants to maximize the price he can get from the pieces he steals. Help Rafael find the maximum price.",
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n468\n. \nKnapsack Problem\n80\nHard\nTopics\nProblem Statement:\nMr. Rafael was a goldsmith. He could gauge the weight of a piece of gold and how much he can sell it for by just glancing at the piece. Rafael, unhappy with his income, thought he deserved more for his capabilities. So he decided to steal from rich households. One night, he was at a house where he saw N gold pieces. Using his ability he gauged the weights and prices of the N pieces. He noted down the weights in an array W and the prices in an array P each of length N. He also knew that his bag couldn't hold more than M units of weight. He wants to maximize the price he can get from the pieces he steals. Help Rafael find the maximum price. \nInput Description:\nThe first line contains two space separated integers N and M. The next two lines contain N space separated integers each denoting the arrays W and P \nOutput Description:\nPrint a single line the maximum selling price Mr. Rafael can get from his theft. \nExplanation:\nThe bag can hold only 7 units of weight. Both the pieces cannot be included as 3 + 6 = 9 > 7 So only one of the pieces can be included. He picks the 3 unit weight piece which has a selling price of 4. \nSample Input:\n2 7\n3 6\n4 3 \nSample Output:\n4 \nAccepted \n455\nSubmissions \n550\nAcceptance Rate \n82.73\n%\nTopics\ndynamic programming\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n69 25 54 68 67 \n33 22 1 28 96\nOutput\n0\nInput\n4 34\n50 69 86 23 \n32 79 70 67\nOutput\n67\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n69 25 54 68 67 \n33 22 1 28 96\nOutput\n0\nInput\n4 34\n50 69 86 23 \n32 79 70 67\nOutput\n67\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nKnapsack Problem\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAddition",
  "input_spec": "The first line contains two space separated integers N and M. The next two lines contain N space separated integers each denoting the arrays W and P",
- "output_spec": "Print a single line the maximum selling price Mr. Rafael can get from his theft.",
+ "output_spec": "Print a single line the maximum selling price Mr. Rafael can get from his theft. \nExplanation:\nThe bag can hold only 7 units of weight. Both the pieces cannot be included as 3 + 6 = 9 > 7 So only one of the pieces can be included. He picks the 3 unit weight piece which has a selling price of 4.",
  "constraints": "",
  "samples": [
   {
    "input": "2 7\n3 6\n4 3",
    "output": "4"
+  },
+  {
+   "input": "5 3\n69 25 54 68 67 \n33 22 1 28 96",
+   "output": "0"
+  },
+  {
+   "input": "4 34\n50 69 86 23 \n32 79 70 67",
+   "output": "67"
   }
  ],
  "raw": ""

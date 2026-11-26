@@ -1,0 +1,1 @@
+{"code": "import sys\nfrom collections import Counter\n\ndef main():\n    lines = sys.stdin.read().splitlines()\n    s1 = lines[0] if len(lines) > 0 else ''\n    s2 = lines[1] if len(lines) > 1 else ''\n    print('1' if Counter(s1) == Counter(s2) else '-1')\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "anagram-check-2", "lang": "PYTHON 3"}

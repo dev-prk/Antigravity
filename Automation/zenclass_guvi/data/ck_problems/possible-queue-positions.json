@@ -1,0 +1,21 @@
+{
+ "title": "1065. Possible Queue Positions",
+ "slug": "possible-queue-positions",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n1065\n. \nPossible Queue Positions\n30\nEasy\nProblem Statement:\nMani finds himself in a queue of n people but is uncertain about his exact position. However, he's confident that there are at least a people in front of him and at most b people behind him. Mani seeks to determine the number of different positions he could occupy in the queue. \nInput Description:\n- The input consists of a single line containing three integers: n, a, and b (0\u2264a,b<n\u2264100). These represent the total number of people in the queue, the minimum number of people in front of Mani, and the maximum number of people behind Mani, respectively. \nOutput Description:\n- Print a single integer, the number of possible positions Mani could occupy in the queue. \nSample Input:\n5 2 3 \nSample Output:\n3 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n96.44\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 2 3\nOutput\n3\nInput\n5 4 0\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 2 3\nOutput\n3\nInput\n5 4 0\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPossible Queue Positions\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The input consists of a single line containing three integers: n, a, and b (0\u2264a,b<n\u2264100). These represent the total number of people in the queue, the minimum number of people in front of Mani, and the maximum number of people behind Mani, respectively.",
+ "output_spec": "- Print a single integer, the number of possible positions Mani could occupy in the queue.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 2 3",
+   "output": "3"
+  },
+  {
+   "input": "5 4 0",
+   "output": "1"
+  }
+ ],
+ "raw": ""
+}

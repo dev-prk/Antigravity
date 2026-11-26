@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef is_adam(n):\n    n = abs(n)\n    rev = lambda x: int(str(x)[::-1])\n    rev_n = rev(n)\n    rev_sq = rev(n * n)\n    return rev_sq == rev_n * rev_n\n\ndata = sys.stdin.read().strip().split()\nif data:\n    n = int(data[0])\n    print(\"Yes\" if is_adam(n) else \"No\")\n", "local_ok": true, "slug": "adam-number-checker", "lang": "PYTHON 3"}

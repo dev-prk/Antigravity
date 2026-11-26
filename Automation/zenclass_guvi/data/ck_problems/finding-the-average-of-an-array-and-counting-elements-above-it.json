@@ -3,7 +3,7 @@
  "slug": "finding-the-average-of-an-array-and-counting-elements-above-it",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2201. Finding the Average of an Array and Counting Elements Above It\n\n50\n\nMedium\n\nProblem Statement\nRead N integers into an array, print their average, and count how many elements are greater than the average.\n\nDescription\nRead an integer N, then read N integers into a one-dimensional array and find their sum. Calculate the average as a float by converting the sum using (float) before dividing by N. Use another loop with an if statement to count how many array elements are greater than the average. Print the average with two digits after the decimal point on the first line, and the count on the second line.",
+ "description": "201\n. \nFinding the Average of an Array and Counting Elements Above It\n50\nMedium\nProblem Statement\nRead N integers into an array, print their average, and count how many elements are greater than the average.\nDescription\nRead an integer N, then read N integers into a one-dimensional array and find their sum. Calculate the average as a float by converting the sum using (float) before dividing by N. Use another loop with an if statement to count how many array elements are greater than the average. Print the average with two digits after the decimal point on the first line, and the count on the second line.\nInput Description\nAn integer N (N >= 1), followed by N integers, all separated by spaces.\nOutput Description\nPrint the average with two digits after the decimal point on the first line, and the number of elements greater than the average on the second line.\nSample Input\n5 10 20 30 40 50\nSample Output\n30.00\n2\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 10 20 30 40 50\nOutput\n30.00\n2\nInput\n4 1 2 3 10\nOutput\n4.00\n1\nInput\n3 5 5 5\nOutput\n5.00\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n5 10 20 30 40 50\nOutput\n30.00\n2\nInput\n4 1 2 3 10\nOutput\n4.00\n1\nInput\n3 5 5 5\nOutput\n5.00\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFinding the Average of an Array and Counting Elements Above It\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "An integer N (N >= 1), followed by N integers, all separated by spaces.",
  "output_spec": "Print the average with two digits after the decimal point on the first line, and the number of elements greater than the average on the second line.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5 10 20 30 40 50",
    "output": "30.00\n2"
+  },
+  {
+   "input": "4 1 2 3 10",
+   "output": "4.00\n1"
+  },
+  {
+   "input": "3 5 5 5",
+   "output": "5.00\n0"
   }
  ],
  "raw": ""

@@ -1,0 +1,21 @@
+{
+ "title": "554. Merge and Sort Two Arrays-2",
+ "slug": "merge-and-sort-two-arrays-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n554\n. \nMerge and Sort Two Arrays-2\n10\nEasy\nTopics\nProblem Statement:\nYou are given with two arrays. Your task is to merge the array such that first array is in ascending order and second one in descending order. \nInput Description:\nFirst line contains two integer \u2018n\u2019 and \u2018m\u2019. \u2018n\u2019 denotes length of array 1 and \u2018m\u2019 of array 2.Next line contains n space separated numbers and third line contains \u2018m\u2019 space separated numbers \nOutput Description:\nPrint a single array in desired order \nSample Input:\n3 3\n23 15 16\n357 65 10 \nSample Output:\n15 16 23 357 65 10 \nExplanation:\n15 16 23 is ascending order and 357 65 10 in descending order \n Hence the answer is\n15 16 23 357 65 10 \nAccepted \n6k\nSubmissions \n8k\nAcceptance Rate \n81.26\n%\nTopics\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n23 15 16\n357 65 10\nOutput\n15 16 23 357 65 10\nInput\n9 8\n1 19 12 16 14 13 58 65 42\n56 55 54 17 16 98 32 46\nOutput\n1 12 13 14 16 19 42 58 65 98 56 55 54 46 32 17 16\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n23 15 16\n357 65 10\nOutput\n15 16 23 357 65 10\nInput\n9 8\n1 19 12 16 14 13 58 65 42\n56 55 54 17 16 98 32 46\nOutput\n1 12 13 14 16 19 42 58 65 98 56 55 54 46 32 17 16\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMerge and Sort Two Arrays-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains two integer \u2018n\u2019 and \u2018m\u2019. \u2018n\u2019 denotes length of array 1 and \u2018m\u2019 of array 2.Next line contains n space separated numbers and third line contains \u2018m\u2019 space separated numbers",
+ "output_spec": "Print a single array in desired order",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3 3\n23 15 16\n357 65 10",
+   "output": "15 16 23 357 65 10"
+  },
+  {
+   "input": "9 8\n1 19 12 16 14 13 58 65 42\n56 55 54 17 16 98 32 46",
+   "output": "1 12 13 14 16 19 42 58 65 98 56 55 54 46 32 17 16"
+  }
+ ],
+ "raw": ""
+}

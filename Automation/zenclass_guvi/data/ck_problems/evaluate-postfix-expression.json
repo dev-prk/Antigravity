@@ -3,14 +3,18 @@
  "slug": "evaluate-postfix-expression",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1773. Evaluate Postfix Expression\n\n60\n\nMedium\n\nEvaluate Postfix Expression\nProblem Statement\n\nGiven a postfix expression, evaluate its value using a stack.\n\nDescription\n\nEach token can be an integer or operator (+, -, *, /).\n\nUse a stack to push operands and pop them when an operator is encountered.\n\nCompute and push the result back on the stack.\n\nInput Format\n\nSingle string postfix expression (tokens separated by spaces)\n\nOutput Format\n\nResult as an integer",
- "input_spec": "Single string postfix expression (tokens separated by spaces)",
- "output_spec": "Result as an integer",
+ "description": "sions\n1773\n. \nEvaluate Postfix Expression\n60\nMedium\nEvaluate Postfix Expression\nProblem Statement\nGiven a postfix expression, evaluate its value using a stack.\nDescription\nEach token can be an integer or operator (+, -, *, /).\nUse a stack to push operands and pop them when an operator is encountered.\nCompute and push the result back on the stack.\nInput Format\nSingle string postfix expression (tokens separated by spaces)\nOutput Format\nResult as an integer\nSample Input\n2 3 1 * + 9 -\nSample Output\n-4\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n93.9\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n2 3 +\nOutput\n5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n2 3 +\nOutput\n5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEvaluate Postfix Expression\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "2 3 1 * + 9 -",
-   "output": "4"
+   "output": "-4"
+  },
+  {
+   "input": "2 3 +",
+   "output": "5"
   }
  ],
  "raw": ""

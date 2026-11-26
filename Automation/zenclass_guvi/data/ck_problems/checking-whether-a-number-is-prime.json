@@ -3,13 +3,21 @@
  "slug": "checking-whether-a-number-is-prime",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2124. Checking Whether a Number Is Prime\n\n90\n\nHard\n\nProblem Statement\nRead an integer and determine whether it is prime using a for loop combined with an if statement.\n\nDescription\nRead an integer num from input (num > 1). Use a for loop with a counter starting at 2 and running up to num - 1, checking on each iteration whether num is exactly divisible by the counter using the % operator. Use a flag variable to record whether any divisor was found. After the loop, use an if-else statement to print \"Prime\" if no divisor was found, or \"Not Prime\" otherwise.",
- "input_spec": "(num > 1). Use a for loop with a counter starting at 2 and running up to num - 1, checking on each iteration whether num is exactly divisible by the counter using the % operator. Use a flag variable to record whether any divisor was found. After the loop, use an if-else statement to print \"Prime\" if no divisor was found, or \"Not Prime\" otherwise.\n\nInput Description\nA single integer num (num > 1).",
+ "description": "ints & Solutions\nSubmissions\n2124\n. \nChecking Whether a Number Is Prime\n90\nHard\nProblem Statement\nRead an integer and determine whether it is prime using a for loop combined with an if statement.\nDescription\nRead an integer num from input (num > 1). Use a for loop with a counter starting at 2 and running up to num - 1, checking on each iteration whether num is exactly divisible by the counter using the % operator. Use a flag variable to record whether any divisor was found. After the loop, use an if-else statement to print \"Prime\" if no divisor was found, or \"Not Prime\" otherwise.\nInput Description\nA single integer num (num > 1).\nOutput Description\nPrint \"Prime\" if num is a prime number, otherwise print \"Not Prime\".\nSample Input\n13\nSample Output\nPrime\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n13\nOutput\nPrime\nInput\n15\nOutput\nNot Prime\nInput\n2\nOutput\nPrime\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n13\nOutput\nPrime\nInput\n15\nOutput\nNot Prime\nInput\n2\nOutput\nPrime\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nChecking Whether a Number Is Prime\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single integer num (num > 1).",
  "output_spec": "Print \"Prime\" if num is a prime number, otherwise print \"Not Prime\".",
  "constraints": "",
  "samples": [
   {
    "input": "13",
+   "output": "Prime"
+  },
+  {
+   "input": "15",
+   "output": "Not Prime"
+  },
+  {
+   "input": "2",
    "output": "Prime"
   }
  ],

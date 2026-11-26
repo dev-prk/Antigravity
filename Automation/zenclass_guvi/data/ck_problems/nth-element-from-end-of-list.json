@@ -1,0 +1,25 @@
+{
+ "title": "787. Nth Element from End of List",
+ "slug": "nth-element-from-end-of-list",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ints & Solutions\nSubmissions\n787\n. \nNth Element from End of List\n30\nEasy\nTopics\nProblem Statement:\nFor this question, you will write a program that, given a positive integer M and a list of elements L, outputs the list element M links away from the end of the list. For this program, we will use 1-indexing. That means nth_to_last is the \"1st-to-last\" element, or simply the last element in the list.For this question, you will write a program that, given a positive integer M and a list of elements L, outputs the list element M links away from the end of the list. For this program, we will use 1-indexing. That means nth_to_last is the \"1st-to-last\" element, or simply the last element in the list. \nInput Description:\nThe first line of input will be one single integer N\nThe second line will have S spaced elements \nOutput Description:\nThe output will be the Nth number from 1st-to-last \nSample Input:\n4\n10 200 3 40000 5 \nSample Output:\n200 \nExplanation:\nThe answer is Nth number from last \nAccepted \n38\nSubmissions \n534\nAcceptance Rate \n7.12\n%\nTopics\narrays, list and tuples - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 800 34 74 67 89 2333\nOutput\n34\nInput\n2\n54\nOutput\nNIL\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 800 34 74 67 89 2333\nOutput\n34\nInput\n2\n54\nOutput\nNIL\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth Element from End of List\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line of input will be one single integer N\nThe second line will have S spaced elements",
+ "output_spec": "The output will be the Nth number from 1st-to-last",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n10 200 3 40000 5",
+   "output": "200"
+  },
+  {
+   "input": "5\n1 800 34 74 67 89 2333",
+   "output": "34"
+  },
+  {
+   "input": "2\n54",
+   "output": "NIL"
+  }
+ ],
+ "raw": ""
+}

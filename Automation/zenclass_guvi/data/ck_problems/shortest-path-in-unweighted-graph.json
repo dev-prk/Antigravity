@@ -1,0 +1,25 @@
+{
+ "title": "1462. Shortest Path in Unweighted Graph",
+ "slug": "shortest-path-in-unweighted-graph",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Hints & Solutions\nSubmissions\n1462\n. \nShortest Path in Unweighted Graph\n30\nEasy\nProblem Statement:\nGiven an unweighted, undirected graph and two nodes, source and destination, find the length of the shortest path between the source and destination nodes. If there is no path between the two nodes, return -1. \nInput Description:\n- The first line contains three integers n, m, and q, where n is the number of nodes (numbered from 1 to n), m is the number of edges, and q is the number of queries.\n- The next m lines each contain two integers u and v, representing an undirected edge between nodes u and v.\n- The next q lines each contain two integers s and d, representing a query to find the shortest path from node s to node d. \nOutput Description:\n- For each query, output a single integer: the length of the shortest path between s and d, or -1 if no such path exists. \nSample Input:\n5 5 2\n1 2\n2 3\n3 4\n4 5\n1 5\n1 5\n2 4 \nSample Output:\n1\n2 \nExplanation:\n- For the first query (1 to 5), there is a direct edge, so the shortest path length is 1.\n- For the second query (2 to 4), the shortest path is 2: 2 -> 3 -> 4. \nAccepted \n36\nSubmissions \n39\nAcceptance Rate \n92.31\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 3 1\n1 2\n2 3\n3 4\n1 4\nOutput\n3\nInput\n3 1 1\n1 2\n2 3\nOutput\n-1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 3 1\n1 2\n2 3\n3 4\n1 4\nOutput\n3\nInput\n3 1 1\n1 2\n2 3\nOutput\n-1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nShortest Path in Unweighted Graph\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains three integers n, m, and q, where n is the number of nodes (numbered from 1 to n), m is the number of edges, and q is the number of queries.\n- The next m lines each contain two integers u and v, representing an undirected edge between nodes u and v.\n- The next q lines each contain two integers s and d, representing a query to find the shortest path from node s to node d.",
+ "output_spec": "- For each query, output a single integer: the length of the shortest path between s and d, or -1 if no such path exists.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 5 2\n1 2\n2 3\n3 4\n4 5\n1 5\n1 5\n2 4",
+   "output": "1\n2"
+  },
+  {
+   "input": "4 3 1\n1 2\n2 3\n3 4\n1 4",
+   "output": "3"
+  },
+  {
+   "input": "3 1 1\n1 2\n2 3",
+   "output": "-1"
+  }
+ ],
+ "raw": ""
+}

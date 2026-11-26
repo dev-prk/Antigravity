@@ -3,7 +3,7 @@
  "slug": "counting-anagram-groups",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n192. Counting Anagram Groups\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven with Size of the array 'N' followed by array of 'N' strings, group the anagrams and print the number of grouping possible.If grouping not possible print '0'.",
+ "description": "m\nHints & Solutions\nSubmissions\n192\n. \nCounting Anagram Groups\n60\nMedium\nTopics\nProblem Statement:\nGiven with Size of the array 'N' followed by array of 'N' strings, group the anagrams and print the number of grouping possible.If grouping not possible print '0'. \nInput Description:\nThe input consists of the size of the array 'N' followed by an array of 'N' strings. \nOutput Description:\nThe output is the number of possible anagram groupings. If grouping is not possible, print '0'. \nSample Input:\n7\nrat art cat act dog god tar pat \nSample Output:\n3 \nExplanation:\n[rat, art, tar],[cat, act],[dog, god] \nAccepted \n531\nSubmissions \n1k\nAcceptance Rate \n35.45\n%\nTopics\nstrings\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\ncat dog tac god act\nOutput\n2\nInput\nedcba the bread\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\ncat dog tac god act\nOutput\n2\nInput\nedcba the bread\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCounting Anagram Groups\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of the size of the array 'N' followed by an array of 'N' strings.",
  "output_spec": "The output is the number of possible anagram groupings. If grouping is not possible, print '0'.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "7\nrat art cat act dog god tar pat",
    "output": "3"
+  },
+  {
+   "input": "cat dog tac god act",
+   "output": "2"
+  },
+  {
+   "input": "edcba the bread",
+   "output": "0"
   }
  ],
  "raw": ""

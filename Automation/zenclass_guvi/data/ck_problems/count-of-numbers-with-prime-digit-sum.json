@@ -3,7 +3,7 @@
  "slug": "count-of-numbers-with-prime-digit-sum",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n307. Count of Numbers with Prime Digit Sum\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven two integers L,R. How many numbers exist in [L,R] with sum of digits as a prime number",
+ "description": "tions\nSubmissions\n307\n. \nCount of Numbers with Prime Digit Sum\n60\nMedium\nTopics\nProblem Statement:\nGiven two integers L,R. How many numbers exist in [L,R] with sum of digits as a prime number \nInput Description:\nThe input consists of two integers L and R. L is inclusive and R is exclusive in the range [L,R]. Input size: 1 <= L, R <= 1000000. \nOutput Description:\nThe count of numbers in the given range [L,R] whose sum of digits is a prime number. \nSample Input:\n1 10 \nSample Output:\n4 \nAccepted \n660\nSubmissions \n869\nAcceptance Rate \n75.95\n%\nTopics\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n8 15\nOutput\n3\nInput\n2 4\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n8 15\nOutput\n3\nInput\n2 4\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCount of Numbers with Prime Digit Sum\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of two integers L and R. L is inclusive and R is exclusive in the range [L,R]. Input size: 1 <= L, R <= 1000000.",
  "output_spec": "The count of numbers in the given range [L,R] whose sum of digits is a prime number.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "1 10",
    "output": "4"
+  },
+  {
+   "input": "8 15",
+   "output": "3"
+  },
+  {
+   "input": "2 4",
+   "output": "2"
   }
  ],
  "raw": ""

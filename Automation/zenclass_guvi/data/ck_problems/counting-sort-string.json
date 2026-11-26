@@ -3,14 +3,22 @@
  "slug": "counting-sort-string",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n684. Counting Sort String\n\n90\n\nHard  Topics\n\nProblem Statement:\nGiven a string S consisting of lowercase latin letters, arrange all its letters in lexographical order using Counting Sort.",
+ "description": "roblem\nHints & Solutions\nSubmissions\n684\n. \nCounting Sort String\n90\nHard\nTopics\nProblem Statement:\nGiven a string S consisting of lowercase latin letters, arrange all its letters in lexographical order using Counting Sort. \nInput Description:\nFirst Line contains positive integer N denoting the length of string.The second line of input contains the string S. \nOutput Description:\nPrint the sorted string. \nExplanation:\nWhen the input is given then the output should be in the sorted order. \nSample Input:\n5\nedsab \nSample Output:\nabdes \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n88.71\n%\nTopics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nyxz\nOutput\nxyz\nInput\n5\ngeeks\nOutput\neegks\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nyxz\nOutput\nxyz\nInput\n5\ngeeks\nOutput\neegks\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCounting Sort String\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First Line contains positive integer N denoting the length of string.The second line of input contains the string S.",
- "output_spec": "Print the sorted string.",
+ "output_spec": "Print the sorted string. \nExplanation:\nWhen the input is given then the output should be in the sorted order.",
  "constraints": "",
  "samples": [
   {
    "input": "5\nedsab",
    "output": "abdes"
+  },
+  {
+   "input": "5\nyxz",
+   "output": "xyz"
+  },
+  {
+   "input": "5\ngeeks",
+   "output": "eegks"
   }
  ],
  "raw": ""

@@ -1,0 +1,21 @@
+{
+ "title": "1067. Maximizing Wealthy Individuals",
+ "slug": "maximizing-wealthy-individuals",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "em\nHints & Solutions\nSubmissions\n1067\n. \nMaximizing Wealthy Individuals\n30\nEasy\nProblem Statement:\nMany years ago, the country of Berland was inhabited by a small population of n individuals, each with their own savings. The government aimed to increase the number of wealthy individuals by implementing a series of reforms. Each reform involved the government selecting a subset of individuals, collecting all their savings, and then redistributing the total equally among the selected individuals. The ultimate goal was to ensure that each individual had at least x burles to be considered wealthy. Given the initial savings of each individual and the minimum wealth threshold x, your task is to calculate the maximum possible number of wealthy individuals after the reforms, if any were implemented. \nInput Description:\n- The first line contains a single integer T where, 1 <= T <= 1000 \u2014 the number of test cases.\n- For each test case, there are two lines:\n- The second line contains two integers n and x where, 1 <= n <= 10^5, 1 <= x <= 10^9 \u2014 representing the number of individuals and the minimum wealth threshold.\n- The third line contains n integers a1, a2,...., an where, 1 <= ai <= 10^9 \u2014 the initial savings of each individual. \nOutput Description:\n- Print T integers, one per test case, representing the maximum possible number of wealthy individuals after the reforms. \nSample Input:\n1\n1 2\n13 \nSample Output:\n1 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.21\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n1 2\n13\nOutput\n1\nInput\n4\n4 3\n5 1 2 1\n4 10\n11 9 11 9\n2 5\n4 3\n3 7\n9 4 9\nOutput\n2\n4\n0\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n1 2\n13\nOutput\n1\nInput\n4\n4 3\n5 1 2 1\n4 10\n11 9 11 9\n2 5\n4 3\n3 7\n9 4 9\nOutput\n2\n4\n0\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMaximizing Wealthy Individuals\nIssues Encountered\n*\nDescription or examples are unclear o",
+ "input_spec": "- The first line contains a single integer T where, 1 <= T <= 1000 \u2014 the number of test cases.\n- For each test case, there are two lines:\n- The second line contains two integers n and x where, 1 <= n <= 10^5, 1 <= x <= 10^9 \u2014 representing the number of individuals and the minimum wealth threshold.\n- The third line contains n integers a1, a2,...., an where, 1 <= ai <= 10^9 \u2014 the initial savings of each individual.",
+ "output_spec": "- Print T integers, one per test case, representing the maximum possible number of wealthy individuals after the reforms.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1\n1 2\n13",
+   "output": "1"
+  },
+  {
+   "input": "4\n4 3\n5 1 2 1\n4 10\n11 9 11 9\n2 5\n4 3\n3 7\n9 4 9",
+   "output": "2\n4\n0\n3"
+  }
+ ],
+ "raw": ""
+}

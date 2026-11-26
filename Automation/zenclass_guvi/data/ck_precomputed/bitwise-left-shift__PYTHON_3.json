@@ -1,0 +1,1 @@
+{"code": "import sys\n\ndef main():\n    data = sys.stdin.read().split()\n    N = int(data[0])\n    K = int(data[1])\n    print(N << K)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "slug": "bitwise-left-shift", "lang": "PYTHON 3"}

@@ -1,0 +1,25 @@
+{
+ "title": "589. Find the Twice Repeated Number",
+ "slug": "find-the-twice-repeated-number",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ts & Solutions\nSubmissions\n589\n. \nFind the Twice Repeated Number\n10\nEasy\nTopics\nProblem Statement:\nYou are provided with an array in which all elements are repeated thrice except one which is repeated twice.Your task is to print that number.O(n) time and O(1) extra space \nInput Description:\nFirst line contains a number denoting size of array \u2018n\u2019.Next line contains n space separated numbers \nOutput Description:\nPrint the number which is repeated twice \nSample Input:\n5\n13 12 13 12 13 \nSample Output:\n12 \nExplanation:\n13 repeated thrice12 repeated twice so the solution is 12 \nAccepted \n7k\nSubmissions \n10k\nAcceptance Rate \n72.31\n%\nTopics\narray\nhashing\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n11\n11 11 11 95 95 95 65 65 65 56 56\nOutput\n56\nInput\n17\n12 12 12 96 96 96 87 64 87 64 87 64 9 2 9 2 9 \nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n11\n11 11 11 95 95 95 65 65 65 56 56\nOutput\n56\nInput\n17\n12 12 12 96 96 96 87 64 87 64 87 64 9 2 9 2 9 \nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFind the Twice Repeated Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line contains a number denoting size of array \u2018n\u2019.Next line contains n space separated numbers",
+ "output_spec": "Print the number which is repeated twice",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n13 12 13 12 13",
+   "output": "12"
+  },
+  {
+   "input": "11\n11 11 11 95 95 95 65 65 65 56 56",
+   "output": "56"
+  },
+  {
+   "input": "17\n12 12 12 96 96 96 87 64 87 64 87 64 9 2 9 2 9",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

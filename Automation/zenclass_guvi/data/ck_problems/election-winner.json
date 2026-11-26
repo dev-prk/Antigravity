@@ -1,0 +1,21 @@
+{
+ "title": "700. Election Winner",
+ "slug": "election-winner",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nProblem\nHints & Solutions\nSubmissions\n700\n. \nElection Winner\n30\nEasy\nTopics\nProblem Statement:\nIn a school there are voting to choose the monitor of class.Your task is to tell which candidate is winner and if there is a tie print the name of candidate whose come first in lexicographical order. \nInput Description:\nYou are given with the space separated names. \nOutput Description:\nPrint the winner\u2019s name and the votes he earned. \nExplanation:\nWith respect to the given example input john is occurring 4 times and lexicographically john comes first in the given list so he is the winner. \nSample Input:\njohn johnny jackie johnny john jackie jamie jamie john johnny jamie johnny john \nSample Output:\njohn 4 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n84.71\n%\nTopics\nstrings\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\njohn johnny jackie johnny john jackie jamie jamie john johnny jamie johnny john\nOutput\njohn 4\nInput\nandy blake clark\nOutput\nandy 1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\njohn johnny jackie johnny john jackie jamie jamie john johnny jamie johnny john\nOutput\njohn 4\nInput\nandy blake clark\nOutput\nandy 1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nElection Winner\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "You are given with the space separated names.",
+ "output_spec": "Print the winner\u2019s name and the votes he earned. \nExplanation:\nWith respect to the given example input john is occurring 4 times and lexicographically john comes first in the given list so he is the winner.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "john johnny jackie johnny john jackie jamie jamie john johnny jamie johnny john",
+   "output": "john 4"
+  },
+  {
+   "input": "andy blake clark",
+   "output": "andy 1"
+  }
+ ],
+ "raw": ""
+}

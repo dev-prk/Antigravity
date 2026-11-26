@@ -1,0 +1,25 @@
+{
+ "title": "947. Smallest Power of 2 Greater Than N",
+ "slug": "smallest-power-of-2-greater-than-n",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": " Solutions\nSubmissions\n947\n. \nSmallest Power of 2 Greater Than N\n30\nEasy\nTopics\nProblem Statement:\nWrite a code to get a integer n as input and calculate the smallest perfect power of 2 greater than n.\nInput Description:\nA single line containing an integer,n.\nOutput Description:\nPrint the smallest perfect power of 2 greater than n.\nExplanation:\nThe smallest perfect power of 2 greater than 48 is 64.\nSample Input:\n48\nSample Output:\n64\nAccepted \n6k\nSubmissions \n7k\nAcceptance Rate \n88.3\n%\nTopics\nbasics\nbit manipulation\nLooping\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n32\nOutput\n64\nInput\n255\nOutput\n256\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n32\nOutput\n64\nInput\n255\nOutput\n256\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSmallest Power of 2 Greater Than N\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line containing an integer,n.",
+ "output_spec": "Print the smallest perfect power of 2 greater than n.\nExplanation:\nThe smallest perfect power of 2 greater than 48 is 64.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "48",
+   "output": "64"
+  },
+  {
+   "input": "32",
+   "output": "64"
+  },
+  {
+   "input": "255",
+   "output": "256"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,25 @@
+{
+ "title": "1176. Student Record Management",
+ "slug": "student-record-management",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1176\n. \nStudent Record Management\n20\nEasy\nTopics\nProblem Statement:\nProblem: Student Records Management\nObjective: \nWrite a C program to manage a set of student records using arrays, pointers, structures, and unions. The program should allow storing and displaying information about each student, including their grades and status. \nSpecifications: \nStructures: \nPlease define a structure named Student with these following members:\n1. Name (Its an array of characters with a maximum length = 50)\n2. id (an integer)\n3. grades (an array of five floating-point numbers)\n4. average (a floating-point number)\n5. status (a union that can hold either a character to represent pass/fail or an integer for a grade category)\nUnion: \nThe union status can either hold:\n1. char passFail ('P' for pass, 'F' for fail) if the average is greater than or equal to 50.\n2. int gradeCategory (1 for excellent, 2 for good, 3 for average, 4 for poor) based on the average score:\n Excellent (>= 85)\n Good (>= 70 and < 85)\n Average (>= 50 and < 70)\n Poor (< 50)\nFunctions: \nImplement the following functions:\n1. void inputStudentData(Student *s, int n) - to input data for n students.\n2. void calculateAverage(Student *s, int n) - to calculate the average grades for each student.\n3. void determineStatus(Student *s, int n) - to set the status of each student based on their average.\n4. void displayStudents(const Student *s, int n) - to display the information of each student. \nInput Description:\nYour code should first read an integer n = the number of students. Then, it should read the name, ID, and the five grades for each student. \nOutput Description:\nCalculate the average, determine the status, and display the details of each student. \nSample Input:\n2\nAlice 101 75.0 82.0 90.0 70.0 88.0\nBob 102 45.0 55.0 65.0 35.0 60.0 \nSample Output:\nStudent: Alice\nID: 101\nGrades: 75.0, 82.0, 90.0, 70.0, 88.0\nAverage: 81.0\nStatus: Grade Category - 2 \nStudent: Bob\nID: 102\nGrades: 45.0, 55.0, 65.0, 35.0, 60.0\nAverage: 52.0\nStatus: Pass/Fail - P\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n95.5\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nAlice\n101\n85 90 78 92 88\nOutput\nStudent: Alice\nID: 101\nGrades: 85.0, 90.0, 78.0, 92.0, 88.0\nAverage: 86.6\nStatus: Grade Category - 1\nInput\n1\nBob\n102\n70 72 68 75 80\nOutput\nStudent: Bob\nID: 102\nGrades: 70.0, 72.0, 68.0, 75.0, 80.0\nAverage: 73.0\nStatus: Grade Category - 2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nAlice\n101\n85 90 78 92 88\nOutput\nStudent: Alice\nID: 101\nGrades: 85.0, 90.0, 78.0, 92.0, 88.0\nAverage: 86.6\nStatus: Grade Category - 1\nInput\n1\nBob\n102\n70 72 68 75 80\nOutput\nStudent: Bob\nID: 102\nGrades: 70.0, 72.0, 68.0, 75.0, 80.0\nAverage: 73.0\nStatus: Grade Category - 2\nConsole\nConsole\nConsole \nAre you sure you w",
+ "input_spec": "Your code should first read an integer n = the number of students. Then, it should read the name, ID, and the five grades for each student.",
+ "output_spec": "Calculate the average, determine the status, and display the details of each student.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2\nAlice 101 75.0 82.0 90.0 70.0 88.0\nBob 102 45.0 55.0 65.0 35.0 60.0",
+   "output": "Student: Alice\nID: 101\nGrades: 75.0, 82.0, 90.0, 70.0, 88.0\nAverage: 81.0\nStatus: Grade Category - 2 \nStudent: Bob\nID: 102\nGrades: 45.0, 55.0, 65.0, 35.0, 60.0\nAverage: 52.0\nStatus: Pass/Fail - P"
+  },
+  {
+   "input": "1\nAlice\n101\n85 90 78 92 88",
+   "output": "Student: Alice\nID: 101\nGrades: 85.0, 90.0, 78.0, 92.0, 88.0\nAverage: 86.6\nStatus: Grade Category - 1"
+  },
+  {
+   "input": "1\nBob\n102\n70 72 68 75 80",
+   "output": "Student: Bob\nID: 102\nGrades: 70.0, 72.0, 68.0, 75.0, 80.0\nAverage: 73.0\nStatus: Grade Category - 2"
+  }
+ ],
+ "raw": ""
+}

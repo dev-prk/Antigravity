@@ -1,0 +1,25 @@
+{
+ "title": "1481. Sudoku Board Validation",
+ "slug": "sudoku-board-validation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n1481\n. \nSudoku Board Validation\n30\nEasy\nProblem Statement:\nGiven a 9x9 Sudoku board, determine if it is valid. Only the filled cells need to be validated according to the following rules:\n1. Each row must contain the digits 1-9 without repetition.\n2. Each column must contain the digits 1-9 without repetition.\n3. Each of the nine 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.\nEmpty cells are indicated by the character '.'.\nConstraints:\n- The board is always 9 rows by 9 columns.\n- The board may be partially filled.\n- Only the filled cells need to be validated. \nInput Description:\nA 9x9 grid of characters, where each character is either a digit '1'-'9' or '.'. \nOutput Description:\nPrint \"true\" if the board is valid, otherwise print \"false\". \nSample Input:\n5 3 . . 7 . . . .\n6 . . 1 9 5 . . .\n. 9 8 . . . . 6 .\n8 . . . 6 . . . 5\n4 . . 8 . 3 . . 2\n7 . . . 2 . . . 6\n. 6 . . . . 2 8 .\n. . . 4 1 9 . . 5\n. . . . 8 . . 7 9 \nSample Output:\nfalse \nExplanation:\nNo row, column, or 3x3 sub-box contains duplicate digits among the filled cells. \nAccepted \n23\nSubmissions \n30\nAcceptance Rate \n76.67\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3 . . 7 . . . .\n 6 . . 1 9 5 . . .\n . 9 8 . . . . 6 .\n 8 . . . 6 . . . 3\n 4 . . 8 . 3 . . 1\n 7 . . . 2 . . . 6\n . 6 . . . . 2 8 .\n . . . 4 1 9 . . 5\n . . . . 8 . . 7 9\nOutput\ntrue\nInput\n8 3 . . 7 . . . .\n 6 . . 1 9 5 . . .\n . 9 8 . . . . 6 .\n 8 . . . 6 . . . 3\n 4 . . 8 . 3 . . 1\n 7 . . . 2 . . . 6\n . 6 . . . . 2 8 .\n . . . 4 1 9 . . 5\n . . . . 8 . . 7 9\nOutput\nfalse\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3 . . 7 . . . .\n 6 . . 1 9 5 . . .\n . 9 8 . . . . 6 .\n 8 . . . 6 . . . 3\n 4 . . 8 . 3 . . 1\n 7 . . . 2 . . . 6\n . 6 . . . . 2 8 .\n . . . 4 1 9 . . 5\n . . . . 8 . . 7 9\nOutput\ntrue\nInput\n8 3 . . 7 . . . .\n 6 . . 1 9 5 . . .\n . 9 8 . . . . 6 .\n 8 . . . 6 . . . 3\n 4 . . 8 . 3 . . 1\n 7 . . . 2 . . . 6\n . 6 . . . . 2 8 .\n . . . 4 1 9 . . 5\n . . . . 8 . . 7 9\nOutput\nfalse\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desk",
+ "input_spec": "A 9x9 grid of characters, where each character is either a digit '1'-'9' or '.'.",
+ "output_spec": "Print \"true\" if the board is valid, otherwise print \"false\".",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3 . . 7 . . . .\n6 . . 1 9 5 . . .\n. 9 8 . . . . 6 .\n8 . . . 6 . . . 5\n4 . . 8 . 3 . . 2\n7 . . . 2 . . . 6\n. 6 . . . . 2 8 .\n. . . 4 1 9 . . 5\n. . . . 8 . . 7 9",
+   "output": "false"
+  },
+  {
+   "input": "5 3 . . 7 . . . .\n 6 . . 1 9 5 . . .\n . 9 8 . . . . 6 .\n 8 . . . 6 . . . 3\n 4 . . 8 . 3 . . 1\n 7 . . . 2 . . . 6\n . 6 . . . . 2 8 .\n . . . 4 1 9 . . 5\n . . . . 8 . . 7 9",
+   "output": "true"
+  },
+  {
+   "input": "8 3 . . 7 . . . .\n 6 . . 1 9 5 . . .\n . 9 8 . . . . 6 .\n 8 . . . 6 . . . 3\n 4 . . 8 . 3 . . 1\n 7 . . . 2 . . . 6\n . 6 . . . . 2 8 .\n . . . 4 1 9 . . 5\n . . . . 8 . . 7 9",
+   "output": "false"
+  }
+ ],
+ "raw": ""
+}

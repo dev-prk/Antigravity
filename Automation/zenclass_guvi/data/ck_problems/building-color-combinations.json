@@ -3,14 +3,22 @@
  "slug": "building-color-combinations",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n461. Building Color Combinations\n\n80\n\nHard  Topics\n\nProblem Statement:\nCP Inc gives you the task of building N buildings in a line . (1<=N<=1000000). The buildings are numbered from 1 to N (1-based indexing).The buildings come in two colors: red and blue\n\nThey want you to use a specific building style which can be described as follows:\n\n1) We can build a red building. If we build a red building at some position i then i+1th building also has to be red. However the i+2th building can be of any color. This rule doesn't apply to the last building if it is red in color.\n\n2) We can build a blue building at the current location . In that case the next building can be of any color we want.\n\nBefore you start building CP Inc being a company of competitve programmers decides to ask you what is the total number of ways you can build the buildings.\n\nReport the answer modulo 1000000007.",
+ "description": "Hints & Solutions\nSubmissions\n461\n. \nBuilding Color Combinations\n80\nHard\nTopics\nProblem Statement:\nCP Inc gives you the task of building N buildings in a line . (1<=N<=1000000). The buildings are numbered from 1 to N (1-based indexing).The buildings come in two colors: red and blue \nThey want you to use a specific building style which can be described as follows: \n1) We can build a red building. If we build a red building at some position i then i+1th building also has to be red. However the i+2th building can be of any color. This rule doesn't apply to the last building if it is red in color. \n2) We can build a blue building at the current location . In that case the next building can be of any color we want. \nBefore you start building CP Inc being a company of competitve programmers decides to ask you what is the total number of ways you can build the buildings. \nReport the answer modulo 1000000007. \nInput Description:\nThe first and only line of input contains a single integer N denoting the number of buildings that need to be built \nOutput Description:\nThe output must consist of a single line \nExplanation:\nSay we denote blue with B and red with R.\nThe buildings can be built as : RR or BR or BB \nSample Input:\n2 \nSample Output:\n3\nAccepted \n243\nSubmissions \n473\nAcceptance Rate \n51.37\n%\nTopics\ndynamic programming\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nOutput\n5\nInput\n551\nOutput\n173077830\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nOutput\n5\nInput\n551\nOutput\n173077830\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nBuilding Color Combinations\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Sub",
  "input_spec": "The first and only line of input contains a single integer N denoting the number of buildings that need to be built",
- "output_spec": "The output must consist of a single line",
+ "output_spec": "The output must consist of a single line \nExplanation:\nSay we denote blue with B and red with R.\nThe buildings can be built as : RR or BR or BB",
  "constraints": "",
  "samples": [
   {
    "input": "2",
    "output": "3"
+  },
+  {
+   "input": "3",
+   "output": "5"
+  },
+  {
+   "input": "551",
+   "output": "173077830"
   }
  ],
  "raw": ""

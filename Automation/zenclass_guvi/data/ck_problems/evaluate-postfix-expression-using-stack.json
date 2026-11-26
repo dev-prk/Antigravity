@@ -1,0 +1,25 @@
+{
+ "title": "1487. Evaluate Postfix Expression using Stack",
+ "slug": "evaluate-postfix-expression-using-stack",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "& Solutions\nSubmissions\n1487\n. \nEvaluate Postfix Expression using Stack\n30\nEasy\nProblem Statement:\nWrite a program that evaluates a postfix expression using a stack. The program should accept a valid postfix expression with numbers and operators (+, -, *, /). It should evaluate the expression using a stack and return the result. \nInput Description:\nA single string representing the postfix expression (tokens separated by space). \nOutput Description:\nA single integer which is the result of the evaluated expression. \nSample Input:\n2 3 1 * + 9 - \nSample Output:\n-4 \nAccepted \n35\nSubmissions \n41\nAcceptance Rate \n85.37\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 6 2 + *\nOutput\n40\nInput\n4 2 5 * + 1 3 2 * + /\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 6 2 + *\nOutput\n40\nInput\n4 2 5 * + 1 3 2 * + /\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nEvaluate Postfix Expression using Stack\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single string representing the postfix expression (tokens separated by space).",
+ "output_spec": "A single integer which is the result of the evaluated expression.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "2 3 1 * + 9 -",
+   "output": "-4"
+  },
+  {
+   "input": "5 6 2 + *",
+   "output": "40"
+  },
+  {
+   "input": "4 2 5 * + 1 3 2 * + /",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

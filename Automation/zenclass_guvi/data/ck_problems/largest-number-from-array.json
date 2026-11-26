@@ -3,7 +3,7 @@
  "slug": "largest-number-from-array",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n580. Largest Number From Array\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given with arrays containing some non negative integers.Your task is to make the largest number out of it.",
+ "description": "m\nHints & Solutions\nSubmissions\n580\n. \nLargest Number From Array\n90\nHard\nTopics\nProblem Statement:\nYou are given with arrays containing some non negative integers.Your task is to make the largest number out of it. \nInput Description:\nFirst line contains the size of array \u2019n\u2019. Second line contains the n space separated integers. \nOutput Description:\nPrint the largest element that can be form out of the array \nSample Input:\n6\n12 19 546 60 \nSample Output:\n605461912 \nExplanation:\n605461912 is the largest element that can be form out of the array \nAccepted \n706\nSubmissions \n841\nAcceptance Rate \n83.95\n%\nTopics\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n12 19 546 60\nOutput\n605461912\nInput\n6\n1 2 3 4 5 6\nOutput\n654321\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n12 19 546 60\nOutput\n605461912\nInput\n6\n1 2 3 4 5 6\nOutput\n654321\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLargest Number From Array\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line contains the size of array \u2019n\u2019. Second line contains the n space separated integers.",
  "output_spec": "Print the largest element that can be form out of the array",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "6\n12 19 546 60",
    "output": "605461912"
+  },
+  {
+   "input": "6\n1 2 3 4 5 6",
+   "output": "654321"
   }
  ],
  "raw": ""

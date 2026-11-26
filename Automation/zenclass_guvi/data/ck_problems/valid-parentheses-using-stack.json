@@ -1,0 +1,25 @@
+{
+ "title": "1998. Valid Parentheses Using Stack",
+ "slug": "valid-parentheses-using-stack",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nHints & Solutions\nSubmissions\n1998\n. \nValid Parentheses Using Stack\n30\nEasy\nProblem Statement:\nGiven a string containing only the characters '(', ')', '{', '}', '[', and ']', determine whether the parentheses are balanced using a Stack.\nA string is balanced if:\nEvery opening bracket has a corresponding closing bracket.\nBrackets are closed in the correct order.\nInput Description\nA single string containing brackets.\nOutput Description\nPrint Balanced if the brackets are valid, otherwise print Not Balanced.\nSample Input\n{[()]}\nSample Output\nBalanced\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n{[()]}\nOutput\nBalanced\nInput\n{[(])}\nOutput\nNot Balanced\nInput\n((()))\nOutput\nBalanced\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n{[()]}\nOutput\nBalanced\nInput\n{[(])}\nOutput\nNot Balanced\nInput\n((()))\nOutput\nBalanced\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nValid Parentheses Using Stack\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single string containing brackets.",
+ "output_spec": "Print Balanced if the brackets are valid, otherwise print Not Balanced.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "{[()]}",
+   "output": "Balanced"
+  },
+  {
+   "input": "{[(])}",
+   "output": "Not Balanced"
+  },
+  {
+   "input": "((()))",
+   "output": "Balanced"
+  }
+ ],
+ "raw": ""
+}

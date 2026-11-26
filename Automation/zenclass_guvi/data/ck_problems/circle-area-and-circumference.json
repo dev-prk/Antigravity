@@ -1,0 +1,21 @@
+{
+ "title": "969. Circle Area and Circumference",
+ "slug": "circle-area-and-circumference",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "blem\nHints & Solutions\nSubmissions\n969\n. \nCircle Area and Circumference\n10\nEasy\nProblem Statement:\nYou are tasked with writing a program to calculate and print the area and circumference of a circle given its radius r units. Implement a class named 'Circle' without any parameter in its constructor. \nInput Description:\nThe input consists of a single line containing an integer r representing the radius of the circle. \nOutput Description:\nOutput the area and circumference of the circle. Round the output to one decimal value. \nSample Input:\n3 \nSample Output:\n28.3\n18.8 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n69.77\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nOutput\n28.3\n18.8\nInput\n4\nOutput\n50.3\n25.1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nOutput\n28.3\n18.8\nInput\n4\nOutput\n50.3\n25.1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCircle Area and Circumference\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of a single line containing an integer r representing the radius of the circle.",
+ "output_spec": "Output the area and circumference of the circle. Round the output to one decimal value.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3",
+   "output": "28.3\n18.8"
+  },
+  {
+   "input": "4",
+   "output": "50.3\n25.1"
+  }
+ ],
+ "raw": ""
+}

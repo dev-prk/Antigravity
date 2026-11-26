@@ -1,0 +1,21 @@
+{
+ "title": "1251. C Program for Discount Calculation-2",
+ "slug": "c-program-for-discount-calculation-2",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ts & Solutions\nSubmissions\n1251\n. \nC Program for Discount Calculation-2\n10\nEasy\nProblem Statement:\nA shopping mall needs to calculate discounts for a sale. Customers are given an array of prices, and a fixed percentage discount is applied to each. Write a program to calculate the discounted prices. Write a C program that accepts an array of product prices and applies a discount percentage to each price, printing the final discounted prices. \nInput Description:\nThe input consists of an integer representing the number of product prices, followed by the product prices, and finally, a fixed discount percentage. \nOutput Description:\nThe output should display the calculated discounted prices, formatted to two decimal places. \nSample Input:\n4 100 200 300 400 10 \nSample Output:\nDiscounted prices: 90.00 180.00 270.00 360.00 \nAccepted \n139\nSubmissions \n158\nAcceptance Rate \n87.97\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 100 200 300 400 10\nOutput\nDiscounted prices: 90.00 180.00 270.00 360.00\nInput\n3 50 75 100 20\nOutput\nDiscounted prices: 40.00 60.00 80.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 100 200 300 400 10\nOutput\nDiscounted prices: 90.00 180.00 270.00 360.00\nInput\n3 50 75 100 20\nOutput\nDiscounted prices: 40.00 60.00 80.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nC Program for Discount Calculation-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of an integer representing the number of product prices, followed by the product prices, and finally, a fixed discount percentage.",
+ "output_spec": "The output should display the calculated discounted prices, formatted to two decimal places.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4 100 200 300 400 10",
+   "output": "Discounted prices: 90.00 180.00 270.00 360.00"
+  },
+  {
+   "input": "3 50 75 100 20",
+   "output": "Discounted prices: 40.00 60.00 80.00"
+  }
+ ],
+ "raw": ""
+}

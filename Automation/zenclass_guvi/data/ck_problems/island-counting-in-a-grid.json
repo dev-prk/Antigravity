@@ -1,0 +1,21 @@
+{
+ "title": "1189. Island Counting in a Grid",
+ "slug": "island-counting-in-a-grid",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "Problem\nHints & Solutions\nSubmissions\n1189\n. \nIsland Counting in a Grid\n20\nEasy\nProblem Statement:\nYou have a 2D grid of size n x m consisting of integers, where every cell of the grid represents a part of a map. The grid can contain three types of values:\n0 represents water,\n1 represents land,\n2 represents a bridge connecting two pieces of land.\nYour task is to implement a function countIslands(int grid[][m], int n, int m) that finds the number of distinct islands in the grid. An island is formed by connecting adjacent lands horizontally, vertically, or diagonally. Bridges (2) should be considered as land and can connect separate pieces of land, forming a single island. \nInput Description:\nThe first line contains two integers n and m (1 \u2264 n, m \u2264 1000), representing the dimensions of the grid.\nThe next n lines each contain m space-separated integers representing the elements of the grid (0 \u2264 grid[i][j] \u2264 2). \nOutput Description:\nPrint a single integer, the number of distinct islands found in the grid. \nSample Input:\n5 6\n1 0 0 0 0 0\n0 1 1 0 2 0\n0 0 0 1 0 0\n1 0 0 2 1 1\n0 0 0 0 0 1 \nSample Output:\n2 \nExplanation:\nStep 1: Identifying Islands\nThere are several pieces of land connected by bridges.\nStep 2: Counting Islands\nThere are 3 distinct islands in the grid. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.8\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 6\n1 0 0 0 0 0\n0 1 1 0 2 0\n0 0 0 1 0 0\n1 0 0 2 1 1\n0 0 0 0 0 1\nOutput\n2\nInput\n3 3\n1 1 0\n0 0 0\n0 0 1\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 6\n1 0 0 0 0 0\n0 1 1 0 2 0\n0 0 0 1 0 0\n1 0 0 2 1 1\n0 0 0 0 0 1\nOutput\n2\nInput\n3 3\n1 1 0\n0 0 0\n0 0 1\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nIsland Counting in a Grid\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to",
+ "input_spec": "The first line contains two integers n and m (1 \u2264 n, m \u2264 1000), representing the dimensions of the grid.\nThe next n lines each contain m space-separated integers representing the elements of the grid (0 \u2264 grid[i][j] \u2264 2).",
+ "output_spec": "Print a single integer, the number of distinct islands found in the grid.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 6\n1 0 0 0 0 0\n0 1 1 0 2 0\n0 0 0 1 0 0\n1 0 0 2 1 1\n0 0 0 0 0 1",
+   "output": "2"
+  },
+  {
+   "input": "3 3\n1 1 0\n0 0 0\n0 0 1",
+   "output": "2"
+  }
+ ],
+ "raw": ""
+}

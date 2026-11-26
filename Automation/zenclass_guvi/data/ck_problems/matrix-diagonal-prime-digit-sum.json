@@ -1,0 +1,25 @@
+{
+ "title": "1417. Matrix Diagonal Prime Digit Sum",
+ "slug": "matrix-diagonal-prime-digit-sum",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n1417\n. \nMatrix Diagonal Prime Digit Sum\n10\nEasy\nProblem Statement:\nGiven a square matrix (n x n) of digits, write a program to compute the sum of the diagonals but count only those digits which are prime numbers. \nInput Description:\nFirst line: Integer n (size of the matrix)\nNext n lines: n space-separated integers \nOutput Description:\nSum of prime digits along both diagonals \nSample Input:\n3\n2 3 4\n5 6 7\n8 9 2 \nSample Output:\n4 \nExplanation:\nYou are given a matrix where each cell contains a single digit (0-9). You must traverse the primary and secondary diagonals and sum only those digits that are prime numbers (2, 3, 5, 7). Do not double-count the center digit if n is odd. \nAccepted \n71\nSubmissions \n74\nAcceptance Rate \n95.95\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n4 5\n7 6\nOutput\n12\nInput\n4\n1 2 3 4\n5 6 7 8\n9 0 1 2\n3 4 5 6\nOutput\n10\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n4 5\n7 6\nOutput\n12\nInput\n4\n1 2 3 4\n5 6 7 8\n9 0 1 2\n3 4 5 6\nOutput\n10\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMatrix Diagonal Prime Digit Sum\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line: Integer n (size of the matrix)\nNext n lines: n space-separated integers",
+ "output_spec": "Sum of prime digits along both diagonals",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n2 3 4\n5 6 7\n8 9 2",
+   "output": "4"
+  },
+  {
+   "input": "2\n4 5\n7 6",
+   "output": "12"
+  },
+  {
+   "input": "4\n1 2 3 4\n5 6 7 8\n9 0 1 2\n3 4 5 6",
+   "output": "10"
+  }
+ ],
+ "raw": ""
+}

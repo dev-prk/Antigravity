@@ -1,0 +1,25 @@
+{
+ "title": "1461. Count Connected Components in a Graph",
+ "slug": "count-connected-components-in-a-graph",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "s & Solutions\nSubmissions\n1461\n. \nCount Connected Components in a Graph\n30\nEasy\nProblem Statement:\nGiven an undirected graph with n nodes labeled from 0 to n-1 and a list of edges, count the number of connected components in the graph. Two nodes are in the same connected component if there is a path between them (directly or indirectly). \nInput Description:\n- The first line contains two integers n and m, the number of nodes and the number of edges.\n- The next m lines each contain two integers u and v, representing an undirected edge between nodes u and v. \nOutput Description:\n- A single integer representing the number of connected components in the graph. \nSample Input:\n5 3\n0 1\n1 2\n3 4 \nSample Output:\n2 \nExplanation:\nThere are two connected components: {0,1,2} and {3,4}. \nAccepted \n38\nSubmissions \n43\nAcceptance Rate \n88.37\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 2\n0 1\n2 3\nOutput\n2\nInput\n3 0\nOutput\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 2\n0 1\n2 3\nOutput\n2\nInput\n3 0\nOutput\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCount Connected Components in a Graph\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains two integers n and m, the number of nodes and the number of edges.\n- The next m lines each contain two integers u and v, representing an undirected edge between nodes u and v.",
+ "output_spec": "- A single integer representing the number of connected components in the graph.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5 3\n0 1\n1 2\n3 4",
+   "output": "2"
+  },
+  {
+   "input": "4 2\n0 1\n2 3",
+   "output": "2"
+  },
+  {
+   "input": "3 0",
+   "output": "3"
+  }
+ ],
+ "raw": ""
+}

@@ -1,0 +1,21 @@
+{
+ "title": "1386. Second Smallest Element or -1",
+ "slug": "second-smallest-element-or-1",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "lem\nHints & Solutions\nSubmissions\n1386\n. \nSecond Smallest Element or -1\n10\nEasy\nProblem Statement:\nGiven a number N followed by N integers, find the second smallest element in the list. If there is no second smallest (i.e., all elements are the same or only one element), print -1. \nInput Description:\nFirst line: an integer N (1\n\u2264 N\n\u2264 100000)\nSecond line: N space-separated integers \nOutput Description:\nPrint the second smallest element if it exists\nOtherwise, print -1 \nSample Input:\n5\n1 2 3 4 5 \nSample Output:\n2 \nAccepted \n22\nSubmissions \n26\nAcceptance Rate \n84.62\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 3 4 5\nOutput\n2\nInput\n4\n9 9 9 8\nOutput\n9\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 3 4 5\nOutput\n2\nInput\n4\n9 9 9 8\nOutput\n9\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSecond Smallest Element or -1\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "First line: an integer N (1\n\u2264 N\n\u2264 100000)\nSecond line: N space-separated integers",
+ "output_spec": "Print the second smallest element if it exists\nOtherwise, print -1",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "2"
+  },
+  {
+   "input": "4\n9 9 9 8",
+   "output": "9"
+  }
+ ],
+ "raw": ""
+}

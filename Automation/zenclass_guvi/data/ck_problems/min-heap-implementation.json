@@ -1,0 +1,25 @@
+{
+ "title": "1467. Min Heap Implementation",
+ "slug": "min-heap-implementation",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n1467\n. \nMin Heap Implementation\n30\nEasy\nProblem Statement:\nDesign and implement a Min Heap data structure. A Min Heap is a complete binary tree where the value of each node is less than or equal to the values of its children. Implement the following operations:\n1. insert(val): Insert an integer val into the heap.\n2. extractMin(): Remove and return the minimum element from the heap.\n3. heapify(arr): Build a Min Heap from an unsorted array arr. \nInput Description:\nThe first line contains an integer n, the number of operations.\nEach of the next n lines contains one of the following:\n- \"insert x\" to insert integer x into the heap.\n- \"extractMin\" to extract and print the minimum element.\n- \"heapify k x1 x2 ... xk\" to build a heap from k integers x1 to xk (this replaces the current heap). \nConstraints:\n1 <= n <= 10^4\n-10^6 <= x, x1, x2, ..., xk <= 10^6\n1 <= k <= 10^4 \nOutput Description:\nFor every \"extractMin\" operation, print the extracted minimum element on a new line. \nSample Input:\n5\ninsert 10\ninsert 5\ninsert 20\nextractMin\nextractMin \nSample Output:\n5\n10 \nExplanation:\n- Insert 5: Heap = [5]\n- Insert 3: Heap = [3, 5]\n- Insert 8: Heap = [3, 5, 8]\n- extractMin: Output 3, Heap = [5, 8]\n- Insert 2: Heap = [2, 8, 5]\n- extractMin: Output 2, Heap = [5, 8]\n- extractMin: Output 5, Heap = [8] \nAccepted \n36\nSubmissions \n43\nAcceptance Rate \n83.72\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\ninsert 10\ninsert 4\nextractMin\ninsert 7\nextractMin\nOutput\n4\n7\nInput\n6\ninsert 1\ninsert 2\ninsert 3\nextractMin\nextractMin\nextractMin\nOutput\n1\n2\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\ninsert 10\ninsert 4\nextractMin\ninsert 7\nextractMin\nOutput\n4\n7\nInput\n6\ninsert 1\ninsert 2\ninsert 3\nextractMin\nextractMin\nextractMin\nOutput\n1\n2\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Heap Implementation\nIssues Encountered\n*\nDescription ",
+ "input_spec": "The first line contains an integer n, the number of operations.\nEach of the next n lines contains one of the following:\n- \"insert x\" to insert integer x into the heap.\n- \"extractMin\" to extract and print the minimum element.\n- \"heapify k x1 x2 ... xk\" to build a heap from k integers x1 to xk (this replaces the current heap). \nConstraints:\n1 <= n <= 10^4\n-10^6 <= x, x1, x2, ..., xk <= 10^6\n1 <= k <= 10^4",
+ "output_spec": "For every \"extractMin\" operation, print the extracted minimum element on a new line.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5\ninsert 10\ninsert 5\ninsert 20\nextractMin\nextractMin",
+   "output": "5\n10"
+  },
+  {
+   "input": "5\ninsert 10\ninsert 4\nextractMin\ninsert 7\nextractMin",
+   "output": "4\n7"
+  },
+  {
+   "input": "6\ninsert 1\ninsert 2\ninsert 3\nextractMin\nextractMin\nextractMin",
+   "output": "1\n2\n3"
+  }
+ ],
+ "raw": ""
+}

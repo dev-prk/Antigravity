@@ -1,0 +1,21 @@
+{
+ "title": "1211. Bank Balance Transaction Manager",
+ "slug": "bank-balance-transaction-manager",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "\nHints & Solutions\nSubmissions\n1211\n. \nBank Balance Transaction Manager\n20\nEasy\nProblem Statement:\nBank Account Transaction Manager \nScenario-Based Problem: \nYou are tasked with developing a program for a bank to manage multiple transactions on a customer's account. The bank account holds an integer balance, and transactions are applied sequentially using various assignment operators. Each transaction can be a deposit, withdrawal, interest application, fee deduction, or investment. The operations to be performed on the balance are specified by the customer. \nThe assignment operators involved include: \n=: Assign a new balance.\n+=: Deposit an amount.\n-=: Withdraw an amount.\n*=: Apply a multiplication factor (e.g., interest rate).\n/=: Apply a division factor (e.g., service fee).\n%=: Apply a modulo operation (e.g., remainder after dividing by a certain number).\n&=: Apply a bitwise AND operation.\n|=: Apply a bitwise OR operation.\n^=: Apply a bitwise XOR operation.\n<<=: Apply a left shift operation (e.g., doubling balance).\n>>=: Apply a right shift operation (e.g., halving balance).\nThe program should read an initial balance and a sequence of transactions, apply the operations accordingly, and output the final balance after all transactions are processed. \nInput Description:\nAn integer representing the initial balance.\nA series of operations and values, each specifying a transaction to be applied. \nOutput Description:\nThe final balance after all transactions have been applied. \nSample Input:\n1000\n+= 500\n-= 200\n*= 1.10\n/= 2\nq \nSample Output:\nFinal Balance: 715 \nExplanation:\nAssume the initial balance is 1000. \nTransaction 1: Deposit 500 (Using +=)\n1000 += 500 \u2192 New Balance: 1500\nTransaction 2: Withdraw 200 (Using -=)\n1500 -= 200 \u2192 New Balance: 1300\nTransaction 3: Apply Interest of 10% (Using *=)\n1300 *= 1.10 \u2192 New Balance: 1430\nTransaction 4: Apply a Service Fee Factor of 2 (Using /=)\n1430 /= 2 \u2192 New Balance: 715\nThe final balance after these operations is 715.\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.67\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1000\n+= 500\n-= 200\n*= 1.10\n/= 2\nq\nOutput\nFinal Balance: 715\nInput\n1500\n-= 500\n^= 1024\n%= 100\nq\nOutput\nFinal Balance: 24\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1000\n+= 500\n-= 200\n*= 1.10\n/= 2\nq\nOutput\nFinal Balance: 715\nInput\n1500\n-= 500\n^= 1024\n%= 100\nq\nOutput\nFinal Balance: 24\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nS",
+ "input_spec": "An integer representing the initial balance.\nA series of operations and values, each specifying a transaction to be applied.",
+ "output_spec": "The final balance after all transactions have been applied.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "1000\n+= 500\n-= 200\n*= 1.10\n/= 2\nq",
+   "output": "Final Balance: 715"
+  },
+  {
+   "input": "1500\n-= 500\n^= 1024\n%= 100\nq",
+   "output": "Final Balance: 24"
+  }
+ ],
+ "raw": ""
+}

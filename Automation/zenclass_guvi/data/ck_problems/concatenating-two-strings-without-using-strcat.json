@@ -3,7 +3,7 @@
  "slug": "concatenating-two-strings-without-using-strcat",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2139. Concatenating Two Strings Without Using strcat()\n\n95\n\nHard\n\nProblem Statement\nRead two words and print them joined together into a single string, without using the strcat() function.\n\nDescription\nRead two strings, str1 and str2, into separate character arrays using scanf. Find the length of str1 using a loop. Use another loop to copy each character of str2 into str1, starting right after str1's last character, and finally place a null terminator at the end. Print the resulting combined string.",
+ "description": "ns\nSubmissions\n2139\n. \nConcatenating Two Strings Without Using strcat()\n95\nHard\nProblem Statement\nRead two words and print them joined together into a single string, without using the strcat() function.\nDescription\nRead two strings, str1 and str2, into separate character arrays using scanf. Find the length of str1 using a loop. Use another loop to copy each character of str2 into str1, starting right after str1's last character, and finally place a null terminator at the end. Print the resulting combined string.\nInput Description\nTwo words separated by a space.\nOutput Description\nPrint the two words joined together with no space between them.\nSample Input\nHello World\nSample Output\nHelloWorld\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nHello World\nOutput\nHelloWorld\nInput\nC Programming\nOutput\nCProgramming\nInput\nGood Bye\nOutput\nGoodBye\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nHello World\nOutput\nHelloWorld\nInput\nC Programming\nOutput\nCProgramming\nInput\nGood Bye\nOutput\nGoodBye\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nConcatenating Two Strings Without Using strcat()\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two words separated by a space.",
  "output_spec": "Print the two words joined together with no space between them.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "Hello World",
    "output": "HelloWorld"
+  },
+  {
+   "input": "C Programming",
+   "output": "CProgramming"
+  },
+  {
+   "input": "Good Bye",
+   "output": "GoodBye"
   }
  ],
  "raw": ""

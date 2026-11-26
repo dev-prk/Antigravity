@@ -3,13 +3,21 @@
  "slug": "count-subsets-with-given-sum-bitmask-dp",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1512. Count Subsets with Given Sum (Bitmask DP)\n\n50\n\nMedium\n\nProblem Statement:\nGiven an array of N positive integers and an integer K, count the number of subsets whose sum is exactly equal to K. You are required to use a bitmask dynamic programming approach to solve this problem efficiently.",
+ "description": "lutions\nSubmissions\n1512\n. \nCount Subsets with Given Sum (Bitmask DP)\n50\nMedium\nProblem Statement:\nGiven an array of N positive integers and an integer K, count the number of subsets whose sum is exactly equal to K. You are required to use a bitmask dynamic programming approach to solve this problem efficiently. \nInput Description:\n- The first line contains two integers N and K, where N is the number of elements in the array and K is the target sum.\n- The second line contains N space-separated positive integers representing the elements of the array. \nOutput Description:\n- Print a single integer: the number of subsets whose sum is exactly K. \nSample Input:\n3 6\n2 2 2 \nSample Output:\n1 \nExplanation:\nOnly one subset [2,2,2] sums to 6. \nAccepted \n21\nSubmissions \n22\nAcceptance Rate \n95.45\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 5\n1 2 3 4\nOutput\n2\nInput\n3 12\n4 4 4\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 5\n1 2 3 4\nOutput\n2\nInput\n3 12\n4 4 4\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nCount Subsets with Given Sum (Bitmask DP)\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains two integers N and K, where N is the number of elements in the array and K is the target sum.\n- The second line contains N space-separated positive integers representing the elements of the array.",
  "output_spec": "- Print a single integer: the number of subsets whose sum is exactly K.",
  "constraints": "",
  "samples": [
   {
    "input": "3 6\n2 2 2",
+   "output": "1"
+  },
+  {
+   "input": "4 5\n1 2 3 4",
+   "output": "2"
+  },
+  {
+   "input": "3 12\n4 4 4",
    "output": "1"
   }
  ],

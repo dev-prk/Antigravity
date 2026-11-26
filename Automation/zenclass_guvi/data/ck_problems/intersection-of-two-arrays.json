@@ -1,0 +1,21 @@
+{
+ "title": "1479. Intersection of Two Arrays",
+ "slug": "intersection-of-two-arrays",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "roblem\nHints & Solutions\nSubmissions\n1479\n. \nIntersection of Two Arrays\n30\nEasy\nProblem Statement:\nIntersection of Two Arrays\n Given two integer arrays nums1 and nums2, write a function to return their intersection. Each element in the result must be unique and you may return the result in any order. \nInput Description:\n- The first line contains an integer n, the number of elements in nums1.\n- The second line contains n space-separated integers representing nums1.\n- The third line contains an integer m, the number of elements in nums2.\n- The fourth line contains m space-separated integers representing nums2. \nOutput Description:\n- A single line containing the unique elements that are present in both arrays, separated by spaces, in any order. \nSample Input:\n4\n1 2 2 1\n2\n2 2 \nSample Output:\n2 \nExplanation:\nThe only unique element present in both arrays is 2. \nAccepted \n26\nSubmissions \n40\nAcceptance Rate \n65\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n4 9 5\n6\n9 4 9 8 4 5\nOutput\n4 5 9\nInput\n5\n1 2 3 4 5\n5\n6 7 8 9 10\nOutput\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n4 9 5\n6\n9 4 9 8 4 5\nOutput\n4 5 9\nInput\n5\n1 2 3 4 5\n5\n6 7 8 9 10\nOutput\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nIntersection of Two Arrays\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains an integer n, the number of elements in nums1.\n- The second line contains n space-separated integers representing nums1.\n- The third line contains an integer m, the number of elements in nums2.\n- The fourth line contains m space-separated integers representing nums2.",
+ "output_spec": "- A single line containing the unique elements that are present in both arrays, separated by spaces, in any order.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "4\n1 2 2 1\n2\n2 2",
+   "output": "2"
+  },
+  {
+   "input": "3\n4 9 5\n6\n9 4 9 8 4 5",
+   "output": "4 5 9"
+  }
+ ],
+ "raw": ""
+}

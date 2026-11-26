@@ -1,0 +1,21 @@
+{
+ "title": "1400. Variable Init & Arithmetic Operations",
+ "slug": "variable-init-arithmetic-operations",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "s & Solutions\nSubmissions\n1400\n. \nVariable Init & Arithmetic Operations\n10\nEasy\nProblem Statement:\nWrite a program that takes four integers as input, performs a series of arithmetic operations using these integers, and outputs the results in a specific format. \nYou need to declare four integer variables, perform the following operations, and print the results: \n1. Add the first and the second integer, then multiply the result by the third integer.\n2. Subtract the fourth integer from the second integer, then divide the result by the first integer.\n3. Multiply the first integer by the fourth integer, then add the third integer to the result.\n4. Add all four integers together and divide by two. \nInput Description:\nFour integers, each on a new line. \nOutput Description:\nFour lines of output, each showing the result of the respective operations in the following format:\nResult of operation 1: <result>\nResult of operation 2: <result>\nResult of operation 3: <result>\nResult of operation 4: <result> \nSample Input:\n3\n4\n2\n1 \nSample Output:\nResult of operation 1: 14\nResult of operation 2: 1\nResult of operation 3: 5\nResult of operation 4: 5 \nAccepted \n92\nSubmissions \n130\nAcceptance Rate \n70.77\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n4\n2\n1\nOutput\nResult of operation 1: 14\nResult of operation 2: 1\nResult of operation 3: 5\nResult of operation 4: 5\nInput\n10\n20\n5\n2\nOutput\nResult of operation 1: 150\nResult of operation 2: 1\nResult of operation 3: 25\nResult of operation 4: 18\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n4\n2\n1\nOutput\nResult of operation 1: 14\nResult of operation 2: 1\nResult of operation 3: 5\nResult of operation 4: 5\nInput\n10\n20\n5\n2\nOutput\nResult of operation 1: 150\nResult of operation 2: 1\nResult of operation 3: 25\nResult of operation 4: 18\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nVariable Init & Arithmetic Operations\nIssues Encounter",
+ "input_spec": "Four integers, each on a new line.",
+ "output_spec": "Four lines of output, each showing the result of the respective operations in the following format:\nResult of operation 1: <result>\nResult of operation 2: <result>\nResult of operation 3: <result>\nResult of operation 4: <result>",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "3\n4\n2\n1",
+   "output": "Result of operation 1: 14\nResult of operation 2: 1\nResult of operation 3: 5\nResult of operation 4: 5"
+  },
+  {
+   "input": "10\n20\n5\n2",
+   "output": "Result of operation 1: 150\nResult of operation 2: 1\nResult of operation 3: 25\nResult of operation 4: 18"
+  }
+ ],
+ "raw": ""
+}

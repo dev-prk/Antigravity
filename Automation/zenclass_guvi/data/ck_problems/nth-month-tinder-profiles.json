@@ -1,0 +1,25 @@
+{
+ "title": "730. Nth Month Tinder Profiles",
+ "slug": "nth-month-tinder-profiles",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n730\n. \nNth Month Tinder Profiles\n20\nEasy\nTopics\nProblem Statement:\nPandi is a 20 year old Engineering student living in Coimbatore. He is an avid user of Tinder app, a social dating application. At the beginning stage of his dating life i.e. first two months, he swiped right on all the profiles. On the fore coming months he became a bit choosey in swiping right. So the number profiles per each right swipe kept increasing as the sum of the previous two months profiles per right swipe count. Given Nth month, your task is to find out how many profiles Pandi will look into for each right swipe? \nInput Description:\nOne single Integer 'N'\n1 \nOutput Description:\nOne single integer value of number of profiles Pandi looks for each right swipe \nSample Input:\n7 \nSample Output:\n13 \nExplanation:\nPandi will take 13 wipes for each right swipe \nAccepted \n655\nSubmissions \n727\nAcceptance Rate \n90.1\n%\nTopics\narrays, list and tuples - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n55\nInput\n12\nOutput\n144\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nOutput\n55\nInput\n12\nOutput\n144\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth Month Tinder Profiles\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "One single Integer 'N'\n1",
+ "output_spec": "One single integer value of number of profiles Pandi looks for each right swipe",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "7",
+   "output": "13"
+  },
+  {
+   "input": "10",
+   "output": "55"
+  },
+  {
+   "input": "12",
+   "output": "144"
+  }
+ ],
+ "raw": ""
+}

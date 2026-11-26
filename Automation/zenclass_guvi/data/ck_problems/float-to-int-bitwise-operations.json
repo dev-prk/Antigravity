@@ -1,0 +1,21 @@
+{
+ "title": "1401. Float to Int Bitwise Operations",
+ "slug": "float-to-int-bitwise-operations",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "m\nHints & Solutions\nSubmissions\n1401\n. \nFloat to Int Bitwise Operations\n10\nEasy\nProblem Statement:\nWrite a program that takes two floating-point numbers as input, performs bitwise operations by converting them to integers, and outputs the results in a specific format. You need to declare two floating-point variables, convert them to integers, perform the following bitwise operations, and print the results:\nPerform bitwise AND on the two integers.\nPerform bitwise OR on the two integers.\nPerform bitwise XOR on the two integers.\nPerform bitwise NOT on the first integer and AND it with the second integer. \nInput Description:\nTwo floating-point numbers, each on a new line. \nOutput Description:\nFour lines of output, each showing the result of the respective operations in the following format:\nBitwise AND result: <result>\nBitwise OR result: <result>\nBitwise XOR result: <result>\nBitwise NOT and AND result: <result> \nSample Input:\n5.5\n3.3 \nSample Output:\nBitwise AND result: 1\nBitwise OR result: 7\nBitwise XOR result: 6\nBitwise NOT and AND result: 2 \nAccepted \n85\nSubmissions \n97\nAcceptance Rate \n87.63\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5.5\n3.3\nOutput\nBitwise AND result: 1\nBitwise OR result: 7\nBitwise XOR result: 6\nBitwise NOT and AND result: 2\nInput\n10.1\n8.8\nOutput\nBitwise AND result: 8\nBitwise OR result: 10\nBitwise XOR result: 2\nBitwise NOT and AND result: 0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5.5\n3.3\nOutput\nBitwise AND result: 1\nBitwise OR result: 7\nBitwise XOR result: 6\nBitwise NOT and AND result: 2\nInput\n10.1\n8.8\nOutput\nBitwise AND result: 8\nBitwise OR result: 10\nBitwise XOR result: 2\nBitwise NOT and AND result: 0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nFloat to Int Bitwise Operations\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases ar",
+ "input_spec": "Two floating-point numbers, each on a new line.",
+ "output_spec": "Four lines of output, each showing the result of the respective operations in the following format:\nBitwise AND result: <result>\nBitwise OR result: <result>\nBitwise XOR result: <result>\nBitwise NOT and AND result: <result>",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "5.5\n3.3",
+   "output": "Bitwise AND result: 1\nBitwise OR result: 7\nBitwise XOR result: 6\nBitwise NOT and AND result: 2"
+  },
+  {
+   "input": "10.1\n8.8",
+   "output": "Bitwise AND result: 8\nBitwise OR result: 10\nBitwise XOR result: 2\nBitwise NOT and AND result: 0"
+  }
+ ],
+ "raw": ""
+}

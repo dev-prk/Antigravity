@@ -1,0 +1,25 @@
+{
+ "title": "1359. Java Method Overloading for Math Ops",
+ "slug": "java-method-overloading-for-math-ops",
+ "difficulty": "Easy",
+ "completed": false,
+ "description": "ts & Solutions\nSubmissions\n1359\n. \nJava Method Overloading for Math Ops\n10\nEasy\nProblem Statement:\nWrite a Java program that performs mathematical operations (addition, subtraction, multiplication, and division) using method overloading. The program should support operations on integers, floating-point numbers, and lists (varargs). \nInput Description:\nImplement method overloading to perform operations on: Two integer numbers Two floating-point numbers A list of integers (varargs) A list of floating-point numbers (varargs) Each method should return the result of the operation. The program should demonstrate method overloading by calling each method with different types of inputs.\nInput Format: Operation Type (Addition, Subtraction, Multiplication, or Division). Type of Numbers (int or float). Two numbers (for single operation). A list of numbers (for varargs operations). \nOutput Description:\nThe result of the specified operation. \nSample Input:\nAddition int 5 3 \nSample Output:\nSum of 5 and 3 is: 8 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n96.3\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nMultiplication float 2.5 4.0\nOutput\nProduct of 2.5 and 4.0 is: 10.0\nInput\nDivision float 9.0 3.0\nOutput\nQuotient of 9.0 and 3.0 is: 3.0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nMultiplication float 2.5 4.0\nOutput\nProduct of 2.5 and 4.0 is: 10.0\nInput\nDivision float 9.0 3.0\nOutput\nQuotient of 9.0 and 3.0 is: 3.0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nJava Method Overloading for Math Ops\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Implement method overloading to perform operations on: Two integer numbers Two floating-point numbers A list of integers (varargs) A list of floating-point numbers (varargs) Each method should return the result of the operation. The program should demonstrate method overloading by calling each method with different types of inputs.\nInput Format: Operation Type (Addition, Subtraction, Multiplication, or Division). Type of Numbers (int or float). Two numbers (for single operation). A list of numbers (for varargs operations).",
+ "output_spec": "The result of the specified operation.",
+ "constraints": "",
+ "samples": [
+  {
+   "input": "Addition int 5 3",
+   "output": "Sum of 5 and 3 is: 8"
+  },
+  {
+   "input": "Multiplication float 2.5 4.0",
+   "output": "Product of 2.5 and 4.0 is: 10.0"
+  },
+  {
+   "input": "Division float 9.0 3.0",
+   "output": "Quotient of 9.0 and 3.0 is: 3.0"
+  }
+ ],
+ "raw": ""
+}

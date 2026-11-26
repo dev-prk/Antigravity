@@ -3,14 +3,22 @@
  "slug": "gobble-function-evaluation",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n450. Gobble Function Evaluation\n\n50\n\nMedium  Topics\n\nProblem Statement:\nG(x) = G(x-1) + 9, G(0) = 1. Given x, find G(x). x >= 1",
+ "description": "ints & Solutions\nSubmissions\n450\n. \nGobble Function Evaluation\n50\nMedium\nTopics\nProblem Statement:\nG(x) = G(x-1) + 9, G(0) = 1. Given x, find G(x). x >= 1\nInput Description:\nRead a single integer x.\nOutput Description:\nPrint a single line, the value of G(x)\nExplanation:\nG(2) = G(1) + 9 = G(0) + 9 + 9 = 19\nSample Input:\n2\nSample Output:\n19\nAccepted \n103\nSubmissions \n107\nAcceptance Rate \n96.26\n%\nTopics\nrecursion\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nOutput\n28\nInput\n2274\nOutput\n20467\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nOutput\n28\nInput\n2274\nOutput\n20467\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nGobble Function Evaluation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Read a single integer x.",
- "output_spec": "Print a single line, the value of G(x)",
+ "output_spec": "Print a single line, the value of G(x)\nExplanation:\nG(2) = G(1) + 9 = G(0) + 9 + 9 = 19",
  "constraints": "",
  "samples": [
   {
    "input": "2",
    "output": "19"
+  },
+  {
+   "input": "3",
+   "output": "28"
+  },
+  {
+   "input": "2274",
+   "output": "20467"
   }
  ],
  "raw": ""

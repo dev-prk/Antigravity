@@ -3,13 +3,21 @@
  "slug": "leap-year-checker",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2164. Leap Year Checker\n\n60\n\nMedium\n\nProblem Statement\nRead a year and print True if it is a leap year, otherwise print False.\nDescription\nRead a year and check whether it is a leap year. Print True if it is a leap year, otherwise print False. A year is a leap year if it is divisible by 4 but not divisible by 100, or if it is divisible by 400. For example, 2024 and 2000 are leap years, but 1900 and 2023 are not.",
+ "description": "oblem\nProblem\nHints & Solutions\nSubmissions\n2164\n. \nLeap Year Checker\n60\nMedium\nProblem Statement\nRead a year and print True if it is a leap year, otherwise print False.\nDescription\nRead a year and check whether it is a leap year. Print True if it is a leap year, otherwise print False. A year is a leap year if it is divisible by 4 but not divisible by 100, or if it is divisible by 400. For example, 2024 and 2000 are leap years, but 1900 and 2023 are not.\nInput Description\nA single integer, the year. (1 <= year <= 9999)\nOutput Description\nPrint True if the year is a leap year, otherwise print False.\nSample Input\n2024\nSample Output\nTrue\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2024\nOutput\nTrue\nInput\n1900\nOutput\nFalse\nInput\n2000\nOutput\nTrue\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2024\nOutput\nTrue\nInput\n1900\nOutput\nFalse\nInput\n2000\nOutput\nTrue\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nLeap Year Checker\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single integer, the year. (1 <= year <= 9999)",
  "output_spec": "Print True if the year is a leap year, otherwise print False.",
  "constraints": "",
  "samples": [
   {
    "input": "2024",
+   "output": "True"
+  },
+  {
+   "input": "1900",
+   "output": "False"
+  },
+  {
+   "input": "2000",
    "output": "True"
   }
  ],
