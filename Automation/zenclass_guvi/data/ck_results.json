@@ -12157,10 +12157,10 @@
  "minimize-x-y": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/3\nLanguage\nPYTHON 3\nRuntime\n\n42ms\n\nMemory\n\n9kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n5",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/3\nLanguage\nPYTHON 3\nRuntime\n\n32ms\n\nMemory\n\n10kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
   "duration_s": 1.52,
-  "ts": "2026-11-26T19:50:56.381753+00:00"
+  "ts": "2026-11-26T19:51:18.521711+00:00"
  },
  "minimum-absolute-sum-pair": {
   "status": "COMPLETED",
@@ -12201,5 +12201,141 @@
   "reason": "SOLVED_MODAL",
   "duration_s": 6.78,
   "ts": "2026-11-26T19:51:16.967362+00:00"
+ },
+ "minimum-cost-cherry-pattern": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.26,
+  "ts": "2026-11-26T19:51:18.798491+00:00"
+ },
+ "minimum-cost-path-in-a-grid": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.72,
+  "ts": "2026-11-26T19:51:27.531397+00:00"
+ },
+ "minimum-cost-police-checkposts": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.3,
+  "ts": "2026-11-26T19:51:27.850052+00:00"
+ },
+ "minimum-cost-to-connect-cities-2": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.54,
+  "ts": "2026-11-26T19:51:38.401087+00:00"
+ },
+ "minimum-cost-to-connect-cities": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.61,
+  "ts": "2026-11-26T19:52:46.786976+00:00"
+ },
+ "minimum-difference-in-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T19:52:33.683605+00:00"
+ },
+ "minimum-distance-between-elements": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.28,
+  "ts": "2026-11-26T19:52:33.977184+00:00"
+ },
+ "minimum-edit-distance": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.28,
+  "ts": "2026-11-26T19:52:34.271593+00:00"
+ },
+ "minimum-file-merge-cost": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 7.8,
+  "ts": "2026-11-26T19:52:42.167410+00:00"
+ },
+ "minimum-insertions-for-palindrome": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.89,
+  "ts": "2026-11-26T19:52:48.685588+00:00"
+ },
+ "minimum-jumps-to-array-end": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n82ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T19:52:50.197482+00:00"
+ },
+ "minimum-k-for-dominant-character": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.28,
+  "ts": "2026-11-26T19:52:50.486518+00:00"
+ },
+ "minimum-moves-for-counter-rearrangement": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.31,
+  "ts": "2026-11-26T19:52:50.812389+00:00"
+ },
+ "minimum-odd-quotient-factor": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.55,
+  "ts": "2026-11-26T19:52:52.376953+00:00"
+ },
+ "minimum-operations-for-palindromic-array": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/7\nLanguage\nPYTHON 3\nRuntime\n\n117ms\n\nMemory\n\n23kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\nimport sys\nfrom collections import Counter\n\ndef solve():\n    n = int(sys.stdin.readlin",
+  "duration_s": 2.66,
+  "ts": "2026-11-26T19:52:55.056194+00:00"
+ },
+ "minimum-prepended-chars-for-palindrome": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.93,
+  "ts": "2026-11-26T19:53:02.002486+00:00"
+ },
+ "minimum-refuels-for-bus-journeys": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.3,
+  "ts": "2026-11-26T19:53:02.325925+00:00"
  }
 }

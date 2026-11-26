@@ -1,31 +1,31 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-26T19:51:16.987886+00:00",
+  "last_updated": "2026-11-26T19:53:02.345417+00:00",
   "summary": {
-    "total_discovered": 183,
-    "total_completed": 105,
+    "total_discovered": 185,
+    "total_completed": 107,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
     "total_failed": 78,
-    "success_rate_percent": 57.38,
-    "total_time_spent_seconds": 1028.22,
+    "success_rate_percent": 57.84,
+    "total_time_spent_seconds": 1028.8,
     "by_platform": {
       "guvi": {
-        "total_discovered": 183,
-        "total_completed": 105,
+        "total_discovered": 185,
+        "total_completed": 107,
         "total_pending": 0,
         "total_blocked": 0,
         "total_failed": 78,
-        "success_rate_percent": 57.38,
-        "time_spent_seconds": 1028.22
+        "success_rate_percent": 57.84,
+        "time_spent_seconds": 1028.8
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 183,
-        "completed": 105,
-        "success_rate_percent": 57.38
+        "total": 185,
+        "completed": 107,
+        "success_rate_percent": 57.84
       }
     },
     "human_intervention_issues": [
@@ -4364,6 +4364,44 @@
       "created_at": "2026-11-26T19:51:16.986580+00:00",
       "updated_at": "2026-11-26T19:51:16.986580+00:00",
       "timestamp": "2026-11-26T19:51:16.986580+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-minimum-edit-distance",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "minimum-edit-distance",
+      "url": "https://www.guvi.in/code-kata/minimum-edit-distance/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.28,
+      "metadata": {},
+      "created_at": "2026-11-26T19:52:34.349639+00:00",
+      "updated_at": "2026-11-26T19:52:34.349639+00:00",
+      "timestamp": "2026-11-26T19:52:34.349639+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-minimum-refuels-for-bus-journeys",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "minimum-refuels-for-bus-journeys",
+      "url": "https://www.guvi.in/code-kata/minimum-refuels-for-bus-journeys/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.3,
+      "metadata": {},
+      "created_at": "2026-11-26T19:53:02.344163+00:00",
+      "updated_at": "2026-11-26T19:53:02.344163+00:00",
+      "timestamp": "2026-11-26T19:53:02.344163+00:00",
       "attempts": 1,
       "category": "CodeKata"
     }
