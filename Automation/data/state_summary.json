@@ -1,34 +1,45 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-26T19:53:02.345417+00:00",
+  "last_updated": "2026-11-26T19:56:20.820262+00:00",
   "summary": {
-    "total_discovered": 185,
-    "total_completed": 107,
+    "total_discovered": 188,
+    "total_completed": 109,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 78,
-    "success_rate_percent": 57.84,
-    "total_time_spent_seconds": 1028.8,
+    "total_failed": 79,
+    "success_rate_percent": 57.98,
+    "total_time_spent_seconds": 1034.61,
     "by_platform": {
       "guvi": {
-        "total_discovered": 185,
-        "total_completed": 107,
+        "total_discovered": 188,
+        "total_completed": 109,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 78,
-        "success_rate_percent": 57.84,
-        "time_spent_seconds": 1028.8
+        "total_failed": 79,
+        "success_rate_percent": 57.98,
+        "time_spent_seconds": 1034.61
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 185,
-        "completed": 107,
-        "success_rate_percent": 57.84
+        "total": 188,
+        "completed": 109,
+        "success_rate_percent": 57.98
       }
     },
     "human_intervention_issues": [
+      {
+        "task_id": "guvi-minimum-vertex-cover-on-trees",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "minimum-vertex-cover-on-trees",
+        "status": "FAILED",
+        "attempts": 2,
+        "failure_reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nJAVA 8\nRuntime\n\n205ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\nimport java.i",
+        "next_action": "NONE",
+        "url": "https://www.guvi.in/code-kata/minimum-vertex-cover-on-trees/"
+      },
       {
         "task_id": "guvi-minimize-max-pair-sum",
         "platform": "guvi",
@@ -4402,6 +4413,63 @@
       "created_at": "2026-11-26T19:53:02.344163+00:00",
       "updated_at": "2026-11-26T19:53:02.344163+00:00",
       "timestamp": "2026-11-26T19:53:02.344163+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-minimum-vertex-cover-on-trees",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "minimum-vertex-cover-on-trees",
+      "url": "https://www.guvi.in/code-kata/minimum-vertex-cover-on-trees/",
+      "status": "FAILED",
+      "attempt_count": 2,
+      "result": "FAILED_PLATFORM",
+      "failure_reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nJAVA 8\nRuntime\n\n205ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\nimport java.i",
+      "next_action": "NONE",
+      "time_spent_seconds": 2.52,
+      "metadata": {},
+      "created_at": "2026-11-26T19:53:48.605516+00:00",
+      "updated_at": "2026-11-26T19:53:48.605516+00:00",
+      "timestamp": "2026-11-26T19:53:48.605516+00:00",
+      "attempts": 2,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-most-frequent-integer",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "most-frequent-integer",
+      "url": "https://www.guvi.in/code-kata/most-frequent-integer/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 1.65,
+      "metadata": {},
+      "created_at": "2026-11-26T19:54:17.518598+00:00",
+      "updated_at": "2026-11-26T19:54:17.518598+00:00",
+      "timestamp": "2026-11-26T19:54:17.518598+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-multiple-exception-handler",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "multiple-exception-handler",
+      "url": "https://www.guvi.in/code-kata/multiple-exception-handler/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 1.64,
+      "metadata": {},
+      "created_at": "2026-11-26T19:56:20.818673+00:00",
+      "updated_at": "2026-11-26T19:56:20.818673+00:00",
+      "timestamp": "2026-11-26T19:56:20.818673+00:00",
       "attempts": 1,
       "category": "CodeKata"
     }
