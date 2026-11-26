@@ -1,23 +1,23 @@
 {
   "total_catalog_images": 500,
-  "embedding_dimension": 2058,
+  "embedding_dimension": 170,
   "num_categories": 10,
   "holdout_queries": 100,
   "precision_at_1": 0.67,
-  "precision_at_5": 0.552,
-  "precision_at_10": 0.533,
-  "recall_at_10": 0.1088,
-  "avg_faiss_latency_ms": 0.0908,
+  "precision_at_5": 0.642,
+  "precision_at_10": 0.643,
+  "recall_at_10": 0.1312,
+  "avg_faiss_latency_ms": 0.0151,
   "category_precision_at_5": {
-    "backpack": 0.32,
-    "bottle": 0.66,
-    "chair": 0.3,
-    "headphones": 0.26,
-    "lamp": 0.68,
+    "backpack": 0.6,
+    "bottle": 0.68,
+    "chair": 0.5,
+    "headphones": 0.28,
+    "lamp": 0.76,
     "laptop": 0.68,
-    "shoes": 0.82,
-    "sunglasses": 0.62,
-    "tshirt": 0.48,
-    "watch": 0.7
+    "shoes": 0.9,
+    "sunglasses": 0.64,
+    "tshirt": 0.66,
+    "watch": 0.72
   }
 }

@@ -10,12 +10,11 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 import os
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
-os.environ.setdefault("OMP_NUM_THREADS", "1")
 
 import torch
 import torch.nn as nn
 from torchvision import models, transforms
-torch.set_num_threads(1)
+torch.set_num_threads(4)
 
 
 class ResNetVisualFeatureExtractor:
@@ -31,11 +30,12 @@ class ResNetVisualFeatureExtractor:
         self.pretrained_loaded = False
         self.backbone = self._build_resnet50_backbone()
         self.transform = transforms.Compose([
-            transforms.Resize((256, 256)),
+            transforms.Resize((192, 192)),
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
         ])
         self.scaler = StandardScaler()
+        self.svd = None
         self.projector = None
 
     def _build_resnet50_backbone(self) -> nn.Module:
@@ -119,19 +119,23 @@ class ResNetVisualFeatureExtractor:
         return np.hstack([cnn_feats, spatial_feats]).astype(np.float32)
 
     def fit_projection(self, raw_features: np.ndarray, labels: np.ndarray) -> None:
+        from sklearn.decomposition import TruncatedSVD
         from sklearn.linear_model import LogisticRegression
-        scaled = self.scaler.fit_transform(raw_features)
-        self.projector = LogisticRegression(C=0.25, max_iter=500, random_state=self.random_state)
-        self.projector.fit(scaled, labels)
+        n_comp = min(160, raw_features.shape[0] - 1, raw_features.shape[1] - 1)
+        self.svd = TruncatedSVD(n_components=n_comp, random_state=self.random_state)
+        reduced = self.scaler.fit_transform(self.svd.fit_transform(raw_features))
+        self.projector = LogisticRegression(C=0.4, max_iter=300, random_state=self.random_state)
+        self.projector.fit(reduced, labels)
 
     def project(self, raw_features: np.ndarray) -> np.ndarray:
-        base_norm = raw_features / (np.linalg.norm(raw_features, axis=1, keepdims=True) + 1e-8)
-        if self.projector is None:
-            return base_norm.astype(np.float32)
-        scaled = self.scaler.transform(raw_features)
+        if self.svd is None or self.projector is None:
+            return (raw_features / (np.linalg.norm(raw_features, axis=1, keepdims=True) + 1e-8)).astype(np.float32)
+        reduced_raw = self.svd.transform(raw_features).astype(np.float32)
+        red_norm = reduced_raw / (np.linalg.norm(reduced_raw, axis=1, keepdims=True) + 1e-8)
+        scaled = self.scaler.transform(reduced_raw)
         probs = self.projector.predict_proba(scaled).astype(np.float32)
         probs_norm = probs / (np.linalg.norm(probs, axis=1, keepdims=True) + 1e-8)
-        fused = np.hstack([base_norm * 0.65, probs_norm * 0.75]).astype(np.float32)
+        fused = np.hstack([red_norm * 0.60, probs_norm * 0.80]).astype(np.float32)
         norms = np.linalg.norm(fused, axis=1, keepdims=True) + 1e-8
         return (fused / norms).astype(np.float32)
 

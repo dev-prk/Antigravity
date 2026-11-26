@@ -9,7 +9,6 @@ import sys
 from pathlib import Path
 
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-os.environ["OMP_NUM_THREADS"] = "1"
 
 PROJECTS_ROOT = Path(__file__).resolve().parent
 
@@ -39,13 +38,13 @@ def verify_all() -> int:
             cwd=str(pdir),
             capture_output=True,
             text=True,
-            env={**os.environ, "KMP_DUPLICATE_LIB_OK": "TRUE", "OMP_NUM_THREADS": "1"},
+            env={**os.environ, "KMP_DUPLICATE_LIB_OK": "TRUE"},
         )
         pytest_ok = proc.returncode == 0
 
         # 2. Run headless Streamlit AppTest smoke render in isolated subprocess
         ui_code = (
-            "import os; os.environ['KMP_DUPLICATE_LIB_OK']='TRUE'; os.environ['OMP_NUM_THREADS']='1'; "
+            "import os; os.environ['KMP_DUPLICATE_LIB_OK']='TRUE'; "
             "from streamlit.testing.v1 import AppTest; "
             "at = AppTest.from_file('app.py', default_timeout=60); at.run(); "
             "assert not at.exception, f'Streamlit exception: {at.exception}'; "
