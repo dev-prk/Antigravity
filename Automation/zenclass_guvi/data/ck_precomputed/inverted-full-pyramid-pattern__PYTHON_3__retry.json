@@ -1,0 +1,1 @@
+{"slug": "inverted-full-pyramid-pattern", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:\n        return\n    R = int(data[0])\n    for i in range(R, 0, -1):\n        print(' '.join(['*'] * i) + ' ')\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "retry": true}

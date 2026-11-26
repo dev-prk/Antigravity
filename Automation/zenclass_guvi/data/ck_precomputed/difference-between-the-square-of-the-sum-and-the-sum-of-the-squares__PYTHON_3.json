@@ -1,0 +1,1 @@
+{"slug": "difference-between-the-square-of-the-sum-and-the-sum-of-the-squares", "lang": "PYTHON 3", "code": "a, b, c = map(int, input().split())\nsum_sq = a * a + b * b + c * c\nsq_sum = (a + b + c) * (a + b + c)\nprint(sum_sq)\nprint(sq_sum)\nprint(sq_sum - sum_sq)\n", "local_ok": true, "err": ""}

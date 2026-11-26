@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+class LibraryItem {
+    protected int lateDays;
+    
+    public LibraryItem(int lateDays) {
+        this.lateDays = lateDays;
+    }
+    
+    public int calculateLateFee() {
+        return 0;
+    }
+}
+
+class Book extends LibraryItem {
+    public Book(int lateDays) {
+        super(lateDays);
+    }
+    
+    @Override
+    public int calculateLateFee() {
+        return lateDays * 5;
+    }
+}
+
+class Magazine extends LibraryItem {
+    public Magazine(int lateDays) {
+        super(lateDays);
+    }
+    
+    @Override
+    public int calculateLateFee() {
+        return lateDays * 2;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String type = sc.nextLine().trim();
+        int days = sc.nextInt();
+        
+        LibraryItem item;
+        
+        if (type.equals("book")) {
+            item = new Book(days);
+        } else {
+            item = new Magazine(days);
+        }
+        
+        System.out.println(item.calculateLateFee());
+    }
+}

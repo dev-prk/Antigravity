@@ -9604,10 +9604,10 @@
  "binary-tree-symmetry-check": {
   "status": "FAILED_PLATFORM",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nCompiler Error\nTest Cases\n2/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 88, in <module> main() File \"script-3.8.1.py\", line 69, in main build_tree(root, None) File \"script-3.8.1.py\", line 67, i",
-  "duration_s": 1.51,
-  "ts": "2026-11-26T19:20:14.881307+00:00"
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/5\nLanguage\nPYTHON 3\nRuntime\n\n76ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 3.13,
+  "ts": "2026-11-26T19:21:27.590095+00:00"
  },
  "box-volume-comparator": {
   "status": "COMPLETED",
@@ -9650,5 +9650,1532 @@
   "reason": "Already solved",
   "duration_s": 0.31,
   "ts": "2026-11-26T19:20:41.519955+00:00"
+ },
+ "dhoni-anagram-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:20:41.827516+00:00"
+ },
+ "file-write-read-and-character-count": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T19:20:43.470861+00:00"
+ },
+ "filter-products-by-category": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.78,
+  "ts": "2026-11-26T19:20:45.264631+00:00"
+ },
+ "filtering-products-by-price": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:20:46.786981+00:00"
+ },
+ "final-keyword-immutable-2d-point": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 7.63,
+  "ts": "2026-11-26T19:20:54.429956+00:00"
+ },
+ "financial-transaction-management": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.85,
+  "ts": "2026-11-26T19:21:59.779352+00:00"
+ },
+ "find-closest-to-zero-sum-pair": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.3,
+  "ts": "2026-11-26T19:21:27.904070+00:00"
+ },
+ "find-different-number-in-series": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T19:21:29.542104+00:00"
+ },
+ "find-ground-of-a-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T19:21:31.301993+00:00"
+ },
+ "find-height-of-bst": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:21:32.854208+00:00"
+ },
+ "find-leaders-in-an-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:21:34.367134+00:00"
+ },
+ "find-maximum-element-in-bst": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:22:01.301176+00:00"
+ },
+ "find-maximum-sensex-period": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:21:37.525675+00:00"
+ },
+ "find-minimum-element-in-bst": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.56,
+  "ts": "2026-11-26T19:22:04.639635+00:00"
+ },
+ "find-minimum-in-bst": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 11.77,
+  "ts": "2026-11-26T19:21:50.939007+00:00"
+ },
+ "find-position-of-number-in-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.81,
+  "ts": "2026-11-26T19:21:52.757746+00:00"
+ },
+ "find-smallest-in-range": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:21:54.412383+00:00"
+ },
+ "find-sum-pair": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T19:21:55.908797+00:00"
+ },
+ "find-the-frequency-of-elements-using-calloc": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.97,
+  "ts": "2026-11-26T19:21:57.892614+00:00"
+ },
+ "find-the-missing-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T19:22:03.063594+00:00"
+ },
+ "find-the-single-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:22:06.322914+00:00"
+ },
+ "find-the-unique-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.26,
+  "ts": "2026-11-26T19:22:06.597443+00:00"
+ },
+ "finding-the-average-of-an-array-and-counting-elements-above-it": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.43,
+  "ts": "2026-11-26T19:22:11.034835+00:00"
+ },
+ "converting-a-lowercase-letter-to-uppercase-using-ascii-arithmetic": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.24,
+  "ts": "2026-11-26T19:22:14.294933+00:00"
+ },
+ "counting-sort-string": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:22:15.816206+00:00"
+ },
+ "finding-the-factorial-of-a-number-using-recursion": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.01,
+  "ts": "2026-11-26T19:22:19.834668+00:00"
+ },
+ "finding-the-gcd-of-two-numbers": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.6,
+  "ts": "2026-11-26T19:22:23.481829+00:00"
+ },
+ "finding-the-number-of-days-in-a-month-using-functions": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 5.73,
+  "ts": "2026-11-26T19:22:29.232239+00:00"
+ },
+ "bracket-balance-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T19:22:30.738663+00:00"
+ },
+ "first-occurrence-of-character": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:22:32.286989+00:00"
+ },
+ "flatten-sorted-linked-lists": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T19:22:33.931225+00:00"
+ },
+ "food-delivery-path-optimization": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:24:03.862222+00:00"
+ },
+ "formatted-float-output": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T19:22:37.350930+00:00"
+ },
+ "function-void-swap-and-diff": {
+  "status": "SKIPPED_NO_EDITOR",
+  "attempts": 1,
+  "ts": "2026-11-26T19:22:44.186340+00:00"
+ },
+ "game-character-system-using-virtual-functions": {
+  "status": "FAILED_PLATFORM",
+  "language": "C++",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/4\nLanguage\nC++\nRuntime\n\n8ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n#include <ios",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:23:51.829487+00:00"
+ },
+ "binary-search-tree-find-height": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:22:51.908149+00:00"
+ },
+ "gcd-euclidean": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.47,
+  "ts": "2026-11-26T19:22:54.940446+00:00"
+ },
+ "gcd-of-n-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T19:22:56.704309+00:00"
+ },
+ "general-n-ary-tree-implementation": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nJAVA 8\nRuntime\n\n501ms\n\nMemory\n\n61kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n5",
+  "duration_s": 3.64,
+  "ts": "2026-11-26T19:24:07.511907+00:00"
+ },
+ "generate-all-solutions": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T19:23:16.448660+00:00"
+ },
+ "generating-valid-parentheses": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 12.32,
+  "ts": "2026-11-26T19:23:28.792760+00:00"
+ },
+ "generic-calculator-using-function-class-templates": {
+  "status": "FAILED_PLATFORM",
+  "language": "C++",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nC++\nRuntime\n\n8ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n5",
+  "duration_s": 2.52,
+  "ts": "2026-11-26T19:24:10.045020+00:00"
+ },
+ "generic-pair-operations": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 8.33,
+  "ts": "2026-11-26T19:23:50.301167+00:00"
+ },
+ "generic-stack-implementation": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/4\nLanguage\nJAVA\nRuntime\n\n365ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n",
+  "duration_s": 2.65,
+  "ts": "2026-11-26T19:24:24.795160+00:00"
+ },
+ "column-sum-of-a-matrix": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:24:11.692965+00:00"
+ },
+ "gold-statues": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.28,
+  "ts": "2026-11-26T19:24:14.968356+00:00"
+ },
+ "goldbach-s-conjecture-for-n": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.25,
+  "ts": "2026-11-26T19:24:15.235508+00:00"
+ },
+ "grading-a-student-s-marks": {
+  "status": "SKIPPED_NO_EDITOR",
+  "attempts": 1,
+  "ts": "2026-11-26T19:24:22.118821+00:00"
+ },
+ "group-identical-recipes": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.3,
+  "ts": "2026-11-26T19:24:25.112632+00:00"
+ },
+ "half-diamond-star-number-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n57ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\nimport sys\n\ndef main():\n    R = int(sys.stdin.readline().strip())\n    \n    # Upper h",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:24:52.043958+00:00"
+ },
+ "handling-complex-data-in-structures-with-pointers": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.9,
+  "ts": "2026-11-26T19:24:33.665544+00:00"
+ },
+ "alternating-sort-of-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:24:33.950405+00:00"
+ },
+ "balanced-symbols-checker": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:24:35.460001+00:00"
+ },
+ "hcf-of-two-integers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T19:24:36.952611+00:00"
+ },
+ "heap-sort-implementation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:24:38.492016+00:00"
+ },
+ "heap-sort-strings": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:24:40.146578+00:00"
+ },
+ "hexadecimal-string-validation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T19:24:41.646075+00:00"
+ },
+ "hexadecimal-summation": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.84,
+  "ts": "2026-11-26T19:24:50.507739+00:00"
+ },
+ "hill-jumping": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:24:52.353921+00:00"
+ },
+ "hollow-diamond-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n57ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\nimport sys\n\ndef main():\n    R = int(sys.stdin.readline().strip())\n    total_lines = 2 *",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T19:25:19.782663+00:00"
+ },
+ "house-robberies-and-baits": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.28,
+  "ts": "2026-11-26T19:24:54.182428+00:00"
+ },
+ "hybrid-sort-of-an-array": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n57ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip().split(",
+  "duration_s": 1.78,
+  "ts": "2026-11-26T19:25:21.608206+00:00"
+ },
+ "ideal-couples-count": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:24:57.209057+00:00"
+ },
+ "implement-bucket-sort-in-java": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nJAVA 8\nRuntime\n\n314ms\n\nMemory\n\n53kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\nimport java.io.*;\nimport java.util",
+  "duration_s": 3.62,
+  "ts": "2026-11-26T19:25:25.251552+00:00"
+ },
+ "email-validation": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n64ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\nimport sys\n\ndef main():\n    S = sys.std",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T19:25:57.463096+00:00"
+ },
+ "implement-circular-queue": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 7.82,
+  "ts": "2026-11-26T19:25:18.018262+00:00"
+ },
+ "calculating-an-electricity-bill-using-a-function": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.27,
+  "ts": "2026-11-26T19:25:29.530516+00:00"
+ },
+ "checking-whether-a-number-is-prime": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.96,
+  "ts": "2026-11-26T19:25:31.512209+00:00"
+ },
+ "finding-the-power-of-a-number-using-recursion": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.19,
+  "ts": "2026-11-26T19:25:34.715447+00:00"
+ },
+ "index-difference-of-min-and-max": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:25:36.235317+00:00"
+ },
+ "infix-to-prefix-conversion": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.8,
+  "ts": "2026-11-26T19:25:59.345778+00:00"
+ },
+ "inheritance-super-constructors": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 7.27,
+  "ts": "2026-11-26T19:25:46.227913+00:00"
+ },
+ "inorder-successor-in-binary-search-tree": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.68,
+  "ts": "2026-11-26T19:25:55.921381+00:00"
+ },
+ "insert-node-into-binary-search-tree": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.54,
+  "ts": "2026-11-26T19:26:42.264908+00:00"
+ },
+ "calculating-ncr-using-a-factorial-function": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.26,
+  "ts": "2026-11-26T19:26:17.136264+00:00"
+ },
+ "counting-the-frequency-of-a-character-in-a-string": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.21,
+  "ts": "2026-11-26T19:26:21.359425+00:00"
+ },
+ "finding-the-largest-of-n-numbers-entered-by-the-user": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.25,
+  "ts": "2026-11-26T19:26:26.629197+00:00"
+ },
+ "ai-stock-market-pattern-analyzer": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/5\nLanguage\nPYTHON 3\nRuntime\n\n67ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 2.57,
+  "ts": "2026-11-26T19:27:21.622642+00:00"
+ },
+ "insertion-sort-arrays-sorting": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.85,
+  "ts": "2026-11-26T19:26:38.702924+00:00"
+ },
+ "binary-search-tree-find-minimum-and-maximum": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:26:43.790633+00:00"
+ },
+ "concatenating-two-strings-without-using-strcat": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.33,
+  "ts": "2026-11-26T19:26:49.175454+00:00"
+ },
+ "insurance-premium-calculator": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.18,
+  "ts": "2026-11-26T19:26:58.371081+00:00"
+ },
+ "integer-division-without-operators": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:26:58.660610+00:00"
+ },
+ "integer-frequency-counter": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA\nRuntime\n\n485ms\n\nMemory\n\n53kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\nimport java.util.*;\n\npublic class Main {\n    public static void ma",
+  "duration_s": 3.54,
+  "ts": "2026-11-26T19:27:50.711408+00:00"
+ },
+ "dna-pattern-matching-with-rabin-karp": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.68,
+  "ts": "2026-11-26T19:27:47.161078+00:00"
+ },
+ "integer-or-long": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nPYTHON 3\nRuntime\n\n47ms\n\nMemory\n\n12kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nimport sys\n\ndef main():\n    line = sys.stdin.readline().strip()\n    if not line:\n        return\n    n = int(line)\n   ",
+  "duration_s": 1.56,
+  "ts": "2026-11-26T19:27:52.290998+00:00"
+ },
+ "integer-range-and-sign-analysis": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.32,
+  "ts": "2026-11-26T19:27:34.180326+00:00"
+ },
+ "bst-leaf-sum": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:27:35.724821+00:00"
+ },
+ "integer-wrapper-class-usage": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.72,
+  "ts": "2026-11-26T19:27:42.467005+00:00"
+ },
+ "difference-between-the-square-of-the-sum-and-the-sum-of-the-squares": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.76,
+  "ts": "2026-11-26T19:27:57.079163+00:00"
+ },
+ "heap-type-checker": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 2.65,
+  "ts": "2026-11-26T19:27:59.738911+00:00"
+ },
+ "finding-the-nth-fibonacci-term-using-recursion": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.16,
+  "ts": "2026-11-26T19:28:03.924818+00:00"
+ },
+ "interns-sales-equalization": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:28:05.587588+00:00"
+ },
+ "dynamic-matrix-multiplication": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n#inclu",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:28:54.580754+00:00"
+ },
+ "balanced-parenthesis-checker": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.54,
+  "ts": "2026-11-26T19:28:38.240117+00:00"
+ },
+ "inventory-allocation-using-pointer-arithmetic": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:28:39.756128+00:00"
+ },
+ "inventory-management-with-constructor-chaining": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.13,
+  "ts": "2026-11-26T19:28:49.902326+00:00"
+ },
+ "inventory-reordering-system": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T19:28:51.443025+00:00"
+ },
+ "inverted-full-pyramid-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n63ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:\n        return\n    R = int(data[0])\n  ",
+  "duration_s": 1.78,
+  "ts": "2026-11-26T19:29:26.335364+00:00"
+ },
+ "inverted-star-pattern": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:28:56.090746+00:00"
+ },
+ "ipl-dance-program-seating": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:28:57.748015+00:00"
+ },
+ "interface-multiple-inheritance-file-detection": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.31,
+  "ts": "2026-11-26T19:29:06.074335+00:00"
+ },
+ "is-graph-a-tree": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T19:29:07.570425+00:00"
+ },
+ "is-it-a-binary-tree-2": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n74ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:29:37.364837+00:00"
+ },
+ "is-it-a-binary-tree": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:29:09.430012+00:00"
+ },
+ "is-it-a-zx-number": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n66ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\nimport sys\nimport math\n\ndef compute_hcf(a, b, c):\n    return math.gcd(math.gcd(a, b), c",
+  "duration_s": 1.77,
+  "ts": "2026-11-26T19:29:39.150248+00:00"
+ },
+ "isomorphic-strings": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/5\nLanguage\nPYTHON 3\nRuntime\n\n67ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\nimport sys\n\ndef main():\n    da",
+  "duration_s": 1.79,
+  "ts": "2026-11-26T19:29:40.958048+00:00"
+ },
+ "iterating-student-data": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T19:29:14.538819+00:00"
+ },
+ "iterative-fibonacci": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.6,
+  "ts": "2026-11-26T19:29:16.158078+00:00"
+ },
+ "jarvis-terrace-navigation": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n70ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:30:06.980846+00:00"
+ },
+ "java-collections-sorting": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.73,
+  "ts": "2026-11-26T19:29:24.541604+00:00"
+ },
+ "java-constructors": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 9.29,
+  "ts": "2026-11-26T19:29:35.636933+00:00"
+ },
+ "java-data-type-conversion": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.96,
+  "ts": "2026-11-26T19:29:46.938266+00:00"
+ },
+ "java-dynamic-library-system": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/4\nLanguage\nJAVA 8\nRuntime\n\n226ms\n\nMemory\n\n40kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n5",
+  "duration_s": 3.58,
+  "ts": "2026-11-26T19:30:40.771665+00:00"
+ },
+ "java-generics-collections-comparable-max-element": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n386ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n5",
+  "duration_s": 3.55,
+  "ts": "2026-11-26T19:30:44.337651+00:00"
+ },
+ "java-generics-collections-hashmap-frequency-counter": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nJAVA 8\nMain.java:48: error: method comparingByKey in interface Entry<K,V> cannot be applied to given types; .sorted(Map.Entry.<T, Integer>comparingByKey().reversed()) ^ required: no arguments fo",
+  "duration_s": 3.72,
+  "ts": "2026-11-26T19:31:03.591578+00:00"
+ },
+ "check-balanced-binary-tree": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.39,
+  "ts": "2026-11-26T19:30:37.164301+00:00"
+ },
+ "array-right-rotation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T19:30:45.889262+00:00"
+ },
+ "edit-distance-with-positional-cost": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.58,
+  "ts": "2026-11-26T19:30:46.482472+00:00"
+ },
+ "java-generics-wrapper-classes-collections-median-finder": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.13,
+  "ts": "2026-11-26T19:30:58.311024+00:00"
+ },
+ "binary-tree-to-sum-tree": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n71ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T19:31:29.788565+00:00"
+ },
+ "java-generics-wrapper-classes-sum-of-squares": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 3.92,
+  "ts": "2026-11-26T19:31:50.486818+00:00"
+ },
+ "column-sum-divisibility-by-3": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.76,
+  "ts": "2026-11-26T19:31:15.357443+00:00"
+ },
+ "find-star-and-super-star-elements": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:31:15.637294+00:00"
+ },
+ "java-generics-wrapper-classes-type-safe-operations": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.65,
+  "ts": "2026-11-26T19:31:54.146265+00:00"
+ },
+ "2d-array-90-degree-rotation": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:32:19.625480+00:00"
+ },
+ "delete-node-in-a-binary-search-tree": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.79,
+  "ts": "2026-11-26T19:32:23.428642+00:00"
+ },
+ "distinct-substrings-using-z-algorithm": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.85,
+  "ts": "2026-11-26T19:32:18.104359+00:00"
+ },
+ "java-intersection-of-two-sets": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA 8\nRuntime\n\n173ms\n\nMemory\n\n39kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\nimport java.io.*;\nimport java.util.*;\n\npublic class Main {",
+  "duration_s": 3.56,
+  "ts": "2026-11-26T19:32:55.365153+00:00"
+ },
+ "apartment-availability": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.28,
+  "ts": "2026-11-26T19:32:33.263020+00:00"
+ },
+ "java-list-average-with-var": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 5.73,
+  "ts": "2026-11-26T19:32:39.002944+00:00"
+ },
+ "finding-row-sums-and-column-sums-of-a-matrix": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.8,
+  "ts": "2026-11-26T19:32:44.820324+00:00"
+ },
+ "java-new-keyword-dynamic-array-creation": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nJAVA 8\nRuntime\n\n212ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\nimport java.io.Buffere",
+  "duration_s": 4.67,
+  "ts": "2026-11-26T19:33:43.246213+00:00"
+ },
+ "3-length-subsets": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T19:32:57.126505+00:00"
+ },
+ "checking-whether-two-words-are-anagrams": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.9,
+  "ts": "2026-11-26T19:33:02.038865+00:00"
+ },
+ "java-stream-api-word-filter": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/4\nLanguage\nJAVA\nRuntime\n\n383ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\nimport java.util.*;\nimport java.util.stream.*;\n\npublic class Main {\n    public static void main(",
+  "duration_s": 2.54,
+  "ts": "2026-11-26T19:33:45.821476+00:00"
+ },
+ "java-summing-values-in-a-map": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA 8\nRuntime\n\n505ms\n\nMemory\n\n51kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\nimport java.util.*;\nimpor",
+  "duration_s": 5.59,
+  "ts": "2026-11-26T19:33:51.431832+00:00"
+ },
+ "delete-node-from-a-red-black-tree": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nJAVA 8\nMain.java:185: error: reached end of file while parsing } ^ 1 error Compilation Error\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n",
+  "duration_s": 4.73,
+  "ts": "2026-11-26T19:35:24.927599+00:00"
+ },
+ "job-scheduling-system-with-dynamic-array-optimization": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.96,
+  "ts": "2026-11-26T19:34:05.101593+00:00"
+ },
+ "job-scheduling-to-maximize-profit": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T19:34:06.726266+00:00"
+ },
+ "john-s-toy-shopping": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T19:34:08.359179+00:00"
+ },
+ "jolly-jumper-sequence-checker": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:34:10.035242+00:00"
+ },
+ "array-and-pointer-operations": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nC\nRuntime\n\n6ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 1.8,
+  "ts": "2026-11-26T19:35:26.741188+00:00"
+ },
+ "josephus-game": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T19:34:19.686944+00:00"
+ },
+ "josephus-problem": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:34:21.272526+00:00"
+ },
+ "kmp-pattern-matching": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 12.53,
+  "ts": "2026-11-26T19:34:33.852155+00:00"
+ },
+ "knapsack-problem-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:34:35.371835+00:00"
+ },
+ "knapsack-problem": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T19:34:37.000771+00:00"
+ },
+ "knight-s-movement-on-a-chessboard": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:34:38.660037+00:00"
+ },
+ "kohli-s-reading-schedule": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.28,
+  "ts": "2026-11-26T19:34:38.955849+00:00"
+ },
+ "kruskal-s-algorithm-mst-cost": {
+  "status": "SKIPPED_NO_EDITOR",
+  "attempts": 1,
+  "ts": "2026-11-26T19:34:46.054274+00:00"
+ },
+ "kruskal-s-mst-calculation": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.99,
+  "ts": "2026-11-26T19:34:56.071191+00:00"
+ },
+ "kruskal-s-mst-with-disjoint-set": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.46,
+  "ts": "2026-11-26T19:35:06.539069+00:00"
+ },
+ "kruskals-algorithm-mst-edges-and-cost": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/3\nLanguage\nPYTHON 3\nRuntime\n\n38ms\n\nMemory\n\n9kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n5",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:35:51.513957+00:00"
+ },
+ "kth-digit-from-position": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.66,
+  "ts": "2026-11-26T19:35:09.759356+00:00"
+ },
+ "kth-largest-element": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:35:11.303515+00:00"
+ },
+ "kth-smallest-element-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T19:35:12.943816+00:00"
+ },
+ "kth-smallest-element": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n67ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T19:35:46.421393+00:00"
+ },
+ "l-values-arrays-and-pointers": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.66,
+  "ts": "2026-11-26T19:35:20.184146+00:00"
+ },
+ "lambda-expression-for-even-odd-calculation": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA",
+  "attempts": 3,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nJAVA\nMain.java:16: error: illegal initializer for boolean boolean hasOdd = {false}; ^ Main.java:23: error: array required, but boolean found hasOdd[0] = true; ^ Main.java:28: error: array requir",
+  "duration_s": 3.54,
+  "ts": "2026-11-26T19:35:49.973391+00:00"
+ },
+ "find-the-second-largest-distinct-element-using-pointers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T19:35:36.450265+00:00"
+ },
+ "largest-alternating-ab-subarray": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T19:35:41.506396+00:00"
+ },
+ "largest-even-and-odd-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T19:35:43.207802+00:00"
+ },
+ "largest-number-from-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.66,
+  "ts": "2026-11-26T19:35:44.875268+00:00"
+ },
+ "generating-the-first-eight-fibonacci-numbers-and-their-sum": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.24,
+  "ts": "2026-11-26T19:35:55.763470+00:00"
+ },
+ "largest-number-from-digits": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T19:35:57.427091+00:00"
+ },
+ "largest-number-from-n-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.6,
+  "ts": "2026-11-26T19:35:59.038196+00:00"
+ },
+ "complex-number-operations-using-structures": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.34,
+  "ts": "2026-11-26T19:36:08.390781+00:00"
+ },
+ "derived-data-types-array-pointer": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 20.79,
+  "ts": "2026-11-26T19:36:29.196134+00:00"
+ },
+ "lca-in-bst-from-ordered-input": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.27,
+  "ts": "2026-11-26T19:36:29.516344+00:00"
+ },
+ "lcm-of-n-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T19:36:31.023653+00:00"
+ },
+ "lcm-of-two-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 2.55,
+  "ts": "2026-11-26T19:36:33.593825+00:00"
+ },
+ "lcm-without-gcd": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T19:36:35.218463+00:00"
+ },
+ "leaf-nodes-in-preorder-traversal": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n59ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\nimport sys\n\ndef find_leaf_nodes(preorder):\n    n = len(preor",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T19:37:28.805714+00:00"
+ },
+ "leap-year-checker": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:36:38.420519+00:00"
+ },
+ "least-frequent-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T19:36:39.962874+00:00"
+ },
+ "least-repeated-characters": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n68ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\nimport sys\nfrom collections import Counter\n\ndef solve():\n    s = sys.stdin.readline().rstrip('\\n')\n",
+  "duration_s": 5.05,
+  "ts": "2026-11-26T19:37:27.176921+00:00"
+ },
+ "left-arrow-star-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n64ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\nimport sys\n\ndef main():\n    R = int(sys.stdin.readline().strip())\n    for i in range(R - 1):\n        print('*')\n    prin",
+  "duration_s": 1.76,
+  "ts": "2026-11-26T19:37:30.585749+00:00"
+ },
+ "left-rotate-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T19:36:45.021271+00:00"
+ },
+ "level-order-traversal-of-binary-tree-2": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nJAVA 8\nRuntime\n\n264ms\n\nMemory\n\n51kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\nimport java.io.*",
+  "duration_s": 4.63,
+  "ts": "2026-11-26T19:37:35.249214+00:00"
+ },
+ "level-order-traversal-of-binary-tree": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n70ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.89,
+  "ts": "2026-11-26T19:37:37.159306+00:00"
+ },
+ "lexicographically-greater-string-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T19:37:18.095497+00:00"
+ },
+ "lexicographically-greater-string": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Already solved",
+  "duration_s": 0.33,
+  "ts": "2026-11-26T19:37:18.640137+00:00"
+ },
+ "lexicographically-smallest-string-2": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n67ms\n\nMemory\n\n18kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.54,
+  "ts": "2026-11-26T19:37:45.447579+00:00"
+ },
+ "lexicographically-smallest-string": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T19:37:22.108554+00:00"
+ },
+ "library-fine-management-system": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.71,
+  "ts": "2026-11-26T19:37:43.886716+00:00"
+ },
+ "library-rack-allocation-system": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n59ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\nimport sys\n\ndef main(",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T19:37:46.971405+00:00"
+ },
+ "library-resource-borrowing-system": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n65ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\nimport sys\n\ndef main():\n    lines = [line.strip() for lin",
+  "duration_s": 2.52,
+  "ts": "2026-11-26T19:37:49.511628+00:00"
+ },
+ "linked-list-cycle-detection": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 18.4,
+  "ts": "2026-11-26T19:38:07.948562+00:00"
+ },
+ "linked-list-palindrome-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.91,
+  "ts": "2026-11-26T19:38:09.879256+00:00"
+ },
+ "linked-list-rotation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T19:38:11.395945+00:00"
+ },
+ "linked-lists": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 51.0,
+  "ts": "2026-11-26T19:39:02.417524+00:00"
  }
 }

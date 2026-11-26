@@ -1,0 +1,1 @@
+{"slug": "left-arrow-star-pattern", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    R = int(sys.stdin.readline().strip())\n    for i in range(R - 1):\n        print('*')\n    print('*' * R)\n    for i in range(1, R):\n        spaces = ' ' * (R - i - 1)\n        print(spaces + '*')\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "retry": true}

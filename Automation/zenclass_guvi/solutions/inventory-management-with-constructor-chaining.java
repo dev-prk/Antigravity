@@ -1,0 +1,45 @@
+import java.util.*;
+import java.io.*;
+
+class Product {
+    protected double basePrice;
+    
+    public Product(double basePrice) {
+        this.basePrice = basePrice;
+    }
+}
+
+class Electronics extends Product {
+    protected double tax;
+    
+    public Electronics(double basePrice, double tax) {
+        super(basePrice);
+        this.tax = tax;
+    }
+}
+
+class Laptop extends Electronics {
+    private double warrantyCost;
+    
+    public Laptop(double basePrice, double tax, double warrantyCost) {
+        super(basePrice, tax);
+        this.warrantyCost = warrantyCost;
+    }
+    
+    public double getFinalPrice() {
+        return basePrice + tax + warrantyCost;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double basePrice = sc.nextDouble();
+        double tax = sc.nextDouble();
+        double warrantyCost = sc.nextDouble();
+        sc.close();
+        
+        Laptop laptop = new Laptop(basePrice, tax, warrantyCost);
+        System.out.println("Final Price: " + (int)laptop.getFinalPrice());
+    }
+}

@@ -1,0 +1,1 @@
+{"slug": "checking-whether-a-number-is-prime", "lang": "PYTHON 3", "code": "n = int(input())\nflag = 0\nfor i in range(2, n):\n    if n % i == 0:\n        flag = 1\n        break\nif flag == 0:\n    print(\"Prime\")\nelse:\n    print(\"Not Prime\")\n", "local_ok": true, "err": ""}
