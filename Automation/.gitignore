@@ -5,9 +5,14 @@ __pycache__/
 .pytest_cache/
 *.pyc
 
-# Ignore oversized raw downloads (>50MB) that exceed GitHub push limits
+# Ignore oversized raw downloads (>50MB) & transient caches/secrets
 **/raw_downloads/
 **/Traffic_Violations.csv
 **/*.mp4
 **/*.zip
+**/*.db-shm
+**/*.db-wal
 zenclass_guvi/.browser_profile/
+zenclass_guvi/data/ck_precomputed/
+zenclass_guvi/data/ck_retry_queue/
+zenclass_guvi/data/storage_state.json

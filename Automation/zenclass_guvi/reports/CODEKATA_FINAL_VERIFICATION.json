@@ -1,0 +1,33 @@
+{
+  "verified_at": "2026-11-26T20:00:06.594320+00:00",
+  "browser_mode": "Foreground Brave Browser (/Applications/Brave Browser.app) \u2014 Strictly 1 Single Tab",
+  "verified_solved_in_pipeline": 1150,
+  "saved_solution_files": 1137,
+  "language_breakdown": {
+    "PYTHON 3": 769,
+    "JAVA 8": 197,
+    "C": 130,
+    "JAVA": 27,
+    "C++": 16,
+    "EXISTING": 11
+  },
+  "pipeline_status_breakdown": {
+    "COMPLETED": 1150,
+    "FAILED_PLATFORM": 302,
+    "FAILED_SYNTHESIS": 151,
+    "SKIPPED_NO_EDITOR": 12,
+    "ERROR": 1
+  },
+  "live_guvi_dashboard_metrics": {
+    "solvedPct": "54.31%",
+    "attemptedPct": "68.19%",
+    "easyPct": "68.75%",
+    "medPct": "42.08%",
+    "hardPct": "51.98%",
+    "maxCompletedPageAt15PerPage": 79,
+    "approxCompletedFromPages": 1185
+  },
+  "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/final_codekata_verified.png",
+  "paid_llm_quota_used": 0,
+  "synthesis_backend": "FreeLLMAPI (127.0.0.1:31415 $0 free pool) + local python3/clang/clang++/node verification"
+}
