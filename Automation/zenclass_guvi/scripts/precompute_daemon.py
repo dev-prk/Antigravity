@@ -138,19 +138,12 @@ def main() -> int:
                 continue
 
             log(f"Pass {pass_no+1}: Pre-solving {len(metas)} problems (Easy first) across {workers} threads...")
-            batch_size = 72
+            batch_size = max(workers * 2, 4)
             for b_start in range(0, len(metas), batch_size):
                 drain_retries(ex)
-                # Re-check if newly scraped Easy problems arrived on disk!
-                if pass_no == 0 and b_start > 0 and b_start % 144 == 0:
-                    easy_ready_specs = sum(1 for p in PROB_DIR.glob("*.json") if p.stat().st_mtime > time.time() - 40)
-                    if easy_ready_specs > 30:
-                        log(f"Detected {easy_ready_specs} freshly scraped Easy specs — re-sorting queue to prioritize Easy!")
-                        break
-
                 chunk = metas[b_start:b_start + batch_size]
                 futs = {ex.submit(process_one, m, b_start + i): m["slug"] for i, m in enumerate(chunk)}
-                done_futs, pending_futs = wait(futs.keys(), timeout=42)
+                done_futs, pending_futs = wait(futs.keys(), timeout=90)
                 done_b = 0
                 for f in done_futs:
                     try:
@@ -160,10 +153,7 @@ def main() -> int:
                         pass
                 total_ready = len(list(PRECOMP_DIR.glob("*.json")))
                 log(f"Batch +{done_b}/{len(chunk)} ready (pending={len(pending_futs)}) | Total precomputed on disk: {total_ready}")
-                if done_b == 0:
-                    time.sleep(3.0)
-                else:
-                    time.sleep(0.4)
+                time.sleep(1.2 if done_b > 0 else 4.0)
 
     return 0
 

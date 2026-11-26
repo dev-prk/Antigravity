@@ -1,0 +1,1 @@
+{"slug": "string-reversal-without-temp-variable", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().rstrip('\\n')\nprint(s[::-1])\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "print-even-numbers-1-to-n", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    line = sys.stdin.readline()\n    n = int(line.strip())\n    evens = [str(i) for i in range(2, n + 1, 2)]\n    print(' '.join(evens))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

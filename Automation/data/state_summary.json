@@ -1,34 +1,56 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-26T18:10:30.373338+00:00",
+  "last_updated": "2026-11-26T18:15:17.185830+00:00",
   "summary": {
-    "total_discovered": 65,
-    "total_completed": 34,
+    "total_discovered": 68,
+    "total_completed": 35,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 31,
-    "success_rate_percent": 52.31,
-    "total_time_spent_seconds": 317.62,
+    "total_failed": 33,
+    "success_rate_percent": 51.47,
+    "total_time_spent_seconds": 351.45,
     "by_platform": {
       "guvi": {
-        "total_discovered": 65,
-        "total_completed": 34,
+        "total_discovered": 68,
+        "total_completed": 35,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 31,
-        "success_rate_percent": 52.31,
-        "time_spent_seconds": 317.62
+        "total_failed": 33,
+        "success_rate_percent": 51.47,
+        "time_spent_seconds": 351.45
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 65,
-        "completed": 34,
-        "success_rate_percent": 52.31
+        "total": 68,
+        "completed": 35,
+        "success_rate_percent": 51.47
       }
     },
     "human_intervention_issues": [
+      {
+        "task_id": "guvi-conditional-compilation-debug",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "conditional-compilation-debug",
+        "status": "FAILED",
+        "attempts": 1,
+        "failure_reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <math.h>\n\nint main() {\n    int ",
+        "next_action": "NONE",
+        "url": "https://www.guvi.in/code-kata/conditional-compilation-debug/"
+      },
+      {
+        "task_id": "guvi-bank-account-balance-status",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "bank-account-balance-status",
+        "status": "FAILED",
+        "attempts": 1,
+        "failure_reason": "Empty code",
+        "next_action": "NONE",
+        "url": "https://www.guvi.in/code-kata/bank-account-balance-status/"
+      },
       {
         "task_id": "guvi-reverse-digits-of-a-number-2",
         "platform": "guvi",
@@ -1605,6 +1627,63 @@
       "created_at": "2026-11-26T18:10:30.372471+00:00",
       "updated_at": "2026-11-26T18:10:30.372471+00:00",
       "timestamp": "2026-11-26T18:10:30.372471+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-every-kth-character-from-string",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "every-kth-character-from-string",
+      "url": "https://www.guvi.in/code-kata/every-kth-character-from-string/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 8.77,
+      "metadata": {},
+      "created_at": "2026-11-26T18:11:29.384187+00:00",
+      "updated_at": "2026-11-26T18:11:29.384187+00:00",
+      "timestamp": "2026-11-26T18:11:29.384187+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-bank-account-balance-status",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "bank-account-balance-status",
+      "url": "https://www.guvi.in/code-kata/bank-account-balance-status/",
+      "status": "FAILED",
+      "attempt_count": 1,
+      "result": "FAILED_SYNTHESIS",
+      "failure_reason": "Empty code",
+      "next_action": "NONE",
+      "time_spent_seconds": 1.59,
+      "metadata": {},
+      "created_at": "2026-11-26T18:13:19.999026+00:00",
+      "updated_at": "2026-11-26T18:13:19.999026+00:00",
+      "timestamp": "2026-11-26T18:13:19.999026+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-conditional-compilation-debug",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "conditional-compilation-debug",
+      "url": "https://www.guvi.in/code-kata/conditional-compilation-debug/",
+      "status": "FAILED",
+      "attempt_count": 1,
+      "result": "FAILED_PLATFORM",
+      "failure_reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <math.h>\n\nint main() {\n    int ",
+      "next_action": "NONE",
+      "time_spent_seconds": 23.47,
+      "metadata": {},
+      "created_at": "2026-11-26T18:15:17.184988+00:00",
+      "updated_at": "2026-11-26T18:15:17.184988+00:00",
+      "timestamp": "2026-11-26T18:15:17.184988+00:00",
       "attempts": 1,
       "category": "CodeKata"
     }

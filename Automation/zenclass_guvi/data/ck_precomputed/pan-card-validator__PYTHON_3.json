@@ -1,0 +1,1 @@
+{"slug": "pan-card-validator", "lang": "PYTHON 3", "code": "import sys\nimport re\n\ndef main():\n    s = sys.stdin.readline().strip()\n    if re.fullmatch(r'[A-Z]{5}[0-9]{4}[A-Z]', s):\n        print('pan')\n    else:\n        print('not pan')\n\nif __name__ == '__main__':\n    main()\n", "local_ok": true, "err": ""}

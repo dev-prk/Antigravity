@@ -1,0 +1,1 @@
+{"slug": "discount-on-a-spare-part", "lang": "PYTHON 3", "code": "price = int(input())\ndiscount = int(input())\n\ndiscount_amount = price * discount / 100\nfinal_price = price - discount_amount\n\nprint(f\"{discount_amount:.2f}\")\nprint(f\"{final_price:.2f}\")\n", "local_ok": true, "err": ""}

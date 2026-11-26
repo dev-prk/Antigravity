@@ -1,0 +1,1 @@
+{"slug": "case-insensitive-vowel-count", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    s = sys.stdin.readline().strip()\n    vowels = set('aeiou')\n    count = 0\n    for char in s.lower():\n        if char in vowels:\n            count += 1\n    print(count)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

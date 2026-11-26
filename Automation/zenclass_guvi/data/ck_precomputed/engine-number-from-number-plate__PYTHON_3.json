@@ -1,0 +1,1 @@
+{"slug": "engine-number-from-number-plate", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().strip()\nengine_number = sum(int(c) for c in s if c.isdigit())\nprint(engine_number)\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "odd-even-string-split", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    s = sys.stdin.readline().rstrip('\\n')\n    odd = s[0::2]\n    even = s[1::2]\n    print(f\"{odd} {even}\")\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

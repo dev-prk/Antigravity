@@ -1,0 +1,1 @@
+{"slug": "sum-of-transaction-id-digits", "lang": "PYTHON 3", "code": "s = input().strip()\ntotal = sum(int(c) for c in s if c.isdigit())\nprint(total)\n", "local_ok": false, "err": "Mismatch #2: in='9876' exp='Sum of digits: 30' got='30'"}

@@ -1,0 +1,1 @@
+{"slug": "bank-account-balance-status", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    num = int(sys.stdin.readline().strip())\n    if num > 0:\n        print(\"Positive\")\n    elif num < 0:\n        print(\"Negative\")\n    else:\n        print(\"Zero\")\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

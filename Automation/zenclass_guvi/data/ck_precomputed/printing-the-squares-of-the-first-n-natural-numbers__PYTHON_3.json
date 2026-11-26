@@ -1,0 +1,1 @@
+{"slug": "printing-the-squares-of-the-first-n-natural-numbers", "lang": "PYTHON 3", "code": "n = int(input())\nsquares = [str(i * i) for i in range(1, n + 1)]\nprint(' '.join(squares))\n", "local_ok": true, "err": ""}

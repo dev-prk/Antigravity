@@ -4842,5 +4842,213 @@
   "reason": "SOLVED_MODAL",
   "duration_s": 1.61,
   "ts": "2026-11-26T18:10:30.362881+00:00"
+ },
+ "cosine-series-summation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T18:10:32.133854+00:00"
+ },
+ "digit-counter-program": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T18:10:33.762228+00:00"
+ },
+ "duplicate-parentheses-detection-using-stack": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 22.25,
+  "ts": "2026-11-26T18:10:56.018774+00:00"
+ },
+ "alternate-digit-difference-sum": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nJAVA 8\nMain.java:19: error: reached end of file while parsing if (line.charAt(0) == '-' || line ^ Main.java:20: error: reached end of file while parsing 2 errors Compilation Error\nCode\n1\n2\n3\n4\n5",
+  "duration_s": 4.87,
+  "ts": "2026-11-26T18:14:41.098723+00:00"
+ },
+ "animal-sound-using-interface": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T18:11:16.222817+00:00"
+ },
+ "check-if-array-is-sorted-ascending": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.31,
+  "ts": "2026-11-26T18:11:17.542172+00:00"
+ },
+ "check-if-the-first-bit-is-set": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.55,
+  "ts": "2026-11-26T18:11:19.092402+00:00"
+ },
+ "divisible-by-previous-integer": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n66ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n    if not data:\n ",
+  "duration_s": 1.79,
+  "ts": "2026-11-26T18:13:54.396077+00:00"
+ },
+ "every-kth-character-from-string": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.77,
+  "ts": "2026-11-26T18:11:29.375255+00:00"
+ },
+ "engine-number-from-number-plate": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T18:11:30.899425+00:00"
+ },
+ "factorial-of-a-number-3": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T18:11:32.640540+00:00"
+ },
+ "factorial-of-a-number-in-java": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 85.52,
+  "ts": "2026-11-26T18:12:58.167614+00:00"
+ },
+ "decimal-to-binary-conversion-using-stack": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.89,
+  "ts": "2026-11-26T18:13:00.070703+00:00"
+ },
+ "fibonacci-series-using-recursion": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T18:13:01.875170+00:00"
+ },
+ "find-min-max-in-array": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.94,
+  "ts": "2026-11-26T18:13:10.822418+00:00"
+ },
+ "find-duplicate-prisoner-ids": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T18:13:12.315796+00:00"
+ },
+ "find-matching-marks": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T18:13:13.955478+00:00"
+ },
+ "finding-the-area-of-a-rectangle-using-a-function": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.42,
+  "ts": "2026-11-26T18:13:18.382073+00:00"
+ },
+ "bank-account-balance-status": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.59,
+  "ts": "2026-11-26T18:13:19.979059+00:00"
+ },
+ "boundary-plants-and-weeds": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.6,
+  "ts": "2026-11-26T18:13:21.615800+00:00"
+ },
+ "counting-vowels-in-a-string": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/3\nLanguage\nC\nmain.c: In function \u2018main\u2019: main.c:18:130: error: expected \u2018]\u2019 before \u2018;\u2019 token for (int j = 0; vowelsUpper[j] != '\\0' && word[i] == tolower(word[i]) && vowelsLower[strchr(vowelsLower, word[i]",
+  "duration_s": 30.98,
+  "ts": "2026-11-26T18:13:52.603233+00:00"
+ },
+ "abstract-class-for-bank-accounts": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/3\nLanguage\nJAVA 8\nException in thread \"main\" java.util.NoSuchElementException: No line found at java.base/java.util.Scanner.nextLine(Scanner.java:1651) at Main.main(Main.java:66) Runtime Error (NZEC)\nCode\n",
+  "duration_s": 3.53,
+  "ts": "2026-11-26T18:14:44.640807+00:00"
+ },
+ "bitwise-operations-on-two-integers": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 5.03,
+  "ts": "2026-11-26T18:14:49.677407+00:00"
+ },
+ "car-service-waiting-time": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n58ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip",
+  "duration_s": 1.6,
+  "ts": "2026-11-26T18:14:51.285798+00:00"
+ },
+ "circular-array-difference-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 2.4,
+  "ts": "2026-11-26T18:14:53.694236+00:00"
+ },
+ "conditional-compilation-debug": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <math.h>\n\nint main() {\n    int ",
+  "duration_s": 23.47,
+  "ts": "2026-11-26T18:15:17.173146+00:00"
  }
 }

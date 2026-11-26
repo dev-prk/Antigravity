@@ -105,3 +105,9 @@
 2026/11/26-23:41:07.563 2c10ca Delete type=2 #86
 2026/11/26-23:41:07.563 2c10ca Delete type=2 #84
 2026/11/26-23:41:07.563 2c10ca Delete type=2 #90
+2026/11/26-23:43:07.548 2c10ca Level-0 table #93: started
+2026/11/26-23:43:07.552 2c10ca Level-0 table #93: 60827 bytes OK
+2026/11/26-23:43:07.557 2c10ca Delete type=0 #89
+2026/11/26-23:45:07.548 2c10ca Level-0 table #95: started
+2026/11/26-23:45:07.552 2c10ca Level-0 table #95: 61505 bytes OK
+2026/11/26-23:45:07.557 2c10ca Delete type=0 #92
