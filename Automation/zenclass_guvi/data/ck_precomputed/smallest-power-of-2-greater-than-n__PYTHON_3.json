@@ -1,0 +1,1 @@
+{"slug": "smallest-power-of-2-greater-than-n", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    if n < 0:\n        print(1)\n    else:\n        print(1 << (n + 1).bit_length())\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "err": "Mismatch #3: in='255' exp='256' got='512'"}

@@ -1,0 +1,1 @@
+{"slug": "0-1-number-pattern", "lang": "PYTHON 3", "code": "n = int(input().strip())\n\nfor i in range(n):\n    row = []\n    for j in range(n):\n        if i == 0 or i == n - 1:\n            row.append('1')\n        elif j == 0 or j == n - 1:\n            row.append('1')\n        else:\n            row.append('0')\n    print(' '.join(row))\n", "local_ok": true, "err": ""}

@@ -46,3 +46,6 @@
 2026/11/26-23:37:07.555 2c10cb Level-0 table #29: started
 2026/11/26-23:37:07.560 2c10cb Level-0 table #29: 27365 bytes OK
 2026/11/26-23:37:07.565 2c10cb Delete type=0 #25
+2026/11/26-23:40:07.553 2c10ca Level-0 table #31: started
+2026/11/26-23:40:07.559 2c10ca Level-0 table #31: 28614 bytes OK
+2026/11/26-23:40:07.563 2c10ca Delete type=0 #28

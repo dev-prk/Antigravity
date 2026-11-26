@@ -1,0 +1,1 @@
+{"slug": "factorial-of-a-number-in-java", "lang": "PYTHON 3", "code": "import sys\nimport math\n\nN = int(sys.stdin.readline().strip())\nprint(math.factorial(N))\n", "local_ok": true, "err": ""}

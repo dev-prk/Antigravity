@@ -1,0 +1,1 @@
+{"slug": "string-digits-sum", "lang": "PYTHON 3", "code": "def string_digits_sum(s):\n    total = 0\n    for char in s:\n        total += int(char)\n    print(s, end=\" \")\n    print(total)\n\ns = input().strip()\nstring_digits_sum(s)\n", "local_ok": false, "err": "empty_llm"}
