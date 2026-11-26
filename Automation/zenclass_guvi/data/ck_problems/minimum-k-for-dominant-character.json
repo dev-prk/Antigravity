@@ -3,7 +3,7 @@
  "slug": "minimum-k-for-dominant-character",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n346. Minimum k for Dominant Character\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nYou are given a string s consisting of lowercase Latin letters. Character c is called k-dominant iff each substring of s with length at least k contains this character c. You have to find minimum k such that there exists at least one k-dominant character.",
+ "description": "ions\nSubmissions\n346\n. \nMinimum k for Dominant Character\n90\nHard\nTopics\nCompany\nProblem Statement:\nYou are given a string s consisting of lowercase Latin letters. Character c is called k-dominant iff each substring of s with length at least k contains this character c. You have to find minimum k such that there exists at least one k-dominant character. \nInput Description:\nThe input consists of a string s. The size of the string |S| is at most 10000. \nOutput Description:\nThe output is the minimum k such that there exists at least one k-dominant character. \nSample Input:\nabacaba \nSample Output:\n2\nAccepted \n760\nSubmissions \n903\nAcceptance Rate \n84.16\n%\nTopics\nstrings\nCompany\ncompanies\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabacaba\nOutput\n2\nInput\nzzzzz\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabacaba\nOutput\n2\nInput\nzzzzz\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimum k for Dominant Character\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of a string s. The size of the string |S| is at most 10000.",
  "output_spec": "The output is the minimum k such that there exists at least one k-dominant character.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "abacaba",
    "output": "2"
+  },
+  {
+   "input": "zzzzz",
+   "output": "1"
   }
  ],
  "raw": ""

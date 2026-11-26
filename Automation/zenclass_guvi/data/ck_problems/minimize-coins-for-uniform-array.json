@@ -3,7 +3,7 @@
  "slug": "minimize-coins-for-uniform-array",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n416. Minimize Coins for Uniform Array\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou have an array of integers of length N. In one operation, you can change an integer X in the array to another using X coins. Find the minimum number of coins required to convert the array such that it contains only one distinct integer, N times.",
+ "description": " & Solutions\nSubmissions\n416\n. \nMinimize Coins for Uniform Array\n80\nHard\nTopics\nProblem Statement:\nYou have an array of integers of length N. In one operation, you can change an integer X in the array to another using X coins. Find the minimum number of coins required to convert the array such that it contains only one distinct integer, N times. \nInput Description:\nThe first line contains an integer N, denoting the size of the array.\nThe next line contains N space separated integers. \nOutput Description:\nPrint the minimum number of coins required. \nSample Input:\n2\n3 4 \nSample Output:\n3 \nExplanation:\nWe change 3 to 4 using 3 coins and get [4, 4]. So minimum coins required is 3. If we change 4 to 3 we will need 4 coins. \nAccepted \n274\nSubmissions \n604\nAcceptance Rate \n45.36\n%\nTopics\nhashing\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n1 7 7 8\nOutput\n9\nInput\n14\n3 8 2 2 0 9 1 3 5 9 9 4 7 9 \nOutput\n35\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n1 7 7 8\nOutput\n9\nInput\n14\n3 8 2 2 0 9 1 3 5 9 9 4 7 9 \nOutput\n35\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimize Coins for Uniform Array\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains an integer N, denoting the size of the array.\nThe next line contains N space separated integers.",
  "output_spec": "Print the minimum number of coins required.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "2\n3 4",
    "output": "3"
+  },
+  {
+   "input": "4\n1 7 7 8",
+   "output": "9"
+  },
+  {
+   "input": "14\n3 8 2 2 0 9 1 3 5 9 9 4 7 9",
+   "output": "35"
   }
  ],
  "raw": ""

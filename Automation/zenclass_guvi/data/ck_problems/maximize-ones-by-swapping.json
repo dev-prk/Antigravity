@@ -3,7 +3,7 @@
  "slug": "maximize-ones-by-swapping",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n581. Maximize Ones by Swapping\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given with an array containing only 1s and 0s.You can select two index \u2018a\u2019 and \u2018b\u2019 such that a<b in which you will change \u20181 to 0\u2019 and \u20180 to 1\u2019,in order to get maximum no of 1s in result.",
+ "description": "m\nHints & Solutions\nSubmissions\n581\n. \nMaximize Ones by Swapping\n90\nHard\nTopics\nProblem Statement:\nYou are given with an array containing only 1s and 0s.You can select two index \u2018a\u2019 and \u2018b\u2019 such that a<b in which you will change \u20181 to 0\u2019 and \u20180 to 1\u2019,in order to get maximum no of 1s in result. \nInput Description:\nYou are given with array of 1\u2019s and 0\u2019s \nOutput Description:\nPrint the two index \u2018a\u2019 and \u2018b\u2018.Print -1 if we don\u2019t require a and b \nSample Input:\n1111100 \nSample Output:\n6 7 \nExplanation:\n6th and 7th index are changed to get the maximum number of 1's from the beginning in the result. \nAccepted \n550\nSubmissions \n943\nAcceptance Rate \n58.32\n%\nTopics\nbit manipulation\narray\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1111100\nOutput\n6 7\nInput\n111110\nOutput\n-1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1111100\nOutput\n6 7\nInput\n111110\nOutput\n-1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMaximize Ones by Swapping\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given with array of 1\u2019s and 0\u2019s",
  "output_spec": "Print the two index \u2018a\u2019 and \u2018b\u2018.Print -1 if we don\u2019t require a and b",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "1111100",
    "output": "6 7"
+  },
+  {
+   "input": "111110",
+   "output": "-1"
   }
  ],
  "raw": ""

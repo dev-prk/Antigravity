@@ -3,14 +3,22 @@
  "slug": "max-1s-in-binary",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n727. Max 1s in Binary\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a C program to find the elements which have the maximum number of 1's in its binary form. Input consist of the size of the array , array values and the number of elements to be returned. If two number is having same count then return the elements with the greatest magnitude",
- "input_spec": "consist of the size of the array , array values and the number of elements to be returned. If two number is having same count then return the elements with the greatest magnitude\n\nInput Description:\nInput consist of the size of the array , array values and the number of elements to be returned",
- "output_spec": "Output return two values with maximum umber of one's in binary form",
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n727\n. \nMax 1s in Binary\n40\nMedium\nTopics\nProblem Statement:\nWrite a C program to find the elements which have the maximum number of 1's in its binary form. Input consist of the size of the array , array values and the number of elements to be returned. If two number is having same count then return the elements with the greatest magnitude \nInput Description:\nInput consist of the size of the array , array values and the number of elements to be returned \nOutput Description:\nOutput return two values with maximum umber of one's in binary form \nExplanation:\nReturn two values with maximum umber of one's in binary form \nSample Input:\n5\n1 3 5 7 2\n2 \nSample Output:\n7 5 \nAccepted \n188\nSubmissions \n484\nAcceptance Rate \n38.84\n%\nTopics\nbasic io math - tf\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\n8 10 15 32 5 3 7\n2\nOutput\n15 7\nInput\n10\n62 26 17 100 30 59 14 71 84 60 \n5\nOutput\n62 59 71 60 30\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n7\n8 10 15 32 5 3 7\n2\nOutput\n15 7\nInput\n10\n62 26 17 100 30 59 14 71 84 60 \n5\nOutput\n62 59 71 60 30\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMax 1s in Binary\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Input consist of the size of the array , array values and the number of elements to be returned",
+ "output_spec": "Output return two values with maximum umber of one's in binary form \nExplanation:\nReturn two values with maximum umber of one's in binary form",
  "constraints": "",
  "samples": [
   {
    "input": "5\n1 3 5 7 2\n2",
    "output": "7 5"
+  },
+  {
+   "input": "7\n8 10 15 32 5 3 7\n2",
+   "output": "15 7"
+  },
+  {
+   "input": "10\n62 26 17 100 30 59 14 71 84 60 \n5",
+   "output": "62 59 71 60 30"
   }
  ],
  "raw": ""

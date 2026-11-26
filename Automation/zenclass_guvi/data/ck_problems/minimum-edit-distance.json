@@ -3,7 +3,7 @@
  "slug": "minimum-edit-distance",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n329. Minimum Edit Distance\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven 2 strings X and Y convert X to Y as cheaply as possible. Let the cost of insertion, deletion and updation be 1. Print the minimum cost.",
+ "description": "nts & Solutions\nSubmissions\n329\n. \nMinimum Edit Distance\n90\nHard\nTopics\nCompany\nProblem Statement:\nGiven 2 strings X and Y convert X to Y as cheaply as possible. Let the cost of insertion, deletion and updation be 1. Print the minimum cost. \nInput Description:\nInput Size : 1<= N<=1000 \nOutput Description:\nThe minimum cost to convert string X to string Y. \nSample Input:\ncodekata code \nSample Output:\n4 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n82.69\n%\nTopics\nstrings\nmathematics\nCompany\ncompanies\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n222 2\nOutput\n2\nInput\n33145299 4\nOutput\n7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n222 2\nOutput\n2\nInput\n33145299 4\nOutput\n7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimum Edit Distance\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Input Size : 1<= N<=1000",
  "output_spec": "The minimum cost to convert string X to string Y.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "codekata code",
    "output": "4"
+  },
+  {
+   "input": "222 2",
+   "output": "2"
+  },
+  {
+   "input": "33145299 4",
+   "output": "7"
   }
  ],
  "raw": ""

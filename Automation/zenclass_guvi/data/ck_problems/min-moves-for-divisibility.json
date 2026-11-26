@@ -3,7 +3,7 @@
  "slug": "min-moves-for-divisibility",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1062. Min Moves for Divisibility\n\n50\n\nMedium\n\nProblem Statement:\nYou have been given an array a containing n positive integers. Your task is to find the minimum number of moves required to transform the array such that each element is divisible by k (given). During each move, you can either increase x by 1 or choose one element ai from a and increase it by x (then increase x by 1). However, you can only perform the first operation once for each i from 1 to n. Let's solve t independent test cases.",
+ "description": "blem\nHints & Solutions\nSubmissions\n1062\n. \nMin Moves for Divisibility\n50\nMedium\nProblem Statement:\nYou have been given an array a containing n positive integers. Your task is to find the minimum number of moves required to transform the array such that each element is divisible by k (given). During each move, you can either increase x by 1 or choose one element ai from a and increase it by x (then increase x by 1). However, you can only perform the first operation once for each i from 1 to n. Let's solve t independent test cases. \nInput Description:\n- The first line contains t (the number of test cases).\n- For each test case:\n- The first line contains n and k (length of a and required divisor).\n- The second line contains n integers (a1, a2, ..., an). \nOutput Description:\n- For each test case, print the minimum number of moves required. \nSample Input:\n5\n4 3\n1 2 1 3\n10 6\n8 7 1 8 3 7 5 10 8 9\n5 10\n20 100 50 20 100500\n10 25\n24 24 24 24 24 24 24 24 24 24\n8 8\n1 2 3 4 5 6 7 8 \nSample Output:\n6\n18\n0\n227\n8 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.85\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n4 3\n1 2 1 3\n10 6\n8 7 1 8 3 7 5 10 8 9\n5 10\n20 100 50 20 100500\n10 25\n24 24 24 24 24 24 24 24 24 24\n8 8\n1 2 3 4 5 6 7 8\n7\n8\nOutput\n6\n18\n0\n227\n8\nInput\n1\n4 3\n1 2 1 3\nOutput\n6\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n4 3\n1 2 1 3\n10 6\n8 7 1 8 3 7 5 10 8 9\n5 10\n20 100 50 20 100500\n10 25\n24 24 24 24 24 24 24 24 24 24\n8 8\n1 2 3 4 5 6 7 8\n7\n8\nOutput\n6\n18\n0\n227\n8\nInput\n1\n4 3\n1 2 1 3\nOutput\n6\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Moves for Divisibility\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nVie",
  "input_spec": "- The first line contains t (the number of test cases).\n- For each test case:\n- The first line contains n and k (length of a and required divisor).\n- The second line contains n integers (a1, a2, ..., an).",
  "output_spec": "- For each test case, print the minimum number of moves required.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\n4 3\n1 2 1 3\n10 6\n8 7 1 8 3 7 5 10 8 9\n5 10\n20 100 50 20 100500\n10 25\n24 24 24 24 24 24 24 24 24 24\n8 8\n1 2 3 4 5 6 7 8",
    "output": "6\n18\n0\n227\n8"
+  },
+  {
+   "input": "5\n4 3\n1 2 1 3\n10 6\n8 7 1 8 3 7 5 10 8 9\n5 10\n20 100 50 20 100500\n10 25\n24 24 24 24 24 24 24 24 24 24\n8 8\n1 2 3 4 5 6 7 8\n7\n8",
+   "output": "6\n18\n0\n227\n8"
+  },
+  {
+   "input": "1\n4 3\n1 2 1 3",
+   "output": "6"
   }
  ],
  "raw": ""

@@ -3,14 +3,22 @@
  "slug": "min-parentheses-removal",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n845. Min Parentheses Removal\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S of '(' , ')' with alphabets. Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting string should have balanced opening and closing parentheses.Perform the operation using Stack.",
+ "description": "m\nHints & Solutions\nSubmissions\n845\n. \nMin Parentheses Removal\n60\nMedium\nTopics\nProblem Statement:\nGiven a string S of '(' , ')' with alphabets. Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting string should have balanced opening and closing parentheses.Perform the operation using Stack.\nInput Description:\nGiven a string with parentheses and alphabets.\nOutput Description:\nRemove the minimum parentheses and print the resultant valid string.\nExplanation:\nRemove the unnecessary parenthesis to make a valid string.\nSample Input:\ng(u)((vi)\nSample Output:\ng(u)(vi)\nAccepted \n508\nSubmissions \n569\nAcceptance Rate \n89.28\n%\nTopics\nstack\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nz(en(class)\nOutput\nzen(class)\nInput\na)b(c)d\nOutput\nab(c)d\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nz(en(class)\nOutput\nzen(class)\nInput\na)b(c)d\nOutput\nab(c)d\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Parentheses Removal\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given a string with parentheses and alphabets.",
- "output_spec": "Remove the minimum parentheses and print the resultant valid string.",
+ "output_spec": "Remove the minimum parentheses and print the resultant valid string.\nExplanation:\nRemove the unnecessary parenthesis to make a valid string.",
  "constraints": "",
  "samples": [
   {
    "input": "g(u)((vi)",
    "output": "g(u)(vi)"
+  },
+  {
+   "input": "z(en(class)",
+   "output": "zen(class)"
+  },
+  {
+   "input": "a)b(c)d",
+   "output": "ab(c)d"
   }
  ],
  "raw": ""

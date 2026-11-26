@@ -3,7 +3,7 @@
  "slug": "merge-two-sorted-linked-lists",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n834. Merge Two Sorted Linked Lists\n\n60\n\nMedium  Topics\n\nProblem Statement:\nMerge two sorted linked lists and print the new merged linked list.The new list should be made by splicing together the nodes of the first two lists, and should also be sorted.",
+ "description": "s & Solutions\nSubmissions\n834\n. \nMerge Two Sorted Linked Lists\n60\nMedium\nTopics\nProblem Statement:\nMerge two sorted linked lists and print the new merged linked list.The new list should be made by splicing together the nodes of the first two lists, and should also be sorted. \nInput Description:\nGiven two sorted linked list of size M,N First line M is the size of the first sorted linked list,Second line N is the size of the first sorted linked list.Third and Fourth line contains respective linked list values(separated by space) \nOutput Description:\nPrint the resultant linked list after merging the two sorted linked list(separated by space) \nSample Input:\n3\n3\n5 8 20\n4 11 15 \nSample Output:\n4 5 8 11 15 20 \nExplanation:\nMerge the two sorted linked list \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n92.9\n%\nTopics\nlinked list\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n3\n12 15 17 18\n2 13 16\nOutput\n2 12 13 15 16 17 18\nInput\n2\n4\n0 1\n-1 2 4 5\nOutput\n-1 0 1 2 4 5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n3\n12 15 17 18\n2 13 16\nOutput\n2 12 13 15 16 17 18\nInput\n2\n4\n0 1\n-1 2 4 5\nOutput\n-1 0 1 2 4 5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMerge Two Sorted Linked Lists\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given two sorted linked list of size M,N First line M is the size of the first sorted linked list,Second line N is the size of the first sorted linked list.Third and Fourth line contains respective linked list values(separated by space)",
  "output_spec": "Print the resultant linked list after merging the two sorted linked list(separated by space)",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3\n3\n5 8 20\n4 11 15",
    "output": "4 5 8 11 15 20"
+  },
+  {
+   "input": "4\n3\n12 15 17 18\n2 13 16",
+   "output": "2 12 13 15 16 17 18"
+  },
+  {
+   "input": "2\n4\n0 1\n-1 2 4 5",
+   "output": "-1 0 1 2 4 5"
   }
  ],
  "raw": ""

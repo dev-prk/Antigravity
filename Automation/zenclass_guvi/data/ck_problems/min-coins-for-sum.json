@@ -3,7 +3,7 @@
  "slug": "min-coins-for-sum",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n344. Min Coins for Sum\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a list of N coins, their values (V1, V2, \u2026 , VN), and the total sum S. Find the minimum number of coins the sum of which is S (we can use as many coins of one type as we want), if it is not possible to select coins in such a way that they sum up to S then print '-1'.",
+ "description": "m\nHints & Solutions\nSubmissions\n344\n. \nMin Coins for Sum\n90\nHard\nTopics\nCompany\nProblem Statement:\nGiven a list of N coins, their values (V1, V2, \u2026 , VN), and the total sum S. Find the minimum number of coins the sum of which is S (we can use as many coins of one type as we want), if it is not possible to select coins in such a way that they sum up to S then print '-1'. \nInput Description:\nThe input consists of N, S, and then N coin values. N is up to 10000. \nOutput Description:\nThe minimum number of coins required to form the sum S. If it's not possible, print '-1'. \nSample Input:\n3 11\n1 3 5 \nSample Output:\n3 \nExplanation:\nFor coins with values 1, 3, and 5, and sum S is 11, the output is 3. This is achieved using 2 coins of value 3 and 1 coin of value 5 (3+3+5 = 11). \nAccepted \n3k\nSubmissions \n4k\nAcceptance Rate \n86.75\n%\nTopics\narray\nbasics\nmathematics\nguvi-learning-path\nCompany\ncompanies\nVisa\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 11\n1 3 5\nOutput\n3\nInput\n4 11\n1 3 5 6\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 11\n1 3 5\nOutput\n3\nInput\n4 11\n1 3 5 6\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Coins for Sum\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of N, S, and then N coin values. N is up to 10000.",
  "output_spec": "The minimum number of coins required to form the sum S. If it's not possible, print '-1'.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "3 11\n1 3 5",
    "output": "3"
+  },
+  {
+   "input": "4 11\n1 3 5 6",
+   "output": "2"
   }
  ],
  "raw": ""

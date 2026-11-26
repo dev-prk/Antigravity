@@ -3,14 +3,22 @@
  "slug": "missing-package-finder",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n472. Missing Package Finder\n\n40\n\nMedium  Topics\n\nProblem Statement:\nRam is a marketing manager at GUVI. He observes that for every two batches of products, one package is extra in one of the batches. He realises that someone is stealing the package from the other batch. He decides to document the discovery so as to report to his superior. Find out the package number of the package that gets stolen from one of the batches of products.",
+ "description": "em\nHints & Solutions\nSubmissions\n472\n. \nMissing Package Finder\n40\nMedium\nTopics\nProblem Statement:\nRam is a marketing manager at GUVI. He observes that for every two batches of products, one package is extra in one of the batches. He realises that someone is stealing the package from the other batch. He decides to document the discovery so as to report to his superior. Find out the package number of the package that gets stolen from one of the batches of products. \nInput Description:\nThe first line of input contains an integer T, denoting the no of test cases. Then T test cases follow. The first line of each test case contains an integer N, denoting the number of packages in Batch A. The second line of each test case contains N space separated values of number of items in each package of Batch A. The Third line of each test case contains N-1 space separated number of items in each package of Batch B. \nOutput Description:\nReturn the package number of the corresponding package stolen from Batch B. The array index denotes the package number. \nExplanation:\nIn the first test case, the package which is present in batch A, but is not present in batch B is package number 4 (array index for the number 9) (i.e) package 4 which contains 9 items has been stolen. \nSample Input:\n2\n7\n2 4 6 8 9 10 12\n2 4 6 8 10 12\n6\n3 5 7 9 11 13\n3 5 7 11 13 \nSample Output:\n4\n3 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n73.63\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n5\n1 2 3 4 5\n1 3 4 5\nOutput\n1\nInput\n1\n10\n10 11 12 23 24 25 26 31 32 33 \n10 11 12 23 25 26 31 32 33\nOutput\n4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n5\n1 2 3 4 5\n1 3 4 5\nOutput\n1\nInput\n1\n10\n10 11 12 23 24 25 26 31 32 33 \n10 11 12 23 25 26 31 32 33\nOutput\n4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMissing Package Finder\nIssues Encountered\n*\nDescription or examples are uncle",
  "input_spec": "The first line of input contains an integer T, denoting the no of test cases. Then T test cases follow. The first line of each test case contains an integer N, denoting the number of packages in Batch A. The second line of each test case contains N space separated values of number of items in each package of Batch A. The Third line of each test case contains N-1 space separated number of items in each package of Batch B.",
- "output_spec": "Return the package number of the corresponding package stolen from Batch B. The array index denotes the package number.",
+ "output_spec": "Return the package number of the corresponding package stolen from Batch B. The array index denotes the package number. \nExplanation:\nIn the first test case, the package which is present in batch A, but is not present in batch B is package number 4 (array index for the number 9) (i.e) package 4 which contains 9 items has been stolen.",
  "constraints": "",
  "samples": [
   {
    "input": "2\n7\n2 4 6 8 9 10 12\n2 4 6 8 10 12\n6\n3 5 7 9 11 13\n3 5 7 11 13",
    "output": "4\n3"
+  },
+  {
+   "input": "1\n5\n1 2 3 4 5\n1 3 4 5",
+   "output": "1"
+  },
+  {
+   "input": "1\n10\n10 11 12 23 24 25 26 31 32 33 \n10 11 12 23 25 26 31 32 33",
+   "output": "4"
   }
  ],
  "raw": ""

@@ -3,14 +3,22 @@
  "slug": "merge-k-sorted-arrays",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n343. Merge K Sorted Arrays\n\n50\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven k sorted arrays of possibly different sizes, merge them and print the sorted output.",
+ "description": "s & Solutions\nSubmissions\n343\n. \nMerge K Sorted Arrays\n50\nMedium\nTopics\nCompany\nProblem Statement:\nGiven k sorted arrays of possibly different sizes, merge them and print the sorted output. \nInput Description:\nInput Size : N<=100 \nSample Input:\nk = 3\n1 3\n2 4 6\n0 9 10 11 \nSample Output:\n0 1 2 3 4 6 9 10 11\nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n78.2\n%\nTopics\narray\nguvi-learning-path\nCompany\nAmazon\nAmdocs\nBrocade\nFactSet\nGoldman\nSachs\nJuniper\nNetworks\nLinkedin\nMicrosoft\nQuikr\nSnapdeal\nSynopsys\nVisa\nZoho\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n1 5\n-5 11\nOutput\n-5 1 5 11\nInput\n1\n12\nOutput\n12\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n1 5\n-5 11\nOutput\n-5 1 5 11\nInput\n1\n12\nOutput\n12\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMerge K Sorted Arrays\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Input Size : N<=100",
- "output_spec": ".\n\nInput Description:\nInput Size : N<=100",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "k = 3\n1 3\n2 4 6\n0 9 10 11",
    "output": "0 1 2 3 4 6 9 10 11"
+  },
+  {
+   "input": "2\n1 5\n-5 11",
+   "output": "-5 1 5 11"
+  },
+  {
+   "input": "1\n12",
+   "output": "12"
   }
  ],
  "raw": ""

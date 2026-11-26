@@ -3,14 +3,18 @@
  "slug": "max-length-subarray-with-sum-zero",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n583. Max Length Subarray with Sum Zero\n\n70\n\nHard  Topics\n\nProblem Statement:\nJack is fond of numbers. He has given an array.He has to find the maximum length of sub array such that sum of elements in that sub array gives output 0.He is in little trouble, help him in finding solution",
+ "description": "& Solutions\nSubmissions\n583\n. \nMax Length Subarray with Sum Zero\n70\nHard\nTopics\nProblem Statement:\nJack is fond of numbers. He has given an array.He has to find the maximum length of sub array such that sum of elements in that sub array gives output 0.He is in little trouble, help him in finding solution \nInput Description:\nYou are given an integer \u2018n\u2019 denoting the number of elements in array.Next line contains n space separated integers \nOutput Description:\nPrint the max length of that array with sum 0 and print -1 if not possible \nExplanation:\n(-4 3 1 0 0 ) will give sum as 0 \nSample Input:\n6\n-4 3 1 0 0 6 \nSample Output:\n5 \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n87.61\n%\nTopics\narray\nnumbers\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n-4 3 1 0 0 6\nOutput\n5\nInput\n5\n1 3 1 0 0 6\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n-4 3 1 0 0 6\nOutput\n5\nInput\n5\n1 3 1 0 0 6\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMax Length Subarray with Sum Zero\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given an integer \u2018n\u2019 denoting the number of elements in array.Next line contains n space separated integers",
- "output_spec": "0.He is in little trouble, help him in finding solution\n\nInput Description:\nYou are given an integer \u2018n\u2019 denoting the number of elements in array.Next line contains n space separated integers\n\nOutput Description:\nPrint the max length of that array with sum 0 and print -1 if not possible",
+ "output_spec": "Print the max length of that array with sum 0 and print -1 if not possible \nExplanation:\n(-4 3 1 0 0 ) will give sum as 0",
  "constraints": "",
  "samples": [
   {
    "input": "6\n-4 3 1 0 0 6",
    "output": "5"
+  },
+  {
+   "input": "5\n1 3 1 0 0 6",
+   "output": "2"
   }
  ],
  "raw": ""

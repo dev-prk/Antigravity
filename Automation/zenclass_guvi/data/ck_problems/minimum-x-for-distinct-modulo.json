@@ -3,14 +3,22 @@
  "slug": "minimum-x-for-distinct-modulo",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n407. Minimum X for Distinct Modulo\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are given an array A containing N distinct positive integers. Let A[i] represent an element in A. Mr. Beckham wants to perform an operation on the elements of A. He wants to choose a positive integer X and perform A[i] := A[i] mod X for all i (1 <= i <= N). Help Mr. Beckham choose the smallest possible value of X such that the elements of the array remain distinct even after performing the operation. (It can be proven that an answer exists for all possible inputs)",
- "input_spec": "s)\n\nInput Description:\nThe first line contains an integer N representing the number of elements in the array.\nThe next line contains N distinct space separated integers denoting the array elements.",
+ "description": "nts & Solutions\nSubmissions\n407\n. \nMinimum X for Distinct Modulo\n80\nHard\nTopics\nProblem Statement:\nYou are given an array A containing N distinct positive integers. Let A[i] represent an element in A. Mr. Beckham wants to perform an operation on the elements of A. He wants to choose a positive integer X and perform A[i] := A[i] mod X for all i (1 <= i <= N). Help Mr. Beckham choose the smallest possible value of X such that the elements of the array remain distinct even after performing the operation. (It can be proven that an answer exists for all possible inputs) \nInput Description:\nThe first line contains an integer N representing the number of elements in the array.\nThe next line contains N distinct space separated integers denoting the array elements. \nOutput Description:\nPrint a single integer X \nSample Input:\n2\n21 22 \nSample Output:\n2 \nExplanation:\nThe array after the operation [1, 0] \nAccepted \n414\nSubmissions \n614\nAcceptance Rate \n67.43\n%\nTopics\narray\nhashing\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n23 24\nOutput\n2\nInput\n20\n84 66 17 83 22 100 11 57 71 98 46 72 47 38 30 9 74 68 26 28\nOutput\n47\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n23 24\nOutput\n2\nInput\n20\n84 66 17 83 22 100 11 57 71 98 46 72 47 38 30 9 74 68 26 28\nOutput\n47\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimum X for Distinct Modulo\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains an integer N representing the number of elements in the array.\nThe next line contains N distinct space separated integers denoting the array elements.",
  "output_spec": "Print a single integer X",
  "constraints": "",
  "samples": [
   {
    "input": "2\n21 22",
    "output": "2"
+  },
+  {
+   "input": "2\n23 24",
+   "output": "2"
+  },
+  {
+   "input": "20\n84 66 17 83 22 100 11 57 71 98 46 72 47 38 30 9 74 68 26 28",
+   "output": "47"
   }
  ],
  "raw": ""

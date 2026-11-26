@@ -3,7 +3,7 @@
  "slug": "min-cost-climbing-stairs",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1501. Min Cost Climbing Stairs\n\n50\n\nMedium\n\nProblem Statement:\nYou are given an integer array cost where cost[i] is the cost of step i on a staircase. Once you pay the cost, you can either climb one or two steps. You can start from step 0 or step 1. Your goal is to reach the top of the staircase (beyond the last index) with the minimum total cost.",
+ "description": "roblem\nHints & Solutions\nSubmissions\n1501\n. \nMin Cost Climbing Stairs\n50\nMedium\nProblem Statement:\nYou are given an integer array cost where cost[i] is the cost of step i on a staircase. Once you pay the cost, you can either climb one or two steps. You can start from step 0 or step 1. Your goal is to reach the top of the staircase (beyond the last index) with the minimum total cost. \nInput Description:\n- The first line contains an integer n, the number of stairs.\n- The second line contains n space-separated integers, the cost of each stair. \nOutput Description:\n- A single integer representing the minimum cost to reach the top of the staircase. \nSample Input:\n6\n10 15 20 5 10 5 \nSample Output:\n25 \nExplanation:\nYou can start at step 1 (cost 15), then step to 3 (cost 5), then step to 5 (cost 5), then jump directly to the top. Total cost = 15 + 5 + 5 = 25. This is cheaper than other path like 0\u21922\u21924\u2192top (cost 40). \nAccepted \n31\nSubmissions \n33\nAcceptance Rate \n93.94\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n1 100\nOutput\n1\nInput\n3\n10 15 20\nOutput\n15\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\n1 100\nOutput\n1\nInput\n3\n10 15 20\nOutput\n15\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Cost Climbing Stairs\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer n, the number of stairs.\n- The second line contains n space-separated integers, the cost of each stair.",
  "output_spec": "- A single integer representing the minimum cost to reach the top of the staircase.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "6\n10 15 20 5 10 5",
    "output": "25"
+  },
+  {
+   "input": "2\n1 100",
+   "output": "1"
+  },
+  {
+   "input": "3\n10 15 20",
+   "output": "15"
   }
  ],
  "raw": ""

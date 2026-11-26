@@ -3,14 +3,22 @@
  "slug": "minimize-max-pages-per-student",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n471. Minimize Max Pages per Student\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given a number of books and are asked to distribute them among students. Every book has distinct number of total pages.The distribution of books can be done in many ways. In each way, one of the students will be allocated books such that the he/she has the maximum number of total pages. Your task is to find the minimuma among all the maximuma, i.e. in all the possible number of ways in which the maximum number of pages can be allocated to a student. Each book will be allocated to exactly one student and each student has to be allocated at least one book. Confusing? Check out the explanation!",
+ "description": "ts & Solutions\nSubmissions\n471\n. \nMinimize Max Pages per Student\n90\nHard\nTopics\nProblem Statement:\nYou are given a number of books and are asked to distribute them among students. Every book has distinct number of total pages.The distribution of books can be done in many ways. In each way, one of the students will be allocated books such that the he/she has the maximum number of total pages. Your task is to find the minimuma among all the maximuma, i.e. in all the possible number of ways in which the maximum number of pages can be allocated to a student. Each book will be allocated to exactly one student and each student has to be allocated at least one book. Confusing? Check out the explanation! \nInput Description:\nThe first line contains a single positive integer denoting the number of books.\nThe second line contains space separated positive integers denoting the pages of each book.\nAnd the third line contains the number of students. \nOutput Description:\nOutput a single line containing maximum pages that can be allotted to a student. \nExplanation:\nThe possible permutations for allotment are\n(12,34),(67,90) - max is 157 (max(12+34,67+90)=157)\n(12,67),(34,90) - max is 124\n(12,90),(34,67) - max is 102\n(12),(34,67,90) - max is 191\n(12,34,67),(90) - max is 113\n(12,34,90),(67) - max is 136\n(12,67,90),(34) - max is 169\nMinimum among all the maximas is 102. \nSample Input:\n4\n12 34 67 90\n2 \nSample Output:\n102 \nAccepted \n148\nSubmissions \n669\nAcceptance Rate \n22.12\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n5 12 14\n2\nOutput\n17\nInput\n4\n6 12 34 90\n2\nOutput\n90\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n5 12 14\n2\nOutput\n17\nInput\n4\n6 12 34 90\n2\nOutput\n90\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimize Max Pages per Student\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTest",
  "input_spec": "The first line contains a single positive integer denoting the number of books.\nThe second line contains space separated positive integers denoting the pages of each book.\nAnd the third line contains the number of students.",
- "output_spec": "Output a single line containing maximum pages that can be allotted to a student.",
+ "output_spec": "Output a single line containing maximum pages that can be allotted to a student. \nExplanation:\nThe possible permutations for allotment are\n(12,34),(67,90) - max is 157 (max(12+34,67+90)=157)\n(12,67),(34,90) - max is 124\n(12,90),(34,67) - max is 102\n(12),(34,67,90) - max is 191\n(12,34,67),(90) - max is 113\n(12,34,90),(67) - max is 136\n(12,67,90),(34) - max is 169\nMinimum among all the maximas is 102.",
  "constraints": "",
  "samples": [
   {
    "input": "4\n12 34 67 90\n2",
    "output": "102"
+  },
+  {
+   "input": "3\n5 12 14\n2",
+   "output": "17"
+  },
+  {
+   "input": "4\n6 12 34 90\n2",
+   "output": "90"
   }
  ],
  "raw": ""

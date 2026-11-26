@@ -3,7 +3,7 @@
  "slug": "minimize-number-by-removing-k-digits",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1590. Minimize Number by Removing K Digits\n\n80\n\nHard\n\nProblem Statement:\nGiven a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible. The result should not contain any leading zeros unless the result is 0.",
+ "description": "ts & Solutions\nSubmissions\n1590\n. \nMinimize Number by Removing K Digits\n80\nHard\nProblem Statement:\nGiven a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible. The result should not contain any leading zeros unless the result is 0. \nInput Description:\n- The first line contains a string num representing the non-negative integer.\n- The second line contains an integer k, the number of digits to remove. \nOutput Description:\n- A string representing the smallest possible number after removing k digits. \nSample Input:\n1432219\n3 \nSample Output:\n1219 \nExplanation:\nRemove the digits 4, 3, and 2 to get the smallest number 1219. \nAccepted \n7\nSubmissions \n16\nAcceptance Rate \n43.75\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1632217\n3\nOutput\n1217\nInput\n10200\n1\nOutput\n200\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1632217\n3\nOutput\n1217\nInput\n10200\n1\nOutput\n200\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimize Number by Removing K Digits\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains a string num representing the non-negative integer.\n- The second line contains an integer k, the number of digits to remove.",
  "output_spec": "- A string representing the smallest possible number after removing k digits.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "1432219\n3",
    "output": "1219"
+  },
+  {
+   "input": "1632217\n3",
+   "output": "1217"
+  },
+  {
+   "input": "10200\n1",
+   "output": "200"
   }
  ],
  "raw": ""

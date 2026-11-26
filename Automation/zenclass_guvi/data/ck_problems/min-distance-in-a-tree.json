@@ -3,7 +3,7 @@
  "slug": "min-distance-in-a-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n827. Min Distance in a Tree\n\n80\n\nHard  Company\n\nProblem Statement:\nThere are a number of cities. Not all cities are connected.\n\nThe cities are connected in the hirarchial fashion like the one below:\n\nA\n/     \\\nB       C\n/   \\     \\\nD     E     F\n/          /   \\\nG          I     J\n\\\nH\n\nThis means A has a connection with all other cities. City C has a connection with F, I and J. City G has a connection with H and so on.\n\nThe task is to calculate the minimum number of distance it takes to reach from one city to another. If the city has a connection with another city then the distance between them is 1.\n\nFor example, The distance between H and E cities is 4.It takes 4 connections to reach.\n\nGiving a binary tree and its inorder and postorder traversal, calculate the minimum distance between given nodes.",
+ "description": "lem\nHints & Solutions\nSubmissions\n827\n. \nMin Distance in a Tree\n80\nHard\nCompany\nProblem Statement:\nThere are a number of cities. Not all cities are connected. \nThe cities are connected in the hirarchial fashion like the one below: \n A \n / \\ \n B C \n / \\ \\ \n D E F \n / / \\ \n G I J \n \\ \n H \nThis means A has a connection with all other cities. City C has a connection with F, I and J. City G has a connection with H and so on. \nThe task is to calculate the minimum number of distance it takes to reach from one city to another. If the city has a connection with another city then the distance between them is 1. \nFor example, The distance between H and E cities is 4.It takes 4 connections to reach. \nGiving a binary tree and its inorder and postorder traversal, calculate the minimum distance between given nodes. \nInput Description:\nFirst-line represents Binary tree inorder traversal\nSecond-line represents Binary tree postorder traversal\nThe next line represents two cities to which minimum distance to be calculated. \nOutput Description:\nMinimum Distance between given 2 cities \nSample Input:\nACDFHIJK\nADCIHKJF\nA K \nSample Output:\n4 \nExplanation:\nAfter constructing a Binary tree based on its traversal, \n F \n / \\ \n C J \n / \\ / \\ \n A D H K \n \\ \n I \nSo it takes 4 connections to reach from A to K\nAccepted \n110\nSubmissions \n206\nAcceptance Rate \n53.4\n%\nCompany\ncompanies\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nBAC\nBCA\nB C\nOutput\n2\nInput\nDHBEAFCG\nHDEBFGCA\nF B\nOutput\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nBAC\nBCA\nB C\nOutput\n2\nInput\nDHBEAFCG\nHDEBFGCA\nF B\nOutput\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMin Distance in a Tree\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongra",
  "input_spec": "First-line represents Binary tree inorder traversal\nSecond-line represents Binary tree postorder traversal\nThe next line represents two cities to which minimum distance to be calculated.",
  "output_spec": "Minimum Distance between given 2 cities",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "ACDFHIJK\nADCIHKJF\nA K",
    "output": "4"
+  },
+  {
+   "input": "BAC\nBCA\nB C",
+   "output": "2"
+  },
+  {
+   "input": "DHBEAFCG\nHDEBFGCA\nF B",
+   "output": "3"
   }
  ],
  "raw": ""
