@@ -1,0 +1,1 @@
+{"slug": "string-to-uppercase", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    s = sys.stdin.readline().strip()\n    print(s.upper())\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "power-calculation", "lang": "PYTHON 3", "code": "import sys\n\ndef solve():\n    data = sys.stdin.read().strip().split()\n    if len(data) < 2:\n        return\n    try:\n        n = int(data[0])\n        m = int(data[1])\n    except:\n        return\n    print(pow(n, m))\n\nif __name__ == \"__main__\":\n    solve()\n", "local_ok": true, "err": ""}

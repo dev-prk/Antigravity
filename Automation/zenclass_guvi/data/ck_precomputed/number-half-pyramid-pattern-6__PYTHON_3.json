@@ -1,0 +1,1 @@
+{"slug": "number-half-pyramid-pattern-6", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    R = int(sys.stdin.readline().strip())\n    for i in range(R, 0, -1):\n        print(str(i) * i)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

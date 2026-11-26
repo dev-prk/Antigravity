@@ -1,0 +1,1 @@
+{"slug": "count-number-occurrences-2", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().split()\n    if len(data) < 2:\n        return\n    num1 = data[0]\n    num2 = data[1]\n    print(num1.count(num2))\n\nif __name__ == '__main__':\n    main()\n", "local_ok": true, "err": ""}

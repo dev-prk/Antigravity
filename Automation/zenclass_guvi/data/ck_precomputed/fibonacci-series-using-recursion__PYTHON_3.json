@@ -1,0 +1,1 @@
+{"slug": "fibonacci-series-using-recursion", "lang": "PYTHON 3", "code": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n - 1) + fibonacci(n - 2)\n\nn = int(input())\nprint(f\"Fibonacci: {fibonacci(n)}\")\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "converting-total-seconds-into-hours-minutes-and-seconds", "lang": "PYTHON 3", "code": "totalSeconds = int(input())\nhours = totalSeconds // 3600\nremaining_seconds = totalSeconds % 3600\nminutes = remaining_seconds // 60\nseconds = remaining_seconds % 60\nprint(hours)\nprint(minutes)\nprint(seconds)\n", "local_ok": true, "err": ""}

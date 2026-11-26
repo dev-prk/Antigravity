@@ -1,0 +1,1 @@
+{"slug": "generate-a-square-pattern-of-1s", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    line = sys.stdin.readline()\n    if not line:\n        return\n    R = int(line.strip())\n    for _ in range(R):\n        print('1' * R)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

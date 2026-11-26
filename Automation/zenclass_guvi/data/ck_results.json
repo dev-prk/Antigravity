@@ -3205,5 +3205,1562 @@
   "reason": "Empty code",
   "duration_s": 1.31,
   "ts": "2026-11-26T17:48:04.971100+00:00"
+ },
+ "functions": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T17:48:06.619252+00:00"
+ },
+ "generating-the-first-five-fibonacci-numbers": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.46,
+  "ts": "2026-11-26T17:48:08.087604+00:00"
+ },
+ "gray-decode": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T17:48:09.577007+00:00"
+ },
+ "hanoi-tower": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.4,
+  "ts": "2026-11-26T17:48:10.982728+00:00"
+ },
+ "head-recursion": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.3,
+  "ts": "2026-11-26T17:48:12.281944+00:00"
+ },
+ "heap-allocated-inventory-management": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.49,
+  "ts": "2026-11-26T17:48:18.773237+00:00"
+ },
+ "common-elements-in-sorted-arrays": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T17:48:20.504043+00:00"
+ },
+ "anagram-checker": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nJAVA 8\nMain.java:6: error: reached end of file while parsing Scanner scanner = new Scanner(System.in); ^ 1 error Compilation Error\nCode\n1\n2\n3\n4\n5\n6\n7\nimport java.util.Scanner;\nimport java.util.A",
+  "duration_s": 2.62,
+  "ts": "2026-11-26T17:48:54.539054+00:00"
+ },
+ "alphabetic-pattern-2": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to write a Python 3 program that reads integer n from standard input and prints the pattern as described. Based on samples: Sample 1: n=4 output h",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T17:48:51.915895+00:00"
+ },
+ "c-data-type-sizes": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nC\nmain.c:1:5: warning: missing terminating ' character Here's a thinking process: ^ main.c:1:5: error: missing terminating ' character Here's a thinking process: ^~~~~~~~~~~~~~~~~~~~~~ main.c:3:",
+  "duration_s": 11.55,
+  "ts": "2026-11-26T17:49:06.110162+00:00"
+ },
+ "basic-calculator-with-switch-case": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.35,
+  "ts": "2026-11-26T17:49:07.465791+00:00"
+ },
+ "check-if-number-is-power-of-two": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.33,
+  "ts": "2026-11-26T17:49:08.803930+00:00"
+ },
+ "circle-radius-calculation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.47,
+  "ts": "2026-11-26T17:49:10.281965+00:00"
+ },
+ "count-words-in-a-string": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T17:49:11.924945+00:00"
+ },
+ "divisibility-by-8": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T17:49:13.552622+00:00"
+ },
+ "even-odd-index-digit-sum-absolute-diff": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.86,
+  "ts": "2026-11-26T17:49:18.418414+00:00"
+ },
+ "fibonacci-series-generator": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T17:49:20.028969+00:00"
+ },
+ "find-duplicate-characters": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T17:49:21.511181+00:00"
+ },
+ "find-second-largest-number-in-array": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.2,
+  "ts": "2026-11-26T17:49:27.717157+00:00"
+ },
+ "hollow-rhombus-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 *** ^ SyntaxError: invalid syntax Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n***\n* *\n***\n\n\nAre you sure you want to reset?\n\nYour code will be replaced with the def",
+  "duration_s": 3.81,
+  "ts": "2026-11-26T17:49:31.543873+00:00"
+ },
+ "first-non-repeating-char-in-string": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 14.75,
+  "ts": "2026-11-26T17:49:46.302295+00:00"
+ },
+ "break-continue-skip-3-stop-at-50": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 15.45,
+  "ts": "2026-11-26T17:50:01.759180+00:00"
+ },
+ "calculate-array-average": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.58,
+  "ts": "2026-11-26T17:50:03.346667+00:00"
+ },
+ "count-number-occurrences-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.81,
+  "ts": "2026-11-26T17:50:05.171137+00:00"
+ },
+ "count-pairs-with-sum-n": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.72,
+  "ts": "2026-11-26T17:50:06.893389+00:00"
+ },
+ "count-vowels-in-a-string": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T17:50:08.419553+00:00"
+ },
+ "cuboid-surface-area-and-volume": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T17:50:10.046544+00:00"
+ },
+ "date-incrementer": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 2.62,
+  "ts": "2026-11-26T17:50:29.200585+00:00"
+ },
+ "divisibility-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 2.56,
+  "ts": "2026-11-26T17:50:14.356498+00:00"
+ },
+ "even-odd-transaction": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 6.85,
+  "ts": "2026-11-26T17:50:21.222599+00:00"
+ },
+ "find-largest-element-in-array": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.35,
+  "ts": "2026-11-26T17:50:26.580025+00:00"
+ },
+ "calculate-sum-of-even-indexed-elements": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n362ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\nimport java.util.Scanner;\n\n   public class Main {\n       public static void main(String[] args) {\n           Sca",
+  "duration_s": 2.47,
+  "ts": "2026-11-26T17:50:52.713460+00:00"
+ },
+ "arithmetic-expression-evaluator": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.68,
+  "ts": "2026-11-26T17:50:50.237007+00:00"
+ },
+ "comparing-two-shop-sales": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 12.52,
+  "ts": "2026-11-26T17:51:05.241109+00:00"
+ },
+ "counting-palindromic-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T17:51:06.884679+00:00"
+ },
+ "array-element-subtraction-2": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.32,
+  "ts": "2026-11-26T17:51:08.208183+00:00"
+ },
+ "custom-array-based-queue-in-java": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.26,
+  "ts": "2026-11-26T17:51:09.480122+00:00"
+ },
+ "custom-exception-for-invalid-age": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.33,
+  "ts": "2026-11-26T17:51:10.827833+00:00"
+ },
+ "diagonal-sum-of-a-matrix": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.74,
+  "ts": "2026-11-26T17:51:12.579140+00:00"
+ },
+ "digit-combination-generator": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n61ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\nimport sys\nimport itertools\n\ndef solve(line):\n    nums = [int(x) for x in line.split()]\n    nums",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T17:51:14.098845+00:00"
+ },
+ "employee-payroll-with-single-inheritance": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.76,
+  "ts": "2026-11-26T17:51:23.863933+00:00"
+ },
+ "even-length-substring": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T17:51:25.351460+00:00"
+ },
+ "find-size-of-arraylist": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T17:51:26.847832+00:00"
+ },
+ "find-the-smallest-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T17:51:28.459691+00:00"
+ },
+ "finding-the-largest-of-two-numbers": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.7,
+  "ts": "2026-11-26T17:51:32.162491+00:00"
+ },
+ "converting-a-4-bit-decimal-number-to-binary": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 15.8,
+  "ts": "2026-11-26T17:51:47.970302+00:00"
+ },
+ "binary-search-for-element": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 18.53,
+  "ts": "2026-11-26T17:52:06.507306+00:00"
+ },
+ "boolean-discount-eligibility": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 12.9,
+  "ts": "2026-11-26T17:52:19.440111+00:00"
+ },
+ "calculating-the-total-price-with-gst-using-a-symbolic-constant": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.75,
+  "ts": "2026-11-26T17:52:28.198484+00:00"
+ },
+ "converting-celsius-to-fahrenheit-using-a-function": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 16.37,
+  "ts": "2026-11-26T17:52:44.572543+00:00"
+ },
+ "custom-exception-handling": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 37.53,
+  "ts": "2026-11-26T17:53:22.106559+00:00"
+ },
+ "array-index-checker": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.89,
+  "ts": "2026-11-26T17:53:24.001994+00:00"
+ },
+ "c-program-for-discount-calculation-2": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T17:53:25.642642+00:00"
+ },
+ "c-program-for-discount-calculation": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T17:53:27.385608+00:00"
+ },
+ "calculating-total-marks-and-percentage-of-three-subjects": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.02,
+  "ts": "2026-11-26T17:53:31.407460+00:00"
+ },
+ "calculator-using-method-overloading": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T17:53:32.898262+00:00"
+ },
+ "classes-objects": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 53.39,
+  "ts": "2026-11-26T17:54:26.290282+00:00"
+ },
+ "bitwise-packet-header-manipulation": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n5ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 30.56,
+  "ts": "2026-11-26T17:54:56.870572+00:00"
+ },
+ "bank-balance-transaction-manager": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.28,
+  "ts": "2026-11-26T17:54:58.159076+00:00"
+ },
+ "bitwise-operations-on-floats": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.36,
+  "ts": "2026-11-26T17:54:59.530585+00:00"
+ },
+ "c-macro-with-multiple-parameters": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.37,
+  "ts": "2026-11-26T17:55:00.906735+00:00"
+ },
+ "calculate-the-factorial-of-a-number": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.37,
+  "ts": "2026-11-26T17:55:02.286275+00:00"
+ },
+ "car-age-calculator": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.56,
+  "ts": "2026-11-26T17:55:03.858435+00:00"
+ },
+ "chessboard-pattern-restoration": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.32,
+  "ts": "2026-11-26T17:55:05.184460+00:00"
+ },
+ "city-map-as-adjacency-matrix": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n51ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\nimport sys\n\ndef main():\n    data = sys.std",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T17:55:06.936718+00:00"
+ },
+ "closed-form-binet": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.6,
+  "ts": "2026-11-26T17:55:08.541117+00:00"
+ },
+ "conditional-variable-transformation-challenge": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.39,
+  "ts": "2026-11-26T17:55:09.935216+00:00"
+ },
+ "conference-room-reservation-system": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.45,
+  "ts": "2026-11-26T17:55:11.406907+00:00"
+ },
+ "counting-empty-chains-in-separate-chaining": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/8\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 7 chains[(num ^ cmp_to_key(str(num))] += 1 if num == 0 else 0 ^ SyntaxError: closing parenthesis ']' does not match opening parenthesis '(' Runtime Error (N",
+  "duration_s": 1.76,
+  "ts": "2026-11-26T17:55:13.167691+00:00"
+ },
+ "counting-smaller-trees": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.74,
+  "ts": "2026-11-26T17:55:14.914901+00:00"
+ },
+ "counting-wins-in-a-game": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T17:55:16.405512+00:00"
+ },
+ "cyclic-array-rotation": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n208ms\n\nMemory\n\n41kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\nimport java.io.*;\nimport java.util.*;\n\npublic cla",
+  "duration_s": 3.52,
+  "ts": "2026-11-26T17:55:42.377446+00:00"
+ },
+ "daily-production-total": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T17:55:44.027873+00:00"
+ },
+ "dijkstra-algorithm-shortest-distance-from-source": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T17:55:45.528294+00:00"
+ },
+ "distinct-adjacent-words": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to parse the problem statement carefully. ^ SyntaxError: invalid syntax Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T17:55:47.049217+00:00"
+ },
+ "dynamic-graph-implementation": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n5ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 14.58,
+  "ts": "2026-11-26T17:56:01.630983+00:00"
+ },
+ "dynamic-sparse-matrix": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.42,
+  "ts": "2026-11-26T17:56:03.065441+00:00"
+ },
+ "electricity-bill-of-a-machine": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T17:56:04.569413+00:00"
+ },
+ "employee-interface-implementation": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.47,
+  "ts": "2026-11-26T17:56:06.040267+00:00"
+ },
+ "find-rajesh-s-highest-marks": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T17:56:07.657884+00:00"
+ },
+ "find-the-middle-node-of-a-singly-linked-list": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.94,
+  "ts": "2026-11-26T17:56:09.607091+00:00"
+ },
+ "finding-the-average-of-two-numbers-using-a-function": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T17:56:11.095275+00:00"
+ },
+ "finding-the-best-smartphone-deal": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T17:56:12.727833+00:00"
+ },
+ "finding-the-size-of-data-types-using-sizeof": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.32,
+  "ts": "2026-11-26T17:56:14.048500+00:00"
+ },
+ "finding-the-ticket-price-based-on-age": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 14.85,
+  "ts": "2026-11-26T17:56:28.912146+00:00"
+ },
+ "first-non-repeating-character": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.65,
+  "ts": "2026-11-26T17:56:30.570484+00:00"
+ },
+ "generate-a-square-pattern-of-1s": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.54,
+  "ts": "2026-11-26T17:56:32.124850+00:00"
+ },
+ "generating-visitor-token-numbers": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 10.92,
+  "ts": "2026-11-26T17:56:43.059888+00:00"
+ },
+ "gray-code-generation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.54,
+  "ts": "2026-11-26T17:56:44.603642+00:00"
+ },
+ "group-anagrams": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 11.14,
+  "ts": "2026-11-26T17:56:55.756240+00:00"
+ },
+ "half-pyramid-number-pattern": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 2.67,
+  "ts": "2026-11-26T17:56:58.435301+00:00"
+ },
+ "handling-arrayindexoutofboundsexception": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n459ms\n\nMemory\n\n50kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\nimport java.util.*;\nimport java.io.*;\n\npublic class Main {\n    public static void main(String[] a",
+  "duration_s": 3.68,
+  "ts": "2026-11-26T17:58:10.330889+00:00"
+ },
+ "hashing-without-collision": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T17:57:11.995260+00:00"
+ },
+ "highest-average-score": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T17:57:13.494767+00:00"
+ },
+ "hollow-rectangle-star-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n67ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nimport sys\n\ndef hollow_rectangle_star_pattern(r: int, c: int) -> None:\n    for i in range(r):\n        ",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T17:58:11.851900+00:00"
+ },
+ "hotel-booking-cost-calculator": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 19.76,
+  "ts": "2026-11-26T17:57:34.752306+00:00"
+ },
+ "implement-a-priority-queue": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/5\nLanguage\nJAVA 8\nRuntime\n\n283ms\n\nMemory\n\n51kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n5",
+  "duration_s": 5.62,
+  "ts": "2026-11-26T17:58:06.640610+00:00"
+ },
+ "in-place-string-reversal": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to write program reading entire input string (maybe multiple lines? but sample input shows a single line). Need to reverse string but keeping punc",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T17:58:13.373985+00:00"
+ },
+ "index-wise-list-addition": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T17:58:14.869338+00:00"
+ },
+ "integer-arithmetic-operations": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 19.06,
+  "ts": "2026-11-26T17:58:33.934859+00:00"
+ },
+ "inverted-number-half-pyramid": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.55,
+  "ts": "2026-11-26T17:58:35.488884+00:00"
+ },
+ "is-the-number-pure": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T17:58:37.225413+00:00"
+ },
+ "island-counting-in-a-grid": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 29.64,
+  "ts": "2026-11-26T17:59:06.874434+00:00"
+ },
+ "items-made-and-material-cost-in-a-factory": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T17:59:08.493064+00:00"
+ },
+ "java-array-exception-handling": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.35,
+  "ts": "2026-11-26T17:59:09.847514+00:00"
+ },
+ "java-array-length-using-inbuilt-function": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.31,
+  "ts": "2026-11-26T17:59:11.172770+00:00"
+ },
+ "java-concurrent-banking-system-simulation": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.43,
+  "ts": "2026-11-26T17:59:12.606621+00:00"
+ },
+ "java-exception-handling": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 2.03,
+  "ts": "2026-11-26T17:59:14.642212+00:00"
+ },
+ "java-identifier-validation": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 12.81,
+  "ts": "2026-11-26T17:59:27.460955+00:00"
+ },
+ "java-method-overloading-for-math-ops": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 13.45,
+  "ts": "2026-11-26T17:59:40.925003+00:00"
+ },
+ "java-thread-even-odd-printer": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/3\nLanguage\nJAVA 8\nRuntime\n\n228ms\n\nMemory\n\n33kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\nimport java.io.*;\nimport java.util.*;\n\npublic class Main {\n    publ",
+  "duration_s": 3.67,
+  "ts": "2026-11-26T17:59:52.873544+00:00"
+ },
+ "l-value-modification-in-c": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.71,
+  "ts": "2026-11-26T18:00:02.601562+00:00"
+ },
+ "lambda-comparator-for-person-objects": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T18:00:04.091148+00:00"
+ },
+ "large-power-computation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.84,
+  "ts": "2026-11-26T18:00:05.932927+00:00"
+ },
+ "largest-integer-in-a-string": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 7 largest_num = max(digit_count.values()) ^ SyntaxError: invalid syntax Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nfrom collections impor",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T18:00:07.434848+00:00"
+ },
+ "largest-number-in-an-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.6,
+  "ts": "2026-11-26T18:00:09.042350+00:00"
+ },
+ "lcm-via-gcd": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/3\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 12, in <module> b = int(b_str) ValueError: invalid literal for int() with base 10: 'b=15' Runtime Error (NZEC)\nCode\n1\n2\n3",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T18:00:10.533762+00:00"
+ },
+ "leap-year-check-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T18:00:12.032560+00:00"
+ },
+ "linear-congruence": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/3\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to solve the problem: Solve linear congruence a*x \u2261 b (mod m) and output one solution or none. The problem statement: \"Solve linear congruence a*x",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T18:00:13.529438+00:00"
+ },
+ "linear-search-largest-element-and-its-position": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T18:00:15.045488+00:00"
+ },
+ "linear-sieve": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/3\nLanguage\nPYTHON 3\nRuntime\n\n30ms\n\nMemory\n\n9kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T18:00:16.561258+00:00"
+ },
+ "longest-common-prefix-4": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 20.34,
+  "ts": "2026-11-26T18:00:36.924234+00:00"
+ },
+ "macros-file-inclusion-conditional-compilation": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 4.54,
+  "ts": "2026-11-26T18:00:41.471562+00:00"
+ },
+ "matrix-class-implementation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T18:00:42.967036+00:00"
+ },
+ "matrix-comparison-for-bomb-diffusion": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T18:00:44.469437+00:00"
+ },
+ "matrix-multiplication-2": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nCompiler Error\nTest Cases\n4/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 67, in <module> main() File \"script-3.8.1.py\", line 36, in main mat1_rows = int(data[idx]) ValueError: invalid literal fo",
+  "duration_s": 1.46,
+  "ts": "2026-11-26T18:00:45.933124+00:00"
+ },
+ "matrix-multiplication": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T18:00:47.692490+00:00"
+ },
+ "matrix-transpose-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 2.6,
+  "ts": "2026-11-26T18:00:50.295570+00:00"
+ },
+ "max-sum-matrix-path": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 16.99,
+  "ts": "2026-11-26T18:01:07.289213+00:00"
+ },
+ "maximizing-wealthy-individuals": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n71ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n    t = int(",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T18:01:09.025847+00:00"
+ },
+ "maximum-of-three-numbers": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.36,
+  "ts": "2026-11-26T18:01:10.393443+00:00"
+ },
+ "maximum-of-two-numbers": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T18:01:12.054125+00:00"
+ },
+ "min-element-in-a-list": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T18:01:13.699182+00:00"
+ },
+ "minimum-of-two-ints-using-if-else": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.47,
+  "ts": "2026-11-26T18:01:15.176754+00:00"
+ },
+ "minimum-replacements-for-permutation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.88,
+  "ts": "2026-11-26T18:01:17.061732+00:00"
+ },
+ "mixed-data-type-arithmetic": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 40.56,
+  "ts": "2026-11-26T18:01:57.626005+00:00"
+ },
+ "modular-inverse-prime-modulus": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.66,
+  "ts": "2026-11-26T18:01:59.294768+00:00"
+ },
+ "multiple-subarray-rotations": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n178ms\n\nMemory\n\n38kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n5",
+  "duration_s": 3.69,
+  "ts": "2026-11-26T18:05:48.331381+00:00"
+ },
+ "multiples-of-a-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.58,
+  "ts": "2026-11-26T18:02:12.720603+00:00"
+ },
+ "multithreaded-number-printer": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.49,
+  "ts": "2026-11-26T18:02:14.214582+00:00"
+ },
+ "next-three-prime-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T18:02:15.964168+00:00"
+ },
+ "nth-element-from-end-of-list": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T18:02:17.582197+00:00"
+ },
+ "nth-month-tinder-profiles": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.75,
+  "ts": "2026-11-26T18:02:19.340752+00:00"
+ },
+ "nth-term-of-squares-series": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T18:02:20.847711+00:00"
+ },
+ "number-half-pyramid-pattern-5": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.52,
+  "ts": "2026-11-26T18:02:22.373043+00:00"
+ },
+ "number-half-pyramid-pattern-6": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.54,
+  "ts": "2026-11-26T18:02:23.916942+00:00"
+ },
+ "number-half-pyramid-pattern": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T18:02:25.532496+00:00"
+ },
+ "number-multiplication": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.77,
+  "ts": "2026-11-26T18:02:27.307092+00:00"
+ },
+ "number-of-divisors-tau": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.59,
+  "ts": "2026-11-26T18:02:28.901401+00:00"
+ },
+ "number-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n66ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\nimport sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    if n <= 0:\n        return\n    \n    ",
+  "duration_s": 1.79,
+  "ts": "2026-11-26T18:05:57.008512+00:00"
+ },
+ "number-sign-checker": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 34.72,
+  "ts": "2026-11-26T18:03:05.142016+00:00"
+ },
+ "odd-even-sum-comparison": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA\nRuntime\n\n365ms\n\nMemory\n\n47kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\nimport java.util.*;\n\npublic class Main {\n    public static void main(",
+  "duration_s": 4.63,
+  "ts": "2026-11-26T18:03:17.634713+00:00"
+ },
+ "odd-or-even-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.92,
+  "ts": "2026-11-26T18:03:19.559613+00:00"
+ },
+ "odd-or-even-sum-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.6,
+  "ts": "2026-11-26T18:03:21.165084+00:00"
+ },
+ "oops-features-interface": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.89,
+  "ts": "2026-11-26T18:03:31.067644+00:00"
+ },
+ "package-shipment-cost-calculator": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 16.04,
+  "ts": "2026-11-26T18:03:47.119105+00:00"
+ },
+ "parenthesis-balance-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T18:03:48.637504+00:00"
+ },
+ "password-generator-from-name-and-year": {
+  "status": "FAILED_PLATFORM",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n",
+  "duration_s": 64.66,
+  "ts": "2026-11-26T18:04:53.302713+00:00"
+ },
+ "path-exists-in-undirected-graph": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 10.35,
+  "ts": "2026-11-26T18:05:03.664343+00:00"
+ },
+ "pipe-stack-pattern": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.76,
+  "ts": "2026-11-26T18:05:05.445701+00:00"
+ },
+ "power-calculation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.66,
+  "ts": "2026-11-26T18:05:07.109293+00:00"
+ },
+ "powers-and-larger-number-using-functions": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.47,
+  "ts": "2026-11-26T18:05:08.584806+00:00"
+ },
+ "precise-financial-balance-calculator": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 36.04,
+  "ts": "2026-11-26T18:05:44.634676+00:00"
+ },
+ "prim-s-algorithm-mst-cost": {
+  "status": "SKIPPED_NO_EDITOR",
+  "attempts": 1,
+  "ts": "2026-11-26T18:05:55.208131+00:00"
+ },
+ "prime-numbers-in-range": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 14.94,
+  "ts": "2026-11-26T18:06:11.953723+00:00"
+ },
+ "prime-sum-matrix": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.66,
+  "ts": "2026-11-26T18:06:13.618135+00:00"
+ },
+ "print-input-five-times": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T18:06:15.255569+00:00"
+ },
+ "print-integer-digits": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.74,
+  "ts": "2026-11-26T18:06:16.997686+00:00"
+ },
+ "print-integer-n-times": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T18:09:47.626986+00:00"
+ },
+ "print-numbers-1-to-n": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.53,
+  "ts": "2026-11-26T18:06:20.020331+00:00"
+ },
+ "print-numbers-between-m-and-k": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62,
+  "ts": "2026-11-26T18:06:21.648994+00:00"
+ },
+ "print-squares-from-1-to-n": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.83,
+  "ts": "2026-11-26T18:06:27.488987+00:00"
+ },
+ "printing-a-message-n-times-using-a-function": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 49.82,
+  "ts": "2026-11-26T18:07:17.311256+00:00"
+ },
+ "priority-task-scheduler": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 12.18,
+  "ts": "2026-11-26T18:07:29.503536+00:00"
+ },
+ "prisoner-search": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n62ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n",
+  "duration_s": 1.56,
+  "ts": "2026-11-26T18:07:31.073461+00:00"
+ },
+ "pyramid-pattern": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n64ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nimport sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    for i in range(n):\n        stars = 2 * i + 1",
+  "duration_s": 1.68,
+  "ts": "2026-11-26T18:07:32.759096+00:00"
+ },
+ "quadratic-equation-solver": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n69ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\nimport sys\nimport math\n\ndata = sys.stdin.read().strip().split()\nif not data:\n    sys",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T18:07:34.281096+00:00"
+ },
+ "rectangle-area-calculation-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5,
+  "ts": "2026-11-26T18:07:35.789227+00:00"
+ },
+ "rectangle-area-with-parameterized-constructor": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 6.66,
+  "ts": "2026-11-26T18:07:42.465069+00:00"
+ },
+ "recursive-2d-array-operations": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.41,
+  "ts": "2026-11-26T18:07:51.881939+00:00"
+ },
+ "recursive-factorial-calculation": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 29.41,
+  "ts": "2026-11-26T18:08:21.299634+00:00"
+ },
+ "remainder-crashes": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n2/8\nLanguage\nPYTHON 3\nRuntime\n\n104ms\n\nMemory\n\n25kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip().split",
+  "duration_s": 1.81,
+  "ts": "2026-11-26T18:08:23.122277+00:00"
+ },
+ "remove-special-characters": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nPYTHON 3\nRuntime\n\n64ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\nimport sys\ns = sys.stdin.readline().rstrip('\\n')\n\n\nAre you sure you want to reset?\n\nYour code will be replaced with the default code. Unsaved chang",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T18:08:24.613481+00:00"
+ },
+ "retrieve-employee-details": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.55,
+  "ts": "2026-11-26T18:08:26.174827+00:00"
+ },
+ "reverse-a-string-using-stack": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63,
+  "ts": "2026-11-26T18:08:27.813337+00:00"
+ },
+ "reverse-an-array": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 3.36,
+  "ts": "2026-11-26T18:08:31.175422+00:00"
+ },
+ "reverse-digits-of-a-number-2": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nJAVA 8\nMain.java:1: error: class, interface, or enum expected The user wants a Java 8 program to reverse digits of a number N. ^ Main.java:3: error: illegal character: '`' - `public class Main` ",
+  "duration_s": 3.56,
+  "ts": "2026-11-26T18:08:50.209044+00:00"
+ },
+ "reverse-even-position-digits-2": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 2,
+  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA 8\nRuntime\n\n182ms\n\nMemory\n\n38kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\nimport java.io.*;\nimport java.util.*;\n\npublic class Main {\n    public static void main(Stri",
+  "duration_s": 3.62,
+  "ts": "2026-11-26T18:09:02.606153+00:00"
+ },
+ "reverse-integer-sequence": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.61,
+  "ts": "2026-11-26T18:09:04.222323+00:00"
+ },
+ "reverse-queue-elements": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.73,
+  "ts": "2026-11-26T18:09:05.959810+00:00"
+ },
+ "reverse-two-words": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.48,
+  "ts": "2026-11-26T18:09:07.444669+00:00"
+ },
+ "reverse-words-in-a-string-2": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 11.51,
+  "ts": "2026-11-26T18:09:18.955924+00:00"
+ },
+ "reverse-words-in-dynamic-array": {
+  "status": "FAILED_SYNTHESIS",
+  "language": "C",
+  "attempts": 1,
+  "reason": "Empty code",
+  "duration_s": 1.64,
+  "ts": "2026-11-26T18:09:20.601664+00:00"
+ },
+ "right-angled-triangle-pattern": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.51,
+  "ts": "2026-11-26T18:09:22.126187+00:00"
+ },
+ "search-in-sorted-2d-matrix": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 23.86,
+  "ts": "2026-11-26T18:09:45.996518+00:00"
  }
 }

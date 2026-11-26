@@ -1,0 +1,1 @@
+{"slug": "remove-special-characters", "lang": "PYTHON 3", "code": "import sys\ns = sys.stdin.readline().rstrip('\\n')\n", "local_ok": false, "err": "empty_llm"}

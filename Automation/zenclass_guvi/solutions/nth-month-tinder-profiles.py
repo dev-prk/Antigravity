@@ -1,0 +1,20 @@
+import sys
+
+def main():
+    data = sys.stdin.read().strip()
+    if not data:
+        return
+    n = int(data.split()[0])
+    if n <= 0:
+        print(0)
+        return
+    if n == 1 or n == 2:
+        print(1)
+        return
+    a, b = 1, 1
+    for _ in range(3, n + 1):
+        a, b = b, a + b
+    print(b)
+
+if __name__ == "__main__":
+    main()

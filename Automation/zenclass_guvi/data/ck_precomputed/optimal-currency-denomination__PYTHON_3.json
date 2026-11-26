@@ -1,0 +1,1 @@
+{"slug": "optimal-currency-denomination", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    A = int(sys.stdin.readline().strip())\n    denominations = [1000, 500, 100, 50, 10, 1]\n    count = 0\n    for d in denominations:\n        count += A // d\n        A %= d\n    print(count)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

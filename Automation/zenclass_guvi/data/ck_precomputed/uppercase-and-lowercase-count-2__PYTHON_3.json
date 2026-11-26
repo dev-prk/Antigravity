@@ -1,0 +1,1 @@
+{"slug": "uppercase-and-lowercase-count-2", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().rstrip('\\n')\nupper = sum(1 for c in s if c.isupper())\nlower = sum(1 for c in s if c.islower())\nprint(f\"{upper} {lower}\")\n", "local_ok": true, "err": ""}

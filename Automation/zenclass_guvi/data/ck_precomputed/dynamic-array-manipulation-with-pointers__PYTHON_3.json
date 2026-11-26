@@ -1,0 +1,1 @@
+{"slug": "dynamic-array-manipulation-with-pointers", "lang": "PYTHON 3", "code": "n = int(input().strip())\n\nif n == 0:\n    print()\nelse:\n    arr = [i * i for i in range(n)]\n    \n    for i in range(n - 1):\n        arr[i] += arr[i + 1]\n    \n    arr[0], arr[n - 1] = arr[n - 1], arr[0]\n    \n    print(' '.join(map(str, arr)))\n", "local_ok": true, "err": ""}

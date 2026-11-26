@@ -1,0 +1,1 @@
+{"slug": "class-method-sum-of-squares", "lang": "PYTHON 3", "code": "import sys\n\nclass SumOfSquares:\n    def calculate(self, n):\n        return n * (n + 1) * (2 * n + 1) // 6\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    sos = SumOfSquares()\n    print(sos.calculate(n))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

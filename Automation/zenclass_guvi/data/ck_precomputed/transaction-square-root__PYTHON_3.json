@@ -1,0 +1,1 @@
+{"slug": "transaction-square-root", "lang": "PYTHON 3", "code": "import sys\nimport math\n\ndef transaction_sqrt(transaction_amount):\n    return math.sqrt(transaction_amount)\n\nif __name__ == \"__main__\":\n    transaction_amount = float(sys.stdin.read().strip())\n    result = transaction_sqrt(transaction_amount)\n    print(result)\n", "local_ok": true, "err": ""}

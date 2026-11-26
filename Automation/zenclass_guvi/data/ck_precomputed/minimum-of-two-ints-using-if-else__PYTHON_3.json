@@ -1,0 +1,1 @@
+{"slug": "minimum-of-two-ints-using-if-else", "lang": "PYTHON 3", "code": "import sys\n\na, b = map(int, sys.stdin.read().split())\nif a <= b:\n    print(a)\nelse:\n    print(b)\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "anagram-checker", "lang": "JAVA 8", "code": "import java.util.Scanner;\nimport java.util.Arrays;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n", "local_ok": true}

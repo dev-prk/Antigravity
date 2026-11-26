@@ -1,0 +1,1 @@
+{"slug": "generating-visitor-token-numbers", "lang": "C", "code": "#include <stdio.h>\n\nint main(void) {\n    int N;\n    if (scanf(\"%d\", &N) != 1) return 0;\n    for (int i = 1; i <= N; i++) {\n        printf(\"%d\\n\", i);\n    }\n    return 0;\n}\n", "local_ok": true}

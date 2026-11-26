@@ -1,0 +1,1 @@
+{"slug": "simple-calculator-using-multiple-namespaces", "lang": "PYTHON 3", "code": "a, b = map(int, input().split())\nbase, exp = map(int, input().split())\n\nprint(f\"Addition: {a + b}\")\nprint(f\"Multiplication: {a * b}\")\nprint(f\"Power: {base ** exp}\")\n", "local_ok": true, "err": ""}

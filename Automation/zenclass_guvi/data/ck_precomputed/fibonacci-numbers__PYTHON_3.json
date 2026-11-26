@@ -1,0 +1,1 @@
+{"slug": "fibonacci-numbers", "lang": "PYTHON 3", "code": "def fib(n):\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        return fib(n-1) + fib(n-2)\n\nn = int(input().strip())\nresult = []\nfor i in range(n):\n    result.append(str(fib(i)))\nprint(' '.join(result))\n", "local_ok": true, "err": ""}

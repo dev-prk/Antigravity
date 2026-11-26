@@ -1,3 +1,18 @@
-2026/11/26-22:54:05.992 2bc3a1 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
-2026/11/26-22:54:05.992 2bc3a1 Recovering log #3
-2026/11/26-22:54:05.994 2bc3a1 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/000003.log 
+2026/11/26-23:01:07.673 2c1071 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/26-23:01:07.674 2c1071 Recovering log #3
+2026/11/26-23:01:07.681 2c1071 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/000003.log 
+2026/11/26-23:30:21.987 2c106d Level-0 table #5: started
+2026/11/26-23:30:22.008 2c106d Level-0 table #5: 1025065 bytes OK
+2026/11/26-23:30:22.010 2c106d Delete type=0 #3
+2026/11/26-23:35:50.653 2c1071 Level-0 table #7: started
+2026/11/26-23:35:50.658 2c1071 Level-0 table #7: 81089 bytes OK
+2026/11/26-23:35:50.663 2c1071 Delete type=0 #4
+2026/11/26-23:35:50.663 2c1071 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2026/11/26-23:35:50.663 2c1071 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x04\x01\x02\x01\x0d\x00c\x00o\x00d\x00e\x00k\x00a\x00t\x00a\x00T\x00i\x00m\x00e\x00r' @ 39774 : 1
+2026/11/26-23:35:50.663 2c1071 Compacting 1@1 + 1@2 files
+2026/11/26-23:35:50.681 2c1071 Generated table #8@1: 1114 keys, 304502 bytes
+2026/11/26-23:35:50.681 2c1071 Compacted 1@1 + 1@2 files => 304502 bytes
+2026/11/26-23:35:50.683 2c1071 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/11/26-23:35:50.683 2c1071 Delete type=2 #7
+2026/11/26-23:35:50.683 2c1071 Delete type=2 #5
+2026/11/26-23:35:50.683 2c1071 Manual compaction at level-1 from '\x00\x04\x01\x02\x01\x0d\x00c\x00o\x00d\x00e\x00k\x00a\x00t\x00a\x00T\x00i\x00m\x00e\x00r' @ 39774 : 1 .. (end); will stop at (end)

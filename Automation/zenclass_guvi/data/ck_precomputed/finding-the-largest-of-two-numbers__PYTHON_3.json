@@ -1,0 +1,1 @@
+{"slug": "finding-the-largest-of-two-numbers", "lang": "PYTHON 3", "code": "a, b = map(int, input().split())\nif a > b:\n    print(a)\nelse:\n    print(b)\n", "local_ok": true, "err": ""}

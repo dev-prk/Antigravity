@@ -1,0 +1,1 @@
+{"slug": "pipe-stack-pattern", "lang": "PYTHON 3", "code": "import sys\n\ndef solve():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    n = int(data)\n    for i in range(1, n + 1):\n        print('*' * i)\n    for i in range(n - 1, 0, -1):\n        print('*' * i)\n\nif __name__ == \"__main__\":\n    solve()\n", "local_ok": true, "err": ""}

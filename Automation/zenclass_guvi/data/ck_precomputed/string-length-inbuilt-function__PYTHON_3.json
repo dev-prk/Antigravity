@@ -1,0 +1,1 @@
+{"slug": "string-length-inbuilt-function", "lang": "PYTHON 3", "code": "print(len(input()))\n", "local_ok": true, "err": ""}

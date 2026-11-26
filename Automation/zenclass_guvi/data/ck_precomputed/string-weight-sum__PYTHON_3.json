@@ -1,0 +1,1 @@
+{"slug": "string-weight-sum", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    s = sys.stdin.readline()\n    if s.endswith('\\n'):\n        s = s[:-1]\n    total = sum(ord(c) for c in s)\n    print(total)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

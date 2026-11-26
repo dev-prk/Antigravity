@@ -1,0 +1,1 @@
+{"slug": "finding-the-average-of-an-array-and-counting-elements-above-it", "lang": "PYTHON 3", "code": "print(f\"{sum(arr)/len(arr):.2f}\")\nprint(sum(1 for x in arr if x > sum(arr)/len(arr)))\n", "local_ok": false, "err": "empty_llm"}

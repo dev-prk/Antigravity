@@ -1,0 +1,1 @@
+{"slug": "boxer-s-diet-check", "lang": "PYTHON 3", "code": "def food_check(f1_no_eaten):\n        l = 0\n         r = 0\n", "local_ok": false, "err": "SyntaxError: unexpected indent (<sol>, line 3)"}

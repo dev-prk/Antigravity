@@ -10,3 +10,39 @@
 2026/11/26-23:18:07.561 2c10ca Level-0 table #15: started
 2026/11/26-23:18:07.566 2c10ca Level-0 table #15: 20992 bytes OK
 2026/11/26-23:18:07.569 2c10ca Delete type=0 #12
+2026/11/26-23:22:07.582 2c10ca Level-0 table #17: started
+2026/11/26-23:22:07.591 2c10ca Level-0 table #17: 24582 bytes OK
+2026/11/26-23:22:07.595 2c10ca Delete type=0 #14
+2026/11/26-23:22:07.597 2c10ca Compacting 4@0 + 1@1 files
+2026/11/26-23:22:07.602 2c10ca Generated table #18@0: 543 keys, 21662 bytes
+2026/11/26-23:22:07.602 2c10ca Compacted 4@0 + 1@1 files => 21662 bytes
+2026/11/26-23:22:07.604 2c10ca compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/26-23:22:07.605 2c10ca Delete type=2 #15
+2026/11/26-23:22:07.605 2c10ca Delete type=2 #17
+2026/11/26-23:22:07.605 2c10ca Delete type=2 #13
+2026/11/26-23:22:07.605 2c10ca Delete type=2 #11
+2026/11/26-23:22:07.605 2c10ca Delete type=2 #8
+2026/11/26-23:25:07.580 2c10cb Level-0 table #20: started
+2026/11/26-23:25:07.584 2c10cb Level-0 table #20: 20665 bytes OK
+2026/11/26-23:25:07.588 2c10cb Delete type=0 #16
+2026/11/26-23:28:07.580 2c10ca Level-0 table #22: started
+2026/11/26-23:28:07.588 2c10ca Level-0 table #22: 22259 bytes OK
+2026/11/26-23:28:07.595 2c10ca Delete type=0 #19
+2026/11/26-23:31:07.580 2c10cb Level-0 table #24: started
+2026/11/26-23:31:07.584 2c10cb Level-0 table #24: 23947 bytes OK
+2026/11/26-23:31:07.586 2c10cb Delete type=0 #21
+2026/11/26-23:34:07.580 2c10ca Level-0 table #26: started
+2026/11/26-23:34:07.585 2c10ca Level-0 table #26: 26078 bytes OK
+2026/11/26-23:34:07.589 2c10ca Delete type=0 #23
+2026/11/26-23:34:07.589 2c10ca Compacting 4@0 + 1@1 files
+2026/11/26-23:34:07.592 2c10ca Generated table #27@0: 644 keys, 25377 bytes
+2026/11/26-23:34:07.592 2c10ca Compacted 4@0 + 1@1 files => 25377 bytes
+2026/11/26-23:34:07.594 2c10ca compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/26-23:34:07.595 2c10ca Delete type=2 #20
+2026/11/26-23:34:07.595 2c10ca Delete type=2 #22
+2026/11/26-23:34:07.595 2c10ca Delete type=2 #26
+2026/11/26-23:34:07.595 2c10ca Delete type=2 #18
+2026/11/26-23:34:07.595 2c10ca Delete type=2 #24
+2026/11/26-23:37:07.555 2c10cb Level-0 table #29: started
+2026/11/26-23:37:07.560 2c10cb Level-0 table #29: 27365 bytes OK
+2026/11/26-23:37:07.565 2c10cb Delete type=0 #25

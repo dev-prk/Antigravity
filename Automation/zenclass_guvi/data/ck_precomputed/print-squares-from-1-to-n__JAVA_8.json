@@ -1,0 +1,1 @@
+{"slug": "print-squares-from-1-to-n", "lang": "JAVA 8", "code": "import java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        int N = sc.nextInt();\n        for (int i = 1; i <= N; i++) {\n            System.out.println(i * i);\n        }\n        sc.close();\n    }\n}\n", "local_ok": true}

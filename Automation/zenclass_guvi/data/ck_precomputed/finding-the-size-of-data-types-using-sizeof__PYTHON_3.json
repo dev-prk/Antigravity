@@ -1,0 +1,1 @@
+{"slug": "finding-the-size-of-data-types-using-sizeof", "lang": "PYTHON 3", "code": "print(4)\nprint(4)\nprint(8)\n", "local_ok": true, "err": ""}
