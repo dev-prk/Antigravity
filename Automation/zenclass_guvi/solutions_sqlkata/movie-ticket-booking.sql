@@ -1,0 +1,8 @@
+-- Q1
+SELECT * FROM Movie;
+
+-- Q2
+SELECT * FROM Movie WHERE TicketPrice BETWEEN 170 AND 230;
+
+-- Q3
+SELECT * FROM Movie WHERE TicketPrice NOT BETWEEN 170 AND 230;
