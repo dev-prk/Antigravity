@@ -360,3 +360,9 @@
 2026/11/27-01:17:07.563 2c10ca Level-0 table #201: started
 2026/11/27-01:17:07.566 2c10ca Level-0 table #201: 75393 bytes OK
 2026/11/27-01:17:07.568 2c10ca Delete type=0 #197
+2026/11/27-01:19:07.566 2c10ca Level-0 table #203: started
+2026/11/27-01:19:07.571 2c10ca Level-0 table #203: 73562 bytes OK
+2026/11/27-01:19:07.573 2c10ca Delete type=0 #200
+2026/11/27-01:21:07.562 2c10ca Level-0 table #205: started
+2026/11/27-01:21:07.566 2c10ca Level-0 table #205: 74090 bytes OK
+2026/11/27-01:21:07.571 2c10ca Delete type=0 #202
