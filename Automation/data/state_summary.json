@@ -1,34 +1,45 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-11-26T19:16:55.881117+00:00",
+  "last_updated": "2026-11-26T19:20:41.539092+00:00",
   "summary": {
-    "total_discovered": 140,
-    "total_completed": 81,
+    "total_discovered": 142,
+    "total_completed": 82,
     "total_pending": 0,
     "total_in_progress": 0,
     "total_blocked": 0,
-    "total_failed": 59,
-    "success_rate_percent": 57.86,
-    "total_time_spent_seconds": 696.87,
+    "total_failed": 60,
+    "success_rate_percent": 57.75,
+    "total_time_spent_seconds": 804.02,
     "by_platform": {
       "guvi": {
-        "total_discovered": 140,
-        "total_completed": 81,
+        "total_discovered": 142,
+        "total_completed": 82,
         "total_pending": 0,
         "total_blocked": 0,
-        "total_failed": 59,
-        "success_rate_percent": 57.86,
-        "time_spent_seconds": 696.87
+        "total_failed": 60,
+        "success_rate_percent": 57.75,
+        "time_spent_seconds": 804.02
       }
     },
     "by_category": {
       "CodeKata": {
-        "total": 140,
-        "completed": 81,
-        "success_rate_percent": 57.86
+        "total": 142,
+        "completed": 82,
+        "success_rate_percent": 57.75
       }
     },
     "human_intervention_issues": [
+      {
+        "task_id": "guvi-file-system-simulation-using-advanced-data-structures",
+        "platform": "guvi",
+        "category": "CodeKata",
+        "title": "file-system-simulation-using-advanced-data-structures",
+        "status": "FAILED",
+        "attempts": 1,
+        "failure_reason": "Empty code",
+        "next_action": "NONE",
+        "url": "https://www.guvi.in/code-kata/file-system-simulation-using-advanced-data-structures/"
+      },
       {
         "task_id": "guvi-e-commerce-product-inheritance",
         "platform": "guvi",
@@ -3338,6 +3349,44 @@
       "created_at": "2026-11-26T19:16:55.879759+00:00",
       "updated_at": "2026-11-26T19:16:55.879759+00:00",
       "timestamp": "2026-11-26T19:16:55.879759+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-file-system-simulation-using-advanced-data-structures",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "file-system-simulation-using-advanced-data-structures",
+      "url": "https://www.guvi.in/code-kata/file-system-simulation-using-advanced-data-structures/",
+      "status": "FAILED",
+      "attempt_count": 1,
+      "result": "FAILED_SYNTHESIS",
+      "failure_reason": "Empty code",
+      "next_action": "NONE",
+      "time_spent_seconds": 106.84,
+      "metadata": {},
+      "created_at": "2026-11-26T19:19:58.710297+00:00",
+      "updated_at": "2026-11-26T19:19:58.710297+00:00",
+      "timestamp": "2026-11-26T19:19:58.710297+00:00",
+      "attempts": 1,
+      "category": "CodeKata"
+    },
+    {
+      "task_id": "guvi-counting-stair-climbing-ways",
+      "platform": "guvi",
+      "task_category": "CodeKata",
+      "title": "counting-stair-climbing-ways",
+      "url": "https://www.guvi.in/code-kata/counting-stair-climbing-ways/",
+      "status": "COMPLETED",
+      "attempt_count": 1,
+      "result": "PASSED",
+      "failure_reason": null,
+      "next_action": "NONE",
+      "time_spent_seconds": 0.31,
+      "metadata": {},
+      "created_at": "2026-11-26T19:20:41.537826+00:00",
+      "updated_at": "2026-11-26T19:20:41.537826+00:00",
+      "timestamp": "2026-11-26T19:20:41.537826+00:00",
       "attempts": 1,
       "category": "CodeKata"
     }
