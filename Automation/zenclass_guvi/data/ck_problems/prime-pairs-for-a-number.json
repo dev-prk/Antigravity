@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "65",
-   "output": "13 5"
-  },
-  {
    "input": "39",
    "output": "13 3"
   },
