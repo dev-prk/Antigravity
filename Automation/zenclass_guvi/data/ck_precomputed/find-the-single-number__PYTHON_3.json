@@ -1,0 +1,1 @@
+{"slug": "find-the-single-number", "lang": "PYTHON 3", "code": "import sys\n\ndata = sys.stdin.buffer.read().split()\nif not data:\n    sys.exit(0)\n\nn = int(data[0])\nans = 0\n\nfor x in data[1:1 + n]:\n    ans ^= int(x)\n\nprint(ans)\n", "local_ok": true, "err": ""}

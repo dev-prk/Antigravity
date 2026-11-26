@@ -1,0 +1,1 @@
+{"slug": "string-weight-divisibility", "lang": "PYTHON 3", "code": "s = input()\nvowels = 'aeiou'\nweight = 0\nfor ch in s:\n    if ch in vowels:\n        weight += ord(ch)\nprint(1 if weight % 8 == 0 else 0)\n", "local_ok": true, "err": ""}

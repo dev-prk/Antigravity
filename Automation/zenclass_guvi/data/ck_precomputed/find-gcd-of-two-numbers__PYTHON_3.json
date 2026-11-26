@@ -1,0 +1,1 @@
+{"slug": "find-gcd-of-two-numbers", "lang": "PYTHON 3", "code": "import sys\nimport math\n\ndata = sys.stdin.read().strip().split()\nif len(data) < 2:\n    print(0)\nelse:\n    a = int(data[0])\n    b = int(data[1])\n    print(math.gcd(a, b))\n", "local_ok": true, "err": ""}

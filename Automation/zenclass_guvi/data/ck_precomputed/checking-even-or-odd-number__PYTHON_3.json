@@ -1,0 +1,1 @@
+{"slug": "checking-even-or-odd-number", "lang": "PYTHON 3", "code": "num = int(input())\nif num % 2 == 0:\n    print(\"Even\")\nelse:\n    print(\"Odd\")\n", "local_ok": true, "err": ""}

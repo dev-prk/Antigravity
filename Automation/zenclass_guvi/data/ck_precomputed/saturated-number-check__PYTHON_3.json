@@ -1,0 +1,1 @@
+{"slug": "saturated-number-check", "lang": "PYTHON 3", "code": "import sys\n\ndef is_saturated(n):\n    s = str(n)\n    unique_digits = set(s)\n    return len(unique_digits) == 2\n\nn = sys.stdin.readline().strip()\nif is_saturated(n):\n    print(\"Saturated\")\nelse:\n    print(\"Unsaturated\")\n", "local_ok": true, "err": ""}

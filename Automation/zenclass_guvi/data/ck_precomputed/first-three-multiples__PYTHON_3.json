@@ -1,0 +1,1 @@
+{"slug": "first-three-multiples", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    line = sys.stdin.readline()\n    n = int(line.strip())\n    multiples = [n * i for i in range(1, 4)]\n    print(' '.join(map(str, multiples)))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "palindrome-string-checker", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().rstrip('\\n')\nif s == s[::-1]:\n    print(\"Yes\")\nelse:\n    print(\"No\")\n", "local_ok": true, "err": ""}

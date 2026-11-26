@@ -1,0 +1,1 @@
+{"slug": "circle-area-calculation", "lang": "PYTHON 3", "code": "import sys\n\ndiameter = int(sys.stdin.readline().strip())\nradius = diameter / 2\narea = 3.14 * (radius ** 2)\nprint(\"{:.2f}\".format(area))\n", "local_ok": false, "err": "Mismatch #2: in='1000' exp='785398.16' got='785000.00'"}

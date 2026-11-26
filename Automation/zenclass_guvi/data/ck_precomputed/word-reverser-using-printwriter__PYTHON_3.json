@@ -1,0 +1,1 @@
+{"slug": "word-reverser-using-printwriter", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    line = sys.stdin.readline()\n    if line.endswith('\\n'):\n        line = line[:-1]\n    reversed_str = line[::-1]\n    print(reversed_str)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

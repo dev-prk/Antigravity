@@ -1,0 +1,1 @@
+{"slug": "extract-vowels-from-string", "lang": "PYTHON 3", "code": "s = input()\nvowels = 'aeiouAEIOU'\nresult = []\nfor c in s:\n    if c in vowels:\n        result.append(c)\nif result:\n    print(''.join(result))\nelse:\n    print()\n", "local_ok": false, "err": "Mismatch #1: in='guvi geek' exp='ui ee' got='uiee'"}

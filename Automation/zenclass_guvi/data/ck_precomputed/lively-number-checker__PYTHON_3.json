@@ -1,0 +1,1 @@
+{"slug": "lively-number-checker", "lang": "PYTHON 3", "code": "from collections import Counter\n\nn = input().strip()\nfreq = Counter(n)\nfreq_values = list(freq.values())\n\nif all(v == freq_values[0] for v in freq_values):\n    print(1)\nelse:\n    print(0)\n", "local_ok": true, "err": ""}

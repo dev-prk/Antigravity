@@ -1,0 +1,1 @@
+{"slug": "echo-input-array", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    lines = sys.stdin.read().splitlines()\n    for line in lines:\n        if line.strip():\n            print(line)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "err": "Mismatch #1: in='5 3\\n1 2 3 4 5' exp='5 3\\n1 2 3 4 5 \\n**Explanation:**self' got='5 3\\n1 2 3 4 5'"}

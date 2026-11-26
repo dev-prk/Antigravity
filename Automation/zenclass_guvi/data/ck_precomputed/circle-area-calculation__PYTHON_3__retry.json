@@ -1,0 +1,1 @@
+{"slug": "circle-area-calculation", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    line = sys.stdin.readline().strip()\n    if not line:\n        return\n    diameter = int(line)\n    radius = diameter / 2\n    area = 3.14 * (radius ** 2)\n    print(\"{:.2f}\".format(area))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "retry": true}

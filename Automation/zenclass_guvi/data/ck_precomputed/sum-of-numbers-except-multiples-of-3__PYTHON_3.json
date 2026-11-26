@@ -1,0 +1,1 @@
+{"slug": "sum-of-numbers-except-multiples-of-3", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    total = n * (n + 1) // 2\n    m = n // 3\n    multiples_of_3 = 3 * m * (m + 1) // 2\n    result = total - multiples_of_3\n    print(result)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

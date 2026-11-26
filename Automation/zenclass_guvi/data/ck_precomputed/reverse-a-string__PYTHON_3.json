@@ -1,0 +1,1 @@
+{"slug": "reverse-a-string", "lang": "PYTHON 3", "code": "s = input()\nprint(s[::-1])\n", "local_ok": false, "err": "Mismatch #1: in='jennyfer' exp='Refynnej' got='refynnej'"}

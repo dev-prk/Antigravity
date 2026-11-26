@@ -1,0 +1,1 @@
+{"slug": "solve-linear-equation", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:\n        return\n    a, b, x = map(int, data[:3])\n    y = a * x + b\n    print(y)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

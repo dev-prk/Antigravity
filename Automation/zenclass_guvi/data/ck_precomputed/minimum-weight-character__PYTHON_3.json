@@ -1,0 +1,1 @@
+{"slug": "minimum-weight-character", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().strip()\nif not s:\n    print(-1)\nelse:\n    min_char = min(s)\n    print(min_char)\n", "local_ok": true, "err": ""}

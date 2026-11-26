@@ -1,0 +1,1 @@
+{"slug": "string-length-calculation", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().rstrip('\\n')\ncount = 0\nfor _ in s:\n    count += 1\nprint(count)\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "checking-positive-negative-or-zero", "lang": "PYTHON 3", "code": "num = int(input())\nif num > 0:\n    print(\"Positive\")\nelif num < 0:\n    print(\"Negative\")\nelse:\n    print(\"Zero\")\n", "local_ok": true, "err": ""}

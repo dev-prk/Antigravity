@@ -1,0 +1,1 @@
+{"slug": "area-and-perimeter-of-a-rectangle", "lang": "PYTHON 3", "code": "l = int(input())\nb = int(input())\nprint(l * b)\nprint(2 * (l + b))\n", "local_ok": true, "err": ""}

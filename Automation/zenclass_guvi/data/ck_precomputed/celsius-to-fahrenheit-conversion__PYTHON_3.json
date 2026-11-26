@@ -1,0 +1,1 @@
+{"slug": "celsius-to-fahrenheit-conversion", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    c = float(data)\n    f = (c * 9.0 / 5.0) + 32.0\n    print(f\"{f:.2f}\")\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "wonderful-string-check", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().strip()\nunique_chars = len(set(s))\n\nif unique_chars == 3:\n    print(\"Wonder\")\nelse:\n    print(-1)\n", "local_ok": true, "err": ""}

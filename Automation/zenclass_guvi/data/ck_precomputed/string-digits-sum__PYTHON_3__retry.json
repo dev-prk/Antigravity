@@ -1,0 +1,1 @@
+{"slug": "string-digits-sum", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline().rstrip('\\n')\nif s.endswith('\\r'):\n    s = s[:-1]\n\nletters = []\ntotal = 0\n\nfor ch in s:\n    if '0' <= ch <= '9':\n        total += ord(ch) - ord('0')\n    else:\n        letters.append(ch)\n\nprint(''.join(letters) + str(total))\n", "local_ok": true, "retry": true}

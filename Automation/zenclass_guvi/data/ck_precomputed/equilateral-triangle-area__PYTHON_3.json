@@ -1,0 +1,1 @@
+{"slug": "equilateral-triangle-area", "lang": "PYTHON 3", "code": "import sys\nimport math\n\na = float(sys.stdin.read().strip())\narea = (math.sqrt(3) * a * a) / 4\nprint(f\"{area:.2f}\")\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "static-method-for-max-of-two-numbers", "lang": "PYTHON 3", "code": "class NumberUtils:\n    @staticmethod\n    def max_of_two(a, b):\n        return a if a > b else b\n\ndef main():\n    a, b = map(int, input().split())\n    print(NumberUtils.max_of_two(a, b))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

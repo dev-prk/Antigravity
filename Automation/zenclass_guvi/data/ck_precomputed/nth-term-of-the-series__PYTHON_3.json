@@ -1,0 +1,1 @@
+{"slug": "nth-term-of-the-series", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    n = int(sys.stdin.readline().strip())\n    result = n * (n + 1)\n    print(result)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

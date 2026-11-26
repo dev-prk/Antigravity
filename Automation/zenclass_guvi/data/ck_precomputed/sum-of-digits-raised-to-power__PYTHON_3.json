@@ -1,0 +1,1 @@
+{"slug": "sum-of-digits-raised-to-power", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    line = sys.stdin.readline().strip()\n    if not line:\n        print(0)\n        return\n    num_digits = len(line)\n    total = sum(int(d) ** num_digits for d in line)\n    print(total)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

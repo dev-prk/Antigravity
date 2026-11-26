@@ -1,0 +1,1 @@
+{"slug": "simulate-goto-loop-until-stop", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    for line in sys.stdin:\n        line = line.rstrip('\\n')\n        if line == 'stop':\n            break\n        print(line)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

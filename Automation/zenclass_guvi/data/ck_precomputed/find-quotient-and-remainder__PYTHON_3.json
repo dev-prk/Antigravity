@@ -1,0 +1,1 @@
+{"slug": "find-quotient-and-remainder", "lang": "PYTHON 3", "code": "n, m = map(int, input().split())\nprint(n // m, n % m)\n", "local_ok": true, "err": ""}
