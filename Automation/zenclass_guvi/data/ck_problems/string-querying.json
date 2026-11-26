@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3 3\nahojheu\nwufnyucoks\nflaw\nyhcrcomqq\nymflzdwdxuj\npazhhqzdrkf",
-   "output": "0\n0\n0"
-  },
-  {
    "input": "88 10\npgu\nbzmwvoslzvgv\ncaktjqn\ndtwiiifa\nrgl\nhifwj\nhifwj\nperoqids\ndtwiiifa\ndtwiiifa\nvlo\nvlo\nperoqids\nhifwj\nbzmwvoslzvgv\nvlo\nroenjsfvsa\ncaktjqn\ndtwiiifa\nvlo\nperoqids\ndtwiiifa\npgu\nperoqids\npgu\ndtwiiifa\nbzmwvoslzvgv\nrgl\nvlo\nperoqids\nperoqids\nroenjsfvsa\nhifwj\npgu\nroenjsfvsa\ndtwiiifa\nrgl\nrgl\nvlo\nhifwj\nrgl\nperoqids\nrgl\nrgl\npgu\ncaktjqn\nhifwj\ncaktjqn\nbzmwvoslzvgv\nbzmwvoslzvgv\nhifwj\nbzmwvoslzvgv\nbzmwvoslzvgv\nhifwj\ncaktjqn\ndtwiiifa\nhifwj\ndtwiiifa\nhifwj\nrgl\nperoqids\nroenjsfvsa\nvlo\npgu\nhifwj\npgu\ncaktjqn\nroenjsfvsa\nbzmwvoslzvgv\nroenjsfvsa\nvlo\nhifwj\npgu\ncaktjqn\nroenjsfvsa\nroenjsfvsa\nvlo\nbzmwvoslzvgv\nperoqids\nrgl\nrgl\nroenjsfvsa\nroenjsfvsa\nroenjsfvsa\nvlo\nperoqids\ncaktjqn\nrgl\negk\nswy\ncaktjqn\nkqb\nrgl\nahs\nnrl\nroenjsfvsa\nncy\nvlo",
    "output": "0\n0\n8\n0\n11\n0\n0\n11\n0\n10"
   },

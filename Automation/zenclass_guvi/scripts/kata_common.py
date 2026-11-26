@@ -36,14 +36,13 @@ FAST_BRAVE_ARGS = list(config.BROWSER_ARGS) + [
     "MAP *.taboola.com 127.0.0.1, MAP *.tapad.com 127.0.0.1",
 ]
 
-# Fast + strong reasoning & coding models in FreeLLMAPI ($0 free pool)
+# Top-tier fast reasoning & coding models in FreeLLMAPI ($0 free pool, ~1.0s latency)
 STRONG_MODELS = [
-    "auto",
-    "qwen3.8-27b",
-    "glm-5.3-flash",
+    "claude-sonnet-4-5",
+    "claude-opus-4-5",
+    "fusion",
     "gpt-oss-120b",
-    "gemma-4-26b-a4b-it",
-    "minimax-m3.1-flash",
+    "auto",
 ]
 
 # Strict Python-first preference per user requirement ("Use python to solve all the code question")

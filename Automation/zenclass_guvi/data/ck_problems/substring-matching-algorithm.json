@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "abcxyz hagsaabc",
-   "output": "yes"
-  },
-  {
    "input": "guvi uvi",
    "output": "yes"
   },

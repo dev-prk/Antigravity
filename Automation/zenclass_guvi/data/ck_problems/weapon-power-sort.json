@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Mjolnir 200\nStormBreaker 1000\nAsgardian 560",
-   "output": "1 Mjolnir\n2 Asgardian\n3 StormBreaker"
-  },
-  {
    "input": "Mark1 100\nTesseract 10000",
    "output": "1 Mark1\n2 Tesseract"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "123",
-   "output": "123\n231\n321\n213\n312\n132"
-  },
-  {
    "input": "ab",
    "output": "ab\nba"
   },

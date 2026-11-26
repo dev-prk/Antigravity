@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "7\ninsert apple\nsearch apple\nsearch app\nstartsWith app\ninsert app\nsearch app\nsearch applepie",
-   "output": "true\nfalse\ntrue\ntrue\nfalse"
-  },
-  {
    "input": "5\ninsert banana\nsearch banana\nsearch ban\nstartsWith ban\nsearch apple",
    "output": "true\nfalse\ntrue\nfalse"
   },

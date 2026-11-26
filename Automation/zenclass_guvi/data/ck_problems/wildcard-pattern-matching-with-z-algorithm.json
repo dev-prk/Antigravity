@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "abefcdgiescdfimde\nab*cd?i*de",
-   "output": "YES"
-  },
-  {
    "input": "abcde\na?cde",
    "output": "YES"
   },

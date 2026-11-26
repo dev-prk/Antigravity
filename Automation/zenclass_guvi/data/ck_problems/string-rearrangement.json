@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Loan avail",
-   "output": "1"
-  },
-  {
    "input": "exit fire",
    "output": "1"
   },

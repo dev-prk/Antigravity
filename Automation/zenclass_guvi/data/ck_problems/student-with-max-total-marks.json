@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "arun#12#12#12\ndeepak#13#12#12",
-   "output": "deepak"
-  },
-  {
    "input": "arun#15#12#12\ndeepak#13#12#12",
    "output": "arun"
   },

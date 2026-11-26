@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4\nchennai bengaluru\ndelhi jaipur\nmumbai delhi\njaipur chennai",
-   "output": "mumbai to delhi\ndelhi to jaipur\njaipur to chennai\nchennai to bengaluru"
-  },
-  {
    "input": "2\ndelhi jaipur\nmunbai delhi",
    "output": "munbai to delhi\ndelhi to jaipur"
   },

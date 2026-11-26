@@ -15,6 +15,7 @@ __pycache__/
 zenclass_guvi/.browser_profile/
 zenclass_guvi/data/ck_precomputed/
 zenclass_guvi/data/ck_py_precomputed/
+zenclass_guvi/data/ck_final_repairs/
 zenclass_guvi/data/ck_repair_queue/
 zenclass_guvi/data/ck_retry_queue/
 zenclass_guvi/data/storage_state.json
