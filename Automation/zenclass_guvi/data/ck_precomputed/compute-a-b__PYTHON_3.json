@@ -1,0 +1,1 @@
+{"slug": "compute-a-b", "lang": "PYTHON 3", "code": "import sys\n\ndef solve():\n    data = sys.stdin.read().strip().split()\n    if len(data) < 2:\n        return\n    a, b = map(int, data[:2])\n    sys.stdout.write(str(pow(a, b)))\n\nif __name__ == \"__main__\":\n    solve()\n", "local_ok": true, "err": ""}

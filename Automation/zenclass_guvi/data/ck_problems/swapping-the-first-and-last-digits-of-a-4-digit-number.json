@@ -3,7 +3,7 @@
  "slug": "swapping-the-first-and-last-digits-of-a-4-digit-number",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2097. Swapping the First and Last Digits of a 4-Digit Number\n\n95\n\nHard\n\nProblem Statement\nRead a 4-digit integer and print a new number formed by swapping its first and last digits, keeping the middle two digits unchanged.\n\nDescription\nRead a 4-digit integer num. Extract the last digit using % 10, and extract the first digit by dividing num by 1000. Extract the two middle digits as a group using / and % so their positions can be reused in the result. Form the new number by placing the original last digit in the thousands place, the original first digit in the ones place, and keeping the two middle digits in their original positions. Print the resulting number.",
+ "description": "missions\n2097\n. \nSwapping the First and Last Digits of a 4-Digit Number\n95\nHard\nProblem Statement\nRead a 4-digit integer and print a new number formed by swapping its first and last digits, keeping the middle two digits unchanged.\nDescription\nRead a 4-digit integer num. Extract the last digit using % 10, and extract the first digit by dividing num by 1000. Extract the two middle digits as a group using / and % so their positions can be reused in the result. Form the new number by placing the original last digit in the thousands place, the original first digit in the ones place, and keeping the two middle digits in their original positions. Print the resulting number.\nInput Description\nA single line containing a 4-digit integer num (1000 <= num <= 9999).\nOutput Description\nPrint the number obtained after swapping the first and last digits of num.\nSample Input\n1234\nSample Output\n4231\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n8\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1234\nOutput\n4231\nInput\n1001\nOutput\n1001\nInput\n9876\nOutput\n6879\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1234\nOutput\n4231\nInput\n1001\nOutput\n1001\nInput\n9876\nOutput\n6879\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSwapping the First and Last Digits of a 4-Digit Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single line containing a 4-digit integer num (1000 <= num <= 9999).",
  "output_spec": "Print the number obtained after swapping the first and last digits of num.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "1234",
    "output": "4231"
+  },
+  {
+   "input": "1001",
+   "output": "1001"
+  },
+  {
+   "input": "9876",
+   "output": "6879"
   }
  ],
  "raw": ""

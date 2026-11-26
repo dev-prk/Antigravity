@@ -3,7 +3,7 @@
  "slug": "packet-quality-check",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2169. Packet Quality Check\n\n50\n\nMedium\n\nProblem Statement\nRead the weight, the number of damaged seals and the shelf life of a packet. Print True if the packet is good, otherwise print False.\nDescription\nIn a packing unit, every packet is checked before it is sent out. A packet is good only if all three conditions are true:\n1. The weight is between 495 and 505 grams (both 495 and 505 are allowed).\n2. The number of damaged seals is 0.\n3. The shelf life is 30 days or more.\nRead the three values and print True if the packet is good, otherwise print False.",
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n2169\n. \nPacket Quality Check\n50\nMedium\nProblem Statement\nRead the weight, the number of damaged seals and the shelf life of a packet. Print True if the packet is good, otherwise print False.\nDescription\nIn a packing unit, every packet is checked before it is sent out. A packet is good only if all three conditions are true:\n1. The weight is between 495 and 505 grams (both 495 and 505 are allowed).\n2. The number of damaged seals is 0.\n3. The shelf life is 30 days or more.\nRead the three values and print True if the packet is good, otherwise print False.\nInput Description\nThree integers, each on a separate line: the weight in grams, the number of damaged seals, and the shelf life in days. (1 <= weight <= 2000, 0 <= damaged seals <= 10, 1 <= shelf life <= 365)\nOutput Description\nPrint True if the packet is good, otherwise print False.\nSample Input\n500\n0\n45\nSample Output\nTrue\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nCase 4\nCase 5\nCase 6\nInput\n500\n0\n45\nOutput\nTrue\nInput\n495\n0\n30\nOutput\nTrue\nInput\n505\n0\n45\nOutput\nTrue\nInput\n510\n0\n45\nOutput\nFalse\nInput\n500\n1\n45\nOutput\nFalse\nInput\n500\n0\n29\nOutput\nFalse\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nCase 4\nCase 5\nCase 6\nInput\n500\n0\n45\nOutput\nTrue\nInput\n495\n0\n30\nOutput\nTrue\nInput\n505\n0\n45\nOutput\nTrue\nInput\n510\n0\n45\nOutput\nFalse\nInput\n500\n1\n45\nOutput\nFalse\nInput\n500\n0\n29\nOutput\nFalse\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPacket Quality Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Three integers, each on a separate line: the weight in grams, the number of damaged seals, and the shelf life in days. (1 <= weight <= 2000, 0 <= damaged seals <= 10, 1 <= shelf life <= 365)",
  "output_spec": "Print True if the packet is good, otherwise print False.",
  "constraints": "",
@@ -11,6 +11,22 @@
   {
    "input": "500\n0\n45",
    "output": "True"
+  },
+  {
+   "input": "495\n0\n30",
+   "output": "True"
+  },
+  {
+   "input": "505\n0\n45",
+   "output": "True"
+  },
+  {
+   "input": "510\n0\n45",
+   "output": "False"
+  },
+  {
+   "input": "500\n1\n45",
+   "output": "False"
   }
  ],
  "raw": ""

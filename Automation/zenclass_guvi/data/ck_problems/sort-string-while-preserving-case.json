@@ -3,14 +3,22 @@
  "slug": "sort-string-while-preserving-case",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n498. Sort String while preserving case\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven a string containing a mix of upper and lowercase characters, sort the letters in ascending order such that the positions of upper and lowercase letters do not change. (eg) If the string is guVIONLineCoDIng, then the output must be egCDIILginNnOVou",
+ "description": "& Solutions\nSubmissions\n498\n. \nSort String while preserving case\n70\nHard\nTopics\nProblem Statement:\nGiven a string containing a mix of upper and lowercase characters, sort the letters in ascending order such that the positions of upper and lowercase letters do not change. (eg) If the string is guVIONLineCoDIng, then the output must be egCDIILginNnOVou \nInput Description:\nA string \nOutput Description:\nLetters of the string sorted such that positions of upper and lower characters do not change. \nSample Input:\nGuVi \nSample Output:\nGiVu \nExplanation:\nThe positions of upper and lower case characters remain the same, but the values in those positions are sorted in ascending order.\nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n86.37\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nABcd\nOutput\nABcd\nInput\npavi\nOutput\naipv\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nABcd\nOutput\nABcd\nInput\npavi\nOutput\naipv\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSort String while preserving case\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A string",
- "output_spec": "must be egCDIILginNnOVou\n\nInput Description:\nA string\n\nOutput Description:\nLetters of the string sorted such that positions of upper and lower characters do not change.",
+ "output_spec": "Letters of the string sorted such that positions of upper and lower characters do not change.",
  "constraints": "",
  "samples": [
   {
    "input": "GuVi",
    "output": "GiVu"
+  },
+  {
+   "input": "ABcd",
+   "output": "ABcd"
+  },
+  {
+   "input": "pavi",
+   "output": "aipv"
   }
  ],
  "raw": ""

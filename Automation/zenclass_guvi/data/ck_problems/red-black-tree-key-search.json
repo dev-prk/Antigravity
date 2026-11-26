@@ -3,7 +3,7 @@
  "slug": "red-black-tree-key-search",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1536. Red-Black Tree Key Search\n\n80\n\nHard\n\nProblem Statement:\nGiven a Red-Black Tree and a key, implement a function to search for the key in the tree. If the key exists in the tree, return \"Found\", otherwise return \"Not Found\". The Red-Black Tree will be provided as a set of node values and their relationships.",
+ "description": "Problem\nHints & Solutions\nSubmissions\n1536\n. \nRed-Black Tree Key Search\n80\nHard\nProblem Statement:\nGiven a Red-Black Tree and a key, implement a function to search for the key in the tree. If the key exists in the tree, return \"Found\", otherwise return \"Not Found\". The Red-Black Tree will be provided as a set of node values and their relationships. \nInput Description:\n- The first line contains an integer N, the number of nodes in the Red-Black Tree.\n- The next N lines each contain three space-separated values: node_value, left_child_value, right_child_value. If a child does not exist, it is represented by -1.\n- The last line contains an integer K, the key to search for. \nOutput Description:\n- Output \"Found\" if the key exists in the tree, otherwise output \"Not Found\". \nSample Input:\n5\n10 5 15\n5 -1 -1\n15 12 20\n12 -1 -1\n20 -1 -1\n12 \nSample Output:\nFound \nExplanation:\nThe tree contains the key 12, so the output is \"Found\". \nAccepted \n18\nSubmissions \n21\nAcceptance Rate \n85.71\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n7 3 18\n3 -1 -1\n18 -1 -1\n18\nOutput\nFound\nInput\n3\n20 15 25\n15 -1 -1\n25 -1 -1\n10\nOutput\nNot Found\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n7 3 18\n3 -1 -1\n18 -1 -1\n18\nOutput\nFound\nInput\n3\n20 15 25\n15 -1 -1\n25 -1 -1\n10\nOutput\nNot Found\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRed-Black Tree Key Search\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer N, the number of nodes in the Red-Black Tree.\n- The next N lines each contain three space-separated values: node_value, left_child_value, right_child_value. If a child does not exist, it is represented by -1.\n- The last line contains an integer K, the key to search for.",
  "output_spec": "- Output \"Found\" if the key exists in the tree, otherwise output \"Not Found\".",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\n10 5 15\n5 -1 -1\n15 12 20\n12 -1 -1\n20 -1 -1\n12",
    "output": "Found"
+  },
+  {
+   "input": "3\n7 3 18\n3 -1 -1\n18 -1 -1\n18",
+   "output": "Found"
+  },
+  {
+   "input": "3\n20 15 25\n15 -1 -1\n25 -1 -1\n10",
+   "output": "Not Found"
   }
  ],
  "raw": ""

@@ -1,0 +1,1 @@
+{"slug": "sort-array-ascending-java-inbuilt", "lang": "PYTHON 3", "code": "import sys\n\ndef sort_array(arr):\n    return sorted(arr)\n\nif __name__ == '__main__':\n    n = int(sys.stdin.readline())\n    arr = list(map(int, sys.stdin.readline().split()))\n    sorted_arr = sort_array(arr)\n    print(' '.join(map(str, sorted_arr)))\n", "local_ok": true, "err": ""}

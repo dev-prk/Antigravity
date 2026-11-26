@@ -1,0 +1,1 @@
+{"slug": "13-d-dice-outcomes", "lang": "PYTHON 3", "code": "import sys\n\nMOD = 10**9 + 7\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    N = int(data)\n    print(pow(13, N, MOD))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

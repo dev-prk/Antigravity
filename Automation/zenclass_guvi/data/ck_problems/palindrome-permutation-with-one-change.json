@@ -3,14 +3,22 @@
  "slug": "palindrome-permutation-with-one-change",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n419. Palindrome Permutation with One Change\n\n50\n\nMedium  Topics\n\nProblem Statement:\nQuinton is given a string, find if he can form a palindrome by permuting the characters of the string and changing at most one character of the string to another character. If he can form, print YES, else print NO.",
+ "description": "ions\nSubmissions\n419\n. \nPalindrome Permutation with One Change\n50\nMedium\nTopics\nProblem Statement:\nQuinton is given a string, find if he can form a palindrome by permuting the characters of the string and changing at most one character of the string to another character. If he can form, print YES, else print NO. \nInput Description:\nThe first and only line of input is a string S \nOutput Description:\nPrint a line containing YES or NO \nExplanation:\n'a' can be changed to 'b', we get \"bbc\". Permuting it we get \"bcb\"\n, which is a palindrome. \nSample Input:\nabc \nSample Output:\nYES \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n71.7\n%\nTopics\nhashing\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nqfa\nOutput\nYES\nInput\nxnsi\nOutput\nNO\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nqfa\nOutput\nYES\nInput\nxnsi\nOutput\nNO\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPalindrome Permutation with One Change\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first and only line of input is a string S",
- "output_spec": "Print a line containing YES or NO",
+ "output_spec": "Print a line containing YES or NO \nExplanation:\n'a' can be changed to 'b', we get \"bbc\". Permuting it we get \"bcb\"\n, which is a palindrome.",
  "constraints": "",
  "samples": [
   {
    "input": "abc",
    "output": "YES"
+  },
+  {
+   "input": "qfa",
+   "output": "YES"
+  },
+  {
+   "input": "xnsi",
+   "output": "NO"
   }
  ],
  "raw": ""

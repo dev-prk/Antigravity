@@ -3,14 +3,18 @@
  "slug": "shared-matrix-updater",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1768. Shared Matrix Updater\n\n50\n\nMedium\n\nShared Matrix Updater\n\nProblem Statement:\nSimulate multiple threads updating a shared matrix where each thread updates one row. Synchronization ensures no two threads write to the same row simultaneously.\n\nDescription:\n\nShared 2D array.\n\nThreads update rows with new values.\n\nSynchronize row-level access.\n\nInput Format:\n\nFirst line: Rows & columns\n\nNext lines: Updates (row value).\n\nOutput Format:\n\nShow final matrix after all updates.",
- "input_spec": "First line: Rows & columns\n\nNext lines: Updates (row value).",
- "output_spec": "Show final matrix after all updates.",
+ "description": "tions\nSubmissions\n1768\n. \nShared Matrix Updater\n50\nMedium\nShared Matrix Updater\nProblem Statement:\nSimulate multiple threads updating a shared matrix where each thread updates one row. Synchronization ensures no two threads write to the same row simultaneously.\nDescription:\nShared 2D array.\nThreads update rows with new values.\nSynchronize row-level access.\nInput Format:\nFirst line: Rows & columns\nNext lines: Updates (row value).\nOutput Format:\nShow final matrix after all updates.\nSample Input:\n3 3\n0 5\n1 7\n2 9\nSample Output:\n[5, 5, 5]\n[7, 7, 7]\n[9, 9, 9]\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n87.59\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n2 4\n0 1\n1 2\nOutput\n[1, 1, 1, 1]\n[2, 2, 2, 2]\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n2 4\n0 1\n1 2\nOutput\n[1, 1, 1, 1]\n[2, 2, 2, 2]\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nShared Matrix Updater\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "3 3\n0 5\n1 7\n2 9",
    "output": "[5, 5, 5]\n[7, 7, 7]\n[9, 9, 9]"
+  },
+  {
+   "input": "2 4\n0 1\n1 2",
+   "output": "[1, 1, 1, 1]\n[2, 2, 2, 2]"
   }
  ],
  "raw": ""

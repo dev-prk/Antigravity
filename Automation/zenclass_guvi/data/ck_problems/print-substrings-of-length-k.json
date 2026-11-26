@@ -3,14 +3,22 @@
  "slug": "print-substrings-of-length-k",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n275. Print Substrings of Length K\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S and a number K. Print all the substrings of S of length K(space separeted output).",
+ "description": "ts & Solutions\nSubmissions\n275\n. \nPrint Substrings of Length K\n60\nMedium\nTopics\nProblem Statement:\nGiven a string S and a number K. Print all the substrings of S of length K(space separeted output). \nInput Description:\n|S| <= 100 and K<= 50 \nOutput Description:\nAll substrings of S of length K, space separated. \nSample Input:\nprog 2 \nSample Output:\npr ro og \nAccepted \n871\nSubmissions \n1k\nAcceptance Rate \n78.33\n%\nTopics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nprog 3\nOutput\npro rog\nInput\nmouse 2\nOutput\nmo ou us se\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nprog 3\nOutput\npro rog\nInput\nmouse 2\nOutput\nmo ou us se\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrint Substrings of Length K\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "|S| <= 100 and K<= 50",
- "output_spec": ").\n\nInput Description:\n|S| <= 100 and K<= 50\n\nOutput Description:\nAll substrings of S of length K, space separated.",
+ "output_spec": "All substrings of S of length K, space separated.",
  "constraints": "",
  "samples": [
   {
    "input": "prog 2",
    "output": "pr ro og"
+  },
+  {
+   "input": "prog 3",
+   "output": "pro rog"
+  },
+  {
+   "input": "mouse 2",
+   "output": "mo ou us se"
   }
  ],
  "raw": ""

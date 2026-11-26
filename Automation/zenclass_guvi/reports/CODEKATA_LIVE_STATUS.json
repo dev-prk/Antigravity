@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-26T17:30:06.650625+00:00",
-  "verified_solved_total": 86,
-  "other_attempted": 23,
-  "solve_rate_per_min": 14.1,
-  "elapsed_minutes": 6.1,
-  "precomputed_ready_files": 291
+  "updated_at": "2026-11-26T17:48:04.976035+00:00",
+  "verified_solved_total": 233,
+  "other_attempted": 172,
+  "solve_rate_per_min": 13.7,
+  "elapsed_minutes": 17.0,
+  "precomputed_ready_files": 793
 }

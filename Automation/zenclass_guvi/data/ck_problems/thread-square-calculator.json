@@ -3,7 +3,7 @@
  "slug": "thread-square-calculator",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2045. Thread Square Calculator\n\n40\n\nMedium\n\nProblem Statement\nCreate a thread that calculates the square of a number and stores the result so the main thread can print it after the calculation completes.\nDescription\nRead an integer num. Create a thread (extending Thread) whose run() method calculates the square of num and stores it in an instance variable. Start the thread, wait for it to finish using join(), then print the stored result from the main thread.",
+ "description": "roblem\nHints & Solutions\nSubmissions\n2045\n. \nThread Square Calculator\n40\nMedium\nProblem Statement\nCreate a thread that calculates the square of a number and stores the result so the main thread can print it after the calculation completes.\nDescription\nRead an integer num. Create a thread (extending Thread) whose run() method calculates the square of num and stores it in an instance variable. Start the thread, wait for it to finish using join(), then print the stored result from the main thread.\nInput Description\nA single line containing an integer num (-1000 \u2264 num \u2264 1000).\nOutput Description\nPrint \"Square: \" followed by the square of num.\nSample Input\n6\nSample Output\nSquare: 36\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n6\nOutput\nSquare: 36\nInput\n-4\nOutput\nSquare: 16\nInput\n0\nOutput\nSquare: 0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n6\nOutput\nSquare: 36\nInput\n-4\nOutput\nSquare: 16\nInput\n0\nOutput\nSquare: 0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nThread Square Calculator\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single line containing an integer num (-1000 \u2264 num \u2264 1000).",
  "output_spec": "Print \"Square: \" followed by the square of num.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "6",
    "output": "Square: 36"
+  },
+  {
+   "input": "-4",
+   "output": "Square: 16"
+  },
+  {
+   "input": "0",
+   "output": "Square: 0"
   }
  ],
  "raw": ""

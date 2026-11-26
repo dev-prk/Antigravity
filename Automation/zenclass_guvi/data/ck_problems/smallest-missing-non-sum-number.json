@@ -3,7 +3,7 @@
  "slug": "smallest-missing-non-sum-number",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n485. Smallest Missing Non-Sum Number\n\n70\n\nHard  Topics\n\nProblem Statement:\nDityan is alloted with a task. He is provided with some positive numbers. He has to tell the smallest positive natural number(greater than the minimum number present in the list) and in addition to it,the number should not be present in the list and it should not be equal to the sum of any combination of 'n' numbers present in the list.You have to develop a suitable program in order to find that number 'm'.",
+ "description": "s & Solutions\nSubmissions\n485\n. \nSmallest Missing Non-Sum Number\n70\nHard\nTopics\nProblem Statement:\nDityan is alloted with a task. He is provided with some positive numbers. He has to tell the smallest positive natural number(greater than the minimum number present in the list) and in addition to it,the number should not be present in the list and it should not be equal to the sum of any combination of 'n' numbers present in the list.You have to develop a suitable program in order to find that number 'm'. \nInput Description:\nFirst line contains a number 'n' . next line contains 'n' space separated numbers. \nOutput Description:\nprint the smallest positive number 'm'. \nSample Input:\n5\n1 2 10 12 13 \nSample Output:\n4 \nExplanation:\nCannot consider 1 and 2 as it is present in the list.\n3 is eliminated as it can be formed using 1+2 which is there in the list.\n4 is not present in the array, 4 is not equal to sum of two numbers\n4 is not equal to sum of any 3 numbers,4 is not equal to sum of 4 numbers and also 4 is not sum of 5 numbers. \nHence answer is 4 \nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n70.81\n%\nTopics\nmathematics\nnumbers\nalgorithm\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 3 5 7 12\nOutput\n2\nInput\n7\n2 5 7 10 12 150 19\nOutput\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 3 5 7 12\nOutput\n2\nInput\n7\n2 5 7 10 12 150 19\nOutput\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSmallest Missing Non-Sum Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line contains a number 'n' . next line contains 'n' space separated numbers.",
  "output_spec": "print the smallest positive number 'm'.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\n1 2 10 12 13",
    "output": "4"
+  },
+  {
+   "input": "5\n1 3 5 7 12",
+   "output": "2"
+  },
+  {
+   "input": "7\n2 5 7 10 12 150 19",
+   "output": "3"
   }
  ],
  "raw": ""

@@ -3,13 +3,21 @@
  "slug": "triangle-inequality-theorem",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n197. Triangle Inequality Theorem\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 3 numbers A,B,C process and print 'yes' if they can form the sides of a triangle otherwise print 'no'.",
+ "description": "nts & Solutions\nSubmissions\n197\n. \nTriangle Inequality Theorem\n40\nMedium\nTopics\nProblem Statement:\nGiven 3 numbers A,B,C process and print 'yes' if they can form the sides of a triangle otherwise print 'no'. \nInput Description:\nThe input consists of three numbers A, B, and C, where A, B, C are less than or equal to 100000. \nOutput Description:\nPrint 'yes' if the given numbers A, B, and C can form the sides of a triangle, otherwise print 'no'. \nSample Input:\n3 4 5 \nSample Output:\nyes \nAccepted \n9k\nSubmissions \n10k\nAcceptance Rate \n92.26\n%\nTopics\nmathematics\nbasics\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 4 1\nOutput\nno\nInput\n6 8 10\nOutput\nyes\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 4 1\nOutput\nno\nInput\n6 8 10\nOutput\nyes\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTriangle Inequality Theorem\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of three numbers A, B, and C, where A, B, C are less than or equal to 100000.",
  "output_spec": "Print 'yes' if the given numbers A, B, and C can form the sides of a triangle, otherwise print 'no'.",
  "constraints": "",
  "samples": [
   {
    "input": "3 4 5",
+   "output": "yes"
+  },
+  {
+   "input": "3 4 1",
+   "output": "no"
+  },
+  {
+   "input": "6 8 10",
    "output": "yes"
   }
  ],

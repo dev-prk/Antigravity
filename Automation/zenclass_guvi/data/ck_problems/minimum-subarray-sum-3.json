@@ -3,14 +3,22 @@
  "slug": "minimum-subarray-sum-3",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n462. Minimum Subarray Sum-3\n\n50\n\nMedium  Topics\n\nProblem Statement:\nQuinton was given an array of integers and was asked to find the minimum subarray sum. A subarray is a contigous non-empty segment of an array. Help Quinton solve this problem.",
+ "description": "em\nHints & Solutions\nSubmissions\n462\n. \nMinimum Subarray Sum-3\n50\nMedium\nTopics\nProblem Statement:\nQuinton was given an array of integers and was asked to find the minimum subarray sum. A subarray is a contigous non-empty segment of an array. Help Quinton solve this problem. \nInput Description:\nThe first line contains an integer N denoting the number of citizens.\nThe next line contains N space separated integers A[i] (1 \nOutput Description:\nPrint a single line, the minimum subarray sum. \nExplanation:\nThe sub array [A[2], A[3]] (1 based indexing) gives the minimum sum, -1 + -2 = -3. \nSample Input:\n3\n4 -1 -2 \nSample Output:\n-3 \nAccepted \n820\nSubmissions \n1k\nAcceptance Rate \n80.08\n%\nTopics\ndynamic programming\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n-103 -422 98 -340 -83\nOutput\n-850\nInput\n100\n62 -195 132 314 2 -118 10 -482 -295 215 -251 207 -260 303 268 -431 -187 219 68 -245 257 423 104 3 -434 256 125 408 472 -23 -463 -275 -285 321 -379 -127 -281 -255 456 -489 -329 -279 61 44 251 -478 373 -216 247 -363 308 115 -41 179 333 91 -267 -173 262 66 -136 -79 149 -20 -36 -226 227 -490 268 470 42 320 -488 -342 -211 -467 -156 62 -45 257 170 482 -381 222 -345 -454 457 49 121 -399 -355 384 -264 20 233 447 465 -5 253 -199\nOutput\n-2950\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n-103 -422 98 -340 -83\nOutput\n-850\nInput\n100\n62 -195 132 314 2 -118 10 -482 -295 215 -251 207 -260 303 268 -431 -187 219 68 -245 257 423 104 3 -434 256 125 408 472 -23 -463 -275 -285 321 -379 -127 -281 -255 456 -489 -329 -279 61 44 251 -478 373 -216 247 -363 308 115 -41 179 333 91 -267 -173 262 66 -136 -79 149 -20 -36 -226 227 -490 268 470 42 320 -488 -342 -211 -467 -156 62 -45 257 170 482 -381 222 -345 -454 457 49 121 -399 -355 384 -264 20 233 447 465 -5 253 -199\nOutput\n-2950\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimum Subarray Sum-3\nIssues Encountered\n*\nDescription or ",
  "input_spec": "The first line contains an integer N denoting the number of citizens.\nThe next line contains N space separated integers A[i] (1",
- "output_spec": "Print a single line, the minimum subarray sum.",
+ "output_spec": "Print a single line, the minimum subarray sum. \nExplanation:\nThe sub array [A[2], A[3]] (1 based indexing) gives the minimum sum, -1 + -2 = -3.",
  "constraints": "",
  "samples": [
   {
    "input": "3\n4 -1 -2",
    "output": "-3"
+  },
+  {
+   "input": "5\n-103 -422 98 -340 -83",
+   "output": "-850"
+  },
+  {
+   "input": "100\n62 -195 132 314 2 -118 10 -482 -295 215 -251 207 -260 303 268 -431 -187 219 68 -245 257 423 104 3 -434 256 125 408 472 -23 -463 -275 -285 321 -379 -127 -281 -255 456 -489 -329 -279 61 44 251 -478 373 -216 247 -363 308 115 -41 179 333 91 -267 -173 262 66 -136 -79 149 -20 -36 -226 227 -490 268 470 42 320 -488 -342 -211 -467 -156 62 -45 257 170 482 -381 222 -345 -454 457 49 121 -399 -355 384 -264 20 233 447 465 -5 253 -199",
+   "output": "-2950"
   }
  ],
  "raw": ""

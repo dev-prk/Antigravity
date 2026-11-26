@@ -3,14 +3,22 @@
  "slug": "pattern-occurrences-using-z-algorithm",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1559. Pattern Occurrences using Z Algorithm\n\n80\n\nHard\n\nProblem Statement:\nGiven a string  text  and a string  pattern , find all starting indices in  text  where  pattern  occurs as a substring. Use the Z Algorithm to efficiently find all occurrences. Return the list of starting indices (0-based).",
- "input_spec": "- The first line contains the string  text .\n- The second line contains the string  pattern .",
- "output_spec": "- Print the starting indices (space-separated) of all occurrences of  pattern  in  text . If there are no occurrences, print an empty line.",
+ "description": "s & Solutions\nSubmissions\n1559\n. \nPattern Occurrences using Z Algorithm\n80\nHard\nProblem Statement:\nGiven a string \ntext\n and a string \npattern\n, find all starting indices in \ntext\n where \npattern\n occurs as a substring. Use the Z Algorithm to efficiently find all occurrences. Return the list of starting indices (0-based). \nInput Description:\n- The first line contains the string \ntext\n.\n- The second line contains the string \npattern\n. \nOutput Description:\n- Print the starting indices (space-separated) of all occurrences of \npattern\n in \ntext\n. If there are no occurrences, print an empty line. \nSample Input:\nababcababcabc\nabc \nSample Output:\n2 7 10 \nExplanation:\nThe pattern \"abc\" occurs at indices 2, 7, and 10 in the text. \nAccepted \n8\nSubmissions \n13\nAcceptance Rate \n61.54\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabcabcabc\nabc\nOutput\n0 3 6\nInput\nmississippi\nissi\nOutput\n1 4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nabcabcabc\nabc\nOutput\n0 3 6\nInput\nmississippi\nissi\nOutput\n1 4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPattern Occurrences using Z Algorithm\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains the string \ntext\n.\n- The second line contains the string \npattern\n.",
+ "output_spec": "- Print the starting indices (space-separated) of all occurrences of \npattern\n in \ntext\n. If there are no occurrences, print an empty line.",
  "constraints": "",
  "samples": [
   {
    "input": "ababcababcabc\nabc",
    "output": "2 7 10"
+  },
+  {
+   "input": "abcabcabc\nabc",
+   "output": "0 3 6"
+  },
+  {
+   "input": "mississippi\nissi",
+   "output": "1 4"
   }
  ],
  "raw": ""

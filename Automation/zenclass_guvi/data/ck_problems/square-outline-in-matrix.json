@@ -3,14 +3,22 @@
  "slug": "square-outline-in-matrix",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n564. Square Outline in Matrix\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given a matrix of dimensions M*N. Find out whether there is an outline of a square formed by the number 4 in the matrix of numbers.",
+ "description": "\nHints & Solutions\nSubmissions\n564\n. \nSquare Outline in Matrix\n60\nMedium\nTopics\nProblem Statement:\nYou are given a matrix of dimensions M*N. Find out whether there is an outline of a square formed by the number 4 in the matrix of numbers. \nInput Description:\nDimensions of the matrix followed followed by the elements of the matrix. \nOutput Description:\nYES/NO \nExplanation:\nA square outline is formed by the elements at (0,0),(0,1),(0,2),(0,3),(0,4),(1,0),(1,4),(2,0),(2,4),(3,0),(3,0),(3,4),(4,0),(4,1),\n(4,2),(4,3),(4,4) \nSample Input:\n5 5\n4 4 4 4 4\n4 1 2 3 4\n4 7 6 5 4\n4 9 8 7 4\n4 4 4 4 4 \nSample Output:\nYES \nAccepted \n904\nSubmissions \n1k\nAcceptance Rate \n88.63\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 2\n4 4\n4 4\n4 4\nOutput\nYES\nInput\n6 5\n1 2 3 1 5\n4 5 4 4 6\n5 4 1 2 1\n1 2 3 4 5\n5 4 3 2 1\n9 8 7 6 1 \nOutput\nNO\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 2\n4 4\n4 4\n4 4\nOutput\nYES\nInput\n6 5\n1 2 3 1 5\n4 5 4 4 6\n5 4 1 2 1\n1 2 3 4 5\n5 4 3 2 1\n9 8 7 6 1 \nOutput\nNO\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSquare Outline in Matrix\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Dimensions of the matrix followed followed by the elements of the matrix.",
- "output_spec": "YES/NO",
+ "output_spec": "YES/NO \nExplanation:\nA square outline is formed by the elements at (0,0),(0,1),(0,2),(0,3),(0,4),(1,0),(1,4),(2,0),(2,4),(3,0),(3,0),(3,4),(4,0),(4,1),\n(4,2),(4,3),(4,4)",
  "constraints": "",
  "samples": [
   {
    "input": "5 5\n4 4 4 4 4\n4 1 2 3 4\n4 7 6 5 4\n4 9 8 7 4\n4 4 4 4 4",
    "output": "YES"
+  },
+  {
+   "input": "3 2\n4 4\n4 4\n4 4",
+   "output": "YES"
+  },
+  {
+   "input": "6 5\n1 2 3 1 5\n4 5 4 4 6\n5 4 1 2 1\n1 2 3 4 5\n5 4 3 2 1\n9 8 7 6 1",
+   "output": "NO"
   }
  ],
  "raw": ""

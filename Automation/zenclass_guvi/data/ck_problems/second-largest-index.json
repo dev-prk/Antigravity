@@ -3,14 +3,18 @@
  "slug": "second-largest-index",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n992. Second Largest Index\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number n followed by n numbers Print the index 2nd largest number in an array (1 base index)",
+ "description": "blem\nHints & Solutions\nSubmissions\n992\n. \nSecond Largest Index\n50\nMedium\nTopics\nProblem Statement:\nGiven a number n followed by n numbers Print the index 2nd largest number in an array (1 base index) \nInput Description:\n0<n<100\nGiven a number n\nFollowed by n number in next line \nOutput Description:\nPrint the largest number index in an array \nExplanation:\n6 is the size of an array\n[5,7,4,4,6,8] from this array, 7 is the second largest number and its position on the array is 2. \nSample Input:\n6\n5 7 4 4 6 8 \nSample Output:\n2 \nAccepted \n645\nSubmissions \n821\nAcceptance Rate \n78.56\n%\nTopics\nzen\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n5 7 4 4 6 8\nOutput\n2\nInput\n5\n2 3 4 7 7\nOutput\n3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n5 7 4 4 6 8\nOutput\n2\nInput\n5\n2 3 4 7 7\nOutput\n3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSecond Largest Index\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "0<n<100\nGiven a number n\nFollowed by n number in next line",
- "output_spec": "Print the largest number index in an array",
+ "output_spec": "Print the largest number index in an array \nExplanation:\n6 is the size of an array\n[5,7,4,4,6,8] from this array, 7 is the second largest number and its position on the array is 2.",
  "constraints": "",
  "samples": [
   {
    "input": "6\n5 7 4 4 6 8",
    "output": "2"
+  },
+  {
+   "input": "5\n2 3 4 7 7",
+   "output": "3"
   }
  ],
  "raw": ""

@@ -1,0 +1,1 @@
+{"slug": "string-multiplication", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if len(data) < 2:\n        return\n    a = int(data[0])\n    b = int(data[1])\n    print(str(a * b))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

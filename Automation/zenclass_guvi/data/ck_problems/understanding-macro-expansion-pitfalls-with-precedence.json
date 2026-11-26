@@ -3,7 +3,7 @@
  "slug": "understanding-macro-expansion-pitfalls-with-precedence",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2101. Understanding Macro Expansion Pitfalls with Precedence\n\n90\n\nHard\n\nProblem Statement\nUse a function-like macro to compute the square of an expression, and observe how macro substitution combined with operator precedence can produce an unexpected result.\nDescription\nDefine a function-like macro SQUARE(x) that expands to x * x (without internal parentheses). Read two integers a and b. Compute result = SQUARE(a + b) and print it, then separately compute expected = (a + b) * (a + b) and print it, so the effect of literal macro substitution can be compared against the mathematically correct value.",
+ "description": "missions\n2101\n. \nUnderstanding Macro Expansion Pitfalls with Precedence\n90\nHard\nProblem Statement\nUse a function-like macro to compute the square of an expression, and observe how macro substitution combined with operator precedence can produce an unexpected result.\nDescription\nDefine a function-like macro SQUARE(x) that expands to x * x (without internal parentheses). Read two integers a and b. Compute result = SQUARE(a + b) and print it, then separately compute expected = (a + b) * (a + b) and print it, so the effect of literal macro substitution can be compared against the mathematically correct value.\nInput Description\nTwo integers a and b, separated by a space.\nOutput Description\nPrint the value produced by SQUARE(a + b), then the correctly parenthesized expected value.\nSample Input\n2 3\nSample Output\n11\n25\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 3\nOutput\n11\n25\nInput\n1 4\nOutput\n9\n25\nInput\n0 5\nOutput\n5\n25\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 3\nOutput\n11\n25\nInput\n1 4\nOutput\n9\n25\nInput\n0 5\nOutput\n5\n25\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nUnderstanding Macro Expansion Pitfalls with Precedence\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two integers a and b, separated by a space.",
  "output_spec": "Print the value produced by SQUARE(a + b), then the correctly parenthesized expected value.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "2 3",
    "output": "11\n25"
+  },
+  {
+   "input": "1 4",
+   "output": "9\n25"
+  },
+  {
+   "input": "0 5",
+   "output": "5\n25"
   }
  ],
  "raw": ""

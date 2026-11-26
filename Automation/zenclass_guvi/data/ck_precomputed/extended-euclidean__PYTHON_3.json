@@ -1,0 +1,1 @@
+{"slug": "extended-euclidean", "lang": "PYTHON 3", "code": "def extended_gcd(a, b):\n    if b == 0:\n        return (a, 1, 0)\n    g, x1, y1 = extended_gcd(b, a % b)\n    x = y1\n    y = x1 - (a // b) * y1\n    return (g, x, y)\n", "local_ok": false, "err": "Mismatch #1: in='a=30,b=20' exp='1 -1' got=''"}

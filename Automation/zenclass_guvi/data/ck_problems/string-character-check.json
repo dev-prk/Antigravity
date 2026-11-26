@@ -3,7 +3,7 @@
  "slug": "string-character-check",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n167. String Character Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a string S, check whether it contains only the characters 'a' and 'b' or only 'a' or only 'b'",
+ "description": "em\nHints & Solutions\nSubmissions\n167\n. \nString Character Check\n50\nMedium\nTopics\nProblem Statement:\nGiven a string S, check whether it contains only the characters 'a' and 'b' or only 'a' or only 'b' \nInput Description:\nThe input consists of a string S with size |S| <= 100000. \nOutput Description:\nThe output should be 'yes' if the string S contains only 'a' and 'b' (or only 'a' or only 'b'), and 'no' otherwise. \nSample Input:\naabbaaab \nSample Output:\nyes\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n85.43\n%\nTopics\nstrings\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\naabbaa\nOutput\nyes\nInput\nabababas\nOutput\nno\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\naabbaa\nOutput\nyes\nInput\nabababas\nOutput\nno\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Character Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of a string S with size |S| <= 100000.",
  "output_spec": "The output should be 'yes' if the string S contains only 'a' and 'b' (or only 'a' or only 'b'), and 'no' otherwise.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "aabbaaab",
    "output": "yes"
+  },
+  {
+   "input": "aabbaa",
+   "output": "yes"
+  },
+  {
+   "input": "abababas",
+   "output": "no"
   }
  ],
  "raw": ""

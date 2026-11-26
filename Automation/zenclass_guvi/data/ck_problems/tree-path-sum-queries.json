@@ -3,14 +3,22 @@
  "slug": "tree-path-sum-queries",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1517. Tree Path Sum Queries\n\n70\n\nHard\n\nProblem Statement:\nYou are given a tree with N nodes, where each node has an integer value assigned to it. The tree is rooted at node 1. You are also given Q queries. Each query consists of two nodes u and v, and asks for the sum of the values of all nodes on the path from u to v (including u and v themselves). Your task is to answer all queries efficiently.",
+ "description": "lem\nProblem\nHints & Solutions\nSubmissions\n1517\n. \nTree Path Sum Queries\n70\nHard\nProblem Statement:\nYou are given a tree with N nodes, where each node has an integer value assigned to it. The tree is rooted at node 1. You are also given Q queries. Each query consists of two nodes u and v, and asks for the sum of the values of all nodes on the path from u to v (including u and v themselves). Your task is to answer all queries efficiently. \nInput Description:\n- The first line contains an integer N, the number of nodes in the tree.\n- The second line contains N integers, where the i-th integer is the value assigned to node i.\n- The next N-1 lines each contain two integers a and b, denoting an undirected edge between nodes a and b.\n- The next line contains an integer Q, the number of queries.\n- The next Q lines each contain two integers u and v, representing a query for the sum of values along the path from u to v. \nOutput Description:\n- For each query, output a single integer: the sum of values along the path from u to v. \nSample Input:\n5\n1 2 3 4 5\n1 2\n1 3\n2 4\n2 5\n3\n4 5\n3 4\n2 3 \nSample Output:\n11\n 8\n 5 \nExplanation:\n- Path from 4 to 5: 4 -> 2 -> 5, sum = 4 + 2 + 5 = 11\n- Path from 3 to 4: 3 -> 1 -> 2 -> 4, sum = 3 + 1 + 2 + 4 = 10\n- Path from 2 to 3: 2 -> 1 -> 3, sum = 2 + 1 + 3 = 6 \nAccepted \n12\nSubmissions \n15\nAcceptance Rate \n80\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n10 20 30\n1 2\n1 3\n2\n2 3\n1 1\nOutput\n60\n10\nInput\n4\n1 1 1 1\n1 2\n2 3\n3 4\n1\n1 4\nOutput\n4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n10 20 30\n1 2\n1 3\n2\n2 3\n1 1\nOutput\n60\n10\nInput\n4\n1 1 1 1\n1 2\n2 3\n3 4\n1\n1 4\nOutput\n4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTree Path Sum Queries\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nC",
  "input_spec": "- The first line contains an integer N, the number of nodes in the tree.\n- The second line contains N integers, where the i-th integer is the value assigned to node i.\n- The next N-1 lines each contain two integers a and b, denoting an undirected edge between nodes a and b.\n- The next line contains an integer Q, the number of queries.\n- The next Q lines each contain two integers u and v, representing a query for the sum of values along the path from u to v.",
  "output_spec": "- For each query, output a single integer: the sum of values along the path from u to v.",
  "constraints": "",
  "samples": [
   {
    "input": "5\n1 2 3 4 5\n1 2\n1 3\n2 4\n2 5\n3\n4 5\n3 4\n2 3",
-   "output": "11\n8\n5"
+   "output": "11\n 8\n 5"
+  },
+  {
+   "input": "3\n10 20 30\n1 2\n1 3\n2\n2 3\n1 1",
+   "output": "60\n10"
+  },
+  {
+   "input": "4\n1 1 1 1\n1 2\n2 3\n3 4\n1\n1 4",
+   "output": "4"
   }
  ],
  "raw": ""

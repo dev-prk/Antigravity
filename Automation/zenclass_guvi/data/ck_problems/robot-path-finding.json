@@ -3,13 +3,21 @@
  "slug": "robot-path-finding",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n530. Robot Path Finding\n\n90\n\nHard  Topics\n\nProblem Statement:\nFriday is a path finding robot. A tiled room is modelled as a binary matrix and is fed into the robot. A value of 1 implies that the robot can move on that tile. A value of 0 means the otherwise. Starting at location (0,0) find out whether friday can reach the corner of the room at (N-1,N-1) where N is the number of rows and columns in the square matrix.Note: The robot cannot move backwards. However it can move in any of the other directions(including diagonal).",
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n530\n. \nRobot Path Finding\n90\nHard\nTopics\nProblem Statement:\nFriday is a path finding robot. A tiled room is modelled as a binary matrix and is fed into the robot. A value of 1 implies that the robot can move on that tile. A value of 0 means the otherwise. Starting at location (0,0) find out whether friday can reach the corner of the room at (N-1,N-1) where N is the number of rows and columns in the square matrix.Note: The robot cannot move backwards. However it can move in any of the other directions(including diagonal). \nInput Description:\nDimensions of the matrix followed by the elements in the matrix ( 0 or 1 ) \nOutput Description:\n\u201cyes\u201d if the robot can reach the corner. \u201cno\u201d if it cannot. \nExplanation:\nIt can move along the diagonal to the corner \nSample Input:\n4 4\n1 0 1 1\n1 1 0 1\n0 0 1 0\n0 0 0 1 \nSample Output:\nyes \nAccepted \n129\nSubmissions \n190\nAcceptance Rate \n67.89\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 0 1\n0 1 0\n1 1 0\nOutput\nno\nInput\n5 5\n1 0 0 0 1\n1 1 1 1 1\n0 0 0 0 1\n1 1 1 1 0\n1 0 1 0 1\nOutput\nyes\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n1 0 1\n0 1 0\n1 1 0\nOutput\nno\nInput\n5 5\n1 0 0 0 1\n1 1 1 1 1\n0 0 0 0 1\n1 1 1 1 0\n1 0 1 0 1\nOutput\nyes\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRobot Path Finding\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Dimensions of the matrix followed by the elements in the matrix ( 0 or 1 )",
- "output_spec": "\u201cyes\u201d if the robot can reach the corner. \u201cno\u201d if it cannot.",
+ "output_spec": "\u201cyes\u201d if the robot can reach the corner. \u201cno\u201d if it cannot. \nExplanation:\nIt can move along the diagonal to the corner",
  "constraints": "",
  "samples": [
   {
    "input": "4 4\n1 0 1 1\n1 1 0 1\n0 0 1 0\n0 0 0 1",
+   "output": "yes"
+  },
+  {
+   "input": "3 3\n1 0 1\n0 1 0\n1 1 0",
+   "output": "no"
+  },
+  {
+   "input": "5 5\n1 0 0 0 1\n1 1 1 1 1\n0 0 0 0 1\n1 1 1 1 0\n1 0 1 0 1",
    "output": "yes"
   }
  ],

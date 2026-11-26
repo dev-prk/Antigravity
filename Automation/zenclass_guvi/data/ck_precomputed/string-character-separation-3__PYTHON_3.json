@@ -1,0 +1,1 @@
+{"slug": "string-character-separation-3", "lang": "PYTHON 3", "code": "import sys\n   s = sys.stdin.readline().strip()\n   print(','.join(s))\n", "local_ok": false, "err": "SyntaxError: unexpected indent (<sol>, line 2)"}

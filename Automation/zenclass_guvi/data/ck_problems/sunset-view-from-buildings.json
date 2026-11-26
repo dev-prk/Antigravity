@@ -3,14 +3,22 @@
  "slug": "sunset-view-from-buildings",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n488. Sunset View from Buildings\n\n80\n\nHard  Topics\n\nProblem Statement:\nDas lives in a city which is having skyscrapers. Das has a wish and wants to see the buildings on which sunlight falls when the sun sets. Help him in counting the number of buildings receiving the sunlight. Note: A taller building casts a shadow on a shorter building.\n\nGiven an array H denoting heights of buildings. You have to count the buildings which will see the sun set (Assume : Sun set on the side of array ending i.e at the last element of the array).",
+ "description": "\nHints & Solutions\nSubmissions\n488\n. \nSunset View from Buildings\n80\nHard\nTopics\nProblem Statement:\nDas lives in a city which is having skyscrapers. Das has a wish and wants to see the buildings on which sunlight falls when the sun sets. Help him in counting the number of buildings receiving the sunlight. Note: A taller building casts a shadow on a shorter building. \nGiven an array H denoting heights of buildings. You have to count the buildings which will see the sun set (Assume : Sun set on the side of array ending i.e at the last element of the array). \nConstraints: \n1 <= T <= 100 \n1 <= N <= 106 \n1 <= Hi <= 108 \nInput Description:\nThe first line of input contains an integer T denoting the number of test cases. The first line of each test case is N, N is the number of buildings. The second line of each test case contains separated values of heights of buildings. \nOutput Description:\nPrint the total number of buildings which will see the sunset. \nExplanation:\nIn the first test case, only building with 9 floors sees the sun. It shadows all the other buildings.\nIn the second test case, buildings with 1, 4 and 5 floors can see the sun set. Building with 1 floor can see sunset because it is the rightmost and the other buildings can see it because they are taller. \nSample Input:\n2\n5\n7 4 8 2 9\n4\n5 3 4 1 \nSample Output:\n1\n3 \nAccepted \n876\nSubmissions \n1k\nAcceptance Rate \n82.18\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n8\n1 2 3 4 9 7 6 5\nOutput\n4\nInput\n2\n8\n1 2 3 4 9 7 6 5\n3\n1 2 3\nOutput\n4\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\n8\n1 2 3 4 9 7 6 5\nOutput\n4\nInput\n2\n8\n1 2 3 4 9 7 6 5\n3\n1 2 3\nOutput\n4\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSunset View from Buildings\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too",
  "input_spec": "The first line of input contains an integer T denoting the number of test cases. The first line of each test case is N, N is the number of buildings. The second line of each test case contains separated values of heights of buildings.",
- "output_spec": "Print the total number of buildings which will see the sunset.",
- "constraints": "1 <= T <= 100\n\n1 <= N <= 106\n\n1 <= Hi <= 108",
+ "output_spec": "Print the total number of buildings which will see the sunset. \nExplanation:\nIn the first test case, only building with 9 floors sees the sun. It shadows all the other buildings.\nIn the second test case, buildings with 1, 4 and 5 floors can see the sun set. Building with 1 floor can see sunset because it is the rightmost and the other buildings can see it because they are taller.",
+ "constraints": "",
  "samples": [
   {
    "input": "2\n5\n7 4 8 2 9\n4\n5 3 4 1",
    "output": "1\n3"
+  },
+  {
+   "input": "1\n8\n1 2 3 4 9 7 6 5",
+   "output": "4"
+  },
+  {
+   "input": "2\n8\n1 2 3 4 9 7 6 5\n3\n1 2 3",
+   "output": "4\n1"
   }
  ],
  "raw": ""

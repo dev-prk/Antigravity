@@ -3,14 +3,18 @@
  "slug": "shortest-path-in-a-graph",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n354. Shortest Path in a Graph\n\n90\n\nHard  Topics  Company\n\nProblem Statement:\nGiven 2 integers N,M(where N is the number of vertices and M is the number of edges) followed by 'M' lines containing 2 vertices U,V and weight W. Find the shortest path from 1-N.If there is no path print '-1'.",
- "input_spec": "The input consists of 2 integers N, M (where N is the number of vertices and M is the number of edges), followed by M lines, each containing 2 vertices U, V and a weight W.",
+ "description": " & Solutions\nSubmissions\n354\n. \nShortest Path in a Graph\n90\nHard\nTopics\nCompany\nProblem Statement:\nGiven 2 integers N,M(where N is the number of vertices and M is the number of edges) followed by 'M' lines containing 2 vertices U,V and weight W. Find the shortest path from 1-N.If there is no path print '-1'. \nInput Description:\nThe input consists of 2 integers N, M (where N is the number of vertices and M is the number of edges), followed by M lines, each containing 2 vertices U, V and a weight W. Constraints: 1<=N, M<=100000. \nOutput Description:\nThe shortest path from vertex 1 to vertex N. If no path exists, print '-1'. \nSample Input:\n5 6\n1 2 2\n2 5 5\n2 3 4\n1 4 1\n4 3 3\n3 5 1 \nSample Output:\n5 \nAccepted \n820\nSubmissions \n924\nAcceptance Rate \n88.74\n%\nTopics\ntrees and graphs\nmathematics\nCompany\ncompanies\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 6\n1 2 2\n2 5 5\n2 3 4\n1 4 1\n4 3 3\n3 5 1\nOutput\n5\nInput\n2 1\n1 2 1\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 6\n1 2 2\n2 5 5\n2 3 4\n1 4 1\n4 3 3\n3 5 1\nOutput\n5\nInput\n2 1\n1 2 1\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nShortest Path in a Graph\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of 2 integers N, M (where N is the number of vertices and M is the number of edges), followed by M lines, each containing 2 vertices U, V and a weight W. Constraints: 1<=N, M<=100000.",
  "output_spec": "The shortest path from vertex 1 to vertex N. If no path exists, print '-1'.",
- "constraints": "1<=N, M<=100000.",
+ "constraints": "",
  "samples": [
   {
    "input": "5 6\n1 2 2\n2 5 5\n2 3 4\n1 4 1\n4 3 3\n3 5 1",
    "output": "5"
+  },
+  {
+   "input": "2 1\n1 2 1",
+   "output": "1"
   }
  ],
  "raw": ""

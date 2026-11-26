@@ -3,14 +3,22 @@
  "slug": "number-square-pattern",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n897. Number Square Pattern\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a square pattern using numbers.",
+ "description": "lem\nHints & Solutions\nSubmissions\n897\n. \nNumber Square Pattern\n50\nMedium\nTopics\nProblem Statement:\nWrite a code to generate a square pattern using numbers. \nInput Description:\nGiven an integer R indicates number of rows.Where 1<=R<=100 \nOutput Description:\nPrint the number pattern separated with space with the size R. \nExplanation:\nFrom the given input R=5, print 5 in 5 times with spaces,\nnext line print 4 5 5 5 5,and then 3 4 5 5 5,then 2 3 4 5 5\nfinally print form 1 to 5(R). \nSample Input:\n5 \nSample Output:\n5 5 5 5 5 \n4 5 5 5 5 \n3 4 5 5 5 \n2 3 4 5 5 \n1 2 3 4 5 \nAccepted \n777\nSubmissions \n956\nAcceptance Rate \n81.28\n%\nTopics\npatterns\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n5 5 5 5 5\n4 5 5 5 5\n3 4 5 5 5\n2 3 4 5 5\n1 2 3 4 5\nInput\n4\nOutput\n4 4 4 4\n3 4 4 4\n2 3 4 4\n1 2 3 4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n5 5 5 5 5\n4 5 5 5 5\n3 4 5 5 5\n2 3 4 5 5\n1 2 3 4 5\nInput\n4\nOutput\n4 4 4 4\n3 4 4 4\n2 3 4 4\n1 2 3 4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNumber Square Pattern\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
- "output_spec": "Print the number pattern separated with space with the size R.",
+ "output_spec": "Print the number pattern separated with space with the size R. \nExplanation:\nFrom the given input R=5, print 5 in 5 times with spaces,\nnext line print 4 5 5 5 5,and then 3 4 5 5 5,then 2 3 4 5 5\nfinally print form 1 to 5(R).",
  "constraints": "",
  "samples": [
   {
    "input": "5",
+   "output": "5 5 5 5 5 \n4 5 5 5 5 \n3 4 5 5 5 \n2 3 4 5 5 \n1 2 3 4 5"
+  },
+  {
+   "input": "5",
    "output": "5 5 5 5 5\n4 5 5 5 5\n3 4 5 5 5\n2 3 4 5 5\n1 2 3 4 5"
+  },
+  {
+   "input": "4",
+   "output": "4 4 4 4\n3 4 4 4\n2 3 4 4\n1 2 3 4"
   }
  ],
  "raw": ""

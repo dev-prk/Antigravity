@@ -3,14 +3,18 @@
  "slug": "slicing-in-banking-interest-calculation",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1811. Slicing in Banking Interest Calculation\n\n50\n\nMedium\n\nSlicing in Banking Interest Calculation\n\nProblem Statement:\nShow slicing effect when storing derived object in base container.\n\nDescription:\nBase Class: Account\n- balance\n- virtual calculateInterest()\n\nDerived Class: FixedDeposit\n- interestRate\n- override calculateInterest()\n\nRequirements:\n1. Store FixedDeposit in vector<Account>.\n2. Show slicing problem.\n3. Fix using vector<Account*>.\n4. Display interest in both cases.\n\nInput Format:\nBalance\nInterest Rate\n\nOutput Format:\nInterest (Sliced)\nInterest (Correct)",
- "input_spec": "Balance\nInterest Rate",
- "output_spec": "Interest (Sliced)\nInterest (Correct)",
+ "description": " Banking Interest Calculation\n50\nMedium\nSlicing in Banking Interest Calculation\nProblem Statement:\nShow slicing effect when storing derived object in base container.\nDescription:\nBase Class: Account\n\u00a0 \u00a0- balance\n\u00a0 \u00a0- virtual calculateInterest()\nDerived Class: FixedDeposit\n\u00a0 \u00a0- interestRate\n\u00a0 \u00a0- override calculateInterest()\nRequirements:\n1. Store FixedDeposit in vector<Account>.\n2. Show slicing problem.\n3. Fix using vector<Account*>.\n4. Display interest in both cases.\nInput Format:\nBalance\nInterest Rate\nOutput Format:\nInterest (Sliced)\nInterest (Correct)\nSample Input:\n100000\n10\nSample Output:\nInterest (Sliced): 0\nInterest (Correct): 10000\nAccepted \n1\nSubmissions \n1\nAcceptance Rate \n100\n%\n8\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n50000\n5\nOutput\nInterest (Sliced): 0\nInterest (Correct): 2500\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n50000\n5\nOutput\nInterest (Sliced): 0\nInterest (Correct): 2500\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSlicing in Banking Interest Calculation\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "100000\n10",
    "output": "Interest (Sliced): 0\nInterest (Correct): 10000"
+  },
+  {
+   "input": "50000\n5",
+   "output": "Interest (Sliced): 0\nInterest (Correct): 2500"
   }
  ],
  "raw": ""

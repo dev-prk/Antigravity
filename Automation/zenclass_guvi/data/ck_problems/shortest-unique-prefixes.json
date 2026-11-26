@@ -3,14 +3,22 @@
  "slug": "shortest-unique-prefixes",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1583. Shortest Unique Prefixes\n\n70\n\nHard\n\nProblem Statement:\nGiven a list of words, find the shortest unique prefix for each word. The shortest unique prefix of a word is the smallest prefix which is not shared by any other word in the list. Return the list of shortest unique prefixes in the same order as the input words.",
- "input_spec": "words.\n\nInput Description:\n- The first line contains an integer N, the number of words.\n- The next N lines each contain a word consisting of lowercase English letters.",
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n1583\n. \nShortest Unique Prefixes\n70\nHard\nProblem Statement:\nGiven a list of words, find the shortest unique prefix for each word. The shortest unique prefix of a word is the smallest prefix which is not shared by any other word in the list. Return the list of shortest unique prefixes in the same order as the input words. \nInput Description:\n- The first line contains an integer N, the number of words.\n- The next N lines each contain a word consisting of lowercase English letters. \nOutput Description:\n- Output N lines, each containing the shortest unique prefix for the corresponding word in the input. \nSample Input:\n4\ndog\ncat\ncar\napple \nSample Output:\nd\ncat\ncar\na \nExplanation:\n- \"dog\" can be uniquely identified by \"d\".\n- \"cat\" and \"car\" share the prefix \"ca\", so \"cat\" needs \"cat\" and \"car\" needs \"car\".\n- \"apple\" can be uniquely identified by \"a\". \nAccepted \n15\nSubmissions \n16\nAcceptance Rate \n93.75\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nzebra\ndog\nduck\nOutput\nz\ndo\ndu\nInput\n5\napple\nape\napril\nbat\nball\nOutput\napp\nape\napr\nbat\nbal\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nzebra\ndog\nduck\nOutput\nz\ndo\ndu\nInput\n5\napple\nape\napril\nbat\nball\nOutput\napp\nape\napr\nbat\nbal\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nShortest Unique Prefixes\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains an integer N, the number of words.\n- The next N lines each contain a word consisting of lowercase English letters.",
  "output_spec": "- Output N lines, each containing the shortest unique prefix for the corresponding word in the input.",
  "constraints": "",
  "samples": [
   {
    "input": "4\ndog\ncat\ncar\napple",
    "output": "d\ncat\ncar\na"
+  },
+  {
+   "input": "3\nzebra\ndog\nduck",
+   "output": "z\ndo\ndu"
+  },
+  {
+   "input": "5\napple\nape\napril\nbat\nball",
+   "output": "app\nape\napr\nbat\nbal"
   }
  ],
  "raw": ""

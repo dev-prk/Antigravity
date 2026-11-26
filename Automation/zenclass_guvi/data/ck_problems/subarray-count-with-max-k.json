@@ -3,14 +3,18 @@
  "slug": "subarray-count-with-max-k",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n579. Subarray Count with Max > k\n\n80\n\nHard  Topics  Company\n\nProblem Statement:\nYou are provided with an array. Your task is to print the count of subarray whose maximum element is strictly greater than 'k'.",
+ "description": "Solutions\nSubmissions\n579\n. \nSubarray Count with Max > k\n80\nHard\nTopics\nCompany\nProblem Statement:\nYou are provided with an array. Your task is to print the count of subarray whose maximum element is strictly greater than 'k'. \nInput Description:\nFirst line contains two element 'N' and 'k'.Second line contains 'n' space separated numbers. \nOutput Description:\nPrint the count of subarray whose maximum element's value is strictly greater than 'k'. \nExplanation:\n14 possible sub arrays can be created \nSample Input:\n5 4\n1 6 7 8 9 \nSample Output:\n14 \nAccepted \n1k\nSubmissions \n2k\nAcceptance Rate \n75.05\n%\nTopics\narray\nguvi-learning-path\nCompany\n24*7-Innovation-Labs\nAccolite\nAmazon\nCitrix\nD-E-Shaw\nFactSet\nFlipkart\nHike\nHousing.com\nMakeMyTrip\nMetLife\nMicrosoft\nMorgan\nStanley\nOla-Cabs\nOracle\nOYO-Rooms\nPayu\nSamsung\nSnapdeal\nTeradata\nVisa\nVMWare\nWalmart\nZoho\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 4\n1 6 7 8 9\nOutput\n14\nInput\n12 9\n56 8 9 4 3 25 26 1 4 97 46 31\nOutput\n65\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 4\n1 6 7 8 9\nOutput\n14\nInput\n12 9\n56 8 9 4 3 25 26 1 4 97 46 31\nOutput\n65\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSubarray Count with Max > k\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line contains two element 'N' and 'k'.Second line contains 'n' space separated numbers.",
- "output_spec": "Print the count of subarray whose maximum element's value is strictly greater than 'k'.",
+ "output_spec": "Print the count of subarray whose maximum element's value is strictly greater than 'k'. \nExplanation:\n14 possible sub arrays can be created",
  "constraints": "",
  "samples": [
   {
    "input": "5 4\n1 6 7 8 9",
    "output": "14"
+  },
+  {
+   "input": "12 9\n56 8 9 4 3 25 26 1 4 97 46 31",
+   "output": "65"
   }
  ],
  "raw": ""

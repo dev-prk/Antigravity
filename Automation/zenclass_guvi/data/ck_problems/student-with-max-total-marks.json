@@ -3,7 +3,7 @@
  "slug": "student-with-max-total-marks",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n289. Student with Max Total Marks\n\n70\n\nHard  Topics\n\nProblem Statement:\nGiven an arraylist A of string type which has name#mark1#mark2#mark3 format. Retrieve the name of the student who has scored max marks(total of three).",
+ "description": "ints & Solutions\nSubmissions\n289\n. \nStudent with Max Total Marks\n70\nHard\nTopics\nProblem Statement:\nGiven an arraylist A of string type which has name#mark1#mark2#mark3 format. Retrieve the name of the student who has scored max marks(total of three). \nInput Description:\nThe input consists of an arraylist A of string type, where each string is in 'name#mark1#mark2#mark3' format. The size of A is at most 100000. \nOutput Description:\nThe output is the name of the student who has scored the maximum total marks. \nSample Input:\narun#12#12#12\ndeepak#13#12#12 \nSample Output:\ndeepak \nExplanation:\nFor the given input, 'arun' has a total score of 12+12+12=36, and 'deepak' has a total score of 13+12+12=37. Since Deepak has the maximum total score, 'deepak' is the output. \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n85.31\n%\nTopics\nstrings\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\narun#15#12#12\ndeepak#13#12#12\nOutput\narun\nInput\nvishal#12#12#12\nsundar#13#42#12\nOutput\nsundar\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\narun#15#12#12\ndeepak#13#12#12\nOutput\narun\nInput\nvishal#12#12#12\nsundar#13#42#12\nOutput\nsundar\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nStudent with Max Total Marks\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of an arraylist A of string type, where each string is in 'name#mark1#mark2#mark3' format. The size of A is at most 100000.",
  "output_spec": "The output is the name of the student who has scored the maximum total marks.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "arun#12#12#12\ndeepak#13#12#12",
    "output": "deepak"
+  },
+  {
+   "input": "arun#15#12#12\ndeepak#13#12#12",
+   "output": "arun"
+  },
+  {
+   "input": "vishal#12#12#12\nsundar#13#42#12",
+   "output": "sundar"
   }
  ],
  "raw": ""

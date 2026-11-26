@@ -3,7 +3,7 @@
  "slug": "word-frequency-counter-2",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1171. Word Frequency Counter-2\n\n50\n\nMedium\n\nProblem Statement:\nYou are tasked with implementing a feature that counts the frequency of each word in a given text. The twist is that the word frequencies need to be sorted in descending order of frequency, and in case of a tie, the words should be sorted lexicographically.",
+ "description": "roblem\nHints & Solutions\nSubmissions\n1171\n. \nWord Frequency Counter-2\n50\nMedium\nProblem Statement:\nYou are tasked with implementing a feature that counts the frequency of each word in a given text. The twist is that the word frequencies need to be sorted in descending order of frequency, and in case of a tie, the words should be sorted lexicographically. \nInput Description:\nA single line of text (can contain multiple words and punctuation). \nOutput Description:\nEach line should contain a word followed by its frequency, sorted by frequency in descending order and lexicographically for tied frequencies. \nSample Input:\napple banana apple fruit banana apple \nSample Output:\napple 3\nbanana 2\nfruit 1 \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.38\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\napple banana apple fruit banana apple\nOutput\napple 3\nbanana 2\nfruit 1\nInput\nhello world hello hello world\nOutput\nhello 3\nworld 2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\napple banana apple fruit banana apple\nOutput\napple 3\nbanana 2\nfruit 1\nInput\nhello world hello hello world\nOutput\nhello 3\nworld 2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nWord Frequency Counter-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single line of text (can contain multiple words and punctuation).",
  "output_spec": "Each line should contain a word followed by its frequency, sorted by frequency in descending order and lexicographically for tied frequencies.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "apple banana apple fruit banana apple",
    "output": "apple 3\nbanana 2\nfruit 1"
+  },
+  {
+   "input": "hello world hello hello world",
+   "output": "hello 3\nworld 2"
   }
  ],
  "raw": ""

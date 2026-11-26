@@ -1,0 +1,1 @@
+{"slug": "find-the-unique-number-2", "lang": "PYTHON 3", "code": "import sys\n\ndef solve() -> None:\n    data = sys.stdin.read().split\n", "local_ok": false, "err": "empty_llm"}

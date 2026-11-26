@@ -3,14 +3,18 @@
  "slug": "polymorphism-method-overloading-volume-finder",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1642. Polymorphism, Method Overloading - Volume Finder\n\n50\n\nMedium\n\nVolume Finder\n\nProblem Statement:\nWrite a program using method overloading\n\nDescription:\nFind the volume of:\n\n1. Cube (side)\n\n2. Cuboid (length, breadth, height)\n\n3. Cylinder (radius, height)\n\nInput Format:\nUser chooses shape and provides dimensions.\n\nOutput Format:\nVolume of the chosen shape.",
- "input_spec": "User chooses shape and provides dimensions.",
- "output_spec": "Volume of the chosen shape.",
+ "description": "642\n. \nPolymorphism, Method Overloading - Volume Finder\n50\nMedium\nVolume Finder\nProblem Statement:\nWrite a program using method overloading\nDescription:\nFind the volume of:\n1. Cube (side)\n2. Cuboid (length, breadth, height)\n3. Cylinder (radius, height)\nInput Format:\nUser chooses shape and provides dimensions.\nOutput Format:\nVolume of the chosen shape.\nSample Input:\ncylinder\n3 7\nSample Output:\n197.92\nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n79.71\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\ncube\n5\nOutput\n125.00\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\ncube\n5\nOutput\n125.00\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPolymorphism, Method Overloading - Volume Finder\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "cylinder\n3 7",
    "output": "197.92"
+  },
+  {
+   "input": "cube\n5",
+   "output": "125.00"
   }
  ],
  "raw": ""

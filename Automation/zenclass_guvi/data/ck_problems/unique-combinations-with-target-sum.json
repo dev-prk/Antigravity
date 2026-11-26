@@ -3,7 +3,7 @@
  "slug": "unique-combinations-with-target-sum",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1457. Unique Combinations with Target Sum\n\n50\n\nMedium\n\nProblem Statement:\nGiven an array of distinct integers and a target integer, find all unique combinations in the array where the numbers sum to the target. Each number in the array may be used an unlimited number of times in the combination. The solution set must not contain duplicate combinations.",
+ "description": "s & Solutions\nSubmissions\n1457\n. \nUnique Combinations with Target Sum\n50\nMedium\nProblem Statement:\nGiven an array of distinct integers and a target integer, find all unique combinations in the array where the numbers sum to the target. Each number in the array may be used an unlimited number of times in the combination. The solution set must not contain duplicate combinations. \nInput Description:\n- The first line contains two integers N and T, where N is the number of elements in the array and T is the target sum.\n- The second line contains N distinct integers representing the array. \nOutput Description:\n- Print all unique combinations, one per line. Each combination should be printed as space-separated integers in non-decreasing order.\n- If there are no valid combinations, print \"No combination found\". \nSample Input:\n4 7\n2 3 6 7 \nSample Output:\n2 2 3\n7 \nExplanation:\nThere are two unique combinations that sum to 7: [2,2,3] and [7]. \nAccepted \n46\nSubmissions \n54\nAcceptance Rate \n85.19\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 8\n2 3 5\nOutput\n2 2 2 2\n2 3 3\n3 5\nInput\n2 3\n2 4\nOutput\nNo combination found\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 8\n2 3 5\nOutput\n2 2 2 2\n2 3 3\n3 5\nInput\n2 3\n2 4\nOutput\nNo combination found\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nUnique Combinations with Target Sum\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains two integers N and T, where N is the number of elements in the array and T is the target sum.\n- The second line contains N distinct integers representing the array.",
  "output_spec": "- Print all unique combinations, one per line. Each combination should be printed as space-separated integers in non-decreasing order.\n- If there are no valid combinations, print \"No combination found\".",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "4 7\n2 3 6 7",
    "output": "2 2 3\n7"
+  },
+  {
+   "input": "3 8\n2 3 5",
+   "output": "2 2 2 2\n2 3 3\n3 5"
+  },
+  {
+   "input": "2 3\n2 4",
+   "output": "No combination found"
   }
  ],
  "raw": ""

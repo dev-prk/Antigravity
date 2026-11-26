@@ -3,7 +3,7 @@
  "slug": "smallest-divisible-number",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n151. Smallest Divisible Number\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N and an array of N integers, find the smallest number divisible by all the elements of the array.",
+ "description": "Hints & Solutions\nSubmissions\n151\n. \nSmallest Divisible Number\n50\nMedium\nTopics\nProblem Statement:\nGiven a number N and an array of N integers, find the smallest number divisible by all the elements of the array. \nInput Description:\nInput Size : N <= 100000 \nOutput Description:\nThe smallest number divisible by all the elements of the array. \nSample Input:\n5\n1 2 3 4 5 \nSample Output:\n60 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n90.95\n%\nTopics\narray\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 3 4 1\nOutput\n12\nInput\n2\n1 1\nOutput\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 3 4 1\nOutput\n12\nInput\n2\n1 1\nOutput\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSmallest Divisible Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Input Size : N <= 100000",
  "output_spec": "The smallest number divisible by all the elements of the array.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\n1 2 3 4 5",
    "output": "60"
+  },
+  {
+   "input": "5\n1 2 3 4 1",
+   "output": "12"
+  },
+  {
+   "input": "2\n1 1",
+   "output": "1"
   }
  ],
  "raw": ""

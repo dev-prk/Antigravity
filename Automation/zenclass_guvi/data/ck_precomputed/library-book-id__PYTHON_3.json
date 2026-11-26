@@ -1,0 +1,1 @@
+{"slug": "library-book-id", "lang": "PYTHON 3", "code": "import sys\n\ndata = sys.stdin.read().strip()\nif data:\n    num = int(data)\n    print(\"Even\" if num % 2 == 0 else \"Odd\")\n", "local_ok": true, "err": ""}

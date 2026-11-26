@@ -3,13 +3,17 @@
  "slug": "smart-network-cycle-detector",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1906. Smart Network Cycle Detector\n\n40\n\nMedium  Topics\n\nSmart Network Cycle Detector\n\nProblem Statement:\nThe smart city network \u201cMegaMart Elite SmartGrid\u201d now supports one-way communication channels between zones.\n\nThe system forms a Directed Graph.\n\nDue to configuration errors, circular dependencies (cycles) may form.\n\nYour task is to determine:\nReturn true if a cycle exists\nOtherwise return false\n\nUse DFS with Recursion Stack logic.\n\nInput Format\nTwo inputs:\n1. V (number of zones)\n2. E (number of directed connections)\n\nNext E lines contain u v meaning a connection from u \u2192 v.\n\nOutput Format\nPrint:\ntrue\nor\nfalse",
- "input_spec": "Two inputs:\n1. V (number of zones)\n2. E (number of directed connections)\n\nNext E lines contain u v meaning a connection from u \u2192 v.",
- "output_spec": "Print:\ntrue\nor\nfalse",
+ "description": "6\n. \nSmart Network Cycle Detector\n40\nMedium\nTopics\nSmart Network Cycle Detector\nProblem Statement:\nThe smart city network \u201cMegaMart Elite SmartGrid\u201d now supports one-way communication channels between zones.\nThe system forms a Directed Graph.\nDue to configuration errors, circular dependencies (cycles) may form.\nYour task is to determine:\nReturn true if a cycle exists\nOtherwise return false\nUse DFS with Recursion Stack logic.\nInput Format\nTwo inputs:\n1. V (number of zones)\n2. E (number of directed connections)\nNext E lines contain u v meaning a connection from u \u2192 v.\nOutput Format\nPrint:\ntrue\nor\nfalse\nSample Input\n4 4\n0 1\n1 2\n2 3\n3 1\nSample Output\ntrue\nExplanation\nThere is a cycle:\n1 \u2192 2 \u2192 3 \u2192 1\nSo output = true\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\ndata structures\ngraph\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n3 3\n0 1\n1 2\n2 0\nOutput\ntrue\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n3 3\n0 1\n1 2\n2 0\nOutput\ntrue\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSmart Network Cycle Detector\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "4 4\n0 1\n1 2\n2 3\n3 1",
+   "output": "true"
+  },
+  {
+   "input": "3 3\n0 1\n1 2\n2 0",
    "output": "true"
   }
  ],

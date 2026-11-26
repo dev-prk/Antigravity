@@ -3,14 +3,22 @@
  "slug": "next-greater-element-using-stack",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n851. Next Greater Element using Stack\n\n60\n\nMedium  Topics\n\nProblem Statement:\nGiven an array of n elements and q queries, for each query which has an index i, find the next greater element and print its value using Stack. If there is no such greater element to its right then print -1.",
+ "description": " Solutions\nSubmissions\n851\n. \nNext Greater Element using Stack\n60\nMedium\nTopics\nProblem Statement:\nGiven an array of n elements and q queries, for each query which has an index i, find the next greater element and print its value using Stack. If there is no such greater element to its right then print -1.\nInput Description:\nFirst line N indicates length of the array.Second Line indicates the elements of the array.Third line M indicates the length of the query.Fourth line indicates the elements of the query.\nOutput Description:\nPrint the greater values in a single line\nSample Input:\n8\n3 4 2 7 5 8 10 6\n3\n3 6 1\nSample Output:\n8 -1 7\n**Explanation:**Print the values as a single line if next greater element exists as per the query elements\nAccepted \n419\nSubmissions \n521\nAcceptance Rate \n80.42\n%\nTopics\nstack\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n1 2 3 4\n2\n1 2\nOutput\n3 4\nInput\n3\n1 0 1\n3\n0 1 2\nOutput\n-1 1 -1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\n1 2 3 4\n2\n1 2\nOutput\n3 4\nInput\n3\n1 0 1\n3\n0 1 2\nOutput\n-1 1 -1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNext Greater Element using Stack\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line N indicates length of the array.Second Line indicates the elements of the array.Third line M indicates the length of the query.Fourth line indicates the elements of the query.",
  "output_spec": "Print the greater values in a single line",
  "constraints": "",
  "samples": [
   {
    "input": "8\n3 4 2 7 5 8 10 6\n3\n3 6 1",
-   "output": "8 -1 7\n\n**Explanation:**Print the values as a single line if next greater element exists as per the query elements"
+   "output": "8 -1 7\n**Explanation:**Print the values as a single line if next greater element exists as per the query elements"
+  },
+  {
+   "input": "4\n1 2 3 4\n2\n1 2",
+   "output": "3 4"
+  },
+  {
+   "input": "3\n1 0 1\n3\n0 1 2",
+   "output": "-1 1 -1"
   }
  ],
  "raw": ""

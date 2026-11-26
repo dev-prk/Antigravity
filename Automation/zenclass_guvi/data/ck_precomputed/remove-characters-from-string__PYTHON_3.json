@@ -1,0 +1,1 @@
+{"slug": "remove-characters-from-string", "lang": "PYTHON 3", "code": "import sys\n\ndef solve():\n    data = sys.stdin.read().strip().split()\n    if len(data) < 2:\n        s1 = data\n", "local_ok": false, "err": "empty_llm"}

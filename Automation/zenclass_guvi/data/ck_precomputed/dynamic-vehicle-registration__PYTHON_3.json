@@ -1,0 +1,1 @@
+{"slug": "dynamic-vehicle-registration", "lang": "PYTHON 3", "code": "Vehicle: Car\n     Registration Number: ABC123\n     Owner: John\n     Number of Doors: 4\n", "local_ok": false, "err": "empty_llm"}

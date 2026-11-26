@@ -1,0 +1,1 @@
+{"slug": "nested-loop-pyramid-pattern", "lang": "PYTHON 3", "code": "in='3' exp='Accepted \\n3k\\nSubmissions \\n3k\\nAcceptance Rate \\n99.09\\n%\\n1\\nCode Editor\\nChange Layout\\nCode Editor\\nTest Case\\nTest Result\\nCase 1\\nCase 2\\nInput\\n3\\nOu' got='*\\n##\\n***'\n", "local_ok": false, "err": "SyntaxError: invalid syntax (<sol>, line 1)"}

@@ -3,7 +3,7 @@
  "slug": "remove-element-from-array",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n287. Remove Element from Array\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven 2 numbers N and K and followed by an array of N integers. The given element K is removed from the array and new array is printed. If after removing every occurance of K the array becomes empty, print 'empty' without quotes.",
+ "description": "Solutions\nSubmissions\n287\n. \nRemove Element from Array\n60\nMedium\nTopics\nCompany\nProblem Statement:\nGiven 2 numbers N and K and followed by an array of N integers. The given element K is removed from the array and new array is printed. If after removing every occurance of K the array becomes empty, print 'empty' without quotes. \nInput Description:\nThe input consists of two integers N and K, followed by an array of N integers. N represents the size of the array, and K is the element to be removed. The size N is at most 100000. \nOutput Description:\nThe output is the new array after removing all occurrences of K. If the array becomes empty after removal, print 'empty'. \nSample Input:\n5 10\n10 10 20 30 76 \nSample Output:\n20 30 76 \nExplanation:\nFor the input array {10,10,20,30,76} and K=10, all occurrences of 10 are removed, resulting in {20,30,76}.\nAccepted \n2k\nSubmissions \n3k\nAcceptance Rate \n91.14\n%\nTopics\narray\nguvi-learning-path\nCompany\nAmazon\nGoldman\nSachs\nKritikal\nSolutions\nMicrosoft\nSamsung\nVisa\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 2\n10 10 20 30 76\nOutput\n10 10 20 30 76\nInput\n5 2\n2 2 2 2 2\nOutput\nempty\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 2\n10 10 20 30 76\nOutput\n10 10 20 30 76\nInput\n5 2\n2 2 2 2 2\nOutput\nempty\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRemove Element from Array\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of two integers N and K, followed by an array of N integers. N represents the size of the array, and K is the element to be removed. The size N is at most 100000.",
  "output_spec": "The output is the new array after removing all occurrences of K. If the array becomes empty after removal, print 'empty'.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5 10\n10 10 20 30 76",
    "output": "20 30 76"
+  },
+  {
+   "input": "5 2\n10 10 20 30 76",
+   "output": "10 10 20 30 76"
+  },
+  {
+   "input": "5 2\n2 2 2 2 2",
+   "output": "empty"
   }
  ],
  "raw": ""

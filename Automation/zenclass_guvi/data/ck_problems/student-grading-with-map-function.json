@@ -3,14 +3,22 @@
  "slug": "student-grading-with-map-function",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1100. Student Grading with Map Function\n\n50\n\nMedium\n\nProblem Statement:\nYou are a college professor and you have the scores of your students in a list. You want to grade the students based on their scores. Write a Python function  grade_students(scores)  that takes a list of scores and returns a list of grades. Use the  map  function to apply the grading scheme to all scores.\n\nThe grading scheme is as follows:\n- Score >= 90: 'A'\n- 80 <= Score < 90: 'B'\n- 70 <= Score < 80: 'C'\n- 60 <= Score < 70: 'D'\n- Score < 60: 'F'",
- "input_spec": "The input is a list of integers,  scores , representing the scores of the students.",
+ "description": "nts & Solutions\nSubmissions\n1100\n. \nStudent Grading with Map Function\n50\nMedium\nProblem Statement:\nYou are a college professor and you have the scores of your students in a list. You want to grade the students based on their scores. Write a Python function \ngrade_students(scores)\n that takes a list of scores and returns a list of grades. Use the \nmap\n function to apply the grading scheme to all scores. \nThe grading scheme is as follows:\n- Score >= 90: 'A'\n- 80 <= Score < 90: 'B'\n- 70 <= Score < 80: 'C'\n- 60 <= Score < 70: 'D'\n- Score < 60: 'F' \nInput Description:\nThe input is a list of integers, \nscores\n, representing the scores of the students. \nOutput Description:\nThe function should return a list of strings representing the grades of the students. \nSample Input:\n[95,55] \nSample Output:\n['A','F'] \nExplanation:\nThe \nmap\n function applies the \nget_grade\n function to every item in the \nscores\n list. The \nget_grade\n function takes a score and returns a grade based on the grading scheme. This demonstrates how the \nmap\n function can be used to apply a function to every item in a list. In the context of grading students in a college, this can be useful to grade all students based on their scores.\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.79\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n[95, 85, 77, 60, 55]\nOutput\n['A', 'B', 'C', 'D', 'F']\nInput\n[100, 90, 80, 70, 60]\nOutput\n['A', 'A', 'B', 'C', 'D']\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n[95, 85, 77, 60, 55]\nOutput\n['A', 'B', 'C', 'D', 'F']\nInput\n[100, 90, 80, 70, 60]\nOutput\n['A', 'A', 'B', 'C', 'D']\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nStudent Grading with Map Function\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+",
+ "input_spec": "The input is a list of integers, \nscores\n, representing the scores of the students.",
  "output_spec": "The function should return a list of strings representing the grades of the students.",
  "constraints": "",
  "samples": [
   {
    "input": "[95,55]",
    "output": "['A','F']"
+  },
+  {
+   "input": "[95, 85, 77, 60, 55]",
+   "output": "['A', 'B', 'C', 'D', 'F']"
+  },
+  {
+   "input": "[100, 90, 80, 70, 60]",
+   "output": "['A', 'A', 'B', 'C', 'D']"
   }
  ],
  "raw": ""

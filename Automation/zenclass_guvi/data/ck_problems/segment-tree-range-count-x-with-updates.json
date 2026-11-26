@@ -3,14 +3,22 @@
  "slug": "segment-tree-range-count-x-with-updates",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1564. Segment Tree: Range Count > X with Updates\n\n80\n\nHard\n\nProblem Statement:\nGiven an array of integers, you are required to answer two types of queries efficiently:\n1. Update the value at a specific index in the array.\n2. Given a range [L, R] and an integer X, count how many elements in the subarray from index L to R (inclusive) are strictly greater than X.\nYou need to process Q such queries.",
- "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial elements of the array.\n- The next Q lines each describe a query:\n- For an update query: \"1 idx val\" (set array[idx] = val, 0-based indexing)\n- For a range query: \"2 L R X\" (count elements > X in array[L..R], 0-based indexing)",
+ "description": "olutions\nSubmissions\n1564\n. \nSegment Tree: Range Count > X with Updates\n80\nHard\nProblem Statement:\nGiven an array of integers, you are required to answer two types of queries efficiently:\n1. Update the value at a specific index in the array.\n2. Given a range [L, R] and an integer X, count how many elements in the subarray from index L to R (inclusive) are strictly greater than X.\nYou need to process Q such queries. \nInput Description:\n- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial elements of the array.\n- The next Q lines each describe a query:\n\u00a0- For an update query: \"1 idx val\" (set array[idx] = val, 0-based indexing)\n\u00a0- For a range query: \"2 L R X\" (count elements > X in array[L..R], 0-based indexing) \nOutput Description:\nFor each range query, output a single integer (the count), each on a new line. \nSample Input:\n6 5\n1 5 2 7 3 4\n2 1 4 3\n1 2 8\n2 0 5 4\n1 4 1\n2 3 5 2 \nSample Output:\n2\n3\n2 \nExplanation:\n- Query 1: Elements in [1,4] are [5,2,7,3]. Elements > 3 are [5,7], so output 2.\n- Query 2: After update, array = [1,5,8,7,3,4]. Elements in [0,5] are [1,5,8,7,3,4]. Elements > 4 are [5,8,7], so output 3.\n- Query 3: After update, array = [1,5,8,7,1,4]. Elements in [3,5] are [7,1,4]. Elements > 2 are [7,4], so output 2. \nAccepted \n10\nSubmissions \n15\nAcceptance Rate \n66.67\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n2 4 6 8 10\n2 0 4 5\n1 2 3\n2 1 3 2\nOutput\n3\n3\nInput\n4 4\n1 1 1 1\n2 0 3 0\n1 1 2\n2 0 3 1\n2 2 2 0\nOutput\n4\n1\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n2 4 6 8 10\n2 0 4 5\n1 2 3\n2 1 3 2\nOutput\n3\n3\nInput\n4 4\n1 1 1 1\n2 0 3 0\n1 1 2\n2 0 3 1\n2 2 2 0\nOutput\n4\n1\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSegment Tree: Range Count > X with Updates\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is in",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial elements of the array.\n- The next Q lines each describe a query:\n\u00a0- For an update query: \"1 idx val\" (set array[idx] = val, 0-based indexing)\n\u00a0- For a range query: \"2 L R X\" (count elements > X in array[L..R], 0-based indexing)",
  "output_spec": "For each range query, output a single integer (the count), each on a new line.",
  "constraints": "",
  "samples": [
   {
    "input": "6 5\n1 5 2 7 3 4\n2 1 4 3\n1 2 8\n2 0 5 4\n1 4 1\n2 3 5 2",
    "output": "2\n3\n2"
+  },
+  {
+   "input": "5 3\n2 4 6 8 10\n2 0 4 5\n1 2 3\n2 1 3 2",
+   "output": "3\n3"
+  },
+  {
+   "input": "4 4\n1 1 1 1\n2 0 3 0\n1 1 2\n2 0 3 1\n2 2 2 0",
+   "output": "4\n1\n1"
   }
  ],
  "raw": ""

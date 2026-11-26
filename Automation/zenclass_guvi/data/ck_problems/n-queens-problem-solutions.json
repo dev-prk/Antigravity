@@ -3,14 +3,22 @@
  "slug": "n-queens-problem-solutions",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1454. N-Queens Problem Solutions\n\n40\n\nMedium\n\nProblem Statement:\nGiven an integer N, place N queens on an N\u00d7N chessboard so that no two queens threaten each other. A queen can attack another queen if they are on the same row, column, or diagonal. Your task is to print all possible distinct solutions to the N-Queens problem. Each solution should be represented as a list of strings, where each string represents a row of the chessboard, and 'Q' indicates a queen and '.' indicates an empty space.",
+ "description": "blem\nHints & Solutions\nSubmissions\n1454\n. \nN-Queens Problem Solutions\n40\nMedium\nProblem Statement:\nGiven an integer N, place N queens on an N\u00d7N chessboard so that no two queens threaten each other. A queen can attack another queen if they are on the same row, column, or diagonal. Your task is to print all possible distinct solutions to the N-Queens problem. Each solution should be represented as a list of strings, where each string represents a row of the chessboard, and 'Q' indicates a queen and '.' indicates an empty space. \nInput Description:\n- A single integer N (1 \u2264 N \u2264 9), the size of the chessboard and the number of queens to place. \nOutput Description:\n- Print all possible solutions. For each solution, print N lines representing the chessboard configuration. Separate different solutions by a blank line. If there are no solutions, print \"No solution\". \nSample Input:\n4 \nSample Output:\n.Q..\n...Q\nQ...\n..Q. \n..Q.\nQ...\n...Q\n.Q.. \nExplanation:\nThere are two possible ways to place 4 queens on a 4x4 chessboard so that no two queens threaten each other. Each solution is printed as N lines, with 'Q' for a queen and '.' for an empty cell. Solutions are separated by a blank line. \nAccepted \n67\nSubmissions \n79\nAcceptance Rate \n84.81\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\nQ\nInput\n2\nOutput\nNo solution\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\nQ\nInput\n2\nOutput\nNo solution\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nN-Queens Problem Solutions\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- A single integer N (1 \u2264 N \u2264 9), the size of the chessboard and the number of queens to place.",
  "output_spec": "- Print all possible solutions. For each solution, print N lines representing the chessboard configuration. Separate different solutions by a blank line. If there are no solutions, print \"No solution\".",
  "constraints": "",
  "samples": [
   {
    "input": "4",
-   "output": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q.."
+   "output": ".Q..\n...Q\nQ...\n..Q. \n..Q.\nQ...\n...Q\n.Q.."
+  },
+  {
+   "input": "1",
+   "output": "Q"
+  },
+  {
+   "input": "2",
+   "output": "No solution"
   }
  ],
  "raw": ""

@@ -3,14 +3,18 @@
  "slug": "multiply-two-3x3-matrices",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1739. Multiply Two 3x3 Matrices\n\n50\n\nMedium  Topics\n\n#Multiply Two 3x3 Matrices\n\nProblem Statement:\nMultiply two 3\u00d73 matrices and print the result.",
+ "description": "s\n1739\n. \nMultiply Two 3x3 Matrices\n50\nMedium\nTopics\n#Multiply Two 3x3 Matrices\nProblem Statement:\nMultiply two 3\u00d73 matrices and print the result.\nInput Description:\nTwo 3\u00d73 matrices.\nOutput Description:\nResultant 3\u00d73 matrix.\nSample Input:\n1 2 3\n4 5 6\n7 8 9\n1 0 0\n0 1 0\n0 0 1\nSample Output:\n1 2 3\n4 5 6\n7 8 9\nAccepted \n3k\nSubmissions \n5k\nAcceptance Rate \n56.93\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n1 1 1\n1 1 1\n1 1 1\n1 1 1\n1 1 1\n1 1 1\nOutput\n3 3 3\n3 3 3\n3 3 3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n1 1 1\n1 1 1\n1 1 1\n1 1 1\n1 1 1\n1 1 1\nOutput\n3 3 3\n3 3 3\n3 3 3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMultiply Two 3x3 Matrices\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two 3\u00d73 matrices.",
  "output_spec": "Resultant 3\u00d73 matrix.",
  "constraints": "",
  "samples": [
   {
-   "input": "1 2 3\n4 5 6\n7 8 9\n\n1 0 0\n0 1 0\n0 0 1",
+   "input": "1 2 3\n4 5 6\n7 8 9\n1 0 0\n0 1 0\n0 0 1",
    "output": "1 2 3\n4 5 6\n7 8 9"
+  },
+  {
+   "input": "1 1 1\n1 1 1\n1 1 1\n1 1 1\n1 1 1\n1 1 1",
+   "output": "3 3 3\n3 3 3\n3 3 3"
   }
  ],
  "raw": ""

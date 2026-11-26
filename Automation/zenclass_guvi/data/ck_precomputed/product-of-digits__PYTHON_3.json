@@ -1,0 +1,1 @@
+{"slug": "product-of-digits", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    line = sys.stdin.readline().strip()\n    if not line:\n        print(0)\n        return\n    product = 1\n    for char in line:\n        digit = int(char)\n        product *= digit\n    print(product)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

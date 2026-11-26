@@ -3,14 +3,18 @@
  "slug": "multi-base-number-converter",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1027. Multi-Base Number Converter\n\n40\n\nMedium\n\nProblem Statement:\nDesign and develop a number converter that performs the decimal number into binary, octal, and hexadecimal numbers using user-defined functions and vice-versa.",
- "input_spec": "The first line of the space-separated integer input consists of choices C1 and C2 indicating the conversion units from a given unit to a required unit.\n\nBelow are the choices that are available:\n\n1- Decimal\n\n2- Binary\n\n3- Octal\n\n4- Hexadecimal\n\nThe second line of the input consists of a single input value X(a C1 number) which need to be converted to a C2 number",
- "output_spec": "The output consists of a single value indicating the converted C2 number of the given input X",
+ "description": "lem\nHints & Solutions\nSubmissions\n1027\n. \nMulti-Base Number Converter\n40\nMedium\nProblem Statement:\nDesign and develop a number converter that performs the decimal number into binary, octal, and hexadecimal numbers using user-defined functions and vice-versa. \nInput Description:\nThe first line of the space-separated integer input consists of choices C1 and C2 indicating the conversion units from a given unit to a required unit. \nBelow are the choices that are available: \n1- Decimal \n2- Binary \n3- Octal \n4- Hexadecimal \nThe second line of the input consists of a single input value X(a C1 number) which need to be converted to a C2 number \nOutput Description:\nThe output consists of a single value indicating the converted C2 number of the given input X \nExplanation:\nSelf Explanatory \nSample Input:\n1 2\n35 \nSample Output:\n100011 \nAccepted \n147\nSubmissions \n200\nAcceptance Rate \n73.5\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2\n35\nOutput\n100011\nInput\n2 1\n100011\nOutput\n35\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1 2\n35\nOutput\n100011\nInput\n2 1\n100011\nOutput\n35\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMulti-Base Number Converter\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line of the space-separated integer input consists of choices C1 and C2 indicating the conversion units from a given unit to a required unit. \nBelow are the choices that are available: \n1- Decimal \n2- Binary \n3- Octal \n4- Hexadecimal \nThe second line of the input consists of a single input value X(a C1 number) which need to be converted to a C2 number",
+ "output_spec": "The output consists of a single value indicating the converted C2 number of the given input X \nExplanation:\nSelf Explanatory",
  "constraints": "",
  "samples": [
   {
    "input": "1 2\n35",
    "output": "100011"
+  },
+  {
+   "input": "2 1\n100011",
+   "output": "35"
   }
  ],
  "raw": ""

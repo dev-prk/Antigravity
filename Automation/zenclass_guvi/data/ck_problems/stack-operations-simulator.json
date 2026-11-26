@@ -3,14 +3,26 @@
  "slug": "stack-operations-simulator",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1997. Stack Operations Simulator\n\n60\n\nMedium\n\nProblem Statement\n\nSimulate a series of stack operations \u2014 PUSH, POP, and PEEK \u2014 and print the appropriate output for each.\n\nDescription\n\nRead an integer q, the number of operations, followed by q operations. Each operation is one of: \"PUSH x\" (push the integer x onto the stack), \"POP\" (remove and print the top element, or print \"Stack is empty\" if the stack has no elements), or \"PEEK\" (print the top element without removing it, or print \"Stack is empty\" if the stack has no elements).",
+ "description": "blem\nHints & Solutions\nSubmissions\n1997\n. \nStack Operations Simulator\n60\nMedium\nProblem Statement\nSimulate a series of stack operations \u2014 PUSH, POP, and PEEK \u2014 and print the appropriate output for each.\nDescription\nRead an integer q, the number of operations, followed by q operations. Each operation is one of: \"PUSH x\" (push the integer x onto the stack), \"POP\" (remove and print the top element, or print \"Stack is empty\" if the stack has no elements), or \"PEEK\" (print the top element without removing it, or print \"Stack is empty\" if the stack has no elements).\nInput Description\nThe first line contains an integer q (1 \u2264 q \u2264 100). Each of the next q lines contains one operation: either \"PUSH x\", \"POP\", or \"PEEK\".\nOutput Description\nFor every POP or PEEK operation, print the result on its own line. PUSH operations do not produce any output.\nSample Input\n5\nPUSH 10\nPUSH 20\nPEEK\nPOP\nPOP\nSample Output\n20\n20\n10\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\nPOP\nPUSH 5\nPEEK\nOutput\nStack is empty\n5\nInput\n4\nPUSH 1\nPUSH 2\nPUSH 3\nPOP\nOutput\n3\nInput\n2\nPEEK\nPOP\nOutput\nStack is empty\nStack is empty\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n3\nPOP\nPUSH 5\nPEEK\nOutput\nStack is empty\n5\nInput\n4\nPUSH 1\nPUSH 2\nPUSH 3\nPOP\nOutput\n3\nInput\n2\nPEEK\nPOP\nOutput\nStack is empty\nStack is empty\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nStack Operations Simulator\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains an integer q (1 \u2264 q \u2264 100). Each of the next q lines contains one operation: either \"PUSH x\", \"POP\", or \"PEEK\".",
- "output_spec": "for each.\n\nDescription\n\nRead an integer q, the number of operations, followed by q operations. Each operation is one of: \"PUSH x\" (push the integer x onto the stack), \"POP\" (remove and print the top element, or print \"Stack is empty\" if the stack has no elements), or \"PEEK\" (print the top element without removing it, or print \"Stack is empty\" if the stack has no elements).\n\nInput Description\n\nThe first line contains an integer q (1 \u2264 q \u2264 100). Each of the next q lines contains one operation: either \"PUSH x\", \"POP\", or \"PEEK\".\n\nOutput Description\n\nFor every POP or PEEK operation, print the result on its own line. PUSH operations do not produce any output.",
+ "output_spec": "For every POP or PEEK operation, print the result on its own line. PUSH operations do not produce any output.",
  "constraints": "",
  "samples": [
   {
    "input": "5\nPUSH 10\nPUSH 20\nPEEK\nPOP\nPOP",
    "output": "20\n20\n10"
+  },
+  {
+   "input": "3\nPOP\nPUSH 5\nPEEK",
+   "output": "Stack is empty\n5"
+  },
+  {
+   "input": "4\nPUSH 1\nPUSH 2\nPUSH 3\nPOP",
+   "output": "3"
+  },
+  {
+   "input": "2\nPEEK\nPOP",
+   "output": "Stack is empty\nStack is empty"
   }
  ],
  "raw": ""

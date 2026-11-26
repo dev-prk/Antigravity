@@ -1,0 +1,1 @@
+{"slug": "reverse-string-with-separator", "lang": "PYTHON 3", "code": "import sys\ns = sys.stdin.readline()\nif s.endswith('\\n'):\n    s = s[:-1]\nif s:\n    sys.stdout.write('-'.join(s[::-1]))\n", "local_ok": true, "err": ""}

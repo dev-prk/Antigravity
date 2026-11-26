@@ -3,14 +3,18 @@
  "slug": "quick-sort-sorting-arrays",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1624. Quick Sort, Sorting, Arrays\n\n70\n\nHard\n\nProblem Statement:  Sort Integers in Descending Order Using Quick Sort\nWrite a program to sort an array of integers in descending order using the Quick Sort algorithm.\n\nDescription\n\nQuick Sort is a divide-and-conquer algorithm. The program should take an integer array as input and rearrange the elements in non-increasing order. Use Quick Sort to partition the array around a pivot and recursively sort the sub-arrays.\n\nInput Format\n\nFirst line: An integer n (size of the array)\n\nSecond line: n integers separated by spaces\n\nOutput Format\n\nSorted array in descending order",
- "input_spec": "and rearrange the elements in non-increasing order. Use Quick Sort to partition the array around a pivot and recursively sort the sub-arrays.\n\nInput Format\n\nFirst line: An integer n (size of the array)\n\nSecond line: n integers separated by spaces",
- "output_spec": "Sorted array in descending order",
+ "description": "oblem\nHints & Solutions\nSubmissions\n1624\n. \nQuick Sort, Sorting, Arrays\n70\nHard\nProblem Statement:\n Sort Integers in Descending Order Using Quick Sort\nWrite a program to sort an array of integers in descending order using the Quick Sort algorithm.\nDescription\nQuick Sort is a divide-and-conquer algorithm. The program should take an integer array as input and rearrange the elements in non-increasing order. Use Quick Sort to partition the array around a pivot and recursively sort the sub-arrays.\nInput Format\nFirst line: An integer n (size of the array)\nSecond line: n integers separated by spaces\nOutput Format\nSorted array in descending order\nSample Input\n5\n2 9 1 7 3\nSample Output\n9 7 3 2 1\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n90.24\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n6\n10 5 20 5 15 25\nOutput\n25 20 15 10 5 5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n6\n10 5 20 5 15 25\nOutput\n25 20 15 10 5 5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nQuick Sort, Sorting, Arrays\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n2 9 1 7 3",
    "output": "9 7 3 2 1"
+  },
+  {
+   "input": "6\n10 5 20 5 15 25",
+   "output": "25 20 15 10 5 5"
   }
  ],
  "raw": ""

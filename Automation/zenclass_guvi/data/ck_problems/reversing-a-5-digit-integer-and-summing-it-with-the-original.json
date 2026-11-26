@@ -3,7 +3,7 @@
  "slug": "reversing-a-5-digit-integer-and-summing-it-with-the-original",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2094. Reversing a 5-Digit Integer and Summing It With the Original\n\n80\n\nHard\n\nProblem Statement\nRead a 5-digit integer, reverse its digits, and print both the reversed number and the sum of the original number and its reverse.\nDescription\nRead a 5-digit integer num and store its original value in a separate variable, since num itself will be modified while extracting digits. Extract all five digits using % and / repeated five times, and rebuild them in reverse order to get the reversed number. Print the reversed number, then print the sum of the original number and the reversed number.",
+ "description": "ns\n2094\n. \nReversing a 5-Digit Integer and Summing It With the Original\n80\nHard\nProblem Statement\nRead a 5-digit integer, reverse its digits, and print both the reversed number and the sum of the original number and its reverse.\nDescription\nRead a 5-digit integer num and store its original value in a separate variable, since num itself will be modified while extracting digits. Extract all five digits using % and / repeated five times, and rebuild them in reverse order to get the reversed number. Print the reversed number, then print the sum of the original number and the reversed number.\nInput Description\nA single line containing a 5-digit integer num (10000 \u2264 num \u2264 99999).\nOutput Description\nPrint the reverse of num on the first line, then the sum of num and its reverse on the second line.\nSample Input\n12345\nSample Output\n54321\n66666\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n12345\nOutput\n54321\n66666\nInput\n10000\nOutput\n1\n10001\nInput\n99999\nOutput\n99999\n199998\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n12345\nOutput\n54321\n66666\nInput\n10000\nOutput\n1\n10001\nInput\n99999\nOutput\n99999\n199998\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nReversing a 5-Digit Integer and Summing It With the Original\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single line containing a 5-digit integer num (10000 \u2264 num \u2264 99999).",
  "output_spec": "Print the reverse of num on the first line, then the sum of num and its reverse on the second line.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "12345",
    "output": "54321\n66666"
+  },
+  {
+   "input": "10000",
+   "output": "1\n10001"
+  },
+  {
+   "input": "99999",
+   "output": "99999\n199998"
   }
  ],
  "raw": ""

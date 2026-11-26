@@ -3,7 +3,7 @@
  "slug": "set-operations-on-two-groups-of-numbers",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2193. Set Operations on Two Groups of Numbers\n\n60\n\nMedium\n\nProblem Statement\nRead two groups of integers, A and B, and print their union, their intersection and the numbers that are in A but not in B.\nDescription\nTwo groups of integers, A and B, are given. A number may be repeated inside a group, but each group must be treated as a set. Print the union of A and B, the intersection of A and B, and the difference A - B (the numbers that are in A but not in B). Print every result in increasing order.",
+ "description": "Solutions\nSubmissions\n2193\n. \nSet Operations on Two Groups of Numbers\n60\nMedium\nProblem Statement\nRead two groups of integers, A and B, and print their union, their intersection and the numbers that are in A but not in B.\nDescription\nTwo groups of integers, A and B, are given. A number may be repeated inside a group, but each group must be treated as a set. Print the union of A and B, the intersection of A and B, and the difference A - B (the numbers that are in A but not in B). Print every result in increasing order.\nInput Description\nTwo lines. The first line contains the integers of group A and the second line contains the integers of group B, separated by single spaces. (Each group has 1 to 20 integers, each between -100 and 100)\nOutput Description\nPrint 3 lines: the union, the intersection and the difference A - B. Print each result as a list in square brackets, in increasing order, with the numbers separated by a comma and a space, for example [1, 2, 3]. If a result has no numbers, print [].\nSample Input\n1 2 3 4\n3 4 5 6\nSample Output\n[1, 2, 3, 4, 5, 6]\n[3, 4]\n[1, 2]\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1 2 3 4\n3 4 5 6\nOutput\n[1, 2, 3, 4, 5, 6]\n[3, 4]\n[1, 2]\nInput\n5 5 7\n7 8 8\nOutput\n[5, 7, 8]\n[7]\n[5]\nInput\n1 2\n-3 4\nOutput\n[-3, 1, 2, 4]\n[]\n[1, 2]\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n1 2 3 4\n3 4 5 6\nOutput\n[1, 2, 3, 4, 5, 6]\n[3, 4]\n[1, 2]\nInput\n5 5 7\n7 8 8\nOutput\n[5, 7, 8]\n[7]\n[5]\nInput\n1 2\n-3 4\nOutput\n[-3, 1, 2, 4]\n[]\n[1, 2]\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSet Operations on Two Groups of Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0",
  "input_spec": "Two lines. The first line contains the integers of group A and the second line contains the integers of group B, separated by single spaces. (Each group has 1 to 20 integers, each between -100 and 100)",
  "output_spec": "Print 3 lines: the union, the intersection and the difference A - B. Print each result as a list in square brackets, in increasing order, with the numbers separated by a comma and a space, for example [1, 2, 3]. If a result has no numbers, print [].",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "1 2 3 4\n3 4 5 6",
    "output": "[1, 2, 3, 4, 5, 6]\n[3, 4]\n[1, 2]"
+  },
+  {
+   "input": "5 5 7\n7 8 8",
+   "output": "[5, 7, 8]\n[7]\n[5]"
+  },
+  {
+   "input": "1 2\n-3 4",
+   "output": "[-3, 1, 2, 4]\n[]\n[1, 2]"
   }
  ],
  "raw": ""

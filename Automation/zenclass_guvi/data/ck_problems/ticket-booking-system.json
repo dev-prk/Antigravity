@@ -3,14 +3,18 @@
  "slug": "ticket-booking-system",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1654. Ticket Booking System\n\n60\n\nMedium\n\nTicket Booking System\n\nProblem Statement:\nWrite a program to calculate the fare of a ticket based on the travel type.\nThe program should use an abstract class Ticket with an abstract method calculateFare(). Subclasses BusTicket, TrainTicket, and FlightTicket override this method.\nFare per km:\n\nBus = 5\n\nTrain = 8\n\nFlight = 15\n\nDescription:\nThe program should accept ticket type and distance in kilometers.\nIt should calculate and display the fare according to the ticket type.\n\nInput Format:\n\nA string (ticket type: bus/train/flight)\n\nAn integer (distance in km)\n\nOutput Format:\n\nTicket type\n\nFare",
- "input_spec": "A string (ticket type: bus/train/flight)\n\nAn integer (distance in km)",
- "output_spec": "Ticket type\n\nFare",
+ "description": "tions\nSubmissions\n1654\n. \nTicket Booking System\n60\nMedium\nTicket Booking System\nProblem Statement:\nWrite a program to calculate the fare of a ticket based on the travel type.\nThe program should use an abstract class Ticket with an abstract method calculateFare(). Subclasses BusTicket, TrainTicket, and FlightTicket override this method.\nFare per km:\nBus = 5\nTrain = 8\nFlight = 15\nDescription:\nThe program should accept ticket type and distance in kilometers.\nIt should calculate and display the fare according to the ticket type.\nInput Format:\nA string (ticket type: bus/train/flight)\nAn integer (distance in km)\nOutput Format:\nTicket type\nFare\nSample Input:\nbus\n120\nSample Output:\nTicket Type: Bus Ticket\nFare: 600\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n92.48\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\nbus\n100\nOutput\nTicket Type: Bus Ticket\nFare: 500\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\nbus\n100\nOutput\nTicket Type: Bus Ticket\nFare: 500\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTicket Booking System\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "bus\n120",
    "output": "Ticket Type: Bus Ticket\nFare: 600"
+  },
+  {
+   "input": "bus\n100",
+   "output": "Ticket Type: Bus Ticket\nFare: 500"
   }
  ],
  "raw": ""

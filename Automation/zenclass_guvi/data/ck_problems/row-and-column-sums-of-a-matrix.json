@@ -3,7 +3,7 @@
  "slug": "row-and-column-sums-of-a-matrix",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2191.  Row and Column Sums of a Matrix\n\n40\n\nMedium\n\nProblem Statement\nRead a matrix of integers and print the sum of each row and the sum of each column.\nDescription\nA matrix (a table of numbers) with r rows and c columns is given. Find the sum of the numbers in each row and the sum of the numbers in each column, and print them.",
+ "description": "ints & Solutions\nSubmissions\n2191\n. \n Row and Column Sums of a Matrix\n40\nMedium\nProblem Statement\nRead a matrix of integers and print the sum of each row and the sum of each column.\nDescription\nA matrix (a table of numbers) with r rows and c columns is given. Find the sum of the numbers in each row and the sum of the numbers in each column, and print them.\nInput Description\nThe first line contains two integers r and c, separated by a space. (1 <= r, c <= 5) Each of the next r lines contains c integers separated by single spaces. (Each integer is between -100 and 100)\nOutput Description\nPrint 2 lines. Line 1: the sums of the rows, from the first row to the last row. Line 2: the sums of the columns, from the first column to the last column. Print each result as a list in square brackets, with the numbers separated by a comma and a space, for example [6, 15].\nSample Input\n2 3\n1 2 3\n4 5 6\nSample Output\n[6, 15]\n[5, 7, 9]\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 3\n1 2 3\n4 5 6\nOutput\n[6, 15]\n[5, 7, 9]\nInput\n3 2\n1 -1\n0 5\n7 3\nOutput\n[0, 5, 10]\n[8, 7]\nInput\n1 4\n-1 5 0 2\nOutput\n[6]\n[-1, 5, 0, 2]\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n2 3\n1 2 3\n4 5 6\nOutput\n[6, 15]\n[5, 7, 9]\nInput\n3 2\n1 -1\n0 5\n7 3\nOutput\n[0, 5, 10]\n[8, 7]\nInput\n1 4\n-1 5 0 2\nOutput\n[6]\n[-1, 5, 0, 2]\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\n Row and Column Sums of a Matrix\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains two integers r and c, separated by a space. (1 <= r, c <= 5) Each of the next r lines contains c integers separated by single spaces. (Each integer is between -100 and 100)",
  "output_spec": "Print 2 lines. Line 1: the sums of the rows, from the first row to the last row. Line 2: the sums of the columns, from the first column to the last column. Print each result as a list in square brackets, with the numbers separated by a comma and a space, for example [6, 15].",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "2 3\n1 2 3\n4 5 6",
    "output": "[6, 15]\n[5, 7, 9]"
+  },
+  {
+   "input": "3 2\n1 -1\n0 5\n7 3",
+   "output": "[0, 5, 10]\n[8, 7]"
+  },
+  {
+   "input": "1 4\n-1 5 0 2",
+   "output": "[6]\n[-1, 5, 0, 2]"
   }
  ],
  "raw": ""

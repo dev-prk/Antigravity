@@ -1,0 +1,1 @@
+{"slug": "bit-count-kernighan", "lang": "PYTHON 3", "code": "import sys\n\ndef count_set_bits(n):\n    count = 0\n    while n > 0:\n        n = n & (n - 1)\n        count += 1\n    return count\n\nline = sys.stdin.readline().strip()\nx = int(line.split('=')[1])\nprint(count_set_bits(x))\n", "local_ok": true, "err": ""}

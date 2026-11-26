@@ -3,7 +3,7 @@
  "slug": "validate-binary-search-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1530. Validate Binary Search Tree\n\n80\n\nHard\n\nProblem Statement:\nGiven the root of a binary tree, determine if it is a valid binary search tree (BST). A valid BST is defined as follows: - The left subtree of a node contains only nodes with keys less than the node's key. - The right subtree of a node contains only nodes with keys greater than the node's key. - Both the left and right subtrees must also be binary search trees.",
+ "description": "oblem\nHints & Solutions\nSubmissions\n1530\n. \nValidate Binary Search Tree\n80\nHard\nProblem Statement:\nGiven the root of a binary tree, determine if it is a valid binary search tree (BST). A valid BST is defined as follows: - The left subtree of a node contains only nodes with keys less than the node's key. - The right subtree of a node contains only nodes with keys greater than the node's key. - Both the left and right subtrees must also be binary search trees. \nInput Description:\n- The first line contains an integer n, the number of nodes in the tree.\n- The next n lines each contain three values: node value, left child index, right child index.\n- If a child does not exist, its index is -1.\n- The root node is always at index 0. \nOutput Description:\n- Print \"true\" if the binary tree is a valid BST, otherwise print \"false\". \nSample Input:\n3\n2 1 2\n1 -1 -1\n3 -1 -1 \nSample Output:\ntrue \nExplanation:\nThe tree is:\n 2\n / \\\n 1 3\nBoth left and right subtrees satisfy BST properties. \nAccepted \n26\nSubmissions \n27\nAcceptance Rate \n96.3\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n3 1 4\n1 -1 -1\n4 -1 2\n2 -1 -1\n5 -1 -1\nOutput\ntrue\nInput\n3\n5 1 2\n1 -1 -1\n4 -1 -1\nOutput\nfalse\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n3 1 4\n1 -1 -1\n4 -1 2\n2 -1 -1\n5 -1 -1\nOutput\ntrue\nInput\n3\n5 1 2\n1 -1 -1\n4 -1 -1\nOutput\nfalse\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nValidate Binary Search Tree\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer n, the number of nodes in the tree.\n- The next n lines each contain three values: node value, left child index, right child index.\n- If a child does not exist, its index is -1.\n- The root node is always at index 0.",
  "output_spec": "- Print \"true\" if the binary tree is a valid BST, otherwise print \"false\".",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3\n2 1 2\n1 -1 -1\n3 -1 -1",
    "output": "true"
+  },
+  {
+   "input": "5\n3 1 4\n1 -1 -1\n4 -1 2\n2 -1 -1\n5 -1 -1",
+   "output": "true"
+  },
+  {
+   "input": "3\n5 1 2\n1 -1 -1\n4 -1 -1",
+   "output": "false"
   }
  ],
  "raw": ""

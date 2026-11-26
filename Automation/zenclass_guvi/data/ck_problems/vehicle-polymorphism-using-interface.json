@@ -3,14 +3,22 @@
  "slug": "vehicle-polymorphism-using-interface",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2014. Vehicle Polymorphism Using Interface\n\n90\n\nHard\n\nProblem Statement\n\nCreate an interface Vehicle with two methods:\n\ngetSpeed()\ndisplay()\n\nCreate three classes:\n\nCar\nBike\nBus\n\nEach class should implement both methods.\n\nUse a Vehicle reference to demonstrate runtime polymorphism and display the speed of the selected vehicle.",
- "input_spec": "The first line contains the vehicle type: car, bike, or bus.\n\nThe second line contains its speed.",
+ "description": "ts & Solutions\nSubmissions\n2014\n. \nVehicle Polymorphism Using Interface\n90\nHard\nProblem Statement\nCreate an interface Vehicle with two methods:\ngetSpeed()\ndisplay()\nCreate three classes:\nCar\nBike\nBus\nEach class should implement both methods.\nUse a Vehicle reference to demonstrate runtime polymorphism and display the speed of the selected vehicle.\nInput Description\nThe first line contains the vehicle type: car, bike, or bus.\nThe second line contains its speed.\nOutput Description\nPrint the vehicle type and speed.\nSample Input\ncar\n120\nSample Output\nCar Speed: 120\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\ncar\n120\nOutput\nCar Speed: 120\nInput\nbike\n80\nOutput\nBike Speed: 80\nInput\nbus\n60\nOutput\nBus Speed: 60\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\ncar\n120\nOutput\nCar Speed: 120\nInput\nbike\n80\nOutput\nBike Speed: 80\nInput\nbus\n60\nOutput\nBus Speed: 60\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nVehicle Polymorphism Using Interface\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains the vehicle type: car, bike, or bus.\nThe second line contains its speed.",
  "output_spec": "Print the vehicle type and speed.",
  "constraints": "",
  "samples": [
   {
    "input": "car\n120",
    "output": "Car Speed: 120"
+  },
+  {
+   "input": "bike\n80",
+   "output": "Bike Speed: 80"
+  },
+  {
+   "input": "bus\n60",
+   "output": "Bus Speed: 60"
   }
  ],
  "raw": ""

@@ -1,0 +1,1 @@
+{"slug": "number-check-odd-even-divisible-by-7", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip()\n    if not data:\n        return\n    n = int(data)\n    if n % 7 == 0:\n        print(\"Yes\")\n    else:\n        print(\"No\")\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "err": "empty_llm"}

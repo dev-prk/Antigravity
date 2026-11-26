@@ -3,14 +3,22 @@
  "slug": "rhombus-star-pattern",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n898. Rhombus Star Pattern\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate an Rhombus Pattern using stars.",
+ "description": "blem\nHints & Solutions\nSubmissions\n898\n. \nRhombus Star Pattern\n50\nMedium\nTopics\nProblem Statement:\nWrite a code to generate an Rhombus Pattern using stars. \nInput Description:\nGiven an integer R indicates number of rows.Where 1<=R<=100 \nOutput Description:\nPrint the solid rhombus using stars with the size of rhombus R. \nExplanation:\nFrom the given input R=4 print the rhombus 4 * 4 using stars. \nSample Input:\n4 \nSample Output:\n **** \n **** \n **** \n**** \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n94.73\n%\nTopics\npatterns\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n ****\n ****\n ****\n****\nInput\n5\nOutput\n *****\n *****\n *****\n *****\n*****\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n ****\n ****\n ****\n****\nInput\n5\nOutput\n *****\n *****\n *****\n *****\n*****\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRhombus Star Pattern\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
- "output_spec": "Print the solid rhombus using stars with the size of rhombus R.",
+ "output_spec": "Print the solid rhombus using stars with the size of rhombus R. \nExplanation:\nFrom the given input R=4 print the rhombus 4 * 4 using stars.",
  "constraints": "",
  "samples": [
   {
    "input": "4",
-   "output": "****\n****\n****\n****"
+   "output": "**** \n **** \n **** \n****"
+  },
+  {
+   "input": "4",
+   "output": "****\n ****\n ****\n****"
+  },
+  {
+   "input": "5",
+   "output": "*****\n *****\n *****\n *****\n*****"
   }
  ],
  "raw": ""

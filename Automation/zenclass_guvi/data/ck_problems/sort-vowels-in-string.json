@@ -3,14 +3,22 @@
  "slug": "sort-vowels-in-string",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n658. Sort Vowels in String\n\n60\n\nMedium  Topics\n\nProblem Statement:\nYou are given a long string without spaces.Your task is to place the vowels in ascending order. Then print the resulting string",
+ "description": "lem\nHints & Solutions\nSubmissions\n658\n. \nSort Vowels in String\n60\nMedium\nTopics\nProblem Statement:\nYou are given a long string without spaces.Your task is to place the vowels in ascending order. Then print the resulting string \nInput Description:\nYou are given a string \u2018s\u2019 \nOutput Description:\nPrint the obtained string \nExplanation:\nthe vowels in the string ebcda have been arranged in ascending order \nSample Input:\nebcda \nSample Output:\nabcde \nAccepted \n665\nSubmissions \n1k\nAcceptance Rate \n52.74\n%\nTopics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nselva\nOutput\nsalve\nInput\naaaabieoo\nOutput\naaaabeioo\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nselva\nOutput\nsalve\nInput\naaaabieoo\nOutput\naaaabeioo\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSort Vowels in String\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given a string \u2018s\u2019",
- "output_spec": "Print the obtained string",
+ "output_spec": "Print the obtained string \nExplanation:\nthe vowels in the string ebcda have been arranged in ascending order",
  "constraints": "",
  "samples": [
   {
    "input": "ebcda",
    "output": "abcde"
+  },
+  {
+   "input": "selva",
+   "output": "salve"
+  },
+  {
+   "input": "aaaabieoo",
+   "output": "aaaabeioo"
   }
  ],
  "raw": ""

@@ -3,14 +3,22 @@
  "slug": "payment-system-using-interface",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2011. Payment System Using Interface\n\n60\n\nMedium\n\nProblem Statement\n\nCreate an interface Payment with a method pay(int amount).\n\nCreate three classes:\n\nUPI\nCard\nCash\n\nEach class should implement the pay() method and print the corresponding payment method and amount.",
- "input_spec": "The first line contains the payment method: upi, card, or cash.\n\nThe second line contains the payment amount.",
+ "description": "\nHints & Solutions\nSubmissions\n2011\n. \nPayment System Using Interface\n60\nMedium\nProblem Statement\nCreate an interface Payment with a method pay(int amount).\nCreate three classes:\nUPI\nCard\nCash\nEach class should implement the pay() method and print the corresponding payment method and amount.\nInput Description\nThe first line contains the payment method: upi, card, or cash.\nThe second line contains the payment amount.\nOutput Description\nPrint the payment method and amount.\nSample Input\nupi\n500\nSample Output\nUPI Payment: 500\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n2\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nupi\n500\nOutput\nUPI Payment: 500\nInput\ncard\n1200\nOutput\nCard Payment: 1200\nInput\ncash\n750\nOutput\nCash Payment: 750\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nupi\n500\nOutput\nUPI Payment: 500\nInput\ncard\n1200\nOutput\nCard Payment: 1200\nInput\ncash\n750\nOutput\nCash Payment: 750\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPayment System Using Interface\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The first line contains the payment method: upi, card, or cash.\nThe second line contains the payment amount.",
  "output_spec": "Print the payment method and amount.",
  "constraints": "",
  "samples": [
   {
    "input": "upi\n500",
    "output": "UPI Payment: 500"
+  },
+  {
+   "input": "card\n1200",
+   "output": "Card Payment: 1200"
+  },
+  {
+   "input": "cash\n750",
+   "output": "Cash Payment: 750"
   }
  ],
  "raw": ""

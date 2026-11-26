@@ -3,7 +3,7 @@
  "slug": "sum-of-digits-of-a-3-digit-integer",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2091. Sum of Digits of a 3-Digit Integer\n\n60\n\nMedium\n\nProblem Statement\nRead a 3-digit integer and print the sum of its digits, using the % and / operators to pull out each digit.\n\nDescription\nRead a 3-digit integer num. Extract its last digit using the % operator, then remove that digit using the / operator, and repeat this to extract the middle and first digits. Add the three extracted digits together and print the sum. No loop is needed since the number always has exactly three digits.",
+ "description": "ts & Solutions\nSubmissions\n2091\n. \nSum of Digits of a 3-Digit Integer\n60\nMedium\nProblem Statement\nRead a 3-digit integer and print the sum of its digits, using the % and / operators to pull out each digit.\nDescription\nRead a 3-digit integer num. Extract its last digit using the % operator, then remove that digit using the / operator, and repeat this to extract the middle and first digits. Add the three extracted digits together and print the sum. No loop is needed since the number always has exactly three digits.\nInput Description\nA single line containing a 3-digit integer num (100 <= num <= 999).\nOutput Description\nPrint the sum of the digits of num.\nSample Input\n123\nSample Output\n6\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n123\nOutput\n6\nInput\n100\nOutput\n1\nInput\n999\nOutput\n27\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n123\nOutput\n6\nInput\n100\nOutput\n1\nInput\n999\nOutput\n27\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSum of Digits of a 3-Digit Integer\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single line containing a 3-digit integer num (100 <= num <= 999).",
  "output_spec": "Print the sum of the digits of num.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "123",
    "output": "6"
+  },
+  {
+   "input": "100",
+   "output": "1"
+  },
+  {
+   "input": "999",
+   "output": "27"
   }
  ],
  "raw": ""

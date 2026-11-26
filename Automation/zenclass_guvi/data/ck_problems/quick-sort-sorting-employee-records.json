@@ -3,14 +3,18 @@
  "slug": "quick-sort-sorting-employee-records",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1625. Quick Sort, Sorting, Employee Records\n\n70\n\nHard\n\nProblem Statement:  Sort Employees by Salary Using Quick Sort\n\nWrite a program to sort employee records based on their salary in descending order using Quick Sort. If two employees have the same salary, sort them by their name in ascending lexicographic order.\n\nDescription\n\nEach employee record consists of a name (string) and salary (integer). The program should apply Quick Sort to sort by salary first. In case of ties, names should be compared alphabetically.\n\nInput Format\n\nFirst line: An integer n (number of employees)\n\nNext n lines: Each line contains a string (employee name) and an integer (salary)\n\nOutput Format\n\nSorted list of employees with their salaries",
- "input_spec": "First line: An integer n (number of employees)\n\nNext n lines: Each line contains a string (employee name) and an integer (salary)",
- "output_spec": "Sorted list of employees with their salaries",
+ "description": "s & Solutions\nSubmissions\n1625\n. \nQuick Sort, Sorting, Employee Records\n70\nHard\nProblem Statement:\n Sort Employees by Salary Using Quick Sort\nWrite a program to sort employee records based on their salary in descending order using Quick Sort. If two employees have the same salary, sort them by their name in ascending lexicographic order.\nDescription\nEach employee record consists of a name (string) and salary (integer). The program should apply Quick Sort to sort by salary first. In case of ties, names should be compared alphabetically.\nInput Format\nFirst line: An integer n (number of employees)\nNext n lines: Each line contains a string (employee name) and an integer (salary)\nOutput Format\nSorted list of employees with their salaries\nSample Input\n3\nAmit 50000\nRiya 60000\nKaran 50000\nSample Output\nRiya 60000\nAmit 50000\nKaran 50000\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n94.59\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n4\nJohn 40000\nAlice 75000\nBob 75000\nEve 50000\nOutput\nAlice 75000\nBob 75000\nEve 50000\nJohn 40000\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n4\nJohn 40000\nAlice 75000\nBob 75000\nEve 50000\nOutput\nAlice 75000\nBob 75000\nEve 50000\nJohn 40000\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nQuick Sort, Sorting, Employee Records\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "3\nAmit 50000\nRiya 60000\nKaran 50000",
    "output": "Riya 60000\nAmit 50000\nKaran 50000"
+  },
+  {
+   "input": "4\nJohn 40000\nAlice 75000\nBob 75000\nEve 50000",
+   "output": "Alice 75000\nBob 75000\nEve 50000\nJohn 40000"
   }
  ],
  "raw": ""

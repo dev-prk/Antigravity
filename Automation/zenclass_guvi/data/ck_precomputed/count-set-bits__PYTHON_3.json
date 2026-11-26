@@ -1,0 +1,1 @@
+{"slug": "count-set-bits", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    for s in data:\n        n = int(s)\n        print(n.bit_count())\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "err": "empty_llm"}

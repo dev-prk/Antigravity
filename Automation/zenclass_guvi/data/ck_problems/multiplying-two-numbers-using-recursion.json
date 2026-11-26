@@ -3,14 +3,22 @@
  "slug": "multiplying-two-numbers-using-recursion",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2154. Multiplying Two Numbers Using Recursion\n\n60\n\nMedium\n\nProblem Statement\nRead two non-negative integers and print their product using a recursive function that works by repeated addition.\n\nDescription\nMultiplying a by b is the same as adding a to itself b times. Read two integers a and b from input. Write a recursive function multiply that takes two integer parameters. If b is 0, the function returns 0 (this is the base case). Otherwise, it returns a plus the result of calling itself with the same a and with b - 1. Call the function from main() and print the result. The * operator must not be used inside the function.",
- "input_spec": ". Write a recursive function multiply that takes two integer parameters. If b is 0, the function returns 0 (this is the base case). Otherwise, it returns a plus the result of calling itself with the same a and with b - 1. Call the function from main() and print the result. The * operator must not be used inside the function.\n\nInput Description\nTwo integers a and b separated by a space (0 <= a <= 100, 0 <= b <= 100).",
+ "description": "Solutions\nSubmissions\n2154\n. \nMultiplying Two Numbers Using Recursion\n60\nMedium\nProblem Statement\nRead two non-negative integers and print their product using a recursive function that works by repeated addition.\nDescription\nMultiplying a by b is the same as adding a to itself b times. Read two integers a and b from input. Write a recursive function multiply that takes two integer parameters. If b is 0, the function returns 0 (this is the base case). Otherwise, it returns a plus the result of calling itself with the same a and with b - 1. Call the function from main() and print the result. The * operator must not be used inside the function.\nInput Description\nTwo integers a and b separated by a space (0 <= a <= 100, 0 <= b <= 100).\nOutput Description\nPrint the product of a and b.\nSample Input\n4 3\nSample Output\n12\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n4 3\nOutput\n12\nInput\n7 0\nOutput\n0\nInput\n5 1\nOutput\n5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n4 3\nOutput\n12\nInput\n7 0\nOutput\n0\nInput\n5 1\nOutput\n5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMultiplying Two Numbers Using Recursion\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two integers a and b separated by a space (0 <= a <= 100, 0 <= b <= 100).",
  "output_spec": "Print the product of a and b.",
  "constraints": "",
  "samples": [
   {
    "input": "4 3",
    "output": "12"
+  },
+  {
+   "input": "7 0",
+   "output": "0"
+  },
+  {
+   "input": "5 1",
+   "output": "5"
   }
  ],
  "raw": ""

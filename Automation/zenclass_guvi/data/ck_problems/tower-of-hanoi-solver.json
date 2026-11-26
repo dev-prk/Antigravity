@@ -3,7 +3,7 @@
  "slug": "tower-of-hanoi-solver",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1450. Tower of Hanoi Solver\n\n50\n\nMedium\n\nProblem Statement:\nGiven the number of disks N, write a recursive function to solve the Tower of Hanoi problem. The objective is to move all the disks from the source rod to the destination rod using an auxiliary rod, following these rules:\n1. Only one disk can be moved at a time.\n2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.\n3. No disk may be placed on top of a smaller disk.",
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n1450\n. \nTower of Hanoi Solver\n50\nMedium\nProblem Statement:\nGiven the number of disks N, write a recursive function to solve the Tower of Hanoi problem. The objective is to move all the disks from the source rod to the destination rod using an auxiliary rod, following these rules:\n1. Only one disk can be moved at a time.\n2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.\n3. No disk may be placed on top of a smaller disk. \nInput Description:\n- An integer N, representing the number of disks. \nOutput Description:\n- Print the sequence of moves required to solve the Tower of Hanoi problem.\n- Each move should be printed on a new line in the format: \"Move disk X from rod A to rod B\", where X is the disk number, A is the source rod, and B is the destination rod. \nSample Input:\n3 \nSample Output:\nMove disk 1 from rod A to rod C\nMove disk 2 from rod A to rod B\nMove disk 1 from rod C to rod B\nMove disk 3 from rod A to rod C\nMove disk 1 from rod B to rod A\nMove disk 2 from rod B to rod C\nMove disk 1 from rod A to rod C \nExplanation:\nThere are 3 disks on rod A. The goal is to move all disks to rod C using rod B as auxiliary. The output shows the sequence of moves to achieve this. \nAccepted \n58\nSubmissions \n61\nAcceptance Rate \n95.08\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\nMove disk 1 from rod A to rod C\nInput\n2\nOutput\nMove disk 1 from rod A to rod B\nMove disk 2 from rod A to rod C\nMove disk 1 from rod B to rod C\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\nMove disk 1 from rod A to rod C\nInput\n2\nOutput\nMove disk 1 from rod A to rod B\nMove disk 2 from rod A to rod C\nMove disk 1 from rod B to rod C\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTower of Hanoi Solver\nIssues Encountered\n*\nDescription or examples are unclear o",
  "input_spec": "- An integer N, representing the number of disks.",
  "output_spec": "- Print the sequence of moves required to solve the Tower of Hanoi problem.\n- Each move should be printed on a new line in the format: \"Move disk X from rod A to rod B\", where X is the disk number, A is the source rod, and B is the destination rod.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3",
    "output": "Move disk 1 from rod A to rod C\nMove disk 2 from rod A to rod B\nMove disk 1 from rod C to rod B\nMove disk 3 from rod A to rod C\nMove disk 1 from rod B to rod A\nMove disk 2 from rod B to rod C\nMove disk 1 from rod A to rod C"
+  },
+  {
+   "input": "1",
+   "output": "Move disk 1 from rod A to rod C"
+  },
+  {
+   "input": "2",
+   "output": "Move disk 1 from rod A to rod B\nMove disk 2 from rod A to rod C\nMove disk 1 from rod B to rod C"
   }
  ],
  "raw": ""

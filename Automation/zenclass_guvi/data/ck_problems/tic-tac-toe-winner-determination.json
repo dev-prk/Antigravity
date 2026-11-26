@@ -3,13 +3,21 @@
  "slug": "tic-tac-toe-winner-determination",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n566. Tic-Tac-Toe Winner Determination\n\n50\n\nMedium  Topics\n\nProblem Statement:\nTron is an expert system which, when given the board configuration and entries, determines the winner of the tic tac toe game. Given a 3*3 tic tac toe board as input, along with the filled in entries, determine which one of the players wins the game. Note: Assume player1 takes X and player2 takes O.",
- "input_spec": ", along with the filled in entries, determine which one of the players wins the game. Note: Assume player1 takes X and player2 takes O.\n\nInput Description:\nEntries in the tic tac toe board.",
+ "description": " Solutions\nSubmissions\n566\n. \nTic-Tac-Toe Winner Determination\n50\nMedium\nTopics\nProblem Statement:\nTron is an expert system which, when given the board configuration and entries, determines the winner of the tic tac toe game. Given a 3*3 tic tac toe board as input, along with the filled in entries, determine which one of the players wins the game. Note: Assume player1 takes X and player2 takes O. \nInput Description:\nEntries in the tic tac toe board. \nOutput Description:\nPlayer1/Player2 - whoever the winner is. If the game results in a tie, display \u201cTIE\u201d. \nSample Input:\nX O X\nO X O\nO O X \nSample Output:\nPlayer1 \nExplanation:\nAs \u2018X\u2019 is present on 3 consecutive places (along diagonal), X wins and therefore player1 is the winner. \nAccepted \n533\nSubmissions \n589\nAcceptance Rate \n90.49\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nO X O\nO O X\nX O X \nOutput\nTIE\nInput\nX X X\nO O X\nO X O \nOutput\nPlayer1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nO X O\nO O X\nX O X \nOutput\nTIE\nInput\nX X X\nO O X\nO X O \nOutput\nPlayer1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTic-Tac-Toe Winner Determination\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Entries in the tic tac toe board.",
  "output_spec": "Player1/Player2 - whoever the winner is. If the game results in a tie, display \u201cTIE\u201d.",
  "constraints": "",
  "samples": [
   {
    "input": "X O X\nO X O\nO O X",
+   "output": "Player1"
+  },
+  {
+   "input": "O X O\nO O X\nX O X",
+   "output": "TIE"
+  },
+  {
+   "input": "X X X\nO O X\nO X O",
    "output": "Player1"
   }
  ],

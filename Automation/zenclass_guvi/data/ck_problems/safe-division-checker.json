@@ -3,14 +3,22 @@
  "slug": "safe-division-checker",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1986. Safe Division Checker\n\n90\n\nHard\n\nProblem Statement\n\nGiven two integers, divide the first by the second. Handle the case where the divisor is zero using exception handling instead of letting the program crash.\n\nDescription\n\nRead two integers a and b from input, one per line. Divide a by b and print the quotient. If b is zero, print an error message instead of the result.",
- "input_spec": ", one per line. Divide a by b and print the quotient. If b is zero, print an error message instead of the result.\n\nInput Description\n\nTwo lines, each containing an integer: a and b (-1000 \u2264 a, b \u2264 1000)",
+ "description": "lem\nProblem\nHints & Solutions\nSubmissions\n1986\n. \nSafe Division Checker\n90\nHard\nProblem Statement\nGiven two integers, divide the first by the second. Handle the case where the divisor is zero using exception handling instead of letting the program crash.\nDescription\nRead two integers a and b from input, one per line. Divide a by b and print the quotient. If b is zero, print an error message instead of the result.\nInput Description\nTwo lines, each containing an integer: a and b (-1000 \u2264 a, b \u2264 1000)\nOutput Description\nPrint the quotient of a divided by b. If b is zero, print \"Error: Division by zero not allowed\" instead.\nSample Input\n10\n2\nSample Output\n5\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n20\n4\nOutput\n5\nInput\n15\n0\nOutput\nError: Division by zero not allowed\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n20\n4\nOutput\n5\nInput\n15\n0\nOutput\nError: Division by zero not allowed\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSafe Division Checker\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two lines, each containing an integer: a and b (-1000 \u2264 a, b \u2264 1000)",
  "output_spec": "Print the quotient of a divided by b. If b is zero, print \"Error: Division by zero not allowed\" instead.",
  "constraints": "",
  "samples": [
   {
    "input": "10\n2",
    "output": "5"
+  },
+  {
+   "input": "20\n4",
+   "output": "5"
+  },
+  {
+   "input": "15\n0",
+   "output": "Error: Division by zero not allowed"
   }
  ],
  "raw": ""

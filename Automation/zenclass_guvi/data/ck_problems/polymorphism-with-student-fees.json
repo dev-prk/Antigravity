@@ -3,7 +3,7 @@
  "slug": "polymorphism-with-student-fees",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1085. Polymorphism with Student Fees\n\n50\n\nMedium\n\nProblem Statement:\nIn a college, there are two types of students: Undergraduate and Graduate. Both types of students have a method  get_fee()  that returns the tuition fee. However, the tuition fee is calculated differently for Undergraduate and Graduate students. For Undergraduate students, the tuition fee is a fixed amount of $5000. For Graduate students, the tuition fee is the number of credits taken times $50.\n\nPlease write a Python program that defines classes for Undergraduate and Graduate students, both inheriting from a common Student class. The Student class should have the  get_fee()  method, which should be overridden in the Undergraduate and Graduate classes.",
+ "description": "\nHints & Solutions\nSubmissions\n1085\n. \nPolymorphism with Student Fees\n50\nMedium\nProblem Statement:\nIn a college, there are two types of students: Undergraduate and Graduate. Both types of students have a method \nget_fee()\n that returns the tuition fee. However, the tuition fee is calculated differently for Undergraduate and Graduate students. For Undergraduate students, the tuition fee is a fixed amount of $5000. For Graduate students, the tuition fee is the number of credits taken times $50. \nPlease write a Python program that defines classes for Undergraduate and Graduate students, both inheriting from a common Student class. The Student class should have the \nget_fee()\n method, which should be overridden in the Undergraduate and Graduate classes. \nInput Description:\nThe input consists of the number of credits taken by a Graduate student. \nOutput Description:\nThe output consists of two lines: the fixed tuition fee for an Undergraduate student, and the calculated tuition fee for a Graduate student based on the given credits. \nSample Input:\n60 \nSample Output:\n5000\n3000 \nExplanation:\nThe Undergraduate class overrides the \nget_fee()\n method and returns a fixed amount of $5000. The Graduate class also overrides the \nget_fee()\n method and returns the number of credits taken times $50. In the sample input, the Graduate student has taken 60 credits, so the fee is 60 * $50 = $3000. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.6\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n40\nOutput\n5000\n2000\nInput\n100\nOutput\n5000\n5000\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n40\nOutput\n5000\n2000\nInput\n100\nOutput\n5000\n5000\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPolymorphism with Student Fees\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to ",
  "input_spec": "The input consists of the number of credits taken by a Graduate student.",
  "output_spec": "The output consists of two lines: the fixed tuition fee for an Undergraduate student, and the calculated tuition fee for a Graduate student based on the given credits.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "60",
    "output": "5000\n3000"
+  },
+  {
+   "input": "40",
+   "output": "5000\n2000"
+  },
+  {
+   "input": "100",
+   "output": "5000\n5000"
   }
  ],
  "raw": ""

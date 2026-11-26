@@ -1,0 +1,1 @@
+{"slug": "even-odd-bitwise-check", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:\n        return\n    n = int(data[0])\n    if n & 1:\n        print(\"Odd\")\n    else:\n        print(\"Even\")\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

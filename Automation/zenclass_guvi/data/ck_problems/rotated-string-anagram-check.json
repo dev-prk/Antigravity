@@ -3,13 +3,21 @@
  "slug": "rotated-string-anagram-check",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n671. Rotated String Anagram Check\n\n80\n\nHard  Topics\n\nProblem Statement:\nYou are provided with a given string \u2019s\u2019.You will be given direction and magnitude so that you can rotate the string. You have to keep the track of first character after each rotation. Make a string out of it this first character and name it as s2 now check whether the s2 is anagram of original string \u2018s\u2019. For more better understanding go through example",
+ "description": "ints & Solutions\nSubmissions\n671\n. \nRotated String Anagram Check\n80\nHard\nTopics\nProblem Statement:\nYou are provided with a given string \u2019s\u2019.You will be given direction and magnitude so that you can rotate the string. You have to keep the track of first character after each rotation. Make a string out of it this first character and name it as s2 now check whether the s2 is anagram of original string \u2018s\u2019. For more better understanding go through example \nInput Description:\nThe first line contains the original string s. The second line contains a single integer q. The i' th of the next q lines contains character d[i] denoting direction and integer r[i] denoting the magnitude. \nOutput Description:\nPrint yes if \u2018s2\u2019 is anagram of s1. and no otherwise \nExplanation:\nAfter first execution string becomes\nrraceca \nAfter second execution string becomes\ncecarra \nAfter third execution \nracecar \nString s2=\u201drcr\u2019 \nrcr has no anagram in string s. \nSample Input:\ncarrace \n L 2\n R 2\n L 3 \nSample Output:\nNo \nAccepted \n176\nSubmissions \n301\nAcceptance Rate \n58.47\n%\nTopics\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\ncarrace\n L 2\n R 2\n L 3\nOutput\nNo\nInput\nguvi\n2\nL 1\nR 1\nOutput\nNo\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\ncarrace\n L 2\n R 2\n L 3\nOutput\nNo\nInput\nguvi\n2\nL 1\nR 1\nOutput\nNo\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRotated String Anagram Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains the original string s. The second line contains a single integer q. The i' th of the next q lines contains character d[i] denoting direction and integer r[i] denoting the magnitude.",
- "output_spec": "Print yes if \u2018s2\u2019 is anagram of s1. and no otherwise",
+ "output_spec": "Print yes if \u2018s2\u2019 is anagram of s1. and no otherwise \nExplanation:\nAfter first execution string becomes\nrraceca \nAfter second execution string becomes\ncecarra \nAfter third execution \nracecar \nString s2=\u201drcr\u2019 \nrcr has no anagram in string s.",
  "constraints": "",
  "samples": [
   {
-   "input": "carrace\n\nL 2\nR 2\nL 3",
+   "input": "carrace \n L 2\n R 2\n L 3",
+   "output": "No"
+  },
+  {
+   "input": "carrace\n L 2\n R 2\n L 3",
+   "output": "No"
+  },
+  {
+   "input": "guvi\n2\nL 1\nR 1",
    "output": "No"
   }
  ],

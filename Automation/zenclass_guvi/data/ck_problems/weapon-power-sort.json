@@ -3,14 +3,22 @@
  "slug": "weapon-power-sort",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n514. Weapon Power Sort\n\n70\n\nHard  Topics\n\nProblem Statement:\nThor wants to sort his weapons based on increasing value of its power to kill. The best coders in his team have done the task but are unable to sort the data in O(NlogN) time. Try to develop code that can sort the data in the required time complexity. Constraint: Power values lie between 0 and 10000",
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n514\n. \nWeapon Power Sort\n70\nHard\nTopics\nProblem Statement:\nThor wants to sort his weapons based on increasing value of its power to kill. The best coders in his team have done the task but are unable to sort the data in O(NlogN) time. Try to develop code that can sort the data in the required time complexity. Constraint: Power values lie between 0 and 10000 \nInput Description:\nName of weapons with their power denoted beside it. \nOutput Description:\nWeapon named sorted in order of increasing power \nSample Input:\nMjolnir 200\nStormBreaker 1000\nAsgardian 560 \nSample Output:\n1 Mjolnir\n2 Asgardian\n3 StormBreaker \nExplanation:\nThe weapons are sorted in increasing power value \nAccepted \n318\nSubmissions \n674\nAcceptance Rate \n47.18\n%\nTopics\nsorting\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nMark1 100\nTesseract 10000\nOutput\n1 Mark1\n2 Tesseract\nInput\nACR 50\nBRB 100\nCZR 75\nQWTY 98\nREC 12\nOutput\n1 REC\n2 ACR\n3 CZR\n4 QWTY\n5 BRB\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nMark1 100\nTesseract 10000\nOutput\n1 Mark1\n2 Tesseract\nInput\nACR 50\nBRB 100\nCZR 75\nQWTY 98\nREC 12\nOutput\n1 REC\n2 ACR\n3 CZR\n4 QWTY\n5 BRB\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nWeapon Power Sort\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Name of weapons with their power denoted beside it.",
  "output_spec": "Weapon named sorted in order of increasing power",
- "constraints": "Power values lie between 0 and 10000",
+ "constraints": "",
  "samples": [
   {
    "input": "Mjolnir 200\nStormBreaker 1000\nAsgardian 560",
    "output": "1 Mjolnir\n2 Asgardian\n3 StormBreaker"
+  },
+  {
+   "input": "Mark1 100\nTesseract 10000",
+   "output": "1 Mark1\n2 Tesseract"
+  },
+  {
+   "input": "ACR 50\nBRB 100\nCZR 75\nQWTY 98\nREC 12",
+   "output": "1 REC\n2 ACR\n3 CZR\n4 QWTY\n5 BRB"
   }
  ],
  "raw": ""

@@ -3,14 +3,22 @@
  "slug": "vasanth-s-attendance-check",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n390. Vasanth's Attendance Check\n\n40\n\nMedium  Topics\n\nProblem Statement:\nVasanth is working at GUVI. He has been taking leave often in the past couple of weeks and his manager, who also happens to be his friend, is worried that Vasanth might be exceeding his number of paid holidays, which might be a black mark in Vasanth monthly report. The manager analysis Vasanth's attendance register and decides to warn him beforehand. The attendance register has a 'P' marked for present and an 'A' marked for absent. Vasanth will be blacklisted if his attendance falls below 25%. Your task is to help the manager find out whether Vasanth could be blacklisted or not.",
+ "description": "ints & Solutions\nSubmissions\n390\n. \nVasanth's Attendance Check\n40\nMedium\nTopics\nProblem Statement:\nVasanth is working at GUVI. He has been taking leave often in the past couple of weeks and his manager, who also happens to be his friend, is worried that Vasanth might be exceeding his number of paid holidays, which might be a black mark in Vasanth monthly report. The manager analysis Vasanth's attendance register and decides to warn him beforehand. The attendance register has a 'P' marked for present and an 'A' marked for absent. Vasanth will be blacklisted if his attendance falls below 25%. Your task is to help the manager find out whether Vasanth could be blacklisted or not. \nInput Description:\nFirst line contains the number of entries in the attendance register, followed by space separated values of attendance (\u2018P\u2019 or \u2018A\u2019) \nOutput Description:\n\u2018Blacklisted\u2019 if attendance is below 25%\n\u2018Not Blacklisted\u2019 if attendance is above 25% \nExplanation:\nVasanth\u2019s attendance percentage is (2/5)*100=40% which is above 25% \nSample Input:\n5\nP P A A A \nSample Output:\nNot Blacklisted \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n76.12\n%\nTopics\nsearching\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nP P P A A A P A A A\nOutput\nNot Blacklisted\nInput\n4\nA A A P\nOutput\nBlacklisted\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n10\nP P P A A A P A A A\nOutput\nNot Blacklisted\nInput\n4\nA A A P\nOutput\nBlacklisted\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nVasanth's Attendance Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line contains the number of entries in the attendance register, followed by space separated values of attendance (\u2018P\u2019 or \u2018A\u2019)",
- "output_spec": "\u2018Blacklisted\u2019 if attendance is below 25%\n\u2018Not Blacklisted\u2019 if attendance is above 25%",
+ "output_spec": "\u2018Blacklisted\u2019 if attendance is below 25%\n\u2018Not Blacklisted\u2019 if attendance is above 25% \nExplanation:\nVasanth\u2019s attendance percentage is (2/5)*100=40% which is above 25%",
  "constraints": "",
  "samples": [
   {
    "input": "5\nP P A A A",
    "output": "Not Blacklisted"
+  },
+  {
+   "input": "10\nP P P A A A P A A A",
+   "output": "Not Blacklisted"
+  },
+  {
+   "input": "4\nA A A P",
+   "output": "Blacklisted"
   }
  ],
  "raw": ""

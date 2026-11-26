@@ -3,14 +3,22 @@
  "slug": "number-pyramid-pattern-4",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n909. Number Pyramid Pattern-4\n\n50\n\nMedium  Topics\n\nProblem Statement:\nWrite a code to generate a pyramid pattern on numbers.",
+ "description": "\nHints & Solutions\nSubmissions\n909\n. \nNumber Pyramid Pattern-4\n50\nMedium\nTopics\nProblem Statement:\nWrite a code to generate a pyramid pattern on numbers. \nInput Description:\nGiven an integer R indicates number of rows.Where 1<=R<=100 \nOutput Description:\nPrint the pyramid number pattern based on the given integer R. \nExplanation:\nFrom the given input R=5, print the 5 rows of pyramid pattern using numbers. \nSample Input:\n5 \nSample Output:\n 0 \n 101 \n 21012 \n 3210123 \n432101234 \nAccepted \n659\nSubmissions \n710\nAcceptance Rate \n92.82\n%\nTopics\npatterns\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n 0\n 101\n 21012\n 3210123\n432101234\nInput\n4\nOutput\n 0\n 101\n 21012\n3210123\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n 0\n 101\n 21012\n 3210123\n432101234\nInput\n4\nOutput\n 0\n 101\n 21012\n3210123\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNumber Pyramid Pattern-4\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Given an integer R indicates number of rows.Where 1<=R<=100",
- "output_spec": "Print the pyramid number pattern based on the given integer R.",
+ "output_spec": "Print the pyramid number pattern based on the given integer R. \nExplanation:\nFrom the given input R=5, print the 5 rows of pyramid pattern using numbers.",
  "constraints": "",
  "samples": [
   {
    "input": "5",
-   "output": "0\n101\n21012\n3210123\n432101234"
+   "output": "0 \n 101 \n 21012 \n 3210123 \n432101234"
+  },
+  {
+   "input": "5",
+   "output": "0\n 101\n 21012\n 3210123\n432101234"
+  },
+  {
+   "input": "4",
+   "output": "0\n 101\n 21012\n3210123"
   }
  ],
  "raw": ""

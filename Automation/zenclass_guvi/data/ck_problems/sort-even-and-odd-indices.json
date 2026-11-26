@@ -3,14 +3,22 @@
  "slug": "sort-even-and-odd-indices",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n502. Sort Even and Odd Indices\n\n70\n\nHard  Topics\n\nProblem Statement:\nVishal is a competitive coder and he loves problems on sorting and searching. He is bored right now and decides to solve a sorting problem with a modification. He decides to sort the elements at the even indices of an array in ascending order and the elements at the odd indices in descending order. Vishal goes outside his room after coding the solution, but his laptop crashes and he is unable to show it to his teacher. Can you help Vishal by coding the solution to the problem?",
+ "description": "m\nHints & Solutions\nSubmissions\n502\n. \nSort Even and Odd Indices\n70\nHard\nTopics\nProblem Statement:\nVishal is a competitive coder and he loves problems on sorting and searching. He is bored right now and decides to solve a sorting problem with a modification. He decides to sort the elements at the even indices of an array in ascending order and the elements at the odd indices in descending order. Vishal goes outside his room after coding the solution, but his laptop crashes and he is unable to show it to his teacher. Can you help Vishal by coding the solution to the problem?Constraints:0<=array[i]<=10000 \nInput Description:\nSize of the array followed by the elements of the array \nOutput Description:\nSorted elements of the array \nExplanation:\nElements at even indices are 9,7,2,6,4 and are sorted as 2,4,6,7,9 Elements at odd indices 8,1,3,5,10 are sorted as 10,8,5,3,1 \nSample Input:\n10\n9 8 7 1 2 3 6 5 4 10 \nSample Output:\n2 10 4 8 6 5 7 3 9 1 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n84.82\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 3 4 5\nOutput\n1 4 3 2 5\nInput\n4\n45 23 67 89\nOutput\n45 89 67 23\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 2 3 4 5\nOutput\n1 4 3 2 5\nInput\n4\n45 23 67 89\nOutput\n45 89 67 23\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSort Even and Odd Indices\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Size of the array followed by the elements of the array",
- "output_spec": "Sorted elements of the array",
- "constraints": "0<=array[i]<=10000",
+ "output_spec": "Sorted elements of the array \nExplanation:\nElements at even indices are 9,7,2,6,4 and are sorted as 2,4,6,7,9 Elements at odd indices 8,1,3,5,10 are sorted as 10,8,5,3,1",
+ "constraints": "",
  "samples": [
   {
    "input": "10\n9 8 7 1 2 3 6 5 4 10",
    "output": "2 10 4 8 6 5 7 3 9 1"
+  },
+  {
+   "input": "5\n1 2 3 4 5",
+   "output": "1 4 3 2 5"
+  },
+  {
+   "input": "4\n45 23 67 89",
+   "output": "45 89 67 23"
   }
  ],
  "raw": ""

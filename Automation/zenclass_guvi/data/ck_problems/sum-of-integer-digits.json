@@ -3,14 +3,22 @@
  "slug": "sum-of-integer-digits",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n942. Sum of Integer Digits\n\n40\n\nMedium  Topics\n\nProblem Statement:\nWrite a code get an integer number as input and print the sum of the digits.",
- "input_spec": "and print the sum of the digits.\n\nInput Description:\nA single line containing an integer.",
- "output_spec": "Print the sum of the digits of the integer.",
+ "description": "lem\nHints & Solutions\nSubmissions\n942\n. \nSum of Integer Digits\n40\nMedium\nTopics\nProblem Statement:\nWrite a code get an integer number as input and print the sum of the digits. \nInput Description:\nA single line containing an integer. \nOutput Description:\nPrint the sum of the digits of the integer. \nExplanation:\n1+2+4=7 \nSample Input:\n124 \nSample Output:\n7 \nAccepted \n15k\nSubmissions \n16k\nAcceptance Rate \n93.44\n%\nTopics\nabsolute beginner\nbasics\nLooping\n3\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1234567890\nOutput\n45\nInput\n67654342345\nOutput\n49\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1234567890\nOutput\n45\nInput\n67654342345\nOutput\n49\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSum of Integer Digits\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "A single line containing an integer.",
+ "output_spec": "Print the sum of the digits of the integer. \nExplanation:\n1+2+4=7",
  "constraints": "",
  "samples": [
   {
    "input": "124",
    "output": "7"
+  },
+  {
+   "input": "1234567890",
+   "output": "45"
+  },
+  {
+   "input": "67654342345",
+   "output": "49"
   }
  ],
  "raw": ""

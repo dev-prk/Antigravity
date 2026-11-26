@@ -3,7 +3,7 @@
  "slug": "remove-duplicate-characters-2",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n826. Remove Duplicate Characters-2\n\n70\n\nHard  Company\n\nProblem Statement:\nGiven a linked list(where each node has a character) remove the duplicate character and maintain the same order.",
+ "description": "ts & Solutions\nSubmissions\n826\n. \nRemove Duplicate Characters-2\n70\nHard\nCompany\nProblem Statement:\nGiven a linked list(where each node has a character) remove the duplicate character and maintain the same order. \nInput Description:\nCharacters of a String in linked list format \nOutput Description:\nCharacters of a String in linked list format after removing the repeated character \nSample Input:\nH->e->l->l->o->w->o->r->l->d->h->i \nSample Output:\nH->e->l->o->w->r->d->h->i \nExplanation:\nThe letters l,o are duplicated so it is mentioned only once in the output.\nNote: The characters are case sensitive \n//Node structure in C/C++ \nstruct Node \n{ \n int data; \n struct Node *next; \n}; \n//Node class structure \nclass LinkedList { \n static Node head; \n static class Node { \n int data; \n Node next; \n Node(int d) { \n data = d; \n next = null; \n } \n } \nAccepted \n522\nSubmissions \n646\nAcceptance Rate \n80.8\n%\nCompany\ncompanies\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nG->u->v->i->g->e->e->e->k\nOutput\nG->u->v->i->g->e->k\nInput\nT->T->T->t\nOutput\nT->t\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nG->u->v->i->g->e->e->e->k\nOutput\nG->u->v->i->g->e->k\nInput\nT->T->T->t\nOutput\nT->t\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRemove Duplicate Characters-2\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Characters of a String in linked list format",
  "output_spec": "Characters of a String in linked list format after removing the repeated character",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "H->e->l->l->o->w->o->r->l->d->h->i",
    "output": "H->e->l->o->w->r->d->h->i"
+  },
+  {
+   "input": "G->u->v->i->g->e->e->e->k",
+   "output": "G->u->v->i->g->e->k"
+  },
+  {
+   "input": "T->T->T->t",
+   "output": "T->t"
   }
  ],
  "raw": ""

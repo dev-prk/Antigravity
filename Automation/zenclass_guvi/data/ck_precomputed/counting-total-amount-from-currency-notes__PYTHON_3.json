@@ -1,0 +1,1 @@
+{"slug": "counting-total-amount-from-currency-notes", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    n500 = int(data[0])\n    n200 = int(data[1])\n    n100 = int(data[2])\n    total = n500 * 500 + n200 * 200 + n100 * 100\n    print(total)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

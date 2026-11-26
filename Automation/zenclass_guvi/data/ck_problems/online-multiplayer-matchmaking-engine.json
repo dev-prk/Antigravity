@@ -3,14 +3,18 @@
  "slug": "online-multiplayer-matchmaking-engine",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1861. online-multiplayer-matchmaking-engine\n\n40\n\nMedium  Topics\n\nOnline Multiplayer Matchmaking Engine\n\nProblem Statement\nAn online multiplayer gaming platform needs to match players based on their skill ratings.\n\nEach player has a skill value.\n\nMatching Rules:\n1. Two players can form a match only if\n|skill1 \u2212 skill2| \u2264 K\n2. Each player can play only once.\n3. You must maximize the total number of matches.\n\nYour task is to determine the maximum number of matches possible.\n\nInput Format\nFirst line contains:\nn k\n\nSecond line contains:\nn integers representing skill ratings.\n\nOutput Format\nPrint the maximum number of matches.",
- "input_spec": "First line contains:\nn k\n\nSecond line contains:\nn integers representing skill ratings.",
- "output_spec": "Print the maximum number of matches.",
+ "description": "layer-matchmaking-engine\n40\nMedium\nTopics\nOnline Multiplayer Matchmaking Engine\nProblem Statement\nAn online multiplayer gaming platform needs to match players based on their skill ratings.\nEach player has a skill value.\nMatching Rules:\n1. Two players can form a match only if\n|skill1 \u2212 skill2| \u2264 K\n2. Each player can play only once.\n3. You must maximize the total number of matches.\nYour task is to determine the maximum number of matches possible.\nInput Format\nFirst line contains:\nn k\nSecond line contains:\nn integers representing skill ratings.\nOutput Format\nPrint the maximum number of matches.\nSample Input\n6 3\n1 3 4 7 8 10\nSample Output\n3\nExplanation\nSorted skills: 1 3 4 7 8 10\nPossible matches:\n(1,3) \u2192 difference = 2\n(4,7) \u2192 difference = 3\n(8,10) \u2192 difference = 2\nTotal matches = 3\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\nsorting\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n5 1\n1 10 20 30 40\nOutput\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n5 1\n1 10 20 30 40\nOutput\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nonline-multiplayer-matchmaking-engine\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "6 3\n1 3 4 7 8 10",
    "output": "3"
+  },
+  {
+   "input": "5 1\n1 10 20 30 40",
+   "output": "0"
   }
  ],
  "raw": ""

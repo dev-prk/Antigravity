@@ -3,14 +3,18 @@
  "slug": "prefix-suffix-sum-check",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n314. Prefix-Suffix Sum Check\n\n50\n\nMedium  Topics\n\nProblem Statement:\nGiven a number N followed by N numbers,find if in any position of the array, the sum of numbers in the previous positions is equal to the sum of elements after the current position. i.e., at a particular position the prefix sum should be equal to suffix sum, if yes print 'yes' else 'no'.",
+ "description": "m\nHints & Solutions\nSubmissions\n314\n. \nPrefix-Suffix Sum Check\n50\nMedium\nTopics\nProblem Statement:\nGiven a number N followed by N numbers,find if in any position of the array, the sum of numbers in the previous positions is equal to the sum of elements after the current position. i.e., at a particular position the prefix sum should be equal to suffix sum, if yes print 'yes' else 'no'. \nInput Description:\nInput Size : N <= 100000 \nSample Input:\n5\n1 1 1 1 1 \nSample Output:\nyes \nExplanation:\nHere we have the index 3 where the sum of left 2 elements is equal to the sum of elements on the right \nAccepted \n704\nSubmissions \n767\nAcceptance Rate \n91.79\n%\nTopics\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 1 1 1 1\nOutput\nyes\nInput\n5\n1 1 1 10 0\nOutput\nno\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\n1 1 1 1 1\nOutput\nyes\nInput\n5\n1 1 1 10 0\nOutput\nno\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrefix-Suffix Sum Check\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Input Size : N <= 100000",
- "output_spec": "yes",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n1 1 1 1 1",
    "output": "yes"
+  },
+  {
+   "input": "5\n1 1 1 10 0",
+   "output": "no"
   }
  ],
  "raw": ""

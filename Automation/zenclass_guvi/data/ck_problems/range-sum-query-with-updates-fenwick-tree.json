@@ -3,14 +3,22 @@
  "slug": "range-sum-query-with-updates-fenwick-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1566. Range Sum Query with Updates (Fenwick Tree)\n\n80\n\nHard\n\nProblem Statement:\nYou are given an array of integers of size N. You need to efficiently perform the following two types of operations:\n1. Update the value at a specific index in the array.\n2. Query the sum of elements in a given range [L, R] (inclusive).\n\nImplement a data structure that supports these operations efficiently.",
- "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N space-separated integers, representing the initial array.\n- The next Q lines each contain a query in one of the following formats:\n\n\"1 X Y\": Update the value at index X (0-based) to Y.\n\n\"2 L R\":",
- "output_spec": "the sum of elements from index L to R (inclusive).\n\nOutput Description:\nFor each query of type 2, output the sum on a new line.",
+ "description": "lutions\nSubmissions\n1566\n. \nRange Sum Query with Updates (Fenwick Tree)\n80\nHard\nProblem Statement:\nYou are given an array of integers of size N. You need to efficiently perform the following two types of operations:\n1. Update the value at a specific index in the array.\n2. Query the sum of elements in a given range [L, R] (inclusive). \nImplement a data structure that supports these operations efficiently. \nInput Description:\n- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N space-separated integers, representing the initial array.\n- The next Q lines each contain a query in one of the following formats: \n\"1 X Y\": Update the value at index X (0-based) to Y. \n\"2 L R\": Output the sum of elements from index L to R (inclusive).\nOutput Description:\nFor each query of type 2, output the sum on a new line. \nSample Input:\n5 5\n1 2 3 4 5\n2 1 3\n1 2 10\n2 0 2\n1 4 7\n2 3 4 \nSample Output:\n9\n13\n11 \nExplanation:\n- Query 1: Sum from index 1 to 3 is 2 + 3 + 4 = 9.\n- Query 2: Update index 2 to 10. Array becomes [1, 2, 10, 4, 5].\n- Query 3: Sum from index 0 to 2 is 1 + 2 + 10 = 13.\n- Query 4: Update index 4 to 7. Array becomes [1, 2, 10, 4, 7].\n- Query 5: Sum from index 3 to 4 is 4 + 7 = 11. \nAccepted \n19\nSubmissions \n19\nAcceptance Rate \n100\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n5 8 6\n2 0 2\n1 1 3\n2 0 1\nOutput\n19\n8\nInput\n4 4\n1 1 1 1\n2 0 3\n1 2 5\n2 1 2\n2 0 0\nOutput\n4\n6\n1\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n5 8 6\n2 0 2\n1 1 3\n2 0 1\nOutput\n19\n8\nInput\n4 4\n1 1 1 1\n2 0 3\n1 2 5\n2 1 2\n2 0 0\nOutput\n4\n6\n1\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRange Sum Query with Updates (Fenwick Tree)\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feed",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N space-separated integers, representing the initial array.\n- The next Q lines each contain a query in one of the following formats: \n\"1 X Y\": Update the value at index X (0-based) to Y. \n\"2 L R\": Output the sum of elements from index L to R (inclusive).",
+ "output_spec": "For each query of type 2, output the sum on a new line.",
  "constraints": "",
  "samples": [
   {
    "input": "5 5\n1 2 3 4 5\n2 1 3\n1 2 10\n2 0 2\n1 4 7\n2 3 4",
    "output": "9\n13\n11"
+  },
+  {
+   "input": "3 3\n5 8 6\n2 0 2\n1 1 3\n2 0 1",
+   "output": "19\n8"
+  },
+  {
+   "input": "4 4\n1 1 1 1\n2 0 3\n1 2 5\n2 1 2\n2 0 0",
+   "output": "4\n6\n1"
   }
  ],
  "raw": ""

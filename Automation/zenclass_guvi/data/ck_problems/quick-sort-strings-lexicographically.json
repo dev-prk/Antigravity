@@ -3,7 +3,7 @@
  "slug": "quick-sort-strings-lexicographically",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1586. Quick Sort Strings Lexicographically\n\n70\n\nHard\n\nProblem Statement:\nGiven an array of strings, sort the array in lexicographical (dictionary) order using the quick sort algorithm. You are required to implement the quick sort algorithm explicitly and not use any built-in sorting functions.",
+ "description": "ts & Solutions\nSubmissions\n1586\n. \nQuick Sort Strings Lexicographically\n70\nHard\nProblem Statement:\nGiven an array of strings, sort the array in lexicographical (dictionary) order using the quick sort algorithm. You are required to implement the quick sort algorithm explicitly and not use any built-in sorting functions. \nInput Description:\n- The first line contains an integer N, the number of strings in the array.\n- The next N lines each contain a string. \nOutput Description:\n- Output N lines, each containing a string from the sorted array in lexicographical order. \nSample Input:\n5\nbanana\napple\ngrape\ncherry\ndate \nSample Output:\napple\nbanana\ncherry\ndate\ngrape \nExplanation:\nThe input array of strings is sorted in lexicographical order using the quick sort algorithm.\nAccepted \n11\nSubmissions \n13\nAcceptance Rate \n84.62\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\ndog\ncat\nbat\nOutput\nbat\ncat\ndog\nInput\n4\nzebra\nyak\nxenon\nwolf\nOutput\nwolf\nxenon\nyak\nzebra\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\ndog\ncat\nbat\nOutput\nbat\ncat\ndog\nInput\n4\nzebra\nyak\nxenon\nwolf\nOutput\nwolf\nxenon\nyak\nzebra\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nQuick Sort Strings Lexicographically\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "- The first line contains an integer N, the number of strings in the array.\n- The next N lines each contain a string.",
  "output_spec": "- Output N lines, each containing a string from the sorted array in lexicographical order.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5\nbanana\napple\ngrape\ncherry\ndate",
    "output": "apple\nbanana\ncherry\ndate\ngrape"
+  },
+  {
+   "input": "3\ndog\ncat\nbat",
+   "output": "bat\ncat\ndog"
+  },
+  {
+   "input": "4\nzebra\nyak\nxenon\nwolf",
+   "output": "wolf\nxenon\nyak\nzebra"
   }
  ],
  "raw": ""

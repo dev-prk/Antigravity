@@ -3,7 +3,7 @@
  "slug": "tower-of-hanoi-moves",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n456. Tower of Hanoi Moves\n\n40\n\nMedium  Topics\n\nProblem Statement:\nThe Tower of Hanoi (also called the Tower of Brahma) is a mathematical game or puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.\n\nThe objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:\n\n-Only one disk can be moved at a time.\n\n-Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.\n\n-No larger disk may be placed on top of a smaller disk.\n\nYou are given the number of disks N. (Here 1 <= N <= 20)\n\nFind the minimum number of moves required to solve the puzzle.",
+ "description": "blem\nHints & Solutions\nSubmissions\n456\n. \nTower of Hanoi Moves\n40\nMedium\nTopics\nProblem Statement:\nThe Tower of Hanoi (also called the Tower of Brahma) is a mathematical game or puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape. \nThe objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules: \n-Only one disk can be moved at a time. \n-Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod. \n-No larger disk may be placed on top of a smaller disk. \nYou are given the number of disks N. (Here 1 <= N <= 20) \nFind the minimum number of moves required to solve the puzzle. \nInput Description:\nThe only line of input contains an integer N \nOutput Description:\nPrint a single line, the minimum number of moves. \nSample Input:\n3 \nSample Output:\n7 \nAccepted \n588\nSubmissions \n669\nAcceptance Rate \n87.89\n%\nTopics\nrecursion\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\n1\nInput\n13\nOutput\n8191\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n1\nOutput\n1\nInput\n13\nOutput\n8191\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTower of Hanoi Moves\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The only line of input contains an integer N",
  "output_spec": "Print a single line, the minimum number of moves.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "3",
    "output": "7"
+  },
+  {
+   "input": "1",
+   "output": "1"
+  },
+  {
+   "input": "13",
+   "output": "8191"
   }
  ],
  "raw": ""

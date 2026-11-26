@@ -1,0 +1,1 @@
+{"slug": "divisibility-by-11-check", "lang": "PYTHON 3", "code": "import sys\n\ndef solve() -> None:\n    line = sys.stdin.readline()\n    if not line:\n        return\n    line = line.strip()\n    if not line:\n        return\n    n = int(line.split()[0])\n    print(\"yes\" if n % 11 == 0 else \"no\")\n\nif __name__ == \"__main__\":\n    solve()\n", "local_ok": true, "err": ""}

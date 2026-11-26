@@ -3,14 +3,22 @@
  "slug": "sum-of-digit-powers",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n305. Sum of Digit Powers\n\n40\n\nMedium  Topics  Company\n\nProblem Statement:\nGiven a number 'N' print the sum of each digit to the power of number of digits in given input. N <=100000000000",
- "input_spec": ". N <=100000000000\n\nInput Description:\nThe input consists of a single number 'N'.",
+ "description": "nts & Solutions\nSubmissions\n305\n. \nSum of Digit Powers\n40\nMedium\nTopics\nCompany\nProblem Statement:\nGiven a number 'N' print the sum of each digit to the power of number of digits in given input. N <=100000000000 \nInput Description:\nThe input consists of a single number 'N'. \nOutput Description:\nThe output is the sum of each digit to the power of the number of digits in the input. \nSample Input:\n1234 \nSample Output:\n354 \nExplanation:\nFor Input 1234, the number of digits is 4. The calculation is ( 1 ^ 4 ) + ( 2 ^ 4 ) + ( 3 ^ 4 ) + ( 4 ^ 4 ) which equals 1 + 16 + 81 + 256, resulting in 354. \nAccepted \n5k\nSubmissions \n5k\nAcceptance Rate \n93.01\n%\nTopics\narray\nmathematics\nCompany\ncompanies\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4321\nOutput\n354\nInput\n12300\nOutput\n276\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4321\nOutput\n354\nInput\n12300\nOutput\n276\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSum of Digit Powers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "The input consists of a single number 'N'.",
  "output_spec": "The output is the sum of each digit to the power of the number of digits in the input.",
  "constraints": "",
  "samples": [
   {
    "input": "1234",
    "output": "354"
+  },
+  {
+   "input": "4321",
+   "output": "354"
+  },
+  {
+   "input": "12300",
+   "output": "276"
   }
  ],
  "raw": ""

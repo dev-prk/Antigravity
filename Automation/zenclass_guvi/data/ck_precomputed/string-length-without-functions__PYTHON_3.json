@@ -1,0 +1,1 @@
+{"slug": "string-length-without-functions", "lang": "PYTHON 3", "code": "import sys\n\ns = sys.stdin.readline()\ncount = 0\nfor _ in s:\n    count += 1\nprint(count)\n", "local_ok": false, "err": "empty_llm"}

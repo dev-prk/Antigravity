@@ -3,7 +3,7 @@
  "slug": "rectangle-with-integer-sides",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n104. Rectangle with Integer Sides\n\n40\n\nMedium  Topics\n\nProblem Statement:\nGiven 2 numbers P and A which are the perimeter and area of a rectangle respectively, find if there can actually be a rectangle with this perimeter and area having integer sides.If there exists such rectangle print 'yes' otherwise print 'no'.",
+ "description": "ts & Solutions\nSubmissions\n104\n. \nRectangle with Integer Sides\n40\nMedium\nTopics\nProblem Statement:\nGiven 2 numbers P and A which are the perimeter and area of a rectangle respectively, find if there can actually be a rectangle with this perimeter and area having integer sides.If there exists such rectangle print 'yes' otherwise print 'no'. \nInput Description:\nInput Size : 1 <= P,A <= 100000 \nOutput Description:\nThe output is 'yes' if such a rectangle exists, otherwise 'no'. \nSample Input:\n20 25 \nSample Output:\nyes \nAccepted \n1k\nSubmissions \n2k\nAcceptance Rate \n79.83\n%\nTopics\nmathematics\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n22 30\nOutput\nyes\nInput\n20 23\nOutput\nno\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n22 30\nOutput\nyes\nInput\n20 23\nOutput\nno\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRectangle with Integer Sides\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Input Size : 1 <= P,A <= 100000",
  "output_spec": "The output is 'yes' if such a rectangle exists, otherwise 'no'.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "20 25",
    "output": "yes"
+  },
+  {
+   "input": "22 30",
+   "output": "yes"
+  },
+  {
+   "input": "20 23",
+   "output": "no"
   }
  ],
  "raw": ""

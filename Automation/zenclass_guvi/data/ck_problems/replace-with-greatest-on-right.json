@@ -3,14 +3,18 @@
  "slug": "replace-with-greatest-on-right",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n285. Replace with Greatest on Right\n\n70\n\nHard  Topics  Company\n\nProblem Statement:\nGiven a number N followed by an array of N integers, replace every element with the greatest element on the right side(to that element) in the array. Replace last element with 0 as there no element on the right side of it. For example, if the array is {6, 7, 4, 3, 5, 2}, the output is {7, 5, 5, 5, 2, 0}.",
+ "description": "utions\nSubmissions\n285\n. \nReplace with Greatest on Right\n70\nHard\nTopics\nCompany\nProblem Statement:\nGiven a number N followed by an array of N integers, replace every element with the greatest element on the right side(to that element) in the array. Replace last element with 0 as there no element on the right side of it. For example, if the array is {6, 7, 4, 3, 5, 2}, the output is {7, 5, 5, 5, 2, 0}. \nInput Description:\nThe input consists of a number N, followed by an array of N integers. N is less than or equal to 100000. \nOutput Description:\nThe output is the modified array where each element is replaced by the greatest element on its right side, and the last element is replaced by 0. \nSample Input:\n6\n6 7 4 3 5 2 \nSample Output:\n7 5 5 5 2 0 \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n87.85\n%\nTopics\narray\nCompany\ncompanies\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n6 7 4 3 5 2\nOutput\n7 5 5 5 2 0\nInput\n5\n 1 2 3 4 5\nOutput\n5 5 5 5 0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n6\n6 7 4 3 5 2\nOutput\n7 5 5 5 2 0\nInput\n5\n 1 2 3 4 5\nOutput\n5 5 5 5 0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nReplace with Greatest on Right\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The input consists of a number N, followed by an array of N integers. N is less than or equal to 100000.",
- "output_spec": "is {7, 5, 5, 5, 2, 0}.\n\nInput Description:\nThe input consists of a number N, followed by an array of N integers. N is less than or equal to 100000.\n\nOutput Description:\nThe output is the modified array where each element is replaced by the greatest element on its right side, and the last element is replaced by 0.",
+ "output_spec": "The output is the modified array where each element is replaced by the greatest element on its right side, and the last element is replaced by 0.",
  "constraints": "",
  "samples": [
   {
    "input": "6\n6 7 4 3 5 2",
    "output": "7 5 5 5 2 0"
+  },
+  {
+   "input": "5\n 1 2 3 4 5",
+   "output": "5 5 5 5 0"
   }
  ],
  "raw": ""

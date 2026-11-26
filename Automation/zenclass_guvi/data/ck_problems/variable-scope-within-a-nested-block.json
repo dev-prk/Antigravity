@@ -3,7 +3,7 @@
  "slug": "variable-scope-within-a-nested-block",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n2099. Variable Scope Within a Nested Block\n\n80\n\nHard\n\nProblem Statement\nRead two integers and use them to show that a variable declared inside a nested block is separate from a variable of the same name declared in the outer scope.\nDescription\nRead two integers into an outer variable x (declared in main) and a separate variable innerVal. Print the outer x. Then open a nested block ({ }) and, inside it, declare a new variable also named x \u2014 this inner x is a completely separate variable that exists only within the block. Assign innerVal to this inner x and print it. After the block ends, print the outer x again to confirm that it was never changed by the block-scoped variable of the same name.",
+ "description": "ts & Solutions\nSubmissions\n2099\n. \nVariable Scope Within a Nested Block\n80\nHard\nProblem Statement\nRead two integers and use them to show that a variable declared inside a nested block is separate from a variable of the same name declared in the outer scope.\nDescription\nRead two integers into an outer variable x (declared in main) and a separate variable innerVal. Print the outer x. Then open a nested block ({ }) and, inside it, declare a new variable also named x \u2014 this inner x is a completely separate variable that exists only within the block. Assign innerVal to this inner x and print it. After the block ends, print the outer x again to confirm that it was never changed by the block-scoped variable of the same name.\nInput Description\nTwo integers: the outer value, then the inner value, separated by a space.\nOutput Description\nPrint the outer x, then the inner x (inside the block), then the outer x again (after the block).\nSample Input\n10 99\nSample Output\n10\n99\n10\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n10 99\nOutput\n10\n99\n10\nInput\n0 5\nOutput\n0\n5\n0\nInput\n-3 100\nOutput\n-3\n100\n-3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n10 99\nOutput\n10\n99\n10\nInput\n0 5\nOutput\n0\n5\n0\nInput\n-3 100\nOutput\n-3\n100\n-3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nVariable Scope Within a Nested Block\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two integers: the outer value, then the inner value, separated by a space.",
  "output_spec": "Print the outer x, then the inner x (inside the block), then the outer x again (after the block).",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "10 99",
    "output": "10\n99\n10"
+  },
+  {
+   "input": "0 5",
+   "output": "0\n5\n0"
+  },
+  {
+   "input": "-3 100",
+   "output": "-3\n100\n-3"
   }
  ],
  "raw": ""

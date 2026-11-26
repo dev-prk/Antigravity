@@ -1,0 +1,1 @@
+{"slug": "summation-of-a-set-of-numbers", "lang": "PYTHON 3", "code": "a, b, c = map(int, input().split())\ns = a + b + c\nprint(s)\n", "local_ok": true, "err": ""}

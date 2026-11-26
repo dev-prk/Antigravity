@@ -3,7 +3,7 @@
  "slug": "number-format-validator",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1988. Number Format Validator\n\n60\n\nMedium\n\nProblem Statement\n\nGiven a string, attempt to convert it to an integer. Handle the case where the string does not represent a valid number using exception handling.\n\nDescription\n\nRead a single line of text. Attempt to convert it into an integer. If the text is not a valid integer, an exception is thrown; catch it and print an error message instead of the converted value.",
+ "description": "Problem\nHints & Solutions\nSubmissions\n1988\n. \nNumber Format Validator\n60\nMedium\nProblem Statement\nGiven a string, attempt to convert it to an integer. Handle the case where the string does not represent a valid number using exception handling.\nDescription\nRead a single line of text. Attempt to convert it into an integer. If the text is not a valid integer, an exception is thrown; catch it and print an error message instead of the converted value.\nInput Description\nA single line containing a string, str.\nOutput Description\nIf str can be converted to a valid integer, print that integer. Otherwise, print \"Error: Invalid number format\".\nSample Input\n123\nSample Output\n123\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n45a\nOutput\nError: Invalid number format\nInput\n-78\nOutput\n-78\nInput\nhello\nOutput\nError: Invalid number format\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\n45a\nOutput\nError: Invalid number format\nInput\n-78\nOutput\n-78\nInput\nhello\nOutput\nError: Invalid number format\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNumber Format Validator\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "A single line containing a string, str.",
  "output_spec": "If str can be converted to a valid integer, print that integer. Otherwise, print \"Error: Invalid number format\".",
  "constraints": "",
@@ -11,6 +11,18 @@
   {
    "input": "123",
    "output": "123"
+  },
+  {
+   "input": "45a",
+   "output": "Error: Invalid number format"
+  },
+  {
+   "input": "-78",
+   "output": "-78"
+  },
+  {
+   "input": "hello",
+   "output": "Error: Invalid number format"
   }
  ],
  "raw": ""

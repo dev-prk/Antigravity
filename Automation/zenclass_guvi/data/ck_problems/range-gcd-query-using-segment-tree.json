@@ -3,7 +3,7 @@
  "slug": "range-gcd-query-using-segment-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1563. Range GCD Query using Segment Tree\n\n80\n\nHard\n\nProblem Statement:\nYou are given an array of N integers. You need to efficiently support the following two types of operations:\n1. Update the value at a specific index in the array.\n2. Query the greatest common divisor (GCD) of elements in a given range [L, R] (inclusive).\n\nImplement a data structure that can handle these operations efficiently.",
+ "description": "ints & Solutions\nSubmissions\n1563\n. \nRange GCD Query using Segment Tree\n80\nHard\nProblem Statement:\nYou are given an array of N integers. You need to efficiently support the following two types of operations:\n1. Update the value at a specific index in the array.\n2. Query the greatest common divisor (GCD) of elements in a given range [L, R] (inclusive). \nImplement a data structure that can handle these operations efficiently. \nInput Description:\n- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N space-separated integers, representing the initial array.\n- The next Q lines each describe a query:\n- For an update: \"1 idx val\" (set arr[idx] = val, 0-based indexing)\n- For a query: \"2 L R\" (find GCD of arr[L] to arr[R], inclusive, 0-based indexing) \nOutput Description:\n- For each query of type 2, output a single integer: the GCD of the specified range. \nSample Input:\n5 5\n2 6 9 5 3\n2 1 3\n1 2 15\n2 0 2\n1 4 10\n2 3 4 \nSample Output:\n1\n1\n5 \nExplanation:\n- Query 1: GCD of [6, 9, 5] = 1\n- Update: arr[2] = 15 \u2192 [2, 6, 15, 5, 3]\n- Query 2: GCD of [2, 6, 15] = 1\n- Update: arr[4] = 10 \u2192 [2, 6, 15, 5, 10]\n- Query 3: GCD of [5, 10] = 5 \nAccepted \n8\nSubmissions \n10\nAcceptance Rate \n80\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n5 10 15\n2 0 2\n1 1 20\n2 0 2\nOutput\n5\n5\nInput\n4 4\n7 14 21 28\n2 1 3\n1 2 35\n2 0 2\n2 2 2\nOutput\n7\n7\n35\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n5 10 15\n2 0 2\n1 1 20\n2 0 2\nOutput\n5\n5\nInput\n4 4\n7 14 21 28\n2 1 3\n1 2 35\n2 0 2\n2 2 2\nOutput\n7\n7\n35\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRange GCD Query using Segment Tree\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You",
  "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N space-separated integers, representing the initial array.\n- The next Q lines each describe a query:\n- For an update: \"1 idx val\" (set arr[idx] = val, 0-based indexing)\n- For a query: \"2 L R\" (find GCD of arr[L] to arr[R], inclusive, 0-based indexing)",
  "output_spec": "- For each query of type 2, output a single integer: the GCD of the specified range.",
  "constraints": "",
@@ -11,6 +11,14 @@
   {
    "input": "5 5\n2 6 9 5 3\n2 1 3\n1 2 15\n2 0 2\n1 4 10\n2 3 4",
    "output": "1\n1\n5"
+  },
+  {
+   "input": "3 3\n5 10 15\n2 0 2\n1 1 20\n2 0 2",
+   "output": "5\n5"
+  },
+  {
+   "input": "4 4\n7 14 21 28\n2 1 3\n1 2 35\n2 0 2\n2 2 2",
+   "output": "7\n7\n35"
   }
  ],
  "raw": ""

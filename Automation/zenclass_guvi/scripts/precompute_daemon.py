@@ -100,13 +100,16 @@ def load_results() -> Dict[str, Any]:
 
 
 def main() -> int:
-    workers = int(os.environ.get("CK_PRE_WORKERS", "24"))
-    log(f"Starting upgraded precompute_daemon with {workers} threads...")
+    workers = int(os.environ.get("CK_PRE_WORKERS", "8"))
+    log(f"Starting paced precompute_daemon with {workers} threads (zero 429 contention)...")
 
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        for pass_no in range(12):
+        for pass_no in range(80):
             drain_retries(ex)
             results = load_results()
+            if sum(1 for v in results.values() if v.get("status") == "COMPLETED") >= 1200:
+                log("Target solved reached; stopping precompute_daemon.")
+                break
             metas = []
             for pf in PROB_DIR.glob("*.json"):
                 try:
@@ -157,6 +160,10 @@ def main() -> int:
                         pass
                 total_ready = len(list(PRECOMP_DIR.glob("*.json")))
                 log(f"Batch +{done_b}/{len(chunk)} ready (pending={len(pending_futs)}) | Total precomputed on disk: {total_ready}")
+                if done_b == 0:
+                    time.sleep(3.0)
+                else:
+                    time.sleep(0.4)
 
     return 0
 

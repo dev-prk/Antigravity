@@ -3,14 +3,26 @@
  "slug": "multiple-exception-handler",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1991. Multiple Exception Handler\n\n90\n\nHard\n\nProblem Statement\n\nGiven two values intended to be integers, divide the first by the second. Handle both invalid numeric input and division by zero using multiple catch blocks.\n\nDescription\n\nRead two lines of text, x and y, that are expected to represent integers. Inside a single try block, convert both to integers and divide x by y. Use one catch block to handle the case where either value is not a valid integer, and a separate catch block to handle division by zero.",
- "input_spec": "and division by zero using multiple catch blocks.\n\nDescription\n\nRead two lines of text, x and y, that are expected to represent integers. Inside a single try block, convert both to integers and divide x by y. Use one catch block to handle the case where either value is not a valid integer, and a separate catch block to handle division by zero.\n\nInput Description\n\nTwo lines, each containing a string: x and y.",
+ "description": "roblem\nHints & Solutions\nSubmissions\n1991\n. \nMultiple Exception Handler\n90\nHard\nProblem Statement\nGiven two values intended to be integers, divide the first by the second. Handle both invalid numeric input and division by zero using multiple catch blocks.\nDescription\nRead two lines of text, x and y, that are expected to represent integers. Inside a single try block, convert both to integers and divide x by y. Use one catch block to handle the case where either value is not a valid integer, and a separate catch block to handle division by zero.\nInput Description\nTwo lines, each containing a string: x and y.\nOutput Description\nIf both values are valid integers and y is not zero, print the quotient of x divided by y. If either value is not a valid integer, print \"Error: Invalid number format\". If y is zero, print \"Error: Division by zero not allowed\".\nSample Input\n20\n5\nSample Output\n4\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\n1\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nabc\n5\nOutput\nError: Invalid number format\nInput\n10\n0\nOutput\nError: Division by zero not allowed\nInput\n50\n10\nOutput\n5\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nCase 3\nInput\nabc\n5\nOutput\nError: Invalid number format\nInput\n10\n0\nOutput\nError: Division by zero not allowed\nInput\n50\n10\nOutput\n5\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMultiple Exception Handler\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "Two lines, each containing a string: x and y.",
  "output_spec": "If both values are valid integers and y is not zero, print the quotient of x divided by y. If either value is not a valid integer, print \"Error: Invalid number format\". If y is zero, print \"Error: Division by zero not allowed\".",
  "constraints": "",
  "samples": [
   {
    "input": "20\n5",
    "output": "4"
+  },
+  {
+   "input": "abc\n5",
+   "output": "Error: Invalid number format"
+  },
+  {
+   "input": "10\n0",
+   "output": "Error: Division by zero not allowed"
+  },
+  {
+   "input": "50\n10",
+   "output": "5"
   }
  ],
  "raw": ""

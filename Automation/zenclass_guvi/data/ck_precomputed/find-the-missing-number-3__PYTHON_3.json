@@ -1,0 +1,1 @@
+{"slug": "find-the-missing-number-3", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = list(map(int, sys.stdin.read().split()))\n    if not data:\n        return\n    n = data[0]\n    given = data[1:]\n    missing = n * (n + 1) // 2 - sum(given)\n    print(missing)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "err": "empty_llm"}

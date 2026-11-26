@@ -3,7 +3,7 @@
  "slug": "swap-two-numbers",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1745. Swap Two Numbers\n\n40\n\nMedium\n\n#Swap Two Numbers\n\nProblem Statement:\nUsing pointers, swap two integers.",
+ "description": "ts & Solutions\nSubmissions\n1745\n. \nSwap Two Numbers\n40\nMedium\n#Swap Two Numbers\nProblem Statement:\nUsing pointers, swap two integers.\nInput Description:\nTwo integers A and B.\nOutput Description:\nPrint swapped numbers.\nSample Input:\n5 10\nSample Output:\n10 5\nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n94.97\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n3 7\nOutput\n7 3\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n3 7\nOutput\n7 3\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSwap Two Numbers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Two integers A and B.",
  "output_spec": "Print swapped numbers.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "5 10",
    "output": "10 5"
+  },
+  {
+   "input": "3 7",
+   "output": "7 3"
   }
  ],
  "raw": ""

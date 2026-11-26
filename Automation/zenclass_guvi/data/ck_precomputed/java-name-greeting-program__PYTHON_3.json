@@ -1,0 +1,1 @@
+{"slug": "java-name-greeting-program", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    name = sys.stdin.readline().strip()\n    print(\"Hello\", name)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

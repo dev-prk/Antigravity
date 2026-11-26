@@ -3,14 +3,22 @@
  "slug": "track-allocation-for-athletic-championship",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n496. Track Allocation for Athletic Championship\n\n90\n\nHard  Topics\n\nProblem Statement:\nAn athletic championship is to be conducted in Chennai. But due to flash floods, the track got damaged severely. However, the authorities managed to repair most of the tracks. A barrier is placed across those tracks which couldn't be repaired. i1 and i2 denote the span of a barrier (eg) if i1=2 and i2=5, then the barrier spans from track 2 to track 5. Help the Sports Authority decide how many athletes can run in a single race so that none of them would have to switch tracks? Note: An athlete cannot switch from one track to another while sprinting.",
+ "description": "ns\nSubmissions\n496\n. \nTrack Allocation for Athletic Championship\n90\nHard\nTopics\nProblem Statement:\nAn athletic championship is to be conducted in Chennai. But due to flash floods, the track got damaged severely. However, the authorities managed to repair most of the tracks. A barrier is placed across those tracks which couldn't be repaired. i1 and i2 denote the span of a barrier (eg) if i1=2 and i2=5, then the barrier spans from track 2 to track 5. Help the Sports Authority decide how many athletes can run in a single race so that none of them would have to switch tracks? Note: An athlete cannot switch from one track to another while sprinting. \nInput Description:\nFirst line contains number of barriers followed by the total number of tracks. \nOutput Description:\nNumber of athletes that can run in a single race. \nExplanation:\nThere is a barrier over tracks 5 and 6. Thus 8 out of the 10 tracks are available. Therefore, 8 athletes can run in a single race. \nSample Input:\n1 10\n5 6 \nSample Output:\n8\nAccepted \n560\nSubmissions \n1k\nAcceptance Rate \n53.08\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 20\n1 3 5 8 8 13 14 15 9 12\nOutput\n6\nInput\n2 10\n1 4 5 6\nOutput\n4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 20\n1 3 5 8 8 13 14 15 9 12\nOutput\n6\nInput\n2 10\n1 4 5 6\nOutput\n4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTrack Allocation for Athletic Championship\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line contains number of barriers followed by the total number of tracks.",
- "output_spec": "Number of athletes that can run in a single race.",
+ "output_spec": "Number of athletes that can run in a single race. \nExplanation:\nThere is a barrier over tracks 5 and 6. Thus 8 out of the 10 tracks are available. Therefore, 8 athletes can run in a single race.",
  "constraints": "",
  "samples": [
   {
    "input": "1 10\n5 6",
    "output": "8"
+  },
+  {
+   "input": "5 20\n1 3 5 8 8 13 14 15 9 12",
+   "output": "6"
+  },
+  {
+   "input": "2 10\n1 4 5 6",
+   "output": "4"
   }
  ],
  "raw": ""

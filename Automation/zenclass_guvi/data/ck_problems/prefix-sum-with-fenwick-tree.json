@@ -3,14 +3,22 @@
  "slug": "prefix-sum-with-fenwick-tree",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1565. Prefix Sum with Fenwick Tree\n\n90\n\nHard\n\nProblem Statement:\nYou are given an array of integers of size N. You need to efficiently perform the following two types of operations:\n1. Update the value at a specific index.\n2. Query the sum of elements from index 1 to a given index.\nImplement a Fenwick Tree (Binary Indexed Tree) to support these operations efficiently.",
- "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial values of the array (1-based indexing).\n- The next Q lines each contain a query in one of the following formats:\n- \"1 x y\" : Update the value at index x to y.\n- \"2 x\" :",
- "output_spec": "the sum of elements from index 1 to x.\n\nOutput Description:\nFor each query of type 2, output the result on a new line.",
+ "description": "blem\nHints & Solutions\nSubmissions\n1565\n. \nPrefix Sum with Fenwick Tree\n90\nHard\nProblem Statement:\nYou are given an array of integers of size N. You need to efficiently perform the following two types of operations:\n1. Update the value at a specific index.\n2. Query the sum of elements from index 1 to a given index.\nImplement a Fenwick Tree (Binary Indexed Tree) to support these operations efficiently. \nInput Description:\n- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial values of the array (1-based indexing).\n- The next Q lines each contain a query in one of the following formats:\n\u00a0- \"1 x y\" : Update the value at index x to y.\n\u00a0- \"2 x\" : Output the sum of elements from index 1 to x. \nOutput Description:\nFor each query of type 2, output the result on a new line. \nSample Input:\n5 5\n1 2 3 4 5\n2 3\n1 2 10\n2 3\n2 5\n1 5 7 \nSample Output:\n6\n14\n23 \nExplanation:\n- Query 1: Sum from index 1 to 3 is 1+2+3=6\n- Query 2: Update index 2 to 10, array becomes [1,10,3,4,5]\n- Query 3: Sum from index 1 to 3 is 1+10+3=14\n- Query 4: Sum from index 1 to 5 is 1+10+3+4+5=23\n- Query 5: Update index 5 to 7, array becomes [1,10,3,4,7] \nAccepted \n10\nSubmissions \n12\nAcceptance Rate \n83.33\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n2 4 6\n2 2\n1 1 5\n2 3\nOutput\n6\n15\nInput\n4 4\n1 1 1 1\n2 4\n1 2 5\n2 2\n2 4\nOutput\n4\n6\n8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3 3\n2 4 6\n2 2\n1 1 5\n2 3\nOutput\n6\n15\nInput\n4 4\n1 1 1 1\n2 4\n1 2 5\n2 2\n2 4\nOutput\n4\n6\n8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPrefix Sum with Fenwick Tree\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geek",
+ "input_spec": "- The first line contains two integers N and Q, the size of the array and the number of queries.\n- The second line contains N integers, the initial values of the array (1-based indexing).\n- The next Q lines each contain a query in one of the following formats:\n\u00a0- \"1 x y\" : Update the value at index x to y.\n\u00a0- \"2 x\" : Output the sum of elements from index 1 to x.",
+ "output_spec": "For each query of type 2, output the result on a new line.",
  "constraints": "",
  "samples": [
   {
    "input": "5 5\n1 2 3 4 5\n2 3\n1 2 10\n2 3\n2 5\n1 5 7",
    "output": "6\n14\n23"
+  },
+  {
+   "input": "3 3\n2 4 6\n2 2\n1 1 5\n2 3",
+   "output": "6\n15"
+  },
+  {
+   "input": "4 4\n1 1 1 1\n2 4\n1 2 5\n2 2\n2 4",
+   "output": "4\n6\n8"
   }
  ],
  "raw": ""

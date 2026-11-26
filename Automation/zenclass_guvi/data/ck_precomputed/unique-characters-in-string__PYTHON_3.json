@@ -1,0 +1,1 @@
+{"slug": "unique-characters-in-string", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    s = sys.stdin.readline().rstrip('\\n')\n    seen = set()\n    res = []\n    for ch in s:\n        if ch not in seen:\n            seen.add(ch)\n            res.append(ch)\n    print(''.join(res))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

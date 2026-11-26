@@ -3,14 +3,18 @@
  "slug": "multi-threaded-counter",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1762. Multi-Threaded Counter\n\n60\n\nMedium\n\nMulti-Threaded Counter\n\nProblem Statement:\nWrite a program to increment a shared counter using multiple threads. Ensure that the counter updates are synchronized to avoid race conditions.\n\nDescription:\n\nCreate a class Counter with a synchronized method increment().\n\nCreate multiple threads that call increment() multiple times.\n\nDisplay the final value of the counter.\n\nInput Format:\n\nFirst line: Number of threads n\n\nSecond line: Number of increments per thread m\n\nOutput Format:\n\nFinal value of the counter",
- "input_spec": "First line: Number of threads n\n\nSecond line: Number of increments per thread m",
- "output_spec": "Final value of the counter",
+ "description": "ons\nSubmissions\n1762\n. \nMulti-Threaded Counter\n60\nMedium\nMulti-Threaded Counter\nProblem Statement:\nWrite a program to increment a shared counter using multiple threads. Ensure that the counter updates are synchronized to avoid race conditions.\nDescription:\nCreate a class Counter with a synchronized method increment().\nCreate multiple threads that call increment() multiple times.\nDisplay the final value of the counter.\nInput Format:\nFirst line: Number of threads n\nSecond line: Number of increments per thread m\nOutput Format:\nFinal value of the counter\nSample Input:\n3\n5\nSample Output:\nFinal Counter: 15\nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n91.76\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n2\n5\nOutput\nFinal Counter: 10\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n2\n5\nOutput\nFinal Counter: 10\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMulti-Threaded Counter\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "3\n5",
    "output": "Final Counter: 15"
+  },
+  {
+   "input": "2\n5",
+   "output": "Final Counter: 10"
   }
  ],
  "raw": ""

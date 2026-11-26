@@ -1,0 +1,1 @@
+{"slug": "cube-of-a-number", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:\n        return\n    n = int(data[0])\n    print(n ** 3)\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

@@ -1,0 +1,1 @@
+{"slug": "find-minimum-element-in-a-list-2", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    data = sys.stdin.read().splitlines()\n    n = int(data[0])\n    arr = list(map(int, data[1].split()))\n    print(min(arr))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

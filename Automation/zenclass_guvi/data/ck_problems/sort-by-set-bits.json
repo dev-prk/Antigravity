@@ -3,7 +3,7 @@
  "slug": "sort-by-set-bits",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n511. Sort by Set Bits\n\n90\n\nHard  Topics\n\nProblem Statement:\nRam loves bit magic. He is given a set of integers, and wants to sort them based on the number of 1s in their binary representations ( in descending order). Help Ram do a little bit of bit magic!",
+ "description": "em\nProblem\nHints & Solutions\nSubmissions\n511\n. \nSort by Set Bits\n90\nHard\nTopics\nProblem Statement:\nRam loves bit magic. He is given a set of integers, and wants to sort them based on the number of 1s in their binary representations ( in descending order). Help Ram do a little bit of bit magic! \nInput Description:\nNumber of elements followed by the elements \nOutput Description:\nSorted list of numbers \nSample Input:\n6\n1 2 3 4 5 6 \nSample Output:\n3 5 6 1 2 4 \nExplanation:\nBinary representation of3-0115-1016-1101-0012-0104-100 Sorting based on number of ones, the order is 3,5,6,1,2,4 \nAccepted \n745\nSubmissions \n966\nAcceptance Rate \n77.12\n%\nTopics\nsorting\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n9\n5 2 3 9 4 6 7 15 32\nOutput\n15 7 5 3 9 6 2 4 32\nInput\n6\n1 2 3 4 5 6\nOutput\n3 5 6 1 2 4\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n9\n5 2 3 9 4 6 7 15 32\nOutput\n15 7 5 3 9 6 2 4 32\nInput\n6\n1 2 3 4 5 6\nOutput\n3 5 6 1 2 4\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSort by Set Bits\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Number of elements followed by the elements",
  "output_spec": "Sorted list of numbers",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "6\n1 2 3 4 5 6",
    "output": "3 5 6 1 2 4"
+  },
+  {
+   "input": "9\n5 2 3 9 4 6 7 15 32",
+   "output": "15 7 5 3 9 6 2 4 32"
   }
  ],
  "raw": ""

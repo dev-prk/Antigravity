@@ -3,14 +3,22 @@
  "slug": "palindrome-ranges",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n383. Palindrome Ranges\n\n90\n\nHard  Topics\n\nProblem Statement:\nDr. Nadal is given a string of \u2018n\u2019 characters(S[1], S[2],...., S[n]). Then he is given Q ranges of the form [L R]. Determine of S[L], S[L+1]... S[R] is a palindrome.",
+ "description": "m\nProblem\nHints & Solutions\nSubmissions\n383\n. \nPalindrome Ranges\n90\nHard\nTopics\nProblem Statement:\nDr. Nadal is given a string of \u2018n\u2019 characters(S[1], S[2],...., S[n]). Then he is given Q ranges of the form [L R]. Determine of S[L], S[L+1]... S[R] is a palindrome. \nInput Description:\nThe first line is a string S.\nThe next line consists of the number of ranges Q\nThe next Q lines contain two space separated integers L R \nOutput Description:\nPrint YES if S[L], S[L+1]... S[R] is a palindrome\nPrint NO otherwise \nExplanation:\nS[3] to S[7] = \"solos\", it is a palindrome! \nSample Input:\nabsolosolute\n2\n3 7\n2 4 \nSample Output:\nYES\nNO \nAccepted \n204\nSubmissions \n642\nAcceptance Rate \n31.78\n%\nTopics\nhashing\nstrings\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nfmnhahnmddnbbb\n3\n1 14\n4 6\n12 12\nOutput\nNO\nYES\nYES\nInput\nvv\n3\n1 2\n1 1\n2 2\nOutput\nYES\nYES\nYES\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nfmnhahnmddnbbb\n3\n1 14\n4 6\n12 12\nOutput\nNO\nYES\nYES\nInput\nvv\n3\n1 2\n1 1\n2 2\nOutput\nYES\nYES\nYES\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPalindrome Ranges\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line is a string S.\nThe next line consists of the number of ranges Q\nThe next Q lines contain two space separated integers L R",
- "output_spec": "Print YES if S[L], S[L+1]... S[R] is a palindrome\nPrint NO otherwise",
+ "output_spec": "Print YES if S[L], S[L+1]... S[R] is a palindrome\nPrint NO otherwise \nExplanation:\nS[3] to S[7] = \"solos\", it is a palindrome!",
  "constraints": "",
  "samples": [
   {
    "input": "absolosolute\n2\n3 7\n2 4",
    "output": "YES\nNO"
+  },
+  {
+   "input": "fmnhahnmddnbbb\n3\n1 14\n4 6\n12 12",
+   "output": "NO\nYES\nYES"
+  },
+  {
+   "input": "vv\n3\n1 2\n1 1\n2 2",
+   "output": "YES\nYES\nYES"
   }
  ],
  "raw": ""

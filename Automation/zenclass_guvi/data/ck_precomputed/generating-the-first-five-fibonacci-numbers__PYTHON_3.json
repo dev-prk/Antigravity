@@ -1,0 +1,1 @@
+{"slug": "generating-the-first-five-fibonacci-numbers", "lang": "PYTHON 3", "code": "a = 0\nb = 1\nc = a + b\nd = b + c\ne = c + d\nprint(a, b, c, d, e)\n", "local_ok": true, "err": ""}

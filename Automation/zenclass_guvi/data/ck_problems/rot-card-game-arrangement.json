@@ -3,14 +3,18 @@
  "slug": "rot-card-game-arrangement",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n641. Rot Card Game Arrangement\n\n100\n\nHard  Topics\n\nProblem Statement:\nJaved is playing one game called \"rot card\". In this game you are given a sorted deck of card numbered from 1 to N.\n\n1) We pick up 1 card and put it on the back of the deck.\n2) Now, we pick up another card , it turns out to be card numbered 1 , we put it outside the deck.\n3) Now we pick up 2 cards and put it on the back of the deck.\n4) Now, we pick up another card and it turns out to be card numbered 2 , we put it outside the deck. ...\n\nWe perform this step till the last card.\nIf we some combination is possible, output the arrangement else print -1.",
+ "description": "\nHints & Solutions\nSubmissions\n641\n. \nRot Card Game Arrangement\n100\nHard\nTopics\nProblem Statement:\nJaved is playing one game called \"rot card\". In this game you are given a sorted deck of card numbered from 1 to N. \n1) We pick up 1 card and put it on the back of the deck.\n2) Now, we pick up another card , it turns out to be card numbered 1 , we put it outside the deck.\n3) Now we pick up 2 cards and put it on the back of the deck.\n4) Now, we pick up another card and it turns out to be card numbered 2 , we put it outside the deck. ... \nWe perform this step till the last card.\nIf we some combination is possible, output the arrangement else print -1. \nInput Description:\nYou are given with a number \u2018n\u2019. \nOutput Description:\nPrint the arrangement or print -1. \nExplanation:\nSelf Explanatory \nSample Input:\n4 \nSample Output:\n2 1 4 3\nAccepted \n467\nSubmissions \n825\nAcceptance Rate \n56.61\n%\nTopics\nbacktracking\ndynamic programming\nmemoization\nsorting\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n2 1 4 3\nInput\n5\nOutput\n3 1 4 5 2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4\nOutput\n2 1 4 3\nInput\n5\nOutput\n3 1 4 5 2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRot Card Game Arrangement\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given with a number \u2018n\u2019.",
- "output_spec": "the arrangement else print -1.\n\nInput Description:\nYou are given with a number \u2018n\u2019.\n\nOutput Description:\nPrint the arrangement or print -1.",
+ "output_spec": "Print the arrangement or print -1. \nExplanation:\nSelf Explanatory",
  "constraints": "",
  "samples": [
   {
    "input": "4",
    "output": "2 1 4 3"
+  },
+  {
+   "input": "5",
+   "output": "3 1 4 5 2"
   }
  ],
  "raw": ""

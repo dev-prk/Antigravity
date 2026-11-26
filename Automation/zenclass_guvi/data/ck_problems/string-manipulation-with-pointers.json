@@ -3,7 +3,7 @@
  "slug": "string-manipulation-with-pointers",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1227. String Manipulation with Pointers\n\n80\n\nHard  Topics\n\nProblem Statement:\nWrite a C program that reads a list of strings from the user and then performs the following operations using pointer-to-pointer (char **):\n1. Reverse each string.\n2. Swap the first and last string in the list.\n3. Print the modified list.",
+ "description": " Solutions\nSubmissions\n1227\n. \nString Manipulation with Pointers\n80\nHard\nTopics\nProblem Statement:\nWrite a C program that reads a list of strings from the user and then performs the following operations using pointer-to-pointer (char **):\n1. Reverse each string.\n2. Swap the first and last string in the list.\n3. Print the modified list. \nInput Description:\nThe first line contains an integer n, the number of strings.\nThe next n lines each contain a single string. \nOutput Description:\nPrint the modified list of strings, one per line. \nSample Input:\n3\nalgorithm\ncode\nlanguage \nSample Output:\negaugnal\nedoc\nmhtirogla \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n99.57\n%\nTopics\nFDP Hindustan C ProgrammingUnit-2\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nalgorithm\ncode\nlanguage\nOutput\negaugnal\nedoc\nmhtirogla\nInput\n4\nC\nJava\nPython\nCcode\nOutput\nedocC\navaJ\nnohtyP\nC\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\nalgorithm\ncode\nlanguage\nOutput\negaugnal\nedoc\nmhtirogla\nInput\n4\nC\nJava\nPython\nCcode\nOutput\nedocC\navaJ\nnohtyP\nC\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nString Manipulation with Pointers\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line contains an integer n, the number of strings.\nThe next n lines each contain a single string.",
  "output_spec": "Print the modified list of strings, one per line.",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "3\nalgorithm\ncode\nlanguage",
    "output": "egaugnal\nedoc\nmhtirogla"
+  },
+  {
+   "input": "4\nC\nJava\nPython\nCcode",
+   "output": "edocC\navaJ\nnohtyP\nC"
   }
  ],
  "raw": ""

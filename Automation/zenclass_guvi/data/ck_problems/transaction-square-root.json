@@ -3,14 +3,18 @@
  "slug": "transaction-square-root",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1110. Transaction Square Root\n\n50\n\nMedium\n\nProblem Statement:\nYou are managing a bank's software system. Every time a customer makes a transaction, the transaction amount is recorded. You want to create a function that calculates the square root of the transaction amount. Write a Python function  transaction_sqrt(transaction_amount)  that takes a transaction amount and returns the square root of the transaction amount. Use the  sqrt  function from the built-in Python  math  module to calculate the square root.",
- "input_spec": "-  transaction_amount : a float representing the transaction amount.",
+ "description": "Problem\nHints & Solutions\nSubmissions\n1110\n. \nTransaction Square Root\n50\nMedium\nProblem Statement:\nYou are managing a bank's software system. Every time a customer makes a transaction, the transaction amount is recorded. You want to create a function that calculates the square root of the transaction amount. Write a Python function \ntransaction_sqrt(transaction_amount)\n that takes a transaction amount and returns the square root of the transaction amount. Use the \nsqrt\n function from the built-in Python \nmath\n module to calculate the square root. \nInput Description:\n- \ntransaction_amount\n: a float representing the transaction amount. \nOutput Description:\n- The function should return a float representing the square root of the transaction amount. \nSample Input:\n100.0 \nSample Output:\n10.0 \nExplanation:\nThe \nsqrt\n function from the \nmath\n module calculates the square root of a number. In the context of managing a bank's software system, this can be useful to perform various calculations related to the transaction amount. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n99.71\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n100.0\nOutput\n10.0\nInput\n49.0\nOutput\n7.0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n100.0\nOutput\n10.0\nInput\n49.0\nOutput\n7.0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTransaction Square Root\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- \ntransaction_amount\n: a float representing the transaction amount.",
  "output_spec": "- The function should return a float representing the square root of the transaction amount.",
  "constraints": "",
  "samples": [
   {
    "input": "100.0",
    "output": "10.0"
+  },
+  {
+   "input": "49.0",
+   "output": "7.0"
   }
  ],
  "raw": ""

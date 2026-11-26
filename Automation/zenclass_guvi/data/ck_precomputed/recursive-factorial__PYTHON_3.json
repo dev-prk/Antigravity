@@ -1,0 +1,1 @@
+{"slug": "recursive-factorial", "lang": "PYTHON 3", "code": "def factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n - 1)\n\nn = int(input())\nif n < 0:\n    print(\"Factorial: -1\")\nelse:\n    result = factorial(n)\n    print(f\"Factorial: {result}\")\n", "local_ok": true, "err": ""}

@@ -3,14 +3,22 @@
  "slug": "student-ranking-by-marks",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n510. Student Ranking by Marks\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given with the marks of N students in CS, Maths and English. Sort the students based on marks in maths. If 2 students have the same marks in maths, sort them based on marks in CS. If there is a tie, sort based on marks in English. All the sorting must be done in descending order.",
+ "description": "\nHints & Solutions\nSubmissions\n510\n. \nStudent Ranking by Marks\n50\nMedium\nTopics\nProblem Statement:\nYou are given with the marks of N students in CS, Maths and English. Sort the students based on marks in maths. If 2 students have the same marks in maths, sort them based on marks in CS. If there is a tie, sort based on marks in English. All the sorting must be done in descending order.\nInput Description:\nNumber of students followed by student id,marks in CS, Maths and English\nOutput Description:\nSorted list of students\nExplanation:\nAs their marks in maths are unique(89>87>67), they are sorted in descending order.\nSample Input:\n3\nA 34 89 98\nB 98 87 98\nC 87 67 98\nSample Output:\nA 34 89 98\nB 98 87 98\nC 87 67 98\nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n81.68\n%\nTopics\nsorting\narray\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nA 98 23 34\nB 99 34 78\nOutput\nB 99 34 78\nA 98 23 34\nInput\n2\nA 34 45 56\nB 12 45 56\nOutput\nA 34 45 56\nB 12 45 56\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n2\nA 98 23 34\nB 99 34 78\nOutput\nB 99 34 78\nA 98 23 34\nInput\n2\nA 34 45 56\nB 12 45 56\nOutput\nA 34 45 56\nB 12 45 56\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nStudent Ranking by Marks\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Number of students followed by student id,marks in CS, Maths and English",
- "output_spec": "Sorted list of students",
+ "output_spec": "Sorted list of students\nExplanation:\nAs their marks in maths are unique(89>87>67), they are sorted in descending order.",
  "constraints": "",
  "samples": [
   {
    "input": "3\nA 34 89 98\nB 98 87 98\nC 87 67 98",
    "output": "A 34 89 98\nB 98 87 98\nC 87 67 98"
+  },
+  {
+   "input": "2\nA 98 23 34\nB 99 34 78",
+   "output": "B 99 34 78\nA 98 23 34"
+  },
+  {
+   "input": "2\nA 34 45 56\nB 12 45 56",
+   "output": "A 34 45 56\nB 12 45 56"
   }
  ],
  "raw": ""

@@ -3,14 +3,22 @@
  "slug": "python-player-class-with-goals-property",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1088. Python Player Class with Goals Property\n\n50\n\nMedium\n\nProblem Statement:\nIn a sports team, each player has a name and a number of goals scored. The number of goals scored should always be a non-negative integer. If a negative value or a non-integer value is assigned to the number of goals, it should be automatically set to 0.\n\nPlease write a Python class  Player  that has  name  and  goals  as attributes. Use the  property  decorator to ensure that  goals  is always a non-negative integer.",
- "input_spec": "John, 5\n10\n\nJohn, 10\n-5\n\nSample",
- "output_spec": "John\n5\n10\n\nJohn\n10\n0",
+ "description": "Solutions\nSubmissions\n1088\n. \nPython Player Class with Goals Property\n50\nMedium\nProblem Statement:\nIn a sports team, each player has a name and a number of goals scored. The number of goals scored should always be a non-negative integer. If a negative value or a non-integer value is assigned to the number of goals, it should be automatically set to 0. \nPlease write a Python class \nPlayer\n that has \nname\n and \ngoals\n as attributes. Use the \nproperty\n decorator to ensure that \ngoals\n is always a non-negative integer. \nSample Input:\nJohn, 5\n10 \nJohn, 10\n-5 \nSample Output:\nJohn\n5\n10 \nJohn\n10\n0 \nExplanation:\nIn the sample input, a \nPlayer\n object is created with the name \"John\" and 5 goals. The \ngoals\n property is then updated to 10, -5, and \"hello\". When the \ngoals\n property is set to a negative value or a non-integer value, the \ngoals.setter\n method automatically sets \ngoals\n to 0. This is why the output is 5, 10, 0, 0. This demonstrates how the \nproperty\n decorator can be used to control the values of an attribute. \nAccepted \n3k\nSubmissions \n3k\nAcceptance Rate \n98.89\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\nAlice, 7\n15\nOutput\nAlice\n7\n15\nInput\nBob, -3\nten\nOutput\nBob\n0\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\nAlice, 7\n15\nOutput\nAlice\n7\n15\nInput\nBob, -3\nten\nOutput\nBob\n0\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nPython Player Class with Goals Property\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
-   "input": "John, 5\n10\n\nJohn, 10\n-5",
-   "output": "John\n5\n10\n\nJohn\n10\n0"
+   "input": "John, 5\n10 \nJohn, 10\n-5",
+   "output": "John\n5\n10 \nJohn\n10\n0"
+  },
+  {
+   "input": "Alice, 7\n15",
+   "output": "Alice\n7\n15"
+  },
+  {
+   "input": "Bob, -3\nten",
+   "output": "Bob\n0\n0"
   }
  ],
  "raw": ""

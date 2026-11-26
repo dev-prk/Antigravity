@@ -1,0 +1,1 @@
+{"slug": "is-string-numeric", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    s = sys.stdin.readline().rstrip('\\n')\n    print(\"Yes\" if s.isdigit() else \"No\")\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": false, "err": "empty_llm"}

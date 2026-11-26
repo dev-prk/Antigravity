@@ -3,14 +3,22 @@
  "slug": "travelling-salesman-problem-dp-bitmasking",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1513. Travelling Salesman Problem DP Bitmasking\n\n50\n\nMedium\n\nProblem Statement:\nYou are given N cities, numbered from 0 to N-1, and a 2D array  dist  where  dist[i][j]  represents the distance between city i and city j. Your task is to find the minimum possible total distance to start from city 0, visit every other city exactly once, and return to city 0. You must use dynamic programming with bitmasking to solve this problem efficiently.",
- "input_spec": "- The first line contains an integer N, the number of cities.\n- The next N lines each contain N integers, where the j-th integer in the i-th line is  dist[i][j] .",
+ "description": "lutions\nSubmissions\n1513\n. \nTravelling Salesman Problem DP Bitmasking\n50\nMedium\nProblem Statement:\nYou are given N cities, numbered from 0 to N-1, and a 2D array \ndist\n where \ndist[i][j]\n represents the distance between city i and city j. Your task is to find the minimum possible total distance to start from city 0, visit every other city exactly once, and return to city 0. You must use dynamic programming with bitmasking to solve this problem efficiently. \nInput Description:\n- The first line contains an integer N, the number of cities.\n- The next N lines each contain N integers, where the j-th integer in the i-th line is \ndist[i][j]\n.\nConstraints:\n- 2 \u2264 N \u2264 16\n- 0 \u2264 dist[i][j] \u2264 10^6\n- dist[i][i] = 0 for all 0 \u2264 i < N \nOutput Description:\n- Print a single integer, the minimum possible total distance to complete the tour. \nSample Input:\n4\n0 10 15 20\n10 0 35 25\n15 35 0 30\n20 25 30 0 \nSample Output:\n80 \nExplanation:\nThe shortest route is 0 \u2192 1 \u2192 3 \u2192 2 \u2192 0 with a total distance of 10 + 25 + 30 + 15 = 80. \nAccepted \n27\nSubmissions \n27\nAcceptance Rate \n100\n%\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n0 1 15\n1 0 10\n15 10 0\nOutput\n26\nInput\n4\n0 10 15 20\n10 0 30 35\n15 30 0 35\n20 25 35 0\nOutput\n85\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n0 1 15\n1 0 10\n15 10 0\nOutput\n26\nInput\n4\n0 10 15 20\n10 0 30 35\n15 30 0 35\n20 25 35 0\nOutput\n85\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nTravelling Salesman Problem DP Bitmasking\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "- The first line contains an integer N, the number of cities.\n- The next N lines each contain N integers, where the j-th integer in the i-th line is \ndist[i][j]\n.\nConstraints:\n- 2 \u2264 N \u2264 16\n- 0 \u2264 dist[i][j] \u2264 10^6\n- dist[i][i] = 0 for all 0 \u2264 i < N",
  "output_spec": "- Print a single integer, the minimum possible total distance to complete the tour.",
- "constraints": "- 2 \u2264 N \u2264 16\n- 0 \u2264 dist[i][j] \u2264 10^6\n- dist[i][i] = 0 for all 0 \u2264 i < N",
+ "constraints": "",
  "samples": [
   {
    "input": "4\n0 10 15 20\n10 0 35 25\n15 35 0 30\n20 25 30 0",
    "output": "80"
+  },
+  {
+   "input": "3\n0 1 15\n1 0 10\n15 10 0",
+   "output": "26"
+  },
+  {
+   "input": "4\n0 10 15 20\n10 0 30 35\n15 30 0 35\n20 25 35 0",
+   "output": "85"
   }
  ],
  "raw": ""

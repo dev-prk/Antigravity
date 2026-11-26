@@ -3,14 +3,22 @@
  "slug": "sorted-pen-arrangement",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n642. Sorted Pen Arrangement\n\n90\n\nHard  Topics\n\nProblem Statement:\nYou are given some pens of specific serial number whenever a new pen is inserted you have to print the new arrangement of pens in sorted order.",
+ "description": "blem\nHints & Solutions\nSubmissions\n642\n. \nSorted Pen Arrangement\n90\nHard\nTopics\nProblem Statement:\nYou are given some pens of specific serial number whenever a new pen is inserted you have to print the new arrangement of pens in sorted order. \nInput Description:\nYou are given a number \u2018n\u2019 denoting the number of new pens to be added.\nNext line contains n space separated numbers denoting the serial numbers of new pens.\nNext line contains a number \u2018m\u2019 representing already present number\nNext line contains m space separated already present numbers. \nOutput Description:\nPrint the arrangement after adding the new number \nExplanation:\nSelf Explanatory \nSample Input:\n3\n15 19 3\n2\n12 13 \nSample Output:\n3 12 13 15 19 \nAccepted \n475\nSubmissions \n1k\nAcceptance Rate \n46.75\n%\nTopics\nsorting\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n14 18 2\n2\n11 12\nOutput\n2 11 12 14 18\nInput\n7\n12 13 16 18 46 95 101\n2\n47 98\nOutput\n12 13 16 18 46 47 95 98 101\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n14 18 2\n2\n11 12\nOutput\n2 11 12 14 18\nInput\n7\n12 13 16 18 46 95 101\n2\n47 98\nOutput\n12 13 16 18 46 47 95 98 101\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSorted Pen Arrangement\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given a number \u2018n\u2019 denoting the number of new pens to be added.\nNext line contains n space separated numbers denoting the serial numbers of new pens.\nNext line contains a number \u2018m\u2019 representing already present number\nNext line contains m space separated already present numbers.",
- "output_spec": "Print the arrangement after adding the new number",
+ "output_spec": "Print the arrangement after adding the new number \nExplanation:\nSelf Explanatory",
  "constraints": "",
  "samples": [
   {
    "input": "3\n15 19 3\n2\n12 13",
    "output": "3 12 13 15 19"
+  },
+  {
+   "input": "3\n14 18 2\n2\n11 12",
+   "output": "2 11 12 14 18"
+  },
+  {
+   "input": "7\n12 13 16 18 46 95 101\n2\n47 98",
+   "output": "12 13 16 18 46 47 95 98 101"
   }
  ],
  "raw": ""

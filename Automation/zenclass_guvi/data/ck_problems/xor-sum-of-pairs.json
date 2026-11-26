@@ -3,7 +3,7 @@
  "slug": "xor-sum-of-pairs",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n620. XOR Sum of Pairs\n\n50\n\nMedium  Topics\n\nProblem Statement:\nYou are given an array of 'N' numbers.You have to find the sum of XOR pairs of numbers in the array.",
+ "description": "\nProblem\nHints & Solutions\nSubmissions\n620\n. \nXOR Sum of Pairs\n50\nMedium\nTopics\nProblem Statement:\nYou are given an array of 'N' numbers.You have to find the sum of XOR pairs of numbers in the array. \nInput Description:\nThe first line of input denotes a number n. Next line contains n space separated numbers \nOutput Description:\nPrint the sum of all XOR pairs present in array \nSample Input:\n3\n7 3 5 \nSample Output:\n12 \nExplanation:\nSelf Explanatory \nAccepted \n1k\nSubmissions \n1k\nAcceptance Rate \n91.04\n%\nTopics\nbit manipulation\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n7 3 5\nOutput\n12\nInput\n4\n5 9 7 6\nOutput\n47\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n3\n7 3 5\nOutput\n12\nInput\n4\n5 9 7 6\nOutput\n47\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nXOR Sum of Pairs\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The first line of input denotes a number n. Next line contains n space separated numbers",
  "output_spec": "Print the sum of all XOR pairs present in array",
  "constraints": "",
@@ -11,6 +11,10 @@
   {
    "input": "3\n7 3 5",
    "output": "12"
+  },
+  {
+   "input": "4\n5 9 7 6",
+   "output": "47"
   }
  ],
  "raw": ""

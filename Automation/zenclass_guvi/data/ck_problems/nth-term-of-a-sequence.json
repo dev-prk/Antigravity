@@ -3,14 +3,22 @@
  "slug": "nth-term-of-a-sequence",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n465. Nth Term of a Sequence\n\n90\n\nHard  Topics\n\nProblem Statement:\nA sequence is given by: 2, 6, 11, 17, 24,....\nThe first term is 2.\nGiven an integer N, find the Nth term of the sequence.\n1 <= N <= 10^18\nSince the answer can be very large print it modulo 1,000,000,007 (10^9 + 7)",
+ "description": "blem\nHints & Solutions\nSubmissions\n465\n. \nNth Term of a Sequence\n90\nHard\nTopics\nProblem Statement:\nA sequence is given by: 2, 6, 11, 17, 24,....\nThe first term is 2.\nGiven an integer N, find the Nth term of the sequence.\n1 <= N <= 10^18\nSince the answer can be very large print it modulo 1,000,000,007 (10^9 + 7) \nInput Description:\nThe only line of input contains an integer N \nOutput Description:\nPrint the Nth term of the sequence \nExplanation:\n5th term of the sequence modulo 10^9 + 7 is 24 \nSample Input:\n5 \nSample Output:\n24 \nAccepted \n844\nSubmissions \n1k\nAcceptance Rate \n80.61\n%\nTopics\nmathematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n19\nOutput\n227\nInput\n1\nOutput\n2\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n19\nOutput\n227\nInput\n1\nOutput\n2\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth Term of a Sequence\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "The only line of input contains an integer N",
- "output_spec": "Print the Nth term of the sequence",
+ "output_spec": "Print the Nth term of the sequence \nExplanation:\n5th term of the sequence modulo 10^9 + 7 is 24",
  "constraints": "",
  "samples": [
   {
    "input": "5",
    "output": "24"
+  },
+  {
+   "input": "19",
+   "output": "227"
+  },
+  {
+   "input": "1",
+   "output": "2"
   }
  ],
  "raw": ""

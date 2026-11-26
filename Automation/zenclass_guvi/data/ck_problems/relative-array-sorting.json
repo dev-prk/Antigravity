@@ -3,14 +3,22 @@
  "slug": "relative-array-sorting",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n495. Relative Array Sorting\n\n60\n\nMedium  Topics  Company\n\nProblem Statement:\nFor 2 arrays A1 and A2 , sort A1 in such a way that the relative order among the elements will be the same as those in A2. For the elements not present in A2, append them at last to A1, in SORTED ORDER.\nNote: Number of elements in A2[] are smaller than or equal to the number of elements in A1[]. A2[] has all distinct elements.",
+ "description": " & Solutions\nSubmissions\n495\n. \nRelative Array Sorting\n60\nMedium\nTopics\nCompany\nProblem Statement:\nFor 2 arrays A1 and A2 , sort A1 in such a way that the relative order among the elements will be the same as those in A2. For the elements not present in A2, append them at last to A1, in SORTED ORDER.\nNote: Number of elements in A2[] are smaller than or equal to the number of elements in A1[]. A2[] has all distinct elements.\nConstraints:\n1 <= N,M <= 106\n1 <= A1[], A2[] <= 106 \nInput Description:\nFirst line of input contains length of arrays N and M and next two line contains elements of A1 and A2 respectively. \nOutput Description:\nPrint the sorted array. \nSample Input:\n11 4\n2 1 2 5 7 1 9 3 6 8 8\n2 1 8 3 \nSample Output:\n2 2 1 1 8 8 3 5 6 7 9 \nExplanation:\nAccording to A2, 2 \nAccepted \n1k\nSubmissions \n2k\nAcceptance Rate \n87.12\n%\nTopics\nsorting\narray\nguvi-learning-path\nCompany\nAmazon\nMicrosoft\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n9 8 8 2 7\n2 3 4\nOutput\n2 7 8 8 9\nInput\n8 4\n8 7 6 5 4 3 2 1\n1 2 3 4\nOutput\n1 2 3 4 5 6 7 8\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 3\n9 8 8 2 7\n2 3 4\nOutput\n2 7 8 8 9\nInput\n8 4\n8 7 6 5 4 3 2 1\n1 2 3 4\nOutput\n1 2 3 4 5 6 7 8\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nRelative Array Sorting\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "First line of input contains length of arrays N and M and next two line contains elements of A1 and A2 respectively.",
  "output_spec": "Print the sorted array.",
- "constraints": "1 <= N,M <= 106\n1 <= A1[], A2[] <= 106",
+ "constraints": "",
  "samples": [
   {
    "input": "11 4\n2 1 2 5 7 1 9 3 6 8 8\n2 1 8 3",
    "output": "2 2 1 1 8 8 3 5 6 7 9"
+  },
+  {
+   "input": "5 3\n9 8 8 2 7\n2 3 4",
+   "output": "2 7 8 8 9"
+  },
+  {
+   "input": "8 4\n8 7 6 5 4 3 2 1\n1 2 3 4",
+   "output": "1 2 3 4 5 6 7 8"
   }
  ],
  "raw": ""

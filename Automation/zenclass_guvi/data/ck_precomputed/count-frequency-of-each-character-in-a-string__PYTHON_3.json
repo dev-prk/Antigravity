@@ -1,0 +1,1 @@
+{"slug": "count-frequency-of-each-character-in-a-string", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    s = sys.stdin.readline().strip()\n    freq = {}\n    for ch in s:\n        freq[ch] = freq.get(ch, 0) + 1\n    for ch, cnt in freq.items():\n        print(f\"{ch} {cnt}\")\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

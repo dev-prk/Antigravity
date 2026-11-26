@@ -3,14 +3,22 @@
  "slug": "nth-dfg-number",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n584. Nth DFG Number\n\n90\n\nHard  Topics\n\nProblem Statement:\nRohan is teacher at \u201cSunsdfghpol\u201d academy about dfg numbers.Assume you are student of his coaching batch .He has given you some task.Your task is to print nth dfg number.A dfg number is a number whose prime factors are only 2,3 or 5.",
+ "description": "blem\nProblem\nHints & Solutions\nSubmissions\n584\n. \nNth DFG Number\n90\nHard\nTopics\nProblem Statement:\nRohan is teacher at \u201cSunsdfghpol\u201d academy about dfg numbers.Assume you are student of his coaching batch .He has given you some task.Your task is to print nth dfg number.A dfg number is a number whose prime factors are only 2,3 or 5. \nInput Description:\nYou are given a number \u2018n\u2019. \nOutput Description:\nPrint all the dfg numbers upto index \u2018n\u2019. \nExplanation:\n1 is considered as first dfg number, 2 is the second dfg number because it satisfy our condition \nSample Input:\n2 \nSample Output:\n1 2 \nAccepted \n2k\nSubmissions \n2k\nAcceptance Rate \n77.97\n%\nTopics\nnumbers\nmatematics\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n1 2 3 4 5\nInput\n10\nOutput\n1 2 3 4 5 6 8 9 10 12\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5\nOutput\n1 2 3 4 5\nInput\n10\nOutput\n1 2 3 4 5 6 8 9 10 12\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nNth DFG Number\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "You are given a number \u2018n\u2019.",
- "output_spec": "Print all the dfg numbers upto index \u2018n\u2019.",
+ "output_spec": "Print all the dfg numbers upto index \u2018n\u2019. \nExplanation:\n1 is considered as first dfg number, 2 is the second dfg number because it satisfy our condition",
  "constraints": "",
  "samples": [
   {
    "input": "2",
    "output": "1 2"
+  },
+  {
+   "input": "5",
+   "output": "1 2 3 4 5"
+  },
+  {
+   "input": "10",
+   "output": "1 2 3 4 5 6 8 9 10 12"
   }
  ],
  "raw": ""

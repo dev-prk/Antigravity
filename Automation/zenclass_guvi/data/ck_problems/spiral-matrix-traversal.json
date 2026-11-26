@@ -3,14 +3,22 @@
  "slug": "spiral-matrix-traversal",
  "difficulty": "Medium",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n535. Spiral Matrix Traversal\n\n50\n\nMedium  Topics\n\nProblem Statement:\nVishal is a person who loves to find interesting applications of matrices. He decides he will store his password in a square matrix. The password can be recovered only if the matrix is traversed in a particular way. He leaves a clue to can crack his password which is \"To find it , make your head spin like a spiral, clockwise! \". Find out what was Vishal's password, given a square matrix.",
+ "description": "m\nHints & Solutions\nSubmissions\n535\n. \nSpiral Matrix Traversal\n50\nMedium\nTopics\nProblem Statement:\nVishal is a person who loves to find interesting applications of matrices. He decides he will store his password in a square matrix. The password can be recovered only if the matrix is traversed in a particular way. He leaves a clue to can crack his password which is \"To find it , make your head spin like a spiral, clockwise! \". Find out what was Vishal's password, given a square matrix. \nInput Description:\nDimensions of the square matrix followed by elements of the matrix. \nOutput Description:\nA specific sequence involving all the elements in the matrix. \nExplanation:\nThe sequence is derived by traversing the matrix in a particular order, which is your task to\nguess :) \nSample Input:\n3 3\n1 2 3\n4 5 6\n7 8 9 \nSample Output:\n1 2 3 6 9 8 7 4 5 \nAccepted \n385\nSubmissions \n523\nAcceptance Rate \n73.61\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 4\n4 5 3 2\n7 6 5 1\n2 4 8 1\n9 2 6 1\nOutput\n4 5 3 2 1 1 1 6 2 9 2 7 6 5 8 4\nInput\n2 2\n1 2\n9 8\nOutput\n1 2 8 9\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n4 4\n4 5 3 2\n7 6 5 1\n2 4 8 1\n9 2 6 1\nOutput\n4 5 3 2 1 1 1 6 2 9 2 7 6 5 8 4\nInput\n2 2\n1 2\n9 8\nOutput\n1 2 8 9\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSpiral Matrix Traversal\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
  "input_spec": "Dimensions of the square matrix followed by elements of the matrix.",
- "output_spec": "A specific sequence involving all the elements in the matrix.",
+ "output_spec": "A specific sequence involving all the elements in the matrix. \nExplanation:\nThe sequence is derived by traversing the matrix in a particular order, which is your task to\nguess :)",
  "constraints": "",
  "samples": [
   {
    "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
    "output": "1 2 3 6 9 8 7 4 5"
+  },
+  {
+   "input": "4 4\n4 5 3 2\n7 6 5 1\n2 4 8 1\n9 2 6 1",
+   "output": "4 5 3 2 1 1 1 6 2 9 2 7 6 5 8 4"
+  },
+  {
+   "input": "2 2\n1 2\n9 8",
+   "output": "1 2 8 9"
   }
  ],
  "raw": ""

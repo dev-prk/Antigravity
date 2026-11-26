@@ -3,14 +3,18 @@
  "slug": "smart-parking-lot-allocation-system",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n1901. Smart Parking Lot Allocation System\n\n80\n\nHard  Topics\n\nSmart Parking Lot Allocation System\n\nProblem Statement\n\nA smart parking system manages parking slots numbered from 1 to N.\n\nInitially, all slots are free.\n\nThe system must support Q operations:\n\n1. Allocate nearest available slot \u2265 x\nOperation: A x\n\n2. Free a slot\nOperation: F x\n\n3. Query longest continuous free block\nOperation: L\n\nRules:\n\nIf no slot available during allocation \u2192 print -1\n\nLongest continuous block means maximum consecutive free slots\n\nInput Format\nFirst line:\nN\n\nSecond line:\nQ\n\nNext Q lines:\nOperations\n\nOutput Format\nFor every A and L operation, print result.",
- "input_spec": "First line:\nN\n\nSecond line:\nQ\n\nNext Q lines:\nOperations",
- "output_spec": "For every A and L operation, print result.",
+ "description": "arking Lot Allocation System\n80\nHard\nTopics\nSmart Parking Lot Allocation System\nProblem Statement\nA smart parking system manages parking slots numbered from 1 to N.\nInitially, all slots are free.\nThe system must support Q operations:\n1. Allocate nearest available slot \u2265 x\nOperation: A x\n2. Free a slot\nOperation: F x\n3. Query longest continuous free block\nOperation: L\nRules:\nIf no slot available during allocation \u2192 print -1\nLongest continuous block means maximum consecutive free slots\nInput Format\nFirst line:\nN\nSecond line:\nQ\nNext Q lines:\nOperations\nOutput Format\nFor every A and L operation, print result.\nSample Input\n5\n6\nA 2\nA 2\nL\nF 2\nL\nA 1\nSample Output\n2\n3\n2\n2\n1\nAccepted \n0\nSubmissions \n0\nAcceptance Rate \n0\n%\nTopics\ntrees and graphs\ndata structures\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nInput\n3\n4\nA 1\nA 1\nA 1\nL\nOutput\n1\n2\n3\n0\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nInput\n3\n4\nA 1\nA 1\nA 1\nL\nOutput\n1\n2\n3\n0\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nSmart Parking Lot Allocation System\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTesting\n0\n%\nAll Problems",
+ "input_spec": "",
+ "output_spec": "",
  "constraints": "",
  "samples": [
   {
    "input": "5\n6\nA 2\nA 2\nL\nF 2\nL\nA 1",
    "output": "2\n3\n2\n2\n1"
+  },
+  {
+   "input": "3\n4\nA 1\nA 1\nA 1\nL",
+   "output": "1\n2\n3\n0"
   }
  ],
  "raw": ""

@@ -1,0 +1,1 @@
+{"slug": "minimum-byess-in-tournament", "lang": "PYTHON 3", "code": "import sys\n\ndef main():\n    N = int(sys.stdin.readline())\n    low = 1 << (N.bit_length() - 1)\n    lower_diff = N - low\n    high = low << 1\n    upper_diff = high - N\n    print(min(lower_diff, upper_diff))\n\nif __name__ == \"__main__\":\n    main()\n", "local_ok": true, "err": ""}

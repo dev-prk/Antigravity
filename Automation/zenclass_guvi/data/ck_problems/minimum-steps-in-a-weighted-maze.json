@@ -3,14 +3,22 @@
  "slug": "minimum-steps-in-a-weighted-maze",
  "difficulty": "Hard",
  "completed": false,
- "description": "Code Editor\n\nProblem\n\nProblem  Hints & Solutions  Submissions\n\n529. Minimum Steps in a Weighted Maze\n\n70\n\nHard  Topics\n\nProblem Statement:\nRohit is going to enter the maze in Takeshi's Castle. The maze is modelled as a square matrix with every cell in the maze having a weight in the matrix. Every cell in the maze is of unequal dimensions and the weight denotes the average number of steps needed to walk from one end of the cell to another end of the same cell, in the maze. Ram is Rohit's friend and decides to help him out by finding out the shortest number of steps with which Rohit can come out of the maze. Rohit enters the maze at (0.0) and exists at (N-1,N-1) where N is the number of rows and columns in the matrix. Your task is to help Ram calculate. Note: Rohit cannot go backwards in any instant. Only directions allowed are 'right' and 'down'. No diagonal movements.",
+ "description": " & Solutions\nSubmissions\n529\n. \nMinimum Steps in a Weighted Maze\n70\nHard\nTopics\nProblem Statement:\nRohit is going to enter the maze in Takeshi's Castle. The maze is modelled as a square matrix with every cell in the maze having a weight in the matrix. Every cell in the maze is of unequal dimensions and the weight denotes the average number of steps needed to walk from one end of the cell to another end of the same cell, in the maze. Ram is Rohit's friend and decides to help him out by finding out the shortest number of steps with which Rohit can come out of the maze. Rohit enters the maze at (0.0) and exists at (N-1,N-1) where N is the number of rows and columns in the matrix. Your task is to help Ram calculate. Note: Rohit cannot go backwards in any instant. Only directions allowed are 'right' and 'down'. No diagonal movements. \nInput Description:\nDimensions of the square matrix followed by elements of the matrix (range: 1 to 100) \nOutput Description:\nSmallest sum of elements on the path from (0,0) to (N-1,N-1) \nExplanation:\nShortest path is 1+2+3+6+9=21 \nSample Input:\n3 3\n1 2 3\n4 5 6\n7 8 9 \nSample Output:\n21 \nAccepted \n94\nSubmissions \n212\nAcceptance Rate \n44.34\n%\nTopics\nmatrix\n0\nCode Editor\nChange Layout\nCode Editor\nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\n1 4 2 2 7\n2 1 1 3 1\n4 1 3 1 2\n2 1 1 1 1\n1 1 1 1 1\nOutput\n10\nInput\n2 2\n1 2\n3 4\nOutput\n7\nConsole\nConsole\nConsole \nTest Case\nTest Result\nCase 1\nCase 2\nInput\n5 5\n1 4 2 2 7\n2 1 1 3 1\n4 1 3 1 2\n2 1 1 1 1\n1 1 1 1 1\nOutput\n10\nInput\n2 2\n1 2\n3 4\nOutput\n7\nConsole\nConsole\nConsole \nAre you sure you want to reset?\nYour code will be replaced with the default code. Unsaved changes will be lost.\nCancel\nReset\nKeep the Code Changes?\nNo\nYes\nSettings\nFont Size\nDark Mode\nIntelliSense\nCode Wrap\nShow Gutter\nLine Numbers\nInsert Code Template\nInsert\nShortcuts\nRun Code\nCtrl + '\nSubmit\nCtrl + Enter\nEnter / Exit Full Screen\nAlt + F\nEditor - To indent one level\nTab or Ctrl + ]\nEditor - To indent one fewer levels\nShift + Tab or Ctrl + [\nEditor - To move lines up / down\nAlt + Up/Down\nEditor - Undo action\nCtrl + Z\nEditor - Redo action\nCtrl + Shift + Z\nNext Question\nCtrl + Right Arrow\nPrevious Question\nCtrl + Left Arrow\nShuffle Question\nCtrl + Alt + R\nclose\nView All Problems\nYou need to \u00a0\nLogin\n or \nSign up\n \u00a0to run or submit the code\nFor better Experience, Practice CodeKata through desktop devices.\nContinue Here Anyway\nclose\nShare Problem\nYou can share this problem with your family and friends on Social Media.\nCopy\nShare in:\nclose\nFeedback\nProblem\nMinimum Steps in a Weighted Maze\nIssues Encountered\n*\nDescription or examples are unclear or incorrect\nDifficulty is inaccurate\nTestcases are missing or incorrect\nEdge cases are too frustrating to solve\nOthers\nAdditional Feedback\nCancel\nSubmit\n+\n0\n Geekoins\nCongratulations! You have earned \n0\n Geekoins on solving this problem\nView Submissions\nNext Question\nTe",
  "input_spec": "Dimensions of the square matrix followed by elements of the matrix (range: 1 to 100)",
- "output_spec": "Smallest sum of elements on the path from (0,0) to (N-1,N-1)",
+ "output_spec": "Smallest sum of elements on the path from (0,0) to (N-1,N-1) \nExplanation:\nShortest path is 1+2+3+6+9=21",
  "constraints": "",
  "samples": [
   {
    "input": "3 3\n1 2 3\n4 5 6\n7 8 9",
    "output": "21"
+  },
+  {
+   "input": "5 5\n1 4 2 2 7\n2 1 1 3 1\n4 1 3 1 2\n2 1 1 1 1\n1 1 1 1 1",
+   "output": "10"
+  },
+  {
+   "input": "2 2\n1 2\n3 4",
+   "output": "7"
   }
  ],
  "raw": ""

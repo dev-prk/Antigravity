@@ -1,0 +1,1 @@
+{"slug": "sum-of-digits-2", "lang": "PYTHON 3", "code": "def sum_digits(n):\n    sum_digits = 0\n    while n > 0:\n        sum_digits += n % 10\n        n //= 10\n    return sum_digits\n\nnumber = int(input())\nprint(sum_digits(number))\n", "local_ok": true, "err": ""}
