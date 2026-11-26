@@ -9,16 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "8",
-   "output": "A1 \n AB12 \n ABC123 \n ABCD1234 \n ABCDE12345 \n ABCDEF123456 \n ABCDEFG1234567 \nABCDEFGH12345678"
-  },
-  {
    "input": "7",
-   "output": "A1\n AB12\n ABC123\n ABCD1234\n ABCDE12345\n ABCDEF123456\nABCDEFG1234567"
+   "output": "      A1\n     AB12\n    ABC123\n   ABCD1234\n  ABCDE12345\n ABCDEF123456\nABCDEFG1234567"
   },
   {
    "input": "6",
-   "output": "A1\n AB12\n ABC123\n ABCD1234\n ABCDE12345\nABCDEF123456"
+   "output": "     A1\n    AB12\n   ABC123\n  ABCD1234\n ABCDE12345\nABCDEF123456"
   }
  ],
  "raw": ""

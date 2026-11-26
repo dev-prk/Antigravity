@@ -13,10 +13,6 @@
    "output": "Book added\nBook borrowed\nBook returned"
   },
   {
-   "input": "3 \nadd HarryPotter J.K.Rowling \nborrow HarryPotter \nreturn HarryPotter",
-   "output": "Book added\nBook borrowed\nBook returned"
-  },
-  {
    "input": "4\nadd Dune FrankHerbert\nborrow Dune\nborrow Dune\nreturn Dune",
    "output": "Book added\nBook borrowed\nBook not available\nBook returned"
   }

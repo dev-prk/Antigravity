@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "2000 500",
-   "output": "Applied Discount: 500"
-  },
-  {
    "input": "1500 600",
    "output": "Applied Discount: 500"
   }

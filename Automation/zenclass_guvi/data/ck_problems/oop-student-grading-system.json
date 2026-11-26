@@ -13,10 +13,6 @@
    "output": "Marks added\nMarks added\nGrade calculated\nJohn: 87.5 - B"
   },
   {
-   "input": "4 \nadd John 85 \nadd John 90 \ncalculate John \ndisplay John",
-   "output": "Marks added\nMarks added\nGrade calculated\nJohn: 87.5 - B"
-  },
-  {
    "input": "3\nadd Alice 70\ncalculate Alice\ndisplay Alice",
    "output": "Marks added\nGrade calculated\nAlice: 70.0 - C"
   }

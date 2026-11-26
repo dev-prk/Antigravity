@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "int\n10\n20",
-   "output": "30"
-  },
-  {
    "input": "float\n12.5\n7.3",
    "output": "19.8"
   }

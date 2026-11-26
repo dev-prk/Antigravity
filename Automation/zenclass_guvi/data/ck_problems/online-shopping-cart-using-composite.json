@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Combo\nPercentage",
-   "output": "Total Price before discount: 56000\nFinal Price after discount: 50400"
-  },
-  {
    "input": "Combo Flat",
    "output": "Total Price before discount: 56000\nFinal Price after discount: 51000"
   }

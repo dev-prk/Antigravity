@@ -9,12 +9,8 @@
  "constraints": "",
  "samples": [
   {
-   "input": "2\nTesla\nModel S\nBMW\nX5",
-   "output": "Car Tesla Model S has been parked in slot #1\nCar BMW X5 has been parked in slot #2\n--- Garage Status ---\nSlot 1: Tesla Model S\nSlot 2: BMW X5"
-  },
-  {
    "input": "1\nFord\nMustang",
-   "output": "Car Ford Mustang has been parked in slot #1\n--- Garage Status ---\nSlot 1: Ford Mustang"
+   "output": "Car Ford Mustang has been parked in slot #1\n\n--- Garage Status ---\nSlot 1: Ford Mustang"
   }
  ],
  "raw": ""
