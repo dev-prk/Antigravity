@@ -10,15 +10,11 @@
  "samples": [
   {
    "input": "5",
-   "output": "A \n BAB \n CBABC \n DCBABCD \nEDCBABCDE"
-  },
-  {
-   "input": "5",
-   "output": "A\n BAB\n CBABC\n DCBABCD\nEDCBABCDE"
+   "output": "    A\n   BAB\n  CBABC\n DCBABCD\nEDCBABCDE"
   },
   {
    "input": "4",
-   "output": "A\n BAB\n CBABC\nDCBABCD"
+   "output": "   A\n  BAB\n CBABC\nDCBABCD"
   }
  ],
  "raw": ""

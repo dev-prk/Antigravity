@@ -1,3 +1,56 @@
-2026/11/27-01:46:12.630 37b9c0 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/11/27-01:46:12.631 37b9c0 Recovering log #240
-2026/11/27-01:46:12.631 37b9c0 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/000240.log 
+2026/11/27-01:50:36.560 382632 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/11/27-01:50:36.560 382632 Recovering log #240
+2026/11/27-01:50:36.560 382632 Level-0 table #242: started
+2026/11/27-01:50:36.572 382632 Level-0 table #242: 85505 bytes OK
+2026/11/27-01:50:36.575 382632 Delete type=0 #240
+2026/11/27-01:50:36.577 382637 Compacting 4@0 + 1@1 files
+2026/11/27-01:50:36.580 382637 Generated table #244@0: 143 keys, 45063 bytes
+2026/11/27-01:50:36.580 382637 Compacted 4@0 + 1@1 files => 45063 bytes
+2026/11/27-01:50:36.581 382637 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-01:50:36.581 382637 Delete type=2 #239
+2026/11/27-01:50:36.581 382637 Delete type=2 #236
+2026/11/27-01:50:36.581 382637 Delete type=2 #231
+2026/11/27-01:50:36.581 382637 Delete type=2 #233
+2026/11/27-01:50:36.581 382637 Delete type=2 #242
+2026/11/27-01:52:36.996 382637 Level-0 table #246: started
+2026/11/27-01:52:37.015 382637 Level-0 table #246: 62364 bytes OK
+2026/11/27-01:52:37.019 382637 Delete type=0 #243
+2026/11/27-01:54:36.998 382637 Level-0 table #248: started
+2026/11/27-01:54:37.004 382637 Level-0 table #248: 75942 bytes OK
+2026/11/27-01:54:37.010 382637 Delete type=0 #245
+2026/11/27-01:56:36.997 382637 Level-0 table #250: started
+2026/11/27-01:56:37.005 382637 Level-0 table #250: 62219 bytes OK
+2026/11/27-01:56:37.008 382637 Delete type=0 #247
+2026/11/27-01:58:37.000 382637 Level-0 table #252: started
+2026/11/27-01:58:37.004 382637 Level-0 table #252: 76506 bytes OK
+2026/11/27-01:58:37.009 382637 Delete type=0 #249
+2026/11/27-01:58:37.009 382637 Compacting 4@0 + 1@1 files
+2026/11/27-01:58:37.014 382637 Generated table #253@0: 144 keys, 46185 bytes
+2026/11/27-01:58:37.014 382637 Compacted 4@0 + 1@1 files => 46185 bytes
+2026/11/27-01:58:37.016 382637 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-01:58:37.017 382637 Delete type=2 #248
+2026/11/27-01:58:37.017 382637 Delete type=2 #252
+2026/11/27-01:58:37.017 382637 Delete type=2 #246
+2026/11/27-01:58:37.017 382637 Delete type=2 #250
+2026/11/27-01:58:37.017 382637 Delete type=2 #244
+2026/11/27-02:00:36.984 382637 Level-0 table #255: started
+2026/11/27-02:00:36.987 382637 Level-0 table #255: 75634 bytes OK
+2026/11/27-02:00:36.990 382637 Delete type=0 #251
+2026/11/27-02:02:36.986 382637 Level-0 table #257: started
+2026/11/27-02:02:36.991 382637 Level-0 table #257: 76007 bytes OK
+2026/11/27-02:02:36.995 382637 Delete type=0 #254
+2026/11/27-02:04:36.984 382637 Level-0 table #259: started
+2026/11/27-02:04:36.988 382637 Level-0 table #259: 76215 bytes OK
+2026/11/27-02:04:36.991 382637 Delete type=0 #256
+2026/11/27-02:06:36.984 382637 Level-0 table #261: started
+2026/11/27-02:06:36.987 382637 Level-0 table #261: 62620 bytes OK
+2026/11/27-02:06:36.989 382637 Delete type=0 #258
+2026/11/27-02:06:36.991 382637 Compacting 4@0 + 1@1 files
+2026/11/27-02:06:36.996 382637 Generated table #262@0: 143 keys, 45479 bytes
+2026/11/27-02:06:36.996 382637 Compacted 4@0 + 1@1 files => 45479 bytes
+2026/11/27-02:06:36.998 382637 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-02:06:36.998 382637 Delete type=2 #261
+2026/11/27-02:06:36.998 382637 Delete type=2 #259
+2026/11/27-02:06:36.998 382637 Delete type=2 #255
+2026/11/27-02:06:36.998 382637 Delete type=2 #257
+2026/11/27-02:06:36.998 382637 Delete type=2 #253

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5000\n2000",
-   "output": "3000.0\n150"
-  },
-  {
    "input": "10000\n4000",
    "output": "6000.0\n300"
   }

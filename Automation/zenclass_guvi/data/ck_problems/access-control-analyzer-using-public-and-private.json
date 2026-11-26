@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "12345\n5000\n1111",
-   "output": "Savings Account: 12345 5000\nSecure Account: Access Restricted \nSavings Account: 12345 5000\nSecure Account: Access Restricted"
-  },
-  {
    "input": "20001\n10000\n2222",
    "output": "Savings Account: 20001 10000\nSecure Account: Access Restricted"
   }

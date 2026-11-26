@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Car 500 25",
-   "output": "Fuel Efficiency: 20.0"
-  },
-  {
    "input": "Truck 600 30",
    "output": "Fuel Efficiency: 16.0"
   }

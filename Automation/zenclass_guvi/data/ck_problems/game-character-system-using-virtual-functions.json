@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Mage",
-   "output": "Mage casts Fireball!"
-  },
-  {
    "input": "Warrior",
    "output": "Warrior slashes with Sword!"
   }

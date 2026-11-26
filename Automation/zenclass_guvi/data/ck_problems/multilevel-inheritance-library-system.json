@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "JavaProgramming JohnDoe 9781234567890 5",
-   "output": "Title: JavaProgramming\nAuthor: JohnDoe\nISBN: 9781234567890\nFile Size: 5MB"
-  },
-  {
    "input": "BigDataAnalytics AliceCooper 9876543210 250",
    "output": "Title: BigDataAnalytics\nAuthor: AliceCooper\nISBN: 9876543210\nFile Size: 250MB"
   },

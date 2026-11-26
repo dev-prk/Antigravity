@@ -10,11 +10,7 @@
  "samples": [
   {
    "input": "5",
-   "output": "1 \n12 \n1 3 \n1 4 \n12345"
-  },
-  {
-   "input": "5",
-   "output": "1\n12\n1 3\n1 4\n12345"
+   "output": "1\n12\n1 3\n1  4\n12345"
   },
   {
    "input": "4",

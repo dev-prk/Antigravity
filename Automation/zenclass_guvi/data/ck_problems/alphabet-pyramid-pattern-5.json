@@ -10,15 +10,11 @@
  "samples": [
   {
    "input": "5",
-   "output": "A \n BBB \n CCCCC \n DDDDDDD \nEEEEEEEEE"
-  },
-  {
-   "input": "5",
-   "output": "A\n BBB\n CCCCC\n DDDDDDD\nEEEEEEEEE"
+   "output": "    A\n   BBB\n  CCCCC\n DDDDDDD\nEEEEEEEEE"
   },
   {
    "input": "6",
-   "output": "A\n BBB\n CCCCC\n DDDDDDD\n EEEEEEEEE\nFFFFFFFFFFF"
+   "output": "     A\n    BBB\n   CCCCC\n  DDDDDDD\n EEEEEEEEE\nFFFFFFFFFFF"
   }
  ],
  "raw": ""

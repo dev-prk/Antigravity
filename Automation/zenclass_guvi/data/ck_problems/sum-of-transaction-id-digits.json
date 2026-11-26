@@ -10,10 +10,6 @@
  "samples": [
   {
    "input": "9876",
-   "output": "30"
-  },
-  {
-   "input": "9876",
    "output": "Sum of digits: 30"
   },
   {

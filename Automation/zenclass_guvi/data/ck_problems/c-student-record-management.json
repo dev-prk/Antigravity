@@ -13,11 +13,7 @@
    "output": "Name: John Doe , Roll Number: 101, Total Marks: 255.00, Average Marks: 85.00"
   },
   {
-   "input": "1\nJohn Doe \n101\n85\n92\n78",
-   "output": "Name: John Doe , Roll Number: 101, Total Marks: 255.00, Average Marks: 85.00"
-  },
-  {
-   "input": "3\nAlex Johnson\n201\n90.0 \n85.5 \n93.0\nBetty White \n202 \n76.0 \n82.0 \n88.5\nCharlie Brown \n203 \n70.0 \n65.0 \n75.0",
+   "input": "3\nAlex Johnson\n201\n90.0\n85.5\n93.0\nBetty White\n202\n76.0\n82.0\n88.5\nCharlie Brown\n203\n70.0\n65.0\n75.0",
    "output": "Name: Alex Johnson, Roll Number: 201, Total Marks: 268.50, Average Marks: 89.50\nName: Betty White , Roll Number: 202, Total Marks: 246.50, Average Marks: 82.17\nName: Charlie Brown , Roll Number: 203, Total Marks: 210.00, Average Marks: 70.00"
   }
  ],

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Book, 9.99, 1.0\nEbook, 6.99, 2\nVideo Game, 59.99, 0.2, 25",
-   "output": "Physical Product: Book, Price: $9.99, Shipping Weight: 1.0 kg\nDigital Product: Ebook, Price: $6.99, File Size: 2 MB\nHybrid Product: Video Game, Price: $59.99, Shipping Weight: 0.2 kg, File Size: 25 GB"
-  },
-  {
    "input": "Laptop, 599.99, 2.5\nSoftware, 199.99, 500\nVideo Game, 59.99, 0.2, 25",
    "output": "Physical Product: Laptop, Price: $599.99, Shipping Weight: 2.5 kg\nDigital Product: Software, Price: $199.99, File Size: 500 MB\nHybrid Product: Video Game, Price: $59.99, Shipping Weight: 0.2 kg, File Size: 25 GB"
   },

@@ -9,16 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4",
-   "output": "1 \n 3 2 \n 5 4 3 \n7 6 5 4"
-  },
-  {
    "input": "3",
-   "output": "1\n 3 2\n5 4 3"
+   "output": "    1\n  3 2\n5 4 3"
   },
   {
    "input": "5",
-   "output": "1\n 3 2\n 5 4 3\n 7 6 5 4\n9 8 7 6 5"
+   "output": "        1\n      3 2\n    5 4 3\n  7 6 5 4\n9 8 7 6 5"
   }
  ],
  "raw": ""

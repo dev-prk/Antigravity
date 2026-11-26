@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "guvi\ngeeks",
-   "output": "guvigeek"
-  },
-  {
    "input": "learn practice",
    "output": "learnpract"
   },

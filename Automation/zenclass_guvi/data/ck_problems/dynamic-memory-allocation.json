@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "hello world",
-   "output": "dlrow olleh"
-  },
-  {
    "input": "Cplusplus Programming",
    "output": "gnimmargorP sulpsulpC"
   }

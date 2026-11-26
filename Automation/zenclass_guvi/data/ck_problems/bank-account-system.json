@@ -10,10 +10,6 @@
  "samples": [
   {
    "input": "1001\n5000\nwithdraw\n2000",
-   "output": "3000"
-  },
-  {
-   "input": "1001\n5000\nwithdraw\n2000",
    "output": "3000.0"
   },
   {

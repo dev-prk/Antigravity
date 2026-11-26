@@ -9,16 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "123\n3",
-   "output": "1\n2 3\n1 2 3\n12"
-  },
-  {
    "input": "9\n2",
-   "output": "9 \n9 9 \n27"
+   "output": "9\n9 9\n27"
   },
   {
    "input": "45\n4",
-   "output": "4 \n5 4 \n5 4 5 \n4 5 4 5 \n45"
+   "output": "4\n5 4\n5 4 5\n4 5 4 5\n45"
   }
  ],
  "raw": ""

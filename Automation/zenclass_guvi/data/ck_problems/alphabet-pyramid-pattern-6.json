@@ -10,15 +10,11 @@
  "samples": [
   {
    "input": "5",
-   "output": "A \n A B \n A B C \n A B C D \nA B C D E"
-  },
-  {
-   "input": "5",
-   "output": "A\n A B\n A B C\n A B C D\nA B C D E"
+   "output": "    A\n   A B\n  A B C\n A B C D\nA B C D E"
   },
   {
    "input": "4",
-   "output": "A\n A B\n A B C\nA B C D"
+   "output": "   A\n  A B\n A B C\nA B C D"
   }
  ],
  "raw": ""

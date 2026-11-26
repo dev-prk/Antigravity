@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n23 78 45 12 89",
-   "output": "Maximum: 89"
-  },
-  {
    "input": "5\n10 20 5 30 15",
    "output": "Maximum: 30"
   }

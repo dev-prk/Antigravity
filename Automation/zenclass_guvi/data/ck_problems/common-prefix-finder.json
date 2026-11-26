@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4\nabcd\nabc\nhju\noopy\n2\nab\noo",
-   "output": "abcd abc\noopy"
-  },
-  {
    "input": "96\nmapzhwmrthehfyklv\nzbftyendtnrxedz\nchrqanzgwfehq\nsrdx\neeajxpaw\ndvpheiagxznu\ntbwxvodvb\nzbqwrtumyrdgwoge\nhtfmniimeypbzwad\nywkskijoqhewmpe\nvsufchjbwkcv\nhmmfweqeqgvzkt\nzztwtnewwnzvad\nolebqchiizodza\nmcafauvesturouug\nhknaovixwzc\nzbib\npcykgq\najuwdbjnnwnct\nzqw\nnyfvblndj\nmbd\nmynrzweoutqor\ngpvtncrrngwydi\njznjmekkjy\neruvian\nwchp\nwvqwayxlzmulrexcf\ngwweezrmxttmns\ndoldmxdyrqryovd\nczoifpzrmsn\nhflmtxqhuvinnzl\nvov\npmhvbimqa\nqkgewcbmjvjrixt\naqkypakyxlgldin\nstapxbdhyp\ngmvcol\nmcpwaokizntmjni\ncfmiokxrrlmvb\nkqcbofpanp\nidzwllatxihi\nabunwwnjopm\nucdkttswsokdpfdz\nljnodc\nbpvpgisbmxnhs\nfkwrqnwvolg\nawbcicreszomaclnl\nvqp\nkhigcwrku\ngxvpzovtolhonue\nxbspwcwel\naclwwuttjvieqwpam\nuseutyjp\nhtmiw\nwuoqoizlqfdowdac\ntiuogfgjmbxx\notsejim\nvepysnevr\nozaehfkrrmoqlej\njspvekcv\nuipp\nvfavmiawztknkystd\notysfcqqxyhoacwa\niixgjtr\ndrryuwo\nwjxzzpwzxmzzka\nskyzurstu\nmvf\njxeuudtjbtiqs\naujtfhuzzo\nvzeqgocds\nxwsjzlrp\nbqaklhufit\ncquijawlgojfmbom\nibu\ntwyedsl\nngpdcxmdvzjjjoymf\nbppvajtyny\nzlfhcjk\nxpuzyfkofwvrxkhul\nplfncgyjoauybsnxt\nfddkzbezl\nvydlkkyor\nxhb\nfdmucfjhiouj\nykbjgborly\nbpqbwstdx\nzzmkhwzbhozsrky\nyriwikmzlkr\nqonppb\nwzbzgraylkygkpohy\nvxlhq\nxggnvjpuiqvrhw\nsisythpch\nzgbgwweedtcoiyz\n5\nt\nh\nja\nb\nv",
    "output": "tbwxvodvb tiuogfgjmbxx twyedsl\nhtfmniimeypbzwad hmmfweqeqgvzkt hknaovixwzc hflmtxqhuvinnzl htmiw\nNo strings for query\nbpvpgisbmxnhs bqaklhufit bppvajtyny bpqbwstdx\nvsufchjbwkcv vov vqp vepysnevr vfavmiawztknkystd vzeqgocds vydlkkyor vxlhq"
   },

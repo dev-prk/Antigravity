@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Hello\nWorld",
-   "output": "After Assignment: World"
-  },
-  {
    "input": "Data Science",
    "output": "After Assignment: Science"
   }

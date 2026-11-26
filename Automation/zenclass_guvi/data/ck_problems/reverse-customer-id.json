@@ -10,10 +10,6 @@
  "samples": [
   {
    "input": "12345",
-   "output": "54321"
-  },
-  {
-   "input": "12345",
    "output": "Reversed number: 54321"
   },
   {

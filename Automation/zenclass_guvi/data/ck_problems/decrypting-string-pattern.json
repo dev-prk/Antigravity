@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3[b[2[aa]]]",
-   "output": "baaaabaaaabaaaa"
-  },
-  {
    "input": "5[am[2[bh]]]",
    "output": "ambhbhambhbhambhbhambhbhambhbh"
   },

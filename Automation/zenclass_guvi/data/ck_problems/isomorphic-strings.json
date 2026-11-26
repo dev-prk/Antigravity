@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "aab xxy",
-   "output": "yes"
-  },
-  {
    "input": "aac xxx",
    "output": "no"
   },

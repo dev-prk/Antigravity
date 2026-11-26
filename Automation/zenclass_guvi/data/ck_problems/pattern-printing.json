@@ -9,16 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3",
-   "output": "111 \n00 \n1"
-  },
-  {
    "input": "4",
-   "output": "0000 \n111 \n00 \n1"
+   "output": "0000\n111\n00\n1"
   },
   {
    "input": "5",
-   "output": "11111 \n0000 \n111 \n00 \n1"
+   "output": "11111\n0000\n111\n00\n1"
   }
  ],
  "raw": ""

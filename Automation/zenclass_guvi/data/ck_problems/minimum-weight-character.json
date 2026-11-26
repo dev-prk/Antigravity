@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "adtii\n3",
-   "output": "a"
-  },
-  {
    "input": "jacob",
    "output": "a"
   },

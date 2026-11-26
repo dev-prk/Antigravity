@@ -9,12 +9,8 @@
  "constraints": "Each phone number contains between 7 and 15 digits.\nNon-numeric characters (spaces, dashes, parentheses, etc.) should not affect the masking process.\nThe",
  "samples": [
   {
-   "input": "A string phone_numbers containing multiple phone numbers separated by spaces. The length of the string is n (1 \u2264 n \u2264 10^4). Each phone number is between 7 and 15 digits, and can include non-numeric characters for formatting.",
-   "output": "A string with each phone number masked except for the last four digits, retaining any formatting.\n\nExample"
-  },
-  {
-   "input": "+1 (555) 123-4567 123-456-7890 800-555-1212",
-   "output": "+1 (***) ***-**67 ***-***-7890 ***-***-1212"
+   "input": "123-456-7890 800-555-1212",
+   "output": "***-***-7890 ***-***-1212"
   }
  ],
  "raw": ""

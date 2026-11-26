@@ -36,13 +36,13 @@ FAST_BRAVE_ARGS = list(config.BROWSER_ARGS) + [
     "MAP *.taboola.com 127.0.0.1, MAP *.tapad.com 127.0.0.1",
 ]
 
-# Strongest reasoning & coding models in FreeLLMAPI ($0 free pool)
+# Fast + strong reasoning & coding models in FreeLLMAPI ($0 free pool)
 STRONG_MODELS = [
-    "gpt-oss-120b",
-    "qwen3.8-27b",
     "auto",
-    "gemma-4-26b-a4b-it",
+    "qwen3.8-27b",
     "glm-5.3-flash",
+    "gpt-oss-120b",
+    "gemma-4-26b-a4b-it",
     "minimax-m3.1-flash",
 ]
 
@@ -86,7 +86,7 @@ def call_llm(system_prompt: str, user_prompt: str, seed: int = 0, max_tokens: in
                     "content-type": "application/json",
                 },
             )
-            with urllib.request.urlopen(req, timeout=20) as resp:
+            with urllib.request.urlopen(req, timeout=12) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
             txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text").strip()
             if txt and len(txt) > 4 and not txt.startswith("Safety:"):

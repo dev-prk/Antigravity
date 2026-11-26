@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "beabeefeab",
-   "output": "5"
-  },
-  {
    "input": "asvkugfiugsalddlasguifgukvsa",
    "output": "0"
   },

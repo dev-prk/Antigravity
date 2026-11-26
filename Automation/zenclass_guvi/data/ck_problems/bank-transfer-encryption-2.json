@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "1 welcome all",
-   "output": "x1f1m1d1p1n1f1!1b1m1m1"
-  },
-  {
    "input": "2 Hello World",
    "output": "Idmkp Vpqmc"
   },

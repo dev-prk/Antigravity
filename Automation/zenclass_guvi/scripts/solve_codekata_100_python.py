@@ -36,7 +36,9 @@ from kata_common import (  # noqa: E402
 
 PY_PRE_DIR = ROOT / "data" / "ck_py_precomputed"
 OLD_PRE_DIR = ROOT / "data" / "ck_precomputed"
+REPAIR_QUEUE_DIR = ROOT / "data" / "ck_repair_queue"
 PROB_DIR = ROOT / "data" / "ck_problems"
+REPAIR_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_JSON = ROOT / "data" / "ck_results.json"
 LIVE_STATUS_JSON = ROOT / "reports" / "CODEKATA_LIVE_STATUS.json"
 SOL_DIR = ROOT / "solutions"
@@ -181,12 +183,19 @@ def synthesize_or_repair(lang: str, prob_text: str, starter: str, samples: List[
     return best
 
 
-def solve_current_codekata_page(page: Page, pre_code: str, pre_lang: str, results: Dict[str, Any], seq: int) -> bool:
+def solve_current_codekata_page(
+    page: Page,
+    pre_code: str,
+    pre_lang: str,
+    results: Dict[str, Any],
+    seq: int,
+    non_blocking: bool = True,
+) -> bool:
     slug = page.url.split("?")[0].rstrip("/").split("/")[-1]
     t0 = time.time()
     try:
-        page.wait_for_selector("#editor", timeout=6000)
-        page.wait_for_function("() => Boolean(window.ace)", timeout=4500)
+        page.wait_for_selector("#editor", timeout=5500)
+        page.wait_for_function("() => Boolean(window.ace)", timeout=4000)
     except Exception:
         results[slug] = {"status": "SKIPPED_NO_EDITOR", "attempts": 1}
         return False
@@ -203,10 +212,22 @@ def solve_current_codekata_page(page: Page, pre_code: str, pre_lang: str, result
         "() => (document.querySelector('.problem-description, #problem-description, main')?.textContent || document.body.innerText).slice(0, 3000)"
     )
 
+    # Fast non-blocking path: if language differs from precomputed or code missing, queue to background worker in 0ms!
+    if non_blocking and (not pre_code.strip() or lang != pre_lang):
+        prev_rep = results.get(slug, {}).get("queued_repair", False)
+        if not prev_rep:
+            (REPAIR_QUEUE_DIR / f"{slug}.json").write_text(
+                json.dumps({"slug": slug, "lang": lang, "prob_text": prob_text, "starter": starter, "samples": samples, "err_ctx": f"Required locked language: {lang}"}),
+                encoding="utf-8",
+            )
+            results[slug] = {"status": "QUEUED_REPAIR", "language": lang, "queued_repair": True, "attempts": 1}
+            return False
+
+    max_atts = 1 if non_blocking else 2
     code = pre_code if (pre_code.strip() and lang == pre_lang) else ""
     err_ctx = ""
 
-    for att in range(3):
+    for att in range(max_atts):
         if not code.strip() or att > 0:
             code = synthesize_or_repair(lang, prob_text, starter, samples, err_ctx, seq + att * 5)
         if not code.strip():
@@ -218,9 +239,9 @@ def solve_current_codekata_page(page: Page, pre_code: str, pre_lang: str, result
             results[slug] = {"status": "COMPLETED", "language": lang, "attempts": att + 1, "reason": msg, "duration_s": round(time.time() - t0, 2)}
             return True
 
-        # Capture exact Run Code expected-vs-actual diff for repair attempt!
+        # Non-blocking repair queue: capture Run Code diff in 0.9s and hand off to background worker!
         page.evaluate("() => document.querySelector('button.run-code')?.click()")
-        page.wait_for_timeout(1300)
+        page.wait_for_timeout(900)
         run_diff = page.evaluate(
             """() => {
                 const t = document.body.innerText || '';
@@ -229,8 +250,15 @@ def solve_current_codekata_page(page: Page, pre_code: str, pre_lang: str, result
             }"""
         )
         err_ctx = f"Verdict: {msg[:250]}\nRun Code Test Result:\n{run_diff}"
+        if non_blocking and not results.get(slug, {}).get("queued_repair"):
+            (REPAIR_QUEUE_DIR / f"{slug}.json").write_text(
+                json.dumps({"slug": slug, "lang": lang, "prob_text": prob_text, "starter": starter, "samples": samples, "err_ctx": err_ctx}),
+                encoding="utf-8",
+            )
+            results[slug] = {"status": "FAILED_PLATFORM", "language": lang, "queued_repair": True, "attempts": 1, "reason": err_ctx[:240], "duration_s": round(time.time() - t0, 2)}
+            return False
 
-    results[slug] = {"status": "FAILED_PLATFORM", "language": lang, "attempts": 3, "reason": err_ctx[:240], "duration_s": round(time.time() - t0, 2)}
+    results[slug] = {"status": "FAILED_PLATFORM", "language": lang, "queued_repair": True, "attempts": max_atts, "reason": err_ctx[:240], "duration_s": round(time.time() - t0, 2)}
     return False
 
 
@@ -285,7 +313,7 @@ def sweep_live_status_filter(ctx: BrowserContext, page: Page, filter_label: str,
             slug = page.url.split("?")[0].rstrip("/").split("/")[-1]
             pre_f = PY_PRE_DIR / f"{slug}.json"
             pre_code = json.loads(pre_f.read_text(encoding="utf-8")).get("code", "") if pre_f.exists() else ""
-            ok = solve_current_codekata_page(page, pre_code, "PYTHON 3", results, seq_ref[0])
+            ok = solve_current_codekata_page(page, pre_code, "PYTHON 3", results, seq_ref[0], non_blocking=False)
             solved_tot = save_ck_status(results, start_ts) if seq_ref[0] % 5 == 0 else sum(1 for v in results.values() if v.get("status") == "COMPLETED")
             log(f"[LIVE-{filter_label} #{seq_ref[0]}] {slug} -> {'SOLVED' if ok else 'FAILED'} | TOTAL_SOLVED={solved_tot}")
 
@@ -322,25 +350,25 @@ def main() -> int:
             log("Stage A1: Sweeping exact-whitespace Python-3 precomputed CodeKata solutions...")
             while True:
                 ready = [
-                    p for p in sorted(PY_PRE_DIR.glob("*.json"))
-                    if p.stem not in tried_pre and results.get(p.stem, {}).get("status") not in ("COMPLETED", "SKIPPED_NO_EDITOR")
+                    p for p in sorted(PY_PRE_DIR.glob("*.json"), key=lambda x: (0 if "__repaired" in x.name else 1, x.name))
+                    if p.name not in tried_pre and results.get(p.stem.split("__")[0], {}).get("status") not in ("COMPLETED", "SKIPPED_NO_EDITOR")
                 ]
                 if not ready:
                     break
                 for pf in ready:
                     enforce_single_tab(ctx, page)
-                    slug = pf.stem
-                    tried_pre.add(slug)
-                    seq_ref[0] += 1
+                    tried_pre.add(pf.name)
                     pdata = json.loads(pf.read_text(encoding="utf-8"))
+                    slug = pdata.get("slug") or pf.stem.split("__")[0]
+                    seq_ref[0] += 1
                     page.goto(f"https://www.guvi.in/code-kata/{slug}/", wait_until="domcontentloaded", timeout=25000)
-                    ok = solve_current_codekata_page(page, pdata.get("code", ""), "PYTHON 3", results, seq_ref[0])
+                    ok = solve_current_codekata_page(page, pdata.get("code", ""), pdata.get("lang", "PYTHON 3"), results, seq_ref[0], non_blocking=True)
                     solved_tot = sum(1 for v in results.values() if v.get("status") == "COMPLETED")
-                    log(f"[PRE #{seq_ref[0]}] {slug} ({results.get(slug,{}).get('language','PY3')}) -> {'SOLVED' if ok else 'FAILED'} | SOLVED={solved_tot}")
+                    log(f"[PRE #{seq_ref[0]}] {slug} ({results.get(slug,{}).get('language','PY3')}) -> {'SOLVED' if ok else 'QUEUED/FAILED'} | SOLVED={solved_tot}")
                     if seq_ref[0] % 8 == 0:
                         save_ck_status(results, start_ts)
 
-            # Stage B: Live table sweep of `Yet to start` & `In progress` (catches all non-standard slugs & remaining items!)
+            # Stage B: Live table sweep of `Yet to start` & `In progress` (catches all non-standard slugs!)
             log("Stage B: Sweeping live `Yet to start` and `In progress` tables on CodeKata...")
             sweep_live_status_filter(ctx, page, "Yet to start", results, start_ts, seq_ref)
             sweep_live_status_filter(ctx, page, "In progress", results, start_ts, seq_ref)

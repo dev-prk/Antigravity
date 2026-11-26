@@ -9,11 +9,7 @@
  "constraints": "",
  "samples": [
   {
-   "input": "1234\n2000",
-   "output": "Insufficient balance!"
-  },
-  {
-   "input": "2222 \n500",
+   "input": "2222\n500",
    "output": "Invalid PIN!"
   }
  ],

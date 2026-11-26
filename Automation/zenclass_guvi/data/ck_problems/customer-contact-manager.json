@@ -9,7 +9,7 @@
  "constraints": "",
  "samples": [
   {
-   "input": "insert\n1 John \n[email\u00a0protected]\n123456",
+   "input": "insert\n1 John\n[email\u00a0protected]\n\n123456",
    "output": "Contact inserted successfully."
   }
  ],

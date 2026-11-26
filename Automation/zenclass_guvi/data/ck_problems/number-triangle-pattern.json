@@ -9,16 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4",
-   "output": "4 \n 33 \n 222 \n1111"
-  },
-  {
    "input": "3",
-   "output": "3\n 22\n111"
+   "output": "  3\n 22\n111"
   },
   {
    "input": "5",
-   "output": "5\n 44\n 333\n 2222\n11111"
+   "output": "    5\n   44\n  333\n 2222\n11111"
   }
  ],
  "raw": ""

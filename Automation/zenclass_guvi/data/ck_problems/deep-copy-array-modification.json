@@ -9,12 +9,8 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n1 2 3 4 5\n10",
-   "output": "Original: 10 2 3 4 5\u00a0\nClone: 1 2 3 4 5"
-  },
-  {
    "input": "3\n7 8 9\n100",
-   "output": "Original: 100 8 9 \nClone: 7 8 9"
+   "output": "Original: 100 8 9\nClone: 7 8 9"
   }
  ],
  "raw": ""

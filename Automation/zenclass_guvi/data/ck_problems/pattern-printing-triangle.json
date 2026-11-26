@@ -9,16 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4",
-   "output": "A \nA B \nA B C \nA B C D \nA B C \nA B \nA"
-  },
-  {
    "input": "3",
-   "output": "A \nA B \nA B C \nA B \nA"
+   "output": "A\nA B\nA B C\nA B\nA"
   },
   {
    "input": "5",
-   "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D \nA B C \nA B \nA"
+   "output": "A\nA B\nA B C\nA B C D\nA B C D E\nA B C D\nA B C\nA B\nA"
   }
  ],
  "raw": ""

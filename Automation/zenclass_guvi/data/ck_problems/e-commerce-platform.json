@@ -9,12 +9,8 @@
  "constraints": "1 \u2264 N \u2264 100\n0 < items[i] \u2264 500\n\nExample",
  "samples": [
   {
-   "input": "The first line contains an integer N representing the number of items in the cart.\nThe second line contains N integers where each integer represents the price of an item.",
-   "output": "Output the final cost of the items in the cart after applying the discount, rounded to two decimal places."
-  },
-  {
-   "input": "4\n30 20 50 40",
-   "output": "124.50"
+   "input": "5\n10 20 30 40 50",
+   "output": "142.5"
   }
  ],
  "raw": ""

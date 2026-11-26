@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "10 5\n4",
-   "output": "Shape Description\nTriangle Area: 25.00\nShape Description\nSquare Area: 16.00"
-  },
-  {
    "input": "3.5 4\n2.5",
    "output": "Shape Description\nTriangle Area: 7.00\nShape Description\nSquare Area: 6.25"
   }

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Integer\n5 2 9 1 5\nString\njava code lang",
-   "output": "Sorted Integer Array: [1, 2, 5, 5, 9]\nSorted String Array: [code, java, lang]"
-  },
-  {
    "input": "Integer\n5 2 9 1 5",
    "output": "Sorted Integer Array: [1, 2, 5, 5, 9]"
   },

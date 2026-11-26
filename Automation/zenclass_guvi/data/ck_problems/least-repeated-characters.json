@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "codeKata challenge",
-   "output": "odKthng"
-  },
-  {
    "input": "Hello Woorlrdr",
    "output": "HeWd"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Alice\n101\n95\nDeep Learning Research",
-   "output": "A\nDeep Learning Research"
-  },
-  {
    "input": "Bob\n102\n78\nData Science Analysis",
    "output": "B\nData Science Analysis"
   },

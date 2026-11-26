@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "enqueue 5\nenqueue World\nprint\nexit \nenqueue 5\nenqueue World\npeek\ndequeue\nprint\nexit",
-   "output": "Queue contents: [5, World] \nFront of the queue: 5\nDequeued value: 5\nQueue contents: [World]"
-  },
-  {
    "input": "enqueue 5\nenqueue World\nprint\nexit",
    "output": "Queue contents: [5, World]"
   },

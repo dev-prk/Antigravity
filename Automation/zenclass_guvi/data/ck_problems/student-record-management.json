@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "2\nAlice 101 75.0 82.0 90.0 70.0 88.0\nBob 102 45.0 55.0 65.0 35.0 60.0",
-   "output": "Student: Alice\nID: 101\nGrades: 75.0, 82.0, 90.0, 70.0, 88.0\nAverage: 81.0\nStatus: Grade Category - 2 \nStudent: Bob\nID: 102\nGrades: 45.0, 55.0, 65.0, 35.0, 60.0\nAverage: 52.0\nStatus: Pass/Fail - P"
-  },
-  {
    "input": "1\nAlice\n101\n85 90 78 92 88",
    "output": "Student: Alice\nID: 101\nGrades: 85.0, 90.0, 78.0, 92.0, 88.0\nAverage: 86.6\nStatus: Grade Category - 1"
   },

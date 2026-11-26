@@ -9,12 +9,16 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Two strings.",
-   "output": "Print the concatenated string."
+   "input": "Hello, World",
+   "output": "HelloWorld"
   },
   {
-   "input": "Hello\nWorld",
-   "output": "HelloWorld"
+   "input": "Java, Programming",
+   "output": "JavaProgramming"
+  },
+  {
+   "input": "Good, Morning",
+   "output": "GoodMorning"
   }
  ],
  "raw": ""

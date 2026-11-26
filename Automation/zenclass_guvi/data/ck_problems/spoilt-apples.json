@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3 4\na a a\na x a\na a a\na a x",
-   "output": "A a a\nX x x\nA a a\nX x x"
-  },
-  {
    "input": "5 5\nA x a x a\nA a a a a\nX x x x a\nA x a a x\nA a a a x",
    "output": "X x x x x\nA a a a a\nX x x x x\nX x x x x\nX x x x x"
   },

@@ -12857,5 +12857,543 @@
   "reason": "SOLVED_MODAL",
   "duration_s": 1.53,
   "ts": "2026-11-26T19:58:23.756938+00:00"
+ },
+ "numbers-with-consecutive-digit-difference-1": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.54
+ },
+ "odd-digit-sum-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.37
+ },
+ "odd-factors-of-a-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.35
+ },
+ "office-staff-management": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n74ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n",
+  "duration_s": 77.91
+ },
+ "one-character-difference": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 6.54
+ },
+ "online-multiplayer-matchmaking-engine": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.38
+ },
+ "online-payment-processing-system": {
+  "status": "COMPLETED",
+  "language": "C++",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 27.01
+ },
+ "online-shopping-cart-using-composite": {
+  "status": "FAILED_PLATFORM",
+  "language": "C++",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nCompiler Error\nTest Cases\n3/4\nLanguage\nC++\nrun: line 1: 3 Segmentation fault (core dumped) LD_LIBRARY_PATH=/usr/local/gcc-7.4.0/lib64 ./a.out Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22",
+  "duration_s": 54.36
+ },
+ "oop-library-management": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA\nRuntime\n\n379ms\n\nMemory\n\n47kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n",
+  "duration_s": 81.21
+ },
+ "oop-student-grading-system": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nJAVA\nMain.java:1: error: class, interface, or enum expected Marks added ^ 1 error Compilation Error\nCode\n1\n2\n3\n4\n5\nMarks added\nMarks added\nGrade calculated\nJohn: 87.5 - B\n\n\nAre you sure",
+  "duration_s": 40.42
+ },
+ "optimal-bank-loan-selection": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to solve \"Optimal Bank Loan Selection\". Let's parse problem carefully. ^ SyntaxError: invalid syntax Runtime Error (NZEC)\nCode\n1\n2\n3\n4\n5\n",
+  "duration_s": 62.93
+ },
+ "optimal-currency-denomination": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.09
+ },
+ "order-of-permutation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.39
+ },
+ "packet-quality-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.64
+ },
+ "pair-difference-count": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.08
+ },
+ "pair-sum-check-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.08
+ },
+ "pair-sum-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "pair-sum-frequency-counter": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 18.04
+ },
+ "pairing-kindergarteners-for-walks": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.08
+ },
+ "palindrome-check-using-stack": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.07
+ },
+ "palindrome-check-with-lambda": {
+  "status": "COMPLETED",
+  "language": "JAVA",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.91
+ },
+ "palindrome-permutation-with-one-change": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62
+ },
+ "palindrome-permutation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.09
+ },
+ "palindrome-ranges": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.08
+ },
+ "palindromic-number-from-concatenation": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n74ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\nimport sys\nfrom collections import Counter\n\ndef solve():\n    da",
+  "duration_s": 20.65
+ },
+ "parallel-array-sum": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.33
+ },
+ "parentheses-balancing": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.37
+ },
+ "parentheses-matching": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5
+ },
+ "park-safety-index": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n82ms\n\nMemory\n\n17kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n",
+  "duration_s": 92.67
+ },
+ "partitioning-numbers": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.1
+ },
+ "passing-this-as-argument-with-garage-system": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nJAVA 8\nException in thread \"main\" java.util.NoSuchElementException: No line found at java.base/java.util.Scanner.nextLine(Scanner.java:1651) at Main.main(Main.java:8) Runtime Error (NZE",
+  "duration_s": 59.76
+ },
+ "password-decryption": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nCompiler Error\nTest Cases\n3/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 82, in <module> main() File \"script-3.8.1.py\", line 51, in main pos = B.index(int(d)) ValueError: 2 is not in li",
+  "duration_s": 70.67
+ },
+ "password-generation-from-strings": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.89
+ },
+ "password-prefix-security-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 13.5
+ },
+ "password-suggestion-system": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 11.72
+ },
+ "path-finding-in-a-grid": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.63
+ },
+ "pattern-occurrences-using-z-algorithm": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 9.84
+ },
+ "pawn-movement-on-a-chessboard": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n68ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\nimport sys\n\ndef main():\n    board = []\n    for _ in range(4):\n    ",
+  "duration_s": 38.19
+ },
+ "code-kata": {
+  "status": "SKIPPED_NO_EDITOR",
+  "attempts": 1
+ },
+ "payment-system-using-interface": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.62
+ },
+ "perfect-matrix-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 2.29
+ },
+ "perfect-number-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "perfect-square-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "permutation-calculation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.37
+ },
+ "permutation-check-of-1-to-n": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.37
+ },
+ "phonebook-prefix-consistency": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.37
+ },
+ "pisano-period": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5
+ },
+ "planet-gravity-and-potential-energy": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 2.4
+ },
+ "plates-removal-and-counting": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.08
+ },
+ "player-power-management-system": {
+  "status": "FAILED_PLATFORM",
+  "language": "C++",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n2/4\nLanguage\nC++\nRuntime\n\n8ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n#include <iostream>\n#incl",
+  "duration_s": 42.88
+ },
+ "pointer-driven-array-algorithms": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nJAVA 8\nRuntime\n\n473ms\n\nMemory\n\n60kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n5",
+  "duration_s": 30.92
+ },
+ "pointers-and-functions": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 7.17
+ },
+ "poker-hand-ranking": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 2,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 75.06
+ },
+ "pollard-rho-factorization": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.37
+ },
+ "polymorphism-in-subject-evaluation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5
+ },
+ "polymorphism-method-overloading-volume-finder": {
+  "status": "COMPLETED",
+  "language": "JAVA 8",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 8.13
+ },
+ "polymorphism-method-overloading": {
+  "status": "FAILED_PLATFORM",
+  "language": "JAVA 8",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nCompiler Error\nTest Cases\n1/4\nLanguage\nJAVA 8\nException in thread \"main\" java.util.NoSuchElementException: No line found at java.base/java.util.Scanner.nextLine(Scanner.java:1651) at Main.main(Main.java:39) Runtime Error (NZ",
+  "duration_s": 23.95
+ },
+ "polymorphism-with-student-fees": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "post-order-traversal-of-binary-tree": {
+  "status": "COMPLETED",
+  "language": "C",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 5.97
+ },
+ "postfix-expression-evaluation-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.35
+ },
+ "postfix-expression-evaluation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.38
+ },
+ "postfix-expression-evaluator": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.35
+ },
+ "postfix-to-infix-conversion": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "postfix-to-prefix-conversion-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.38
+ },
+ "power-of-a-number": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.37
+ },
+ "power-of-two-check-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "power-of-two-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_STATUS",
+  "duration_s": 1.36
+ },
+ "prefix-and-suffix-sum": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "attempts": 3,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n64ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\nimport sys\n\ndef main():\n    data = sys.stdin.buffer.read().split()\n    if not data:\n        return\n   ",
+  "duration_s": 22.02
+ },
+ "prefix-count-in-integer-list": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "prefix-count-in-strings": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.36
+ },
+ "prefix-expression-evaluation": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.5
+ },
+ "prefix-free-string-checker": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "reason": "SOLVED_MODAL",
+  "duration_s": 1.35
+ },
+ "prefix-suffix-sum-check": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.14
+ },
+ "prefix-sum-array": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.1
+ },
+ "prefix-sum-with-fenwick-tree": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.08
+ },
+ "prefix-to-postfix-conversion": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.11
+ },
+ "preorder-to-postorder-bst-2": {
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1,
+  "duration_s": 0.09
+ },
+ "preorder-to-postorder-bst": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "queued_repair": true,
+  "attempts": 1,
+  "reason": "Verdict: Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nFile \"script-3.8.1.py\", line 1 We need to write a solution: given preorder list of a BST, output postorder traversal. ^ SyntaxError: invalid syntax Runtime Error (NZEC)\nCode\n1\n",
+  "duration_s": 2.33
+ },
+ "preserved-groceries": {
+  "status": "FAILED_PLATFORM",
+  "language": "PYTHON 3",
+  "queued_repair": true,
+  "attempts": 1,
+  "reason": "Verdict: Answer\nWrong Answer\nTest Cases\n0/6\nLanguage\nPYTHON 3\nRuntime\n\n79ms\n\nMemory\n\n19kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\nimport sys\n\ndef main():\n    data = sys.stdin.read().split",
+  "duration_s": 2.3
  }
 }

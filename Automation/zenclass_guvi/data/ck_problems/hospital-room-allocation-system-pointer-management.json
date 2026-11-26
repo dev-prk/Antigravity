@@ -9,12 +9,8 @@
  "constraints": "1 \u2264 n \u2264 100\nPatient IDs will be unique.\nMedical condition 0 assigns a room in the range 101-200.\nMedical condition 1 assigns a room in the range 201-300.\nMedical condition 2 assigns a room in the range 301-400.",
  "samples": [
   {
-   "input": "The first line contains an integer n, representing the number of patients.\nThe second line contains n integers representing the patient IDs.\nThe third line contains n integers representing the patients' medical conditions (0 = critical, 1 = stable, 2 = recovering).",
-   "output": "For each patient, output the patient ID followed by the room number assigned.\nAfter all assignments, print a message saying that the memory is released."
-  },
-  {
    "input": "3\n101 102 103\n0 1 2",
-   "output": "Patient ID 101 is assigned Room 101\nPatient ID 102 is assigned Room 201\nPatient ID 103 is assigned Room 301\nMemory Released."
+   "output": "Patient ID 101 is assigned Room 101\nPatient ID 102 is assigned Room 202\nPatient ID 103 is assigned Room 303\nMemory Released."
   }
  ],
  "raw": ""

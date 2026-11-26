@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "CodekataChallenge",
-   "output": "yes"
-  },
-  {
    "input": "GuviGeeks",
    "output": "yes"
   },

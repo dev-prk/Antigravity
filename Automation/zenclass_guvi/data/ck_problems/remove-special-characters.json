@@ -9,12 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Xyz-aBc-nMk",
-   "output": "XyzaBcnMk"
-  },
-  {
    "input": "Guvi Geek",
    "output": "-1"
+  },
+  {
+   "input": "Xyz-aBc-nMk",
+   "output": "XyzaBcnMk"
   }
  ],
  "raw": ""

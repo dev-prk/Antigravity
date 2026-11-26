@@ -26,7 +26,9 @@ from kata_common import call_llm, strip_fences, verify_code_locally  # noqa: E40
 PROB_DIR = ROOT / "data" / "ck_problems"
 RESULTS_JSON = ROOT / "data" / "ck_results.json"
 PY_PRE_DIR = ROOT / "data" / "ck_py_precomputed"
+REPAIR_QUEUE_DIR = ROOT / "data" / "ck_repair_queue"
 PY_PRE_DIR.mkdir(parents=True, exist_ok=True)
+REPAIR_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def log(msg: str) -> None:
@@ -122,11 +124,60 @@ def solve_one_python(meta: Dict[str, Any], prev_reason: str, seed: int) -> bool:
     return False
 
 
+def drain_repair_queue(ex: ThreadPoolExecutor) -> int:
+    rfiles = sorted(REPAIR_QUEUE_DIR.glob("*.json"))[:16]
+    if not rfiles:
+        return 0
+
+    def _repair_one(rf: Path) -> bool:
+        try:
+            payload = json.loads(rf.read_text(encoding="utf-8"))
+            rf.unlink()
+        except Exception:
+            return False
+        slug = payload["slug"]
+        lang = payload.get("lang", "PYTHON 3")
+        prob_text = payload.get("prob_text", "")
+        starter = payload.get("starter", "")
+        samples = payload.get("samples") or []
+        err_ctx = payload.get("err_ctx", "")
+
+        lang_rule = (
+            "Write a complete standalone Python 3 program reading from sys.stdin and printing exact output to sys.stdout."
+            if lang.startswith("PYTHON")
+            else f"Write a complete standalone {lang} program reading stdin and printing exact stdout."
+        )
+        if lang in ("JAVA", "JAVA 8"):
+            lang_rule += " Use `public class Main` unless Starter Code specifies another class name."
+        sys_p = f"Expert {lang} competitive programmer. {lang_rule} Output ONLY raw code."
+        u_p = f"Problem:\n{prob_text[:2500]}\n\nStarter:\n{starter[:600]}\n\nPREVIOUS SUBMISSION FAILED:\n{err_ctx[:900]}\nFix all edge cases & exact formatting!"
+
+        for tr in range(2):
+            raw = call_llm(sys_p, u_p, int(time.time()) + tr * 3)
+            if not raw:
+                continue
+            code = strip_fences(raw)
+            ok, lerr = verify_code_locally(code, lang, samples)
+            if ok or tr == 1:
+                out_f = PY_PRE_DIR / f"{slug}__repaired.json"
+                tmp = out_f.with_suffix(".tmp")
+                tmp.write_text(json.dumps({"slug": slug, "lang": lang, "code": code, "repaired": True}), encoding="utf-8")
+                tmp.replace(out_f)
+                return True
+            u_p += f"\nLocal check error:\n{lerr}"
+        return False
+
+    futs = [ex.submit(_repair_one, rf) for rf in rfiles]
+    wait(futs, timeout=75)
+    return len(rfiles)
+
+
 def main() -> int:
-    workers = 4
-    log(f"Starting Python-3 exact-whitespace pre-solver ({workers} gentle workers)...")
+    workers = 6
+    log(f"Starting Python-3 exact-whitespace pre-solver + repair worker ({workers} threads)...")
     with ThreadPoolExecutor(max_workers=workers) as ex:
-        for pass_no in range(25):
+        for pass_no in range(30):
+            drain_repair_queue(ex)
             res = json.loads(RESULTS_JSON.read_text(encoding="utf-8")) if RESULTS_JSON.exists() else {}
             todo = []
             for pf in sorted(PROB_DIR.glob("*.json")):
@@ -151,6 +202,7 @@ def main() -> int:
             log(f"Pass {pass_no+1}: {len(todo)} unsolved CodeKata problems queued for Python 3 pre-solve...")
             batch_sz = 8
             for b in range(0, len(todo), batch_sz):
+                drain_repair_queue(ex)
                 chunk = todo[b:b + batch_sz]
                 futs = [ex.submit(solve_one_python, m, rsn, b + i) for i, (m, rsn) in enumerate(chunk)]
                 done_f, _ = wait(futs, timeout=95)

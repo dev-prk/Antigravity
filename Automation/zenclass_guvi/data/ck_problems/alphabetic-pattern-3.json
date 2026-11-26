@@ -9,16 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4",
-   "output": "ABCD \n BCD \n CD \n D \n D \n CD \n BCD \nABCD"
-  },
-  {
    "input": "3",
-   "output": "ABC\n BC\n C\n C\n BC\nABC"
+   "output": "ABC\n BC\n  C\n  C\n BC\nABC"
   },
   {
    "input": "5",
-   "output": "ABCDE\n BCDE\n CDE\n DE\n E\n E\n DE\n CDE\n BCDE\nABCDE"
+   "output": "ABCDE\n BCDE\n  CDE\n   DE\n    E\n    E\n   DE\n  CDE\n BCDE\nABCDE"
   }
  ],
  "raw": ""

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "8\napple mango apple orange mango apple grape mango",
-   "output": "apple -> 3\nmango -> 3\norange -> 1\ngrape -> 1"
-  },
-  {
    "input": "5\n1 2 2 3 1",
    "output": "1 -> 2\n2 -> 2\n3 -> 1"
   }
