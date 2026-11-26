@@ -1,3 +1,6 @@
 2026/11/27-04:16:45.442 403efc Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
 2026/11/27-04:16:45.443 403efc Recovering log #393
 2026/11/27-04:16:45.444 403efc Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000393.log 
+2026/11/27-04:19:45.448 403f02 Level-0 table #396: started
+2026/11/27-04:19:45.454 403f02 Level-0 table #396: 15447 bytes OK
+2026/11/27-04:19:45.461 403f02 Delete type=0 #393
