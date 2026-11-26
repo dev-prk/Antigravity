@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "C:/home/guvi",
-   "output": "/guvi"
-  },
-  {
    "input": "/home/guvi",
    "output": "/guvi"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "100000\n10",
-   "output": "Interest (Sliced): 0\nInterest (Correct): 10000"
-  },
-  {
    "input": "50000\n5",
    "output": "Interest (Sliced): 0\nInterest (Correct): 2500"
   }

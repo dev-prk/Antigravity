@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\ncoding platform codekata",
-   "output": "coding codekata platform"
-  },
-  {
    "input": "3\naac ab aa",
    "output": "aa ab aac"
   },

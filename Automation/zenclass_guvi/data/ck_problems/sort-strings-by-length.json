@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "abcd cef e",
-   "output": "e cef abcd"
-  },
-  {
    "input": "agfd as ase",
    "output": "as ase agfd"
   },

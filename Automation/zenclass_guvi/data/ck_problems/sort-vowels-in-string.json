@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "ebcda",
-   "output": "abcde"
-  },
-  {
    "input": "selva",
    "output": "salve"
   },

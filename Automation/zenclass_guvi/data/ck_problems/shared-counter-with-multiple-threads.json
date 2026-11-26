@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n4\ninc\ndec\ninc\ndec",
-   "output": "Incremented: 6\nDecremented: 5\nIncremented: 6\nDecremented: 5\nFinal Counter Value: 5"
-  },
-  {
    "input": "0\n3\ninc\ninc\ndec",
    "output": "Incremented: 1\nIncremented: 2\nDecremented: 1\nFinal Counter Value: 1"
   }

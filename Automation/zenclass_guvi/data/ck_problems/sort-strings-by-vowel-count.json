@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "3\nVishal\nAaae\nAwqr",
-   "output": "Aaae\nVishal\nAwqr"
-  },
-  {
    "input": "3\nVishal\nAa\nAwqr",
    "output": "Vishal\nAa\nAwqr"
   },

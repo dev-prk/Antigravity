@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "aabbba",
-   "output": "aaabbb"
-  },
-  {
    "input": "abbacc",
    "output": "aabbcc"
   },
