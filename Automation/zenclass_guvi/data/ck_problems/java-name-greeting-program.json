@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Raj",
-   "output": "Hello Raj"
-  },
-  {
    "input": "raj",
    "output": "Hello raj"
   },

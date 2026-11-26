@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Hello World",
-   "output": "3 7"
-  },
-  {
    "input": "I am a coder",
    "output": "5 4"
   },

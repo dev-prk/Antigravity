@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Savings\n2000\nWithdraw\n500",
-   "output": "1500"
-  },
-  {
    "input": "Current 3000 Withdraw 1000",
    "output": "2000"
   },

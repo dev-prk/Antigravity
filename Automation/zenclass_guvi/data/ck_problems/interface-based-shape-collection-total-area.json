@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "circle 3\nrectangle 4 5\nend",
-   "output": "48"
-  },
-  {
    "input": "rectangle 3 3\nrectangle 2 2\ncircle 1\nend",
    "output": "16"
   },

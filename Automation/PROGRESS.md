@@ -1,21 +1,26 @@
-# GUVI Autopilot Progress Tracker
+# GUVI Autopilot — Deliver Brief & Progress Tracker
 
-## Goal
-1. Build, verify, publish to GitHub, and submit all 7 GUVI Zen Class AIML projects — **DONE (`7/7` Submitted & Completed)**.
-2. Solve and verify **1,000+ GUVI CodeKata questions** in **strictly 1 foreground Brave Browser tab** at high speed using `$0` free-tier models — **DONE (`1,150` verified solved in pipeline / `~1,185` (`54.31%`, 79 pages @ 15/page) live on GUVI CodeKata)**.
+## Brief
+1. **Ask:** Bring GUVI CodeKata Solved to 100% using Python for all code questions, and also complete SQLKata (using SQL), WebKata (using HTML/CSS/JS), and FixTheCode (using Python) in the single foreground Brave Browser tab.
+2. **Must-haves:** "i want solved to be 100%", "next we also have sqlkata, webkata and fix the code", "Use python to solve all the code question and obviously we use sql for sqlkata and relevant things for webkata", plus active constraints: foreground Brave Browser (`/Applications/Brave Browser.app`), strictly 1 single tab, fast cadence, `$0` `FreeLLMAPI` worker synthesis first.
+3. **Done test:** Live GUVI dashboards on `guvi.in/code-kata/`, `guvi.in/sqlkata/`, `guvi.in/webkata/`, and `guvi.in/debugging/` are inspected and screenshotted in foreground Brave showing verified completion across every solvable item, with saved solutions on disk.
+4. **Expert gap:**
+   - ~5% of CodeKata / FixTheCode problems are college-lab locked to `C`/`C++`/`Java` in `<select id="editorModeSelectDesktop">` (no `PYTHON 3` option exists). We must ALWAYS select `PYTHON 3` (or `PYTHON 2`) whenever Python is in the dropdown, and only use the locked language when GUVI omits Python from the dropdown so `100%` Solved is achievable.
+   - SQLKata problems are multi-subquestion scenarios (`Question 1`, `Question 2`, `Question 3`, `Question 4` inside one problem!) with database schema tabs (`Schema` / `Tables`) that must each be answered and submitted for the parent problem to become `Solved!`.
+   - WebKata problems have separate `HTML`, `CSS`, and `JS` editor tabs and client-side DOM/style assertions.
+   - ~66 CodeKata slugs were missed by naive title-slugification; we must discover the exact live remaining unsolved rows (`Yet to start` + `In progress`) directly from GUVI's catalog API / `q-data.json` / table click-through.
+5. **Smallest version:** One clean, resumable single-tab Brave runner + `$0` `FreeLLMAPI` pre-solver covering (a) remaining unsolved CodeKata problems (`PYTHON 3` first, multi-pass repair on `Wrong Answer`), (b) SQLKata multi-subquestion SQL solver, (c) FixTheCode Python debugger, and (d) WebKata HTML/CSS/JS solver.
+6. **Not building:** Multi-tab/multi-window browsers, paid-API bulk loops, or automation for graded Zen Class exams (`Mod11`–`Mod15`, `CCT`).
+7. **Unknowns:** Assume locked non-Python CodeKata problems (~5% where GUVI disables Python in the dropdown) should still be solved in their required language so overall CodeKata reaches as close to 100.00% as GUVI's judge permits, while 100% of Python-capable code questions use `PYTHON 3`.
 
-## Acceptance Criteria Status
-- [x] **Foreground Brave Browser (`headless=False`)**: Used `/Applications/Brave Browser.app` directly.
-- [x] **Strictly 1 Single Tab**: Enforced single-tab loop (`single_tab_submitter_brave.py`), closing any extra tabs automatically.
-- [x] **High-Speed Execution**: Decoupled OS-level 8–24 thread `FreeLLMAPI` pre-solver (`precompute_daemon.py`) + parallel SSR multi-testcase scraper (`scrape_easy_and_testcases.py`) + C++ `--host-resolver-rules` tracker blocking (`~1.5–1.8s` per precomputed submission).
-- [x] **Target `>= 1,000` Solved Questions**: Reached **1,150** verified solved in pipeline (**54.31% / ~1,185 total Completed** across 79 pages on live GUVI CodeKata dashboard: Easy `68.75%`, Medium `42.08%`, Hard `51.98%`).
-- [x] **`$0` Quota Respected**: 100% of bulk synthesis routed through `FreeLLMAPI` (`127.0.0.1:31415`) + local `python3`/`clang`/`clang++` verification (`0` paid cloud quota tokens used by workers).
-- [x] **Zen Class Projects (`7/7`)**: Built, unit-tested (`21/21` `pytest`), UI-tested (`7/7` `Streamlit AppTest`), published to `https://github.com/dev-prk/`, and submitted on `https://www.zenclass.in/projects`.
-- [x] **Graded Assessments Guardrail**: Refused graded/proctored assessments (`Mod11`–`Mod15`, `CCT`) per policy.
+---
 
-## Key Artifacts
-- Live Verification JSON: `zenclass_guvi/reports/CODEKATA_FINAL_VERIFICATION.json`
-- Live CodeKata Screenshot: `zenclass_guvi/screenshots/final_codekata_verified.png`
-- Zen Class Projects Submission Proof: `zenclass_guvi/screenshots/final_zenclass_submitted.png`
-- Summary Report: `zenclass_guvi/reports/SUMMARY_REPORT.md`
-- Saved CodeKata Solutions (`1,137` files): `zenclass_guvi/solutions/`
+## Completed Baseline
+- **Zen Class Projects**: `7/7` submitted (`zenclass_guvi/screenshots/final_zenclass_submitted.png`).
+- **CodeKata Baseline**: `1,150` verified in pipeline / `54.31%` (`~1,185` / `~2,182`) live on GUVI (`zenclass_guvi/screenshots/final_codekata_verified.png`).
+
+## Active Next Steps
+- [ ] Finish live DOM/API inspection of `SQLKata`, `WebKata`, `FixTheCode`, and exact remaining `CodeKata` unsolved list.
+- [ ] Thin end-to-end slice: verify 1 live solve each on `SQLKata`, `FixTheCode` (Python), and `WebKata`, plus 1 previously failed `CodeKata` repair.
+- [ ] Execute full single-tab foreground Brave completion across `SQLKata`, `FixTheCode`, `WebKata`, and remaining `CodeKata` (`Yet to start` + `In progress` -> `100%`).
+- [ ] Verify live dashboards & screenshots across all 4 platforms.

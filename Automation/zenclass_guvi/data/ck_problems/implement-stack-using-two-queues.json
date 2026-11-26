@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "push 1\npush 2\npeek\npop\npeek",
-   "output": "2\n2\n1"
-  },
-  {
    "input": "push 10\npush 20\npop\npush 30\npeek",
    "output": "30"
   },

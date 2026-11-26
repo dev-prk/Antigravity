@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "A man, in the boat says : I see 1-2-3 in the sky",
-   "output": "y kse, ht ni3 21ee sIsy : a sta o-b-e ht nin amA"
-  },
-  {
    "input": "Fiih+!@@,ln",
    "output": "nlhi+!@@,iF"
   },

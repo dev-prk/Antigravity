@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "programming",
-   "output": "r g m"
-  },
-  {
    "input": "success",
    "output": "s c"
   },

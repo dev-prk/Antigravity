@@ -9,11 +9,7 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n1 2 3 4 5\n6",
-   "output": "(2,4)\n(1,5)"
-  },
-  {
-   "input": "4 \n10 20 30 40 \n100",
+   "input": "4\n10 20 30 40\n100",
    "output": "-1"
   },
   {

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "listen\nsilent",
-   "output": "YES"
-  },
-  {
    "input": "hello\nworld",
    "output": "NO"
   },

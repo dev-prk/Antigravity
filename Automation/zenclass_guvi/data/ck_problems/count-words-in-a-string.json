@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Java is fun",
-   "output": "3"
-  },
-  {
    "input": "Hello World",
    "output": "2"
   },

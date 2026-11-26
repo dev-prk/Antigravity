@@ -11,6 +11,10 @@
   {
    "input": "(no input)",
    "output": "0 1 1 2 3"
+  },
+  {
+   "input": "(no input)",
+   "output": "0 1 1 2 3"
   }
  ],
  "raw": ""

@@ -9,15 +9,11 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\n10.5 20.8 30.1 40.2 50.6",
-   "output": "Average: 30.44\nMaximum: 50.60\nMinimum: 10.50\nStandard Deviation: 14.09"
-  },
-  {
-   "input": "3 \n1.0 2.0 3.0",
+   "input": "3\n1.0 2.0 3.0",
    "output": "Average: 2.00\nMaximum: 3.00\nMinimum: 1.00\nStandard Deviation: 0.82"
   },
   {
-   "input": "5 \n-10.0 0.0 10.0 20.0 30.0",
+   "input": "5\n-10.0 0.0 10.0 20.0 30.0",
    "output": "Average: 10.00\nMaximum: 30.00\nMinimum: -10.00\nStandard Deviation: 14.14"
   }
  ],

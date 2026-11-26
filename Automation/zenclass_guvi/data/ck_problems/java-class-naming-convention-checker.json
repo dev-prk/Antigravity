@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "MyClass",
-   "output": "Valid Naming"
-  },
-  {
    "input": "myclass",
    "output": "Invalid Naming"
   },

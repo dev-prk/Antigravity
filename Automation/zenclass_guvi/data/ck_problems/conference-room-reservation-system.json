@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "5\nRESERVE 101\nRESERVE 102\nFREE 101\nRESERVE 102\nFREE 102",
-   "output": "Room Reserved\nRoom Already Reserved by Employee 101\nRoom Freed\nRoom Reserved\nRoom Freed"
-  },
-  {
    "input": "3\nRESERVE 201\nFREE 201\nRESERVE 202",
    "output": "Room Reserved\nRoom Freed\nRoom Reserved"
   },

@@ -1,14 +1,14 @@
-2026/11/27-01:29:58.611 36c466 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/11/27-01:29:58.612 36c466 Recovering log #213
-2026/11/27-01:29:58.612 36c466 Level-0 table #216: started
-2026/11/27-01:29:58.625 36c466 Level-0 table #216: 62225 bytes OK
-2026/11/27-01:29:58.628 36c466 Delete type=0 #213
-2026/11/27-01:29:58.628 36c46b Compacting 4@0 + 1@1 files
-2026/11/27-01:29:58.631 36c46b Generated table #218@0: 144 keys, 44851 bytes
-2026/11/27-01:29:58.631 36c46b Compacted 4@0 + 1@1 files => 44851 bytes
-2026/11/27-01:29:58.633 36c46b compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-01:29:58.633 36c46b Delete type=2 #216
-2026/11/27-01:29:58.633 36c46b Delete type=2 #214
-2026/11/27-01:29:58.633 36c46b Delete type=2 #210
-2026/11/27-01:29:58.633 36c46b Delete type=2 #212
-2026/11/27-01:29:58.633 36c46b Delete type=2 #208
+2026/11/27-01:50:36.560 382632 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/11/27-01:50:36.560 382632 Recovering log #240
+2026/11/27-01:50:36.560 382632 Level-0 table #242: started
+2026/11/27-01:50:36.572 382632 Level-0 table #242: 85505 bytes OK
+2026/11/27-01:50:36.575 382632 Delete type=0 #240
+2026/11/27-01:50:36.577 382637 Compacting 4@0 + 1@1 files
+2026/11/27-01:50:36.580 382637 Generated table #244@0: 143 keys, 45063 bytes
+2026/11/27-01:50:36.580 382637 Compacted 4@0 + 1@1 files => 45063 bytes
+2026/11/27-01:50:36.581 382637 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-01:50:36.581 382637 Delete type=2 #239
+2026/11/27-01:50:36.581 382637 Delete type=2 #236
+2026/11/27-01:50:36.581 382637 Delete type=2 #231
+2026/11/27-01:50:36.581 382637 Delete type=2 #233
+2026/11/27-01:50:36.581 382637 Delete type=2 #242

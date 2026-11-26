@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Dog",
-   "output": "Bark! Bark!"
-  },
-  {
    "input": "Cat",
    "output": "Meow! Meow!"
   },

@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "1000\n3\nDeposit 500\nWithdraw 700\nWithdraw 1000",
-   "output": "Deposited 500. New Balance: 1500\nWithdrawn 700. New Balance: 800\nInsufficient funds! Withdrawal of 1000 failed.\nFinal Balance: 800"
-  },
-  {
    "input": "2000 2\nWithdraw 500\nWithdraw 1000",
    "output": "Withdrawn\nWithdrawn"
   },

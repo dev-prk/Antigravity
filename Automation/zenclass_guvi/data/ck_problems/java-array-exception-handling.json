@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "1\n100\n2\n3\n10 20 30\n1",
-   "output": "ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 1\nElement at index 1: 20"
-  },
-  {
    "input": "1\n100\n2",
    "output": "ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 1"
   },

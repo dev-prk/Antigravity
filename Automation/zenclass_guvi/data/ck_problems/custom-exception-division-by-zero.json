@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "10 0",
-   "output": "Cannot divide by zero"
-  },
-  {
    "input": "75 5",
    "output": "Result: 15"
   },

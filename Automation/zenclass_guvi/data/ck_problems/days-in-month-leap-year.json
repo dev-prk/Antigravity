@@ -9,12 +9,12 @@
  "constraints": "",
  "samples": [
   {
-   "input": "2 2020 -1 -1",
-   "output": "29"
-  },
-  {
    "input": "1 2000 -1 -1",
    "output": "31"
+  },
+  {
+   "input": "2 2020 -1 -1",
+   "output": "29"
   }
  ],
  "raw": ""

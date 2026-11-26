@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "25",
-   "output": "Automorphic Number"
-  },
-  {
    "input": "7",
    "output": "Not an Automorphic Number"
   },

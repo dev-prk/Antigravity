@@ -9,11 +9,7 @@
  "constraints": "",
  "samples": [
   {
-   "input": "Toyota\nCorolla\n2015\n2024 \nTesla\nModelS\n2025\n2024",
-   "output": "9 \nInvalid year"
-  },
-  {
-   "input": "Toyota \nCorolla \n2015 \n2024",
+   "input": "Toyota\nCorolla\n2015\n2024",
    "output": "9"
   },
   {

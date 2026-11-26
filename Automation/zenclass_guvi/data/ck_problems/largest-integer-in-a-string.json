@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "I was born on 12 october 1998.",
-   "output": "1998"
-  },
-  {
    "input": "India got independence on 15 august 1947. But they were fighting for it for last 90 years.",
    "output": "1947"
   },

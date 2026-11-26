@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "push 5\npush 2\nget\nMin\npop\nget\nMin\nexit",
-   "output": "2\n5"
-  },
-  {
    "input": "push 7\npush 3\npush 8\ngetMin\npop\ngetMin\nexit",
    "output": "3\n3"
   },

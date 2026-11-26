@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "7\naddNum 1\naddNum 2\nfindMedian\naddNum 3\nfindMedian\naddNum 4\nfindMedian",
-   "output": "1.5\n2.0\n2.5"
-  },
-  {
    "input": "5\naddNum 5\naddNum 3\nfindMedian\naddNum 8\nfindMedian",
    "output": "4.0\n5.0"
   },

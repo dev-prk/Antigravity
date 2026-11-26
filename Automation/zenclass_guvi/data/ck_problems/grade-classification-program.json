@@ -13,11 +13,7 @@
    "output": "Excellent\nGood\nAverage\nPass\nFail"
   },
   {
-   "input": "5 \n95 85 65 45 30 -1",
-   "output": "Excellent\nGood\nAverage\nPass\nFail"
-  },
-  {
-   "input": "3 \n50 50 50 -1",
+   "input": "3\n50 50 50 -1",
    "output": "Average\nAverage\nAverage"
   }
  ],

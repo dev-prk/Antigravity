@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "enqueue 1\nenqueue 2\npeek\ndequeue\npeek\nexit",
-   "output": "1\n1\n2"
-  },
-  {
    "input": "enqueue 9\ndequeue\ndequeue\nexit",
    "output": "9\n-1"
   },

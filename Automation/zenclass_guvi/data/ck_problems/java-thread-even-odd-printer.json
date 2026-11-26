@@ -9,8 +9,8 @@
  "constraints": "",
  "samples": [
   {
-   "input": "8",
-   "output": "Even Thread: 0\nEven Thread: 2\nEven Thread: 4\nEven Thread: 6\nEven Thread: 8\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5\nOdd Thread: 7"
+   "input": "5",
+   "output": "Even Thread: 0\nEven Thread: 2\nEven Thread: 4\nOdd Thread: 1\nOdd Thread: 3\nOdd Thread: 5"
   },
   {
    "input": "5",

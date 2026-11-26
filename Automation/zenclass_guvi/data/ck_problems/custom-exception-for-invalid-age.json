@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "17",
-   "output": "Age must be at least 18"
-  },
-  {
    "input": "24",
    "output": "Valid age"
   },

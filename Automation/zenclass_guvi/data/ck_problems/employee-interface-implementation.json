@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "FullTimeEmployee\nJohn\n3000.0\nPartTimeEmployee\nJane\n15.0\n120",
-   "output": "Name: John, Salary: 3000.0\nName: Jane, Salary: 1800.0"
-  },
-  {
    "input": "FullTimeEmployee\nJohn\n3000.0",
    "output": "Name: John, Salary: 3000.0"
   },

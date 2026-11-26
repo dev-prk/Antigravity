@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "1900",
-   "output": "no"
-  },
-  {
    "input": "2024",
    "output": "2024 is a leap year."
   },

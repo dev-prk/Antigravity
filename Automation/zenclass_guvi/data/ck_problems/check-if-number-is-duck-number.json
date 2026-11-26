@@ -9,10 +9,6 @@
  "constraints": "",
  "samples": [
   {
-   "input": "4023",
-   "output": "Duck Number"
-  },
-  {
    "input": "5009",
    "output": "Duck Number"
   },

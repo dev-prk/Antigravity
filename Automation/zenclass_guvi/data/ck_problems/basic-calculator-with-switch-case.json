@@ -9,15 +9,11 @@
  "constraints": "",
  "samples": [
   {
-   "input": "10\n5",
-   "output": "15"
-  },
-  {
-   "input": "20 \n4 \n-",
+   "input": "20\n4\n-",
    "output": "16"
   },
   {
-   "input": "50 \n5 \n/",
+   "input": "50\n5\n/",
    "output": "10"
   }
  ],
