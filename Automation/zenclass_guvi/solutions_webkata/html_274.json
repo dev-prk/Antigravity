@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n  \n  </head>\n  <body>\n <div>\n The border-radius property defines the radius of the element's corners\n</div>\n  </body>\n</html>",
+  "CSS": "div{\r\n  border: 2px solid red;\r\n  border-radius: 25px;\r\n}\r\n"
+}

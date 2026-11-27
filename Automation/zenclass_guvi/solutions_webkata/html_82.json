@@ -1,0 +1,3 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>Static Template</title>\r\n  </head>\r\n<body>\r\n<h2>Guvi Form</h2>\r\n<form>\r\n  <input type=\"text\" id=\"Firstname\" />\r\n  <input type=\"password\" id=\"Password\" maxlength=\"4\" />\r\n  <input type=\"submit\" value=\"submit\" />\r\n</form>\r\n</body>\r\n</html>"
+}

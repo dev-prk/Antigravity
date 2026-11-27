@@ -1,0 +1,3 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Canvas</title>\n    <style>\n      canvas {\n        border: 1px solid black;\n      }\n    </style>\n  </head>\n  <body>\n    <canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>\n    <script>\n      const canvas = document.getElementById('myCanvas');\n      const ctx = canvas.getContext('2d');\n      ctx.strokeRect(0, 0, 200, 100);\n    </script>\n  </body>\n</html>"
+}

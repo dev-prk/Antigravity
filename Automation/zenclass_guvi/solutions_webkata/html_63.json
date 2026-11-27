@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>Static Template</title>\r\n  </head>\r\n<body>\r\n  <p id=\"demo\"></p>\r\n</body> \r\n</html>",
+  "JavaScript": "document.getElementById('demo').innerHTML = 'Hello World!';"
+}

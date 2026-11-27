@@ -1,7 +1,3 @@
-2026/11/27-06:11:22.457 4390ef Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
-2026/11/27-06:11:22.462 4390ef Recovering log #441
-2026/11/27-06:11:22.463 4390ef Level-0 table #444: started
-2026/11/27-06:11:22.466 4390ef Level-0 table #444: 21615 bytes OK
-2026/11/27-06:11:22.466 4390ef Recovering log #443
-2026/11/27-06:11:22.467 4390ef Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000443.log 
-2026/11/27-06:11:22.469 4390ef Delete type=0 #441
+2026/11/27-06:45:52.574 44ad33 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
+2026/11/27-06:45:52.574 44ad33 Recovering log #466
+2026/11/27-06:45:52.575 44ad33 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000466.log 

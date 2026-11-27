@@ -1,0 +1,3 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    <style>\n        button {\n          opacity: 1;\n          transition: opacity 0.3s;\n        }\n        \n        button:hover {\n          opacity: 0.5;\n        }\n    </style>\n  </head>\n  <body>\n    <button>Click Me!</button>\n  </body>\n</html>\n</html>"
+}

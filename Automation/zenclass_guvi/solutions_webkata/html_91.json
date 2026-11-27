@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    <style>\n      ul {\n        list-style-type: none;\n        padding: 0;\n        margin: 0;\n      }\n      li {\n        display: inline-block;\n        margin-right: 10px;\n      }\n    </style>\n  </head>\n  <body>\n    <ul>\n      <li>Item 1</li>\n      <li>Item 2</li>\n      <li>Item 3</li>\n      <li>Item 4</li>\n      <li>Item 5</li>\n      <li>Item 6</li>\n      <li>Item 7</li>\n      <li>Item 8</li>\n      <li>Item 9</li>\n      <li>Item 10</li>\n      <li>Item 11</li>\n      <li>Item 12</li>\n    </ul>\n  </body>\n</html>",
+  "CSS": "ul {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\nli {\n  display: inline-block;\n  margin-right: 10px;\n}"
+}

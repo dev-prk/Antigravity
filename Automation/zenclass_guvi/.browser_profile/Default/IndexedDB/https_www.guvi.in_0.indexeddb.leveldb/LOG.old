@@ -1,3 +1,12 @@
-2026/11/27-06:00:59.393 42858d Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
-2026/11/27-06:00:59.393 42858d Recovering log #34
-2026/11/27-06:00:59.406 42858d Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/000034.log 
+2026/11/27-06:11:23.797 439090 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/MANIFEST-000001
+2026/11/27-06:11:23.797 439090 Recovering log #34
+2026/11/27-06:11:23.814 439090 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/IndexedDB/https_www.guvi.in_0.indexeddb.leveldb/000034.log 
+2026/11/27-06:16:16.087 439095 Level-0 table #39: started
+2026/11/27-06:16:16.104 439095 Level-0 table #39: 1233025 bytes OK
+2026/11/27-06:16:16.107 439095 Delete type=0 #34
+2026/11/27-06:16:21.977 4390a0 Compacting 1@1 + 1@2 files
+2026/11/27-06:16:22.004 4390a0 Generated table #40@1: 9174 keys, 1788708 bytes
+2026/11/27-06:16:22.004 4390a0 Compacted 1@1 + 1@2 files => 1788708 bytes
+2026/11/27-06:16:22.005 4390a0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/11/27-06:16:22.005 4390a0 Delete type=2 #39
+2026/11/27-06:16:22.005 4390a0 Delete type=2 #36
