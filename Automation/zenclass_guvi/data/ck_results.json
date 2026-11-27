@@ -1739,11 +1739,9 @@
   "ts": "2026-11-26T17:38:20.276118+00:00"
  },
  "array-rotation-2": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n4kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n#includ",
-  "duration_s": 2.72
+  "attempts": 1
  },
  "chess-bishop-cut": {
   "status": "COMPLETED",
@@ -2296,11 +2294,9 @@
   "duration_s": 1.37
  },
  "cycle-detection-in-directed-graph": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nCompiler Error\nTest Cases\n4/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 51, in <module> main() File \"script-3.8.1.py\", line 23, in main adj[u].append(v) IndexError: list ind",
-  "duration_s": 1.6
+  "attempts": 2
  },
  "dish-preparation-from-ingredients": {
   "status": "COMPLETED",
@@ -7999,11 +7995,9 @@
   "ts": "2026-11-26T18:59:00.890122+00:00"
  },
  "bears-weight-increase": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n56ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    a = int(data[0])",
-  "duration_s": 1.56
+  "attempts": 1
  },
  "bellman-ford-sssp-with-negative-edges-cycles": {
   "status": "COMPLETED",
@@ -8881,11 +8875,9 @@
   "duration_s": 2.68
  },
  "e-commerce-product-inheritance": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 48, in <module> main() File \"script-3.8.1.py\", line 34, in main price = float(data[i + 1]) ValueError",
-  "duration_s": 2.74
+  "attempts": 1
  },
  "edmonds-karp-algorithm-for-maximum-flow": {
   "status": "COMPLETED",
