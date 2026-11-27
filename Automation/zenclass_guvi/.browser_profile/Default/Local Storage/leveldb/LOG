@@ -46,3 +46,42 @@
 2026/11/27-11:31:37.129 4afc4f Level-0 table #718: started
 2026/11/27-11:31:37.132 4afc4f Level-0 table #718: 73958 bytes OK
 2026/11/27-11:31:37.135 4afc4f Delete type=0 #714
+2026/11/27-11:34:37.132 4afc4a Level-0 table #720: started
+2026/11/27-11:34:37.136 4afc4a Level-0 table #720: 74563 bytes OK
+2026/11/27-11:34:37.139 4afc4a Delete type=0 #717
+2026/11/27-11:37:37.133 4afc4f Level-0 table #722: started
+2026/11/27-11:37:37.137 4afc4f Level-0 table #722: 73828 bytes OK
+2026/11/27-11:37:37.142 4afc4f Delete type=0 #719
+2026/11/27-11:40:37.133 4afc4f Level-0 table #724: started
+2026/11/27-11:40:37.139 4afc4f Level-0 table #724: 72328 bytes OK
+2026/11/27-11:40:37.143 4afc4f Delete type=0 #721
+2026/11/27-11:40:37.144 4afc4f Compacting 4@0 + 1@1 files
+2026/11/27-11:40:37.148 4afc4f Generated table #725@0: 145 keys, 49499 bytes
+2026/11/27-11:40:37.148 4afc4f Compacted 4@0 + 1@1 files => 49499 bytes
+2026/11/27-11:40:37.150 4afc4f compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-11:40:37.151 4afc4f Delete type=2 #716
+2026/11/27-11:40:37.151 4afc4f Delete type=2 #724
+2026/11/27-11:40:37.151 4afc4f Delete type=2 #718
+2026/11/27-11:40:37.151 4afc4f Delete type=2 #722
+2026/11/27-11:40:37.151 4afc4f Delete type=2 #720
+2026/11/27-11:43:37.134 4afc4f Level-0 table #727: started
+2026/11/27-11:43:37.137 4afc4f Level-0 table #727: 73046 bytes OK
+2026/11/27-11:43:37.140 4afc4f Delete type=0 #723
+2026/11/27-11:46:37.134 4afc50 Level-0 table #729: started
+2026/11/27-11:46:37.136 4afc50 Level-0 table #729: 73311 bytes OK
+2026/11/27-11:46:37.139 4afc50 Delete type=0 #726
+2026/11/27-11:49:37.138 4afc4f Level-0 table #731: started
+2026/11/27-11:49:37.141 4afc4f Level-0 table #731: 72387 bytes OK
+2026/11/27-11:49:37.146 4afc4f Delete type=0 #728
+2026/11/27-11:52:37.135 4afc4f Level-0 table #733: started
+2026/11/27-11:52:37.138 4afc4f Level-0 table #733: 73013 bytes OK
+2026/11/27-11:52:37.140 4afc4f Delete type=0 #730
+2026/11/27-11:52:37.140 4afc4f Compacting 4@0 + 1@1 files
+2026/11/27-11:52:37.144 4afc4f Generated table #734@0: 145 keys, 49496 bytes
+2026/11/27-11:52:37.144 4afc4f Compacted 4@0 + 1@1 files => 49496 bytes
+2026/11/27-11:52:37.146 4afc4f compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-11:52:37.146 4afc4f Delete type=2 #729
+2026/11/27-11:52:37.146 4afc4f Delete type=2 #731
+2026/11/27-11:52:37.146 4afc4f Delete type=2 #725
+2026/11/27-11:52:37.146 4afc4f Delete type=2 #733
+2026/11/27-11:52:37.146 4afc4f Delete type=2 #727

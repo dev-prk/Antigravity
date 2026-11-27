@@ -4,3 +4,18 @@
 2026/11/27-11:27:37.128 4afc4a Level-0 table #565: started
 2026/11/27-11:27:37.131 4afc4a Level-0 table #565: 12992 bytes OK
 2026/11/27-11:27:37.134 4afc4a Delete type=0 #562
+2026/11/27-11:41:37.135 4afc4a Level-0 table #567: started
+2026/11/27-11:41:37.140 4afc4a Level-0 table #567: 13349 bytes OK
+2026/11/27-11:41:37.143 4afc4a Delete type=0 #564
+2026/11/27-11:51:37.136 4afc50 Level-0 table #569: started
+2026/11/27-11:51:37.141 4afc50 Level-0 table #569: 19361 bytes OK
+2026/11/27-11:51:37.146 4afc50 Delete type=0 #566
+2026/11/27-11:51:37.147 4afc50 Compacting 4@0 + 1@1 files
+2026/11/27-11:51:37.156 4afc50 Generated table #570@0: 5805 keys, 86023 bytes
+2026/11/27-11:51:37.156 4afc50 Compacted 4@0 + 1@1 files => 86023 bytes
+2026/11/27-11:51:37.158 4afc50 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/27-11:51:37.159 4afc50 Delete type=2 #559
+2026/11/27-11:51:37.159 4afc50 Delete type=2 #565
+2026/11/27-11:51:37.159 4afc50 Delete type=2 #567
+2026/11/27-11:51:37.159 4afc50 Delete type=2 #561
+2026/11/27-11:51:37.159 4afc50 Delete type=2 #569
