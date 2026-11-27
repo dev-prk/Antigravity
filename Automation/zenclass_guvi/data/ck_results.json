@@ -9609,11 +9609,9 @@
   "ts": "2026-11-26T19:23:50.301167+00:00"
  },
  "generic-stack-implementation": {
-  "status": "FAILED_PLATFORM",
-  "language": "JAVA",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA\nRuntime\n\n397ms\n\nMemory\n\n49kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n4",
-  "duration_s": 4.23
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1
  },
  "column-sum-of-a-matrix": {
   "status": "COMPLETED",
@@ -9762,11 +9760,9 @@
   "ts": "2026-11-26T19:24:57.209057+00:00"
  },
  "implement-bucket-sort-in-java": {
-  "status": "FAILED_PLATFORM",
-  "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nJAVA 8\nRuntime\n\n303ms\n\nMemory\n\n53kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 4.27
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1
  },
  "email-validation": {
   "status": "FAILED_PLATFORM",
@@ -10499,11 +10495,9 @@
   "ts": "2026-11-26T19:35:20.184146+00:00"
  },
  "lambda-expression-for-even-odd-calculation": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA",
-  "attempts": 2,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nJAVA\nMain.java:22: error: incompatible types: Predicate<Integer> cannot be converted to IntPredicate .filter(isEven) ^ Main.java:27: error: incompatible types: Predicate<Inte",
-  "duration_s": 4.33
+  "attempts": 3
  },
  "find-the-second-largest-distinct-element-using-pointers": {
   "status": "COMPLETED",
@@ -11933,11 +11927,9 @@
   "ts": "2026-11-26T19:53:38.679832+00:00"
  },
  "minimum-vertex-cover-on-trees": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nJAVA 8\nMain.java:47: error: cannot find symbol exclude += Math.min(solve[child], solve[2 * child]); ^ symbol: variable solve location: class Main Main.java:47: error: cannot ",
-  "duration_s": 4.11
+  "attempts": 3
  },
  "minimum-x-for-distinct-modulo": {
   "status": "FAILED_PLATFORM",
@@ -12443,11 +12435,9 @@
   "duration_s": 5.25
  },
  "oop-student-grading-system": {
-  "status": "FAILED_PLATFORM",
-  "language": "JAVA",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA\nRuntime\n\n362ms\n\nMemory\n\n49kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n4",
-  "duration_s": 4.29
+  "status": "COMPLETED",
+  "language": "PYTHON 3",
+  "attempts": 1
  },
  "optimal-bank-loan-selection": {
   "status": "FAILED_PLATFORM",
@@ -13153,11 +13143,9 @@
   "duration_s": 2.63
  },
  "python-mro-for-multiple-inheritance": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n58ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n4",
-  "duration_s": 2.27
+  "attempts": 3
  },
  "python-pet-simulation-with-polymorphism": {
   "status": "COMPLETED",
