@@ -1,0 +1,414 @@
+[
+  {
+    "id": "c9-sci-distance-displacement",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Motion",
+    "title": "Distance vs Displacement: Why Your Step Counter Lies to Physics",
+    "hook": "You walked four hundred metres around a track, yet physics says you went zero. How?",
+    "narration": "Imagine you walk from your classroom to the school canteen eighty metres east, and then walk straight back eighty metres west to your desk. Your legs feel every step because the total path length you covered is one hundred and sixty metres. In physics, that total ground covered along your path is called distance. It only cares about how much you walked, never which way. But displacement asks a different question: how far is your final spot from your starting spot, and in what direction? Because you ended up back at your desk, the straight-line gap between start and finish is zero metres! Even if you run one full round of a four hundred metre circular track, your distance is four hundred metres, while your displacement is still zero.",
+    "terms": [
+      {
+        "word": "distance",
+        "meaning": "The total length of the actual path travelled, ignoring direction."
+      },
+      {
+        "word": "displacement",
+        "meaning": "The shortest straight-line gap from start to finish, including direction."
+      },
+      {
+        "word": "direction",
+        "meaning": "The line or compass heading along which something moves or points."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "You walk 80 m East to the canteen, then 80 m West back to your desk.",
+        "visual": "track-roundtrip"
+      },
+      {
+        "text": "Distance counts every single step along the path: 80 m + 80 m = 160 m.",
+        "visual": "distance-meter"
+      },
+      {
+        "text": "Displacement only measures the straight-line shortcut from Start to Finish with direction.",
+        "visual": "displacement-arrow"
+      },
+      {
+        "text": "Start = Finish? Even after a 400 m lap, your displacement is 0 m!",
+        "visual": "circle-lap-zero"
+      }
+    ],
+    "misconception": "Thinking distance and displacement are just two words for how far you travelled."
+  },
+  {
+    "id": "c9-sci-speed-velocity",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Motion",
+    "title": "Speed vs Velocity: Turning the Handlebar Changes Everything",
+    "hook": "Can a scooter hold a steady speed of 30 km/h and still be changing its velocity every second?",
+    "narration": "Look at a scooter's speedometer while going round a traffic circle at a steady ten metres per second. That number is your speed: it simply tells you how many metres of path you cover each second. Speed has no direction at all. Now add a compass direction to that speed—like ten metres per second towards the north—and you get velocity. Velocity tells you both how fast you are moving and which way you are headed. Here is the catch that tricks most students: when you go around a circular turn at a steady ten metres per second, your speed stays fixed, but your direction changes every single instant! Because velocity includes direction, turning your handlebar changes your velocity even when the speedometer needle never moves.",
+    "terms": [
+      {
+        "word": "speed",
+        "meaning": "How much distance you cover in one second, with no direction attached."
+      },
+      {
+        "word": "velocity",
+        "meaning": "Speed in a specific direction—change Either speed or direction and velocity changes."
+      },
+      {
+        "word": "direction",
+        "meaning": "The compass heading or path line an object is moving along right now."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "Speedometer says 10 m/s: that is speed—just how fast you cover ground.",
+        "visual": "speedometer-dial"
+      },
+      {
+        "text": "Add a compass arrow—10 m/s North—and speed becomes velocity.",
+        "visual": "velocity-compass"
+      },
+      {
+        "text": "On a circular roundabout, your speed stays 10 m/s, but your direction keeps turning.",
+        "visual": "roundabout-turn"
+      },
+      {
+        "text": "New direction = new velocity, even when the speedometer needle doesn't budge!",
+        "visual": "turning-vectors"
+      }
+    ],
+    "misconception": "Believing velocity only changes when you press the accelerator or the brake."
+  },
+  {
+    "id": "c9-sci-acceleration",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Motion",
+    "title": "Acceleration: It Is Not About Going Fast!",
+    "hook": "A supercar cruising at 250 km/h has ZERO acceleration, while a toddler starting to walk has plenty.",
+    "narration": "Most people use the word acceleration to mean moving really fast, Status-symbol style. In physics, acceleration does not care how fast you are going right now—it only measures how quickly your velocity is changing each second. Suppose a train is gliding smoothly on a straight track at thirty metres per second and keeps that exact velocity. Because its velocity is not changing, its acceleration is zero! Now watch an auto-rickshaw start from rest and reach six metres per second in three seconds. Every single second, its velocity grows by two metres per second, so its acceleration is two metres per second squared. And when the driver slams the brakes, velocity drops each second—that is negative acceleration, or retardation, acting opposite to the motion.",
+    "terms": [
+      {
+        "word": "acceleration",
+        "meaning": "How much an object's velocity changes in every one second of time."
+      },
+      {
+        "word": "velocity",
+        "meaning": "How fast an object moves in a stated direction."
+      },
+      {
+        "word": "retardation",
+        "meaning": "Negative acceleration where velocity decreases each second because force opposes motion."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "High speed ≠ high acceleration! A train cruising steady at 30 m/s has 0 acceleration.",
+        "visual": "steady-train"
+      },
+      {
+        "text": "Auto-rickshaw goes from 0 to 6 m/s in 3 seconds: gaining +2 m/s every second.",
+        "visual": "auto-speedup"
+      },
+      {
+        "text": "That rate of change (+2 m/s per second, or 2 m/s²) is acceleration.",
+        "visual": "accel-steps"
+      },
+      {
+        "text": "Braking drops velocity each second—that is negative acceleration (retardation).",
+        "visual": "braking-arrow"
+      }
+    ],
+    "misconception": "Thinking a fast-moving object automatically has high acceleration."
+  },
+  {
+    "id": "c9-sci-inertia",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Force and Laws of Motion",
+    "title": "Inertia: Why You Lurch Forward When the Bus Brakes",
+    "hook": "Nobody pushed you inside the bus, so why did you fly forward when the driver hit the brakes?",
+    "narration": "Picture yourself standing in a moving city bus. Both the bus and your body are travelling forward at the same speed. Suddenly the driver hits the brakes. The tyres grip the road and stop the bus floor, along with your shoes touching that floor. Why does your upper body lurch forward? Not because an invisible force threw you ahead! Your upper body simply keeps moving forward the way it already was. This built-in stubbornness of every object to resist any change in its state of rest or motion is called inertia. The heavier an object is, the more inertia it has—which is why kicking a heavy iron ball hurts your toe, while an empty plastic football flies away easily. Mass is the direct measure of inertia.",
+    "terms": [
+      {
+        "word": "inertia",
+        "meaning": "The natural tendency of any object to resist a change in its rest or motion."
+      },
+      {
+        "word": "mass",
+        "meaning": "The amount of matter in an object, which directly measures how much inertia it has."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "Inside a moving bus, your whole body is gliding forward at the bus's speed.",
+        "visual": "bus-cruising"
+      },
+      {
+        "text": "Brakes slam! The floor stops your feet, but your upper body keeps moving forward.",
+        "visual": "bus-braking-lurch"
+      },
+      {
+        "text": "That stubborn refusal to change motion or rest on its own is called inertia.",
+        "visual": "inertia-shield"
+      },
+      {
+        "text": "More mass = more inertia: an iron ball resists a kick far more than a plastic ball.",
+        "visual": "mass-comparison"
+      }
+    ],
+    "misconception": "Thinking a forward force pushes you ahead when a bus brakes."
+  },
+  {
+    "id": "c9-sci-first-law",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Force and Laws of Motion",
+    "title": "Newton's First Law: Motion Does Not Need a Fuel Tank",
+    "hook": "If you roll a cricket ball on the ground it stops—so didn't Newton get his First Law wrong?",
+    "narration": "For centuries people believed that rest is nature's default state and that every moving object needs a constant push to stay moving. After all, stop pedalling your bicycle on a flat road and you soon roll to a halt. Galileo and Newton saw through that illusion. Your bicycle does not stop because motion naturally dies out; it stops because invisible opposing forces—road friction and air drag—push backward against it! Newton's first law states that an object stays at rest, or keeps moving in a straight line at constant speed, unless an external unbalanced force acts on it. Strip away friction and air in deep space, and a stone flicked once from your hand will glide at that exact velocity forever without any engine.",
+    "terms": [
+      {
+        "word": "unbalanced force",
+        "meaning": "A net push or pull that is not cancelled out by an equal opposite force on that same object."
+      },
+      {
+        "word": "friction",
+        "meaning": "A contact force between surfaces that opposes sliding motion."
+      },
+      {
+        "word": "velocity",
+        "meaning": "Speed in a straight-line direction."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "Why does a rolling cricket ball stop on grass? Not because motion 'runs out'!",
+        "visual": "ball-on-grass"
+      },
+      {
+        "text": "Grass friction and air push backward—an external unbalanced force slows the ball.",
+        "visual": "friction-arrows"
+      },
+      {
+        "text": "Remove friction (smooth ice → air hockey → deep space) and the ball never stops.",
+        "visual": "space-glide"
+      },
+      {
+        "text": "First Law: rest AND steady straight-line velocity both last forever without an unbalanced force.",
+        "visual": "first-law-balance"
+      }
+    ],
+    "misconception": "Believing a continuous force is needed to keep an object moving at constant speed."
+  },
+  {
+    "id": "c9-sci-why-friction-exists",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Force and Laws of Motion",
+    "title": "Why Friction Exists: Microscopic Mountains Under Your Book",
+    "hook": "Your wooden desk feels glass-smooth to your fingers—so why does a sliding book grind to a stop?",
+    "narration": "Run your palm across a polished school desk and it feels completely smooth. Yet if you slide your science textbook across it, the book slows down and stops within half a metre. Remember: rest is not automatic—objects keep moving unless an opposing force acts on them. That opposing force is friction, and it exists because no surface is truly smooth at the microscopic level. Zoom in ten thousand times on both the desk and the book cover, and you will see jagged microscopic ridges, hills, and valleys. When the book rests on the desk, these tiny hills sink into each other and interlock like teeth on two saw blades. To slide the book forward, you have to push hard enough to lift or snap past those interlocking bumps.",
+    "terms": [
+      {
+        "word": "friction",
+        "meaning": "The resistive force created when two surfaces slide or try to slide across each other."
+      },
+      {
+        "word": "interlock",
+        "meaning": "When microscopic bumps and grooves on two touching surfaces catch into one another."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "A sliding textbook stops on a desk—which means a backward force must be acting on it.",
+        "visual": "sliding-book"
+      },
+      {
+        "text": "Zoom in 10,000×: even 'smooth' wood and paper are covered in microscopic hills and valleys.",
+        "visual": "microscope-zoom"
+      },
+      {
+        "text": "Those jagged ridges sink into each other and interlock like tiny gear teeth.",
+        "visual": "interlocking-ridges"
+      },
+      {
+        "text": "Friction is the force from those interlocking bumps resisting motion—not rest happening on its own.",
+        "visual": "ridge-push-past"
+      }
+    ],
+    "misconception": "Thinking smooth-looking surfaces have no roughness and objects just stop naturally."
+  },
+  {
+    "id": "c9-sci-momentum",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Force and Laws of Motion",
+    "title": "Momentum: Why a Slow Truck Hits Harder Than a Fast Tennis Ball",
+    "hook": "Would you rather block a tennis ball at 50 km/h or a loaded truck creeping at 2 km/h?",
+    "narration": "Anyone can catch a light tennis ball tossed gently, and nobody steps in front of a rolling truck, even if the truck is barely creeping at walking speed. On the other hand, a tiny bullet weighs almost nothing, yet at high velocity it can punch right through wood. Clearly, how hard a moving object is to stop depends on two things together: its mass and its velocity. Newton combined them into one powerful quantity called momentum, equal to mass multiplied by velocity. A heavy truck has huge mass, so even at tiny velocity its momentum is massive. A tiny bullet has huge velocity, so its momentum is massive too. To change an object's momentum, you must apply an unbalanced force over time.",
+    "terms": [
+      {
+        "word": "momentum",
+        "meaning": "The product of an object's mass and velocity (p = m × v); measures how hard it is to stop."
+      },
+      {
+        "word": "mass",
+        "meaning": "How much matter an object has, measured in kilograms."
+      },
+      {
+        "word": "velocity",
+        "meaning": "How fast and in which direction the object is moving."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "Why is a slow 5,000 kg truck scarier to stop than a 0.06 kg tennis ball?",
+        "visual": "truck-vs-ball"
+      },
+      {
+        "text": "And why does a tiny 0.01 kg bullet hit so hard when fired at 400 m/s?",
+        "visual": "fast-bullet"
+      },
+      {
+        "text": "Impact punch depends on BOTH mass and velocity multiplied together: Momentum = m × v.",
+        "visual": "momentum-formula"
+      },
+      {
+        "text": "Big mass OR big velocity builds large momentum—and stopping it takes real force over time.",
+        "visual": "catcher-hands-back"
+      }
+    ],
+    "misconception": "Thinking only speed decides how hard a moving object is to stop."
+  },
+  {
+    "id": "c9-sci-second-law-fma",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Force and Laws of Motion",
+    "title": "Newton's Second Law (F = ma): How Much Push Do You Actually Need?",
+    "hook": "Why do fielders pull their hands backward while catching a fast cricket ball?",
+    "narration": "Newton's second law connects force directly to how fast momentum changes, giving us the famous equation force equals mass times acceleration, or F equals m times a. Let us test it with real numbers! Suppose you push a 5 kg shopping cart so that its acceleration is 3 m/s squared. Multiply the mass of 5 kg by the acceleration of 3 m/s squared, and you get the exact force: 5 times 3 equals 15 newtons! Double the cart's mass to 10 kg, and getting that same 3 m/s squared acceleration takes 30 newtons. This also explains why a cricket fielder pulls their hands back during a catch: stretching the stopping time lowers the ball's acceleration, which slashes the force stinging their palms.",
+    "terms": [
+      {
+        "word": "acceleration",
+        "meaning": "The rate at which velocity changes every second, measured in m/s squared."
+      },
+      {
+        "word": "newtons",
+        "meaning": "The standard physics unit of force; 1 newton accelerates 1 kg by 1 m/s squared."
+      },
+      {
+        "word": "momentum",
+        "meaning": "Mass times velocity; force is the rate at which momentum changes with time."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "Newton's 2nd Law: Force = rate of change of momentum → F = m × a.",
+        "visual": "fma-equation"
+      },
+      {
+        "text": "Worked example: push a 5 kg cart at an acceleration of 3 m/s².",
+        "visual": "cart-5kg-3ms2"
+      },
+      {
+        "text": "Multiply: F = 5 kg × 3 m/s² = 15 newtons of net force!",
+        "visual": "calc-15-newtons"
+      },
+      {
+        "text": "Fielder pulls hands back → longer stopping time → smaller acceleration → gentler force!",
+        "visual": "cricket-catch-time"
+      }
+    ],
+    "misconception": "Thinking force equals speed (F = mv) instead of force producing acceleration (F = ma)."
+  },
+  {
+    "id": "c9-sci-third-law",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Force and Laws of Motion",
+    "title": "Newton's Third Law: If Forces Are Equal & Opposite, Why Does Anything Move?",
+    "hook": "If every action has an equal and opposite reaction, why don't the two forces cancel out to zero?",
+    "narration": "Every student hears the slogan: to every action there is an equal and opposite reaction. Immediately a smart puzzle pops up—if the two forces are equal and opposite, why don't they cancel out so nothing can ever move? Here is the secret most people miss: two forces only cancel when they act on the same object, but action and reaction always act on two different bodies! When a swimmer pushes the pool wall backward with her feet, her force acts on the wall. At that exact instant, the wall pushes forward on the swimmer's body. One force is on the wall; the other is on the swimmer. Because they act on different objects, they never cancel—and the swimmer shoots forward through the water!",
+    "terms": [
+      {
+        "word": "action",
+        "meaning": "The initial force that Object A exerts on Object B."
+      },
+      {
+        "word": "reaction",
+        "meaning": "The simultaneous equal and opposite force that Object B exerts back on Object A."
+      },
+      {
+        "word": "two different bodies",
+        "meaning": "Two separate objects—forces only cancel when they push on the same single object."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "The big puzzle: if Action = −Reaction, why don't they add up to 0 and freeze everything?",
+        "visual": "tug-puzzle"
+      },
+      {
+        "text": "Key rule: forces only cancel when they act on the SAME body!",
+        "visual": "same-vs-different-body"
+      },
+      {
+        "text": "Swimmer pushes backward on the WALL (Body A). Wall pushes forward on the SWIMMER (Body B).",
+        "visual": "swimmer-wall-push"
+      },
+      {
+        "text": "Because action and reaction act on two different bodies, they never cancel—and the swimmer glides ahead!",
+        "visual": "rocket-and-swimmer"
+      }
+    ],
+    "misconception": "Thinking action and reaction forces act on the same object and should cancel each other out."
+  },
+  {
+    "id": "c9-sci-conservation-momentum",
+    "class": 9,
+    "subject": "Science",
+    "chapter": "Force and Laws of Motion",
+    "title": "Conservation of Momentum: Why a Heavy Rifle Kicks Back Slowly",
+    "hook": "When a gun fires a fast bullet forward, why doesn't the gun fly backward just as fast?",
+    "narration": "Before a rifle is fired, both the rifle and the bullet sitting inside it are completely still, so their total momentum is zero. Now pull the trigger! Expanding gases push the small bullet forward while the bullet pushes the rifle backward with an equal force for the exact same fraction of a second. By the law of conservation of momentum, when no outside force interferes, total momentum after firing must still add up to zero. Forward momentum of the bullet must equal backward recoil momentum of the rifle. Because the rifle has huge mass compared to the tiny bullet, it only needs a small backward velocity to match the bullet's momentum—giving your shoulder a firm kick instead of launching the rifle at bullet speed.",
+    "terms": [
+      {
+        "word": "conservation of momentum",
+        "meaning": "Total momentum of an isolated system stays constant before and after a collision or push."
+      },
+      {
+        "word": "recoil",
+        "meaning": "The backward jerk of a gun or launcher when it pushes a projectile forward."
+      },
+      {
+        "word": "momentum",
+        "meaning": "Mass multiplied by velocity (p = m × v), including direction."
+      }
+    ],
+    "scenes": [
+      {
+        "text": "Before firing: Rifle + Bullet are at rest → Total Momentum = 0.",
+        "visual": "rifle-at-rest"
+      },
+      {
+        "text": "Bang! Internal forces push the bullet forward and the rifle backward for the same time.",
+        "visual": "rifle-firing-split"
+      },
+      {
+        "text": "Conservation of momentum: Bullet's forward (m × V) + Rifle's backward (M × v) must still equal 0!",
+        "visual": "momentum-scale-zero"
+      },
+      {
+        "text": "Tiny mass × huge velocity = Huge rifle mass × small recoil velocity!",
+        "visual": "mass-velocity-tradeoff"
+      }
+    ],
+    "misconception": "Thinking equal action-reaction forces mean the rifle and the bullet move at equal speeds."
+  }
+]

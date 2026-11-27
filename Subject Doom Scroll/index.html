@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>CBSE Shorts — 60s Concept Clicks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top HUD bar -->
+  <header class="hud-bar" id="hudBar">
+    <div class="hud-left">
+      <button class="class-badge-btn" id="openOnboardingBtn" title="Change Class" aria-label="Change Class">
+        <span id="currentClassLabel">Class 9</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="subject-chips" role="tablist" aria-label="Subject Filter">
+        <button class="chip active" data-subject="All" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-subject="Science" role="tab" aria-selected="false">Science</button>
+      </div>
+    </div>
+    <div class="hud-right">
+      <button class="voice-btn" id="voiceToggleBtn" aria-pressed="true" title="Toggle Voice Narration">
+        <span class="voice-icon" id="voiceIcon">🔊</span>
+        <span class="voice-label" id="voiceLabel">Voice On</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Vertical Snap-Scroll Feed -->
+  <main class="feed-container" id="feedContainer" aria-live="polite"></main>
+
+  <!-- Coming Soon State for Classes 6, 7, 8, 10 -->
+  <section class="coming-soon-panel hidden" id="comingSoonPanel">
+    <div class="coming-soon-card">
+      <div class="cs-badge" id="csClassBadge">Class 8</div>
+      <h2>Coming Soon!</h2>
+      <p id="csMessage">We saved your selection (<strong id="csSavedClassText">Class 8</strong>). Right now, the pilot features <strong>Class 9 Science</strong> (Motion &amp; Force and Laws of Motion).</p>
+      <div class="cs-actions">
+        <button class="primary-btn" id="tryClass9Btn">Explore Class 9 Science Pilot</button>
+        <button class="secondary-btn" id="changeClassFromCsBtn">Pick Another Class</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Error / Bad Content Rejection Banner -->
+  <section class="error-panel hidden" id="errorPanel" role="alert">
+    <div class="coming-soon-card error-card">
+      <div class="cs-badge error-badge">Content Validation Failed</div>
+      <h2>Invalid Shorts Data Rejected</h2>
+      <p id="errorMessage"></p>
+    </div>
+  </section>
+
+  <!-- Onboarding Modal (Pick Class 6–10) -->
+  <div class="modal-backdrop hidden" id="onboardingModal" role="dialog" aria-modal="true" aria-labelledby="onboardingTitle">
+    <div class="modal-card">
+      <div class="modal-eyebrow">CBSE Concept Shorts</div>
+      <h1 id="onboardingTitle">Which class are you in?</h1>
+      <p class="modal-sub">Every scroll is a 45–60 second visual + spoken explainer that makes one school concept click.</p>
+      <div class="class-grid" id="classGrid">
+        <button class="class-option" data-class="6">
+          <span class="class-num">Class 6</span>
+          <span class="class-tag tag-soon">Coming soon</span>
+        </button>
+        <button class="class-option" data-class="7">
+          <span class="class-num">Class 7</span>
+          <span class="class-tag tag-soon">Coming soon</span>
+        </button>
+        <button class="class-option" data-class="8">
+          <span class="class-num">Class 8</span>
+          <span class="class-tag tag-soon">Coming soon</span>
+        </button>
+        <button class="class-option live-pilot" data-class="9">
+          <span class="class-num">Class 9</span>
+          <span class="class-tag tag-live">10 Shorts Live • Science</span>
+        </button>
+        <button class="class-option" data-class="10">
+          <span class="class-num">Class 10</span>
+          <span class="class-tag tag-soon">Coming soon</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
