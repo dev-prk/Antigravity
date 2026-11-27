@@ -1,57 +1,69 @@
 {
-  "verified_at": "2026-11-27T03:12:09.939990+00:00",
+  "verified_at": "2026-11-27T05:20:57.529760+00:00",
   "paid_worker_quota_used": 0,
+  "saved_solution_files": {
+    "codekata": 1906,
+    "webkata": 234,
+    "sqlkata": 60,
+    "fixthecode": 41
+  },
   "dashboards": {
     "codekata": {
-      "solved_pct": "89.6%",
+      "solved_pct": "90.05%",
       "attempted_pct": "99.86%",
-      "easy_pct": "91.71%",
-      "medium_pct": "88.06%",
-      "hard_pct": "88.77%",
-      "verified_solved_count": 1951,
+      "easy_pct": "91.95%",
+      "medium_pct": "88.62%",
+      "hard_pct": "89.43%",
+      "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/verified_codekata_dashboard.png",
+      "verified_solved_count": 1964,
       "language_breakdown": {
-        "PYTHON 3": 1256,
-        "JAVA 8": 332,
-        "C": 265,
-        "JAVA": 52,
-        "C++": 35,
+        "PYTHON 3": 1262,
+        "JAVA 8": 334,
+        "C": 268,
+        "JAVA": 53,
+        "C++": 36,
         "EXISTING": 11
-      },
-      "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/verified_codekata_dashboard.png"
+      }
     },
     "webkata": {
-      "solved_pct": "80.07%",
+      "solved_pct": "82.87%",
       "attempted_pct": "100%",
-      "easy_pct": "78.4%",
-      "medium_pct": "86.41%",
+      "easy_pct": "82.72%",
+      "medium_pct": "87.38%",
       "hard_pct": "61.9%",
+      "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/verified_webkata_dashboard.png",
       "tracks": {
-        "HTML": "78/92",
-        "CSS": "100/133",
-        "JavaScript": "26/30",
+        "HTML": "79/92",
+        "CSS": "106/133",
+        "JavaScript": "27/30",
         "Bootstrap": "36/46"
-      },
-      "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/verified_webkata_dashboard.png"
+      }
     },
     "sqlkata": {
-      "solved_pct": "49.54%",
+      "solved_pct": "59.63%",
       "attempted_pct": "100%",
-      "easy_pct": "50%",
-      "medium_pct": "54.05%",
-      "hard_pct": "25%",
-      "saved_sql_files": 49,
+      "easy_pct": "59.38%",
+      "medium_pct": "62.16%",
+      "hard_pct": "50%",
       "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/verified_sqlkata_dashboard.png"
     },
     "fixthecode": {
-      "solved_pct": "76%",
+      "solved_pct": "86%",
       "attempted_pct": "100%",
-      "saved_py_files": 36,
+      "easy_pct": "",
+      "medium_pct": "",
+      "hard_pct": "",
       "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/verified_fixthecode_dashboard.png"
+    },
+    "zenclass_projects": {
+      "completed": "7/7",
+      "pending": 0,
+      "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/final_zenclass_submitted.png"
     },
     "zenclass_tasks": {
       "active_tasks": 0,
       "completed_tasks": 10,
-      "pending_graded_assessments_not_automated": 5,
+      "pending_graded_assessments_refused": 5,
       "closed_superseded_cct": 1,
       "screenshot": "/Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/screenshots/verified_zenclass_tasks.png"
     }

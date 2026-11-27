@@ -20,3 +20,5 @@ zenclass_guvi/data/ck_final_repairs_v2/
 zenclass_guvi/data/ck_repair_queue/
 zenclass_guvi/data/ck_retry_queue/
 zenclass_guvi/data/storage_state.json
+
+zenclass_guvi/data/ck_v3_cands/
