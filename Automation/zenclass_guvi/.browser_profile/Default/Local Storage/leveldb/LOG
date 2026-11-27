@@ -10,3 +10,39 @@
 2026/11/27-11:13:37.120 4afc4f Level-0 table #704: started
 2026/11/27-11:13:37.125 4afc4f Level-0 table #704: 73123 bytes OK
 2026/11/27-11:13:37.129 4afc4f Delete type=0 #701
+2026/11/27-11:16:37.119 4afc4f Level-0 table #706: started
+2026/11/27-11:16:37.125 4afc4f Level-0 table #706: 74119 bytes OK
+2026/11/27-11:16:37.132 4afc4f Delete type=0 #703
+2026/11/27-11:16:37.133 4afc4f Compacting 4@0 + 1@1 files
+2026/11/27-11:16:37.137 4afc4f Generated table #707@0: 146 keys, 49922 bytes
+2026/11/27-11:16:37.137 4afc4f Compacted 4@0 + 1@1 files => 49922 bytes
+2026/11/27-11:16:37.138 4afc4f compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-11:16:37.139 4afc4f Delete type=2 #704
+2026/11/27-11:16:37.139 4afc4f Delete type=2 #706
+2026/11/27-11:16:37.139 4afc4f Delete type=2 #702
+2026/11/27-11:16:37.139 4afc4f Delete type=2 #700
+2026/11/27-11:16:37.139 4afc4f Delete type=2 #697
+2026/11/27-11:19:37.125 4afc4f Level-0 table #709: started
+2026/11/27-11:19:37.128 4afc4f Level-0 table #709: 73370 bytes OK
+2026/11/27-11:19:37.132 4afc4f Delete type=0 #705
+2026/11/27-11:22:37.127 4afc4f Level-0 table #711: started
+2026/11/27-11:22:37.132 4afc4f Level-0 table #711: 73580 bytes OK
+2026/11/27-11:22:37.138 4afc4f Delete type=0 #708
+2026/11/27-11:25:37.126 4afc4f Level-0 table #713: started
+2026/11/27-11:25:37.130 4afc4f Level-0 table #713: 73002 bytes OK
+2026/11/27-11:25:37.133 4afc4f Delete type=0 #710
+2026/11/27-11:28:37.128 4afc4f Level-0 table #715: started
+2026/11/27-11:28:37.132 4afc4f Level-0 table #715: 73924 bytes OK
+2026/11/27-11:28:37.140 4afc4f Delete type=0 #712
+2026/11/27-11:28:37.141 4afc4f Compacting 4@0 + 1@1 files
+2026/11/27-11:28:37.149 4afc4f Generated table #716@0: 146 keys, 50004 bytes
+2026/11/27-11:28:37.149 4afc4f Compacted 4@0 + 1@1 files => 50004 bytes
+2026/11/27-11:28:37.151 4afc4f compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-11:28:37.152 4afc4f Delete type=2 #711
+2026/11/27-11:28:37.152 4afc4f Delete type=2 #707
+2026/11/27-11:28:37.152 4afc4f Delete type=2 #713
+2026/11/27-11:28:37.152 4afc4f Delete type=2 #715
+2026/11/27-11:28:37.152 4afc4f Delete type=2 #709
+2026/11/27-11:31:37.129 4afc4f Level-0 table #718: started
+2026/11/27-11:31:37.132 4afc4f Level-0 table #718: 73958 bytes OK
+2026/11/27-11:31:37.135 4afc4f Delete type=0 #714

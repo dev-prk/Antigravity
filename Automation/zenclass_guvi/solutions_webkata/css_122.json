@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n   </head>\n  <body>\n  <p class='demo'>Something is better than nothing</p>\n\n  </body>\n</html>",
+  "CSS": ".demo {\n  position: relative;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  border-top: 2px solid black;\n  border-bottom: 2px solid black;\n}\n.demo::before,\n.demo::after {\n  content: '';\n  position: absolute;\n  left: 0;\n  right: 0;\n  height: 2px;\n  background-color: black;\n}\n.demo::before {\n  top: 0;\n}\n.demo::after {\n  bottom: 0;\n}"
+}
