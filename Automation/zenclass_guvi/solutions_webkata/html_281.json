@@ -1,0 +1,3 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    <style>\n      .strikethrough {\n        text-decoration: line-through;\n      } \n    </style>\n  </head>\n  <body>\n    <p>Hi GUVI,<span class=\"strikethrough\">Honesty is the best Policy</span> Everyone,</p>\n    <s></s>\n  </body>\n</html>\n</html>\n</html>"
+}
