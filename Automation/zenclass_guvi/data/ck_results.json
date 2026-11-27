@@ -87,11 +87,9 @@
   "ts": "2026-11-26T18:24:39.005409+00:00"
  },
  "farm-area-calculation": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n49ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n    if len(data) < 2:\n      ",
-  "duration_s": 2.73
+  "attempts": 1
  },
  "bank-account-system": {
   "status": "COMPLETED",
@@ -5728,11 +5726,9 @@
   "ts": "2026-11-26T18:26:43.447802+00:00"
  },
  "computing-simple-interest": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/3\nLanguage\nC\n/usr/bin/ld: /tmp/ccUndSQT.o: in function `main': main.c:(.text+0x7f): undefined reference to `round' collect2: error: ld returned 1 exit status Compilation Error\nCode\n1\n2\n",
-  "duration_s": 2.1
+  "attempts": 3
  },
  "alternating-case-string": {
   "status": "COMPLETED",
@@ -8387,11 +8383,9 @@
   "ts": "2026-11-26T19:04:56.061109+00:00"
  },
  "concatenate-two-strings-using-stringbuffer": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/3\nLanguage\nPYTHON 3\nRuntime\n\n29ms\n\nMemory\n\n9kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n    if len(data) < 2:\n        print(-1",
-  "duration_s": 2.58
+  "attempts": 4
  },
  "conditional-prefix-sum-array": {
   "status": "FAILED_PLATFORM",
@@ -8867,11 +8861,9 @@
   "ts": "2026-11-26T19:11:43.586979+00:00"
  },
  "dynamic-string-assignment-operator-overloading": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C++",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC++\nRuntime\n\n10ms\n\nMemory\n\n46kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n",
-  "duration_s": 3.65
+  "attempts": 4
  },
  "e-commerce-category-price-summation": {
   "status": "COMPLETED",
@@ -10005,11 +9997,9 @@
   "ts": "2026-11-26T19:28:05.587588+00:00"
  },
  "dynamic-matrix-multiplication": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n5ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n5",
-  "duration_s": 2.25
+  "attempts": 4
  },
  "balanced-parenthesis-checker": {
   "status": "COMPLETED",
@@ -10251,11 +10241,9 @@
   "ts": "2026-11-26T19:31:54.146265+00:00"
  },
  "2d-array-90-degree-rotation": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n49kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n",
-  "duration_s": 4.93
+  "attempts": 3
  },
  "delete-node-in-a-binary-search-tree": {
   "status": "COMPLETED",
