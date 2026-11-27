@@ -1,48 +1,21 @@
-2026/11/27-06:45:52.574 44ad33 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
-2026/11/27-06:45:52.574 44ad33 Recovering log #466
-2026/11/27-06:45:52.575 44ad33 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000466.log 
-2026/11/27-07:01:53.793 44ad33 Level-0 table #470: started
-2026/11/27-07:01:53.797 44ad33 Level-0 table #470: 14455 bytes OK
-2026/11/27-07:01:53.799 44ad33 Delete type=0 #466
-2026/11/27-07:14:53.779 44ad33 Level-0 table #472: started
-2026/11/27-07:14:53.789 44ad33 Level-0 table #472: 10110 bytes OK
-2026/11/27-07:14:53.795 44ad33 Delete type=0 #469
-2026/11/27-07:23:53.777 44ad39 Level-0 table #474: started
-2026/11/27-07:23:53.788 44ad39 Level-0 table #474: 11323 bytes OK
-2026/11/27-07:23:53.792 44ad39 Delete type=0 #471
-2026/11/27-07:23:53.792 44ad39 Compacting 4@0 + 1@1 files
-2026/11/27-07:23:53.798 44ad39 Generated table #475@0: 5220 keys, 76492 bytes
-2026/11/27-07:23:53.799 44ad39 Compacted 4@0 + 1@1 files => 76492 bytes
-2026/11/27-07:23:53.804 44ad39 compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/11/27-07:23:53.804 44ad39 Delete type=2 #472
-2026/11/27-07:23:53.804 44ad39 Delete type=2 #467
-2026/11/27-07:23:53.804 44ad39 Delete type=2 #465
-2026/11/27-07:23:53.804 44ad39 Delete type=2 #470
-2026/11/27-07:23:53.804 44ad39 Delete type=2 #474
-2026/11/27-07:30:53.776 44ad33 Level-0 table #477: started
-2026/11/27-07:30:53.780 44ad33 Level-0 table #477: 11640 bytes OK
-2026/11/27-07:30:53.784 44ad33 Delete type=0 #473
-2026/11/27-07:36:53.778 44ad33 Level-0 table #479: started
-2026/11/27-07:36:53.786 44ad33 Level-0 table #479: 13176 bytes OK
-2026/11/27-07:36:53.790 44ad33 Delete type=0 #476
-2026/11/27-07:41:53.779 44ad39 Level-0 table #481: started
-2026/11/27-07:41:53.782 44ad39 Level-0 table #481: 14155 bytes OK
-2026/11/27-07:41:53.787 44ad39 Delete type=0 #478
-2026/11/27-07:47:53.775 44ad39 Level-0 table #483: started
-2026/11/27-07:47:53.777 44ad39 Level-0 table #483: 15596 bytes OK
-2026/11/27-07:47:53.783 44ad39 Delete type=0 #480
-2026/11/27-07:47:53.784 44ad39 Compacting 4@0 + 1@1 files
-2026/11/27-07:47:53.789 44ad39 Generated table #484@0: 5325 keys, 79761 bytes
-2026/11/27-07:47:53.789 44ad39 Compacted 4@0 + 1@1 files => 79761 bytes
-2026/11/27-07:47:53.792 44ad39 compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/11/27-07:47:53.793 44ad39 Delete type=2 #475
-2026/11/27-07:47:53.793 44ad39 Delete type=2 #477
-2026/11/27-07:47:53.793 44ad39 Delete type=2 #479
-2026/11/27-07:47:53.793 44ad39 Delete type=2 #483
-2026/11/27-07:47:53.793 44ad39 Delete type=2 #481
-2026/11/27-07:51:53.785 44ad39 Level-0 table #486: started
-2026/11/27-07:51:53.794 44ad39 Level-0 table #486: 13943 bytes OK
-2026/11/27-07:51:53.796 44ad39 Delete type=0 #482
-2026/11/27-08:18:47.875 44ad33 Level-0 table #488: started
-2026/11/27-08:18:47.881 44ad33 Level-0 table #488: 14974 bytes OK
-2026/11/27-08:18:47.886 44ad33 Delete type=0 #485
+2026/11/27-08:20:50.259 47473e Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
+2026/11/27-08:20:50.265 47473e Recovering log #487
+2026/11/27-08:20:50.266 47473e Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000487.log 
+2026/11/27-08:22:51.202 474743 Level-0 table #491: started
+2026/11/27-08:22:51.210 474743 Level-0 table #491: 14844 bytes OK
+2026/11/27-08:22:51.221 474743 Delete type=0 #487
+2026/11/27-08:29:51.203 474743 Level-0 table #493: started
+2026/11/27-08:29:51.208 474743 Level-0 table #493: 24556 bytes OK
+2026/11/27-08:29:51.211 474743 Delete type=0 #490
+2026/11/27-08:29:51.213 474743 Compacting 4@0 + 1@1 files
+2026/11/27-08:29:51.221 474743 Generated table #494@0: 5566 keys, 89724 bytes
+2026/11/27-08:29:51.221 474743 Compacted 4@0 + 1@1 files => 89724 bytes
+2026/11/27-08:29:51.223 474743 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/27-08:29:51.224 474743 Delete type=2 #488
+2026/11/27-08:29:51.224 474743 Delete type=2 #484
+2026/11/27-08:29:51.224 474743 Delete type=2 #491
+2026/11/27-08:29:51.224 474743 Delete type=2 #493
+2026/11/27-08:29:51.224 474743 Delete type=2 #486
+2026/11/27-08:34:33.948 474743 Level-0 table #496: started
+2026/11/27-08:34:33.953 474743 Level-0 table #496: 25989 bytes OK
+2026/11/27-08:34:33.956 474743 Delete type=0 #492

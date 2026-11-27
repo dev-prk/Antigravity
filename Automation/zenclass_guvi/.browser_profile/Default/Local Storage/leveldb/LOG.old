@@ -1,129 +1,57 @@
-2026/11/27-06:45:52.388 44ad33 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/11/27-06:45:52.389 44ad33 Recovering log #515
-2026/11/27-06:45:52.389 44ad33 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/000515.log 
-2026/11/27-06:47:53.793 44ad38 Level-0 table #519: started
-2026/11/27-06:47:53.799 44ad38 Level-0 table #519: 75092 bytes OK
-2026/11/27-06:47:53.804 44ad38 Delete type=0 #515
-2026/11/27-06:47:53.806 44ad38 Compacting 4@0 + 1@1 files
-2026/11/27-06:47:53.812 44ad38 Generated table #520@0: 146 keys, 49764 bytes
-2026/11/27-06:47:53.812 44ad38 Compacted 4@0 + 1@1 files => 49764 bytes
-2026/11/27-06:47:53.814 44ad38 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-06:47:53.815 44ad38 Delete type=2 #512
-2026/11/27-06:47:53.815 44ad38 Delete type=2 #510
-2026/11/27-06:47:53.815 44ad38 Delete type=2 #514
-2026/11/27-06:47:53.815 44ad38 Delete type=2 #516
-2026/11/27-06:47:53.815 44ad38 Delete type=2 #519
-2026/11/27-06:50:53.795 44ad38 Level-0 table #522: started
-2026/11/27-06:50:53.804 44ad38 Level-0 table #522: 72720 bytes OK
-2026/11/27-06:50:53.811 44ad38 Delete type=0 #518
-2026/11/27-06:53:53.794 44ad33 Level-0 table #524: started
-2026/11/27-06:53:53.803 44ad33 Level-0 table #524: 73411 bytes OK
-2026/11/27-06:53:53.806 44ad33 Delete type=0 #521
-2026/11/27-06:56:53.800 44ad38 Level-0 table #526: started
-2026/11/27-06:56:53.818 44ad38 Level-0 table #526: 73723 bytes OK
-2026/11/27-06:56:53.823 44ad38 Delete type=0 #523
-2026/11/27-06:59:53.793 44ad38 Level-0 table #528: started
-2026/11/27-06:59:53.795 44ad38 Level-0 table #528: 73873 bytes OK
-2026/11/27-06:59:53.797 44ad38 Delete type=0 #525
-2026/11/27-06:59:53.798 44ad38 Compacting 4@0 + 1@1 files
-2026/11/27-06:59:53.800 44ad38 Generated table #529@0: 145 keys, 49421 bytes
-2026/11/27-06:59:53.800 44ad38 Compacted 4@0 + 1@1 files => 49421 bytes
-2026/11/27-06:59:53.801 44ad38 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-06:59:53.802 44ad38 Delete type=2 #528
-2026/11/27-06:59:53.802 44ad38 Delete type=2 #526
-2026/11/27-06:59:53.802 44ad38 Delete type=2 #524
-2026/11/27-06:59:53.802 44ad38 Delete type=2 #520
-2026/11/27-06:59:53.802 44ad38 Delete type=2 #522
-2026/11/27-07:02:53.795 44ad33 Level-0 table #531: started
-2026/11/27-07:02:53.805 44ad33 Level-0 table #531: 73214 bytes OK
-2026/11/27-07:02:53.808 44ad33 Delete type=0 #527
-2026/11/27-07:05:53.785 44ad38 Level-0 table #533: started
-2026/11/27-07:05:53.789 44ad38 Level-0 table #533: 73790 bytes OK
-2026/11/27-07:05:53.796 44ad38 Delete type=0 #530
-2026/11/27-07:08:53.780 44ad38 Level-0 table #535: started
-2026/11/27-07:08:53.786 44ad38 Level-0 table #535: 74094 bytes OK
-2026/11/27-07:08:53.790 44ad38 Delete type=0 #532
-2026/11/27-07:11:53.781 44ad38 Level-0 table #537: started
-2026/11/27-07:11:53.784 44ad38 Level-0 table #537: 75808 bytes OK
-2026/11/27-07:11:53.788 44ad38 Delete type=0 #534
-2026/11/27-07:11:53.789 44ad38 Compacting 4@0 + 1@1 files
-2026/11/27-07:11:53.796 44ad38 Generated table #538@0: 146 keys, 50022 bytes
-2026/11/27-07:11:53.796 44ad38 Compacted 4@0 + 1@1 files => 50022 bytes
-2026/11/27-07:11:53.797 44ad38 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-07:11:53.798 44ad38 Delete type=2 #529
-2026/11/27-07:11:53.798 44ad38 Delete type=2 #533
-2026/11/27-07:11:53.798 44ad38 Delete type=2 #531
-2026/11/27-07:11:53.798 44ad38 Delete type=2 #535
-2026/11/27-07:11:53.798 44ad38 Delete type=2 #537
-2026/11/27-07:14:53.779 44ad39 Level-0 table #540: started
-2026/11/27-07:14:53.788 44ad39 Level-0 table #540: 73494 bytes OK
-2026/11/27-07:14:53.794 44ad39 Delete type=0 #536
-2026/11/27-07:17:53.779 44ad38 Level-0 table #542: started
-2026/11/27-07:17:53.783 44ad38 Level-0 table #542: 74411 bytes OK
-2026/11/27-07:17:53.788 44ad38 Delete type=0 #539
-2026/11/27-07:20:53.776 44ad38 Level-0 table #544: started
-2026/11/27-07:20:53.781 44ad38 Level-0 table #544: 74062 bytes OK
-2026/11/27-07:20:53.788 44ad38 Delete type=0 #541
-2026/11/27-07:23:53.777 44ad33 Level-0 table #546: started
-2026/11/27-07:23:53.788 44ad33 Level-0 table #546: 74826 bytes OK
-2026/11/27-07:23:53.792 44ad33 Delete type=0 #543
-2026/11/27-07:23:53.792 44ad33 Compacting 4@0 + 1@1 files
-2026/11/27-07:23:53.800 44ad33 Generated table #547@0: 145 keys, 49450 bytes
-2026/11/27-07:23:53.800 44ad33 Compacted 4@0 + 1@1 files => 49450 bytes
-2026/11/27-07:23:53.805 44ad33 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-07:23:53.805 44ad33 Delete type=2 #538
-2026/11/27-07:23:53.805 44ad33 Delete type=2 #544
-2026/11/27-07:23:53.805 44ad33 Delete type=2 #546
-2026/11/27-07:23:53.805 44ad33 Delete type=2 #542
-2026/11/27-07:23:53.805 44ad33 Delete type=2 #540
-2026/11/27-07:26:53.774 44ad39 Level-0 table #549: started
-2026/11/27-07:26:53.782 44ad39 Level-0 table #549: 73706 bytes OK
-2026/11/27-07:26:53.789 44ad39 Delete type=0 #545
-2026/11/27-07:29:53.775 44ad38 Level-0 table #551: started
-2026/11/27-07:29:53.779 44ad38 Level-0 table #551: 73903 bytes OK
-2026/11/27-07:29:53.784 44ad38 Delete type=0 #548
-2026/11/27-07:32:53.775 44ad38 Level-0 table #553: started
-2026/11/27-07:32:53.779 44ad38 Level-0 table #553: 74676 bytes OK
-2026/11/27-07:32:53.783 44ad38 Delete type=0 #550
-2026/11/27-07:35:53.779 44ad33 Level-0 table #555: started
-2026/11/27-07:35:53.787 44ad33 Level-0 table #555: 74678 bytes OK
-2026/11/27-07:35:53.791 44ad33 Delete type=0 #552
-2026/11/27-07:35:53.793 44ad33 Compacting 4@0 + 1@1 files
-2026/11/27-07:35:53.799 44ad33 Generated table #556@0: 146 keys, 50970 bytes
-2026/11/27-07:35:53.799 44ad33 Compacted 4@0 + 1@1 files => 50970 bytes
-2026/11/27-07:35:53.801 44ad33 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-07:35:53.802 44ad33 Delete type=2 #549
-2026/11/27-07:35:53.802 44ad33 Delete type=2 #551
-2026/11/27-07:35:53.802 44ad33 Delete type=2 #547
-2026/11/27-07:35:53.802 44ad33 Delete type=2 #553
-2026/11/27-07:35:53.802 44ad33 Delete type=2 #555
-2026/11/27-07:38:53.774 44ad38 Level-0 table #558: started
-2026/11/27-07:38:53.779 44ad38 Level-0 table #558: 75332 bytes OK
-2026/11/27-07:38:53.783 44ad38 Delete type=0 #554
-2026/11/27-07:41:53.779 461a0e Level-0 table #560: started
-2026/11/27-07:41:53.784 461a0e Level-0 table #560: 74139 bytes OK
-2026/11/27-07:41:53.788 461a0e Delete type=0 #557
-2026/11/27-07:44:53.778 44ad33 Level-0 table #562: started
-2026/11/27-07:44:53.782 44ad33 Level-0 table #562: 75002 bytes OK
-2026/11/27-07:44:53.785 44ad33 Delete type=0 #559
-2026/11/27-07:47:53.776 44ad33 Level-0 table #564: started
-2026/11/27-07:47:53.778 44ad33 Level-0 table #564: 73718 bytes OK
-2026/11/27-07:47:53.784 44ad33 Delete type=0 #561
-2026/11/27-07:47:53.784 44ad33 Compacting 4@0 + 1@1 files
-2026/11/27-07:47:53.789 44ad33 Generated table #565@0: 146 keys, 50256 bytes
-2026/11/27-07:47:53.789 44ad33 Compacted 4@0 + 1@1 files => 50256 bytes
-2026/11/27-07:47:53.793 44ad33 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-07:47:53.794 44ad33 Delete type=2 #564
-2026/11/27-07:47:53.794 44ad33 Delete type=2 #558
-2026/11/27-07:47:53.794 44ad33 Delete type=2 #562
-2026/11/27-07:47:53.794 44ad33 Delete type=2 #560
-2026/11/27-07:47:53.794 44ad33 Delete type=2 #556
-2026/11/27-07:50:53.776 44ad38 Level-0 table #567: started
-2026/11/27-07:50:53.783 44ad38 Level-0 table #567: 74509 bytes OK
-2026/11/27-07:50:53.786 44ad38 Delete type=0 #563
-2026/11/27-08:16:47.873 44ad38 Level-0 table #569: started
-2026/11/27-08:16:47.878 44ad38 Level-0 table #569: 74289 bytes OK
-2026/11/27-08:16:47.883 44ad38 Delete type=0 #566
-2026/11/27-08:19:47.873 44ad38 Level-0 table #571: started
-2026/11/27-08:19:47.879 44ad38 Level-0 table #571: 74043 bytes OK
-2026/11/27-08:19:47.885 44ad38 Delete type=0 #568
+2026/11/27-08:20:50.065 47473e Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/11/27-08:20:50.065 47473e Recovering log #570
+2026/11/27-08:20:50.066 47473e Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/000570.log 
+2026/11/27-08:21:50.069 474743 Level-0 table #574: started
+2026/11/27-08:21:50.071 474743 Level-0 table #574: 74747 bytes OK
+2026/11/27-08:21:50.078 474743 Delete type=0 #570
+2026/11/27-08:21:50.078 474743 Compacting 4@0 + 1@1 files
+2026/11/27-08:21:50.080 474743 Generated table #575@0: 146 keys, 50412 bytes
+2026/11/27-08:21:50.080 474743 Compacted 4@0 + 1@1 files => 50412 bytes
+2026/11/27-08:21:50.081 474743 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-08:21:50.081 474743 Delete type=2 #571
+2026/11/27-08:21:50.081 474743 Delete type=2 #565
+2026/11/27-08:21:50.081 474743 Delete type=2 #567
+2026/11/27-08:21:50.081 474743 Delete type=2 #574
+2026/11/27-08:21:50.081 474743 Delete type=2 #569
+2026/11/27-08:23:50.571 474743 Level-0 table #577: started
+2026/11/27-08:23:50.586 474743 Level-0 table #577: 52635 bytes OK
+2026/11/27-08:23:50.591 474743 Delete type=0 #573
+2026/11/27-08:25:50.569 474743 Level-0 table #579: started
+2026/11/27-08:25:50.574 474743 Level-0 table #579: 55746 bytes OK
+2026/11/27-08:25:50.578 474743 Delete type=0 #576
+2026/11/27-08:27:50.571 474743 Level-0 table #581: started
+2026/11/27-08:27:50.582 474743 Level-0 table #581: 57510 bytes OK
+2026/11/27-08:27:50.589 474743 Delete type=0 #578
+2026/11/27-08:29:50.573 474743 Level-0 table #583: started
+2026/11/27-08:29:50.579 474743 Level-0 table #583: 57481 bytes OK
+2026/11/27-08:29:50.584 474743 Delete type=0 #580
+2026/11/27-08:29:50.584 474743 Compacting 4@0 + 1@1 files
+2026/11/27-08:29:50.590 474743 Generated table #584@0: 146 keys, 53084 bytes
+2026/11/27-08:29:50.590 474743 Compacted 4@0 + 1@1 files => 53084 bytes
+2026/11/27-08:29:50.592 474743 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-08:29:50.592 474743 Delete type=2 #577
+2026/11/27-08:29:50.592 474743 Delete type=2 #575
+2026/11/27-08:29:50.592 474743 Delete type=2 #579
+2026/11/27-08:29:50.592 474743 Delete type=2 #581
+2026/11/27-08:29:50.592 474743 Delete type=2 #583
+2026/11/27-08:31:50.572 474743 Level-0 table #586: started
+2026/11/27-08:31:50.580 474743 Level-0 table #586: 59231 bytes OK
+2026/11/27-08:31:50.583 474743 Delete type=0 #582
+2026/11/27-08:35:28.201 474743 Level-0 table #588: started
+2026/11/27-08:35:28.206 474743 Level-0 table #588: 58915 bytes OK
+2026/11/27-08:35:28.210 474743 Delete type=0 #585
+2026/11/27-08:35:50.570 474743 Level-0 table #590: started
+2026/11/27-08:35:50.574 474743 Level-0 table #590: 54604 bytes OK
+2026/11/27-08:35:50.578 474743 Delete type=0 #587
+2026/11/27-08:40:45.369 47473e Level-0 table #592: started
+2026/11/27-08:40:45.375 47473e Level-0 table #592: 53242 bytes OK
+2026/11/27-08:40:45.382 47473e Delete type=0 #589
+2026/11/27-08:40:45.382 47473e Compacting 4@0 + 1@1 files
+2026/11/27-08:40:45.386 47473e Generated table #593@0: 146 keys, 54505 bytes
+2026/11/27-08:40:45.386 47473e Compacted 4@0 + 1@1 files => 54505 bytes
+2026/11/27-08:40:45.387 47473e compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-08:40:45.387 47473e Delete type=2 #588
+2026/11/27-08:40:45.387 47473e Delete type=2 #586
+2026/11/27-08:40:45.387 47473e Delete type=2 #592
+2026/11/27-08:40:45.387 47473e Delete type=2 #584
+2026/11/27-08:40:45.387 47473e Delete type=2 #590

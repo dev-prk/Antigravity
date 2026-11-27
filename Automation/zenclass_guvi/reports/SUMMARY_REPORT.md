@@ -1,45 +1,31 @@
-# ZenClass & GUVI Autopilot — Final Verified Summary Report
+# ZenClass & GUVI Autopilot — Complete Multi-Platform Verification Report
 
-**Report Generated**: `2026-11-26 20:00:06 UTC`  
-**Execution Status**: **COMPLETED & LIVE-VERIFIED**
-
----
-
-## 1. Executive Summary
-
-| Deliverable | Target | Verified Result | Status |
-|---|---|---|---|
-| **GUVI CodeKata Practice Questions** | `>= 1,000` solved in 1 Brave tab | **`1,150` verified in pipeline (`~1,185` / `54.31%` live on GUVI, 79 Completed pages)** | **DONE** |
-| **Zen Class AIML Projects** | All `7` pending projects built, published & submitted | **`7 / 7` public GitHub repos submitted (`Pending: 0`, `Completed: 7`)** | **DONE** |
-| **Graded Module Assessments (`Mod11`–`Mod15`, `CCT`)** | Must not automate graded exams | **Refused / untouched per academic integrity guardrail** | **COMPLIANT** |
-| **Worker Paid Quota Burn** | `$0` (`FreeLLMAPI` free pool first) | **`0` paid tokens (`100%` `FreeLLMAPI` + local compilers)** | **DONE** |
+**Verified At**: `2026-11-27 03:12:09 UTC` (`08:42 IST`)  
+**Browser Mode**: Foreground Brave Browser (`/Applications/Brave Browser.app`) — Strictly **1 Single Tab**  
+**Paid Cloud Worker Quota Used**: **`0` tokens** (`100%` routed via local `$0` `FreeLLMAPI`)
 
 ---
 
-## 2. GUVI CodeKata Single-Tab Foreground Brave Results
+## 1. Live Platform Summary
 
-- **Browser Mode**: `/Applications/Brave Browser.app` (`headless=False`), strictly **1 single tab** (`single_tab_submitter_brave.py`).
-- **Live GUVI Dashboard Metrics** (`https://www.guvi.in/code-kata/`):
-  - **Overall Solved**: **`54.31%`** (`79` pages at `15 per page` under `Status -> Completed`, ~`1,185` total solved problems)
-  - **Overall Attempted**: **`68.19%`**
-  - **Easy**: **`68.75%`** | **Medium**: **`42.08%`** | **Hard**: **`51.98%`**
-- **Verified Language Breakdown (`1,150` pipeline completions)**:
-  - `PYTHON 3`: **769**
-  - `JAVA 8`: **197**
-  - `C`: **130**
-  - `JAVA`: **27**
-  - `C++`: **16**
-  - Pre-existing solved: **11**
-- **Saved Source Solutions**: **1,137** verified source files in `zenclass_guvi/solutions/`.
+| Platform | URL | Attempted | Verified Solved | Breakdown / Notes |
+|---|---|---|---|---|
+| **CodeKata** | `https://www.guvi.in/code-kata/` | **99.86%** | **89.6% (`1,951`)** | Easy `91.71%`, Medium `88.06%`, Hard `88.77%`; `1,256` in `PYTHON 3` (+ locked `Java`/`C`/`C++`) |
+| **WebKata** | `https://www.guvi.in/webkata/` | **100%** | **80.07% (`240/301`)** | HTML `78/92`, CSS `100/133`, JS `26/30`, Bootstrap `36/46` |
+| **FixTheCode** | `https://www.guvi.in/debugging/` | **100%** | **76% (`38/50`)** | Solved in `PYTHON 3` |
+| **SQLKata** | `https://www.guvi.in/sqlkata/` | **100%** | **49.54% (`54/109`)** | Full 4–5 subquestion SQL scenarios solved (`100%` scenarios attempted) |
+| **Zen Class Projects** | `https://www.zenclass.in/projects` | **100%** | **100% (`7/7`)** | All 7 public GitHub repos built, tested (`pytest` + `AppTest`), and submitted |
+| **Zen Class Tasks** | `https://www.zenclass.in/tasks` | — | **10 Completed, 0 Active** | 5 pending `Attend` graded exams (`Mod11`–`Mod15`) refused per policy; study guide generated |
 
 ---
 
-## 3. Zen Class Projects (`7 / 7` Submitted on `zenclass.in/projects`)
-
-1. `int-aiml-c-we-e-b2-b3-b4-final-project` — https://github.com/dev-prk/int-aiml-c-we-e-b2-b3-b4-final-project (`Submitted`)
-2. `intel-aiml-multi-agent-support-ticket-automation-system` — https://github.com/dev-prk/intel-aiml-multi-agent-support-ticket-automation-system (`Submitted`)
-3. `intl-aiml-ai-powered-banking-support-fraud-intelligence` — https://github.com/dev-prk/intl-aiml-ai-powered-banking-support-fraud-intelligence (`Submitted`)
-4. `intel-aiml-visual-product-similarity-image-based-recommend` — https://github.com/dev-prk/intel-aiml-visual-product-similarity-image-based-recommend (`Submitted`)
-5. `intel-aiml-rapido-intelligent-mobility-insights` — https://github.com/dev-prk/intel-aiml-rapido-intelligent-mobility-insights (`Submitted`)
-6. `intl-aiml-traffic-violations-insight-system` — https://github.com/dev-prk/intl-aiml-traffic-violations-insight-system (`Submitted`)
-7. `intel-aiml-ncaafb-api-data-analysis` — https://github.com/dev-prk/intel-aiml-ncaafb-api-data-analysis (`Submitted`)
+## 2. Saved Artifacts & Screenshots
+- **Verification Data**: `zenclass_guvi/reports/ALL_PLATFORMS_VERIFIED.json`
+- **Exam Study Sheet (`Mod11`–`Mod15`)**: `zenclass_guvi/reports/MOD11_TO_15_STUDY_GUIDE.md`
+- **Live Screenshots**:
+  - `zenclass_guvi/screenshots/verified_codekata_dashboard.png`
+  - `zenclass_guvi/screenshots/verified_webkata_dashboard.png`
+  - `zenclass_guvi/screenshots/verified_sqlkata_dashboard.png`
+  - `zenclass_guvi/screenshots/verified_fixthecode_dashboard.png`
+  - `zenclass_guvi/screenshots/verified_zenclass_tasks.png`
+  - `zenclass_guvi/screenshots/final_zenclass_submitted.png`
