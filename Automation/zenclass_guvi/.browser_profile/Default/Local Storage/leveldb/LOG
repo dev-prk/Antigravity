@@ -133,3 +133,63 @@
 2026/11/27-12:23:01.641 4afc4f Level-0 table #756: started
 2026/11/27-12:23:01.647 4afc4f Level-0 table #756: 73470 bytes OK
 2026/11/27-12:23:01.650 4afc4f Delete type=0 #753
+2026/11/27-12:26:37.119 4afc4f Level-0 table #758: started
+2026/11/27-12:26:37.123 4afc4f Level-0 table #758: 73328 bytes OK
+2026/11/27-12:26:37.127 4afc4f Delete type=0 #755
+2026/11/27-12:29:37.119 4afc4f Level-0 table #760: started
+2026/11/27-12:29:37.127 4afc4f Level-0 table #760: 73672 bytes OK
+2026/11/27-12:29:37.132 4afc4f Delete type=0 #757
+2026/11/27-12:29:37.133 4afc4f Compacting 4@0 + 1@1 files
+2026/11/27-12:29:37.139 4afc4f Generated table #761@0: 145 keys, 49486 bytes
+2026/11/27-12:29:37.139 4afc4f Compacted 4@0 + 1@1 files => 49486 bytes
+2026/11/27-12:29:37.141 4afc4f compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-12:29:37.142 4afc4f Delete type=2 #758
+2026/11/27-12:29:37.142 4afc4f Delete type=2 #760
+2026/11/27-12:29:37.142 4afc4f Delete type=2 #752
+2026/11/27-12:29:37.142 4afc4f Delete type=2 #754
+2026/11/27-12:29:37.142 4afc4f Delete type=2 #756
+2026/11/27-12:32:37.118 4afc50 Level-0 table #763: started
+2026/11/27-12:32:37.126 4afc50 Level-0 table #763: 73656 bytes OK
+2026/11/27-12:32:37.129 4afc50 Delete type=0 #759
+2026/11/27-12:35:37.120 4afc4a Level-0 table #765: started
+2026/11/27-12:35:37.125 4afc4a Level-0 table #765: 72757 bytes OK
+2026/11/27-12:35:37.128 4afc4a Delete type=0 #762
+2026/11/27-12:38:37.121 4afc4f Level-0 table #767: started
+2026/11/27-12:38:37.125 4afc4f Level-0 table #767: 73288 bytes OK
+2026/11/27-12:38:37.128 4afc4f Delete type=0 #764
+2026/11/27-12:41:52.588 4afc4f Level-0 table #769: started
+2026/11/27-12:41:52.593 4afc4f Level-0 table #769: 72187 bytes OK
+2026/11/27-12:41:52.596 4afc4f Delete type=0 #766
+2026/11/27-12:41:52.597 4afc4f Compacting 4@0 + 1@1 files
+2026/11/27-12:41:52.602 4afc4f Generated table #770@0: 145 keys, 49497 bytes
+2026/11/27-12:41:52.602 4afc4f Compacted 4@0 + 1@1 files => 49497 bytes
+2026/11/27-12:41:52.604 4afc4f compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-12:41:52.605 4afc4f Delete type=2 #767
+2026/11/27-12:41:52.605 4afc4f Delete type=2 #765
+2026/11/27-12:41:52.605 4afc4f Delete type=2 #761
+2026/11/27-12:41:52.605 4afc4f Delete type=2 #763
+2026/11/27-12:41:52.605 4afc4f Delete type=2 #769
+2026/11/27-12:45:37.122 4afc4f Level-0 table #772: started
+2026/11/27-12:45:37.127 4afc4f Level-0 table #772: 73791 bytes OK
+2026/11/27-12:45:37.130 4afc4f Delete type=0 #768
+2026/11/27-12:49:37.122 4afc4f Level-0 table #774: started
+2026/11/27-12:49:37.126 4afc4f Level-0 table #774: 74134 bytes OK
+2026/11/27-12:49:37.129 4afc4f Delete type=0 #771
+2026/11/27-12:54:37.125 4afc4f Level-0 table #776: started
+2026/11/27-12:54:37.129 4afc4f Level-0 table #776: 73813 bytes OK
+2026/11/27-12:54:37.132 4afc4f Delete type=0 #773
+2026/11/27-12:57:37.125 4afc4f Level-0 table #778: started
+2026/11/27-12:57:37.130 4afc4f Level-0 table #778: 73163 bytes OK
+2026/11/27-12:57:37.133 4afc4f Delete type=0 #775
+2026/11/27-12:57:37.133 4afc4f Compacting 4@0 + 1@1 files
+2026/11/27-12:57:37.139 4afc4f Generated table #779@0: 145 keys, 49899 bytes
+2026/11/27-12:57:37.139 4afc4f Compacted 4@0 + 1@1 files => 49899 bytes
+2026/11/27-12:57:37.142 4afc4f compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-12:57:37.142 4afc4f Delete type=2 #772
+2026/11/27-12:57:37.142 4afc4f Delete type=2 #770
+2026/11/27-12:57:37.142 4afc4f Delete type=2 #774
+2026/11/27-12:57:37.142 4afc4f Delete type=2 #776
+2026/11/27-12:57:37.142 4afc4f Delete type=2 #778
+2026/11/27-13:01:37.123 4afc4f Level-0 table #781: started
+2026/11/27-13:01:37.126 4afc4f Level-0 table #781: 75035 bytes OK
+2026/11/27-13:01:37.128 4afc4f Delete type=0 #777

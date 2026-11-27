@@ -4005,11 +4005,9 @@
   "ts": "2026-11-26T18:01:07.289213+00:00"
  },
  "maximizing-wealthy-individuals": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n58ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n ",
-  "duration_s": 2.62
+  "attempts": 1
  },
  "maximum-of-three-numbers": {
   "status": "COMPLETED",
@@ -5004,11 +5002,9 @@
   "ts": "2026-11-26T18:18:05.902498+00:00"
  },
  "first-non-repeating-character-in-a-stream": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/3\nLanguage\nPYTHON 3\nRuntime\n\n40ms\n\nMemory\n\n10kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\nfrom collections im",
-  "duration_s": 2.14
+  "attempts": 1
  },
  "date-format-validation-2": {
   "status": "COMPLETED",
@@ -5878,11 +5874,9 @@
   "ts": "2026-11-26T18:28:41.382713+00:00"
  },
  "min-coins-for-odd-even-balance": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n1/7\nLanguage\nPYTHON 3\nRuntime\n\n72ms\n\nMemory\n\n23kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n4",
-  "duration_s": 2.8
+  "attempts": 1
  },
  "odd-even-string-split": {
   "status": "COMPLETED",
@@ -10472,11 +10466,9 @@
   "ts": "2026-11-26T19:35:12.943816+00:00"
  },
  "kth-smallest-element": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n51ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip().s",
-  "duration_s": 3.19
+  "attempts": 3
  },
  "l-values-arrays-and-pointers": {
   "status": "COMPLETED",
@@ -11361,11 +11353,9 @@
   "duration_s": 2.62
  },
  "maximize-rope-length-after-cuts": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/6\nLanguage\nPYTHON 3\nRuntime\n\n69ms\n\nMemory\n\n19kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\ni",
-  "duration_s": 2.75
+  "attempts": 3
  },
  "maximize-single-element": {
   "status": "FAILED_PLATFORM",
