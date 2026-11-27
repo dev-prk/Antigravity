@@ -22,7 +22,7 @@ from precompute_python_remaining import fetch_exact_ssr_samples  # noqa: E402
 
 PROB_DIR = ROOT / "data" / "ck_problems"
 RESULTS_JSON = ROOT / "data" / "ck_results.json"
-FINAL_DIR = ROOT / "data" / "ck_final_repairs"
+FINAL_DIR = ROOT / "data" / "ck_final_repairs_v2"
 FINAL_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -73,9 +73,10 @@ def repair_one(slug: str, prev_info: Dict[str, Any], seed: int) -> bool:
     )
 
     candidates: List[str] = []
+    fallback_cands: List[str] = []
     for variant_idx, extra_focus in enumerate([
-        "Focus on exact problem definition, '-1' edge cases, and exact whitespace matching.",
-        "Provide an alternative interpretation if the wording is ambiguous (e.g. strict vs non-strict comparison, truncation vs rounding, all occurrences vs consecutive duplicates) that STILL passes all provided Test Cases!",
+        "CRITICAL: Read tokens via `sys.stdin.read().split()` (unless line-based strings with spaces are required) so single-line vs multi-line hidden test cases NEVER raise EOFError! Print `-1` if output is empty.",
+        "CRITICAL: Notice previous submission failed hidden tests! Try the exact GUVI convention that causes 4/5 Wrong Answer: e.g. float TRUNCATION without rounding (`s = f'{val:.10f}'; s[:s.index('.')+k+1]`), OR strict vs non-strict inequality, OR 1-based vs 0-based index, OR newline vs space output!",
     ]):
         p_txt = f"{user_p}\nStrategy hint: {extra_focus}"
         for tr in range(2):
@@ -83,16 +84,19 @@ def repair_one(slug: str, prev_info: Dict[str, Any], seed: int) -> bool:
             if not raw:
                 continue
             code = strip_fences(raw)
+            if code.strip() and code not in fallback_cands:
+                fallback_cands.append(code)
             ok, lerr = verify_code_locally(code, target_lang, samples)
             if ok:
                 if code not in candidates:
                     candidates.append(code)
                 break
-            p_txt = f"{user_p}\nLocal check failed:\n{lerr}\nFix and output ONLY {target_lang} code."
+            p_txt = f"{user_p}\nLocal check note:\n{lerr}\nFix and output ONLY {target_lang} code."
 
-    if candidates:
+    final_list = (candidates + [c for c in fallback_cands if c not in candidates])[:3]
+    if final_list:
         tmp = out_f.with_suffix(".tmp")
-        tmp.write_text(json.dumps({"slug": slug, "lang": target_lang, "candidates": candidates}), encoding="utf-8")
+        tmp.write_text(json.dumps({"slug": slug, "lang": target_lang, "candidates": final_list}), encoding="utf-8")
         tmp.replace(out_f)
         return True
     return False

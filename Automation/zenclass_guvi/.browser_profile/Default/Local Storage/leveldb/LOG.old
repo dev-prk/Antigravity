@@ -1,56 +1,63 @@
-2026/11/27-03:49:25.963 3f6b50 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/11/27-03:49:25.964 3f6b50 Recovering log #367
-2026/11/27-03:49:25.964 3f6b50 Level-0 table #370: started
-2026/11/27-03:49:25.977 3f6b50 Level-0 table #370: 74709 bytes OK
-2026/11/27-03:49:25.980 3f6b50 Delete type=0 #367
-2026/11/27-03:49:25.982 3f6b55 Compacting 4@0 + 1@1 files
-2026/11/27-03:49:25.989 3f6b55 Generated table #372@0: 143 keys, 49645 bytes
-2026/11/27-03:49:25.989 3f6b55 Compacted 4@0 + 1@1 files => 49645 bytes
-2026/11/27-03:49:25.990 3f6b55 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-03:49:25.991 3f6b55 Delete type=2 #362
-2026/11/27-03:49:25.991 3f6b55 Delete type=2 #364
-2026/11/27-03:49:25.991 3f6b55 Delete type=2 #370
-2026/11/27-03:49:25.991 3f6b55 Delete type=2 #366
-2026/11/27-03:49:25.991 3f6b55 Delete type=2 #368
-2026/11/27-03:52:27.274 3f6b55 Level-0 table #374: started
-2026/11/27-03:52:27.280 3f6b55 Level-0 table #374: 76529 bytes OK
-2026/11/27-03:52:27.292 3f6b55 Delete type=0 #371
-2026/11/27-03:55:27.276 3f6b55 Level-0 table #376: started
-2026/11/27-03:55:27.282 3f6b55 Level-0 table #376: 73601 bytes OK
-2026/11/27-03:55:27.286 3f6b55 Delete type=0 #373
-2026/11/27-03:58:27.276 3f6b55 Level-0 table #378: started
-2026/11/27-03:58:27.280 3f6b55 Level-0 table #378: 72580 bytes OK
-2026/11/27-03:58:27.285 3f6b55 Delete type=0 #375
-2026/11/27-04:01:27.272 3f6b55 Level-0 table #380: started
-2026/11/27-04:01:27.279 3f6b55 Level-0 table #380: 71558 bytes OK
-2026/11/27-04:01:27.283 3f6b55 Delete type=0 #377
-2026/11/27-04:01:27.284 3f6b55 Compacting 4@0 + 1@1 files
-2026/11/27-04:01:27.287 3f6b55 Generated table #381@0: 143 keys, 49195 bytes
-2026/11/27-04:01:27.287 3f6b55 Compacted 4@0 + 1@1 files => 49195 bytes
-2026/11/27-04:01:27.288 3f6b55 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-04:01:27.288 3f6b55 Delete type=2 #376
-2026/11/27-04:01:27.288 3f6b55 Delete type=2 #374
-2026/11/27-04:01:27.288 3f6b55 Delete type=2 #372
-2026/11/27-04:01:27.288 3f6b55 Delete type=2 #380
-2026/11/27-04:01:27.288 3f6b55 Delete type=2 #378
-2026/11/27-04:04:27.274 3f6b55 Level-0 table #383: started
-2026/11/27-04:04:27.281 3f6b55 Level-0 table #383: 72837 bytes OK
-2026/11/27-04:04:27.284 3f6b55 Delete type=0 #379
-2026/11/27-04:07:27.260 3f6b55 Level-0 table #385: started
-2026/11/27-04:07:27.268 3f6b55 Level-0 table #385: 72282 bytes OK
-2026/11/27-04:07:27.272 3f6b55 Delete type=0 #382
-2026/11/27-04:10:27.257 3f6b55 Level-0 table #387: started
-2026/11/27-04:10:27.263 3f6b55 Level-0 table #387: 71989 bytes OK
-2026/11/27-04:10:27.266 3f6b55 Delete type=0 #384
-2026/11/27-04:13:27.256 3f6b55 Level-0 table #389: started
-2026/11/27-04:13:27.260 3f6b55 Level-0 table #389: 73979 bytes OK
-2026/11/27-04:13:27.265 3f6b55 Delete type=0 #386
-2026/11/27-04:13:27.266 3f6b55 Compacting 4@0 + 1@1 files
-2026/11/27-04:13:27.272 3f6b55 Generated table #390@0: 143 keys, 49750 bytes
-2026/11/27-04:13:27.272 3f6b55 Compacted 4@0 + 1@1 files => 49750 bytes
-2026/11/27-04:13:27.274 3f6b55 compacted to: files[ 0 1 0 0 0 0 0 ]
-2026/11/27-04:13:27.275 3f6b55 Delete type=2 #389
-2026/11/27-04:13:27.275 3f6b55 Delete type=2 #381
-2026/11/27-04:13:27.275 3f6b55 Delete type=2 #383
-2026/11/27-04:13:27.275 3f6b55 Delete type=2 #387
-2026/11/27-04:13:27.275 3f6b55 Delete type=2 #385
+2026/11/27-05:45:42.056 4285de Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/11/27-05:45:42.056 4285de Recovering log #464
+2026/11/27-05:45:42.057 4285de Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/000464.log 
+2026/11/27-05:46:42.059 4285e3 Level-0 table #468: started
+2026/11/27-05:46:42.063 4285e3 Level-0 table #468: 51305 bytes OK
+2026/11/27-05:46:42.067 4285e3 Delete type=0 #464
+2026/11/27-05:48:42.486 4285de Level-0 table #470: started
+2026/11/27-05:48:42.491 4285de Level-0 table #470: 53698 bytes OK
+2026/11/27-05:48:42.497 4285de Delete type=0 #467
+2026/11/27-05:50:42.483 4285e3 Level-0 table #472: started
+2026/11/27-05:50:42.490 4285e3 Level-0 table #472: 56585 bytes OK
+2026/11/27-05:50:42.494 4285e3 Delete type=0 #469
+2026/11/27-05:50:42.494 4285e3 Compacting 4@0 + 1@1 files
+2026/11/27-05:50:42.500 4285e3 Generated table #473@0: 144 keys, 51537 bytes
+2026/11/27-05:50:42.500 4285e3 Compacted 4@0 + 1@1 files => 51537 bytes
+2026/11/27-05:50:42.502 4285e3 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-05:50:42.502 4285e3 Delete type=2 #472
+2026/11/27-05:50:42.502 4285e3 Delete type=2 #465
+2026/11/27-05:50:42.502 4285e3 Delete type=2 #470
+2026/11/27-05:50:42.502 4285e3 Delete type=2 #463
+2026/11/27-05:50:42.502 4285e3 Delete type=2 #468
+2026/11/27-05:52:42.480 4285e3 Level-0 table #475: started
+2026/11/27-05:52:42.484 4285e3 Level-0 table #475: 55266 bytes OK
+2026/11/27-05:52:42.490 4285e3 Delete type=0 #471
+2026/11/27-05:54:42.481 4285e3 Level-0 table #477: started
+2026/11/27-05:54:42.484 4285e3 Level-0 table #477: 57072 bytes OK
+2026/11/27-05:54:42.489 4285e3 Delete type=0 #474
+2026/11/27-05:58:06.367 4285e3 Level-0 table #479: started
+2026/11/27-05:58:06.374 4285e3 Level-0 table #479: 56926 bytes OK
+2026/11/27-05:58:06.379 4285e3 Delete type=0 #476
+2026/11/27-05:58:42.480 4285e3 Level-0 table #481: started
+2026/11/27-05:58:42.487 4285e3 Level-0 table #481: 53463 bytes OK
+2026/11/27-05:58:42.493 4285e3 Delete type=0 #478
+2026/11/27-05:58:42.494 4285e3 Compacting 4@0 + 1@1 files
+2026/11/27-05:58:42.500 4285e3 Generated table #482@0: 144 keys, 52927 bytes
+2026/11/27-05:58:42.500 4285e3 Compacted 4@0 + 1@1 files => 52927 bytes
+2026/11/27-05:58:42.502 4285e3 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-05:58:42.503 4285e3 Delete type=2 #473
+2026/11/27-05:58:42.503 4285e3 Delete type=2 #475
+2026/11/27-05:58:42.503 4285e3 Delete type=2 #477
+2026/11/27-05:58:42.503 4285e3 Delete type=2 #479
+2026/11/27-05:58:42.503 4285e3 Delete type=2 #481
+2026/11/27-06:01:42.480 4285e3 Level-0 table #484: started
+2026/11/27-06:01:42.484 4285e3 Level-0 table #484: 55284 bytes OK
+2026/11/27-06:01:42.489 4285e3 Delete type=0 #480
+2026/11/27-06:03:52.362 4285e3 Level-0 table #486: started
+2026/11/27-06:03:52.368 4285e3 Level-0 table #486: 53018 bytes OK
+2026/11/27-06:03:52.373 4285e3 Delete type=0 #483
+2026/11/27-06:05:42.476 4285e3 Level-0 table #488: started
+2026/11/27-06:05:42.479 4285e3 Level-0 table #488: 58056 bytes OK
+2026/11/27-06:05:42.480 4285e3 Delete type=0 #485
+2026/11/27-06:07:42.482 4285e3 Level-0 table #490: started
+2026/11/27-06:07:42.486 4285e3 Level-0 table #490: 55081 bytes OK
+2026/11/27-06:07:42.490 4285e3 Delete type=0 #487
+2026/11/27-06:07:42.491 4285e3 Compacting 4@0 + 1@1 files
+2026/11/27-06:07:42.498 4285e3 Generated table #491@0: 144 keys, 51474 bytes
+2026/11/27-06:07:42.498 4285e3 Compacted 4@0 + 1@1 files => 51474 bytes
+2026/11/27-06:07:42.500 4285e3 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-06:07:42.501 4285e3 Delete type=2 #488
+2026/11/27-06:07:42.501 4285e3 Delete type=2 #484
+2026/11/27-06:07:42.501 4285e3 Delete type=2 #490
+2026/11/27-06:07:42.501 4285e3 Delete type=2 #486
+2026/11/27-06:07:42.501 4285e3 Delete type=2 #482

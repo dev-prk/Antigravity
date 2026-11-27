@@ -1,51 +1,7 @@
-2026/11/27-04:16:45.442 403efc Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
-2026/11/27-04:16:45.443 403efc Recovering log #393
-2026/11/27-04:16:45.444 403efc Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000393.log 
-2026/11/27-04:19:45.448 403f02 Level-0 table #396: started
-2026/11/27-04:19:45.454 403f02 Level-0 table #396: 15447 bytes OK
-2026/11/27-04:19:45.461 403f02 Delete type=0 #393
-2026/11/27-04:38:45.433 403f01 Level-0 table #398: started
-2026/11/27-04:38:45.435 403f01 Level-0 table #398: 13761 bytes OK
-2026/11/27-04:38:45.438 403f01 Delete type=0 #395
-2026/11/27-04:50:20.934 403f01 Level-0 table #400: started
-2026/11/27-04:50:20.942 403f01 Level-0 table #400: 20900 bytes OK
-2026/11/27-04:50:20.948 403f01 Delete type=0 #397
-2026/11/27-04:50:20.950 403f01 Compacting 4@0 + 1@1 files
-2026/11/27-04:50:20.957 403f01 Generated table #401@0: 3842 keys, 89451 bytes
-2026/11/27-04:50:20.958 403f01 Compacted 4@0 + 1@1 files => 89451 bytes
-2026/11/27-04:50:20.959 403f01 compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/11/27-04:50:20.960 403f01 Delete type=2 #400
-2026/11/27-04:50:20.960 403f01 Delete type=2 #398
-2026/11/27-04:50:20.960 403f01 Delete type=2 #396
-2026/11/27-04:50:20.960 403f01 Delete type=2 #392
-2026/11/27-04:50:20.960 403f01 Delete type=2 #390
-2026/11/27-04:57:45.482 403f01 Level-0 table #403: started
-2026/11/27-04:57:45.487 403f01 Level-0 table #403: 16989 bytes OK
-2026/11/27-04:57:45.494 403f01 Delete type=0 #399
-2026/11/27-05:03:45.481 403f01 Level-0 table #405: started
-2026/11/27-05:03:45.486 403f01 Level-0 table #405: 18314 bytes OK
-2026/11/27-05:03:45.490 403f01 Delete type=0 #402
-2026/11/27-05:10:45.480 403f02 Level-0 table #407: started
-2026/11/27-05:10:45.483 403f02 Level-0 table #407: 20345 bytes OK
-2026/11/27-05:10:45.485 403f02 Delete type=0 #404
-2026/11/27-05:15:45.477 403f01 Level-0 table #409: started
-2026/11/27-05:15:45.483 403f01 Level-0 table #409: 18855 bytes OK
-2026/11/27-05:15:45.487 403f01 Delete type=0 #406
-2026/11/27-05:15:45.489 403f01 Compacting 4@0 + 1@1 files
-2026/11/27-05:15:45.497 403f01 Generated table #410@0: 3942 keys, 92583 bytes
-2026/11/27-05:15:45.497 403f01 Compacted 4@0 + 1@1 files => 92583 bytes
-2026/11/27-05:15:45.499 403f01 compacted to: files[ 0 1 1 0 0 0 0 ]
-2026/11/27-05:15:45.500 403f01 Delete type=2 #405
-2026/11/27-05:15:45.500 403f01 Delete type=2 #407
-2026/11/27-05:15:45.500 403f01 Delete type=2 #403
-2026/11/27-05:15:45.500 403f01 Delete type=2 #401
-2026/11/27-05:15:45.500 403f01 Delete type=2 #409
-2026/11/27-05:19:45.477 403f02 Level-0 table #412: started
-2026/11/27-05:19:45.483 403f02 Level-0 table #412: 16296 bytes OK
-2026/11/27-05:19:45.486 403f02 Delete type=0 #408
-2026/11/27-05:23:45.477 403f01 Level-0 table #414: started
-2026/11/27-05:23:45.481 403f01 Level-0 table #414: 17478 bytes OK
-2026/11/27-05:23:45.483 403f01 Delete type=0 #411
-2026/11/27-05:27:45.480 403f01 Level-0 table #416: started
-2026/11/27-05:27:45.489 403f01 Level-0 table #416: 18647 bytes OK
-2026/11/27-05:27:45.492 403f01 Delete type=0 #413
+2026/11/27-06:11:22.457 4390ef Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
+2026/11/27-06:11:22.462 4390ef Recovering log #441
+2026/11/27-06:11:22.463 4390ef Level-0 table #444: started
+2026/11/27-06:11:22.466 4390ef Level-0 table #444: 21615 bytes OK
+2026/11/27-06:11:22.466 4390ef Recovering log #443
+2026/11/27-06:11:22.467 4390ef Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000443.log 
+2026/11/27-06:11:22.469 4390ef Delete type=0 #441

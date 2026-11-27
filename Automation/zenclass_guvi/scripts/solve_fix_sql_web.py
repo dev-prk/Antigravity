@@ -291,7 +291,14 @@ def solve_one_sqlkata(page: Page, seq: int, state: Dict[str, Any]) -> bool:
             if sub_ok:
                 saved_queries.append(f"-- Q{qi+1}\n{sql}")
                 break
-            sql_err = f"\nPrevious SQL was rejected by judge:\n{sql}\nCheck column order, exact column aliases if requested, ROUND(..., 2) vs unrounded, or whether UPDATE/DELETE/INSERT should NOT have an extra SELECT!"
+            page.evaluate("() => { for (const b of document.querySelectorAll('button')) if (b.offsetParent!==null && b.innerText.trim()==='Output') b.click(); }")
+            page.wait_for_timeout(220)
+            out_msg = page.evaluate("() => { const t = document.body.innerText; const i = t.indexOf('Tables\\nOutput'); return i!==-1 ? t.slice(i, i+600) : t.slice(-500); }")
+            sql_err = (
+                f"\nPrevious SQL was rejected by judge:\n{sql}\nJudge / Console Output:\n{out_msg}\n"
+                "Fix exact column names/order, aliases (try WITHOUT alias if exact column name matches, or exact alias requested), "
+                "ROUND(..., 2) vs unrounded, or single statement vs multi-statement!"
+            )
 
     prob_ok = page.evaluate(
         "() => document.body.innerText.includes('Solved!') || (document.querySelectorAll('div.collapse').length > 0 && Array.from(document.querySelectorAll('div.collapse')).every(c => c.className.includes('correct-submission')))"
@@ -302,6 +309,19 @@ def solve_one_sqlkata(page: Page, seq: int, state: Dict[str, Any]) -> bool:
             (SOL_SQL_DIR / f"{slug}.sql").write_text("\n\n".join(saved_queries) + "\n", encoding="utf-8")
     save_multi_checkpoint(state)
     return bool(prob_ok)
+
+
+def click_visible_webkata_tab(page: Page, tab_name: str) -> None:
+    page.evaluate(
+        """(tn) => {
+            const btn = Array.from(document.querySelectorAll('button.tab-text')).find(
+                b => b.offsetParent !== null && b.innerText.trim() === tn
+            );
+            if (btn) btn.click();
+        }""",
+        tab_name,
+    )
+    page.wait_for_timeout(160)
 
 
 def solve_one_webkata(page: Page, seq: int, topic: str, state: Dict[str, Any]) -> bool:
@@ -316,8 +336,7 @@ def solve_one_webkata(page: Page, seq: int, topic: str, state: Dict[str, Any]) -
 
     starters: Dict[str, str] = {}
     for tname in tab_names:
-        page.locator("button.tab-text").filter(has_text=re.compile(f"^{re.escape(tname)}$")).first.click(force=True)
-        page.wait_for_timeout(180)
+        click_visible_webkata_tab(page, tname)
         starters[tname] = page.evaluate("() => window.ace ? window.ace.edit('editor').getValue() : ''")
 
     err_note = ""
@@ -354,8 +373,7 @@ def solve_one_webkata(page: Page, seq: int, topic: str, state: Dict[str, Any]) -
 
         for tname, content in files_out.items():
             if tname in tab_names and isinstance(content, str) and content.strip():
-                page.locator("button.tab-text").filter(has_text=re.compile(f"^{re.escape(tname)}$")).first.click(force=True)
-                page.wait_for_timeout(160)
+                click_visible_webkata_tab(page, tname)
                 page.evaluate("(c) => window.ace.edit('editor').setValue(c, -1)", content)
 
         page.evaluate("() => document.querySelector('button.submit-code')?.click()")
@@ -389,6 +407,48 @@ def solve_one_webkata(page: Page, seq: int, topic: str, state: Dict[str, Any]) -
     return False
 
 
+def run_webkata_fast(ctx: BrowserContext, page: Page, state: Dict[str, Any]) -> None:
+    """Harvests all unsolved WebKata numeric IDs across html/css/js/bootstrap in seconds, then solves directly without table reloads."""
+    for topic in ("html", "css", "js", "bootstrap"):
+        todo_urls: List[Tuple[str, str]] = []
+        for pno in range(1, 5):
+            enforce_single_tab(ctx, page)
+            list_url = f"https://www.guvi.in/webkata/{topic}/?page={pno}&limit=50"
+            page.goto(list_url, wait_until="domcontentloaded", timeout=25000)
+            page.wait_for_timeout(1200)
+            dismiss_popups(page)
+            rows = page.evaluate(
+                """() => Array.from(document.querySelectorAll('tbody tr')).map(r => ({
+                    done: r.innerHTML.includes('completed-icon_svg__a') || r.innerHTML.includes('#0DBA4B'),
+                    txt: (r.innerText || '').trim().replace(/\\s+/g, ' ')
+                }))"""
+            )
+            if not rows:
+                break
+            for r in rows:
+                if not r["done"]:
+                    m = re.match(r"^(\d+)\.", r["txt"])
+                    if m:
+                        u = f"https://www.guvi.in/webkata/{topic}/{m.group(1)}/"
+                        if all(u != x[0] for x in todo_urls):
+                            todo_urls.append((u, r["txt"][:55]))
+            if len(rows) < 50:
+                break
+
+        log(f"[WebKata-{topic.upper()}] {len(todo_urls)} unsolved problems queued.")
+        for idx, (u, title_s) in enumerate(todo_urls, start=1):
+            enforce_single_tab(ctx, page)
+            page.goto(u, wait_until="domcontentloaded", timeout=25000)
+            page.wait_for_timeout(1400)
+            dismiss_popups(page)
+            try:
+                ok = solve_one_webkata(page, idx, topic, state)
+            except Exception as exc:
+                log(f"[WebKata-{topic.upper()} #{idx}] Error: {str(exc)[:110]}")
+                ok = False
+            log(f"[WebKata-{topic.upper()} {idx}/{len(todo_urls)}] {title_s} -> {'SOLVED' if ok else 'FAILED'} | total={state['webkata_solved']}")
+
+
 def main() -> int:
     state = json.loads(MULTI_REPORT.read_text(encoding="utf-8")) if MULTI_REPORT.exists() else {
         "fixthecode_solved": 0,
@@ -401,17 +461,10 @@ def main() -> int:
         try:
             if "fixthecode" in stages:
                 sweep_table_inplace(ctx, page, "https://www.guvi.in/debugging/", "FixTheCode", lambda p, s: solve_one_fixthecode(p, s, state))
+            if "webkata" in stages:
+                run_webkata_fast(ctx, page, state)
             if "sqlkata" in stages:
                 sweep_table_inplace(ctx, page, "https://www.guvi.in/sqlkata/", "SQLKata", lambda p, s: solve_one_sqlkata(p, s, state))
-            if "webkata" in stages:
-                for topic in ("html", "css", "js", "bootstrap"):
-                    sweep_table_inplace(
-                        ctx,
-                        page,
-                        f"https://www.guvi.in/webkata/{topic}/?page=1&limit=50",
-                        f"WebKata-{topic.upper()}",
-                        lambda p, s, tp=topic: solve_one_webkata(p, s, tp, state),
-                    )
         finally:
             save_multi_checkpoint(state)
             ctx.close()

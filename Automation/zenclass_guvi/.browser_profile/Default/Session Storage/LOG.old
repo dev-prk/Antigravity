@@ -1,5 +1,26 @@
-2026/11/27-03:49:27.282 3f6b50 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
-2026/11/27-03:49:27.283 3f6b50 Recovering log #388
-2026/11/27-03:49:27.284 3f6b50 Level-0 table #392: started
-2026/11/27-03:49:27.298 3f6b50 Level-0 table #392: 25694 bytes OK
-2026/11/27-03:49:27.302 3f6b50 Delete type=0 #388
+2026/11/27-05:45:42.237 4285de Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
+2026/11/27-05:45:42.238 4285de Recovering log #431
+2026/11/27-05:45:42.238 4285de Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000431.log 
+2026/11/27-05:49:45.036 4285e3 Level-0 table #435: started
+2026/11/27-05:49:45.041 4285e3 Level-0 table #435: 15250 bytes OK
+2026/11/27-05:49:45.045 4285e3 Delete type=0 #431
+2026/11/27-05:54:45.035 4285e3 Level-0 table #437: started
+2026/11/27-05:54:45.042 4285e3 Level-0 table #437: 20843 bytes OK
+2026/11/27-05:54:45.046 4285e3 Delete type=0 #434
+2026/11/27-05:54:45.046 4285e3 Compacting 4@0 + 1@1 files
+2026/11/27-05:54:45.052 4285e3 Generated table #438@0: 4762 keys, 80333 bytes
+2026/11/27-05:54:45.052 4285e3 Compacted 4@0 + 1@1 files => 80333 bytes
+2026/11/27-05:54:45.054 4285e3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/11/27-05:54:45.054 4285e3 Delete type=2 #428
+2026/11/27-05:54:45.054 4285e3 Delete type=2 #430
+2026/11/27-05:54:45.054 4285e3 Delete type=2 #432
+2026/11/27-05:54:45.054 4285e3 Delete type=2 #437
+2026/11/27-05:54:45.054 4285e3 Delete type=2 #435
+2026/11/27-06:01:45.035 4285e3 Level-0 table #440: started
+2026/11/27-06:01:45.041 4285e3 Level-0 table #440: 24298 bytes OK
+2026/11/27-06:01:45.043 4285e3 Delete type=0 #436
+2026/11/27-06:06:45.033 4285e3 Level-0 table #442: started
+2026/11/27-06:06:45.038 4285e3 Level-0 table #442: 25126 bytes OK
+2026/11/27-06:06:45.041 4285e3 Delete type=0 #439
+2026/11/27-06:08:34.005 4285e3 Level-0 table #444: started
+2026/11/27-06:08:34.026 4285e3 Level-0 table #444: 21615 bytes OK

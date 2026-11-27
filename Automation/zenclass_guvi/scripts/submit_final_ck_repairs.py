@@ -27,7 +27,7 @@ from solve_codekata_100_python import (  # noqa: E402
     PROB_DIR,
 )
 
-FINAL_DIR = ROOT / "data" / "ck_final_repairs"
+FINAL_DIR = ROOT / "data" / "ck_final_repairs_v2"
 
 
 def log(msg: str) -> None:
