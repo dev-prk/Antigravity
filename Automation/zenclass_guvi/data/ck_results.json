@@ -13083,11 +13083,9 @@
   "duration_s": 0.08
  },
  "product-inventory-manager-using-stl": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C++",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC++\nRuntime\n\n8ms\n\nMemory\n\n6kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50",
-  "duration_s": 3.07
+  "attempts": 2
  },
  "product-stock-using-dictionary-comprehension": {
   "status": "COMPLETED",
@@ -13118,11 +13116,9 @@
   "duration_s": 1.61
  },
  "python-mro-and-diamond-problem": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nPYTHON 3\nRuntime\n\n50ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n4",
-  "duration_s": 2.63
+  "attempts": 3
  },
  "python-mro-for-multiple-inheritance": {
   "status": "COMPLETED",
@@ -13207,11 +13203,9 @@
   "duration_s": 1.64
  },
  "rabin-karp-multiple-pattern-search": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/5\nLanguage\nJAVA 8\nRuntime\n\n205ms\n\nMemory\n\n48kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 4.3
+  "attempts": 2
  },
  "rabin-karp-plagiarism-detection": {
   "status": "COMPLETED",
@@ -13640,11 +13634,9 @@
   "duration_s": 1.76
  },
  "reverse-delete-algorithm-for-mst": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n1/5\nLanguage\nJAVA 8\nRuntime\n\n254ms\n\nMemory\n\n51kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 3.22
+  "attempts": 1
  },
  "reverse-each-word-2": {
   "status": "COMPLETED",
@@ -13954,11 +13946,9 @@
   "duration_s": 1.37
  },
  "scoped-resource-release-tracker": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C++",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC++\nRuntime\n\n8ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n#include <iostream>\n\nclass Resource {\nprivate:\n    static i",
-  "duration_s": 2.65
+  "attempts": 3
  },
  "score-management-using-object-pointers": {
   "status": "COMPLETED",
@@ -14188,11 +14178,9 @@
   "duration_s": 2.63
  },
  "sine-of-an-angle": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n4/5\nLanguage\nPYTHON 3\nRuntime\n\n62ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\nimport sys\nimport math\n\ndef main():\n    tokens = sys.stdin.read().s",
-  "duration_s": 2.1
+  "attempts": 2
  },
  "single-digit-sum": {
   "status": "COMPLETED",
@@ -14299,11 +14287,9 @@
   "duration_s": 13.39
  },
  "smart-media-queue-manager-using-doubly-linked-list": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n50ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n4",
-  "duration_s": 2.66
+  "attempts": 1
  },
  "smart-network-cycle-detector": {
   "status": "COMPLETED",
@@ -14592,11 +14578,9 @@
   "duration_s": 3.41
  },
  "spiral-matrix-traversal": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n65ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n4",
-  "duration_s": 1.58
+  "attempts": 2
  },
  "square-formation-check": {
   "status": "COMPLETED",
@@ -15966,11 +15950,9 @@
   "duration_s": 3.08
  },
  "ticket-booking-system-2": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/3\nLanguage\nJAVA 8\nRuntime\n\n283ms\n\nMemory\n\n36kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\nimport java.ut",
-  "duration_s": 4.24
+  "attempts": 1
  },
  "file-system-simulation-using-advanced-data-structures-2": {
   "status": "FAILED_PLATFORM",
