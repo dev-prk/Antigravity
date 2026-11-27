@@ -23,6 +23,19 @@ and quit it; this is the app he needed). Visual + spoken, so both visual and ora
    speed vs velocity, acceleration, distance vs displacement. Physics must be correct; explain
    *why*, not just the formula. Language: simple, an Indian 14-year-old, no unexplained jargon.
 
+## Code-driven physics animations (rule: numbers come from equations, never hand-drawn)
+- Any short with a calculation or motion (F=ma, speed/velocity, acceleration, momentum,
+  recoil, displacement) uses a live canvas/SVG simulation, not a static picture or video.
+- Put ALL physics in `js/physics.js`, a pure module with NO DOM access, exported with
+  `module.exports` so node can test it: `accel(F,m)`, `velocityAfter(u,a,t)`,
+  `distance(u,a,t)` (= ut + 1/2 a t^2), `stickCollision(m1,u1,m2,u2)` (final velocity),
+  `recoilVelocity(m_bullet,v_bullet,m_gun)` (negative = opposite direction).
+- Sims (`js/sims.js`) call these functions each frame and show the live numbers on screen
+  with units (e.g. "a = F/m = 10/2 = 5 m/s^2"). A slider for force or mass is allowed for the
+  F=ma short only. No magic constants in the animation: displayed value = function output.
+- scene.visual is either an SVG/text illustration or `{"sim":"name","params":{...}}`.
+  A scene may also point to a video file path (optional clips added later by the founder).
+
 ## Expert gaps (do not skip)
 - "Equal and opposite" forces act on DIFFERENT bodies, so they don't cancel. Say it.
 - Friction is not the cause of rest; objects keep moving unless a force (often friction) acts.
@@ -35,6 +48,7 @@ and quit it; this is the app he needed). Visual + spoken, so both visual and ora
 - Each short has 4–6 scenes and ≥1 term; every term word appears in narration.
 - F=ma short contains a numeric example whose arithmetic is right (hand-checked).
 - 3rd-law short states the forces act on different bodies.
+- `node exams/02_cbse_shorts/physics_test.js <app dir>` passes (hand-worked values below).
 - `index.html` loads with no console errors, localStorage key for class set after onboarding.
 - **Bad input must be rejected**: a content file with a 40-word narration or missing `terms`
   must fail the check (graded by check.py on a planted bad file).
