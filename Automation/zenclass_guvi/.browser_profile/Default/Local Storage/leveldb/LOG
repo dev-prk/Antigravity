@@ -19,3 +19,42 @@
 2026/11/27-06:53:53.794 44ad33 Level-0 table #524: started
 2026/11/27-06:53:53.803 44ad33 Level-0 table #524: 73411 bytes OK
 2026/11/27-06:53:53.806 44ad33 Delete type=0 #521
+2026/11/27-06:56:53.800 44ad38 Level-0 table #526: started
+2026/11/27-06:56:53.818 44ad38 Level-0 table #526: 73723 bytes OK
+2026/11/27-06:56:53.823 44ad38 Delete type=0 #523
+2026/11/27-06:59:53.793 44ad38 Level-0 table #528: started
+2026/11/27-06:59:53.795 44ad38 Level-0 table #528: 73873 bytes OK
+2026/11/27-06:59:53.797 44ad38 Delete type=0 #525
+2026/11/27-06:59:53.798 44ad38 Compacting 4@0 + 1@1 files
+2026/11/27-06:59:53.800 44ad38 Generated table #529@0: 145 keys, 49421 bytes
+2026/11/27-06:59:53.800 44ad38 Compacted 4@0 + 1@1 files => 49421 bytes
+2026/11/27-06:59:53.801 44ad38 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-06:59:53.802 44ad38 Delete type=2 #528
+2026/11/27-06:59:53.802 44ad38 Delete type=2 #526
+2026/11/27-06:59:53.802 44ad38 Delete type=2 #524
+2026/11/27-06:59:53.802 44ad38 Delete type=2 #520
+2026/11/27-06:59:53.802 44ad38 Delete type=2 #522
+2026/11/27-07:02:53.795 44ad33 Level-0 table #531: started
+2026/11/27-07:02:53.805 44ad33 Level-0 table #531: 73214 bytes OK
+2026/11/27-07:02:53.808 44ad33 Delete type=0 #527
+2026/11/27-07:05:53.785 44ad38 Level-0 table #533: started
+2026/11/27-07:05:53.789 44ad38 Level-0 table #533: 73790 bytes OK
+2026/11/27-07:05:53.796 44ad38 Delete type=0 #530
+2026/11/27-07:08:53.780 44ad38 Level-0 table #535: started
+2026/11/27-07:08:53.786 44ad38 Level-0 table #535: 74094 bytes OK
+2026/11/27-07:08:53.790 44ad38 Delete type=0 #532
+2026/11/27-07:11:53.781 44ad38 Level-0 table #537: started
+2026/11/27-07:11:53.784 44ad38 Level-0 table #537: 75808 bytes OK
+2026/11/27-07:11:53.788 44ad38 Delete type=0 #534
+2026/11/27-07:11:53.789 44ad38 Compacting 4@0 + 1@1 files
+2026/11/27-07:11:53.796 44ad38 Generated table #538@0: 146 keys, 50022 bytes
+2026/11/27-07:11:53.796 44ad38 Compacted 4@0 + 1@1 files => 50022 bytes
+2026/11/27-07:11:53.797 44ad38 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/27-07:11:53.798 44ad38 Delete type=2 #529
+2026/11/27-07:11:53.798 44ad38 Delete type=2 #533
+2026/11/27-07:11:53.798 44ad38 Delete type=2 #531
+2026/11/27-07:11:53.798 44ad38 Delete type=2 #535
+2026/11/27-07:11:53.798 44ad38 Delete type=2 #537
+2026/11/27-07:14:53.779 44ad39 Level-0 table #540: started
+2026/11/27-07:14:53.788 44ad39 Level-0 table #540: 73494 bytes OK
+2026/11/27-07:14:53.794 44ad39 Delete type=0 #536

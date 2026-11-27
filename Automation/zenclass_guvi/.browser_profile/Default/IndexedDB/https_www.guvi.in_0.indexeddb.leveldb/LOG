@@ -10,3 +10,12 @@
 2026/11/27-06:54:21.257 44ace5 compacted to: files[ 0 0 1 0 0 0 0 ]
 2026/11/27-06:54:21.257 44ace5 Delete type=2 #43
 2026/11/27-06:54:21.257 44ace5 Delete type=2 #40
+2026/11/27-07:13:41.592 44acdd Level-0 table #46: started
+2026/11/27-07:13:41.608 44acdd Level-0 table #46: 1010762 bytes OK
+2026/11/27-07:13:41.610 44acdd Delete type=0 #42
+2026/11/27-07:13:41.986 44ace2 Compacting 1@1 + 1@2 files
+2026/11/27-07:13:42.011 44ace2 Generated table #47@1: 9793 keys, 1835682 bytes
+2026/11/27-07:13:42.011 44ace2 Compacted 1@1 + 1@2 files => 1835682 bytes
+2026/11/27-07:13:42.013 44ace2 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/11/27-07:13:42.013 44ace2 Delete type=2 #44
+2026/11/27-07:13:42.013 44ace2 Delete type=2 #46

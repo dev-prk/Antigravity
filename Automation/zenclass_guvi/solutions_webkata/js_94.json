@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    \n  </head>\n  <body>\n    <label>Input</label>\n    <input id=\"in1\" oninput=\"checkString()\"/>\n    <br>\n    <p>Is 'Java' is present in the above input?</p>\n    <p id=\"result\"></p>\n   \n  </body>\n</html>",
+  "JavaScript": "function checkString(){\n    //Start Your code here\n    var input = document.getElementById('in1').value;\n    var result = input.includes('Java');\n    document.getElementById('result').textContent = result;\n}"
+}

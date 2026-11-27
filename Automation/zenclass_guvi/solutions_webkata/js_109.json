@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    \n  </head>\n  <body>\n    <label>Input 1</label>\n    <input id=\"in1\" oninput=\"calculateSum()\"/>\n    <br><br>\n    <label>Input 2</label>\n    <input id=\"in2\" oninput=\"calculateSum()\"/>\n    <p>The Sum of input 1 and input 2 is</p>\n    <p id=\"result\"></p>\n    \n  </body>\n</html>",
+  "JavaScript": "function calculateSum(){\n    //Start Your code here\n    var num1 = document.getElementById('in1').value;\n    var num2 = document.getElementById('in2').value;\n    var sum = parseFloat(num1) + parseFloat(num2);\n    document.getElementById('result').innerText = sum;\n    \n}"
+}

@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    \n  </head>\n  <body>\n    <label>Input 1</label>\n    <input id=\"in1\" oninput=\"compare()\"/>\n    <br><br>\n    <label>Input 2</label>\n    <input id=\"in2\" oninput=\"compare()\"/>\n    <p>Is Input 1 is lesser than Input 2 is</p>\n    <p id=\"result\"></p>\n    \n  </body>\n</html>",
+  "JavaScript": "function compare(){\n    //Start Your code here\n    var num1 = parseFloat(document.getElementById('in1').value);\n    var num2 = parseFloat(document.getElementById('in2').value);\n    var resultText = 'true';\n    if (num1 >= num2) {\n        resultText = 'false';\n    }\n    document.getElementById('result').textContent = resultText;\n    \n}"
+}

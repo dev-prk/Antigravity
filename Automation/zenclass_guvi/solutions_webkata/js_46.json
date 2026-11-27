@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n  </head>\n  <body>\n    <p id=\"result\">C = 30</p>\n  </body>\n</html>",
+  "JavaScript": "const a = 10;\nconst b = 20;\nlet c = a + b;\ndocument.getElementById('result').textContent = 'C = ' + c;"
+}
