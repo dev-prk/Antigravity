@@ -1,3 +1,5 @@
-2026/11/27-15:13:40.555 5002b8 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/11/27-15:13:40.555 5002b8 Recovering log #806
-2026/11/27-15:13:40.556 5002b8 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/000806.log 
+2026/11/28-05:09:31.056 5ac56e Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/11/28-05:09:31.057 5ac56e Recovering log #810
+2026/11/28-05:09:31.057 5ac56e Level-0 table #812: started
+2026/11/28-05:09:31.071 5ac56e Level-0 table #812: 74832 bytes OK
+2026/11/28-05:09:31.074 5ac56e Delete type=0 #810
