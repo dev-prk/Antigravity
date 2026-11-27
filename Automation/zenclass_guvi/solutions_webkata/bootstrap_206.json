@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\n\n</head>\n<body>\n  <div class=\"container\">\n    <p>container 01</p>\n  </div>\n  <div class=\"container\">\n    <p>container 02</p>\n  </div>\n\n</body>\n</html>",
+  "CSS": "  p{\n        font-size: 30px;\n        font-family: 'Times New Roman', Times, serif;\n    }"
+}

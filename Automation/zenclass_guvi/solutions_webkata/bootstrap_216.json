@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\n  <link rel=\"stylesheet\" href=\"style.css\">\n</head>\n<body>\n  <div class=\"container\">\n    <dl class=\"student-info\">\n      <dt>Name</dt>\n      <dd>John Doe</dd>\n      <dt>Class</dt>\n      <dd>- B.tech 3<sup>rd</sup> year</dd>\n    </dl>\n  </div>\n</body>\n</html>",
+  "CSS": ".container {\n  font-size: 30px;\n}\n\n.student-info dt,\n.student-info dd {\n  font-size: inherit;\n}"
+}
