@@ -1433,11 +1433,9 @@
   "ts": "2026-11-26T17:36:38.521165+00:00"
  },
  "number-check-odd-even-divisible-by-7": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA 8\nRuntime\n\n346ms\n\nMemory\n\n47kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\nimport java.util.Scanner;\n\npublic class Main {\n    public static void main(String[] args) {\n      ",
-  "duration_s": 2.67
+  "attempts": 2
  },
  "number-hollow-half-pyramid": {
   "status": "COMPLETED",
@@ -1492,11 +1490,9 @@
   "ts": "2026-11-26T17:36:51.134833+00:00"
  },
  "queue-implementation-using-array": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n1/3\nLanguage\nPYTHON 3\nRuntime\n\n30ms\n\nMemory\n\n9kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\nimport sys\n\ndef solve():\n    data = sys.stdin.read().spl",
-  "duration_s": 2.14
+  "attempts": 2
  },
  "reading-and-printing-array-elements": {
   "status": "COMPLETED",
@@ -1536,11 +1532,9 @@
   "duration_s": 3.37
  },
  "reorder-list-odd-before-even-numbers": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n197ms\n\nMemory\n\n41kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 3.07
+  "attempts": 2
  },
  "reverse-a-number": {
   "status": "COMPLETED",
@@ -1934,11 +1928,9 @@
   "ts": "2026-11-26T17:40:32.188151+00:00"
  },
  "reverse-number-pattern": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n5ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int N;\n   ",
-  "duration_s": 3.33
+  "attempts": 3
  },
  "reversing-the-digits-of-a-3-digit-integer": {
   "status": "COMPLETED",
@@ -4043,11 +4035,9 @@
   "ts": "2026-11-26T18:01:59.294768+00:00"
  },
  "multiple-subarray-rotations": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n365ms\n\nMemory\n\n47kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 3.78
+  "attempts": 5
  },
  "multiples-of-a-number": {
   "status": "COMPLETED",
@@ -4427,11 +4417,9 @@
   "duration_s": 3.47
  },
  "reverse-even-position-digits-2": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA 8\nRuntime\n\n173ms\n\nMemory\n\n38kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\nimport java.io.*;\nimport java.util.*;\n\npublic class Main {\n",
-  "duration_s": 4.33
+  "attempts": 2
  },
  "reverse-integer-sequence": {
   "status": "COMPLETED",
@@ -5639,11 +5627,9 @@
   "ts": "2026-11-26T18:26:14.922512+00:00"
  },
  "odd-even-list-reordering": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA\nRuntime\n\n354ms\n\nMemory\n\n47kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\nimport java.util",
-  "duration_s": 3.22
+  "attempts": 5
  },
  "java-leap-year-checker-2": {
   "status": "COMPLETED",
@@ -6156,18 +6142,14 @@
   "ts": "2026-11-26T18:36:37.376398+00:00"
  },
  "pattern-printing-triangle": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n63ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\nimport sys\n\ndef main():\n    data = sys.stdin.read().split(",
-  "duration_s": 2.18
+  "attempts": 4
  },
  "pattern-printing": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n62ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n    if not data:\n     ",
-  "duration_s": 2.26
+  "attempts": 2
  },
  "person-class-with-access-modifiers": {
   "status": "COMPLETED",
@@ -6485,11 +6467,9 @@
   "ts": "2026-11-26T18:39:48.249395+00:00"
  },
  "reversing-elements-in-a-list": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nJAVA 8\nRuntime\n\n380ms\n\nMemory\n\n49kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\nimport java.util.*;\nimport java.",
-  "duration_s": 3.25
+  "attempts": 2
  },
  "rotation-count-using-binary-search": {
   "status": "COMPLETED",
@@ -6572,11 +6552,9 @@
   "ts": "2026-11-26T18:40:56.691534+00:00"
  },
  "selection-sort": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nPYTHON 3\nRuntime\n\n53ms\n\nMemory\n\n12kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\nimport sys\n\ndef selection_sort(arr):\n   ",
-  "duration_s": 2.11
+  "attempts": 5
  },
  "set-bits-in-range-l-r": {
   "status": "COMPLETED",
@@ -11227,11 +11205,9 @@
   "ts": "2026-11-26T19:44:18.094014+00:00"
  },
  "max-stones-of-equal-weight": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n54ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\nimport sys\nimport math\n\ndef solve():\n    data = sys.",
-  "duration_s": 2.63
+  "attempts": 4
  },
  "max-subarray-sum": {
   "status": "COMPLETED",
@@ -11544,11 +11520,9 @@
   "ts": "2026-11-26T19:50:19.147130+00:00"
  },
  "min-fuel-cost-adjustment": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n3/5\nLanguage\nPYTHON 3\nRuntime\n\n63ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\nimport sys\n\ndef main():\n    data = sys.stdin.read().spl",
-  "duration_s": 3.77
+  "attempts": 6
  },
  "min-moves-for-divisibility": {
   "status": "FAILED_PLATFORM",
@@ -11947,11 +11921,9 @@
   "ts": "2026-11-26T19:54:17.500853+00:00"
  },
  "movie-data-extraction-with-regex": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n77ms\n\nMemory\n\n19kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nimport re\nimport sys\n\ndef get_movies(data):\n    pattern = r'(.+?)\\s*\\((\\d{4})\\)'\n    matches =",
-  "duration_s": 2.17
+  "attempts": 3
  },
  "multi-base-number-converter": {
   "status": "COMPLETED",
@@ -12652,11 +12624,9 @@
   "duration_s": 2.18
  },
  "pointer-driven-array-algorithms": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nJAVA 8\nRuntime\n\n419ms\n\nMemory\n\n56kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 5.25
+  "attempts": 3
  },
  "pointers-and-functions": {
   "status": "COMPLETED",
@@ -12694,11 +12664,9 @@
   "duration_s": 8.13
  },
  "polymorphism-method-overloading": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n3/4\nLanguage\nJAVA 8\nRuntime\n\n387ms\n\nMemory\n\n49kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 3.22
+  "attempts": 5
  },
  "polymorphism-with-student-fees": {
   "status": "COMPLETED",
@@ -12836,11 +12804,9 @@
   "duration_s": 0.09
  },
  "preorder-to-postorder-bst": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n58ms\n\nMemory\n\n16kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\nimport sys\n\ndef main():\n    ",
-  "duration_s": 2.29
+  "attempts": 6
  },
  "preserved-groceries": {
   "status": "COMPLETED",
@@ -13173,11 +13139,9 @@
   "duration_s": 4.38
  },
  "race-time-sorting": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n61ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\nimport sys\n\ndef main():\n    data = sys.stdin.read().strip().split()\n    if not data:\n",
-  "duration_s": 3.21
+  "attempts": 3
  },
  "radix-sort-implementation-2": {
   "status": "COMPLETED",
@@ -13611,11 +13575,9 @@
   "duration_s": 1.65
  },
  "reverse-first-k-elements-of-a-queue": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nJAVA 8\nRuntime\n\n261ms\n\nMemory\n\n52kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 4.41
+  "attempts": 2
  },
  "reverse-first-k-elements-of-queue": {
   "status": "COMPLETED",
