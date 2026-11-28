@@ -1772,11 +1772,9 @@
   "attempts": 1
  },
  "circle-circumference-calculation": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n3/5\nLanguage\nPYTHON 3\nRuntime\n\n53ms\n\nMemory\n\n20kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\nimport sys\nimport math\n\ndef main():\n    data = sys.s",
-  "duration_s": 2.13
+  "attempts": 11
  },
  "common-numbers-sum": {
   "status": "FAILED_PLATFORM",
@@ -2878,11 +2876,9 @@
   "ts": "2026-11-26T17:46:14.606590+00:00"
  },
  "c-type-modifier-range-check": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n2/4\nLanguage\nC\nRuntime\n\n5ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n#include<stdio.h",
-  "duration_s": 2.59
+  "attempts": 1
  },
  "bank-account-withdrawal-exception": {
   "status": "COMPLETED",
@@ -8674,11 +8670,9 @@
   "duration_s": 10.02
  },
  "deep-copy-array-modification": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C++",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC++\nRuntime\n\n8ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50",
-  "duration_s": 2.12
+  "attempts": 5
  },
  "delete-last-occurrence-of-key": {
   "status": "COMPLETED",
@@ -10312,11 +10306,9 @@
   "duration_s": 3.75
  },
  "delete-node-from-a-red-black-tree": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nJAVA 8\nMain.java:128: error: incompatible types: void cannot be converted to Node root.right.right = fixRightChild(root.right, root.right); ^ Main.java:132: error: incompatib",
-  "duration_s": 3.19
+  "attempts": 5
  },
  "job-scheduling-system-with-dynamic-array-optimization": {
   "status": "COMPLETED",
@@ -15981,11 +15973,9 @@
   "duration_s": 3.1
  },
  "bubble-sort-2": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nPYTHON 3\nRuntime\n\n49ms\n\nMemory\n\n12kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\nimport sys\n\ndef main():\n    data = sys.stdin.read().str",
-  "duration_s": 2.11
+  "attempts": 2
  },
  "reverse-a-linked-list-23": {
   "status": "COMPLETED",

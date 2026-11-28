@@ -23,3 +23,14 @@
 2026/11/28-06:42:56.907 5b7e14 Delete type=2 #80
 2026/11/28-06:42:56.907 5b7e14 Delete type=2 #81
 2026/11/28-06:42:56.907 5b7e14 Delete type=2 #83
+2026/11/28-07:46:13.630 5b7e14 Level-0 table #87: started
+2026/11/28-07:46:13.647 5b7e14 Level-0 table #87: 1277576 bytes OK
+2026/11/28-07:46:13.649 5b7e14 Delete type=0 #82
+2026/11/28-07:46:13.650 5b7e14 Compacting 1@1 + 2@2 files
+2026/11/28-07:46:13.682 5b7e14 Generated table #88@1: 15359 keys, 2151568 bytes
+2026/11/28-07:46:13.688 5b7e14 Generated table #89@1: 3197 keys, 531600 bytes
+2026/11/28-07:46:13.688 5b7e14 Compacted 1@1 + 2@2 files => 2683168 bytes
+2026/11/28-07:46:13.691 5b7e14 compacted to: files[ 0 0 2 0 0 0 0 ]
+2026/11/28-07:46:13.691 5b7e14 Delete type=2 #87
+2026/11/28-07:46:13.691 5b7e14 Delete type=2 #85
+2026/11/28-07:46:13.691 5b7e14 Delete type=2 #84
