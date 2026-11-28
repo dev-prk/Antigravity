@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>\n  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js\"></script>\n  <link rel=\"stylesheet\" href=\"css styles.css\">\n</head>\n<body>\n  \n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-sm-3\">Column1</div>\n    <div class=\"col-sm-3\">Column2</div>\n    <div class=\"col-sm-3\">Column3</div>\n  </div>\n</div>\n  \n</body>\n</html>",
+  "CSS": ".container {\n    background-color: dodgerblue;\n}\n.container .col-sm-3 {\n    background-color: dodgerblue;\n}"
+}
