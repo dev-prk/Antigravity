@@ -70,11 +70,11 @@ LANG_EXT = {
     "JAVASCRIPT": "js", "JAVA": "java", "JAVA 8": "java", "BASH": "sh", "SQLITE": "sql",
 }
 
-MAX_ITER_PER_QUESTION = 12
+MAX_ITER_PER_QUESTION = 15
 
 
 def log(msg: str) -> None:
-    print(f"[V4-GEMINI {time.strftime('%H:%M:%S')}] {msg}", flush=True)
+    print(f"[V4-ITER {time.strftime('%H:%M:%S')}] {msg}", flush=True)
 
 
 def save_prog(prog: Dict[str, Any]) -> None:
@@ -83,97 +83,46 @@ def save_prog(prog: Dict[str, Any]) -> None:
 
 
 # ============================================================================
-# PERSISTENT GEMINI STREAM-JSON CLIENT + FRONTIER ESCALATION LADDER
+# FAST NON-BLOCKING MULTI-MODEL + GEMINI ESCALATION ENGINE (ZERO HANGS!)
 # ============================================================================
 
-class GeminiStreamClient:
-    """Maintains warm persistent `agy --input-format stream-json` processes for fast multi-turn Gemini calls."""
+ITER_MODELS = [
+    "claude-opus-4-5",
+    "claude-sonnet-4-5",
+    "qwen3.5-397b",
+    "fusion",
+    "gpt-oss-120b",
+]
 
-    def __init__(self, model: str = "gemini-3.8-flash-high", max_turns_before_reset: int = 10) -> None:
-        self.model = model
-        self.max_turns = max_turns_before_reset
-        self.proc: Optional[subprocess.Popen[str]] = None
-        self.turns = 0
 
-    def _start(self) -> None:
-        self.close()
-        self.proc = subprocess.Popen(
+_AGY_HEALTHY = True
+
+
+def call_agy_gemini_bounded(model: str, prompt: str, timeout_s: float = 16.0) -> str:
+    """Calls `agy` Gemini with a strict kernel-enforced `subprocess.run(timeout=...)`; auto-disables if throttled."""
+    global _AGY_HEALTHY
+    if not _AGY_HEALTHY or not os.path.exists(AGY_BIN):
+        return ""
+    try:
+        proc = subprocess.run(
             [
                 AGY_BIN,
-                f"--model={self.model}",
+                f"--model={model}",
                 "--disable-slash-commands",
-                "--input-format", "stream-json",
-                "--output-format", "stream-json",
+                f"--print-timeout={int(timeout_s - 2)}s",
+                f"--print=Do NOT call any tools or read files. Answer directly:\n\n{prompt}",
             ],
             cwd=str(CLEAN_AGY_CWD),
-            stdin=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            capture_output=True,
             text=True,
-            bufsize=1,
+            timeout=timeout_s,
         )
-        self.turns = 0
-
-    def reset_conversation(self) -> None:
-        """Starts a clean conversation context when switching to a brand-new problem."""
-        if self.turns >= self.max_turns:
-            self._start()
-
-    def close(self) -> None:
-        if self.proc is not None:
-            try:
-                self.proc.terminate()
-                self.proc.wait(timeout=2)
-            except Exception:
-                try:
-                    self.proc.kill()
-                except Exception:
-                    pass
-            self.proc = None
-            self.turns = 0
-
-    def ask(self, prompt: str, timeout_s: float = 45.0) -> str:
-        for retry in range(2):
-            if self.proc is None or self.proc.poll() is not None or self.turns >= self.max_turns:
-                self._start()
-            assert self.proc is not None and self.proc.stdin is not None and self.proc.stdout is not None
-            full_msg = (
-                "IMPORTANT: Do NOT call any tools or read any files. Answer directly from the prompt only.\n\n"
-                + prompt
-            )
-            pkt = json.dumps({"event": "user", "message": {"content": full_msg}})
-            try:
-                self.proc.stdin.write(pkt + "\n")
-                self.proc.stdin.flush()
-                t0 = time.time()
-                deltas: List[str] = []
-                while time.time() - t0 < timeout_s:
-                    line = self.proc.stdout.readline()
-                    if not line:
-                        break
-                    ev = json.loads(line)
-                    etype = ev.get("event")
-                    if etype == "step_update":
-                        td = ev.get("step_update", {}).get("text_delta")
-                        if td:
-                            deltas.append(td)
-                    elif etype == "result":
-                        self.turns += 1
-                        res = ev.get("result", {})
-                        if res.get("status") == "SUCCESS":
-                            out = (res.get("response") or "".join(deltas)).strip()
-                            if out:
-                                return out
-                        break
-            except Exception:
-                pass
-            self.close()
-        return ""
-
-
-GEMINI_FLASH = GeminiStreamClient("gemini-3.8-flash-high", max_turns_before_reset=8)
-GEMINI_PRO = GeminiStreamClient("gemini-4-neon-high", max_turns_before_reset=6)
-GEMINI_CARBON = GeminiStreamClient("gemini-4-carbon-high", max_turns_before_reset=5)
+        if proc.returncode == 0 and (proc.stdout or "").strip():
+            return proc.stdout.strip()
+        _AGY_HEALTHY = False
+    except Exception:
+        _AGY_HEALTHY = False
+    return ""
 
 
 def call_freellm_specific(model_id: str, system_prompt: str, user_prompt: str, max_tokens: int = 2800) -> str:
@@ -195,49 +144,36 @@ def call_freellm_specific(model_id: str, system_prompt: str, user_prompt: str, m
                 "content-type": "application/json",
             },
         )
-        with urllib.request.urlopen(req, timeout=18) as resp:
+        with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-        return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text").strip()
+        txt = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text").strip()
+        if txt and len(txt) > 3 and not txt.startswith("Safety:"):
+            return txt
     except Exception:
-        return ""
+        pass
+    return ""
 
 
 def call_iterative_brain(att: int, system_prompt: str, user_prompt: str) -> Tuple[str, str]:
     """
-    Escalation ladder across up to 12 iterations:
-    - Attempts 0..3: Gemini 3.8 Flash High (`gemini-3.8-flash-high`)
-    - Attempts 4..6: Gemini 4 Neon High (`gemini-4-neon-high`)
-    - Attempts 7..8: Gemini 4 Carbon High (`gemini-4-carbon-high`)
-    - Attempts 9..11: Multi-architecture tie-breakers (`claude-opus-4-5`, `qwen3.5-397b`, `gemini-4-neon-high`)
-    Always falls back cleanly if any endpoint times out or hits quota.
+    15-iteration deep persistence loop per question:
+    - Rotates fast (~1.2s) diverse frontier models (`claude-opus-4-5`, `claude-sonnet-4-5`, `qwen3.5-397b`, `fusion`, `gpt-oss-120b`)
+      feeding live judge telemetry forward on every iteration so we stay on the question until solved!
+    - Escalates to kernel-bounded `agy` Gemini (`gemini-3.8-flash-medium` / `gemini-4-neon-medium`, strict 18s timeout) on tie-breaker turns.
     """
-    full_p = f"{system_prompt}\n\n{user_prompt}"
-    if att <= 3:
-        out = GEMINI_FLASH.ask(full_p, timeout_s=40.0)
-        if out:
-            return out, "gemini-3.8-flash-high"
-    elif att <= 6:
-        out = GEMINI_PRO.ask(full_p, timeout_s=50.0)
-        if out:
-            return out, "gemini-4-neon-high"
-    elif att <= 8:
-        out = GEMINI_CARBON.ask(full_p, timeout_s=55.0)
-        if out:
-            return out, "gemini-4-carbon-high"
+    if att in (6, 12):
+        gm = "gemini-3.8-flash-medium" if att == 6 else "gemini-4-neon-medium"
+        g_out = call_agy_gemini_bounded(gm, f"{system_prompt}\n\n{user_prompt}", timeout_s=18.0)
+        if g_out:
+            return g_out, gm
 
-    # Multi-architecture fallback / diversity tie-breakers
-    alt_models = ["claude-opus-4-5", "qwen3.5-397b", "claude-sonnet-4-5", "fusion"]
-    m = alt_models[att % len(alt_models)]
-    out = call_freellm_specific(m, system_prompt, user_prompt)
-    if out:
-        return out, m
-    out = GEMINI_FLASH.ask(full_p, timeout_s=40.0)
-    if out:
-        return out, "gemini-3.8-flash-high"
-    for fm in alt_models:
-        out = call_freellm_specific(fm, system_prompt, user_prompt)
+    n = len(ITER_MODELS)
+    for shift in range(n):
+        m = ITER_MODELS[(att + shift) % n]
+        out = call_freellm_specific(m, system_prompt, user_prompt)
         if out:
-            return out, fm
+            return out, m
+        time.sleep(0.2)
     return "", "none"
 
 
@@ -1156,9 +1092,6 @@ def main() -> int:
                 solve_codekata_v4(ctx, page, prog)
         finally:
             save_prog(prog)
-            GEMINI_FLASH.close()
-            GEMINI_PRO.close()
-            GEMINI_CARBON.close()
             ctx.close()
 
     log(f"=== GEMINI ITERATIVE SOLVER V4 COMPLETE: {json.dumps(prog)} ===")
