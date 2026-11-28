@@ -755,11 +755,9 @@
   "ts": "2026-11-26T17:29:43.101595+00:00"
  },
  "even-indexed-sum-in-dynamic-array": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    i",
-  "duration_s": 2.27
+  "attempts": 2
  },
  "extract-kth-character": {
   "status": "COMPLETED",
@@ -864,11 +862,9 @@
   "ts": "2026-11-26T17:32:20.337060+00:00"
  },
  "generate-binary-numbers-from-1-to-n": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/3\nLanguage\nPYTHON 3\nRuntime\n\n37ms\n\nMemory\n\n10kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\nimport sys\nfrom collections import deque\n\ndef ",
-  "duration_s": 2.08
+  "attempts": 9
  },
  "generic-pair-equality-check": {
   "status": "COMPLETED",
@@ -2327,11 +2323,9 @@
   "duration_s": 1.38
  },
  "dynamic-array-copy-and-memory-management": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n#include <std",
-  "duration_s": 2.09
+  "attempts": 2
  },
  "dynamic-memory-allocation": {
   "status": "COMPLETED",
@@ -2355,11 +2349,9 @@
   "duration_s": 2.67
  },
  "eiffel-tower-pattern": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 18, in <module> solve() File \"script-3.8.1.py\", line 4, in solve n = int(sys.stdin.read().split()[0])",
-  "duration_s": 2.76
+  "attempts": 2
  },
  "electricity-bill-calculator": {
   "status": "COMPLETED",
@@ -2669,18 +2661,14 @@
   "duration_s": 3.35
  },
  "dynamic-2d-array-transpose": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n6ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n#include <stdio.h>\n",
-  "duration_s": 2.09
+  "attempts": 12
  },
  "implement-deque-using-array": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nCompiler Error\nTest Cases\n0/4\nLanguage\nJAVA 8\nMain.java:61: error: package java does not exist java.utilStringBuilder sb = new StringBuilder(); ^ 1 error Compilation Error\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n",
-  "duration_s": 4.17
+  "attempts": 3
  },
  "index-of-2nd-smallest-number": {
   "status": "COMPLETED",
@@ -2807,11 +2795,9 @@
   "duration_s": 3.44
  },
  "insertion-sort": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nPYTHON 3\nRuntime\n\n55ms\n\nMemory\n\n12kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\nimport sys\n\ndef main():\n    data = sys.stdin.read().split()\n    if not",
-  "duration_s": 2.15
+  "attempts": 3
  },
  "is-string-numeric": {
   "status": "COMPLETED",
@@ -3856,11 +3842,9 @@
   "ts": "2026-11-26T17:59:40.925003+00:00"
  },
  "java-thread-even-odd-printer": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n1/3\nLanguage\nJAVA 8\nRuntime\n\n332ms\n\nMemory\n\n38kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\npublic class Main {\n    public static void main(String[] args) th",
-  "duration_s": 3.18
+  "attempts": 5
  },
  "l-value-modification-in-c": {
   "status": "COMPLETED",
@@ -5183,11 +5167,9 @@
   "ts": "2026-11-26T18:20:42.138190+00:00"
  },
  "largest-of-three-numbers": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 2,
-  "reason": "Answer\nCompiler Error\nTest Cases\n3/5\nLanguage\nPYTHON 3\nTraceback (most recent call last): File \"script-3.8.1.py\", line 12, in <module> main() File \"script-3.8.1.py\", line 8, in main nums = list(map(int, data[:3])) ValueE",
-  "duration_s": 2.12
+  "attempts": 1
  },
  "longest-unique-substring-length": {
   "status": "COMPLETED",
@@ -5285,11 +5267,9 @@
   "ts": "2026-11-26T18:21:24.551171+00:00"
  },
  "matrix-addition": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nPYTHON 3\nRuntime\n\n49ms\n\nMemory\n\n12kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\nimport sys\n\ndef main():\n    # Read two 2x2 ",
-  "duration_s": 2.75
+  "attempts": 3
  },
  "matrix-diagonal-prime-digit-sum": {
   "status": "COMPLETED",
@@ -8789,18 +8769,14 @@
   "ts": "2026-11-26T19:10:06.501503+00:00"
  },
  "dynamic-array-manipulation-with-pointers": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n4ms\n\nMemory\n\n3kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n#include <std",
-  "duration_s": 2.66
+  "attempts": 9
  },
  "dynamic-circular-buffer": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/4\nLanguage\nC\nRuntime\n\n5ms\n\nMemory\n\n2kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n5",
-  "duration_s": 2.25
+  "attempts": 2
  },
  "dynamic-english-dictionary": {
   "status": "COMPLETED",
@@ -8899,11 +8875,9 @@
   "ts": "2026-11-26T19:14:01.146268+00:00"
  },
  "efficient-array-rotation": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "C",
-  "attempts": 1,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nC\nRuntime\n\n6ms\n\nMemory\n\n5kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n5",
-  "duration_s": 1.74
+  "attempts": 15
  },
  "electronic-device-hierarchy": {
   "status": "COMPLETED",
@@ -9631,11 +9605,9 @@
   "ts": "2026-11-26T19:24:25.112632+00:00"
  },
  "half-diamond-star-number-pattern": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n58ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\nimport sys\n\ndef main():\n    ",
-  "duration_s": 2.65
+  "attempts": 6
  },
  "handling-complex-data-in-structures-with-pointers": {
   "status": "COMPLETED",
@@ -10623,11 +10595,9 @@
   "ts": "2026-11-26T19:36:45.021271+00:00"
  },
  "level-order-traversal-of-binary-tree-2": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "JAVA 8",
-  "attempts": 2,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nJAVA 8\nRuntime\n\n261ms\n\nMemory\n\n52kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48",
-  "duration_s": 5.41
+  "attempts": 3
  },
  "level-order-traversal-of-binary-tree": {
   "status": "FAILED_PLATFORM",
@@ -10676,11 +10646,9 @@
   "ts": "2026-11-26T19:37:43.886716+00:00"
  },
  "library-rack-allocation-system": {
-  "status": "FAILED_PLATFORM",
+  "status": "COMPLETED",
   "language": "PYTHON 3",
-  "attempts": 3,
-  "reason": "Answer\nWrong Answer\nTest Cases\n0/5\nLanguage\nPYTHON 3\nRuntime\n\n59ms\n\nMemory\n\n15kb\n\nCode\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n4",
-  "duration_s": 2.61
+  "attempts": 9
  },
  "library-resource-borrowing-system": {
   "status": "COMPLETED",
