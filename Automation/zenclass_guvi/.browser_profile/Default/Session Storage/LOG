@@ -1,3 +1,6 @@
 2026/11/28-05:33:07.937 5b7e67 Reusing MANIFEST /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/MANIFEST-000001
 2026/11/28-05:33:07.937 5b7e67 Recovering log #623
 2026/11/28-05:33:07.937 5b7e67 Reusing old log /Users/devesh/Documents/Antigravity/Automation/zenclass_guvi/.browser_profile/Default/Session Storage/000623.log 
+2026/11/28-05:39:07.940 5b7e6d Level-0 table #627: started
+2026/11/28-05:39:07.945 5b7e6d Level-0 table #627: 19967 bytes OK
+2026/11/28-05:39:07.950 5b7e6d Delete type=0 #623

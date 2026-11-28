@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n  </head>\n\n<p id=\"demo\"></p>\n<script>\nvar array=[40, 100, 1, 5, 25, 10];\narray.sort(function(a, b) { return a - b; });\ndocument.getElementById('demo').innerHTML = array.join(',');\n</script>\n\n</html>",
+  "JavaScript": "var array=[40, 100, 1, 5, 25, 10];\narray.sort(function(a, b) { return a - b; });\ndocument.getElementById('demo').innerHTML = array.join(',');"
+}

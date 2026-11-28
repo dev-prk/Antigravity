@@ -3,3 +3,36 @@
 2026/11/28-05:33:07.086 5b7e67 Level-0 table #825: started
 2026/11/28-05:33:07.100 5b7e67 Level-0 table #825: 39072 bytes OK
 2026/11/28-05:33:07.103 5b7e67 Delete type=0 #822
+2026/11/28-05:36:07.938 5b7e6c Level-0 table #828: started
+2026/11/28-05:36:07.944 5b7e6c Level-0 table #828: 76349 bytes OK
+2026/11/28-05:36:07.947 5b7e6c Delete type=0 #826
+2026/11/28-05:36:07.948 5b7e6c Compacting 4@0 + 1@1 files
+2026/11/28-05:36:07.951 5b7e6c Generated table #829@0: 147 keys, 64902 bytes
+2026/11/28-05:36:07.952 5b7e6c Compacted 4@0 + 1@1 files => 64902 bytes
+2026/11/28-05:36:07.954 5b7e6c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/28-05:36:07.954 5b7e6c Delete type=2 #821
+2026/11/28-05:36:07.954 5b7e6c Delete type=2 #823
+2026/11/28-05:36:07.954 5b7e6c Delete type=2 #819
+2026/11/28-05:36:07.954 5b7e6c Delete type=2 #825
+2026/11/28-05:36:07.954 5b7e6c Delete type=2 #828
+2026/11/28-05:39:07.936 5b7e6c Level-0 table #831: started
+2026/11/28-05:39:07.943 5b7e6c Level-0 table #831: 75450 bytes OK
+2026/11/28-05:39:07.950 5b7e6c Delete type=0 #827
+2026/11/28-05:42:07.916 5b7e6c Level-0 table #833: started
+2026/11/28-05:42:07.921 5b7e6c Level-0 table #833: 74774 bytes OK
+2026/11/28-05:42:07.925 5b7e6c Delete type=0 #830
+2026/11/28-05:45:07.914 5b7e6c Level-0 table #835: started
+2026/11/28-05:45:07.926 5b7e6c Level-0 table #835: 73990 bytes OK
+2026/11/28-05:45:07.929 5b7e6c Delete type=0 #832
+2026/11/28-05:48:07.910 5b7e6c Level-0 table #837: started
+2026/11/28-05:48:07.915 5b7e6c Level-0 table #837: 74484 bytes OK
+2026/11/28-05:48:07.918 5b7e6c Delete type=0 #834
+2026/11/28-05:48:07.920 5b7e6c Compacting 4@0 + 1@1 files
+2026/11/28-05:48:07.925 5b7e6c Generated table #838@0: 147 keys, 65050 bytes
+2026/11/28-05:48:07.925 5b7e6c Compacted 4@0 + 1@1 files => 65050 bytes
+2026/11/28-05:48:07.926 5b7e6c compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/28-05:48:07.927 5b7e6c Delete type=2 #835
+2026/11/28-05:48:07.927 5b7e6c Delete type=2 #837
+2026/11/28-05:48:07.927 5b7e6c Delete type=2 #833
+2026/11/28-05:48:07.927 5b7e6c Delete type=2 #831
+2026/11/28-05:48:07.927 5b7e6c Delete type=2 #829

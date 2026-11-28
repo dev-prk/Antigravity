@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    <style>\n    .note {  \n      font-size: 20px;\n    }\n    </style>\n</head>\n<body>\n  <p>Hello from <span class=\"note\">Guvian</span></p>\n</body>\n</html>",
+  "CSS": ".note {\n  font-size: 20px;\n}"
+}

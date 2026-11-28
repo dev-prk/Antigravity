@@ -1,0 +1,4 @@
+{
+  "HTML": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Static Template</title>\n    <style>\n      div {\n        display: inline;\n      }\n      span {\n        display: block;\n      }\n    </style>\n  </head>\n  <body>\n    <span>\n      London is the capital city of England.\n    </span>\n    <span>\n      It is the most populous city in the United Kingdom\n    </span>\n  </body>\n</html>",
+  "CSS": ""
+}
